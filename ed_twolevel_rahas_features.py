@@ -12,7 +12,7 @@ from sklearn import manifold
 from sklearn.cluster import KMeans
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.impute import SimpleImputer
-from sklearn.metrics import classification_report, confusion_matrix, precision_recall_fscore_support as score
+from sklearn.metrics import classification_report, confusion_matrix, pairwise_distances_argmin_min, precision_recall_fscore_support as score
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import make_pipeline
 import generate_raha_features
@@ -80,6 +80,7 @@ def classify(X_train, y_train, X_test, y_test):
 
 def get_cols(col_groups_files_path, features_dict):
     tp_all, tn_all, fp_all, fn_all = 0, 0, 0, 0
+    conflict_res = 'm'
     X_train = []
     y_train = []
     X_test = []
@@ -101,11 +102,13 @@ def get_cols(col_groups_files_path, features_dict):
                         for cell_idx in range(len(row['col_value'])):
                             X.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
                             y.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
-                                            
-                    n_clusters = 100
+
+                    n_labels = 10                 
+                    n_clusters = n_labels + 1
                     kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(X)
                     cells_per_cluster = dict()
                     labels_per_cluster = dict()
+                    propagated_labels_per_cluster = dict()
                     for cell in enumerate(kmeans.labels_):
                         if cell[1] in cells_per_cluster.keys():
                             cells_per_cluster[cell[1]].append(cell[0])
@@ -114,31 +117,41 @@ def get_cols(col_groups_files_path, features_dict):
                     
                     for key in cells_per_cluster.keys():
                         labels_tmp = []
+                        labels_per_cluster[key] = []
                         for n in range(n_clusters):
                             sample = random.choice(cells_per_cluster[key])
                             label = y[sample]
+                            labels_per_cluster[key].append(label)
                             labels_tmp.append(label)
-                        z_c = labels_tmp.count(0)
-                        o_c = labels_tmp.count(1)
-                        if o_c >= z_c:
-                            labels_per_cluster[key] = 1
-                        else:
-                            labels_per_cluster[key] = 0
 
+                        if conflict_res == 'm':
+                            # Majority
+                            z_c = labels_per_cluster[key].count(0)
+                            o_c = labels_per_cluster[key].count(1)
+                            if o_c >= z_c:
+                                propagated_labels_per_cluster[key] = 1
+                            else:
+                                propagated_labels_per_cluster[key] = 0
+                        elif conflict_res == 'h':
+                            # Homogeneity
+                            if sum(labels_per_cluster[key]) in [0, len(labels_per_cluster)]:
+                                propagated_labels_per_cluster[key] = sum(labels_per_cluster[key])
+                            else:
+                                propagated_labels_per_cluster[key] = None
 
-                    for key in list(cells_per_cluster.keys())[0:len(cells_per_cluster.keys())-1]:
+                    for key in list(cells_per_cluster.keys())[0:len(cells_per_cluster.keys())]:
                         for cell in cells_per_cluster[key]:
-                            X_train.append(X[cell])
-                            y_train.append(labels_per_cluster[key])
-
-                    c = list(cells_per_cluster.keys())[-1]
-                    for cell in cells_per_cluster[c]:
-                        X_test.append(X[cell])
-                        y_test.append(y[cell])
+                            if propagated_labels_per_cluster[key] is not None:
+                                X_train.append(X[cell])
+                                y_train.append(propagated_labels_per_cluster[key])
                 except Exception as e:
                     print(e)
-    
-    classify(X_train, y_train, X, y)
+
+    ros = RandomOverSampler(random_state=0)
+    X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
+
+    classify(X_resampled, y_resampled, X, y)
+
     return X, y
 
 if __name__== '__main__':
