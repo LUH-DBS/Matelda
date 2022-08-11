@@ -13,8 +13,7 @@ error-detection-at-sacle/datasets/
 MVP/raha/Archive.zip
 experiments/raha/Archive.zip
 *__pycache__
-/Users/fatemehahmadi/Documents/Github-Private/Fatemeh/end-to-end-eds/outputs/
-
+outputs
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

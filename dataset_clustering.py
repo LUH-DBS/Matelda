@@ -22,7 +22,6 @@ from ds_utils.config import set_display_options, set_random_seed
 from ds_utils.clustering import Tokenizer, load_data, clean_news_data, vectorize, mbkmeans_clusters
 
 import gensim.downloader as api
-import dask.dataframe as dd
 
 def get_column_content(df_col):
     return ' '.join(df_col)
@@ -31,7 +30,7 @@ class table:
     def __init__(self, table_id: int, table_path: str) -> None:
         self.table_id = table_id
         self.table_path = table_path
-        self.dask_df = dd.read_csv(table_path, header = 0)
+        self.dask_df = pd.read_csv(table_path, header = 0)
 
     def get_headers(self) -> str:
         return ' '.join(self.dask_df.columns)

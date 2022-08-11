@@ -69,7 +69,7 @@ def get_clusters_dict(df, n_clusters):
 
 def get_col_df(snd_path, cluster):
     col_dict = {'table_id':[], 'col_id':[], 'col_value':[], 'col_gt':[], 'col_type':[]}
-    dgt = extract_gt("/Users/fatemehahmadi/Documents/Github-Private/Fatemeh/end-to-end-eds/outputs/raha-datasets/gt.pickle")
+    dgt = extract_gt("outputs/raha-datasets/gt.pickle")
     for table in cluster:
         parent_path = os.path.join(snd_path, table[1])
         table_path = os.path.join(parent_path, table[2] + "/dirty.csv")
@@ -137,16 +137,22 @@ def get_col_features(col_df):
 
     return col_features
 
-def cluster_cols_auto(col_features):
+def cluster_cols_auto(col_features, n_clusters):
     reduced_features = []
     for col_feature in col_features:
-        reduced_features.append(col_feature[6:])
-    clustering = DBSCAN(eps=3, min_samples=2).fit(reduced_features)
+        reduced_features.append(col_feature[7:])
+    clustering = None
     columns=['table_id', 'col_id', 'totalValueCount', 'emptyValueCount', 'distinctValueCount', 'uniqueness', 'entropy', 'dtype_code']
     voc = [str(i) for i in range(8, len(col_features[0]))]
     columns = columns + voc
-    col_labels_df = pd.DataFrame(col_features, columns=columns)
-    col_labels_df['col_cluster_label'] = pd.DataFrame(clustering.labels_)
+    if n_clusters != 1:
+        clustering = DBSCAN(eps=0.5, min_samples=2).fit(reduced_features)
+        col_labels_df = pd.DataFrame(col_features, columns=columns)
+        col_labels_df['col_cluster_label'] = pd.DataFrame(clustering.labels_)
+    else:
+        col_labels_df = pd.DataFrame(col_features, columns=columns)
+        ones_ = np.ones(len(col_features))
+        col_labels_df['col_cluster_label'] = pd.DataFrame(ones_)
     return col_labels_df
 
 def extract_gt(gt_path):
@@ -156,7 +162,7 @@ def extract_gt(gt_path):
     return dgt
 
 
-def col_folding(context_df_path, sandbox_path, output_path):
+def col_folding(context_df_path, sandbox_path, output_path, n_clusters = None):
     df = dd.read_csv(context_df_path)
     clusters_dict = get_clusters_dict(df, n_clusters=1)
     try:
@@ -167,7 +173,7 @@ def col_folding(context_df_path, sandbox_path, output_path):
     for cluster in clusters_dict:
         col_df = get_col_df(sandbox_path, clusters_dict[cluster])
         col_features = get_col_features(col_df)
-        col_labels_df = cluster_cols_auto(col_features)
+        col_labels_df = cluster_cols_auto(col_features,n_clusters)
         col_labels_df['col_value'] = col_df['col_value']
         col_labels_df['col_gt'] = col_df['col_gt']
         filehandler = open(os.path.join(output_path, "col_groups/col_df_labels_cluster_{}.pickle".format(cluster)),"wb")
