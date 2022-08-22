@@ -125,15 +125,15 @@ def run_strategies(self, d):
                         list(itertools.product(["gaussian"], ["1.0", "1.3", "1.5", "1.7", "2.0", "2.3", "2.5", "2.7", "3.0"]))]
                     algorithm_and_configurations.extend(
                         [[d, algorithm_name, configuration] for configuration in configuration_list])
-                elif algorithm_name == "PVD": #100
+                elif algorithm_name == "PVD": 
                     configuration_list = []
                     characters_dictionary = {ch: 1 for ch in string.printable}
                     for ch in characters_dictionary:
                         configuration_list.append([ch])
                     algorithm_and_configurations.extend(
                         [[d, algorithm_name, configuration] for configuration in configuration_list])
-                elif algorithm_name == "RVD": #34
-                    
+
+                elif algorithm_name == "RVD": 
                     configuration_list = []
                     configuration_list.append('FCD')
                     configuration_list.append('RND')
@@ -210,6 +210,7 @@ def generate_raha_features(parent_path, dataset_name):
     d = detect.initialize_dataset(dataset_dictionary)
     d.SAVE_RESULTS = True
     d.VERBOSE = False
+    d.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD", "TFIDF"]
     run_strategies(detect, d)
     generate_features(detect, d)
     return d.column_features

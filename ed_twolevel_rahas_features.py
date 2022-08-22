@@ -1,28 +1,28 @@
-from collections import Counter
-from multiprocessing import freeze_support
+import math
 import os
 import pickle
 import random
-import warnings
 import numpy as np
 import pandas as pd
-from pip import main
-from scipy import rand
-from sklearn import manifold
-from sklearn.cluster import AgglomerativeClustering, KMeans, MiniBatchKMeans
+from sklearn.cluster import KMeans
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.impute import SimpleImputer
-from sklearn.metrics import classification_report, confusion_matrix, pairwise_distances_argmin_min, precision_recall_fscore_support as score
-from sklearn.model_selection import train_test_split
 from sklearn.pipeline import make_pipeline
+
+import app_logger
 import generate_raha_features
 from distributed import LocalCluster, Client
 import xgboost as xgb
 import dask.array as da
 import sys
+
+logger = app_logger.get_logger()
+
 if not sys.warnoptions:
     import warnings
+
     warnings.simplefilter("ignore")
+
 
 def get_cells_features(sandbox_path, outputpath):
     features_dict = dict()
@@ -37,20 +37,14 @@ def get_cells_features(sandbox_path, outputpath):
                 col_features = np.asarray(generate_raha_features.generate_raha_features(table_dirs_path, table))
                 for col_idx in range(len(col_features)):
                     for row_idx in range(len(col_features[col_idx])):
-                        features_dict[(table_id, col_idx, row_idx, 'og')] = col_features[col_idx][row_idx]
-                clean_df = pd.read_csv(path + "/" + table + ".csv")
-                dirty_df = pd.read_csv(path + "/" + "dirty.csv")
-                dirty_df = dirty_df.fillna(0)
-                clean_df = clean_df.fillna(0)
-                dirty_df.columns = clean_df.columns
-                for dcol in dirty_df:
-                    try:
-                        dirty_df[dcol] = dirty_df[dcol].astype(clean_df[dcol].dtype)
-                    except Exception as e:
-                        print(e)
-                        dirty_df[dcol] = dirty_df[dcol].astype(str)
-                        clean_df[dcol] = clean_df[dcol].astype(str)
-                label_df = clean_df.eq(dirty_df)
+                        features_dict[(table_id, col_idx, row_idx, 'og')] = np.append(col_features[col_idx][row_idx],
+                                                                                      table_id)
+                dirty_df = pd.read_csv(path + "/dirty.csv", sep=",", header="infer", encoding="utf-8", dtype=str,
+                                       keep_default_na=False, low_memory=False)
+                clean_df = pd.read_csv(path + "/" + table + ".csv", sep=",", header="infer", encoding="utf-8",
+                                       dtype=str,
+                                       keep_default_na=False, low_memory=False)
+                label_df = dirty_df.where(dirty_df.values == clean_df.values).notna() * 1
                 for col_idx, col_name in enumerate(label_df.columns):
                     for row_idx in range(len(label_df[col_name])):
                         features_dict[(table_id, col_idx, row_idx, 'gt')] = label_df[col_name][row_idx]
@@ -58,112 +52,146 @@ def get_cells_features(sandbox_path, outputpath):
                 print(table_id)
             except Exception as e:
                 print(e)
-    filehandler = open(os.path.join(outputpath, "features.pkl"),"wb")
-    pickle.dump(features_dict,filehandler)
+    filehandler = open(os.path.join(outputpath, "features.pkl"), "wb")
+    pickle.dump(features_dict, filehandler)
     filehandler.close()
     return features_dict
 
-def classify(X_train, y_train, X_test, y_test):
-    imp = SimpleImputer(strategy="most_frequent")
-    gbc = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0,
-                                            max_depth=1, random_state=0)
-    clf = make_pipeline(imp, gbc)
-    clf.fit(np.asarray(X_train), np.asarray(y_train))
-    predicted = clf.predict(X_test)
-    precision, recall, f_score, support = score(y_test, predicted, average='macro')
-    tn, fp, fn, tp = confusion_matrix(y_test, predicted).ravel()
-    print("classification_report:", classification_report(y_test, predicted))
-    print("confusion_matrix ", tn, fp, fn, tp)
-    print("scores ", precision, recall, f_score)
 
-    return precision, recall, f_score
+def sampling_labeling(x, y, n_cell_clusters_per_col_cluster):
+    kmeans = KMeans(n_clusters=n_cell_clusters_per_col_cluster, random_state=0).fit(x)
+
+    cells_per_cluster = dict()
+    labels_per_cluster = dict()
+
+    for cell in enumerate(kmeans.labels_):
+        if cell[1] in cells_per_cluster.keys():
+            cells_per_cluster[cell[1]].append(cell[0])
+        else:
+            cells_per_cluster[cell[1]] = [cell[0]]
+
+    samples = []
+    logger.info("labeling")
+    for key in cells_per_cluster.keys():
+        sample = random.choice(cells_per_cluster[key])
+        samples.append(sample)
+        label = y[sample]
+        labels_per_cluster[key] = label
+
+    return cells_per_cluster, labels_per_cluster, samples
 
 
-def dask_classifier(X_train, y_train, X_test, y_test):
-    with LocalCluster() as cluster:
-        with Client(cluster) as client:
-            clf = xgb.dask.DaskXGBClassifier()
-            clf.client = client  # assign the client
-            X_d_train = da.from_array(X_train, chunks=(1000, len(X_train[0])))
-            y_d_train = da.from_array(y_train, chunks=(1000))
-            clf.fit(X_d_train, y_d_train)
-            X_d_test = da.from_array(X_test, chunks=(1000, len(X_test[0])))
-            y_d_test = da.from_array(y_test, chunks=(1000))
-            predicted = clf.predict(X_d_test)
-            print(classification_report(y_true = y_d_test, y_pred = predicted))
-    
+def label_propagation(x_train, x_tmp, y_train, cells_per_cluster, labels_per_cluster):
+    logger.info("Label propagation")
+    for key in list(cells_per_cluster.keys()):
+        for cell in cells_per_cluster[key]:
+            x_train.append(x_tmp[cell])
+            y_train.append(labels_per_cluster[key])
+    logger.info("Length of X_train: {}".format(len(x_train)))
+    return x_train, y_train
 
-def get_cols(col_groups_files_path, features_dict, n_labels):
+
+def get_number_of_clusters(col_groups_dir):
+    number_of_col_clusters = 0
+    for file in os.listdir(col_groups_dir):
+        if ".pickle" in file:
+            with open(os.path.join(col_groups_dir, file), 'rb') as filehandler:
+                group_df = pickle.load(filehandler)
+                number_of_clusters = len(group_df['column_cluster_label'].unique())
+                number_of_col_clusters += number_of_clusters
+
+    return number_of_col_clusters
+
+
+def get_train_test_sets(col_groups_dir, output_path, features_dict, n_labels, number_of_clusters):
     X_train = []
     y_train = []
     X_test = []
     y_test = []
+    original_data_values = []
+    labels = []
+    n_cell_clusters_per_col_cluster = math.floor(n_labels / number_of_clusters) + 1
 
-    for file in os.listdir(col_groups_files_path):
+    for file in os.listdir(col_groups_dir):
         if ".pickle" in file:
-            file = open(os.path.join(col_groups_files_path, file),'rb')
+            file = open(os.path.join(col_groups_dir, file), 'rb')
             group_df = pickle.load(file)
             file.close()
-            clusters = set(group_df['col_cluster_label'].sort_values())
+            clusters = set(group_df['column_cluster_label'].sort_values())
             for c in clusters:
-                print("cluster" + str(c))
+                logger.info("Processing cluster {}, from {}".format(str(c), file))
                 try:
                     X_tmp = []
                     y_tmp = []
-                    c_df = group_df[group_df['col_cluster_label'] == c]
+                    original_data_values_tmp = []
+                    c_df = group_df[group_df['column_cluster_label'] == c]
                     for index, row in c_df.iterrows():
                         for cell_idx in range(len(row['col_value'])):
                             X_test.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
                             y_test.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
+                            original_data_values.append(
+                                (row['table_id'], row['col_id'], cell_idx, row['col_value'][cell_idx]))
 
                             X_tmp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
                             y_tmp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
-                    print("Length of X_test :", len(X_test))
-                    print("Length of X_tmp :", len(X_tmp))
-                            
-                    n_clusters = n_labels + 1
-                    kmeans = KMeans( n_clusters=n_clusters, random_state=0).fit(X_tmp)
+                            original_data_values_tmp.append(
+                                (row['table_id'], row['col_id'], cell_idx, row['col_value'][cell_idx]))
 
-                    cells_per_cluster = dict()
-                    labels_per_cluster = dict()
+                    logger.info("Length of X_test: {}".format(len(X_test)))
+                    logger.info("Length of X_tmp: {}".format(len(X_tmp)))
 
-                    for cell in enumerate(kmeans.labels_):
-                        if cell[1] in cells_per_cluster.keys():
-                            cells_per_cluster[cell[1]].append(cell[0])
-                        else:
-                            cells_per_cluster[cell[1]] = [cell[0]]
-                    
-                    print("labeling")
-                    for key in cells_per_cluster.keys():
-                        sample = random.choice(cells_per_cluster[key])
-                        label = y_tmp[sample]
-                        labels_per_cluster[key] = label
+                    cells_per_cluster, labels_per_cluster, samples = sampling_labeling(X_tmp, y_tmp,
+                                                                                       n_cell_clusters_per_col_cluster)
+                    labels += [original_data_values_tmp[sample] for sample in samples]
+                    X_train, y_train = label_propagation(X_train, X_tmp, y_train, cells_per_cluster, labels_per_cluster)
 
-                    print("train-test sets")
-                    for key in list(cells_per_cluster.keys()):
-                        for cell in cells_per_cluster[key]:
-                            X_train.append(X_tmp[cell])
-                            y_train.append(labels_per_cluster[key])
-                    print("Length of X_train :{}", len(X_train))
                 except Exception as e:
                     print(e)
 
-    print("classification")
-    dask_classifier(X_train, y_train, X_test, y_test)
+    with open(os.path.join(output_path, "original_data_values.pkl"), "wb") as filehandler:
+        pickle.dump(original_data_values, filehandler)
 
-    return X_test, y_test
+    with open(os.path.join(output_path, "results/sampled_tuples.pkl"), "wb") as filehandler:
+        pickle.dump(labels, filehandler)
 
-if __name__== '__main__':
-    sandbox_path = "/Users/fatemehahmadi/Documents/Github-Private/Fatemeh/MVP/raha-datasets"
-    output_path = "outputs/raha-datasets"
-    col_groups_path = os.path.join(output_path, "col_groups")
+    return X_train, y_train, X_test, y_test, original_data_values
 
-    freeze_support()
-    
-    # features_dict = get_cells_features(sandbox_path, output_path)
-    file = open(os.path.join(output_path, "features.pkl"), 'rb')
-    features_dict = pickle.load(file)
-    file.close()
-    get_cols(col_groups_path, features_dict, n_labels=66)
-    print("")
 
+def classify(x_train, y_train, x_test):
+    logger.info("Classification")
+    imp = SimpleImputer(strategy="most_frequent")
+    gbc = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0, max_depth=1, random_state=0)
+    clf = make_pipeline(imp, gbc)
+    clf.fit(np.asarray(x_train), np.asarray(y_train))
+    predicted = clf.predict(x_test)
+
+    return predicted
+
+
+def dask_classifier(x_train, y_train, x_test):
+    logger.info("Classification - Parallel")
+    with LocalCluster() as cluster:
+        with Client(cluster) as client:
+            clf = xgb.dask.DaskXGBClassifier()
+            clf.client = client  # assign the client
+            X_d_train = da.from_array(x_train, chunks=(1000, len(x_train[0])))
+            y_d_train = da.from_array(y_train, chunks=(1000))
+            clf.fit(X_d_train, y_d_train)
+            X_d_test = da.from_array(x_test, chunks=(1000, len(x_test[0])))
+            predicted = clf.predict(X_d_test)
+            np_predicted = np.array(predicted)
+
+    return np_predicted
+
+
+def error_detector(col_groups_files_path, output_path, features_dict, n_labels, number_of_clusters,
+                   classification_mode):
+    X_train, y_train, X_test, y_test, original_data_values = get_train_test_sets(col_groups_files_path, output_path,
+                                                                                 features_dict, n_labels,
+                                                                                 number_of_clusters)
+    if classification_mode == "parallel":
+        predicted = dask_classifier(X_train, y_train, X_test)
+    else:
+        predicted = classify(X_train, y_train, X_test)
+
+    return y_test, predicted, original_data_values

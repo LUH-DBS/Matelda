@@ -1,3 +1,4 @@
+import shutil
 from cmath import nan
 from collections import Counter
 import math
@@ -9,6 +10,8 @@ import numpy as np
 import pandas as pd
 from openclean.profiling.dataset import dataset_profile
 from sklearn.cluster import DBSCAN, OPTICS
+
+import app_logger
 from dataset_clustering import clean_text
 from ds_utils import clustering
 from nltk import word_tokenize
@@ -18,10 +21,11 @@ import nltk
 from gensim.models import Word2Vec
 import dask.dataframe as dd
 
-
+logger = app_logger.get_logger()
 nltk.download("stopwords")
 
-type_dicts = {'int':0, 'float':1, 'str':2, 'date':3}
+type_dicts = {'int': 0, 'float': 1, 'str': 2, 'date': 3}
+
 
 def vectorize(list_of_docs, model):
     """Generate vectors for list of documents using a Word Embedding
@@ -53,50 +57,49 @@ def vectorize(list_of_docs, model):
     return features
 
 
-
-
-def get_clusters_dict(df, n_clusters):
+def get_clusters_dict(df):
     clusters_dict = {}
 
-    for i in range(n_clusters):
+    clusters = df["cluster"].unique()
+    for i in clusters:
         clusters_dict[i] = []
 
     row_iterator = df.iterrows()
     for i, row in row_iterator:
         clusters_dict[row['cluster']].append((row['table_id'], row['parent'], row['table_name']))
+
     return clusters_dict
 
 
-def get_col_df(snd_path, cluster):
-    col_dict = {'table_id':[], 'col_id':[], 'col_value':[], 'col_gt':[], 'col_type':[]}
-    dgt = extract_gt("outputs/raha-datasets/gt.pickle")
+def get_col_df(sandbox_path, cluster, labels_dict_path):
+    # TODO: features in config
+    column_dict = {'table_id': [], 'col_id': [], 'col_value': [], 'col_gt': [], 'col_type': []}
+    lake_labels_dict = extract_labels(labels_dict_path)
+
     for table in cluster:
-        parent_path = os.path.join(snd_path, table[1])
+        parent_path = os.path.join(sandbox_path, table[1])
         table_path = os.path.join(parent_path, table[2] + "/dirty.csv")
         df = pd.read_csv(table_path)
-        for col in df.columns:
-            col_dict['table_id'].append(table[0])
-            col_dict['col_id'].append(df.columns.tolist().index(col))
-            col_dict['col_value'].append(df[col].tolist())
-            col_dict['col_gt'].append(dgt[(table[0], df.columns.tolist().index(col))].values)
-            col_dict['col_type'].append(df[col].dtype)
-    col_df = pd.DataFrame.from_dict(col_dict)
+
+        for column_idx, column in enumerate(df.columns.tolist()):
+            column_dict['table_id'].append(table[0])
+            column_dict['col_id'].append(column_idx)
+            column_dict['col_value'].append(df[column].tolist())
+            column_dict['col_gt'].append(lake_labels_dict[(table[0], column_idx)].values)
+            column_dict['col_type'].append(df[column].dtype)
+
+    col_df = pd.DataFrame.from_dict(column_dict)
+
     return col_df
 
+
 def get_col_features(col_df):
-    # custom_stopwords = set(stopwords.words("english"))
-    # wv = api.load('word2vec-google-news-300')
-    
     col_features = []
-    print(col_df.shape[0])
     characters_dictionary = {}
     values_dictionary = {}
 
     for i in range(col_df.shape[0]):
-        print(i)
-        features = []
-        features.append(col_df['table_id'][i])
-        features.append(col_df['col_id'][i])
+        features = [col_df['table_id'][i], col_df['col_id'][i]]
         profiles = dataset_profile(pd.DataFrame(col_df['col_value'][i]))
         features.append(profiles[0]['stats']['totalValueCount'])
         features.append(profiles[0]['stats']['emptyValueCount'])
@@ -104,13 +107,14 @@ def get_col_features(col_df):
         features.append(profiles.stats()['uniqueness'][0])
         features.append(profiles[0]['stats']['entropy'])
 
-        try:
+        if len(profiles.types().columns) > 0:
             col_type = profiles.types().columns[0]
             features.append(type_dicts[col_type])
-        except Exception as e:
+        else:
             features.append(-1)
+
         for j in range(len(features)):
-            if features[j] == None:
+            if features[j] is None:
                 features[j] = -1
         col_features.append(features)
 
@@ -119,7 +123,7 @@ def get_col_features(col_df):
                 if character not in characters_dictionary:
                     characters_dictionary[character] = 0.0
                 characters_dictionary[character] += 1.0
-            if value not in values_dictionary: 
+            if value not in values_dictionary:
                 values_dictionary[value] = 0.0
             values_dictionary[value] += 1.0
 
@@ -137,46 +141,72 @@ def get_col_features(col_df):
 
     return col_features
 
-def cluster_cols_auto(col_features, n_clusters):
+
+def cluster_cols_auto(col_features, auto_clustering_enabled):
+    # TODO: dbscan params config
     reduced_features = []
+    # TODO
     for col_feature in col_features:
         reduced_features.append(col_feature[7:])
-    clustering = None
-    columns=['table_id', 'col_id', 'totalValueCount', 'emptyValueCount', 'distinctValueCount', 'uniqueness', 'entropy', 'dtype_code']
-    voc = [str(i) for i in range(8, len(col_features[0]))]
-    columns = columns + voc
-    if n_clusters != 1:
-        clustering = DBSCAN(eps=0.5, min_samples=2).fit(reduced_features)
+    columns = ['table_id', 'col_id', 'totalValueCount', 'emptyValueCount', 'distinctValueCount',
+               'uniqueness', 'entropy', 'data_type_code']
+    vocabulary = [str(i) for i in range(8, len(col_features[0]))]
+    columns = columns + vocabulary
+
+    if auto_clustering_enabled:
+        clustering_results = DBSCAN(eps=0.5, min_samples=2).fit(reduced_features)
         col_labels_df = pd.DataFrame(col_features, columns=columns)
-        col_labels_df['col_cluster_label'] = pd.DataFrame(clustering.labels_)
+        col_labels_df['column_cluster_label'] = pd.DataFrame(clustering_results.labels_)
     else:
         col_labels_df = pd.DataFrame(col_features, columns=columns)
         ones_ = np.ones(len(col_features))
-        col_labels_df['col_cluster_label'] = pd.DataFrame(ones_)
-    return col_labels_df
+        col_labels_df['column_cluster_label'] = pd.DataFrame(ones_)
 
-def extract_gt(gt_path):
-    filehandler = open(gt_path,"rb")
-    dgt = pickle.load(filehandler)
+    number_of_clusters = len(col_labels_df['column_cluster_label'].unique())
+
+    return col_labels_df, number_of_clusters
+
+
+def extract_labels(gt_path):
+    filehandler = open(gt_path, "rb")
+    labels_dict = pickle.load(filehandler)
     filehandler.close()
-    return dgt
+    return labels_dict
 
 
-def col_folding(context_df_path, sandbox_path, output_path, n_clusters = None):
-    df = dd.read_csv(context_df_path)
-    clusters_dict = get_clusters_dict(df, n_clusters=1)
-    try:
-        os.mkdir(os.path.join(output_path, "col_groups"))
-    except OSError as error:
-        print(error) 
+def get_number_of_clusters(col_groups_dir):
+    number_of_col_clusters = 0
+    for file in os.listdir(col_groups_dir):
+        if ".pickle" in file:
+            with open(os.path.join(col_groups_dir, file), 'rb') as filehandler:
+                group_df = pickle.load(filehandler)
+                number_of_clusters = len(group_df['column_cluster_label'].unique())
+                number_of_col_clusters += number_of_clusters
 
+    return number_of_col_clusters
+
+
+def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clustering_enabled):
+    clusters_dict = get_clusters_dict(context_df)
+    if os.path.exists(col_groups_dir):
+        shutil.rmtree(col_groups_dir)
+    os.makedirs(col_groups_dir)
+    logger.info("Col groups directory is created.")
+
+    number_of_col_clusters = 0
     for cluster in clusters_dict:
-        col_df = get_col_df(sandbox_path, clusters_dict[cluster])
+        col_df = get_col_df(sandbox_path, clusters_dict[cluster], labels_path)
         col_features = get_col_features(col_df)
-        col_labels_df = cluster_cols_auto(col_features,n_clusters)
+        col_labels_df, number_of_clusters = cluster_cols_auto(col_features, auto_clustering_enabled)
+        number_of_col_clusters += number_of_clusters
         col_labels_df['col_value'] = col_df['col_value']
         col_labels_df['col_gt'] = col_df['col_gt']
-        filehandler = open(os.path.join(output_path, "col_groups/col_df_labels_cluster_{}.pickle".format(cluster)),"wb")
-        pickle.dump(col_labels_df, filehandler)
-        filehandler.close()
-        col_labels_df[["col_cluster_label", "col_value"]].to_csv(os.path.join(output_path, "col_groups/col_df_labels_cluster_{}.csv".format(cluster)))
+        with open(os.path.join(col_groups_dir, "col_df_labels_cluster_{}.pickle".format(cluster)), "wb") \
+                as filehandler:
+            pickle.dump(col_labels_df, filehandler)
+        col_labels_df[["column_cluster_label", "col_value"]].to_csv(
+            os.path.join(col_groups_dir, "col_df_labels_cluster_{}.csv".format(cluster))
+        )
+
+    return number_of_col_clusters
+

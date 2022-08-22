@@ -14,6 +14,7 @@ MVP/raha/Archive.zip
 experiments/raha/Archive.zip
 *__pycache__
 outputs
+logs
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
