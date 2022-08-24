@@ -182,7 +182,7 @@ def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
         # model = Word2Vec(sentences=tokenized_docs, vector_size=100, workers=1, seed=42)
         model = api.load('word2vec-google-news-300')
         vectorized_docs = vectorize(tokenized_docs, model=model)
-        clustering = DBSCAN(eps=0.5, min_samples=2).fit(vectorized_docs)
+        clustering = DBSCAN(eps=0.5, min_samples=5).fit(vectorized_docs)
         cluster_labels = clustering.labels_
     else:
         cluster_labels = np.ones(len(tokenized_docs)).tolist()

@@ -154,7 +154,7 @@ def cluster_cols_auto(col_features, auto_clustering_enabled):
     columns = columns + vocabulary
 
     if auto_clustering_enabled:
-        clustering_results = DBSCAN(eps=0.5, min_samples=2).fit(reduced_features)
+        clustering_results = DBSCAN(eps=0.5, min_samples=5).fit(col_features)
         col_labels_df = pd.DataFrame(col_features, columns=columns)
         col_labels_df['column_cluster_label'] = pd.DataFrame(clustering_results.labels_)
     else:

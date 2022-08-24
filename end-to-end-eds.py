@@ -33,15 +33,16 @@ def run_experiments(sandbox_path, output_path, exp_name, extract_labels_enabled,
         os.makedirs(experiment_output_path)
         logger.info("Experiment output directory is created.")
 
+    # TODO: Fix this if-else
     table_grouping_output_path = os.path.join(output_path, configs["DIRECTORIES"]["table_grouping_output_filename"])
-    if table_grouping_enabled:
-        logger.info("Table grouping started")
-        table_grouping_output = dataset_clustering.cluster_datasets(sandbox_path, table_grouping_output_path,
-                                                                    configs["TABLE_GROUPING"][
-                                                                        "auto_clustering_enabled"])
-    else:
-        table_grouping_output = pd.read_csv(table_grouping_output_path)
-        logger.info("Table grouping output loaded.")
+    # if table_grouping_enabled:
+    logger.info("Table grouping started")
+    table_grouping_output = dataset_clustering.cluster_datasets(sandbox_path, table_grouping_output_path,
+                                                                configs["TABLE_GROUPING"][
+                                                                    "auto_clustering_enabled"])
+    # else:
+    #     table_grouping_output = pd.read_csv(table_grouping_output_path)
+    #     logger.info("Table grouping output loaded.")
 
     column_groups_path = os.path.join(experiment_output_path, configs["DIRECTORIES"]["column_groups_path"])
     if column_grouping_enabled:
@@ -92,5 +93,5 @@ if __name__ == '__main__':
         logger.info("Output directory is created.")
 
     freeze_support()
-    exp_name = "True_True_10"
-    run_experiments(sandbox_dir, output_dir, exp_name, False, False, False, 20, False)
+    exp_name = "BiWeeklyReport-Aug23"
+    run_experiments(sandbox_dir, output_dir, exp_name, True, False, False, 20, False)
