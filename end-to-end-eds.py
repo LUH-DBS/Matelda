@@ -94,9 +94,14 @@ if __name__ == '__main__':
 
     freeze_support()
     exp_name = "BiWeeklyReport-Aug23"
-    exp_number = str(sys.argv[1])
-    number_of_labels = 20
-    if number_of_labels < 1:
-        logger.error("Sorry, I need at least one label to do the error detection :)")
-    else:
-        run_experiments(sandbox_dir, output_dir, exp_name, False, False, False, number_of_labels, False)
+
+    # To run the experiments more than one time and with different numbers of labels
+    number_of_labels_list = [20, 30]
+    experiments = [1, 2]
+
+    for number_of_labels in number_of_labels_list:
+        for exp_number in experiments:
+            if number_of_labels < 1:
+                logger.error("Sorry, I need at least one label to do the error detection :)")
+            else:
+                run_experiments(sandbox_dir, output_dir, exp_name, False, False, False, number_of_labels, False)
