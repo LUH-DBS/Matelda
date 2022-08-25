@@ -24,7 +24,7 @@ if not sys.warnoptions:
     warnings.simplefilter("ignore")
 
 
-def get_cells_features(sandbox_path, outputpath):
+def get_cells_features(sandbox_path, output_path):
     features_dict = dict()
     table_id = 0
     list_dirs_in_snd = os.listdir(sandbox_path)
@@ -52,9 +52,9 @@ def get_cells_features(sandbox_path, outputpath):
                 print(table_id)
             except Exception as e:
                 print(e)
-    filehandler = open(os.path.join(outputpath, "features.pkl"), "wb")
-    pickle.dump(features_dict, filehandler)
-    filehandler.close()
+
+    with open(os.path.join(output_path, "features.pkl"), "wb") as filehandler:
+        pickle.dump(features_dict, filehandler)
     return features_dict
 
 
@@ -72,11 +72,16 @@ def sampling_labeling(x, y, n_cell_clusters_per_col_cluster):
 
     samples = []
     logger.info("labeling")
+
     for key in cells_per_cluster.keys():
         sample = random.choice(cells_per_cluster[key])
         samples.append(sample)
         label = y[sample]
         labels_per_cluster[key] = label
+
+    diff_n_clusters = n_cell_clusters_per_col_cluster - len(cells_per_cluster.keys())
+    if diff_n_clusters != 0:
+        print("K-Means generated {} empty Clusters:))".format(diff_n_clusters))
 
     return cells_per_cluster, labels_per_cluster, samples
 
@@ -103,14 +108,21 @@ def get_number_of_clusters(col_groups_dir):
     return number_of_col_clusters
 
 
-def get_train_test_sets(col_groups_dir, output_path, features_dict, n_labels, number_of_clusters):
+def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict, n_labels, number_of_clusters):
     X_train = []
     y_train = []
     X_test = []
     y_test = []
     original_data_values = []
     labels = []
-    n_cell_clusters_per_col_cluster = math.floor(n_labels / number_of_clusters) + 1
+
+    n_cell_clusters_per_col_cluster = math.floor(n_labels / number_of_clusters)
+    n_cell_clusters_per_col_cluster_dict = {col_cluster: n_cell_clusters_per_col_cluster for col_cluster
+                                            in range(number_of_clusters)}
+
+    while sum(n_cell_clusters_per_col_cluster_dict.values()) < n_labels:
+        rand = random.randint(0, number_of_clusters - 1)
+        n_cell_clusters_per_col_cluster_dict[rand] += 1
 
     for file in os.listdir(col_groups_dir):
         if ".pickle" in file:
@@ -118,7 +130,7 @@ def get_train_test_sets(col_groups_dir, output_path, features_dict, n_labels, nu
             group_df = pickle.load(file)
             file.close()
             clusters = set(group_df['column_cluster_label'].sort_values())
-            for c in clusters:
+            for c_idx, c in enumerate(clusters):
                 logger.info("Processing cluster {}, from {}".format(str(c), file))
                 try:
                     X_tmp = []
@@ -141,7 +153,7 @@ def get_train_test_sets(col_groups_dir, output_path, features_dict, n_labels, nu
                     logger.info("Length of X_tmp: {}".format(len(X_tmp)))
 
                     cells_per_cluster, labels_per_cluster, samples = sampling_labeling(X_tmp, y_tmp,
-                                                                                       n_cell_clusters_per_col_cluster)
+                                                                        n_cell_clusters_per_col_cluster_dict[c_idx])
                     labels += [original_data_values_tmp[sample] for sample in samples]
                     X_train, y_train = label_propagation(X_train, X_tmp, y_train, cells_per_cluster, labels_per_cluster)
 
@@ -151,10 +163,11 @@ def get_train_test_sets(col_groups_dir, output_path, features_dict, n_labels, nu
     with open(os.path.join(output_path, "original_data_values.pkl"), "wb") as filehandler:
         pickle.dump(original_data_values, filehandler)
 
-    with open(os.path.join(output_path, "results/sampled_tuples.pkl"), "wb") as filehandler:
+    with open(os.path.join(results_path, "sampled_tuples.pkl"), "wb") as filehandler:
         pickle.dump(labels, filehandler)
+        print("Number of Labeled Cells:", len(labels))
 
-    return X_train, y_train, X_test, y_test, original_data_values
+    return X_train, y_train, X_test, y_test, original_data_values, len(labels)
 
 
 def classify(x_train, y_train, x_test):
@@ -175,7 +188,7 @@ def dask_classifier(x_train, y_train, x_test):
             clf = xgb.dask.DaskXGBClassifier()
             clf.client = client  # assign the client
             X_d_train = da.from_array(x_train, chunks=(1000, len(x_train[0])))
-            y_d_train = da.from_array(y_train, chunks=(1000))
+            y_d_train = da.from_array(y_train, chunks=1000)
             clf.fit(X_d_train, y_d_train)
             X_d_test = da.from_array(x_test, chunks=(1000, len(x_test[0])))
             predicted = clf.predict(X_d_test)
@@ -184,9 +197,10 @@ def dask_classifier(x_train, y_train, x_test):
     return np_predicted
 
 
-def error_detector(col_groups_files_path, output_path, features_dict, n_labels, number_of_clusters,
+def error_detector(col_groups_files_path, output_path, results_path, features_dict, n_labels, number_of_clusters,
                    classification_mode):
-    X_train, y_train, X_test, y_test, original_data_values = get_train_test_sets(col_groups_files_path, output_path,
+    X_train, y_train, X_test, y_test, original_data_values, n_samples = get_train_test_sets(col_groups_files_path, output_path,
+                                                                                 results_path,
                                                                                  features_dict, n_labels,
                                                                                  number_of_clusters)
     if classification_mode == "parallel":
@@ -194,4 +208,4 @@ def error_detector(col_groups_files_path, output_path, features_dict, n_labels, 
     else:
         predicted = classify(X_train, y_train, X_test)
 
-    return y_test, predicted, original_data_values
+    return y_test, predicted, original_data_values, n_samples

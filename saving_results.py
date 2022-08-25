@@ -9,7 +9,7 @@ from sklearn.metrics import precision_recall_fscore_support
 logger = app_logger.get_logger()
 
 
-def save_results(y_test, predicted, tables_dict, results_path, original_data_values):
+def save_results(n_samples, y_test, predicted, tables_dict, results_path, original_data_values):
     classifier_results = []
     for i in range(len(predicted)):
         classifier_results.append((predicted[i], int(y_test[i])))
@@ -24,7 +24,7 @@ def save_results(y_test, predicted, tables_dict, results_path, original_data_val
     tn, fp, fn, tp = confusion_matrix(y_true=y_test, y_pred=predicted).ravel()
     precision, recall, f_score, support = precision_recall_fscore_support(y_test, predicted, average='macro')
     logger.info("tn: {}, fp: {}, fn: {}, tp: {}".format(tn, fp, fn, tp))
-    scores = {"precision": precision, "recall": recall, "f_score": f_score, "support": support, "tp": tp, "fp": fp,
+    scores = {"n_samples": n_samples, "precision": precision, "recall": recall, "f_score": f_score, "support": support, "tp": tp, "fp": fp,
               "fn": fn, "tn": tn}
     with open(os.path.join(results_path, "scores.pickle"), "wb") as file:
         pickle.dump(scores, file)
@@ -62,8 +62,8 @@ def get_tables_dict(sandbox_path):
 
 
 # TODO
-def get_all_results(tables_path, results_dir, original_data_values,
+def get_all_results(tables_path, results_dir, original_data_values, n_samples,
                     y_test, predicted):
     tables_dict = get_tables_dict(tables_path)
-    save_results(y_test, predicted, tables_dict, results_dir, original_data_values)
+    save_results(n_samples, y_test, predicted, tables_dict, results_dir, original_data_values)
 
