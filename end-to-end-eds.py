@@ -1,3 +1,5 @@
+from audioop import mul
+import multiprocessing
 import sys
 from multiprocessing import freeze_support
 import os
@@ -17,7 +19,7 @@ from configparser import ConfigParser
 import saving_results
 
 
-def run_experiments(sandbox_path, output_path, exp_name, extract_labels_enabled, table_grouping_enabled,
+def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_labels_enabled, table_grouping_enabled,
                     column_grouping_enabled, labeling_budget, cell_clustering_alg, cell_feature_generator_enabled):
     labels_path = os.path.join(output_path, configs["DIRECTORIES"]["labels_filename"])
     if extract_labels_enabled:
@@ -64,7 +66,7 @@ def run_experiments(sandbox_path, output_path, exp_name, extract_labels_enabled,
             features_dict = pickle.load(file)
             logger.info("Cell features loaded.")
 
-    results_path = os.path.join(experiment_output_path, "results_exp_{}_labels_{}".format(exp_number, number_of_labels))
+    results_path = os.path.join(experiment_output_path, "results_exp_{}_labels_{}".format(exp_number, labeling_budget))
     if not os.path.exists(results_path):
         os.makedirs(results_path)
     y_test, predicted, original_data_values, n_samples = \
@@ -103,11 +105,7 @@ if __name__ == '__main__':
         logger.info("Output directory is created.")
 
     freeze_support()
-    
-    for number_of_labels in number_of_labels_list:
-        for exp_number in experiment_numbers:
-            if number_of_labels < 1:
-                logger.error("Sorry, I need at least one label to do the error detection :)")
-            else:
-                run_experiments(sandbox_dir, output_dir, exp_name, extract_labels_enabled, table_grouping_enabled, column_grouping_enabled, 
-                                number_of_labels, cell_clustering_alg, cell_feature_generator_enabled)
+
+with multiprocessing.Pool(processes = multiprocessing.cpu_count()-1) as p:
+    p.starmap(run_experiments, [(sandbox_dir, output_dir, exp_name, exp_number, extract_labels_enabled, table_grouping_enabled, column_grouping_enabled, 
+                                number_of_labels, cell_clustering_alg, cell_feature_generator_enabled) for number_of_labels in number_of_labels_list for exp_number in experiment_numbers])
