@@ -18,7 +18,7 @@ import saving_results
 
 
 def run_experiments(sandbox_path, output_path, exp_name, extract_labels_enabled, table_grouping_enabled,
-                    column_grouping_enabled, labeling_budget, cell_feature_generator_enabled):
+                    column_grouping_enabled, labeling_budget, cell_clustering_alg, cell_feature_generator_enabled):
     labels_path = os.path.join(output_path, configs["DIRECTORIES"]["labels_filename"])
     if extract_labels_enabled:
         logger.info("Extracting labels started")
@@ -69,7 +69,7 @@ def run_experiments(sandbox_path, output_path, exp_name, extract_labels_enabled,
         os.makedirs(results_path)
     y_test, predicted, original_data_values, n_samples = \
         ed_twolevel_rahas_features.error_detector(column_groups_path, experiment_output_path, results_path,
-                                                  features_dict, labeling_budget, number_of_column_clusters, "seq")
+                                                  features_dict, labeling_budget, number_of_column_clusters, cell_clustering_alg, "seq")
     tables_path = configs["RESULTS"]["tables_path"]
 
     saving_results.get_all_results(tables_path, results_path, original_data_values, n_samples,
@@ -84,24 +84,30 @@ if __name__ == '__main__':
     # App-Config Management
     configs = ConfigParser()
     configs.read("config.ini")
-
+    
     sandbox_dir = configs["DIRECTORIES"]["sandbox_dir"]
     output_dir = configs["DIRECTORIES"]["output_dir"]
+    cell_clustering_alg = configs["CLUSTERING"]["cells_clustering_alg"]
+
+    # To run the experiments more than one time and with different numbers of labels
+    number_of_labels_list = [int(number) for number in configs['EXPERIMENTS']['number_of_labels_list'].split(',')]
+    experiment_numbers =  [int(number) for number in configs['EXPERIMENTS']['experiment_numbers'].split(',')]
+    exp_name = configs['EXPERIMENTS']['exp_name']
+    extract_labels_enabled = int(configs['EXPERIMENTS']['extract_labels_enabled'])
+    table_grouping_enabled = int(configs['EXPERIMENTS']['table_grouping_enabled'])
+    column_grouping_enabled = int(configs['EXPERIMENTS']['column_grouping_enabled'])
+    cell_feature_generator_enabled = int(configs['EXPERIMENTS']['cell_feature_generator_enabled'])
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
         logger.info("Output directory is created.")
 
     freeze_support()
-    exp_name = "BiWeeklyReport-Aug23"
-
-    # To run the experiments more than one time and with different numbers of labels
-    number_of_labels_list = [20, 30]
-    experiments = [1, 2]
-
+    
     for number_of_labels in number_of_labels_list:
-        for exp_number in experiments:
+        for exp_number in experiment_numbers:
             if number_of_labels < 1:
                 logger.error("Sorry, I need at least one label to do the error detection :)")
             else:
-                run_experiments(sandbox_dir, output_dir, exp_name, False, False, False, number_of_labels, False)
+                run_experiments(sandbox_dir, output_dir, exp_name, extract_labels_enabled, table_grouping_enabled, column_grouping_enabled, 
+                                number_of_labels, cell_clustering_alg, cell_feature_generator_enabled)

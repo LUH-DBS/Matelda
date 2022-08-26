@@ -15,6 +15,7 @@ experiments/raha/Archive.zip
 *__pycache__
 outputs
 logs
+raha-datasets
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

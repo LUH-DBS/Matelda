@@ -5,6 +5,7 @@ import random
 import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans
+from sklearn.cluster import AgglomerativeClustering
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import make_pipeline
@@ -58,13 +59,19 @@ def get_cells_features(sandbox_path, output_path):
     return features_dict
 
 
-def sampling_labeling(x, y, n_cell_clusters_per_col_cluster):
-    kmeans = KMeans(n_clusters=n_cell_clusters_per_col_cluster, random_state=0).fit(x)
+def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg):
+    print("sampling_labeling")
+    clustering = None 
+
+    if cells_clustering_alg == "km":
+        clustering = KMeans(n_clusters=n_cell_clusters_per_col_cluster, random_state=0).fit(x)
+    elif cells_clustering_alg == "hac":
+        clustering = AgglomerativeClustering(n_clusters = n_cell_clusters_per_col_cluster).fit(x)
 
     cells_per_cluster = dict()
     labels_per_cluster = dict()
 
-    for cell in enumerate(kmeans.labels_):
+    for cell in enumerate(clustering.labels_):
         if cell[1] in cells_per_cluster.keys():
             cells_per_cluster[cell[1]].append(cell[0])
         else:
@@ -108,7 +115,7 @@ def get_number_of_clusters(col_groups_dir):
     return number_of_col_clusters
 
 
-def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict, n_labels, number_of_clusters):
+def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict, n_labels, number_of_clusters, cell_clustering_alg):
     X_train = []
     y_train = []
     X_test = []
@@ -153,7 +160,7 @@ def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict
                     logger.info("Length of X_tmp: {}".format(len(X_tmp)))
 
                     cells_per_cluster, labels_per_cluster, samples = sampling_labeling(X_tmp, y_tmp,
-                                                                        n_cell_clusters_per_col_cluster_dict[c_idx])
+                                                                        n_cell_clusters_per_col_cluster_dict[c_idx], cell_clustering_alg)
                     labels += [original_data_values_tmp[sample] for sample in samples]
                     X_train, y_train = label_propagation(X_train, X_tmp, y_train, cells_per_cluster, labels_per_cluster)
 
@@ -197,12 +204,11 @@ def dask_classifier(x_train, y_train, x_test):
     return np_predicted
 
 
-def error_detector(col_groups_files_path, output_path, results_path, features_dict, n_labels, number_of_clusters,
-                   classification_mode):
+def error_detector(col_groups_files_path, output_path, results_path, features_dict, n_labels, number_of_clusters, cell_clustering_alg, classification_mode):
     X_train, y_train, X_test, y_test, original_data_values, n_samples = get_train_test_sets(col_groups_files_path, output_path,
                                                                                  results_path,
                                                                                  features_dict, n_labels,
-                                                                                 number_of_clusters)
+                                                                                 number_of_clusters, cell_clustering_alg)
     if classification_mode == "parallel":
         predicted = dask_classifier(X_train, y_train, X_test)
     else:
