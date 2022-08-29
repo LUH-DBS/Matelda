@@ -1,3 +1,4 @@
+import logging
 import math
 import os
 import pickle
@@ -17,7 +18,9 @@ import xgboost as xgb
 import dask.array as da
 import sys
 
-logger = app_logger.get_logger()
+
+logger = logging.getLogger()
+
 
 if not sys.warnoptions:
     import warnings
@@ -50,9 +53,9 @@ def get_cells_features(sandbox_path, output_path):
                     for row_idx in range(len(label_df[col_name])):
                         features_dict[(table_id, col_idx, row_idx, 'gt')] = label_df[col_name][row_idx]
                 table_id += 1
-                print(table_id)
+                logger.info("table_id", table_id)
             except Exception as e:
-                print(e)
+                logger.error(e)
 
     with open(os.path.join(output_path, "features.pkl"), "wb") as filehandler:
         pickle.dump(features_dict, filehandler)
@@ -60,7 +63,7 @@ def get_cells_features(sandbox_path, output_path):
 
 
 def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg):
-    print("sampling_labeling")
+    logger.info("sampling_labeling")
     clustering = None 
 
     if cells_clustering_alg == "km":
@@ -88,7 +91,7 @@ def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_al
 
     diff_n_clusters = n_cell_clusters_per_col_cluster - len(cells_per_cluster.keys())
     if diff_n_clusters != 0:
-        print("K-Means generated {} empty Clusters:))".format(diff_n_clusters))
+        logger.info("K-Means generated {} empty Clusters:))".format(diff_n_clusters))
 
     return cells_per_cluster, labels_per_cluster, samples
 
@@ -165,14 +168,14 @@ def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict
                     X_train, y_train = label_propagation(X_train, X_tmp, y_train, cells_per_cluster, labels_per_cluster)
 
                 except Exception as e:
-                    print(e)
+                    logger.error("e")
 
     with open(os.path.join(output_path, "original_data_values.pkl"), "wb") as filehandler:
         pickle.dump(original_data_values, filehandler)
 
     with open(os.path.join(results_path, "sampled_tuples.pkl"), "wb") as filehandler:
         pickle.dump(labels, filehandler)
-        print("Number of Labeled Cells:", len(labels))
+        logger.info("Number of Labeled Cells:", len(labels))
 
     return X_train, y_train, X_test, y_test, original_data_values, len(labels)
 

@@ -1,3 +1,4 @@
+import logging
 import pickle
 import os
 import pandas as pd
@@ -6,8 +7,7 @@ import app_logger
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.metrics import precision_recall_fscore_support
 
-logger = app_logger.get_logger()
-
+logger = logging.getLogger()
 
 def save_results(n_samples, y_test, predicted, tables_dict, results_path, original_data_values):
     classifier_results = []

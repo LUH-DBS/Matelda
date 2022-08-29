@@ -1,3 +1,4 @@
+import logging
 import shutil
 from cmath import nan
 from collections import Counter
@@ -11,7 +12,6 @@ import pandas as pd
 from openclean.profiling.dataset import dataset_profile
 from sklearn.cluster import DBSCAN, OPTICS
 
-import app_logger
 from dataset_clustering import clean_text
 from ds_utils import clustering
 from nltk import word_tokenize
@@ -21,7 +21,9 @@ import nltk
 from gensim.models import Word2Vec
 import dask.dataframe as dd
 
-logger = app_logger.get_logger()
+logger = logging.getLogger()
+
+
 nltk.download("stopwords")
 
 type_dicts = {'int': 0, 'float': 1, 'str': 2, 'date': 3}

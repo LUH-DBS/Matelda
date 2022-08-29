@@ -1,9 +1,9 @@
+import logging
 import os
 import pickle
 
-import app_logger
 
-logger = app_logger.get_logger()
+logger = logging.getLogger()
 
 
 def get_all_results(output_path, results_path):

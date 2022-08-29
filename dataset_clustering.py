@@ -28,27 +28,6 @@ import gensim.downloader as api
 def get_column_content(df_col):
     return ' '.join(df_col)
 
-
-# class table:
-#     def __init__(self, table_id: int, table_path: str) -> None:
-#         self.table_id = table_id
-#         self.table_path = table_path
-#         self.dask_df = pd.read_csv(table_path, header = 0)
-#
-#     def get_headers(self) -> str:
-#         return ' '.join(self.dask_df.columns)
-#
-#     def get_content(self):
-#         text = self.dask_df.apply(lambda x: get_column_content(x.to_string()), axis = 1)
-#         return text
-#
-# my_table = table(1, "/Users/fatemehahmadi/Documents/Github-Private/Fatemeh/end-to-end-eds/outputs/raha-datasets/col_groups/col_df_labels_cluster_0.csv")
-# my_table.get_content()
-
-# class lake_details:
-#     def __init__(self) -> None:
-#         pass
-
 nltk.download("stopwords")
 
 
@@ -142,7 +121,7 @@ def vectorize(list_of_docs, model):
 
 
 def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
-    logger = app_logger.get_logger()
+    logger = logging.getLogger()
 
     custom_stopwords = set(stopwords.words("english"))
     context_df = get_context_df(sandbox_path)

@@ -6,6 +6,7 @@ import pandas as pd
 
 # TODO: explain tables_ground_truth here
 
+# TODO : add loger
 
 def generate_labels(sandbox_path, output_path):
     sandbox_children = os.listdir(sandbox_path)
