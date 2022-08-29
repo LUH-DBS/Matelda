@@ -81,7 +81,7 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
 
 if __name__ == '__main__':
 
-    logger = app_logger.get_logger()
+    
 
     # App-Config Management
     configs = ConfigParser()
@@ -99,6 +99,9 @@ if __name__ == '__main__':
     table_grouping_enabled = int(configs['EXPERIMENTS']['table_grouping_enabled'])
     column_grouping_enabled = int(configs['EXPERIMENTS']['column_grouping_enabled'])
     cell_feature_generator_enabled = int(configs['EXPERIMENTS']['cell_feature_generator_enabled'])
+    logs_dir = configs["DIRECTORIES"]["logs_dir"]
+
+    logger = app_logger.get_logger(logs_dir)
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
