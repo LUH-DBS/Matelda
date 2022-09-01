@@ -38,10 +38,14 @@ def get_cells_features(sandbox_path, output_path):
         for table in table_dirs:
             try:
                 path = os.path.join(table_dirs_path, table)
-                col_features = np.asarray(generate_raha_features.generate_raha_features(table_dirs_path, table))
+                col_features, col_cell_values_list = generate_raha_features.generate_raha_features(table_dirs_path, table)
                 for col_idx in range(len(col_features)):
                     for row_idx in range(len(col_features[col_idx])):
-                        features_dict[(table_id, col_idx, row_idx, 'og')] = np.append(col_features[col_idx][row_idx],
+                        if not col_cell_values_list[col_idx][row_idx]:
+                            tmp_val = 'null'
+                        else:
+                            tmp_val = col_cell_values_list[col_idx][row_idx]
+                        features_dict[(table_id, col_idx, row_idx, str(tmp_val), 'og')] = np.append(col_features[col_idx][row_idx],
                                                                                       table_id)
                 dirty_df = pd.read_csv(path + "/dirty.csv", sep=",", header="infer", encoding="utf-8", dtype=str,
                                        keep_default_na=False, low_memory=False)
@@ -51,9 +55,13 @@ def get_cells_features(sandbox_path, output_path):
                 label_df = dirty_df.where(dirty_df.values == clean_df.values).notna() * 1
                 for col_idx, col_name in enumerate(label_df.columns):
                     for row_idx in range(len(label_df[col_name])):
-                        features_dict[(table_id, col_idx, row_idx, 'gt')] = label_df[col_name][row_idx]
+                        if not col_cell_values_list[col_idx][row_idx]:
+                            tmp_val = 'null'
+                        else:
+                            tmp_val = col_cell_values_list[col_idx][row_idx]
+                        features_dict[(table_id, col_idx, row_idx, str(tmp_val), 'gt')] = label_df[col_name][row_idx]
                 table_id += 1
-                logger.info("table_id", table_id)
+                logger.info("table_id: {}".format(table_id))
             except Exception as e:
                 logger.error(e)
 
@@ -149,15 +157,19 @@ def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict
                     c_df = group_df[group_df['column_cluster_label'] == c]
                     for index, row in c_df.iterrows():
                         for cell_idx in range(len(row['col_value'])):
-                            X_test.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
-                            y_test.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
+                            if pd.isnull(row['col_value'][cell_idx]):
+                                tmp_val = 'null'
+                            else:
+                                tmp_val = row['col_value'][cell_idx]
+                            X_test.append(features_dict[(row['table_id'], row['col_id'], cell_idx, str(tmp_val), 'og')].tolist())
+                            y_test.append(features_dict[(row['table_id'], row['col_id'], cell_idx,  str(tmp_val), 'gt')].tolist())
                             original_data_values.append(
-                                (row['table_id'], row['col_id'], cell_idx, row['col_value'][cell_idx]))
+                                (row['table_id'], row['col_id'], cell_idx, str(tmp_val)))
 
-                            X_tmp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
-                            y_tmp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
+                            X_tmp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, str(tmp_val), 'og')].tolist())
+                            y_tmp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, str(tmp_val), 'gt')].tolist())
                             original_data_values_tmp.append(
-                                (row['table_id'], row['col_id'], cell_idx, row['col_value'][cell_idx]))
+                                (row['table_id'], row['col_id'], cell_idx, str(tmp_val)))
 
                     logger.info("Length of X_test: {}".format(len(X_test)))
                     logger.info("Length of X_tmp: {}".format(len(X_tmp)))
@@ -168,14 +180,14 @@ def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict
                     X_train, y_train = label_propagation(X_train, X_tmp, y_train, cells_per_cluster, labels_per_cluster)
 
                 except Exception as e:
-                    logger.error("e")
+                    logger.error(e)
 
     with open(os.path.join(output_path, "original_data_values.pkl"), "wb") as filehandler:
         pickle.dump(original_data_values, filehandler)
 
     with open(os.path.join(results_path, "sampled_tuples.pkl"), "wb") as filehandler:
         pickle.dump(labels, filehandler)
-        logger.info("Number of Labeled Cells:", len(labels))
+        logger.info("Number of Labeled Cells: {}".format(len(labels)))
 
     return X_train, y_train, X_test, y_test, original_data_values, len(labels)
 

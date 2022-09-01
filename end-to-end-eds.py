@@ -99,13 +99,20 @@ if __name__ == '__main__':
     table_grouping_enabled = int(configs['EXPERIMENTS']['table_grouping_enabled'])
     column_grouping_enabled = int(configs['EXPERIMENTS']['column_grouping_enabled'])
     cell_feature_generator_enabled = int(configs['EXPERIMENTS']['cell_feature_generator_enabled'])
+    execution_type = configs['EXPERIMENTS']["execution_type"]
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
         logger.info("Output directory is created.")
 
-    freeze_support()
+    if execution_type == "Parallel":
+        freeze_support()
+        with multiprocessing.Pool(processes = multiprocessing.cpu_count()-1) as p:
+            p.starmap(run_experiments, [(sandbox_dir, output_dir, exp_name, exp_number, extract_labels_enabled, table_grouping_enabled, column_grouping_enabled, 
+                                        number_of_labels, cell_clustering_alg, cell_feature_generator_enabled) for number_of_labels in number_of_labels_list for exp_number in experiment_numbers])
 
-with multiprocessing.Pool(processes = multiprocessing.cpu_count()-1) as p:
-    p.starmap(run_experiments, [(sandbox_dir, output_dir, exp_name, exp_number, extract_labels_enabled, table_grouping_enabled, column_grouping_enabled, 
-                                number_of_labels, cell_clustering_alg, cell_feature_generator_enabled) for number_of_labels in number_of_labels_list for exp_number in experiment_numbers])
+    else:
+        for exp_number in experiment_numbers:
+            for number_of_labels in number_of_labels_list:
+                run_experiments(sandbox_dir, output_dir, exp_name, exp_number, extract_labels_enabled, table_grouping_enabled, column_grouping_enabled, 
+                                        number_of_labels, cell_clustering_alg, cell_feature_generator_enabled)
