@@ -41,25 +41,25 @@ def get_context_df(sandbox_path):
     sandbox_children = os.listdir(sandbox_path)
     table_id = 0
     for child_name in sandbox_children:
-        child_path = os.path.join(sandbox_path, child_name)
-        for table in os.listdir(child_path):
-            table_path = os.path.join(child_path, table)
+        if not child_name.startswith("."):
+            child_path = os.path.join(sandbox_path, child_name)
+            for table in os.listdir(child_path):
+                if not table.startswith("."):
+                    table_path = os.path.join(child_path, table)
+                    df_path = os.path.join(table_path, "dirty.csv")
+                    df_text_columns = pd.read_csv(df_path)
+                    df_text_columns = df_text_columns.select_dtypes(include=object)
+                    df_table_text = ""
+                    for column in df_text_columns.columns:
+                        col_text = ' '.join(df_text_columns[column].astype(str).tolist())
+                        df_table_text += col_text
 
-            df_path = os.path.join(table_path, "dirty.csv")
-            df_text_columns = pd.read_csv(df_path)
-            df_text_columns = df_text_columns.select_dtypes(include=object)
-            df_table_text = ""
-            for column in df_text_columns.columns:
-                col_text = ' '.join(df_text_columns[column].astype(str).tolist())
-                df_table_text += col_text
-
-            context_dict['table_id'].append(table_id)
-            context_dict['parent'].append(child_name)
-            context_dict['table_name'].append(table)
-            context_dict['headers'].append(get_df_headers(os.path.join(table_path, "dirty.csv")))
-            context_dict['content'].append(df_table_text)
-
-            table_id += 1
+                    context_dict['table_id'].append(table_id)
+                    context_dict['parent'].append(child_name)
+                    context_dict['table_name'].append(table)
+                    context_dict['headers'].append(get_df_headers(os.path.join(table_path, "dirty.csv")))
+                    context_dict['content'].append(df_table_text)
+                table_id += 1
     context_df = pd.DataFrame.from_dict(context_dict)
     return context_df
 

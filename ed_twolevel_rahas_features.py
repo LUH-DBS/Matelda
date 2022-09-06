@@ -36,34 +36,35 @@ def get_cells_features(sandbox_path, output_path):
         table_dirs_path = os.path.join(sandbox_path, parent)
         table_dirs = os.listdir(table_dirs_path)
         for table in table_dirs:
-            try:
-                path = os.path.join(table_dirs_path, table)
-                col_features, col_cell_values_list = generate_raha_features.generate_raha_features(table_dirs_path, table)
-                for col_idx in range(len(col_features)):
-                    for row_idx in range(len(col_features[col_idx])):
-                        if not col_cell_values_list[col_idx][row_idx]:
-                            tmp_val = 'null'
-                        else:
-                            tmp_val = col_cell_values_list[col_idx][row_idx]
-                        features_dict[(table_id, col_idx, row_idx, str(tmp_val), 'og')] = np.append(col_features[col_idx][row_idx],
-                                                                                      table_id)
-                dirty_df = pd.read_csv(path + "/dirty.csv", sep=",", header="infer", encoding="utf-8", dtype=str,
-                                       keep_default_na=False, low_memory=False)
-                clean_df = pd.read_csv(path + "/" + table + ".csv", sep=",", header="infer", encoding="utf-8",
-                                       dtype=str,
-                                       keep_default_na=False, low_memory=False)
-                label_df = dirty_df.where(dirty_df.values == clean_df.values).notna() * 1
-                for col_idx, col_name in enumerate(label_df.columns):
-                    for row_idx in range(len(label_df[col_name])):
-                        if not col_cell_values_list[col_idx][row_idx]:
-                            tmp_val = 'null'
-                        else:
-                            tmp_val = col_cell_values_list[col_idx][row_idx]
-                        features_dict[(table_id, col_idx, row_idx, str(tmp_val), 'gt')] = label_df[col_name][row_idx]
-                table_id += 1
-                logger.info("table_id: {}".format(table_id))
-            except Exception as e:
-                logger.error(e)
+            if not table.startswith("."):
+                try:
+                    path = os.path.join(table_dirs_path, table)
+                    col_features, col_cell_values_list = generate_raha_features.generate_raha_features(table_dirs_path, table)
+                    for col_idx in range(len(col_features)):
+                        for row_idx in range(len(col_features[col_idx])):
+                            if not col_cell_values_list[col_idx][row_idx]:
+                                tmp_val = 'null'
+                            else:
+                                tmp_val = col_cell_values_list[col_idx][row_idx]
+                            features_dict[(table_id, col_idx, row_idx, str(tmp_val), 'og')] = np.append(col_features[col_idx][row_idx],
+                                                                                        table_id)
+                    dirty_df = pd.read_csv(path + "/dirty.csv", sep=",", header="infer", encoding="utf-8", dtype=str,
+                                        keep_default_na=False, low_memory=False)
+                    clean_df = pd.read_csv(path + "/" + table + ".csv", sep=",", header="infer", encoding="utf-8",
+                                        dtype=str,
+                                        keep_default_na=False, low_memory=False)
+                    label_df = dirty_df.where(dirty_df.values == clean_df.values).notna() * 1
+                    for col_idx, col_name in enumerate(label_df.columns):
+                        for row_idx in range(len(label_df[col_name])):
+                            if not col_cell_values_list[col_idx][row_idx]:
+                                tmp_val = 'null'
+                            else:
+                                tmp_val = col_cell_values_list[col_idx][row_idx]
+                            features_dict[(table_id, col_idx, row_idx, str(tmp_val), 'gt')] = label_df[col_name][row_idx]
+                    table_id += 1
+                    logger.info("table_id: {}".format(table_id))
+                except Exception as e:
+                    logger.error(e)
 
     with open(os.path.join(output_path, "features.pkl"), "wb") as filehandler:
         pickle.dump(features_dict, filehandler)

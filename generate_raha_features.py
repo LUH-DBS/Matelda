@@ -111,7 +111,7 @@ def run_strategies(self, d):
         if os.path.exists(sp_folder_path):
             sys.stderr.write("I just load strategies' results as they have already been run on the dataset!\n")
             strategy_profiles_list = [pickle.load(open(os.path.join(sp_folder_path, strategy_file), "rb"))
-                                      for strategy_file in os.listdir(sp_folder_path)]
+                                      for strategy_file in os.listdir(sp_folder_path) if not strategy_file.startswith(".")]
         else:
             if self.SAVE_RESULTS:
                 os.mkdir(sp_folder_path)

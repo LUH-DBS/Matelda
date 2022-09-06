@@ -54,10 +54,11 @@ def get_tables_dict(sandbox_path):
     table_id = 0
     table_dirs = os.listdir(sandbox_path)
     for table in table_dirs:
-        table_path = os.path.join(sandbox_path, table)
-        table_df = pd.read_csv(table_path + "/dirty.csv")
-        all_tables_dict[table_id] = {"name": table, "schema": table_df.columns.tolist()}
-        table_id += 1
+        if not table.startswith("."):
+            table_path = os.path.join(sandbox_path, table)
+            table_df = pd.read_csv(table_path + "/dirty.csv")
+            all_tables_dict[table_id] = {"name": table, "schema": table_df.columns.tolist()}
+            table_id += 1
     return all_tables_dict
 
 
