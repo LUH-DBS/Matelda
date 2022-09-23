@@ -1,8 +1,4 @@
-import logging
-
-from matplotlib.pyplot import axis
-import pandas as pd 
-import os
+import pandas as pd
 import re
 import string
 
@@ -10,7 +6,7 @@ import nltk
 import numpy as np
 import pandas as pd
 
-from collections import Counter 
+from collections import Counter
 
 from nltk import word_tokenize
 from nltk.corpus import stopwords
@@ -18,51 +14,11 @@ from nltk.corpus import stopwords
 from sklearn.cluster import MiniBatchKMeans, DBSCAN
 from sklearn.metrics import silhouette_samples, silhouette_score
 
-import app_logger
-from ds_utils.config import set_display_options, set_random_seed
-from ds_utils.clustering import Tokenizer, load_data, clean_news_data, vectorize, mbkmeans_clusters
-
 import gensim.downloader as api
 
-
-def get_column_content(df_col):
-    return ' '.join(df_col)
-
-nltk.download("stopwords")
-
-
-def get_df_headers(table_path):
-    df = pd.read_csv(table_path)
-    return ' '.join(df.columns)
-
-
-def get_context_df(sandbox_path):
-    context_dict = {'table_id': [], 'parent': [], 'table_name': [], 'headers': [], 'content': []}
-    sandbox_children = os.listdir(sandbox_path)
-    table_id = 0
-    for child_name in sandbox_children:
-        if not child_name.startswith("."):
-            child_path = os.path.join(sandbox_path, child_name)
-            for table in os.listdir(child_path):
-                if not table.startswith("."):
-                    table_path = os.path.join(child_path, table)
-                    df_path = os.path.join(table_path, "dirty.csv")
-                    df_text_columns = pd.read_csv(df_path)
-                    df_text_columns = df_text_columns.select_dtypes(include=object)
-                    df_table_text = ""
-                    for column in df_text_columns.columns:
-                        col_text = ' '.join(df_text_columns[column].astype(str).tolist())
-                        df_table_text += col_text
-
-                    context_dict['table_id'].append(table_id)
-                    context_dict['parent'].append(child_name)
-                    context_dict['table_name'].append(table)
-                    context_dict['headers'].append(get_df_headers(os.path.join(table_path, "dirty.csv")))
-                    context_dict['content'].append(df_table_text)
-                table_id += 1
-    context_df = pd.DataFrame.from_dict(context_dict)
-    return context_df
-
+from pyspark.sql import SparkSession, DataFrame
+#import dbscan
+#from scipy.spatial import distance
 
 def clean_text(text, tokenizer, stopwords):
     """Pre-process text and generate tokens
@@ -90,7 +46,7 @@ def clean_text(text, tokenizer, stopwords):
     return tokens
 
 
-def vectorize(list_of_docs, model):
+def vectorize(tokens, model):
     """Generate vectors for list of documents using a Word Embedding
 
     Args:
@@ -100,81 +56,81 @@ def vectorize(list_of_docs, model):
     Returns:
         List of document vectors
     """
-    features = []
+    print(type(tokens.collect()))
+    print(tokens.collect())
+    zero_vector = np.zeros(model.vector_size)
+    vectors = []
+    for token in tokens:
+        if token in model:
+            try:
+                vectors.append(model[token])
+            except KeyError:
+                continue
+    if vectors:
+        vectors = np.asarray(vectors)
+        avg_vec = vectors.mean(axis=0)
+        return avg_vec
+    else:
+        return zero_vector
 
-    for tokens in list_of_docs:
-        zero_vector = np.zeros(model.vector_size)
-        vectors = []
-        for token in tokens:
-            if token in model:
-                try:
-                    vectors.append(model[token])
-                except KeyError:
-                    continue
-        if vectors:
-            vectors = np.asarray(vectors)
-            avg_vec = vectors.mean(axis=0)
-            features.append(avg_vec)
-        else:
-            features.append(zero_vector)
-    return features
+def cluster_datasets_pyspark(csv_paths_df: DataFrame, output_path: str, table_grouping_enabled: bool, auto_clustering_enabled: bool):
+    spark = SparkSession.getActiveSession()
+    log4jLogger = spark._jvm.org.apache.log4j
+    logger = log4jLogger.LogManager.getLogger(__name__)
+
+    nltk.download('stopwords')
+
+    # TODO: Fix this if-else
+    if table_grouping_enabled:
+        logger.info("Creating context DataFrame")
+        context_rdd = csv_paths_df.rdd.map(lambda row: create_table_context(row))
+        context_df = context_rdd.toDF(['table_id', 'parent','table_name', 'headers', 'content', 'text', 'token'])
+        context_df.show()
+        #logger.info("Clustering context DataFrame")
+        #if auto_clustering_enabled:
+            # TODO: embedding model and DBSCAN params in config file
+            # model = Word2Vec(sentences=tokenized_docs, vector_size=100, workers=1, seed=42)
+        #    model = api.load('word2vec-google-news-300')
+        #    vectorized_docs_df = context_df.transform(lambda row: vectorize(row.token, model))
+        #    vectorized_docs_df.show()
+            #print(dbscan.process(spark, vectorized_docs_rdd, .5, 5, distance.euclidean, , "checkpoint"))
+            #clustering = DBSCAN(eps=0.5, min_samples=5).fit(vectorized_docs)
+            #cluster_labels = clustering.labels_
+        #else:
+        #    cluster_labels = np.ones(context_df.count()).tolist()
+        #table_grouping_df = cluster_datasets(csv_paths_df, auto_clustering_enabled)
+
+        #table_grouping_df.write.parquet(output_path, mode='overwrite')
+        #context_df.show()
+    else:
+        logger.info("Loading table grouping from disk")
+        table_grouping_df = spark.read.parquet(output_path)
 
 
-def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
-    logger = logging.getLogger()
-
+def create_table_context(row):
     custom_stopwords = set(stopwords.words("english"))
-    context_df = get_context_df(sandbox_path)
+    dirty_df = pd.read_csv(row.dirty_path, sep=",", header="infer", encoding="utf-8", dtype=str,
+                        keep_default_na=False, low_memory=False)
+    df_text_columns = dirty_df.select_dtypes(include=object)
 
-    df = context_df.copy()
-    df = df.fillna("")
+    # Table content
+    df_table_text = ""
+    for column in df_text_columns.columns:
+        col_text = ' '.join(df_text_columns[column].astype(str).tolist())
+        df_table_text += col_text
 
-    text_columns = ["parent", "table_name", "headers", "content"]
-    for col in text_columns:
-        df[col] = df[col].astype(str)
+    # Column names
+    df_column_text = ' '.join(dirty_df.columns)
 
     # Create text column based on parent, table_name, and headers
     # TODO: check licence
-    df["text"] = df[text_columns].apply(lambda x: " | ".join(x), axis=1)
-    df["tokens"] = df["text"].map(lambda x: clean_text(x, word_tokenize, custom_stopwords))
+    text = " | ".join([row.parent, row.table_name, df_column_text, df_table_text])
+    tokens = set(clean_text(text, word_tokenize, custom_stopwords))
 
     # Remove duplicated after preprocessing
-    _, idx = np.unique(df["tokens"], return_index=True)
-    df = df.iloc[idx, :]
+    tokens = set(tokens)
 
     # Remove empty values
-    df = df.loc[df.tokens.map(lambda x: len(x) > 0), ["text", "tokens"]]
+    tokens = list(filter(lambda token: len(token) > 0, tokens))
 
-    logger.info(f"Original dataframe: {context_df.shape}")
-    logger.info(f"Pre-processed dataframe: {df.shape}")
-
-    docs = df["text"].values
-    tokenized_docs = df["tokens"].values
-    vocab = Counter()
-    for token in tokenized_docs:
-        vocab.update(token)
-
-    logger.info(f"Most common vocabs are: {vocab.most_common(10)}")
-
-    if auto_clustering_enabled:
-        # TODO: embedding model and DBSCAN params in config file
-        # model = Word2Vec(sentences=tokenized_docs, vector_size=100, workers=1, seed=42)
-        model = api.load('word2vec-google-news-300')
-        vectorized_docs = vectorize(tokenized_docs, model=model)
-        clustering = DBSCAN(eps=0.5, min_samples=5).fit(vectorized_docs)
-        cluster_labels = clustering.labels_
-    else:
-        cluster_labels = np.ones(len(tokenized_docs)).tolist()
-
-    df_clusters = pd.DataFrame({
-        "text": docs,
-        "tokens": [" ".join(text) for text in tokenized_docs],
-        "cluster": cluster_labels
-    })
-
-    # TODO: Change join
-    context_df = context_df.join(df_clusters)
-    context_df.to_csv(output_path)
-
-    return context_df
-
+    return [row.table_id, row.parent, row.table_name, df_column_text, df_table_text, text, tokens]

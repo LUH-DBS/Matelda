@@ -16,3 +16,6 @@ dependencies:
     - scikit-learn==1.1.2
     - xgboost==1.6.2
     - nltk==3.7
+    - pyspark==3.3.0
+    - pyarrow==9.0.0
+    - pyspark_dbscan==1.0.6
