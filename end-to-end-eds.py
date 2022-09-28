@@ -44,7 +44,7 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
 
 
 if __name__ == "__main__":
-    spark = SparkSession.builder.appName("ED-Scale").master('local[*]').getOrCreate()
+    spark = SparkSession.builder.appName("ED-Scale").getOrCreate()
     spark.sparkContext.setLogLevel("INFO")
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
@@ -59,6 +59,7 @@ if __name__ == "__main__":
         os.makedirs(configs["DIRECTORIES"]["output_dir"])
 
     logger.info("Starting experiments")
+    # TODO: outsoure running the different experiments in python. Maybe better solution to submit each experiment individually for cluster execution.
     for exp_number in [int(number) for number in configs['EXPERIMENTS']['experiment_numbers'].split(',')]:
         for number_of_labels in [int(number) for number in configs['EXPERIMENTS']['number_of_labels_list'].split(',')]:
             logger.info("Runing experiment: Number:{} Labels:{}".format(exp_number, number_of_labels))
