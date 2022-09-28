@@ -18,8 +18,10 @@ import gensim.downloader as api
 
 from pyspark.sql import SparkSession, DataFrame
 from pyspark.sql.functions import lit, col
-#import dbscan
-#from scipy.spatial import distance
+
+# import dbscan
+# from scipy.spatial import distance
+
 
 def clean_text(text, tokenizer, stopwords):
     """Pre-process text and generate tokens
@@ -30,15 +32,13 @@ def clean_text(text, tokenizer, stopwords):
     Returns:
         Tokenized text.
     """
-    text = ''.join(word.strip(string.punctuation) for word in text)
+    text = "".join(word.strip(string.punctuation) for word in text)
     text = str(text).lower()  # Lowercase words
     text = re.sub(r"\[(.*?)\]", "", text)  # Remove [+XYZ chars] in content
     text = re.sub(r"\s+", " ", text)  # Remove multiple spaces in content
     text = re.sub(r"\w+…|…", "", text)  # Remove ellipsis (and last word)
     text = re.sub(r"(?<=\w)-(?=\w)", " ", text)  # Replace dash between words
-    text = re.sub(
-        f"[{re.escape(string.punctuation)}]", "", text
-    )  # Remove punctuation
+    text = re.sub(f"[{re.escape(string.punctuation)}]", "", text)  # Remove punctuation
 
     tokens = tokenizer(text)  # Get tokens from text
     tokens = [t for t in tokens if t not in stopwords]  # Remove stopwords
@@ -74,18 +74,26 @@ def vectorize(tokens, model):
     else:
         return zero_vector
 
-def cluster_datasets_pyspark(csv_paths_df: DataFrame, output_path: str, table_grouping_enabled: bool, auto_clustering_enabled: bool):
+
+def cluster_datasets_pyspark(
+    csv_paths_df: DataFrame,
+    output_path: str,
+    table_grouping_enabled: bool,
+    auto_clustering_enabled: bool,
+):
     spark = SparkSession.getActiveSession()
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
 
-    nltk.download('stopwords')
+    nltk.download("stopwords")
 
     # TODO: Fix this if-else
     if table_grouping_enabled:
         logger.warn("Creating context DataFrame")
         context_rdd = csv_paths_df.rdd.map(lambda row: create_table_context(row))
-        context_df = context_rdd.toDF(['table_id', 'parent','table_name', 'headers', 'content', 'text', 'token'])
+        context_df = context_rdd.toDF(
+            ["table_id", "parent", "table_name", "headers", "content", "text", "token"]
+        )
         logger.warn("Clustering context DataFrame")
         print(auto_clustering_enabled)
         if auto_clustering_enabled:
@@ -95,35 +103,43 @@ def cluster_datasets_pyspark(csv_paths_df: DataFrame, output_path: str, table_gr
         #    model = api.load('word2vec-google-news-300')
         #    vectorized_docs_df = context_df.transform(lambda row: vectorize(row.token, model))
         #    vectorized_docs_df.show()
-            #print(dbscan.process(spark, vectorized_docs_rdd, .5, 5, distance.euclidean, , "checkpoint"))
-            #clustering = DBSCAN(eps=0.5, min_samples=5).fit(vectorized_docs)
-            #cluster_labels = clustering.labels_
+        # print(dbscan.process(spark, vectorized_docs_rdd, .5, 5, distance.euclidean, , "checkpoint"))
+        # clustering = DBSCAN(eps=0.5, min_samples=5).fit(vectorized_docs)
+        # cluster_labels = clustering.labels_
         else:
             logger.warn("Clustering without AUTO_CLUSTERING")
             context_df = context_df.withColumn("cluster", lit(1))
 
-        table_grouping_df = context_df.select(col('table_id'), col('cluster'))
-        table_grouping_df.write.parquet(output_path, mode='overwrite')
+        table_grouping_df = context_df.select(col("table_id"), col("cluster"))
+        table_grouping_df.write.parquet(output_path, mode="overwrite")
         table_grouping_df.show()
     else:
         logger.warn("Loading table grouping from disk")
         table_grouping_df = spark.read.parquet(output_path)
     return table_grouping_df
 
+
 def create_table_context(row):
     custom_stopwords = set(stopwords.words("english"))
-    dirty_df = pd.read_csv(row.dirty_path, sep=",", header="infer", encoding="utf-8", dtype=str,
-                        keep_default_na=False, low_memory=False)
+    dirty_df = pd.read_csv(
+        row.dirty_path,
+        sep=",",
+        header="infer",
+        encoding="utf-8",
+        dtype=str,
+        keep_default_na=False,
+        low_memory=False,
+    )
     df_text_columns = dirty_df.select_dtypes(include=object)
 
     # Table content
     df_table_text = ""
     for column in df_text_columns.columns:
-        col_text = ' '.join(df_text_columns[column].astype(str).tolist())
+        col_text = " ".join(df_text_columns[column].astype(str).tolist())
         df_table_text += col_text
 
     # Column names
-    df_column_text = ' '.join(dirty_df.columns)
+    df_column_text = " ".join(dirty_df.columns)
 
     # Create text column based on parent, table_name, and headers
     # TODO: check licence
@@ -136,4 +152,12 @@ def create_table_context(row):
     # Remove empty values
     tokens = list(filter(lambda token: len(token) > 0, tokens))
 
-    return [row.table_id, row.parent, row.table_name, df_column_text, df_table_text, text, tokens]
+    return [
+        row.table_id,
+        row.parent,
+        row.table_name,
+        df_column_text,
+        df_table_text,
+        text,
+        tokens,
+    ]
