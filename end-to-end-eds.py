@@ -26,41 +26,42 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
 
 def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_labels_enabled, table_grouping_enabled,
                     column_grouping_enabled, labeling_budget, cell_clustering_alg, cell_feature_generator_enabled):
-    logger.info("Genereting CSV paths")
+    logger.warn("Genereting CSV paths")
     csv_paths_df = generate_csv_paths(sandbox_path)
 
-    logger.info("Generating labels")
+    logger.warn("Generating labels")
     labels_df = generate_labels_pyspark(csv_paths_df, os.path.join(output_path, configs["DIRECTORIES"]["labels_filename"]), extract_labels_enabled)
     labels_df.show()
 
-    logger.info("Creating experiment output directory")
+    logger.warn("Creating experiment output directory")
     experiment_output_path = os.path.join(output_path, exp_name)
     if not os.path.exists(experiment_output_path):
         os.makedirs(experiment_output_path)
 
-    logger.info("Grouping tables")
+    logger.warn("Grouping tables")
     table_grouping_df = cluster_datasets_pyspark(csv_paths_df, os.path.join(output_path, configs["DIRECTORIES"]["table_grouping_output_filename"]), table_grouping_enabled, configs["TABLE_GROUPING"]["auto_clustering_enabled"])
 
 
 
 if __name__ == "__main__":
     spark = SparkSession.builder.appName("ED-Scale").getOrCreate()
-    spark.sparkContext.setLogLevel("INFO")
+    # Workaround for logging. At log level INFO our log messages will be lost. Python's logging module does not work with pyspark.
+    spark.sparkContext.setLogLevel("WARN")
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
-    logger.info("Pyspark initialized")
+    logger.warn("Pyspark initialized")
 
-    logger.info("Reading config")
+    logger.warn("Reading config")
     configs = ConfigParser()
     configs.read("config.ini")
 
-    logger.info("Creating output directory")
+    logger.warn("Creating output directory")
     if not os.path.exists(configs["DIRECTORIES"]["output_dir"]):
         os.makedirs(configs["DIRECTORIES"]["output_dir"])
 
-    logger.info("Starting experiments")
+    logger.warn("Starting experiments")
     # TODO: outsoure running the different experiments in python. Maybe better solution to submit each experiment individually for cluster execution.
     for exp_number in [int(number) for number in configs['EXPERIMENTS']['experiment_numbers'].split(',')]:
         for number_of_labels in [int(number) for number in configs['EXPERIMENTS']['number_of_labels_list'].split(',')]:
-            logger.info("Runing experiment: Number:{} Labels:{}".format(exp_number, number_of_labels))
+            logger.warn("Runing experiment: Number:{} Labels:{}".format(exp_number, number_of_labels))
             run_experiments(configs["DIRECTORIES"]["sandbox_dir"], configs["DIRECTORIES"]["output_dir"], configs['EXPERIMENTS']['exp_name'], exp_number, int(configs['EXPERIMENTS']['extract_labels_enabled']), int(configs['EXPERIMENTS']['table_grouping_enabled']), int(configs['EXPERIMENTS']['column_grouping_enabled']), number_of_labels, configs["CLUSTERING"]["cells_clustering_alg"], int(configs['EXPERIMENTS']['cell_feature_generator_enabled']))

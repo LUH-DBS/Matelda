@@ -82,11 +82,11 @@ def cluster_datasets_pyspark(csv_paths_df: DataFrame, output_path: str, table_gr
 
     # TODO: Fix this if-else
     if table_grouping_enabled:
-        logger.info("Creating context DataFrame")
+        logger.warn("Creating context DataFrame")
         context_rdd = csv_paths_df.rdd.map(lambda row: create_table_context(row))
         context_df = context_rdd.toDF(['table_id', 'parent','table_name', 'headers', 'content', 'text', 'token'])
         context_df.show()
-        #logger.info("Clustering context DataFrame")
+        #logger.warn("Clustering context DataFrame")
         #if auto_clustering_enabled:
             # TODO: embedding model and DBSCAN params in config file
             # model = Word2Vec(sentences=tokenized_docs, vector_size=100, workers=1, seed=42)
@@ -103,7 +103,7 @@ def cluster_datasets_pyspark(csv_paths_df: DataFrame, output_path: str, table_gr
         #table_grouping_df.write.parquet(output_path, mode='overwrite')
         #context_df.show()
     else:
-        logger.info("Loading table grouping from disk")
+        logger.warn("Loading table grouping from disk")
         table_grouping_df = spark.read.parquet(output_path)
 
 

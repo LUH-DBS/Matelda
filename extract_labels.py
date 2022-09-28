@@ -25,12 +25,12 @@ def generate_labels_pyspark(csv_paths_df: DataFrame, labels_path: str, extract_l
     logger = log4jLogger.LogManager.getLogger(__name__)
 
     if extract_labels_enabled:
-        logger.info("Extracting labels")
+        logger.warn("Extracting labels")
         labels_rdd = csv_paths_df.rdd.flatMap(lambda row: generate_table_ground_truth(row))
         labels_df = labels_rdd.toDF(['table_id', 'column_id','row_id', 'value'])
         labels_df.write.parquet(labels_path, mode='overwrite')
     else:
-        logger.info("Loading labels from disk")
+        logger.warn("Loading labels from disk")
         labels_df = spark.read.parquet(labels_path)
 
     return labels_df
