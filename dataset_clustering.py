@@ -17,6 +17,7 @@ from sklearn.metrics import silhouette_samples, silhouette_score
 import gensim.downloader as api
 
 from pyspark.sql import SparkSession, DataFrame
+from pyspark.sql.functions import lit, col
 #import dbscan
 #from scipy.spatial import distance
 
@@ -85,9 +86,10 @@ def cluster_datasets_pyspark(csv_paths_df: DataFrame, output_path: str, table_gr
         logger.warn("Creating context DataFrame")
         context_rdd = csv_paths_df.rdd.map(lambda row: create_table_context(row))
         context_df = context_rdd.toDF(['table_id', 'parent','table_name', 'headers', 'content', 'text', 'token'])
-        context_df.show()
-        #logger.warn("Clustering context DataFrame")
-        #if auto_clustering_enabled:
+        logger.warn("Clustering context DataFrame")
+        print(auto_clustering_enabled)
+        if auto_clustering_enabled:
+            logger.warn("Clustering with AUTO_CLUSTERING")
             # TODO: embedding model and DBSCAN params in config file
             # model = Word2Vec(sentences=tokenized_docs, vector_size=100, workers=1, seed=42)
         #    model = api.load('word2vec-google-news-300')
@@ -96,16 +98,17 @@ def cluster_datasets_pyspark(csv_paths_df: DataFrame, output_path: str, table_gr
             #print(dbscan.process(spark, vectorized_docs_rdd, .5, 5, distance.euclidean, , "checkpoint"))
             #clustering = DBSCAN(eps=0.5, min_samples=5).fit(vectorized_docs)
             #cluster_labels = clustering.labels_
-        #else:
-        #    cluster_labels = np.ones(context_df.count()).tolist()
-        #table_grouping_df = cluster_datasets(csv_paths_df, auto_clustering_enabled)
+        else:
+            logger.warn("Clustering without AUTO_CLUSTERING")
+            context_df = context_df.withColumn("cluster", lit(1))
 
-        #table_grouping_df.write.parquet(output_path, mode='overwrite')
-        #context_df.show()
+        table_grouping_df = context_df.select(col('table_id'), col('cluster'))
+        table_grouping_df.write.parquet(output_path, mode='overwrite')
+        table_grouping_df.show()
     else:
         logger.warn("Loading table grouping from disk")
         table_grouping_df = spark.read.parquet(output_path)
-
+    return table_grouping_df
 
 def create_table_context(row):
     custom_stopwords = set(stopwords.words("english"))
