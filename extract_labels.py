@@ -47,6 +47,7 @@ def generate_labels_pyspark(
             lambda row: generate_table_ground_truth(row)
         )
         labels_df = labels_rdd.toDF(["table_id", "column_id", "row_id", "value"])
+        logger.warn("Writing labels to file")
         labels_df.write.parquet(labels_path, mode="overwrite")
     else:
         logger.warn("Loading labels from disk")

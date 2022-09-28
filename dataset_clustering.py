@@ -109,6 +109,7 @@ def cluster_datasets_pyspark(
             context_df = context_df.withColumn("cluster", lit(1))
 
         table_grouping_df = context_df.select(col("table_id"), col("cluster"))
+        logger.warn("Writing table clustering result to disk.")
         table_grouping_df.write.parquet(output_path, mode="overwrite")
         table_grouping_df.show()
     else:
