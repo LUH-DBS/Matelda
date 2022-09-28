@@ -52,7 +52,7 @@ def run_experiments(
     labels_path: str,
     table_grouping_output_path: str,
     table_auto_clustering,
-    cell_clustering_alg,
+    cells_clustering_alg,
     cell_feature_generator_enabled,
 ):
     logger.warn("Genereting CSV paths")
