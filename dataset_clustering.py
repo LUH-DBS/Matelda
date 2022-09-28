@@ -6,21 +6,16 @@ import nltk
 import numpy as np
 import pandas as pd
 
-from collections import Counter
-
 from nltk import word_tokenize
 from nltk.corpus import stopwords
-
-from sklearn.cluster import MiniBatchKMeans, DBSCAN
-from sklearn.metrics import silhouette_samples, silhouette_score
 
 import gensim.downloader as api
 
 from pyspark.sql import SparkSession, DataFrame
-from pyspark.sql.functions import lit, col
+from pyspark.sql.functions import lit, col, udf
 
-# import dbscan
-# from scipy.spatial import distance
+import dbscan
+from scipy.spatial import distance
 
 
 def clean_text(text, tokenizer, stopwords):
@@ -57,8 +52,6 @@ def vectorize(tokens, model):
     Returns:
         List of document vectors
     """
-    print(type(tokens.collect()))
-    print(tokens.collect())
     zero_vector = np.zeros(model.vector_size)
     vectors = []
     for token in tokens:
@@ -87,21 +80,22 @@ def cluster_datasets_pyspark(
 
     nltk.download("stopwords")
 
-    if table_grouping_enabled:
+    if table_grouping_enabled == 1:
         logger.warn("Creating context DataFrame")
         context_rdd = csv_paths_df.rdd.map(lambda row: create_table_context(row))
         context_df = context_rdd.toDF(
             ["table_id", "parent", "table_name", "headers", "content", "text", "token"]
+        #    ["table_id"] + [str(i) for i in range(model.vector_size]
         )
         logger.warn("Clustering context DataFrame")
-        if auto_clustering_enabled == True:
+        if auto_clustering_enabled == 1:
             logger.warn("Clustering with AUTO_CLUSTERING")
             # TODO: embedding model and DBSCAN params in config file
             # model = Word2Vec(sentences=tokenized_docs, vector_size=100, workers=1, seed=42)
             # model = api.load('word2vec-google-news-300')
             # vectorized_docs_df = context_df.transform(lambda row: vectorize(row.token, model))
             # vectorized_docs_df.show()
-            # print(dbscan.process(spark, vectorized_docs_rdd, .5, 5, distance.euclidean, , "checkpoint"))
+            print(dbscan.process(spark, context_df.select(col("table_id")), .5, 5, distance.euclidean, 1, "checkpoint_table_clustering"))
             # clustering = DBSCAN(eps=0.5, min_samples=5).fit(vectorized_docs)
             # cluster_labels = clustering.labels_
         else:
@@ -151,6 +145,9 @@ def create_table_context(row):
     # Remove empty values
     tokens = list(filter(lambda token: len(token) > 0, tokens))
 
+    #model = api.load('word2vec-google-news-300')
+    #vectorized_docs = vectorize(tokens, model=model)
+
     return [
         row.table_id,
         row.parent,
@@ -159,4 +156,4 @@ def create_table_context(row):
         df_table_text,
         text,
         tokens,
-    ]
+    ] #+ vectorized_docs

@@ -126,9 +126,9 @@ if __name__ == "__main__":
                 cell_feature_generator_enabled=int(
                     configs["EXPERIMENTS"]["cell_feature_generator_enabled"]
                 ),
-                table_auto_clustering=configs["TABLE_GROUPING"][
+                table_auto_clustering=int(configs["TABLE_GROUPING"][
                     "auto_clustering_enabled"
-                ],
+                ]),
                 sandbox_path=configs["DIRECTORIES"]["sandbox_dir"],
                 output_path=configs["DIRECTORIES"]["output_dir"],
                 labels_path=configs["DIRECTORIES"]["labels_filename"],
