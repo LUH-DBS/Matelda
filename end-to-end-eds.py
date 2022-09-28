@@ -41,14 +41,17 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
 
 
 def run_experiments(
-    sandbox_path,
-    output_path,
-    exp_name,
+    exp_name: str,
     exp_number,
+    labeling_budget,
     extract_labels_enabled,
     table_grouping_enabled,
     column_grouping_enabled,
-    labeling_budget,
+    sandbox_path: str,
+    output_path: str,
+    labels_path: str,
+    table_grouping_output_path: str,
+    table_auto_clustering,
     cell_clustering_alg,
     cell_feature_generator_enabled,
 ):
@@ -58,10 +61,9 @@ def run_experiments(
     logger.warn("Generating labels")
     labels_df = generate_labels_pyspark(
         csv_paths_df,
-        os.path.join(output_path, configs["DIRECTORIES"]["labels_filename"]),
+        os.path.join(output_path, labels_path),
         extract_labels_enabled,
     )
-    labels_df.show()
 
     logger.warn("Creating experiment output directory")
     experiment_output_path = os.path.join(output_path, exp_name)
@@ -71,11 +73,9 @@ def run_experiments(
     logger.warn("Grouping tables")
     table_grouping_df = cluster_datasets_pyspark(
         csv_paths_df,
-        os.path.join(
-            output_path, configs["DIRECTORIES"]["table_grouping_output_filename"]
-        ),
+        os.path.join(output_path, table_grouping_output_path),
         table_grouping_enabled,
-        configs["TABLE_GROUPING"]["auto_clustering_enabled"],
+        table_auto_clustering,
     )
 
 
@@ -111,14 +111,29 @@ if __name__ == "__main__":
                 )
             )
             run_experiments(
-                configs["DIRECTORIES"]["sandbox_dir"],
-                configs["DIRECTORIES"]["output_dir"],
-                configs["EXPERIMENTS"]["exp_name"],
-                exp_number,
-                int(configs["EXPERIMENTS"]["extract_labels_enabled"]),
-                int(configs["EXPERIMENTS"]["table_grouping_enabled"]),
-                int(configs["EXPERIMENTS"]["column_grouping_enabled"]),
-                number_of_labels,
-                configs["CLUSTERING"]["cells_clustering_alg"],
-                int(configs["EXPERIMENTS"]["cell_feature_generator_enabled"]),
+                exp_name=configs["EXPERIMENTS"]["exp_name"],
+                labeling_budget=number_of_labels,
+                exp_number=exp_number,
+                extract_labels_enabled=int(
+                    configs["EXPERIMENTS"]["extract_labels_enabled"]
+                ),
+                table_grouping_enabled=int(
+                    configs["EXPERIMENTS"]["table_grouping_enabled"]
+                ),
+                column_grouping_enabled=int(
+                    configs["EXPERIMENTS"]["column_grouping_enabled"]
+                ),
+                cell_feature_generator_enabled=int(
+                    configs["EXPERIMENTS"]["cell_feature_generator_enabled"]
+                ),
+                table_auto_clustering=configs["TABLE_GROUPING"][
+                    "auto_clustering_enabled"
+                ],
+                sandbox_path=configs["DIRECTORIES"]["sandbox_dir"],
+                output_path=configs["DIRECTORIES"]["output_dir"],
+                labels_path=configs["DIRECTORIES"]["labels_filename"],
+                table_grouping_output_path=configs["DIRECTORIES"][
+                    "table_grouping_output_filename"
+                ],
+                cells_clustering_alg=configs["CLUSTERING"]["cells_clustering_alg"],
             )

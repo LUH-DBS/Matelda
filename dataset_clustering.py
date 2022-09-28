@@ -87,7 +87,6 @@ def cluster_datasets_pyspark(
 
     nltk.download("stopwords")
 
-    # TODO: Fix this if-else
     if table_grouping_enabled:
         logger.warn("Creating context DataFrame")
         context_rdd = csv_paths_df.rdd.map(lambda row: create_table_context(row))
@@ -95,17 +94,16 @@ def cluster_datasets_pyspark(
             ["table_id", "parent", "table_name", "headers", "content", "text", "token"]
         )
         logger.warn("Clustering context DataFrame")
-        print(auto_clustering_enabled)
-        if auto_clustering_enabled:
+        if auto_clustering_enabled == True:
             logger.warn("Clustering with AUTO_CLUSTERING")
             # TODO: embedding model and DBSCAN params in config file
             # model = Word2Vec(sentences=tokenized_docs, vector_size=100, workers=1, seed=42)
-        #    model = api.load('word2vec-google-news-300')
-        #    vectorized_docs_df = context_df.transform(lambda row: vectorize(row.token, model))
-        #    vectorized_docs_df.show()
-        # print(dbscan.process(spark, vectorized_docs_rdd, .5, 5, distance.euclidean, , "checkpoint"))
-        # clustering = DBSCAN(eps=0.5, min_samples=5).fit(vectorized_docs)
-        # cluster_labels = clustering.labels_
+            # model = api.load('word2vec-google-news-300')
+            # vectorized_docs_df = context_df.transform(lambda row: vectorize(row.token, model))
+            # vectorized_docs_df.show()
+            # print(dbscan.process(spark, vectorized_docs_rdd, .5, 5, distance.euclidean, , "checkpoint"))
+            # clustering = DBSCAN(eps=0.5, min_samples=5).fit(vectorized_docs)
+            # cluster_labels = clustering.labels_
         else:
             logger.warn("Clustering without AUTO_CLUSTERING")
             context_df = context_df.withColumn("cluster", lit(1))
