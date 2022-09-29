@@ -5,6 +5,7 @@ from configparser import ConfigParser
 
 from extract_labels import generate_labels_pyspark
 from dataset_clustering import cluster_datasets_pyspark
+from cols_grouping import col_folding_pyspark
 
 
 def generate_csv_paths(sandbox_path: str) -> DataFrame:
@@ -44,14 +45,15 @@ def run_experiments(
     exp_name: str,
     exp_number,
     labeling_budget,
-    extract_labels_enabled,
-    table_grouping_enabled,
-    column_grouping_enabled,
+    extract_labels_enabled: int,
+    table_grouping_enabled: int,
+    column_grouping_enabled: int,
     sandbox_path: str,
     output_path: str,
     labels_path: str,
     table_grouping_output_path: str,
-    table_auto_clustering,
+    table_auto_clustering: int,
+    cols_auto_clustering: int,
     cells_clustering_alg,
     cell_feature_generator_enabled,
 ):
@@ -77,6 +79,20 @@ def run_experiments(
         table_grouping_enabled,
         table_auto_clustering,
     )
+
+    logger.warn("Grouping columns")
+    column_groups_path = os.path.join(
+        experiment_output_path, configs["DIRECTORIES"]["column_groups_path"]
+    )
+    column_grouping_df = col_folding_pyspark(
+        csv_paths_df=csv_paths_df,
+        labels_df=labels_df,
+        table_cluster_df=table_grouping_df,
+        column_groups_path=column_groups_path,
+        column_grouping_enabled=column_grouping_enabled,
+        auto_clustering_enabled=cols_auto_clustering,
+    )
+    column_grouping_df.show()
 
 
 if __name__ == "__main__":
@@ -128,6 +144,9 @@ if __name__ == "__main__":
                 ),
                 table_auto_clustering=int(
                     configs["TABLE_GROUPING"]["auto_clustering_enabled"]
+                ),
+                cols_auto_clustering=int(
+                    configs["COLUMN_GROUPING"]["auto_clustering_enabled"]
                 ),
                 sandbox_path=configs["DIRECTORIES"]["sandbox_dir"],
                 output_path=configs["DIRECTORIES"]["output_dir"],

@@ -70,9 +70,9 @@ def vectorize(tokens, model):
 def cluster_datasets_pyspark(
     csv_paths_df: DataFrame,
     output_path: str,
-    table_grouping_enabled: bool,
-    auto_clustering_enabled: bool,
-):
+    table_grouping_enabled: int,
+    auto_clustering_enabled: int,
+) -> DataFrame:
     spark = SparkSession.getActiveSession()
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
