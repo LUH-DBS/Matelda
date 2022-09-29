@@ -14,8 +14,7 @@ import gensim.downloader as api
 from pyspark.sql import SparkSession, DataFrame
 from pyspark.sql.functions import lit, col, udf
 
-import dbscan
-from scipy.spatial import distance
+from sklearn.cluster import DBSCAN
 
 
 def clean_text(text, tokenizer, stopwords):
@@ -83,21 +82,31 @@ def cluster_datasets_pyspark(
     if table_grouping_enabled == 1:
         logger.warn("Creating context DataFrame")
         context_rdd = csv_paths_df.rdd.map(lambda row: create_table_context(row))
+        # context_rdd = csv_paths_df.rdd.map(lambda row: create_table_context(row)).collectAsMap()
+        # print(context_rdd)
         context_df = context_rdd.toDF(
-            ["table_id", "parent", "table_name", "headers", "content", "text", "token"]
-        #    ["table_id"] + [str(i) for i in range(model.vector_size]
+            #    ["table_id", "parent", "table_name", "headers", "content", "text", "token"]
+            ["table_id", "vectorized_docs"]
         )
         logger.warn("Clustering context DataFrame")
         if auto_clustering_enabled == 1:
             logger.warn("Clustering with AUTO_CLUSTERING")
             # TODO: embedding model and DBSCAN params in config file
-            # model = Word2Vec(sentences=tokenized_docs, vector_size=100, workers=1, seed=42)
-            # model = api.load('word2vec-google-news-300')
-            # vectorized_docs_df = context_df.transform(lambda row: vectorize(row.token, model))
-            # vectorized_docs_df.show()
-            print(dbscan.process(spark, context_df.select(col("table_id")), .5, 5, distance.euclidean, 1, "checkpoint_table_clustering"))
-            # clustering = DBSCAN(eps=0.5, min_samples=5).fit(vectorized_docs)
-            # cluster_labels = clustering.labels_
+            # TODO: Use an implementation for pyspark
+            clustering = DBSCAN(eps=0.5, min_samples=5, n_jobs=-1).fit(
+                context_df.select("vectorized_docs").rdd.flatMap(lambda x: x).collect()
+            )
+            clustering_df = spark.createDataFrame(
+                data=np.c_[
+                    clustering.labels_.reshape(-1, 1),
+                    np.array(
+                        context_df.rdd.map(lambda x: x.table_id).collect()
+                    ).reshape(-1, 1),
+                ].tolist(),
+                schema=["cluster", "table_id"],
+            )
+
+            context_df = context_df.join(clustering_df, "table_id")
         else:
             logger.warn("Clustering without AUTO_CLUSTERING")
             context_df = context_df.withColumn("cluster", lit(1))
@@ -145,15 +154,16 @@ def create_table_context(row):
     # Remove empty values
     tokens = list(filter(lambda token: len(token) > 0, tokens))
 
-    #model = api.load('word2vec-google-news-300')
-    #vectorized_docs = vectorize(tokens, model=model)
+    model = api.load("word2vec-google-news-300")
+    vectorized_docs = vectorize(tokens, model=model)
 
     return [
         row.table_id,
-        row.parent,
-        row.table_name,
-        df_column_text,
-        df_table_text,
-        text,
-        tokens,
-    ] #+ vectorized_docs
+        # row.parent,
+        # row.table_name,
+        # df_column_text,
+        # df_table_text,
+        # text,
+        # tokens,
+        vectorized_docs.tolist(),
+    ]
