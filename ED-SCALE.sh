@@ -1,7 +1,7 @@
 case $1 in
 
   'run')
-    spark-submit --master local[*] end-to-end-eds.py
+    spark-submit --master local[*] __main__.py
     ;;
 
   'format')

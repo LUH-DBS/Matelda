@@ -10,7 +10,7 @@ from pyspark.sql.types import Row
 type_dicts = {"int": 0, "float": 1, "str": 2, "date": 3}
 
 
-def generate_col_df(row: Row) -> List:
+def generate_column_df(row: Row) -> List:
     dirty_df = pd.read_csv(
         row.dirty_path,
         sep=",",
@@ -60,7 +60,7 @@ def generate_col_df(row: Row) -> List:
     return column_list
 
 
-def cluster_cols(col_df: DataFrame, auto_clustering_enabled: int, logger):
+def cluster_columns(col_df: DataFrame, auto_clustering_enabled: int, logger):
     # TODO: dbscan params config
     if auto_clustering_enabled == 1:
         logger.warn("Clustering columns with AUTO_CLUSTERING")
@@ -70,7 +70,7 @@ def cluster_cols(col_df: DataFrame, auto_clustering_enabled: int, logger):
         return col_df.withColumn("col_cluster", lit(1))
 
 
-def col_folding_pyspark(
+def column_clustering_pyspark(
     csv_paths_df: DataFrame,
     labels_df: DataFrame,
     table_cluster_df: DataFrame,
@@ -85,8 +85,8 @@ def col_folding_pyspark(
     nltk.download("stopwords")
 
     if column_grouping_enabled == 1:
-        col_rdd = csv_paths_df.rdd.flatMap(lambda row: generate_col_df(row))
-        col_df = col_rdd.toDF(
+        column_rdd = csv_paths_df.rdd.flatMap(lambda row: generate_column_df(row))
+        column_df = column_rdd.toDF(
             [
                 "table_id",
                 "col_id",
@@ -99,12 +99,12 @@ def col_folding_pyspark(
             ]
         )
 
-        col_df = cluster_cols(col_df, auto_clustering_enabled, logger)
+        column_df = cluster_columns(column_df, auto_clustering_enabled, logger)
 
         logger.warn("Writing column clustering result to disk.")
-        col_df.write.parquet(column_groups_path, mode="overwrite")
+        column_df.write.parquet(column_groups_path, mode="overwrite")
     else:
-        logger.warn("Loading col clustering from disk")
-        col_df = spark.read.parquet(column_groups_path)
+        logger.warn("Loading column clustering from disk")
+        column_df = spark.read.parquet(column_groups_path)
 
-    return col_df
+    return column_df
