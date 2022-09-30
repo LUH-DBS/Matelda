@@ -1,6 +1,7 @@
-import pandas as pd
-from pyspark.sql import SparkSession, DataFrame
 from typing import List, Tuple
+
+import pandas as pd
+from pyspark.sql import DataFrame, SparkSession
 
 
 def generate_table_ground_truth(row) -> List[Tuple[int, int, int, bool]]:

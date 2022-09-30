@@ -1,50 +1,18 @@
-from pyspark.sql import SparkSession, DataFrame
 import os
-
 from configparser import ConfigParser
 
-from extract_labels import generate_labels_pyspark
+from pyspark.sql import DataFrame, SparkSession
+
+from column_clustering import col_folding_pyspark
 from dataset_clustering import cluster_datasets_pyspark
-from cols_grouping import col_folding_pyspark
-
-
-def generate_csv_paths(sandbox_path: str) -> DataFrame:
-    csv_paths = []
-    sandbox_children_path = [
-        (os.path.join(sandbox_path, dir), dir) for dir in os.listdir(sandbox_path)
-    ]
-    table_id = 0
-    for child_path, parent in sandbox_children_path:
-        if os.path.isdir(child_path) and not child_path.startswith("."):
-            table_dirs = [
-                (os.path.join(child_path, dir), dir) for dir in os.listdir(child_path)
-            ]
-            for table_path, table in table_dirs:
-                if os.path.isdir(table_path) and not table_path.startswith("."):
-                    dirty_path = table_path + "/dirty.csv"
-                    clean_path = table_path + "/" + table + ".csv"
-                    if (
-                        os.path.exists(dirty_path)
-                        and os.path.exists(clean_path)
-                        and os.path.isfile(dirty_path)
-                        and os.path.isfile(clean_path)
-                    ):
-                        csv_paths.append(
-                            (table_id, dirty_path, clean_path, table, parent)
-                        )
-                        table_id += 1
-    csv_paths_df = spark.createDataFrame(
-        data=csv_paths,
-        schema=["table_id", "dirty_path", "clean_path", "table_name", "parent"],
-    )
-    del csv_paths
-    return csv_paths_df
+from extract_labels import generate_labels_pyspark
+from handle_data import generate_csv_paths
 
 
 def run_experiments(
     exp_name: str,
-    exp_number,
-    labeling_budget,
+    exp_number: int,
+    labeling_budget: int,
     extract_labels_enabled: int,
     table_grouping_enabled: int,
     column_grouping_enabled: int,
@@ -54,9 +22,27 @@ def run_experiments(
     table_grouping_output_path: str,
     table_auto_clustering: int,
     cols_auto_clustering: int,
-    cells_clustering_alg,
-    cell_feature_generator_enabled,
-):
+    cells_clustering_alg: str,
+    cell_feature_generator_enabled: int,
+) -> None:
+    """_summary_
+
+    Args:
+        exp_name (str): _description_
+        exp_number (int): _description_
+        labeling_budget (int): _description_
+        extract_labels_enabled (int): _description_
+        table_grouping_enabled (int): _description_
+        column_grouping_enabled (int): _description_
+        sandbox_path (str): _description_
+        output_path (str): _description_
+        labels_path (str): _description_
+        table_grouping_output_path (str): _description_
+        table_auto_clustering (int): _description_
+        cols_auto_clustering (int): _description_
+        cells_clustering_alg (str): _description_
+        cell_feature_generator_enabled (int): _description_
+    """
     logger.warn("Genereting CSV paths")
     csv_paths_df = generate_csv_paths(sandbox_path)
 

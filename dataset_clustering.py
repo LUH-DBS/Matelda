@@ -1,30 +1,29 @@
-import pandas as pd
 import re
 import string
+from typing import List
 
+import gensim.downloader as api
 import nltk
 import numpy as np
 import pandas as pd
-
 from nltk import word_tokenize
 from nltk.corpus import stopwords
-
-import gensim.downloader as api
-
-from pyspark.sql import SparkSession, DataFrame
-from pyspark.sql.functions import lit, col, udf
-
+from pyspark.sql import DataFrame, SparkSession
+from pyspark.sql.functions import col, lit
+from pyspark.sql.types import Row
 from sklearn.cluster import DBSCAN
 
 
-def clean_text(text, tokenizer, stopwords):
+def clean_text(text, tokenizer, stopwords) -> List[str]:
     """Pre-process text and generate tokens
 
     Args:
-        text: Text to tokenize.
+        text (_type_): Text to tokenize.
+        tokenizer (_type_): _description_
+        stopwords (_type_): _description_
 
     Returns:
-        Tokenized text.
+        List[str]: Tokenized text.
     """
     text = "".join(word.strip(string.punctuation) for word in text)
     text = str(text).lower()  # Lowercase words
@@ -45,11 +44,11 @@ def vectorize(tokens, model):
     """Generate vectors for list of documents using a Word Embedding
 
     Args:
-        list_of_docs: List of documents
-        model: Gensim's Word Embedding
+        tokens (_type_): _description_
+        model (_type_): Gensim's Word Embedding
 
     Returns:
-        List of document vectors
+        _type_: _description_
     """
     zero_vector = np.zeros(model.vector_size)
     vectors = []
@@ -73,6 +72,17 @@ def cluster_datasets_pyspark(
     table_grouping_enabled: int,
     auto_clustering_enabled: int,
 ) -> DataFrame:
+    """_summary_
+
+    Args:
+        csv_paths_df (DataFrame): _description_
+        output_path (str): _description_
+        table_grouping_enabled (int): _description_
+        auto_clustering_enabled (int): _description_
+
+    Returns:
+        DataFrame: _description_
+    """
     spark = SparkSession.getActiveSession()
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
@@ -90,7 +100,7 @@ def cluster_datasets_pyspark(
         )
         logger.warn("Clustering context DataFrame")
         if auto_clustering_enabled == 1:
-            logger.warn("Clustering with AUTO_CLUSTERING")
+            logger.warn("Clustering tables with AUTO_CLUSTERING")
             # TODO: embedding model and DBSCAN params in config file
             # TODO: Use an implementation for pyspark
             clustering = DBSCAN(eps=0.5, min_samples=5, n_jobs=-1).fit(
@@ -108,7 +118,7 @@ def cluster_datasets_pyspark(
 
             context_df = context_df.join(clustering_df, "table_id")
         else:
-            logger.warn("Clustering without AUTO_CLUSTERING")
+            logger.warn("Clustering tables without AUTO_CLUSTERING")
             context_df = context_df.withColumn("cluster", lit(1))
 
         table_grouping_df = context_df.select(col("table_id"), col("cluster"))
@@ -121,7 +131,15 @@ def cluster_datasets_pyspark(
     return table_grouping_df
 
 
-def create_table_context(row):
+def create_table_context(row: Row) -> List:
+    """_summary_
+
+    Args:
+        row (Row): _description_
+
+    Returns:
+        List: _description_
+    """
     custom_stopwords = set(stopwords.words("english"))
     dirty_df = pd.read_csv(
         row.dirty_path,
@@ -159,11 +177,5 @@ def create_table_context(row):
 
     return [
         row.table_id,
-        # row.parent,
-        # row.table_name,
-        # df_column_text,
-        # df_table_text,
-        # text,
-        # tokens,
         vectorized_docs.tolist(),
     ]
