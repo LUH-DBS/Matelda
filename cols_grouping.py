@@ -14,6 +14,7 @@ from sklearn.cluster import DBSCAN, OPTICS
 
 from dataset_clustering import clean_text
 from ds_utils import clustering
+import saving_to_redis
 from nltk import word_tokenize
 from nltk.corpus import stopwords
 import gensim.downloader as api
@@ -188,7 +189,7 @@ def get_number_of_clusters(col_groups_dir):
     return number_of_col_clusters
 
 
-def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clustering_enabled):
+def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clustering_enabled, save_to_redis):
     clusters_dict = get_clusters_dict(context_df)
     if os.path.exists(col_groups_dir):
         shutil.rmtree(col_groups_dir)
@@ -198,6 +199,8 @@ def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clus
     number_of_col_clusters = 0
     for cluster in clusters_dict:
         col_df = get_col_df(sandbox_path, clusters_dict[cluster], labels_path)
+        if save_to_redis:
+            saving_to_redis.save_columns(col_df)
         col_features = get_col_features(col_df)
         col_labels_df, number_of_clusters = cluster_cols_auto(col_features, auto_clustering_enabled)
         number_of_col_clusters += number_of_clusters
@@ -209,6 +212,6 @@ def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clus
         col_labels_df[["column_cluster_label", "col_value"]].to_csv(
             os.path.join(col_groups_dir, "col_df_labels_cluster_{}.csv".format(cluster))
         )
-
+    
     return number_of_col_clusters
 

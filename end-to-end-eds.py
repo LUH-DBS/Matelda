@@ -17,7 +17,7 @@ import pickle
 from configparser import ConfigParser
 
 import saving_results
-
+import saving_to_redis
 
 def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_labels_enabled, table_grouping_enabled,
                     column_grouping_enabled, labeling_budget, cell_clustering_alg, cell_feature_generator_enabled):
@@ -53,7 +53,8 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
         logger.info("Column grouping started")
         number_of_column_clusters = cols_grouping.col_folding(table_grouping_output, sandbox_path, labels_path,
                                                               column_groups_path,
-                                                              configs["TABLE_GROUPING"]["auto_clustering_enabled"])
+                                                              configs["COLUMN_GROUPING"]["auto_clustering_enabled"], 
+                                                              configs["COLUMN_GROUPING"]['save_to_redis'])
     else:
         number_of_column_clusters = cols_grouping.get_number_of_clusters(column_groups_path)
         logger.info("number of column clusters: {}".format(number_of_column_clusters))
