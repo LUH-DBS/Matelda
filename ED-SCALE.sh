@@ -1,8 +1,12 @@
 case $1 in
 
   'run')
-    conda activate Error-Detection-at-Scale
-    spark-submit --master local[*] __main__.py
+    if [ -z "$2" ] 
+    then
+      spark-submit --master local[*] __main__.py
+    else
+      spark-submit --master local[$2] __main__.py
+    fi
     ;;
 
   'format')
