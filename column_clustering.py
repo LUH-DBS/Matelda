@@ -7,13 +7,21 @@ from collections import Counter
 from functools import reduce
 from openclean.profiling.dataset import dataset_profile
 from pyspark.sql import DataFrame, SparkSession
-from pyspark.sql.functions import lit
+from pyspark.sql.functions import lit, col, max
 from pyspark.sql.types import Row
 
 type_dicts = {"int": 0, "float": 1, "str": 2, "date": 3}
 
 
 def generate_column_df(row: Row) -> List:
+    """_summary_
+
+    Args:
+        row (Row): _description_
+
+    Returns:
+        List: _description_
+    """
     dirty_df = pd.read_csv(
         row.dirty_path,
         sep=",",
@@ -50,13 +58,13 @@ def generate_column_df(row: Row) -> List:
                 features[j] = -1
 
         for value in dirty_df[column].values:
-           for character in list(set(list(str(value)))):
-               if character not in characters_dictionary:
-                   characters_dictionary[character] = 0.0
-               characters_dictionary[character] += 1.0
-           if value not in values_dictionary:
-               values_dictionary[value] = 0.0
-           values_dictionary[value] += 1.0
+            for character in list(set(list(str(value)))):
+                if character not in characters_dictionary:
+                    characters_dictionary[character] = 0.0
+                characters_dictionary[character] += 1.0
+            if value not in values_dictionary:
+                values_dictionary[value] = 0.0
+            values_dictionary[value] += 1.0
 
         features.append(characters_dictionary)
         features.append(list(characters_dictionary.keys()))
@@ -70,8 +78,9 @@ def generate_column_df(row: Row) -> List:
 
 
 def cluster_columns(col_df: DataFrame, auto_clustering_enabled: int, logger):
+    for i in range(col_df.groupby().max('table_cluster').first()['max(table_cluster)'] + 1):
+        print(i)
     # TODO: dbscan params config
-    col_df.show()
     if auto_clustering_enabled == 1:
         # TODO: Add DBSCAN
         logger.warn("Clustering columns with AUTO_CLUSTERING")
@@ -89,6 +98,19 @@ def column_clustering_pyspark(
     column_grouping_enabled: int,
     auto_clustering_enabled: int,
 ) -> DataFrame:
+    """_summary_
+
+    Args:
+        csv_paths_df (DataFrame): _description_
+        labels_df (DataFrame): _description_
+        table_cluster_df (DataFrame): _description_
+        column_groups_path (str): _description_
+        column_grouping_enabled (int): _description_
+        auto_clustering_enabled (int): _description_
+
+    Returns:
+        DataFrame: _description_
+    """
     spark = SparkSession.getActiveSession()
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
@@ -114,20 +136,22 @@ def column_clustering_pyspark(
                 "val_dict_keys",
             ]
         )
-        column_df = column_df.join(table_cluster_df, 'table_id', 'inner').show()        
+        column_df = column_df.join(table_cluster_df, "table_id", "inner")
         logger.warn("Building char and val dict")
         # TODO: vectorize
-        #column_df = column_df.withColumns({'char_dict_keys': None, 'val_dict_keys': None})
-        #char_dict_keys= column_df.select('char_dict_keys').rdd.reduce(lambda x,y: list(set(x) | set(y)))
-        #print(char_dict_keys)
-        #val_dict_keys = dict(reduce(operator.add, map(Counter, column_df.select('val_dict').collect())))
-        #print(char_dict_keys)
-        #column_df = column_df.withColumns({'col_profile_char': None, 'col_profile_val': None})
+        # column_df = column_df.withColumns({'char_dict_keys': None, 'val_dict_keys': None})
+        # char_dict_keys= column_df.select('char_dict_keys').rdd.reduce(lambda x,y: list(set(x) | set(y)))
+        # print(char_dict_keys)
+        # val_dict_keys = dict(reduce(operator.add, map(Counter, column_df.select('val_dict').collect())))
+        # print(char_dict_keys)
+        # column_df = column_df.withColumns({'col_profile_char': None, 'col_profile_val': None})
 
-        column_df.drop('char_dict', 'char_dict_keys', 'val_dict', 'val_dict_keys')
-
+        column_df = column_df.drop(
+            "char_dict", "char_dict_keys", "val_dict", "val_dict_keys"
+        )
         column_df = cluster_columns(column_df, auto_clustering_enabled, logger)
 
+        column_df = column_df.select(col("table_id"), col("col_id"), col("col_cluster"))
         logger.warn("Writing column clustering result to disk.")
         column_df.write.parquet(column_groups_path, mode="overwrite")
     else:
