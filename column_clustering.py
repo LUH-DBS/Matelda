@@ -76,6 +76,16 @@ def generate_column_df(row: Row) -> List:
 
     return column_list
 
+def vectorize():
+    # TODO: vectorize
+    # column_df = column_df.withColumns({'char_dict_keys': None, 'val_dict_keys': None})
+    # char_dict_keys= column_df.select('char_dict_keys').rdd.reduce(lambda x,y: list(set(x) | set(y)))
+    # print(char_dict_keys)
+    # val_dict_keys = dict(reduce(operator.add, map(Counter, column_df.select('val_dict').collect())))
+    # print(char_dict_keys)
+    # column_df = column_df.withColumns({'col_profile_char': None, 'col_profile_val': None})
+    pass
+
 
 def cluster_columns(col_df: DataFrame, auto_clustering_enabled: int, logger):
     for i in range(col_df.groupby().max('table_cluster').first()['max(table_cluster)'] + 1):
@@ -138,14 +148,8 @@ def column_clustering_pyspark(
         )
         column_df = column_df.join(table_cluster_df, "table_id", "inner")
         logger.warn("Building char and val dict")
-        # TODO: vectorize
-        # column_df = column_df.withColumns({'char_dict_keys': None, 'val_dict_keys': None})
-        # char_dict_keys= column_df.select('char_dict_keys').rdd.reduce(lambda x,y: list(set(x) | set(y)))
-        # print(char_dict_keys)
-        # val_dict_keys = dict(reduce(operator.add, map(Counter, column_df.select('val_dict').collect())))
-        # print(char_dict_keys)
-        # column_df = column_df.withColumns({'col_profile_char': None, 'col_profile_val': None})
 
+        # TODO: vectorize depending on table_cluster
         column_df = column_df.drop(
             "char_dict", "char_dict_keys", "val_dict", "val_dict_keys"
         )
