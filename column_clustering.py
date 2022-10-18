@@ -1,7 +1,10 @@
-from typing import List
+from typing import Counter, List
 
 import nltk
+import operator
 import pandas as pd
+from collections import Counter
+from functools import reduce
 from openclean.profiling.dataset import dataset_profile
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.functions import lit
@@ -25,6 +28,8 @@ def generate_column_df(row: Row) -> List:
 
     for column_id, column in enumerate(dirty_df.columns.tolist()):
         features = [row.table_id, column_id]
+        characters_dictionary = {}
+        values_dictionary = {}
 
         features = [row.table_id, column_id]
         profiles = dataset_profile(pd.DataFrame(dirty_df[column]))
@@ -32,7 +37,7 @@ def generate_column_df(row: Row) -> List:
         features.append(profiles[0]["stats"]["emptyValueCount"])
         features.append(profiles[0]["stats"]["distinctValueCount"])
         features.append(float(profiles.stats()["uniqueness"][0]))
-        features.append(profiles[0]["stats"]["entropy"])
+        features.append(float(profiles[0]["stats"]["entropy"]))
 
         if len(profiles.types().columns) > 0:
             col_type = profiles.types().columns[0]
@@ -44,17 +49,21 @@ def generate_column_df(row: Row) -> List:
             if features[j] is None:
                 features[j] = -1
 
-        # ......
-        # for value in col_df['col_value'][i]:
-        #    for character in list(set(list(str(value)))):
-        #        if character not in characters_dictionary:
-        #            characters_dictionary[character] = 0.0
-        #        characters_dictionary[character] += 1.0
-        #    if value not in values_dictionary:
-        #        values_dictionary[value] = 0.0
-        #    values_dictionary[value] += 1.0
+        for value in dirty_df[column].values:
+           for character in list(set(list(str(value)))):
+               if character not in characters_dictionary:
+                   characters_dictionary[character] = 0.0
+               characters_dictionary[character] += 1.0
+           if value not in values_dictionary:
+               values_dictionary[value] = 0.0
+           values_dictionary[value] += 1.0
 
-        # (table_id, col_id, totalValueCount, emptyValueCount, distinctValueCount, uniqueness, entropy, type)
+        features.append(characters_dictionary)
+        features.append(list(characters_dictionary.keys()))
+        features.append(values_dictionary)
+        features.append(list(values_dictionary.keys()))
+
+        # (table_id, col_id, table_cluster, totalValueCount, emptyValueCount, distinctValueCount, uniqueness, entropy, type, char_dict, val_dict)
         column_list.append(features)
 
     return column_list
@@ -62,7 +71,9 @@ def generate_column_df(row: Row) -> List:
 
 def cluster_columns(col_df: DataFrame, auto_clustering_enabled: int, logger):
     # TODO: dbscan params config
+    col_df.show()
     if auto_clustering_enabled == 1:
+        # TODO: Add DBSCAN
         logger.warn("Clustering columns with AUTO_CLUSTERING")
         return col_df.withColumn("col_cluster", lit(1))
     else:
@@ -85,6 +96,7 @@ def column_clustering_pyspark(
     nltk.download("stopwords")
 
     if column_grouping_enabled == 1:
+        logger.warn("Creating column features")
         column_rdd = csv_paths_df.rdd.flatMap(lambda row: generate_column_df(row))
         column_df = column_rdd.toDF(
             [
@@ -96,8 +108,23 @@ def column_clustering_pyspark(
                 "uniqueness",
                 "entropy",
                 "type",
+                "char_dict",
+                "char_dict_keys",
+                "val_dict",
+                "val_dict_keys",
             ]
         )
+        column_df = column_df.join(table_cluster_df, 'table_id', 'inner').show()        
+        logger.warn("Building char and val dict")
+        # TODO: vectorize
+        #column_df = column_df.withColumns({'char_dict_keys': None, 'val_dict_keys': None})
+        #char_dict_keys= column_df.select('char_dict_keys').rdd.reduce(lambda x,y: list(set(x) | set(y)))
+        #print(char_dict_keys)
+        #val_dict_keys = dict(reduce(operator.add, map(Counter, column_df.select('val_dict').collect())))
+        #print(char_dict_keys)
+        #column_df = column_df.withColumns({'col_profile_char': None, 'col_profile_val': None})
+
+        column_df.drop('char_dict', 'char_dict_keys', 'val_dict', 'val_dict_keys')
 
         column_df = cluster_columns(column_df, auto_clustering_enabled, logger)
 
