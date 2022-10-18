@@ -113,15 +113,15 @@ def cluster_datasets_pyspark(
                         context_df.rdd.map(lambda x: x.table_id).collect()
                     ).reshape(-1, 1),
                 ].tolist(),
-                schema=["cluster", "table_id"],
+                schema=["table_cluster", "table_id"],
             )
 
             context_df = context_df.join(clustering_df, "table_id")
         else:
             logger.warn("Clustering tables without AUTO_CLUSTERING")
-            context_df = context_df.withColumn("cluster", lit(1))
+            context_df = context_df.withColumn("table_cluster", lit(1))
 
-        table_grouping_df = context_df.select(col("table_id"), col("cluster"))
+        table_grouping_df = context_df.select(col("table_id"), col("table_cluster"))
         logger.warn("Writing table clustering result to disk.")
         table_grouping_df.write.parquet(output_path, mode="overwrite")
         table_grouping_df.show()
