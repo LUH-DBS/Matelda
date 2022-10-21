@@ -69,18 +69,19 @@ def run_experiments(
         auto_clustering_enabled=table_auto_clustering,
     )
 
-    logger.warn("Grouping columns")
-    column_grouping_df = column_clustering_pyspark(
-        csv_paths_df=csv_paths_df,
-        labels_df=labels_df,
-        table_cluster_df=table_grouping_df,
-        column_groups_path=os.path.join(
-            experiment_output_path, column_clustering_output_path
-        ),
-        column_grouping_enabled=column_clustering_enabled,
-        auto_clustering_enabled=column_auto_clustering,
-    )
-    column_grouping_df.show()
+    # logger.warn("Grouping columns")
+    # column_grouping_df = column_clustering_pyspark(
+    #     csv_paths_df=csv_paths_df,
+    #     labels_df=labels_df,
+    #     table_cluster_df=table_grouping_df,
+    #     column_groups_path=os.path.join(
+    #         experiment_output_path, column_clustering_output_path
+    #     ),
+    #     column_grouping_enabled=column_clustering_enabled,
+    #     auto_clustering_enabled=column_auto_clustering,
+    # )
+    # column_grouping_df.show()
+
 
 
 if __name__ == "__main__":
