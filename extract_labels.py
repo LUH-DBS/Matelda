@@ -47,7 +47,7 @@ def generate_labels_pyspark(
         labels_rdd = csv_paths_df.rdd.flatMap(
             lambda row: generate_table_ground_truth(row)
         )
-        labels_df = labels_rdd.toDF(["table_id", "column_id", "row_id", "value"])
+        labels_df = labels_rdd.toDF(["table_id", "column_id", "row_id", "label"])
         logger.warn("Writing labels to file")
         labels_df.write.parquet(labels_path, mode="overwrite")
     else:

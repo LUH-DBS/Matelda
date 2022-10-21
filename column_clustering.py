@@ -76,6 +76,7 @@ def generate_column_df(row: Row) -> List:
 
     return column_list
 
+
 def vectorize():
     # TODO: vectorize
     # column_df = column_df.withColumns({'char_dict_keys': None, 'val_dict_keys': None})
@@ -88,7 +89,9 @@ def vectorize():
 
 
 def cluster_columns(col_df: DataFrame, auto_clustering_enabled: int, logger):
-    for i in range(col_df.groupby().max('table_cluster').first()['max(table_cluster)'] + 1):
+    for i in range(
+        col_df.groupby().max("table_cluster").first()["max(table_cluster)"] + 1
+    ):
         print(i)
     # TODO: dbscan params config
     if auto_clustering_enabled == 1:
