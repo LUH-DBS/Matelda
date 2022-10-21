@@ -2,9 +2,18 @@ from typing import List, Tuple
 
 import pandas as pd
 from pyspark.sql import DataFrame, SparkSession
+from pyspark.sql.types import Row
 
 
-def generate_table_ground_truth(row) -> List[Tuple[int, int, int, bool]]:
+def generate_table_ground_truth(row: Row) -> List[Tuple[int, int, int, bool]]:
+    """_summary_
+
+    Args:
+        row (Row): _description_
+
+    Returns:
+        List[Tuple[int, int, int, bool]]: _description_
+    """
     tables_ground_truth = []
     dirty_df = pd.read_csv(
         row.dirty_path,
@@ -38,6 +47,16 @@ def generate_table_ground_truth(row) -> List[Tuple[int, int, int, bool]]:
 def generate_labels_pyspark(
     csv_paths_df: DataFrame, labels_path: str, extract_labels_enabled: bool
 ) -> DataFrame:
+    """_summary_
+
+    Args:
+        csv_paths_df (DataFrame): _description_
+        labels_path (str): _description_
+        extract_labels_enabled (bool): _description_
+
+    Returns:
+        DataFrame: _description_
+    """
     spark = SparkSession.getActiveSession()
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
