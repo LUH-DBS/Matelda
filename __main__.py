@@ -7,6 +7,7 @@ from column_clustering import column_clustering_pyspark
 from dataset_clustering import cluster_datasets_pyspark
 from extract_labels import generate_labels_pyspark
 from handle_data import generate_csv_paths
+from raha_features import generate_raha_features_pyspark
 
 
 def run_experiments(
@@ -25,6 +26,7 @@ def run_experiments(
     column_auto_clustering: int,
     cell_clustering_alg: str,
     cell_feature_generator_enabled: int,
+    cell_features_output_filename: str,
 ) -> None:
     """_summary_
 
@@ -34,16 +36,17 @@ def run_experiments(
         labeling_budget (int): _description_
         extract_labels_enabled (int): _description_
         table_clustering_enabled (int): _description_
-        column_grouping_enabled (int): _description_
+        column_clustering_enabled (int): _description_
         sandbox_path (str): _description_
         output_path (str): _description_
-        labels_path (str): _description_
+        label_path (str): _description_
         table_clustering_output_path (str): _description_
         table_auto_clustering (int): _description_
         column_clustering_output_path (str): _description_
         column_auto_clustering (int): _description_
         cell_clustering_alg (str): _description_
         cell_feature_generator_enabled (int): _description_
+        cell_features_output_filename (str): _description_
     """
     logger.warn("Creating experiment output directory")
     experiment_output_path = os.path.join(output_path, exp_name)
@@ -82,6 +85,14 @@ def run_experiments(
     # )
     # column_grouping_df.show()
 
+    logger.warn("Creating Raha features")
+    raha_features_df = generate_raha_features_pyspark(
+        csv_paths_df=csv_paths_df,
+        output_path=os.path.join(experiment_output_path, cell_features_output_filename),
+        cell_feature_generator_enabled=cell_feature_generator_enabled,
+        cells_clustering_alg=cell_clustering_alg,
+    )
+    raha_features_df.show()
 
 
 if __name__ == "__main__":
@@ -147,4 +158,7 @@ if __name__ == "__main__":
                     "column_clustering_output_filename"
                 ],
                 cell_clustering_alg=configs["CLUSTERING"]["cell_clustering_alg"],
+                cell_features_output_filename=configs["DIRECTORIES"][
+                    "cell_features_output_filename"
+                ],
             )
