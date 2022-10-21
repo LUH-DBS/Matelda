@@ -56,7 +56,7 @@ def generate_labels_pyspark(
 
     Returns:
         DataFrame: _description_
-    """
+    """ 
     spark = SparkSession.getActiveSession()
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
