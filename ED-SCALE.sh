@@ -1,12 +1,7 @@
 case $1 in
 
   'run')
-    if [ -z "$2" ] 
-    then
-      spark-submit --master local[*] __main__.py
-    else
-      spark-submit --master local[$2] __main__.py
-    fi
+      spark-submit --master local[*] --driver-memory 50G __main__.py
     ;;
 
   'format')
