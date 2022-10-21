@@ -92,8 +92,6 @@ def cluster_datasets_pyspark(
     if table_grouping_enabled == 1:
         logger.warn("Creating context DataFrame")
         context_rdd = csv_paths_df.rdd.map(lambda row: create_table_context(row))
-        # context_rdd = csv_paths_df.rdd.map(lambda row: create_table_context(row)).collectAsMap()
-        # print(context_rdd)
         context_df = context_rdd.toDF(
             #    ["table_id", "parent", "table_name", "headers", "content", "text", "token"]
             ["table_id", "vectorized_docs"]
