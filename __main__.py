@@ -88,9 +88,10 @@ def run_experiments(
     logger.warn("Creating Raha features")
     raha_features_df = generate_raha_features_pyspark(
         csv_paths_df=csv_paths_df,
-        output_path=os.path.join(experiment_output_path, cell_features_output_filename),
+        raha_features_path=os.path.join(
+            experiment_output_path, cell_features_output_filename
+        ),
         cell_feature_generator_enabled=cell_feature_generator_enabled,
-        cells_clustering_alg=cell_clustering_alg,
     )
     raha_features_df.show()
 
