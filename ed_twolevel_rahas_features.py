@@ -17,6 +17,7 @@ from distributed import LocalCluster, Client
 import xgboost as xgb
 import dask.array as da
 import sys
+import saving_to_redis
 
 
 logger = logging.getLogger()
@@ -63,7 +64,7 @@ def get_cells_features(sandbox_path, output_path):
     return features_dict
 
 
-def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg):
+def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg, value_tmp):
     logger.info("sampling_labeling")
     clustering = None 
 
@@ -73,13 +74,16 @@ def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_al
         clustering = AgglomerativeClustering(n_clusters = n_cell_clusters_per_col_cluster).fit(x)
 
     cells_per_cluster = dict()
+    values_per_cluster = dict()
     labels_per_cluster = dict()
 
     for cell in enumerate(clustering.labels_):
         if cell[1] in cells_per_cluster.keys():
             cells_per_cluster[cell[1]].append(cell[0])
+            values_per_cluster[cell[1]].append(value_tmp[cell[0]])
         else:
             cells_per_cluster[cell[1]] = [cell[0]]
+            values_per_cluster[cell[1]] = [value_tmp[cell[0]]]
 
     samples = []
     logger.info("labeling")
@@ -119,7 +123,8 @@ def get_number_of_clusters(col_groups_dir):
     return number_of_col_clusters
 
 
-def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict, n_labels, number_of_clusters, cell_clustering_alg):
+def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict, n_labels, 
+                                        number_of_clusters, cell_clustering_alg, analysis):
     X_train = []
     y_train = []
     X_test = []
@@ -146,6 +151,8 @@ def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict
                 try:
                     X_tmp = []
                     y_tmp = []
+                    value_tmp = []
+                    value_tmp_keys = []
                     original_data_values_tmp = []
                     c_df = group_df[group_df['column_cluster_label'] == c]
                     for index, row in c_df.iterrows():
@@ -157,14 +164,19 @@ def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict
 
                             X_tmp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
                             y_tmp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
+                            value_tmp_keys.append(str(row['table_id']) + "_" + str(row['col_id']) + "_" + str(cell_idx))
+                            
                             original_data_values_tmp.append(
                                 (row['table_id'], row['col_id'], cell_idx))
 
                     logger.info("Length of X_test: {}".format(len(X_test)))
                     logger.info("Length of X_tmp: {}".format(len(X_tmp)))
+                    if analysis:
+                        for key in value_tmp_keys:
+                            value_tmp.append(saving_to_redis.get_value(2, key))
 
                     cells_per_cluster, labels_per_cluster, samples = sampling_labeling(X_tmp, y_tmp,
-                                                                        n_cell_clusters_per_col_cluster_dict[c_idx], cell_clustering_alg)
+                                                                        n_cell_clusters_per_col_cluster_dict[c_idx], cell_clustering_alg, value_tmp)
                     labels += [original_data_values_tmp[sample] for sample in samples]
                     X_train, y_train = label_propagation(X_train, X_tmp, y_train, cells_per_cluster, labels_per_cluster)
 
@@ -209,10 +221,11 @@ def dask_classifier(x_train, y_train, x_test):
 
 
 def error_detector(col_groups_files_path, output_path, results_path, features_dict, n_labels, number_of_clusters, cell_clustering_alg, classification_mode):
+    analysis = True
     X_train, y_train, X_test, y_test, original_data_values, n_samples = get_train_test_sets(col_groups_files_path, output_path,
                                                                                  results_path,
                                                                                  features_dict, n_labels,
-                                                                                 number_of_clusters, cell_clustering_alg)
+                                                                                 number_of_clusters, cell_clustering_alg, analysis)
     if classification_mode == "parallel":
         predicted = dask_classifier(X_train, y_train, X_test)
     else:

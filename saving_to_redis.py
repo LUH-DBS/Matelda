@@ -32,3 +32,7 @@ def save_columns(col_df):
             redis_client.set(str(row['table_id']) + "_" + str(row['col_id']) + "_" + str(label_idx),
                                  str(label))                                                
     return
+
+def get_value(db, key):
+    redis_client.select(db)
+    return redis_client.get(key)
