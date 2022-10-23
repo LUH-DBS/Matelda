@@ -20,13 +20,15 @@ import gensim.downloader as api
 import nltk
 from gensim.models import Word2Vec
 import dask.dataframe as dd
+from messytables import CSVTableSet, type_guess
 
 logger = logging.getLogger()
 
 
 nltk.download("stopwords")
 
-type_dicts = {'int': 0, 'float': 1, 'str': 2, 'date': 3}
+
+type_dicts = {'Integer': 0, 'Decimal': 1, 'String': 2, 'Date': 3, 'Bool': 4, 'Time': 5, 'Currency': 6, 'Percentage': 7}
 
 
 def vectorize(list_of_docs, model):
@@ -79,16 +81,23 @@ def get_col_df(sandbox_path, cluster, labels_dict_path):
     lake_labels_dict = extract_labels(labels_dict_path)
 
     for table in cluster:
+        print(table)
         parent_path = os.path.join(sandbox_path, table[1])
         table_path = os.path.join(parent_path, table[2] + "/dirty.csv")
         df = pd.read_csv(table_path)
+
+        table_file = open(table_path, 'rb')
+        table_set = CSVTableSet(table_file)
+        row_set = table_set.tables[0]
+        types = type_guess(row_set.sample)
 
         for column_idx, column in enumerate(df.columns.tolist()):
             column_dict['table_id'].append(table[0])
             column_dict['col_id'].append(column_idx)
             column_dict['col_value'].append(df[column].tolist())
             column_dict['col_gt'].append(lake_labels_dict[(table[0], column_idx)].values)
-            column_dict['col_type'].append(df[column].dtype)
+            column_dict['col_type'].append(types[column_idx])
+            
 
     col_df = pd.DataFrame.from_dict(column_dict)
 
@@ -109,9 +118,14 @@ def get_col_features(col_df):
         features.append(profiles.stats()['uniqueness'][0])
         features.append(profiles[0]['stats']['entropy'])
 
-        if len(profiles.types().columns) > 0:
-            col_type = profiles.types().columns[0]
-            features.append(type_dicts[col_type])
+        if col_df['col_type'][i]:
+            col_type = str(col_df['col_type'][i])
+            if 'Date' in col_type:
+                features.append(type_dicts['Date'])
+            elif 'Time' in col_type:
+                features.append(type_dicts['Type'])
+            else:
+                features.append(type_dicts[col_type])
         else:
             features.append(-1)
 
