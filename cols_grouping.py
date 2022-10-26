@@ -21,12 +21,12 @@ import nltk
 from gensim.models import Word2Vec
 import dask.dataframe as dd
 from messytables import CSVTableSet, type_guess
+import spacy
 
 logger = logging.getLogger()
 
 
 nltk.download("stopwords")
-
 
 type_dicts = {'Integer': 0, 'Decimal': 1, 'String': 2, 'Date': 3, 'Bool': 4, 'Time': 5, 'Currency': 6, 'Percentage': 7}
 
@@ -104,12 +104,21 @@ def get_col_df(sandbox_path, cluster, labels_dict_path):
     return col_df
 
 
-def get_col_features(col_df):
+def get_col_features(col_df, ner_model_name):
     col_features = []
     characters_dictionary = {}
     values_dictionary = {}
 
+    ner_model, labels = get_ner_model_and_labels(ner_model_name)
+    feature_names = []
+    # feature_names.extend(['table_id', 'col_id'])
+    # feature_names.extend(['table_id', 'col_id', 'totalValueCount', 'emptyValueCount', 'distinctValueCount', 'uniqueness', 'entropy'])
+    feature_names.extend(labels)
+    feature_names.append('col_type')
+
+
     for i in range(col_df.shape[0]):
+        features = []
         features = [col_df['table_id'][i], col_df['col_id'][i]]
         profiles = dataset_profile(pd.DataFrame(col_df['col_value'][i]))
         features.append(profiles[0]['stats']['totalValueCount'])
@@ -117,6 +126,10 @@ def get_col_features(col_df):
         features.append(profiles[0]['stats']['distinctValueCount'])
         features.append(profiles.stats()['uniqueness'][0])
         features.append(profiles[0]['stats']['entropy'])
+
+        ner_features = get_ner_model_labels(ner_model, labels, col_df['col_value'][i])
+        for feature in ner_features.keys():
+            features.append(ner_features[feature])
 
         if col_df['col_type'][i]:
             col_type = str(col_df['col_type'][i])
@@ -128,6 +141,7 @@ def get_col_features(col_df):
                 features.append(type_dicts[col_type])
         else:
             features.append(-1)
+        
 
         for j in range(len(features)):
             if features[j] is None:
@@ -152,25 +166,26 @@ def get_col_features(col_df):
         value_list = list(column_profile["values"].values())
         for char in char_list:
             col_features[i].append(char)
+            
         for val in value_list:
             col_features[i].append(val)
 
-    return col_features
+    return col_features, feature_names
 
 
-def cluster_cols_auto(col_features, auto_clustering_enabled):
+def cluster_cols_auto(col_features, auto_clustering_enabled, feature_names):
     # TODO: dbscan params config
     reduced_features = []
     # TODO
     for col_feature in col_features:
         reduced_features.append(col_feature[7:])
-    columns = ['table_id', 'col_id', 'totalValueCount', 'emptyValueCount', 'distinctValueCount',
-               'uniqueness', 'entropy', 'data_type_code']
-    vocabulary = [str(i) for i in range(8, len(col_features[0]))]
-    columns = columns + vocabulary
+    # columns = ['table_id', 'col_id', 'totalValueCount', 'emptyValueCount', 'distinctValueCount',
+    #            'uniqueness', 'entropy', 'data_type_code']
+    vocabulary = [str(i) for i in range(19, len(col_features[0]))]
+    columns = feature_names + vocabulary
 
     if auto_clustering_enabled:
-        clustering_results = DBSCAN(eps=0.5, min_samples=2).fit(reduced_features)
+        clustering_results = DBSCAN(eps=0.7, min_samples=10).fit(reduced_features)
         col_labels_df = pd.DataFrame(col_features, columns=columns)
         col_labels_df['column_cluster_label'] = pd.DataFrame(clustering_results.labels_)
     else:
@@ -201,8 +216,24 @@ def get_number_of_clusters(col_groups_dir):
 
     return number_of_col_clusters
 
+def get_ner_model_labels(ner_model, labels, col_values):
+    ner_features_dict = dict()
+    for label in labels:
+        ner_features_dict[label] = 0
 
-def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clustering_enabled):
+    for value in col_values:
+        ner_res = ner_model(str(value))
+        for word in ner_res.ents:
+            ner_features_dict[word.label_] += 1
+    return ner_features_dict
+
+def get_ner_model_and_labels(model_name):
+    NER = spacy.load(model_name)
+    labels = NER.get_pipe("ner").labels
+    return NER, labels
+
+
+def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clustering_enabled, ner_model_name):
     clusters_dict = get_clusters_dict(context_df)
     if os.path.exists(col_groups_dir):
         shutil.rmtree(col_groups_dir)
@@ -212,8 +243,8 @@ def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clus
     number_of_col_clusters = 0
     for cluster in clusters_dict:
         col_df = get_col_df(sandbox_path, clusters_dict[cluster], labels_path)
-        col_features = get_col_features(col_df)
-        col_labels_df, number_of_clusters = cluster_cols_auto(col_features, auto_clustering_enabled)
+        col_features, feature_names = get_col_features(col_df, ner_model_name)
+        col_labels_df, number_of_clusters = cluster_cols_auto(col_features, auto_clustering_enabled, feature_names)
         number_of_col_clusters += number_of_clusters
         col_labels_df['col_value'] = col_df['col_value']
         col_labels_df['col_gt'] = col_df['col_gt']
@@ -223,6 +254,6 @@ def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clus
         col_labels_df[["column_cluster_label", "col_value"]].to_csv(
             os.path.join(col_groups_dir, "col_df_labels_cluster_{}.csv".format(cluster))
         )
-
+    print("Finsihed")
     return number_of_col_clusters
 
