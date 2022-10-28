@@ -1,4 +1,4 @@
-from typing import Counter, List
+from typing import Counter, List, Tuple
 
 import nltk
 import operator
@@ -88,19 +88,17 @@ def vectorize():
     pass
 
 
-def cluster_columns(col_df: DataFrame, auto_clustering_enabled: int, logger):
-    for i in range(
-        col_df.groupby().max("table_cluster").first()["max(table_cluster)"] + 1
-    ):
-        print(i)
+def cluster_columns(
+    col_df: DataFrame, auto_clustering_enabled: int, logger
+) -> Tuple[DataFrame, int]:
     # TODO: dbscan params config
     if auto_clustering_enabled == 1:
         # TODO: Add DBSCAN
         logger.warn("Clustering columns with AUTO_CLUSTERING")
-        return col_df.withColumn("col_cluster", lit(1))
+        return col_df.withColumn("col_cluster", lit(1)), 1
     else:
         logger.warn("Clustering columns without AUTO_CLUSTERING")
-        return col_df.withColumn("col_cluster", lit(1))
+        return col_df.withColumn("col_cluster", lit(1)), 1
 
 
 def column_clustering_pyspark(
