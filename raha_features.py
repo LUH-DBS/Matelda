@@ -10,16 +10,15 @@ import os
 import pickle
 import re
 import itertools
-import multiprocessing
 import random
 import sys
-import functools
 import sklearn
 import tempfile
 import string
 
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.types import Row
+from pyspark.ml.linalg import Vectors
 
 
 def generate_raha_features_pyspark(
@@ -47,7 +46,7 @@ def generate_raha_features_pyspark(
             lambda row: generate_raha_features(row)
         )
         raha_features_df = raha_features_rdd.toDF(
-            ["table_id", "column_id", "row_id", "original_values"]
+            ["table_id", "column_id", "row_id", "features"]
         )
         logger.warn("Writing Raha features to file")
         raha_features_df.write.parquet(raha_features_path, mode="overwrite")
@@ -92,9 +91,12 @@ def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
                     row.table_id,
                     col_idx,
                     row_idx,
-                    np.append(
-                        d.column_features[col_idx][row_idx], row.table_id
-                    ).tolist(),
+                    Vectors.dense(
+                        np.append(
+                            d.column_features[col_idx][row_idx],
+                            row.table_id,  # TODO: remove table_id?
+                        )
+                    ),
                 )
             )
 

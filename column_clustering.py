@@ -134,7 +134,7 @@ def column_clustering_pyspark(
         column_df = column_rdd.toDF(
             [
                 "table_id",
-                "col_id",
+                "column_id",
                 "totalValueCount",
                 "emptyValueCount",
                 "distinctValueCount",
@@ -154,13 +154,21 @@ def column_clustering_pyspark(
         column_df = column_df.drop(
             "char_dict", "char_dict_keys", "val_dict", "val_dict_keys"
         )
-        column_df = cluster_columns(column_df, auto_clustering_enabled, logger)
+        column_df, num_cluster = cluster_columns(
+            column_df, auto_clustering_enabled, logger
+        )
 
-        column_df = column_df.select(col("table_id"), col("col_id"), col("col_cluster"))
+        column_df = column_df.select(
+            col("table_id"), col("column_id"), col("col_cluster")
+        )
         logger.warn("Writing column clustering result to disk.")
         column_df.write.parquet(column_groups_path, mode="overwrite")
     else:
         logger.warn("Loading column clustering from disk")
         column_df = spark.read.parquet(column_groups_path)
+        logger.warn("Counting number of columns cluster")
+        num_cluster = column_df.agg({"col_cluster": "max"}).collect()[0][
+            "max(col_cluster)"
+        ]
 
-    return column_df
+    return column_df, num_cluster

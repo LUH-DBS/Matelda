@@ -8,6 +8,7 @@ from dataset_clustering import cluster_datasets_pyspark
 from extract_labels import generate_labels_pyspark
 from handle_data import generate_csv_paths
 from raha_features import generate_raha_features_pyspark
+from error_detector import error_detector_pyspark
 
 
 def run_experiments(
@@ -72,18 +73,17 @@ def run_experiments(
         auto_clustering_enabled=table_auto_clustering,
     )
 
-    # logger.warn("Grouping columns")
-    # column_grouping_df = column_clustering_pyspark(
-    #     csv_paths_df=csv_paths_df,
-    #     labels_df=labels_df,
-    #     table_cluster_df=table_grouping_df,
-    #     column_groups_path=os.path.join(
-    #         experiment_output_path, column_clustering_output_path
-    #     ),
-    #     column_grouping_enabled=column_clustering_enabled,
-    #     auto_clustering_enabled=column_auto_clustering,
-    # )
-    # column_grouping_df.show()
+    logger.warn("Grouping columns")
+    column_grouping_df, number_of_column_clusters = column_clustering_pyspark(
+        csv_paths_df=csv_paths_df,
+        labels_df=labels_df,
+        table_cluster_df=table_grouping_df,
+        column_groups_path=os.path.join(
+            experiment_output_path, column_clustering_output_path
+        ),
+        column_grouping_enabled=column_clustering_enabled,
+        auto_clustering_enabled=column_auto_clustering,
+    )
 
     logger.warn("Creating Raha features")
     raha_features_df = generate_raha_features_pyspark(
@@ -93,7 +93,21 @@ def run_experiments(
         ),
         cell_feature_generator_enabled=cell_feature_generator_enabled,
     )
-    raha_features_df.show()
+
+    logger.warn("WIP!")
+    logger.warn("Detecting Errors")
+    error_detector_pyspark(
+        result_path=os.path.join(
+            experiment_output_path,
+            "results_exp_{}_labels_{}".format(exp_number, labeling_budget),
+        ),
+        labeling_budget=labeling_budget,
+        cell_clustering_alg=cell_clustering_alg,
+        raha_features_df=raha_features_df,
+        labels_df=labels_df,
+        column_grouping_df=column_grouping_df,
+        number_of_column_clusters=number_of_column_clusters,
+    )
 
 
 if __name__ == "__main__":
