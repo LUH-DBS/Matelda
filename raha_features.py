@@ -27,6 +27,16 @@ def generate_raha_features_pyspark(
     raha_features_path: str,
     cell_feature_generator_enabled: int,
 ) -> DataFrame:
+    """_summary_
+
+    Args:
+        csv_paths_df (DataFrame): _description_
+        raha_features_path (str): _description_
+        cell_feature_generator_enabled (int): _description_
+
+    Returns:
+        DataFrame: _description_
+    """
     spark = SparkSession.getActiveSession()
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
@@ -49,6 +59,14 @@ def generate_raha_features_pyspark(
 
 
 def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
+    """_summary_
+
+    Args:
+        row (Row): _description_
+
+    Returns:
+        List[Tuple[int, int, int, Any]]: _description_
+    """
     detect = raha.detection.Detection()
     dataset_dictionary = {
         "name": row.table_name,
@@ -74,15 +92,19 @@ def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
                     row.table_id,
                     col_idx,
                     row_idx,
-                    np.append(d.column_features[col_idx][row_idx], row.table_id).tolist(),
+                    np.append(
+                        d.column_features[col_idx][row_idx], row.table_id
+                    ).tolist(),
                 )
             )
 
     return feature_list
 
-#TODO: Mark this code part as adapted code from raha (Apache License 2.0 (4b) requires this )
 
-def run_strategies(self: raha.detection.Detection, d:raha.dataset.Dataset) -> None:
+# TODO: Mark this code part as adapted code from raha (Apache License 2.0 (4b) requires this )
+
+
+def run_strategies(self: raha.detection.Detection, d: raha.dataset.Dataset) -> None:
     """This method runs (all or the promising) strategies.
 
     Args:
@@ -161,13 +183,15 @@ def run_strategies(self: raha.detection.Detection, d:raha.dataset.Dataset) -> No
                             for configuration in configuration_list
                         ]
                     )
-            #TODO: Within a spark worker no rdd/dataframe can be created to parallelize tasks again. To include multiprocessing here again is then somewhat redundant and could lead to conflicts for resources.
+            # TODO: Within a spark worker no rdd/dataframe can be created to parallelize tasks again. To include multiprocessing here again is then somewhat redundant and could lead to conflicts for resources.
             random.shuffle(algorithm_and_configurations)
-            pool = multiprocessing.Pool()
-            _strategy_runner_process_ = functools.partial(_strategy_runner_process, d)
-            strategy_profiles_list = pool.map(
-                _strategy_runner_process_, algorithm_and_configurations
-            )
+
+            strategy_profiles_list = []
+            for [d, algorithm, configuration] in algorithm_and_configurations:
+                strategy_profiles_list.append(
+                    _strategy_runner_process(d, [d, algorithm, configuration])
+                )
+
     else:
         for dd in self.HISTORICAL_DATASETS + [d.dictionary]:
             raha.utilities.dataset_profiler(dd)
@@ -182,7 +206,9 @@ def run_strategies(self: raha.detection.Detection, d:raha.dataset.Dataset) -> No
         print("{} strategy profiles are collected.".format(len(d.strategy_profiles)))
 
 
-def generate_features(self: raha.detection.Detection, d:raha.dataset.Dataset) -> List[np.ndarray]:
+def generate_features(
+    self: raha.detection.Detection, d: raha.dataset.Dataset
+) -> List[np.ndarray]:
     """This method generates features.
 
     Args:
