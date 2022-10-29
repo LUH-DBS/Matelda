@@ -1,12 +1,14 @@
 import math
 import random
+import os
 
 from typing import Dict, Tuple
-from pyspark.sql import DataFrame, SparkSession
-from pyspark.sql.functions import pandas_udf
-from pyspark.sql.functions import PandasUDFType
+from functools import reduce
+from pyspark.sql import DataFrame, SparkSession, Window
 from pyspark.ml.classification import GBTClassifier
 from pyspark.ml.clustering import KMeans, BisectingKMeans
+
+import pyspark.sql.functions as F
 
 
 def error_detector_pyspark(
@@ -18,17 +20,21 @@ def error_detector_pyspark(
     column_grouping_df: DataFrame,
     number_of_column_clusters: int,
 ):
+    """_summary_
+
+    Args:
+        labeling_budget (int): _description_
+        cell_clustering_alg (str): _description_
+        result_path (str): _description_
+        raha_features_df (DataFrame): _description_
+        labels_df (DataFrame): _description_
+        column_grouping_df (DataFrame): _description_
+        number_of_column_clusters (int): _description_
+    """
     spark = SparkSession.getActiveSession()
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
-    (
-        X_train,
-        y_train,
-        X_test,
-        y_test,
-        original_data_values,
-        n_samples,
-    ) = get_train_test_sets(
+    (x_train, y_train, x_test, y_test,) = get_train_test_sets(
         column_grouping_df=column_grouping_df,
         results_path=result_path,
         raha_features_df=raha_features_df,
@@ -38,27 +44,26 @@ def error_detector_pyspark(
         cell_clustering_alg=cell_clustering_alg,
         logger=logger,
     )
-
-    # TODO: classify
+    # TODO: Right classifier?
     # gbt = GBTClassifier()
-    # model = gbt.fit()
+    # model = gbt.fit(x_test)
 
 
 def get_train_test_sets(
     column_grouping_df: DataFrame,
-    results_path,
+    results_path: str,
     raha_features_df: DataFrame,
     labels_df: DataFrame,
     n_labels: int,
     number_of_clusters: int,
     cell_clustering_alg: str,
     logger,
-) -> Tuple[list, list, list, list, list, int]:
+) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame]:
     """_summary_
 
     Args:
         column_grouping_df (DataFrame): _description_
-        results_path (_type_): _description_
+        results_path (str): _description_
         raha_features_df (DataFrame): _description_
         labels_df (DataFrame): _description_
         n_labels (int): _description_
@@ -67,14 +72,9 @@ def get_train_test_sets(
         logger (_type_): _description_
 
     Returns:
-        Tuple[list, list, list, list, list, int]: _description_
+        Tuple[DataFrame, DataFrame, DataFrame, DataFrame]: _description_
     """
-    X_train = []
-    y_train = []
-    X_test = []
-    y_test = []
-    original_data_values = []
-    labels = []
+    y_train_list = []
 
     logger.warn("Splitting labeling budget between column clusters")
     n_cell_clusters_per_col_cluster_dict = split_labeling_budget(
@@ -88,35 +88,45 @@ def get_train_test_sets(
     y_test_df = labels_df.join(column_grouping_df, ["table_id", "column_id"], "inner")
 
     # TODO: is here an way to espress this in pyspark?
-    for c_idx in range(number_of_clusters + 1):
+    for c_idx in range(number_of_clusters):
         logger.warn("Processing cluster {}".format(c_idx))
         cluster_df = x_test_df.where(x_test_df.col_cluster == c_idx)
-        cluster_label_df = y_test_df.where(x_test_df.col_cluster == c_idx)
-
+        cluster_label_df = y_test_df.where(y_test_df.col_cluster == c_idx)
         if len(cluster_df.head(1)) == 0:
             logger.warn("Cluster {} is empty".format(c_idx))
             continue
 
-        cluster_samples_df, cluster_samples_labels_df = sampling_labeling(
+        (
+            cluster_samples_df,
+            cluster_samples_labels_df,
+            predictions_df,
+        ) = sampling_labeling(
             cluster_df,
             cluster_label_df,
             n_cell_clusters_per_col_cluster_dict[c_idx],
             cell_clustering_alg,
             logger,
         )
-        print(cluster_samples_df.show())
-        print(cluster_samples_labels_df.show())
 
-        # X_train, y_train = label_propagation(
-        #     X_train,
-        #     X_tmp,
-        #     y_train,
-        #     cells_per_cluster,
-        #     labels_per_cluster,
-        #     logger,
-        # )
+        # Save temp results
+        # cluster_samples_df.write.parquet(os.path.join(results_path, str(c_idx) + "_samples.parquet"), mode="overwrite")
+        # cluster_samples_labels_df.write.parquet(os.path.join(results_path, str(c_idx) +"_samples_labels.parquet"), mode="overwrite")
+        # predictions_df.write.parquet(os.path.join(results_path, str(c_idx) +"_clustering.parquet"), mode="overwrite")
 
-    return X_train, y_train, X_test, y_test, original_data_values, len(labels)
+        y_train = label_propagation(
+            cluster_label_df,
+            cluster_samples_labels_df,
+            predictions_df,
+            logger,
+        )
+        y_train_list.append(y_train)
+
+    return (
+        x_test_df,
+        reduce(DataFrame.unionAll, y_train_list),
+        x_test_df,
+        y_test_df,
+    )
 
 
 def split_labeling_budget(
@@ -134,7 +144,7 @@ def split_labeling_budget(
     n_cell_clusters_per_col_cluster = math.floor(labeling_budget / number_of_clusters)
     n_cell_clusters_per_col_cluster_dict = {
         col_cluster: n_cell_clusters_per_col_cluster
-        for col_cluster in range(number_of_clusters + 1)
+        for col_cluster in range(number_of_clusters)
     }
 
     while sum(n_cell_clusters_per_col_cluster_dict.values()) < labeling_budget:
@@ -145,15 +155,36 @@ def split_labeling_budget(
 
 
 def label_propagation(
-    x_train, x_tmp, y_train, cells_per_cluster, labels_per_cluster, logger
-):
+    cluster_label_df: DataFrame,
+    cluster_samples_labels_df: DataFrame,
+    predictions_df: DataFrame,
+    logger,
+) -> DataFrame:
+    """_summary_
+
+    Args:
+        cluster_label_df (DataFrame): _description_
+        cluster_samples_labels_df (DataFrame): _description_
+        predictions_df (DataFrame): _description_
+        logger (_type_): _description_
+
+    Returns:
+        DataFrame: _description_
+    """
     logger.warn("Propagating label")
-    for key in list(cells_per_cluster.keys()):
-        for cell in cells_per_cluster[key]:
-            x_train.append(x_tmp[cell])
-            y_train.append(labels_per_cluster[key])
-    logger.info("Length of X_train: {}".format(len(x_train)))
-    return x_train, y_train
+
+    y_train = (
+        cluster_label_df.drop("ground_truth")
+        .join(
+            predictions_df.select("table_id", "column_id", "row_id", "prediction"),
+            ["table_id", "column_id", "row_id"],
+        )
+        .join(
+            cluster_samples_labels_df.select("prediction", "ground_truth"), "prediction"
+        )
+    )
+
+    return y_train
 
 
 def sampling_labeling(
@@ -162,7 +193,7 @@ def sampling_labeling(
     n_cell_clusters_per_col_cluster: int,
     cells_clustering_alg: str,
     logger,
-) -> Tuple[DataFrame, DataFrame]:
+) -> Tuple[DataFrame, DataFrame, DataFrame]:
     """_summary_
 
     Args:
@@ -173,7 +204,7 @@ def sampling_labeling(
         logger (_type_): _description_
 
     Returns:
-        Tuple[DataFrame, DataFrame]: _description_
+        Tuple[DataFrame, DataFrame, DataFrame]: _description_
     """
     logger.warn("Clustering cluster values")
 
@@ -192,21 +223,18 @@ def sampling_labeling(
     predictions = model.transform(x).drop("features")
 
     logger.warn("Drawing samples")
-
-    # TODO: can be expensive
-    samples_df = predictions.groupBy("prediction").applyInPandas(
-        get_random_sample, predictions.schema
+    # Draw random sample from each cluster
+    window = Window.partitionBy(predictions["prediction"]).orderBy(F.rand())
+    samples_df = (
+        predictions.select("*", F.rank().over(window).alias("rank"))
+        .filter(F.col("rank") <= 1)
+        .drop("rank")
     )
 
-    labels_df = y.join(samples_df, ["table_id", "column_id", "row_id"], how="left")
-
-    return samples_df, labels_df
-
-
-def get_random_sample(x: DataFrame) -> DataFrame:
-    sample = x.rdd.takeSample(withReplacement=False, num=1)
-    return (
-        x.where(x.table_id == sample["table_id"])
-        .where(x.column_id == sample["column_id"])
-        .where(x.row_id == sample["row_id"])
+    labels_df = y.join(
+        samples_df.select("table_id", "column_id", "row_id", "prediction"),
+        ["table_id", "column_id", "row_id"],
+        how="inner",
     )
+
+    return samples_df, labels_df, predictions

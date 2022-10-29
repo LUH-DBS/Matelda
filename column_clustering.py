@@ -95,10 +95,10 @@ def cluster_columns(
     if auto_clustering_enabled == 1:
         # TODO: Add DBSCAN
         logger.warn("Clustering columns with AUTO_CLUSTERING")
-        return col_df.withColumn("col_cluster", lit(1)), 1
+        return col_df.withColumn("col_cluster", lit(0)), 1
     else:
         logger.warn("Clustering columns without AUTO_CLUSTERING")
-        return col_df.withColumn("col_cluster", lit(1)), 1
+        return col_df.withColumn("col_cluster", lit(0)), 1
 
 
 def column_clustering_pyspark(
@@ -167,8 +167,8 @@ def column_clustering_pyspark(
         logger.warn("Loading column clustering from disk")
         column_df = spark.read.parquet(column_groups_path)
         logger.warn("Counting number of columns cluster")
-        num_cluster = column_df.agg({"col_cluster": "max"}).collect()[0][
-            "max(col_cluster)"
-        ]
+        num_cluster = (
+            column_df.agg({"col_cluster": "max"}).collect()[0]["max(col_cluster)"] + 1
+        )
 
     return column_df, num_cluster

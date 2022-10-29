@@ -117,7 +117,7 @@ def cluster_datasets_pyspark(
             context_df = context_df.join(clustering_df, "table_id")
         else:
             logger.warn("Clustering tables without AUTO_CLUSTERING")
-            context_df = context_df.withColumn("table_cluster", lit(1))
+            context_df = context_df.withColumn("table_cluster", lit(0))
 
         table_grouping_df = context_df.select(col("table_id"), col("table_cluster"))
         logger.warn("Writing table clustering result to disk.")
