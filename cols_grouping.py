@@ -22,6 +22,7 @@ from gensim.models import Word2Vec
 import dask.dataframe as dd
 from messytables import CSVTableSet, type_guess
 import spacy
+from sklearn.cluster import KMeans
 
 logger = logging.getLogger()
 
@@ -108,12 +109,13 @@ def get_col_features(col_df, ner_model_name):
     col_features = []
     characters_dictionary = {}
     values_dictionary = {}
+    sum_value_length_dictionary = {}
 
-    ner_model, labels = get_ner_model_and_labels(ner_model_name)
+    # ner_model, labels = get_ner_model_and_labels(ner_model_name)
     feature_names = []
     # feature_names.extend(['table_id', 'col_id'])
-    # feature_names.extend(['table_id', 'col_id', 'totalValueCount', 'emptyValueCount', 'distinctValueCount', 'uniqueness', 'entropy'])
-    feature_names.extend(labels)
+    feature_names.extend(['table_id', 'col_id', 'totalValueCount', 'emptyValueCount', 'distinctValueCount', 'uniqueness', 'entropy'])
+    # feature_names.extend(labels)
     feature_names.append('col_type')
 
 
@@ -127,9 +129,9 @@ def get_col_features(col_df, ner_model_name):
         features.append(profiles.stats()['uniqueness'][0])
         features.append(profiles[0]['stats']['entropy'])
 
-        ner_features = get_ner_model_labels(ner_model, labels, col_df['col_value'][i])
-        for feature in ner_features.keys():
-            features.append(ner_features[feature])
+        # ner_features = get_ner_model_labels(ner_model, labels, col_df['col_value'][i])
+        # for feature in ner_features.keys():
+        #     features.append(ner_features[feature])
 
         if col_df['col_type'][i]:
             col_type = str(col_df['col_type'][i])
@@ -148,6 +150,7 @@ def get_col_features(col_df, ner_model_name):
                 features[j] = -1
         col_features.append(features)
 
+        value_length_sum = 0
         for value in col_df['col_value'][i]:
             for character in list(set(list(str(value)))):
                 if character not in characters_dictionary:
@@ -156,11 +159,17 @@ def get_col_features(col_df, ner_model_name):
             if value not in values_dictionary:
                 values_dictionary[value] = 0.0
             values_dictionary[value] += 1.0
+            value_length_sum += len(str(value))
+        sum_value_length_dictionary[i] = value_length_sum
+
+    for key in sum_value_length_dictionary.keys():
+        sum_value_length_dictionary[key] = sum_value_length_dictionary[key]/len(col_df['col_value'][key])
 
     for i in range(col_df.shape[0]):
         column_profile = {
             "characters": {ch: characters_dictionary[ch] / len(col_df['col_value'][i]) for ch in characters_dictionary},
             "values": {v: values_dictionary[v] / len(col_df['col_value'][i]) for v in values_dictionary},
+            "avg_value_length": sum_value_length_dictionary[i]
         }
         char_list = list(column_profile["characters"].values())
         value_list = list(column_profile["values"].values())
@@ -170,6 +179,8 @@ def get_col_features(col_df, ner_model_name):
         for val in value_list:
             col_features[i].append(val)
 
+        col_features[i].append(column_profile['avg_value_length'])
+
     return col_features, feature_names
 
 
@@ -178,10 +189,10 @@ def cluster_cols_auto(col_features, auto_clustering_enabled, feature_names):
     reduced_features = []
     # TODO
     for col_feature in col_features:
-        reduced_features.append(col_feature[7:])
+        reduced_features.append(col_feature[8:])
     # columns = ['table_id', 'col_id', 'totalValueCount', 'emptyValueCount', 'distinctValueCount',
     #            'uniqueness', 'entropy', 'data_type_code']
-    vocabulary = [str(i) for i in range(19, len(col_features[0]))]
+    vocabulary = [str(i) for i in range(8, len(col_features[0]))]
     columns = feature_names + vocabulary
 
     if auto_clustering_enabled:
@@ -196,6 +207,32 @@ def cluster_cols_auto(col_features, auto_clustering_enabled, feature_names):
     number_of_clusters = len(col_labels_df['column_cluster_label'].unique())
 
     return col_labels_df, number_of_clusters
+
+def cluster_cols(col_features, auto_clustering_enabled, feature_names):
+    
+    reduced_features = []
+    
+    for col_feature in col_features:
+        reduced_features.append(col_feature[8:])
+    # columns = ['table_id', 'col_id', 'totalValueCount', 'emptyValueCount', 'distinctValueCount',
+    #            'uniqueness', 'entropy', 'data_type_code']
+    vocabulary = [str(i) for i in range(8, len(col_features[0]))]
+    columns = feature_names + vocabulary
+    columns = columns.append("avg_value_length")
+
+    if auto_clustering_enabled:
+        clustering_results = KMeans(n_clusters=20, random_state=0).fit(reduced_features)
+        col_labels_df = pd.DataFrame(col_features, columns=columns)
+        col_labels_df['column_cluster_label'] = pd.DataFrame(clustering_results.labels_)
+    else:
+        col_labels_df = pd.DataFrame(col_features, columns=columns)
+        ones_ = np.ones(len(col_features))
+        col_labels_df['column_cluster_label'] = pd.DataFrame(ones_)
+
+    number_of_clusters = len(col_labels_df['column_cluster_label'].unique())
+
+    return col_labels_df, number_of_clusters
+
 
 
 def extract_labels(gt_path):
@@ -244,7 +281,7 @@ def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clus
     for cluster in clusters_dict:
         col_df = get_col_df(sandbox_path, clusters_dict[cluster], labels_path)
         col_features, feature_names = get_col_features(col_df, ner_model_name)
-        col_labels_df, number_of_clusters = cluster_cols_auto(col_features, auto_clustering_enabled, feature_names)
+        col_labels_df, number_of_clusters = cluster_cols(col_features, auto_clustering_enabled, feature_names)
         number_of_col_clusters += number_of_clusters
         col_labels_df['col_value'] = col_df['col_value']
         col_labels_df['col_gt'] = col_df['col_gt']
