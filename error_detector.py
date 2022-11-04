@@ -5,8 +5,9 @@ import os
 from typing import Dict, Tuple
 from functools import reduce
 from pyspark.sql import DataFrame, SparkSession, Window
-from pyspark.ml.classification import GBTClassifier
 from pyspark.ml.clustering import KMeans, BisectingKMeans
+from pyspark.ml.feature import Imputer
+from xgboost.spark import SparkXGBClassifier
 
 import pyspark.sql.functions as F
 
@@ -19,7 +20,7 @@ def error_detector_pyspark(
     labels_df: DataFrame,
     column_grouping_df: DataFrame,
     number_of_column_clusters: int,
-):
+) -> DataFrame:
     """_summary_
 
     Args:
@@ -44,9 +45,33 @@ def error_detector_pyspark(
         cell_clustering_alg=cell_clustering_alg,
         logger=logger,
     )
-    # TODO: Right classifier?
-    # gbt = GBTClassifier()
-    # model = gbt.fit(x_test)
+    # TODO: do we need an imputer? If there are missing values the sampling label method would already crashed
+    # imputer = Imputer(strategy='mode')
+    # imputer.setInputCol("features")
+    # imputer_model = imputer.fit(x_train)
+    # x_train = imputer_model.transform(x_train)
+    # x_train.show()
+    # xgboost for spark is experimental feature
+    logger.warn("Training detection classfier")
+    xgb_classifier = SparkXGBClassifier(
+        features_col="features",
+        label_col="ground_truth",
+        num_workers=spark.sparkContext.defaultParallelism,
+    )
+    xgb_classifier_model = xgb_classifier.fit(
+        x_train.join(y_train, ["table_id", "column_id", "row_id"], "inner")
+    )
+    logger.warn("Predicting errors")
+    prediction_df = xgb_classifier_model.transform(x_train)
+    #logger.warn("Saving classifier")
+    #xgb_classifier_model.save(
+    #    os.path.join(result_path, "xgboost-classifier-pyspark-model"),
+    #)
+    #Does not overwrite old savings
+    logger.warn("Writing error dectection result to disk.")
+    prediction_df = prediction_df.drop('probability', 'rawPrediction')
+    prediction_df.write.parquet(os.path.join(result_path, "error_predictions.parquet"), mode="overwrite")
+    return prediction_df
 
 
 def get_train_test_sets(
@@ -89,11 +114,11 @@ def get_train_test_sets(
 
     # TODO: is here an way to espress this in pyspark?
     for c_idx in range(number_of_clusters):
-        logger.warn("Processing cluster {}".format(c_idx))
+        logger.warn("Processing column cluster {}".format(c_idx))
         cluster_df = x_test_df.where(x_test_df.col_cluster == c_idx)
         cluster_label_df = y_test_df.where(y_test_df.col_cluster == c_idx)
         if len(cluster_df.head(1)) == 0:
-            logger.warn("Cluster {} is empty".format(c_idx))
+            logger.warn("Column cluster {} is empty".format(c_idx))
             continue
 
         (
@@ -119,12 +144,12 @@ def get_train_test_sets(
             predictions_df,
             logger,
         )
-        y_train_list.append(y_train)
+        y_train_list.append(y_train.drop("prediction", "col_cluster"))
 
     return (
-        x_test_df,
+        raha_features_df,
         reduce(DataFrame.unionAll, y_train_list),
-        x_test_df,
+        raha_features_df,
         y_test_df,
     )
 

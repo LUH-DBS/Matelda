@@ -9,6 +9,7 @@ from extract_labels import generate_labels_pyspark
 from handle_data import generate_csv_paths
 from raha_features import generate_raha_features_pyspark
 from error_detector import error_detector_pyspark
+from check_results import evaluate_pyspark
 
 
 def run_experiments(
@@ -94,9 +95,8 @@ def run_experiments(
         cell_feature_generator_enabled=cell_feature_generator_enabled,
     )
 
-    logger.warn("WIP!")
     logger.warn("Detecting Errors")
-    error_detector_pyspark(
+    error_prediction_df = error_detector_pyspark(
         result_path=os.path.join(
             experiment_output_path,
             "results_exp_{}_labels_{}".format(exp_number, labeling_budget),
@@ -107,6 +107,16 @@ def run_experiments(
         labels_df=labels_df,
         column_grouping_df=column_grouping_df,
         number_of_column_clusters=number_of_column_clusters,
+    )
+
+    logger.warn("Evaluating")
+    evaluate_pyspark(
+        error_prediction_df,
+        labels_df,
+        result_path=os.path.join(
+            experiment_output_path,
+            "results_exp_{}_labels_{}".format(exp_number, labeling_budget),
+        ),
     )
 
 

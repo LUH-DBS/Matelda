@@ -14,7 +14,7 @@ dependencies:
     - pandas==1.4.4
     - raha==1.25
     - scikit-learn==1.1.2
-    - xgboost==1.6.2
+    - xgboost==1.7.1
     - nltk==3.7
     - pyspark==3.3.0
     - pyarrow==9.0.0
