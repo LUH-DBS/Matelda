@@ -18,4 +18,4 @@ dependencies:
     - nltk==3.7
     - pyspark==3.3.0
     - pyarrow==9.0.0
-    - pyspark_dbscan==1.0.6
+    - git+https://github.com/okfn/messytables.git@master
