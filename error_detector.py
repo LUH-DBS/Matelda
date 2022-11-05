@@ -63,14 +63,16 @@ def error_detector_pyspark(
     )
     logger.warn("Predicting errors")
     prediction_df = xgb_classifier_model.transform(x_train)
-    #logger.warn("Saving classifier")
-    #xgb_classifier_model.save(
+    # logger.warn("Saving classifier")
+    # xgb_classifier_model.save(
     #    os.path.join(result_path, "xgboost-classifier-pyspark-model"),
-    #)
-    #Does not overwrite old savings
+    # )
+    # Does not overwrite old savings
     logger.warn("Writing error dectection result to disk.")
-    prediction_df = prediction_df.drop('probability', 'rawPrediction')
-    prediction_df.write.parquet(os.path.join(result_path, "error_predictions.parquet"), mode="overwrite")
+    prediction_df = prediction_df.drop("probability", "rawPrediction")
+    prediction_df.write.parquet(
+        os.path.join(result_path, "error_predictions.parquet"), mode="overwrite"
+    )
     return prediction_df
 
 
