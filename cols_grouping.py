@@ -65,14 +65,15 @@ def get_col_features(col_df, ner_model_name):
     col_features = []
     characters_dictionary = {}
     tokens_dictionary = {}
-    sum_value_length_dictionary = {}
+    value_length_dictionary = {}
+    count_char_tokens = {}
 
     # feature_names = ['col_type', 'uniqueness', 'emptyValueCount']
     feature_names = ['col_type']
 
     for i in range(col_df.shape[0]):
         features = []
-        profiles = dataset_profile(pd.DataFrame(col_df['col_value'][i]))
+        # profiles = dataset_profile(pd.DataFrame(col_df['col_value'][i]))
         # features.append(profiles.stats()['uniqueness'][0])
         # features.append(profiles[0]['stats']['emptyValueCount'])
 
@@ -93,29 +94,36 @@ def get_col_features(col_df, ner_model_name):
                 features[j] = -1
         col_features.append(features)
 
+        count_char_tokens[i] = {'char':0, 'tokens': 0}
         value_length_sum = []
         for value in col_df['col_value'][i]:
             char_list = list(set(list(str(value))))
             if ' ' in char_list:
                 char_list.remove(' ')
+            count_char_tokens[i]['char'] += len(char_list)
             for character in char_list:
                 if character not in characters_dictionary:
-                    characters_dictionary[character] = 0.0
-                characters_dictionary[character] += 1.0
+                    characters_dictionary[character] = {i: 0.0}
+                if i not in characters_dictionary[character]:
+                    characters_dictionary[character][i] =  0.0
+                characters_dictionary[character][i] += 1.0
             value_length_sum.append(len(str(value)))
             tokens = str(value).split()
             if ' ' in tokens:
                 tokens.remove(' ')
+            count_char_tokens[i]['tokens'] += len(tokens)
             for token in tokens:
                 if token not in tokens_dictionary:
-                    tokens_dictionary[token] = 0.0
-                tokens_dictionary[token] += 1.0
-    
-        sum_value_length_dictionary[i] = value_length_sum
+                    tokens_dictionary[token] = {i: 0.0}
+                if i not in tokens_dictionary[token]:
+                    tokens_dictionary[token][i] =  0.0
+                tokens_dictionary[token][i] += 1.0
 
-    for key in sum_value_length_dictionary.keys():
+        value_length_dictionary[i] = value_length_sum
+
+    for key in value_length_dictionary.keys():
         # sum_value_length_dictionary[key] = sum_value_length_dictionary[key]/len(col_df['col_value'][key])
-        sum_value_length_dictionary[key] = median(sum_value_length_dictionary[key])
+        value_length_dictionary[key] = median(value_length_dictionary[key])
 
     for token in list(tokens_dictionary.keys()):
         if token in characters_dictionary.keys():
@@ -123,11 +131,23 @@ def get_col_features(col_df, ner_model_name):
 
 
     for i in range(col_df.shape[0]):
-        column_profile = {
-            "characters": {ch: characters_dictionary[ch] / len(col_df['col_value'][i]) for ch in characters_dictionary},
-            "tokens": {v: tokens_dictionary[v] / len(col_df['col_value'][i]) for v in tokens_dictionary},
-            "avg_value_length": sum_value_length_dictionary[i]
-        }
+        
+        column_profile = {"characters": dict(), "tokens": dict(), "median_value_length": 0}
+
+        for ch in list(characters_dictionary.keys()):
+            if i in characters_dictionary[ch]:
+                column_profile["characters"][ch] = characters_dictionary[ch][i] / len(col_df['col_value'][i])
+            else:
+                column_profile["characters"][ch] = 0
+
+        for t in list(tokens_dictionary.keys()):
+            if i in tokens_dictionary[t]:
+                column_profile["tokens"][t] = tokens_dictionary[t][i] / len(col_df['col_value'][i])
+            else:
+                column_profile["tokens"][t] = 0
+
+        column_profile["median_value_length"] = value_length_dictionary[i]
+        
         char_list = list(column_profile["characters"].values())
         tokens_list = list(column_profile["tokens"].values())
 
@@ -137,43 +157,14 @@ def get_col_features(col_df, ner_model_name):
         for token in tokens_list:
             col_features[i].append(token)
 
-        col_features[i].append(column_profile['avg_value_length'])
+        col_features[i].append(column_profile['median_value_length'])
 
     feature_names.extend([c for c in characters_dictionary.keys()])
     feature_names.extend([str(v) for v in tokens_dictionary.keys()])
-    feature_names.append("avg_value_length")
+    feature_names.append("median_value_length")
     return col_features, feature_names
 
-
-def cluster_cols_auto(col_features, auto_clustering_enabled, feature_names):
-    # TODO: dbscan params config
-    reduced_features = []
-    # TODO
-    for col_feature in col_features:
-        reduced_features.append(col_feature[8:])
-    # columns = ['table_id', 'col_id', 'totalValueCount', 'emptyValueCount', 'distinctValueCount',
-    #            'uniqueness', 'entropy', 'data_type_code']
-    vocabulary = [str(i) for i in range(8, len(col_features[0]))]
-    columns = feature_names + vocabulary
-
-    if auto_clustering_enabled:
-        clustering_results = DBSCAN(eps=0.7, min_samples=10).fit(reduced_features)
-        col_labels_df = pd.DataFrame(col_features, columns=columns)
-        col_labels_df['column_cluster_label'] = pd.DataFrame(clustering_results.labels_)
-    else:
-        col_labels_df = pd.DataFrame(col_features, columns=columns)
-        ones_ = np.ones(len(col_features))
-        col_labels_df['column_cluster_label'] = pd.DataFrame(ones_)
-
-    number_of_clusters = len(col_labels_df['column_cluster_label'].unique())
-
-    return col_labels_df, number_of_clusters
-
 def cluster_cols(col_features, auto_clustering_enabled, feature_names):
-    
-    # vocabulary = [str(i) for i in range(3, len(col_features[0]))]
-    # columns = feature_names + vocabulary
-    # columns.append("avg_value_length")
 
     if auto_clustering_enabled:
         clustering_results = KMeans(n_clusters=10, random_state=0).fit(col_features)
@@ -231,10 +222,12 @@ def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clus
         number_of_col_clusters += number_of_clusters
         col_labels_df['col_value'] = col_df['col_value']
         col_labels_df['col_gt'] = col_df['col_gt']
+        col_labels_df['table_id'] = col_df['table_id']
+        col_labels_df['col_id'] = col_df['col_id']
         with open(os.path.join(col_groups_dir, "col_df_labels_cluster_{}.pickle".format(cluster)), "wb") \
                 as filehandler:
             pickle.dump(col_labels_df, filehandler)
-        col_labels_df[["column_cluster_label", "col_value"]].to_csv(
+        col_labels_df[["column_cluster_label", "col_value", "table_id", "col_id"]].to_csv(
             os.path.join(col_groups_dir, "col_df_labels_cluster_{}.csv".format(cluster))
         )
     print("Finsihed")
