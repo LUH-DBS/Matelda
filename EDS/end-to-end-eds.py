@@ -86,7 +86,7 @@ if __name__ == '__main__':
 
     # App-Config Management
     configs = ConfigParser()
-    configs.read("config.ini")
+    configs.read("EDS/config.ini")
     
     sandbox_dir = configs["DIRECTORIES"]["sandbox_dir"]
     output_dir = configs["DIRECTORIES"]["output_dir"]

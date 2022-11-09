@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/Users/fatemehahmadi/opt/anaconda3/envs/Error-Detection-at-Scale/bin/python",
+    "python.analysis.extraPaths": [
+        "./EDS/ds_utils/messytables"
+    ]
+}
