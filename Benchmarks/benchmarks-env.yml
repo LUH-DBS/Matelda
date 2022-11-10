@@ -12,7 +12,7 @@ dependencies:
     - numpy==1.23.2
     - openclean-core==0.4.1
     - pandas==1.4.4
-    - raha==1.25
     - scikit-learn==1.1.2
     - xgboost==1.6.2
     - nltk==3.7
+    - -e ./ .

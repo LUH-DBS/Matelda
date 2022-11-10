@@ -458,14 +458,15 @@ if __name__ == "__main__":
     detection_dictionary, labeled_cells = app.run(dataset_dictionary)
     data = raha.dataset.Dataset(dataset_dictionary)
     end_time = time.time()
-    p, r, f = data.get_data_cleaning_evaluation(detection_dictionary)[:3]
-    results = {'precision': p, 'recall': r, 'f_score': f, 
+    metrics = data.get_data_cleaning_evaluation(detection_dictionary)
+    results = {'precision': metrics["ed_p"], 'recall': metrics["ed_r"], 'f_score': metrics["ed_f"],
+               'tp': metrics["ed_tp"], 'ed_tpfp': metrics["output_size"], 'ed_tpfn': metrics["actual_errors"],
                'execution-time': end_time - start_time, 'number_of_labeled_tuples': labeling_budget,
                'number_of_labeled_cells': len(labeled_cells)}
     result_file_path = "Benchmarks/raha/results/raha_{}_number#{}_${}$labels.json".format(dataset_name, execution_number, labeling_budget)
     with open(result_file_path, "w") as result_file:
         json.dump(results, result_file)
-    print("Raha's performance on {}:\nPrecision = {:.2f}\nRecall = {:.2f}\nF1 = {:.2f}".format(data.name, p, r, f))
+    print("Raha's performance on {}:\nPrecision = {:.2f}\nRecall = {:.2f}\nF1 = {:.2f}".format(data.name, metrics["ed_p"], metrics["ed_r"], metrics["ed_f"]))
     # --------------------
     # app.STRATEGY_FILTERING = True
     # app.HISTORICAL_DATASETS = [

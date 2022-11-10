@@ -611,7 +611,8 @@ if __name__ == "__main__":
     data.detected_cells = dict(data.get_actual_errors_dictionary())
     app = Correction()
     correction_dictionary = app.run(data)
-    p, r, f = data.get_data_cleaning_evaluation(correction_dictionary)[-3:]
+    metrics = data.get_data_cleaning_evaluation(correction_dictionary)
+    p, r, f = metrics['ec_p'], metrics['ec_r'], metrics['ec_f']
     print("Baran's performance on {}:\nPrecision = {:.2f}\nRecall = {:.2f}\nF1 = {:.2f}".format(data.name, p, r, f))
     # --------------------
     # app.extract_revisions(wikipedia_dumps_folder="../wikipedia-data")

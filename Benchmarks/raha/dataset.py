@@ -128,7 +128,12 @@ class Dataset:
         ec_p = 0.0 if output_size == 0 else ec_tp / output_size
         ec_r = 0.0 if len(actual_errors) == 0 else ec_tp / len(actual_errors)
         ec_f = 0.0 if (ec_p + ec_r) == 0.0 else (2 * ec_p * ec_r) / (ec_p + ec_r)
-        return [ed_p, ed_r, ed_f, ec_p, ec_r, ec_f]
+
+        metrics = {"ed_p": ed_p, "ed_r": ed_r, "ed_f": ed_f, "ed_tp": ed_tp,
+                   "ec_p": ec_p, "ec_r": ec_r, "ec_f": ec_f, "ec_tp": ec_tp,
+                   "output_size": output_size, "actual_errors": len(actual_errors)
+                   }
+        return metrics
 ########################################
 
 
