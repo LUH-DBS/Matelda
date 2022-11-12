@@ -16,6 +16,9 @@ case $1 in
     conda activate Error-Detection-at-Scale
     ;;
 
+  'remove')
+    conda env remove -n Error-Detection-at-Scale
+    ;;
   *)
     echo "Enter valid command"
     ;;

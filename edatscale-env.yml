@@ -3,7 +3,7 @@ channels:
   - defaults
 dependencies:
   - pip=22.1.2
-  - python=3.10.4
+  - python=3.9
   - pip:
     - dask==2022.9.0
     - distributed==2022.9.0
@@ -18,4 +18,5 @@ dependencies:
     - nltk==3.7
     - pyspark==3.3.0
     - pyarrow==9.0.0
+    - black==22.10.0 
     - git+https://github.com/okfn/messytables.git@master

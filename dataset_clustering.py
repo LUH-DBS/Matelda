@@ -122,7 +122,6 @@ def cluster_datasets_pyspark(
         table_grouping_df = context_df.select(col("table_id"), col("table_cluster"))
         logger.warn("Writing table clustering result to disk.")
         table_grouping_df.write.parquet(output_path, mode="overwrite")
-        table_grouping_df.show()
     else:
         logger.warn("Loading table grouping from disk")
         table_grouping_df = spark.read.parquet(output_path)
