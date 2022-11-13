@@ -58,13 +58,43 @@ query_df = ps.sqldf(query)
 
 number_of_labeled_cells_query = 'SELECT algorithm, number_of_labeled_tuples, SUM(number_of_labeled_cells) FROM result_df WHERE execution_number = 1 GROUP BY number_of_labeled_tuples' 
 number_of_labeled_cells = ps.sqldf(number_of_labeled_cells_query)['SUM(number_of_labeled_cells)']
+
+# My approach 
+
+repeatitions = range(1, 11)
+labeling_budgets = [66, 132, 198, 264, 330, 396, 462, 528, 594, 660, 726, 792, 858, 924, 990, 1056, 1122, 1188, 1254, 1320]
+scores_dict = {"execution_number":[], "n_labels":[], "precision":[], "recall":[], "fscore":[]}
+
+for exec_num in repeatitions:
+    for label in labeling_budgets:
+        dir_name = 'EDS/results/results_exp_{}_labels_{}'.format(exec_num, label)
+        if os.path.isfile(os.path.join(dir_name, 'scores.pickle')):
+            scores = pd.read_pickle(os.path.join(dir_name, 'scores.pickle'))
+            scores_dict['execution_number'].append(exec_num)
+            scores_dict['n_labels'].append(label)
+            scores_dict['precision'].append(scores['precision'])
+            scores_dict['recall'].append(scores['recall'])
+            scores_dict['fscore'].append(scores['f_score'])
+scores_df = pd.DataFrame.from_dict(scores_dict)
+scores_df.to_csv('scoress_df_me.csv')
+
+query_fscore = 'SELECT n_labels, \
+                SUM(fscore)/10, SUM(precision)/10, SUM(recall)/10 FROM scores_df GROUP BY n_labels'
+res = ps.sqldf(query_fscore)
+f_scores, precision, recall = res['SUM(fscore)/10'], \
+                                res['SUM(precision)/10'], \
+                                 res['SUM(recall)/10']
+
+
 # x axis values
 x = number_of_labeled_cells
 # corresponding y axis values
-y = list(query_df['SUM(finall_f_score)/10'])
-  
+y_raha = list(query_df['SUM(finall_f_score)/10'])
+y_me = f_scores
+
 # plotting the points 
-plt.plot(x, y, linestyle='-', marker='o', color = 'red')
+plt.plot(x, y_raha, linestyle='-', marker='o', color = 'red')
+plt.plot(x, y_me, linestyle='-', marker='+', color = 'green')
   
 # naming the x axis
 plt.xlabel('Number of labelled data cells')
@@ -72,11 +102,11 @@ plt.xlabel('Number of labelled data cells')
 plt.ylabel('F-Score')
   
 # giving a title to my graph
-plt.title('Raha-FScore')
-  
+plt.title('FScore')
+plt.legend(loc="upper left")
+
 # # function to show the plot
-# plt.show()
-plt.savefig('Benchmarks/raha/results/raha-f-score.png')
+plt.savefig('f-score.png')
 plt.close()
 
 
@@ -84,9 +114,11 @@ plt.close()
 x = number_of_labeled_cells
 # corresponding y axis values
 y = list(query_df['SUM(finall_precision)/10'])
+y_me = precision
   
 # plotting the points 
 plt.plot(x, y, linestyle='-', marker='o', color = 'red')
+plt.plot(x, y_me, linestyle='-', marker='+', color = 'green')
   
 # naming the x axis
 plt.xlabel('Number of labelled data cells')
@@ -94,8 +126,8 @@ plt.xlabel('Number of labelled data cells')
 plt.ylabel('Precision')
   
 # giving a title to my graph
-plt.title('Raha-Precision')
-plt.savefig('Benchmarks/raha/results/raha-precision.png')
+plt.title('Precision')
+plt.savefig('precision.png')
 plt.close()
 
 
@@ -103,18 +135,20 @@ plt.close()
 x = number_of_labeled_cells
 # corresponding y axis values
 y = list(query_df['SUM(finall_recall)/10'])
+y_me = recall
   
 # plotting the points 
 plt.plot(x, y, linestyle='-', marker='o', color = 'red')
-  
+plt.plot(x, y_me, linestyle='-', marker='+', color = 'green')
+
 # naming the x axis
 plt.xlabel('Number of labelled data cells')
 # naming the y axis
 plt.ylabel('Recall')
   
 # giving a title to my graph
-plt.title('Raha-Recall')
-plt.savefig('Benchmarks/raha/results/raha-recall.png')
+plt.title('Recall')
+plt.savefig('recall.png')
 plt.close()
 
 
