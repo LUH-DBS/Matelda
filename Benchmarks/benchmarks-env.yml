@@ -16,3 +16,4 @@ dependencies:
     - xgboost==1.6.2
     - nltk==3.7
     - -e ./ .
+    - pandasql
