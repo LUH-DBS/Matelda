@@ -16,4 +16,4 @@ dependencies:
     - scikit-learn==1.1.2
     - xgboost==1.6.2
     - nltk==3.7
-    - -e ds_utils/messytables .
+    - -e ../ds_utils/messytables .
