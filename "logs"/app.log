@@ -158,3 +158,511 @@ weighted avg       0.90      0.75      0.80    199772
 2022-11-09 10:03:53,052 INFO check_results - get_all_results: results_df loaded.
 2022-11-09 10:03:53,052 INFO check_results - get_all_results: Scores loaded.
 2022-11-09 10:03:53,052 INFO check_results - get_all_results: sampled_tuples loaded.
+2022-11-13 20:12:26,115 INFO end-to-end-eds - run_experiments: Labels loaded.
+2022-11-13 20:12:26,116 INFO end-to-end-eds - run_experiments: Experiment output directory is created.
+2022-11-13 20:12:26,227 INFO end-to-end-eds - run_experiments: Table grouping output loaded.
+2022-11-13 20:12:26,227 INFO end-to-end-eds - run_experiments: Column grouping started
+2022-11-13 20:12:26,228 INFO cols_grouping - col_folding: Col groups directory is created.
+2022-11-13 20:13:35,187 INFO ed_twolevel_rahas_features - get_cells_features: table_id: 1
+2022-11-13 20:14:25,855 INFO ed_twolevel_rahas_features - get_cells_features: table_id: 2
+2022-11-13 20:14:47,359 INFO ed_twolevel_rahas_features - get_cells_features: table_id: 3
+2022-11-13 20:18:54,399 INFO ed_twolevel_rahas_features - get_cells_features: table_id: 4
+2022-11-13 20:19:39,356 INFO ed_twolevel_rahas_features - get_cells_features: table_id: 5
+2022-11-13 20:19:41,070 INFO end-to-end-eds - run_experiments: Generating cell features started.
+2022-11-13 20:19:41,155 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 0, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:41,223 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 1000
+2022-11-13 20:19:41,223 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:19:41,223 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:41,248 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:41,248 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:41,249 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 1000
+2022-11-13 20:19:41,249 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 1, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:41,629 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 7786
+2022-11-13 20:19:41,629 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 6786
+2022-11-13 20:19:41,629 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:41,747 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:41,747 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:41,748 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 7786
+2022-11-13 20:19:41,749 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 2, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:42,279 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 15176
+2022-11-13 20:19:42,280 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:19:42,280 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:42,412 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:42,413 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:42,415 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 15176
+2022-11-13 20:19:42,415 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 3, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:42,824 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 22566
+2022-11-13 20:19:42,824 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:19:42,824 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:42,954 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:42,954 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:42,956 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 22566
+2022-11-13 20:19:42,956 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 4, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:43,033 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 23566
+2022-11-13 20:19:43,033 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:19:43,033 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:43,067 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:43,068 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:43,068 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 23566
+2022-11-13 20:19:43,068 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 5, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:43,754 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 36366
+2022-11-13 20:19:43,754 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 12800
+2022-11-13 20:19:43,754 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:43,964 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:43,964 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:43,967 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 36366
+2022-11-13 20:19:43,967 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 6, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:44,395 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 43756
+2022-11-13 20:19:44,396 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:19:44,396 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:44,523 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:44,523 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:44,524 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 43756
+2022-11-13 20:19:44,525 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 7, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:44,605 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 44756
+2022-11-13 20:19:44,605 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:19:44,605 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:44,637 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:44,637 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:44,637 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 44756
+2022-11-13 20:19:44,637 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 8, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:44,720 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 45756
+2022-11-13 20:19:44,721 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:19:44,721 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:44,754 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:44,754 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:44,754 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 45756
+2022-11-13 20:19:44,754 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 9, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:44,839 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 46756
+2022-11-13 20:19:44,839 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:19:44,839 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:44,867 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:44,867 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:44,868 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 46756
+2022-11-13 20:19:44,868 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 10, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:45,840 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 62536
+2022-11-13 20:19:45,841 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 15780
+2022-11-13 20:19:45,841 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:46,097 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:46,097 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:46,100 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 62536
+2022-11-13 20:19:46,100 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 11, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:46,325 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 65946
+2022-11-13 20:19:46,325 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 3410
+2022-11-13 20:19:46,325 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:46,378 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:46,378 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:46,379 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 65946
+2022-11-13 20:19:46,379 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 12, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:48,098 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 95742
+2022-11-13 20:19:48,098 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 29796
+2022-11-13 20:19:48,098 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:48,597 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:48,598 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:48,605 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 95742
+2022-11-13 20:19:48,605 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 13, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:48,831 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 99152
+2022-11-13 20:19:48,831 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 3410
+2022-11-13 20:19:48,832 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:48,885 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:48,886 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:48,887 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 99152
+2022-11-13 20:19:48,887 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 14, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:49,491 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 111362
+2022-11-13 20:19:49,491 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 12210
+2022-11-13 20:19:49,491 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:49,663 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:49,664 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:49,667 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 111362
+2022-11-13 20:19:49,667 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 15, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:49,825 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 113362
+2022-11-13 20:19:49,826 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 2000
+2022-11-13 20:19:49,826 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:49,871 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:49,871 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:49,872 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 113362
+2022-11-13 20:19:49,872 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 16, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:50,408 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 123752
+2022-11-13 20:19:50,409 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 10390
+2022-11-13 20:19:50,409 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:50,577 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:50,577 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:50,579 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 123752
+2022-11-13 20:19:50,579 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 17, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:51,079 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 133256
+2022-11-13 20:19:51,079 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 9504
+2022-11-13 20:19:51,079 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:51,215 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:51,216 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:51,218 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 133256
+2022-11-13 20:19:51,218 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 18, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:51,296 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 134256
+2022-11-13 20:19:51,296 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:19:51,296 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:51,322 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:51,322 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:51,322 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 134256
+2022-11-13 20:19:51,322 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 19, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:51,766 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 142646
+2022-11-13 20:19:51,766 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 8390
+2022-11-13 20:19:51,766 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:51,894 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:51,894 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:51,896 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 142646
+2022-11-13 20:19:51,897 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 20, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:52,779 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 151036
+2022-11-13 20:19:52,779 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 8390
+2022-11-13 20:19:52,779 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:52,919 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:52,919 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:52,921 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 151036
+2022-11-13 20:19:52,921 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 21, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:52,999 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 152036
+2022-11-13 20:19:52,999 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:19:52,999 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:53,026 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:53,026 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:53,026 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 152036
+2022-11-13 20:19:53,027 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 22, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:53,423 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 159426
+2022-11-13 20:19:53,423 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:19:53,423 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:53,533 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:53,534 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:53,535 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 159426
+2022-11-13 20:19:53,535 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 23, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:53,611 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 160426
+2022-11-13 20:19:53,611 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:19:53,611 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:53,640 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:53,640 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:53,641 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 160426
+2022-11-13 20:19:53,641 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 24, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:54,032 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 167816
+2022-11-13 20:19:54,032 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:19:54,032 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:54,145 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:54,145 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:54,147 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 167816
+2022-11-13 20:19:54,147 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 25, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:54,304 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 170192
+2022-11-13 20:19:54,304 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 2376
+2022-11-13 20:19:54,304 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:54,356 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:54,356 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:54,357 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 170192
+2022-11-13 20:19:54,357 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 26, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:54,747 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 177582
+2022-11-13 20:19:54,747 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:19:54,747 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:54,860 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:54,861 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:54,862 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 177582
+2022-11-13 20:19:54,862 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 27, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:54,933 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 178582
+2022-11-13 20:19:54,933 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:19:54,933 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:54,958 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:54,958 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:54,959 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 178582
+2022-11-13 20:19:54,959 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 28, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:55,396 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 186972
+2022-11-13 20:19:55,397 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 8390
+2022-11-13 20:19:55,397 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:55,528 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:55,529 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:55,533 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 186972
+2022-11-13 20:19:55,533 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 29, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:55,679 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 188972
+2022-11-13 20:19:55,679 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 2000
+2022-11-13 20:19:55,679 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:55,725 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:55,725 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:55,725 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 188972
+2022-11-13 20:19:55,726 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 30, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:56,117 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 196362
+2022-11-13 20:19:56,118 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:19:56,118 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:56,227 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:56,227 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:56,229 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 196362
+2022-11-13 20:19:56,229 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 31, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:56,297 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 197362
+2022-11-13 20:19:56,298 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:19:56,298 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:56,323 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:56,323 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:56,324 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 197362
+2022-11-13 20:19:56,324 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 32, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:19:56,491 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 199772
+2022-11-13 20:19:56,491 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 2410
+2022-11-13 20:19:56,491 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:19:56,544 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:19:56,544 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:19:56,545 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 199772
+2022-11-13 20:19:56,611 INFO ed_twolevel_rahas_features - get_train_test_sets: Number of Labeled Cells: 40
+2022-11-13 20:19:56,625 INFO ed_twolevel_rahas_features - classify: Classification
+2022-11-13 20:20:31,989 INFO saving_results - save_results:               precision    recall  f1-score   support
+
+           0       0.38      0.49      0.43     18414
+           1       0.95      0.92      0.93    181358
+
+    accuracy                           0.88    199772
+   macro avg       0.67      0.70      0.68    199772
+weighted avg       0.89      0.88      0.89    199772
+
+2022-11-13 20:20:32,134 INFO saving_results - save_results: tn: 8988, fp: 9426, fn: 14443, tp: 166915
+2022-11-13 20:20:32,140 INFO check_results - get_all_results: results_df loaded.
+2022-11-13 20:20:32,140 INFO check_results - get_all_results: Scores loaded.
+2022-11-13 20:20:32,140 INFO check_results - get_all_results: sampled_tuples loaded.
+2022-11-13 20:21:23,994 INFO end-to-end-eds - run_experiments: Labels loaded.
+2022-11-13 20:21:24,105 INFO end-to-end-eds - run_experiments: Table grouping output loaded.
+2022-11-13 20:21:24,210 INFO end-to-end-eds - run_experiments: number of column clusters: 33
+2022-11-13 20:21:24,812 INFO end-to-end-eds - run_experiments: Cell features loaded.
+2022-11-13 20:21:24,884 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 0, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:24,944 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 1000
+2022-11-13 20:21:24,944 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:21:24,944 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:25,006 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:25,006 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:25,007 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 1000
+2022-11-13 20:21:25,007 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 1, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:25,470 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 7786
+2022-11-13 20:21:25,470 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 6786
+2022-11-13 20:21:25,470 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:25,591 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:25,591 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:25,593 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 7786
+2022-11-13 20:21:25,594 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 2, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:26,031 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 15176
+2022-11-13 20:21:26,032 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:21:26,032 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:26,170 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:26,171 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:26,173 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 15176
+2022-11-13 20:21:26,173 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 3, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:26,743 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 22566
+2022-11-13 20:21:26,743 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:21:26,744 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:26,863 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:26,863 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:26,865 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 22566
+2022-11-13 20:21:26,865 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 4, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:26,940 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 23566
+2022-11-13 20:21:26,940 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:21:26,940 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:26,967 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:26,968 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:26,968 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 23566
+2022-11-13 20:21:26,968 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 5, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:27,685 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 36366
+2022-11-13 20:21:27,686 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 12800
+2022-11-13 20:21:27,686 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:27,907 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:27,907 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:27,910 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 36366
+2022-11-13 20:21:27,910 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 6, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:28,302 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 43756
+2022-11-13 20:21:28,302 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:21:28,303 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:28,428 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:28,429 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:28,431 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 43756
+2022-11-13 20:21:28,431 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 7, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:28,501 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 44756
+2022-11-13 20:21:28,502 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:21:28,502 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:28,528 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:28,528 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:28,529 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 44756
+2022-11-13 20:21:28,529 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 8, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:28,611 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 45756
+2022-11-13 20:21:28,611 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:21:28,611 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:28,637 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:28,638 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:28,638 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 45756
+2022-11-13 20:21:28,638 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 9, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:28,708 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 46756
+2022-11-13 20:21:28,708 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:21:28,708 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:28,737 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:28,738 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:28,738 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 46756
+2022-11-13 20:21:28,738 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 10, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:29,698 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 62536
+2022-11-13 20:21:29,699 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 15780
+2022-11-13 20:21:29,699 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:29,947 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:29,947 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:29,950 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 62536
+2022-11-13 20:21:29,951 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 11, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:30,182 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 65946
+2022-11-13 20:21:30,182 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 3410
+2022-11-13 20:21:30,182 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:30,240 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:30,240 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:30,241 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 65946
+2022-11-13 20:21:30,241 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 12, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:31,705 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 95742
+2022-11-13 20:21:31,705 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 29796
+2022-11-13 20:21:31,705 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:32,148 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:32,148 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:32,155 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 95742
+2022-11-13 20:21:32,155 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 13, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:32,382 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 99152
+2022-11-13 20:21:32,382 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 3410
+2022-11-13 20:21:32,382 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:32,492 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:32,492 INFO ed_twolevel_rahas_features - sampling_labeling: K-Means generated 1 empty Clusters:))
+2022-11-13 20:21:32,492 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:32,493 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 99152
+2022-11-13 20:21:32,493 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 14, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:33,446 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 111362
+2022-11-13 20:21:33,446 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 12210
+2022-11-13 20:21:33,447 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:33,615 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:33,616 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:33,619 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 111362
+2022-11-13 20:21:33,619 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 15, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:33,769 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 113362
+2022-11-13 20:21:33,769 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 2000
+2022-11-13 20:21:33,769 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:33,822 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:33,822 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:33,823 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 113362
+2022-11-13 20:21:33,823 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 16, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:34,381 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 123752
+2022-11-13 20:21:34,381 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 10390
+2022-11-13 20:21:34,381 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:34,539 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:34,540 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:34,542 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 123752
+2022-11-13 20:21:34,542 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 17, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:35,066 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 133256
+2022-11-13 20:21:35,066 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 9504
+2022-11-13 20:21:35,066 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:35,213 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:35,213 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:35,215 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 133256
+2022-11-13 20:21:35,215 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 18, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:35,291 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 134256
+2022-11-13 20:21:35,292 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:21:35,292 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:35,317 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:35,318 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:35,318 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 134256
+2022-11-13 20:21:35,318 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 19, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:35,764 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 142646
+2022-11-13 20:21:35,764 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 8390
+2022-11-13 20:21:35,764 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:35,887 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:35,887 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:35,889 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 142646
+2022-11-13 20:21:35,889 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 20, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:36,333 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 151036
+2022-11-13 20:21:36,333 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 8390
+2022-11-13 20:21:36,333 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:36,463 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:36,463 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:36,465 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 151036
+2022-11-13 20:21:36,465 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 21, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:36,540 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 152036
+2022-11-13 20:21:36,540 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:21:36,540 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:36,567 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:36,567 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:36,568 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 152036
+2022-11-13 20:21:36,568 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 22, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:36,976 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 159426
+2022-11-13 20:21:36,976 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:21:36,977 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:37,130 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:37,131 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:37,132 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 159426
+2022-11-13 20:21:37,132 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 23, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:37,701 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 160426
+2022-11-13 20:21:37,701 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:21:37,701 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:37,719 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:37,720 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:37,721 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 160426
+2022-11-13 20:21:37,721 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 24, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:38,104 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 167816
+2022-11-13 20:21:38,105 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:21:38,105 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:38,209 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:38,209 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:38,210 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 167816
+2022-11-13 20:21:38,210 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 25, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:38,360 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 170192
+2022-11-13 20:21:38,361 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 2376
+2022-11-13 20:21:38,361 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:38,414 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:38,414 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:38,415 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 170192
+2022-11-13 20:21:38,415 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 26, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:38,793 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 177582
+2022-11-13 20:21:38,794 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:21:38,794 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:38,910 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:38,911 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:38,912 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 177582
+2022-11-13 20:21:38,912 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 27, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:38,987 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 178582
+2022-11-13 20:21:38,987 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:21:38,987 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:39,013 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:39,013 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:39,013 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 178582
+2022-11-13 20:21:39,013 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 28, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:39,431 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 186972
+2022-11-13 20:21:39,431 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 8390
+2022-11-13 20:21:39,431 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:39,545 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:39,545 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:39,548 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 186972
+2022-11-13 20:21:39,548 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 29, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:39,692 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 188972
+2022-11-13 20:21:39,693 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 2000
+2022-11-13 20:21:39,693 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:39,738 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:39,738 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:39,739 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 188972
+2022-11-13 20:21:39,739 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 30, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:40,110 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 196362
+2022-11-13 20:21:40,110 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 7390
+2022-11-13 20:21:40,110 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:40,214 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:40,215 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:40,216 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 196362
+2022-11-13 20:21:40,216 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 31, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:40,287 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 197362
+2022-11-13 20:21:40,287 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 1000
+2022-11-13 20:21:40,287 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:40,312 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:40,312 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:40,313 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 197362
+2022-11-13 20:21:40,313 INFO ed_twolevel_rahas_features - get_train_test_sets: Processing cluster 32, from <_io.BufferedReader name='EDS/outputs/raha-datasets/13011ExpVsRaha/column_groups/col_df_labels_cluster_-1.pickle'>
+2022-11-13 20:21:40,476 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_test: 199772
+2022-11-13 20:21:40,476 INFO ed_twolevel_rahas_features - get_train_test_sets: Length of X_tmp: 2410
+2022-11-13 20:21:40,476 INFO ed_twolevel_rahas_features - sampling_labeling: sampling_labeling
+2022-11-13 20:21:40,530 INFO ed_twolevel_rahas_features - sampling_labeling: labeling
+2022-11-13 20:21:40,530 INFO ed_twolevel_rahas_features - label_propagation: Label propagation
+2022-11-13 20:21:40,531 INFO ed_twolevel_rahas_features - label_propagation: Length of X_train: 199772
+2022-11-13 20:21:40,600 INFO ed_twolevel_rahas_features - get_train_test_sets: Number of Labeled Cells: 39
+2022-11-13 20:21:40,611 INFO ed_twolevel_rahas_features - classify: Classification
+2022-11-13 20:22:10,432 INFO saving_results - save_results:               precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00     18414
+           1       0.91      1.00      0.95    181358
+
+    accuracy                           0.91    199772
+   macro avg       0.45      0.50      0.48    199772
+weighted avg       0.82      0.91      0.86    199772
+
+2022-11-13 20:22:10,555 INFO saving_results - save_results: tn: 0, fp: 18414, fn: 0, tp: 181358
+2022-11-13 20:22:10,573 INFO check_results - get_all_results: results_df loaded.
+2022-11-13 20:22:10,573 INFO check_results - get_all_results: Scores loaded.
+2022-11-13 20:22:10,573 INFO check_results - get_all_results: sampled_tuples loaded.

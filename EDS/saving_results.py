@@ -37,7 +37,7 @@ def create_df(original_data_values, classification_results, all_tables_dict):
     for idx_, i in enumerate(original_data_values):
         try:
             tmp_dict = {'table_id': i[0], 'table_name': all_tables_dict[i[0]]['name'], 'col_id': i[1],
-                        'col_name': all_tables_dict[i[0]]['schema'][i[1]], 'cell_idx': i[2], 'cell_value': i[3],
+                        'col_name': all_tables_dict[i[0]]['schema'][i[1]], 'cell_idx': i[2],
                         'predicted': classification_results[idx_][0], 'label': classification_results[idx_][1]}
             rows_list.append(tmp_dict)
         except Exception as e:

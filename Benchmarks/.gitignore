@@ -1,0 +1,8 @@
+/raha/__pycache__
+/raha/.ipynb_checkpoints
+/raha/tools
+/raha.egg-info
+/supplementaries
+/raha/results/*
+!/raha/results/*.png
+!/raha/results/results_all_raha.csv

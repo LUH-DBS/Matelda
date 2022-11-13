@@ -10,7 +10,6 @@ from sklearn.cluster import DBSCAN
 
 import nltk
 from messytables import CSVTableSet, type_guess
-import spacy
 from sklearn.cluster import KMeans
 from kmeans_interp.kmeans_feature_imp import KMeansInterp
 from statistics import median
@@ -167,7 +166,7 @@ def get_col_features(col_df, ner_model_name):
 def cluster_cols(col_features, auto_clustering_enabled, feature_names):
 
     if auto_clustering_enabled:
-        clustering_results = KMeans(n_clusters=10, random_state=0).fit(col_features)
+        clustering_results = KMeans(n_clusters=33, random_state=0).fit(col_features)
         feature_importance_result = feature_importance(10, feature_names, col_features)
         feature_importance_dict = pd.DataFrame(feature_importance_result)
         feature_importance_dict.to_csv('outputs/features.csv')
