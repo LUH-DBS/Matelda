@@ -35,7 +35,6 @@ type_dicts = {
 
 def column_clustering_pyspark(
     csv_paths_df: DataFrame,
-    labels_df: DataFrame,
     table_cluster_df: DataFrame,
     column_groups_path: str,
     column_grouping_enabled: int,
@@ -45,7 +44,6 @@ def column_clustering_pyspark(
 
     Args:
         csv_paths_df (DataFrame): _description_
-        labels_df (DataFrame): _description_
         table_cluster_df (DataFrame): _description_
         column_groups_path (str): _description_
         column_grouping_enabled (int): _description_
@@ -140,19 +138,19 @@ def column_clustering_pyspark(
             logger.warn(
                 "Creating feature vectores cluster {}".format(c_idx["table_cluster"])
             )
-            dataset_cluster_column_df.rdd.map(
+            dataset_cluster_column_rdd = dataset_cluster_column_df.rdd.map(
                 lambda row: create_feature_vector(
                     row,
                     characters,
                     tokens,
                 )
             )
-            column_feature_df = column_rdd.toDF(
+            dataset_cluster_column_df = dataset_cluster_column_rdd.toDF(
                 ["table_id", "column_id", "table_cluster", "features"]
             )
             logger.warn("Clustering cluster {}".format(c_idx["table_cluster"]))
             column_cluster_prediction_df, num_cluster = cluster_columns(
-                column_feature_df, auto_clustering_enabled, logger
+                dataset_cluster_column_df, auto_clustering_enabled, logger
             )
             column_cluster_prediction_df.show()
             prediction_dfs.append(column_cluster_prediction_df)
@@ -175,6 +173,16 @@ def column_clustering_pyspark(
 
 
 def create_feature_vector(row: Row, characters: List[str], tokens: List[str]) -> Row:
+    """_summary_
+
+    Args:
+        row (Row): _description_
+        characters (List[str]): _description_
+        tokens (List[str]): _description_
+
+    Returns:
+        Row: _description_
+    """
     char_list = [Counter(row.characters_counter)[ch] for ch in characters]
     token_list = [Counter(row.tokens_counter)[to] for to in tokens]
     return [
@@ -202,9 +210,11 @@ def cluster_columns(
     """
     if auto_clustering_enabled == 1:
         logger.warn("Clustering columns with AUTO_CLUSTERING")
+        logger.warn(col_df.rdd.getNumPartitions())
         num_cluster = 10
-        kmeans = KMeans(k=num_cluster, seed=0)
+        kmeans = KMeans(k=num_cluster, seed=0, initMode="k-means||")
         kmeans_model = kmeans.fit(col_df)
+        logger.warn("Fitted")
         predictions = kmeans_model.transform(col_df)
         # Removed feature importance. Because performance
         return (

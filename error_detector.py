@@ -236,7 +236,7 @@ def sampling_labeling(
     logger.warn("Clustering cluster values")
 
     if cells_clustering_alg == "km":
-        kmeans = KMeans(k=n_cell_clusters_per_col_cluster)
+        kmeans = KMeans(k=n_cell_clusters_per_col_cluster, initMode="k-means||")
         kmeans.setSeed(0)  # TODO: can be a bad seed
         model = kmeans.fit(x)
     elif (
