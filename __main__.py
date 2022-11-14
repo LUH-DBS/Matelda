@@ -16,19 +16,7 @@ def run_experiments(
     exp_name: str,
     exp_number: int,
     labeling_budget: int,
-    extract_labels_enabled: int,
-    table_clustering_enabled: int,
-    column_clustering_enabled: int,
-    sandbox_path: str,
-    output_path: str,
-    label_path: str,
-    table_clustering_output_path: str,
-    table_auto_clustering: int,
-    column_clustering_output_path: str,
-    column_auto_clustering: int,
-    cell_clustering_alg: str,
-    cell_feature_generator_enabled: int,
-    cell_features_output_filename: str,
+    config: ConfigParser,
 ) -> None:
     """_summary_
 
@@ -36,42 +24,43 @@ def run_experiments(
         exp_name (str): _description_
         exp_number (int): _description_
         labeling_budget (int): _description_
-        extract_labels_enabled (int): _description_
-        table_clustering_enabled (int): _description_
-        column_clustering_enabled (int): _description_
-        sandbox_path (str): _description_
-        output_path (str): _description_
-        label_path (str): _description_
-        table_clustering_output_path (str): _description_
-        table_auto_clustering (int): _description_
-        column_clustering_output_path (str): _description_
-        column_auto_clustering (int): _description_
-        cell_clustering_alg (str): _description_
-        cell_feature_generator_enabled (int): _description_
-        cell_features_output_filename (str): _description_
+        config (ConfigParser): _description_
     """
     logger.warn("Creating experiment output directory")
-    experiment_output_path = os.path.join(output_path, exp_name)
+    experiment_output_path = os.path.join(config["DIRECTORIES"]["output_dir"], exp_name)
     experiment_output_path = os.path.join(experiment_output_path, str(exp_number))
     if not os.path.exists(experiment_output_path):
         os.makedirs(experiment_output_path)
 
     logger.warn("Genereting CSV paths")
-    csv_paths_df = generate_csv_paths(sandbox_path)
+    csv_paths_df = generate_csv_paths(config["DIRECTORIES"]["sandbox_dir"])
 
     logger.warn("Generating labels")
     labels_df = generate_labels_pyspark(
         csv_paths_df=csv_paths_df,
-        labels_path=os.path.join(experiment_output_path, label_path),
-        extract_labels_enabled=extract_labels_enabled,
+        labels_path=os.path.join(
+            experiment_output_path, config["DIRECTORIES"]["label_output_filename"]
+        ),
+        extract_labels_enabled=int(config["EXPERIMENTS"]["extract_labels_enabled"]),
+        save_intermediate_results=int(
+            config["EXPERIMENTS"]["safe_intermediate_results"]
+        ),
     )
 
     logger.warn("Grouping tables")
     table_grouping_df = cluster_datasets_pyspark(
         csv_paths_df=csv_paths_df,
-        output_path=os.path.join(experiment_output_path, table_clustering_output_path),
-        table_grouping_enabled=table_clustering_enabled,
-        auto_clustering_enabled=table_auto_clustering,
+        output_path=os.path.join(
+            experiment_output_path,
+            config["DIRECTORIES"]["table_clustering_output_filename"],
+        ),
+        table_grouping_enabled=int(config["EXPERIMENTS"]["table_clustering_enabled"]),
+        auto_clustering_enabled=int(
+            config["TABLE_GROUPING"]["auto_clustering_enabled"]
+        ),
+        save_intermediate_results=int(
+            config["EXPERIMENTS"]["safe_intermediate_results"]
+        ),
     )
 
     logger.warn("Grouping columns")
@@ -79,19 +68,32 @@ def run_experiments(
         csv_paths_df=csv_paths_df,
         table_cluster_df=table_grouping_df,
         column_groups_path=os.path.join(
-            experiment_output_path, column_clustering_output_path
+            experiment_output_path,
+            config["DIRECTORIES"]["column_clustering_output_filename"],
         ),
-        column_grouping_enabled=column_clustering_enabled,
-        auto_clustering_enabled=column_auto_clustering,
+        column_grouping_enabled=int(config["EXPERIMENTS"]["column_clustering_enabled"]),
+        auto_clustering_enabled=int(
+            config["COLUMN_GROUPING"]["auto_clustering_enabled"]
+        ),
+        seed=int(config["EXPERIMENTS"]["seed"]),
+        save_intermediate_results=int(
+            config["EXPERIMENTS"]["safe_intermediate_results"]
+        ),
     )
 
     logger.warn("Creating Raha features")
     raha_features_df = generate_raha_features_pyspark(
         csv_paths_df=csv_paths_df,
         raha_features_path=os.path.join(
-            experiment_output_path, cell_features_output_filename
+            experiment_output_path,
+            config["DIRECTORIES"]["cell_features_output_filename"],
         ),
-        cell_feature_generator_enabled=cell_feature_generator_enabled,
+        cell_feature_generator_enabled=int(
+            config["EXPERIMENTS"]["cell_feature_generator_enabled"]
+        ),
+        save_intermediate_results=int(
+            config["EXPERIMENTS"]["safe_intermediate_results"]
+        ),
     )
 
     logger.warn("Detecting Errors")
@@ -101,11 +103,15 @@ def run_experiments(
             "results_exp_{}_labels_{}".format(exp_number, labeling_budget),
         ),
         labeling_budget=labeling_budget,
-        cell_clustering_alg=cell_clustering_alg,
+        cell_clustering_alg=config["CLUSTERING"]["cell_clustering_alg"],
         raha_features_df=raha_features_df,
         labels_df=labels_df,
         column_grouping_df=column_grouping_df,
         number_of_column_clusters=number_of_column_clusters,
+        seed=int(config["EXPERIMENTS"]["seed"]),
+        save_intermediate_results=int(
+            config["EXPERIMENTS"]["safe_intermediate_results"]
+        ),
     )
 
     logger.warn("Evaluating")
@@ -154,35 +160,5 @@ if __name__ == "__main__":
                 exp_name=configs["EXPERIMENTS"]["exp_name"],
                 labeling_budget=number_of_labels,
                 exp_number=exp_number,
-                extract_labels_enabled=int(
-                    configs["EXPERIMENTS"]["extract_labels_enabled"]
-                ),
-                table_clustering_enabled=int(
-                    configs["EXPERIMENTS"]["table_clustering_enabled"]
-                ),
-                column_clustering_enabled=int(
-                    configs["EXPERIMENTS"]["column_clustering_enabled"]
-                ),
-                cell_feature_generator_enabled=int(
-                    configs["EXPERIMENTS"]["cell_feature_generator_enabled"]
-                ),
-                table_auto_clustering=int(
-                    configs["TABLE_GROUPING"]["auto_clustering_enabled"]
-                ),
-                column_auto_clustering=int(
-                    configs["COLUMN_GROUPING"]["auto_clustering_enabled"]
-                ),
-                sandbox_path=configs["DIRECTORIES"]["sandbox_dir"],
-                output_path=configs["DIRECTORIES"]["output_dir"],
-                label_path=configs["DIRECTORIES"]["label_output_filename"],
-                table_clustering_output_path=configs["DIRECTORIES"][
-                    "table_clustering_output_filename"
-                ],
-                column_clustering_output_path=configs["DIRECTORIES"][
-                    "column_clustering_output_filename"
-                ],
-                cell_clustering_alg=configs["CLUSTERING"]["cell_clustering_alg"],
-                cell_features_output_filename=configs["DIRECTORIES"][
-                    "cell_features_output_filename"
-                ],
+                config=configs,
             )

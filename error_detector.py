@@ -20,6 +20,8 @@ def error_detector_pyspark(
     labels_df: DataFrame,
     column_grouping_df: DataFrame,
     number_of_column_clusters: int,
+    seed: int,
+    save_intermediate_results: bool,
 ) -> DataFrame:
     """_summary_
 
@@ -31,6 +33,11 @@ def error_detector_pyspark(
         labels_df (DataFrame): _description_
         column_grouping_df (DataFrame): _description_
         number_of_column_clusters (int): _description_
+        seed (int): _description_
+        save_intermediate_results (bool): _description_
+
+    Returns:
+        DataFrame: _description_
     """
     spark = SparkSession.getActiveSession()
     log4jLogger = spark._jvm.org.apache.log4j
@@ -57,6 +64,7 @@ def error_detector_pyspark(
         features_col="features",
         label_col="ground_truth",
         num_workers=spark.sparkContext.defaultParallelism,
+        seed=seed,
     )
     xgb_classifier_model = xgb_classifier.fit(
         x_train.join(y_train, ["table_id", "column_id", "row_id"], "inner")
@@ -70,9 +78,10 @@ def error_detector_pyspark(
     # Does not overwrite old savings
     logger.warn("Writing error dectection result to disk.")
     prediction_df = prediction_df.drop("probability", "rawPrediction")
-    prediction_df.write.parquet(
-        os.path.join(result_path, "error_predictions.parquet"), mode="overwrite"
-    )
+    if save_intermediate_results:
+        prediction_df.write.parquet(
+            os.path.join(result_path, "error_predictions.parquet"), mode="overwrite"
+        )
     return prediction_df
 
 
@@ -84,6 +93,7 @@ def get_train_test_sets(
     n_labels: int,
     number_of_clusters: int,
     cell_clustering_alg: str,
+    seed: int,
     logger,
 ) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame]:
     """_summary_
@@ -96,6 +106,7 @@ def get_train_test_sets(
         n_labels (int): _description_
         number_of_clusters (int): _description_
         cell_clustering_alg (str): _description_
+        seed (int): _description_
         logger (_type_): _description_
 
     Returns:
@@ -132,6 +143,7 @@ def get_train_test_sets(
             cluster_label_df,
             n_cell_clusters_per_col_cluster_dict[c_idx],
             cell_clustering_alg,
+            seed,
             logger,
         )
 
@@ -219,6 +231,7 @@ def sampling_labeling(
     y: DataFrame,
     n_cell_clusters_per_col_cluster: int,
     cells_clustering_alg: str,
+    seed: int,
     logger,
 ) -> Tuple[DataFrame, DataFrame, DataFrame]:
     """_summary_
@@ -228,6 +241,7 @@ def sampling_labeling(
         y (DataFrame): _description_
         n_cell_clusters_per_col_cluster (int): _description_
         cells_clustering_alg (str): _description_
+        seed (int): _description_
         logger (_type_): _description_
 
     Returns:
@@ -237,7 +251,7 @@ def sampling_labeling(
 
     if cells_clustering_alg == "km":
         kmeans = KMeans(k=n_cell_clusters_per_col_cluster, initMode="k-means||")
-        kmeans.setSeed(0)  # TODO: can be a bad seed
+        kmeans.setSeed(seed)  # TODO: can be a bad seed
         model = kmeans.fit(x)
     elif (
         cells_clustering_alg == "hac"

@@ -45,7 +45,10 @@ def generate_table_ground_truth(row: Row) -> List[Tuple[int, int, int, bool]]:
 
 
 def generate_labels_pyspark(
-    csv_paths_df: DataFrame, labels_path: str, extract_labels_enabled: bool
+    csv_paths_df: DataFrame,
+    labels_path: str,
+    extract_labels_enabled: bool,
+    save_intermediate_results: bool,
 ) -> DataFrame:
     """_summary_
 
@@ -53,6 +56,7 @@ def generate_labels_pyspark(
         csv_paths_df (DataFrame): _description_
         labels_path (str): _description_
         extract_labels_enabled (bool): _description_
+        save_intermediate_results (bool): _description_
 
     Returns:
         DataFrame: _description_
@@ -67,8 +71,9 @@ def generate_labels_pyspark(
             lambda row: generate_table_ground_truth(row)
         )
         labels_df = labels_rdd.toDF(["table_id", "column_id", "row_id", "ground_truth"])
-        logger.warn("Writing labels to file")
-        labels_df.write.parquet(labels_path, mode="overwrite")
+        if save_intermediate_results:
+            logger.warn("Writing labels to file")
+            labels_df.write.parquet(labels_path, mode="overwrite")
     else:
         logger.warn("Loading labels from disk")
         labels_df = spark.read.parquet(labels_path)

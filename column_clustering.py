@@ -39,6 +39,8 @@ def column_clustering_pyspark(
     column_groups_path: str,
     column_grouping_enabled: int,
     auto_clustering_enabled: int,
+    seed: int,
+    save_intermediate_results: bool,
 ) -> DataFrame:
     """_summary_
 
@@ -48,6 +50,8 @@ def column_clustering_pyspark(
         column_groups_path (str): _description_
         column_grouping_enabled (int): _description_
         auto_clustering_enabled (int): _description_
+        seed (int): _description_
+        save_intermediate_results (bool): _description_
 
     Returns:
         DataFrame: _description_
@@ -150,7 +154,7 @@ def column_clustering_pyspark(
             )
             logger.warn("Clustering cluster {}".format(c_idx["table_cluster"]))
             column_cluster_prediction_df, num_cluster = cluster_columns(
-                dataset_cluster_column_df, auto_clustering_enabled, logger
+                dataset_cluster_column_df, auto_clustering_enabled, seed, logger
             )
             column_cluster_prediction_df.show()
             prediction_dfs.append(column_cluster_prediction_df)
@@ -158,9 +162,9 @@ def column_clustering_pyspark(
         column_df = reduce(DataFrame.unionAll, prediction_dfs).select(
             col("table_id"), col("column_id"), col("col_cluster")
         )
-
-        logger.warn("Writing column clustering result to disk.")
-        column_df.write.parquet(column_groups_path, mode="overwrite")
+        if save_intermediate_results:
+            logger.warn("Writing column clustering result to disk.")
+            column_df.write.parquet(column_groups_path, mode="overwrite")
     else:
         logger.warn("Loading column clustering from disk")
         column_df = spark.read.parquet(column_groups_path)
@@ -196,13 +200,14 @@ def create_feature_vector(row: Row, characters: List[str], tokens: List[str]) ->
 
 
 def cluster_columns(
-    col_df: DataFrame, auto_clustering_enabled: int, logger
+    col_df: DataFrame, auto_clustering_enabled: int, seed: int, logger
 ) -> Tuple[DataFrame, int]:
     """_summary_
 
     Args:
         col_df (DataFrame): _description_
         auto_clustering_enabled (int): _description_
+        seed (int): _description_
         logger (_type_): _description_
 
     Returns:
@@ -210,9 +215,8 @@ def cluster_columns(
     """
     if auto_clustering_enabled == 1:
         logger.warn("Clustering columns with AUTO_CLUSTERING")
-        logger.warn(col_df.rdd.getNumPartitions())
         num_cluster = 10
-        kmeans = KMeans(k=num_cluster, seed=0, initMode="k-means||")
+        kmeans = KMeans(k=num_cluster, seed=seed, initMode="k-means||")
         kmeans_model = kmeans.fit(col_df)
         logger.warn("Fitted")
         predictions = kmeans_model.transform(col_df)

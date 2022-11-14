@@ -71,6 +71,7 @@ def cluster_datasets_pyspark(
     output_path: str,
     table_grouping_enabled: int,
     auto_clustering_enabled: int,
+    save_intermediate_results: bool,
 ) -> DataFrame:
     """_summary_
 
@@ -79,6 +80,7 @@ def cluster_datasets_pyspark(
         output_path (str): _description_
         table_grouping_enabled (int): _description_
         auto_clustering_enabled (int): _description_
+        save_intermediate_results (_type_): _description_
 
     Returns:
         DataFrame: _description_
@@ -120,8 +122,9 @@ def cluster_datasets_pyspark(
             context_df = context_df.withColumn("table_cluster", lit(0))
 
         table_grouping_df = context_df.select(col("table_id"), col("table_cluster"))
-        logger.warn("Writing table clustering result to disk.")
-        table_grouping_df.write.parquet(output_path, mode="overwrite")
+        if save_intermediate_results:
+            logger.warn("Writing table clustering result to disk.")
+            table_grouping_df.write.parquet(output_path, mode="overwrite")
     else:
         logger.warn("Loading table grouping from disk")
         table_grouping_df = spark.read.parquet(output_path)

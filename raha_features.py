@@ -25,6 +25,7 @@ def generate_raha_features_pyspark(
     csv_paths_df: DataFrame,
     raha_features_path: str,
     cell_feature_generator_enabled: int,
+    save_intermediate_results: bool,
 ) -> DataFrame:
     """_summary_
 
@@ -32,6 +33,7 @@ def generate_raha_features_pyspark(
         csv_paths_df (DataFrame): _description_
         raha_features_path (str): _description_
         cell_feature_generator_enabled (int): _description_
+        save_intermediate_results (bool): _description_
 
     Returns:
         DataFrame: _description_
@@ -48,8 +50,9 @@ def generate_raha_features_pyspark(
         raha_features_df = raha_features_rdd.toDF(
             ["table_id", "column_id", "row_id", "features"]
         )
-        logger.warn("Writing Raha features to file")
-        raha_features_df.write.parquet(raha_features_path, mode="overwrite")
+        if save_intermediate_results:
+            logger.warn("Writing Raha features to file")
+            raha_features_df.write.parquet(raha_features_path, mode="overwrite")
     else:
         logger.warn("Loading Raha features from disk")
         raha_features_df = spark.read.parquet(raha_features_path)
