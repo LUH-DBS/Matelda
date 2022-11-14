@@ -156,7 +156,6 @@ def column_clustering_pyspark(
             column_cluster_prediction_df, num_cluster = cluster_columns(
                 dataset_cluster_column_df, auto_clustering_enabled, seed, logger
             )
-            column_cluster_prediction_df.show()
             prediction_dfs.append(column_cluster_prediction_df)
         # TODO: columns in different table cluster can get clustered in same column cluster number
         column_df = reduce(DataFrame.unionAll, prediction_dfs).select(
@@ -216,7 +215,7 @@ def cluster_columns(
     if auto_clustering_enabled == 1:
         logger.warn("Clustering columns with AUTO_CLUSTERING")
         num_cluster = 10
-        kmeans = KMeans(k=num_cluster, seed=seed, initMode="k-means||")
+        kmeans = KMeans(k=num_cluster, seed=0, initMode="k-means||")
         kmeans_model = kmeans.fit(col_df)
         logger.warn("Fitted")
         predictions = kmeans_model.transform(col_df)
@@ -226,7 +225,7 @@ def cluster_columns(
                 predictions.select("table_id", "column_id", "prediction"),
                 ["table_id", "column_id"],
                 how="inner",
-            ),
+            ).withColumnRenamed("prediction", "col_cluster"),
             num_cluster,
         )
     else:
