@@ -50,6 +50,7 @@ def error_detector_pyspark(
         n_labels=labeling_budget,
         number_of_clusters=number_of_column_clusters,
         cell_clustering_alg=cell_clustering_alg,
+        seed=seed,
         logger=logger,
     )
     # TODO: do we need an imputer? If there are missing values the sampling label method would already crashed

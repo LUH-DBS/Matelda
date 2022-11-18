@@ -128,7 +128,8 @@ def column_clustering_pyspark(
 
         # TODO: unique is slow
         for c_idx in grouped_cols_df.select("table_cluster").distinct().collect():
-            logger.warn("Processing column cluster {}".format(c_idx["table_cluster"]))
+            logger.warn("Processing column of table cluster: {}".format(c_idx["table_cluster"]))
+
             dataset_cluster_column_df = column_df.where(
                 column_df.table_cluster == c_idx["table_cluster"]
             )
@@ -140,7 +141,7 @@ def column_clustering_pyspark(
             tokens = dataset_cluster_column_grouped_df[0].tokens
 
             logger.warn(
-                "Creating feature vectores cluster {}".format(c_idx["table_cluster"])
+                "Creating column feature vectores of table cluster: {}".format(c_idx["table_cluster"])
             )
             dataset_cluster_column_rdd = dataset_cluster_column_df.rdd.map(
                 lambda row: create_feature_vector(
@@ -152,7 +153,7 @@ def column_clustering_pyspark(
             dataset_cluster_column_df = dataset_cluster_column_rdd.toDF(
                 ["table_id", "column_id", "table_cluster", "features"]
             )
-            logger.warn("Clustering cluster {}".format(c_idx["table_cluster"]))
+            logger.warn("Clustering columns of table cluster: {}".format(c_idx["table_cluster"]))
             column_cluster_prediction_df, num_cluster = cluster_columns(
                 dataset_cluster_column_df, auto_clustering_enabled, seed, logger
             )
@@ -215,7 +216,7 @@ def cluster_columns(
     if auto_clustering_enabled == 1:
         logger.warn("Clustering columns with AUTO_CLUSTERING")
         num_cluster = 10
-        kmeans = KMeans(k=num_cluster, seed=0, initMode="k-means||")
+        kmeans = KMeans(k=num_cluster, seed=seed, initMode="k-means||")
         kmeans_model = kmeans.fit(col_df)
         logger.warn("Fitted")
         predictions = kmeans_model.transform(col_df)
