@@ -63,9 +63,9 @@ def get_col_df(sandbox_path, cluster, labels_dict_path):
 def get_col_features(col_df, ner_model_name):
     col_features = []
     characters_dictionary = {}
-    tokens_dictionary = {}
+    # tokens_dictionary = {}
     value_length_dictionary = {}
-    count_char_tokens = {}
+    # count_char_tokens = {}
 
     # feature_names = ['col_type', 'uniqueness', 'emptyValueCount']
     feature_names = ['col_type']
@@ -93,13 +93,13 @@ def get_col_features(col_df, ner_model_name):
                 features[j] = -1
         col_features.append(features)
 
-        count_char_tokens[i] = {'char':0, 'tokens': 0}
+        #count_char_tokens[i] = {'char':0, 'tokens': 0}
         value_length_sum = []
         for value in col_df['col_value'][i]:
             char_list = list(set(list(str(value))))
             if ' ' in char_list:
                 char_list.remove(' ')
-            count_char_tokens[i]['char'] += len(char_list)
+            #count_char_tokens[i]['char'] += len(char_list)
             for character in char_list:
                 if character not in characters_dictionary:
                     characters_dictionary[character] = {i: 0.0}
@@ -107,16 +107,16 @@ def get_col_features(col_df, ner_model_name):
                     characters_dictionary[character][i] =  0.0
                 characters_dictionary[character][i] += 1.0
             value_length_sum.append(len(str(value)))
-            tokens = str(value).split()
-            if ' ' in tokens:
-                tokens.remove(' ')
-            count_char_tokens[i]['tokens'] += len(tokens)
-            for token in tokens:
-                if token not in tokens_dictionary:
-                    tokens_dictionary[token] = {i: 0.0}
-                if i not in tokens_dictionary[token]:
-                    tokens_dictionary[token][i] =  0.0
-                tokens_dictionary[token][i] += 1.0
+            # tokens = str(value).split()
+            # if ' ' in tokens:
+            #     tokens.remove(' ')
+            # count_char_tokens[i]['tokens'] += len(tokens)
+            # for token in tokens:
+            #     if token not in tokens_dictionary:
+            #         tokens_dictionary[token] = {i: 0.0}
+            #     if i not in tokens_dictionary[token]:
+            #         tokens_dictionary[token][i] =  0.0
+            #     tokens_dictionary[token][i] += 1.0
 
         value_length_dictionary[i] = value_length_sum
 
@@ -124,9 +124,9 @@ def get_col_features(col_df, ner_model_name):
         # sum_value_length_dictionary[key] = sum_value_length_dictionary[key]/len(col_df['col_value'][key])
         value_length_dictionary[key] = median(value_length_dictionary[key])
 
-    for token in list(tokens_dictionary.keys()):
-        if token in characters_dictionary.keys():
-            del tokens_dictionary[token]
+    # for token in list(tokens_dictionary.keys()):
+    #     if token in characters_dictionary.keys():
+    #         del tokens_dictionary[token]
 
 
     for i in range(col_df.shape[0]):
@@ -139,27 +139,27 @@ def get_col_features(col_df, ner_model_name):
             else:
                 column_profile["characters"][ch] = 0
 
-        for t in list(tokens_dictionary.keys()):
-            if i in tokens_dictionary[t]:
-                column_profile["tokens"][t] = tokens_dictionary[t][i] / len(col_df['col_value'][i])
-            else:
-                column_profile["tokens"][t] = 0
+        # for t in list(tokens_dictionary.keys()):
+        #     if i in tokens_dictionary[t]:
+        #         column_profile["tokens"][t] = tokens_dictionary[t][i] / len(col_df['col_value'][i])
+        #     else:
+        #         column_profile["tokens"][t] = 0
 
         column_profile["median_value_length"] = value_length_dictionary[i]
         
         char_list = list(column_profile["characters"].values())
-        tokens_list = list(column_profile["tokens"].values())
+        # tokens_list = list(column_profile["tokens"].values())
 
         for char in char_list:
             col_features[i].append(char)
             
-        for token in tokens_list:
-            col_features[i].append(token)
+        # for token in tokens_list:
+        #     col_features[i].append(token)
 
         col_features[i].append(column_profile['median_value_length'])
 
     feature_names.extend([c for c in characters_dictionary.keys()])
-    feature_names.extend([str(v) for v in tokens_dictionary.keys()])
+    # feature_names.extend([str(v) for v in tokens_dictionary.keys()])
     feature_names.append("median_value_length")
     return col_features, feature_names
 

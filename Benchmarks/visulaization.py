@@ -100,6 +100,7 @@ plt.plot(x, y_me, linestyle='-', marker='+', color = 'green')
 plt.xlabel('Number of labelled data cells')
 # naming the y axis
 plt.ylabel('F-Score')
+plt.gca().set_ylim([0, 1])
   
 # giving a title to my graph
 plt.title('FScore')
@@ -115,6 +116,8 @@ x = number_of_labeled_cells
 # corresponding y axis values
 y = list(query_df['SUM(finall_precision)/10'])
 y_me = precision
+plt.gca().set_ylim([0, 1])
+
   
 # plotting the points 
 plt.plot(x, y, linestyle='-', marker='o', color = 'red')
@@ -124,6 +127,7 @@ plt.plot(x, y_me, linestyle='-', marker='+', color = 'green')
 plt.xlabel('Number of labelled data cells')
 # naming the y axis
 plt.ylabel('Precision')
+
   
 # giving a title to my graph
 plt.title('Precision')
@@ -136,7 +140,8 @@ x = number_of_labeled_cells
 # corresponding y axis values
 y = list(query_df['SUM(finall_recall)/10'])
 y_me = recall
-  
+plt.gca().set_ylim([0, 1])
+
 # plotting the points 
 plt.plot(x, y, linestyle='-', marker='o', color = 'red')
 plt.plot(x, y_me, linestyle='-', marker='+', color = 'green')

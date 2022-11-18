@@ -167,6 +167,7 @@ def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict
                                                                         n_cell_clusters_per_col_cluster_dict[c_idx], cell_clustering_alg)
                     labels += [original_data_values_tmp[sample] for sample in samples]
                     X_train, y_train = label_propagation(X_train, X_tmp, y_train, cells_per_cluster, labels_per_cluster)
+                    
 
                 except Exception as e:
                     logger.error(e)

@@ -666,3 +666,12 @@ weighted avg       0.82      0.91      0.86    199772
 2022-11-13 20:22:10,573 INFO check_results - get_all_results: results_df loaded.
 2022-11-13 20:22:10,573 INFO check_results - get_all_results: Scores loaded.
 2022-11-13 20:22:10,573 INFO check_results - get_all_results: sampled_tuples loaded.
+2022-11-16 20:17:51,591 INFO end-to-end-eds - run_experiments: Labels loaded.
+2022-11-16 20:17:51,592 INFO end-to-end-eds - run_experiments: Experiment output directory is created.
+2022-11-16 20:17:51,720 INFO end-to-end-eds - run_experiments: Table grouping output loaded.
+2022-11-16 20:17:51,720 INFO end-to-end-eds - run_experiments: Column grouping started
+2022-11-16 20:17:51,728 INFO cols_grouping - col_folding: Col groups directory is created.
+2022-11-16 20:20:51,723 INFO end-to-end-eds - run_experiments: Labels loaded.
+2022-11-16 20:20:51,856 INFO end-to-end-eds - run_experiments: Table grouping output loaded.
+2022-11-16 20:20:51,857 INFO end-to-end-eds - run_experiments: Column grouping started
+2022-11-16 20:20:51,864 INFO cols_grouping - col_folding: Col groups directory is created.
