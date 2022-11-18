@@ -97,14 +97,14 @@ def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_al
     return cells_per_cluster, labels_per_cluster, samples
 
 
-def label_propagation(x_train, x_tmp, y_train, cells_per_cluster, labels_per_cluster):
+def label_propagation(X_train, X_temp, y_train, cells_per_cluster, labels_per_cluster):
     logger.info("Label propagation")
     for key in list(cells_per_cluster.keys()):
         for cell in cells_per_cluster[key]:
-            x_train.append(x_tmp[cell])
+            X_train.append(X_temp[cell])
             y_train.append(labels_per_cluster[key])
-    logger.info("Length of X_train: {}".format(len(x_train)))
-    return x_train, y_train
+    logger.info("Length of X_train: {}".format(len(X_train)))
+    return X_train, y_train
 
 
 def get_number_of_clusters(col_groups_dir):
@@ -120,12 +120,11 @@ def get_number_of_clusters(col_groups_dir):
 
 
 def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict, n_labels, number_of_clusters, cell_clustering_alg):
-    X_train = []
-    y_train = []
-    X_test = []
-    y_test = []
+    
     original_data_values = []
     labels = []
+    predicted = []
+    y_test_all = []
 
     n_cell_clusters_per_col_cluster = math.floor(n_labels / number_of_clusters)
     n_cell_clusters_per_col_cluster_dict = {col_cluster: n_cell_clusters_per_col_cluster for col_cluster
@@ -142,10 +141,14 @@ def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict
             file.close()
             clusters = set(group_df['column_cluster_label'].sort_values())
             for c_idx, c in enumerate(clusters):
+                X_train = []
+                y_train = []
+                X_test = []
+                y_test = []
+                X_temp = []
+                y_temp = []
                 logger.info("Processing cluster {}, from {}".format(str(c), file))
                 try:
-                    X_tmp = []
-                    y_tmp = []
                     original_data_values_tmp = []
                     c_df = group_df[group_df['column_cluster_label'] == c]
                     for index, row in c_df.iterrows():
@@ -155,21 +158,25 @@ def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict
                             original_data_values.append(
                                 (row['table_id'], row['col_id'], cell_idx))
 
-                            X_tmp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
-                            y_tmp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
+                            X_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
+                            y_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
                             original_data_values_tmp.append(
                                 (row['table_id'], row['col_id'], cell_idx))
 
                     logger.info("Length of X_test: {}".format(len(X_test)))
-                    logger.info("Length of X_tmp: {}".format(len(X_tmp)))
+                    logger.info("Length of X_tmp: {}".format(len(X_temp)))
 
-                    cells_per_cluster, labels_per_cluster, samples = sampling_labeling(X_tmp, y_tmp,
+                    cells_per_cluster, labels_per_cluster, samples = sampling_labeling(X_temp, y_temp,
                                                                         n_cell_clusters_per_col_cluster_dict[c_idx], cell_clustering_alg)
                     labels += [original_data_values_tmp[sample] for sample in samples]
-                    X_train, y_train = label_propagation(X_train, X_tmp, y_train, cells_per_cluster, labels_per_cluster)
+                    X_train, y_train = label_propagation(X_train, X_temp, y_train, cells_per_cluster, labels_per_cluster)
+                    predicted.extend(classify(X_train, y_train, X_test))
+                    print("done")
+                    y_test_all += y_test 
 
                 except Exception as e:
                     logger.error(e)
+                    print("error", e)
 
     with open(os.path.join(output_path, "original_data_values.pkl"), "wb") as filehandler:
         pickle.dump(original_data_values, filehandler)
@@ -178,44 +185,26 @@ def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict
         pickle.dump(labels, filehandler)
         logger.info("Number of Labeled Cells: {}".format(len(labels)))
 
-    return X_train, y_train, X_test, y_test, original_data_values, len(labels)
+    return y_test_all, predicted, original_data_values, len(labels)
 
 
 def classify(x_train, y_train, x_test):
     logger.info("Classification")
-    imp = SimpleImputer(strategy="most_frequent")
-    gbc = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0, max_depth=1, random_state=0)
-    clf = make_pipeline(imp, gbc)
-    clf.fit(np.asarray(x_train), np.asarray(y_train))
-    predicted = clf.predict(x_test)
-
+    if sum(y_train) == 0 or sum(y_train) == len(y_train):
+        predicted = y_train
+    else:
+        imp = SimpleImputer(strategy="most_frequent")
+        gbc = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0, max_depth=1, random_state=0)
+        clf = make_pipeline(imp, gbc)
+        clf.fit(np.asarray(x_train), np.asarray(y_train))
+        predicted = clf.predict(x_test)
     return predicted
 
 
-def dask_classifier(x_train, y_train, x_test):
-    logger.info("Classification - Parallel")
-    with LocalCluster() as cluster:
-        with Client(cluster) as client:
-            clf = xgb.dask.DaskXGBClassifier()
-            clf.client = client  # assign the client
-            X_d_train = da.from_array(x_train, chunks=(1000, len(x_train[0])))
-            y_d_train = da.from_array(y_train, chunks=1000)
-            clf.fit(X_d_train, y_d_train)
-            X_d_test = da.from_array(x_test, chunks=(1000, len(x_test[0])))
-            predicted = clf.predict(X_d_test)
-            np_predicted = np.array(predicted)
-
-    return np_predicted
-
-
 def error_detector(col_groups_files_path, output_path, results_path, features_dict, n_labels, number_of_clusters, cell_clustering_alg, classification_mode):
-    X_train, y_train, X_test, y_test, original_data_values, n_samples = get_train_test_sets(col_groups_files_path, output_path,
+    y_test_all, predicted, original_data_values, n_samples = get_train_test_sets(col_groups_files_path, output_path,
                                                                                  results_path,
                                                                                  features_dict, n_labels,
                                                                                  number_of_clusters, cell_clustering_alg)
-    if classification_mode == "parallel":
-        predicted = dask_classifier(X_train, y_train, X_test)
-    else:
-        predicted = classify(X_train, y_train, X_test)
 
-    return y_test, predicted, original_data_values, n_samples
+    return y_test_all, predicted, original_data_values, n_samples
