@@ -10,6 +10,7 @@ from sklearn.cluster import AgglomerativeClustering
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import make_pipeline
+from sklearn.utils import shuffle
 
 import app_logger
 import generate_raha_features
@@ -84,7 +85,8 @@ def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_al
     samples = []
     logger.info("labeling")
 
-    for key in cells_per_cluster.keys():
+    shuffled_clusters = shuffle(list(cells_per_cluster.keys()))[:-1]
+    for key in shuffled_clusters:
         sample = random.choice(cells_per_cluster[key])
         samples.append(sample)
         label = y[sample]
@@ -97,14 +99,19 @@ def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_al
     return cells_per_cluster, labels_per_cluster, samples
 
 
-def label_propagation(X_train, X_temp, y_train, cells_per_cluster, labels_per_cluster):
+def get_train_test_sets(X_train, X_temp, y_train, y_temp, samples, cells_per_cluster, labels_per_cluster):
     logger.info("Label propagation")
+    X_test, y_test = [], []
     for key in list(cells_per_cluster.keys()):
         for cell in cells_per_cluster[key]:
-            X_train.append(X_temp[cell])
-            y_train.append(labels_per_cluster[key])
+            if key in labels_per_cluster:
+                X_train.append(X_temp[cell])
+                y_train.append(labels_per_cluster[key])
+            if cell not in samples:
+                X_test.append(X_temp[cell])
+                y_test.append(y_temp[cell])
     logger.info("Length of X_train: {}".format(len(X_train)))
-    return X_train, y_train
+    return X_train, y_train, X_test, y_test
 
 
 def get_number_of_clusters(col_groups_dir):
@@ -119,14 +126,16 @@ def get_number_of_clusters(col_groups_dir):
     return number_of_col_clusters
 
 
-def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict, n_labels, number_of_clusters, cell_clustering_alg):
+def error_detector(col_groups_dir, output_path, results_path, features_dict, n_labels, number_of_clusters, cell_clustering_alg):
     
-    original_data_values = []
-    labels = []
-    predicted = []
+    original_data_keys = []
+    selected_samples = []
+    predicted_all = []
     y_test_all = []
+    X_labeled_by_user = []
+    y_labeled_by_user = []
 
-    n_cell_clusters_per_col_cluster = math.floor(n_labels / number_of_clusters)
+    n_cell_clusters_per_col_cluster = math.floor(n_labels / number_of_clusters) + 1
     n_cell_clusters_per_col_cluster_dict = {col_cluster: n_cell_clusters_per_col_cluster for col_cluster
                                             in range(number_of_clusters)}
 
@@ -143,68 +152,70 @@ def get_train_test_sets(col_groups_dir, output_path, results_path, features_dict
             for c_idx, c in enumerate(clusters):
                 X_train = []
                 y_train = []
-                X_test = []
-                y_test = []
                 X_temp = []
                 y_temp = []
+                original_data_keys_temp = []
+
                 logger.info("Processing cluster {}, from {}".format(str(c), file))
                 try:
-                    original_data_values_tmp = []
                     c_df = group_df[group_df['column_cluster_label'] == c]
                     for index, row in c_df.iterrows():
                         for cell_idx in range(len(row['col_value'])):
-                            X_test.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
-                            y_test.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
-                            original_data_values.append(
+                            original_data_keys_temp.append(
                                 (row['table_id'], row['col_id'], cell_idx))
-
+                            original_data_keys.append((row['table_id'], row['col_id'], cell_idx))
                             X_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
                             y_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
-                            original_data_values_tmp.append(
-                                (row['table_id'], row['col_id'], cell_idx))
-
-                    logger.info("Length of X_test: {}".format(len(X_test)))
-                    logger.info("Length of X_tmp: {}".format(len(X_temp)))
 
                     cells_per_cluster, labels_per_cluster, samples = sampling_labeling(X_temp, y_temp,
                                                                         n_cell_clusters_per_col_cluster_dict[c_idx], cell_clustering_alg)
-                    labels += [original_data_values_tmp[sample] for sample in samples]
-                    X_train, y_train = label_propagation(X_train, X_temp, y_train, cells_per_cluster, labels_per_cluster)
-                    predicted.extend(classify(X_train, y_train, X_test))
+                    selected_samples += [original_data_keys_temp[sample] for sample in samples]
+                    X_labeled_by_user.extend([X_temp[sample] for sample in samples])
+                    y_labeled_by_user.extend([y_temp[sample] for sample in samples])
+
+                    X_train, y_train, X_test, y_test = \
+                            get_train_test_sets(X_train, X_temp, y_train, y_temp, 
+                            samples, cells_per_cluster, labels_per_cluster)
+                    predicted = classify(X_train, y_train, X_test)
+                    predicted_all.extend(predicted)
+                    y_test_all.extend(y_test) 
                     print("done")
-                    y_test_all += y_test 
 
                 except Exception as e:
                     logger.error(e)
                     print("error", e)
 
-    with open(os.path.join(output_path, "original_data_values.pkl"), "wb") as filehandler:
-        pickle.dump(original_data_values, filehandler)
+    with open(os.path.join(output_path, "original_data_keys.pkl"), "wb") as filehandler:
+        pickle.dump(original_data_keys, filehandler)
 
     with open(os.path.join(results_path, "sampled_tuples.pkl"), "wb") as filehandler:
-        pickle.dump(labels, filehandler)
-        logger.info("Number of Labeled Cells: {}".format(len(labels)))
+        pickle.dump(selected_samples, filehandler)
+        logger.info("Number of Labeled Cells: {}".format(len(selected_samples)))
 
-    return y_test_all, predicted, original_data_values, len(labels)
+    y_test_all.extend(y_labeled_by_user)
+    predicted_all.extend(y_labeled_by_user)
+    return y_test_all, predicted_all, original_data_keys, len(selected_samples)
 
 
-def classify(x_train, y_train, x_test):
+def classify(X_train, y_train, X_test):
     logger.info("Classification")
-    if sum(y_train) == 0 or sum(y_train) == len(y_train):
-        predicted = y_train
+    if sum(y_train) == 0:
+        predicted = [0] * len(X_test)
+    elif sum(y_train) == len(y_train):
+        predicted = [1] * len(X_test)
     else:
         imp = SimpleImputer(strategy="most_frequent")
         gbc = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0, max_depth=1, random_state=0)
         clf = make_pipeline(imp, gbc)
-        clf.fit(np.asarray(x_train), np.asarray(y_train))
-        predicted = clf.predict(x_test)
+        clf.fit(np.asarray(X_train), np.asarray(y_train))
+        predicted = clf.predict(X_test)
     return predicted
 
 
-def error_detector(col_groups_files_path, output_path, results_path, features_dict, n_labels, number_of_clusters, cell_clustering_alg, classification_mode):
-    y_test_all, predicted, original_data_values, n_samples = get_train_test_sets(col_groups_files_path, output_path,
+def main(col_groups_files_path, output_path, results_path, features_dict, n_labels, number_of_clusters, cell_clustering_alg, classification_mode):
+    y_test_all, predicted, original_data_keys, n_samples = error_detector(col_groups_files_path, output_path,
                                                                                  results_path,
                                                                                  features_dict, n_labels,
                                                                                  number_of_clusters, cell_clustering_alg)
 
-    return y_test_all, predicted, original_data_values, n_samples
+    return y_test_all, predicted, original_data_keys, n_samples

@@ -9,12 +9,12 @@ from sklearn.metrics import precision_recall_fscore_support
 
 logger = logging.getLogger()
 
-def save_results(n_samples, y_test, predicted, tables_dict, results_path, original_data_values):
+def save_results(n_samples, y_test, predicted, tables_dict, results_path, original_data_keys):
     classifier_results = []
     for i in range(len(predicted)):
         classifier_results.append((predicted[i], int(y_test[i])))
 
-    results_df = create_df(original_data_values, classifier_results, tables_dict)
+    results_df = create_df(original_data_keys, classifier_results, tables_dict)
     if not os.path.exists(results_path):
         os.makedirs(results_path)
     with open(os.path.join(results_path, "results_df.pickle"), "wb") as file:
@@ -32,9 +32,9 @@ def save_results(n_samples, y_test, predicted, tables_dict, results_path, origin
     return
 
 
-def create_df(original_data_values, classification_results, all_tables_dict):
+def create_df(original_data_keys, classification_results, all_tables_dict):
     rows_list = []
-    for idx_, i in enumerate(original_data_values):
+    for idx_, i in enumerate(original_data_keys):
         try:
             tmp_dict = {'table_id': i[0], 'table_name': all_tables_dict[i[0]]['name'], 'col_id': i[1],
                         'col_name': all_tables_dict[i[0]]['schema'][i[1]], 'cell_idx': i[2],
@@ -63,8 +63,8 @@ def get_tables_dict(sandbox_path):
 
 
 # TODO
-def get_all_results(tables_path, results_dir, original_data_values, n_samples,
+def get_all_results(tables_path, results_dir, original_data_keys, n_samples,
                     y_test, predicted):
     tables_dict = get_tables_dict(tables_path)
-    save_results(n_samples, y_test, predicted, tables_dict, results_dir, original_data_values)
+    save_results(n_samples, y_test, predicted, tables_dict, results_dir, original_data_keys)
 

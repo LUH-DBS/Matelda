@@ -70,12 +70,12 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
     results_path = os.path.join(experiment_output_path, "results_exp_{}_labels_{}".format(exp_number, labeling_budget))
     if not os.path.exists(results_path):
         os.makedirs(results_path)
-    y_test, predicted, original_data_values, n_samples = \
-        ed_twolevel_rahas_features.error_detector(column_groups_path, experiment_output_path, results_path,
+    y_test, predicted, original_data_keys, n_samples = \
+        ed_twolevel_rahas_features.main(column_groups_path, experiment_output_path, results_path,
                                                   features_dict, labeling_budget, number_of_column_clusters, cell_clustering_alg, "seq")
     tables_path = configs["RESULTS"]["tables_path"]
 
-    saving_results.get_all_results(tables_path, results_path, original_data_values, n_samples,
+    saving_results.get_all_results(tables_path, results_path, original_data_keys, n_samples,
                                    y_test, predicted)
     check_results.get_all_results(output_path, results_path)
 
