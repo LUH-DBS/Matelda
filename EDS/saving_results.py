@@ -12,13 +12,13 @@ logger = logging.getLogger()
 def get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all, results_dir, n_samples):
     total_tn, total_fp, total_fn, total_tp = 0, 0, 0, 0
     for i in range(len(predicted_all)):
-        col_cluster_prediction = predicted_all[i].tolist()
+        col_cluster_prediction = list(predicted_all[i])
         col_cluster_y = y_test_all[i]
 
         col_cluster_prediction.extend(y_labeled_by_user_all[i])
         col_cluster_y.extend(y_labeled_by_user_all[i])
 
-        tn, fp, fn, tp = confusion_matrix(y_true=col_cluster_y, y_pred=col_cluster_prediction).ravel()
+        tn, fp, fn, tp = confusion_matrix(y_true=col_cluster_y, y_pred=col_cluster_prediction, labels=[0,1]).ravel()
 
         total_tn += tn
         total_tp += tp
@@ -93,5 +93,6 @@ def get_all_results(tables_path, results_dir, y_test_all, \
                     unique_cells_local_index_collection)
     with open(os.path.join(results_dir, "results_df.pickle"), "wb") as file:
             pickle.dump(results_df, file)
+    print("All done :)")
     return 
     
