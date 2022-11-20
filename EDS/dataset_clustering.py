@@ -39,11 +39,14 @@ def get_df_headers(table_path):
 def get_context_df(sandbox_path):
     context_dict = {'table_id': [], 'parent': [], 'table_name': [], 'headers': [], 'content': []}
     sandbox_children = os.listdir(sandbox_path)
+    sandbox_children.sort()
     table_id = 0
     for child_name in sandbox_children:
         if not child_name.startswith("."):
             child_path = os.path.join(sandbox_path, child_name)
-            for table in os.listdir(child_path):
+            tables_dirs = os.listdir(child_path)
+            tables_dirs.sort()
+            for table in tables_dirs:
                 if not table.startswith("."):
                     table_path = os.path.join(child_path, table)
                     df_path = os.path.join(table_path, "dirty.csv")
@@ -59,7 +62,7 @@ def get_context_df(sandbox_path):
                     context_dict['table_name'].append(table)
                     context_dict['headers'].append(get_df_headers(os.path.join(table_path, "dirty.csv")))
                     context_dict['content'].append(df_table_text)
-                table_id += 1
+                    table_id += 1
     context_df = pd.DataFrame.from_dict(context_dict)
     return context_df
 

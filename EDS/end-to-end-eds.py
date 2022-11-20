@@ -70,19 +70,17 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
     results_path = os.path.join(experiment_output_path, "results_exp_{}_labels_{}".format(exp_number, labeling_budget))
     if not os.path.exists(results_path):
         os.makedirs(results_path)
-    y_test, predicted, original_data_keys, n_samples = \
-        ed_twolevel_rahas_features.main(column_groups_path, experiment_output_path, results_path,
-                                                  features_dict, labeling_budget, number_of_column_clusters, cell_clustering_alg, "seq")
+    y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
+    unique_cells_local_index_collection, n_samples = \
+        ed_twolevel_rahas_features.error_detector(column_groups_path, experiment_output_path, results_path,
+                                                  features_dict, labeling_budget, number_of_column_clusters, cell_clustering_alg)
     tables_path = configs["RESULTS"]["tables_path"]
 
-    saving_results.get_all_results(tables_path, results_path, original_data_keys, n_samples,
-                                   y_test, predicted)
-    check_results.get_all_results(output_path, results_path)
+    saving_results.get_all_results(tables_path, results_path, y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
+    unique_cells_local_index_collection, n_samples)
 
 
 if __name__ == '__main__':
-
-    
 
     # App-Config Management
     configs = ConfigParser()

@@ -193,15 +193,9 @@ def generate_features(self, d):
         feature_vectors = np.hstack((feature_vectors, np.full((feature_vectors.shape[0], 1), col_name_features[j])))
         columns_features_list.append(feature_vectors)
 
-        cell_values = []
-        for row in d.dataframe.iterrows():
-            cell_values.append(row[1][j])
-
-        cell_values =  np.hstack(cell_values)
-        column_cell_values_list.append(cell_values)
     d.column_features = columns_features_list
 
-    return column_cell_values_list
+    return 
 
 
 def generate_raha_features(parent_path, dataset_name):
@@ -218,11 +212,11 @@ def generate_raha_features(parent_path, dataset_name):
     }
 
     d = detect.initialize_dataset(dataset_dictionary)
-    d.SAVE_RESULTS = True
+    d.SAVE_RESULTS = False
     d.VERBOSE = False
     d.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD", "TFIDF"]
     run_strategies(detect, d)
-    column_cell_values_list = generate_features(detect, d)
-    return d.column_features, column_cell_values_list
+    generate_features(detect, d)
+    return d.column_features
 
 
