@@ -42,7 +42,7 @@ def error_detector_pyspark(
     spark = SparkSession.getActiveSession()
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
-    (x_train, y_train, x_test, y_test,) = get_train_test_sets(
+    prediction_df = predict_errors(
         column_grouping_df=column_grouping_df,
         results_path=result_path,
         raha_features_df=raha_features_df,
@@ -52,31 +52,9 @@ def error_detector_pyspark(
         cell_clustering_alg=cell_clustering_alg,
         seed=seed,
         logger=logger,
+        spark=spark,
     )
-    # TODO: do we need an imputer? If there are missing values the sampling label method would already crashed
-    # imputer = Imputer(strategy='mode')
-    # imputer.setInputCol("features")
-    # imputer_model = imputer.fit(x_train)
-    # x_train = imputer_model.transform(x_train)
-    # x_train.show()
-    # xgboost for spark is experimental feature
-    logger.warn("Training detection classfier")
-    xgb_classifier = SparkXGBClassifier(
-        features_col="features",
-        label_col="ground_truth",
-        num_workers=spark.sparkContext.defaultParallelism,
-        seed=seed,
-    )
-    xgb_classifier_model = xgb_classifier.fit(
-        x_train.join(y_train, ["table_id", "column_id", "row_id"], "inner")
-    )
-    logger.warn("Predicting errors")
-    prediction_df = xgb_classifier_model.transform(x_train)
-    # logger.warn("Saving classifier")
-    # xgb_classifier_model.save(
-    #    os.path.join(result_path, "xgboost-classifier-pyspark-model"),
-    # )
-    # Does not overwrite old savings
+
     logger.warn("Writing error dectection result to disk.")
     prediction_df = prediction_df.drop("probability", "rawPrediction")
     if save_intermediate_results:
@@ -86,7 +64,7 @@ def error_detector_pyspark(
     return prediction_df
 
 
-def get_train_test_sets(
+def predict_errors(
     column_grouping_df: DataFrame,
     results_path: str,
     raha_features_df: DataFrame,
@@ -96,6 +74,7 @@ def get_train_test_sets(
     cell_clustering_alg: str,
     seed: int,
     logger,
+    spark,
 ) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame]:
     """_summary_
 
@@ -109,18 +88,19 @@ def get_train_test_sets(
         cell_clustering_alg (str): _description_
         seed (int): _description_
         logger (_type_): _description_
+        spark (_type_): _description_
 
     Returns:
         Tuple[DataFrame, DataFrame, DataFrame, DataFrame]: _description_
     """
-    y_train_list = []
+    predictions = []
 
     logger.warn("Splitting labeling budget between column clusters")
     n_cell_clusters_per_col_cluster_dict = split_labeling_budget(
         n_labels, number_of_clusters
     )
 
-    logger.warn("Joining test dataframe")
+    logger.warn("Joining column cluster with raha features")
     x_test_df = raha_features_df.join(
         column_grouping_df, ["table_id", "column_id"], "inner"
     )
@@ -147,7 +127,7 @@ def get_train_test_sets(
             seed,
             logger,
         )
-
+        cluster_samples_labels_df.show()
         # Save temp results
         # cluster_samples_df.write.parquet(os.path.join(results_path, str(c_idx) + "_samples.parquet"), mode="overwrite")
         # cluster_samples_labels_df.write.parquet(os.path.join(results_path, str(c_idx) +"_samples_labels.parquet"), mode="overwrite")
@@ -158,15 +138,35 @@ def get_train_test_sets(
             cluster_samples_labels_df,
             predictions_df,
             logger,
-        )
-        y_train_list.append(y_train.drop("prediction", "col_cluster"))
+        ).drop("prediction", "col_cluster")
 
-    return (
-        raha_features_df,
-        reduce(DataFrame.unionAll, y_train_list),
-        raha_features_df,
-        y_test_df,
-    )
+        # TODO: do we need an imputer? If there are missing values the sampling label method would already crashed
+        # imputer = Imputer(strategy='mode')
+        # imputer.setInputCol("features")
+        # imputer_model = imputer.fit(x_train)
+        # x_train = imputer_model.transform(x_train)
+        # x_train.show()
+        # xgboost for spark is experimental feature
+        logger.warn("Training detection classfier for column cluster {}".format(c_idx))
+        xgb_classifier = SparkXGBClassifier(
+            features_col="features",
+            label_col="ground_truth",
+            num_workers=spark.sparkContext.defaultParallelism,
+            verbose=0,
+            random_state=seed,
+        )
+        xgb_classifier_model = xgb_classifier.fit(
+            cluster_df.join(y_train, ["table_id", "column_id", "row_id"], "inner")
+        )
+        logger.warn("Predicting errors")
+        predictions.append(xgb_classifier_model.transform(cluster_df))
+        # logger.warn("Saving classifier")
+        # xgb_classifier_model.save(
+        #    os.path.join(result_path, "xgboost-classifier-pyspark-model" + str(c_idx)),
+        # )
+        # Does not overwrite old savings
+
+    return (reduce(DataFrame.unionAll, predictions),)
 
 
 def split_labeling_budget(
@@ -252,14 +252,14 @@ def sampling_labeling(
 
     if cells_clustering_alg == "km":
         kmeans = KMeans(k=n_cell_clusters_per_col_cluster, initMode="k-means||")
-        kmeans.setSeed(seed)  # TODO: can be a bad seed
+        kmeans.setSeed(seed)
         model = kmeans.fit(x)
     elif (
         cells_clustering_alg == "hac"
     ):  # TODO: Bisecting k-means is a kind of hierarchical clustering
         # TODO: Why slow?
         bkm = BisectingKMeans(k=n_cell_clusters_per_col_cluster)
-        bkm.setSeed(0)  # TODO: can be a bad seed
+        bkm.setSeed(seed)
         model = bkm.fit(x)
 
     predictions = model.transform(x).drop("features")
@@ -272,6 +272,7 @@ def sampling_labeling(
         .filter(F.col("rank") <= 1)
         .drop("rank")
     )
+    samples_df.show()
 
     labels_df = y.join(
         samples_df.select("table_id", "column_id", "row_id", "prediction"),

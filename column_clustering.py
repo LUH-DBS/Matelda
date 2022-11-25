@@ -128,7 +128,9 @@ def column_clustering_pyspark(
 
         # TODO: unique is slow
         for c_idx in grouped_cols_df.select("table_cluster").distinct().collect():
-            logger.warn("Processing column of table cluster: {}".format(c_idx["table_cluster"]))
+            logger.warn(
+                "Processing column of table cluster: {}".format(c_idx["table_cluster"])
+            )
 
             dataset_cluster_column_df = column_df.where(
                 column_df.table_cluster == c_idx["table_cluster"]
@@ -141,7 +143,9 @@ def column_clustering_pyspark(
             tokens = dataset_cluster_column_grouped_df[0].tokens
 
             logger.warn(
-                "Creating column feature vectores of table cluster: {}".format(c_idx["table_cluster"])
+                "Creating column feature vectores of table cluster: {}".format(
+                    c_idx["table_cluster"]
+                )
             )
             dataset_cluster_column_rdd = dataset_cluster_column_df.rdd.map(
                 lambda row: create_feature_vector(
@@ -153,7 +157,9 @@ def column_clustering_pyspark(
             dataset_cluster_column_df = dataset_cluster_column_rdd.toDF(
                 ["table_id", "column_id", "table_cluster", "features"]
             )
-            logger.warn("Clustering columns of table cluster: {}".format(c_idx["table_cluster"]))
+            logger.warn(
+                "Clustering columns of table cluster: {}".format(c_idx["table_cluster"])
+            )
             column_cluster_prediction_df, num_cluster = cluster_columns(
                 dataset_cluster_column_df, auto_clustering_enabled, seed, logger
             )
