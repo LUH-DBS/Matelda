@@ -33,7 +33,7 @@ def generate_table_ground_truth(row: Row) -> List[Tuple[int, int, int, bool]]:
         keep_default_na=False,
         low_memory=False,
     )
-    labels_df = dirty_df.where(dirty_df.values == clean_df.values).notna() * 1
+    labels_df = dirty_df.where(dirty_df.values != clean_df.values).notna() * 1
 
     for rowIndex, row2 in labels_df.iterrows():  # iterate over rows
         for columnIndex, value in row2.items():
