@@ -11,7 +11,7 @@ import wget
 
 
 def download(url):
-    output_dir = '/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/Sandbox_Generation/downloaded_files'
+    output_dir = './downloaded_files'
     filename = wget.download(url, output_dir)
     print(filename)
 
