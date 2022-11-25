@@ -127,7 +127,6 @@ def predict_errors(
             seed,
             logger,
         )
-        cluster_samples_labels_df.show()
         # Save temp results
         # cluster_samples_df.write.parquet(os.path.join(results_path, str(c_idx) + "_samples.parquet"), mode="overwrite")
         # cluster_samples_labels_df.write.parquet(os.path.join(results_path, str(c_idx) +"_samples_labels.parquet"), mode="overwrite")
@@ -181,6 +180,7 @@ def split_labeling_budget(
     Returns:
         Dict[int, int]: _description_
     """
+    # TODO: what is happening if our labeling budget is smaller than our column cluster?
     n_cell_clusters_per_col_cluster = math.floor(labeling_budget / number_of_clusters)
     n_cell_clusters_per_col_cluster_dict = {
         col_cluster: n_cell_clusters_per_col_cluster
@@ -250,6 +250,7 @@ def sampling_labeling(
     """
     logger.warn("Clustering cluster values")
 
+    # TODO: Clustering does not always return as many clusters as defined
     if cells_clustering_alg == "km":
         kmeans = KMeans(k=n_cell_clusters_per_col_cluster, initMode="k-means||")
         kmeans.setSeed(seed)
@@ -272,7 +273,6 @@ def sampling_labeling(
         .filter(F.col("rank") <= 1)
         .drop("rank")
     )
-    samples_df.show()
 
     labels_df = y.join(
         samples_df.select("table_id", "column_id", "row_id", "prediction"),
