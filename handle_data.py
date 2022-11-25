@@ -1,6 +1,7 @@
 import os
 
 from pyspark.sql import DataFrame, SparkSession
+from pyspark.sql.functions import monotonically_increasing_id
 
 
 def generate_csv_paths(sandbox_path: str) -> DataFrame:
@@ -17,7 +18,6 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
     sandbox_children_path = [
         (os.path.join(sandbox_path, dir), dir) for dir in os.listdir(sandbox_path)
     ]
-    table_id = 0
     for child_path, parent in sandbox_children_path:
         if os.path.isdir(child_path) and not child_path.startswith("."):
             table_dirs = [
@@ -33,12 +33,14 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
                         and os.path.isfile(dirty_path)
                         and os.path.isfile(clean_path)
                     ):
-                        csv_paths.append(
-                            (table_id, dirty_path, clean_path, table, parent)
-                        )
-                        table_id += 1
-    csv_paths_df = spark.createDataFrame(
-        data=csv_paths,
-        schema=["table_id", "dirty_path", "clean_path", "table_name", "parent"],
+                        csv_paths.append((dirty_path, clean_path, table, parent))
+    csv_paths_df = (
+        spark.createDataFrame(
+            data=csv_paths,
+            schema=["dirty_path", "clean_path", "table_name", "parent"],
+        )
+        .sort("table_name")
+        .withColumn("table_id", monotonically_increasing_id())
+        .select("table_id", "dirty_path", "clean_path", "table_name", "parent")
     )
     return csv_paths_df
