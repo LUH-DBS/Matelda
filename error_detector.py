@@ -104,7 +104,9 @@ def predict_errors(
     x_test_df = raha_features_df.join(
         column_grouping_df, ["table_id", "column_id"], "inner"
     )
+    print(x_test_df.rdd.getNumPartitions())
     y_test_df = labels_df.join(column_grouping_df, ["table_id", "column_id"], "inner")
+    print(y_test_df.rdd.getNumPartitions())
 
     # TODO: is here an way to espress this in pyspark?
     for c_idx in range(number_of_clusters):

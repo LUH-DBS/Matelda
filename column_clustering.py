@@ -75,7 +75,8 @@ def column_clustering_pyspark(
                 "tokens_counter",
                 "median_value_length",
             ]
-        )
+        ).fillna({'median_value_length': 0})
+
         column_df = column_df.join(table_cluster_df, "table_id", "inner")
 
         def group_column_features(key, df: pd.DataFrame):
@@ -124,7 +125,7 @@ def column_clustering_pyspark(
                     ]
                 ),
             )
-        )
+        ).repartition(csv_paths_df.rdd.getNumPartitions())
 
         # TODO: unique is slow
         for c_idx in grouped_cols_df.select("table_cluster").distinct().collect():
@@ -224,7 +225,6 @@ def cluster_columns(
         num_cluster = 10
         kmeans = KMeans(k=num_cluster, seed=seed, initMode="k-means||")
         kmeans_model = kmeans.fit(col_df)
-        logger.warn("Fitted")
         predictions = kmeans_model.transform(col_df)
         # Removed feature importance. Because performance
         return (

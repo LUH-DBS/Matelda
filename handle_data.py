@@ -42,5 +42,6 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
         .sort("table_name")
         .withColumn("table_id", monotonically_increasing_id())
         .select("table_id", "dirty_path", "clean_path", "table_name", "parent")
+        .repartition(spark.sparkContext.defaultParallelism)
     )
     return csv_paths_df

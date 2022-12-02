@@ -92,21 +92,27 @@ def cluster_datasets_pyspark(
     nltk.download("stopwords")
 
     if table_grouping_enabled == 1:
-        logger.warn("Creating context DataFrame")
-        context_rdd = csv_paths_df.rdd.map(lambda row: create_table_context(row))
-        context_df = context_rdd.toDF(
-            #    ["table_id", "parent", "table_name", "headers", "content", "text", "token"]
-            ["table_id", "vectorized_docs"]
-        )
-        logger.warn("Clustering context DataFrame")
+        logger.warn("Clustering Datasets")
         if auto_clustering_enabled == 1:
             logger.warn("Clustering tables with AUTO_CLUSTERING")
+                    
+            logger.warn("Loading gensim model")            
+            model = api.load("word2vec-google-news-300")
+
+            logger.warn("Creating context DataFrame")
+            #TODO: reduce partition because otherwise out of memory
+            context_rdd = csv_paths_df.rdd.repartition(16).mapPartitions(lambda row: create_table_context(row, model))
+            context_df = context_rdd.toDF(
+                ["table_id", "vectorized_docs"]
+            )
+            del context_rdd
             # TODO: embedding model and DBSCAN params in config file
             # TODO: Use an implementation for pyspark
             clustering = DBSCAN(eps=0.5, min_samples=5, n_jobs=-1).fit(
-                context_df.select("vectorized_docs").rdd.flatMap(lambda x: x).collect()
+                context_df.rdd.map(lambda x: x.vectorized_docs).collect()
             )
-            clustering_df = spark.createDataFrame(
+
+            context_df = spark.createDataFrame(
                 data=np.c_[
                     clustering.labels_.reshape(-1, 1),
                     np.array(
@@ -114,12 +120,11 @@ def cluster_datasets_pyspark(
                     ).reshape(-1, 1),
                 ].tolist(),
                 schema=["table_cluster", "table_id"],
-            )
+            ).repartition(csv_paths_df.rdd.getNumPartitions())
 
-            context_df = context_df.join(clustering_df, "table_id")
         else:
             logger.warn("Clustering tables without AUTO_CLUSTERING")
-            context_df = context_df.withColumn("table_cluster", lit(0))
+            context_df = csv_paths_df.withColumn("table_cluster", lit(0))
 
         table_grouping_df = context_df.select(col("table_id"), col("table_cluster"))
         if save_intermediate_results:
@@ -131,7 +136,7 @@ def cluster_datasets_pyspark(
     return table_grouping_df
 
 
-def create_table_context(row: Row) -> List:
+def create_table_context(rows: List[Row], model) -> List:
     """_summary_
 
     Args:
@@ -141,41 +146,42 @@ def create_table_context(row: Row) -> List:
         List: _description_
     """
     custom_stopwords = set(stopwords.words("english"))
-    dirty_df = pd.read_csv(
-        row.dirty_path,
-        sep=",",
-        header="infer",
-        encoding="utf-8",
-        dtype=str,
-        keep_default_na=False,
-        low_memory=False,
-    )
-    df_text_columns = dirty_df.select_dtypes(include=object)
+    for row in rows:
+        dirty_df = pd.read_csv(
+            row.dirty_path,
+            sep=",",
+            header="infer",
+            encoding="utf-8",
+            dtype=str,
+            keep_default_na=False,
+            low_memory=False,
+        )
+        df_text_columns = dirty_df.select_dtypes(include=object)
 
-    # Table content
-    df_table_text = ""
-    for column in df_text_columns.columns:
-        col_text = " ".join(df_text_columns[column].astype(str).tolist())
-        df_table_text += col_text
+        # Table content
+        df_table_text = ""
+        for column in df_text_columns.columns:
+            col_text = " ".join(df_text_columns[column].astype(str).tolist())
+            df_table_text += col_text
 
-    # Column names
-    df_column_text = " ".join(dirty_df.columns)
+        # Column names
+        df_column_text = " ".join(dirty_df.columns)
 
-    # Create text column based on parent, table_name, and headers
-    # TODO: check licence
-    text = " | ".join([row.parent, row.table_name, df_column_text, df_table_text])
-    tokens = set(clean_text(text, word_tokenize, custom_stopwords))
+        # Create text column based on parent, table_name, and headers
+        # TODO: check licence
+        text = " | ".join([row.parent, row.table_name, df_column_text, df_table_text])
+        tokens = set(clean_text(text, word_tokenize, custom_stopwords))
 
-    # Remove duplicated after preprocessing
-    tokens = set(tokens)
+        # Remove duplicated after preprocessing
+        tokens = set(tokens)
 
-    # Remove empty values
-    tokens = list(filter(lambda token: len(token) > 0, tokens))
+        # Remove empty values
+        tokens = list(filter(lambda token: len(token) > 0, tokens))
 
-    model = api.load("word2vec-google-news-300")
-    vectorized_docs = vectorize(tokens, model=model)
 
-    return [
-        row.table_id,
-        vectorized_docs.tolist(),
-    ]
+        vectorized_docs = vectorize(tokens, model=model)
+
+        yield [
+            row.table_id,
+            vectorized_docs.tolist(),
+        ]
