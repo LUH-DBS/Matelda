@@ -104,9 +104,9 @@ def predict_errors(
     x_test_df = raha_features_df.join(
         column_grouping_df, ["table_id", "column_id"], "inner"
     )
-    print(x_test_df.rdd.getNumPartitions())
+
     y_test_df = labels_df.join(column_grouping_df, ["table_id", "column_id"], "inner")
-    print(y_test_df.rdd.getNumPartitions())
+
 
     # TODO: is here an way to espress this in pyspark?
     for c_idx in range(number_of_clusters):
@@ -116,7 +116,6 @@ def predict_errors(
         if len(cluster_df.head(1)) == 0:
             logger.warn("Column cluster {} is empty".format(c_idx))
             continue
-
         (
             cluster_samples_df,
             cluster_samples_labels_df,
@@ -140,6 +139,7 @@ def predict_errors(
             predictions_df,
             logger,
         ).drop("prediction", "col_cluster")
+        print(y_train.rdd.getNumPartitions())
 
         # TODO: do we need an imputer? If there are missing values the sampling label method would already crashed
         # imputer = Imputer(strategy='mode')
@@ -160,7 +160,9 @@ def predict_errors(
             cluster_df.join(y_train, ["table_id", "column_id", "row_id"], "inner")
         )
         logger.warn("Predicting errors")
-        predictions.append(xgb_classifier_model.transform(cluster_df))
+        temp = xgb_classifier_model.transform(cluster_df)
+        print(temp.rdd.getNumPartitions())
+        predictions.append(temp)
         # logger.warn("Saving classifier")
         # xgb_classifier_model.save(
         #    os.path.join(result_path, "xgboost-classifier-pyspark-model" + str(c_idx)),
@@ -251,7 +253,6 @@ def sampling_labeling(
         Tuple[DataFrame, DataFrame, DataFrame]: _description_
     """
     logger.warn("Clustering cluster values")
-
     # TODO: Clustering does not always return as many clusters as defined
     if cells_clustering_alg == "km":
         kmeans = KMeans(k=n_cell_clusters_per_col_cluster, initMode="k-means||")

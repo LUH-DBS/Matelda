@@ -10,11 +10,13 @@ import os
 import pickle
 import re
 import itertools
+import functools
 import random
 import sys
 import sklearn
 import tempfile
 import string
+import multiprocessing
 
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.types import Row
@@ -77,7 +79,7 @@ def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
     }
 
     d = detect.initialize_dataset(dataset_dictionary)
-    d.SAVE_RESULTS = True  # TODO: Saving results if we running on 1 Mio tables need a lot space, IO need time, gets saved on local machine because we are not using network storage
+    d.SAVE_RESULTS = False  # TODO: Saving results if we running on 1 Mio tables need a lot space, IO need time, gets saved on local machine because we are not using network storage
     d.VERBOSE = False
     d.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD", "TFIDF"]
     run_strategies(detect, d)
@@ -191,11 +193,9 @@ def run_strategies(self: raha.detection.Detection, d: raha.dataset.Dataset) -> N
             # TODO: Within a spark worker no rdd/dataframe can be created to parallelize tasks again. To include multiprocessing here again is then somewhat redundant and could lead to conflicts for resources.
             random.shuffle(algorithm_and_configurations)
 
-            strategy_profiles_list = []
-            for [d, algorithm, configuration] in algorithm_and_configurations:
-                strategy_profiles_list.append(
-                    _strategy_runner_process(d, [d, algorithm, configuration])
-                )
+            pool = multiprocessing.Pool()
+            _strategy_runner_process_ = functools.partial(_strategy_runner_process, d)
+            strategy_profiles_list = pool.map(_strategy_runner_process_, algorithm_and_configurations)
 
     else:
         for dd in self.HISTORICAL_DATASETS + [d.dictionary]:
