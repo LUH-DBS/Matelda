@@ -1,0 +1,201 @@
+id,title,authors,venue,year
+671167.0,A Database System for Real-Time Event Aggregation in Telecommunication,"Jerry Baulier, Stephen Blott, Henry F. Korth, Abraham Silberschatz",Very Large Data Bases,1998.0
+604269.0,Detection and classification of intrusions and faults using sequences of system calls,"Jo&#227;o B. D. Cabrera, Lundy Lewis, Raman K. Mehra",ACM SIGMOD Record ,2001.0
+672964.0,tdSiy ee sjt-setg aeDteedrl rs Tmnei-awRu cygaeirSi xbItttetOtOvnarmtrbcaenS at enhatu,"Tak W. Yan, Jurgen Annevelink",Very Large Data Bases,1994.0
+872823.0,Evaluating probabilistic queries over imprecise data,"Reynold Cheng, Dmitri V. Kalashnikov, Sunil Prabhakar",International Conference on Management of Data,2003.0
+671858.0,Evolution of Groupware for Business Applications: A Database Perspective on Lotus Domino/Notes,"C. Mohan, Ron Barber, S. Watts, A. Somani, Markos Zaharioudakis",Very Large Data Bases,2000.0
+362142.0,Knowledge discovery in data warehouses,Themistoklis Palpanas,ACM SIGMOD Record ,2000.0
+304231.0,Hypertext databases and data mining,Soumen Chakrabarti,International Conference on Management of Data,1999.0
+336590.0,The MLPQ/GIS constraint database system,"Peter Revesz, Rui Chen, Pradip Kanjamala, Yiming Li, Yuguo Liu, Yonghui Wang",International Conference on Management of Data,2000.0
+672006.0,Temporal Queries in OLAP,"Alberto O. Mendelzon, Alejandro A. Vaisman",Very Large Data Bases,2000.0
+872765.0,Approximate join processing over data streams,"Abhinandan Das, Johannes Gehrke, Mirek Riedewald",International Conference on Management of Data,2003.0
+872770.0,Winnowing: local algorithms for document fingerprinting,"Saul Schleimer, Daniel S. Wilkerson, Alex Aiken",International Conference on Management of Data,2003.0
+1.3808985286854022e+308,Towards an infrastructure for temporal databases: report of an invitational ARPA/NSF workshop,"Niki Pissinou, Richard Thomas Snodgrass, Ramez Elmasri, Inderpal S. Mumick, Tamer &#214;zsu, Barbara Pernici, Arie Segev, Babis Theodoulidis, Umeshwar Dayal",ACM SIGMOD Record ,1994.0
+383735.0,Applying an update method to a set of receivers,"Marc Andries, Luca Cabibbo, Jan Paredaens, Jan van den Bussche",ACM Transactions on Database Systems (TODS) ,2001.0
+507354.0,Databases and transaction processing: an application-oriented approach,,ACM SIGMOD Record ,2002.0
+672373.0,Efficient Management of Multiversion Documents by Object Referencing,"Shu-Yao Chien, Vassilis J. Tsotras, Carlo Zaniolo",Very Large Data Bases,2001.0
+375759.0,Monitoring business processes through event correlation based on dependency model,"Asaf Adii, David Botzer, Opher Etzion, Tali Yatzkar-Haham",International Conference on Management of Data,2001.0
+767094.0,Efficient retrieval of similar shapes,"Davood Rafiei, Alberto O. Mendelzon",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,2002.0
+,Performance Measurements of Tertiary Storage Devices,"Theodore Johnson, Ethan L. Miller",Very Large Data Bases,1998.0
+306144.0,"SQLJ Part 0, now known as SQL/OLB (Object-Language Bindings)","Andrew Eisenberg, Jim Melton",ACM SIGMOD Record ,1998.0
+672836.0,Fast Algorithms for Mining Association Rules in Large Databases,"Rakesh Agrawal, Ramakrishnan Srikant",Very Large Data Bases,1994.0
+181565.0,Text databases: a survey of text models and systems,Arjan Loeffen,ACM SIGMOD Record ,1994.0
+673159.0,Query Processing in Tertiary Memory Databases,Sunita Sarawagi,Very Large Data Bases,1995.0
+673475.0,Supporting Periodic Authorizations and Temporal Reasoning in Database Access Control,"Elisa Bertino, Claudio Bettini, Elena Ferrari, Pierangela Samarati",Very Large Data Bases,1996.0
+223868.0,Research and products-are they relevant to each other? (panel session),Herb Edelstein,International Conference on Management of Data,1995.0
+565120.0,The design of a retrieval technique for high-dimensional data on tertiary storage,"Ratko Orlandic, Jack Lukaszuk, Craig Swietlik",ACM SIGMOD Record ,4.871110163376242e+307
+244813.0,An axiomatic model of dynamic schema evolution in objectbase systems,"Randel J. Peters, M. Tamer &#214;zsu",ACM Transactions on Database Systems (TODS) ,1997.0
+507343.0,The n-tier hub technology,"Rainer A. Sommer, Thomas R. Gulledge, David Bailey",ACM SIGMOD Record ,2002.0
+764202.0,Anatomy of a native XML base management system,"T. Fiebig, S. Helmer, C.-C. Kanne, G. Moerkotte, J. Neumann, R. Schiele, T. Westmann",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,2002.0
+765505.0,HMAP- A temporal data model managing intervals with different granularities and indeterminacy from natural language sentences,"Carlo Combi, Giuseppe Pozzi",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,2001.0
+335419.0,Efficient and extensible algorithms for multi query optimization,"Prasan Roy, S. Seshadri, S. Sudarshan, Siddhesh Bhobe",International Conference on Management of Data,2000.0
+872873.0,The Lowell report,"Jim Gray, Hans Schek, Michael Stonebraker, Jeff Ullman",International Conference on Management of Data,2003.0
+673645.0,Garbage Collection in Object Oriented Databases Using Transactional Cyclic Reference Counting,"Srinivas Ashwin, Prasan Roy, S. Seshadri, Abraham Silberschatz, S. Sudarshan",Very Large Data Bases,1997.0
+673479.0,Incremental Maintenance of Externally Materialized Views,"Martin Staudt, Matthias Jarke",Very Large Data Bases,1996.0
+273253.0,Materialized views and data warehouses,Nick Roussopoulos,ACM SIGMOD Record ,1998.0
+758365.0,The Double Life of the Transaction Abstraction: Fundamental Principle and Evolving System Concept,Henry F. Korth,Very Large Data Bases,1995.0
+765555.0,The impact of object technology on commercial transaction processing,Edward E. Cobb,The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,1997.0
+673134.0,Discovery of Multiple-Level Association Rules from Large Databases,"Jiawei Han, Yongjian Fu",Very Large Data Bases,1995.0
+219774.0,"Replication: DB2, Oracle, or Sybase?",Doug Stacey,ACM SIGMOD Record ,1995.0
+671871.0,Work and Information Practices in the Sciences of Biodiversity,Geoffrey C. Bowker,Very Large Data Bases,2000.0
+271080.0,Semistructured and structured data in the Web: going back and forth,"Paolo Atzeni, Giansalvatore Mecca, Paolo Merialdo",ACM SIGMOD Record ,1997.0
+253373.0,Data warehousing and OLAP for decision support,"Surajit Chaudhuri, Umeshwar Dayal",International Conference on Management of Data,1997.0
+950490.0,Cost-driven vertical class partitioning for methods in object oriented databases,,The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,2003.0
+615219.0,,"Joan Peckham, Bonnie MacKellar, Michael Doherty",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,1995.0
+872795.0,Efficient similarity search and classification via rank aggregation,"Ronald Fagin, Ravi Kumar, D. Sivakumar",International Conference on Management of Data,2003.0
+564733.0,Statistical synopses for graph-structured XML databases,"Neoklis Polyzotis, Minos Garofalakis",International Conference on Management of Data,2002.0
+245893.0,Spotfire: an information exploration environment,Christopher Ahlberg,ACM SIGMOD Record ,1996.0
+673331.0,Further Improvements on Integrity Constraint Checking for Stratifiable Deductive Databases,"Sin Yeung Lee, Tok Wang Ling",Very Large Data Bases,1996.0
+375718.0,Progressive approximate aggregate queries with a multi-resolution tree structure,"Iosif Lazaridis, Sharad Mehrotra",International Conference on Management of Data,2001.0
+615202.0,Index configuration in object-oriented databases,Elisa Bertino,The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,1994.0
+290597.0,Algebraic change propagation for semijoin and outerjoin queries,"Timothy Griffin, Bharat Kumar",ACM SIGMOD Record ,1998.0
+950494.0,Incremental computation and maintenance of temporal aggregates,"Jun Yang, Jennifer Widom",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,4.563552877166165e+307
+673472.0,Practical Issues with Commercial Use of Federated Databases,Jim Kleewein,Very Large Data Bases,1996.0
+673140.0,Managing a DB2 Parallel Edition Database,Gilles Fecteau,Very Large Data Bases,1995.0
+223859.0,The Lotus notes storage system,Kenneth Moore,International Conference on Management of Data,1995.0
+306103.0,Building database-driven electronic catalogs,Sherif Danish,ACM SIGMOD Record ,1998.0
+767153.0,Global transaction support for workflow management systems: from formal specification to practical implementation,"Paul Grefen, Jochem Vonk, Peter Apers",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,2001.0
+673471.0,The Query Optimizer in Tandem's new ServerWare SQL Product,Pedro Celis,Very Large Data Bases,1996.0
+673307.0,Hot Block Clustering for Disk Arrays with Dynamic Striping,"Kazuhiko Mogi, Masaru Kitsuregawa",Very Large Data Bases,1995.0
+765556.0,Heuristic and randomized optimization for the join ordering problem,"Michael Steinbrunn, Guido Moerkotte, Alfons Kemper",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,1997.0
+212011.0,An aspect of query optimization in multidatabase systems,"Chiang Lee, Chia-Jung Chen, Hongjun Lu",ACM SIGMOD Record ,1995.0
+672364.0,A Comparative Study of Alternative Middle Tier Caching Solutions to Support Dynamic Web Content Acceleration,"Anindya Datta, Kaushik Dutta, Helen M. Thomas, Debra E. VanderMeer, Krithi Ramamritham, Dan Fishman",Very Large Data Bases,2001.0
+383736.0,"Probabilistic temporal databases, I: algebra","Alex Dekhtyar, Robert Ross, V. S. Subrahmanian",ACM Transactions on Database Systems (TODS) ,2001.0
+568519.0,Top-k selection queries over relational databases: Mapping strategies and performance evaluation,"Nicolas Bruno, Surajit Chaudhuri, Luis Gravano",ACM Transactions on Database Systems (TODS) ,2002.0
+564783.0,GEA: a toolkit for gene expression analysis,"Jessica M. Phan, Raymond Ng",International Conference on Management of Data,2002.0
+776989.0,An approach to confidence based page ranking for user oriented Web search,"Debajyoti Mukhopadhyay, Debasis Giri, Sanasam Ranbir Singh",ACM SIGMOD Record ,2003.0
+872862.0,TIMBER: a native system for querying XML,"Stelios Paparizos, Shurug Al-Khalifa, Adriane Chapman, H. V. Jagadish, Laks V. S. Lakshmanan, Andrew Nierman, Jignesh M. Patel, Divesh Srivastava, Nuwee Wiwatwattana, Yuqing Wu, Cong Yu",International Conference on Management of Data,2003.0
+181564.0,Comprehension syntax,"Peter Buneman, Leonid Libkin, Dan Suciu, Val Tannen, Limsoon Wong",ACM SIGMOD Record ,1994.0
+872867.0,PLASTIC: reducing query optimization overheads through plan recycling,"Vibhuti S. Sengar, Jayant R. Haritsa",International Conference on Management of Data,2003.0
+273270.0,,Arnon Rosenthal,ACM SIGMOD Record ,1998.0
+234893.0,On the cost of monitoring and reorganization of object bases for clustering,"Carsten A. Gerlhof, Alfons Kemper, Guido Moerkotte",ACM SIGMOD Record ,1996.0
+672826.0,Semantic Integration in Heterogeneous Databases Using Neural Networks,"Wen-Syan Li, Chris Clifton",Very Large Data Bases,1994.0
+190644.0,Using metadata for the intelligent browsing of structured media objects,"William I. Grosky, Farshad Fotouhi, Ishwar K. Sethi, Bogdan Capatina",ACM SIGMOD Record ,1994.0
+276323.0,Integration of heterogeneous databases without common domains using queries based on textual similarity,William W. Cohen,International Conference on Management of Data,1998.0
+764213.0,Foreword by the VLDB '98 PC Chairmen,"O. Shmueli, J. Widom",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,2000.0
+671333.0,"Information, Communication, and Money: For What Can We Charge and How Can We Meter It?","Stephen Blott, Henry F. Korth, Abraham Silberschatz",Very Large Data Bases,1998.0
+673142.0,Towards a Cooperative Transaction Model - The Cooperative Activity Model,"Marek Rusinkiewicz, Wolfgang Klas, Thomas Tesch, J&#252;rgen W&#228;sch, Peter Muth",etasesarDrL B aagVy e,1995.0
+223875.0,aajrFsbeislarti- oioaonenrme  jetne earaeetrcceoongnbn bk rel depO:slwEcttr,Charly Kleissner,International Conference on Management of Data,1995.0
+191979.0,DBLearn: a system prototype for knowledge discovery in relational databases,"Jiawei Han, Yongjian Fu, Yue Huang, Yandong Cai, Nick Cercone",International Conference on Management of Data,1994.0
+507346.0,Conceptual modeling and specification generation for B2B business processes based on ebXML,HyoungDo Kim,ACM SIGMOD Record ,2002.0
+191930.0,Oracle's symmetric replication technology and implications for application design,"Dean Daniels, Lip Boon Doo, Alan Downing, Curtis Elsbernd, Gary Hallmark, Sandeep Jain, Bob Jenkins, Peter Lim, Gordon Smith, Benny Souder, Jim Stamos",International Conference on Management of Data,1994.0
+564765.0,DBCache: database caching for web application servers,"Mehmet Altinel, Qiong Luo, Sailesh Krishnamurthy, C. Mohan, Hamid Pirahesh, Bruce G. Lindsay, Honguk Woo, Larry Brown",International Conference on Management of Data,2002.0
+615216.0,Characterization of database access pattern for analytic prediction of buffer hit probability,"Asit Dan, Philip S. Yu, Jen Yao Chung",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,1995.0
+276329.0,Simultaneous optimization and evaluation of multiple dimensional queries," r  aihaPnuknNMr.,ho ZaehSpJfaa n,hde.i  a Y tDegAFshfyeooms,tudgl",International Conference on Management of Data,1998.0
+672017.0,ICICLES: Self-Tuning Samples for Approximate Query Answering,"Venkatesh Ganti, Mong-Li Lee, Raghu Ramakrishnan",Very Large Data Bases,2000.0
+181552.0,Observations on the ODMG-93 proposal for an object-oriented database language,Won Kim,ACM SIGMOD Record ,1994.0
+615233.0,Historical queries along multiple lines of time evolution,"Gad M. Landau, Jeanette P. Schmidt, Vassilis J. Tsotras",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,1995.0
+672185.0,Collaborative Analytical Processing - Dream or Reality? (Panel abstract),"William O'Connell, Andrew Witkowski, Goetz Graefe",Very Large Data Bases,2001.0
+223890.0,QBI: query by icons,"Antonio Massari, Stefano Pavani, Lorenzo Saladini, Panos K. Chrysanthis",International Conference on Management of Data,1995.0
+671349.0,Query Optimization for XML,"Jason McHugh, Jennifer Widom",Very Large Data Bases,1999.0
+219754.0,Report on the 1995 international workshop on temporal databases,"Arie Segev, Christian S. Jensen, Richard Thomas Snodgrass",ACM SIGMOD Record ,1995.0
+671693.0,neAnpo-i  torern soAIatmas BepdafaraIoCocnhg tti,"Maurizio Panti, Luca Spalazzi, Alberto Giretti",Very Large Data Bases,2000.0
+290608.0,The Microsoft database research group,"David Lomet, Roger Barga, Surajit Chaudhuri, Paul Larson, Vivek Narasayya",ACM SIGMOD Record ,1998.0
+507345.0,Contracting in the days of eBusiness,"W. H&#252;mmer, W. Lehner, H. Wedekind",ACM SIGMOD Record ,2002.0
+671337.0,"TOPAZ: a Cost-Based, Rule-Driven, Multi-Phase Parallelizer","Clara Nippl, Bernhard Mitschang",Very Large Data Bases,1998.0
+191896.0,Incremental updates of inverted lists for text document retrieval,"Anthony Tomasic, H&#233;ctor Garc&#237;a-Molina, Kurt Shoens",International Conference on Management of Data,1994.0
+603876.0,"Preservation of digital data with self-validating, self-instantiating knowledge-based archives","Bertram Lud&#228;scher, Richard Marciano, Reagan Moore",ACM SIGMOD Record ,2001.0
+253327.0,Beyond market baskets: generalizing association rules to correlations,"Sergey Brin, Rajeev Motwani, Craig Silverstein",International Conference on Management of Data,1997.0
+603882.0,Reminiscences on influential papers,Kenneth A. Ross,ACM SIGMOD Record ,2001.0
+671003.0,Groupwise Processing of Relational Queries,"Damianos Chatziantoniou, Kenneth A. Ross",Very Large Data Bases,1997.0
+673323.0,Disseminating Updates on Broadcast Disks,"Swarup Acharya, Michael J. Franklin, Stanley B. Zdonik",Very Large Data Bases,1996.0
+280348.0,Repository system engineering,Pillip A. Bernstein,International Conference on Management of Data,1996.0
+187460.0,Database research at NTHU and ITRI,Arbee L. P. Chen,ACM SIGMOD Record ,1994.0
+344820.0,Report on NGITS'99: The fourth international workshop on next generation information technologies and systems,Opher Etzion,ACM SIGMOD Record ,709.1849531032689
+381901.0,"Shutdown, budget, and funding",Xiaolei Qian,ACM SIGMOD Record ,1996.0
+253299.0,STARTS: Stanford proposal for Internet meta-searching,"Luis Gravano, Chen-Chuan K. Chang, H&#233;ctor Garc&#237;a-Molina, Andreas Paepcke",International Conference on Management of Data,1997.0
+673149.0,,"Frank Moser, Achim Kraiss, Wolfgang Klas",Very Large Data Bases,1995.0
+673168.0,OODB Bulk Loading Revisited: The Partitioned-List Approach,"Janet L. Wiener, Jeffrey F. Naughton",Very Large Data Bases,1995.0
+959071.0,Energy and rate based MAC protocol for wireless sensor networks,"aV e,.lgKajri.a ma  iaom ld RSSapaanRnynrn I,K,i gudnyiKaj",ACM SIGMOD Record ,2003.0
+601867.0,Foundations of statistical natural language processing,Gerhard Weikum,ACM SIGMOD Record ,2002.0
+671865.0,Building Scalable Internet Applications with Oracle8i Server,"Julie Basu, Jos&#233; Alberto Fern&#225;ndez, Olga Peschansky",Very Large Data Bases,2000.0
+564769.0,ToXgene: a template-based data generator for XML,"Denilson Barbosa, Alberto Mendelzon, John Keenleyside, Kelly Lyons",International Conference on Management of Data,2002.0
+564755.0,Quadtree and R-tree indexes in oracle spatial: a comparison using GIS data,"Ravi Kanth V Kothuri, Siva Ravada, Daniel Abugov",International Conference on Management of Data,2002.0
+671352.0,Curio: A Novel Solution for Efficient Storage and Indexing in Data Warehouses,"Anindya Datta, Krithi Ramamritham, Helen M. Thomas",Very Large Data Bases,1999.0
+671875.0,Optimizing Multi-Feature Queries for Image Databases,"Ulrich G&#252;ntzer, Wolf-Tilo Balke, Werner Kie&#223;ling",Very Large Data Bases,2000.0
+564779.0, fL: brcosmt ovfei ralXarpws ee,"Daniela Florescu, Andreas Gr&#252;nhagen, Donald Kossmann, Steffen Rost",International Conference on Management of Data,2002.0
+280354.0,DBSim: a simulation tool for predicting database performance,,International Conference on Management of Data,1996.0
+959081.0,"Review of Spatial databases with application to GIS by Philippe Rigaux, Michel Scholl, and Agnes Voisard. Morgan Kaufmann 2002.",Nancy Wiegand,ACM SIGMOD Record ,2003.0
+190628.0,Are the terms version and variant orthogonal to one another?,Hartmut Wedekind,ACM SIGMOD Record ,1994.0
+945741.0,"Review of The data warehouse toolkit: the complete guide to dimensional modeling (2nd edition) by Ralph Kimball, Margy Ross. John Wiley & Sons, Inc. 2002.",Alexander A. Anisimov,ACM SIGMOD Record ,2003.0
+276375.0,The Araneus Web-based management system,", nGdPS ocAi M.diM  ,nzca. t e.ascPA irine,oaie. MGl.,",International Conference on Management of Data,1998.0
+273249.0,Report on the second IEEE metadata conference (Metadata '97),"Ron Musick, Chris Miller",ACM SIGMOD Record ,1998.0
+219042.0,A structured approach for the definition of the semantics of active databases,"Piero Fraternali, Letizia Tanca",ACM Transactions on Database Systems (TODS) ,1995.0
+233365.0,A framework for supporting data integration using the materialized and virtual approaches,"Richard Hull, Gang Zhou", a nC omrtcoaeglenirnatnt efIaDtnneMonnef aoae,1996.0
+953242.0,THESUS: Organizing Web document collections based on link semantics,"Maria Halkidi, Benjamin Nguyen, Iraklis Varlamis, Michalis Vazirgiannis",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,2003.0
+671669.0,Comparing Hierarchical Data in External Memory,Sudarshan S. Chawathe,Very Large Data Bases,1999.0
+637414.0,Methodology for development and employment of ontology based knowledge management applications,"York Sure, Steffen Staab, Rudi Studer",ACM SIGMOD Record ,2002.0
+765752.0,Priority assignment in real-time active databases,"Rajendran M. Sivasankaran, John A. Stankovic, Don Towsley, Bhaskar Purimetla, Krithi Ramamritham",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,1996.0
+565139.0,Phoenix project: fault-tolerant applications,"Roger Barga, David Lomet",ACM SIGMOD Record ,2002.0
+671325.0,DTL's DataSpot: Database Exploration Using Plain Language,"Shaul Dar, Gadi Entin, Shai Geva, Eran Palmon",Very Large Data Bases,1998.0
+601879.0,Interviewing during a tight job market,"Zachary G. Ives, Qiong Luo",ACM SIGMOD Record ,2002.0
+375792.0,XML data management (panel session): go native or spruce up relational systems?,"Per-&#197;ke Larson, Dana Florescu, Goetz Graefe, Guido Moerkotte, Hamid Pirahesh, Harald Sch&#246;ning",International Conference on Management of Data,2001.0
+212018.0,Information finding in a digital library: the Stanford perspective,"Tak W. Yan, H&#233;ctor Garc&#237;a-Molina",ACM SIGMOD Record ,1995.0
+202668.0,An annotated bibliography of benchmarks for object databases,Akmal B. Chaudhri,ACM SIGMOD Record ,1724.922905796697
+672360.0,Caching Technologies for Web Applications,C. Mohan,Very Large Data Bases,2001.0
+271087.0,Workshop on workflow management in scientific and engineering applications-report,"R. McClatchey, G. Vossen",ACM SIGMOD Record ,1997.0
+758367.0,WATCHMAN: A Data Warehouse Intelligent Cache Manager,"Peter Scheuermann, Junho Shim, Radek Vingralek",Very Large Data Bases,1996.0
+671191.0,Optimal Histograms with Quality Guarantees,"H. V. Jagadish, Nick Koudas, S. Muthukrishnan, Viswanath Poosala, Kenneth C. Sevcik, Torsten Suel",Very Large Data Bases,1998.0
+671006.0,Dynamic Memory Adjustment for External Mergesort,"Weiye Zhang, Per-&#197;ke Larson",Very Large Data Bases,1997.0
+191863.0,Combinatorial pattern discovery for scientific data: some preliminary results,"Jason Tsong-Li Wang, Gung-Wei Chirn, Thomas G. Marr, Bruce Shapiro, Dennis Shasha, Kaizhong Zhang",International Conference on Management of Data,1.6604836792861155e+308
+672822.0,On Index Selection Schemes for Nested Object Hierarchies,"Sudarshan S. Chawathe, Ming-Syan Chen, Philip S. Yu",Very Large Data Bases,1994.0
+276358.0,Database systems management and Oracle8,C. Gregory Doherty,International Conference on Management of Data,1998.0
+280359.0,SONAR: system for optimized numeric association rules,"Takeshi Fukuda, Yasuhiko Morimoto, Shinichi Morishita, Takeshi Tokuyama",International Conference on Management of Data,1996.0
+673462.0,Semantic Data Caching and Replacement,"Shaul Dar, Michael J. Franklin, Bj&#246;rn &#222;&#243;r J&#243;nsson, Divesh Srivastava, Michael Tan",Very Large Data Bases,1996.0
+765239.0,Online dynamic reordering,"Vijayshankar Raman, Bhaskaran Raman, Joseph M. Hellerstein",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,2000.0
+262770.0,Lore: a database management system for semistructured data,"Jason McHugh, Serge Abiteboul, Roy Goldman, Dallas Quass, Jennifer Widom",ACM SIGMOD Record ,1997.0
+673158.0,A Performance Study of Workfile Disk Management for Concurrent Mergesorts in a Multiprocessor Database System,"Kun-Lung Wu, Philip S. Yu, Jen-Yao Chung, James Z. Teng",Very Large Data Bases,1995.0
+262767.0,Asserting beliefs in MLS relational models,"Nenad A. Jukic, Susan V. Vrbsky",ACM SIGMOD Record ,1997.0
+604267.0,Data mining-based intrusion detectors: an overview of the columbia IDS project,"Salvatore J. Stolfo, Wenke Lee, Philip K. Chan, Wei Fan, Eleazar Eskin",ACM SIGMOD Record ,2001.0
+672174.0,Surfing Wavelets on Streams: One-Pass Summaries for Approximate Aggregate Queries,"Anna C. Gilbert, Yannis Kotidis, S. Muthukrishnan, Martin Strauss",Very Large Data Bases,2001.0
+383894.0,Flexible support for multiple access control policies,"Sushil Jajodia, Pierangela Samarati, Maria Luisa Sapino, V. S. Subrahmanian",ACM Transactions on Database Systems (TODS) ,5.314967588822514e+307
+223898.0,Paradise: a database system for GIS applications,CORPORATE The Paradise Team,International Conference on Management of Data,1995.0
+637421.0,Querying multiple bioinformatics information sources: can semantic web research help?,"David Buttler, Matthew Coleman, Terence Critchlow, Renato Fileto, Wei Han, Calton Pu, Daniel Rocco, Li Xiong",ACM SIGMOD Record ,2002.0
+672980.0,GraphDB: Modeling and Querying Graphs in Databases,Ralf Hartmut G&#252;ting,Very Large Data Bases,1994.0
+219730.0,A research status report on adaptation for mobile data access,"Brian D. Noble, M. Satyanarayanan",ACM SIGMOD Record ,4.4626345797944863e+307
+672005.0,Manipulating Interpolated Data is Easier than You Thought,"St&#233;phane Grumbach, Philippe Rigaux, Luc Segoufin",Very Large Data Bases,2000.0
+328959.0,Indexing large metric spaces for similarity search queries,"Tolga Bozkaya, Meral Ozsoyoglu",ACM Transactions on Database Systems (TODS) ,1999.0
+671197.0,ottNrios:nRit -Jnti nnaurDgfmprA  sgicJ hposo hea iOoilpil:Aion1,"Sven Helmer, Till Westmann, Guido Moerkotte",Very Large Data Bases,1998.0
+375762.0,OminiSearch: a method for searching dynamic content on the Web,,International Conference on Management of Data,2001.0
+-4607.488430968122,Gigascope: high performance network monitoring with an SQL interface,"Chuck Cranor, Yuan Gao, Theodore Johnson, Vlaidslav Shkapenyuk, Oliver Spatscheck",International Conference on Management of Data,2002.0
+280361.0,The MultiView project: object-oriented view technology and applications,"E. A. Rundensteiner, H. A. Kuno, Y.-G. Ra, V. Crestana-Taube, M. C. Jones, P. J. Marron",International Conference on Management of Data,1996.0
+191904.0,Practical predicate placement,eM .optHeshrl neielsJ,International Conference on Management of Data,1994.0
+276328.0,Caching multidimensional queries using chunks,"Prasad M. Deshpande, Karthikeyan Ramasamy, Amit Shukla, Jeffrey F. Naughton",International Conference on Management of Data,1998.0
+274461.0,Intelligent access to heterogeneous information sources: report on the 4th workshop on knowledge representation meets databases,"Franz Baader, Manfred A. Jeusfeld, Werner Nutt",ACM SIGMOD Record ,1997.0
+673633.0,PESTO: An Integrated Query/Browser for Object Databases,"Michael J. Carey, Laura M. Haas, Vivekananda Maganty, John H. Williams",Very Large Data Bases,1996.0
+280360.0,CapBasED-AMS: a capability-based and event-driven activity management system,"Patrick C. K. Hung, Helen P. Yeung, Kamalakar Karlapalem",International Conference on Management of Data,1996.0
+373638.0,Re-designing distance functions and distance-based applications for high dimensional data,Charu C. Aggarwal,ACM SIGMOD Record ,2001.0
+637419.0,A framework for semantic gossiping,"Karl Aberer, Philippe Cudr&#233;-Mauroux, Manfred Hauswirth",ACM SIGMOD Record ,2002.0
+304568.0,Improving OLTP data quality using data warehouse mechanisms,"Matthias Jarke, Christoph Quix, Guido Blees, Dirk Lehmann, Gunter Michalk, Stefan Stierl",International Conference on Management of Data,1999.0
+767143.0,PicoDBMS: Scaling down database techniques for the smartcard,,The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,2001.0
+335428.0,Adaptive multi-stage distance join processing,"Hyoseop Shin, Bongki Moon, Sukho Lee",International Conference on Management of Data,2000.0
+185836.0,Evaluation of remote backup algorithms for transaction-processing systems,"Christos A. Polyzois, H&#233;ctor Garc&#237;a-Molina",ACM Transactions on Database Systems (TODS) ,1994.0
+191848.0,ASSET: a system for supporting extended transactions,"A. Biliris, S. Dar, N. Gehani, H. V. Jagadish, K. Ramamritham",International Conference on Management of Data,1994.0
+276385.0,User-oriented smart-cache for the Web: what you seek is what you get!,"Zo&#233; Lacroix, Arnaud Sahuguet, Raman Chandrasekar",International Conference on Management of Data,1998.0
+672973.0,Data Integration in the Large: The Challenge of Reuse,"Arnon Rosenthal, Leonard J. Seligman",Very Large Data Bases,1994.0
+872846.0,GridDB: a relational interface for the grid,"David T. Liu, Michael J. Franklin, Devesh Parekh",International Conference on Management of Data,2003.0
+564782.0,DBXplorer: enabling keyword search over relational databases,"Sanjay Agrawal, Surajit Chaudhuri, Gautam Das",International Conference on Management of Data,2002.0
+245896.0,Pixel-oriented database visualizations,Daniel A. Keim,ACM SIGMOD Record ,1996.0
+673302.0,Efficient Incremental Garbage Collection for Client-Server Object Database Systems,"Laurent Amsaleg, Michael J. Franklin, Olivier Gruber",Very Large Data Bases,2.713206733170731e+307
+233324.0,BIRCH: an efficient data clustering method for very large databases,"Tian Zhang, Raghu Ramakrishnan, Miron Livny",International Conference on Management of Data,1996.0
+191991.0,Databases for networks,H. V. Jagadish,International Conference on Management of Data,1994.0
+253344.0,A toolkit for negotiation support interfaces to multi-dimensional data,,International Conference on Management of Data,1997.0
+253397.0,Languages for multi-database interoperability,"Fr&#233;d&#233;ric Gingras, Laks V. S. Lakshmanan, Iyer N. Subramanian, Despina Papoulis, Nematollaah Shiri",International Conference on Management of Data,1997.0
+336572.0,Towards data mining benchmarking: a test bed for performance study of frequent pattern mining,"Jian Pei, Runying Mao, Kan Hu, Hua Zhu",International Conference on Management of Data,2000.0
+673637.0,Querying a Multilevel Database: A Logical Analysis,Fr&#233;d&#233;ric Cuppens,Very Large Data Bases,1996.0
+637435.0,Research in information managment at Dublin City University,"Mark Roantree, Alan F. Smeaton",ACM SIGMOD Record ,2002.0
+671671.0,Loading a Cache with Query Results,"Laura M. Haas, Donald Kossmann, Ioana Ursu",Very Large Data Bases,1999.0
+195666.0,Quorum consensus in nested-transaction systems,"Kenneth J. Goldman, Nancy Lynch",ACM Transactions on Database Systems (TODS) ,1994.0
+672200.0,Approximate String Joins in a Database (Almost) for Free,"Luis Gravano, Panagiotis G. Ipeirotis, H. V. Jagadish, Nick Koudas, S. Muthukrishnan, Divesh Srivastava",Very Large Data Bases,2001.0
+202673.0,A comparison of three user interfaces to relational microcomputer data bases,"Carl Medsker, Margaret Christensen, Il-Yeol Song",ACM SIGMOD Record ,1995.0
+304222.0,Query rewriting for semistructured data,,International Conference on Management of Data,1999.0
+672997.0,Materialization: A Powerful and Ubiquitous Abstraction Pattern,"Alain Pirotte, Esteban Zim&#225;nyi, David Massart, Tatiana Yakusheva",Very Large Data Bases,1994.0
+872871.0,Panel: querying networked databases,"Nick Koudas, Divesh Srivastava",International Conference on Management of Data,2003.0
+603878.0,The evolution of effective B-tree: page organization and techniques: a personal account,David Lomet,ACM SIGMOD Record ,2001.0
+223812.0,"FastMap: a fast algorithm for indexing, data-mining and visualization of traditional and multimedia datasets","Christos Faloutsos, King-Ip Lin",International Conference on Management of Data,1995.0
+223899.0,Shore: combining the best features of OODBMS and file systems,CORPORATE The SHORE Team,International Conference on Management of Data,1995.0
+383892.0,Querying ATSQL databases with temporal logic,"Jan Chomicki, David Toman, Michael H. B&#246;hlen",ACM Transactions on Database Systems (TODS) ,2001.0
+-269484.7814963228,Query optimization at the crossroads,Surajit Chaudhuri,International Conference on Management of Data,1997.0
+767142.0,Guest editorial,"Amr El Abbadi, Gunter Schlageter, Kyu-Young Whang",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,2001.0
+959069.0,An environmental sensor network to determine drinking water quality and security,"Anastassia Ailamaki, Christos Faloutos, Paul S. Fischbeck, Mitchell J. Small, Jeanne VanBriesen",ACM SIGMOD Record ,2003.0
+336560.0,FACT: a learning based Web query processing system,"Songting Chen, Yanlei Diao, Hongjun Lu, Zengping Tian",International Conference on Management of Data,2000.0
