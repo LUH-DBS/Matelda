@@ -1,4 +1,5 @@
 import json
+from matplotlib.pyplot import get
 import requests
 import time
 import os
@@ -148,6 +149,9 @@ def get_fd(file_path):
     
     return result_response.json()
 
-if __name__ == "__main__":
-    fd_result = get_fd("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/Sandbox_Generation/metanome_input_files/flights.csv")
-    print(fd_result)
+def run_metanome(file_path):
+    return get_fd(file_path)
+
+# if __name__ == "__main__":
+#     fd_result = get_fd("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/Sandbox_Generation/metanome_input_files/flights.csv")
+#     print(fd_result)
