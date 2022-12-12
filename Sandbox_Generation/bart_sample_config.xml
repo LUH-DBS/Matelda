@@ -3,28 +3,11 @@
     <!-- ****************************************************
                       DATABASES
     **************************************************** -->
-    <source>
-        <!-- The (optional) source database stores tables that 
-        cannot be modified (for example master data) 
-        BART will not introduce changes in these tables -->
-        <type>DBMS</type>
-        <access-configuration>
-            <driver>org.postgresql.Driver</driver>
-            <uri>jdbc:postgresql://localhost:5433/postgres</uri>
-            <schema>source</schema>
-            <login>postgres</login>
-            <password>postgres</password>
-        </access-configuration>
-        <import>
-            <input type="csv" separator="," table="md">md.csv</input>
-        </import>
-    </source>
-
     <target> 
         <type>DBMS</type>
         <access-configuration>
             <driver>org.postgresql.Driver</driver>
-            <uri>jdbc:postgresql://localhost:5433/postgres</uri>
+            <uri>jdbc:postgresql://localhost:5432/bart_db</uri>
             <schema>target</schema>
             <login>postgres</login>
             <password>postgres</password>
@@ -66,12 +49,12 @@ person(ssn: $ssn2, name: $n2, surname: $s2, city: $c2, zip: $z2),
 
         <!-- To export the dirty db -->
         <exportDirtyDB>true</exportDirtyDB>
-        <exportDirtyDBPath>/Temp/bart/example/</exportDirtyDBPath>
+        <exportDirtyDBPath>Sandbox_Generation/dirty_datasets</exportDirtyDBPath>
         <exportDirtyDBType>CSV</exportDirtyDBType>
 
         <!-- To export the changes -->
         <exportCellChanges>true</exportCellChanges>
-        <exportCellChangesPath>/Temp/bart/example/changes.csv</exportCellChangesPath>
+        <exportCellChangesPath>Sandbox_Generation/dirty_datasets/dirty.cdv</exportCellChangesPath>
 
         <!-- To compute an estimate of the reparability (default = false) -->
         <estimateRepairability>true</estimateRepairability>

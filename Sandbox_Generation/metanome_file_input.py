@@ -151,7 +151,3 @@ def get_fd(file_path):
 
 def run_metanome(file_path):
     return get_fd(file_path)
-
-# if __name__ == "__main__":
-#     fd_result = get_fd("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/Sandbox_Generation/metanome_input_files/flights.csv")
-#     print(fd_result)

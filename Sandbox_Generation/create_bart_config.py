@@ -66,9 +66,9 @@ def set_fds_config(xml_root, id, determinant, dependant, vio_gen_percentage):
     vio_gen_obj_2.set("id", id)
 
     vio_gen_comparison_obj_1 = etree.SubElement(vio_gen_obj_1, "comparison")
-    vio_gen_comparison_obj_1.text = f'''(${determinant}1 == ${determinant}2)'''
+    vio_gen_comparison_obj_1.text = f'''({determinant}1 == {determinant}2)'''
     vio_gen_comparison_obj_2 = etree.SubElement(vio_gen_obj_2, "comparison")
-    vio_gen_comparison_obj_2.text = f'''(${dependant}1 != ${dependant}2)'''
+    vio_gen_comparison_obj_2.text = f'''({dependant}1 != {dependant}2)'''
 
     vio_gen_percentage_obj_1 = etree.SubElement(vio_gen_obj_1, "percentage")
     vio_gen_percentage_obj_1.text = str(vio_gen_percentage / 2)
@@ -78,10 +78,9 @@ def set_fds_config(xml_root, id, determinant, dependant, vio_gen_percentage):
     return xml_root
 
 
-def set_config(xml_root, input_file, table_columns, outlier_error_cols, outlier_errors_percentage, typo_cols, typo_percentage, fd_ratio_dict):
+def set_config(xml_root, input_file, table_columns, outlier_error_cols, outlier_errors_percentage, typo_cols, typo_percentage, fd_ratio_dict, output_dict):
 
     table_name = os.path.basename(input_file).replace('.csv', '')
-    xml_root = set_source_config(xml_root, input_file, table_name)
     xml_root = set_target_config(xml_root, input_file, table_name)
 
     xml_root = set_outliers_config(xml_root, table_name, outlier_error_cols, outlier_errors_percentage)
@@ -94,11 +93,18 @@ def set_config(xml_root, input_file, table_columns, outlier_error_cols, outlier_
     for idx, fd in enumerate(list(fd_ratio_dict.keys())):
         xml_root = set_fds_config(xml_root, f'''e{idx+1}''', str(fd[0]), str(fd[1]), fd_ratio_dict[fd])
     
+    export_dirty_db_obj = xml_root.xpath("//configuration/exportDirtyDBPath")[0] 
+    export_dirty_db_obj.text = os.path.join(output_dict, table_name)
+    export_dirty_file_obj = xml_root.xpath("//configuration/exportCellChangesPath")[0]
+    export_dirty_file_obj. text = os.path.join(output_dict, table_name, table_name + ".csv")
+
     return xml_root
 
-def create_config_file(input_file, table_columns, outlier_error_col, outlier_errors_percentage, typo_col, typo_percentage, fd_ratio_dict):
+def create_config_file(input_file, table_columns, outlier_error_col, outlier_errors_percentage, typo_col, typo_percentage, fd_ratio_dict, output_dir):
     parser = etree.XMLParser(strip_cdata=False)
     root_tree = etree.parse('Sandbox_Generation/bart_sample_config.xml', parser=parser)
 
-    set_config(root_tree, input_file, table_columns, outlier_error_col, outlier_errors_percentage, typo_col, typo_percentage, fd_ratio_dict)
-    root_tree.write('bart_sample_config_updated.xml')
+    set_config(root_tree, input_file, table_columns, outlier_error_col, outlier_errors_percentage, typo_col, typo_percentage, fd_ratio_dict, output_dir)
+    config_file_path = os.path.join(output_dir, f'''bart_config_{os.path.basename(input_file).replace('.csv', '')}.xml''')
+    root_tree.write(config_file_path)
+    return config_file_path
