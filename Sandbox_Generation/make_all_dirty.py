@@ -94,7 +94,7 @@ output_dir = "Sandbox_Generation/metanome_input_files/processed"
 config_files_path = "Sandbox_Generation/dirty_datasets/"
 
 files = [f for f in os.listdir(input_dir) if os.path.isfile(os.path.join(input_dir, f))]
-
+count = 0
 for file in files:
     print(file + " is being processed.")
     input_file_path = os.path.join(input_dir, file)
@@ -102,8 +102,8 @@ for file in files:
     df = preprocess_headers(df)
     save_csv(df,output_dir, file)
     config_file_path = make_it_dirty(random.randint(1, 25), os.path.join(input_dir, file), config_files_path)
+    count += 1
     print(file + " is done.")
-    # process = subprocess.Popen("/Users/fatemehahmadi/Documents/Benchmarks/BART/Bart_Engine/run.sh {}".format(config_file_path),
-    #                                      shell=True, stdout=subprocess.PIPE)
-    # process.wait()
-    # print(process.returncode)
+    if count // 10 == 0:
+        print(f'''{count} files processed.''' )
+    
