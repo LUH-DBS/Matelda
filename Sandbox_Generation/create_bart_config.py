@@ -80,7 +80,7 @@ def set_fds_config(xml_root, id, determinant, dependant, vio_gen_percentage):
     return xml_root
 
 
-def set_config(xml_root, input_file, table_columns, outlier_error_cols, outlier_errors_percentage, typo_cols, typo_percentage, fd_ratio_dict, output_dict):
+def set_config(xml_root, input_file, table_columns, outlier_error_cols, outlier_errors_percentage, typo_cols, typo_percentage, fd_ratio_dict, output_dir):
 
     table_name = os.path.basename(input_file).replace('.csv', '')
     xml_root = set_target_config(xml_root, input_file, table_name)
@@ -96,9 +96,9 @@ def set_config(xml_root, input_file, table_columns, outlier_error_cols, outlier_
         xml_root = set_fds_config(xml_root, f'''e{idx+1}''', str(fd[0]), str(fd[1]), fd_ratio_dict[fd])
     
     export_dirty_db_obj = xml_root.xpath("//configuration/exportDirtyDBPath")[0] 
-    export_dirty_db_obj.text = os.path.join(output_dict, table_name)
+    export_dirty_db_obj.text = "./"
     export_dirty_file_obj = xml_root.xpath("//configuration/exportCellChangesPath")[0]
-    export_dirty_file_obj. text = os.path.join(output_dict, table_name, table_name + ".csv")
+    export_dirty_file_obj. text = table_name + "_changes.csv"
 
     return xml_root
 

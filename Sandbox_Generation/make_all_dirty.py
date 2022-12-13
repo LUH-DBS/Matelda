@@ -106,7 +106,7 @@ for file in files:
     df = read_original_file(input_file_path)
     df = preprocess_headers(df)
     save_csv(df, processed_file_path, file)
-    make_it_dirty(random.randint(1, 25), os.path.join(input_dir, file), processed_file_path)
+    make_it_dirty(random.randint(1, 25), os.path.join(processed_file_path, file), processed_file_path)
     count += 1
     print(file + " is done.")
     if count // 10 == 0:

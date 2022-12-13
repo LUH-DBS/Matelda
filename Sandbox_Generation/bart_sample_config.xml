@@ -54,7 +54,7 @@ person(ssn: $ssn2, name: $n2, surname: $s2, city: $c2, zip: $z2),
 
         <!-- To export the changes -->
         <exportCellChanges>true</exportCellChanges>
-        <exportCellChangesPath>Sandbox_Generation/dirty_datasets/dirty.cdv</exportCellChangesPath>
+        <exportCellChangesPath>Sandbox_Generation/dirty_datasets/dirty.csv</exportCellChangesPath>
 
         <!-- To compute an estimate of the reparability (default = false) -->
         <estimateRepairability>true</estimateRepairability>
