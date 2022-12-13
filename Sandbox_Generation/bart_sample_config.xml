@@ -7,7 +7,7 @@
         <type>DBMS</type>
         <access-configuration>
             <driver>org.postgresql.Driver</driver>
-            <uri>jdbc:postgresql://localhost:5432/bart_db</uri>
+            <uri>jdbc:postgresql://localhost:5432/</uri>
             <schema>target</schema>
             <login>postgres</login>
             <password>postgres</password>

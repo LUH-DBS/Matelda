@@ -1,4 +1,6 @@
 import math
+import shutil
+from black import out
 import pandas as pd
 from file_preprocessing import preprocess_headers, read_original_file, save_csv
 from metanome_file_input import run_metanome
@@ -91,17 +93,20 @@ def make_it_dirty(error_percentage, file_path, output_dir):
 
 input_dir = "Sandbox_Generation/metanome_input_files"
 output_dir = "Sandbox_Generation/metanome_input_files/processed"
-config_files_path = "Sandbox_Generation/dirty_datasets/"
 
 files = [f for f in os.listdir(input_dir) if os.path.isfile(os.path.join(input_dir, f))]
 count = 0
 for file in files:
+    processed_file_path = os.path.join(output_dir, file.replace('.csv', ''))
+    if os.path.exists(processed_file_path):
+        shutil.rmtree(processed_file_path)
+    os.makedirs(processed_file_path)
     print(file + " is being processed.")
     input_file_path = os.path.join(input_dir, file)
     df = read_original_file(input_file_path)
     df = preprocess_headers(df)
-    save_csv(df,output_dir, file)
-    config_file_path = make_it_dirty(random.randint(1, 25), os.path.join(input_dir, file), config_files_path)
+    save_csv(df, processed_file_path, file)
+    make_it_dirty(random.randint(1, 25), os.path.join(input_dir, file), processed_file_path)
     count += 1
     print(file + " is done.")
     if count // 10 == 0:

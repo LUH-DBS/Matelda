@@ -27,6 +27,8 @@ def set_source_config(xml_root, input_file, table_name):
     return xml_root
 
 def set_target_config(xml_root, input_file, table_name):
+    db_conf_obj = xml_root.xpath("//target/access-configuration/uri")[0]
+    db_conf_obj.text = 'jdbc:postgresql://localhost:5432/' + table_name
     input_obj_trgt = xml_root.xpath("//target/import/input")[0]
     input_obj_trgt.text = os.path.abspath(input_file)
     input_obj_trgt.set('table', table_name)
