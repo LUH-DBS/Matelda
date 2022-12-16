@@ -2,21 +2,16 @@ name: Error-Detection-at-Scale
 channels:
   - defaults
 dependencies:
-  - pip=22.1.2
   - python=3.9
+  - gensim
+  - pandas
+  - scikit-learn
+  - pyspark
+  - xgboost[version='>=1.7.0']
+  - nltk
+  - pip
+  - black
   - pip:
-    - dask==2022.9.0
-    - distributed==2022.9.0
-    - gensim==4.2.0
-    - matplotlib==3.5.3
-    - numpy==1.23.2
     - openclean-core==0.4.1
-    - pandas==1.4.4
     - raha==1.25
-    - scikit-learn==1.1.2
-    - xgboost==1.7.1
-    - nltk==3.7
-    - pyspark==3.3.0
-    - pyarrow==9.0.0
-    - black==22.10.0 
     - git+https://github.com/okfn/messytables.git@master

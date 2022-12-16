@@ -1,7 +1,7 @@
 case $1 in
 
   'run')
-      spark-submit --master local[*] --driver-memory 50G --conf "spark.default.parallelism=128" --conf "spark.sql.shuffle.partitions=128" __main__.py
+      spark-submit --master local[*] --driver-memory 50G --conf "spark.default.parallelism=128" --conf "spark.sql.shuffle.partitions=128" ed_scale.py
     ;;
 
   'format')

@@ -27,15 +27,13 @@ def generate_raha_features_pyspark(
     csv_paths_df: DataFrame,
     raha_features_path: str,
     cell_feature_generator_enabled: int,
-    save_intermediate_results: bool,
-) -> DataFrame:
+) -> None:
     """_summary_
 
     Args:
         csv_paths_df (DataFrame): _description_
         raha_features_path (str): _description_
         cell_feature_generator_enabled (int): _description_
-        save_intermediate_results (bool): _description_
 
     Returns:
         DataFrame: _description_
@@ -46,20 +44,14 @@ def generate_raha_features_pyspark(
 
     if cell_feature_generator_enabled == 1:
         logger.warn("Creating Raha features")
-        raha_features_rdd = csv_paths_df.rdd.flatMap(
+        raha_features_df = csv_paths_df.rdd.flatMap(
             lambda row: generate_raha_features(row)
-        )
-        raha_features_df = raha_features_rdd.toDF(
+        ).toDF(
             ["table_id", "column_id", "row_id", "features"]
         )
-        if save_intermediate_results:
-            logger.warn("Writing Raha features to file")
-            raha_features_df.write.parquet(raha_features_path, mode="overwrite")
-    else:
-        logger.warn("Loading Raha features from disk")
-        raha_features_df = spark.read.parquet(raha_features_path)
 
-    return raha_features_df
+        logger.warn("Writing Raha features to file")
+        raha_features_df.write.parquet(raha_features_path, mode="overwrite")
 
 
 def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
@@ -72,6 +64,9 @@ def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
         List[Tuple[int, int, int, Any]]: _description_
     """
     detect = raha.detection.Detection()
+    detect.SAVE_RESULTS = False  
+    detect.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD", "TFIDF"]
+
     dataset_dictionary = {
         "name": row.table_name,
         "path": row.dirty_path,
@@ -79,9 +74,6 @@ def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
     }
 
     d = detect.initialize_dataset(dataset_dictionary)
-    d.SAVE_RESULTS = False  # TODO: Saving results if we running on 1 Mio tables need a lot space, IO need time, gets saved on local machine because we are not using network storage
-    d.VERBOSE = False
-    d.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD", "TFIDF"]
     run_strategies(detect, d)
     generate_features(
         detect, d
@@ -194,8 +186,12 @@ def run_strategies(self: raha.detection.Detection, d: raha.dataset.Dataset) -> N
             random.shuffle(algorithm_and_configurations)
 
             pool = multiprocessing.Pool()
-            _strategy_runner_process_ = functools.partial(_strategy_runner_process, d)
-            strategy_profiles_list = pool.map(_strategy_runner_process_, algorithm_and_configurations)
+            _strategy_runner_process_ = functools.partial(_strategy_runner_process, self)
+            strategy_profiles_list = pool.map(
+                _strategy_runner_process_, algorithm_and_configurations
+            )
+            pool.close()
+            pool.join()
 
     else:
         for dd in self.HISTORICAL_DATASETS + [d.dictionary]:
@@ -323,7 +319,7 @@ def _strategy_runner_process(self: raha.detection.Detection, args: List[Any]) ->
         ch = configuration
         for attribute in d.dataframe.columns:
             j = d.dataframe.columns.get_loc(attribute)
-            for i, value in d.dataframe[attribute].iteritems():
+            for i, value in d.dataframe[attribute].items():
                 try:
                     if len(re.findall("[" + ch + "]", value, re.UNICODE)) > 0:
                         outputted_cells[(i, j)] = ""

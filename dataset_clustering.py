@@ -71,8 +71,7 @@ def cluster_datasets_pyspark(
     output_path: str,
     table_grouping_enabled: int,
     auto_clustering_enabled: int,
-    save_intermediate_results: bool,
-) -> DataFrame:
+) -> None:
     """_summary_
 
     Args:
@@ -80,7 +79,6 @@ def cluster_datasets_pyspark(
         output_path (str): _description_
         table_grouping_enabled (int): _description_
         auto_clustering_enabled (int): _description_
-        save_intermediate_results (_type_): _description_
 
     Returns:
         DataFrame: _description_
@@ -95,24 +93,27 @@ def cluster_datasets_pyspark(
         logger.warn("Clustering Datasets")
         if auto_clustering_enabled == 1:
             logger.warn("Clustering tables with AUTO_CLUSTERING")
-                    
-            logger.warn("Loading gensim model")            
+
+            logger.warn("Loading gensim model")
             model = api.load("word2vec-google-news-300")
 
             logger.warn("Creating context DataFrame")
-            #TODO: reduce partition because otherwise out of memory
-            context_rdd = csv_paths_df.rdd.repartition(16).mapPartitions(lambda row: create_table_context(row, model))
-            context_df = context_rdd.toDF(
-                ["table_id", "vectorized_docs"]
+            # TODO: reduce partition because otherwise out of memory
+            context_df = (
+                csv_paths_df.rdd.repartition(4)
+                .mapPartitions(lambda row: create_table_context(row, model))
+                .toDF(["table_id", "vectorized_docs"])
+                .repartition(csv_paths_df.rdd.getNumPartitions())
             )
-            del context_rdd
+
             # TODO: embedding model and DBSCAN params in config file
             # TODO: Use an implementation for pyspark
+            logger.warn("DBSCAN clustering")
             clustering = DBSCAN(eps=0.5, min_samples=5, n_jobs=-1).fit(
                 context_df.rdd.map(lambda x: x.vectorized_docs).collect()
             )
 
-            context_df = spark.createDataFrame(
+            table_cluster_df = spark.createDataFrame(
                 data=np.c_[
                     clustering.labels_.reshape(-1, 1),
                     np.array(
@@ -121,19 +122,18 @@ def cluster_datasets_pyspark(
                 ].tolist(),
                 schema=["table_cluster", "table_id"],
             ).repartition(csv_paths_df.rdd.getNumPartitions())
+            context_df.unpersist()
 
         else:
             logger.warn("Clustering tables without AUTO_CLUSTERING")
-            context_df = csv_paths_df.withColumn("table_cluster", lit(0))
+            table_cluster_df = csv_paths_df.withColumn("table_cluster", lit(0))
 
-        table_grouping_df = context_df.select(col("table_id"), col("table_cluster"))
-        if save_intermediate_results:
-            logger.warn("Writing table clustering result to disk.")
-            table_grouping_df.write.parquet(output_path, mode="overwrite")
-    else:
-        logger.warn("Loading table grouping from disk")
-        table_grouping_df = spark.read.parquet(output_path)
-    return table_grouping_df
+        table_grouping_df = table_cluster_df.select(
+            col("table_id"), col("table_cluster")
+        )
+
+        logger.warn("Writing table clustering result to disk.")
+        table_grouping_df.write.parquet(output_path, mode="overwrite")
 
 
 def create_table_context(rows: List[Row], model) -> List:
@@ -177,7 +177,6 @@ def create_table_context(rows: List[Row], model) -> List:
 
         # Remove empty values
         tokens = list(filter(lambda token: len(token) > 0, tokens))
-
 
         vectorized_docs = vectorize(tokens, model=model)
 

@@ -1,4 +1,5 @@
 import os
+import time
 from configparser import ConfigParser
 
 from pyspark.sql import SparkSession
@@ -33,90 +34,125 @@ def run_experiments(
         os.makedirs(experiment_output_path)
 
     logger.warn("Genereting CSV paths")
-    csv_paths_df = generate_csv_paths(config["DIRECTORIES"]["sandbox_dir"])
+    module_start_time = time.time()
+    csv_paths_df = generate_csv_paths(config["DIRECTORIES"]["sandbox_dir"]).cache()
+    module_end_time = time.time()
+    logger.warn(
+        "Execution time: Genereting CSV paths: {:.2f}s".format(
+            module_end_time - module_start_time
+        )
+    )
 
     logger.warn("Generating labels")
-    labels_df = generate_labels_pyspark(
+    module_start_time = time.time()
+    label_path = os.path.join(
+        experiment_output_path, config["DIRECTORIES"]["label_output_filename"]
+    )
+    generate_labels_pyspark(
         csv_paths_df=csv_paths_df,
-        labels_path=os.path.join(
-            experiment_output_path, config["DIRECTORIES"]["label_output_filename"]
-        ),
+        labels_path=label_path,
         extract_labels_enabled=int(config["EXPERIMENTS"]["extract_labels_enabled"]),
-        save_intermediate_results=int(
-            config["EXPERIMENTS"]["safe_intermediate_results"]
-        ),
+    )
+    module_end_time = time.time()
+    logger.warn(
+        "Execution time: Generating labels: {:.2f}s".format(
+            module_end_time - module_start_time
+        )
     )
 
     logger.warn("Grouping tables")
-    table_grouping_df = cluster_datasets_pyspark(
+    module_start_time = time.time()
+    table_grouping_path = os.path.join(
+        experiment_output_path,
+        config["DIRECTORIES"]["table_clustering_output_filename"],
+    )
+    cluster_datasets_pyspark(
         csv_paths_df=csv_paths_df,
-        output_path=os.path.join(
-            experiment_output_path,
-            config["DIRECTORIES"]["table_clustering_output_filename"],
-        ),
+        output_path=table_grouping_path,
         table_grouping_enabled=int(config["EXPERIMENTS"]["table_clustering_enabled"]),
         auto_clustering_enabled=int(
             config["TABLE_GROUPING"]["auto_clustering_enabled"]
         ),
-        save_intermediate_results=int(
-            config["EXPERIMENTS"]["safe_intermediate_results"]
-        ),
+    )
+    module_end_time = time.time()
+    logger.warn(
+        "Execution time: Grouping tables: {:.2f}s".format(
+            module_end_time - module_start_time
+        )
     )
 
     logger.warn("Grouping columns")
-    column_grouping_df, number_of_column_clusters = column_clustering_pyspark(
+    module_start_time = time.time()
+    column_grouping_path = os.path.join(
+        experiment_output_path,
+        config["DIRECTORIES"]["column_clustering_output_filename"],
+    )
+    column_clustering_pyspark(
         csv_paths_df=csv_paths_df,
-        table_cluster_df=table_grouping_df,
-        column_groups_path=os.path.join(
-            experiment_output_path,
-            config["DIRECTORIES"]["column_clustering_output_filename"],
-        ),
+        table_cluster_df=spark.read.parquet(table_grouping_path),
+        column_groups_path=column_grouping_path,
         column_grouping_enabled=int(config["EXPERIMENTS"]["column_clustering_enabled"]),
         auto_clustering_enabled=int(
             config["COLUMN_GROUPING"]["auto_clustering_enabled"]
         ),
         seed=int(config["EXPERIMENTS"]["seed"]),
-        save_intermediate_results=int(
-            config["EXPERIMENTS"]["safe_intermediate_results"]
-        ),
+    )
+    module_end_time = time.time()
+    logger.warn(
+        "Execution time: Grouping columns: {:.2f}s".format(
+            module_end_time - module_start_time
+        )
     )
 
     logger.warn("Creating Raha features")
-    raha_features_df = generate_raha_features_pyspark(
+    module_start_time = time.time()
+    raha_features_path = os.path.join(
+        experiment_output_path,
+        config["DIRECTORIES"]["cell_features_output_filename"],
+    )
+    generate_raha_features_pyspark(
         csv_paths_df=csv_paths_df,
-        raha_features_path=os.path.join(
-            experiment_output_path,
-            config["DIRECTORIES"]["cell_features_output_filename"],
-        ),
+        raha_features_path=raha_features_path,
         cell_feature_generator_enabled=int(
             config["EXPERIMENTS"]["cell_feature_generator_enabled"]
         ),
-        save_intermediate_results=int(
-            config["EXPERIMENTS"]["safe_intermediate_results"]
-        ),
     )
+    module_end_time = time.time()
+    logger.warn(
+        "Execution time: Creating Raha features: {:.2f}s".format(
+            module_end_time - module_start_time
+        )
+    )
+    csv_paths_df.unpersist()
 
     logger.warn("Detecting Errors")
-    error_prediction_df = error_detector_pyspark(
-        result_path=os.path.join(
+    module_start_time = time.time()
+    error_prediction_path = os.path.join(
+        os.path.join(
             experiment_output_path,
             "results_exp_{}_labels_{}".format(exp_number, labeling_budget),
         ),
+        "error_predictions.parquet",
+    )
+    error_detector_pyspark(
+        result_path=error_prediction_path,
         labeling_budget=labeling_budget,
         cell_clustering_alg=config["CLUSTERING"]["cell_clustering_alg"],
-        raha_features_df=raha_features_df,
-        labels_df=labels_df,
-        column_grouping_df=column_grouping_df,
-        number_of_column_clusters=number_of_column_clusters,
+        raha_features_df=spark.read.parquet(raha_features_path),
+        labels_df=spark.read.parquet(label_path),
+        column_grouping_df=spark.read.parquet(column_grouping_path),
         seed=int(config["EXPERIMENTS"]["seed"]),
-        save_intermediate_results=int(
-            config["EXPERIMENTS"]["safe_intermediate_results"]
-        ),
+    )
+    module_end_time = time.time()
+    logger.warn(
+        "Execution time: Detecting Errors: {:.2f}s".format(
+            module_end_time - module_start_time
+        )
     )
 
     logger.warn("Evaluating")
     evaluate_pyspark(
-        error_prediction_df,
+        spark.read.parquet(error_prediction_path),
         labels_df,
         result_path=os.path.join(
             experiment_output_path,
@@ -156,9 +192,18 @@ if __name__ == "__main__":
                     exp_number, number_of_labels
                 )
             )
+            experiment_start_time = time.time()
             run_experiments(
                 exp_name=configs["EXPERIMENTS"]["exp_name"],
                 labeling_budget=number_of_labels,
                 exp_number=exp_number,
                 config=configs,
+            )
+            experiment_end_time = time.time()
+            logger.warn(
+                "Execution time experiment: Number:{} Labels:{}, Time:{:.2f}s".format(
+                    exp_number,
+                    number_of_labels,
+                    experiment_end_time - experiment_start_time,
+                )
             )

@@ -19,9 +19,7 @@ def error_detector_pyspark(
     raha_features_df: DataFrame,
     labels_df: DataFrame,
     column_grouping_df: DataFrame,
-    number_of_column_clusters: int,
     seed: int,
-    save_intermediate_results: bool,
 ) -> DataFrame:
     """_summary_
 
@@ -32,9 +30,7 @@ def error_detector_pyspark(
         raha_features_df (DataFrame): _description_
         labels_df (DataFrame): _description_
         column_grouping_df (DataFrame): _description_
-        number_of_column_clusters (int): _description_
         seed (int): _description_
-        save_intermediate_results (bool): _description_
 
     Returns:
         DataFrame: _description_
@@ -44,11 +40,9 @@ def error_detector_pyspark(
     logger = log4jLogger.LogManager.getLogger(__name__)
     prediction_df = predict_errors(
         column_grouping_df=column_grouping_df,
-        results_path=result_path,
         raha_features_df=raha_features_df,
         labels_df=labels_df,
         n_labels=labeling_budget,
-        number_of_clusters=number_of_column_clusters,
         cell_clustering_alg=cell_clustering_alg,
         seed=seed,
         logger=logger,
@@ -57,25 +51,22 @@ def error_detector_pyspark(
 
     logger.warn("Writing error dectection result to disk.")
     prediction_df = prediction_df.drop("probability", "rawPrediction")
-    if save_intermediate_results:
-        prediction_df.write.parquet(
-            os.path.join(result_path, "error_predictions.parquet"), mode="overwrite"
-        )
+    prediction_df.write.parquet(
+        result_path, mode="overwrite"
+    )
     return prediction_df
 
 
 def predict_errors(
     column_grouping_df: DataFrame,
-    results_path: str,
     raha_features_df: DataFrame,
     labels_df: DataFrame,
     n_labels: int,
-    number_of_clusters: int,
     cell_clustering_alg: str,
     seed: int,
     logger,
     spark,
-) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame]:
+) -> DataFrame:
     """_summary_
 
     Args:
@@ -84,7 +75,6 @@ def predict_errors(
         raha_features_df (DataFrame): _description_
         labels_df (DataFrame): _description_
         n_labels (int): _description_
-        number_of_clusters (int): _description_
         cell_clustering_alg (str): _description_
         seed (int): _description_
         logger (_type_): _description_
@@ -94,10 +84,16 @@ def predict_errors(
         Tuple[DataFrame, DataFrame, DataFrame, DataFrame]: _description_
     """
     predictions = []
+    distinct_column_cluster = (
+        column_grouping_df.select("col_cluster")
+        .distinct()
+        .rdd.map(lambda x: x.col_cluster)
+        .collect()
+    )
 
     logger.warn("Splitting labeling budget between column clusters")
     n_cell_clusters_per_col_cluster_dict = split_labeling_budget(
-        n_labels, number_of_clusters
+        n_labels, len(distinct_column_cluster)
     )
 
     logger.warn("Joining column cluster with raha features")
@@ -107,15 +103,16 @@ def predict_errors(
 
     y_test_df = labels_df.join(column_grouping_df, ["table_id", "column_id"], "inner")
 
-
     # TODO: is here an way to espress this in pyspark?
-    for c_idx in range(number_of_clusters):
+    for c_idx in distinct_column_cluster:
         logger.warn("Processing column cluster {}".format(c_idx))
         cluster_df = x_test_df.where(x_test_df.col_cluster == c_idx)
         cluster_label_df = y_test_df.where(y_test_df.col_cluster == c_idx)
         if len(cluster_df.head(1)) == 0:
             logger.warn("Column cluster {} is empty".format(c_idx))
             continue
+
+        logger.warn("Column cluster {}: Sampling labels".format(c_idx))
         (
             cluster_samples_df,
             cluster_samples_labels_df,
@@ -128,48 +125,32 @@ def predict_errors(
             seed,
             logger,
         )
-        # Save temp results
-        # cluster_samples_df.write.parquet(os.path.join(results_path, str(c_idx) + "_samples.parquet"), mode="overwrite")
-        # cluster_samples_labels_df.write.parquet(os.path.join(results_path, str(c_idx) +"_samples_labels.parquet"), mode="overwrite")
-        # predictions_df.write.parquet(os.path.join(results_path, str(c_idx) +"_clustering.parquet"), mode="overwrite")
 
+        logger.warn("Column cluster {}: Label propagation".format(c_idx))
         y_train = label_propagation(
             cluster_label_df,
             cluster_samples_labels_df,
             predictions_df,
             logger,
         ).drop("prediction", "col_cluster")
-        print(y_train.rdd.getNumPartitions())
+        print("y_train: ", y_train.rdd.getNumPartitions())
 
-        # TODO: do we need an imputer? If there are missing values the sampling label method would already crashed
-        # imputer = Imputer(strategy='mode')
-        # imputer.setInputCol("features")
-        # imputer_model = imputer.fit(x_train)
-        # x_train = imputer_model.transform(x_train)
-        # x_train.show()
         # xgboost for spark is experimental feature
         logger.warn("Training detection classfier for column cluster {}".format(c_idx))
         xgb_classifier = SparkXGBClassifier(
             features_col="features",
             label_col="ground_truth",
             num_workers=spark.sparkContext.defaultParallelism,
-            verbose=0,
             random_state=seed,
         )
         xgb_classifier_model = xgb_classifier.fit(
             cluster_df.join(y_train, ["table_id", "column_id", "row_id"], "inner")
         )
-        logger.warn("Predicting errors")
-        temp = xgb_classifier_model.transform(cluster_df)
-        print(temp.rdd.getNumPartitions())
-        predictions.append(temp)
-        # logger.warn("Saving classifier")
-        # xgb_classifier_model.save(
-        #    os.path.join(result_path, "xgboost-classifier-pyspark-model" + str(c_idx)),
-        # )
-        # Does not overwrite old savings
 
-    return (reduce(DataFrame.unionAll, predictions),)
+        logger.warn("Predicting errors")
+        predictions.append(xgb_classifier_model.transform(cluster_df))
+
+    return reduce(DataFrame.unionAll, predictions)
 
 
 def split_labeling_budget(
@@ -226,7 +207,7 @@ def label_propagation(
         .join(
             cluster_samples_labels_df.select("prediction", "ground_truth"), "prediction"
         )
-    )
+    ).repartition(cluster_samples_labels_df.rdd.getNumPartitions())
 
     return y_train
 
@@ -253,6 +234,14 @@ def sampling_labeling(
         Tuple[DataFrame, DataFrame, DataFrame]: _description_
     """
     logger.warn("Clustering cluster values")
+    # TODO: there shouldn't be any zero values ...
+    # import pandas as pd
+    # feat = pd.DataFrame(x.select("features").toPandas()["features"].to_list())
+    # print(feat)
+    # print(feat.isna().sum())
+    # print(feat[feat.isna().any(axis=1)][1].value_counts())
+    # exit()
+
     # TODO: Clustering does not always return as many clusters as defined
     if cells_clustering_alg == "km":
         kmeans = KMeans(k=n_cell_clusters_per_col_cluster, initMode="k-means||")
@@ -261,11 +250,11 @@ def sampling_labeling(
     elif (
         cells_clustering_alg == "hac"
     ):  # TODO: Bisecting k-means is a kind of hierarchical clustering
-        # TODO: Why slow?
         bkm = BisectingKMeans(k=n_cell_clusters_per_col_cluster)
         bkm.setSeed(seed)
         model = bkm.fit(x)
 
+    logger.warn("Transform features")
     predictions = model.transform(x).drop("features")
 
     logger.warn("Drawing samples")

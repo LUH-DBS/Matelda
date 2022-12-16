@@ -48,18 +48,16 @@ def generate_labels_pyspark(
     csv_paths_df: DataFrame,
     labels_path: str,
     extract_labels_enabled: bool,
-    save_intermediate_results: bool,
-) -> DataFrame:
+) -> None:
     """_summary_
 
     Args:
         csv_paths_df (DataFrame): _description_
         labels_path (str): _description_
         extract_labels_enabled (bool): _description_
-        save_intermediate_results (bool): _description_
 
     Returns:
-        DataFrame: _description_
+        _type_: _description_
     """
     spark = SparkSession.getActiveSession()
     log4jLogger = spark._jvm.org.apache.log4j
@@ -67,15 +65,9 @@ def generate_labels_pyspark(
 
     if extract_labels_enabled:
         logger.warn("Extracting labels")
-        labels_rdd = csv_paths_df.rdd.flatMap(
+        labels_df = csv_paths_df.rdd.flatMap(
             lambda row: generate_table_ground_truth(row)
-        )
-        labels_df = labels_rdd.toDF(["table_id", "column_id", "row_id", "ground_truth"])
-        if save_intermediate_results:
-            logger.warn("Writing labels to file")
-            labels_df.write.parquet(labels_path, mode="overwrite")
-    else:
-        logger.warn("Loading labels from disk")
-        labels_df = spark.read.parquet(labels_path)
+        ).toDF(["table_id", "column_id", "row_id", "ground_truth"])
 
-    return labels_df
+        logger.warn("Writing labels to file")
+        labels_df.write.parquet(labels_path, mode="overwrite")
