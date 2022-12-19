@@ -37,6 +37,7 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
                         and os.path.isfile(clean_path)
                     ):
                         csv_paths.append((dirty_path, clean_path, table, parent))
+
     csv_paths_df = (
         spark.createDataFrame(
             data=csv_paths,
@@ -45,7 +46,13 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
         .sort("table_name")
         .withColumn("table_id", monotonically_increasing_id())
         .select("table_id", "dirty_path", "clean_path", "table_name", "parent")
-        .repartition(2 * spark.sparkContext.defaultParallelism)
+        .repartition(
+            (
+                len(csv_paths)
+                if len(csv_paths) < 2 * spark.sparkContext.defaultParallelism
+                else 2 * spark.sparkContext.defaultParallelism
+            )
+        )
     )
     logger.warn(
         "Partitions csv_paths_df: {}".format(csv_paths_df.rdd.getNumPartitions())
