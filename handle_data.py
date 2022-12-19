@@ -47,5 +47,7 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
         .select("table_id", "dirty_path", "clean_path", "table_name", "parent")
         .repartition(2 * spark.sparkContext.defaultParallelism)
     )
-    logger.warn("csv_paths_df partitions: {}".format(csv_paths_df.rdd.getNumPartitions()))
+    logger.warn(
+        "Partitions csv_paths_df: {}".format(csv_paths_df.rdd.getNumPartitions())
+    )
     return csv_paths_df

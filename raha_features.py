@@ -46,9 +46,7 @@ def generate_raha_features_pyspark(
         logger.warn("Creating Raha features")
         raha_features_df = csv_paths_df.rdd.flatMap(
             lambda row: generate_raha_features(row)
-        ).toDF(
-            ["table_id", "column_id", "row_id", "features"]
-        )
+        ).toDF(["table_id", "column_id", "row_id", "features"])
 
         logger.warn("Writing Raha features to file")
         raha_features_df.write.parquet(raha_features_path, mode="overwrite")
@@ -64,7 +62,7 @@ def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
         List[Tuple[int, int, int, Any]]: _description_
     """
     detect = raha.detection.Detection()
-    detect.SAVE_RESULTS = False  
+    detect.SAVE_RESULTS = False
     detect.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD", "TFIDF"]
 
     dataset_dictionary = {
@@ -186,7 +184,9 @@ def run_strategies(self: raha.detection.Detection, d: raha.dataset.Dataset) -> N
             random.shuffle(algorithm_and_configurations)
 
             pool = multiprocessing.Pool()
-            _strategy_runner_process_ = functools.partial(_strategy_runner_process, self)
+            _strategy_runner_process_ = functools.partial(
+                _strategy_runner_process, self
+            )
             strategy_profiles_list = pool.map(
                 _strategy_runner_process_, algorithm_and_configurations
             )
