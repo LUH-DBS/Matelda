@@ -59,7 +59,11 @@ def column_clustering_pyspark(
     logger = log4jLogger.LogManager.getLogger(__name__)
 
     nltk.download("stopwords")
-    logger.warn("table_cluster_df partitions: {}".format(table_cluster_df.rdd.getNumPartitions()))
+    logger.warn(
+        "Partitions table_cluster_df: {}".format(
+            table_cluster_df.rdd.getNumPartitions()
+        )
+    )
 
     if column_grouping_enabled == 1:
         logger.warn("Creating column features")
