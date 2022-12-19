@@ -14,6 +14,9 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
         DataFrame: _description_
     """
     spark = SparkSession.getActiveSession()
+    log4jLogger = spark._jvm.org.apache.log4j
+    logger = log4jLogger.LogManager.getLogger(__name__)
+
     csv_paths = []
     sandbox_children_path = [
         (os.path.join(sandbox_path, dir), dir) for dir in os.listdir(sandbox_path)
@@ -42,8 +45,7 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
         .sort("table_name")
         .withColumn("table_id", monotonically_increasing_id())
         .select("table_id", "dirty_path", "clean_path", "table_name", "parent")
-        .repartition(spark.sparkContext.defaultParallelism)
+        .repartition(2 * spark.sparkContext.defaultParallelism)
     )
-    print(csv_paths_df.count())
-    print(csv_paths_df.select('table_name').distinct().count())
+    logger.warn("csv_paths_df partitions: {}".format(csv_paths_df.rdd.getNumPartitions()))
     return csv_paths_df

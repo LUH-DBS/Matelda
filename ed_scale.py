@@ -153,7 +153,7 @@ def run_experiments(
     logger.warn("Evaluating")
     evaluate_pyspark(
         spark.read.parquet(error_prediction_path),
-        labels_df,
+        spark.read.parquet(label_path),
         result_path=os.path.join(
             experiment_output_path,
             "results_exp_{}_labels_{}".format(exp_number, labeling_budget),
@@ -162,7 +162,7 @@ def run_experiments(
 
 
 if __name__ == "__main__":
-    spark = SparkSession.builder.appName("ED-Scale").getOrCreate()
+    spark = SparkSession.builder.getOrCreate()
     # Workaround for logging. At log level INFO our log messages will be lost. Python's logging module does not work with pyspark.
     spark.sparkContext.setLogLevel("WARN")
     log4jLogger = spark._jvm.org.apache.log4j
@@ -171,7 +171,7 @@ if __name__ == "__main__":
 
     logger.warn("Reading config")
     configs = ConfigParser()
-    configs.read("config.ini")
+    configs.read("conf/config.ini")
 
     logger.warn("Creating output directory")
     if not os.path.exists(configs["DIRECTORIES"]["output_dir"]):

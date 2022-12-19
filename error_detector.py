@@ -38,6 +38,11 @@ def error_detector_pyspark(
     spark = SparkSession.getActiveSession()
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
+    logger.warn("raha_features_df partitions: {}".format(raha_features_df.rdd.getNumPartitions()))
+    logger.warn("labels_df partitions: {}".format(labels_df.rdd.getNumPartitions()))
+    logger.warn("column_grouping_df partitions: {}".format(column_grouping_df.rdd.getNumPartitions()))
+
+
     prediction_df = predict_errors(
         column_grouping_df=column_grouping_df,
         raha_features_df=raha_features_df,
