@@ -439,11 +439,15 @@ class Detection:
 ########################################
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--base_path", help="dataset path")
+    parser.add_argument("--results_path", help="dataset path")
     parser.add_argument("--dataset", help="Dataset Name (dataset main directory name)")
     parser.add_argument("--labeling_budget", help="labeling budget, number of tuples")
     parser.add_argument("--execution_number", help="experiment repition")
     args = parser.parse_args()
 
+    results_path = args.results_path
+    dataset_path = args.base_path
     dataset_name = args.dataset
     labeling_budget = int(args.labeling_budget)
     execution_number = int(args.execution_number)
@@ -451,19 +455,20 @@ if __name__ == "__main__":
     start_time = time.time()
     dataset_dictionary = {
         "name": dataset_name,
-        "path": os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, "datasets", dataset_name, "dirty.csv")),
-        "clean_path": os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, "datasets", dataset_name, "clean.csv"))
+        "path": os.path.abspath(os.path.join(dataset_path, "dirty_clean.csv")),
+        "clean_path": os.path.abspath(os.path.join(dataset_path, "clean.csv"))
     }
     app = Detection(labeling_budget)
     detection_dictionary, labeled_cells = app.run(dataset_dictionary)
     data = raha.dataset.Dataset(dataset_dictionary)
     end_time = time.time()
     metrics = data.get_data_cleaning_evaluation(detection_dictionary)
-    results = {'precision': metrics["ed_p"], 'recall': metrics["ed_r"], 'f_score': metrics["ed_f"],
+    results = {'dataset_path': dataset_path, 'dataset_name': dataset_name, 'execution_number': execution_number, 'dataset_shape': data.dataframe.shape, 
+               'precision': metrics["ed_p"], 'recall': metrics["ed_r"], 'f_score': metrics["ed_f"],
                'tp': metrics["ed_tp"], 'ed_tpfp': metrics["output_size"], 'ed_tpfn': metrics["actual_errors"],
                'execution-time': end_time - start_time, 'number_of_labeled_tuples': labeling_budget,
                'number_of_labeled_cells': len(labeled_cells)}
-    result_file_path = "Benchmarks/raha/results/raha_{}_number#{}_${}$labels.json".format(dataset_name, execution_number, labeling_budget)
+    result_file_path = os.path.join(results_path, f'''raha_{dataset_name}_number#{execution_number}_${labeling_budget}$labels.json''')
     with open(result_file_path, "w") as result_file:
         json.dump(results, result_file)
     print("Raha's performance on {}:\nPrecision = {:.2f}\nRecall = {:.2f}\nF1 = {:.2f}".format(data.name, metrics["ed_p"], metrics["ed_r"], metrics["ed_f"]))

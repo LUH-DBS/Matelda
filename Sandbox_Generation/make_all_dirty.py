@@ -9,6 +9,7 @@ import numpy as np
 import os
 import subprocess
 import random 
+import pickle
 
 def get_files_by_file_size(dirname, reverse=False):
     """ Return list of file paths in directory sorted by file size """
@@ -118,32 +119,38 @@ def make_it_dirty(error_percentage, file_path, output_dir):
     config_file_path = create_bart_config.create_config_file(file_path, list(df.columns.values), outlier_error_cols, outlier_errors_percentage, typo_cols, typo_percentage, fd_ratio_dict, output_dir)
     val = subprocess.check_call("Sandbox_Generation_Extra_Apps_111222/BART/Bart_Engine/run.sh '%s'" % config_file_path, shell=True)
 
+input_dir = "GitTables_1M_csv"
+output_dir = "GitTables_1M_csv/processed"
+
+for parent in os.listdir(input_dir):
+    for par_sub_dir in os.listdir(os.path.join(input_dir, parent)):
+        files = get_files_by_file_size(os.path.join(input_dir, parent, par_sub_dir))
+        files_errors = dict()
+        count = 0
+        time_0 = time.time()
+        for file in files:
+            try:
+                processed_file_path = os.path.join(output_dir, file.replace('.csv', ''))
+                if not os.path.exists(processed_file_path):
+                    os.makedirs(processed_file_path)
+                    print(file + " is being processed.")
+                    input_file_path = os.path.join(input_dir, parent, par_sub_dir, file)
+                    df = read_original_file(input_file_path)
+                    df = preprocess_headers(df)
+                    df_name = save_csv(df, processed_file_path, file)
+                    error_precentage = random.randint(1, 25)
+                    files_errors[file] = error_precentage
+                    make_it_dirty(error_precentage, os.path.join(processed_file_path, df_name), processed_file_path)
+                    count += 1
+                    print(file + " is done.")
+                    if count % 10 == 0:
+                        print(f'''{count} files processed.''' )
+                        with open('files_error_percentages.pickle', 'wb') as handle:
+                            pickle.dump(files_errors, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            except Exception as e:
+                print(file, e)
+time_1 = time.time()
+print("********time*******:{} seconds".format(time_1-time_0))
 
 
-input_dir = "input_files_test"
-output_dir = "input_files_test/processed"
-
-# files = [f for f in os.listdir(input_dir) if os.path.isfile(os.path.join(input_dir, f))]
-files = get_files_by_file_size(input_dir)
-count = 0
-time_0 = time.time()
-for file in files:
-    try:
-        processed_file_path = os.path.join(output_dir, file.replace('.csv', ''))
-        if not os.path.exists(processed_file_path):
-            os.makedirs(processed_file_path)
-            print(file + " is being processed.")
-            input_file_path = os.path.join(input_dir, file)
-            df = read_original_file(input_file_path)
-            df = preprocess_headers(df)
-            df_name = save_csv(df, processed_file_path, file)
-            make_it_dirty(random.randint(1, 25), os.path.join(processed_file_path, df_name), processed_file_path)
-            count += 1
-            print(file + " is done.")
-        if count // 10 == 0:
-            print(f'''{count} files processed.''' )
-    except Exception as e:
-        print(file, e)
-    time_1 = time.time()
-    print("********time*******:{} seconds".format(time_1-time_0))
     
