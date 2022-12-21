@@ -1,10 +1,12 @@
 from posixpath import basename
+import string
 import inflect
 import re
 import pandas as pd
 import os
 
 def camel_to_snake(col_name):
+    col_name = col_name.translate(str.maketrans('', '', string.punctuation))
     col_name = col_name.replace('-', '_')
     col_name = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', col_name)
     col_name = re.sub('([a-z0-9])([A-Z])', r'\1_\2', col_name).lower().replace(' ', '')
@@ -33,5 +35,6 @@ def preprocess_headers(df):
     
 
 def save_csv(df, output_path, df_name):
+    df_name = "clean.csv"
     df.to_csv(os.path.join(output_path, df_name), index=False)
-    return
+    return df_name

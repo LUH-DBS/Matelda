@@ -1,5 +1,6 @@
 import math
 from multiprocessing import parent_process
+import string
 from lxml import etree
 import os
 
@@ -27,8 +28,6 @@ def set_source_config(xml_root, input_file, table_name):
     return xml_root
 
 def set_target_config(xml_root, input_file, table_name):
-    db_conf_obj = xml_root.xpath("//target/access-configuration/uri")[0]
-    db_conf_obj.text = 'jdbc:postgresql://localhost:5432/' + table_name
     input_obj_trgt = xml_root.xpath("//target/import/input")[0]
     input_obj_trgt.text = os.path.abspath(input_file)
     input_obj_trgt.set('table', table_name)
@@ -104,7 +103,7 @@ def set_config(xml_root, input_file, table_columns, outlier_error_cols, outlier_
 
 def create_config_file(input_file, table_columns, outlier_error_col, outlier_errors_percentage, typo_col, typo_percentage, fd_ratio_dict, output_dir):
     parser = etree.XMLParser(strip_cdata=False)
-    root_tree = etree.parse('Sandbox_Generation/bart_sample_config.xml', parser=parser)
+    root_tree = etree.parse('bart_sample_config.xml', parser=parser)
 
     set_config(root_tree, input_file, table_columns, outlier_error_col, outlier_errors_percentage, typo_col, typo_percentage, fd_ratio_dict, output_dir)
     config_file_path = os.path.join(output_dir, f'''bart_config_{os.path.basename(input_file).replace('.csv', '')}.xml''')
