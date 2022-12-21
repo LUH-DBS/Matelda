@@ -13,6 +13,7 @@
 import re
 import sys
 import html
+import csv
 
 import pandas
 ########################################
@@ -56,6 +57,8 @@ class Dataset:
         """
         dataframe = pandas.read_csv(dataset_path, sep=",", header="infer", encoding="utf-8", dtype=str,
                                     keep_default_na=False, low_memory=False).applymap(self.value_normalizer)
+        dataframe = dataframe.replace('', 'NULL')
+        dataframe = dataframe.applymap(lambda x: x.replace('"', ''))
         return dataframe
 
     @staticmethod
