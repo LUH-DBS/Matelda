@@ -462,12 +462,14 @@ if __name__ == "__main__":
     detection_dictionary, labeled_cells = app.run(dataset_dictionary)
     data = raha.dataset.Dataset(dataset_dictionary)
     end_time = time.time()
+    actuall_errors_dict = pandas.read_csv(os.path.join(dataset_path, "clean_changes.csv"), header = None).to_dict()
+    detected_errors = list(detection_dictionary.keys())
     metrics = data.get_data_cleaning_evaluation(detection_dictionary)
     results = {'dataset_path': dataset_path, 'dataset_name': dataset_name, 'execution_number': execution_number, 'dataset_shape': data.dataframe.shape, 
                'precision': metrics["ed_p"], 'recall': metrics["ed_r"], 'f_score': metrics["ed_f"],
                'tp': metrics["ed_tp"], 'ed_tpfp': metrics["output_size"], 'ed_tpfn': metrics["actual_errors"],
                'execution-time': end_time - start_time, 'number_of_labeled_tuples': labeling_budget,
-               'number_of_labeled_cells': len(labeled_cells)}
+               'number_of_labeled_cells': len(labeled_cells), 'actuall_errors_json': actuall_errors_dict, 'detected_errors_keys': detected_errors}
     result_file_path = os.path.join(results_path, f'''raha_{dataset_name}_number#{execution_number}_${labeling_budget}$labels.json''')
     with open(result_file_path, "w") as result_file:
         json.dump(results, result_file)
