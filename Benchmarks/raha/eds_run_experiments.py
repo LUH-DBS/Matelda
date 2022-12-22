@@ -1,12 +1,9 @@
 import os
-from numpy import result_type
-
-from pyparsing import results
 
 repition = range(1, 11)
 labeling_budgets = range(1, 21)
-sandbox_path = "/home/fatemeh/ED-Scale/Sandbox_Generation/sandbox_test"
-results_path = "/home/fatemeh/ED-Scale/Sandbox_Generation/sandbox_test/raha_results"
+sandbox_path = "/home/fatemeh/ED-Scale/Sandbox_Generation/data-gov-sandbox"
+results_path = "/home/fatemeh/ED-Scale/Sandbox_Generation/data-gov-raha-results-1"
 dir_levels = 1 # That means we have files in each subdirectory of sandbox dir
 datasets = []
 
@@ -24,4 +21,7 @@ def run_raha(dataset, results_path, labeling_budget, exec_number):
 for exec_number in repition:
     for dataset in datasets:
         for label_budget in labeling_budgets:
-            run_raha(dataset, results_path, label_budget, exec_number)
+            try:
+                run_raha(dataset, results_path, label_budget, exec_number)
+            except Exception as e:
+                print(dataset, e)
