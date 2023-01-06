@@ -63,7 +63,7 @@ def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
     """
     detect = raha.detection.Detection()
     detect.SAVE_RESULTS = False
-    detect.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD", "TFIDF"]
+    detect.VERBOSE = False
 
     dataset_dictionary = {
         "name": row.table_name,
@@ -72,15 +72,18 @@ def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
     }
 
     d = detect.initialize_dataset(dataset_dictionary)
+    d.SAVE_RESULTS = False
+    d.VERBOSE = False
+    d.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD", "TFIDF"]
+
     run_strategies(detect, d)
-    generate_features(
-        detect, d
-    )  # Result 'column_cell_values_list' is not used, and therefore discarded
+    generate_features(detect, d)
 
     feature_list = []
 
     for col_idx in range(len(d.column_features)):
         for row_idx in range(len(d.column_features[col_idx])):
+            # print(len(d.column_features[col_idx][row_idx]))
             feature_list.append(
                 (
                     row.table_id,
@@ -180,19 +183,18 @@ def run_strategies(self: raha.detection.Detection, d: raha.dataset.Dataset) -> N
                             for configuration in configuration_list
                         ]
                     )
-            # TODO: Within a spark worker no rdd/dataframe can be created to parallelize tasks again. To include multiprocessing here again is then somewhat redundant and could lead to conflicts for resources.
-            random.shuffle(algorithm_and_configurations)
 
+            random.shuffle(algorithm_and_configurations)
+            # strategy_profiles_list = []
+            # for [d, algorithm, configuration] in algorithm_and_configurations:
+            #     strategy_profiles_list.append(_strategy_runner_process(d, [d, algorithm, configuration]))
             pool = multiprocessing.Pool()
-            _strategy_runner_process_ = functools.partial(
-                _strategy_runner_process, self
-            )
+            _strategy_runner_process_ = functools.partial(_strategy_runner_process, d)
             strategy_profiles_list = pool.map(
                 _strategy_runner_process_, algorithm_and_configurations
             )
             pool.close()
             pool.join()
-
     else:
         for dd in self.HISTORICAL_DATASETS + [d.dictionary]:
             raha.utilities.dataset_profiler(dd)
@@ -240,9 +242,10 @@ def generate_features(
                 feature_vectors = np.column_stack(
                     (feature_vectors, np.array(tfidf_features.todense()))
                 )
-            except Exception:
+            except:
                 pass
-
+        # non_identical_columns = np.any(feature_vectors != feature_vectors[0, :], axis=0)
+        # feature_vectors = feature_vectors[:, non_identical_columns]
         if self.VERBOSE:
             print(
                 "{} Features are generated for column {}.".format(
@@ -259,15 +262,9 @@ def generate_features(
         )
         columns_features_list.append(feature_vectors)
 
-        cell_values = []
-        for row in d.dataframe.iterrows():
-            cell_values.append(row[1][j])
-
-        cell_values = np.hstack(cell_values)
-        column_cell_values_list.append(cell_values)
     d.column_features = columns_features_list
 
-    return column_cell_values_list
+    return
 
 
 def _strategy_runner_process(self: raha.detection.Detection, args: List[Any]) -> Dict:
@@ -319,11 +316,11 @@ def _strategy_runner_process(self: raha.detection.Detection, args: List[Any]) ->
         ch = configuration
         for attribute in d.dataframe.columns:
             j = d.dataframe.columns.get_loc(attribute)
-            for i, value in d.dataframe[attribute].items():
+            for i, value in d.dataframe[attribute].iteritems():
                 try:
                     if len(re.findall("[" + ch + "]", value, re.UNICODE)) > 0:
                         outputted_cells[(i, j)] = ""
-                except Exception:
+                except:
                     continue
     elif algorithm == "RVD":
         d_col_list = d.dataframe.columns.tolist()
