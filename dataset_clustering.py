@@ -100,7 +100,11 @@ def cluster_datasets_pyspark(
             logger.warn("Creating context DataFrame")
             # TODO: reduce partition because otherwise out of memory
             context_df = (
-                csv_paths_df.rdd.repartition(4)
+                csv_paths_df.rdd.repartition(
+                    50
+                    if csv_paths_df.rdd.getNumPartitions() > 50
+                    else csv_paths_df.rdd.getNumPartitions()
+                )
                 .mapPartitions(lambda row: create_table_context(row, model))
                 .toDF(["table_id", "vectorized_docs"])
                 .repartition(csv_paths_df.rdd.getNumPartitions())
