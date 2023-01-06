@@ -207,3 +207,4 @@ if __name__ == "__main__":
                     experiment_end_time - experiment_start_time,
                 )
             )
+    spark.stop()
