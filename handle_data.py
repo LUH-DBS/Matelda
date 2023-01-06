@@ -17,6 +17,7 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
 
+    table_id = 0
     csv_paths = []
     sandbox_children_path = [
         (os.path.join(sandbox_path, dir), dir) for dir in os.listdir(sandbox_path)
@@ -36,16 +37,16 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
                         and os.path.isfile(dirty_path)
                         and os.path.isfile(clean_path)
                     ):
-                        csv_paths.append((dirty_path, clean_path, table, parent))
+                        csv_paths.append(
+                            (table_id, dirty_path, clean_path, table, parent)
+                        )
+                        table_id += 1
 
     csv_paths_df = (
         spark.createDataFrame(
             data=csv_paths,
-            schema=["dirty_path", "clean_path", "table_name", "parent"],
+            schema=["table_id", "dirty_path", "clean_path", "table_name", "parent"],
         )
-        .sort("table_name")
-        .withColumn("table_id", monotonically_increasing_id())
-        .select("table_id", "dirty_path", "clean_path", "table_name", "parent")
         .repartition(
             (
                 len(csv_paths)
