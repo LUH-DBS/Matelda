@@ -42,19 +42,11 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
                         )
                         table_id += 1
 
-    csv_paths_df = (
-        spark.createDataFrame(
-            data=csv_paths,
-            schema=["table_id", "dirty_path", "clean_path", "table_name", "parent"],
-        )
-        .repartition(
-            (
-                len(csv_paths)
-                if len(csv_paths) < 2 * spark.sparkContext.defaultParallelism
-                else 2 * spark.sparkContext.defaultParallelism
-            )
-        )
+    csv_paths_df = spark.createDataFrame(
+        data=csv_paths,
+        schema=["table_id", "dirty_path", "clean_path", "table_name", "parent"],
     )
+    
     logger.warn(
         "Partitions csv_paths_df: {}".format(csv_paths_df.rdd.getNumPartitions())
     )

@@ -217,7 +217,7 @@ def label_propagation(
         .join(
             cluster_samples_labels_df.select("prediction", "ground_truth"), "prediction"
         )
-    ).repartition(cluster_samples_labels_df.rdd.getNumPartitions())
+    )
 
     return y_train
 

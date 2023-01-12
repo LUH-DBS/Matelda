@@ -84,7 +84,6 @@ def column_clustering_pyspark(
         )
 
         column_df = column_df.join(table_cluster_df, "table_id", "inner")
-        column_df.repartition(csv_paths_df.rdd.getNumPartitions())
 
         def group_column_features(key, df: pd.DataFrame):
             """_summary_
@@ -132,7 +131,7 @@ def column_clustering_pyspark(
                     ]
                 ),
             )
-        ).repartition(csv_paths_df.rdd.getNumPartitions())
+        )
 
         # TODO: unique is slow
         for c_idx in grouped_cols_df.select("table_cluster").distinct().collect():
@@ -142,7 +141,7 @@ def column_clustering_pyspark(
 
             dataset_cluster_column_df = column_df.where(
                 column_df.table_cluster == c_idx["table_cluster"]
-            ).repartition(csv_paths_df.rdd.getNumPartitions())
+            )
             dataset_cluster_column_grouped_df = grouped_cols_df.where(
                 grouped_cols_df.table_cluster == c_idx["table_cluster"]
             ).collect()
@@ -156,17 +155,13 @@ def column_clustering_pyspark(
                     c_idx["table_cluster"]
                 )
             )
-            dataset_cluster_column_feature_df = (
-                dataset_cluster_column_df.rdd.map(
-                    lambda row: create_feature_vector(
-                        row,
-                        characters,
-                        tokens,
-                    )
+            dataset_cluster_column_feature_df = dataset_cluster_column_df.rdd.map(
+                lambda row: create_feature_vector(
+                    row,
+                    characters,
+                    tokens,
                 )
-                .toDF(["table_id", "column_id", "table_cluster", "features"])
-                .repartition(csv_paths_df.rdd.getNumPartitions())
-            )
+            ).toDF(["table_id", "column_id", "table_cluster", "features"])
             dataset_cluster_column_df.unpersist()
 
             logger.warn(

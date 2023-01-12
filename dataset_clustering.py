@@ -125,7 +125,7 @@ def cluster_datasets_pyspark(
                     ).reshape(-1, 1),
                 ].tolist(),
                 schema=["table_cluster", "table_id"],
-            ).repartition(csv_paths_df.rdd.getNumPartitions())
+            )
             context_df.unpersist()
 
         else:
