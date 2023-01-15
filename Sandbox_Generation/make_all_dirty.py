@@ -117,7 +117,7 @@ def make_it_dirty(error_percentage, file_path, output_dir):
     vio_gen_percentage, outlier_errors_percentage, typo_percentage = get_percentages(fd_list, error_percentage, outlier_error_cols, typo_cols)  
     fd_ratio_dict = set_fd_ratio(fd_list, vio_gen_percentage, df.shape[0])
     config_file_path = create_bart_config.create_config_file(file_path, list(df.columns.values), outlier_error_cols, outlier_errors_percentage, typo_cols, typo_percentage, fd_ratio_dict, output_dir)
-    val = subprocess.check_call("Sandbox_Generation_Extra_Apps_111222/BART/Bart_Engine/run.sh '%s'" % config_file_path, shell=True)
+    val = subprocess.check_call("Sandbox_Generation_Extra_Apps_111222/BART/Bart_Engine/run.sh '%s'" % config_file_path, shell=True, timeout=3600)
 
 input_dir = "GitTables_1M_csv"
 output_dir = "GitTables_1M_csv/processed"

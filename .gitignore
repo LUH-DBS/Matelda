@@ -176,3 +176,6 @@ raha-dataset
 Sandbox_Generation/metanome_input_files
 .vscode/settings.json
 Sandbox_Generation/dirty_datasets
+results
+outputs
+archive_files

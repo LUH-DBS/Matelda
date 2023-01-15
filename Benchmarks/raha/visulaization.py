@@ -7,7 +7,17 @@ import matplotlib.pyplot as plt
 
 
 repition = range(1, 11)
-datasets = ["beers", "flights", "hospital", "movies_1", "rayyan"]
+#datasets = ["beers", "flights", "hospital", "movies_1", "rayyan"]
+
+sandbox_path = "/home/fatemeh/ED-Scale/Sandbox_Generation/data-gov-sandbox"
+results_path = "/home/fatemeh/ED-Scale/Sandbox_Generation/data-gov-raha-results-1/"
+dir_levels = 1 # That means we have files in each subdirectory of sandbox dir
+datasets = []
+
+if dir_levels == 1:
+    for dir in os.listdir(sandbox_path):
+        datasets.append(dir)
+
 labeling_budgets = range(1, 21)
 algorithm = 'raha'
 
@@ -19,8 +29,8 @@ results_dict = {"algorithm":[], "dataset":[], "execution_number":[],
 for i in repition:
     for dataset in datasets:
         for label_budget in labeling_budgets:
-            file_path = 'Benchmarks/raha/results/{}_{}_number#{}_${}$labels.json'\
-                        .format(algorithm, dataset, str(i), str(label_budget))
+            file_path = os.path.join(results_path,'{}_{}_number#{}_${}$labels.json'\
+                        .format(algorithm, dataset, str(i), str(label_budget)))
             if os.path.exists(file_path):
                 with open(file_path) as file:
                     json_content = json.load(file)
