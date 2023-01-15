@@ -50,11 +50,11 @@ def run_fd(file_name, file_id):
     payload = json.dumps(
         {
             "algorithmId":1,
-            "executionIdentifier":"FastFDs-1.2-SNAPSHOT.jar" + time.strftime("%Y-%m-%dT%H%M%S"),
+            "executionIdentifier":"HyFD-1.2-SNAPSHOT.jar" + time.strftime("%Y-%m-%dT%H%M%S"),
             "requirements":[
                 {
                     "type":"ConfigurationRequirementRelationalInput",
-                    "identifier":"Relational Input",
+                    "identifier":"INPUT_GENERATOR",
                     "required": True,
                     "numberOfSettings":1,
                     "minNumberOfSettings":1,
@@ -74,33 +74,102 @@ def run_fd(file_name, file_id):
                             "nullValue":"",
                             "type":"ConfigurationSettingFileInput",
                             "id": file_id
+                         }
+                    ]
+                },
+                {
+                    "type":"ConfigurationRequirementInteger",
+                    "identifier":"MAX_DETERMINANT_SIZE",
+                    "required":False,
+                    "numberOfSettings":1,
+                    "minNumberOfSettings":1,
+                    "maxNumberOfSettings":1,
+                    "settings":[
+                        {
+                        "type":"ConfigurationSettingInteger",
+                        "value":1
                         }
+                    ],
+                    "defaultValues":[
+                        -1
+                    ]
+                },
+                {
+                    "type":"ConfigurationRequirementInteger",
+                    "identifier":"INPUT_ROW_LIMIT",
+                    "required":False,
+                    "numberOfSettings":1,
+                    "minNumberOfSettings":1,
+                    "maxNumberOfSettings":1,
+                    "settings":[
+                        {
+                        "type":"ConfigurationSettingInteger",
+                        "value":-1
+                        }
+                    ],
+                    "defaultValues":[
+                        -1
                     ]
                 },
                 {
                     "type":"ConfigurationRequirementBoolean",
-                    "identifier":"Use Optimizations",
-                    "required": True,
+                    "identifier":"NULL_EQUALS_NULL",
+                    "required":True,
                     "numberOfSettings":1,
                     "minNumberOfSettings":1,
                     "maxNumberOfSettings":1,
                     "settings":[
                         {
                         "type":"ConfigurationSettingBoolean",
-                        "value": False
+                        "value":True
                         }
                     ],
-                    "defaultValues": None
+                    "defaultValues":[
+                        True
+                    ]
+                },
+                {
+                    "type":"ConfigurationRequirementBoolean",
+                    "identifier":"VALIDATE_PARALLEL",
+                    "required":True,
+                    "numberOfSettings":1,
+                    "minNumberOfSettings":1,
+                    "maxNumberOfSettings":1,
+                    "settings":[
+                        {
+                        "type":"ConfigurationSettingBoolean",
+                        "value":True
+                        }
+                    ],
+                    "defaultValues":[
+                        True
+                    ]
+                },
+                {
+                    "type":"ConfigurationRequirementBoolean",
+                    "identifier":"ENABLE_MEMORY_GUARDIAN",
+                    "required":True,
+                    "numberOfSettings":1,
+                    "minNumberOfSettings":1,
+                    "maxNumberOfSettings":1,
+                    "settings":[
+                        {
+                        "type":"ConfigurationSettingBoolean",
+                        "value":True
+                        }
+                    ],
+                    "defaultValues":[
+                        True
+                    ]
                 }
             ],
-            "cacheResults": True,
-            "writeResults": False,
-            "countResults": False,
+            "cacheResults":True,
+            "writeResults":False,
+            "countResults":False,
             "memory":""
-        }
-    )
+            })
 
-    response = requests.request("POST", f'{BASE_URL}/algorithm-execution', headers=headers, data=payload)
+    response = requests.request("POST", f'{BASE_URL}/algorithm-execution', headers=headers, data=payload, timeout=60)
     return response
 
 def load_execution_result(execution_id):

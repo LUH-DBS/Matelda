@@ -1,6 +1,6 @@
 import math
 import shutil
-from black import out
+import time
 import pandas as pd
 from file_preprocessing import preprocess_headers, read_original_file, save_csv
 from metanome_file_input import run_metanome
@@ -9,7 +9,33 @@ import numpy as np
 import os
 import subprocess
 import random 
+import pickle
 
+def get_files_by_file_size(dirname, reverse=False):
+    """ Return list of file paths in directory sorted by file size """
+
+    # Get list of files
+    filepaths = []
+    for basename in os.listdir(dirname):
+        filename = os.path.join(dirname, basename)
+        if os.path.isfile(filename):
+            filepaths.append(filename)
+
+    # Re-populate list with filename, size tuples
+    for i in range(len(filepaths)):
+        filepaths[i] = (filepaths[i], os.path.getsize(filepaths[i]))
+
+    # Sort list by file size
+    # If reverse=True sort from largest to smallest
+    # If reverse=False sort from smallest to largest
+    filepaths.sort(key=lambda filename: filename[1], reverse=reverse)
+
+    filenames = []
+    # Re-populate list with just filenames
+    for i in range(len(filepaths)):
+        filenames.append(os.path.basename(filepaths[i][0]))
+
+    return filenames
 
 def find_det_dep(fd):
     determinant = fd['result']['determinant']['columnIdentifiers']
@@ -20,6 +46,7 @@ def find_det_dep(fd):
 
 
 def get_fd_list(fd_results):
+    print("get_fd_list")
     fd_list = []
     for fd in fd_results:
         determinant, dependant = find_det_dep(fd)
@@ -89,26 +116,41 @@ def make_it_dirty(error_percentage, file_path, output_dir):
     typo_cols = list(df.select_dtypes(include=['object']).columns.values)
     vio_gen_percentage, outlier_errors_percentage, typo_percentage = get_percentages(fd_list, error_percentage, outlier_error_cols, typo_cols)  
     fd_ratio_dict = set_fd_ratio(fd_list, vio_gen_percentage, df.shape[0])
-    create_bart_config.create_config_file(file_path, list(df.columns.values), outlier_error_cols, outlier_errors_percentage, typo_cols, typo_percentage, fd_ratio_dict, output_dir)
+    config_file_path = create_bart_config.create_config_file(file_path, list(df.columns.values), outlier_error_cols, outlier_errors_percentage, typo_cols, typo_percentage, fd_ratio_dict, output_dir)
+    val = subprocess.check_call("Sandbox_Generation_Extra_Apps_111222/BART/Bart_Engine/run.sh '%s'" % config_file_path, shell=True)
 
-input_dir = "Sandbox_Generation/metanome_input_files"
-output_dir = "Sandbox_Generation/metanome_input_files/processed"
+input_dir = "GitTables_1M_csv"
+output_dir = "GitTables_1M_csv/processed"
 
-files = [f for f in os.listdir(input_dir) if os.path.isfile(os.path.join(input_dir, f))]
-count = 0
-for file in files:
-    processed_file_path = os.path.join(output_dir, file.replace('.csv', ''))
-    if os.path.exists(processed_file_path):
-        shutil.rmtree(processed_file_path)
-    os.makedirs(processed_file_path)
-    print(file + " is being processed.")
-    input_file_path = os.path.join(input_dir, file)
-    df = read_original_file(input_file_path)
-    df = preprocess_headers(df)
-    save_csv(df, processed_file_path, file)
-    make_it_dirty(random.randint(1, 25), os.path.join(processed_file_path, file), processed_file_path)
-    count += 1
-    print(file + " is done.")
-    if count // 10 == 0:
-        print(f'''{count} files processed.''' )
+for parent in os.listdir(input_dir):
+    for par_sub_dir in os.listdir(os.path.join(input_dir, parent)):
+        files = get_files_by_file_size(os.path.join(input_dir, parent, par_sub_dir))
+        files_errors = dict()
+        count = 0
+        time_0 = time.time()
+        for file in files:
+            try:
+                processed_file_path = os.path.join(output_dir, file.replace('.csv', ''))
+                if not os.path.exists(processed_file_path):
+                    os.makedirs(processed_file_path)
+                    print(file + " is being processed.")
+                    input_file_path = os.path.join(input_dir, parent, par_sub_dir, file)
+                    df = read_original_file(input_file_path)
+                    df = preprocess_headers(df)
+                    df_name = save_csv(df, processed_file_path, file)
+                    error_precentage = random.randint(1, 25)
+                    files_errors[file] = error_precentage
+                    make_it_dirty(error_precentage, os.path.join(processed_file_path, df_name), processed_file_path)
+                    count += 1
+                    print(file + " is done.")
+                    if count % 10 == 0:
+                        print(f'''{count} files processed.''' )
+                        with open('files_error_percentages.pickle', 'wb') as handle:
+                            pickle.dump(files_errors, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            except Exception as e:
+                print(file, e)
+time_1 = time.time()
+print("********time*******:{} seconds".format(time_1-time_0))
+
+
     
