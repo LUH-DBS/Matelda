@@ -18,6 +18,11 @@ from configparser import ConfigParser
 
 import saving_results
 
+configs = ConfigParser()
+configs.read("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/EDS/config.ini")
+logs_dir = configs["DIRECTORIES"]["logs_dir"]
+logger = app_logger.get_logger(logs_dir)
+
 
 def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_labels_enabled, table_grouping_enabled,
                     column_grouping_enabled, labeling_budget, cell_clustering_alg, cell_feature_generator_enabled):
@@ -41,7 +46,7 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
     table_grouping_output_path = os.path.join(output_path, configs["DIRECTORIES"]["table_grouping_output_filename"])
     if table_grouping_enabled:
         logger.info("Table grouping started")
-        table_grouping_output = dataset_clustering.cluster_datasets(sandbox_path, table_grouping_output_path,
+        table_grouping_output, num_table_groups, total_num_cells = dataset_clustering.cluster_datasets(sandbox_path, table_grouping_output_path,
                                                                     configs["TABLE_GROUPING"][
                                                                         "auto_clustering_enabled"])
     else:
@@ -51,10 +56,10 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
     column_groups_path = os.path.join(experiment_output_path, configs["DIRECTORIES"]["column_groups_path"])
     if column_grouping_enabled:
         logger.info("Column grouping started")
-        number_of_column_clusters = cols_grouping.col_folding(table_grouping_output, sandbox_path, labels_path,
+        cols_grouping.col_folding(total_num_cells, labeling_budget, table_grouping_output, sandbox_path, labels_path,
                                                               column_groups_path,
-                                                              configs["COLUMN_GROUPING"]["auto_clustering_enabled"],
-                                                              configs["COLUMN_GROUPING"]["ner_model_name"])
+                                                              configs["COLUMN_GROUPING"]["clustering_enabled"])
+    # TODO: Fix this
     else:
         number_of_column_clusters = cols_grouping.get_number_of_clusters(column_groups_path)
         logger.info("number of column clusters: {}".format(number_of_column_clusters))
@@ -83,8 +88,6 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
 if __name__ == '__main__':
 
     # App-Config Management
-    configs = ConfigParser()
-    configs.read("EDS/config.ini")
     
     sandbox_dir = configs["DIRECTORIES"]["sandbox_dir"]
     output_dir = configs["DIRECTORIES"]["output_dir"]
@@ -99,9 +102,7 @@ if __name__ == '__main__':
     column_grouping_enabled = int(configs['EXPERIMENTS']['column_grouping_enabled'])
     cell_feature_generator_enabled = int(configs['EXPERIMENTS']['cell_feature_generator_enabled'])
     execution_type = configs['EXPERIMENTS']["execution_type"]
-    logs_dir = configs["DIRECTORIES"]["logs_dir"]
-
-    logger = app_logger.get_logger(logs_dir)
+    
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)

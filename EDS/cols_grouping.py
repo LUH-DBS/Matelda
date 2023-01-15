@@ -1,4 +1,5 @@
 import logging
+import math
 import shutil
 import os
 import pickle
@@ -18,6 +19,16 @@ logger = logging.getLogger()
 
 type_dicts = {'Integer': 0, 'Decimal': 1, 'String': 2, 'Date': 3, 'Bool': 4, 'Time': 5, 'Currency': 6, 'Percentage': 7}
 
+
+def specify_num_col_clusters(total_num_cells, total_labeling_budget, num_cols_tg, num_cells_tg):
+    n_tg = math.floor(total_labeling_budget * num_cells_tg/total_num_cells)
+    lambda_ = math.floor(n_tg/num_cols_tg)
+    if lambda_>= 1:
+        beta_tg = num_cols_tg
+    else:
+        beta_tg = math.ceil(num_cols_tg/n_tg)
+    return beta_tg # num_col_clusters
+
 def get_clusters_dict(df):
     clusters_dict = {}
 
@@ -35,6 +46,7 @@ def get_clusters_dict(df):
 def get_col_df(sandbox_path, cluster, labels_dict_path):
     column_dict = {'table_id': [], 'col_id': [], 'col_value': [], 'col_gt': [], 'col_type': []}
     lake_labels_dict = extract_labels(labels_dict_path)
+    total_num_cells_tg = 0
 
     for table in cluster:
         print(table)
@@ -53,14 +65,14 @@ def get_col_df(sandbox_path, cluster, labels_dict_path):
             column_dict['col_value'].append(df[column].tolist())
             column_dict['col_gt'].append(lake_labels_dict[(table[0], column_idx)].values)
             column_dict['col_type'].append(types[column_idx])
-            
+            total_num_cells_tg += len(df[column].tolist())
 
     col_df = pd.DataFrame.from_dict(column_dict)
 
-    return col_df
+    return col_df, total_num_cells_tg
 
 
-def get_col_features(col_df, ner_model_name):
+def get_col_features(col_df):
     col_features = []
     characters_dictionary = {}
     tokens_dictionary = {}
@@ -163,10 +175,10 @@ def get_col_features(col_df, ner_model_name):
     feature_names.append("median_value_length")
     return col_features, feature_names
 
-def cluster_cols(col_features, auto_clustering_enabled, feature_names):
+def cluster_cols(col_features, clustering_enabled, feature_names, beta_tg):
 
-    if auto_clustering_enabled:
-        clustering_results = KMeans(n_clusters=33, random_state=0).fit(col_features)
+    if clustering_enabled:
+        clustering_results = KMeans(n_clusters=beta_tg, random_state=0).fit(col_features)
         feature_importance_result = feature_importance(10, feature_names, col_features)
         feature_importance_dict = pd.DataFrame(feature_importance_result)
         feature_importance_dict.to_csv('outputs/features.csv')
@@ -206,18 +218,18 @@ def get_number_of_clusters(col_groups_dir):
 
     return number_of_col_clusters
 
-def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clustering_enabled, ner_model_name):
+def col_folding(total_num_cells, total_labeling_budget, context_df, sandbox_path, labels_path, col_groups_dir, clustering_enabled):
     clusters_dict = get_clusters_dict(context_df)
     if os.path.exists(col_groups_dir):
         shutil.rmtree(col_groups_dir)
     os.makedirs(col_groups_dir)
     logger.info("Col groups directory is created.")
-
     number_of_col_clusters = 0
     for cluster in clusters_dict:
-        col_df = get_col_df(sandbox_path, clusters_dict[cluster], labels_path)
-        col_features, feature_names = get_col_features(col_df, ner_model_name)
-        col_labels_df, number_of_clusters = cluster_cols(col_features, auto_clustering_enabled, feature_names)
+        col_df, total_num_cells_tg = get_col_df(sandbox_path, clusters_dict[cluster], labels_path)
+        beta_tg = specify_num_col_clusters(total_num_cells, total_labeling_budget, col_df.shape[0], total_num_cells_tg)
+        col_features, feature_names = get_col_features(col_df)
+        col_labels_df, number_of_clusters = cluster_cols(col_features, clustering_enabled, feature_names, beta_tg)
         number_of_col_clusters += number_of_clusters
         col_labels_df['col_value'] = col_df['col_value']
         col_labels_df['col_gt'] = col_df['col_gt']
@@ -230,5 +242,5 @@ def col_folding(context_df, sandbox_path, labels_path, col_groups_dir, auto_clus
             os.path.join(col_groups_dir, "col_df_labels_cluster_{}.csv".format(cluster))
         )
     print("Finsihed")
-    return number_of_col_clusters
+    return
 

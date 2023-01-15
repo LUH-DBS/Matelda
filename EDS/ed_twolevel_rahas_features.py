@@ -9,6 +9,7 @@ from sklearn.cluster import KMeans
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.impute import SimpleImputer
+from sklearn.metrics import pairwise_distances_argmin_min
 from sklearn.pipeline import make_pipeline
 from sklearn.utils import shuffle
 
@@ -74,28 +75,26 @@ def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_al
 
     if cells_clustering_alg == "km":
         clustering = KMeans(n_clusters=n_cell_clusters_per_col_cluster, random_state=0).fit(x)
+        
     elif cells_clustering_alg == "hac":
         clustering = AgglomerativeClustering(n_clusters = n_cell_clusters_per_col_cluster).fit(x)
 
+    closest, _ = pairwise_distances_argmin_min(clustering.cluster_centers_, x)
+    print("**********")
+    print(closest, _)
     cells_per_cluster = dict()
     labels_per_cluster = dict()
+    samples = shuffle(closest)[:-1]
 
     for cell in enumerate(clustering.labels_):
         if cell[1] in cells_per_cluster.keys():
             cells_per_cluster[cell[1]].append(cell[0])
         else:
             cells_per_cluster[cell[1]] = [cell[0]]
+        if cell[0] in samples:
+            labels_per_cluster[cell[1]] = y[cell[0]]
 
-    samples = []
     logger.info("labeling")
-
-    clusters = list(cells_per_cluster.keys())
-    shuffled_clusters = shuffle(clusters)[:-1]
-    for key in shuffled_clusters:
-        sample = random.choice(cells_per_cluster[key])
-        samples.append(sample)
-        label = y[sample]
-        labels_per_cluster[key] = label
 
     diff_n_clusters = n_cell_clusters_per_col_cluster - len(cells_per_cluster.keys())
     if diff_n_clusters != 0:

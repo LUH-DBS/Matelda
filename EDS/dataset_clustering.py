@@ -41,6 +41,7 @@ def get_context_df(sandbox_path):
     sandbox_children = os.listdir(sandbox_path)
     sandbox_children.sort()
     table_id = 0
+    total_num_cells = 0
     for child_name in sandbox_children:
         if not child_name.startswith("."):
             child_path = os.path.join(sandbox_path, child_name)
@@ -51,6 +52,7 @@ def get_context_df(sandbox_path):
                     table_path = os.path.join(child_path, table)
                     df_path = os.path.join(table_path, "dirty.csv")
                     df_text_columns = pd.read_csv(df_path)
+                    total_num_cells += df_text_columns.size
                     df_text_columns = df_text_columns.select_dtypes(include=object)
                     df_table_text = ""
                     for column in df_text_columns.columns:
@@ -64,7 +66,7 @@ def get_context_df(sandbox_path):
                     context_dict['content'].append(df_table_text)
                     table_id += 1
     context_df = pd.DataFrame.from_dict(context_dict)
-    return context_df
+    return context_df, total_num_cells
 
 
 def clean_text(text, tokenizer, stopwords):
@@ -127,7 +129,7 @@ def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
     logger = logging.getLogger()
 
     custom_stopwords = set(stopwords.words("english"))
-    context_df = get_context_df(sandbox_path)
+    context_df, total_num_cells = get_context_df(sandbox_path)
 
     df = context_df.copy()
     df = df.fillna("")
@@ -174,10 +176,11 @@ def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
         "tokens": [" ".join(text) for text in tokenized_docs],
         "cluster": cluster_labels
     })
+    num_clusters = len(set(cluster_labels))
 
     # TODO: Change join
     context_df = context_df.join(df_clusters)
     context_df.to_csv(output_path)
 
-    return context_df
+    return context_df, num_clusters, total_num_cells
 
