@@ -169,8 +169,12 @@ def run_fd(file_name, file_id):
             "memory":""
             })
 
-    response = requests.request("POST", f'{BASE_URL}/algorithm-execution', headers=headers, data=payload, timeout=60)
-    return response
+    try:
+        response = requests.request("POST", f'{BASE_URL}/algorithm-execution', headers=headers, data=payload, timeout=60)
+        return response
+    except Exception as e:
+        print(e)
+        return
 
 def load_execution_result(execution_id):
     headers = {'Content-Type': 'application/json'}
