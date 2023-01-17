@@ -21,9 +21,9 @@ def generate_labels(sandbox_path, output_path):
             if not table.startswith("."):
                 try:
                     table_path = os.path.join(child_path, table)
-                    dirty_df = pd.read_csv(table_path + "/dirty.csv", sep=",", header="infer", encoding="utf-8", dtype=str,
+                    dirty_df = pd.read_csv(table_path + "/dirty_clean.csv", sep=",", header="infer", encoding="utf-8", dtype=str,
                                         keep_default_na=False, low_memory=False)
-                    clean_df = pd.read_csv(table_path + "/" + table + ".csv", sep=",", header="infer", encoding="utf-8",
+                    clean_df = pd.read_csv(table_path + "/" + "clean.csv", sep=",", header="infer", encoding="utf-8",
                                         dtype=str, keep_default_na=False, low_memory=False)
                     labels_df = dirty_df.where(dirty_df.values != clean_df.values).notna() * 1
 

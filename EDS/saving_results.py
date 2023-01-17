@@ -76,7 +76,7 @@ def get_tables_dict(sandbox_path):
     for table in table_dirs:
         if not table.startswith("."):
             table_path = os.path.join(sandbox_path, table)
-            table_df = pd.read_csv(table_path + "/dirty.csv")
+            table_df = pd.read_csv(table_path + "/dirty_clean.csv")
             all_tables_dict[table_id] = {"name": table, "schema": table_df.columns.tolist()}
             table_id += 1
     return all_tables_dict

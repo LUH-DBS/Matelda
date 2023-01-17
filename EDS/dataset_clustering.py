@@ -50,7 +50,7 @@ def get_context_df(sandbox_path):
             for table in tables_dirs:
                 if not table.startswith("."):
                     table_path = os.path.join(child_path, table)
-                    df_path = os.path.join(table_path, "dirty.csv")
+                    df_path = os.path.join(table_path, "dirty_clean.csv")
                     df_text_columns = pd.read_csv(df_path)
                     total_num_cells += df_text_columns.size
                     df_text_columns = df_text_columns.select_dtypes(include=object)
@@ -62,7 +62,7 @@ def get_context_df(sandbox_path):
                     context_dict['table_id'].append(table_id)
                     context_dict['parent'].append(child_name)
                     context_dict['table_name'].append(table)
-                    context_dict['headers'].append(get_df_headers(os.path.join(table_path, "dirty.csv")))
+                    context_dict['headers'].append(get_df_headers(os.path.join(table_path, "dirty_clean.csv")))
                     context_dict['content'].append(df_table_text)
                     table_id += 1
     context_df = pd.DataFrame.from_dict(context_dict)
