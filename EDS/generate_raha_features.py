@@ -207,8 +207,8 @@ def generate_raha_features(parent_path, dataset_name):
     dataset_name = dataset_name
     dataset_dictionary = {
             "name": dataset_name,
-            "path": parent_path + "/" + dataset_name + "/dirty.csv",
-            "clean_path": parent_path + "/" + dataset_name + "/" + dataset_name +".csv"
+            "path": parent_path + "/" + dataset_name + "/dirty_clean.csv",
+            "clean_path": parent_path + "/" + dataset_name + "/" + "clean" +".csv"
     }
 
     d = detect.initialize_dataset(dataset_dictionary)

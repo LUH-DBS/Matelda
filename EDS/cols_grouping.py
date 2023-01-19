@@ -1,3 +1,4 @@
+import json
 import logging
 import math
 import shutil
@@ -51,7 +52,7 @@ def get_col_df(sandbox_path, cluster, labels_dict_path):
     for table in cluster:
         print(table)
         parent_path = os.path.join(sandbox_path, table[1])
-        table_path = os.path.join(parent_path, table[2] + "/dirty.csv")
+        table_path = os.path.join(parent_path, table[2] + "/dirty_clean.csv")
         df = pd.read_csv(table_path, quoting=csv.QUOTE_ALL)
 
         table_file = open(table_path, 'rb')
@@ -215,8 +216,16 @@ def get_number_of_clusters(col_groups_dir):
                 group_df = pickle.load(filehandler)
                 number_of_clusters = len(group_df['column_cluster_label'].unique())
                 number_of_col_clusters += number_of_clusters
-
     return number_of_col_clusters
+
+def get_cluster_size(col_labels_df):
+    col_cluster_sizes = dict()
+    for col_cluster in col_labels_df["column_cluster_label"].unique():
+        col_cluster_sizes[str(col_cluster)] = 0
+        clusters_df = col_labels_df.loc[col_labels_df["column_cluster_label"]==col_cluster]
+        for idx, row in clusters_df.iterrows():
+            col_cluster_sizes[str(col_cluster)] += len(row["col_value"])     
+    return col_cluster_sizes
 
 def col_folding(total_num_cells, total_labeling_budget, context_df, sandbox_path, labels_path, col_groups_dir, clustering_enabled):
     clusters_dict = get_clusters_dict(context_df)
@@ -224,23 +233,31 @@ def col_folding(total_num_cells, total_labeling_budget, context_df, sandbox_path
         shutil.rmtree(col_groups_dir)
     os.makedirs(col_groups_dir)
     logger.info("Col groups directory is created.")
-    number_of_col_clusters = 0
+    number_of_col_clusters = dict()
+    cluster_sizes = dict()
     for cluster in clusters_dict:
         col_df, total_num_cells_tg = get_col_df(sandbox_path, clusters_dict[cluster], labels_path)
         beta_tg = specify_num_col_clusters(total_num_cells, total_labeling_budget, col_df.shape[0], total_num_cells_tg)
         col_features, feature_names = get_col_features(col_df)
         col_labels_df, number_of_clusters = cluster_cols(col_features, clustering_enabled, feature_names, beta_tg)
-        number_of_col_clusters += number_of_clusters
+        number_of_col_clusters[str(cluster)] = number_of_clusters
         col_labels_df['col_value'] = col_df['col_value']
         col_labels_df['col_gt'] = col_df['col_gt']
         col_labels_df['table_id'] = col_df['table_id']
         col_labels_df['col_id'] = col_df['col_id']
+        cluster_sizes[str(cluster)] = get_cluster_size(col_labels_df)
         with open(os.path.join(col_groups_dir, "col_df_labels_cluster_{}.pickle".format(cluster)), "wb") \
                 as filehandler:
             pickle.dump(col_labels_df, filehandler)
         col_labels_df[["column_cluster_label", "col_value", "table_id", "col_id"]].to_csv(
             os.path.join(col_groups_dir, "col_df_labels_cluster_{}.csv".format(cluster))
         )
-    print("Finsihed")
-    return
+    with open(os.path.join(col_groups_dir, "cluster_sizes_all.json"), "w", encoding="utf8") \
+                as filehandler:
+                filehandler.write(json.dumps(cluster_sizes))
+    with open(os.path.join(col_groups_dir, "number_of_col_clusters.json"), "w", encoding="utf8") \
+                as filehandler:
+                filehandler.write(json.dumps(number_of_col_clusters))
+    print("Finished")
+    return number_of_col_clusters, cluster_sizes
 

@@ -3,7 +3,7 @@ import multiprocessing
 import sys
 from multiprocessing import freeze_support
 import os
-
+import json
 import pandas as pd
 
 import app_logger
@@ -19,7 +19,7 @@ from configparser import ConfigParser
 import saving_results
 
 configs = ConfigParser()
-configs.read("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/EDS/config.ini")
+configs.read("/home/fatemeh/ED-Scale/EDS/config.ini")
 logs_dir = configs["DIRECTORIES"]["logs_dir"]
 logger = app_logger.get_logger(logs_dir)
 
@@ -56,12 +56,17 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
     column_groups_path = os.path.join(experiment_output_path, configs["DIRECTORIES"]["column_groups_path"])
     if column_grouping_enabled:
         logger.info("Column grouping started")
-        cols_grouping.col_folding(total_num_cells, labeling_budget, table_grouping_output, sandbox_path, labels_path,
+        number_of_column_clusters, cluster_sizes = cols_grouping.col_folding(total_num_cells, labeling_budget, table_grouping_output, sandbox_path, labels_path,
                                                               column_groups_path,
                                                               configs["COLUMN_GROUPING"]["clustering_enabled"])
     # TODO: Fix this
     else:
-        number_of_column_clusters = cols_grouping.get_number_of_clusters(column_groups_path)
+        with open(os.path.join(column_groups_path, "cluster_sizes_all.json")) \
+                as filehandler:
+                cluster_sizes = json.load(filehandler)
+        with open(os.path.join(column_groups_path, "number_of_col_clusters.json")) \
+                as filehandler:
+                number_of_column_clusters = json.load(filehandler)
         logger.info("number of column clusters: {}".format(number_of_column_clusters))
 
     if cell_feature_generator_enabled:
@@ -78,7 +83,7 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
     y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
     unique_cells_local_index_collection, n_samples = \
         ed_twolevel_rahas_features.error_detector(column_groups_path, experiment_output_path, results_path,
-                                                  features_dict, labeling_budget, number_of_column_clusters, cell_clustering_alg)
+                                                  features_dict, labeling_budget, number_of_column_clusters, cluster_sizes, cell_clustering_alg)
     tables_path = configs["RESULTS"]["tables_path"]
 
     saving_results.get_all_results(tables_path, results_path, y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
