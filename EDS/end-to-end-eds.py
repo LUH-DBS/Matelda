@@ -15,6 +15,7 @@ import cols_grouping
 import ed_twolevel_rahas_features
 import pickle
 from configparser import ConfigParser
+from scalene import scalene_profiler
 
 import saving_results
 
@@ -22,7 +23,6 @@ configs = ConfigParser()
 configs.read("/home/fatemeh/ED-Scale/EDS/config.ini")
 logs_dir = configs["DIRECTORIES"]["logs_dir"]
 logger = app_logger.get_logger(logs_dir)
-
 
 def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_labels_enabled, table_grouping_enabled,
                     column_grouping_enabled, labeling_budget, cell_clustering_alg, cell_feature_generator_enabled):
@@ -50,6 +50,11 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
                                                                     configs["TABLE_GROUPING"][
                                                                         "auto_clustering_enabled"])
     else:
+        with open("nums.json") as filehandler:
+            nums = json.load(filehandler)
+            num_table_groups = nums["num_clusters"]
+            total_num_cells = nums["total_num_cells"]
+
         table_grouping_output = pd.read_csv(table_grouping_output_path)
         logger.info("Table grouping output loaded.")
 
@@ -90,7 +95,11 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
     unique_cells_local_index_collection, n_samples)
 
 
+
 if __name__ == '__main__':
+
+    # Turn profiling on
+    #scalene_profiler.start()    
 
     # App-Config Management
     
@@ -124,3 +133,5 @@ if __name__ == '__main__':
             for number_of_labels in number_of_labels_list:
                 run_experiments(sandbox_dir, output_dir, exp_name, exp_number, extract_labels_enabled, table_grouping_enabled, column_grouping_enabled, 
                                         number_of_labels, cell_clustering_alg, cell_feature_generator_enabled)
+    # Turn profiling off
+    #scalene_profiler.stop()     

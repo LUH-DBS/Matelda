@@ -11,7 +11,7 @@ logger = logging.getLogger()
 
 def get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all, results_dir, n_samples):
     total_tn, total_fp, total_fn, total_tp = 0, 0, 0, 0
-    for i in range(len(predicted_all)):
+    for i in predicted_all.keys():
         col_cluster_prediction = list(predicted_all[i])
         col_cluster_y = y_test_all[i]
 
@@ -48,7 +48,7 @@ def create_predictions_dict(all_tables_dict, y_test_all, \
                     y_local_cell_ids, predicted_all, \
                     unique_cells_local_index_collection):
     rows_list = []
-    for col_cluster_idx in range(len(unique_cells_local_index_collection)):
+    for col_cluster_idx in unique_cells_local_index_collection.keys():
         for cell_key in list(unique_cells_local_index_collection[col_cluster_idx].keys()):
             try:
                 cell_local_idx = unique_cells_local_index_collection[col_cluster_idx][cell_key]
@@ -76,7 +76,9 @@ def get_tables_dict(sandbox_path):
     for table in table_dirs:
         if not table.startswith("."):
             table_path = os.path.join(sandbox_path, table)
-            table_df = pd.read_csv(table_path + "/dirty_clean.csv")
+            table_df = pd.read_csv(table_path + "/dirty_clean.csv", sep=",", header="infer", encoding="utf-8",
+                                        dtype=str, low_memory=False)
+            table_df = table_df.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
             all_tables_dict[table_id] = {"name": table, "schema": table_df.columns.tolist()}
             table_id += 1
     return all_tables_dict

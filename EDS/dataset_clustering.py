@@ -1,3 +1,4 @@
+import json
 import logging
 
 from matplotlib.pyplot import axis
@@ -181,6 +182,10 @@ def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
     # TODO: Change join
     context_df = context_df.join(df_clusters)
     context_df.to_csv(output_path)
+
+    dict_nums = {"num_clusters": num_clusters, "total_num_cells": total_num_cells}
+    with open("nums.json", "w", encoding="utf8") as filehandler:
+        filehandler.write(json.dumps(dict_nums))
 
     return context_df, num_clusters, total_num_cells
 

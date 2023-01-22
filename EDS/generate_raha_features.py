@@ -36,8 +36,7 @@ def _strategy_runner_process(self, args):
             raha.tools.dBoost.dboost.imported_dboost.run(params)
             algorithm_results_path = dataset_path + "-dboost_output.csv"
             if os.path.exists(algorithm_results_path):
-                ocdf = pd.read_csv(algorithm_results_path, sep=",", header=None, encoding="utf-8", dtype=str,
-                                       keep_default_na=False, low_memory=False).apply(lambda x: x.str.strip())
+                ocdf = pd.read_csv(algorithm_results_path, sep=",", header=None, encoding="utf-8", dtype=str, low_memory=False).apply(lambda x: x.str.strip())
                 for i, j in ocdf.values.tolist():
                     if int(i) > 0:
                         outputted_cells[(int(i) - 1, int(j))] = ""
@@ -212,7 +211,7 @@ def generate_raha_features(parent_path, dataset_name):
     }
 
     d = detect.initialize_dataset(dataset_dictionary)
-    d.SAVE_RESULTS = False
+    d.SAVE_RESULTS = True
     d.VERBOSE = False
     d.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD", "TFIDF"]
     run_strategies(detect, d)

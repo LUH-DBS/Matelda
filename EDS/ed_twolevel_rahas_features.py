@@ -43,16 +43,20 @@ def get_cells_features(sandbox_path, output_path):
             if not table.startswith("."):
                 try:
                     path = os.path.join(table_dirs_path, table)
+                    logging.info("Generating features for table: " + table)
                     col_features = generate_raha_features.generate_raha_features(table_dirs_path, table)
                     for col_idx in range(len(col_features)):
                         for row_idx in range(len(col_features[col_idx])):
                             features_dict[(table_id, col_idx, row_idx, 'og')] = np.append(col_features[col_idx][row_idx],
                                                                                         table_id)
                     dirty_df = pd.read_csv(path + "/dirty_clean.csv", sep=",", header="infer", encoding="utf-8", dtype=str,
-                                        keep_default_na=False, low_memory=False)
+                                        low_memory=False)
+                    dirty_df = dirty_df.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
+                    
                     clean_df = pd.read_csv(path + "/" + "clean.csv", sep=",", header="infer", encoding="utf-8",
-                                        dtype=str,
-                                        keep_default_na=False, low_memory=False)
+                                        dtype=str, low_memory=False)
+                    clean_df = clean_df.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
+
                     label_df = dirty_df.where(dirty_df.values != clean_df.values).notna() * 1
                     for col_idx, col_name in enumerate(label_df.columns):
                         for row_idx in range(len(label_df[col_name])):
@@ -74,14 +78,14 @@ def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_al
     clustering = None 
 
     if cells_clustering_alg == "km":
-        clustering = MiniBatchKMeans(n_clusters=n_cell_clusters_per_col_cluster + 1, random_state=0, reassignment_ratio=0).fit(x)
+        clustering = MiniBatchKMeans(n_clusters=n_cell_clusters_per_col_cluster + 1, random_state=0, reassignment_ratio=0, init='random', batch_size = 256 * 64).fit(x)
         
     elif cells_clustering_alg == "hac":
         clustering = AgglomerativeClustering(n_clusters = n_cell_clusters_per_col_cluster + 1).fit(x)
 
     closest, _ = pairwise_distances_argmin_min(clustering.cluster_centers_, x)
-    print("**********")
-    print(closest, _)
+    logging.info("**********")
+    logging.info("closest:{}, {}".format(closest, _))
     cells_per_cluster = dict()
     labels_per_cluster = dict()
     samples = shuffle(closest)[:-1]
@@ -202,13 +206,13 @@ def process_col_cluster(n_cell_clusters_per_col_cluster, cluster,\
 
     except Exception as e:
         logger.error(e)
-        print("error", e)
+        logging.error("error", e)
 
     return y_test, y_cell_ids, predicted, original_data_keys_temp, samples, X_labeled_by_user, y_labeled_by_user, datacells_local_ids
 
 
 def error_detector(col_groups_dir, output_path, results_path, features_dict, n_labels, number_of_col_clusters, cluster_sizes, cell_clustering_alg):
-    
+    logging.info("Starting error detection")
     original_data_keys = []
     unique_cells_local_index_collection = dict()
     selected_samples = []
@@ -219,6 +223,7 @@ def error_detector(col_groups_dir, output_path, results_path, features_dict, n_l
     y_labeled_by_user_all = dict()
 
     n_cell_clusters_per_col_cluster_dict = get_n_cell_clusters_per_col_cluster_dict(n_labels, cluster_sizes, number_of_col_clusters)
+    logging.info("n_cell_clusters_per_col_cluster_dict: {}".format(n_cell_clusters_per_col_cluster_dict))
 
     for file_name in os.listdir(col_groups_dir):
         if ".pickle" in file_name:
@@ -242,7 +247,7 @@ def error_detector(col_groups_dir, output_path, results_path, features_dict, n_l
                 y_local_cell_ids[cluster] = y_cell_ids
                 unique_cells_local_index_collection[cluster] = datacells_local_ids
 
-                print("done - Processing cluster {}".format(str(cluster)))
+                logging.info("done - Processing cluster {}".format(str(cluster)))
 
     with open(os.path.join(output_path, "original_data_keys.pkl"), "wb") as filehandler:
         pickle.dump(original_data_keys, filehandler)

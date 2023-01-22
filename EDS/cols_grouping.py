@@ -7,12 +7,10 @@ import pickle
 import csv
 import numpy as np
 import pandas as pd
-from openclean.profiling.dataset import dataset_profile
-from sklearn.cluster import DBSCAN
+import pip
+from sklearn.cluster import MiniBatchKMeans
 
-import nltk
 from messytables import CSVTableSet, type_guess
-from sklearn.cluster import KMeans
 from kmeans_interp.kmeans_feature_imp import KMeansInterp
 from statistics import median
 
@@ -50,10 +48,11 @@ def get_col_df(sandbox_path, cluster, labels_dict_path):
     total_num_cells_tg = 0
 
     for table in cluster:
-        print(table)
+        logging.info("Table: {}".format(table))
         parent_path = os.path.join(sandbox_path, table[1])
         table_path = os.path.join(parent_path, table[2] + "/dirty_clean.csv")
         df = pd.read_csv(table_path, quoting=csv.QUOTE_ALL)
+        df = df.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
 
         table_file = open(table_path, 'rb')
         table_set = CSVTableSet(table_file)
@@ -80,7 +79,6 @@ def get_col_features(col_df):
     value_length_dictionary = {}
     count_char_tokens = {}
 
-    # feature_names = ['col_type', 'uniqueness', 'emptyValueCount']
     feature_names = ['col_type']
 
     for i in range(col_df.shape[0]):
@@ -120,16 +118,16 @@ def get_col_features(col_df):
                     characters_dictionary[character][i] =  0.0
                 characters_dictionary[character][i] += 1.0
             value_length_sum.append(len(str(value)))
-            tokens = str(value).split()
-            if ' ' in tokens:
-                tokens.remove(' ')
-            count_char_tokens[i]['tokens'] += len(tokens)
-            for token in tokens:
-                if token not in tokens_dictionary:
-                    tokens_dictionary[token] = {i: 0.0}
-                if i not in tokens_dictionary[token]:
-                    tokens_dictionary[token][i] =  0.0
-                tokens_dictionary[token][i] += 1.0
+            # tokens = str(value).split()
+            # if ' ' in tokens:
+            #     tokens.remove(' ')
+            # count_char_tokens[i]['tokens'] += len(tokens)
+            # for token in tokens:
+            #     if token not in tokens_dictionary:
+            #         tokens_dictionary[token] = {i: 0.0}
+            #     if i not in tokens_dictionary[token]:
+            #         tokens_dictionary[token][i] =  0.0
+            #     tokens_dictionary[token][i] += 1.0
 
         value_length_dictionary[i] = value_length_sum
 
@@ -137,9 +135,9 @@ def get_col_features(col_df):
         # sum_value_length_dictionary[key] = sum_value_length_dictionary[key]/len(col_df['col_value'][key])
         value_length_dictionary[key] = median(value_length_dictionary[key])
 
-    for token in list(tokens_dictionary.keys()):
-        if token in characters_dictionary.keys():
-            del tokens_dictionary[token]
+    # for token in list(tokens_dictionary.keys()):
+    #     if token in characters_dictionary.keys():
+    #         del tokens_dictionary[token]
 
 
     for i in range(col_df.shape[0]):
@@ -152,22 +150,22 @@ def get_col_features(col_df):
             else:
                 column_profile["characters"][ch] = 0
 
-        for t in list(tokens_dictionary.keys()):
-            if i in tokens_dictionary[t]:
-                column_profile["tokens"][t] = tokens_dictionary[t][i] / len(col_df['col_value'][i])
-            else:
-                column_profile["tokens"][t] = 0
+        # for t in list(tokens_dictionary.keys()):
+        #     if i in tokens_dictionary[t]:
+        #         column_profile["tokens"][t] = tokens_dictionary[t][i] / len(col_df['col_value'][i])
+        #     else:
+        #         column_profile["tokens"][t] = 0
 
         column_profile["median_value_length"] = value_length_dictionary[i]
         
         char_list = list(column_profile["characters"].values())
-        tokens_list = list(column_profile["tokens"].values())
+        # tokens_list = list(column_profile["tokens"].values())
 
         for char in char_list:
             col_features[i].append(char)
             
-        for token in tokens_list:
-            col_features[i].append(token)
+        # for token in tokens_list:
+        #     col_features[i].append(token)
 
         col_features[i].append(column_profile['median_value_length'])
 
@@ -179,10 +177,13 @@ def get_col_features(col_df):
 def cluster_cols(col_features, clustering_enabled, feature_names, beta_tg):
 
     if clustering_enabled:
-        clustering_results = KMeans(n_clusters=beta_tg, random_state=0).fit(col_features)
-        feature_importance_result = feature_importance(10, feature_names, col_features)
-        feature_importance_dict = pd.DataFrame(feature_importance_result)
-        feature_importance_dict.to_csv('outputs/features.csv')
+        logging.info("Clustering columns")
+        # TODO memory profiler 
+        clustering_results = MiniBatchKMeans(n_clusters=beta_tg, random_state=0, reassignment_ratio=0, init='random', batch_size = 256*64).fit(col_features)        
+        # TODO: evaluation 
+        # feature_importance_result = feature_importance(10, feature_names, col_features)
+        # feature_importance_dict = pd.DataFrame(feature_importance_result)
+        # feature_importance_dict.to_csv('outputs/features.csv')
         col_labels_df = pd.DataFrame(col_features, columns=feature_names)
         col_labels_df['column_cluster_label'] = pd.DataFrame(clustering_results.labels_)
     else:
@@ -238,6 +239,8 @@ def col_folding(total_num_cells, total_labeling_budget, context_df, sandbox_path
     for cluster in clusters_dict:
         col_df, total_num_cells_tg = get_col_df(sandbox_path, clusters_dict[cluster], labels_path)
         beta_tg = specify_num_col_clusters(total_num_cells, total_labeling_budget, col_df.shape[0], total_num_cells_tg)
+        logging.info("beta_tg: {}".format(beta_tg))
+        logging.info("cluster: {}".format(cluster))
         col_features, feature_names = get_col_features(col_df)
         col_labels_df, number_of_clusters = cluster_cols(col_features, clustering_enabled, feature_names, beta_tg)
         number_of_col_clusters[str(cluster)] = number_of_clusters
@@ -258,6 +261,6 @@ def col_folding(total_num_cells, total_labeling_budget, context_df, sandbox_path
     with open(os.path.join(col_groups_dir, "number_of_col_clusters.json"), "w", encoding="utf8") \
                 as filehandler:
                 filehandler.write(json.dumps(number_of_col_clusters))
-    print("Finished")
+    logger.info("Column Grouping Finished")
     return number_of_col_clusters, cluster_sizes
 
