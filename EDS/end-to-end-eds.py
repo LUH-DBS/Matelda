@@ -52,8 +52,8 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
     else:
         with open("nums.json") as filehandler:
             nums = json.load(filehandler)
-            num_table_groups = nums["num_clusters"]
-            total_num_cells = nums["total_num_cells"]
+            num_table_groups = int(nums["num_clusters"])
+            total_num_cells = int(nums["total_num_cells"])
 
         table_grouping_output = pd.read_csv(table_grouping_output_path)
         logger.info("Table grouping output loaded.")
@@ -74,21 +74,14 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
                 number_of_column_clusters = json.load(filehandler)
         logger.info("number of column clusters: {}".format(number_of_column_clusters))
 
-    if cell_feature_generator_enabled:
-        features_dict = ed_twolevel_rahas_features.get_cells_features(sandbox_path, experiment_output_path)
-        logger.info("Generating cell features started.")
-    else:
-        with open(os.path.join(experiment_output_path, configs["DIRECTORIES"]["cell_features_filename"]), 'rb') as file:
-            features_dict = pickle.load(file)
-            logger.info("Cell features loaded.")
-
     results_path = os.path.join(experiment_output_path, "results_exp_{}_labels_{}".format(exp_number, labeling_budget))
     if not os.path.exists(results_path):
         os.makedirs(results_path)
+
     y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
     unique_cells_local_index_collection, n_samples = \
-        ed_twolevel_rahas_features.error_detector(column_groups_path, experiment_output_path, results_path,
-                                                  features_dict, labeling_budget, number_of_column_clusters, cluster_sizes, cell_clustering_alg)
+        ed_twolevel_rahas_features.error_detector(cell_feature_generator_enabled, sandbox_path, column_groups_path, experiment_output_path, results_path,
+                                                  labeling_budget, number_of_column_clusters, cluster_sizes, cell_clustering_alg)
     tables_path = configs["RESULTS"]["tables_path"]
 
     saving_results.get_all_results(tables_path, results_path, y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\

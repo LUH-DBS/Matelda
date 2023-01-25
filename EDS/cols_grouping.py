@@ -13,6 +13,7 @@ from sklearn.cluster import MiniBatchKMeans
 from messytables import CSVTableSet, type_guess
 from kmeans_interp.kmeans_feature_imp import KMeansInterp
 from statistics import median
+from simhash import Simhash
 
 logger = logging.getLogger()
 
@@ -43,7 +44,7 @@ def get_clusters_dict(df):
 
 
 def get_col_df(sandbox_path, cluster, labels_dict_path):
-    column_dict = {'table_id': [], 'col_id': [], 'col_value': [], 'col_gt': [], 'col_type': []}
+    column_dict = {'table_path':[], 'table_id': [], 'col_id': [], 'col_value': [], 'col_gt': [], 'col_type': [], 'col_header': []}
     lake_labels_dict = extract_labels(labels_dict_path)
     total_num_cells_tg = 0
 
@@ -60,11 +61,13 @@ def get_col_df(sandbox_path, cluster, labels_dict_path):
         types = type_guess(row_set.sample)
 
         for column_idx, column in enumerate(df.columns.tolist()):
+            column_dict['table_path'].append(table_path)
             column_dict['table_id'].append(table[0])
             column_dict['col_id'].append(column_idx)
             column_dict['col_value'].append(df[column].tolist())
             column_dict['col_gt'].append(lake_labels_dict[(table[0], column_idx)].values)
             column_dict['col_type'].append(types[column_idx])
+            column_dict['col_header'].append(column)
             total_num_cells_tg += len(df[column].tolist())
 
     col_df = pd.DataFrame.from_dict(column_dict)
@@ -118,16 +121,16 @@ def get_col_features(col_df):
                     characters_dictionary[character][i] =  0.0
                 characters_dictionary[character][i] += 1.0
             value_length_sum.append(len(str(value)))
-            # tokens = str(value).split()
-            # if ' ' in tokens:
-            #     tokens.remove(' ')
-            # count_char_tokens[i]['tokens'] += len(tokens)
-            # for token in tokens:
-            #     if token not in tokens_dictionary:
-            #         tokens_dictionary[token] = {i: 0.0}
-            #     if i not in tokens_dictionary[token]:
-            #         tokens_dictionary[token][i] =  0.0
-            #     tokens_dictionary[token][i] += 1.0
+            tokens = str(value).split()
+            if ' ' in tokens:
+                tokens.remove(' ')
+            count_char_tokens[i]['tokens'] += len(tokens)
+            for token in tokens:
+                if token not in tokens_dictionary:
+                    tokens_dictionary[token] = {i: 0.0}
+                if i not in tokens_dictionary[token]:
+                    tokens_dictionary[token][i] =  0.0
+                tokens_dictionary[token][i] += 1.0
 
         value_length_dictionary[i] = value_length_sum
 
@@ -135,9 +138,9 @@ def get_col_features(col_df):
         # sum_value_length_dictionary[key] = sum_value_length_dictionary[key]/len(col_df['col_value'][key])
         value_length_dictionary[key] = median(value_length_dictionary[key])
 
-    # for token in list(tokens_dictionary.keys()):
-    #     if token in characters_dictionary.keys():
-    #         del tokens_dictionary[token]
+    for token in list(tokens_dictionary.keys()):
+        if token in characters_dictionary.keys():
+            del tokens_dictionary[token]
 
 
     for i in range(col_df.shape[0]):
@@ -150,28 +153,31 @@ def get_col_features(col_df):
             else:
                 column_profile["characters"][ch] = 0
 
-        # for t in list(tokens_dictionary.keys()):
-        #     if i in tokens_dictionary[t]:
-        #         column_profile["tokens"][t] = tokens_dictionary[t][i] / len(col_df['col_value'][i])
-        #     else:
-        #         column_profile["tokens"][t] = 0
+        for t in list(tokens_dictionary.keys()):
+            if i in tokens_dictionary[t]:
+                column_profile["tokens"][t] = tokens_dictionary[t][i] / len(col_df['col_value'][i])
+            else:
+                column_profile["tokens"][t] = 0
 
         column_profile["median_value_length"] = value_length_dictionary[i]
         
         char_list = list(column_profile["characters"].values())
-        # tokens_list = list(column_profile["tokens"].values())
+        tokens_list = list(column_profile["tokens"].values())
 
         for char in char_list:
             col_features[i].append(char)
             
-        # for token in tokens_list:
-        #     col_features[i].append(token)
+        for token in tokens_list:
+            col_features[i].append(token)
 
         col_features[i].append(column_profile['median_value_length'])
+        col_features[i].append(Simhash(col_df['col_header'][i]).value)
 
     feature_names.extend([c for c in characters_dictionary.keys()])
     feature_names.extend([str(v) for v in tokens_dictionary.keys()])
     feature_names.append("median_value_length")
+    feature_names.append("header")
+
     return col_features, feature_names
 
 def cluster_cols(col_features, clustering_enabled, feature_names, beta_tg):
@@ -179,11 +185,11 @@ def cluster_cols(col_features, clustering_enabled, feature_names, beta_tg):
     if clustering_enabled:
         logging.info("Clustering columns")
         # TODO memory profiler 
-        clustering_results = MiniBatchKMeans(n_clusters=beta_tg, random_state=0, reassignment_ratio=0, init='random', batch_size = 256*64).fit(col_features)        
+        clustering_results = MiniBatchKMeans(n_clusters=12, random_state=0, reassignment_ratio=0, batch_size = 256*64).fit(col_features)        
         # TODO: evaluation 
-        # feature_importance_result = feature_importance(10, feature_names, col_features)
-        # feature_importance_dict = pd.DataFrame(feature_importance_result)
-        # feature_importance_dict.to_csv('outputs/features.csv')
+        feature_importance_result = feature_importance(10, feature_names, col_features)
+        feature_importance_dict = pd.DataFrame(feature_importance_result)
+        feature_importance_dict.to_csv('outputs/features.csv')
         col_labels_df = pd.DataFrame(col_features, columns=feature_names)
         col_labels_df['column_cluster_label'] = pd.DataFrame(clustering_results.labels_)
     else:
@@ -245,14 +251,18 @@ def col_folding(total_num_cells, total_labeling_budget, context_df, sandbox_path
         col_labels_df, number_of_clusters = cluster_cols(col_features, clustering_enabled, feature_names, beta_tg)
         number_of_col_clusters[str(cluster)] = number_of_clusters
         col_labels_df['col_value'] = col_df['col_value']
+        col_labels_df['col_chars'] = col_df['col_value'].apply(lambda x: set([ch for val in x for ch in val]))
         col_labels_df['col_gt'] = col_df['col_gt']
         col_labels_df['table_id'] = col_df['table_id']
         col_labels_df['col_id'] = col_df['col_id']
+        col_labels_df['table_path'] = col_df['table_path']
+        col_labels_df['table_cluster'] = str(cluster) * col_labels_df.shape[0]
+
         cluster_sizes[str(cluster)] = get_cluster_size(col_labels_df)
         with open(os.path.join(col_groups_dir, "col_df_labels_cluster_{}.pickle".format(cluster)), "wb") \
                 as filehandler:
             pickle.dump(col_labels_df, filehandler)
-        col_labels_df[["column_cluster_label", "col_value", "table_id", "col_id"]].to_csv(
+        col_labels_df[["column_cluster_label", "col_value", "table_id", "table_path", 'table_cluster', "col_id"]].to_csv(
             os.path.join(col_groups_dir, "col_df_labels_cluster_{}.csv".format(cluster))
         )
     with open(os.path.join(col_groups_dir, "cluster_sizes_all.json"), "w", encoding="utf8") \

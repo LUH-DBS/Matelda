@@ -19,6 +19,9 @@ from distributed import LocalCluster, Client
 import xgboost as xgb
 import dask.array as da
 import sys
+from statistics import mode
+import ed_twolevel_rahas_features
+
 
 
 logger = logging.getLogger()
@@ -30,7 +33,9 @@ if not sys.warnoptions:
     warnings.simplefilter("ignore")
 
 
-def get_cells_features(sandbox_path, output_path):
+def get_cells_features(sandbox_path, output_path, table_char_set_dict):
+
+
     features_dict = dict()
     table_id = 0
     list_dirs_in_snd = os.listdir(sandbox_path)
@@ -44,7 +49,7 @@ def get_cells_features(sandbox_path, output_path):
                 try:
                     path = os.path.join(table_dirs_path, table)
                     logging.info("Generating features for table: " + table)
-                    col_features = generate_raha_features.generate_raha_features(table_dirs_path, table)
+                    col_features = generate_raha_features.generate_raha_features(table_dirs_path, table, table_char_set_dict[path + "/dirty_clean.csv"])
                     for col_idx in range(len(col_features)):
                         for row_idx in range(len(col_features[col_idx])):
                             features_dict[(table_id, col_idx, row_idx, 'og')] = np.append(col_features[col_idx][row_idx],
@@ -73,30 +78,54 @@ def get_cells_features(sandbox_path, output_path):
     return features_dict
 
 
-def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg):
+def sampling_labeling(table_cluster, cluster, x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg):
     logger.info("sampling_labeling")
     clustering = None 
 
     if cells_clustering_alg == "km":
-        clustering = MiniBatchKMeans(n_clusters=n_cell_clusters_per_col_cluster + 1, random_state=0, reassignment_ratio=0, init='random', batch_size = 256 * 64).fit(x)
+        n_cell_clusters_per_col_cluster = 84
+        clustering = MiniBatchKMeans(n_clusters=n_cell_clusters_per_col_cluster + 1, random_state=0, reassignment_ratio=0, batch_size = 256 * 64).fit(x)
         
     elif cells_clustering_alg == "hac":
         clustering = AgglomerativeClustering(n_clusters = n_cell_clusters_per_col_cluster + 1).fit(x)
-
-    closest, _ = pairwise_distances_argmin_min(clustering.cluster_centers_, x)
-    logging.info("**********")
-    logging.info("closest:{}, {}".format(closest, _))
+        
+    # closest, _ = pairwise_distances_argmin_min(clustering.cluster_centers_, x)
+    # logging.info("**********")
+    # logging.info("closest:{}, {}".format(closest, _))
     cells_per_cluster = dict()
+    labels_per_cluster_all = dict()
     labels_per_cluster = dict()
-    samples = shuffle(closest)[:-1]
+    # samples = random.choices(closest, k=n_cell_clusters_per_col_cluster)
 
     for cell in enumerate(clustering.labels_):
         if cell[1] in cells_per_cluster.keys():
             cells_per_cluster[cell[1]].append(cell[0])
         else:
             cells_per_cluster[cell[1]] = [cell[0]]
+            labels_per_cluster_all[cell[1]] = []
+
+    samples = []
+    sample_values = []
+    for cluster in cells_per_cluster.keys():
+        center = clustering.cluster_centers_[cluster]
+        cluster_points = np.array([x[idx] for idx in cells_per_cluster[cluster]])
+        distances = np.linalg.norm(cluster_points - np.array([center]), axis=1)
+        closest = np.argsort(distances)
+
+    while len(samples) < n_cell_clusters_per_col_cluster and len(closest) > 0:
+        sample_idx = cells_per_cluster[cluster][closest[0]]
+        if x[sample_idx] not in sample_values:
+            samples.append(sample_idx)
+            sample_values.append(x[sample_idx])
+        closest = closest[1:]
+
+    for cell in enumerate(clustering.labels_):
         if cell[0] in samples:
-            labels_per_cluster[cell[1]] = y[cell[0]]
+            labels_per_cluster_all[cell[1]].append(y[cell[0]])
+    
+    for cluster in labels_per_cluster_all.keys():
+        if len(labels_per_cluster_all[cluster]) > 0:
+            labels_per_cluster[cluster] = mode(labels_per_cluster_all[cluster])
 
     logger.info("labeling")
 
@@ -104,7 +133,11 @@ def sampling_labeling(x, y, n_cell_clusters_per_col_cluster, cells_clustering_al
     if diff_n_clusters != 0:
         logger.info("K-Means generated {} empty Clusters:))".format(diff_n_clusters))
 
-    return cells_per_cluster, labels_per_cluster, samples
+    universal_samples = []
+    for s in samples:
+        universal_samples.append((table_cluster, cluster, s))
+
+    return cells_per_cluster, labels_per_cluster, universal_samples, samples
 
 
 def get_train_test_sets(X_temp, y_temp, samples, cells_per_cluster, labels_per_cluster):
@@ -169,7 +202,7 @@ def get_n_cell_clusters_per_col_cluster_dict(n_labels, cluster_sizes, number_of_
                     assigned_labels += 1
     return n_cell_clusters_per_col_cluster_dict
 
-def process_col_cluster(n_cell_clusters_per_col_cluster, cluster,\
+def process_col_cluster(n_cell_clusters_per_col_cluster, table_cluster, cluster,\
                          group_df, features_dict, cell_clustering_alg):
     X_train = []
     y_train = []
@@ -180,7 +213,7 @@ def process_col_cluster(n_cell_clusters_per_col_cluster, cluster,\
     y_labeled_by_user = []
 
     current_local_cell_uid = 0
-    datacells_local_ids = dict()
+    datacells_uids = dict()
 
     logger.info("Processing cluster {}".format(str(cluster)))
     try:
@@ -192,10 +225,10 @@ def process_col_cluster(n_cell_clusters_per_col_cluster, cluster,\
 
                 X_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
                 y_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
-                datacells_local_ids[(row['table_id'], row['col_id'], cell_idx, row['col_value'][cell_idx])] = current_local_cell_uid
+                datacells_uids[(row['table_id'], row['col_id'], cell_idx, row['col_value'][cell_idx])] = current_local_cell_uid
                 current_local_cell_uid += 1
 
-        cells_per_cluster, labels_per_cluster, samples = sampling_labeling(X_temp, y_temp,
+        cells_per_cluster, labels_per_cluster, universal_samples, samples = sampling_labeling(table_cluster, cluster, X_temp, y_temp,
                                                             n_cell_clusters_per_col_cluster, cell_clustering_alg)
         X_labeled_by_user.extend([X_temp[sample] for sample in samples])
         y_labeled_by_user.extend([y_temp[sample] for sample in samples])
@@ -208,10 +241,12 @@ def process_col_cluster(n_cell_clusters_per_col_cluster, cluster,\
         logger.error(e)
         logging.error("error", e)
 
-    return y_test, y_cell_ids, predicted, original_data_keys_temp, samples, X_labeled_by_user, y_labeled_by_user, datacells_local_ids
+    return y_test, y_cell_ids, predicted, original_data_keys_temp, universal_samples, X_labeled_by_user, y_labeled_by_user, datacells_uids
 
 
-def error_detector(col_groups_dir, output_path, results_path, features_dict, n_labels, number_of_col_clusters, cluster_sizes, cell_clustering_alg):
+def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir, output_path, results_path, n_labels, number_of_col_clusters, cluster_sizes, cell_clustering_alg):
+    
+
     logging.info("Starting error detection")
     original_data_keys = []
     unique_cells_local_index_collection = dict()
@@ -221,9 +256,37 @@ def error_detector(col_groups_dir, output_path, results_path, features_dict, n_l
     y_local_cell_ids = dict()
     X_labeled_by_user_all = dict()
     y_labeled_by_user_all = dict()
+    char_set_dict = dict()
+    table_charset_dict = dict()
 
     n_cell_clusters_per_col_cluster_dict = get_n_cell_clusters_per_col_cluster_dict(n_labels, cluster_sizes, number_of_col_clusters)
     logging.info("n_cell_clusters_per_col_cluster_dict: {}".format(n_cell_clusters_per_col_cluster_dict))
+
+    for file_name in os.listdir(col_groups_dir):
+        if ".pickle" in file_name:
+            file = open(os.path.join(col_groups_dir, file_name), 'rb')
+            group_df = pickle.load(file)
+            table_cluster = group_df['table_cluster'].values[0]
+            file.close()
+            clusters = set(group_df['column_cluster_label'].sort_values())
+            for c_idx, cluster in enumerate(clusters):
+                char_set_dict[(str(table_cluster), str(cluster))] = set(ch for v in group_df[group_df['column_cluster_label'] == cluster]["col_chars"].values for ch in v)
+
+            for table_path in group_df["table_path"].values:
+                table_cluster = group_df[group_df["table_path"] == table_path]["table_cluster"].values[0]
+                column_cluster = group_df[group_df["table_path"] == table_path]["column_cluster_label"].values[0]
+                table_charset_dict[table_path] = char_set_dict[(str(table_cluster), str(column_cluster))]
+
+
+    if cell_feature_generator_enabled:
+        features_dict = ed_twolevel_rahas_features.get_cells_features(sandbox_path, output_path, table_charset_dict)
+        logger.info("Generating cell features started.")
+    else:
+        pass
+    # TODO
+        # with open(os.path.join(output_path, configs["DIRECTORIES"]["cell_features_filename"]), 'rb') as file:
+        #     features_dict = pickle.load(file)
+        #     logger.info("Cell features loaded.")
 
     for file_name in os.listdir(col_groups_dir):
         if ".pickle" in file_name:
@@ -233,21 +296,21 @@ def error_detector(col_groups_dir, output_path, results_path, features_dict, n_l
             file.close()
             clusters = set(group_df['column_cluster_label'].sort_values())
             for c_idx, cluster in enumerate(clusters):
-                y_test, y_cell_ids, predicted, original_data_keys_temp, samples, \
+                y_test, y_cell_ids, predicted, original_data_keys_temp, universal_samples, \
                 X_labeled_by_user, y_labeled_by_user, datacells_local_ids = \
-                     process_col_cluster(n_cell_clusters_per_col_cluster_dict[(str(table_cluster), str(cluster))], cluster, group_df, features_dict, cell_clustering_alg)
-                selected_samples += [original_data_keys_temp[sample] for sample in samples]
+                     process_col_cluster(n_cell_clusters_per_col_cluster_dict[(str(table_cluster), str(cluster))], table_cluster, cluster, group_df, features_dict, cell_clustering_alg)
+                selected_samples += universal_samples
                 original_data_keys.extend(original_data_keys_temp)
 
-                X_labeled_by_user_all[cluster] = X_labeled_by_user
-                y_labeled_by_user_all[cluster] = y_labeled_by_user
+                X_labeled_by_user_all[(str(table_cluster), str(cluster))] = X_labeled_by_user
+                y_labeled_by_user_all[(str(table_cluster), str(cluster))] = y_labeled_by_user
                 
-                predicted_all[cluster] = predicted
-                y_test_all[cluster] = y_test
-                y_local_cell_ids[cluster] = y_cell_ids
-                unique_cells_local_index_collection[cluster] = datacells_local_ids
+                predicted_all[(str(table_cluster), str(cluster))] = predicted
+                y_test_all[(str(table_cluster), str(cluster))] = y_test
+                y_local_cell_ids[(str(table_cluster), str(cluster))] = y_cell_ids
+                unique_cells_local_index_collection[(str(table_cluster), str(cluster))] = datacells_local_ids
 
-                logging.info("done - Processing cluster {}".format(str(cluster)))
+                logging.info("done - Processing col cluster {} table cluster {}".format(str(cluster), str(table_cluster)))
 
     with open(os.path.join(output_path, "original_data_keys.pkl"), "wb") as filehandler:
         pickle.dump(original_data_keys, filehandler)

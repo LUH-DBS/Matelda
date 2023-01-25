@@ -101,7 +101,7 @@ def _strategy_runner_process(self, args):
             print("{} cells are detected by {}.".format(len(detected_cells_list), strategy_name))
         return strategy_profile
 
-def run_strategies(self, d):
+def run_strategies(self, d, char_set):
     """
     This method runs (all or the promising) strategies.
     """
@@ -126,7 +126,7 @@ def run_strategies(self, d):
                         [[d, algorithm_name, configuration] for configuration in configuration_list])
                 elif algorithm_name == "PVD": 
                     configuration_list = []
-                    characters_dictionary = {ch: 1 for ch in string.printable}
+                    characters_dictionary = {ch: 1 for ch in char_set}
                     for ch in characters_dictionary:
                         configuration_list.append([ch])
                     algorithm_and_configurations.extend(
@@ -197,7 +197,7 @@ def generate_features(self, d):
     return 
 
 
-def generate_raha_features(parent_path, dataset_name):
+def generate_raha_features(parent_path, dataset_name, char_set):
     sp_path = parent_path + "/" + dataset_name + "/" + "raha-baran-results-" + dataset_name
     if os.path.exists(sp_path):
         shutil.rmtree(sp_path)
@@ -214,7 +214,7 @@ def generate_raha_features(parent_path, dataset_name):
     d.SAVE_RESULTS = True
     d.VERBOSE = False
     d.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD", "TFIDF"]
-    run_strategies(detect, d)
+    run_strategies(detect, d, char_set)
     generate_features(detect, d)
     return d.column_features
 

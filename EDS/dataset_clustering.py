@@ -25,7 +25,7 @@ from ds_utils.clustering import Tokenizer, load_data, clean_news_data, vectorize
 
 import gensim.downloader as api
 
-
+# TODO check the state of the art for doc clustering. Why not using BERT or something like that? 
 def get_column_content(df_col):
     return ' '.join(df_col)
 
@@ -183,7 +183,7 @@ def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
     context_df = context_df.join(df_clusters)
     context_df.to_csv(output_path)
 
-    dict_nums = {"num_clusters": num_clusters, "total_num_cells": total_num_cells}
+    dict_nums = {"num_clusters": str(num_clusters), "total_num_cells": str(total_num_cells)}
     with open("nums.json", "w", encoding="utf8") as filehandler:
         filehandler.write(json.dumps(dict_nums))
 
