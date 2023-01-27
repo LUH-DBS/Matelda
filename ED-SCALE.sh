@@ -1,7 +1,7 @@
 case $1 in
 
   'run')
-      spark-submit --properties-file conf/spark-defaults.conf ed_scale.py
+      spark-submit --properties-file Configs/spark-defaults.conf ed_scale.py
     ;;
 
   'format')

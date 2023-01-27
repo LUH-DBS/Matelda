@@ -171,7 +171,7 @@ if __name__ == "__main__":
 
     logger.warn("Reading config")
     configs = ConfigParser()
-    configs.read("conf/config.ini")
+    configs.read("Configs/config.ini")
 
     logger.warn("Creating output directory")
     if not os.path.exists(configs["DIRECTORIES"]["output_dir"]):
