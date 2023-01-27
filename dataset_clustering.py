@@ -110,7 +110,6 @@ def cluster_datasets_pyspark(
                 .repartition(csv_paths_df.rdd.getNumPartitions())
             )
 
-            # context_df.write.csv("dbscan_input.csv")
             # TODO: embedding model and DBSCAN params in config file
             # TODO: Use an implementation for pyspark
             logger.warn("DBSCAN clustering")
