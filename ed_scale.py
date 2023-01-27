@@ -137,10 +137,10 @@ def run_experiments(
     error_detector_pyspark(
         result_path=error_prediction_path,
         labeling_budget=labeling_budget,
-        cell_clustering_alg=config["CLUSTERING"]["cell_clustering_alg"],
         raha_features_df=spark.read.parquet(raha_features_path),
         labels_df=spark.read.parquet(label_path),
         column_grouping_df=spark.read.parquet(column_grouping_path),
+        table_grouping_df=spark.read.parquet(table_grouping_path),
         seed=int(config["EXPERIMENTS"]["seed"]),
     )
     module_end_time = time.time()

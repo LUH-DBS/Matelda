@@ -8,7 +8,7 @@ import nltk
 import pandas as pd
 from messytables import CSVTableSet, type_guess
 from openclean.profiling.dataset import dataset_profile
-from pyspark.ml.clustering import KMeans
+from pyspark.ml.clustering import BisectingKMeans
 from pyspark.ml.linalg import Vectors
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.functions import col, lit
@@ -221,10 +221,10 @@ def cluster_columns(
     if auto_clustering_enabled == 1:
         logger.warn("Clustering columns with AUTO_CLUSTERING")
         num_cluster = 10
-        kmeans = KMeans(k=num_cluster, seed=seed, initMode="k-means||")
-        kmeans_model = kmeans.fit(col_df)
-        predictions = kmeans_model.transform(col_df)
-        # Removed feature importance. Because performance
+        bkmeans = BisectingKMeans(k=num_cluster, seed=seed)
+        bkmeans_model = bkmeans.fit(col_df)
+        predictions = bkmeans_model.transform(col_df)
+
         return (
             col_df.join(
                 predictions.select("table_id", "column_id", "prediction"),

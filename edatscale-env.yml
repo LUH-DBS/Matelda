@@ -9,6 +9,7 @@ dependencies:
   - pyspark
   - xgboost[version='>=1.7.0']
   - nltk
+  - mkl
   - pip
   - black
   - pip:
