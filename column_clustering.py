@@ -1,4 +1,5 @@
 import csv
+import math
 from functools import reduce
 from itertools import chain
 from statistics import median
@@ -12,6 +13,7 @@ from pyspark.ml.clustering import BisectingKMeans
 from pyspark.ml.linalg import Vectors
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.functions import col, lit
+from pyspark.sql.functions import sum as sparksum
 from pyspark.sql.types import (
     Row,
     StructType,
@@ -39,6 +41,7 @@ def column_clustering_pyspark(
     column_groups_path: str,
     column_grouping_enabled: int,
     auto_clustering_enabled: int,
+    labeling_budget: int,
     seed: int,
 ) -> None:
     """_summary_
@@ -49,6 +52,7 @@ def column_clustering_pyspark(
         column_groups_path (str): _description_
         column_grouping_enabled (int): _description_
         auto_clustering_enabled (int): _description_
+        labeling_budget (int): _description_
         seed (int): _description_
 
     Returns:
@@ -78,6 +82,7 @@ def column_clustering_pyspark(
                     "characters_counter",
                     "tokens_counter",
                     "median_value_length",
+                    "cells",
                 ]
             )
             .fillna({"median_value_length": 0})
@@ -114,12 +119,15 @@ def column_clustering_pyspark(
                     "table_cluster": [key[0]],
                     "characters": [chars],
                     "tokens": [tokens],
+                    "cells": sum(df.cells),
+                    "columns": len(df.cells),
                 }
             )
 
-        # TODO: Transfering the dictionaries generates a lot of overhead
         grouped_cols_df = (
-            column_df.select("table_cluster", "characters_counter", "tokens_counter")
+            column_df.select(
+                "table_cluster", "characters_counter", "tokens_counter", "cells"
+            )
             .groupby("table_cluster")
             .applyInPandas(
                 group_column_features,
@@ -128,12 +136,16 @@ def column_clustering_pyspark(
                         StructField("table_cluster", IntegerType(), False),
                         StructField("characters", ArrayType(StringType(), True), True),
                         StructField("tokens", ArrayType(StringType(), True), True),
+                        StructField("cells", IntegerType(), False),
+                        StructField("columns", IntegerType(), False),
                     ]
                 ),
             )
         )
+        total_cells = grouped_cols_df.select(sparksum(grouped_cols_df.cells)).collect()[
+            0
+        ][0]
 
-        # TODO: unique is slow
         for c_idx in grouped_cols_df.select("table_cluster").distinct().collect():
             logger.warn(
                 "Processing column of table cluster: {}".format(c_idx["table_cluster"])
@@ -148,7 +160,21 @@ def column_clustering_pyspark(
 
             characters = dataset_cluster_column_grouped_df[0].characters
             tokens = dataset_cluster_column_grouped_df[0].tokens
+            total_cells_table_group = dataset_cluster_column_grouped_df[0].cells
+            total_columns_table_group = dataset_cluster_column_grouped_df[0].columns
             del dataset_cluster_column_grouped_df
+
+            num_col_cluster = specify_num_col_clusters(
+                total_cells,
+                labeling_budget,
+                total_columns_table_group,
+                total_cells_table_group,
+            )
+            logger.warn(
+                "Table cluster size: columns: {}, cells: {}, expected cluster: {}".format(
+                    total_columns_table_group, total_cells_table_group, num_col_cluster
+                )
+            )
 
             logger.warn(
                 "Creating column feature vectores of table cluster: {}".format(
@@ -168,7 +194,11 @@ def column_clustering_pyspark(
                 "Clustering columns of table cluster: {}".format(c_idx["table_cluster"])
             )
             column_cluster_prediction_df, num_cluster = cluster_columns(
-                dataset_cluster_column_feature_df, auto_clustering_enabled, seed, logger
+                dataset_cluster_column_feature_df,
+                auto_clustering_enabled,
+                num_col_cluster,
+                seed,
+                logger,
             )
             dataset_cluster_column_feature_df.unpersist()
             prediction_dfs.append(column_cluster_prediction_df)
@@ -205,13 +235,14 @@ def create_feature_vector(row: Row, characters: List[str], tokens: List[str]) ->
 
 
 def cluster_columns(
-    col_df: DataFrame, auto_clustering_enabled: int, seed: int, logger
+    col_df: DataFrame, auto_clustering_enabled: int, num_cluster: int, seed: int, logger
 ) -> Tuple[DataFrame, int]:
     """_summary_
 
     Args:
         col_df (DataFrame): _description_
         auto_clustering_enabled (int): _description_
+        num_cluster (int): _description_
         seed (int): _description_
         logger (_type_): _description_
 
@@ -220,7 +251,6 @@ def cluster_columns(
     """
     if auto_clustering_enabled == 1:
         logger.warn("Clustering columns with AUTO_CLUSTERING")
-        num_cluster = 10
         bkmeans = BisectingKMeans(k=num_cluster, seed=seed)
         bkmeans_model = bkmeans.fit(col_df)
         predictions = bkmeans_model.transform(col_df)
@@ -302,6 +332,7 @@ def generate_column_df(row: Row) -> List:
         features.append(dict(characters_counter))
         features.append(dict(tokens_counter))
         features.append(median(value_length_sum))
+        features.append(column_length)
 
         column_list.append(indices + features)
 
@@ -328,3 +359,18 @@ def get_column_type(types: CSVTableSet, column_id: int) -> int:
             return type_dicts[col_type]
     else:
         return -1
+
+
+def specify_num_col_clusters(
+    total_num_cells: int,
+    total_labeling_budget: int,
+    num_cols_table_group: int,
+    num_cells_table_group: int,
+):
+    n_tg = math.floor(total_labeling_budget * num_cells_table_group / total_num_cells)
+    lambda_ = math.floor(n_tg / num_cols_table_group)
+    if lambda_ >= 1:
+        beta_tg = num_cols_table_group
+    else:
+        beta_tg = math.ceil(num_cols_table_group / n_tg)
+    return beta_tg

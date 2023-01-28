@@ -95,6 +95,7 @@ def run_experiments(
         auto_clustering_enabled=int(
             config["COLUMN_GROUPING"]["auto_clustering_enabled"]
         ),
+        labeling_budget=labeling_budget,
         seed=int(config["EXPERIMENTS"]["seed"]),
     )
     module_end_time = time.time()
