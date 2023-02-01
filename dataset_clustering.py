@@ -112,20 +112,15 @@ def cluster_datasets_pyspark(
 
             # TODO: embedding model and DBSCAN params in config file
             # TODO: Use an implementation for pyspark
+            X = context_df.toPandas()
+
             logger.warn("DBSCAN clustering")
             clustering = DBSCAN(eps=0.5, min_samples=5, n_jobs=-1).fit(
-                context_df.rdd.map(lambda x: x.vectorized_docs).collect()
+                X["vectorized_docs"].tolist()
             )
+            X["table_cluster"] = clustering.labels_.reshape(-1, 1)
 
-            table_cluster_df = spark.createDataFrame(
-                data=np.c_[
-                    clustering.labels_.reshape(-1, 1),
-                    np.array(
-                        context_df.rdd.map(lambda x: x.table_id).collect()
-                    ).reshape(-1, 1),
-                ].tolist(),
-                schema=["table_cluster", "table_id"],
-            )
+            table_cluster_df = spark.createDataFrame(X[["table_id", "table_cluster"]])
             context_df.unpersist()
 
         else:
