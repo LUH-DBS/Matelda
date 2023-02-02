@@ -63,11 +63,6 @@ def column_clustering_pyspark(
     logger = log4jLogger.LogManager.getLogger(__name__)
 
     nltk.download("stopwords")
-    logger.warn(
-        "Partitions table_cluster_df: {}".format(
-            table_cluster_df.rdd.getNumPartitions()
-        )
-    )
 
     if column_grouping_enabled == 1:
         logger.warn("Creating column features")
@@ -181,8 +176,8 @@ def column_clustering_pyspark(
                     c_idx["table_cluster"]
                 )
             )
-            dataset_cluster_column_feature_df = dataset_cluster_column_df.rdd.map(
-                lambda row: create_feature_vector(
+            dataset_cluster_column_feature_df = dataset_cluster_column_df.rdd.mapPartitions(
+                lambda row: create_feature_vector_partitioned(
                     row,
                     characters,
                     tokens,
@@ -202,7 +197,7 @@ def column_clustering_pyspark(
             )
             dataset_cluster_column_feature_df.unpersist()
             prediction_dfs.append(column_cluster_prediction_df)
-        # TODO: columns in different table cluster can get clustered in same column cluster number
+
         column_df = reduce(DataFrame.unionAll, prediction_dfs).select(
             col("table_id"), col("column_id"), col("col_cluster")
         )
@@ -211,31 +206,38 @@ def column_clustering_pyspark(
         column_df.write.parquet(column_groups_path, mode="overwrite")
 
 
-def create_feature_vector(row: Row, characters: List[str], tokens: List[str]) -> Row:
+def create_feature_vector_partitioned(partitioned_rows: List[Row], characters: List[str], tokens: List[str]) -> Row:
     """_summary_
 
     Args:
-        row (Row): _description_
+        partitioned_rows (List[Row]): _description_
         characters (List[str]): _description_
         tokens (List[str]): _description_
 
     Returns:
         Row: _description_
     """
-    char_list = [Counter(row.characters_counter)[ch] for ch in characters]
-    token_list = [Counter(row.tokens_counter)[to] for to in tokens]
-    return [
-        row.table_id,
-        row.column_id,
-        row.table_cluster,
-        Vectors.dense(
-            char_list + token_list + [row.column_type] + [row.median_value_length]
-        ),
-    ]
+    for row in partitioned_rows:
+        char_dict = Counter(row.characters_counter)
+        token_dict = Counter(row.characters_counter)
+        char_list = [char_dict[ch] for ch in characters]
+        token_list = [token_dict[to] for to in tokens]
+        yield [
+            row.table_id,
+            row.column_id,
+            row.table_cluster,
+            Vectors.dense(
+                [row.column_type] + [row.median_value_length]
+            ),
+        ]
 
 
 def cluster_columns(
-    col_df: DataFrame, auto_clustering_enabled: int, num_cluster: int, seed: int, logger
+    col_df: DataFrame,
+    auto_clustering_enabled: int,
+    num_cluster: int,
+    seed: int,
+    logger,
 ) -> Tuple[DataFrame, int]:
     """_summary_
 
