@@ -22,10 +22,12 @@ type_dicts = {'Integer': 0, 'Decimal': 1, 'String': 2, 'Date': 3, 'Bool': 4, 'Ti
 
 def specify_num_col_clusters(total_num_cells, total_labeling_budget, num_cols_tg, num_cells_tg):
     n_tg = math.floor(total_labeling_budget * num_cells_tg/total_num_cells)
+
     lambda_ = math.floor(n_tg/num_cols_tg)
     if lambda_>= 1:
         beta_tg = num_cols_tg
     else:
+        # TODO: when we don't have enough budget to label all table groups
         beta_tg = math.ceil(num_cols_tg/n_tg)
     return beta_tg # num_col_clusters
 
@@ -251,12 +253,12 @@ def col_folding(total_num_cells, total_labeling_budget, context_df, sandbox_path
         col_labels_df, number_of_clusters = cluster_cols(col_features, clustering_enabled, feature_names, beta_tg)
         number_of_col_clusters[str(cluster)] = number_of_clusters
         col_labels_df['col_value'] = col_df['col_value']
-        col_labels_df['col_chars'] = col_df['col_value'].apply(lambda x: set([ch for val in x for ch in val]))
+        col_labels_df['col_chars'] = col_df['col_value'].apply(lambda x: set([ch for val in x for ch in str(val)]))
         col_labels_df['col_gt'] = col_df['col_gt']
         col_labels_df['table_id'] = col_df['table_id']
         col_labels_df['col_id'] = col_df['col_id']
         col_labels_df['table_path'] = col_df['table_path']
-        col_labels_df['table_cluster'] = str(cluster) * col_labels_df.shape[0]
+        col_labels_df['table_cluster'] = str(cluster)
 
         cluster_sizes[str(cluster)] = get_cluster_size(col_labels_df)
         with open(os.path.join(col_groups_dir, "col_df_labels_cluster_{}.pickle".format(cluster)), "wb") \

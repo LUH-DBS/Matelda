@@ -46,6 +46,8 @@ def run_experiments(sandbox_path, output_path, exp_name, exp_number, extract_lab
     table_grouping_output_path = os.path.join(output_path, configs["DIRECTORIES"]["table_grouping_output_filename"])
     if table_grouping_enabled:
         logger.info("Table grouping started")
+        logger.info("table grouping auto clustering enabled: {}".format(configs["TABLE_GROUPING"][
+                                                                        "auto_clustering_enabled"]))
         table_grouping_output, num_table_groups, total_num_cells = dataset_clustering.cluster_datasets(sandbox_path, table_grouping_output_path,
                                                                     configs["TABLE_GROUPING"][
                                                                         "auto_clustering_enabled"])

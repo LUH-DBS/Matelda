@@ -2,6 +2,7 @@ from functools import partial
 import hashlib
 import itertools
 import json
+import logging
 import multiprocessing
 import os
 import random
@@ -19,6 +20,30 @@ import pandas as pd
 import raha
 import sklearn
 from raha import detection
+from Levenshtein import distance
+from scipy.spatial.distance import pdist, squareform
+from simhash import Simhash
+
+logger = logging.getLogger()
+
+# minimum pairwise distance
+def get_mpd(column):
+    transformed_col = column.to_numpy().reshape(-1, 1)
+    try:
+        distance_matrix = pdist(transformed_col, lambda x, y: distance(x[0], y[0]))
+    except Exception as e:
+        print(e)
+        return
+    sdm = squareform(distance_matrix)
+    np.nan_to_num(sdm, sys.float_info.max)
+    sdm[sdm == 0] = sys.float_info.max
+    mpds = []
+    for i in range(len(column)):
+        if np.min(sdm[i]) < np.median(sdm[i]):
+            mpds.append(1)
+        else:
+            mpds.append(0)
+    return mpds
 
 def _strategy_runner_process(self, args):
         """
@@ -43,15 +68,14 @@ def _strategy_runner_process(self, args):
                 os.remove(algorithm_results_path)
             os.remove(dataset_path)
         elif algorithm == "PVD":
-            ch = configuration
-            for attribute in d.dataframe.columns:
-                j = d.dataframe.columns.get_loc(attribute)
-                for i, value in d.dataframe[attribute].iteritems():
-                    try:
-                        if len(re.findall("[" + ch + "]", value, re.UNICODE)) > 0:
-                            outputted_cells[(i, j)] = ""
-                    except:
-                        continue
+            attribute, ch = configuration
+            j = d.dataframe.columns.get_loc(attribute)
+            for i, value in d.dataframe[attribute].iteritems():
+                try:
+                    if len(re.findall("[" + ch + "]", value, re.UNICODE)) > 0:
+                        outputted_cells[(i, j)] = ""
+                except:
+                    continue
         elif algorithm == "RVD":
             d_col_list = d.dataframe.columns.tolist()
             configuration_list = []
@@ -124,13 +148,18 @@ def run_strategies(self, d, char_set):
                         list(itertools.product(["gaussian"], ["1.0", "1.3", "1.5", "1.7", "2.0", "2.3", "2.5", "2.7", "3.0"]))]
                     algorithm_and_configurations.extend(
                         [[d, algorithm_name, configuration] for configuration in configuration_list])
+                    print("OD configurations: ", len(configuration_list))
+
                 elif algorithm_name == "PVD": 
                     configuration_list = []
-                    characters_dictionary = {ch: 1 for ch in char_set}
-                    for ch in characters_dictionary:
-                        configuration_list.append([ch])
+                    for j, attribute in enumerate(d.dataframe.columns):
+                        column_group_data = char_set[j]
+                        logger.info("PVD: " + attribute + " " + str(len(column_group_data)))
+                        characters_dictionary = {ch: 1 for ch in column_group_data}
+                        for ch in characters_dictionary:
+                            configuration_list.append([attribute, ch])
                     algorithm_and_configurations.extend(
-                        [[d, algorithm_name, configuration] for configuration in configuration_list])
+                            [[d, algorithm_name, configuration] for configuration in configuration_list])
 
                 elif algorithm_name == "RVD": 
                     configuration_list = []
@@ -139,6 +168,7 @@ def run_strategies(self, d, char_set):
                     configuration_list.append('LND')
                     algorithm_and_configurations.extend(
                         [[d, algorithm_name, configuration] for configuration in configuration_list])
+                    print("RVD configurations: ", len(configuration_list))
 
             random.shuffle(algorithm_and_configurations)
             # strategy_profiles_list = []
@@ -160,36 +190,49 @@ def run_strategies(self, d, char_set):
         print("{} strategy profiles are collected.".format(len(d.strategy_profiles)))
 
 
-def generate_features(self, d):
+def generate_features(self, d, char_set_dict):
     """
     This method generates features.
     """
     columns_features_list = []
-    column_cell_values_list = []
-    col_name_features = np.asarray([hash(col_name) for col_name in d.dataframe.columns])
+    # col_name_features = np.asarray([Simhash(col_name).value for col_name in d.dataframe.columns])
     for j in range(d.dataframe.shape[1]):
-        feature_vectors = numpy.zeros((d.dataframe.shape[0], len(d.strategy_profiles)))
-        for strategy_index, strategy_profile in enumerate(d.strategy_profiles):
+        strategy_profiles = []
+        for strategy_profile in d.strategy_profiles:
+            strategy = json.loads(strategy_profile["name"])
+            if strategy[0]=="PVD":
+                if strategy[1][0] == d.dataframe.columns[j]:
+                    strategy_profiles.append(strategy_profile)
+            else:
+                strategy_profiles.append(strategy_profile)
+        # TODO: check numbers
+        feature_vectors = numpy.zeros((d.dataframe.shape[0], len(strategy_profiles)))
+        for strategy_index, strategy_profile in enumerate(strategy_profiles):
             strategy_name = json.loads(strategy_profile["name"])[0]
             if strategy_name in self.ERROR_DETECTION_ALGORITHMS:
                 for cell in strategy_profile["output"]:
                     if cell[1] == j:
                         feature_vectors[cell[0], strategy_index] = 1.0
         if "TFIDF" in self.ERROR_DETECTION_ALGORITHMS:
-            vectorizer = sklearn.feature_extraction.text.TfidfVectorizer(min_df=1, stop_words="english")
+            print("TFIDF")
             corpus = d.dataframe.iloc[:, j]
             try:
                 tfidf_features = vectorizer.fit_transform(corpus)
                 feature_vectors = numpy.column_stack((feature_vectors, numpy.array(tfidf_features.todense())))
             except:
                 pass
+        if "MPD" in self.ERROR_DETECTION_ALGORITHMS:
+            print("MPD")
+            mpds = get_mpd(d.dataframe.iloc[:, j])
+            feature_vectors = numpy.column_stack((feature_vectors, numpy.array(mpds)))
+
         # non_identical_columns = numpy.any(feature_vectors != feature_vectors[0, :], axis=0)
         # feature_vectors = feature_vectors[:, non_identical_columns]
         if self.VERBOSE:
             print("{} Features are generated for column {}.".format(feature_vectors.shape[1], j))
         # Adding headers hash
 
-        feature_vectors = np.hstack((feature_vectors, np.full((feature_vectors.shape[0], 1), col_name_features[j])))
+        # feature_vectors = np.hstack((feature_vectors, np.full((feature_vectors.shape[0], 1), col_name_features[j])))
         columns_features_list.append(feature_vectors)
 
     d.column_features = columns_features_list
@@ -197,7 +240,7 @@ def generate_features(self, d):
     return 
 
 
-def generate_raha_features(parent_path, dataset_name, char_set):
+def generate_raha_features(parent_path, dataset_name, charsets):
     sp_path = parent_path + "/" + dataset_name + "/" + "raha-baran-results-" + dataset_name
     if os.path.exists(sp_path):
         shutil.rmtree(sp_path)
@@ -211,11 +254,11 @@ def generate_raha_features(parent_path, dataset_name, char_set):
     }
 
     d = detect.initialize_dataset(dataset_dictionary)
-    d.SAVE_RESULTS = True
-    d.VERBOSE = False
-    d.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD", "TFIDF"]
-    run_strategies(detect, d, char_set)
-    generate_features(detect, d)
+    d.SAVE_RESULTS = False
+    d.VERBOSE = True
+    d.ERROR_DETECTION_ALGORITHMS = ["OD", "RVD", "PVD"]
+    run_strategies(detect, d, charsets)
+    generate_features(detect, d, charsets)
     return d.column_features
 
 
