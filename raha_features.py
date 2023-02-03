@@ -222,7 +222,6 @@ def generate_features(
         List[np.ndarray]: _description_
     """
     columns_features_list = []
-    column_cell_values_list = []
     col_name_features = np.asarray([hash(col_name) for col_name in d.dataframe.columns])
     for j in range(d.dataframe.shape[1]):
         feature_vectors = np.zeros((d.dataframe.shape[0], len(d.strategy_profiles)))
@@ -244,8 +243,7 @@ def generate_features(
                 )
             except:
                 pass
-        # non_identical_columns = np.any(feature_vectors != feature_vectors[0, :], axis=0)
-        # feature_vectors = feature_vectors[:, non_identical_columns]
+
         if self.VERBOSE:
             print(
                 "{} Features are generated for column {}.".format(
@@ -263,8 +261,6 @@ def generate_features(
         columns_features_list.append(feature_vectors)
 
     d.column_features = columns_features_list
-
-    return
 
 
 def _strategy_runner_process(self: raha.detection.Detection, args: List[Any]) -> Dict:

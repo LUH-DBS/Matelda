@@ -1,6 +1,5 @@
 import json
 import os
-import re
 
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.functions import col

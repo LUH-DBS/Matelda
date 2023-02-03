@@ -1,7 +1,6 @@
 import os
 
 from pyspark.sql import DataFrame, SparkSession
-from pyspark.sql.functions import monotonically_increasing_id
 
 
 def generate_csv_paths(sandbox_path: str) -> DataFrame:

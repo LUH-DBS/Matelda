@@ -3,15 +3,14 @@ import math
 from functools import reduce
 from itertools import chain
 from statistics import median
-from typing import Counter, List, Tuple
+from typing import Counter, List, Tuple, Generator
 
 import pandas as pd
 from messytables import CSVTableSet, type_guess
-from openclean.profiling.dataset import dataset_profile
 from pyspark.ml.clustering import BisectingKMeans
 from pyspark.ml.linalg import Vectors
 from pyspark.sql import DataFrame, SparkSession
-from pyspark.sql.functions import col, lit
+from pyspark.sql.functions import col
 from pyspark.sql.functions import sum as sparksum
 from pyspark.sql.types import (
     Row,
@@ -170,7 +169,6 @@ def column_clustering_pyspark(
                     dataset_cluster_column_feature_df,
                     num_col_cluster,
                     seed,
-                    logger,
                 )
                 dataset_cluster_column_feature_df.unpersist()
                 prediction_dfs.append(column_cluster_prediction_df)
@@ -197,7 +195,7 @@ def column_clustering_pyspark(
 
 def create_feature_vector_partitioned(
     partitioned_rows: List[Row], characters: List[str], tokens: List[str]
-) -> Row:
+) -> Generator[Row, None, None]:
     """_summary_
 
     Args:
@@ -206,18 +204,21 @@ def create_feature_vector_partitioned(
         tokens (List[str]): _description_
 
     Returns:
-        Row: _description_
+        Generator[Row, None, None]: _description_
     """
     for row in partitioned_rows:
         char_dict = Counter(row.characters_counter)
         token_dict = Counter(row.characters_counter)
         char_list = [char_dict[ch] for ch in characters]
         token_list = [token_dict[to] for to in tokens]
+        # TODO: returning char_list and token_list leads to "WARN DAGScheduler: Broadcasting large task binary with size 19.7 MiB"
         yield [
             row.table_id,
             row.column_id,
             row.table_cluster,
-            Vectors.dense([row.column_type] + [row.median_value_length]),
+            Vectors.dense(
+                char_list + token_list + [row.column_type] + [row.median_value_length]
+            ),
         ]
 
 
@@ -225,7 +226,6 @@ def cluster_columns(
     col_df: DataFrame,
     num_cluster: int,
     seed: int,
-    logger,
 ) -> Tuple[DataFrame, int]:
     """_summary_
 
@@ -345,7 +345,7 @@ def generate_empty_column_df(row: Row) -> List:
 
     column_list = []
 
-    for c_idx in len(df.columns):
+    for c_idx in range(len(dirty_df.columns)):
         column_list.apped([row.table_id, c_idx, 0])
 
     return column_list

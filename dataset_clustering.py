@@ -1,8 +1,11 @@
 import re
 import string
-from typing import List
+from typing import List, Generator
 
 import gensim.downloader as api
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 import numpy as np
 import pandas as pd
 from pyspark.sql import DataFrame, SparkSession
@@ -85,6 +88,8 @@ def cluster_datasets_pyspark(
         log4jLogger = spark._jvm.org.apache.log4j
         logger = log4jLogger.LogManager.getLogger(__name__)
 
+        nltk.download("stopwords")
+
         if auto_clustering_enabled == 1:
             logger.warn("Clustering tables with AUTO_CLUSTERING")
 
@@ -129,14 +134,14 @@ def cluster_datasets_pyspark(
         table_grouping_df.write.parquet(output_path, mode="overwrite")
 
 
-def create_table_context(rows: List[Row], model) -> List:
+def create_table_context(rows: List[Row], model) -> Generator[List, None, None]:
     """_summary_
 
     Args:
         row (Row): _description_
 
     Returns:
-        List: _description_
+        Generator[List, None, None]: _description_
     """
     custom_stopwords = set(stopwords.words("english"))
     for row in rows:
@@ -161,7 +166,6 @@ def create_table_context(rows: List[Row], model) -> List:
         df_column_text = " ".join(dirty_df.columns)
 
         # Create text column based on parent, table_name, and headers
-        # TODO: check licence
         text = " | ".join([row.parent, row.table_name, df_column_text, df_table_text])
         tokens = set(clean_text(text, word_tokenize, custom_stopwords))
 
