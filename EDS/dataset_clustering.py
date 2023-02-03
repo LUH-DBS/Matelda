@@ -25,7 +25,7 @@ from ds_utils.clustering import Tokenizer, load_data, clean_news_data, vectorize
 
 import gensim.downloader as api
 
-
+# TODO check the state of the art for doc clustering. Why not using BERT or something like that? 
 def get_column_content(df_col):
     return ' '.join(df_col)
 
@@ -162,14 +162,16 @@ def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
 
     logger.info(f"Most common vocabs are: {vocab.most_common(10)}")
 
-    if auto_clustering_enabled:
+    if auto_clustering_enabled == "True":
         # TODO: embedding model and DBSCAN params in config file
         # model = Word2Vec(sentences=tokenized_docs, vector_size=100, workers=1, seed=42)
+        logger.info("Loading Word2Vec model...")
         model = api.load('word2vec-google-news-300')
         vectorized_docs = vectorize(tokenized_docs, model=model)
         clustering = DBSCAN(eps=0.5, min_samples=5).fit(vectorized_docs)
         cluster_labels = clustering.labels_
     else:
+        logger.info("Auto clustering is disabled")
         cluster_labels = np.ones(len(tokenized_docs)).tolist()
 
     df_clusters = pd.DataFrame({
@@ -178,12 +180,13 @@ def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
         "cluster": cluster_labels
     })
     num_clusters = len(set(cluster_labels))
+    logger.info(f"Number of table clusters: {num_clusters}")
 
     # TODO: Change join
     context_df = context_df.join(df_clusters)
     context_df.to_csv(output_path)
 
-    dict_nums = {"num_clusters": num_clusters, "total_num_cells": total_num_cells}
+    dict_nums = {"num_clusters": str(num_clusters), "total_num_cells": str(total_num_cells)}
     with open("nums.json", "w", encoding="utf8") as filehandler:
         filehandler.write(json.dumps(dict_nums))
 

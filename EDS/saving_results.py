@@ -10,11 +10,13 @@ from sklearn.metrics import precision_recall_fscore_support
 logger = logging.getLogger()
 
 def get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all, results_dir, n_samples):
+    logger.info("Classification results:")
     total_tn, total_fp, total_fn, total_tp = 0, 0, 0, 0
     for i in predicted_all.keys():
         col_cluster_prediction = list(predicted_all[i])
         col_cluster_y = y_test_all[i]
 
+        # TODO: Fix this, user labels are not always accurate
         col_cluster_prediction.extend(y_labeled_by_user_all[i])
         col_cluster_y.extend(y_labeled_by_user_all[i])
 
@@ -47,21 +49,23 @@ def get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all,
 def create_predictions_dict(all_tables_dict, y_test_all, \
                     y_local_cell_ids, predicted_all, \
                     unique_cells_local_index_collection):
+    logger.info("get_predictions_dict")
     rows_list = []
-    for col_cluster_idx in unique_cells_local_index_collection.keys():
-        for cell_key in list(unique_cells_local_index_collection[col_cluster_idx].keys()):
+    for key in unique_cells_local_index_collection.keys():
+        logger.info("key: {}".format(key))
+        for cell_key in list(unique_cells_local_index_collection[key].keys()):
             try:
-                cell_local_idx = unique_cells_local_index_collection[col_cluster_idx][cell_key]
-                y_cell_ids = y_local_cell_ids[col_cluster_idx]
+                cell_local_idx = unique_cells_local_index_collection[key][cell_key]
+                y_cell_ids = y_local_cell_ids[key]
                 y_local_idx = y_cell_ids.index(cell_local_idx) if cell_local_idx in y_cell_ids else -1
                 tmp_dict = {'table_id': cell_key[0], 'table_name': all_tables_dict[cell_key[0]]['name'],
                         'col_id': cell_key[1], 'col_name': all_tables_dict[cell_key[0]]['schema'][cell_key[1]], 
                         'cell_idx': cell_key[2], 'cell_value': cell_key[3],
-                        'predicted': predicted_all[col_cluster_idx][y_local_idx] if y_local_idx != -1 else -1,
-                        'label': y_test_all[col_cluster_idx][y_local_idx] if y_local_idx != -1 else -1}
+                        'predicted': predicted_all[key][y_local_idx] if y_local_idx != -1 else -1,
+                        'label': y_test_all[key][y_local_idx] if y_local_idx != -1 else -1}
                 rows_list.append(tmp_dict)
             except Exception as e:
-                print(e)
+                logger.info(e)
     results_df = pd.DataFrame(rows_list,
                               columns=['table_id', 'table_name', 'col_id', 'col_name', 'cell_idx', 'cell_value',
                                        'predicted', 'label'])                 
@@ -69,6 +73,7 @@ def create_predictions_dict(all_tables_dict, y_test_all, \
 
 
 def get_tables_dict(sandbox_path):
+    logger.info("get_tables_dict")
     all_tables_dict = {}
     table_id = 0
     table_dirs = os.listdir(sandbox_path)
@@ -87,14 +92,17 @@ def get_tables_dict(sandbox_path):
 def get_all_results(tables_path, results_dir, y_test_all, \
                     y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
                     unique_cells_local_index_collection, n_samples):
-
+    with open(os.path.join(results_dir, "labeled_by_user.pickle"), "wb") as file:
+            pickle.dump(y_labeled_by_user_all, file)
+    logger.info("getting classification results")
     tables_dict = get_tables_dict(tables_path)
     get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all, results_dir, n_samples)
     results_df = create_predictions_dict(tables_dict, y_test_all, \
                     y_local_cell_ids, predicted_all, \
                     unique_cells_local_index_collection)
+    logger.info("Saving results_df")
     with open(os.path.join(results_dir, "results_df.pickle"), "wb") as file:
             pickle.dump(results_df, file)
-    print("All done :)")
+    logger.info("All done :)")
     return 
     
