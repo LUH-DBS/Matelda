@@ -35,12 +35,11 @@ def generate_table_ground_truth(row: Row) -> List[Tuple[int, int, int, bool]]:
     )
     labels_df = dirty_df.where(dirty_df.values != clean_df.values).notna() * 1
 
-    for rowIndex, row2 in labels_df.iterrows():  # iterate over rows
+    for rowIndex, row2 in labels_df.iterrows():
         for columnIndex, value in row2.items():
             tables_ground_truth.append(
                 (row.table_id, labels_df.columns.get_loc(columnIndex), rowIndex, value)
             )
-            # pyspark cant safe a list in a Dataframe (type infering problem)
     return tables_ground_truth
 
 
@@ -59,11 +58,11 @@ def generate_labels_pyspark(
     Returns:
         _type_: _description_
     """
-    spark = SparkSession.getActiveSession()
-    log4jLogger = spark._jvm.org.apache.log4j
-    logger = log4jLogger.LogManager.getLogger(__name__)
-
     if extract_labels_enabled:
+        spark = SparkSession.getActiveSession()
+        log4jLogger = spark._jvm.org.apache.log4j
+        logger = log4jLogger.LogManager.getLogger(__name__)
+
         logger.warn("Extracting labels")
         labels_df = csv_paths_df.rdd.flatMap(
             lambda row: generate_table_ground_truth(row)

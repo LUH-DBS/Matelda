@@ -38,11 +38,11 @@ def generate_raha_features_pyspark(
     Returns:
         DataFrame: _description_
     """
-    spark = SparkSession.getActiveSession()
-    log4jLogger = spark._jvm.org.apache.log4j
-    logger = log4jLogger.LogManager.getLogger(__name__)
-
     if cell_feature_generator_enabled == 1:
+        spark = SparkSession.getActiveSession()
+        log4jLogger = spark._jvm.org.apache.log4j
+        logger = log4jLogger.LogManager.getLogger(__name__)
+
         logger.warn("Creating Raha features")
         raha_features_df = csv_paths_df.rdd.flatMap(
             lambda row: generate_raha_features(row)

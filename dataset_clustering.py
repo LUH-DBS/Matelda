@@ -3,11 +3,8 @@ import string
 from typing import List
 
 import gensim.downloader as api
-import nltk
 import numpy as np
 import pandas as pd
-from nltk import word_tokenize
-from nltk.corpus import stopwords
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.functions import col, lit
 from pyspark.sql.types import Row
@@ -83,14 +80,11 @@ def cluster_datasets_pyspark(
     Returns:
         DataFrame: _description_
     """
-    spark = SparkSession.getActiveSession()
-    log4jLogger = spark._jvm.org.apache.log4j
-    logger = log4jLogger.LogManager.getLogger(__name__)
-
-    nltk.download("stopwords")
-
     if table_grouping_enabled == 1:
-        logger.warn("Clustering Datasets")
+        spark = SparkSession.getActiveSession()
+        log4jLogger = spark._jvm.org.apache.log4j
+        logger = log4jLogger.LogManager.getLogger(__name__)
+
         if auto_clustering_enabled == 1:
             logger.warn("Clustering tables with AUTO_CLUSTERING")
 
@@ -114,7 +108,7 @@ def cluster_datasets_pyspark(
             # TODO: Use an implementation for pyspark
             X = context_df.toPandas()
 
-            logger.warn("DBSCAN clustering")
+            logger.warn("DBSCAN clustering {} tables".format(len(X)))
             clustering = DBSCAN(eps=0.5, min_samples=5, n_jobs=-1).fit(
                 X["vectorized_docs"].tolist()
             )
