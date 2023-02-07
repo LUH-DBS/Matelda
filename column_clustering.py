@@ -111,7 +111,7 @@ def column_clustering_pyspark(
 
             for c_idx in grouped_cols_df.select("table_cluster").distinct().collect():
                 logger.warn(
-                    "Processing column of table cluster: {}".format(
+                    "Table cluster {}: Processing columns".format(
                         c_idx["table_cluster"]
                     )
                 )
@@ -136,7 +136,8 @@ def column_clustering_pyspark(
                     total_cells_table_group,
                 )
                 logger.warn(
-                    "Table cluster size: columns: {}, cells: {}, expected cluster: {}".format(
+                    "Table cluster {}: columns: {}, cells: {}, expected column cluster: {}".format(
+                        c_idx["table_cluster"],
                         total_columns_table_group,
                         total_cells_table_group,
                         num_col_cluster,
@@ -144,7 +145,7 @@ def column_clustering_pyspark(
                 )
 
                 logger.warn(
-                    "Creating column feature vectores of table cluster: {}".format(
+                    "Table cluster {}: Creating column feature vectors".format(
                         c_idx["table_cluster"]
                     )
                 )
@@ -160,16 +161,26 @@ def column_clustering_pyspark(
                 dataset_cluster_column_df.unpersist()
 
                 logger.warn(
-                    "Clustering columns of table cluster: {}, columns: {}".format(
+                    "Table cluster {}: Clustering {} columns".format(
                         c_idx["table_cluster"],
                         dataset_cluster_column_feature_df.count(),
                     )
                 )
-                column_cluster_prediction_df, num_cluster = cluster_columns(
+                column_cluster_prediction_df = cluster_columns(
                     dataset_cluster_column_feature_df,
                     num_col_cluster,
                     seed,
                 )
+
+                logger.warn(
+                    "Table cluster {}: {} column clusters created".format(
+                        c_idx["table_cluster"],
+                        column_cluster_prediction_df.select("col_cluster")
+                        .distinct()
+                        .collect(),
+                    )
+                )
+
                 dataset_cluster_column_feature_df.unpersist()
                 prediction_dfs.append(column_cluster_prediction_df)
 
@@ -226,7 +237,7 @@ def cluster_columns(
     col_df: DataFrame,
     num_cluster: int,
     seed: int,
-) -> Tuple[DataFrame, int]:
+) -> DataFrame:
     """_summary_
 
     Args:
@@ -236,20 +247,17 @@ def cluster_columns(
         logger (_type_): _description_
 
     Returns:
-        Tuple[DataFrame, int]: _description_
+        DataFrame: _description_
     """
     bkmeans = BisectingKMeans(k=num_cluster, seed=seed)
     bkmeans_model = bkmeans.fit(col_df)
     predictions = bkmeans_model.transform(col_df)
 
-    return (
-        col_df.join(
-            predictions.select("table_id", "column_id", "prediction"),
-            ["table_id", "column_id"],
-            how="inner",
-        ).withColumnRenamed("prediction", "col_cluster"),
-        num_cluster,
-    )
+    return col_df.join(
+        predictions.select("table_id", "column_id", "prediction"),
+        ["table_id", "column_id"],
+        how="inner",
+    ).withColumnRenamed("prediction", "col_cluster")
 
 
 def generate_column_df(row: Row) -> List:

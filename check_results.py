@@ -21,13 +21,6 @@ def evaluate_pyspark(
     log4jLogger = spark._jvm.org.apache.log4j
     logger = log4jLogger.LogManager.getLogger(__name__)
 
-    logger.warn(
-        "Partitions y_predictions_df: {}".format(
-            y_predictions_df.rdd.getNumPartitions()
-        )
-    )
-    logger.warn("Partitions labels_df: {}".format(labels_df.rdd.getNumPartitions()))
-
     metrics = MulticlassMetrics(
         y_predictions_df.join(labels_df, ["table_id", "column_id", "row_id"])
         .select(

@@ -120,6 +120,12 @@ def cluster_datasets_pyspark(
             X["table_cluster"] = clustering.labels_.reshape(-1, 1)
 
             table_cluster_df = spark.createDataFrame(X[["table_id", "table_cluster"]])
+
+            logger.warn(
+                "{} table clusters created".format(
+                    table_cluster_df.select("table_cluster").distict().collect()
+                )
+            )
             context_df.unpersist()
 
         else:
