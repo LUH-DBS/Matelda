@@ -2,52 +2,35 @@
     <!-- ****************************************************
                       DATABASES
     **************************************************** -->
-    <source>
-        <!-- The (optional) source database stores tables that 
-        cannot be modified (for example master data) 
-        BART will not introduce changes in these tables -->
-        <type>DBMS</type>
-        <access-configuration>
-            <driver>org.postgresql.Driver</driver>
-            <uri>jdbc:postgresql://localhost:5433/postgres</uri>
-            <schema>source</schema>
-            <login>postgres</login>
-            <password>postgres</password>
-        </access-configuration>
-        <import>
-            <input type="csv" separator="," table="flights">/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/Sandbox_Generation/metanome_input_files/flights.csv</input>
-        </import>
-    </source>
-
     <target> 
         <type>DBMS</type>
         <access-configuration>
             <driver>org.postgresql.Driver</driver>
-            <uri>jdbc:postgresql://localhost:5433/postgres</uri>
+            <uri>jdbc:postgresql://localhost:5433/bartdb</uri>
             <schema>target</schema>
             <login>postgres</login>
             <password>postgres</password>
         </access-configuration>
         <import>
-            <input type="csv" separator="," table="flights">/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/Sandbox_Generation/metanome_input_files/flights.csv</input>
+            <input type="csv" separator="," table="clean">/home/fatemeh/ED-Scale/Sandbox_Generation/metanome_input_files/processed/Alcohol-use.g8_2014_0731_0900/clean.csv</input>
         </import>
     </target>
 
     <!-- ****************************************************
                     DEPENDENCIES
     **************************************************** -->
-    <dependencies>
-<![CDATA[
-DCs: 
-e1: flights(tuple_id: $t1, src: $s1, flight: $f1, sched_dep_time: $sdt1, act_dep_time: $adt1, sched_arr_time: $sat1, act_arr_time: $aat1),
-flights(tuple_id: $t2, src: $s2, flight: $f2, sched_dep_time: $sdt2, act_dep_time: $adt2, sched_arr_time: $sat2, act_arr_time: $aat2),
-        $t1 == $t2, $s1 != $s2 -> #fail. 
+    <dependencies><![CDATA[DCs: 
 
-        ]]>
-    </dependencies>
-    <authoritativeSources>
-        <source>flights</source>
-    </authoritativeSources>
+            e1: clean(sexraceethnicity: $sexraceethnicity1, sex: $sex1, raceethnicity: $raceethnicity1, year: $year1, percentage: $percentage1, standard_erroron_percentage: $standard_erroron_percentage1, noteon_percent: $noteon_percent1),
+            clean(sexraceethnicity: $sexraceethnicity2, sex: $sex2, raceethnicity: $raceethnicity2, year: $year2, percentage: $percentage2, standard_erroron_percentage: $standard_erroron_percentage2, noteon_percent: $noteon_percent2),
+                $sexraceethnicity1 == $sexraceethnicity2, $raceethnicity1 != $raceethnicity2 -> #fail. 
+
+        
+            e2: clean(sexraceethnicity: $sexraceethnicity1, sex: $sex1, raceethnicity: $raceethnicity1, year: $year1, percentage: $percentage1, standard_erroron_percentage: $standard_erroron_percentage1, noteon_percent: $noteon_percent1),
+            clean(sexraceethnicity: $sexraceethnicity2, sex: $sex2, raceethnicity: $raceethnicity2, year: $year2, percentage: $percentage2, standard_erroron_percentage: $standard_erroron_percentage2, noteon_percent: $noteon_percent2),
+                $sexraceethnicity1 == $sexraceethnicity2, $sex1 != $sex2 -> #fail. 
+
+        ]]></dependencies>
 
     <!-- ****************************************************
                       CONFIGURATION
@@ -68,12 +51,12 @@ flights(tuple_id: $t2, src: $s2, flight: $f2, sched_dep_time: $sdt2, act_dep_tim
 
         <!-- To export the dirty db -->
         <exportDirtyDB>true</exportDirtyDB>
-        <exportDirtyDBPath>/Temp/bart/example/</exportDirtyDBPath>
+        <exportDirtyDBPath>./</exportDirtyDBPath>
         <exportDirtyDBType>CSV</exportDirtyDBType>
 
         <!-- To export the changes -->
         <exportCellChanges>true</exportCellChanges>
-        <exportCellChangesPath>/Temp/bart/example/changes.csv</exportCellChangesPath>
+        <exportCellChangesPath>clean_changes.csv</exportCellChangesPath>
 
         <!-- To compute an estimate of the reparability (default = false) -->
         <estimateRepairability>true</estimateRepairability>
@@ -96,17 +79,9 @@ flights(tuple_id: $t2, src: $s2, flight: $f2, sched_dep_time: $sdt2, act_dep_tim
         <!-- Error percentages for dependencies and comparisons 
         All percentages are wrt table sizes (# tuples) -->
         <errorPercentages>
-            <defaultPercentage>1.0</defaultPercentage>
+            <defaultPercentage>0.0</defaultPercentage>
             <vioGenQueries>
-                <vioGenQuery id="e1">
-                    <comparison>(t1 == t2)</comparison>
-                    <percentage>1.0</percentage>
-                </vioGenQuery>
-                <vioGenQuery id="e1">
-                    <comparison>(s1 != s2)</comparison>
-                    <percentage>1.0</percentage>
-                </vioGenQuery>
-            </vioGenQueries>
+            <vioGenQuery id="e1"><comparison>(sexraceethnicity1 == sexraceethnicity2)</comparison><percentage>4.166666666666665</percentage></vioGenQuery><vioGenQuery id="e1"><comparison>(raceethnicity1 != raceethnicity2)</comparison><percentage>4.166666666666665</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(sexraceethnicity1 == sexraceethnicity2)</comparison><percentage>3.846153846153845</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(sex1 != sex2)</comparison><percentage>3.846153846153845</percentage></vioGenQuery></vioGenQueries>
         </errorPercentages>
 
         <!-- To control the way in which changing the value -->
@@ -126,19 +101,19 @@ flights(tuple_id: $t2, src: $s2, flight: $f2, sched_dep_time: $sdt2, act_dep_tim
 
         <randomErrors>
             <tables>
-                <table name="flights"> 
-                    <percentage>7</percentage> <!-- Percentage is wrt attributes to dirty in the table -->
+                <table name="clean"> 
+                    <percentage>9</percentage> <!-- Percentage is wrt attributes to dirty in the table -->
                     <attributes>
-                    <atrribute>src</atrribute><atrribute>flight</atrribute><atrribute>sched_dep_time</atrribute><atrribute>act_dep_time</atrribute><atrribute>sched_arr_time</atrribute><atrribute>act_arr_time</atrribute></attributes>
+                    <atrribute>sexraceethnicity</atrribute><atrribute>sex</atrribute><atrribute>raceethnicity</atrribute><atrribute>noteon_percent</atrribute></attributes>
                 </table>
             </tables>
         </randomErrors>
     
         <outlierErrors>
             <tables>
-                <table name="flights">
+                <table name="clean">
                     <attributes>
-                    <atrribute percentage="7" detectable="true">tuple_id</atrribute></attributes>
+                    <atrribute percentage="2" detectable="true">year</atrribute><atrribute percentage="2" detectable="true">percentage</atrribute><atrribute percentage="2" detectable="true">standard_erroron_percentage</atrribute></attributes>
                 </table>
             </tables>
         </outlierErrors>
