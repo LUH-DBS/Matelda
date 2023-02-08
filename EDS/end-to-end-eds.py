@@ -20,7 +20,7 @@ from scalene import scalene_profiler
 import saving_results
 
 configs = ConfigParser()
-configs.read("/home/fatemeh/ED-Scale/EDS/config.ini")
+configs.read("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/EDS/config.ini")
 logs_dir = configs["DIRECTORIES"]["logs_dir"]
 logger = app_logger.get_logger(logs_dir)
 
