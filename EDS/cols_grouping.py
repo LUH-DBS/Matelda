@@ -23,12 +23,12 @@ type_dicts = {'Integer': 0, 'Decimal': 1, 'String': 2, 'Date': 3, 'Bool': 4, 'Ti
 def specify_num_col_clusters(total_num_cells, total_labeling_budget, num_cols_tg, num_cells_tg):
     n_tg = math.floor(total_labeling_budget * num_cells_tg/total_num_cells)
 
-    lambda_ = math.floor(n_tg/num_cols_tg)
-    if lambda_>= 1:
+    lambda_ = math.floor(n_tg/(num_cols_tg*2))
+    if lambda_ >= 1:
         beta_tg = num_cols_tg
     else:
         # TODO: when we don't have enough budget to label all table groups
-        beta_tg = math.ceil(num_cols_tg/n_tg)
+        beta_tg = math.ceil(n_tg/2)
     return beta_tg # num_col_clusters
 
 def get_clusters_dict(df):
@@ -187,7 +187,7 @@ def cluster_cols(col_features, clustering_enabled, feature_names, beta_tg):
     if clustering_enabled:
         logging.info("Clustering columns")
         # TODO memory profiler 
-        clustering_results = MiniBatchKMeans(n_clusters=12, random_state=0, reassignment_ratio=0, batch_size = 256*64).fit(col_features)        
+        clustering_results = MiniBatchKMeans(n_clusters=beta_tg, random_state=0, reassignment_ratio=0, batch_size = 256*64).fit(col_features)        
         # TODO: evaluation 
         feature_importance_result = feature_importance(10, feature_names, col_features)
         feature_importance_dict = pd.DataFrame(feature_importance_result)
