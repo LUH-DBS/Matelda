@@ -154,7 +154,6 @@ def run_strategies(self, d, char_set):
                     configuration_list = []
                     for j, attribute in enumerate(d.dataframe.columns):
                         column_group_data = char_set[j]
-                        logger.info("PVD: " + attribute + " " + str(len(column_group_data)))
                         characters_dictionary = {ch: 1 for ch in column_group_data}
                         for ch in characters_dictionary:
                             configuration_list.append([attribute, ch])
@@ -254,7 +253,7 @@ def generate_raha_features(parent_path, dataset_name, charsets):
     }
 
     d = detect.initialize_dataset(dataset_dictionary)
-    d.SAVE_RESULTS = False
+    d.SAVE_RESULTS = True
     d.VERBOSE = True
     d.ERROR_DETECTION_ALGORITHMS = ["OD", "RVD", "PVD"]
     run_strategies(detect, d, charsets)

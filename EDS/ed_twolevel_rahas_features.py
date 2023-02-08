@@ -1,3 +1,5 @@
+import collections
+import json
 import logging
 import math
 import os
@@ -6,7 +8,7 @@ import random
 import numpy as np
 import pandas as pd
 import scipy
-from sklearn.cluster import KMeans, MiniBatchKMeans
+from sklearn.cluster import DBSCAN, KMeans, MiniBatchKMeans
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.impute import SimpleImputer
@@ -88,7 +90,7 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict):
     return features_dict
 
 
-def sampling_labeling(table_cluster, cluster, x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg, value_temp):
+def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg, value_temp):
     logger.info("sampling_labeling")
     clustering = None 
 
@@ -98,6 +100,12 @@ def sampling_labeling(table_cluster, cluster, x, y, n_cell_clusters_per_col_clus
         logging.info("KMeans - n_cell_clusters_generated: {}".format(len(set(clustering.labels_))))
         labels = clustering.labels_
         
+    elif cells_clustering_alg == "dbscan":
+        logging.info("DBSCAN - n_cell_clusters_per_col_cluster: {}".format(n_cell_clusters_per_col_cluster))
+        clustering = DBSCAN(eps=0.5, min_samples=5).fit(x)
+        logging.info("DBSCAN - n_cell_clusters_generated: {}".format(len(set(clustering.labels_))))
+        labels = clustering.labels_
+
     elif cells_clustering_alg == "hac":
         logging.info("HAC - n_cell_clusters_per_col_cluster: {}".format(n_cell_clusters_per_col_cluster))
         clustering = AgglomerativeClustering(n_clusters = n_cell_clusters_per_col_cluster + 1).fit(x)
@@ -116,22 +124,36 @@ def sampling_labeling(table_cluster, cluster, x, y, n_cell_clusters_per_col_clus
         labels = scipy.cluster.hierarchy.fcluster(clustering, n_cell_clusters_per_col_cluster + 1, criterion="maxclust")
         logging.info("fast - n_cell_clusters_generated: {}".format(len(set(labels))))
         
-        
     cells_per_cluster = dict()
+    # TODO remove this
+    errors_per_cluster = dict()
     labels_per_cluster_all = dict()
     labels_per_cluster = dict()
 
     for cell in enumerate(labels):
         if cell[1] in cells_per_cluster.keys():
             cells_per_cluster[cell[1]].append(cell[0])
+            if y[cell[0]] == 1:
+                errors_per_cluster[cell[1]] += 1
         else:
             cells_per_cluster[cell[1]] = [cell[0]]
             labels_per_cluster_all[cell[1]] = []
+            errors_per_cluster[cell[1]] = y[cell[0]]
 
+    error_probability_dict = dict()
+    for cpc in cells_per_cluster.keys():
+        error_probability_dict[cpc] = (errors_per_cluster[cpc], errors_per_cluster[cpc] / len(cells_per_cluster[cpc]), len(cells_per_cluster[cpc]))
+    logger.info("error_probability_dict: {}".format(error_probability_dict))
+    with open('/home/fatemeh/ED-Scale/logs/errors_prob/error_probability_dict_table_cluster_{}_col_cluster{}.json'.format(str(table_cluster), str(cpc)), 'wb') as fp:
+        pickle.dump(error_probability_dict, fp)
+
+    
     samples = []
     sample_values = []
     samples_orig_values = []
+            
     if cells_clustering_alg == "km":
+        cells_per_cluster = dict(sorted(cells_per_cluster.items(), key=lambda x: x[1]))
         for cluster in cells_per_cluster.keys():
             center = clustering.cluster_centers_[cluster]
             cluster_points = np.array([x[idx] for idx in cells_per_cluster[cluster]])
@@ -146,6 +168,7 @@ def sampling_labeling(table_cluster, cluster, x, y, n_cell_clusters_per_col_clus
                 closest = closest[1:]
     else:
         logging.info("sampling_labeling - else")
+        cells_per_cluster = collections.OrderedDict(cells_per_cluster)
         for cluster in cells_per_cluster.keys():
             max_iter = 100
             while len(samples) < n_cell_clusters_per_col_cluster and max_iter > 0:
@@ -164,13 +187,13 @@ def sampling_labeling(table_cluster, cluster, x, y, n_cell_clusters_per_col_clus
         if cell[0] in samples:
             labels_per_cluster_all[cell[1]].append(y[cell[0]])
     
-    for cluster in labels_per_cluster_all.keys():
-        if len(labels_per_cluster_all[cluster]) > 0:
-            labels_per_cluster[cluster] = mode(labels_per_cluster_all[cluster])  
+    for c in labels_per_cluster_all.keys():
+        if len(labels_per_cluster_all[c]) > 0:
+            labels_per_cluster[c] = mode(labels_per_cluster_all[c])  
 
-    universal_samples = []
+    universal_samples = dict()
     for s in samples:
-        universal_samples.append((table_cluster, cluster, s))
+        universal_samples[(table_cluster, col_cluster, s)] = y[s]
 
     logger.info("labels_per_cluster: {}".format(labels_per_cluster))
     logger.info("samples: {}".format(samples_orig_values))
@@ -291,12 +314,10 @@ def generate_bigrams(chars):
     return bigrams
 
 def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir, output_path, results_path, n_labels, number_of_col_clusters, cluster_sizes, cell_clustering_alg):
-    
 
     logging.info("Starting error detection")
     original_data_keys = []
     unique_cells_local_index_collection = dict()
-    selected_samples = []
     predicted_all = dict()
     y_test_all = dict()
     y_local_cell_ids = dict()
@@ -304,6 +325,7 @@ def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir,
     y_labeled_by_user_all = dict()
     char_set_dict = dict()
     table_charset_dict = dict()
+    selected_samples = dict()
 
     n_cell_clusters_per_col_cluster_dict = get_n_cell_clusters_per_col_cluster_dict(n_labels, cluster_sizes, number_of_col_clusters)
     logging.info("n_cell_clusters_per_col_cluster_dict: {}".format(n_cell_clusters_per_col_cluster_dict))
@@ -351,7 +373,7 @@ def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir,
                 y_test, y_cell_ids, predicted, original_data_keys_temp, universal_samples, \
                 X_labeled_by_user, y_labeled_by_user, datacells_local_ids = \
                      process_col_cluster(n_cell_clusters_per_col_cluster_dict[(str(table_cluster), str(cluster))], table_cluster, cluster, group_df, features_dict, cell_clustering_alg)
-                selected_samples += universal_samples
+                selected_samples.update(universal_samples)
                 original_data_keys.extend(original_data_keys_temp)
 
                 X_labeled_by_user_all[(str(table_cluster), str(cluster))] = X_labeled_by_user
@@ -372,7 +394,7 @@ def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir,
         logger.info("Number of Labeled Cells: {}".format(len(selected_samples)))
 
     return y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
-                unique_cells_local_index_collection, len(selected_samples)
+                unique_cells_local_index_collection, selected_samples
 
 
 def classify(X_train, y_train, X_test):
