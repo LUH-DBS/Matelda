@@ -18,8 +18,8 @@ def evaluate_pyspark(
         result_path (str): _description_
     """
     spark = SparkSession.getActiveSession()
-    log4jLogger = spark._jvm.org.apache.log4j
-    logger = log4jLogger.LogManager.getLogger(__name__)
+    log4j_logger = spark._jvm.org.apache.log4j
+    logger = log4j_logger.LogManager.getLogger(__name__)
 
     metrics = MulticlassMetrics(
         y_predictions_df.join(labels_df, ["table_id", "column_id", "row_id"])

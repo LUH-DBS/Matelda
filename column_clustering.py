@@ -59,8 +59,8 @@ def column_clustering_pyspark(
     # TODO: split function into smaller parts
     if column_grouping_enabled == 1:
         spark = SparkSession.getActiveSession()
-        log4jLogger = spark._jvm.org.apache.log4j
-        logger = log4jLogger.LogManager.getLogger(__name__)
+        log4j_logger = spark._jvm.org.apache.log4j
+        logger = log4j_logger.LogManager.getLogger(__name__)
 
         if auto_clustering_enabled == 1:
             logger.warn("Clustering columns with AUTO_CLUSTERING")
@@ -149,14 +149,14 @@ def column_clustering_pyspark(
                         c_idx["table_cluster"]
                     )
                 )
-                dataset_cluster_column_feature_df = (
-                    dataset_cluster_column_df.rdd.mapPartitions(
-                        lambda row: create_feature_vector_partitioned(
-                            row,
-                            characters,
-                            tokens,
-                        )
-                    ).toDF(["table_id", "column_id", "table_cluster", "features"])
+                dataset_cluster_column_feature_df = dataset_cluster_column_df.rdd.mapPartitions(
+                    lambda row, characters=characters, tokens=tokens: create_feature_vector_partitioned(
+                        row,
+                        characters,
+                        tokens,
+                    )
+                ).toDF(
+                    ["table_id", "column_id", "table_cluster", "features"]
                 )
                 dataset_cluster_column_df.unpersist()
 

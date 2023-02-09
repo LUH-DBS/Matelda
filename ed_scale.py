@@ -166,8 +166,8 @@ if __name__ == "__main__":
     spark = SparkSession.builder.getOrCreate()
     # Workaround for logging. At log level INFO our log messages will be lost. Python's logging module does not work with pyspark.
     spark.sparkContext.setLogLevel("WARN")
-    log4jLogger = spark._jvm.org.apache.log4j
-    logger = log4jLogger.LogManager.getLogger(__name__)
+    log4j_logger = spark._jvm.org.apache.log4j
+    logger = log4j_logger.LogManager.getLogger(__name__)
     logger.warn("Pyspark initialized")
 
     logger.warn("Reading config")

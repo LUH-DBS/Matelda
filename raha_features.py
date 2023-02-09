@@ -40,8 +40,8 @@ def generate_raha_features_pyspark(
     """
     if cell_feature_generator_enabled == 1:
         spark = SparkSession.getActiveSession()
-        log4jLogger = spark._jvm.org.apache.log4j
-        logger = log4jLogger.LogManager.getLogger(__name__)
+        log4j_logger = spark._jvm.org.apache.log4j
+        logger = log4j_logger.LogManager.getLogger(__name__)
 
         logger.warn("Creating Raha features")
         raha_features_df = csv_paths_df.rdd.flatMap(
@@ -185,9 +185,7 @@ def run_strategies(self: raha.detection.Detection, d: raha.dataset.Dataset) -> N
                     )
 
             random.shuffle(algorithm_and_configurations)
-            # strategy_profiles_list = []
-            # for [d, algorithm, configuration] in algorithm_and_configurations:
-            #     strategy_profiles_list.append(_strategy_runner_process(d, [d, algorithm, configuration]))
+
             pool = multiprocessing.Pool()
             _strategy_runner_process_ = functools.partial(_strategy_runner_process, d)
             strategy_profiles_list = pool.map(
@@ -241,7 +239,7 @@ def generate_features(
                 feature_vectors = np.column_stack(
                     (feature_vectors, np.array(tfidf_features.todense()))
                 )
-            except:
+            except Exception:
                 pass
 
         if self.VERBOSE:
@@ -316,7 +314,7 @@ def _strategy_runner_process(self: raha.detection.Detection, args: List[Any]) ->
                 try:
                     if len(re.findall("[" + ch + "]", value, re.UNICODE)) > 0:
                         outputted_cells[(i, j)] = ""
-                except:
+                except Exception:
                     continue
     elif algorithm == "RVD":
         d_col_list = d.dataframe.columns.tolist()
