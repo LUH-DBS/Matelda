@@ -45,7 +45,6 @@ def error_detector_pyspark(
         n_labels=labeling_budget,
         seed=seed,
         logger=logger,
-        spark=spark,
     )
 
     logger.warn("Writing error dectection result to disk.")
