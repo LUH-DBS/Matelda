@@ -310,7 +310,7 @@ def _strategy_runner_process(self: raha.detection.Detection, args: List[Any]) ->
         ch = configuration
         for attribute in d.dataframe.columns:
             j = d.dataframe.columns.get_loc(attribute)
-            for i, value in d.dataframe[attribute].iteritems():
+            for i, value in d.dataframe[attribute].items():
                 try:
                     if len(re.findall("[" + ch + "]", value, re.UNICODE)) > 0:
                         outputted_cells[(i, j)] = ""
