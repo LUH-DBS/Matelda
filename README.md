@@ -5,9 +5,9 @@
 To create the conda-env use:
 
 ```bash
-conda env create -f environment.yml
-conda activate Error-Detection-at-Scale
+git clone https://github.com/LUH-DBS/ED-Scale.git
 chmod +x ED-SCALE.sh
+./ED-SCALE.sh install
 ```
 
 Running the code on the example dataset:

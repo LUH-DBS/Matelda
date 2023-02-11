@@ -1,7 +1,7 @@
 case $1 in
 
   'run')
-      spark-submit --properties-file Configs/spark-defaults.conf ed_scale.py
+      conda run --no-capture-output  -n Error-Detection-at-Scale spark-submit --properties-file Configs/spark-defaults.conf ed_scale.py
     ;;
 
   'format')
@@ -10,10 +10,6 @@ case $1 in
 
   'install')
     conda env create -f environment.yml
-    ;;
-
-  'activate')
-    conda activate Error-Detection-at-Scale
     ;;
 
   'remove')
