@@ -9,7 +9,7 @@ case $1 in
     ;;
 
   'install')
-    conda env create -f edatscale-env.yml
+    conda env create -f environment.yml
     ;;
 
   'activate')

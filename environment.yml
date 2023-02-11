@@ -1,18 +1,18 @@
 name: Error-Detection-at-Scale
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - python=3.9
   - gensim
   - pandas
   - scikit-learn
-  - pyspark
-  - xgboost[version='>=1.7.0']
+  - pyspark >=3.3.0
   - nltk
-  - mkl
+  - numpy
   - pip
   - black
+  - openjdk
   - pip:
-    - openclean-core==0.4.1
     - raha==1.25
     - git+https://github.com/okfn/messytables.git@master
