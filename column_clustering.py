@@ -182,7 +182,7 @@ def column_clustering_pyspark(
                 )
 
                 dataset_cluster_column_feature_df.unpersist()
-                prediction_dfs.append(column_cluster_prediction_df)
+                prediction_dfs.append(column_cluster_prediction_df.persist())
 
             column_df = reduce(DataFrame.unionAll, prediction_dfs).select(
                 col("table_id"), col("column_id"), col("col_cluster")
@@ -354,7 +354,7 @@ def generate_empty_column_df(row: Row) -> List:
     column_list = []
 
     for c_idx in range(len(dirty_df.columns)):
-        column_list.apped([row.table_id, c_idx, 0])
+        column_list.append([row.table_id, c_idx, 0])
 
     return column_list
 

@@ -85,8 +85,8 @@ def cluster_datasets_pyspark(
     """
     if table_grouping_enabled == 1:
         spark = SparkSession.getActiveSession()
-        log4jLogger = spark._jvm.org.apache.log4j
-        logger = log4jLogger.LogManager.getLogger(__name__)
+        log4j_logger = spark._jvm.org.apache.log4j
+        logger = log4j_logger.LogManager.getLogger(__name__)
 
         nltk.download("stopwords")
 
@@ -100,8 +100,8 @@ def cluster_datasets_pyspark(
             # TODO: reduce partition because otherwise out of memory
             context_df = (
                 csv_paths_df.rdd.repartition(
-                    40
-                    if csv_paths_df.rdd.getNumPartitions() > 50
+                    30
+                    if csv_paths_df.rdd.getNumPartitions() > 1
                     else csv_paths_df.rdd.getNumPartitions()
                 )
                 .mapPartitions(lambda row: create_table_context(row, model))
@@ -123,7 +123,7 @@ def cluster_datasets_pyspark(
 
             logger.warn(
                 "{} table clusters created".format(
-                    table_cluster_df.select("table_cluster").distict().collect()
+                    table_cluster_df.select("table_cluster").distinct().count()
                 )
             )
             context_df.unpersist()
