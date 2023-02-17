@@ -1,3 +1,4 @@
+import hashlib
 import json
 import logging
 
@@ -24,6 +25,10 @@ from ds_utils.config import set_display_options, set_random_seed
 from ds_utils.clustering import Tokenizer, load_data, clean_news_data, vectorize, mbkmeans_clusters
 
 import gensim.downloader as api
+from sklearn.feature_extraction.text import TfidfVectorizer
+from simhash import Simhash
+from scipy.spatial import distance
+
 
 # TODO check the state of the art for doc clustering. Why not using BERT or something like that? 
 def get_column_content(df_col):
@@ -90,13 +95,20 @@ def clean_text(text, tokenizer, stopwords):
     )  # Remove punctuation
 
     tokens = tokenizer(text)  # Get tokens from text
+    tokens = [t.encode('ascii', errors='ignore').decode("utf-8") for t in tokens]  # Remove non-ascii characters
+    for i in range(len(tokens)):
+        for t in tokens[i]:
+            if t in string.punctuation:
+                tokens[i].replace(t, '')
+            if t.isdigit():
+                tokens[i].replace(t, '')
     tokens = [t for t in tokens if t not in stopwords]  # Remove stopwords
     tokens = ["" if t.isdigit() else t for t in tokens]  # Remove digits
     tokens = [t for t in tokens if len(t) > 1]  # Remove short tokens
     return tokens
 
 
-def vectorize(list_of_docs, model):
+def vectorize(list_of_docs, tf_idf_res, model):
     """Generate vectors for list of documents using a Word Embedding
 
     Args:
@@ -108,23 +120,69 @@ def vectorize(list_of_docs, model):
     """
     features = []
 
-    for tokens in list_of_docs:
+    for i in range(len(list_of_docs)):
+        tokens = list_of_docs[i].split()
+        weights = tf_idf_res[i]
         zero_vector = np.zeros(model.vector_size)
         vectors = []
-        for token in tokens:
-            if token in model:
+        vectors_weights = []
+        
+        for j in range(len(tokens)):
+            if tokens[j] in model and len(tokens[j]) > 1:
                 try:
-                    vectors.append(model[token])
-                except KeyError:
-                    continue
+                    vectors.append(model[tokens[j]])
+                    vectors_weights.append(weights[tokens[j]])
+                except KeyError as e:
+                    print(e)
         if vectors:
-            vectors = np.asarray(vectors)
-            avg_vec = vectors.mean(axis=0)
+            # weighted_features = []
+            # for v_idx in range(len(vectors)):
+            #     weighted_features.append(vectors[v_idx] * vectors_weights[v_idx])
+            # weighted_features = np.asarray(weighted_features)
+            # avg_vec = weighted_features.mean(axis=0)
+            avg_vec = np.average(vectors, weights=vectors_weights, axis=0)
             features.append(avg_vec)
         else:
             features.append(zero_vector)
     return features
 
+def tfidf(list_of_docs):
+    non_tokenized_docs = []
+    for i in range(len(list_of_docs)):
+        non_tokenized_docs.append(' '.join(list_of_docs[i]))
+    vectorizer = TfidfVectorizer(
+    stop_words= None)
+
+    X = vectorizer.fit_transform(non_tokenized_docs)
+    doc_word_tfidf_dicts = []
+    for doc in non_tokenized_docs:
+        X = vectorizer.transform([doc])
+        word_tfidf_dict = {}
+        feature_names = vectorizer.vocabulary_
+        for i, word in enumerate(doc.split()):
+            word_tfidf_dict[word] = X[0, feature_names[word]]
+        doc_word_tfidf_dicts.append(word_tfidf_dict)
+
+    return doc_word_tfidf_dicts, X.toarray()
+
+def simhash(doc_tokens, doc_word_tfidf_dict):
+    """
+    Calculates the Simhash of a given text using TF-IDF weights.
+    """
+    v = [0] * 64
+    for token in doc_tokens:
+        hash_value = int(hashlib.sha1(token.encode('utf-8')).hexdigest(), 16)
+        weight = doc_word_tfidf_dict[token]
+        for i in range(64):
+            if hash_value & (1 << i):
+                v[i] += weight
+            else:
+                v[i] -= weight
+    simhash = 0
+    for i in range(64):
+        if v[i] >= 0:
+            simhash |= (1 << i)
+    return simhash
 
 def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
     logger = logging.getLogger()
@@ -166,10 +224,25 @@ def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
         # TODO: embedding model and DBSCAN params in config file
         # model = Word2Vec(sentences=tokenized_docs, vector_size=100, workers=1, seed=42)
         logger.info("Loading Word2Vec model...")
-        model = api.load('word2vec-google-news-300')
-        vectorized_docs = vectorize(tokenized_docs, model=model)
-        clustering = DBSCAN(eps=0.5, min_samples=5).fit(vectorized_docs)
-        cluster_labels = clustering.labels_
+        # model = api.load('word2vec-google-news-300')
+        # tf_idf_res = tfidf(tokenized_docs)
+        # vectorized_docs = vectorize(tokenized_docs, tf_idf_res, model=model)
+        # vectorized_docs_2 = get_hashed_features(docs)
+        # clustering = DBSCAN(eps=0.2, min_samples=2).fit(vectorized_docs) 
+        # clustering = MiniBatchKMeans(n_clusters=4).fit(vectorized_docs)
+        # cluster_labels = clustering.labels_
+
+        doc_word_tfidf_dicts, dense_matrix = tfidf(tokenized_docs)
+        simhashes = [simhash(tokenized_docs[i], doc_word_tfidf_dicts[i]) for i in range(len(tokenized_docs))]
+        hamming_distances = dict()
+        for i in range(len(simhashes)):
+            for j in range(i+1, len(simhashes)):
+                bin_1 = bin(simhashes[i])[2:].zfill(64)
+                bin_2 = bin(simhashes[j])[2:].zfill(64)
+                distance_ = distance.hamming(list(bin_1), list(bin_2))
+                hamming_distances[(i, j)] = distance_
+        print(hamming_distances)
+        return 0
     else:
         logger.info("Auto clustering is disabled")
         cluster_labels = np.ones(len(tokenized_docs)).tolist()

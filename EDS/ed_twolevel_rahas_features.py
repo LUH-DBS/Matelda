@@ -8,8 +8,10 @@ import random
 import numpy as np
 import pandas as pd
 import scipy
+from sklearn import manifold
 from sklearn.cluster import DBSCAN, KMeans, MiniBatchKMeans
 from sklearn.cluster import AgglomerativeClustering
+from sklearn.decomposition import PCA
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.metrics import pairwise_distances_argmin_min
@@ -25,7 +27,10 @@ import sys
 from statistics import mode
 import ed_twolevel_rahas_features
 import fastcluster
-
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn import manifold
+from MulticoreTSNE import MulticoreTSNE as TSNE
 
 logger = logging.getLogger()
 
@@ -53,12 +58,15 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict):
                     path = os.path.join(table_dirs_path, table)
 
                     dirty_df = pd.read_csv(path + "/dirty_clean.csv", sep=",", header="infer", encoding="utf-8", dtype=str,
+                                        keep_default_na=False,
                                         low_memory=False)
                     dirty_df = dirty_df.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
+                    dirty_df = dirty_df.replace('', 'NULL')
                     
                     clean_df = pd.read_csv(path + "/" + "clean.csv", sep=",", header="infer", encoding="utf-8",
-                                        dtype=str, low_memory=False)
+                                        dtype=str, keep_default_na=False, low_memory=False)
                     clean_df = clean_df.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
+                    clean_df = clean_df.replace('', 'NULL')
 
                     # TODO
                     
@@ -91,11 +99,14 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict):
 
 
 def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg, value_temp):
+    visulaize_cell_group(x, y, str(table_cluster) + "_" + str(col_cluster))
     logger.info("sampling_labeling")
     clustering = None 
 
     if cells_clustering_alg == "km":
         logging.info("KMeans - n_cell_clusters_per_col_cluster: {}".format(n_cell_clusters_per_col_cluster))
+        if len(x) < n_cell_clusters_per_col_cluster + 1:
+            n_cell_clusters_per_col_cluster = len(x) - 1 
         clustering = MiniBatchKMeans(n_clusters=n_cell_clusters_per_col_cluster + 1, random_state=0, reassignment_ratio=0, batch_size = 256 * 64).fit(x)
         logging.info("KMeans - n_cell_clusters_generated: {}".format(len(set(clustering.labels_))))
         labels = clustering.labels_
@@ -197,8 +208,78 @@ def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_
 
     logger.info("labels_per_cluster: {}".format(labels_per_cluster))
     logger.info("samples: {}".format(samples_orig_values))
+    # visualize_cell_clusters(x, y, cells_per_cluster, samples)
     return cells_per_cluster, labels_per_cluster, universal_samples, samples
 
+# def visualize_cell_clusters(x, y, cells_per_cluster, samples):
+#     logger.info("visualize_cell_clusters")
+#     pca = PCA(n_components=2, svd_solver='full')
+#     logger.info("pca fit_transform")
+#     # fit and transform
+#     mnist_tr = pca.fit_transform(x)
+#     cps_df = pd.DataFrame(columns=['CP1', 'CP2', 'target'],
+#                        data=np.column_stack((mnist_tr, y)))
+
+#     cps_df.loc[:, 'target'] = cps_df.target.astype(int)
+#     d = {0: 'correct', 1: 'error'}
+#     cps_df.loc[:, 'target'] = cps_df.target.map(d)
+
+#     fig, ax = plt.subplots()
+
+#     for cell_cluster in cells_per_cluster.keys():
+#         cell_cluster_name = "cell_cluster_{}".format(cell_cluster)
+#         logger.info("cell_cluster_name: {}".format(cell_cluster_name))
+#         points = get_points_of_cell_cluster(mnist_tr, cells_per_cluster, cell_cluster)
+#         plt.scatter(points[:,0] , points[:,1] , color = 'red')
+#         ax.scatter(points[:, 0], points[:, 1], edgecolors='black', facecolors='none', s=200, label=f'Cluster {cell_cluster}')
+#         # ax.scatter(points[i, 0], points[i, 1], marker='o', c='red', s=100, edgecolors='black')
+    
+#     ax.legend()
+#     plt.show()
+
+
+    # grid = sns.FacetGrid(cps_df, hue="target")
+    # fig = grid.map(plt.scatter, 'CP1', 'CP2').add_legend()
+    # fig.savefig(os.path.join('/home/fatemeh/ED-Scale/logs/cell_clusters/{}.png'.format(cell_cluster_name)))
+    return 
+
+def get_points_of_cell_cluster(x, cells_per_cluster, cell_cluster):
+    logger.info("get_points_of_cell_cluster {}".format(cell_cluster))
+    points = []
+    for cell in cells_per_cluster[cell_cluster]:
+        points.append(x[cell])
+    return points
+
+def visulaize_cell_group(x, y, name):
+    #logger.info("x: {}".format(x))
+    n_features = len(x[0])
+    logger.info("n_features: {}".format(n_features))
+    logger.info("visualize_cell_group name {}".format(name))
+    logger.info("converting x to numpy array")
+    x = np.array(x)
+    logger.info("x[0]: {}".format(x[0]))
+    logger.info("x.shape: {}".format(x.shape))
+    logger.info("converting y to numpy array")
+    y = np.array(y)
+
+    logger.info("pca")
+    # dimensionality reduction using t-SNE
+    pca = PCA(n_components=2, svd_solver='full')
+
+    logger.info("pca fit_transform")
+    # fit and transform
+    mnist_tr = pca.fit_transform(x)
+    logger.info("mnist_tr.shape: {}".format(mnist_tr.shape))
+    cps_df = pd.DataFrame(columns=['CP1', 'CP2', 'target'],
+                       data=np.column_stack((mnist_tr, y)))
+
+    cps_df.loc[:, 'target'] = cps_df.target.astype(int)
+    d = {0: 'correct', 1: 'error'}
+    cps_df.loc[:, 'target'] = cps_df.target.map(d)
+    grid = sns.FacetGrid(cps_df, hue="target")
+    fig = grid.map(plt.scatter, 'CP1', 'CP2').add_legend()
+    fig.savefig(os.path.join('/home/fatemeh/ED-Scale/outputs/complete-0802/check_col_groups_without_header/{}.png'.format(name)))
+    return
 
 def get_train_test_sets(X_temp, y_temp, samples, cells_per_cluster, labels_per_cluster):
     logger.info("Train-Test set preparation")
@@ -233,14 +314,19 @@ def get_n_cell_clusters_per_col_cluster_dict(n_labels, cluster_sizes, number_of_
     number_of_all_col_clusters = sum(number_of_col_clusters.values())
     assigned_labels = 0
     init_n_labels = n_labels
+    n_cells = 0
+    for table_cluster in cluster_sizes.keys():
+        for col_cluster in cluster_sizes[table_cluster].keys():
+            n_cells += cluster_sizes[table_cluster][col_cluster]
 
     n_cell_clusters_per_col_cluster_dict = dict()
 
     for table_cluster in cluster_sizes.keys():
         for col_cluster in cluster_sizes[table_cluster].keys():
-             n_cell_clusters_per_col_cluster_dict[(table_cluster, col_cluster)] = 0
+             n_cell_clusters_per_col_cluster_dict[(table_cluster, col_cluster)] = \
+                max(2, math.floor(init_n_labels * cluster_sizes[table_cluster][col_cluster] / n_cells))
              
-    
+    assigned_labels = sum(n_cell_clusters_per_col_cluster_dict.values())
     while assigned_labels < init_n_labels:
         n_labels -= assigned_labels
         n_cell_clusters_per_col_cluster = math.floor(n_labels / number_of_all_col_clusters)
@@ -355,7 +441,7 @@ def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir,
         features_dict = ed_twolevel_rahas_features.get_cells_features(sandbox_path, output_path, table_charset_dict)
         logger.info("Generating cell features started.")
     else:
-        with open("/home/fatemeh/ED-Scale/Sandbox_Generation/data-gov-output/without_col_name/features.pkl", 'rb') as pickle_file:
+        with open("/home/fatemeh/ED-Scale/outputs/complete-0802/check_col_groups_without_header/features.pkl", 'rb') as pickle_file:
             features_dict = pickle.load(pickle_file)
     # TODO
         # with open(os.path.join(output_path, configs["DIRECTORIES"]["cell_features_filename"]), 'rb') as file:
