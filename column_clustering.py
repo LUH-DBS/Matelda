@@ -135,22 +135,22 @@ def column_clustering_pyspark(
                     total_columns_table_group,
                     total_cells_table_group,
                 )
-                logger.warn(
-                    "Table cluster {}: columns: {}, cells: {}, expected column cluster: {}".format(
-                        c_idx["table_cluster"],
-                        total_columns_table_group,
-                        total_cells_table_group,
-                        num_col_cluster,
-                    )
-                )
+                # logger.warn(
+                #     "Table cluster {}: columns: {}, cells: {}, expected column cluster: {}".format(
+                #         c_idx["table_cluster"],
+                #         total_columns_table_group,
+                #         total_cells_table_group,
+                #         num_col_cluster,
+                #     )
+                # )
 
                 logger.warn(
                     "Table cluster {}: Creating column feature vectors".format(
                         c_idx["table_cluster"]
                     )
                 )
-                dataset_cluster_column_feature_df = dataset_cluster_column_df.rdd.mapPartitions(
-                    lambda row, characters=characters, tokens=tokens: create_feature_vector_partitioned(
+                dataset_cluster_column_feature_df = dataset_cluster_column_df.rdd.map(
+                    lambda row, characters=characters, tokens=tokens: create_feature_vector(
                         row,
                         characters,
                         tokens,
@@ -161,9 +161,8 @@ def column_clustering_pyspark(
                 dataset_cluster_column_df.unpersist()
 
                 logger.warn(
-                    "Table cluster {}: Clustering {} columns".format(
+                    "Table cluster {}: Clustering columns".format(
                         c_idx["table_cluster"],
-                        dataset_cluster_column_feature_df.count(),
                     )
                 )
                 column_cluster_prediction_df = cluster_columns(
@@ -173,16 +172,13 @@ def column_clustering_pyspark(
                 )
 
                 logger.warn(
-                    "Table cluster {}: {} column clusters created".format(
+                    "Table cluster {}: Column clusters created".format(
                         c_idx["table_cluster"],
-                        column_cluster_prediction_df.select("col_cluster")
-                        .distinct()
-                        .collect(),
                     )
                 )
 
                 dataset_cluster_column_feature_df.unpersist()
-                prediction_dfs.append(column_cluster_prediction_df.persist())
+                prediction_dfs.append(column_cluster_prediction_df)
 
             column_df = reduce(DataFrame.unionAll, prediction_dfs).select(
                 col("table_id"), col("column_id"), col("col_cluster")
@@ -204,9 +200,9 @@ def column_clustering_pyspark(
         column_df.write.parquet(column_groups_path, mode="overwrite")
 
 
-def create_feature_vector_partitioned(
-    partitioned_rows: List[Row], characters: List[str], tokens: List[str]
-) -> Generator[Row, None, None]:
+def create_feature_vector(
+    row: Row, characters: List[str], tokens: List[str]
+) -> Row:
     """_summary_
 
     Args:
@@ -215,22 +211,21 @@ def create_feature_vector_partitioned(
         tokens (List[str]): _description_
 
     Returns:
-        Generator[Row, None, None]: _description_
+        Generator Row: _description_
     """
-    for row in partitioned_rows:
-        char_dict = Counter(row.characters_counter)
-        token_dict = Counter(row.characters_counter)
-        char_list = [char_dict[ch] for ch in characters]
-        token_list = [token_dict[to] for to in tokens]
-        # TODO: returning char_list and token_list leads to "WARN DAGScheduler: Broadcasting large task binary with size 19.7 MiB"
-        yield [
-            row.table_id,
-            row.column_id,
-            row.table_cluster,
-            Vectors.dense(
-                char_list + token_list + [row.column_type] + [row.median_value_length]
-            ),
-        ]
+    char_dict = Counter(row.characters_counter)
+    token_dict = Counter(row.characters_counter)
+    char_list = [char_dict[ch] for ch in characters]
+    token_list = [token_dict[to] for to in tokens]
+    # TODO: returning char_list and token_list leads to "WARN DAGScheduler: Broadcasting large task binary with size 19.7 MiB"
+    return [
+        row.table_id,
+        row.column_id,
+        row.table_cluster,
+        Vectors.dense(
+            char_list + token_list + [row.column_type] + [row.median_value_length]
+        ),
+    ]
 
 
 def cluster_columns(
@@ -253,11 +248,7 @@ def cluster_columns(
     bkmeans_model = bkmeans.fit(col_df)
     predictions = bkmeans_model.transform(col_df)
 
-    return col_df.join(
-        predictions.select("table_id", "column_id", "prediction"),
-        ["table_id", "column_id"],
-        how="inner",
-    ).withColumnRenamed("prediction", "col_cluster")
+    return predictions.select("table_id", "column_id", "prediction").withColumnRenamed("prediction", "col_cluster")
 
 
 def generate_column_df(row: Row) -> List:
