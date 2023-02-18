@@ -15,7 +15,7 @@ from raha_features import generate_raha_features_pyspark
 
 def run_experiments(
     exp_name: str,
-    exp_number: int,
+    exp_num: int,
     labeling_budget: int,
     config: ConfigParser,
 ) -> None:
@@ -23,13 +23,13 @@ def run_experiments(
 
     Args:
         exp_name (str): _description_
-        exp_number (int): _description_
+        exp_num (int): _description_
         labeling_budget (int): _description_
         config (ConfigParser): _description_
     """
     logger.warn("Creating experiment output directory")
     experiment_output_path = os.path.join(config["DIRECTORIES"]["output_dir"], exp_name)
-    experiment_output_path = os.path.join(experiment_output_path, str(exp_number))
+    experiment_output_path = os.path.join(experiment_output_path, str(exp_num))
     if not os.path.exists(experiment_output_path):
         os.makedirs(experiment_output_path)
 
@@ -128,7 +128,7 @@ def run_experiments(
     error_prediction_path = os.path.join(
         os.path.join(
             experiment_output_path,
-            f"results_exp_{exp_number}_labels_{labeling_budget}",
+            f"results_exp_{exp_num}_labels_{labeling_budget}",
         ),
         "error_predictions.parquet",
     )
@@ -150,14 +150,15 @@ def run_experiments(
         spark.read.parquet(label_path),
         result_path=os.path.join(
             experiment_output_path,
-            f"results_exp_{exp_number}_labels_{labeling_budget}",
+            f"results_exp_{exp_num}_labels_{labeling_budget}",
         ),
     )
 
 
 if __name__ == "__main__":
     spark = SparkSession.builder.getOrCreate()
-    # Workaround for logging. At log level INFO our log messages will be lost. Python's logging module does not work with pyspark.
+    # Workaround for logging. At log level INFO our log messages will be lost.
+    # Python's logging module does not work with pyspark.
     spark.sparkContext.setLogLevel("WARN")
     log4j_logger = spark._jvm.org.apache.log4j
     logger = log4j_logger.LogManager.getLogger(__name__)
@@ -188,7 +189,7 @@ if __name__ == "__main__":
             run_experiments(
                 exp_name=configs["EXPERIMENTS"]["exp_name"],
                 labeling_budget=number_of_labels,
-                exp_number=exp_number,
+                exp_num=exp_number,
                 config=configs,
             )
             experiment_end_time = time.time()

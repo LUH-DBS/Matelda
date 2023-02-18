@@ -39,7 +39,5 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
         schema=["table_id", "dirty_path", "clean_path", "table_name", "parent"],
     )
 
-    logger.warn(
-        f"Partitions csv_paths_df: {csv_paths_df.rdd.getNumPartitions()}"
-    )
+    logger.warn(f"Partitions csv_paths_df: {csv_paths_df.rdd.getNumPartitions()}")
     return csv_paths_df

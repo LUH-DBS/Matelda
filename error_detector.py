@@ -86,9 +86,7 @@ def predict_errors(
 
     # TODO: is here an way to espress this in pyspark?
     for t_idx, c_idx in sorted(cluster_combinations):
-        logger.warn(
-            f"Table cluster {t_idx}, column cluster {c_idx}: Start processing"
-        )
+        logger.warn(f"Table cluster {t_idx}, column cluster {c_idx}: Start processing")
         cluster_df = x_all_df.where(
             (x_all_df.col_cluster == c_idx) & (x_all_df.table_cluster == t_idx)
         )
@@ -111,9 +109,7 @@ def predict_errors(
             f"Table cluster {t_idx}, column cluster {c_idx}: Created {cluster_samples_df.count()} label cluster"
         )
 
-        logger.warn(
-            f"Table cluster {t_idx}, column cluster {c_idx}: Label propagation"
-        )
+        logger.warn(f"Table cluster {t_idx}, column cluster {c_idx}: Label propagation")
 
         cluster_df = label_propagation(
             cluster_df, cluster_samples_df, sampling_prediction_df
@@ -132,9 +128,7 @@ def predict_errors(
             cluster_df,
         )
 
-        logger.warn(
-            f"Table cluster {t_idx}, column cluster {c_idx}: Predicting errors"
-        )
+        logger.warn(f"Table cluster {t_idx}, column cluster {c_idx}: Predicting errors")
         predictions.append(gb_classifier_model.transform(cluster_df))
 
     return reduce(DataFrame.unionAll, predictions)

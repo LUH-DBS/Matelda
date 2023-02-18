@@ -14,7 +14,7 @@ from pyspark.sql.types import Row
 from sklearn.cluster import DBSCAN
 
 
-def clean_text(text, tokenizer, stopwords) -> List[str]:
+def clean_text(text, tokenizer, stopword) -> List[str]:
     """Pre-process text and generate tokens
 
     Args:
