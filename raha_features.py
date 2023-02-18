@@ -1,30 +1,30 @@
-from typing import Any, Dict, List, Tuple
-import numpy as np
-import pandas as pd
-
-import raha
-import time
-import json
+import functools
 import hashlib
+import itertools
+import json
+import multiprocessing
 import os
 import pickle
-import re
-import itertools
-import functools
 import random
+import re
 import sys
-import sklearn
 import tempfile
-import string
-import multiprocessing
+import time
+from typing import Any, Dict, List, Tuple
 
+import numpy as np
+import pandas as pd
+import raha
+import sklearn
+from pyspark.ml.linalg import Vectors
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.types import Row
-from pyspark.ml.linalg import Vectors
 
 
 def generate_raha_features_pyspark(
     csv_paths_df: DataFrame,
+    grouped_column_groups_df: DataFrame,
+    column_grouping_df: DataFrame,
     raha_features_path: str,
     cell_feature_generator_enabled: int,
 ) -> None:
@@ -32,6 +32,7 @@ def generate_raha_features_pyspark(
 
     Args:
         csv_paths_df (DataFrame): _description_
+        grouped_column_groups_df (DataFrame): _description_
         raha_features_path (str): _description_
         cell_feature_generator_enabled (int): _description_
 
@@ -44,12 +45,15 @@ def generate_raha_features_pyspark(
         logger = log4j_logger.LogManager.getLogger(__name__)
 
         logger.warn("Creating Raha features")
-        raha_features_df = csv_paths_df.rdd.flatMap(
-            lambda row: generate_raha_features(row)
-        ).toDF(["table_id", "column_id", "row_id", "features"])
-
         logger.warn("Writing Raha features to file")
-        raha_features_df.write.parquet(raha_features_path, mode="overwrite")
+
+        csv_paths_df.join(grouped_column_groups_df, "table_id", "inner").rdd.flatMap(
+            generate_raha_features
+        ).toDF(["table_id", "column_id", "row_id", "features"]).join(
+            column_grouping_df, ["table_id", "column_id"], "inner"
+        ).write.parquet(
+            raha_features_path, mode="overwrite"
+        )
 
 
 def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
@@ -76,7 +80,7 @@ def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
     d.VERBOSE = False
     d.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD", "TFIDF"]
 
-    run_strategies(detect, d)
+    run_strategies(detect, d, row.characters)
     generate_features(detect, d)
 
     feature_list = []
@@ -104,12 +108,15 @@ def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
 # TODO: Mark this code part as adapted code from raha (Apache License 2.0 (4b) requires this )
 
 
-def run_strategies(self: raha.detection.Detection, d: raha.dataset.Dataset) -> None:
+def run_strategies(
+    self: raha.detection.Detection, d: raha.dataset.Dataset, char_set: List[str]
+) -> None:
     """This method runs (all or the promising) strategies.
 
     Args:
         self (raha.detection.Detection): _description_
         d (raha.dataset.Dataset): _description_
+        char_set (List[str]): _description_
     """
     sp_folder_path = os.path.join(d.results_folder, "strategy-profiling")
     if not self.STRATEGY_FILTERING:
@@ -162,7 +169,7 @@ def run_strategies(self: raha.detection.Detection, d: raha.dataset.Dataset) -> N
                     )
                 elif algorithm_name == "PVD":
                     configuration_list = []
-                    characters_dictionary = {ch: 1 for ch in string.printable}
+                    characters_dictionary = {ch: 1 for ch in char_set}
                     for ch in characters_dictionary:
                         configuration_list.append([ch])
                     algorithm_and_configurations.extend(

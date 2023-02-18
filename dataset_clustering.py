@@ -1,13 +1,13 @@
 import re
 import string
-from typing import List, Generator
+from typing import Generator, List
 
 import gensim.downloader as api
 import nltk
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
 import numpy as np
 import pandas as pd
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.functions import col, lit
 from pyspark.sql.types import Row
@@ -62,8 +62,7 @@ def vectorize(tokens, model):
         vectors = np.asarray(vectors)
         avg_vec = vectors.mean(axis=0)
         return avg_vec
-    else:
-        return zero_vector
+    return zero_vector
 
 
 def cluster_datasets_pyspark(
@@ -100,8 +99,8 @@ def cluster_datasets_pyspark(
             # TODO: reduce partition because otherwise out of memory
             context_df = (
                 csv_paths_df.rdd.repartition(
-                    30
-                    if csv_paths_df.rdd.getNumPartitions() > 1
+                    40
+                    if csv_paths_df.rdd.getNumPartitions() > 50
                     else csv_paths_df.rdd.getNumPartitions()
                 )
                 .mapPartitions(lambda row: create_table_context(row, model))
@@ -113,7 +112,7 @@ def cluster_datasets_pyspark(
             # TODO: Use an implementation for pyspark
             X = context_df.toPandas()
 
-            logger.warn("DBSCAN clustering {} tables".format(len(X)))
+            logger.warn(f"DBSCAN clustering {len(X)} tables")
             clustering = DBSCAN(eps=0.5, min_samples=5, n_jobs=-1).fit(
                 X["vectorized_docs"].tolist()
             )
@@ -122,9 +121,7 @@ def cluster_datasets_pyspark(
             table_cluster_df = spark.createDataFrame(X[["table_id", "table_cluster"]])
 
             logger.warn(
-                "{} table clusters created".format(
-                    table_cluster_df.select("table_cluster").distinct().count()
-                )
+                f"{table_cluster_df.select('table_cluster').distinct().count()} table clusters created"
             )
             context_df.unpersist()
 

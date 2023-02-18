@@ -3,7 +3,7 @@ import math
 from functools import reduce
 from itertools import chain
 from statistics import median
-from typing import Counter, List, Tuple, Generator
+from typing import Counter, List
 
 import pandas as pd
 from messytables import CSVTableSet, type_guess
@@ -13,12 +13,12 @@ from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.functions import col
 from pyspark.sql.functions import sum as sparksum
 from pyspark.sql.types import (
-    Row,
-    StructType,
-    StructField,
-    IntegerType,
-    StringType,
     ArrayType,
+    IntegerType,
+    Row,
+    StringType,
+    StructField,
+    StructType,
 )
 
 type_dicts = {
@@ -37,6 +37,7 @@ def column_clustering_pyspark(
     csv_paths_df: DataFrame,
     table_cluster_df: DataFrame,
     column_groups_path: str,
+    grouped_column_groups_path: str,
     column_grouping_enabled: int,
     auto_clustering_enabled: int,
     labeling_budget: int,
@@ -48,6 +49,7 @@ def column_clustering_pyspark(
         csv_paths_df (DataFrame): _description_
         table_cluster_df (DataFrame): _description_
         column_groups_path (str): _description_
+        grouped_column_groups_path (str): _description_
         column_grouping_enabled (int): _description_
         auto_clustering_enabled (int): _description_
         labeling_budget (int): _description_
@@ -68,30 +70,32 @@ def column_clustering_pyspark(
             logger.warn("Creating column features")
             prediction_dfs = []
             column_df = (
-                csv_paths_df.rdd.flatMap(lambda row: generate_column_df(row))
-                .toDF(
-                    [
-                        "table_id",
-                        "column_id",
-                        "column_type",
-                        "characters_counter",
-                        "tokens_counter",
-                        "median_value_length",
-                        "cells",
-                    ]
+                (
+                    csv_paths_df.rdd.flatMap(lambda row: generate_column_df(row))
+                    .toDF(
+                        [
+                            "table_id",
+                            "column_id",
+                            "column_type",
+                            "characters_counter",
+                            "tokens_counter",
+                            "median_value_length",
+                            "cells",
+                        ]
+                    )
+                    .fillna({"median_value_length": 0})
                 )
-                .fillna({"median_value_length": 0})
+                .join(table_cluster_df, "table_id", "inner")
+                .persist()
             )
 
-            column_df = column_df.join(table_cluster_df, "table_id", "inner")
-
-            grouped_cols_df = (
+            grouped_tables_df = (
                 column_df.select(
                     "table_cluster", "characters_counter", "tokens_counter", "cells"
                 )
                 .groupby("table_cluster")
                 .applyInPandas(
-                    group_column_features,
+                    group_column_features_per_table_cluster,
                     schema=StructType(
                         [
                             StructField("table_cluster", IntegerType(), False),
@@ -104,30 +108,27 @@ def column_clustering_pyspark(
                         ]
                     ),
                 )
-            )
-            total_cells = grouped_cols_df.select(
-                sparksum(grouped_cols_df.cells)
+            ).persist()
+
+            total_cells = grouped_tables_df.select(
+                sparksum(grouped_tables_df.cells)
             ).collect()[0][0]
 
-            for c_idx in grouped_cols_df.select("table_cluster").distinct().collect():
+            for c_idx in grouped_tables_df.select("table_cluster").distinct().collect():
                 logger.warn(
                     "Table cluster {}: Processing columns".format(
                         c_idx["table_cluster"]
                     )
                 )
 
-                dataset_cluster_column_df = column_df.where(
-                    column_df.table_cluster == c_idx["table_cluster"]
-                )
-                dataset_cluster_column_grouped_df = grouped_cols_df.where(
-                    grouped_cols_df.table_cluster == c_idx["table_cluster"]
+                dataset_cluster_column_grouped_df = grouped_tables_df.where(
+                    grouped_tables_df.table_cluster == c_idx["table_cluster"]
                 ).collect()
 
                 characters = dataset_cluster_column_grouped_df[0].characters
                 tokens = dataset_cluster_column_grouped_df[0].tokens
                 total_cells_table_group = dataset_cluster_column_grouped_df[0].cells
                 total_columns_table_group = dataset_cluster_column_grouped_df[0].columns
-                del dataset_cluster_column_grouped_df
 
                 num_col_cluster = specify_num_col_clusters(
                     total_cells,
@@ -135,30 +136,31 @@ def column_clustering_pyspark(
                     total_columns_table_group,
                     total_cells_table_group,
                 )
-                # logger.warn(
-                #     "Table cluster {}: columns: {}, cells: {}, expected column cluster: {}".format(
-                #         c_idx["table_cluster"],
-                #         total_columns_table_group,
-                #         total_cells_table_group,
-                #         num_col_cluster,
-                #     )
-                # )
+
+                logger.warn(
+                    "Table cluster {}: columns: {}, cells: {}, expected column cluster: {}".format(
+                        c_idx["table_cluster"],
+                        total_columns_table_group,
+                        total_cells_table_group,
+                        num_col_cluster,
+                    )
+                )
 
                 logger.warn(
                     "Table cluster {}: Creating column feature vectors".format(
                         c_idx["table_cluster"]
                     )
                 )
-                dataset_cluster_column_feature_df = dataset_cluster_column_df.rdd.map(
-                    lambda row, characters=characters, tokens=tokens: create_feature_vector(
-                        row,
-                        characters,
-                        tokens,
+
+                dataset_cluster_column_feature_df = (
+                    column_df.where(column_df.table_cluster == c_idx["table_cluster"])
+                    .rdd.map(
+                        lambda row, chars=characters, tok=tokens: create_feature_vector(
+                            row, chars, tok
+                        )
                     )
-                ).toDF(
-                    ["table_id", "column_id", "table_cluster", "features"]
+                    .toDF(["table_id", "column_id", "table_cluster", "features"])
                 )
-                dataset_cluster_column_df.unpersist()
 
                 logger.warn(
                     "Table cluster {}: Clustering columns".format(
@@ -180,33 +182,66 @@ def column_clustering_pyspark(
                 dataset_cluster_column_feature_df.unpersist()
                 prediction_dfs.append(column_cluster_prediction_df)
 
-            column_df = reduce(DataFrame.unionAll, prediction_dfs).select(
-                col("table_id"), col("column_id"), col("col_cluster")
+            column_return_df = reduce(DataFrame.unionAll, prediction_dfs).select(
+                "table_id", "column_id", "table_cluster", "col_cluster"
             )
 
         else:
             logger.warn("Clustering columns without AUTO_CLUSTERING")
-            column_df = csv_paths_df.rdd.flatMap(
-                lambda row: generate_empty_column_df(row)
-            ).toDF(
-                [
-                    "table_id",
-                    "column_id",
-                    "col_cluster",
-                ]
+            table_cluster_df.join(
+                csv_paths_df.rdd.flatMap(generate_empty_column_df).toDF(
+                    [
+                        "table_id",
+                        "column_id",
+                        "col_cluster",
+                    ]
+                ),
+                ["table_id", "column_id"],
+                "inner",
             )
 
+        logger.warn("Grouping column cluster character sets by table")
+        column_return_df.join(
+            column_df.join(
+                column_return_df, ["table_id", "column_id", "table_cluster"], "inner"
+            )
+            .select("table_cluster", "col_cluster", "characters_counter")
+            .groupby(["table_cluster", "col_cluster"])
+            .applyInPandas(
+                group_column_features_per_column_cluster,
+                schema=StructType(
+                    [
+                        StructField("table_cluster", IntegerType(), False),
+                        StructField("col_cluster", IntegerType(), False),
+                        StructField("characters", ArrayType(StringType(), True), True),
+                    ]
+                ),
+            ),
+            ["table_cluster", "col_cluster"],
+            "inner",
+        ).groupby("table_id").applyInPandas(
+            group_characters_per_table_id,
+            schema=StructType(
+                [
+                    StructField("table_id", IntegerType(), False),
+                    StructField("characters", ArrayType(StringType(), True), True),
+                ]
+            ),
+        ).write.parquet(
+            grouped_column_groups_path, mode="overwrite"
+        )
+
+        column_df.unpersist()
+        grouped_tables_df.unpersist()
         logger.warn("Writing column clustering result to disk.")
-        column_df.write.parquet(column_groups_path, mode="overwrite")
+        column_return_df.write.parquet(column_groups_path, mode="overwrite")
 
 
-def create_feature_vector(
-    row: Row, characters: List[str], tokens: List[str]
-) -> Row:
+def create_feature_vector(row: Row, characters: List[str], tokens: List[str]) -> Row:
     """_summary_
 
     Args:
-        partitioned_rows (List[Row]): _description_
+        row (Row): _description_
         characters (List[str]): _description_
         tokens (List[str]): _description_
 
@@ -214,16 +249,19 @@ def create_feature_vector(
         Generator Row: _description_
     """
     char_dict = Counter(row.characters_counter)
-    token_dict = Counter(row.characters_counter)
+    # token_dict = Counter(row.characters_counter)
     char_list = [char_dict[ch] for ch in characters]
-    token_list = [token_dict[to] for to in tokens]
-    # TODO: returning char_list and token_list leads to "WARN DAGScheduler: Broadcasting large task binary with size 19.7 MiB"
+    # token_list = [token_dict[to] for to in tokens]
+    # TODO: returning token_list leads to "WARN DAGScheduler: Broadcasting large task binary with size 19.7 MiB"
     return [
         row.table_id,
         row.column_id,
         row.table_cluster,
         Vectors.dense(
-            char_list + token_list + [row.column_type] + [row.median_value_length]
+            # char_list + token_list + [row.column_type] + [row.median_value_length]
+            char_list
+            + [row.column_type]
+            + [row.median_value_length]
         ),
     ]
 
@@ -248,7 +286,9 @@ def cluster_columns(
     bkmeans_model = bkmeans.fit(col_df)
     predictions = bkmeans_model.transform(col_df)
 
-    return predictions.select("table_id", "column_id", "prediction").withColumnRenamed("prediction", "col_cluster")
+    return predictions.select(
+        "table_id", "column_id", "table_cluster", "prediction"
+    ).withColumnRenamed("prediction", "col_cluster")
 
 
 def generate_column_df(row: Row) -> List:
@@ -350,7 +390,7 @@ def generate_empty_column_df(row: Row) -> List:
     return column_list
 
 
-def group_column_features(key, df: pd.DataFrame) -> pd.DataFrame:
+def group_column_features_per_table_cluster(key, df: pd.DataFrame) -> pd.DataFrame:
     """_summary_
 
     Args:
@@ -379,6 +419,51 @@ def group_column_features(key, df: pd.DataFrame) -> pd.DataFrame:
             "tokens": [tokens],
             "cells": sum(df.cells),
             "columns": len(df.cells),
+        }
+    )
+
+
+def group_column_features_per_column_cluster(key, df: pd.DataFrame) -> pd.DataFrame:
+    """_summary_
+
+    Args:
+        key (_type_): _description_
+        df (pd.DataFrame): _description_
+
+    Returns:
+        pd.DataFrame: _description_
+    """
+    chars = list(
+        set(
+            chain.from_iterable(
+                [list(counter.keys()) for counter in df.characters_counter]
+            )
+        )
+    )
+    return pd.DataFrame(
+        {
+            "table_cluster": [key[0]],
+            "col_cluster": [key[1]],
+            "characters": [chars],
+        }
+    )
+
+
+def group_characters_per_table_id(key, df: pd.DataFrame) -> pd.DataFrame:
+    """_summary_
+
+    Args:
+        key (_type_): _description_
+        df (pd.DataFrame): _description_
+
+    Returns:
+        pd.DataFrame: _description_
+    """
+    chars = list(set(chain.from_iterable(df.characters.values)))
+    return pd.DataFrame(
+        {
+            "table_id": [key[0]],
+            "characters": [chars],
         }
     )
 

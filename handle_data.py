@@ -13,8 +13,8 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
         DataFrame: _description_
     """
     spark = SparkSession.getActiveSession()
-    log4jLogger = spark._jvm.org.apache.log4j
-    logger = log4jLogger.LogManager.getLogger(__name__)
+    log4j_logger = spark._jvm.org.apache.log4j
+    logger = log4j_logger.LogManager.getLogger(__name__)
 
     table_id = 0
     csv_paths = []
@@ -40,6 +40,6 @@ def generate_csv_paths(sandbox_path: str) -> DataFrame:
     )
 
     logger.warn(
-        "Partitions csv_paths_df: {}".format(csv_paths_df.rdd.getNumPartitions())
+        f"Partitions csv_paths_df: {csv_paths_df.rdd.getNumPartitions()}"
     )
     return csv_paths_df

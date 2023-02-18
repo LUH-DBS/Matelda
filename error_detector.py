@@ -1,13 +1,12 @@
 import math
 import random
-
-from typing import Dict, Tuple
 from functools import reduce
-from pyspark.sql import DataFrame, SparkSession, Window
-from pyspark.ml.clustering import KMeans
-from pyspark.ml.classification import GBTClassifier
+from typing import Dict, Tuple
 
 import pyspark.sql.functions as F
+from pyspark.ml.classification import GBTClassifier
+from pyspark.ml.clustering import KMeans
+from pyspark.sql import DataFrame, SparkSession, Window
 
 
 def error_detector_pyspark(
@@ -15,8 +14,6 @@ def error_detector_pyspark(
     result_path: str,
     raha_features_df: DataFrame,
     labels_df: DataFrame,
-    column_grouping_df: DataFrame,
-    table_grouping_df: DataFrame,
     seed: int,
 ) -> DataFrame:
     """_summary_
@@ -26,8 +23,6 @@ def error_detector_pyspark(
         result_path (str): _description_
         raha_features_df (DataFrame): _description_
         labels_df (DataFrame): _description_
-        column_grouping_df (DataFrame): _description_
-        table_grouping_df (DataFrame): _description_
         seed (int): _description_
 
     Returns:
@@ -38,8 +33,6 @@ def error_detector_pyspark(
     logger = log4j_logger.LogManager.getLogger(__name__)
 
     prediction_df = predict_errors(
-        column_grouping_df=column_grouping_df,
-        table_grouping_df=table_grouping_df,
         raha_features_df=raha_features_df,
         labels_df=labels_df,
         n_labels=labeling_budget,
@@ -55,8 +48,6 @@ def error_detector_pyspark(
 
 
 def predict_errors(
-    column_grouping_df: DataFrame,
-    table_grouping_df: DataFrame,
     raha_features_df: DataFrame,
     labels_df: DataFrame,
     n_labels: int,
@@ -66,8 +57,6 @@ def predict_errors(
     """_summary_
 
     Args:
-        column_grouping_df (DataFrame): _description_
-        table_grouping_df (DataFrame): _description_
         results_path (str): _description_
         raha_features_df (DataFrame): _description_
         labels_df (DataFrame): _description_
@@ -81,11 +70,7 @@ def predict_errors(
     predictions = []
 
     logger.warn("Joining column cluster, raha features, table grouping and labels")
-    x_all_df = (
-        raha_features_df.join(column_grouping_df, ["table_id", "column_id"], "inner")
-        .join(table_grouping_df, ["table_id"], "inner")
-        .join(labels_df, ["table_id", "column_id", "row_id"])
-    )
+    x_all_df = raha_features_df.join(labels_df, ["table_id", "column_id", "row_id"])
 
     cluster_combinations = (
         x_all_df.select("table_cluster", "col_cluster")
@@ -102,22 +87,18 @@ def predict_errors(
     # TODO: is here an way to espress this in pyspark?
     for t_idx, c_idx in sorted(cluster_combinations):
         logger.warn(
-            "Table cluster {}, column cluster {}: Start processing".format(t_idx, c_idx)
+            f"Table cluster {t_idx}, column cluster {c_idx}: Start processing"
         )
         cluster_df = x_all_df.where(
             (x_all_df.col_cluster == c_idx) & (x_all_df.table_cluster == t_idx)
         )
 
         logger.warn(
-            "Table cluster {}, column cluster {}: Cells {}".format(
-                t_idx, c_idx, cluster_df.count()
-            )
+            f"Table cluster {t_idx}, column cluster {c_idx}: Cells {cluster_df.count()}"
         )
 
         logger.warn(
-            "Table cluster {}, column cluster {}: Sampling labels for expected {} label clusters".format(
-                t_idx, c_idx, n_cell_clusters_per_col_cluster_dict[(t_idx, c_idx)]
-            )
+            f"Table cluster {t_idx}, column cluster {c_idx}: Sampling labels for expected {n_cell_clusters_per_col_cluster_dict[(t_idx, c_idx)]} label clusters"
         )
 
         (cluster_samples_df, sampling_prediction_df,) = sampling_labeling(
@@ -127,17 +108,11 @@ def predict_errors(
         )
 
         logger.warn(
-            "Table cluster {}, column cluster {}: Created {} label cluster".format(
-                t_idx,
-                c_idx,
-                cluster_samples_df.count(),
-            )
+            f"Table cluster {t_idx}, column cluster {c_idx}: Created {cluster_samples_df.count()} label cluster"
         )
 
         logger.warn(
-            "Table cluster {}, column cluster {}: Label propagation".format(
-                t_idx, c_idx
-            )
+            f"Table cluster {t_idx}, column cluster {c_idx}: Label propagation"
         )
 
         cluster_df = label_propagation(
@@ -145,9 +120,7 @@ def predict_errors(
         )
 
         logger.warn(
-            "Table cluster {}, column cluster {}: Training detection classfier".format(
-                t_idx, c_idx
-            )
+            f"Table cluster {t_idx}, column cluster {c_idx}: Training detection classfier"
         )
 
         gb_classifier = GBTClassifier(
@@ -160,9 +133,7 @@ def predict_errors(
         )
 
         logger.warn(
-            "Table cluster {}, column cluster {}: Predicting errors".format(
-                t_idx, c_idx
-            )
+            f"Table cluster {t_idx}, column cluster {c_idx}: Predicting errors"
         )
         predictions.append(gb_classifier_model.transform(cluster_df))
 
@@ -228,15 +199,14 @@ def label_propagation(
 
 
 def sampling_labeling(
-    x: DataFrame,
+    x_df: DataFrame,
     n_cell_clusters_per_col_cluster: int,
     seed: int,
 ) -> Tuple[DataFrame, DataFrame]:
     """_summary_
 
     Args:
-        x (DataFrame): _description_
-        y (DataFrame): _description_
+        x_df (DataFrame): _description_
         n_cell_clusters_per_col_cluster (int): _description_
         seed (int): _description_
 
@@ -245,10 +215,10 @@ def sampling_labeling(
     """
     bkm = KMeans(k=n_cell_clusters_per_col_cluster, featuresCol="features", seed=seed)
     model = bkm.fit(
-        x,
+        x_df,
     )
 
-    predictions = model.transform(x).drop("features")
+    predictions = model.transform(x_df).drop("features")
 
     # Draw random sample from each cluster
     window = Window.partitionBy(predictions["prediction"]).orderBy(F.rand())

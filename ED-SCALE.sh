@@ -1,11 +1,11 @@
 case $1 in
 
   'run')
-      conda run --no-capture-output  -n Error-Detection-at-Scale spark-submit --properties-file Configs/spark-defaults.conf ed_scale.py
+      conda run --no-capture-output -n Error-Detection-at-Scale spark-submit --properties-file Configs/spark-defaults.conf ed_scale.py
     ;;
 
   'format')
-    black .
+    conda run --no-capture-output -n Error-Detection-at-Scale black .
     ;;
 
   'install')
