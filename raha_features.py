@@ -109,14 +109,14 @@ def generate_raha_features(row: Row) -> List[Tuple[int, int, int, Any]]:
 
 
 def run_strategies(
-    self: raha.detection.Detection, d: raha.dataset.Dataset, char_set: List[str]
+    self: raha.detection.Detection, d: raha.dataset.Dataset, char_set: List[List[str]]
 ) -> None:
     """This method runs (all or the promising) strategies.
 
     Args:
         self (raha.detection.Detection): _description_
         d (raha.dataset.Dataset): _description_
-        char_set (List[str]): _description_
+        char_set (List[List[str]]): _description_
     """
     sp_folder_path = os.path.join(d.results_folder, "strategy-profiling")
     if not self.STRATEGY_FILTERING:
@@ -168,10 +168,10 @@ def run_strategies(
                         ]
                     )
                 elif algorithm_name == "PVD":
-                    configuration_list = []
-                    characters_dictionary = {ch: 1 for ch in char_set}
-                    for ch in characters_dictionary:
-                        configuration_list.append([ch])
+                    for j, attribute in enumerate(d.dataframe.columns):
+                        characters_dictionary = {ch: 1 for ch in char_set[j]}
+                        for ch in characters_dictionary:
+                            configuration_list.append([attribute, ch])
                     algorithm_and_configurations.extend(
                         [
                             [d, algorithm_name, configuration]

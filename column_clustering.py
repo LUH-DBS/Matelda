@@ -77,7 +77,6 @@ def column_clustering_pyspark(
                             "column_id",
                             "column_type",
                             "characters_counter",
-                            "tokens_counter",
                             "median_value_length",
                             "cells",
                         ]
@@ -89,9 +88,7 @@ def column_clustering_pyspark(
             )
 
             grouped_tables_df = (
-                column_df.select(
-                    "table_cluster", "characters_counter", "tokens_counter", "cells"
-                )
+                column_df.select("table_cluster", "characters_counter", "cells")
                 .groupby("table_cluster")
                 .applyInPandas(
                     group_column_features_per_table_cluster,
@@ -101,7 +98,6 @@ def column_clustering_pyspark(
                             StructField(
                                 "characters", ArrayType(StringType(), True), True
                             ),
-                            StructField("tokens", ArrayType(StringType(), True), True),
                             StructField("cells", IntegerType(), False),
                             StructField("columns", IntegerType(), False),
                         ]
@@ -123,7 +119,6 @@ def column_clustering_pyspark(
                 ).collect()
 
                 characters = dataset_cluster_column_grouped_df[0].characters
-                tokens = dataset_cluster_column_grouped_df[0].tokens
                 total_cells_table_group = dataset_cluster_column_grouped_df[0].cells
                 total_columns_table_group = dataset_cluster_column_grouped_df[0].columns
 
@@ -145,9 +140,7 @@ def column_clustering_pyspark(
                 dataset_cluster_column_feature_df = (
                     column_df.where(column_df.table_cluster == c_idx["table_cluster"])
                     .rdd.map(
-                        lambda row, chars=characters, tok=tokens: create_feature_vector(
-                            row, chars, tok
-                        )
+                        lambda row, chars=characters: create_feature_vector(row, chars)
                     )
                     .toDF(["table_id", "column_id", "table_cluster", "features"])
                 )
@@ -210,7 +203,11 @@ def column_clustering_pyspark(
             schema=StructType(
                 [
                     StructField("table_id", IntegerType(), False),
-                    StructField("characters", ArrayType(StringType(), True), True),
+                    StructField(
+                        "characters",
+                        ArrayType(ArrayType(StringType(), True), True),
+                        True,
+                    ),
                 ]
             ),
         ).write.parquet(
@@ -223,32 +220,23 @@ def column_clustering_pyspark(
         column_return_df.write.parquet(column_groups_path, mode="overwrite")
 
 
-def create_feature_vector(row: Row, characters: List[str], tokens: List[str]) -> Row:
+def create_feature_vector(row: Row, characters: List[str]) -> Row:
     """_summary_
 
     Args:
         row (Row): _description_
         characters (List[str]): _description_
-        tokens (List[str]): _description_
 
     Returns:
         Generator Row: _description_
     """
     char_dict = Counter(row.characters_counter)
-    # token_dict = Counter(row.characters_counter)
     char_list = [char_dict[ch] for ch in characters]
-    # token_list = [token_dict[to] for to in tokens]
-    # TODO: returning token_list leads to "WARN DAGScheduler: Broadcasting large task binary with size 19.7 MiB"
     return [
         row.table_id,
         row.column_id,
         row.table_cluster,
-        Vectors.dense(
-            # char_list + token_list + [row.column_type] + [row.median_value_length]
-            char_list
-            + [row.column_type]
-            + [row.median_value_length]
-        ),
+        Vectors.dense(char_list + [row.column_type] + [row.median_value_length]),
     ]
 
 
@@ -307,7 +295,6 @@ def generate_column_df(row: Row) -> List:
     for column_id, column in enumerate(dirty_df.columns.tolist()):
         indices = [row.table_id, column_id]
         characters_counter = Counter()
-        tokens_counter = Counter()
         features = []
 
         features.append(get_column_type(types, column_id))
@@ -324,22 +311,10 @@ def generate_column_df(row: Row) -> List:
 
             value_length_sum.append(len(str(value)))
 
-            tokens = str(value).split()
-            tokens = list(
-                filter(lambda token: len(token) > 1, tokens)
-            )  # Makes sure no chars are inside the token list
-            if " " in tokens:
-                tokens.remove(" ")
-
-            tokens_counter.update(tokens)
-
         for key in characters_counter:
             characters_counter[key] /= column_length
-        for key in tokens_counter:
-            tokens_counter[key] /= column_length
 
         features.append(dict(characters_counter))
-        features.append(dict(tokens_counter))
         features.append(median(value_length_sum))
         features.append(column_length)
 
@@ -395,18 +370,10 @@ def group_column_features_per_table_cluster(
             )
         )
     )
-    tokens = list(
-        set(
-            chain.from_iterable(
-                [list(counter.keys()) for counter in group_df.tokens_counter]
-            )
-        )
-    )
     return pd.DataFrame(
         {
             "table_cluster": [key[0]],
             "characters": [chars],
-            "tokens": [tokens],
             "cells": sum(group_df.cells),
             "columns": len(group_df.cells),
         }
@@ -451,11 +418,10 @@ def group_characters_per_table_id(key, group_df: pd.DataFrame) -> pd.DataFrame:
     Returns:
         pd.DataFrame: _description_
     """
-    chars = list(set(chain.from_iterable(group_df.characters.values)))
     return pd.DataFrame(
         {
             "table_id": [key[0]],
-            "characters": [chars],
+            "characters": [group_df.characters.values],
         }
     )
 
