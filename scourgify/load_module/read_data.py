@@ -31,8 +31,8 @@ def read_csv(path: str, low_memory: bool = False) -> pd.DataFrame:
     logger = logging.getLogger()
     logger.info("Reading table, name: %s", os.path.basename(path))
 
-    return pd.read_csv(path, sep=",", header="infer", encoding="utf-8", dtype=str, low_memory=low_memory)\
-        .applymap(value_normalizer)\
+    return pd.read_csv(path, sep=",", header="infer", low_memory=low_memory)\
+        .applymap(lambda x: value_normalizer(x) if isinstance(x, str) else x)\
         .applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
 
 
