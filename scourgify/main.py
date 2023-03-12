@@ -1,6 +1,6 @@
 from configparser import ConfigParser
 import app_logger
-from scourgify.load_module import read_data
+from scourgify.tests.scourgify_tbcol import read_data
 
 configs = ConfigParser()
 configs.read("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/EDS/config.ini")

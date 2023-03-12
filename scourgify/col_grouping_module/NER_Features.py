@@ -1,3 +1,5 @@
+import random
+
 import gensim
 import pandas as pd
 from gensim.models import Word2Vec
@@ -9,6 +11,15 @@ import gensim.downloader as api
 from nltk.corpus import stopwords
 import re
 import string
+import spacy
+from sklearn.preprocessing import OneHotEncoder
+from spacy.tokens import Doc
+
+
+# Define the custom tokenizer function
+def custom_tokenizer(nlp):
+    return lambda text: spacy.tokens.Doc(nlp.vocab, text.split("||"))
+
 
 def clean_text(text, tokenizer, stopwords):
     """Pre-process text and generate tokens
@@ -43,7 +54,7 @@ def clean_text(text, tokenizer, stopwords):
     return tokens
 
 
-class EmbeddingFeatures(BaseEstimator, TransformerMixin):
+class NERFeatures(BaseEstimator, TransformerMixin):
     """
     Computes embedding features for each column
     """
@@ -55,26 +66,32 @@ class EmbeddingFeatures(BaseEstimator, TransformerMixin):
         return self
 
     def transform(self, X):
-        model = gensim.models.KeyedVectors.load('/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/scourgify/pretrained_models/word2vec-google-news-300')
-        print("Model loaded")
-        features = []
-        for header in self.headers:
-            # col_tokens = clean_text(col, word_tokenize, stopwords.words('english'))
-            col_tokens = clean_text(header, word_tokenize, stopwords.words('english'))
-            zero_vector = np.zeros(model.vector_size)
-            vectors = []
-            for j in range(len(col_tokens)):
-                if col_tokens[j] in model and len(col_tokens[j]) > 1:
-                    try:
-                        vectors.append(model[col_tokens[j]])
-                    except KeyError as e:
-                        print(e)
-            if vectors:
-                vectors = np.asarray(vectors)
-                avg_vec = vectors.mean(axis=0)
-                features.append(avg_vec)
-            else:
-                features.append(zero_vector)
 
-        df = pd.DataFrame(features)
-        return df
+        nlp = spacy.load("en_core_web_sm")
+        nlp.tokenizer = custom_tokenizer(nlp)
+        features_df = None
+        # Loop through the columns and compute the data type features for each one
+        all_types = [ent_type for ent_type in nlp.pipe_labels['ner']]
+        all_cols_types = []
+        headers_types = dict()
+        for idx, col in enumerate(X):
+            # Define a default dict to keep track of the counts for each type
+            type_counts = {ent_type: 0 for ent_type in all_types}
+            sample = min(200, int(len(col) * 0.10))
+            col = random.sample(col, sample)
+            for c in col:
+                doc = nlp(str(c))
+                # Loop through the list and count the number of instances per type
+                for ent in doc.ents:
+                    value_type = ent.label_
+                    type_counts[value_type] += 1
+            winner_type = max(type_counts, key=lambda k: type_counts[k])
+            all_cols_types.append(winner_type)
+            headers_types[self.headers[idx][0]] = winner_type
+        all_cols_types = np.array(all_cols_types).reshape(-1, 1)
+        print(headers_types)
+        encoder = OneHotEncoder()
+        # Convert the dictionary of feature counts to a pandas dataframe
+        encoded_data = encoder.fit_transform(all_cols_types).toarray()
+        features_df = pd.DataFrame(encoded_data)
+        return features_df

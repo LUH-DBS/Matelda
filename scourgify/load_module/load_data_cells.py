@@ -63,7 +63,7 @@ def get_table_cells_dict(table_path: str, dirty_file_name: str, **kwargs) -> dic
     df_dict = dirty_df.to_dict()
 
     # Create a nested dictionary for each column and cell
-    cols_dict = {col_id: {index: (df_dict[col][index], labels_dict[col][index] if len(labels_dict) != 0 else None)
+    cols_dict = {col_id: {index: (col, df_dict[col][index], labels_dict[col][index] if len(labels_dict) != 0 else None)
                           for index in df_dict[col]} for col_id, col in enumerate(df_dict)}
 
     return cols_dict

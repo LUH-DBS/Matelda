@@ -1,5 +1,5 @@
 import pandas as pd
-from scourgify.load_module.read_data import read_csv
+from scourgify_tbcol.load_module.read_data import read_csv
 
 dirty_df_path = 'test_sand_box/Alcohol-use.g8_2014_0731_0900/dirty_clean.csv'
 clean_df_path = 'test_sand_box/Alcohol-use.g8_2014_0731_0900/clean.csv'

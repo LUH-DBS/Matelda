@@ -1,6 +1,6 @@
 import pandas as pd
 
-from scourgify.load_module.load_data_cells import load_data_cells
+from scourgify_tbcol.load_module.load_data_cells import load_data_cells
 
 results_path = "./test_mediate_files"
 sand_box_dir = "./test_sand_box"
