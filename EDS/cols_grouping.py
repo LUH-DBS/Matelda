@@ -8,7 +8,7 @@ import csv
 import numpy as np
 import pandas as pd
 import pip
-from sklearn.cluster import MiniBatchKMeans
+from sklearn.cluster import DBSCAN, MiniBatchKMeans
 
 from messytables import CSVTableSet, type_guess
 from kmeans_interp.kmeans_feature_imp import KMeansInterp
@@ -21,14 +21,14 @@ type_dicts = {'Integer': 0, 'Decimal': 1, 'String': 2, 'Date': 3, 'Bool': 4, 'Ti
 
 
 def specify_num_col_clusters(total_num_cells, total_labeling_budget, num_cols_tg, num_cells_tg):
-    n_tg = math.floor(total_labeling_budget * num_cells_tg/total_num_cells)
-
-    lambda_ = math.floor(n_tg/num_cols_tg)
-    if lambda_>= 1:
+    # n_tg = math.floor(total_labeling_budget * num_cells_tg/total_num_cells)
+    n_tg = math.floor(total_labeling_budget /4)
+    lambda_ = math.floor(n_tg/(num_cols_tg*2))
+    if lambda_ >= 1:
         beta_tg = num_cols_tg
     else:
         # TODO: when we don't have enough budget to label all table groups
-        beta_tg = math.ceil(num_cols_tg/n_tg)
+        beta_tg = math.ceil(n_tg/3)
     return beta_tg # num_col_clusters
 
 def get_clusters_dict(df):
@@ -46,7 +46,7 @@ def get_clusters_dict(df):
 
 
 def get_col_df(sandbox_path, cluster, labels_dict_path):
-    column_dict = {'table_path':[], 'table_id': [], 'col_id': [], 'col_value': [], 'col_gt': [], 'col_type': [], 'col_header': []}
+    column_dict = {'table_path':[], 'table_id': [], 'col_id': [], 'col_value': [], 'col_gt': [], 'col_type': []}
     lake_labels_dict = extract_labels(labels_dict_path)
     total_num_cells_tg = 0
 
@@ -54,7 +54,10 @@ def get_col_df(sandbox_path, cluster, labels_dict_path):
         logging.info("Table: {}".format(table))
         parent_path = os.path.join(sandbox_path, table[1])
         table_path = os.path.join(parent_path, table[2] + "/dirty_clean.csv")
-        df = pd.read_csv(table_path, quoting=csv.QUOTE_ALL)
+        df = pd.read_csv(table_path, quoting=csv.QUOTE_ALL, sep=",", header="infer", encoding="utf-8", dtype=str,
+                                        keep_default_na=False,
+                                        low_memory=False)
+        df = df.replace('', 'NULL')
         df = df.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
 
         table_file = open(table_path, 'rb')
@@ -69,7 +72,7 @@ def get_col_df(sandbox_path, cluster, labels_dict_path):
             column_dict['col_value'].append(df[column].tolist())
             column_dict['col_gt'].append(lake_labels_dict[(table[0], column_idx)].values)
             column_dict['col_type'].append(types[column_idx])
-            column_dict['col_header'].append(column)
+            # column_dict['col_header'].append(column)
             total_num_cells_tg += len(df[column].tolist())
 
     col_df = pd.DataFrame.from_dict(column_dict)
@@ -173,25 +176,26 @@ def get_col_features(col_df):
             col_features[i].append(token)
 
         col_features[i].append(column_profile['median_value_length'])
-        col_features[i].append(Simhash(col_df['col_header'][i]).value)
+        # col_features[i].append(Simhash(col_df['col_header'][i]).value)
 
     feature_names.extend([c for c in characters_dictionary.keys()])
     feature_names.extend([str(v) for v in tokens_dictionary.keys()])
     feature_names.append("median_value_length")
-    feature_names.append("header")
+    # feature_names.append("header")
 
     return col_features, feature_names
 
-def cluster_cols(col_features, clustering_enabled, feature_names, beta_tg):
+def cluster_cols(col_features, clustering_enabled, feature_names, beta_tg, table_cluster):
 
     if clustering_enabled:
         logging.info("Clustering columns")
         # TODO memory profiler 
-        clustering_results = MiniBatchKMeans(n_clusters=12, random_state=0, reassignment_ratio=0, batch_size = 256*64).fit(col_features)        
+        clustering_results = MiniBatchKMeans(n_clusters=beta_tg, random_state=0, reassignment_ratio=0, batch_size = 256*64).fit(col_features)        
+        # clustering_results = DBSCAN(min_samples=2).fit(col_features)
         # TODO: evaluation 
-        feature_importance_result = feature_importance(10, feature_names, col_features)
+        feature_importance_result = feature_importance(beta_tg, feature_names, col_features)
         feature_importance_dict = pd.DataFrame(feature_importance_result)
-        feature_importance_dict.to_csv('outputs/features.csv')
+        feature_importance_dict.to_csv('/home/fatemeh/ED-Scale/outputs/features_col_groups/features_{}.csv'.format(str(table_cluster)), index=False)
         col_labels_df = pd.DataFrame(col_features, columns=feature_names)
         col_labels_df['column_cluster_label'] = pd.DataFrame(clustering_results.labels_)
     else:
@@ -202,7 +206,7 @@ def cluster_cols(col_features, clustering_enabled, feature_names, beta_tg):
     number_of_clusters = len(col_labels_df['column_cluster_label'].unique())
 
     return col_labels_df, number_of_clusters
-
+    
 def feature_importance(n_clusters, ordered_feature_names, features):
     kms = KMeansInterp(
 	n_clusters=n_clusters,
@@ -250,7 +254,7 @@ def col_folding(total_num_cells, total_labeling_budget, context_df, sandbox_path
         logging.info("beta_tg: {}".format(beta_tg))
         logging.info("cluster: {}".format(cluster))
         col_features, feature_names = get_col_features(col_df)
-        col_labels_df, number_of_clusters = cluster_cols(col_features, clustering_enabled, feature_names, beta_tg)
+        col_labels_df, number_of_clusters = cluster_cols(col_features, clustering_enabled, feature_names, beta_tg, cluster)
         number_of_col_clusters[str(cluster)] = number_of_clusters
         col_labels_df['col_value'] = col_df['col_value']
         col_labels_df['col_chars'] = col_df['col_value'].apply(lambda x: set([ch for val in x for ch in str(val)]))

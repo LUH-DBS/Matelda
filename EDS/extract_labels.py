@@ -22,11 +22,13 @@ def generate_labels(sandbox_path, output_path):
                 try:
                     table_path = os.path.join(child_path, table)
                     dirty_df = pd.read_csv(table_path + "/dirty_clean.csv", sep=",", header="infer", encoding="utf-8", dtype=str,
-                                        low_memory=False)
+                                        keep_default_na=False, low_memory=False)
                     dirty_df = dirty_df.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
+                    dirty_df = dirty_df.replace('', 'NULL')
                     
                     clean_df = pd.read_csv(table_path + "/" + "clean.csv", sep=",", header="infer", encoding="utf-8",
-                                        dtype=str, low_memory=False)
+                                        dtype=str, keep_default_na=False, low_memory=False)
+                    clean_df = clean_df.replace('', 'NULL')
                     clean_df = clean_df.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
                     labels_df = dirty_df.where(dirty_df.values != clean_df.values).notna() * 1
 
