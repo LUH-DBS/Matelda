@@ -1,1 +1,0 @@
-{"precision": 0.9051724137931034, "recall": 0.7753164556962026, "f_score": 0.8352272727272728, "tp": 735.0, "ed_tpfp": 812.0, "ed_tpfn": 948, "execution-time": 5.519452333450317, "number_of_labeled_tuples": 19, "number_of_labeled_cells": 209}
