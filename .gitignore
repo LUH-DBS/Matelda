@@ -179,3 +179,14 @@ Sandbox_Generation/dirty_datasets
 results
 outputs
 archive_files
+./outputs
+/home/fatemeh/ED-Scale/outputs/features.csv
+Benchmarks/raha/avg.df.csv
+Benchmarks/raha/fscore-raha.png
+Benchmarks/raha/precision-raha.png
+Benchmarks/raha/recall-raha.png
+Sandbox_Generation/kaggle_4/
+Sandbox_Generation/kaggle_sample_sandbox/
+Sandbox_Generation/sandbox_sample/
+nums.json
+sandbox/

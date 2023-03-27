@@ -10,6 +10,7 @@
 
 
 ########################################
+import pickle
 import re
 import sys
 import html
@@ -46,9 +47,10 @@ class Dataset:
         """
         This method takes a value and minimally normalizes it.
         """
-        value = html.unescape(value)
-        value = re.sub("[\t\n ]+", " ", value, re.UNICODE)
-        value = value.strip("\t\n ")
+        if isinstance(value, str):
+            value = html.unescape(value)
+            value = re.sub("[\t\n ]+", " ", value, re.UNICODE)
+            value = value.strip("\t\n ")
         return value
 
     def read_csv_dataset(self, dataset_path):
@@ -58,7 +60,7 @@ class Dataset:
         dataframe = pandas.read_csv(dataset_path, sep=",", header="infer", encoding="utf-8", dtype=str,
                                     keep_default_na=False, low_memory=False).applymap(self.value_normalizer)
         dataframe = dataframe.replace('', 'NULL')
-        dataframe = dataframe.applymap(lambda x: x.replace('"', ''))
+        dataframe = dataframe.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
         return dataframe
 
     @staticmethod

@@ -27,7 +27,7 @@ def get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all,
         total_fp += fp
         total_fn += fn
 
-        precision, recall, f_score, support = precision_recall_fscore_support(col_cluster_y, col_cluster_prediction, average='macro')
+        precision, recall, f_score, support = precision_recall_fscore_support(col_cluster_y, col_cluster_prediction)
         logger.info("col_cluster: {}, tn: {}, fp: {}, fn: {}, tp: {}".format(i, tn, fp, fn, tp))
         scores = {"col_cluster": i, "precision": precision, "recall": recall, "f_score": f_score, "support": support, "tp": tp, "fp": fp,
                 "fn": fn, "tn": tn}
@@ -101,8 +101,10 @@ def get_tables_dict(sandbox_path):
         if not table.startswith("."):
             table_path = os.path.join(sandbox_path, table)
             table_df = pd.read_csv(table_path + "/dirty_clean.csv", sep=",", header="infer", encoding="utf-8",
-                                        dtype=str, low_memory=False)
+                                        dtype=str, keep_default_na=False, low_memory=False)
             table_df = table_df.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
+            table_df = table_df.replace('', 'NULL')
+            
             all_tables_dict[table_id] = {"name": table, "schema": table_df.columns.tolist(), "shape": table_df.shape}
             table_id += 1
     return all_tables_dict
