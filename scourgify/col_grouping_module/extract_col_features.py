@@ -35,7 +35,7 @@ def extract_col_features(table_group, cols, char_set):
         ('normalizer', MinMaxScaler())
     ])
 
-    X = pipeline.fit_transform(cols)
+    X = pipeline.fit_transform(cols["col_value"])
     # cl = DBSCAN(min_samples=2).fit(X)
     # labels = cl.labels_
     # # cl = MiniBatchKMeans(n_clusters=7, random_state=0, reassignment_ratio=0, batch_size=256 * 64).fit(X)
@@ -51,17 +51,29 @@ def extract_col_features(table_group, cols, char_set):
     similarity_matrix = np.where(similarity_matrix > median_similarity, similarity_matrix, 0)
     # Create a graph from the distance matrix
     graph = nx.Graph(similarity_matrix)
-    communities = nx_comm.louvain_communities(graph)
+    communities = nx_comm.louvain_communities(graph, resolution=1.5)
     print("**********Table Group*********:", table_group)
     print("Communities:", communities)
 
     cols_per_cluster = {}
+    col_group_df = {"column_cluster_label": [], "col_value": [], "table_id": [], "table_path": [], "table_cluster": [],
+                    "col_id": []}
     l = set(range(len(communities)))
     for i in l:
         cols_per_cluster[i] = []
         for c in communities[i]:
-            cols_per_cluster[i].append(cols[c])
+            cols_per_cluster[i].append(cols["col_value"][c])
+            col_group_df["column_cluster_label"].append(i)
+            col_group_df["col_value"].append(cols["col_value"][c])
+            col_group_df["table_id"].append(cols["table_id"][c])
+            col_group_df["table_path"].append(cols["table_path"][c])
+            col_group_df["table_cluster"].append(table_group)
+            col_group_df["col_id"].append(cols["col_id"][c])
+
     pickle.dump(cols_per_cluster,
                 open("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/"
                      "scourgify/mediate_files/cols_per_cluster_{}.pkl".format(table_group), "wb"))
-    return
+    pickle.dump(col_group_df,
+                open("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/"
+                        "scourgify/mediate_files/col_df_labels_cluster_{}.pickle".format(table_group), "wb"))
+    return col_group_df

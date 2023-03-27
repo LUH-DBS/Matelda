@@ -179,3 +179,12 @@ Sandbox_Generation/dirty_datasets
 results
 outputs
 archive_files
+datalake
+data-gov-sandbox
+data-gov-santos
+kaggle*
+scourgify/mediate*
+scourgify/pretrained*
+scourgify/tests/test_*
+data-gov-sandbox.zip
+table_dict.pickle
