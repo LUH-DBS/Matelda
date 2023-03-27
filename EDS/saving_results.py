@@ -27,7 +27,7 @@ def get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all,
         total_fp += fp
         total_fn += fn
 
-        precision, recall, f_score, support = precision_recall_fscore_support(col_cluster_y, col_cluster_prediction, average='macro')
+        precision, recall, f_score, support = precision_recall_fscore_support(col_cluster_y, col_cluster_prediction)
         logger.info("col_cluster: {}, tn: {}, fp: {}, fn: {}, tp: {}".format(i, tn, fp, fn, tp))
         scores = {"col_cluster": i, "precision": precision, "recall": recall, "f_score": f_score, "support": support, "tp": tp, "fp": fp,
                 "fn": fn, "tn": tn}

@@ -1,4 +1,5 @@
 import collections
+import hashlib
 import json
 import logging
 import math
@@ -43,7 +44,7 @@ if not sys.warnoptions:
 
 def get_cells_features(sandbox_path, output_path, table_char_set_dict):
 
-
+    tables_dict = pickle.load(open("/home/fatemeh/scourgify-test/table_dict.pickle", "rb"))
     features_dict = dict()
     table_id = 0
     list_dirs_in_snd = os.listdir(sandbox_path)
@@ -56,7 +57,7 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict):
             if not table.startswith("."):
                 try:
                     path = os.path.join(table_dirs_path, table)
-
+                    table_file_name_santos = tables_dict[table]
                     dirty_df = pd.read_csv(path + "/dirty_clean.csv", sep=",", header="infer", encoding="utf-8", dtype=str,
                                         keep_default_na=False,
                                         low_memory=False)
@@ -73,19 +74,20 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict):
                     logging.info("Generating features for table: " + table)
                     charsets = dict()
                     for idx, col in enumerate(dirty_df.columns):
-                        charsets[idx] = table_char_set_dict[(str(table_id), str(idx))]
+                        # charsets[idx] = table_char_set_dict[(str(table_id), str(idx))]
+                        charsets[idx] = table_char_set_dict[(str(hashlib.md5(table_file_name_santos.encode()).hexdigest()), str(idx))]
                     col_features = generate_raha_features.generate_raha_features(table_dirs_path, table, charsets)
                     for col_idx in range(len(col_features)):
                         for row_idx in range(len(col_features[col_idx])):
-                            table_id_added = np.append(col_features[col_idx][row_idx], table_id)
+                            # table_id_added = np.append(col_features[col_idx][row_idx], table_id)
                             #col_idx_added = np.append(table_id_added, col_idx)
-                            features_dict[(table_id, col_idx, row_idx, 'og')] = table_id_added
+                            features_dict[(hashlib.md5(table_file_name_santos.encode()).hexdigest(), col_idx, row_idx, 'og')] = col_features[col_idx][row_idx]
                             
                     
                     label_df = dirty_df.where(dirty_df.values != clean_df.values).notna() * 1
                     for col_idx, col_name in enumerate(label_df.columns):
                         for row_idx in range(len(label_df[col_name])):
-                            features_dict[(table_id, col_idx, row_idx, 'gt')] = label_df[col_name][row_idx]
+                            features_dict[(hashlib.md5(table_file_name_santos.encode()).hexdigest(), col_idx, row_idx, 'gt')] = label_df[col_name][row_idx]
                     logger.info("table_id: {}".format(table_id))
                 except Exception as e:
                     logger.error(e)
@@ -99,12 +101,15 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict):
 
 
 def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg, value_temp):
-    visulaize_cell_group(x, y, str(table_cluster) + "_" + str(col_cluster))
+    # visulaize_cell_group(x, y, str(table_cluster) + "_" + str(col_cluster))
     logger.info("sampling_labeling")
     clustering = None 
 
     if cells_clustering_alg == "km":
         logging.info("KMeans - n_cell_clusters_per_col_cluster: {}".format(n_cell_clusters_per_col_cluster))
+        if table_cluster == '33' and col_cluster == 27:
+            for u in x:
+                print(len(u))
         if len(x) < n_cell_clusters_per_col_cluster + 1:
             n_cell_clusters_per_col_cluster = len(x) - 1 
         clustering = MiniBatchKMeans(n_clusters=n_cell_clusters_per_col_cluster + 1, random_state=0, reassignment_ratio=0, batch_size = 256 * 64).fit(x)
@@ -135,6 +140,7 @@ def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_
         labels = scipy.cluster.hierarchy.fcluster(clustering, n_cell_clusters_per_col_cluster + 1, criterion="maxclust")
         logging.info("fast - n_cell_clusters_generated: {}".format(len(set(labels))))
         
+    logging.info("cells per cluster")
     cells_per_cluster = dict()
     # TODO remove this
     errors_per_cluster = dict()
@@ -155,7 +161,7 @@ def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_
     for cpc in cells_per_cluster.keys():
         error_probability_dict[cpc] = (errors_per_cluster[cpc], errors_per_cluster[cpc] / len(cells_per_cluster[cpc]), len(cells_per_cluster[cpc]))
     logger.info("error_probability_dict: {}".format(error_probability_dict))
-    with open('/home/fatemeh/ED-Scale/logs/errors_prob/error_probability_dict_table_cluster_{}_col_cluster{}.json'.format(str(table_cluster), str(cpc)), 'wb') as fp:
+    with open('/home/fatemeh/ED-Scale/EDS/logs/errors_prob/error_probability_dict_table_cluster_{}_col_cluster{}.json'.format(str(table_cluster), str(col_cluster)), 'wb') as fp:
         pickle.dump(error_probability_dict, fp)
 
     
@@ -401,6 +407,7 @@ def generate_bigrams(chars):
 
 def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir, output_path, results_path, n_labels, number_of_col_clusters, cluster_sizes, cell_clustering_alg):
 
+    tables_dict = pickle.load(open("/home/fatemeh/scourgify-test/table_dict.pickle", "rb"))
     logging.info("Starting error detection")
     original_data_keys = []
     unique_cells_local_index_collection = dict()
@@ -420,11 +427,17 @@ def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir,
         if ".pickle" in file_name:
             file = open(os.path.join(col_groups_dir, file_name), 'rb')
             group_df = pickle.load(file)
+            if not isinstance(group_df, pd.DataFrame):
+                group_df = pd.DataFrame.from_dict(group_df, orient='index').T
             table_cluster = group_df['table_cluster'].values[0]
             file.close()
             clusters = set(group_df['column_cluster_label'].sort_values())
             for c_idx, cluster in enumerate(clusters):
-                charset_val = [ch for v in group_df[group_df['column_cluster_label'] == cluster]["col_chars"].values for ch in v]
+                charset_val = []
+                for idx, row in group_df[group_df['column_cluster_label'] == cluster].iterrows():
+                    row = [str(val) for val in row['col_value']]
+                    charset_val.extend(''.join(row))
+                # charset_val = [ch for v in group_df[group_df['column_cluster_label'] == cluster]["col_chars"].values for ch in v]
                 # bigrams = generate_bigrams(charset_val)
                 charset_val = set(charset_val)
                 # charset_val.update(bigrams)
@@ -441,7 +454,7 @@ def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir,
         features_dict = ed_twolevel_rahas_features.get_cells_features(sandbox_path, output_path, table_charset_dict)
         logger.info("Generating cell features started.")
     else:
-        with open("/home/fatemeh/ED-Scale/outputs/complete-0802/check_col_groups_without_header/features.pkl", 'rb') as pickle_file:
+        with open("/home/fatemeh/ED-Scale/outputs/140323scourgify/features.pkl", 'rb') as pickle_file:
             features_dict = pickle.load(pickle_file)
     # TODO
         # with open(os.path.join(output_path, configs["DIRECTORIES"]["cell_features_filename"]), 'rb') as file:
@@ -452,6 +465,8 @@ def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir,
         if ".pickle" in file_name:
             file = open(os.path.join(col_groups_dir, file_name), 'rb')
             group_df = pickle.load(file)
+            if not isinstance(group_df, pd.DataFrame):
+                group_df = pd.DataFrame.from_dict(group_df, orient='index').T
             table_cluster = file_name.removeprefix("col_df_labels_cluster_").removesuffix(".pickle")
             file.close()
             clusters = set(group_df['column_cluster_label'].sort_values())

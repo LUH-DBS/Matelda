@@ -139,6 +139,7 @@ for parent in os.listdir(input_dir):
                     df = preprocess_headers(df)
                     df_name = save_csv(df, processed_file_path, file)
                     error_precentage = random.randint(1, 25)
+                    print(error_precentage)
                     files_errors[file] = error_precentage
                     make_it_dirty(error_precentage, os.path.join(processed_file_path, df_name), processed_file_path)
                     count += 1

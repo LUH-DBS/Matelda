@@ -21,8 +21,8 @@ type_dicts = {'Integer': 0, 'Decimal': 1, 'String': 2, 'Date': 3, 'Bool': 4, 'Ti
 
 
 def specify_num_col_clusters(total_num_cells, total_labeling_budget, num_cols_tg, num_cells_tg):
-    n_tg = math.floor(total_labeling_budget * num_cells_tg/total_num_cells)
-
+    # n_tg = math.floor(total_labeling_budget * num_cells_tg/total_num_cells)
+    n_tg = math.floor(total_labeling_budget /4)
     lambda_ = math.floor(n_tg/(num_cols_tg*2))
     if lambda_ >= 1:
         beta_tg = num_cols_tg
@@ -185,7 +185,7 @@ def get_col_features(col_df):
 
     return col_features, feature_names
 
-def cluster_cols(col_features, clustering_enabled, feature_names, beta_tg):
+def cluster_cols(col_features, clustering_enabled, feature_names, beta_tg, table_cluster):
 
     if clustering_enabled:
         logging.info("Clustering columns")
@@ -193,9 +193,9 @@ def cluster_cols(col_features, clustering_enabled, feature_names, beta_tg):
         clustering_results = MiniBatchKMeans(n_clusters=beta_tg, random_state=0, reassignment_ratio=0, batch_size = 256*64).fit(col_features)        
         # clustering_results = DBSCAN(min_samples=2).fit(col_features)
         # TODO: evaluation 
-        feature_importance_result = feature_importance(10, feature_names, col_features)
+        feature_importance_result = feature_importance(beta_tg, feature_names, col_features)
         feature_importance_dict = pd.DataFrame(feature_importance_result)
-        feature_importance_dict.to_csv('outputs/features.csv')
+        feature_importance_dict.to_csv('/home/fatemeh/ED-Scale/outputs/features_col_groups/features_{}.csv'.format(str(table_cluster)), index=False)
         col_labels_df = pd.DataFrame(col_features, columns=feature_names)
         col_labels_df['column_cluster_label'] = pd.DataFrame(clustering_results.labels_)
     else:
@@ -254,7 +254,7 @@ def col_folding(total_num_cells, total_labeling_budget, context_df, sandbox_path
         logging.info("beta_tg: {}".format(beta_tg))
         logging.info("cluster: {}".format(cluster))
         col_features, feature_names = get_col_features(col_df)
-        col_labels_df, number_of_clusters = cluster_cols(col_features, clustering_enabled, feature_names, beta_tg)
+        col_labels_df, number_of_clusters = cluster_cols(col_features, clustering_enabled, feature_names, beta_tg, cluster)
         number_of_col_clusters[str(cluster)] = number_of_clusters
         col_labels_df['col_value'] = col_df['col_value']
         col_labels_df['col_chars'] = col_df['col_value'].apply(lambda x: set([ch for val in x for ch in str(val)]))

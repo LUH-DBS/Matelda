@@ -25,6 +25,8 @@ from ds_utils.config import set_display_options, set_random_seed
 from ds_utils.clustering import Tokenizer, load_data, clean_news_data, vectorize, mbkmeans_clusters
 
 import gensim.downloader as api
+from gensim.models import Doc2Vec
+import gensim.models as gensim_models
 from sklearn.feature_extraction.text import TfidfVectorizer
 from simhash import Simhash
 from scipy.spatial import distance
@@ -61,9 +63,13 @@ def get_context_df(sandbox_path):
                     total_num_cells += df_text_columns.size
                     df_text_columns = df_text_columns.select_dtypes(include=object)
                     df_table_text = ""
-                    for column in df_text_columns.columns:
-                        col_text = ' '.join(df_text_columns[column].astype(str).tolist())
-                        df_table_text += col_text
+
+                    for index, row in df_text_columns.iterrows():
+                        df_table_text = ' '.join(row.astype(str).tolist())
+
+                    # for column in df_text_columns.columns:
+                    #     col_text = ' '.join(df_text_columns[column].astype(str).tolist())
+                    #     df_table_text += col_text
 
                     context_dict['table_id'].append(table_id)
                     context_dict['parent'].append(child_name)
@@ -169,20 +175,24 @@ def simhash(doc_tokens, doc_word_tfidf_dict):
     """
     Calculates the Simhash of a given text using TF-IDF weights.
     """
+    # TODO test this 
     v = [0] * 64
-    for token in doc_tokens:
-        hash_value = int(hashlib.sha1(token.encode('utf-8')).hexdigest(), 16)
-        weight = doc_word_tfidf_dict[token]
-        for i in range(64):
-            if hash_value & (1 << i):
-                v[i] += weight
-            else:
-                v[i] -= weight
-    simhash = 0
-    for i in range(64):
-        if v[i] >= 0:
-            simhash |= (1 << i)
-    return simhash
+
+    # for token in doc_tokens:
+    #     hash_value = int(hashlib.sha1(token.encode('utf-8')).hexdigest(), 16)
+    #     weight = doc_word_tfidf_dict[token]
+    #     for i in range(64):
+    #         if hash_value & (1 << i):
+    #             v[i] += weight
+    #         else:
+    #             v[i] -= weight
+    # simhash = []
+    # for i in range(64):
+    #     if v[i] >= 0:
+    #         simhash.append(1)
+    #     else:
+    #         simhash.append(0)
+    return ''.join([str(x) for x in simhash])
 
 def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
     logger = logging.getLogger()
@@ -223,24 +233,28 @@ def cluster_datasets(sandbox_path, output_path, auto_clustering_enabled):
     if auto_clustering_enabled == "True":
         # TODO: embedding model and DBSCAN params in config file
         # model = Word2Vec(sentences=tokenized_docs, vector_size=100, workers=1, seed=42)
-        logger.info("Loading Word2Vec model...")
+        logger.info("Loading Doc2Vec model")
+        model = Doc2Vec.load("/home/fatemeh/pretrained_models/enwiki_20180420_100d.pkl")
+        logger.info("Loading Doc2Vec model finished")
+        vectorized_docs = [model.infer_vector(' '.join([token for token in doc])) for doc in tokenized_docs]
         # model = api.load('word2vec-google-news-300')
         # tf_idf_res = tfidf(tokenized_docs)
         # vectorized_docs = vectorize(tokenized_docs, tf_idf_res, model=model)
         # vectorized_docs_2 = get_hashed_features(docs)
         # clustering = DBSCAN(eps=0.2, min_samples=2).fit(vectorized_docs) 
-        # clustering = MiniBatchKMeans(n_clusters=4).fit(vectorized_docs)
-        # cluster_labels = clustering.labels_
+        clustering = MiniBatchKMeans(n_clusters=4).fit(vectorized_docs)
+        cluster_labels = clustering.labels_
 
-        doc_word_tfidf_dicts, dense_matrix = tfidf(tokenized_docs)
-        simhashes = [simhash(tokenized_docs[i], doc_word_tfidf_dicts[i]) for i in range(len(tokenized_docs))]
+        # doc_word_tfidf_dicts, dense_matrix = tfidf(tokenized_docs)
+        # simhashes = [simhash(tokenized_docs[i], doc_word_tfidf_dicts[i]) for i in range(len(tokenized_docs))]
+        simhashes = [Simhash(''.join(doc)).value for doc in tokenized_docs]
+            
         hamming_distances = dict()
         for i in range(len(simhashes)):
             for j in range(i+1, len(simhashes)):
-                bin_1 = bin(simhashes[i])[2:].zfill(64)
-                bin_2 = bin(simhashes[j])[2:].zfill(64)
-                distance_ = distance.hamming(list(bin_1), list(bin_2))
-                hamming_distances[(i, j)] = distance_
+                hamming_distances[(i, j)] = bin(simhashes[i] ^ simhashes[j]).count('1')
+                # distance_ = distance.hamming(list(simhashes[i]), list(simhashes[j]))
+                # hamming_distances[(i, j)] = distance_
         print(hamming_distances)
         return 0
     else:

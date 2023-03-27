@@ -20,7 +20,7 @@ def main():
     sandbox_path = "/home/fatemeh/ED-Scale/Sandbox_Generation/data-gov-sandbox"
     results_path = "/home/fatemeh/ED-Scale/results/raha"
 
-    for labeling_budget in range(1,4):
+    for labeling_budget in range(2, 3):
         res_dir_path = os.path.join(results_path, f'''{labeling_budget}_labels_{execution_number}_execution''')
         log_path = os.path.join("/home/fatemeh/ED-Scale/results/raha/logs", f'''{labeling_budget}_labels_{execution_number}_execution.log''')
 

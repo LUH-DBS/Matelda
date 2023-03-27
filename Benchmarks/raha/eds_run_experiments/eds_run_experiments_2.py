@@ -25,9 +25,9 @@ def distribute_labels(labeling_budget_cells, dir_levels, sandbox_path):
             try:
                 dataset_path = os.path.join(sandbox_path , dir)
                 df = pd.read_csv(os.path.join(dataset_path, "dirty_clean.csv"), sep=",", header="infer", encoding="utf-8", dtype=str,
-                                            keep_default_na=False, low_memory=False)
+                                            low_memory=False)
                 actual_errors_df = pd.read_csv(os.path.join(dataset_path, "clean_changes.csv"), sep=",", header=None, encoding="utf-8", dtype=str,
-                                            keep_default_na=False, low_memory=False)
+                                            low_memory=False)
                 num_actual_errors = actual_errors_df.shape[0]
                 datasets[dataset_path] = df.shape
                 num_cells_dataset = df.shape[0] * df.shape[1]

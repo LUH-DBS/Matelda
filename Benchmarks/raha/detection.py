@@ -166,7 +166,7 @@ class Detection:
                             [[d, algorithm_name, configuration] for configuration in configuration_list])
                     elif algorithm_name == "PVD":
                         configuration_list = []
-                        for attribute in d.dataframe.columns:
+                        for attribute in d.dataframe.columns:                                
                             column_data = "".join(d.dataframe[attribute].tolist())
                             characters_dictionary = {ch: 1 for ch in column_data}
                             for ch in characters_dictionary:
@@ -281,8 +281,12 @@ class Detection:
         else:
             tuple_score = numpy.ones(d.dataframe.shape[0])
         sum_tuple_score = sum(tuple_score)
-        p_tuple_score = tuple_score / sum_tuple_score
-        d.sampled_tuple = numpy.random.choice(numpy.arange(d.dataframe.shape[0]), 1, p=p_tuple_score)[0]
+        if sum_tuple_score != 0:
+            p_tuple_score = tuple_score / sum_tuple_score
+            d.sampled_tuple = numpy.random.choice(numpy.arange(d.dataframe.shape[0]), 1, p= p_tuple_score)[0]
+            
+        else:  
+            d.sampled_tuple = numpy.random.choice(numpy.arange(d.dataframe.shape[0]), 1)[0]
         if self.VERBOSE:
             print("Tuple {} is sampled.".format(d.sampled_tuple))
 
@@ -432,7 +436,7 @@ class Detection:
                       "---------------------------Storing the Results--------------------------\n"
                       "------------------------------------------------------------------------")
             self.store_results(d)
-        return d.detected_cells, d.labeled_cells
+        return d.detected_cells, d.labeled_cells, d.get_actual_errors_dictionary()
 ########################################
 
 
@@ -459,20 +463,24 @@ if __name__ == "__main__":
         "clean_path": os.path.abspath(os.path.join(dataset_path, "clean.csv"))
     }
     app = Detection(labeling_budget)
-    detection_dictionary, labeled_cells = app.run(dataset_dictionary)
+    detection_dictionary, labeled_cells, actuall_errors_dict = app.run(dataset_dictionary)
+    print(actuall_errors_dict)
     data = raha.dataset.Dataset(dataset_dictionary)
     end_time = time.time()
-    actuall_errors_dict = pandas.read_csv(os.path.join(dataset_path, "clean_changes.csv"), header = None).to_dict()
     detected_errors = list(detection_dictionary.keys())
     metrics = data.get_data_cleaning_evaluation(detection_dictionary)
     results = {'dataset_path': dataset_path, 'dataset_name': dataset_name, 'execution_number': execution_number, 'dataset_shape': data.dataframe.shape, 
                'precision': metrics["ed_p"], 'recall': metrics["ed_r"], 'f_score': metrics["ed_f"],
                'tp': metrics["ed_tp"], 'ed_tpfp': metrics["output_size"], 'ed_tpfn': metrics["actual_errors"],
                'execution-time': end_time - start_time, 'number_of_labeled_tuples': labeling_budget,
-               'number_of_labeled_cells': len(labeled_cells), 'actuall_errors_json': actuall_errors_dict, 'detected_errors_keys': detected_errors}
+               'number_of_labeled_cells': len(labeled_cells), 'detected_errors_keys': detected_errors}
     result_file_path = os.path.join(results_path, f'''raha_{dataset_name}_number#{execution_number}_${labeling_budget}$labels.json''')
+    act_errors_path = os.path.join("/home/fatemeh/ED-Scale/outputs/kaggle_sandbox_sample/actual_errors"\
+                                   , f'''raha_{dataset_name}_number#{execution_number}_${labeling_budget}$labels_act_errors.pickle''')
     with open(result_file_path, "w") as result_file:
         json.dump(results, result_file)
+    with open(act_errors_path, 'wb') as act:
+        pickle.dump(actuall_errors_dict, act)
     print("Raha's performance on {}:\nPrecision = {:.2f}\nRecall = {:.2f}\nF1 = {:.2f}".format(data.name, metrics["ed_p"], metrics["ed_r"], metrics["ed_f"]))
     # --------------------
     # app.STRATEGY_FILTERING = True
