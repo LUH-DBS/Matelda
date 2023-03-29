@@ -1,0 +1,7 @@
+aggregated_datalake/*
+separated_datalake/*
+mediate_files/*
+output/*
+kaggle/*
+logs/*
+__pycache__

@@ -133,5 +133,6 @@ benchmark/*
 hashmap/*
 yago/*
 stats/*
+stats_dgov/*
 images/*
 groundtruth/*
