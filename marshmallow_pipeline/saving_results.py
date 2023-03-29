@@ -1,3 +1,4 @@
+import hashlib
 import logging
 import pickle
 import os
@@ -91,32 +92,32 @@ def get_results_per_table(result_df):
                                        "precision": precision, "recall": recall, "f_score": f_score}
     return results_per_table
 
-def get_tables_dict(sandbox_path):
+def get_tables_dict(init_tables_dict, sandbox_path):
     logger.info("get_tables_dict")
     all_tables_dict = {}
-    table_id = 0
     table_dirs = os.listdir(sandbox_path)
     table_dirs.sort()
     for table in table_dirs:
         if not table.startswith("."):
             table_path = os.path.join(sandbox_path, table)
+            table_file_name_santos = init_tables_dict[table]
+            table_id = hashlib.md5(table_file_name_santos.encode()).hexdigest()
             table_df = pd.read_csv(table_path + "/dirty_clean.csv", sep=",", header="infer", encoding="utf-8",
                                         dtype=str, keep_default_na=False, low_memory=False)
             table_df = table_df.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
             table_df = table_df.replace('', 'NULL')
             
             all_tables_dict[table_id] = {"name": table, "schema": table_df.columns.tolist(), "shape": table_df.shape}
-            table_id += 1
     return all_tables_dict
 
 
-def get_all_results(tables_path, results_dir, y_test_all, \
+def get_all_results(init_tables_dict, tables_path, results_dir, y_test_all, \
                     y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
                     unique_cells_local_index_collection, samples):
     with open(os.path.join(results_dir, "labeled_by_user.pickle"), "wb") as file:
             pickle.dump(y_labeled_by_user_all, file)
     logger.info("getting classification results")
-    tables_dict = get_tables_dict(tables_path)
+    tables_dict = get_tables_dict(init_tables_dict, tables_path)
     get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all, results_dir, samples)
     results_df = create_predictions_dict(tables_dict, y_test_all, \
                     y_local_cell_ids, predicted_all, y_labeled_by_user_all,\

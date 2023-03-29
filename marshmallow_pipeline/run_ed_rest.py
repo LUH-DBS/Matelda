@@ -65,5 +65,5 @@ if __name__ == '__main__':
         unique_cells_local_index_collection, samples = \
             ed_twolevel_rahas_features.error_detector(cell_feature_generator_enabled, sandbox_path, column_groups_df_path, experiment_output_path, results_path,\
                                                       labeling_budget, number_of_col_clusters, cluster_sizes, cell_clustering_alg, tables_dict)
-    saving_results.get_all_results(tables_path, results_path, y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
+    saving_results.get_all_results(tables_dict, tables_path, results_path, y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
     unique_cells_local_index_collection, samples)
