@@ -11,6 +11,7 @@ import app_logger
 if __name__ == '__main__':
 
     cell_feature_generator_enabled = False
+    noise_extraction_enabled = False
     sandbox_path = "/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/kaggle/separated_kaggle_lake"
     tables_path = "/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/kaggle/separated_kaggle_lake/kaggle_sample_sandbox"
     column_groups_path = "/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/mediate_files/col_grouping_res/"
@@ -22,7 +23,7 @@ if __name__ == '__main__':
     n_table_groups = 5
 
     logger = app_logger.get_logger(logs_dir)
-    labeling_budget = 1000
+    labeling_budget = 100
 
     number_of_col_clusters = {}
     col_groups = 0
@@ -58,12 +59,10 @@ if __name__ == '__main__':
     cell_clustering_alg= "km"
 
     print("starting error detection")
-    ed_twolevel_rahas_features.error_detector(cell_feature_generator_enabled, sandbox_path, column_groups_df_path, experiment_output_path, results_path,\
-                                                    labeling_budget, number_of_col_clusters, cluster_sizes, cell_clustering_alg, tables_dict)
-
+    
     y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
         unique_cells_local_index_collection, samples = \
-            ed_twolevel_rahas_features.error_detector(cell_feature_generator_enabled, sandbox_path, column_groups_df_path, experiment_output_path, results_path,\
+            ed_twolevel_rahas_features.error_detector(cell_feature_generator_enabled, noise_extraction_enabled, sandbox_path, column_groups_df_path, experiment_output_path, results_path,\
                                                       labeling_budget, number_of_col_clusters, cluster_sizes, cell_clustering_alg, tables_dict)
     saving_results.get_all_results(tables_dict, tables_path, results_path, y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
     unique_cells_local_index_collection, samples)

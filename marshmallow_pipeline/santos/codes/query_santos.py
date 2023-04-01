@@ -803,5 +803,5 @@ print(f'Number of nodes: {G.number_of_nodes()}')
 print(f'Number of edges: {G.number_of_edges()}')
 print(f'Nodes in the graph: {list(G.nodes())}')
 print(f'Edges in the graph: {list(G.edges(data=True))}')
-nx.write_gpickle(G, '/Users/fatemehahmadi/Documents/StateOfTheArt/santos/stats/graph.gpickle')
+nx.write_gpickle(G, '/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/mediate_files/graph.gpickle')
 

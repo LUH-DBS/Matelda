@@ -8,8 +8,9 @@ class CharDistribution(BaseEstimator, TransformerMixin):
     """
     Computes the character distribution of each column
     """
-    def __init__(self, char_set):
+    def __init__(self, char_set, weight):
         self.char_set = char_set
+        self.weight = weight
         pass
 
     def fit(self, X, y=None):
@@ -25,7 +26,7 @@ class CharDistribution(BaseEstimator, TransformerMixin):
             for value in col:
                 for char in set(str(value)):
                     char_observations[char] += 1
-            char_observations = {k: v/len(col) for k, v in char_observations.items()}
+            char_observations = {k: (v/len(col)) * self.weight for k, v in char_observations.items()}
             char_distributions.append(char_observations)
         char_distributions = pd.DataFrame(char_distributions)
         return char_distributions

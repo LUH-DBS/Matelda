@@ -8,6 +8,8 @@ import app_logger
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.metrics import precision_recall_fscore_support
 
+from read_data import read_csv
+
 logger = logging.getLogger()
 
 def get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all, results_dir, samples):
@@ -28,7 +30,7 @@ def get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all,
         total_fp += fp
         total_fn += fn
 
-        precision, recall, f_score, support = precision_recall_fscore_support(col_cluster_y, col_cluster_prediction)
+        precision, recall, f_score, support = precision_recall_fscore_support(col_cluster_y, col_cluster_prediction, average='micro', labels=[0,1])
         logger.info("col_cluster: {}, tn: {}, fp: {}, fn: {}, tp: {}".format(i, tn, fp, fn, tp))
         scores = {"col_cluster": i, "precision": precision, "recall": recall, "f_score": f_score, "support": support, "tp": tp, "fp": fp,
                 "fn": fn, "tn": tn}
@@ -102,11 +104,7 @@ def get_tables_dict(init_tables_dict, sandbox_path):
             table_path = os.path.join(sandbox_path, table)
             table_file_name_santos = init_tables_dict[table]
             table_id = hashlib.md5(table_file_name_santos.encode()).hexdigest()
-            table_df = pd.read_csv(table_path + "/dirty_clean.csv", sep=",", header="infer", encoding="utf-8",
-                                        dtype=str, keep_default_na=False, low_memory=False)
-            table_df = table_df.applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
-            table_df = table_df.replace('', 'NULL')
-            
+            table_df = read_csv(os.path.join(table_path, "dirty_clean.csv"), low_memory=False)            
             all_tables_dict[table_id] = {"name": table, "schema": table_df.columns.tolist(), "shape": table_df.shape}
     return all_tables_dict
 

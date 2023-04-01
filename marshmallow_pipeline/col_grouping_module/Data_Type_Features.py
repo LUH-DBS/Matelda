@@ -6,7 +6,8 @@ import numpy as np
 
 
 class DataTypeFeatures(BaseEstimator, TransformerMixin):
-    def __init__(self):
+    def __init__(self, weight):
+        self.weight = weight
         pass
 
     def fit(self, X, y=None):
@@ -30,10 +31,13 @@ class DataTypeFeatures(BaseEstimator, TransformerMixin):
                 if value_type == "str":
                     try:
                         dt = parse(value)
-                        value_type = "datetime"
+                        if dt != None:
+                            value_type = "datetime"
                     except ValueError:
                         pass
                 type_counts[value_type] += 1
+            for key in type_counts:
+                type_counts[key] = type_counts[key] * self.weight
             all_cols_types.append(type_counts)
         # Convert the dictionary of feature counts to a pandas dataframe
         features_df = pd.DataFrame(all_cols_types)

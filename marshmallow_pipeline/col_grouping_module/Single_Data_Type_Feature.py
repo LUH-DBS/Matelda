@@ -1,3 +1,4 @@
+import dateparser
 import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
 from collections import defaultdict
@@ -7,7 +8,8 @@ from sklearn.preprocessing import OneHotEncoder
 
 
 class SingleDataTypeFeatures(BaseEstimator, TransformerMixin):
-    def __init__(self):
+    def __init__(self, weight):
+        self.weight = weight
         pass
 
     def fit(self, X, y=None):
@@ -30,7 +32,7 @@ class SingleDataTypeFeatures(BaseEstimator, TransformerMixin):
                         value_type = "str"
                     if value_type == "str":
                         try:
-                            dt = parse(value)
+                            dt = dateparser.parse(value)
                             value_type = "datetime"
                         except Exception as e:
                             pass
@@ -43,7 +45,7 @@ class SingleDataTypeFeatures(BaseEstimator, TransformerMixin):
         all_cols_types = np.array(all_cols_types).reshape(-1, 1)
         encoder = OneHotEncoder()
         # Convert the dictionary of feature counts to a pandas dataframe
-        encoded_data = encoder.fit_transform(all_cols_types).toarray()
-        features_df = pd.DataFrame(encoded_data)
+        encoded_data = encoder.fit_transform(all_cols_types).toarray() * self.weight
+        features_df = pd.DataFrame(encoded_data) 
 
         return features_df

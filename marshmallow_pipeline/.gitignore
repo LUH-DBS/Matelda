@@ -2,6 +2,7 @@ aggregated_datalake/*
 separated_datalake/*
 mediate_files/*
 output/*
-kaggle/*
+kaggle*/*
 logs/*
+garbage
 __pycache__
