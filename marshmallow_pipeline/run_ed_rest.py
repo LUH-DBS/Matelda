@@ -20,7 +20,7 @@ if __name__ == '__main__':
     experiment_output_path = "/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/output"
     results_path = "/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/output/results"
     logs_dir = "/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/logs"
-    n_table_groups = 5
+    n_table_groups = 4
 
     logger = app_logger.get_logger(logs_dir)
     labeling_budget = 100

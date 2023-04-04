@@ -28,12 +28,12 @@ def extract_col_features(table_group, cols, char_set):
 
     """
     # Feature weighting
-    w = {'data_type_features': 0.5, 'value_length_stats': 0.2, 'char_distribution': 0.3}
+    w = {'data_type_features': 0.7, 'value_length_stats': 0.1, 'char_distribution': 0.3}
     
     pipeline = Pipeline([
         ('feature_generator', FeatureUnion([
             ('data_type_features', DataTypeFeatures(w["data_type_features"])),
-            ('value_length_stats', ValueLengthStats(w["value_length_stats"])),
+            # ('value_length_stats', ValueLengthStats(w["value_length_stats"])),
             ('char_distribution', CharTypeDistribution(char_set, w["char_distribution"])),
         ])),
         ('normalizer', MinMaxScaler())

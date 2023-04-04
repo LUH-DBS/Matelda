@@ -100,85 +100,19 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_di
     return features_dict
 
 
-def sampling_labeling_outlier_detection(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg, value_temp):
-    logger.info("sampling_labeling_anomaly_detection")
+def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg, value_temp):
+    
+    logger.info("Sampling and labeling")
     model = IsolationForest()
     model.fit(x)
-    labels = model.predict(x)
-    outliers = [idx for idx, val in enumerate(labels) if val == -1]
-    correct_vals = [idx for idx, val in enumerate(labels) if val == 1]
-    labels_per_cluster_all = dict()
-    cells_per_cluster = dict()
-    for cell in enumerate(labels):
-        if cell[1] not in labels_per_cluster_all.keys():
-            labels_per_cluster_all[cell[1]] = []
-            cells_per_cluster[cell[1]] = []
-        cells_per_cluster[cell[1]].append(cell[0])
-
-    samples = []
-    samples_idx_tmp = []
-    sample_values = []
-    samples_orig_values = []
-    correct_flag = False
-    inf_loop = 0
-    while len(samples) < n_cell_clusters_per_col_cluster and inf_loop < 2:
-        # print("len(samples): ", len(samples))
-        if correct_flag:
-            rep = 0
-            while True:
-                sample_idx = random.choice(outliers)
-                rep += 1
-                if sample_idx not in samples_idx_tmp:
-                    break
-                elif rep > 10:
-                    correct_flag = False
-                    inf_loop += 1
-                    break
-                else:
-                    continue
+    iso_for_labels = model.predict(x)
+    data_points_weights = []
+    for i, value in enumerate(iso_for_labels):
+        if value == -1:
+            data_points_weights.append(1)
         else:
-            rep = 0
-            while True:
-                sample_idx = random.choice(correct_vals)
-                rep += 1
-                if sample_idx not in samples_idx_tmp:
-                    break
-                elif rep > 10:
-                    correct_flag = True
-                    inf_loop += 1
-                    break
-                else:
-                    continue
-            correct_flag = True
-
-        samples_idx_tmp.append(sample_idx)
-        if x[sample_idx] not in sample_values:
-            samples.append(sample_idx)
-            sample_values.append(x[sample_idx])
-            samples_orig_values.append(value_temp[sample_idx])
-
-    logger.info("labeling")
-
-    for cell in enumerate(labels):
-        if cell[0] in samples:
-            labels_per_cluster_all[cell[1]].append(y[cell[0]])
+            data_points_weights.append(0.000001)
     
-    labels_per_cluster = dict()
-    for c in labels_per_cluster_all.keys():
-        if len(labels_per_cluster_all[c]) > 0:
-            labels_per_cluster[c] = mode(labels_per_cluster_all[c])  
-
-    universal_samples = dict()
-    for s in samples:
-        universal_samples[(table_cluster, col_cluster, s)] = y[s]
-
-    logger.info("labels_per_cluster: {}".format(labels_per_cluster))
-    logger.info("samples: {}".format(samples_orig_values))
-    return cells_per_cluster, labels_per_cluster, universal_samples, samples
-
-
-def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg, value_temp):
-    logger.info("sampling_labeling")
     clustering = None 
 
     if cells_clustering_alg == "km":
@@ -187,11 +121,8 @@ def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_
             n_cell_clusters_per_col_cluster = len(x) - 1 
         clustering = MiniBatchKMeans(n_clusters=n_cell_clusters_per_col_cluster + 1, random_state=0, reassignment_ratio=0, batch_size = 256 * 64).fit(x)
         logging.info("KMeans - n_cell_clusters_generated: {}".format(len(set(clustering.labels_))))
-        labels = clustering.labels_
-        # Fit the isolation forest model
-        model = IsolationForest()
-        model.fit(x)
-        iso_forest_res = model.predict(x)
+        clustering_labels = clustering.labels_
+        
         
     logging.info("cells per cluster")
     cells_per_cluster = dict()
@@ -200,7 +131,7 @@ def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_
     labels_per_cluster_all = dict()
     labels_per_cluster = dict()
 
-    for cell in enumerate(labels):
+    for cell in enumerate(clustering_labels):
         if cell[1] in cells_per_cluster.keys():
             cells_per_cluster[cell[1]].append(cell[0])
             if y[cell[0]] == 1:
@@ -209,33 +140,23 @@ def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_
             cells_per_cluster[cell[1]] = [cell[0]]
             labels_per_cluster_all[cell[1]] = []
             errors_per_cluster[cell[1]] = y[cell[0]]
-    
+
     samples = []
     sample_values = []
     samples_orig_values = []
+
     if cells_clustering_alg == "km":
-        cells_per_cluster = dict(sorted(cells_per_cluster.items(), key=lambda x: x[1]))
         for cluster in shuffle(list(cells_per_cluster.keys()))[:-1]:
-            cluster_points_idx = np.array([idx for idx in cells_per_cluster[cluster]])
-            cluster_points = np.array([x[idx] for idx in cells_per_cluster[cluster]])
-            cluster_points_gt = np.array([y[idx] for idx in cells_per_cluster[cluster]])
-            iso_forest_res_cell_cluster = np.array([iso_forest_res[idx] for idx in cells_per_cluster[cluster]])
-            p = np.mean(np.array(iso_forest_res_cell_cluster) == -1) # probability of selecting a vector with label -1
-            q = np.mean(np.array(iso_forest_res_cell_cluster) == 1) # probability of selecting a vector with label 1
-
-            weights = np.where(np.array(iso_forest_res_cell_cluster) == -1, p*2, q) # importance weights
-            weights /= np.sum(weights) # normalize weights
-
-            samples_idx = np.random.choice(np.arange(len(cluster_points_idx)), 
-                                       size=1, p=weights) # sample k vectors
-            samples.extend(cluster_points_idx[idx] for idx in samples_idx) # get the selected vectors idx
-            sample_values.extend([cluster_points[i] for i in samples_idx]) # get the selected vectors
-            samples_orig_values.extend([value_temp[i] for i in samples_idx]) # get the selected vectors values
-
+            weights_cluster_points = [data_points_weights[i] for i in cells_per_cluster[cluster]]
+            total_weight = sum(weights_cluster_points)
+            normalized_weights = [w / total_weight for w in weights_cluster_points]
+            samples_tmp = np.random.choice(cells_per_cluster[cluster], size=1, p=normalized_weights)
+            samples.extend(samples_tmp) # sample k vectors
+            sample_values.extend([x[i] for i in samples_tmp]) # get the selected vectors
+            samples_orig_values.extend([value_temp[i] for i in samples_tmp]) # get the selected vectors values
 
     logger.info("labeling")
-
-    for cell in enumerate(labels):
+    for cell in enumerate(clustering_labels):
         if cell[0] in samples:
             labels_per_cluster_all[cell[1]].append(y[cell[0]])
     
@@ -250,74 +171,6 @@ def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_
     logger.info("labels_per_cluster: {}".format(labels_per_cluster))
     logger.info("samples: {}".format(samples_orig_values))
     return cells_per_cluster, labels_per_cluster, universal_samples, samples
-
-def sampling_labeling_iso_for(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg, value_temp):
-    logger.info("sampling_labeling")
-
-    # Fit the isolation forest model
-    model = IsolationForest()
-    model.fit(x)
-    iso_forest_res = model.predict(x)
-        
-    logging.info("cells per cluster")
-    cells_per_cluster = dict()
-    # TODO remove this
-    errors_per_cluster = dict()
-    labels_per_cluster_all = dict()
-    labels_per_cluster = dict()
-
-    samples = []
-    sample_values = []
-    samples_orig_values = []
-    p = np.mean(np.array(iso_forest_res) == -1) # probability of selecting a vector with label -1
-    q = np.mean(np.array(iso_forest_res) == 1) # probability of selecting a vector with label 1
-
-    weights = np.where(np.array(iso_forest_res) == -1, p, q) # importance weights
-    weights /= np.sum(weights) # normalize weights
-
-    samples.extend(np.random.choice(np.arange(len(x)), 
-                                size=n_cell_clusters_per_col_cluster, p=weights))# sample k vectors
-    sample_values.extend([x[i] for i in samples]) # get the selected vectors
-    samples_orig_values.extend([value_temp[i] for i in samples]) # get the selected vectors values
-
-    logger.info("labeling")
-
-    clustering = MiniBatchKMeans(n_clusters=n_cell_clusters_per_col_cluster + 1, random_state=0, reassignment_ratio=0, batch_size = 256 * 64).fit(x)
-    logging.info("KMeans - n_cell_clusters_generated: {}".format(len(set(clustering.labels_))))
-    labels = clustering.labels_
-    
-    for cell in enumerate(labels):
-        if cell[1] in cells_per_cluster.keys():
-            cells_per_cluster[cell[1]].append(cell[0])
-            if y[cell[0]] == 1:
-                errors_per_cluster[cell[1]] += 1
-        else:
-            cells_per_cluster[cell[1]] = [cell[0]]
-            labels_per_cluster_all[cell[1]] = []
-            errors_per_cluster[cell[1]] = y[cell[0]]
-    
-    for cell in enumerate(labels):
-        if cell[0] in samples:
-            labels_per_cluster_all[cell[1]].append(y[cell[0]])
-    
-    for c in labels_per_cluster_all.keys():
-        if len(labels_per_cluster_all[c]) > 0:
-            labels_per_cluster[c] = mode(labels_per_cluster_all[c])  
-
-    universal_samples = dict()
-    for s in samples:
-        universal_samples[(table_cluster, col_cluster, s)] = y[s]
-
-    logger.info("labels_per_cluster: {}".format(labels_per_cluster))
-    logger.info("samples: {}".format(samples_orig_values))
-    return cells_per_cluster, labels_per_cluster, universal_samples, samples
-
-def get_points_of_cell_cluster(x, cells_per_cluster, cell_cluster):
-    logger.info("get_points_of_cell_cluster {}".format(cell_cluster))
-    points = []
-    for cell in cells_per_cluster[cell_cluster]:
-        points.append(x[cell])
-    return points
 
 def get_train_test_sets(X_temp, y_temp, samples, cells_per_cluster, labels_per_cluster):
     logger.info("Train-Test set preparation")
@@ -476,18 +329,23 @@ def process_col_cluster(n_cell_clusters_per_col_cluster, table_cluster, cluster,
         # clustering = DBSCAN(min_samples = 2).fit(X_temp)
         # logging.info("DBSCAN - n_cell_clusters_generated: {}".format(len(set(clustering.labels_))))
         # labels = clustering.labels_
-        # count = 0
-        # for l in labels:
-        #     if l == -1:
-        #         count += 1
-            
-
+        # intersect_count = 0
+        # intersect_noise = 0
+        # intersect_iso = 0
+        # for idx, l in enumerate(labels):
+        #     if l == -1 and y_temp[idx] == 1:
+        #         intersect_noise += 1
+        #     if iso_forest_res[idx] == -1 and y_temp[idx] == 1:
+        #         intersect_iso += 1
+        #     if l == -1 and iso_forest_res[idx] == -1 and y_temp[idx] == 1:
+        #         intersect_count += 1
 
         # print("Processing table, col cluster {}, {}".format(str(table_cluster), str(cluster)))
         # print("TP: {}, FP: {}, AE: {}".format(str(tp), str(fp), str(ae)))
         # print("Outliers: {}, Errors: {}, Noises: {}".format(str(n_outliers), str(n_errors), str(8888)))
+        # print("Intersect: {}, ISO:{}, Noise:{}, Actual: {}".format(str(intersect_count), intersect_iso, intersect_noise, ae))
 
-        cells_per_cluster, labels_per_cluster, universal_samples, samples = sampling_labeling_iso_for(table_cluster, cluster, X_temp, y_temp,
+        cells_per_cluster, labels_per_cluster, universal_samples, samples = sampling_labeling(table_cluster, cluster, X_temp, y_temp,
                                                             n_cell_clusters_per_col_cluster, cell_clustering_alg, value_temp)
         X_labeled_by_user.extend([X_temp[sample] for sample in samples])
         y_labeled_by_user.extend([y_temp[sample] for sample in samples])

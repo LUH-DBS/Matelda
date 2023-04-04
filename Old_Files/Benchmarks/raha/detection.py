@@ -55,7 +55,7 @@ class Detection:
         self.LABELING_BUDGET = labeling_budget
         self.USER_LABELING_ACCURACY = 1.0
         self.VERBOSE = False
-        self.SAVE_RESULTS = False
+        self.SAVE_RESULTS = True
         self.CLUSTERING_BASED_SAMPLING = True
         self.STRATEGY_FILTERING = False
         self.CLASSIFICATION_MODEL = "GBC"  # ["ABC", "DTC", "GBC", "GNB", "SGDC", "SVC"]
@@ -464,7 +464,6 @@ if __name__ == "__main__":
     }
     app = Detection(labeling_budget)
     detection_dictionary, labeled_cells, actuall_errors_dict = app.run(dataset_dictionary)
-    print(actuall_errors_dict)
     data = raha.dataset.Dataset(dataset_dictionary)
     end_time = time.time()
     detected_errors = list(detection_dictionary.keys())
@@ -475,7 +474,7 @@ if __name__ == "__main__":
                'execution-time': end_time - start_time, 'number_of_labeled_tuples': labeling_budget,
                'number_of_labeled_cells': len(labeled_cells), 'detected_errors_keys': detected_errors}
     result_file_path = os.path.join(results_path, f'''raha_{dataset_name}_number#{execution_number}_${labeling_budget}$labels.json''')
-    act_errors_path = os.path.join("/home/fatemeh/ED-Scale/outputs/kaggle_sandbox_sample/actual_errors"\
+    act_errors_path = os.path.join("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/Old_Files/Benchmarks/act_errors_Apr3"\
                                    , f'''raha_{dataset_name}_number#{execution_number}_${labeling_budget}$labels_act_errors.pickle''')
     with open(result_file_path, "w") as result_file:
         json.dump(results, result_file)
