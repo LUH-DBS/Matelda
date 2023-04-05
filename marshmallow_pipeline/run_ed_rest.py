@@ -30,16 +30,8 @@ if __name__ == '__main__':
     total_col_groups = 0
     cluster_sizes = {}
 
-    count = 0
-    tables_dict = {}
-    for subdir, dirs, files in os.walk(sandbox_path):
-        for file in files:
-            if file == 'dirty_clean.csv':
-                tables_dict[os.path.basename(subdir)] = '{}.csv'.format(count)
-                count += 1
-    print("table_dict", tables_dict)
-    with open(os.path.join(results_path, 'tables_dict.pickle'), 'wb') as handle:
-        pickle.dump(tables_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    with open(os.path.join(results_path, 'tables_dict.pickle'), 'rb') as handle:
+        tables_dict = pickle.load(handle, protocol=pickle.HIGHEST_PROTOCOL)
 
     for i in range(n_table_groups):
         path = os.path.join(column_groups_cpc_path, 'cols_per_cluster_{}.pkl'.format(i))
