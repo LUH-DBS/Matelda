@@ -11,7 +11,7 @@ import app_logger
 if __name__ == '__main__':
 
     cell_feature_generator_enabled = False
-    noise_extraction_enabled = False
+    noise_extraction_enabled = True
     sandbox_path = "/home/fatemeh/ED-Scale/Old_Files/Benchmarks/kaggle_sample_dataset/separated_kaggle_lake"
     tables_path = "/home/fatemeh/ED-Scale/Old_Files/Benchmarks/kaggle_sample_dataset/separated_kaggle_lake/kaggle_sample_sandbox"
     column_groups_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/mediate_files/col_grouping_res"
