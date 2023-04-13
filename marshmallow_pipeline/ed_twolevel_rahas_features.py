@@ -100,15 +100,43 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_di
     return features_dict
 
 
-def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg, value_temp):
+def sampling_labeling_iso(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cluster, cells_clustering_alg, value_temp):
     
     logger.info("Sampling and labeling")
+
+    ""
     model = IsolationForest()
     model.fit(x)
     iso_for_labels = model.predict(x)
-    data_points_weights = []
+    outliers = []
+    outliers_orig_x_idx = dict()
+    non_outliers = []
     for i, value in enumerate(iso_for_labels):
         if value == -1:
+            outliers.append(x[i])
+            outliers_orig_x_idx[len(outliers) - 1] = i
+        else:
+            non_outliers.append(i)
+    non_outliers_features = []
+    for i, value in enumerate(non_outliers):
+        non_outliers_features.append(x[value])
+    non_outliers_center = np.mean(non_outliers_features, axis=0)
+
+    
+    iso_for_scores = model.decision_function(x)
+
+    # Find the indices of the negative values in iso_for_scores
+    neg_indices = np.where(iso_for_scores < 0)[0]
+
+    # Sort the negative values in ascending order
+    neg_sorted_indices = neg_indices[np.argsort(iso_for_scores[neg_indices])]
+
+    # Find the index corresponding to the 0.01 percentile of the negative values
+    index_0_01_percentile = neg_sorted_indices[int(0.05 * len(neg_sorted_indices))]
+
+    data_points_weights = []
+    for i, value in enumerate(iso_for_scores):
+        if i in neg_sorted_indices[:index_0_01_percentile]:
             data_points_weights.append(1)
         else:
             data_points_weights.append(0.000001)
@@ -116,10 +144,11 @@ def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_
     clustering = None 
 
     if cells_clustering_alg == "km":
+        n_cell_clusters_per_col_cluster = min(len(outliers),n_cell_clusters_per_col_cluster)
         logging.info("KMeans - n_cell_clusters_per_col_cluster: {}".format(n_cell_clusters_per_col_cluster))
         if len(x) < n_cell_clusters_per_col_cluster + 1:
             n_cell_clusters_per_col_cluster = len(x) - 1 
-        clustering = MiniBatchKMeans(n_clusters=n_cell_clusters_per_col_cluster + 1, random_state=0, reassignment_ratio=0, batch_size = 256 * 64).fit(x)
+        clustering = MiniBatchKMeans(n_clusters= n_cell_clusters_per_col_cluster, random_state=0, reassignment_ratio=0, batch_size = 256 * 64).fit(outliers)
         logging.info("KMeans - n_cell_clusters_generated: {}".format(len(set(clustering.labels_))))
         clustering_labels = clustering.labels_
         
@@ -132,33 +161,43 @@ def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_
     labels_per_cluster = dict()
 
     for cell in enumerate(clustering_labels):
+        orig_x_idx = outliers_orig_x_idx[cell[0]]
         if cell[1] in cells_per_cluster.keys():
-            cells_per_cluster[cell[1]].append(cell[0])
-            if y[cell[0]] == 1:
+            cells_per_cluster[cell[1]].append(orig_x_idx)
+            if y[orig_x_idx] == 1:
                 errors_per_cluster[cell[1]] += 1
         else:
-            cells_per_cluster[cell[1]] = [cell[0]]
+            cells_per_cluster[cell[1]] = [orig_x_idx]
             labels_per_cluster_all[cell[1]] = []
-            errors_per_cluster[cell[1]] = y[cell[0]]
-
+            errors_per_cluster[cell[1]] = y[orig_x_idx]
+        # logging.info("**************** error ratio per cluster: {}".format(errors_per_cluster[cell[1]]/ len(cells_per_cluster[cell[1]])))
+    cells_per_cluster[len(cells_per_cluster.keys())] = non_outliers
     samples = []
     sample_values = []
     samples_orig_values = []
 
     if cells_clustering_alg == "km":
-        for cluster in shuffle(list(cells_per_cluster.keys()))[:-1]:
-            weights_cluster_points = [data_points_weights[i] for i in cells_per_cluster[cluster]]
-            total_weight = sum(weights_cluster_points)
-            normalized_weights = [w / total_weight for w in weights_cluster_points]
-            samples_tmp = np.random.choice(cells_per_cluster[cluster], size=1, p=normalized_weights)
+        for cluster in list(cells_per_cluster.keys())[:-1]:
+            # weights_cluster_points = [data_points_weights[i] for i in cells_per_cluster[cluster]]
+            # total_weight = sum(weights_cluster_points)
+            # normalized_weights = [w / total_weight for w in weights_cluster_points]
+            # samples_tmp = np.random.choice(cells_per_cluster[cluster], size=3)
+            # compute anomaly scores (distance based)
+            outliers_dist = []
+            for i in cells_per_cluster[cluster]:
+                value = x[i]
+                outliers_dist.append(np.linalg.norm(value - non_outliers_center))
+            samples_tmp_out_idx = outliers_dist.index(max(outliers_dist))
+            samples_tmp = [cells_per_cluster[cluster][samples_tmp_out_idx]]
             samples.extend(samples_tmp) # sample k vectors
             sample_values.extend([x[i] for i in samples_tmp]) # get the selected vectors
             samples_orig_values.extend([value_temp[i] for i in samples_tmp]) # get the selected vectors values
 
     logger.info("labeling")
     for cell in enumerate(clustering_labels):
-        if cell[0] in samples:
-            labels_per_cluster_all[cell[1]].append(y[cell[0]])
+        orig_x_idx = outliers_orig_x_idx[cell[0]]
+        if orig_x_idx in samples:
+            labels_per_cluster_all[cell[1]].append(y[orig_x_idx])
     
     for c in labels_per_cluster_all.keys():
         if len(labels_per_cluster_all[c]) > 0:
@@ -168,8 +207,8 @@ def sampling_labeling(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_
     for s in samples:
         universal_samples[(table_cluster, col_cluster, s)] = y[s]
 
-    logger.info("labels_per_cluster: {}".format(labels_per_cluster))
-    logger.info("samples: {}".format(samples_orig_values))
+    # logger.info("labels_per_cluster: {}".format(labels_per_cluster))
+    # logger.info("samples: {}".format(samples_orig_values))
     return cells_per_cluster, labels_per_cluster, universal_samples, samples
 
 def get_train_test_sets(X_temp, y_temp, samples, cells_per_cluster, labels_per_cluster):
@@ -190,15 +229,100 @@ def get_train_test_sets(X_temp, y_temp, samples, cells_per_cluster, labels_per_c
     return X_train, y_train, X_test, y_test, y_cell_ids
 
 
-def get_number_of_clusters(col_groups_dir):
-    number_of_col_clusters = 0
-    for file in os.listdir(col_groups_dir):
-        if ".pickle" in file:
-            with open(os.path.join(col_groups_dir, file), 'rb') as filehandler:
-                group_df = pickle.load(filehandler)
-                number_of_clusters = len(group_df['column_cluster_label'].unique())
-                number_of_col_clusters += number_of_clusters
-    return number_of_col_clusters
+def sampling_labeling(table_cluster, col_cluster, x, y, keys, n_cell_clusters_per_col_cluster, cells_clustering_alg, value_temp, noise_status):
+    
+    logger.info("Sampling and labeling")
+
+    ""
+    
+    outliers = []
+    outliers_orig_x_idx = dict()
+    non_outliers = []
+    non_outliers_features = []
+
+    for i, key in enumerate(keys):
+        if noise_status[key] == True:
+            outliers.append(x[i])
+            outliers_orig_x_idx[len(outliers) - 1] = i
+        else:
+            non_outliers.append(i)
+            non_outliers_features.append(x[i])
+        
+    non_outliers_center = np.mean(non_outliers_features, axis=0)
+
+    if len(outliers) == 0 or len(non_outliers) / len(non_outliers) < 0.1:
+        return None, None, None, None
+        
+    clustering = None 
+
+    if cells_clustering_alg == "km":
+        n_cell_clusters_per_col_cluster = min(len(outliers),n_cell_clusters_per_col_cluster)
+        logging.info("KMeans - n_cell_clusters_per_col_cluster: {}".format(n_cell_clusters_per_col_cluster))
+        if len(x) < n_cell_clusters_per_col_cluster + 1:
+            n_cell_clusters_per_col_cluster = len(x) - 1 
+        clustering = MiniBatchKMeans(n_clusters= n_cell_clusters_per_col_cluster, random_state=0, reassignment_ratio=0, batch_size = 256 * 64).fit(outliers)
+        logging.info("KMeans - n_cell_clusters_generated: {}".format(len(set(clustering.labels_))))
+        clustering_labels = clustering.labels_
+        
+        
+    logging.info("cells per cluster")
+    cells_per_cluster = dict()
+    # TODO remove this
+    errors_per_cluster = dict()
+    labels_per_cluster_all = dict()
+    labels_per_cluster = dict()
+
+    for cell in enumerate(clustering_labels):
+        orig_x_idx = outliers_orig_x_idx[cell[0]]
+        if cell[1] in cells_per_cluster.keys():
+            cells_per_cluster[cell[1]].append(orig_x_idx)
+            if y[orig_x_idx] == 1:
+                errors_per_cluster[cell[1]] += 1
+        else:
+            cells_per_cluster[cell[1]] = [orig_x_idx]
+            labels_per_cluster_all[cell[1]] = []
+            errors_per_cluster[cell[1]] = y[orig_x_idx]
+        # logging.info("**************** error ratio per cluster: {}".format(errors_per_cluster[cell[1]]/ len(cells_per_cluster[cell[1]])))
+    cells_per_cluster[len(cells_per_cluster.keys())] = non_outliers
+    samples = []
+    sample_values = []
+    samples_orig_values = []
+
+    if cells_clustering_alg == "km":
+        for cluster in list(cells_per_cluster.keys())[:-1]:
+            # weights_cluster_points = [data_points_weights[i] for i in cells_per_cluster[cluster]]
+            # total_weight = sum(weights_cluster_points)
+            # normalized_weights = [w / total_weight for w in weights_cluster_points]
+            # samples_tmp = np.random.choice(cells_per_cluster[cluster], size=3)
+            # compute anomaly scores (distance based)
+            outliers_dist = []
+            for i in cells_per_cluster[cluster]:
+                value = x[i]
+                outliers_dist.append(np.linalg.norm(value - non_outliers_center))
+            samples_tmp_out_idx = outliers_dist.index(max(outliers_dist))
+            samples_tmp = [cells_per_cluster[cluster][samples_tmp_out_idx]]
+            samples.extend(samples_tmp) # sample k vectors
+            sample_values.extend([x[i] for i in samples_tmp]) # get the selected vectors
+            samples_orig_values.extend([value_temp[i] for i in samples_tmp]) # get the selected vectors values
+
+    logger.info("labeling")
+    for cell in enumerate(clustering_labels):
+        orig_x_idx = outliers_orig_x_idx[cell[0]]
+        if orig_x_idx in samples:
+            labels_per_cluster_all[cell[1]].append(y[orig_x_idx])
+    
+    for c in labels_per_cluster_all.keys():
+        if len(labels_per_cluster_all[c]) > 0:
+            labels_per_cluster[c] = mode(labels_per_cluster_all[c])  
+
+    universal_samples = dict()
+    for s in samples:
+        universal_samples[(table_cluster, col_cluster, s)] = y[s]
+
+    # logger.info("labels_per_cluster: {}".format(labels_per_cluster))
+    # logger.info("samples: {}".format(samples_orig_values))
+    return cells_per_cluster, labels_per_cluster, universal_samples, samples
+
 
 
 def get_n_cell_clusters_per_col_cluster_dict(n_labels, cluster_sizes, number_of_col_clusters):
@@ -248,16 +372,35 @@ def get_col_cluster_noises(table_cluster, group_df, features_dict, noises_dict):
     n_col_clusters = len(group_df['column_cluster_label'].unique())
     for cluster in range(n_col_clusters):
         X_temp = []
+        y_temp = []
         X_temp_dict = dict()
         noise_status = dict()
         c_df = group_df[group_df['column_cluster_label'] == cluster]
         for index, row in c_df.iterrows():
             for cell_idx in range(len(row['col_value'])):
                 X_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
+                y_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')])
                 X_temp_dict[len(X_temp) - 1] = (row['table_id'], row['col_id'], cell_idx)
             
         clustering = DBSCAN(min_samples = 2).fit(X_temp)
         labels = clustering.labels_
+        cells_per_db_clusters = dict()
+        for i in range(len(labels)):
+            if labels[i] not in cells_per_db_clusters:
+                cells_per_db_clusters[labels[i]] = []
+            cells_per_db_clusters[labels[i]].append(X_temp_dict[i])
+        error_ratio = dict()
+        for key in cells_per_db_clusters.keys():
+            if key == -1:
+                continue
+            error_ratio[key] = 0
+            for cell in cells_per_db_clusters[key]:
+                if features_dict[(cell[0], cell[1], cell[2], 'gt')] == 1:
+                    error_ratio[key] += 1
+            if y_temp.count(1) > 0:
+                error_ratio[key] /= y_temp.count(1)
+            else:
+                error_ratio[key] = None
         noise_count = 0
         for l in labels:
             if l == -1:
@@ -271,16 +414,19 @@ def get_col_cluster_noises(table_cluster, group_df, features_dict, noises_dict):
         noises_dict["col_cluster"].append(cluster)
         noises_dict["n_noises"].append(noise_count)
         noises_dict["noise_status"].append(noise_status)
+        noises_dict["error_ratio"].append(error_ratio)
         logging.info("DBSCAN table cluster {} col cluster {} done - n_noises: {}".format(table_cluster, cluster, noise_count))
             
     return noises_dict
 
 def process_col_cluster(n_cell_clusters_per_col_cluster, table_cluster, cluster,\
-                         group_df, features_dict, cell_clustering_alg):
+                         group_df, features_dict, cell_clustering_alg, noise_status, df_n_labels):
     X_train = []
     y_train = []
     X_temp = []
     y_temp = []
+    key_temp = []
+    noise_temp = []
     value_temp = []
     original_data_keys_temp = []
     X_labeled_by_user = []
@@ -301,52 +447,52 @@ def process_col_cluster(n_cell_clusters_per_col_cluster, table_cluster, cluster,
                 value_temp.append(row['col_value'][cell_idx])
                 X_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
                 y_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
+                key_temp.append((row['table_id'], row['col_id'], cell_idx))
+                noise_temp.append(noise_status[(row['table_id'], row['col_id'], cell_idx)])
                 datacells_uids[(row['table_id'], row['col_id'], cell_idx, row['col_value'][cell_idx])] = current_local_cell_uid
                 current_local_cell_uid += 1
-
-        # print("Outlier Detection")
-        # # Fit the isolation forest model
-        # model = IsolationForest()
-        # model.fit(X_temp)
-        # # Predict the outliers
-        # iso_forest_res = model.predict(X_temp)
         
-        # n_outliers = iso_forest_res[iso_forest_res == -1].size
-        # n_errors = y_temp.count(1)
+        tp = []
+        fp = []
 
-        # tp = 0
-        # fp = 0
-        # ae = 0
-        # for idx, x in enumerate(X_temp):
-        #     if iso_forest_res[idx] == -1 and y_temp[idx] == 1:
-        #         tp += 1
-        #         ae += 1
-        #     elif iso_forest_res[idx] == -1 and y_temp[idx] == 0:
-        #         fp += 1
-        #     elif iso_forest_res[idx] != -1 and y_temp[idx] == 1:
-        #         ae += 1
+        for i, v in enumerate(y_temp):
+            if v == 1 and noise_temp[i] == True:
+                tp.append(i)
+            elif v == 0 and noise_temp[i] == True:
+                fp.append(i)
+
+        n_errs = y_temp.count(1)
+        logging.info("--------------------Noises - DBSCAN INFO--------------------")
+        if n_errs == 0:
+            logging.info("Table_cluster: {}, cluster: {}, detcetd errors".format(table_cluster, cluster, len(tp)))
+        else:
+            logging.info("Table_cluster: {}, cluster: {}, truely detcetd errors/all real errors: {}, truely detected errors / all detected errors: {}, wrongly detected errors / all detected errors:{}".format(table_cluster, cluster, len(tp)/ y_temp.count(1), len(tp)/ noise_temp.count(True) if noise_temp.count(True) > 0 else 0, len(fp)/ noise_temp.count(True) if noise_temp.count(True) > 0 else 0))
+        logging.info("-----------------------------------------------------------")
+        model = IsolationForest()
+        model.fit(X_temp)
+        y_pred = model.predict(X_temp).tolist()
+        tp = []
+        fp = []
+        for i, v in enumerate(y_pred):
+            if v == -1 and y_temp[i] == 1:
+                tp.append(i)
+            elif v == -1 and y_temp[i] == 0:
+                fp.append(i)
+        logging.info("***************************Outliers - ISO INFO***************************")
+        if n_errs == 0:
+            logging.info("No Errors")
+            logging.info("Table_cluster: {}, cluster: {}, detcetd errors:{}".format(table_cluster, cluster, len(tp)))
+        else:
+            logging.info("Table_cluster: {}, cluster: {}, truely detcetd errors/all real errors: {}, truely detected errors / all detected errors: {}, wrongly detected errors / all detected errors:{}".format(table_cluster, cluster, len(tp)/ y_temp.count(1), len(tp)/ y_pred.count(-1) if y_pred.count(-1) > 0 else 0, len(fp)/ y_pred.count(-1) if y_pred.count(-1) > 0 else 0))
         
-        # clustering = DBSCAN(min_samples = 2).fit(X_temp)
-        # logging.info("DBSCAN - n_cell_clusters_generated: {}".format(len(set(clustering.labels_))))
-        # labels = clustering.labels_
-        # intersect_count = 0
-        # intersect_noise = 0
-        # intersect_iso = 0
-        # for idx, l in enumerate(labels):
-        #     if l == -1 and y_temp[idx] == 1:
-        #         intersect_noise += 1
-        #     if iso_forest_res[idx] == -1 and y_temp[idx] == 1:
-        #         intersect_iso += 1
-        #     if l == -1 and iso_forest_res[idx] == -1 and y_temp[idx] == 1:
-        #         intersect_count += 1
-
-        # print("Processing table, col cluster {}, {}".format(str(table_cluster), str(cluster)))
-        # print("TP: {}, FP: {}, AE: {}".format(str(tp), str(fp), str(ae)))
-        # print("Outliers: {}, Errors: {}, Noises: {}".format(str(n_outliers), str(n_errors), str(8888)))
-        # print("Intersect: {}, ISO:{}, Noise:{}, Actual: {}".format(str(intersect_count), intersect_iso, intersect_noise, ae))
-
-        cells_per_cluster, labels_per_cluster, universal_samples, samples = sampling_labeling(table_cluster, cluster, X_temp, y_temp,
-                                                            n_cell_clusters_per_col_cluster, cell_clustering_alg, value_temp)
+        cells_per_cluster, labels_per_cluster, universal_samples, samples = sampling_labeling_iso(table_cluster, cluster, X_temp, y_temp,
+                                                                                                  n_cell_clusters_per_col_cluster, cell_clustering_alg, value_temp)
+        
+        # cells_per_cluster, labels_per_cluster, universal_samples, samples = sampling_labeling_iso(table_cluster, cluster, X_temp, y_temp, key_temp,
+                                                            # n_cell_clusters_per_col_cluster, cell_clustering_alg, value_temp, noise_status)
+        
+        if samples is None:
+            return None, None, None, None, None, None, None, None 
         X_labeled_by_user.extend([X_temp[sample] for sample in samples])
         y_labeled_by_user.extend([y_temp[sample] for sample in samples])
 
@@ -399,9 +545,6 @@ def error_detector(cell_feature_generator_enabled, noise_extraction_enabled, san
     table_charset_dict = dict()
     selected_samples = dict()
 
-    # n_cell_clusters_per_col_cluster_dict = get_n_cell_clusters_per_col_cluster_dict(n_labels, cluster_sizes, number_of_col_clusters)
-    # logging.info("n_cell_clusters_per_col_cluster_dict: {}".format(n_cell_clusters_per_col_cluster_dict))
-
     for file_name in os.listdir(col_groups_dir):
         if ".pickle" in file_name:
             file = open(os.path.join(col_groups_dir, file_name), 'rb')
@@ -435,7 +578,7 @@ def error_detector(cell_feature_generator_enabled, noise_extraction_enabled, san
 
     # Extracting Noises 
     if noise_extraction_enabled:
-        noises_dict = {"table_cluster": [], "col_cluster": [], "n_noises": [], "noise_status":[]}
+        noises_dict = {"table_cluster": [], "col_cluster": [], "n_noises": [], "noise_status":[], "error_ratio":[]}
         for file_name in os.listdir(col_groups_dir):
             if ".pickle" in file_name:
                 file = open(os.path.join(col_groups_dir, file_name), 'rb')
@@ -466,19 +609,21 @@ def error_detector(cell_feature_generator_enabled, noise_extraction_enabled, san
             clusters = set(group_df['column_cluster_label'].sort_values())
             for c_idx, cluster in enumerate(clusters):
                 n_cell_groups = df_n_labels[(df_n_labels['table_cluster'] == table_cluster) & (df_n_labels['col_cluster'] == cluster)]['n_cell_groups'].values[0]
+                noise_status = df_n_labels[(df_n_labels['table_cluster'] == table_cluster) & (df_n_labels['col_cluster'] == cluster)]['noise_status'].values[0]
                 y_test, y_cell_ids, predicted, original_data_keys_temp, universal_samples, \
                 X_labeled_by_user, y_labeled_by_user, datacells_local_ids = \
-                    process_col_cluster(n_cell_groups, table_cluster, cluster, group_df, features_dict, cell_clustering_alg)
-                selected_samples.update(universal_samples)
-                original_data_keys.extend(original_data_keys_temp)
+                    process_col_cluster(n_cell_groups, table_cluster, cluster, group_df, features_dict, cell_clustering_alg, noise_status, df_n_labels)
+                if X_labeled_by_user is not None:
+                    selected_samples.update(universal_samples)
+                    original_data_keys.extend(original_data_keys_temp)
 
-                X_labeled_by_user_all[(str(table_cluster), str(cluster))] = X_labeled_by_user
-                y_labeled_by_user_all[(str(table_cluster), str(cluster))] = y_labeled_by_user
-                
-                predicted_all[(str(table_cluster), str(cluster))] = predicted
-                y_test_all[(str(table_cluster), str(cluster))] = y_test
-                y_local_cell_ids[(str(table_cluster), str(cluster))] = y_cell_ids
-                unique_cells_local_index_collection[(str(table_cluster), str(cluster))] = datacells_local_ids
+                    X_labeled_by_user_all[(str(table_cluster), str(cluster))] = X_labeled_by_user
+                    y_labeled_by_user_all[(str(table_cluster), str(cluster))] = y_labeled_by_user
+                    
+                    predicted_all[(str(table_cluster), str(cluster))] = predicted
+                    y_test_all[(str(table_cluster), str(cluster))] = y_test
+                    y_local_cell_ids[(str(table_cluster), str(cluster))] = y_cell_ids
+                    unique_cells_local_index_collection[(str(table_cluster), str(cluster))] = datacells_local_ids
 
                 logging.info("done - Processing col cluster {} table cluster {}".format(str(cluster), str(table_cluster)))
 

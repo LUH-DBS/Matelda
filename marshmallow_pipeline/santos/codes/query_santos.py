@@ -423,10 +423,12 @@ if __name__ == "__main__":
     
         
     #load the union groundtruth and subject columns
-    ground_truth = genFunc.loadDictionaryFromPickleFile(GROUND_TRUTH_PATH)
-    ground_truth['players.csv'] = ['players.csv']
-    subject_col = genFunc.loadDictionaryFromPickleFile(SUBJECT_COL_PATH)
-    subject_col['players'] = 0
+    # ground_truth = genFunc.loadDictionaryFromPickleFile(GROUND_TRUTH_PATH)
+    ground_truth = []
+    subject_col = []
+    # ground_truth['players.csv'] = ['players.csv']
+    # subject_col = genFunc.loadDictionaryFromPickleFile(SUBJECT_COL_PATH)
+    # subject_col['players'] = 0
     benchmarkLoadEnd = time.time()
     difference = int(benchmarkLoadEnd - benchmarkLoadStart)
     total_relationship_hits = {}
@@ -803,5 +805,5 @@ print(f'Number of nodes: {G.number_of_nodes()}')
 print(f'Number of edges: {G.number_of_edges()}')
 print(f'Nodes in the graph: {list(G.nodes())}')
 print(f'Edges in the graph: {list(G.edges(data=True))}')
-nx.write_gpickle(G, '/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/mediate_files/graph.gpickle')
+nx.write_gpickle(G, '/home/fatemeh/ED-Scale/marshmallow_pipeline/output/results/graph.gpickle')
 

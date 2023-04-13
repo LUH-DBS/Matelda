@@ -28,7 +28,7 @@ def extract_col_features(table_group, cols, char_set):
 
     """
     # Feature weighting
-    w = {'data_type_features': 0.7, 'value_length_stats': 0.1, 'char_distribution': 0.3}
+    w = {'data_type_features': 0.8, 'value_length_stats': 0.1, 'char_distribution': 0.2}
     
     pipeline = Pipeline([
         ('feature_generator', FeatureUnion([
@@ -51,7 +51,7 @@ def extract_col_features(table_group, cols, char_set):
     similarity_matrix = np.where(similarity_matrix > median_similarity, similarity_matrix, 0)
     # Create a graph from the distance matrix
     graph = nx.Graph(similarity_matrix)
-    communities = nx_comm.louvain_communities(graph)
+    communities = nx_comm.louvain_communities(graph, resolution=2)
     print("**********Table Group*********:", table_group)
     print("Communities:", communities)
 
@@ -71,7 +71,7 @@ def extract_col_features(table_group, cols, char_set):
             col_group_df["col_id"].append(cols["col_id"][c])
 
     pickle.dump(cols_per_cluster,
-                open("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/mediate_files/col_grouping_res/cols_per_clu/cols_per_cluster_{}.pkl".format(table_group), "wb"))
+                open("/home/fatemeh/ED-Scale/marshmallow_pipeline/mediate_files/col_grouping_res/cols_per_clu/cols_per_cluster_{}.pkl".format(table_group), "wb"))
     pickle.dump(col_group_df,
-                open("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/mediate_files/col_grouping_res/col_df_res/col_df_labels_cluster_{}.pickle".format(table_group), "wb"))
+                open("/home/fatemeh/ED-Scale/marshmallow_pipeline/mediate_files/col_grouping_res/col_df_res/col_df_labels_cluster_{}.pickle".format(table_group), "wb"))
     return col_group_df

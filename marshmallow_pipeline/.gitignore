@@ -6,3 +6,4 @@ kaggle*/*
 logs/*
 garbage
 __pycache__
+santos_fd/*

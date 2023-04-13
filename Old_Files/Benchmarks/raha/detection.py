@@ -474,7 +474,7 @@ if __name__ == "__main__":
                'execution-time': end_time - start_time, 'number_of_labeled_tuples': labeling_budget,
                'number_of_labeled_cells': len(labeled_cells), 'detected_errors_keys': detected_errors}
     result_file_path = os.path.join(results_path, f'''raha_{dataset_name}_number#{execution_number}_${labeling_budget}$labels.json''')
-    act_errors_path = os.path.join("/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/Old_Files/Benchmarks/act_errors_Apr3"\
+    act_errors_path = os.path.join("/home/fatemeh/ED-Scale/Old_Files/Benchmarks/kaggle_sample_dataset/act_errors"\
                                    , f'''raha_{dataset_name}_number#{execution_number}_${labeling_budget}$labels_act_errors.pickle''')
     with open(result_file_path, "w") as result_file:
         json.dump(results, result_file)

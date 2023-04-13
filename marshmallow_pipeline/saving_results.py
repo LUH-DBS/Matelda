@@ -90,8 +90,9 @@ def create_predictions_dict(all_tables_dict, y_test_all, y_local_cell_ids, predi
     
     # Combine the results from all workers into a single DataFrame
     rows_list = [row for chunk in results for row in chunk]
+    print("**************************************len(rows_list): {}".format(len(rows_list)))
     results_df = pd.DataFrame(rows_list, columns=['table_id', 'table_name', 'table_shape', 'col_id', 'col_name', 'cell_idx', 'cell_value', 'predicted', 'label'])
-    
+    results_df.to_csv("results.csv", index=False)
     return results_df
 
 

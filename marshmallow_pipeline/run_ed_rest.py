@@ -12,14 +12,14 @@ if __name__ == '__main__':
 
     cell_feature_generator_enabled = False
     noise_extraction_enabled = False
-    sandbox_path = "/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/kaggle/separated_kaggle_lake"
-    tables_path = "/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/kaggle/separated_kaggle_lake/kaggle_sample_sandbox"
-    column_groups_path = "/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/mediate_files/col_grouping_res/"
+    sandbox_path = "/home/fatemeh/ED-Scale/Old_Files/Benchmarks/kaggle_sample_dataset/separated_kaggle_lake"
+    tables_path = "/home/fatemeh/ED-Scale/Old_Files/Benchmarks/kaggle_sample_dataset/separated_kaggle_lake/kaggle_sample_sandbox"
+    column_groups_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/mediate_files/col_grouping_res"
     column_groups_df_path = os.path.join(column_groups_path, "col_df_res")
     column_groups_cpc_path = os.path.join(column_groups_path, "cols_per_clu")
-    experiment_output_path = "/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/output"
-    results_path = "/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/output/results"
-    logs_dir = "/Users/fatemehahmadi/Documents/Github-Private/ED-Scale/marshmallow_pipeline/logs"
+    experiment_output_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/output"
+    results_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/output/results"
+    logs_dir = "/home/fatemeh/ED-Scale/marshmallow_pipeline/logs"
     n_table_groups = 4
 
     logger = app_logger.get_logger(logs_dir)
@@ -31,7 +31,7 @@ if __name__ == '__main__':
     cluster_sizes = {}
 
     with open(os.path.join(results_path, 'tables_dict.pickle'), 'rb') as handle:
-        tables_dict = pickle.load(handle, protocol=pickle.HIGHEST_PROTOCOL)
+        tables_dict = pickle.load(handle)
 
     for i in range(n_table_groups):
         path = os.path.join(column_groups_cpc_path, 'cols_per_cluster_{}.pkl'.format(i))
