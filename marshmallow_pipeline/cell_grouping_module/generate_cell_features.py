@@ -2,8 +2,7 @@ import hashlib
 import os
 import logging
 import pickle
-from cell_grouping_module.generate_raha_features import generate_raha_features
-
+import cell_grouping_module.generate_raha_features as raha_features
 from read_data import read_csv
 
 logger = logging.getLogger()
@@ -19,7 +18,7 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_di
         table_dirs.sort()
         for table in table_dirs:
             if not table.startswith("."):
-                logger.info("************************table: ", table)
+                logger.info("************************table: {}".format(table))
                 try:
                     path = os.path.join(table_dirs_path, table)
                     table_file_name_santos = tables_dict[table]
@@ -34,9 +33,9 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_di
                     for idx, col in enumerate(dirty_df.columns):
                         # charsets[idx] = table_char_set_dict[(str(table_id), str(idx))]
                         charsets[idx] = table_char_set_dict[(str(hashlib.md5(table_file_name_santos.encode()).hexdigest()), str(idx))]
-                    logger.info("generate features ---- table: ", table)
-                    col_features = generate_raha_features.generate_raha_features(table_dirs_path, table, charsets)
-                    logger.info("generate features done ---- table: ", table)
+                    logger.info("generate features ---- table: {}".format(table))
+                    col_features = raha_features.generate_raha_features(table_dirs_path, table, charsets)
+                    logger.info("generate features done ---- table: {}".format(table))
                     for col_idx in range(len(col_features)):
                         for row_idx in range(len(col_features[col_idx])):
                             # table_id_added = np.append(col_features[col_idx][row_idx], table_id)

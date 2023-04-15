@@ -16,8 +16,7 @@ from col_grouping_module.Value_Length_Features import ValueLengthStats
 import networkx.algorithms.community as nx_comm
 
 
-
-def extract_col_features(table_group, cols, char_set):
+def extract_col_features(table_group, cols, char_set, max_n_col_groups):
     """
     Extracts features from a column
     Args:
@@ -28,12 +27,12 @@ def extract_col_features(table_group, cols, char_set):
 
     """
     # Feature weighting
-    w = {'data_type_features': 0.8, 'value_length_stats': 0.1, 'char_distribution': 0.2}
+    w = {'data_type_features': 0.7, 'value_length_stats': 0.1, 'char_distribution': 0.2}
     
     pipeline = Pipeline([
         ('feature_generator', FeatureUnion([
             ('data_type_features', DataTypeFeatures(w["data_type_features"])),
-            # ('value_length_stats', ValueLengthStats(w["value_length_stats"])),
+            ('value_length_stats', ValueLengthStats(w["value_length_stats"])),
             ('char_distribution', CharTypeDistribution(char_set, w["char_distribution"])),
         ])),
         ('normalizer', MinMaxScaler())
@@ -51,17 +50,33 @@ def extract_col_features(table_group, cols, char_set):
     similarity_matrix = np.where(similarity_matrix > median_similarity, similarity_matrix, 0)
     # Create a graph from the distance matrix
     graph = nx.Graph(similarity_matrix)
-    communities = nx_comm.louvain_communities(graph, resolution=2)
+
+    # Set the range of resolution parameter values to sweep
+    resolution_range = np.arange(1, 2.1, 0.1) # adjust the range as desired
+
+    best_communities = None
+    for resolution in resolution_range:
+        communities = nx_comm.louvain_communities(graph, resolution=resolution)
+        if len(communities) <= max_n_col_groups:
+            best_communities = communities
+        else:
+            print("resolution {}, Number of communities is greater than the maximum number of column groups".format(resolution))
+
+    if best_communities is None:
+        print("Number of communities is greater than the maximum number of column groups")
+        return None
+    
     print("**********Table Group*********:", table_group)
-    print("Communities:", communities)
+    print("Communities:", best_communities)
+    print("Number of communities:", len(best_communities))
 
     cols_per_cluster = {}
     col_group_df = {"column_cluster_label": [], "col_value": [], "table_id": [], "table_path": [], "table_cluster": [],
                     "col_id": []}
-    l = set(range(len(communities)))
+    l = set(range(len(best_communities)))
     for i in l:
         cols_per_cluster[i] = []
-        for c in communities[i]:
+        for c in best_communities[i]:
             cols_per_cluster[i].append(cols["col_value"][c])
             col_group_df["column_cluster_label"].append(i)
             col_group_df["col_value"].append(cols["col_value"][c])

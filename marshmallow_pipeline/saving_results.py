@@ -50,49 +50,32 @@ def get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all,
             pickle.dump(total_scores, file)
     return 
 
-
-def process_cells(cells, all_tables_dict, y_test_all, predicted_all, y_labeled_by_user_all, samples):
-    rows_list = []
-    for cell_key, cell_local_idx, y_cell_ids in cells:
-        try:
-            y_local_idx = y_cell_ids.index(cell_local_idx) if cell_local_idx in y_cell_ids else -1
-            tmp_dict = {'table_id': cell_key[0], 'table_name': all_tables_dict[cell_key[0]]['name'], 
-                        'table_shape': all_tables_dict[cell_key[0]]['shape'],
-                        'col_id': cell_key[1], 'col_name': all_tables_dict[cell_key[0]]['schema'][cell_key[1]], 
-                        'cell_idx': cell_key[2], 'cell_value': cell_key[3],
-                        'predicted': predicted_all[cell_key][y_local_idx] if y_local_idx != -1 else -1,
-                        'label': y_test_all[cell_key][y_local_idx] if y_local_idx != -1 else samples[(cell_key[0], cell_key[1], cell_local_idx)]}
-            rows_list.append(tmp_dict)
-        except Exception as e:
-            logger.info(e)
-    return rows_list
-
-def create_predictions_dict(all_tables_dict, y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all, unique_cells_local_index_collection, samples):
+def create_predictions_dict(all_tables_dict, y_test_all, \
+                    y_local_cell_ids, predicted_all, \
+                    unique_cells_local_index_collection, samples):
     logger.info("get_predictions_dict")
-    
-    # Create a list of tuples that contain the cell information for each worker
-    cells_list = []
+    rows_list = []
+    samp_count = 0
     for key in unique_cells_local_index_collection.keys():
         logger.info("key: {}".format(key))
         for cell_key in list(unique_cells_local_index_collection[key].keys()):
-            cell_local_idx = unique_cells_local_index_collection[key][cell_key]
-            y_cell_ids = y_local_cell_ids[key]
-            cells_list.append((cell_key, cell_local_idx, y_cell_ids))
-    
-    # Create a multiprocessing pool with the number of available CPUs
-    num_cpus = multiprocessing.cpu_count()
-    pool = multiprocessing.Pool(processes=num_cpus)
-    
-    # Divide the cells list into num_cpus chunks and process each chunk in parallel
-    chunk_size = int(len(cells_list) / num_cpus)
-    chunks = [cells_list[i:i+chunk_size] for i in range(0, len(cells_list), chunk_size)]
-    results = pool.starmap(process_cells, [(chunk, all_tables_dict, y_test_all, predicted_all, y_labeled_by_user_all, samples) for chunk in chunks])
-    
-    # Combine the results from all workers into a single DataFrame
-    rows_list = [row for chunk in results for row in chunk]
-    print("**************************************len(rows_list): {}".format(len(rows_list)))
-    results_df = pd.DataFrame(rows_list, columns=['table_id', 'table_name', 'table_shape', 'col_id', 'col_name', 'cell_idx', 'cell_value', 'predicted', 'label'])
-    results_df.to_csv("results.csv", index=False)
+            try:
+                cell_local_idx = cell_key[2]
+                y_cell_ids = y_local_cell_ids[key]
+                y_local_idx = y_cell_ids.index(cell_local_idx) if cell_local_idx in y_cell_ids else -1
+                tmp_dict = {'table_id': cell_key[0], 'table_name': all_tables_dict[cell_key[0]]['name'], 
+                'table_shape': all_tables_dict[cell_key[0]]['shape'],
+                        'col_id': cell_key[1], 'col_name': all_tables_dict[cell_key[0]]['schema'][cell_key[1]], 
+                        'cell_idx': cell_key[2], 'cell_value': cell_key[3],
+                        'predicted': predicted_all[key][y_local_idx] if y_local_idx != -1 else -1,
+                        'label': y_test_all[key][y_local_idx] if y_local_idx != -1 else samples[(key[0], key[1], cell_local_idx)]}
+                rows_list.append(tmp_dict)
+            except Exception as e:
+                samp_count += 1
+    logger.info("samples ".format(samp_count))
+    results_df = pd.DataFrame(rows_list,
+                              columns=['table_id', 'table_name', 'table_shape', 'col_id', 'col_name', 'cell_idx', 'cell_value',
+                                       'predicted', 'label'])                 
     return results_df
 
 
@@ -138,7 +121,7 @@ def get_all_results(init_tables_dict, tables_path, results_dir, y_test_all, \
     tables_dict = get_tables_dict(init_tables_dict, tables_path)
     get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all, results_dir, samples)
     results_df = create_predictions_dict(tables_dict, y_test_all, \
-                    y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
+                    y_local_cell_ids, predicted_all, \
                     unique_cells_local_index_collection, samples)
     results_per_table = get_results_per_table(results_df)
     logger.info("Saving results_df")

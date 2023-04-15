@@ -1,10 +1,12 @@
+import math
 import os
 
 from col_grouping_module.extract_col_features import extract_col_features
 from read_data import read_csv
 import hashlib
 
-def group_cols(path, table_grouping_dict, lake_base_path):
+def group_cols(path, table_grouping_dict, lake_base_path, labeling_budget):
+    max_n_col_groups = math.floor(labeling_budget / len(table_grouping_dict) / 2)
     print("group_cols")
     for table_group in table_grouping_dict:
         print("table_group:", table_group)
@@ -23,5 +25,5 @@ def group_cols(path, table_grouping_dict, lake_base_path):
                 cols["table_path"].append(os.path.join(lake_base_path, table))
                 cols["col_id"].append(col_idx)
 
-        extract_col_features(table_group, cols, char_set)
+        extract_col_features(table_group, cols, char_set, max_n_col_groups)
 
