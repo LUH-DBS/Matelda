@@ -33,7 +33,7 @@ class DataTypeFeatures(BaseEstimator, TransformerMixin):
                         dt = parse(value)
                         if dt != None:
                             value_type = "datetime"
-                    except ValueError:
+                    except Exception as e:
                         pass
                 type_counts[value_type] += 1
             for key in type_counts:

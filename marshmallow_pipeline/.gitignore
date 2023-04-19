@@ -7,3 +7,5 @@ logs/*
 garbage
 __pycache__
 santos_fd/*
+all_res_kaggle*
+data-gov-*

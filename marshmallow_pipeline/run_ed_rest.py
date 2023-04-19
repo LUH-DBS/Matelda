@@ -12,18 +12,18 @@ if __name__ == '__main__':
 
     cell_feature_generator_enabled = False
     noise_extraction_enabled = False
-    sandbox_path = "/home/fatemeh/ED-Scale/Old_Files/Benchmarks/kaggle_sample_dataset/separated_kaggle_lake"
-    tables_path = "/home/fatemeh/ED-Scale/Old_Files/Benchmarks/kaggle_sample_dataset/separated_kaggle_lake/kaggle_sample_sandbox"
+    sandbox_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/separated"
+    tables_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/separated/data-gov-sandbox"
     column_groups_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/mediate_files/col_grouping_res"
     column_groups_df_path = os.path.join(column_groups_path, "col_df_res")
     column_groups_cpc_path = os.path.join(column_groups_path, "cols_per_clu")
     experiment_output_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/output"
     results_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/output/results"
     logs_dir = "/home/fatemeh/ED-Scale/marshmallow_pipeline/logs"
-    n_table_groups = 4
+    n_table_groups = 64
 
     logger = app_logger.get_logger(logs_dir)
-    labeling_budget = 100
+    labeling_budget = 2015
 
     number_of_col_clusters = {}
     col_groups = 0

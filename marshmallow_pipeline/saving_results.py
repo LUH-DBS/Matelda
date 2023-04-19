@@ -60,7 +60,7 @@ def create_predictions_dict(all_tables_dict, y_test_all, \
         logger.info("key: {}".format(key))
         for cell_key in list(unique_cells_local_index_collection[key].keys()):
             try:
-                cell_local_idx = cell_key[2]
+                cell_local_idx = unique_cells_local_index_collection[key][cell_key]
                 y_cell_ids = y_local_cell_ids[key]
                 y_local_idx = y_cell_ids.index(cell_local_idx) if cell_local_idx in y_cell_ids else -1
                 tmp_dict = {'table_id': cell_key[0], 'table_name': all_tables_dict[cell_key[0]]['name'], 
@@ -72,7 +72,7 @@ def create_predictions_dict(all_tables_dict, y_test_all, \
                 rows_list.append(tmp_dict)
             except Exception as e:
                 samp_count += 1
-    logger.info("samples ".format(samp_count))
+    logger.info("samples {}".format(samp_count))
     results_df = pd.DataFrame(rows_list,
                               columns=['table_id', 'table_name', 'table_shape', 'col_id', 'col_name', 'cell_idx', 'cell_value',
                                        'predicted', 'label'])                 

@@ -46,7 +46,7 @@ def sampling_labeling_iso(table_cluster, col_cluster, x, y, n_cell_clusters_per_
     logger.info("Sampling and labeling")
 
     ""
-    model = IsolationForest()
+    model = IsolationForest(random_state=42)
     model.fit(x)
     iso_for_labels = model.predict(x)
     outliers = []
@@ -105,11 +105,12 @@ def sampling_labeling_iso(table_cluster, col_cluster, x, y, n_cell_clusters_per_
                     for i in cells_per_cluster[cluster]:
                         value = x[i]
                         outliers_dist.append(np.linalg.norm(value - non_outliers_center))
-                    samples_tmp_out_idx = outliers_dist.index(max(outliers_dist))
-                    samples_tmp = [cells_per_cluster[cluster][samples_tmp_out_idx]]
-                    samples.extend(samples_tmp) # sample k vectors
-                    sample_values.extend([x[i] for i in samples_tmp]) # get the selected vectors
-                    samples_orig_values.extend([value_temp[i] for i in samples_tmp]) # get the selected vectors values
+                    if len(outliers_dist) > 0:
+                        samples_tmp_out_idx = outliers_dist.index(max(outliers_dist))
+                        samples_tmp = [cells_per_cluster[cluster][samples_tmp_out_idx]]
+                        samples.extend(samples_tmp) # sample k vectors
+                        sample_values.extend([x[i] for i in samples_tmp]) # get the selected vectors
+                        samples_orig_values.extend([value_temp[i] for i in samples_tmp]) # get the selected vectors values
 
             logger.info("labeling")
             for cell in enumerate(clustering_labels):
@@ -147,14 +148,15 @@ def sampling_labeling_iso(table_cluster, col_cluster, x, y, n_cell_clusters_per_
             if cells_clustering_alg == "km":
                 for cluster in list(cells_per_cluster.keys())[:-1]:
                     points = [x[i] for i in cells_per_cluster[cluster]]
-                    center_point = np.array(center_point)
-                    distances = np.linalg.norm(points - center_point, axis=1)
-                    samples_tmp_nout_idx = np.argmin(distances)
-                    samples_tmp = [cells_per_cluster[cluster][samples_tmp_nout_idx]]
-                    samples.extend(samples_tmp) # sample k vectors
-                    sample_values.extend([x[i] for i in samples_tmp]) # get the selected vectors
-                    samples_orig_values.extend([value_temp[i] for i in samples_tmp]) # get the selected vectors values
-
+                    if len(points) > 0:
+                        center_point = np.mean(points, axis=0)
+                        distances = np.linalg.norm(points - center_point, axis=1)
+                        samples_tmp_nout_idx = np.argmin(distances)
+                        samples_tmp = [cells_per_cluster[cluster][samples_tmp_nout_idx]]
+                        samples.extend(samples_tmp) # sample k vectors
+                        sample_values.extend([x[i] for i in samples_tmp]) # get the selected vectors
+                        samples_orig_values.extend([value_temp[i] for i in samples_tmp]) # get the selected vectors values
+                        
             logger.info("labeling")
             for cell in enumerate(clustering_labels):
                 orig_x_idx = non_outliers[cell[0]]
