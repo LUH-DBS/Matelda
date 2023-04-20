@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/EDS/ds_utils/messytables/messytables.egg-info" />
+      <excludeFolder url="file://$MODULE_DIR$/EDS/.vscode" />
+      <excludeFolder url="file://$MODULE_DIR$/EDS/outputs" />
+      <excludeFolder url="file://$MODULE_DIR$/EDS/raha-datasets" />
+      <excludeFolder url="file://$MODULE_DIR$/outputs/raha-datasets" />
+      <excludeFolder url="file://$MODULE_DIR$/outputs/raha-sandbox" />
+      <excludeFolder url="file://$MODULE_DIR$/Sandbox_Generation/metanome_input_files" />
+      <excludeFolder url="file://$MODULE_DIR$/scourgify/.vscode" />
+      <excludeFolder url="file://$MODULE_DIR$/scourgify/datalake" />
+      <excludeFolder url="file://$MODULE_DIR$/scourgify/logs" />
+      <excludeFolder url="file://$MODULE_DIR$/logs" />
+      <excludeFolder url="file://$MODULE_DIR$/raha-dataset" />
+      <excludeFolder url="file://$MODULE_DIR$/raha-datasets" />
+      <excludeFolder url="file://$MODULE_DIR$/data-gov-santos" />
+      <excludeFolder url="file://$MODULE_DIR$/data-gov-sandbox" />
+      <excludeFolder url="file://$MODULE_DIR$/kaggle_all" />
+      <excludeFolder url="file://$MODULE_DIR$/kaggle-sandbox" />
+      <excludeFolder url="file://$MODULE_DIR$/outputs" />
+      <excludeFolder url="file://$MODULE_DIR$/scourgify/mediate_files" />
+      <excludeFolder url="file://$MODULE_DIR$/scourgify/mediate_files_dgsand_res1" />
+      <excludeFolder url="file://$MODULE_DIR$/scourgify/mediate_files_topics" />
+      <excludeFolder url="file://$MODULE_DIR$/scourgify/pretrained_models" />
+    </content>
     <orderEntry type="jdk" jdkName="Python 3.10 (Error-Detection-at-Scale)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
