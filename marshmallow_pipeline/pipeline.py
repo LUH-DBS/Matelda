@@ -1,30 +1,56 @@
+from configparser import ConfigParser
 from multiprocessing import freeze_support
 import os
 import pickle
 
 import pandas as pd
-from error_detection import error_detector 
+from error_detection import error_detector
+from cluster_tables import table_grouping
+from col_grouping_module.col_grouping import group_cols 
 import saving_results
 import app_logger
 
 
 if __name__ == '__main__':
+    configs = ConfigParser()
+    configs.read("/home/fatemeh/ED-Scale/marshmallow_pipeline/config.ini")
 
-    cell_feature_generator_enabled = False
-    noise_extraction_enabled = False
-    sandbox_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/separated"
-    tables_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/separated/data-gov-sandbox"
-    column_groups_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/mediate_files/col_grouping_res"
+    logs_dir = configs["DIRECTORIES"]["logs_dir"]
+    cell_feature_generator_enabled = configs["CELL_GROUPING"]["cells_feature_generator_enabled"]
+    noise_extraction_enabled = configs["CELL_GROUPING"]["noise_extraction_enabled"]
+    sandbox_path = configs["DIRECTORIES"]["sandbox_dir"]
+    tables_path = configs["DIRECTORIES"]["tables_dir"]
+    column_groups_path = configs["DIRECTORIES"]["column_groups_path"]
     column_groups_df_path = os.path.join(column_groups_path, "col_df_res")
     column_groups_cpc_path = os.path.join(column_groups_path, "cols_per_clu")
-    experiment_output_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/output"
-    results_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/output/results"
-    logs_dir = "/home/fatemeh/ED-Scale/marshmallow_pipeline/logs"
-    n_table_groups = 64
+    experiment_output_path = configs["DIRECTORIES"]["output_dir"]
+    results_path = configs["DIRECTORIES"]["results_dir"]
+    logs_dir = configs["DIRECTORIES"]["logs_dir"]
+    labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
+    table_grouping_enabled = configs["TABLE_GROUPING"]["tg_enabled"]
+    column_grouping_enabled = configs["COLUMN_GROUPING"]["cg_enabled"]
+    c_graph_path = configs["TABLE_GROUPING"]["c_graph_path"]
+    aggregated_lake_path = configs["COLUMN_GROUPING"]["aggregated_lake_path"]
+    separated_lake_path = configs["COLUMN_GROUPING"]["separated_lake_path"]
 
     logger = app_logger.get_logger(logs_dir)
-    labeling_budget = 2015
+    logger.info("Starting the experiment")
 
+    if table_grouping_enabled:
+        logger.info("Table grouping is enabled")
+        logger.info("Executing the table grouping")
+        table_grouping_dict = table_grouping(c_graph_path)
+    else:
+        logger.info("Table grouping is disabled")
+        logger.info("Loading the table grouping results...")
+        with open(os.path.join(os.path.dirname(c_graph_path), 'table_group_dict.pickle'), 'rb') as handle:
+            table_grouping_dict = pickle.load(handle)
+    if column_grouping_enabled:
+        logger.info("Column grouping is enabled")
+        logger.info("Executing the column grouping")
+        col_groups = group_cols(aggregated_lake_path, table_grouping_dict, separated_lake_path, labeling_budget)
+
+    n_table_groups = len(table_grouping_dict)
     number_of_col_clusters = {}
     col_groups = 0
     total_col_groups = 0

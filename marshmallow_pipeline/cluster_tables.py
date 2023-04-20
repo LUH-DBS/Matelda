@@ -1,3 +1,5 @@
+import os
+import pickle
 import networkx as nx
 import networkx.algorithms.community as nx_comm
 
@@ -17,4 +19,7 @@ def table_grouping(graph_path):
         for table in community:
             table_group_dict[table_group_dict_key].append(table)
         table_group_dict_key += 1
+    
+    with open(os.path.join(os.path.dirname(graph_path), 'table_group_dict.pickle'), 'wb') as handle:
+        pickle.dump(table_group_dict, handle)
     return table_group_dict
