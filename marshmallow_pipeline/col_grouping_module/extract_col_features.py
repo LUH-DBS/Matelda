@@ -1,6 +1,7 @@
 import pickle
 
 import networkx as nx
+import community
 import numpy as np
 from sklearn.cluster import DBSCAN, MiniBatchKMeans
 from sklearn.metrics import euclidean_distances
@@ -70,15 +71,32 @@ def extract_col_features(table_group, cols, char_set, max_n_col_groups):
     print("Communities:", best_communities)
     print("Number of communities:", len(best_communities))
 
+    # Convert the communities to a dictionary format
+    comm_dict = {}
+    for i, comm in enumerate(best_communities):
+        for node in comm:
+            comm_dict[node] = i
+
+    # Calculate the modularity score
+    modularity = community.modularity(comm_dict, graph)
+    print("Modularity:", modularity)
+
     cols_per_cluster = {}
-    col_group_df = {"column_cluster_label": [], "col_value": [], "table_id": [], "table_path": [], "table_cluster": [],
+    col_group_df = {"column_cluster_label": [], "modularity": [], "community_size": [], "community_avg_degree": [], "col_value": [], "table_id": [], "table_path": [], "table_cluster": [],
                     "col_id": []}
-    l = set(range(len(best_communities)))
-    for i in l:
+    community_labels = set(range(len(best_communities)))
+    for i in community_labels:
+        comm = best_communities[i]
+        subgraph = graph.subgraph(comm)
+        size = len(subgraph.nodes)
+        avg_degree = sum(dict(subgraph.degree()).values()) / size
         cols_per_cluster[i] = []
         for c in best_communities[i]:
             cols_per_cluster[i].append(cols["col_value"][c])
             col_group_df["column_cluster_label"].append(i)
+            col_group_df["modularity"].append(modularity)
+            col_group_df["community_size"].append(size)
+            col_group_df["community_avg_degree"].append(avg_degree)
             col_group_df["col_value"].append(cols["col_value"][c])
             col_group_df["table_id"].append(cols["table_id"][c])
             col_group_df["table_path"].append(cols["table_path"][c])

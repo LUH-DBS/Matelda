@@ -106,6 +106,7 @@ def error_detector(cell_feature_generator_enabled, noise_extraction_enabled, san
     df_n_labels = get_n_cell_groups_noise_based(noise_dict, cluster_sizes, labeling_budget=n_labels)
     df_n_labels.sort_values(by=['noise_ratio'], inplace=True, ascending=False)
 
+
     for file_name in os.listdir(col_groups_dir):
         if ".pickle" in file_name:
             file = open(os.path.join(col_groups_dir, file_name), 'rb')
@@ -144,6 +145,9 @@ def error_detector(cell_feature_generator_enabled, noise_extraction_enabled, san
     with open(os.path.join(results_path, "sampled_tuples.pkl"), "wb") as filehandler:
         pickle.dump(selected_samples, filehandler)
         logger.info("Number of Labeled Cells: {}".format(len(selected_samples)))
+        
+    with open(os.path.join(output_path, "df_n_labels.pkl"), "wb") as filehandler:
+        pickle.dump(df_n_labels, filehandler)
 
     return y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
                 unique_cells_local_index_collection, selected_samples

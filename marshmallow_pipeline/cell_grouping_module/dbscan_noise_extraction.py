@@ -56,12 +56,16 @@ def get_col_cluster_noise(table_cluster, group_df, features_dict, noise_dict):
         noise_dict["n_noise"].append(noise_count)
         noise_dict["noise_status"].append(noise_status)
         noise_dict["error_ratio"].append(error_ratio)
+        noise_dict["modularity"].append(c_df["modularity"].iloc[0])
+        noise_dict["column_group_error_ratio"].append(y_temp.count(1) / len(y_temp))
+        noise_dict["community_avg_degree_avg"].append(c_df["community_avg_degree"].iloc[0])
+        noise_dict["community_size_avg"].append(c_df["community_size"].iloc[0])
         logger.info("DBSCAN table cluster {} col cluster {} done - n_noise: {}".format(table_cluster, cluster, noise_count))
             
     return noise_dict
 
 def extract_noise(col_groups_dir, output_path, features_dict):
-    noise_dict = {"table_cluster": [], "col_cluster": [], "n_noise": [], "noise_status":[], "error_ratio":[]}
+    noise_dict = {"table_cluster": [], "col_cluster": [], "n_noise": [], "noise_status":[], "error_ratio":[], "modularity":[], "column_group_error_ratio":[], "community_avg_degree_avg":[], "community_size_avg":[]}
     for file_name in os.listdir(col_groups_dir):
         if ".pickle" in file_name:
             file = open(os.path.join(col_groups_dir, file_name), 'rb')
