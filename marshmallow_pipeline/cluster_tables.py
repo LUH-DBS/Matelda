@@ -7,7 +7,7 @@ import networkx.algorithms.community as nx_comm
 def table_grouping(graph_path):
     print("table_grouping")
     print("community detection")
-    G = nx.read_gpickle(graph_path)
+    G = pickle.load(open(graph_path, "rb"))
     comp = nx_comm.louvain_communities(G)
 
     table_group_dict = {}
