@@ -70,7 +70,7 @@ def _strategy_runner_process(self, args):
         elif algorithm == "PVD":
             attribute, ch = configuration
             j = d.dataframe.columns.get_loc(attribute)
-            for i, value in d.dataframe[attribute].iteritems():
+            for i, value in d.dataframe[attribute].items():
                 try:
                     if len(re.findall("[" + ch + "]", value, re.UNICODE)) > 0:
                         outputted_cells[(i, j)] = ""
@@ -207,11 +207,19 @@ def generate_features(self, d, char_set_dict):
             else:
                 strategy_profiles.append(strategy_profile)
         # TODO: check numbers
+        parsed_keys = [json.loads(str(key['name'])) for key in strategy_profiles]  # Parse the keys into Python objects
+        sorted_keys = sorted(parsed_keys)
+        sorted_strategy_profiles = dict()
+        for key in sorted_keys:
+            for strategy_profile in strategy_profiles:
+                if json.loads(str(strategy_profile['name'])) == key:
+                    sorted_strategy_profiles[str(key)] = strategy_profile['output']
+        strategy_profiles = [str(k) for k in sorted_keys]
         feature_vectors = numpy.zeros((d.dataframe.shape[0], len(strategy_profiles)))
-        for strategy_index, strategy_profile in enumerate(strategy_profiles):
-            strategy_name = json.loads(strategy_profile["name"])[0]
-            if strategy_name in self.ERROR_DETECTION_ALGORITHMS:
-                for cell in strategy_profile["output"]:
+        for strategy_index, strategy_name in enumerate(sorted_strategy_profiles):
+            logging.info("******************************Generating features for strategy: {}".format(strategy_name))
+            if strategy_name[0] in self.ERROR_DETECTION_ALGORITHMS:
+                for cell in sorted_strategy_profiles[strategy_name]:
                     if cell[1] == j:
                         feature_vectors[cell[0], strategy_index] = 1.0
         if "TFIDF" in self.ERROR_DETECTION_ALGORITHMS:
