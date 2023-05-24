@@ -54,7 +54,7 @@ if __name__ == '__main__':
     number_of_col_clusters = {}
     col_groups = 0
     total_col_groups = 0
-    cluster_sizes = {}
+    cluster_sizes_dict = {"table_cluster": [], "col_cluster": [], "n_cells": []}
 
     with open(os.path.join(results_path, 'tables_dict.pickle'), 'rb') as handle:
         tables_dict = pickle.load(handle)
@@ -67,20 +67,25 @@ if __name__ == '__main__':
         labels_df = pd.DataFrame.from_dict(dict_labels, orient='index').T
         col_clusters = set(labels_df['column_cluster_label'])
         number_of_col_clusters[str(i)] = len(col_clusters)
-        cluster_sizes[str(i)] = {}
         for cc in col_clusters:
-            cluster_sizes[str(i)][str(cc)] = 0
             df = labels_df[labels_df['column_cluster_label'] == cc]
+            n_cells = 0
             for idx, row in df.iterrows():
-                cluster_sizes[str(i)][str(cc)] += len(row['col_value'])
+                n_cells += len(row['col_value'])
+            cluster_sizes_dict["table_cluster"].append(i)
+            cluster_sizes_dict["col_cluster"].append(cc)
+            cluster_sizes_dict["n_cells"].append(n_cells)
 
     cell_clustering_alg= "km"
 
     print("starting error detection")
-    
-    y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
-        unique_cells_local_index_collection, samples = \
-            error_detector(cell_feature_generator_enabled, noise_extraction_enabled, sandbox_path, column_groups_df_path, experiment_output_path, results_path,\
-                                                      labeling_budget, number_of_col_clusters, cluster_sizes, cell_clustering_alg, tables_dict)
-    saving_results.get_all_results(tables_dict, tables_path, results_path, y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
-    unique_cells_local_index_collection, samples)
+
+    error_detector(cell_feature_generator_enabled, noise_extraction_enabled, sandbox_path, column_groups_df_path, experiment_output_path, results_path,\
+                                                      labeling_budget, number_of_col_clusters, cluster_sizes_dict, cell_clustering_alg, tables_dict)
+
+    # y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
+    #     unique_cells_local_index_collection, samples = \
+    #         error_detector(cell_feature_generator_enabled, noise_extraction_enabled, sandbox_path, column_groups_df_path, experiment_output_path, results_path,\
+    #                                                   labeling_budget, number_of_col_clusters, cluster_sizes, cell_clustering_alg, tables_dict)
+    # saving_results.get_all_results(tables_dict, tables_path, results_path, y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
+    # unique_cells_local_index_collection, samples)

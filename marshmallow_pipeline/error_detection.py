@@ -5,10 +5,9 @@ import pickle
 import pandas as pd
 import sys
 
-from cell_grouping_module.dbscan_noise_extraction import extract_noise
 from cell_grouping_module.extract_table_group_charset import extract_charset
 from cell_grouping_module.generate_cell_features import get_cells_features
-from cell_grouping_module.sampling_labeling import get_n_cell_groups_noise_based, sampling_labeling_iso
+from cell_grouping_module.sampling_labeling import get_n_labels, cell_clustering, labeling, update_n_labels, sampling
 from classification_module.classifier import classify
 from classification_module.get_train_test import get_train_test_sets
 
@@ -22,27 +21,23 @@ if not sys.warnoptions:
     warnings.simplefilter("ignore")
 
 
-def process_col_cluster(n_cell_clusters_per_col_cluster, table_cluster, cluster,\
-                         group_df, features_dict, cell_clustering_alg, noise_status):
+def process_col_cluster(n_cell_clusters_per_col_cluster, table_cluster, col_cluster,\
+                         group_df, features_dict):
     X_train = []
     y_train = []
     X_temp = []
     y_temp = []
     key_temp = []
-    noise_temp = []
     value_temp = []
     original_data_keys_temp = []
     X_labeled_by_user = []
     y_labeled_by_user = []
-
     current_local_cell_uid = 0
     datacells_uids = dict()
-    remained_labels = 0
-
-    logger.info("Processing cluster {}".format(str(cluster)))
+    logger.info("Processing cluster {}".format(str(col_cluster)))
 
     try:
-        c_df = group_df[group_df['column_cluster_label'] == cluster]
+        c_df = group_df[group_df['column_cluster_label'] == col_cluster]
         for index, row in c_df.iterrows():
             for cell_idx in range(len(row['col_value'])):
                 original_data_keys_temp.append(
@@ -51,29 +46,36 @@ def process_col_cluster(n_cell_clusters_per_col_cluster, table_cluster, cluster,
                 value_temp.append(row['col_value'][cell_idx])
                 X_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
                 y_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
+                value_temp.append(row['col_value'][cell_idx])
                 key_temp.append((row['table_id'], row['col_id'], cell_idx))
-                noise_temp.append(noise_status[(row['table_id'], row['col_id'], cell_idx)])
                 datacells_uids[(row['table_id'], row['col_id'], cell_idx, row['col_value'][cell_idx])] = current_local_cell_uid
                 current_local_cell_uid += 1
         
-        cells_per_cluster, labels_per_cluster, universal_samples, samples, remained_labels = sampling_labeling_iso(table_cluster, cluster, X_temp, y_temp,
-                                                                                                  n_cell_clusters_per_col_cluster, cell_clustering_alg, value_temp)
-        if samples is None:
-            return None, None, None, None, None, None, None, None 
-        X_labeled_by_user.extend([X_temp[sample] for sample in samples])
-        y_labeled_by_user.extend([y_temp[sample] for sample in samples])
-
-        X_train, y_train, X_test, y_test, y_cell_ids = \
-                get_train_test_sets(X_temp, y_temp, samples, cells_per_cluster, labels_per_cluster)
-        predicted = classify(X_train, y_train, X_test)
-
+        cell_clustering_dict = cell_clustering(table_cluster, col_cluster, X_temp, y_temp, n_cell_clusters_per_col_cluster)
+        cell_clustering_dict = update_n_labels(cell_clustering_dict)
+        if cell_clustering_dict["n_labels_updated"].values[0] > 0:
+            samples_dict = sampling(cell_clustering_dict, X_temp, y_temp, value_temp)
+            samples_dict = labeling(samples_dict)
+            universal_samples = [key_temp[i] for i in samples_dict["samples_indices"]]
+        else:
+            samples_dict = None
+        
+        if samples_dict is None:
+            return None, None, None, None, None, None, None, None
+        else:
+            X_labeled_by_user.extend(samples_dict["samples"])
+            y_labeled_by_user.extend(samples_dict["labels"])
+            X_train, y_train, X_test, y_test, y_cell_ids = get_train_test_sets(X_temp, y_temp, samples_dict, cell_clustering_dict)
+            predicted = classify(X_train, y_train, X_test)
     except Exception as e:
         logger.error(e)
-    return y_test, y_cell_ids, predicted, original_data_keys_temp, universal_samples, X_labeled_by_user, y_labeled_by_user, datacells_uids, remained_labels
+    
+    return y_test, y_cell_ids, predicted, original_data_keys_temp, universal_samples, X_labeled_by_user, y_labeled_by_user, datacells_uids
 
-def error_detector(cell_feature_generator_enabled, noise_extraction_enabled, sandbox_path, col_groups_dir, 
+
+def error_detector(cell_feature_generator_enabled, extract_cell_clusters_enabled, sandbox_path, col_groups_dir, 
                    output_path, results_path, n_labels, number_of_col_clusters, 
-                   cluster_sizes, cell_clustering_alg, tables_dict):
+                   cluster_sizes_dict, cell_clustering_alg, tables_dict):
 
     logger.info("Starting error detection")
     original_data_keys = []
@@ -85,7 +87,6 @@ def error_detector(cell_feature_generator_enabled, noise_extraction_enabled, san
     y_labeled_by_user_all = dict()
     selected_samples = dict()
     used_labels = 0
-    remained_labels = 0
 
     table_charset_dict = extract_charset(col_groups_dir)
 
@@ -96,16 +97,8 @@ def error_detector(cell_feature_generator_enabled, noise_extraction_enabled, san
         with open(os.path.join(output_path, "features.pickle"), 'rb') as pickle_file:
             features_dict = pickle.load(pickle_file)
 
-    # Extracting Noise 
-    if noise_extraction_enabled:
-        noise_dict = extract_noise(col_groups_dir, output_path, features_dict)
-        
-    else:
-         with open(os.path.join(output_path, "noise_dict.pickle"), 'rb') as pickle_file:
-            noise_dict = pickle.load(pickle_file)
-    df_n_labels = get_n_cell_groups_noise_based(noise_dict, cluster_sizes, labeling_budget=n_labels)
-    df_n_labels.sort_values(by=['noise_ratio'], inplace=True, ascending=False)
-
+    cluster_sizes_df = pd.DataFrame.from_dict(cluster_sizes_dict)
+    df_n_labels = get_n_labels(cluster_sizes_df, labeling_budget=n_labels)
 
     for file_name in os.listdir(col_groups_dir):
         if ".pickle" in file_name:
@@ -113,16 +106,15 @@ def error_detector(cell_feature_generator_enabled, noise_extraction_enabled, san
             group_df = pickle.load(file)
             if not isinstance(group_df, pd.DataFrame):
                 group_df = pd.DataFrame.from_dict(group_df, orient='index').T
-            table_cluster = file_name.removeprefix("col_df_labels_cluster_").removesuffix(".pickle")
+            table_cluster = int(file_name.removeprefix("col_df_labels_cluster_").removesuffix(".pickle"))
             file.close()
             clusters = df_n_labels[df_n_labels['table_cluster'] == table_cluster]['col_cluster'].values
             for c_idx, cluster in enumerate(clusters):
-                n_cell_groups = df_n_labels[(df_n_labels['table_cluster'] == table_cluster) & (df_n_labels['col_cluster'] == cluster)]['n_cell_groups'].values[0] + remained_labels
-                noise_status = df_n_labels[(df_n_labels['table_cluster'] == table_cluster) & (df_n_labels['col_cluster'] == cluster)]['noise_status'].values[0]
+                n_cell_groups = df_n_labels[(df_n_labels['table_cluster'] == table_cluster) & (df_n_labels['col_cluster'] == cluster)]['n_labels'].values[0]
                 
                 y_test, y_cell_ids, predicted, original_data_keys_temp, universal_samples, \
-                X_labeled_by_user, y_labeled_by_user, datacells_local_ids, remained_labels = \
-                    process_col_cluster(n_cell_groups, table_cluster, cluster, group_df, features_dict, cell_clustering_alg, noise_status)
+                X_labeled_by_user, y_labeled_by_user, datacells_local_ids = \
+                    process_col_cluster(n_cell_groups, table_cluster, cluster, group_df, features_dict, cell_clustering_alg)
                 used_labels += len(X_labeled_by_user) if X_labeled_by_user is not None else 0
                 df_n_labels.loc[(df_n_labels['table_cluster'] == table_cluster) & (df_n_labels['col_cluster'] == cluster), 'sampled'] = True
                 if X_labeled_by_user is not None:
