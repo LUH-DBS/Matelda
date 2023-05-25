@@ -5,9 +5,9 @@ import pandas as pd
 
 logger = logging.getLogger()
 
-def get_train_test_sets(X_temp, y_temp, samples_dict, cell_clustering_dict):
+def get_train_test_sets(X_temp, y_temp, samples_dict, cell_clustering_df):
     logger.info("Train-Test set preparation")
-    cells_per_cluster = cell_clustering_dict["cells_per_cluster"].to_dict()
+    cells_per_cluster = cell_clustering_df["cells_per_cluster"][0]
     samples_df = pd.DataFrame(samples_dict)
     X_train, y_train, X_test, y_test, y_cell_ids = [], [], [], [], []
     clusters = samples_df["cell_cluster"].unique().tolist()

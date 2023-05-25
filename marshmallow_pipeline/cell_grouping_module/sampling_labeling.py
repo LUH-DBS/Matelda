@@ -1,6 +1,7 @@
 
 
 import logging
+import pickle
 from statistics import mode
 import math
 import numpy as np
@@ -54,13 +55,13 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
             errors_per_cluster[cell[1]] = y[cell[0]]
 
     cell_clustering_dict["n_cells"] = len(x)
-    cell_clustering_dict["n_init_labels"] = n_cell_clusters_per_col_cluster
+    cell_clustering_dict["n_init_labels"] = n_cell_clusters_per_col_cluster -1 
     cell_clustering_dict["n_produced_cell_clusters"] = len(set(clustering.labels_))
     if len(set(clustering.labels_)) > 1:
         cell_clustering_dict["n_current_requiered_labels"] = len(set(clustering.labels_)) - 1 # one cell group remains always unlabeled
     else:
         cell_clustering_dict["n_current_requiered_labels"] = len(set(clustering.labels_))
-    cell_clustering_dict["remaining_labels"] = cell_clustering_dict["n_current_requiered_labels"] - cell_clustering_dict["n_init_labels"]
+    cell_clustering_dict["remaining_labels"] = cell_clustering_dict["n_init_labels"] - cell_clustering_dict["n_current_requiered_labels"]
     cell_clustering_dict["cells_per_cluster"] = cells_per_cluster
     cell_clustering_dict["errors_per_cluster"] = errors_per_cluster
     
@@ -68,7 +69,7 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
         
 def update_n_labels(cell_clustering_dict):
     logger.info("Update n_labels")
-    cell_clustering_df = pd.DataFrame.from_dict(cell_clustering_dict)
+    cell_clustering_df = pd.DataFrame.from_records([cell_clustering_dict])
     remaining_labels = cell_clustering_df["remaining_labels"].sum()
     cell_clustering_df["n_labels_updated"] = cell_clustering_df["n_current_requiered_labels"]
     if remaining_labels == 0:
@@ -106,8 +107,8 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
     logger.info("Sampling")
     samples_dict = {"cell_cluster": [], "samples": [], "samples_indices":[], "labels": [], "dirty_cell_values": []}
 
-    cells_per_cluster = cell_clustering_dict["cells_per_cluster"].to_dict()
-    if cell_clustering_dict["n_labels_updated"].values[0] > 1:
+    cells_per_cluster = cell_clustering_dict["cells_per_cluster"][0]
+    if cell_clustering_dict["n_labels_updated"].values[0] > 1 and len(cells_per_cluster) > 1:
         unlabled_cluster = max(cells_per_cluster, key=lambda k: len(cells_per_cluster[k]))
     else:
         unlabled_cluster = -1
@@ -149,6 +150,8 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
         samples_dict["dirty_cell_values"].append(dirty_cell_values_cluster)
         samples_dict["samples_indices"].append(samples_indices)
     logger.info("Sampling done")
+    logger.info("********cell_cluster: {}".format(samples_dict["cell_cluster"]))
+    logger.info("********samples: {}".format(len(samples_dict["samples"])))
     return samples_dict
 
         

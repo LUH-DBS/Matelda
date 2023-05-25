@@ -51,13 +51,14 @@ def process_col_cluster(n_cell_clusters_per_col_cluster, table_cluster, col_clus
                 datacells_uids[(row['table_id'], row['col_id'], cell_idx, row['col_value'][cell_idx])] = current_local_cell_uid
                 current_local_cell_uid += 1
         
-        cell_clustering_df = cell_clustering(table_cluster, col_cluster, X_temp, y_temp, n_cell_clusters_per_col_cluster)
-        cell_clustering_df = update_n_labels(cell_clustering_df)
+        cell_clustering_dict = cell_clustering(table_cluster, col_cluster, X_temp, y_temp, n_cell_clusters_per_col_cluster)
+        cell_clustering_df = update_n_labels(cell_clustering_dict)
         if cell_clustering_df["n_labels_updated"].values[0] > 0:
             samples_dict = sampling(cell_clustering_df, X_temp, y_temp, value_temp)
             samples_dict = labeling(samples_dict)
+            universal_samples = dict()
             for cell_cluster_idx, cell_cluster in enumerate(samples_dict["cell_cluster"]):
-                universal_samples = {key_temp[cell_idx]: samples_dict["labels"][cell_cluster_idx][idx] for idx, cell_idx in enumerate(samples_dict["samples_indices"][cell_cluster_idx])}
+                universal_samples.update({key_temp[cell_idx]: samples_dict["labels"][cell_cluster_idx][idx] for idx, cell_idx in enumerate(samples_dict["samples_indices"][cell_cluster_idx])})
                 
         else:
             # we need at least 2 labels per col group (in the cases that we have only one cluster 1 label is enough)
