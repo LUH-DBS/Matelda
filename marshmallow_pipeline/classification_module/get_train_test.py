@@ -13,8 +13,8 @@ def get_train_test_sets(X_temp, y_temp, samples_dict, cell_clustering_dict):
     clusters = samples_df["cell_cluster"].unique().tolist()
     clusters.sort()
     for key in clusters:
-        cell_cluster_samples = samples_df[samples_df["cell_cluster"] == key]["samples_indices"].tolist()
-        cell_cluster_final_label = samples_df[samples_df["cell_cluster"] == key]["final_label_to_be_propagated"]
+        cell_cluster_samples = samples_df[samples_df["cell_cluster"] == key]["samples_indices"]
+        cell_cluster_final_label = samples_df[samples_df["cell_cluster"] == key]["final_label_to_be_propagated"].values[0]
         if len(cell_cluster_samples) == 0:
             for cell in cells_per_cluster[key]:
                 X_test.append(X_temp[cell])

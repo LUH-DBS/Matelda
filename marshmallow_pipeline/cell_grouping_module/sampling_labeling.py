@@ -38,7 +38,7 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
     clustering = None 
     cells_per_cluster = dict()
     errors_per_cluster = dict()
-    cell_clustering_dict = {"n_cells":[], "n_init_labels":[], "n_produced_cell_clusters":[], "remaining_labels": [], "cells_per_cluster": [], "errors_per_cluster":[]}
+    cell_clustering_dict = {"n_cells":[], "n_init_labels":[], "n_produced_cell_clusters":[],  "n_current_requiered_labels":[], "remaining_labels": [], "cells_per_cluster": [], "errors_per_cluster":[]}
     n_cell_clusters_per_col_cluster = min(len(x), n_cell_clusters_per_col_cluster)
     logger.info("KMeans - n_cell_clusters_per_col_cluster: {}".format(n_cell_clusters_per_col_cluster))
     clustering = MiniBatchKMeans(n_clusters= int(n_cell_clusters_per_col_cluster), random_state=0, reassignment_ratio=0, batch_size = 256 * 64).fit(x)
@@ -56,7 +56,11 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
     cell_clustering_dict["n_cells"] = len(x)
     cell_clustering_dict["n_init_labels"] = n_cell_clusters_per_col_cluster
     cell_clustering_dict["n_produced_cell_clusters"] = len(set(clustering.labels_))
-    cell_clustering_dict["remaining_labels"] = len(set(clustering.labels_)) - n_cell_clusters_per_col_cluster
+    if len(set(clustering.labels_)) > 1:
+        cell_clustering_dict["n_current_requiered_labels"] = len(set(clustering.labels_)) - 1 # one cell group remains always unlabeled
+    else:
+        cell_clustering_dict["n_current_requiered_labels"] = len(set(clustering.labels_))
+    cell_clustering_dict["remaining_labels"] = cell_clustering_dict["n_current_requiered_labels"] - cell_clustering_dict["n_init_labels"]
     cell_clustering_dict["cells_per_cluster"] = cells_per_cluster
     cell_clustering_dict["errors_per_cluster"] = errors_per_cluster
     
@@ -65,14 +69,15 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
 def update_n_labels(cell_clustering_dict):
     cell_clustering_df = pd.DataFrame.from_dict(cell_clustering_dict)
     remaining_labels = cell_clustering_df["remaining_labels"].sum()
-    cell_clustering_df["n_labels_updated"] = cell_clustering_df["n_produced_cell_clusters"]
+    cell_clustering_df["n_labels_updated"] = cell_clustering_df["n_current_requiered_labels"]
     if remaining_labels == 0:
         return cell_clustering_df
     elif remaining_labels < 0:
+        # The ones with less clusters are more homogeneous and need less labels
         cell_clustering_df.sort_values(by=['n_produced_cell_clusters'], ascending=True, inplace=True)
         i = 0
         while remaining_labels < 0 and i < len(cell_clustering_df):
-            if cell_clustering_df["n_produced_cell_clusters"].iloc[i] > 1:
+            if cell_clustering_df["n_produced_cell_clusters"].iloc[i] > 1 and cell_clustering_df["n_labels_updated"].iloc[i] > 1:
                 cell_clustering_df["n_labels_updated"].iloc[i] -= 1
                 remaining_labels += 1
             i+=1
@@ -82,7 +87,7 @@ def update_n_labels(cell_clustering_dict):
         i = 0
         while remaining_labels > 0 and i < len(cell_clustering_df):
             if cell_clustering_df["remaining_labels"].iloc[i] > 0:
-                if cell_clustering_df["n_cells"].iloc(i) > cell_clustering_df["n_produced_cell_clusters"].iloc(i):
+                if cell_clustering_df["n_cells"].iloc(i) > cell_clustering_df["n_labels_updated"].iloc(i):
                     cell_clustering_df["n_labels_updated"].iloc[i] += 1
                     remaining_labels -= 1
             i+=1
@@ -97,7 +102,7 @@ def sort_points_by_distance(feature_vectors):
 
 def sampling(cell_clustering_dict, x, y, dirty_cell_values):
     
-    samples_dict = {"cell_cluster": [], "samples": [], "samples_indices":[], "labels": [], "dirty_cell_values": [], "clean_cell_values": []}
+    samples_dict = {"cell_cluster": [], "samples": [], "samples_indices":[], "labels": [], "dirty_cell_values": []}
 
     cells_per_cluster = cell_clustering_dict["cells_per_cluster"].to_dict()
     if cell_clustering_dict["n_labels_updated"].values[0] > 1:
@@ -122,15 +127,14 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
     for cluster in labeled_clusters:
         x_cluster = []
         y_cluster = []
-        for vec in cells_per_cluster[cluster]:
-            x_cluster.append(x[vec])
-            y_cluster.append(y[vec])
+        for cell_idx in cells_per_cluster[cluster]:
+            x_cluster.append(x[cell_idx])
+            y_cluster.append(y[cell_idx])
         sorted_points = sort_points_by_distance(x_cluster)
         samples_feature_vectors = []
         samples_labels = []
         samples_indices = []
         dirty_cell_values_cluster = []
-        clean_cell_values_cluster = []
         for i in range(cell_cluster_n_labels[cluster]):
             samples_feature_vectors.append(x_cluster[sorted_points[i]])
             samples_labels.append(y_cluster[sorted_points[i]])
