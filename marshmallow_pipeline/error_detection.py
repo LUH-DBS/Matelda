@@ -56,8 +56,9 @@ def process_col_cluster(n_cell_clusters_per_col_cluster, table_cluster, col_clus
         if cell_clustering_df["n_labels_updated"].values[0] > 0:
             samples_dict = sampling(cell_clustering_df, X_temp, y_temp, value_temp)
             samples_dict = labeling(samples_dict)
-            for cell_cluster in samples_dict["cell_cluster"]:
-                universal_samples = {key_temp[i]: samples_dict["labels"][cell_cluster][i] for i in samples_dict["samples_indices"][cell_cluster]}
+            for cell_cluster_idx, cell_cluster in enumerate(samples_dict["cell_cluster"]):
+                universal_samples = {key_temp[cell_idx]: samples_dict["labels"][cell_cluster_idx][idx] for idx, cell_idx in enumerate(samples_dict["samples_indices"][cell_cluster_idx])}
+                
         else:
             # we need at least 2 labels per col group (in the cases that we have only one cluster 1 label is enough)
             samples_dict = None
@@ -65,9 +66,9 @@ def process_col_cluster(n_cell_clusters_per_col_cluster, table_cluster, col_clus
         if samples_dict is None:
             return None, None, None, None, None, None, None, None
         else:
-            for cell_cluster in samples_dict["cell_cluster"]:
-                X_labeled_by_user.extend(samples_dict["samples"][cell_cluster])
-                y_labeled_by_user.extend(samples_dict["labels"][cell_cluster])
+            for cell_cluster_idx, cell_cluster in enumerate(samples_dict["cell_cluster"]):
+                X_labeled_by_user.extend(samples_dict["samples"][cell_cluster_idx])
+                y_labeled_by_user.extend(samples_dict["labels"][cell_cluster_idx])
             X_train, y_train, X_test, y_test, y_cell_ids = get_train_test_sets(X_temp, y_temp, samples_dict, cell_clustering_df)
             predicted = classify(X_train, y_train, X_test)
     except Exception as e:

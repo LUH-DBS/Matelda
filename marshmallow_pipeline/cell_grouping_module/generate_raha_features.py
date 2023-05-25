@@ -218,7 +218,7 @@ def generate_features(self, d, char_set_dict):
         feature_vectors = numpy.zeros((d.dataframe.shape[0], len(strategy_profiles)))
         for strategy_index, strategy_name in enumerate(sorted_strategy_profiles):
             logging.info("******************************Generating features for strategy: {}".format(strategy_name))
-            if strategy_name[0] in self.ERROR_DETECTION_ALGORITHMS:
+            if eval(strategy_name)[0] in self.ERROR_DETECTION_ALGORITHMS:
                 for cell in sorted_strategy_profiles[strategy_name]:
                     if cell[1] == j:
                         feature_vectors[cell[0], strategy_index] = 1.0
@@ -251,8 +251,8 @@ def generate_features(self, d, char_set_dict):
 
 def generate_raha_features(parent_path, dataset_name, charsets):
     sp_path = parent_path + "/" + dataset_name + "/" + "raha-baran-results-" + dataset_name
-    if os.path.exists(sp_path):
-        shutil.rmtree(sp_path)
+    # if os.path.exists(sp_path):
+    #     shutil.rmtree(sp_path)
 
     detect = detection.Detection()
     dataset_name = dataset_name

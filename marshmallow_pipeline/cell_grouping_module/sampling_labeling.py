@@ -67,6 +67,7 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
     return cell_clustering_dict
         
 def update_n_labels(cell_clustering_dict):
+    logger.info("Update n_labels")
     cell_clustering_df = pd.DataFrame.from_dict(cell_clustering_dict)
     remaining_labels = cell_clustering_df["remaining_labels"].sum()
     cell_clustering_df["n_labels_updated"] = cell_clustering_df["n_current_requiered_labels"]
@@ -91,6 +92,7 @@ def update_n_labels(cell_clustering_dict):
                     cell_clustering_df["n_labels_updated"].iloc[i] += 1
                     remaining_labels -= 1
             i+=1
+    logger.info("Update n_labels - remaining_labels: {}".format(remaining_labels))
     return cell_clustering_df
 
         
@@ -101,7 +103,7 @@ def sort_points_by_distance(feature_vectors):
 
 
 def sampling(cell_clustering_dict, x, y, dirty_cell_values):
-    
+    logger.info("Sampling")
     samples_dict = {"cell_cluster": [], "samples": [], "samples_indices":[], "labels": [], "dirty_cell_values": []}
 
     cells_per_cluster = cell_clustering_dict["cells_per_cluster"].to_dict()
@@ -146,14 +148,20 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
         samples_dict["labels"].append(samples_labels)
         samples_dict["dirty_cell_values"].append(dirty_cell_values_cluster)
         samples_dict["samples_indices"].append(samples_indices)
+    logger.info("Sampling done")
     return samples_dict
 
         
 def labeling(samples_dict):
-    samples_dict.update({"final_label_to_be_propagated": []})
-    for cell_cluster in samples_dict["cell_cluster"]:
-        if len(set(samples_dict["labels"][cell_cluster])) == 1:
-            samples_dict["final_label_to_be_propagated"].append(samples_dict["labels"][cell_cluster][0])
-        else:
-            samples_dict["final_label_to_be_propagated"].append(mode(samples_dict["labels"][cell_cluster]))
+    try:
+        logger.info("Labeling")
+        samples_dict.update({"final_label_to_be_propagated": []})
+        for cell_cluster_idx, cell_cluster in enumerate(samples_dict["cell_cluster"]):
+            if len(set(samples_dict["labels"][cell_cluster_idx])) == 1:
+                samples_dict["final_label_to_be_propagated"].append(samples_dict["labels"][cell_cluster_idx][0])
+            else:
+                samples_dict["final_label_to_be_propagated"].append(mode(samples_dict["labels"][cell_cluster_idx]))
+        logger.info("Labeling  done")
+    except Exception as e:
+        logger.error("Labeling error: {}".format(e))
     return samples_dict
