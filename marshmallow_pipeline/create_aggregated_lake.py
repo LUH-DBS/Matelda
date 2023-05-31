@@ -22,8 +22,8 @@ def create_aggregated_lake(separated_sandbox_path, aggregated_sandbox_path, resu
         pickle.dump(tables_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
     # f.close()
 
-separated_sandbox_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/datasets/kaggle-eight/separated_kaggle_lake/kaggle_sample_sandbox"
-aggregated_sandbox_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/datasets/kaggle-eight/aggregated_kaggle_lake"
+separated_sandbox_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/datasets/data-gov/separated/data-gov-sandbox"
+aggregated_sandbox_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/datasets/data-gov/data-gov-sandbox-aggregated"
 # fd_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/santos/santos_fd"
 results_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/output/results"
 create_aggregated_lake(separated_sandbox_path, aggregated_sandbox_path, results_path)

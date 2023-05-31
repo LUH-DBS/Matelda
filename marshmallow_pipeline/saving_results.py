@@ -31,9 +31,13 @@ def get_classification_results(y_test_all, predicted_all, y_labeled_by_user_all,
         total_fp += fp
         total_fn += fn
 
-        precision, recall, f_score, support = precision_recall_fscore_support(col_cluster_y, col_cluster_prediction, average='micro', labels=[0,1])
+        # precision, recall, f_score, support = precision_recall_fscore_support(col_cluster_y, col_cluster_prediction, average='micro', labels=[0,1])
+        precision = tp/(tp + fp) if tp + fp > 0 else None
+        recall = tp/(tp + fn) if tp + fn > 0 else None
+        f_score = (2 * precision * recall) / (precision + recall) if precision and recall else None
+
         logger.info("col_cluster: {}, tn: {}, fp: {}, fn: {}, tp: {}".format(i, tn, fp, fn, tp))
-        scores = {"col_cluster": i, "precision": precision, "recall": recall, "f_score": f_score, "support": support, "tp": tp, "fp": fp,
+        scores = {"col_cluster": i, "precision": precision, "recall": recall, "f_score": f_score, "tp": tp, "fp": fp,
                 "fn": fn, "tn": tn}
         with open(os.path.join(results_dir, "scores_col_cluster_{}.pickle".format(i)), "wb") as file:
             pickle.dump(scores, file)

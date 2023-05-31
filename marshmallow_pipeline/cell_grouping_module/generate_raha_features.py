@@ -251,8 +251,8 @@ def generate_features(self, d, char_set_dict):
 
 def generate_raha_features(parent_path, dataset_name, charsets):
     sp_path = parent_path + "/" + dataset_name + "/" + "raha-baran-results-" + dataset_name
-    # if os.path.exists(sp_path):
-    #     shutil.rmtree(sp_path)
+    if os.path.exists(sp_path):
+        shutil.rmtree(sp_path)
 
     detect = detection.Detection()
     dataset_name = dataset_name
