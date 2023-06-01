@@ -7,6 +7,7 @@ table_group_dict.pickle
 data/*
 results/*
 .vscode/
+.DS_Store
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,visualstudiocode,jetbrains+all,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks,visualstudiocode,jetbrains+all,vim
