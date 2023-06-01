@@ -17,3 +17,5 @@ six==1.16.0
 tzdata==2023.3
 zipp==3.15.0
 zenodo_get
+nltk==3.6.5
+matplotlib==3.5.1

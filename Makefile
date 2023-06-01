@@ -7,7 +7,6 @@ install:
 	pip install -r requirements.txt
 
 setup-santos:
-	pip install -r marshmallow_pipeline/santos/requirements.txt
 	cd marshmallow_pipeline/santos
 	mkdir benchmark && cd benchmark
 	zenodo_get 7758091
