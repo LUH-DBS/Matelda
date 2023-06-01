@@ -1,16 +1,17 @@
+"""Setup logging configurations """
 import logging
 import logging.handlers
 import os
 
 
-def get_logger(logs_dir):
-    # Logging Configurations
-    if not os.path.exists(logs_dir):
-        os.makedirs(logs_dir)
-    handler = logging.handlers.WatchedFileHandler(os.environ.get("LOGFILE", os.path.join(logs_dir, "app.log")))
-    handler.setFormatter(logging.Formatter("%(asctime)s %(levelname)s %(module)s - %(funcName)s: %(message)s"))
-    app_logger = logging.getLogger()
-    app_logger.setLevel(os.environ.get("LOGLEVEL", "INFO"))
-    app_logger.addHandler(handler)
+def setup_logging(logs_dir: str):
+    """
+    Setup logging configurations
 
-    return app_logger
+    Args:
+        logs_dir (str): Path to the directory where the logs will be stored
+    """
+    # Logging Configurations
+    os.makedirs(logs_dir, exist_ok=True)
+    logging.basicConfig(filename=os.environ.get("LOGFILE", os.path.join(logs_dir, "app.log")),
+                        level=logging.INFO, format="%(asctime)s %(levelname)s %(module)s - %(funcName)s: %(message)s")

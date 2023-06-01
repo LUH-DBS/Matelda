@@ -1,14 +1,12 @@
-aggregated_datalake/*
-separated_datalake/*
-mediate_files/*
-output/*
-kaggle*/*
-logs/*
-garbage
-santos_fd/*
-all_res_kaggle*
-data-gov-*
-datasets/*
+marshmallow_pipeline/santos/benchmark/*
+marshmallow_pipeline/santos/yago/yago-original/*
+marshmallow_pipeline/santos/codes/yago-type
+marshmallow_pipeline/santos/codes/yago-subclass
+marshmallow_pipeline/santos_fd/tus_datalake_files.txt
+table_group_dict.pickle
+data/*
+results/*
+.vscode/
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,visualstudiocode,jetbrains+all,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks,visualstudiocode,jetbrains+all,vim

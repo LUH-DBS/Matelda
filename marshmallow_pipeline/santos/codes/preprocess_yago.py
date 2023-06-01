@@ -170,7 +170,7 @@ with open(LABEL_INPUT_FILE_PATH,'r', encoding = "UTF-8") as infile:
                 print("Written lines:",i)
                 print("Processed lines:",j)
 print("Label file written in entity dictionary.")
-file_pointer=open(LABEL_OUTPUT_FILE_PATH, 'wb')
+file_pointer=open(LABEL_OUTPUT_FILE_PATH, 'wb+')
 pickle.dump(dictionary,file_pointer, protocol=pickle.HIGHEST_PROTOCOL)
 
 #type dictionary
@@ -262,7 +262,7 @@ with open(SIMPLE_TYPES_INPUT_FILE_PATH,'r', encoding = "UTF-8") as infile:
                 print("Written lines:",i)
                 print("Processed lines:",j)
 print("Simple types file written in type dictionary.")
-file_pointer=open(TYPES_OUTPUT_FILE_PATH, 'wb')
+file_pointer=open(TYPES_OUTPUT_FILE_PATH, 'wb+')
 pickle.dump(dictionary,file_pointer, protocol=pickle.HIGHEST_PROTOCOL)
 
 #inheritance dictionary
@@ -293,7 +293,7 @@ for edge in dictionaryClass:
             else:
                 dictionary[edge] = [result]
  
-file_pointer=open(CLASS_OUTPUT_FILE_PATH, 'wb')
+file_pointer=open(CLASS_OUTPUT_FILE_PATH, 'wb+')
 pickle.dump(dictionary, file_pointer, protocol=pickle.HIGHEST_PROTOCOL)
 
 
@@ -338,6 +338,6 @@ with open(FACTS_INPUT_FILE_PATH,'r', encoding = "UTF-8") as infile:
         if i % 1000000 == 0:
             print("Written lines:",i)
 print("Fact file written in relation dictionary.")
-file_pointer=open(FACTS_OUTPUT_FILE_PATH, 'wb')
+file_pointer=open(FACTS_OUTPUT_FILE_PATH, 'wb+')
 pickle.dump(dictionary,file_pointer, protocol=pickle.HIGHEST_PROTOCOL)
 file_pointer.close()

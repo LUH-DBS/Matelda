@@ -57,7 +57,7 @@ while depth > 0:
                 if type_score.get(c):
                     type_score[i] = min(type_score[i], type_score[c])
 
-score = open("../yago/yago_pickle/yago-type-score.pickle", 'wb')
+score = open("../yago/yago_pickle/yago-type-score.pickle", 'wb+')
 final_dict = {}
 for i in type_score:
 	final_dict[i.lower()] = (type_score[i], type_level[i])

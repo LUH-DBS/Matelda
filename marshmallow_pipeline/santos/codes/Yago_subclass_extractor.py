@@ -35,6 +35,6 @@ for line in schema.readlines():
                 list = [subject,]
                 dict[object] = list
 
-relationship = open("yago-subclass", 'w', encoding='utf-8')
+relationship = open("yago-subclass", 'w+', encoding='utf-8')
 for i in dict.items():
     relationship.write(i[0] + ','+ str(i[1]) + '\n')

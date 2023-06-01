@@ -41,6 +41,6 @@ for line in facts.readlines():
             dict[t] = 1
 facts.close()
 
-typeDict = open("yago-type", 'w', encoding='utf-8')
+typeDict = open("yago-type", 'w+', encoding='utf-8')
 for i in dict.items():
     typeDict.write(i[0] + ', '+ str(i[1]) + '\n')
