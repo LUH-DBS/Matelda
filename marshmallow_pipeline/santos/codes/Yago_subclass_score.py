@@ -4,8 +4,8 @@ This Python file is used to generate scores for each set of subclass relationshi
 import math
 import pickle
 
-relationship = open("yago-subclass", "r", encoding='utf-8')
-types = open("yago-type", "r", encoding='utf-8')
+relationship = open("marshmallow_pipeline/santos/yago/yago-subclass", "r", encoding='utf-8')
+types = open("marshmallow_pipeline/santos/yago/yago-type", "r", encoding='utf-8')
 
 type_count = {}
 type_subclasses = {}
@@ -57,7 +57,7 @@ while depth > 0:
                 if type_score.get(c):
                     type_score[i] = min(type_score[i], type_score[c])
 
-score = open("../yago/yago_pickle/yago-type-score.pickle", 'wb+')
+score = open("marshmallow_pipeline/santos/yago/yago_pickle/yago-type-score.pickle", 'wb+')
 final_dict = {}
 for i in type_score:
 	final_dict[i.lower()] = (type_score[i], type_level[i])

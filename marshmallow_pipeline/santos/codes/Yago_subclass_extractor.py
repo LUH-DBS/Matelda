@@ -2,8 +2,8 @@
 This Python file is used to extract the subclass relationships between Yago types. 
 The input is yago-wd-class.nt and yago-wd-schema.nt.
 """
-classes = open("../yago/yago_original/yago-wd-class.nt", "r", encoding='utf-8')
-schema = open("../yago/yago_original/yago-wd-schema.nt", "r", encoding='utf-8')
+classes = open("marshmallow_pipeline/santos/yago/yago-original/yago-wd-class.nt", "r", encoding='utf-8')
+schema = open("marshmallow_pipeline/santos/yago/yago-original/yago-wd-schema.nt", "r", encoding='utf-8')
 
 dict = {}
 
@@ -35,6 +35,6 @@ for line in schema.readlines():
                 list = [subject,]
                 dict[object] = list
 
-relationship = open("yago-subclass", 'w+', encoding='utf-8')
+relationship = open("marshmallow_pipeline/santos/yago/yago-subclass", 'w+', encoding='utf-8')
 for i in dict.items():
     relationship.write(i[0] + ','+ str(i[1]) + '\n')

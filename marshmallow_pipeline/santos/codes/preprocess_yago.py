@@ -89,24 +89,24 @@ class Hierarchy:
         return visited
 
 
-SCHEMA_FILE_PATH = r"../yago/yago_original/yago-wd-schema.nt" #contains labels and some types too
+SCHEMA_FILE_PATH = r"marshmallow_pipeline/santos/yago/yago-original/yago-wd-schema.nt" #contains labels and some types too
 
 #ENTITY DICTIONARY
-LABEL_INPUT_FILE_PATH = r"../yago/yago_original/yago-wd-labels.nt" 
-LABEL_OUTPUT_FILE_PATH = r"../yago/yago_pickle/yago-wd-labels_dict.pickle" 
+LABEL_INPUT_FILE_PATH = r"marshmallow_pipeline/santos/yago/yago-original/yago-wd-labels.nt" 
+LABEL_OUTPUT_FILE_PATH = r"marshmallow_pipeline/santos/yago/yago_pickle/yago-wd-labels_dict.pickle" 
 
 #TYPE DICTIONARY
-FULL_TYPES_INPUT_FILE_PATH = r"../yago/yago_original/yago-wd-full-types.nt"
-SIMPLE_TYPES_INPUT_FILE_PATH = r"../yago/yago_original/yago-wd-simple-types.nt"
-TYPES_OUTPUT_FILE_PATH = r"../yago/yago_pickle/yago-wd-full-types_dict.pickle" 
+FULL_TYPES_INPUT_FILE_PATH = r"marshmallow_pipeline/santos/yago/yago-original/yago-wd-full-types.nt"
+SIMPLE_TYPES_INPUT_FILE_PATH = r"marshmallow_pipeline/santos/yago/yago-original/yago-wd-simple-types.nt"
+TYPES_OUTPUT_FILE_PATH = r"marshmallow_pipeline/santos/yago/yago_pickle/yago-wd-full-types_dict.pickle" 
 
 #INHERITANCE DICTIONARY
-CLASS_INPUT_FILE_PATH = r"../yago/yago_original/yago-wd-class.nt"
-CLASS_OUTPUT_FILE_PATH = r"../yago/yago_pickle/yago-wd-class_dict.pickle" 
+CLASS_INPUT_FILE_PATH = r"marshmallow_pipeline/santos/yago/yago-original/yago-wd-class.nt"
+CLASS_OUTPUT_FILE_PATH = r"marshmallow_pipeline/santos/yago/yago_pickle/yago-wd-class_dict.pickle" 
 
 #RELATIONSHIP DICTIONARY
-FACTS_INPUT_FILE_PATH = r"../yago/yago_original/yago-wd-facts.nt"
-FACTS_OUTPUT_FILE_PATH = r"../yago/yago_pickle/yago-wd-facts_dict.pickle" 
+FACTS_INPUT_FILE_PATH = r"marshmallow_pipeline/santos/yago/yago-original/yago-wd-facts.nt"
+FACTS_OUTPUT_FILE_PATH = r"marshmallow_pipeline/santos/yago/yago_pickle/yago-wd-facts_dict.pickle" 
 
 #entity dictionary
 #1. Convert label file  into pickle file. The dictionary stores label as key and entity URI as value

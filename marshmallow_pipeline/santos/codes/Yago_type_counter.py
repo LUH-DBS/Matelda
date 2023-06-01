@@ -5,7 +5,7 @@ The input is yago-wd-full-types.nt, yago-wd-simple-types.nt and yago-wd-facts.nt
 
 dict = {}
 
-full_types = open("../yago/yago_original/yago-wd-full-types.nt", "r", encoding='utf-8')
+full_types = open("marshmallow_pipeline/santos/yago/yago-original/yago-wd-full-types.nt", "r", encoding='utf-8')
 for line in full_types.readlines():
     triple = line.split()
     predicate = triple[1]
@@ -17,7 +17,7 @@ for line in full_types.readlines():
             dict[t] = 1
 full_types.close()
 
-simple_types = open("../yago/yago_original/yago-wd-simple-types.nt", "r", encoding='utf-8')
+simple_types = open("marshmallow_pipeline/santos/yago/yago-original/yago-wd-simple-types.nt", "r", encoding='utf-8')
 for line in simple_types.readlines():
     triple = line.split()
     predicate = triple[1]
@@ -29,7 +29,7 @@ for line in simple_types.readlines():
             dict[t] = 1
 simple_types.close()
 
-facts = open("../yago/yago_original/yago-wd-facts.nt", "r", encoding='utf-8')
+facts = open("marshmallow_pipeline/santos/yago/yago-original/yago-wd-facts.nt", "r", encoding='utf-8')
 for line in facts.readlines():
     triple = line.split()
     predicate = triple[1]
@@ -41,6 +41,6 @@ for line in facts.readlines():
             dict[t] = 1
 facts.close()
 
-typeDict = open("yago-type", 'w+', encoding='utf-8')
+typeDict = open("marshmallow_pipeline/santos/yago/yago-type", 'w+', encoding='utf-8')
 for i in dict.items():
     typeDict.write(i[0] + ', '+ str(i[1]) + '\n')
