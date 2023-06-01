@@ -3,8 +3,7 @@ run:
 
 install:
 	conda create -n Error-Detection-at-Scale python=3.9
-	conda activate Error-Detection-at-Scale
-	pip install -r requirements.txt
+	conda run --no-capture-output -n Error-Detection-at-Scale pip install -r requirements.txt
 
 setup-santos:
 	cd marshmallow_pipeline/santos
@@ -48,7 +47,6 @@ clean-logs:
 clean-all: clean-santos clean-yago clean-logs
 
 uninstall:
-	conda deactivate
 	conda remove -n Error-Detection-at-Scale --all
 
 .PHONY: run, install, uninstall, setup-santos, clean-santos, clean-logs
