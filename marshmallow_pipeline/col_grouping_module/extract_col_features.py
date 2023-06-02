@@ -70,9 +70,9 @@ def extract_col_features(table_group, cols, char_set, max_n_col_groups, mediate_
         logger.info("Number of communities is greater than the maximum number of column groups")
         return None
     
-    logger.info("**********Table Group*********:", table_group)
-    logger.info("Communities:", best_communities)
-    logger.info("Number of communities:", len(best_communities))
+    logger.info("**********Table Group*********: {}".format(table_group))
+    logger.info("Communities: {}".format(best_communities))
+    logger.info("Number of communities: {}".format(len(best_communities)))
 
     # Convert the communities to a dictionary format
     comm_dict = {}

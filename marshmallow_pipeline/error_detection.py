@@ -124,7 +124,7 @@ def cel_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict):
     return cel_cluster_sampling_labeling_dict
 
 
-def error_detector(cell_feature_generator_enabled, extract_cell_clusters_enabled, sandbox_path, col_groups_dir, 
+def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir, 
                    output_path, results_path, n_labels, number_of_col_clusters, 
                    cluster_sizes_dict, cell_clustering_alg, tables_dict):
 

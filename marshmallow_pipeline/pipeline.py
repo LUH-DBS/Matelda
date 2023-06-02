@@ -14,22 +14,29 @@ import app_logger
 if __name__ == '__main__':
     configs = ConfigParser()
     configs.read("/home/fatemeh/ED-Scale/marshmallow_pipeline/config.ini")
-
-    logs_dir = configs["DIRECTORIES"]["logs_dir"]
+    exp_name = configs["EXPERIMENTS"]["exp_name"]
     cell_feature_generator_enabled = bool(int(configs["CELL_GROUPING"]["cells_feature_generator_enabled"]))
-    noise_extraction_enabled = bool(int(configs["CELL_GROUPING"]["noise_extraction_enabled"]))
     sandbox_path = configs["DIRECTORIES"]["sandbox_dir"]
     tables_path = configs["DIRECTORIES"]["tables_dir"]
-    column_groups_path = configs["DIRECTORIES"]["column_groups_path"]
-    column_groups_df_path = os.path.join(column_groups_path, "col_df_res")
-    column_groups_cpc_path = os.path.join(column_groups_path, "cols_per_clu")
-    experiment_output_path = configs["DIRECTORIES"]["output_dir"]
-    results_path = configs["DIRECTORIES"]["results_dir"]
-    logs_dir = configs["DIRECTORIES"]["logs_dir"]
     labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
+
+    experiment_output_path = os.path.join(configs["DIRECTORIES"]["output_dir"],  "_" + exp_name + "_" + str(labeling_budget)+ "_labels")
+    logs_dir = os.path.join(experiment_output_path, "logs")
+    results_path = os.path.join(experiment_output_path, "results")
+    mediate_files_path = os.path.join(experiment_output_path, "mediate_files")
+
+    if not os.path.exists(experiment_output_path):
+        os.makedirs(experiment_output_path)
+    
+    if not os.path.exists(results_path):
+        os.makedirs(results_path)
+    
+    if not os.path.exists(logs_dir):
+        os.makedirs(logs_dir)
+    
     table_grouping_enabled = bool(int(configs["TABLE_GROUPING"]["tg_enabled"]))
     column_grouping_enabled = bool(int(configs["COLUMN_GROUPING"]["cg_enabled"]))
-    c_graph_path = configs["TABLE_GROUPING"]["c_graph_path"]
+    santos_graph_path = configs["TABLE_GROUPING"]["santos_graph_path"]
     aggregated_lake_path = configs["COLUMN_GROUPING"]["aggregated_lake_path"]
     separated_lake_path = configs["COLUMN_GROUPING"]["separated_lake_path"]
 
@@ -39,24 +46,27 @@ if __name__ == '__main__':
     if table_grouping_enabled:
         logger.info("Table grouping is enabled")
         logger.info("Executing the table grouping")
-        table_grouping_dict = table_grouping(c_graph_path)
+        table_grouping_dict = table_grouping(santos_graph_path, mediate_files_path)
     else:
         logger.info("Table grouping is disabled")
         logger.info("Loading the table grouping results...")
-        with open(os.path.join(os.path.dirname(c_graph_path), 'table_group_dict.pickle'), 'rb') as handle:
+        with open(os.path.join(os.path.dirname(mediate_files_path), 'table_group_dict.pickle'), 'rb') as handle:
             table_grouping_dict = pickle.load(handle)
     if column_grouping_enabled:
         logger.info("Column grouping is enabled")
         logger.info("Executing the column grouping")
-        col_groups = group_cols(aggregated_lake_path, table_grouping_dict, separated_lake_path, labeling_budget)
+        col_groups = group_cols(aggregated_lake_path, table_grouping_dict, separated_lake_path, labeling_budget, mediate_files_path)
 
     n_table_groups = len(table_grouping_dict)
     number_of_col_clusters = {}
     col_groups = 0
     total_col_groups = 0
     cluster_sizes_dict = {"table_cluster": [], "col_cluster": [], "n_cells": []}
+    column_groups_path = os.path.join(mediate_files_path, "col_grouping_res")
+    column_groups_df_path = os.path.join(column_groups_path, "col_df_res")
+    column_groups_cpc_path = os.path.join(column_groups_path, "cols_per_clu")
 
-    with open(os.path.join(results_path, 'tables_dict.pickle'), 'rb') as handle:
+    with open(configs["CELL_GROUPING"]["tables_dict_path"], 'rb') as handle:
         tables_dict = pickle.load(handle)
 
     for i in range(n_table_groups):
@@ -82,7 +92,7 @@ if __name__ == '__main__':
 
     y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
         unique_cells_local_index_collection, samples = \
-            error_detector(cell_feature_generator_enabled, noise_extraction_enabled, sandbox_path, column_groups_df_path, experiment_output_path, results_path,\
+            error_detector(cell_feature_generator_enabled, sandbox_path, column_groups_df_path, experiment_output_path, results_path,\
                                                       labeling_budget, number_of_col_clusters, cluster_sizes_dict, cell_clustering_alg, tables_dict)
     saving_results.get_all_results(tables_dict, tables_path, results_path, y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
     unique_cells_local_index_collection, samples)

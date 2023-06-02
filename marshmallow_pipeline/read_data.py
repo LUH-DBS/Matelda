@@ -29,8 +29,8 @@ def read_csv(path: str, low_memory: bool = False) -> pd.DataFrame:
         pandas dataframe of the table
     """
     logger = logging.getLogger()
-    logger.info("Reading table, name: %s", os.path.basename(path))
-    print("Reading table, name: %s", os.path.basename(path))
+    logger.info("Reading table, name: {}".format(os.path.basename(path)))
+    print("Reading table, name: {}".format(os.path.basename(path)))
 
     return pd.read_csv(path, sep=",", header="infer", low_memory=low_memory, encoding='latin-1')\
         .applymap(lambda x: value_normalizer(x) if isinstance(x, str) else x)\

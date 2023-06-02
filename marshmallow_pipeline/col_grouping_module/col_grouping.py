@@ -12,7 +12,7 @@ def group_cols(path, table_grouping_dict, lake_base_path, labeling_budget, media
     max_n_col_groups = math.floor(labeling_budget / len(table_grouping_dict) / 2)
     logger.info("group_cols")
     for table_group in table_grouping_dict:
-        logger.info("table_group:", table_group)
+        logger.info("table_group: {}".format(table_group))
         cols = {"col_value": [], "table_id": [], "table_path": [], "col_id": []}
         char_set = set()
         for table in table_grouping_dict[table_group]:
