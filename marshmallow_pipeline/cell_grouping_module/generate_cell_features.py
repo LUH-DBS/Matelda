@@ -43,7 +43,7 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_di
                             features_dict[(hashlib.md5(table_file_name_santos.encode()).hexdigest(), col_idx, row_idx, 'og')] = col_features[col_idx][row_idx]
                             
                     
-                    label_df = dirty_df.where(dirty_df.values != clean_df.values).notna() * 1
+                    label_df = dirty_df.where(dirty_df.astype(str).values != clean_df.astype(str).values).notna() * 1
                     for col_idx, col_name in enumerate(label_df.columns):
                         for row_idx in range(len(label_df[col_name])):
                             features_dict[(hashlib.md5(table_file_name_santos.encode()).hexdigest(), col_idx, row_idx, 'gt')] = label_df[col_name][row_idx]
