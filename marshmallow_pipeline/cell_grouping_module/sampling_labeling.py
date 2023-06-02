@@ -87,11 +87,11 @@ def update_n_labels(cell_clustering_recs):
             i+=1
 
     else:
-        cell_clustering_df = cell_clustering_df.sort_values(by=['n_produced_cell_clusters'], ascending=False)
+        cell_clustering_df.sort_values(by=['n_produced_cell_clusters'], ascending=False, inplace=True)
         i = 0
         while remaining_labels > 0 and i < len(cell_clustering_df):
             if cell_clustering_df["remaining_labels"].iloc[i] > 0:
-                if cell_clustering_df["n_cells"].iloc(i) > cell_clustering_df["n_labels_updated"].iloc(i):
+                if cell_clustering_df["n_cells"].iloc[i] > cell_clustering_df["n_labels_updated"].iloc[i]:
                     cell_clustering_df["n_labels_updated"].iloc[i] += 1
                     remaining_labels -= 1
             i+=1

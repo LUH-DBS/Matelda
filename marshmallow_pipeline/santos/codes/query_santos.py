@@ -50,7 +50,7 @@ def computeSynthColumnSemantics(input_table, synth_type_kb):
     #synthInvertedIndex  = {}
     all_column_semantics = {}
     col_id = 0
-    for (columnName, columnData) in input_table.iteritems():
+    for (columnName, columnData) in input_table.items():
         sem = {}
         #creating the lookup table for data lake tables
         if genFunc.getColumnType(input_table[columnName].tolist()) == 1:
@@ -250,7 +250,7 @@ def computeColumnSemantics(input_table, subject_index, LABEL_DICT, TYPE_DICT, CL
     column_bag_of_words = []
     column_dictionary = {}
     subject_semantics = ""
-    for (columnName, columnData) in input_table.iteritems():
+    for (columnName, columnData) in input_table.items():
         if genFunc.getColumnType(input_table[columnName].tolist()) == 1: #check column Type
             input_table[columnName] = input_table[columnName].map(str)                
             #get unique values in the column and preprocess them.
@@ -805,5 +805,5 @@ print(f'Number of nodes: {G.number_of_nodes()}')
 print(f'Number of edges: {G.number_of_edges()}')
 print(f'Nodes in the graph: {list(G.nodes())}')
 print(f'Edges in the graph: {list(G.edges(data=True))}')
-nx.write_gpickle(G, '/home/fatemeh/ED-Scale/marshmallow_pipeline/output/results/graph.gpickle')
+nx.write_gpickle(G, '/home/fatemeh/ED-Scale/marshmallow_pipeline/output/results_raha/graph.gpickle')
 
