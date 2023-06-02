@@ -86,8 +86,6 @@ def cel_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict):
                 for idx, cell_idx in enumerate(samples_dict["samples_indices_global"][cell_cluster_idx]):
                      universal_samples.update({key_temp[cell_idx]: samples_dict["labels"][cell_cluster_idx][idx]})
             logger.info("len to_be_added: {}".format(str(len(universal_samples))))
-            if (len(universal_samples) != len(samples_dict["cell_cluster"])):
-                print("ERROR: len universal_samples != len samples_dict")
         else:
             # we need at least 2 labels per col group (in the cases that we have only one cluster 1 label is enough)
             samples_dict = None
