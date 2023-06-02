@@ -42,5 +42,5 @@ clean-all: clean-santos clean-yago clean-logs
 uninstall:
 	conda remove -n Error-Detection-at-Scale --all
 
-.PHONY: run, install, uninstall, setup-santos, clean-santos, clean-logs
+.PHONY: run, install, uninstall, setup-santos, clean-santos, clean-logs, clean-all, clean-yago
 .DEFAULT_GOAL := run
