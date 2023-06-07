@@ -6,6 +6,6 @@ def move_to_santos(santos_lake_path, santos_query_path, aggregated_sandbox_path)
 
 santos_lake_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/santos/benchmark/tus_benchmark/datalake"
 santos_query_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/santos/benchmark/tus_benchmark/query"
-aggregated_sandbox_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/data-gov-sandbox-aggregated"
+aggregated_sandbox_path = "/home/fatemeh/ED-Scale/marshmallow_pipeline/datasets/kaggle-eight/aggregated_kaggle_lake"
 
 move_to_santos(santos_lake_path, santos_query_path, aggregated_sandbox_path)

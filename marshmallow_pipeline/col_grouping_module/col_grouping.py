@@ -8,8 +8,8 @@ import hashlib
 
 logger = logging.getLogger()
 
-def group_cols(path, table_grouping_dict, lake_base_path, labeling_budget, mediate_files_path):
-    max_n_col_groups = math.floor(labeling_budget / len(table_grouping_dict) / 2)
+def group_cols(path, table_grouping_dict, lake_base_path, labeling_budget, mediate_files_path, min_num_labes_per_col_cluster):
+    max_n_col_groups = math.floor(labeling_budget / len(table_grouping_dict) / min_num_labes_per_col_cluster)
     logger.info("group_cols")
     for table_group in table_grouping_dict:
         logger.info("table_group: {}".format(table_group))

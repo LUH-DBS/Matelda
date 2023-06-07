@@ -14,8 +14,8 @@ from scipy.spatial.distance import euclidean
 
 logger = logging.getLogger()
 
-def get_n_labels(cluster_sizes_df, labeling_budget):
-    cluster_sizes_df["n_labels"] = cluster_sizes_df.apply(lambda x: min(2, x["n_cells"]), axis = 1)
+def get_n_labels(cluster_sizes_df, labeling_budget, min_num_labes_per_col_cluster):
+    cluster_sizes_df["n_labels"] = cluster_sizes_df.apply(lambda x: min(min_num_labes_per_col_cluster, x["n_cells"]), axis = 1)
     cluster_sizes_df["sampled"] = cluster_sizes_df.apply(lambda x: False, axis=1)
     used_labels = cluster_sizes_df["n_labels"].sum()
     num_total_cells = cluster_sizes_df["n_cells"].sum()
@@ -84,6 +84,7 @@ def update_n_labels(cell_clustering_recs):
             if cell_clustering_df["n_produced_cell_clusters"].iloc[i] > 1 and cell_clustering_df["n_labels_updated"].iloc[i] > 1:
                 cell_clustering_df["n_labels_updated"].iloc[i] -= 1
                 remaining_labels += 1
+                i = 0
             i+=1
 
     else:
@@ -94,6 +95,7 @@ def update_n_labels(cell_clustering_recs):
                 if cell_clustering_df["n_cells"].iloc[i] > cell_clustering_df["n_labels_updated"].iloc[i]:
                     cell_clustering_df["n_labels_updated"].iloc[i] += 1
                     remaining_labels -= 1
+                    i = 0
             i+=1
     logger.info("Update n_labels - remaining_labels: {}".format(remaining_labels))
     return cell_clustering_df
@@ -157,6 +159,13 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
         samples_dict["dirty_cell_values"].append(dirty_cell_values_cluster)
         samples_dict["samples_indices_cell_group"].append(samples_indices_cell_group)
         samples_dict["samples_indices_global"].append(samples_indices_global)
+    samples_dict["cell_cluster"].append(unlabled_cluster)
+    samples_dict["samples"].append([])
+    samples_dict["labels"].append([])
+    samples_dict["dirty_cell_values"].append([])
+    samples_dict["samples_indices_cell_group"].append([])
+    samples_dict["samples_indices_global"].append([])
+
     logger.info("Sampling done")
     logger.info("********cell_cluster: {}".format(samples_dict["cell_cluster"]))
     logger.info("********samples: {}".format(len(samples_dict["samples"])))
@@ -168,10 +177,13 @@ def labeling(samples_dict):
         logger.info("Labeling")
         samples_dict.update({"final_label_to_be_propagated": []})
         for cell_cluster_idx, cell_cluster in enumerate(samples_dict["cell_cluster"]):
-            if len(set(samples_dict["labels"][cell_cluster_idx])) == 1:
-                samples_dict["final_label_to_be_propagated"].append(samples_dict["labels"][cell_cluster_idx][0])
+            if len(samples_dict["samples"][cell_cluster_idx]) != 0:
+                if len(set(samples_dict["labels"][cell_cluster_idx])) == 1:
+                    samples_dict["final_label_to_be_propagated"].append(samples_dict["labels"][cell_cluster_idx][0])
+                else:
+                    samples_dict["final_label_to_be_propagated"].append(mode(samples_dict["labels"][cell_cluster_idx]))
             else:
-                samples_dict["final_label_to_be_propagated"].append(mode(samples_dict["labels"][cell_cluster_idx]))
+                samples_dict["final_label_to_be_propagated"].append(None)
         logger.info("Labeling  done")
     except Exception as e:
         logger.error("Labeling error: {}".format(e))

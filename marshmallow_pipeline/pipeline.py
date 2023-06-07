@@ -2,6 +2,7 @@ from configparser import ConfigParser
 from multiprocessing import freeze_support
 import os
 import pickle
+import time
 
 import pandas as pd
 from error_detection import error_detector
@@ -11,14 +12,15 @@ import saving_results
 import app_logger
 
 
-if __name__ == '__main__':
+def main(labeling_budget):
+    init_time = time.time()
     configs = ConfigParser()
     configs.read("/home/fatemeh/ED-Scale/marshmallow_pipeline/config.ini")
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     cell_feature_generator_enabled = bool(int(configs["CELL_GROUPING"]["cells_feature_generator_enabled"]))
     sandbox_path = configs["DIRECTORIES"]["sandbox_dir"]
     tables_path = configs["DIRECTORIES"]["tables_dir"]
-    labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
+    # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
 
     experiment_output_path = os.path.join(configs["DIRECTORIES"]["output_dir"],  "_" + exp_name + "_" + str(labeling_budget)+ "_labels")
     logs_dir = os.path.join(experiment_output_path, "logs")
@@ -52,10 +54,12 @@ if __name__ == '__main__':
         logger.info("Loading the table grouping results...")
         with open(os.path.join(os.path.dirname(mediate_files_path), 'table_group_dict.pickle'), 'rb') as handle:
             table_grouping_dict = pickle.load(handle)
+    min_num_labes_per_col_cluster = int(configs["COLUMN_GROUPING"]["min_num_labes_per_col_cluster"])
     if column_grouping_enabled:
         logger.info("Column grouping is enabled")
         logger.info("Executing the column grouping")
-        col_groups = group_cols(aggregated_lake_path, table_grouping_dict, separated_lake_path, labeling_budget, mediate_files_path)
+        
+        col_groups = group_cols(aggregated_lake_path, table_grouping_dict, separated_lake_path, labeling_budget, mediate_files_path, min_num_labes_per_col_cluster)
 
     n_table_groups = len(table_grouping_dict)
     number_of_col_clusters = {}
@@ -93,6 +97,13 @@ if __name__ == '__main__':
     y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
         unique_cells_local_index_collection, samples = \
             error_detector(cell_feature_generator_enabled, sandbox_path, column_groups_df_path, experiment_output_path, results_path,\
-                                                      labeling_budget, number_of_col_clusters, cluster_sizes_dict, cell_clustering_alg, tables_dict)
+                                                      labeling_budget, number_of_col_clusters, cluster_sizes_dict, cell_clustering_alg, tables_dict, min_num_labes_per_col_cluster)
+    end_time = time.time()
+    print("Total time: ", end_time - init_time)
+    with open(os.path.join(results_path, "predicted.pickle"), "wb") as f:
+        pickle.dump(predicted_all, f)
     saving_results.get_all_results(tables_dict, tables_path, results_path, y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
     unique_cells_local_index_collection, samples)
+
+# if __name__ == '__main__':
+#     main(0)

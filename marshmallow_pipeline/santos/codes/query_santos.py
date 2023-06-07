@@ -805,5 +805,5 @@ print(f'Number of nodes: {G.number_of_nodes()}')
 print(f'Number of edges: {G.number_of_edges()}')
 print(f'Nodes in the graph: {list(G.nodes())}')
 print(f'Edges in the graph: {list(G.edges(data=True))}')
-nx.write_gpickle(G, '/home/fatemeh/ED-Scale/marshmallow_pipeline/output/results_raha/graph.gpickle')
+nx.write_gpickle(G, '/home/fatemeh/ED-Scale/marshmallow_pipeline/datasets/kaggle-eight/graph.gpickle')
 
