@@ -2,6 +2,7 @@
 import logging
 import os
 import pickle
+import shutil
 import subprocess
 
 import networkx.algorithms.community as nx_comm
@@ -12,7 +13,7 @@ import marshmallow_pipeline.santos.codes.query_santos
 import marshmallow_pipeline.santos_fd.sortFDs_pickle_file_dict
 
 
-def table_grouping(sandbox_path: str, output_path: str) -> dict:
+def table_grouping(aggregated_lake_path: str, output_path: str) -> dict:
     """
     Group tables into clusters
 
@@ -23,7 +24,7 @@ def table_grouping(sandbox_path: str, output_path: str) -> dict:
         dict: Dictionary of table groups
     """
     logging.info("Table grouping")
-    g_santos = run_santos(sandbox_path=sandbox_path)
+    g_santos = run_santos(aggregated_lake_path=aggregated_lake_path)
 
     logging.info("Community detection")
     comp = nx_comm.louvain_communities(g_santos)
@@ -37,53 +38,32 @@ def table_grouping(sandbox_path: str, output_path: str) -> dict:
             table_group_dict[table_group_dict_key].append(table)
         table_group_dict_key += 1
 
-    with open(
-        os.path.join(os.path.dirname(output_path), "table_group_dict.pickle"), "wb"
-    ) as handle:
+    with open(os.path.join(output_path, "table_group_dict.pickle"), "wb+") as handle:
         pickle.dump(table_group_dict, handle)
     return table_group_dict
 
 
-def run_santos(
-    sandbox_path: str,
-    santos_lake_path: str = "marshmallow_pipeline/santos/benchmark/tus_benchmark/datalake",
-    santos_query_path: str = "marshmallow_pipeline/santos/benchmark/tus_benchmark/query",
-):
+def run_santos(aggregated_lake_path: str):
     """
     Run santos on the sandbox.
 
     Args:
-        sandbox_path (str): Path to the sandbox
-        santos_lake_path (str, optional): _description_. 
-            Defaults to "marshmallow_pipeline/santos/benchmark/tus_benchmark/datalake".
-        santos_query_path (str, optional): _description_. 
-            Defaults to "marshmallow_pipeline/santos/benchmark/tus_benchmark/query".
+        aggregated_lake_path (str): Path to the sandbox
 
     Returns:
         _type_: _description_
     """
     logging.info("Preparing santos")
+    santos_path = "marshmallow_pipeline/santos/benchmark/tus_benchmark"
+    santos_lake_path = os.path.join(santos_path, "datalake")
+    santos_query_path = os.path.join(santos_path, "query")
 
     logging.info("Symlinking sandbox to santos")
-    os.makedirs(santos_lake_path, exist_ok=True)
-    os.makedirs(santos_query_path, exist_ok=True)
-    for name in os.listdir(sandbox_path):
-        curr_path = os.path.join(sandbox_path, name)
-        if os.path.isdir(curr_path):
-            dirty_csv_path = os.path.join(curr_path, "dirty_clean.csv")
-            if os.path.isfile(dirty_csv_path):
-
-                if os.path.exists(os.path.join(santos_lake_path, name + ".csv")):
-                    os.remove(os.path.join(santos_lake_path, name + ".csv"))
-                os.link(
-                    dirty_csv_path, os.path.join(santos_lake_path, name + ".csv")
-                )
-
-                if os.path.exists(os.path.join(santos_query_path, name + ".csv")):
-                    os.remove(os.path.join(santos_query_path, name + ".csv"))
-                os.link(
-                    dirty_csv_path, os.path.join(santos_query_path, name + ".csv")
-                )
+    os.makedirs(santos_path, exist_ok=True)
+    shutil.rmtree(santos_lake_path, ignore_errors=True)
+    shutil.rmtree(santos_query_path, ignore_errors=True)
+    shutil.copytree(aggregated_lake_path, santos_lake_path, copy_function=os.link)
+    shutil.copytree(aggregated_lake_path, santos_query_path, copy_function=os.link)
 
     logging.info("Santos run data_lake_processing_yago")
     # 1 == tus_benchmark
@@ -112,17 +92,8 @@ def run_santos(
     g_santos = marshmallow_pipeline.santos.codes.query_santos.main(1, 3)
 
     logging.info("Removing hardlinks")
-    os.makedirs(santos_lake_path, exist_ok=True)
-    os.makedirs(santos_query_path, exist_ok=True)
-    for name in os.listdir(sandbox_path):
-        curr_path = os.path.join(sandbox_path, name)
-        if os.path.isdir(curr_path):
-            santos_lake_path_csv = os.path.join(santos_lake_path, name + ".csv")
-            santos_query_path_csv = os.path.join(santos_query_path, name + ".csv")
-            if os.path.exists(santos_lake_path_csv):
-                os.remove(santos_lake_path_csv)
-            if os.path.exists(santos_query_path_csv):
-                os.remove(santos_query_path_csv)
+    shutil.rmtree(santos_lake_path, ignore_errors=True)
+    shutil.rmtree(santos_query_path, ignore_errors=True)
 
     logging.info("Santos finished")
     return g_santos
