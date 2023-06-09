@@ -41,6 +41,12 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
     errors_per_cluster = dict()
     cell_clustering_dict = {"table_cluster":[], "col_cluster":[], "n_cells":[], "n_init_labels":[], "n_produced_cell_clusters":[],  "n_current_requiered_labels":[], "remaining_labels": [], "cells_per_cluster": [], "errors_per_cluster":[]}
     n_cell_clusters_per_col_cluster = min(len(x), n_cell_clusters_per_col_cluster)
+    if n_cell_clusters_per_col_cluster == 0:
+        logger.info("****************************%%%%%%%%%%%%%%%%%%%%#########################$$$$$$$$$$$$$$$$$$$$$$")
+        logger.info("n_cell_clusters_per_col_cluster: {}".format(n_cell_clusters_per_col_cluster))
+        logger.info("len(x): {}".format(len(x)))
+        logger.info("table_cluster: {}".format(table_cluster))
+        logger.info("col_cluster: {}".format(col_cluster))
     logger.info("KMeans - n_cell_clusters_per_col_cluster: {}".format(n_cell_clusters_per_col_cluster))
     clustering = MiniBatchKMeans(n_clusters= int(n_cell_clusters_per_col_cluster), random_state=0, reassignment_ratio=0, batch_size = 256 * 64).fit(x)
     logger.info("KMeans - n_cell_clusters_generated: {}".format(len(set(clustering.labels_))))

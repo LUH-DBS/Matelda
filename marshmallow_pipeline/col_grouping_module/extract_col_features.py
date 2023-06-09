@@ -66,16 +66,15 @@ def extract_col_features(table_group, cols, char_set, max_n_col_groups, mediate_
             col_group_df["table_path"].append(cols["table_path"][c])
             col_group_df["table_cluster"].append(table_group)
             col_group_df["col_id"].append(cols["col_id"][c])
-
-
+    
 
     # # Calculate the Euclidean distance matrix
     # distance_matrix = euclidean_distances(X)
     # similarity_matrix = 1 / (1 + distance_matrix)
     # # Calculate median similarity value
-    # median_similarity = np.median(similarity_matrix)
+    # # median_similarity = np.median(similarity_matrix)
     # # Prune edges below median similarity
-    # similarity_matrix = np.where(similarity_matrix > median_similarity, similarity_matrix, 0)
+    # # similarity_matrix = np.where(similarity_matrix > median_similarity, similarity_matrix, 0)
     # # Create a graph from the distance matrix
     # graph = nx.Graph(similarity_matrix)
 
@@ -83,18 +82,19 @@ def extract_col_features(table_group, cols, char_set, max_n_col_groups, mediate_
     # # resolution_range = np.arange(1, 2.1, 0.1) # adjust the range as desired
     # resolution_range = [1]
     # best_communities = None
-    # for resolution in resolution_range:
-    #     communities = nx_comm.louvain_communities(graph, resolution=resolution)
-    #     if len(communities) <= max_n_col_groups:
-    #         best_communities = communities
-    #         logger.info("resolution {}, Number of communities {}, is less than or equal to the maximum number of column groups ({})".format(resolution, len(communities), max_n_col_groups))
-    #     else:
-    #         logger.info("resolution {}, Number of communities {}, is greater than the maximum number of column groups ({})".format(resolution, len(communities), max_n_col_groups))
+    # # for resolution in resolution_range:
+    # #     communities = nx_comm.louvain_communities(graph, resolution=resolution)
+    # #     if len(communities) <= max_n_col_groups:
+    # #         best_communities = communities
+    # #         logger.info("resolution {}, Number of communities {}, is less than or equal to the maximum number of column groups ({})".format(resolution, len(communities), max_n_col_groups))
+    # #     else:
+    # #         logger.info("resolution {}, Number of communities {}, is greater than the maximum number of column groups ({})".format(resolution, len(communities), max_n_col_groups))
 
-    # if best_communities is None:
-    #     logger.info("Number of communities is greater than the maximum number of column groups")
-    #     return None
-    
+    # # if best_communities is None:
+    # #     logger.info("Number of communities is greater than the maximum number of column groups")
+    # #     return None
+
+    # best_communities = nx_comm.louvain_communities(graph)
     # logger.info("**********Table Group*********: {}".format(table_group))
     # logger.info("Communities: {}".format(best_communities))
     # logger.info("Number of communities: {}".format(len(best_communities)))

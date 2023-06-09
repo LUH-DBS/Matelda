@@ -222,18 +222,6 @@ def generate_features(self, d, char_set_dict):
                 for cell in sorted_strategy_profiles[strategy_name]:
                     if cell[1] == j:
                         feature_vectors[cell[0], strategy_index] = 1.0
-        if "TFIDF" in self.ERROR_DETECTION_ALGORITHMS:
-            print("TFIDF")
-            corpus = d.dataframe.iloc[:, j]
-            try:
-                tfidf_features = vectorizer.fit_transform(corpus)
-                feature_vectors = numpy.column_stack((feature_vectors, numpy.array(tfidf_features.todense())))
-            except:
-                pass
-        if "MPD" in self.ERROR_DETECTION_ALGORITHMS:
-            # print("MPD")
-            mpds = get_mpd(d.dataframe.iloc[:, j])
-            feature_vectors = numpy.column_stack((feature_vectors, numpy.array(mpds)))
 
         # non_identical_columns = numpy.any(feature_vectors != feature_vectors[0, :], axis=0)
         # feature_vectors = feature_vectors[:, non_identical_columns]

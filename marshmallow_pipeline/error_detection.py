@@ -5,11 +5,12 @@ import pickle
 import pandas as pd
 import sys
 
-from cell_grouping_module.extract_table_group_charset import extract_charset
+from cell_grouping_module.extract_table_group_charset import extract_clusters_charset
 from cell_grouping_module.generate_cell_features import get_cells_features
 from cell_grouping_module.sampling_labeling import get_n_labels, cell_clustering, labeling, update_n_labels, sampling
 from classification_module.classifier import classify
 from classification_module.get_train_test import get_train_test_sets
+from collections import OrderedDict
 
 
 logger = logging.getLogger()
@@ -28,15 +29,31 @@ def get_cells_in_cluster(group_df, col_cluster, features_dict):
     key_temp = []
     datacells_uids = {}
     current_local_cell_uid = 0
+    all_table_cols = []
     try:
         c_df = group_df[group_df['column_cluster_label'] == col_cluster]
         for index, row in c_df.iterrows():
+            all_table_cols.append((row['table_id'], row['col_id']))
+        
+        for index, row in c_df.iterrows():
+            # print("**************")
+            # print(row['table_id'], row['col_id'])
+            table_col_id_features = OrderedDict()
+            for table_col in all_table_cols:
+                table_col_id_features[table_col] = 0
+            table_col_id_features[(row['table_id'], row['col_id'])] = 1
+            table_col_features_list = list(table_col_id_features.values())
+            # print(len(table_col_features_list))
             for cell_idx in range(len(row['col_value'])):
                 original_data_keys_temp.append(
                     (row['table_id'], row['col_id'], cell_idx, row['col_value'][cell_idx]))
 
                 value_temp.append(row['col_value'][cell_idx])
-                X_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist())
+                complete_feature_vector = features_dict[(row['table_id'], row['col_id'], cell_idx, 'og')].tolist()
+                complete_feature_vector.extend(table_col_features_list)
+                X_temp.append(complete_feature_vector)
+                # print(len(complete_feature_vector))
+                # print(len(X_temp))
                 y_temp.append(features_dict[(row['table_id'], row['col_id'], cell_idx, 'gt')].tolist())
                 key_temp.append((row['table_id'], row['col_id'], cell_idx))
                 datacells_uids[(row['table_id'], row['col_id'], cell_idx, row['col_value'][cell_idx])] = current_local_cell_uid
@@ -137,8 +154,7 @@ def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir,
     selected_samples = dict()
     used_labels = 0
 
-    table_charset_dict = extract_charset(col_groups_dir)
-
+    table_charset_dict = extract_clusters_charset(col_groups_dir)
     if cell_feature_generator_enabled:
         features_dict = get_cells_features(sandbox_path, output_path, table_charset_dict, tables_dict)
         logger.info("Generating cell features started.")

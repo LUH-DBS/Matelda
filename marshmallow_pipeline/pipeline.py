@@ -15,12 +15,12 @@ import app_logger
 def main(labeling_budget):
     init_time = time.time()
     configs = ConfigParser()
-    configs.read("/home/fatemeh/ED-Scale/marshmallow_pipeline/config.ini")
+    configs.read("/home/fatemeh/ED-Scale/marshmallow_pipeline/config-kaggle.ini")
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     cell_feature_generator_enabled = bool(int(configs["CELL_GROUPING"]["cells_feature_generator_enabled"]))
     sandbox_path = configs["DIRECTORIES"]["sandbox_dir"]
     tables_path = configs["DIRECTORIES"]["tables_dir"]
-    # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
+    labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
 
     experiment_output_path = os.path.join(configs["DIRECTORIES"]["output_dir"],  "_" + exp_name + "_" + str(labeling_budget)+ "_labels")
     logs_dir = os.path.join(experiment_output_path, "logs")
@@ -105,5 +105,5 @@ def main(labeling_budget):
     saving_results.get_all_results(tables_dict, tables_path, results_path, y_test_all, y_local_cell_ids, predicted_all, y_labeled_by_user_all,\
     unique_cells_local_index_collection, samples)
 
-# if __name__ == '__main__':
-#     main(0)
+if __name__ == '__main__':
+    main(0)

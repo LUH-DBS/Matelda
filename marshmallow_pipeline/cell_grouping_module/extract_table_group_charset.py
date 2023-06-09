@@ -7,7 +7,7 @@ import pandas as pd
 logger = logging.getLogger()
 
 
-def extract_charset(col_groups_dir):
+def extract_clusters_charset(col_groups_dir):
     clusters_char_set_dict = dict()
     table_charset_dict = dict()
 
