@@ -10,15 +10,20 @@ from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.preprocessing import MinMaxScaler
 
 
-from marshmallow_pipeline.column_grouping_module.chartypes_distributions_features import \
-    CharTypeDistribution
-from marshmallow_pipeline.column_grouping_module.data_type_features import \
-    DataTypeFeatures
-from marshmallow_pipeline.column_grouping_module.value_length_features import \
-    ValueLengthStats
+from marshmallow_pipeline.column_grouping_module.chartypes_distributions_features import (
+    CharTypeDistribution,
+)
+from marshmallow_pipeline.column_grouping_module.data_type_features import (
+    DataTypeFeatures,
+)
+from marshmallow_pipeline.column_grouping_module.value_length_features import (
+    ValueLengthStats,
+)
 
 
-def extract_column_features(table_group, cols, char_set, max_n_col_groups, mediate_files_path):
+def extract_column_features(
+    table_group, cols, char_set, max_n_col_groups, mediate_files_path
+):
     """
     Extracts features from a column
     Args:
@@ -29,16 +34,32 @@ def extract_column_features(table_group, cols, char_set, max_n_col_groups, media
 
     """
     # Feature weighting
-    w = {'data_type_features': 0.7, 'value_length_stats': 0.1, 'char_distribution': 0.2}
+    w = {"data_type_features": 0.7, "value_length_stats": 0.1, "char_distribution": 0.2}
 
-    pipeline = Pipeline([
-        ('feature_generator', FeatureUnion([
-            ('data_type_features', DataTypeFeatures(w["data_type_features"])),
-            ('value_length_stats', ValueLengthStats(w["value_length_stats"])),
-            ('char_distribution', CharTypeDistribution(char_set, w["char_distribution"])),
-        ])),
-        ('normalizer', MinMaxScaler())
-    ])
+    pipeline = Pipeline(
+        [
+            (
+                "feature_generator",
+                FeatureUnion(
+                    [
+                        (
+                            "data_type_features",
+                            DataTypeFeatures(w["data_type_features"]),
+                        ),
+                        (
+                            "value_length_stats",
+                            ValueLengthStats(w["value_length_stats"]),
+                        ),
+                        (
+                            "char_distribution",
+                            CharTypeDistribution(char_set, w["char_distribution"]),
+                        ),
+                    ]
+                ),
+            ),
+            ("normalizer", MinMaxScaler()),
+        ]
+    )
 
     X = pipeline.fit_transform(cols["col_value"])
 
@@ -48,12 +69,14 @@ def extract_column_features(table_group, cols, char_set, max_n_col_groups, media
     # Calculate median similarity value
     median_similarity = np.median(similarity_matrix)
     # Prune edges below median similarity
-    similarity_matrix = np.where(similarity_matrix > median_similarity, similarity_matrix, 0)
+    similarity_matrix = np.where(
+        similarity_matrix > median_similarity, similarity_matrix, 0
+    )
     # Create a graph from the distance matrix
     graph = nx.Graph(similarity_matrix)
 
     # Set the range of resolution parameter values to sweep
-    resolution_range = np.arange(1, 2.1, 0.1) # adjust the range as desired
+    resolution_range = np.arange(1, 2.1, 0.1)  # adjust the range as desired
 
     best_communities = None
     for resolution in resolution_range:
@@ -61,10 +84,15 @@ def extract_column_features(table_group, cols, char_set, max_n_col_groups, media
         if len(communities) <= max_n_col_groups:
             best_communities = communities
         else:
-            logging.info("resolution %s, Number of communities is greater than the maximum number of column groups", resolution)
+            logging.info(
+                "resolution %s, Number of communities is greater than the maximum number of column groups",
+                resolution,
+            )
 
     if best_communities is None:
-        logging.info("Number of communities is greater than the maximum number of column groups")
+        logging.info(
+            "Number of communities is greater than the maximum number of column groups"
+        )
         return None
 
     logging.info("**********Table Group*********: %s", table_group)
@@ -78,7 +106,14 @@ def extract_column_features(table_group, cols, char_set, max_n_col_groups, media
             comm_dict[node] = i
 
     cols_per_cluster = {}
-    col_group_df = {"column_cluster_label": [], "col_value": [], "table_id": [], "table_path": [], "table_cluster": [], "col_id": []}
+    col_group_df = {
+        "column_cluster_label": [],
+        "col_value": [],
+        "table_id": [],
+        "table_path": [],
+        "table_cluster": [],
+        "col_id": [],
+    }
     community_labels = set(range(len(best_communities)))
     for i in community_labels:
         comm = best_communities[i]
@@ -100,10 +135,14 @@ def extract_column_features(table_group, cols, char_set, max_n_col_groups, media
     os.makedirs(cols_per_clu, exist_ok=True)
     os.makedirs(col_df_res, exist_ok=True)
 
-    with open(os.path.join(cols_per_clu, f"cols_per_cluster_{table_group}.pkl"), "wb+") as file:
+    with open(
+        os.path.join(cols_per_clu, f"cols_per_cluster_{table_group}.pkl"), "wb+"
+    ) as file:
         pickle.dump(cols_per_cluster, file)
-    
-    with open(os.path.join(col_df_res, f"col_df_labels_cluster_{table_group}.pickle"), "wb+") as file:
+
+    with open(
+        os.path.join(col_df_res, f"col_df_labels_cluster_{table_group}.pickle"), "wb+"
+    ) as file:
         pickle.dump(col_group_df, file)
 
     return col_group_df

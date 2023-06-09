@@ -6,12 +6,19 @@ import os
 
 from typing import Dict
 
-from marshmallow_pipeline.column_grouping_module.extract_column_features import \
-    extract_column_features
+from marshmallow_pipeline.column_grouping_module.extract_column_features import (
+    extract_column_features,
+)
 from marshmallow_pipeline.utils.read_data import read_csv
 
 
-def column_grouping(path: str, table_grouping_dict: Dict, lake_base_path: str, labeling_budget: int, mediate_files_path: str) -> None:
+def column_grouping(
+    path: str,
+    table_grouping_dict: Dict,
+    lake_base_path: str,
+    labeling_budget: int,
+    mediate_files_path: str,
+) -> None:
     """
     This function is responsible for executing the column grouping step.
 
@@ -21,7 +28,7 @@ def column_grouping(path: str, table_grouping_dict: Dict, lake_base_path: str, l
         :param lake_base_path: The path to the aggregated lake.
         :param labeling_budget: The labeling budget.
         :param mediate_files_path: The path to the mediate files.
-    
+
     Returns:
         None
     """
@@ -45,7 +52,10 @@ def column_grouping(path: str, table_grouping_dict: Dict, lake_base_path: str, l
                 cols["table_path"].append(os.path.join(lake_base_path, table))
                 cols["col_id"].append(col_idx)
 
-        pool.apply_async(extract_column_features, args=(table_group, cols, char_set, max_n_col_groups, mediate_files_path))
+        pool.apply_async(
+            extract_column_features,
+            args=(table_group, cols, char_set, max_n_col_groups, mediate_files_path),
+        )
 
     pool.close()
     pool.join()

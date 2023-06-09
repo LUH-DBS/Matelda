@@ -45,7 +45,9 @@ def createRelationSemanticsLookupTable(filenames, FDDs):
                 -1
             ]  # extract the name of table. Eg. extract "exampleTable.csv" from "../input/dataLakeTables/exampleTable.csv"
             currentTableFDs = []
-            logging.info(f"Table recently visited for relation lookup creation: {fdKey}")
+            logging.info(
+                f"Table recently visited for relation lookup creation: {fdKey}"
+            )
             logging.info(f"table id: {tab_id}")
             if fdKey in FDDs:
                 currentTableFDs = FDDs[fdKey]
@@ -110,13 +112,13 @@ def createColumnSemanticsLookupTable(filenames, FDDs):
     ignored_tables = 0
     for file in filenames:
         try:
-            inputTable = pd.read_csv(
-                file, encoding="latin1"
-            )
+            inputTable = pd.read_csv(file, encoding="latin1")
             col_id = 0
             table_name = file.rsplit("/", 1)[-1]
             currentTableFDs = []
-            logging.info(f"Table recently visited for type lookup creation: {table_name}")
+            logging.info(
+                f"Table recently visited for type lookup creation: {table_name}"
+            )
             logging.info(f"table id: {tab_id}")
             current_fd_cols = set()
             fdFound = 0
@@ -171,9 +173,7 @@ def createColumnSemanticsSynthKB(lookupTable, filenames, FDDs):
     tab_id = 0
     for file in filenames:
         try:
-            inputTable = pd.read_csv(
-                file, encoding="latin1"
-            )
+            inputTable = pd.read_csv(file, encoding="latin1")
             col_id = 0
             table_name = file.rsplit("/", 1)[
                 -1

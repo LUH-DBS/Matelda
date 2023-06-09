@@ -20,7 +20,7 @@ def value_normalizer(value: str) -> str:
 
 def read_csv(path: str, low_memory: bool = False) -> pd.DataFrame:
     """
-    This method reads a table from a csv file path, 
+    This method reads a table from a csv file path,
     with pandas default null values and str data type
     Args:
         low_memory: whether to use low memory mode (bool), default False
@@ -32,6 +32,10 @@ def read_csv(path: str, low_memory: bool = False) -> pd.DataFrame:
     logger = logging.getLogger()
     logger.info("Reading table, name: %s", os.path.basename(path))
 
-    return pd.read_csv(path, sep=",", header="infer", low_memory=low_memory, encoding='latin-1')\
-        .applymap(lambda x: value_normalizer(x) if isinstance(x, str) else x)\
-        .applymap(lambda x: x.replace('"', '') if isinstance(x, str) else x)
+    return (
+        pd.read_csv(
+            path, sep=",", header="infer", low_memory=low_memory, encoding="latin-1"
+        )
+        .applymap(lambda x: value_normalizer(x) if isinstance(x, str) else x)
+        .applymap(lambda x: x.replace('"', "") if isinstance(x, str) else x)
+    )

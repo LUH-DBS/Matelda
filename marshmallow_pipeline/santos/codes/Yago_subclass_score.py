@@ -4,29 +4,39 @@ This Python file is used to generate scores for each set of subclass relationshi
 import math
 import pickle
 
-relationship = open("marshmallow_pipeline/santos/yago/yago-subclass", "r", encoding='utf-8')
-types = open("marshmallow_pipeline/santos/yago/yago-type", "r", encoding='utf-8')
+relationship = open(
+    "marshmallow_pipeline/santos/yago/yago-subclass", "r", encoding="utf-8"
+)
+types = open("marshmallow_pipeline/santos/yago/yago-type", "r", encoding="utf-8")
 
 type_count = {}
 type_subclasses = {}
 
 for line in types.readlines():
-    split = line.split(', ')
-    type_count[split[0]] = split[1].rstrip('\n')
+    split = line.split(", ")
+    type_count[split[0]] = split[1].rstrip("\n")
 
 for line in relationship.readlines():
-    split = line.split(',[')
-    type_subclasses[split[0]] = split[1].rstrip('\n').replace(']','').replace('\'','').replace(' ','').split(',')
+    split = line.split(",[")
+    type_subclasses[split[0]] = (
+        split[1]
+        .rstrip("\n")
+        .replace("]", "")
+        .replace("'", "")
+        .replace(" ", "")
+        .split(",")
+    )
 
 type_score = {}
 type_level = {}
 
 for i in type_count:
-    if type_count[i] == '1':
+    if type_count[i] == "1":
         score = 1.0
     else:
-        score = min(1.0 , 1 / math.log10(float(type_count[i])))
+        score = min(1.0, 1 / math.log10(float(type_count[i])))
     type_score[i] = score
+
 
 def count_level(type, level):
     if type_subclasses.get(type):
@@ -34,6 +44,7 @@ def count_level(type, level):
         for c in type_subclasses[type]:
             type_level[c] = level
             count_level(c, level)
+
 
 type_level["Thing"] = 0
 count_level("Thing", 0)
@@ -57,10 +68,12 @@ while depth > 0:
                 if type_score.get(c):
                     type_score[i] = min(type_score[i], type_score[c])
 
-score = open("marshmallow_pipeline/santos/yago/yago_pickle/yago-type-score.pickle", 'wb+')
+score = open(
+    "marshmallow_pipeline/santos/yago/yago_pickle/yago-type-score.pickle", "wb+"
+)
 final_dict = {}
 for i in type_score:
-	final_dict[i.lower()] = (type_score[i], type_level[i])
+    final_dict[i.lower()] = (type_score[i], type_level[i])
 
-pickle.dump(final_dict,score, protocol=pickle.HIGHEST_PROTOCOL)
+pickle.dump(final_dict, score, protocol=pickle.HIGHEST_PROTOCOL)
 score.close()

@@ -281,7 +281,11 @@ def main(which_benchmark):
     YAGO_PATH = r"marshmallow_pipeline/santos/yago/yago_pickle/"
     # edit the line below if the dlt are at different locations
     # DATA_LAKE_TABLE_PATH = r"../input/dataLakeTablesMethod1/testDLT/"
-    DATA_LAKE_TABLE_PATH = r"marshmallow_pipeline/santos/benchmark/" + current_benchmark + "_benchmark/datalake/"
+    DATA_LAKE_TABLE_PATH = (
+        r"marshmallow_pipeline/santos/benchmark/"
+        + current_benchmark
+        + "_benchmark/datalake/"
+    )
     logging.info(DATA_LAKE_TABLE_PATH)
     # DATA_LAKE_TABLE_PATH = r"/work/datalab/tus_benchmark/datalake/"
     LABEL_FILE_PATH = YAGO_PATH + "yago-wd-labels_dict.pickle"
@@ -290,22 +294,34 @@ def main(which_benchmark):
     FACT_FILE_PATH = YAGO_PATH + "yago-wd-facts_dict.pickle"
     TYPE_SCORE_FILE_PATH = YAGO_PATH + "yago-type-score.pickle"
     YAGO_MAIN_INVERTED_INDEX_PATH = (
-        r"marshmallow_pipeline/santos/hashmap/" + current_benchmark + "_main_yago_index.pickle"
+        r"marshmallow_pipeline/santos/hashmap/"
+        + current_benchmark
+        + "_main_yago_index.pickle"
     )
     YAGO_MAIN_RELATION_INDEX_PATH = (
-        r"marshmallow_pipeline/santos/hashmap/" + current_benchmark + "_main_relation_index.pickle"
+        r"marshmallow_pipeline/santos/hashmap/"
+        + current_benchmark
+        + "_main_relation_index.pickle"
     )
     YAGO_MAIN_PICKLE_TRIPLE_INDEX_PATH = (
-        r"marshmallow_pipeline/santos/hashmap/" + current_benchmark + "_main_triple_index.pickle"
+        r"marshmallow_pipeline/santos/hashmap/"
+        + current_benchmark
+        + "_main_triple_index.pickle"
     )
     YAGO_MAIN_CSV_TRIPLE_INDEX_PATH = (
-        r"marshmallow_pipeline/santos/stats/" + current_benchmark + "_benchmark_main_triple_index.csv"
+        r"marshmallow_pipeline/santos/stats/"
+        + current_benchmark
+        + "_benchmark_main_triple_index.csv"
     )
     INDIVIDUAL_TIME_FILE_PATH = (
-        r"marshmallow_pipeline/santos/stats/" + current_benchmark + "_benchmark_individual_time.pickle"
+        r"marshmallow_pipeline/santos/stats/"
+        + current_benchmark
+        + "_benchmark_individual_time.pickle"
     )
     INDIVIDUAL_TIME_CSV_FILE_PATH = (
-        r"marshmallow_pipeline/santos/stats/" + current_benchmark + "_benchmark_individual_time.csv"
+        r"marshmallow_pipeline/santos/stats/"
+        + current_benchmark
+        + "_benchmark_individual_time.csv"
     )
     # load pickle files to the dictionary variables
     yago_loading_start_time = time.time()

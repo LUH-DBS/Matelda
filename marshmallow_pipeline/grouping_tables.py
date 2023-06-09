@@ -70,16 +70,26 @@ def run_santos(aggregated_lake_path: str):
     marshmallow_pipeline.santos.codes.data_lake_processing_yago.main(1)
 
     logging.info("Creating functinal dependencies/ground truth for santos")
-    datalake_files = [os.path.join(santos_lake_path, file) for file in os.listdir(santos_lake_path) if file.endswith('.csv')]
-    with open('marshmallow_pipeline/santos_fd/tus_datalake_files.txt', 'w+', encoding='utf-8') as file:
-        file.write('\n'.join(datalake_files))
+    datalake_files = [
+        os.path.join(santos_lake_path, file)
+        for file in os.listdir(santos_lake_path)
+        if file.endswith(".csv")
+    ]
+    with open(
+        "marshmallow_pipeline/santos_fd/tus_datalake_files.txt", "w+", encoding="utf-8"
+    ) as file:
+        file.write("\n".join(datalake_files))
 
-    process = subprocess.Popen(['bash', 'marshmallow_pipeline/santos_fd/runFiles.sh'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    process = subprocess.Popen(
+        ["bash", "marshmallow_pipeline/santos_fd/runFiles.sh"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
     with process.stdout:
-        for line in iter(process.stdout.readline, b''): # b'\n'-separated lines
+        for line in iter(process.stdout.readline, b""):  # b'\n'-separated lines
             logging.info("Santos FD: %s", line.decode("utf-8").strip())
     process.wait()
-    
+
     logging.info("Santos run sortFDs_pickle_file_dict")
     marshmallow_pipeline.santos_fd.sortFDs_pickle_file_dict.main()
 
