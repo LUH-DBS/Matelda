@@ -82,8 +82,9 @@ def col_clu_cell_clustering(n_cell_clusters_per_col_cluster, table_cluster, col_
                                                                         cell_cluster_cells_dict["y_temp"], n_cell_clusters_per_col_cluster)
     return cell_cluster_cells_dict, cell_clustering_dict
 
-def cel_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict):
-    logger.info("Sampling and labeling cluster {}".format(str(cell_clustering_df["col_cluster"].values[0])))
+def cel_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, results_path, table_cluster):
+    col_cluster = str(cell_clustering_df["col_cluster"].values[0])
+    logger.info("Sampling and labeling cluster {}".format(col_cluster))
     logger.info("Number of labels (updated): {}".format(str(cell_clustering_df["n_labels_updated"].values[0])))
     
     try:
@@ -95,6 +96,11 @@ def cel_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict):
 
             samples_dict = sampling(cell_clustering_df, X_temp, y_temp, value_temp)
             samples_dict = labeling(samples_dict)
+            sampling_labeling_res_path = os.path.join(results_path, "sampling_labeling")
+            if not os.path.exists(sampling_labeling_res_path):
+                os.makedirs(sampling_labeling_res_path)
+            with open(os.path.join(sampling_labeling_res_path, f"samples_dict_{table_cluster}_{col_cluster}.pkl"), "wb") as f:
+                pickle.dump(samples_dict, f)
             universal_samples = dict()
             logger.info("len samples: {}".format(str(len(samples_dict["cell_cluster"]))))
             for cell_cluster_idx, cell_cluster in enumerate(samples_dict["cell_cluster"]):
@@ -168,7 +174,7 @@ def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir,
     col_clusters = []
     cell_cluster_cells_dict_all = {}
     cell_clustering_dict_all = {}
-    
+    cell_cluster_conuter = 0
     for file_name in os.listdir(col_groups_dir):
         if ".pickle" in file_name:
             file = open(os.path.join(col_groups_dir, file_name), 'rb')
@@ -204,7 +210,7 @@ def error_detector(cell_feature_generator_enabled, sandbox_path, col_groups_dir,
         for col_cluster in cell_cluster_cells_dict_all[table_cluster]:
             cell_clustering_df = all_cell_clusters_records[(all_cell_clusters_records['table_cluster'] == table_cluster) & (all_cell_clusters_records['col_cluster'] == col_cluster)]
             cell_cluster_cells_dict = cell_cluster_cells_dict_all[table_cluster][col_cluster]
-            cel_cluster_sampling_labeling_dict = cel_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict)
+            cel_cluster_sampling_labeling_dict = cel_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, results_path, table_cluster)
             with open(os.path.join(output_path, f"cel_cluster_sampling_labeling_dict_{table_cluster}_{col_cluster}.pickle"), 'wb') as pickle_file:
                 pickle.dump(cel_cluster_sampling_labeling_dict, pickle_file)
 

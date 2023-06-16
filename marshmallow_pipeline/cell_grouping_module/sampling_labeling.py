@@ -116,7 +116,7 @@ def sort_points_by_distance(feature_vectors):
 def sampling(cell_clustering_dict, x, y, dirty_cell_values):
     logger.info("Sampling")
     try:
-        samples_dict = {"cell_cluster": [], "samples": [], "samples_indices_cell_group":[], "samples_indices_global":[], "labels": [], "dirty_cell_values": []}
+        samples_dict = {"cell_cluster": [], "samples": [], "errors_per_cluster": [], "samples_indices_cell_group":[], "samples_indices_global":[], "labels": [], "dirty_cell_values": []}
 
         cells_per_cluster = cell_clustering_dict["cells_per_cluster"].values[0]
         if cell_clustering_dict["n_labels_updated"].values[0] > 1 and len(cells_per_cluster) > 1:
@@ -166,12 +166,19 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
                 samples_indices_cell_group.append(sample)
 
             samples_dict["cell_cluster"].append(cluster)
+            samples_dict["errors_per_cluster"].append(y_cluster.count(1)/len(y_cluster))
             samples_dict["samples"].append(samples_feature_vectors)
             samples_dict["labels"].append(samples_labels)
             samples_dict["dirty_cell_values"].append(dirty_cell_values_cluster)
             samples_dict["samples_indices_cell_group"].append(samples_indices_cell_group)
             samples_dict["samples_indices_global"].append(samples_indices_global)
         samples_dict["cell_cluster"].append(unlabled_cluster)
+        if unlabled_cluster != -1:
+            col_group_cell_idx = cells_per_cluster[unlabled_cluster]
+            y_unlabled_cluster = [y[cell_idx] for cell_idx in col_group_cell_idx]
+            samples_dict["errors_per_cluster"].append(y_unlabled_cluster.count(1)/len(y_unlabled_cluster))
+        else:
+            samples_dict["errors_per_cluster"].append(None)
         samples_dict["samples"].append([])
         samples_dict["labels"].append([])
         samples_dict["dirty_cell_values"].append([])
