@@ -47,5 +47,5 @@ def extract_charset(col_groups_dir):
                                 ]["column_cluster_label"].values[0]
                             ),
                         ]
-                logging.info("Charset dictionary generated")
+                logging.info("Charset dictionary generated %s", file_name)
     return table_charset_dict

@@ -242,17 +242,17 @@ def run_strategies(self, d, char_set):
                     # logging.info("RVD configurations: %s", len(configuration_list))
 
             random.shuffle(algorithm_and_configurations)
-            # strategy_profiles_list = []
-            # for [d, algorithm, configuration] in algorithm_and_configurations:
-            #     strategy_profiles_list.append(_strategy_runner_process(d, [d, algorithm, configuration]))
+            strategy_profiles_list = []
+            for [d, algorithm, configuration] in algorithm_and_configurations:
+                strategy_profiles_list.append(_strategy_runner_process(d, [d, algorithm, configuration]))
             # multiprocessing.freeze_support()
-            pool = multiprocessing.Pool()
-            _strategy_runner_process_ = partial(_strategy_runner_process, d)
-            strategy_profiles_list = pool.map(
-                _strategy_runner_process_, algorithm_and_configurations
-            )
-            pool.close()
-            pool.join()
+            #pool = multiprocessing.Pool()
+            #_strategy_runner_process_ = partial(_strategy_runner_process, d)
+            #strategy_profiles_list = pool.map(
+            #    _strategy_runner_process_, algorithm_and_configurations
+            #)
+            #pool.close()
+            #pool.join()
             logging.info(
                 "%%%%%%%%%%%%%%%%%%%%%%All strategies are run on the dataset.%%%%%%%%%%%%%%%%%%%%%%"
             )

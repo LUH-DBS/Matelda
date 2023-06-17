@@ -1,14 +1,9 @@
-import logging
 import os
 import pickle
 
-import networkx as nx
-import networkx.algorithms.community as nx_comm
-import numpy as np
-from sklearn.metrics import euclidean_distances
+from sklearn.cluster import MiniBatchKMeans
 from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.preprocessing import MinMaxScaler
-
 
 from marshmallow_pipeline.column_grouping_module.chartypes_distributions_features import (
     CharTypeDistribution,
@@ -63,49 +58,23 @@ def extract_column_features(
 
     X = pipeline.fit_transform(cols["col_value"])
 
-    # Calculate the Euclidean distance matrix
-    distance_matrix = euclidean_distances(X)
-    similarity_matrix = 1 / (1 + distance_matrix)
-    # Calculate median similarity value
-    median_similarity = np.median(similarity_matrix)
-    # Prune edges below median similarity
-    similarity_matrix = np.where(
-        similarity_matrix > median_similarity, similarity_matrix, 0
-    )
-    # Create a graph from the distance matrix
-    graph = nx.Graph(similarity_matrix)
-
-    # Set the range of resolution parameter values to sweep
-    resolution_range = np.arange(1, 2.1, 0.1)  # adjust the range as desired
-
-    best_communities = None
-    for resolution in resolution_range:
-        communities = nx_comm.louvain_communities(graph, resolution=resolution)
-        if len(communities) <= max_n_col_groups:
-            best_communities = communities
-        else:
-            logging.info(
-                "resolution %s, Number of communities is greater than the maximum number of column groups",
-                resolution,
-            )
-
-    if best_communities is None:
-        logging.info(
-            "Number of communities is greater than the maximum number of column groups"
-        )
-        return None
-
-    logging.info("**********Table Group*********: %s", table_group)
-    logging.info("Communities: %s", best_communities)
-    logging.info("Number of communities: %s", len(best_communities))
-
-    # Convert the communities to a dictionary format
-    comm_dict = {}
-    for i, comm in enumerate(best_communities):
-        for node in comm:
-            comm_dict[node] = i
+    clusters = MiniBatchKMeans(
+        n_clusters=min(max_n_col_groups, len(X)),
+        random_state=0,
+        reassignment_ratio=0,
+        batch_size=256 * 64,
+    ).fit_predict(X)
 
     cols_per_cluster = {}
+    cols_per_cluster_values = {}
+    for col, col_clu in enumerate(clusters):
+        if col_clu not in cols_per_cluster:
+            cols_per_cluster[col_clu] = []
+        cols_per_cluster[col_clu].append(col)
+        if col_clu not in cols_per_cluster_values:
+            cols_per_cluster_values[col_clu] = []
+        cols_per_cluster_values[col_clu].append(cols["col_value"][col])
+
     col_group_df = {
         "column_cluster_label": [],
         "col_value": [],
@@ -114,12 +83,8 @@ def extract_column_features(
         "table_cluster": [],
         "col_id": [],
     }
-    community_labels = set(range(len(best_communities)))
-    for i in community_labels:
-        comm = best_communities[i]
-        cols_per_cluster[i] = []
-        for c in best_communities[i]:
-            cols_per_cluster[i].append(cols["col_value"][c])
+    for i in set(clusters):
+        for c in cols_per_cluster[i]:
             col_group_df["column_cluster_label"].append(i)
             col_group_df["col_value"].append(cols["col_value"][c])
             col_group_df["table_id"].append(cols["table_id"][c])

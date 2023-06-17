@@ -196,6 +196,24 @@ def error_detector(
     min_num_labes_per_col_cluster,
 ):
     logging.info("Starting error detection")
+
+    logging.info("Extracting table charsets")
+    table_charset_dict = extract_charset(col_groups_dir)
+
+    logging.info("Generating cell features")
+    if cell_feature_generator_enabled:
+        logging.info("Generating cell features enabled")
+        features_dict = get_cells_features(
+            sandbox_path, output_path, table_charset_dict, tables_dict
+        )
+    else:
+        logging.info("Generating cell features disabled, loading from previous results from disk")
+        with open(os.path.join(output_path, "features.pickle"), "rb") as pickle_file:
+            features_dict = pickle.load(pickle_file)
+
+    exit()
+    
+
     original_data_keys = []
     unique_cells_local_index_collection = {}
     predicted_all = {}
@@ -206,17 +224,7 @@ def error_detector(
     selected_samples = {}
     used_labels = 0
 
-    table_charset_dict = extract_charset(col_groups_dir)
-
-    if cell_feature_generator_enabled:
-        features_dict = get_cells_features(
-            sandbox_path, output_path, table_charset_dict, tables_dict
-        )
-        logging.info("Generating cell features started.")
-    else:
-        with open(os.path.join(output_path, "features.pickle"), "rb") as pickle_file:
-            features_dict = pickle.load(pickle_file)
-
+    logging.info("Getting label")
     cluster_sizes_df = pd.DataFrame.from_dict(cluster_sizes_dict)
     df_n_labels = get_n_labels(
         cluster_sizes_df,
@@ -227,6 +235,8 @@ def error_detector(
     col_clusters = []
     cell_cluster_cells_dict_all = {}
     cell_clustering_dict_all = {}
+
+    logging.info("Starting sampling and labeling")
 
     for file_name in os.listdir(col_groups_dir):
         if ".pickle" in file_name:

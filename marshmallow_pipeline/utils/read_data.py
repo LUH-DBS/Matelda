@@ -1,6 +1,5 @@
 import html
 import logging
-import os.path
 import re
 
 import numpy as np
@@ -29,8 +28,7 @@ def read_csv(path: str, low_memory: bool = False) -> pd.DataFrame:
     Returns:
         pandas dataframe of the table
     """
-    logger = logging.getLogger()
-    logger.info("Reading table, name: %s", os.path.basename(path))
+    logging.info("Reading table, name: %s", path)
 
     return (
         pd.read_csv(

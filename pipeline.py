@@ -11,7 +11,10 @@ import marshmallow_pipeline.utils.app_logger
 from marshmallow_pipeline.error_detection import error_detector
 from marshmallow_pipeline.grouping_columns import column_grouping
 from marshmallow_pipeline.grouping_tables import table_grouping
-from marshmallow_pipeline.utils.loading_results import loading_columns_grouping_results
+from marshmallow_pipeline.saving_results import get_all_results
+from marshmallow_pipeline.utils.loading_results import \
+    loading_columns_grouping_results
+from marshmallow_pipeline.utils.read_data import read_csv
 
 if __name__ == "__main__":
     configs = ConfigParser()
@@ -63,16 +66,19 @@ if __name__ == "__main__":
     logging.info("Starting the experiment")
 
     logging.info("Symlinking sandbox to aggregated_lake_path")
+    tables_dict = {}
     for name in os.listdir(tables_path):
         curr_path = os.path.join(tables_path, name)
         if os.path.isdir(curr_path):
             dirty_csv_path = os.path.join(curr_path, "dirty_clean.csv")
+            clean_csv_path = os.path.join(curr_path, "clean.csv")
             if os.path.isfile(dirty_csv_path):
                 if os.path.exists(os.path.join(aggregated_lake_path, name + ".csv")):
                     os.remove(os.path.join(aggregated_lake_path, name + ".csv"))
                 os.link(
                     dirty_csv_path, os.path.join(aggregated_lake_path, name + ".csv")
                 )
+                tables_dict[os.path.basename(curr_path)] = name + ".csv"
 
     if table_grouping_enabled:
         logging.info("Table grouping is enabled")
@@ -117,9 +123,8 @@ if __name__ == "__main__":
     ) = loading_columns_grouping_results(table_grouping_dict, mediate_files_path)
 
     logging.info("Starting error detection")
-    # TODO: what is tables_dict?
     # TODO: change output foldr of metanome
-    # For fatemeh: no complete paths in code, Define a seed in config, with sets alls seeds in code(importance for reproducibility)
+    # For fatemeh: no complete paths in code, Define a seed in config, with sets alls seeds in code(importance for reproducibility), document the code, no pickle! hard to read and securyt issue, if catching exception print exceptopn
     (
         y_test_all,
         y_local_cell_ids,
@@ -129,7 +134,7 @@ if __name__ == "__main__":
         samples,
     ) = error_detector(
         cell_feature_generator_enabled,
-        sandbox_path,
+        tables_path,
         column_groups_df_path,
         experiment_output_path,
         results_path,
@@ -139,4 +144,17 @@ if __name__ == "__main__":
         cell_clustering_alg,
         tables_dict,
         min_num_labes_per_col_cluster,
+    )
+
+    exit()
+    get_all_results(
+        tables_dict,
+        tables_path,
+        results_path,
+        y_test_all,
+        y_local_cell_ids,
+        predicted_all,
+        y_labeled_by_user_all,
+        unique_cells_local_index_collection,
+        samples,
     )
