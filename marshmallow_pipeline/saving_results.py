@@ -12,7 +12,7 @@ from marshmallow_pipeline.utils.read_data import read_csv
 def get_classification_results(
     y_test_all, predicted_all, y_labeled_by_user_all, results_dir, samples
 ):
-    logging.info("Classification results:")
+    logging.debug("Classification results:")
     total_tn, total_fp, total_fn, total_tp = 0, 0, 0, 0
     for i in predicted_all.keys():
         col_cluster_prediction = list(predicted_all[i])
@@ -39,9 +39,6 @@ def get_classification_results(
             else None
         )
 
-        logging.info(
-            "col_cluster: %s, tn: %s, fp: %s, fn: %s, tp: %s", i, tn, fp, fn, tp
-        )
         scores = {
             "col_cluster": i,
             "precision": precision,
@@ -52,8 +49,11 @@ def get_classification_results(
             "fn": fn,
             "tn": tn,
         }
+
+        logging.info(scores)
+
         with open(
-            os.path.join(results_dir, "scores_col_cluster_%s.pickle", i), "wb"
+            os.path.join(results_dir, "scores_col_cluster_" + str(i[0]) + "_" + str(i[1]) + ".pickle"), "wb"
         ) as file:
             pickle.dump(scores, file)
 
@@ -72,6 +72,8 @@ def get_classification_results(
         "total_tn": total_tn,
         "total_fn": total_fn,
     }
+
+    logging.info("Total scores: %s", total_scores)
     with open(os.path.join(results_dir, "scores_all.pickle"), "wb") as file:
         pickle.dump(total_scores, file)
 
@@ -84,11 +86,11 @@ def create_predictions_dict(
     unique_cells_local_index_collection,
     samples,
 ):
-    logging.info("Getting predictions dict")
+    logging.debug("Getting predictions dict")
     rows_list = []
     samp_count = 0
     for key in unique_cells_local_index_collection.keys():
-        logging.info("Key: %s", key)
+        logging.debug("Key: %s", key)
         for cell_key in list(unique_cells_local_index_collection[key].keys()):
             try:
                 cell_local_idx = unique_cells_local_index_collection[key][cell_key]
@@ -116,7 +118,7 @@ def create_predictions_dict(
                 rows_list.append(tmp_dict)
             except Exception as e:
                 samp_count += 1
-    logging.info("Samples %s", samp_count)
+    logging.debug("Samples %s", samp_count)
     results_df = pd.DataFrame(
         rows_list,
         columns=[
@@ -135,7 +137,7 @@ def create_predictions_dict(
 
 
 def get_results_per_table(result_df):
-    logging.info("Getting results per table")
+    logging.debug("Getting results per table")
     results_per_table = dict()
     for table_id in result_df["table_id"].unique():
         table_df = result_df[result_df["table_id"] == table_id]
@@ -167,7 +169,7 @@ def get_results_per_table(result_df):
 
 
 def get_tables_dict(init_tables_dict, sandbox_path):
-    logging.info("Getting tables dict")
+    logging.debug("Getting tables dict")
     all_tables_dict = {}
     table_dirs = os.listdir(sandbox_path)
     table_dirs.sort()
@@ -198,25 +200,28 @@ def get_all_results(
     unique_cells_local_index_collection,
     samples,
 ):
+    logging.info("Getting all results")
     with open(os.path.join(results_dir, "labeled_by_user.pickle"), "wb") as file:
         pickle.dump(y_labeled_by_user_all, file)
     logging.info("Getting classification results")
-    tables_dict = get_tables_dict(init_tables_dict, tables_path)
+    
     get_classification_results(
         y_test_all, predicted_all, y_labeled_by_user_all, results_dir, samples
     )
-    results_df = create_predictions_dict(
-        tables_dict,
-        y_test_all,
-        y_local_cell_ids,
-        predicted_all,
-        unique_cells_local_index_collection,
-        samples,
-    )
-    results_per_table = get_results_per_table(results_df)
-    logging.info("Saving results_df")
-    with open(os.path.join(results_dir, "results_df.pickle"), "wb") as file:
-        pickle.dump(results_df, file)
-    with open(os.path.join(results_dir, "results_per_table.pickle"), "wb") as file:
-        pickle.dump(results_per_table, file)
-    logging.info("All done :)")
+    # logging.info("Getting prediction results")
+    # tables_dict = get_tables_dict(init_tables_dict, tables_path)
+    # results_df = create_predictions_dict(
+        # tables_dict,
+        # y_test_all,
+        # y_local_cell_ids,
+        # predicted_all,
+        # unique_cells_local_index_collection,
+        # samples,
+    # )
+    # logging.info("Getting results per table")
+    # results_per_table = get_results_per_table(results_df)
+    # logging.info("Saving results")
+    # with open(os.path.join(results_dir, "results_df.pickle"), "wb") as file:
+        # pickle.dump(results_df, file)
+    # with open(os.path.join(results_dir, "results_per_table.pickle"), "wb") as file:
+        # pickle.dump(results_per_table, file)

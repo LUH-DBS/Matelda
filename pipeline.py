@@ -14,7 +14,6 @@ from marshmallow_pipeline.grouping_tables import table_grouping
 from marshmallow_pipeline.saving_results import get_all_results
 from marshmallow_pipeline.utils.loading_results import \
     loading_columns_grouping_results
-from marshmallow_pipeline.utils.read_data import read_csv
 
 if __name__ == "__main__":
     configs = ConfigParser()
@@ -146,7 +145,7 @@ if __name__ == "__main__":
         min_num_labes_per_col_cluster,
     )
 
-    exit()
+    logging.info("Getting results")
     get_all_results(
         tables_dict,
         tables_path,

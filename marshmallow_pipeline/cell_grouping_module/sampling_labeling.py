@@ -39,11 +39,11 @@ def get_n_labels(cluster_sizes_df, labeling_budget, min_num_labes_per_col_cluste
 
 
 def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cluster):
-    logging.info(
-        "Cell Clustering - table_cluster: %s, col_cluster: %s",
-        table_cluster,
-        col_cluster,
-    )
+    # logging.info(
+    #     "Cell Clustering - table_cluster: %s, col_cluster: %s",
+    #     table_cluster,
+    #     col_cluster,
+    # )
     clustering = None
     cells_per_cluster = {}
     errors_per_cluster = {}
@@ -59,16 +59,16 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
         "errors_per_cluster": [],
     }
     n_cell_clusters_per_col_cluster = min(len(x), n_cell_clusters_per_col_cluster)
-    logging.info(
-        "KMeans - n_cell_clusters_per_col_cluster: %s", n_cell_clusters_per_col_cluster
-    )
+    # logging.info(
+    #     "KMeans - n_cell_clusters_per_col_cluster: %s", n_cell_clusters_per_col_cluster
+    # )
     clustering = MiniBatchKMeans(
         n_clusters=int(n_cell_clusters_per_col_cluster),
         random_state=0,
         reassignment_ratio=0,
         batch_size=256 * 64,
     ).fit(x)
-    logging.info("KMeans - n_cell_clusters_generated: %s", len(set(clustering.labels_)))
+    # logging.info("KMeans - n_cell_clusters_generated: %s", len(set(clustering.labels_)))
     clustering_labels = clustering.labels_
     for cell in enumerate(clustering_labels):
         if cell[1] in cells_per_cluster:
@@ -156,7 +156,7 @@ def sort_points_by_distance(feature_vectors):
 
 
 def sampling(cell_clustering_dict, x, y, dirty_cell_values):
-    logging.info("Sampling")
+    logging.debug("Sampling")
     samples_dict = {
         "cell_cluster": [],
         "samples": [],
@@ -232,15 +232,15 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
     samples_dict["samples_indices_cell_group"].append([])
     samples_dict["samples_indices_global"].append([])
 
-    logging.info("Sampling done")
-    logging.info("********cell_cluster: %s", samples_dict["cell_cluster"])
-    logging.info("********samples: %s", len(samples_dict["samples"]))
+    logging.debug("Sampling done")
+    logging.debug("********cell_cluster: %s", samples_dict["cell_cluster"])
+    logging.debug("********samples: %s", len(samples_dict["samples"]))
     return samples_dict
 
 
 def labeling(samples_dict):
     try:
-        logging.info("Labeling")
+        logging.debug("Labeling")
         samples_dict.update({"final_label_to_be_propagated": []})
         for cell_cluster_idx, _ in enumerate(samples_dict["cell_cluster"]):
             if len(samples_dict["samples"][cell_cluster_idx]) != 0:
@@ -254,7 +254,7 @@ def labeling(samples_dict):
                     )
             else:
                 samples_dict["final_label_to_be_propagated"].append(None)
-        logging.info("Labeling  done")
+        logging.debug("Labeling  done")
     except Exception as e:
         logging.error("Labeling error: %s", e)
     return samples_dict

@@ -7,7 +7,7 @@ from sklearn.pipeline import make_pipeline
 
 
 def classify(X_train, y_train, X_test):
-    logging.info("Classification")
+    logging.debug("Classification")
     if sum(y_train) == 0:
         predicted = [0] * len(X_test)
     elif sum(y_train) == len(y_train):

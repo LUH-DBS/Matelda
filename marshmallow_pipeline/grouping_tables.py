@@ -24,7 +24,7 @@ def table_grouping(aggregated_lake_path: str, output_path: str) -> dict:
         dict: Dictionary of table groups
     """
     logging.info("Table grouping")
-    g_santos = run_santos(aggregated_lake_path=aggregated_lake_path)
+    g_santos = run_santos(aggregated_lake_path=aggregated_lake_path, output_path=output_path)
 
     logging.info("Community detection")
     comp = nx_comm.louvain_communities(g_santos)
@@ -43,7 +43,7 @@ def table_grouping(aggregated_lake_path: str, output_path: str) -> dict:
     return table_group_dict
 
 
-def run_santos(aggregated_lake_path: str):
+def run_santos(aggregated_lake_path: str, output_path: str):
     """
     Run santos on the sandbox.
 
@@ -89,9 +89,11 @@ def run_santos(aggregated_lake_path: str):
         for line in iter(process.stdout.readline, b""):  # b'\n'-separated lines
             logging.info("Santos FD: %s", line.decode("utf-8").strip())
     process.wait()
+    santos_fd_path = os.path.join(output_path, "santos_fds")
+    shutil.move("results/", santos_fd_path)
 
     logging.info("Santos run sortFDs_pickle_file_dict")
-    marshmallow_pipeline.santos_fd.sortFDs_pickle_file_dict.main()
+    marshmallow_pipeline.santos_fd.sortFDs_pickle_file_dict.main(santos_fd_path)
 
     logging.info("Santos run data_lake_processing_synthesized_kb")
     # 1 == tus_benchmark

@@ -2,7 +2,7 @@ import hashlib
 import logging
 import os
 import pickle
-import multiprocessing
+import itertools
 
 from marshmallow_pipeline.utils.read_data import read_csv
 from marshmallow_pipeline.cell_grouping_module.generate_raha_features import (
@@ -16,9 +16,7 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_di
     list_dirs_in_snd.sort()
     table_paths = [[table, sandbox_path, tables_dict[table], table_char_set_dict] for table in list_dirs_in_snd if not table.startswith(".")]
 
-    with multiprocessing.Pool() as pool:
-        feature_dict_list = pool.starmap(generate_cell_features, table_paths)
-
+    feature_dict_list = itertools.starmap(generate_cell_features, table_paths)
     for feature_dict_tmp in feature_dict_list:
         features_dict.update(feature_dict_tmp)
 
@@ -27,7 +25,7 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_di
     return features_dict
 
 def generate_cell_features(table, sandbox_path, table_file_name_santos, table_char_set_dict):
-    logging.info("************************ Table: %s", table)
+    logging.info("Generate cell features; Table: %s", table)
     features_dict = {}
     try:
         table_dirs_path = os.path.join(sandbox_path, table)
@@ -41,7 +39,7 @@ def generate_cell_features(table, sandbox_path, table_file_name_santos, table_ch
 
         # TODO
 
-        logging.info("Generating features for table: %s", table)
+        logging.debug("Generating features for table: %s", table)
         charsets = {}
         for idx, _ in enumerate(dirty_df.columns):
             charsets[idx] = table_char_set_dict[
@@ -54,11 +52,11 @@ def generate_cell_features(table, sandbox_path, table_file_name_santos, table_ch
                     str(idx),
                 )
             ]
-        logging.info("Generate features ---- table: %s", table)
+        logging.debug("Generate features ---- table: %s", table)
         col_features = generate_raha_features(
             sandbox_path, table, charsets
         )
-        logging.info("Generate features done ---- table: %s", table)
+        logging.debug("Generate features done ---- table: %s", table)
         for col_idx, _ in enumerate(col_features):
             for row_idx, _ in enumerate(col_features[col_idx]):
                 features_dict[
@@ -90,7 +88,7 @@ def generate_cell_features(table, sandbox_path, table_file_name_santos, table_ch
                         "gt",
                     )
                 ] = label_df[col_name][row_idx]
-        logging.info("Table: %s", table)
+        logging.debug("Table: %s", table)
     except Exception as e:
         logging.error(e)
 

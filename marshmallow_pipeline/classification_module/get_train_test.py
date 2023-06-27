@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def get_train_test_sets(X_temp, y_temp, samples_dict, cell_clustering_df):
-    logging.info("Train-Test set preparation")
+    logging.debug("Train-Test set preparation")
     cells_per_cluster = cell_clustering_df["cells_per_cluster"].values[0]
     samples_df = pd.DataFrame(samples_dict)
     X_train, y_train, X_test, y_test, y_cell_ids = [], [], [], [], []
@@ -38,5 +38,5 @@ def get_train_test_sets(X_temp, y_temp, samples_dict, cell_clustering_df):
         except Exception as e:
             logging.error("Error in get_train_test_sets: %s", e)
 
-    logging.info("Length of X_train: %s", len(X_train))
+    logging.debug("Length of X_train: %s", len(X_train))
     return X_train, y_train, X_test, y_test, y_cell_ids

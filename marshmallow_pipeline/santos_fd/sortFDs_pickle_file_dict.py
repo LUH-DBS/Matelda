@@ -4,8 +4,8 @@ import glob
 import json
 
 
-def sortFDs():
-    FDResults = glob.glob("./results/*_fds")
+def sortFDs(santos_fd_path: str):
+    FDResults = glob.glob(santos_fd_path + "/*_fds")
     fileDict = {}
     for file in FDResults:
         tableName = None
@@ -36,14 +36,10 @@ def renameColumn(column):
     return newColumn
 
 
-def main():
-    fileDict = sortFDs()
+def main(santos_fd_path: str):
+    fileDict = sortFDs(santos_fd_path)
     outputFile = open(
         "marshmallow_pipeline/santos/groundtruth/tus_FD_filedict.pickle", "wb+"
     )
     pickle.dump(fileDict, outputFile, protocol=pickle.HIGHEST_PROTOCOL)
     outputFile.close()
-
-
-if __name__ == "__main__":
-    main()

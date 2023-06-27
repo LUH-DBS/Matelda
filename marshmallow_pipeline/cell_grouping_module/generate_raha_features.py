@@ -153,7 +153,7 @@ def _strategy_runner_process(self, args):
             ),
         )
     if self.VERBOSE:
-        logging.info(
+        logging.debug(
             "%s cells are detected by %s", len(detected_cells_list), strategy_name
         )
     return strategy_profile
@@ -212,7 +212,7 @@ def run_strategies(self, d, char_set):
                             for configuration in configuration_list
                         ]
                     )
-                    # logging.info("OD configurations: %s", len(configuration_list))
+                    logging.debug("OD configurations: %s", len(configuration_list))
 
                 elif algorithm_name == "PVD":
                     configuration_list = []
@@ -239,21 +239,21 @@ def run_strategies(self, d, char_set):
                             for configuration in configuration_list
                         ]
                     )
-                    # logging.info("RVD configurations: %s", len(configuration_list))
+                    logging.debug("RVD configurations: %s", len(configuration_list))
 
             random.shuffle(algorithm_and_configurations)
-            strategy_profiles_list = []
-            for [d, algorithm, configuration] in algorithm_and_configurations:
-                strategy_profiles_list.append(_strategy_runner_process(d, [d, algorithm, configuration]))
+            # strategy_profiles_list = []
+            # for [d, algorithm, configuration] in algorithm_and_configurations:
+            #     strategy_profiles_list.append(_strategy_runner_process(d, [d, algorithm, configuration]))
             # multiprocessing.freeze_support()
-            #pool = multiprocessing.Pool()
-            #_strategy_runner_process_ = partial(_strategy_runner_process, d)
-            #strategy_profiles_list = pool.map(
-            #    _strategy_runner_process_, algorithm_and_configurations
-            #)
-            #pool.close()
-            #pool.join()
-            logging.info(
+            pool = multiprocessing.Pool()
+            _strategy_runner_process_ = partial(_strategy_runner_process, d)
+            strategy_profiles_list = pool.map(
+                _strategy_runner_process_, algorithm_and_configurations
+            )
+            pool.close()
+            pool.join()
+            logging.debug(
                 "%%%%%%%%%%%%%%%%%%%%%%All strategies are run on the dataset.%%%%%%%%%%%%%%%%%%%%%%"
             )
     else:
@@ -267,7 +267,7 @@ def run_strategies(self, d, char_set):
         )
     d.strategy_profiles = strategy_profiles_list
     if self.VERBOSE:
-        logging.info("%s strategy profiles are collected.", len(d.strategy_profiles))
+        logging.debug("%s strategy profiles are collected.", len(d.strategy_profiles))
 
 
 def generate_features(self, d, char_set_dict):
@@ -297,7 +297,7 @@ def generate_features(self, d, char_set_dict):
         strategy_profiles = [str(k) for k in sorted_keys]
         feature_vectors = np.zeros((d.dataframe.shape[0], len(strategy_profiles)))
         for strategy_index, strategy_name in enumerate(sorted_strategy_profiles):
-            logging.info(
+            logging.debug(
                 "******************************Generating features for strategy: %s",
                 strategy_name,
             )
@@ -306,7 +306,7 @@ def generate_features(self, d, char_set_dict):
                     if cell[1] == j:
                         feature_vectors[cell[0], strategy_index] = 1.0
         if "TFIDF" in self.ERROR_DETECTION_ALGORITHMS:
-            logging.info("TFIDF")
+            logging.debug("TFIDF")
             corpus = d.dataframe.iloc[:, j]
             try:
                 tfidf_features = vectorizer.fit_transform(corpus)
@@ -316,14 +316,14 @@ def generate_features(self, d, char_set_dict):
             except:
                 pass
         if "MPD" in self.ERROR_DETECTION_ALGORITHMS:
-            # logging.info("MPD")
+            logging.debug("MPD")
             mpds = get_mpd(d.dataframe.iloc[:, j])
             feature_vectors = np.column_stack((feature_vectors, np.array(mpds)))
 
         # non_identical_columns = np.any(feature_vectors != feature_vectors[0, :], axis=0)
         # feature_vectors = feature_vectors[:, non_identical_columns]
         if self.VERBOSE:
-            logging.info(
+            logging.debug(
                 "%s Features are generated for column %s", feature_vectors.shape[1], j
             )
         # Adding headers hash
@@ -347,7 +347,7 @@ def generate_raha_features(parent_path, dataset_name, charsets):
         "path": parent_path + "/" + dataset_name + "/dirty_clean.csv",
         "clean_path": parent_path + "/" + dataset_name + "/" + "clean" + ".csv",
     }
-
+    detect.VERBOSE = False
     d = detect.initialize_dataset(dataset_dictionary)
     d.SAVE_RESULTS = True
     d.VERBOSE = False
