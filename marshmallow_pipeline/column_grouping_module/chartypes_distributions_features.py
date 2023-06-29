@@ -20,9 +20,8 @@ class CharTypeDistribution(BaseEstimator, TransformerMixin):
     Computes the character distribution of each column
     """
 
-    def __init__(self, char_set, weight):
+    def __init__(self, char_set):
         self.char_set = char_set
-        self.weight = weight
         pass
 
     def fit(self, X, y=None):
@@ -33,22 +32,32 @@ class CharTypeDistribution(BaseEstimator, TransformerMixin):
         for col in X:
             # Define a default dict to keep track of the counts for each type
             char_observations = {
-                "Letter": 0,
-                "Number": 0,
-                "Symbol": 0,
-                "Whitespace": 0,
-                "Control": 0,
-                "Other": 0,
-            }
-
+                "Letter": 0, 
+                "Number": 0, 
+                "Symbol": 0, 
+                "Whitespace": 0, 
+                "Control": 0, 
+                "Other": 0
+                }
+            list_cell_char_observation = []
             # Loop through the list and count the number of instances per type
             for value in col:
-                for char in set(str(value)):
+                cell_char_observation = {"Letter": 0, "Number": 0, "Symbol": 0, "Whitespace": 0, "Control": 0, "Other": 0}
+                for char in str(value):
                     char_type = detect_char_type(char)
-                    char_observations[char_type] += 1
-            char_observations = {
-                k: (v / len(col)) * self.weight for k, v in char_observations.items()
-            }
+                    cell_char_observation[char_type] += 1
+                for k, v in cell_char_observation.items():
+                    if (len(str(value)) == 0):
+                        cell_char_observation[k] = 0
+                    else:
+                        cell_char_observation[k] = v / len(str(value))
+                list_cell_char_observation.append(cell_char_observation)
+            for cell_char_observation in list_cell_char_observation:
+                for k, v in cell_char_observation.items():
+                    char_observations[k] += v
+            char_observations = {k: (v / len(col)) for k, v in char_observations.items()}
             char_distributions.append(char_observations)
+
         char_distributions = pd.DataFrame(char_distributions)
         return char_distributions
+

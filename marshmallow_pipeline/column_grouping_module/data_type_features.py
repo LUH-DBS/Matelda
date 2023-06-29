@@ -4,8 +4,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 
 
 class DataTypeFeatures(BaseEstimator, TransformerMixin):
-    def __init__(self, weight):
-        self.weight = weight
+    def __init__(self):
         pass
 
     def fit(self, X, y=None):
@@ -20,6 +19,7 @@ class DataTypeFeatures(BaseEstimator, TransformerMixin):
         for col in X:
             # Define a default dict to keep track of the counts for each type
             type_counts = {data_type: 0 for data_type in all_types}
+            type_ratios = {data_type: 0 for data_type in all_types}
 
             # Loop through the list and count the number of instances per type
             for value in col:
@@ -35,8 +35,8 @@ class DataTypeFeatures(BaseEstimator, TransformerMixin):
                         pass
                 type_counts[value_type] += 1
             for key in type_counts:
-                type_counts[key] = type_counts[key] * self.weight
-            all_cols_types.append(type_counts)
+                type_ratios[key] = type_counts[key]/len(col)
+            all_cols_types.append(type_ratios)
         # Convert the dictionary of feature counts to a pandas dataframe
         features_df = pd.DataFrame(all_cols_types)
 
