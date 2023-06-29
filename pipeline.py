@@ -17,7 +17,7 @@ from marshmallow_pipeline.utils.loading_results import \
 
 if __name__ == "__main__":
     configs = ConfigParser()
-    configs.read("config.ini")
+    configs.read("/home/fatemeh/ED-Scale-mp/ED-Scale/config.ini")
     labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
 
@@ -50,16 +50,22 @@ if __name__ == "__main__":
     os.makedirs(aggregated_lake_path, exist_ok=True)
 
     table_grouping_enabled = bool(int(configs["TABLE_GROUPING"]["tg_enabled"]))
+    table_grouping_res_available = bool(int(configs["TABLE_GROUPING"]["tg_res_available"]))
 
     column_grouping_enabled = bool(int(configs["COLUMN_GROUPING"]["cg_enabled"]))
+    column_grouping_res_available = bool(int(configs["COLUMN_GROUPING"]["cg_res_available"]))
+    column_grouping_alg = configs["COLUMN_GROUPING"]["cg_clustering_alg"]
     min_num_labes_per_col_cluster = int(
         configs["COLUMN_GROUPING"]["min_num_labes_per_col_cluster"]
     )
 
-    cell_feature_generator_enabled = bool(
-        int(configs["CELL_GROUPING"]["cell_feature_generator_enabled"])
+    cell_features_available = bool(
+        int(configs["CELL_GROUPING"]["cell_features_available"])
     )
     cell_clustering_alg = configs["CELL_GROUPING"]["cell_clustering_alg"]
+
+    dirty_files_name = configs["DIRECTORIES"]["dirty_files_name"]
+    clean_files_name = configs["DIRECTORIES"]["clean_files_name"]
 
     marshmallow_pipeline.utils.app_logger.setup_logging(logs_dir)
     logging.info("Starting the experiment")
@@ -69,8 +75,8 @@ if __name__ == "__main__":
     for name in os.listdir(tables_path):
         curr_path = os.path.join(tables_path, name)
         if os.path.isdir(curr_path):
-            dirty_csv_path = os.path.join(curr_path, "dirty_clean.csv")
-            clean_csv_path = os.path.join(curr_path, "clean.csv")
+            dirty_csv_path = os.path.join(curr_path, dirty_files_name)
+            clean_csv_path = os.path.join(curr_path, clean_files_name)
             if os.path.isfile(dirty_csv_path):
                 if os.path.exists(os.path.join(aggregated_lake_path, name + ".csv")):
                     os.remove(os.path.join(aggregated_lake_path, name + ".csv"))
@@ -80,21 +86,33 @@ if __name__ == "__main__":
                 tables_dict[os.path.basename(curr_path)] = name + ".csv"
 
     if table_grouping_enabled:
-        logging.info("Table grouping is enabled")
-        logging.info("Executing the table grouping")
-        table_grouping_dict = table_grouping(
-            aggregated_lake_path, experiment_output_path
-        )
+        if not table_grouping_res_available:
+            logging.info("Table grouping is enabled")
+            logging.info("Table grouping results are not available")
+            logging.info("Executing the table grouping")
+            table_grouping_dict = table_grouping(
+                aggregated_lake_path, experiment_output_path
+            )
+        else:
+            logging.info("Table grouping results are available")
+            logging.info("Loading the table grouping results...")
+            with open(
+                os.path.join(experiment_output_path, "table_group_dict.pickle"), "rb"
+            ) as handle:
+                table_grouping_dict = pickle.load(handle)
     else:
         logging.info("Table grouping is disabled")
-        logging.info("Loading the table grouping results...")
-        with open(
-            os.path.join(experiment_output_path, "table_group_dict.pickle"), "rb"
-        ) as handle:
-            table_grouping_dict = pickle.load(handle)
+        table_grouping_dict = {0:[]}
+        tables_list = tables_dict.values()
+        for table in tables_list:
+            table_grouping_dict[0].append(table)
+        with open(os.path.join(experiment_output_path, "table_group_dict.pickle"), "wb+") as handle:
+            pickle.dump(table_grouping_dict, handle)
 
-    if column_grouping_enabled:
+
+    if not column_grouping_res_available:
         logging.info("Column grouping is enabled")
+        logging.info("Column grouping results are not available")
         logging.info("Executing the column grouping")
         column_grouping(
             aggregated_lake_path,
@@ -102,9 +120,11 @@ if __name__ == "__main__":
             sandbox_path,
             labeling_budget,
             mediate_files_path,
-        )
+            column_grouping_enabled
+    )
     else:
         logging.info("Column grouping is disabled")
+        
 
     logging.info("Removing the symlinks")
     for name in os.listdir(tables_path):
@@ -132,7 +152,7 @@ if __name__ == "__main__":
         unique_cells_local_index_collection,
         samples,
     ) = error_detector(
-        cell_feature_generator_enabled,
+        cell_features_available,
         tables_path,
         column_groups_df_path,
         experiment_output_path,

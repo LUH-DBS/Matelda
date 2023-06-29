@@ -19,6 +19,7 @@ def table_grouping(aggregated_lake_path: str, output_path: str) -> dict:
 
     Args:
         graph_path (str): Path to the graph pickle file
+        output_path (str): Path to the output directory
 
     Returns:
         dict: Dictionary of table groups

@@ -1,3 +1,4 @@
+import logging
 import os
 import pickle
 
@@ -17,53 +18,64 @@ from marshmallow_pipeline.column_grouping_module.value_length_features import (
 
 
 def extract_column_features(
-    table_group, cols, char_set, max_n_col_groups, mediate_files_path
+    table_group, cols, char_set, max_n_col_groups, mediate_files_path, cg_enabled
 ):
     """
     Extracts features from a column
     Args:
         col: A column from a dataframe
+        char_set: A set of characters that appear in the table group
+        max_n_col_groups: The maximum number of column groups for each table group
+        mediate_files_path: The path to the mediate files
+        cg_enabled: A boolean that indicates whether column grouping is enabled
+
 
     Returns:
         A dataframe of features
 
     """
-    # Feature weighting
-    w = {"data_type_features": 0.7, "value_length_stats": 0.1, "char_distribution": 0.2}
 
-    pipeline = Pipeline(
-        [
-            (
-                "feature_generator",
-                FeatureUnion(
-                    [
-                        (
-                            "data_type_features",
-                            DataTypeFeatures(w["data_type_features"]),
-                        ),
-                        (
-                            "value_length_stats",
-                            ValueLengthStats(w["value_length_stats"]),
-                        ),
-                        (
-                            "char_distribution",
-                            CharTypeDistribution(char_set, w["char_distribution"]),
-                        ),
-                    ]
+    if cg_enabled:
+        logging.info("Column grouping is enabled")
+        # Feature weighting
+        w = {"data_type_features": 0.7, "value_length_stats": 0.1, "char_distribution": 0.2}
+
+        pipeline = Pipeline(
+            [
+                (
+                    "feature_generator",
+                    FeatureUnion(
+                        [
+                            (
+                                "data_type_features",
+                                DataTypeFeatures(w["data_type_features"]),
+                            ),
+                            (
+                                "value_length_stats",
+                                ValueLengthStats(w["value_length_stats"]),
+                            ),
+                            (
+                                "char_distribution",
+                                CharTypeDistribution(char_set, w["char_distribution"]),
+                            ),
+                        ]
+                    ),
                 ),
-            ),
-            ("normalizer", MinMaxScaler()),
-        ]
-    )
+                ("normalizer", MinMaxScaler()),
+            ]
+        )
 
-    X = pipeline.fit_transform(cols["col_value"])
+        X = pipeline.fit_transform(cols["col_value"])
 
-    clusters = MiniBatchKMeans(
-        n_clusters=min(max_n_col_groups, len(X)),
-        random_state=0,
-        reassignment_ratio=0,
-        batch_size=256 * 64,
-    ).fit_predict(X)
+        clusters = MiniBatchKMeans(
+            n_clusters=min(max_n_col_groups, len(X)),
+            random_state=0,
+            reassignment_ratio=0,
+            batch_size=256 * 64,
+        ).fit_predict(X)
+    else:
+        logging.info("Column grouping is disabled")
+        clusters = [0] * len(cols["col_value"])
 
     cols_per_cluster = {}
     cols_per_cluster_values = {}

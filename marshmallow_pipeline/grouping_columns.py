@@ -18,6 +18,7 @@ def column_grouping(
     lake_base_path: str,
     labeling_budget: int,
     mediate_files_path: str,
+    cg_enabled: bool,
 ) -> None:
     """
     This function is responsible for executing the column grouping step.
@@ -28,6 +29,7 @@ def column_grouping(
         :param lake_base_path: The path to the aggregated lake.
         :param labeling_budget: The labeling budget.
         :param mediate_files_path: The path to the mediate files.
+        :param cg_enabled: A boolean that indicates whether the column grouping step is enabled.
 
     Returns:
         None
@@ -54,7 +56,7 @@ def column_grouping(
 
         pool.apply_async(
             extract_column_features,
-            args=(table_group, cols, char_set, max_n_col_groups, mediate_files_path),
+            args=(table_group, cols, char_set, max_n_col_groups, mediate_files_path, cg_enabled),
         )
 
     pool.close()
