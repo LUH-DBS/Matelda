@@ -2,7 +2,7 @@ run:
 	conda run --no-capture-output -n Error-Detection-at-Scale python3 pipeline.py
 
 install:
-	conda create -n Error-Detection-at-Scale python=3.9
+	conda create -n Error-Detection-at-Scale python=3.10
 	conda run --no-capture-output -n Error-Detection-at-Scale pip install -r requirements.txt
 
 setup-santos:
