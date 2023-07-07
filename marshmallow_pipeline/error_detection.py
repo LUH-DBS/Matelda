@@ -113,7 +113,7 @@ def get_cells_in_cluster(group_df, col_cluster, features_dict):
 
 
 def col_clu_cell_clustering(
-    n_cell_clusters_per_col_cluster, table_cluster, col_cluster, group_df, features_dict
+    n_cell_clusters_per_col_cluster, table_cluster, col_cluster, group_df, features_dict, n_cores
 ):
     logging.debug("Processing cluster %s", str(col_cluster))
     cell_cluster_cells_dict = get_cells_in_cluster(group_df, col_cluster, features_dict)
@@ -123,6 +123,7 @@ def col_clu_cell_clustering(
         cell_cluster_cells_dict["X_temp"],
         cell_cluster_cells_dict["y_temp"],
         n_cell_clusters_per_col_cluster,
+        n_cores
     )
     return cell_cluster_cells_dict, cell_clustering_dict
 
@@ -216,7 +217,8 @@ def error_detector(
     tables_dict,
     min_num_labes_per_col_cluster,
     dirty_files_name,
-    clean_files_name
+    clean_files_name,
+    n_cores
 ):
     logging.info("Starting error detection")
 
@@ -332,7 +334,7 @@ def error_detector(
     )
 
 
-def cluster_column_group(file_name):
+def cluster_column_group(file_name, n_cores):
     logging.info("Clustering column group: %s", file_name)
     table_clusters = []
     cell_cluster_cells_dict_all = {}
@@ -381,6 +383,7 @@ def cluster_column_group(file_name):
                 col_cluster,
                 group_df,
                 features_dict,
+                n_cores
             )
             cell_cluster_cells_dict_all[table_cluster][
                 col_cluster

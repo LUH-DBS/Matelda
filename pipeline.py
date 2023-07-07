@@ -167,7 +167,8 @@ if __name__ == "__main__":
         tables_dict,
         min_num_labes_per_col_cluster,
         dirty_files_name, 
-        clean_files_name
+        clean_files_name,
+        n_cores
     )
 
     logging.info("Getting results")

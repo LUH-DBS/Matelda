@@ -38,7 +38,7 @@ def column_grouping(
     Returns:
         None
     """
-    max_n_col_groups = math.floor(labeling_budget / len(table_grouping_dict) / 2)
+    max_n_col_groups = math.floor(labeling_budget / len(table_grouping_dict) / 2) # 2 is the minimum number of labels for each column group
     logging.info("Group columns")
     pool = multiprocessing.Pool(processes=n_cores)
 

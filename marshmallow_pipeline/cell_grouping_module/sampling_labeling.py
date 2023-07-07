@@ -38,7 +38,7 @@ def get_n_labels(cluster_sizes_df, labeling_budget, min_num_labes_per_col_cluste
     return cluster_sizes_df
 
 
-def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cluster):
+def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cluster, n_cores):
     # logging.info(
     #     "Cell Clustering - table_cluster: %s, col_cluster: %s",
     #     table_cluster,
@@ -59,16 +59,14 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
         "errors_per_cluster": [],
     }
     n_cell_clusters_per_col_cluster = min(len(x), n_cell_clusters_per_col_cluster)
-    # logging.info(
-    #     "KMeans - n_cell_clusters_per_col_cluster: %s", n_cell_clusters_per_col_cluster
-    # )
+    logging.debug(
+        "KMeans - n_cell_clusters_per_col_cluster: %s", n_cell_clusters_per_col_cluster
+    )
     clustering = MiniBatchKMeans(
         n_clusters=int(n_cell_clusters_per_col_cluster),
-        random_state=0,
-        reassignment_ratio=0,
-        batch_size=256 * 64,
+        batch_size=256 * n_cores,
     ).fit(x)
-    # logging.info("KMeans - n_cell_clusters_generated: %s", len(set(clustering.labels_)))
+    logging.debug("KMeans - n_cell_clusters_generated: %s", len(set(clustering.labels_)))
     clustering_labels = clustering.labels_
     for cell in enumerate(clustering_labels):
         if cell[1] in cells_per_cluster:
@@ -82,16 +80,10 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
     cell_clustering_dict["table_cluster"] = table_cluster
     cell_clustering_dict["col_cluster"] = col_cluster
     cell_clustering_dict["n_cells"] = len(x)
-    cell_clustering_dict["n_init_labels"] = n_cell_clusters_per_col_cluster - 1
+    cell_clustering_dict["n_init_labels"] = n_cell_clusters_per_col_cluster
     cell_clustering_dict["n_produced_cell_clusters"] = len(set(clustering.labels_))
-    if len(set(clustering.labels_)) > 1:
-        cell_clustering_dict["n_current_requiered_labels"] = (
-            len(set(clustering.labels_)) - 1
-        )  # one cell group remains always unlabeled
-    else:
-        cell_clustering_dict["n_current_requiered_labels"] = len(
-            set(clustering.labels_)
-        )
+    cell_clustering_dict["n_current_requiered_labels"] = len(set(clustering.labels_))
+    
     cell_clustering_dict["remaining_labels"] = (
         cell_clustering_dict["n_init_labels"]
         - cell_clustering_dict["n_current_requiered_labels"]
@@ -167,22 +159,13 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
     }
 
     cells_per_cluster = cell_clustering_dict["cells_per_cluster"].values[0]
-    if (
-        cell_clustering_dict["n_labels_updated"].values[0] > 1
-        and len(cells_per_cluster) > 1
-    ):
-        unlabled_cluster = max(
-            cells_per_cluster, key=lambda k: len(cells_per_cluster[k])
-        )
-    else:
-        unlabled_cluster = -1
 
     labeled_clusters = {
         key: value
         for key, value in cells_per_cluster.items()
-        if key != unlabled_cluster
     }
     sorted_clusters = sorted(labeled_clusters, key=lambda k: len(labeled_clusters[k]))
+    logging.debug("Sampling - sorted_clusters: {}".format(sorted_clusters))
     cell_cluster_n_labels = {k: 0 for k in cells_per_cluster.keys()}
     n_labels = cell_clustering_dict["n_labels_updated"].values[0]
     i = 0
@@ -225,13 +208,7 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
         samples_dict["dirty_cell_values"].append(dirty_cell_values_cluster)
         samples_dict["samples_indices_cell_group"].append(samples_indices_cell_group)
         samples_dict["samples_indices_global"].append(samples_indices_global)
-    samples_dict["cell_cluster"].append(unlabled_cluster)
-    samples_dict["samples"].append([])
-    samples_dict["labels"].append([])
-    samples_dict["dirty_cell_values"].append([])
-    samples_dict["samples_indices_cell_group"].append([])
-    samples_dict["samples_indices_global"].append([])
-
+   
     logging.debug("Sampling done")
     logging.debug("********cell_cluster: %s", samples_dict["cell_cluster"])
     logging.debug("********samples: %s", len(samples_dict["samples"]))
