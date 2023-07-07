@@ -1,3 +1,4 @@
+from collections import OrderedDict
 import logging
 import os
 import pickle
@@ -62,9 +63,19 @@ def get_cells_in_cluster(group_df, col_cluster, features_dict):
     key_temp = []
     datacells_uids = {}
     current_local_cell_uid = 0
+    all_table_cols = []
+
     try:
         c_df = group_df[group_df["column_cluster_label"] == col_cluster]
         for _, row in c_df.iterrows():
+            all_table_cols.append((row['table_id'], row['col_id']))
+        for _, row in c_df.iterrows():
+            table_col_id_features = OrderedDict()
+            for table_col in all_table_cols:
+                table_col_id_features[table_col] = 0
+            table_col_id_features[(row['table_id'], row['col_id'])] = 1
+            table_col_features_list = list(table_col_id_features.values())
+
             for cell_idx in range(len(row["col_value"])):
                 original_data_keys_temp.append(
                     (
@@ -76,11 +87,11 @@ def get_cells_in_cluster(group_df, col_cluster, features_dict):
                 )
 
                 value_temp.append(row["col_value"][cell_idx])
-                X_temp.append(
-                    features_dict[
-                        (row["table_id"], row["col_id"], cell_idx, "og")
+                complete_feature_vector = features_dict[
+                    (row['table_id'], row['col_id'], cell_idx, 'og')
                     ].tolist()
-                )
+                complete_feature_vector.extend(table_col_features_list)
+                X_temp.append(complete_feature_vector)                
                 y_temp.append(
                     features_dict[
                         (row["table_id"], row["col_id"], cell_idx, "gt")
