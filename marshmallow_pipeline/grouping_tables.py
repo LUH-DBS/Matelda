@@ -4,6 +4,7 @@ import os
 import pickle
 import shutil
 import subprocess
+import time
 
 import networkx.algorithms.community as nx_comm
 
@@ -12,6 +13,7 @@ import marshmallow_pipeline.santos.codes.data_lake_processing_yago
 import marshmallow_pipeline.santos.codes.query_santos
 import marshmallow_pipeline.santos_fd.sortFDs_pickle_file_dict
 
+logger = logging.getLogger()
 
 def table_grouping(aggregated_lake_path: str, output_path: str) -> dict:
     """
@@ -24,8 +26,10 @@ def table_grouping(aggregated_lake_path: str, output_path: str) -> dict:
     Returns:
         dict: Dictionary of table groups
     """
-    logging.info("Table grouping")
+    logger.info("Table grouping")
     g_santos = run_santos(aggregated_lake_path=aggregated_lake_path, output_path=output_path)
+    with open(os.path.join(output_path, "g_santos.pickle"), "wb+") as handle:
+        pickle.dump(g_santos, handle)
 
     logging.info("Community detection")
     comp = nx_comm.louvain_communities(g_santos)
@@ -50,8 +54,10 @@ def run_santos(aggregated_lake_path: str, output_path: str):
 
     Args:
         aggregated_lake_path (str): Path to the sandbox
+        output_path (str): Path to the output directory
 
     Returns:
+        nx.Graph: Santos graph
         _type_: _description_
     """
     logging.info("Preparing santos")
@@ -67,7 +73,7 @@ def run_santos(aggregated_lake_path: str, output_path: str):
     shutil.copytree(aggregated_lake_path, santos_query_path, copy_function=os.link)
 
     logging.info("Santos run data_lake_processing_yago")
-    # 1 == tus_benchmark
+    # 1 == eds_benchmark
     marshmallow_pipeline.santos.codes.data_lake_processing_yago.main(1)
 
     logging.info("Creating functinal dependencies/ground truth for santos")
@@ -77,7 +83,7 @@ def run_santos(aggregated_lake_path: str, output_path: str):
         if file.endswith(".csv")
     ]
     with open(
-        "marshmallow_pipeline/santos_fd/tus_datalake_files.txt", "w+", encoding="utf-8"
+        "marshmallow_pipeline/santos_fd/eds_datalake_files.txt", "w+", encoding="utf-8"
     ) as file:
         file.write("\n".join(datalake_files))
 
@@ -90,8 +96,18 @@ def run_santos(aggregated_lake_path: str, output_path: str):
         for line in iter(process.stdout.readline, b""):  # b'\n'-separated lines
             logging.info("Santos FD: %s", line.decode("utf-8").strip())
     process.wait()
-    santos_fd_path = os.path.join(output_path, "santos_fds")
-    shutil.move("results/", santos_fd_path)
+    santos_fd_path = os.path.join(os.path.join(output_path, "santos_fds"), "results")
+    if os.path.exists(santos_fd_path):
+        shutil.rmtree(santos_fd_path, ignore_errors=True)
+
+    os.makedirs(santos_fd_path)
+    # List all files in the source directory
+    files = os.listdir("results/")
+
+    for file in files:
+        # Move each file to destination Directory
+        shutil.move(os.path.join("results/", file), os.path.join(santos_fd_path, file))
+    # shutil.move("results/", santos_fd_path)
 
     logging.info("Santos run sortFDs_pickle_file_dict")
     marshmallow_pipeline.santos_fd.sortFDs_pickle_file_dict.main(santos_fd_path)

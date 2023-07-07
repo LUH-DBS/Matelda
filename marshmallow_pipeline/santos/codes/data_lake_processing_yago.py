@@ -270,7 +270,7 @@ def computeColumnSemantics(
 
 def main(which_benchmark):
     if which_benchmark == 1:
-        current_benchmark = "tus"
+        current_benchmark = "eds"
     elif which_benchmark == 2:
         current_benchmark = "santos"
     else:

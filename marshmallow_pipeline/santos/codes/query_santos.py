@@ -450,7 +450,7 @@ def main(which_benchmark, which_mode):
 
     map_k = 20
     if which_benchmark == 1:
-        current_benchmark = "tus"
+        current_benchmark = "eds"
         map_k = 60
     elif which_benchmark == 2:
         current_benchmark = "santos"

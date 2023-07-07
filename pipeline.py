@@ -20,6 +20,7 @@ if __name__ == "__main__":
     configs.read("/home/fatemeh/ED-Scale-mp/ED-Scale/config.ini")
     labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
+    n_cores = int(configs["EXPERIMENTS"]["n_cores"])
 
     sandbox_path = configs["DIRECTORIES"]["sandbox_dir"]
     tables_path = os.path.join(sandbox_path, configs["DIRECTORIES"]["tables_dir"])
@@ -85,6 +86,7 @@ if __name__ == "__main__":
                 )
                 tables_dict[os.path.basename(curr_path)] = name + ".csv"
 
+    # Table grouping
     if table_grouping_enabled:
         if not table_grouping_res_available:
             logging.info("Table grouping is enabled")
@@ -109,7 +111,7 @@ if __name__ == "__main__":
         with open(os.path.join(experiment_output_path, "table_group_dict.pickle"), "wb+") as handle:
             pickle.dump(table_grouping_dict, handle)
 
-
+    # Column grouping
     if not column_grouping_res_available:
         logging.info("Column grouping is enabled")
         logging.info("Column grouping results are not available")
@@ -120,7 +122,9 @@ if __name__ == "__main__":
             sandbox_path,
             labeling_budget,
             mediate_files_path,
-            column_grouping_enabled
+            column_grouping_enabled,
+            column_grouping_alg,
+            n_cores
     )
     else:
         logging.info("Column grouping is disabled")
@@ -143,7 +147,6 @@ if __name__ == "__main__":
 
     logging.info("Starting error detection")
     # TODO: change output foldr of metanome
-    # For fatemeh: no complete paths in code, Define a seed in config, with sets alls seeds in code(importance for reproducibility), document the code, no pickle! hard to read and securyt issue, if catching exception print exceptopn
     (
         y_test_all,
         y_local_cell_ids,

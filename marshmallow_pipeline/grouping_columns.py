@@ -6,8 +6,8 @@ import os
 
 from typing import Dict
 
-from marshmallow_pipeline.column_grouping_module.extract_column_features import (
-    extract_column_features,
+from marshmallow_pipeline.column_grouping_module.col_grouping import (
+    col_grouping,
 )
 from marshmallow_pipeline.utils.read_data import read_csv
 
@@ -19,6 +19,8 @@ def column_grouping(
     labeling_budget: int,
     mediate_files_path: str,
     cg_enabled: bool,
+    col_grouping_alg: str,
+    n_cores: int,
 ) -> None:
     """
     This function is responsible for executing the column grouping step.
@@ -30,13 +32,15 @@ def column_grouping(
         :param labeling_budget: The labeling budget.
         :param mediate_files_path: The path to the mediate files.
         :param cg_enabled: A boolean that indicates whether the column grouping step is enabled.
+        :param col_grouping_alg: The column grouping algorithm (km for minibatch kmeans or hac for hierarchical agglomerative clustering - default: hac).
+        :param n_cores: The number of cores to use for parallelization.
 
     Returns:
         None
     """
     max_n_col_groups = math.floor(labeling_budget / len(table_grouping_dict) / 2)
     logging.info("Group columns")
-    pool = multiprocessing.Pool()
+    pool = multiprocessing.Pool(processes=n_cores)
 
     for table_group in table_grouping_dict:
         logging.info("Table_group: %s", table_group)
@@ -55,8 +59,8 @@ def column_grouping(
                 cols["col_id"].append(col_idx)
 
         pool.apply_async(
-            extract_column_features,
-            args=(table_group, cols, char_set, max_n_col_groups, mediate_files_path, cg_enabled),
+            col_grouping,
+            args=(table_group, cols, char_set, max_n_col_groups, mediate_files_path, cg_enabled, col_grouping_alg, n_cores),
         )
 
     pool.close()

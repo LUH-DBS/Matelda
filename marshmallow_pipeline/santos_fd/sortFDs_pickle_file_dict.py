@@ -39,7 +39,7 @@ def renameColumn(column):
 def main(santos_fd_path: str):
     fileDict = sortFDs(santos_fd_path)
     outputFile = open(
-        "marshmallow_pipeline/santos/groundtruth/tus_FD_filedict.pickle", "wb+"
+        "marshmallow_pipeline/santos/groundtruth/eds_FD_filedict.pickle", "wb+"
     )
     pickle.dump(fileDict, outputFile, protocol=pickle.HIGHEST_PROTOCOL)
     outputFile.close()

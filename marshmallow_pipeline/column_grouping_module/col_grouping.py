@@ -2,7 +2,7 @@ import logging
 import os
 import pickle
 
-from sklearn.cluster import MiniBatchKMeans
+from sklearn.cluster import AgglomerativeClustering, MiniBatchKMeans
 from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.preprocessing import MinMaxScaler
 
@@ -17,8 +17,8 @@ from marshmallow_pipeline.column_grouping_module.value_length_features import (
 )
 
 
-def extract_column_features(
-    table_group, cols, char_set, max_n_col_groups, mediate_files_path, cg_enabled
+def col_grouping(
+    table_group, cols, char_set, max_n_col_groups, mediate_files_path, cg_enabled, col_grouping_alg, n_cores
 ):
     """
     Extracts features from a column
@@ -28,6 +28,8 @@ def extract_column_features(
         max_n_col_groups: The maximum number of column groups for each table group
         mediate_files_path: The path to the mediate files
         cg_enabled: A boolean that indicates whether column grouping is enabled
+        col_grouping_alg: The column grouping algorithm (km for minibatch kmeans or hac for hierarchical agglomerative clustering - default: hac)
+        n_cores: The number of cores to use for parallelization
 
 
     Returns:
@@ -65,12 +67,17 @@ def extract_column_features(
 
         X = pipeline.fit_transform(cols["col_value"])
 
-        clusters = MiniBatchKMeans(
-            n_clusters=min(max_n_col_groups, len(X)),
-            random_state=0,
-            reassignment_ratio=0,
-            batch_size=256 * 64,
-        ).fit_predict(X)
+        if col_grouping_alg == "km":
+            # For faster computations, you can set the batch_size greater than 256 * number of cores to enable parallelism on all cores (scikit-learn documentation)
+            clusters = MiniBatchKMeans(
+                n_clusters=min(max_n_col_groups, len(X)),
+                batch_size=256 * n_cores,
+            ).fit_predict(X)
+
+        else:
+            clusters = AgglomerativeClustering(n_clusters=min(max_n_col_groups, len(X))
+                                               ).fit_predict(X)
+            
     else:
         logging.info("Column grouping is disabled")
         clusters = [0] * len(cols["col_value"])
