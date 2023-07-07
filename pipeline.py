@@ -166,6 +166,8 @@ if __name__ == "__main__":
         cell_clustering_alg,
         tables_dict,
         min_num_labes_per_col_cluster,
+        dirty_files_name, 
+        clean_files_name
     )
 
     logging.info("Getting results")

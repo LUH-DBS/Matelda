@@ -215,6 +215,8 @@ def error_detector(
     cell_clustering_alg,
     tables_dict,
     min_num_labes_per_col_cluster,
+    dirty_files_name,
+    clean_files_name
 ):
     logging.info("Starting error detection")
 
@@ -225,7 +227,7 @@ def error_detector(
     if cell_feature_generator_enabled:
         logging.info("Generating cell features enabled")
         features_dict = get_cells_features(
-            sandbox_path, output_path, table_charset_dict, tables_dict
+            sandbox_path, output_path, table_charset_dict, tables_dict, dirty_files_name, clean_files_name
         )
     else:
         logging.info("Generating cell features disabled, loading from previous results from disk")

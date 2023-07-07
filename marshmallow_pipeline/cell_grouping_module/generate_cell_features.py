@@ -10,11 +10,11 @@ from marshmallow_pipeline.cell_grouping_module.generate_raha_features import (
 )
 
 
-def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_dict):
+def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_dict, dirty_files_name, clean_files_name):
     features_dict = {}
     list_dirs_in_snd = os.listdir(sandbox_path)
     list_dirs_in_snd.sort()
-    table_paths = [[table, sandbox_path, tables_dict[table], table_char_set_dict] for table in list_dirs_in_snd if not table.startswith(".")]
+    table_paths = [[table, sandbox_path, tables_dict[table], table_char_set_dict, dirty_files_name, clean_files_name] for table in list_dirs_in_snd if not table.startswith(".")]
 
     feature_dict_list = itertools.starmap(generate_cell_features, table_paths)
     for feature_dict_tmp in feature_dict_list:
@@ -24,17 +24,17 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_di
         pickle.dump(features_dict, filehandler)
     return features_dict
 
-def generate_cell_features(table, sandbox_path, table_file_name_santos, table_char_set_dict):
+def generate_cell_features(table, sandbox_path, table_file_name_santos, table_char_set_dict, dirty_files_name, clean_files_name):
     logging.info("Generate cell features; Table: %s", table)
     features_dict = {}
     try:
         table_dirs_path = os.path.join(sandbox_path, table)
 
         dirty_df = read_csv(
-            os.path.join(table_dirs_path, "dirty_clean.csv"), low_memory=False
+            os.path.join(table_dirs_path, dirty_files_name), low_memory=False
         )
         clean_df = read_csv(
-            os.path.join(table_dirs_path + "/clean.csv"), low_memory=False
+            os.path.join(table_dirs_path, clean_files_name), low_memory=False
         )
 
         # TODO
@@ -54,7 +54,7 @@ def generate_cell_features(table, sandbox_path, table_file_name_santos, table_ch
             ]
         logging.debug("Generate features ---- table: %s", table)
         col_features = generate_raha_features(
-            sandbox_path, table, charsets
+            sandbox_path, table, charsets, dirty_files_name, clean_files_name
         )
         logging.debug("Generate features done ---- table: %s", table)
         for col_idx, _ in enumerate(col_features):

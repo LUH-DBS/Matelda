@@ -132,8 +132,6 @@ def _strategy_runner_process(self, args):
                 ):
                     outputted_cells[(i, l_j)] = ""
                     outputted_cells[(i, r_j)] = ""
-    elif algorithm == "KBVD":
-        outputted_cells = raha.tools.KATARA.katara.run(d, configuration)
     detected_cells_list = list(outputted_cells.keys())
     strategy_profile = {
         "name": strategy_name,
@@ -284,7 +282,6 @@ def generate_features(self, d, char_set_dict):
                     strategy_profiles.append(strategy_profile)
             else:
                 strategy_profiles.append(strategy_profile)
-        # TODO: check numbers
         parsed_keys = [
             json.loads(str(key["name"])) for key in strategy_profiles
         ]  # Parse the keys into Python objects
@@ -305,36 +302,18 @@ def generate_features(self, d, char_set_dict):
                 for cell in sorted_strategy_profiles[strategy_name]:
                     if cell[1] == j:
                         feature_vectors[cell[0], strategy_index] = 1.0
-        if "TFIDF" in self.ERROR_DETECTION_ALGORITHMS:
-            logging.debug("TFIDF")
-            corpus = d.dataframe.iloc[:, j]
-            try:
-                tfidf_features = vectorizer.fit_transform(corpus)
-                feature_vectors = np.column_stack(
-                    (feature_vectors, np.array(tfidf_features.todense()))
-                )
-            except:
-                pass
-        if "MPD" in self.ERROR_DETECTION_ALGORITHMS:
-            logging.debug("MPD")
-            mpds = get_mpd(d.dataframe.iloc[:, j])
-            feature_vectors = np.column_stack((feature_vectors, np.array(mpds)))
 
-        # non_identical_columns = np.any(feature_vectors != feature_vectors[0, :], axis=0)
-        # feature_vectors = feature_vectors[:, non_identical_columns]
         if self.VERBOSE:
             logging.debug(
                 "%s Features are generated for column %s", feature_vectors.shape[1], j
             )
-        # Adding headers hash
 
-        # feature_vectors = np.hstack((feature_vectors, np.full((feature_vectors.shape[0], 1), col_name_features[j])))
         columns_features_list.append(feature_vectors)
 
     d.column_features = columns_features_list
 
 
-def generate_raha_features(parent_path, dataset_name, charsets):
+def generate_raha_features(parent_path, dataset_name, charsets, dirty_file_name, clean_file_name):
     sp_path = (
         parent_path + "/" + dataset_name + "/" + "raha-baran-results-" + dataset_name
     )
@@ -344,8 +323,8 @@ def generate_raha_features(parent_path, dataset_name, charsets):
     detect = raha.Detection()
     dataset_dictionary = {
         "name": dataset_name,
-        "path": parent_path + "/" + dataset_name + "/dirty_clean.csv",
-        "clean_path": parent_path + "/" + dataset_name + "/" + "clean" + ".csv",
+        "path": parent_path + "/" + dataset_name + "/{}".format(dirty_file_name),
+        "clean_path": parent_path + "/" + dataset_name + "/{}".format(clean_file_name),
     }
     detect.VERBOSE = False
     d = detect.initialize_dataset(dataset_dictionary)
