@@ -264,7 +264,11 @@ def error_detector(
         col_clusters = []
         logging.info("Number of column groups: %s", str(len(col_group_file_names)))
         logging.info("Starting parallel processing of column groups")
-        pool_results = pool.map(cluster_column_group, col_group_file_names)
+        # Prepare the arguments as tuples
+        args = [(x, n_cores) for x in col_group_file_names]
+
+        # Use starmap to pass arguments as separate values
+        pool_results = pool.starmap(cluster_column_group, args)
         logging.info("Storing cluster_column_group results")
         for result in pool_results:
             if result is not None:
