@@ -60,8 +60,8 @@ if __name__ == "__main__":
         configs["COLUMN_GROUPING"]["min_num_labes_per_col_cluster"]
     )
 
-    cell_features_available = bool(
-        int(configs["CELL_GROUPING"]["cell_features_available"])
+    cell_feature_generator_enabled = bool(
+        int(configs["CELL_GROUPING"]["cell_feature_generator_enabled"])
     )
     cell_clustering_alg = configs["CELL_GROUPING"]["cell_clustering_alg"]
 
@@ -92,7 +92,7 @@ if __name__ == "__main__":
             logging.info("Table grouping is enabled")
             logging.info("Table grouping results are not available")
             logging.info("Executing the table grouping")
-            table_grouping_dict = table_grouping(
+            table_grouping_dict, table_group_size_dict = table_grouping(
                 aggregated_lake_path, experiment_output_path
             )
         else:
@@ -102,9 +102,15 @@ if __name__ == "__main__":
                 os.path.join(experiment_output_path, "table_group_dict.pickle"), "rb"
             ) as handle:
                 table_grouping_dict = pickle.load(handle)
+            with open(
+                os.path.join(experiment_output_path, "table_group_size_dict.pickle"),
+                "rb",
+            ) as handle:
+                table_group_size_dict = pickle.load(handle)
     else:
         logging.info("Table grouping is disabled")
         table_grouping_dict = {0:[]}
+        table_group_size_dict = {0:-1}
         tables_list = tables_dict.values()
         for table in tables_list:
             table_grouping_dict[0].append(table)
@@ -119,6 +125,7 @@ if __name__ == "__main__":
         column_grouping(
             aggregated_lake_path,
             table_grouping_dict,
+            table_group_size_dict,
             sandbox_path,
             labeling_budget,
             mediate_files_path,
@@ -155,7 +162,7 @@ if __name__ == "__main__":
         unique_cells_local_index_collection,
         samples,
     ) = error_detector(
-        cell_features_available,
+        cell_feature_generator_enabled,
         tables_path,
         column_groups_df_path,
         experiment_output_path,

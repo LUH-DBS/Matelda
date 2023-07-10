@@ -15,6 +15,7 @@ from marshmallow_pipeline.utils.read_data import read_csv
 def column_grouping(
     path: str,
     table_grouping_dict: Dict,
+    table_group_size_dict: Dict,
     lake_base_path: str,
     labeling_budget: int,
     mediate_files_path: str,
@@ -28,6 +29,7 @@ def column_grouping(
     Args:
         :param path: The path to the tables.
         :param table_grouping_dict: A dictionary that maps between a table group and the tables in it.
+        :param table_group_size_dict: A dictionary that maps between a table group and the number of cells in it.
         :param lake_base_path: The path to the aggregated lake.
         :param labeling_budget: The labeling budget.
         :param mediate_files_path: The path to the mediate files.
@@ -38,11 +40,12 @@ def column_grouping(
     Returns:
         None
     """
-    max_n_col_groups = math.floor(labeling_budget / len(table_grouping_dict) / 2) # 2 is the minimum number of labels for each column group
+    count_all_cells = sum(table_group_size_dict.values())
     logging.info("Group columns")
-    pool = multiprocessing.Pool(processes=n_cores)
+    pool = multiprocessing.Pool()
 
     for table_group in table_grouping_dict:
+        max_n_col_groups = math.floor(labeling_budget * table_group_size_dict[table_group] / count_all_cells / 2) # 2 is the minimum number of labels for each column group
         logging.info("Table_group: %s", table_group)
         cols = {"col_value": [], "table_id": [], "table_path": [], "col_id": []}
         char_set = set()

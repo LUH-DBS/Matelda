@@ -27,7 +27,7 @@ def table_grouping(aggregated_lake_path: str, output_path: str) -> dict:
         dict: Dictionary of table groups
     """
     logger.info("Table grouping")
-    g_santos = run_santos(aggregated_lake_path=aggregated_lake_path, output_path=output_path)
+    g_santos, table_size_dict = run_santos(aggregated_lake_path=aggregated_lake_path, output_path=output_path)
     with open(os.path.join(output_path, "g_santos.pickle"), "wb+") as handle:
         pickle.dump(g_santos, handle)
 
@@ -36,16 +36,21 @@ def table_grouping(aggregated_lake_path: str, output_path: str) -> dict:
 
     logging.info("Creating table_group_dict")
     table_group_dict = {}
+    table_group_size_dict = {}
     table_group_dict_key = 0
     for community in comp:
         table_group_dict[table_group_dict_key] = []
+        table_group_size_dict[table_group_dict_key] = 0
         for table in community:
             table_group_dict[table_group_dict_key].append(table)
+            table_group_size_dict[table_group_dict_key] += table_size_dict[table]
         table_group_dict_key += 1
 
     with open(os.path.join(output_path, "table_group_dict.pickle"), "wb+") as handle:
         pickle.dump(table_group_dict, handle)
-    return table_group_dict
+    with open(os.path.join(output_path, "table_group_size_dict.pickle"), "wb+") as handle:
+        pickle.dump(table_group_size_dict, handle)
+    return table_group_dict, table_group_size_dict
 
 
 def run_santos(aggregated_lake_path: str, output_path: str):
@@ -118,11 +123,11 @@ def run_santos(aggregated_lake_path: str, output_path: str):
 
     logging.info("Santos run query_santos")
     # 1 == tus_benchmark, 3 == full
-    g_santos = marshmallow_pipeline.santos.codes.query_santos.main(1, 3)
+    g_santos, table_size_dict = marshmallow_pipeline.santos.codes.query_santos.main(1, 3)
 
     logging.info("Removing hardlinks")
     shutil.rmtree(santos_lake_path, ignore_errors=True)
     shutil.rmtree(santos_query_path, ignore_errors=True)
 
     logging.info("Santos finished")
-    return g_santos
+    return g_santos, table_size_dict
