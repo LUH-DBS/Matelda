@@ -1,0 +1,8 @@
+marshmallow_pipeline/santos/benchmark/tus_benchmark/datalake/cov_2.csv
+marshmallow_pipeline/santos/benchmark/tus_benchmark/datalake/imdb.csv
+marshmallow_pipeline/santos/benchmark/tus_benchmark/datalake/best_sellers.csv
+marshmallow_pipeline/santos/benchmark/tus_benchmark/datalake/cou_2.csv
+marshmallow_pipeline/santos/benchmark/tus_benchmark/datalake/marvels.csv
+marshmallow_pipeline/santos/benchmark/tus_benchmark/datalake/disney.csv
+marshmallow_pipeline/santos/benchmark/tus_benchmark/datalake/cou_1.csv
+marshmallow_pipeline/santos/benchmark/tus_benchmark/datalake/cov_1.csv
