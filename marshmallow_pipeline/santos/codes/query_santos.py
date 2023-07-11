@@ -447,6 +447,7 @@ def computeColumnSemantics(
 
 def main(which_benchmark, which_mode):
     G = nx.Graph()
+    table_size_dict = {}
 
     map_k = 20
     if which_benchmark == 1:
@@ -679,6 +680,7 @@ def main(which_benchmark, which_mode):
         current_query_time_start = time.time_ns()
         bagOfSemanticsFinal = []
         input_table = pd.read_csv(table, encoding="latin1")
+        table_size_dict[table_name] = input_table.size
         unique_values = input_table.nunique().max()
         rowCardinality = {}
         rowCardinalityTotal = 0
@@ -1151,4 +1153,4 @@ def main(which_benchmark, which_mode):
     logging.info(f"Nodes in the graph: {list(G.nodes())}")
     logging.info(f"Edges in the graph: {list(G.edges(data=True))}")
 
-    return G
+    return G, table_size_dict
