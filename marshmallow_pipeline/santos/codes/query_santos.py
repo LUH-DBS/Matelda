@@ -680,7 +680,7 @@ def main(which_benchmark, which_mode):
         current_query_time_start = time.time_ns()
         bagOfSemanticsFinal = []
         input_table = pd.read_csv(table, encoding="latin1")
-        table_size_dict[table_name] = input_table.size
+        table_size_dict[table_name] = input_table.shape
         unique_values = input_table.nunique().max()
         rowCardinality = {}
         rowCardinalityTotal = 0

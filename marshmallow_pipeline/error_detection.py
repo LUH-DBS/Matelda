@@ -136,6 +136,7 @@ def col_clu_cell_clustering(
         n_cell_clusters_per_col_cluster,
         n_cores
     )
+    logging.debug("processing cluster %s ... done", str(col_cluster))
     return cell_cluster_cells_dict, cell_clustering_dict
 
 
@@ -257,7 +258,9 @@ def error_detector(
 
     logging.info("Clustering column groups")
     col_group_file_names = [file_name for file_name in os.listdir(col_groups_dir) if ".pickle" in file_name]
-    with multiprocessing.Pool(initializer=cluster_column_group_init, initargs=(col_groups_dir, df_n_labels, features_dict), processes=min(len(col_group_file_names), os.cpu_count())) as pool:
+    # n_processes = min((len(col_group_file_names), os.cpu_count()))
+    # logging.debug("Number of processes: %s", str(n_processes))
+    with multiprocessing.Pool(initializer=cluster_column_group_init, initargs=(col_groups_dir, df_n_labels, features_dict), processes=16) as pool:
         table_clusters = []
         cell_cluster_cells_dict_all = {}
         cell_clustering_dict_all = {}
@@ -266,7 +269,7 @@ def error_detector(
         logging.info("Starting parallel processing of column groups")
         # Prepare the arguments as tuples
         args = [(x, n_cores) for x in col_group_file_names]
-
+        logging.debug("args: %s", str(args))
         # Use starmap to pass arguments as separate values
         pool_results = pool.starmap(cluster_column_group, args)
         logging.info("Storing cluster_column_group results")
@@ -386,7 +389,6 @@ def cluster_column_group(file_name, n_cores):
                     (df_n_labels["table_cluster"] == table_cluster)
                     & (df_n_labels["col_cluster"] == col_cluster)
                 ]["n_labels"].values[0]
-                + 1
             )
 
             (

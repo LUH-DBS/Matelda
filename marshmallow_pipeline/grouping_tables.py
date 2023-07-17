@@ -36,21 +36,18 @@ def table_grouping(aggregated_lake_path: str, output_path: str) -> dict:
 
     logging.info("Creating table_group_dict")
     table_group_dict = {}
-    table_group_size_dict = {}
     table_group_dict_key = 0
     for community in comp:
         table_group_dict[table_group_dict_key] = []
-        table_group_size_dict[table_group_dict_key] = 0
         for table in community:
             table_group_dict[table_group_dict_key].append(table)
-            table_group_size_dict[table_group_dict_key] += table_size_dict[table]
         table_group_dict_key += 1
 
     with open(os.path.join(output_path, "table_group_dict.pickle"), "wb+") as handle:
         pickle.dump(table_group_dict, handle)
-    with open(os.path.join(output_path, "table_group_size_dict.pickle"), "wb+") as handle:
-        pickle.dump(table_group_size_dict, handle)
-    return table_group_dict, table_group_size_dict
+    with open(os.path.join(output_path, "table_size_dict.pickle"), "wb+") as handle:
+        pickle.dump(table_size_dict, handle)
+    return table_group_dict, table_size_dict
 
 
 def run_santos(aggregated_lake_path: str, output_path: str):
