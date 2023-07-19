@@ -16,11 +16,11 @@ from marshmallow_pipeline.saving_results import get_all_results
 from marshmallow_pipeline.utils.loading_results import \
     loading_columns_grouping_results
 
-if __name__ == "__main__":
+def main(labeling_budget):
     time_start = time.time()
     configs = ConfigParser()
     configs.read("/home/fatemeh/ED-Scale-mp/ED-Scale/config.ini")
-    labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
+    # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
 
@@ -48,7 +48,6 @@ if __name__ == "__main__":
 
     os.makedirs(experiment_output_path, exist_ok=True)
     os.makedirs(results_path, exist_ok=True)
-    os.makedirs(logs_dir, exist_ok=True)
     os.makedirs(logs_dir, exist_ok=True)
     os.makedirs(aggregated_lake_path, exist_ok=True)
 
@@ -199,3 +198,6 @@ if __name__ == "__main__":
         dirty_files_name,
         clean_files_name
     )
+
+# if __name__ == "__main__":
+#     main(66)
