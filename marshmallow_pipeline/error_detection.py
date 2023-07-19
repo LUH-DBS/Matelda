@@ -140,7 +140,7 @@ def col_clu_cell_clustering(
     return cell_cluster_cells_dict, cell_clustering_dict
 
 
-def cel_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict):
+def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict):
     logging.info(
         "Sampling and labeling cluster %s",
         str(cell_clustering_df["col_cluster"].values[0]),
@@ -198,7 +198,7 @@ def cel_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict):
         )
         logging.error(e)
 
-    cel_cluster_sampling_labeling_dict = {
+    cell_cluster_sampling_labeling_dict = {
         "y_test": y_test,
         "y_cell_ids": y_cell_ids,
         "predicted": predicted,
@@ -213,7 +213,7 @@ def cel_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict):
         str(cell_clustering_df["col_cluster"].values[0]),
     )
     logging.debug("Number of labels (used): %s", str(len(X_labeled_by_user)))
-    return cel_cluster_sampling_labeling_dict
+    return cell_cluster_sampling_labeling_dict
 
 
 def error_detector(
@@ -447,19 +447,22 @@ def test(col_cluster, table_cluster):
     cell_cluster_cells_dict = cell_cluster_cells_dict_all[table_cluster][
         col_cluster
     ]
-    cel_cluster_sampling_labeling_dict = cel_cluster_sampling_labeling(
+    cell_cluster_sampling_labeling_dict = cell_cluster_sampling_labeling(
         cell_clustering_df, cell_cluster_cells_dict
     )
+    cell_clustering_dir = os.path.join(output_path, "cell_clustering")
+    if not os.path.exists(cell_clustering_dir):
+        os.makedirs(cell_clustering_dir)
     with open(
         os.path.join(
-            output_path,
-            f"cel_cluster_sampling_labeling_dict_{table_cluster}_{col_cluster}.pickle",
+            cell_clustering_dir,
+            f"cell_cluster_sampling_labeling_dict_{table_cluster}_{col_cluster}.pickle",
         ),
         "wb",
     ) as pickle_file:
-        pickle.dump(cel_cluster_sampling_labeling_dict, pickle_file)
+        pickle.dump(cell_cluster_sampling_labeling_dict, pickle_file)
 
-    X_labeled_by_user = cel_cluster_sampling_labeling_dict["X_labeled_by_user"]
+    X_labeled_by_user = cell_cluster_sampling_labeling_dict["X_labeled_by_user"]
 
     used_labels += len(X_labeled_by_user) if X_labeled_by_user is not None else 0
     df_n_labels.loc[
@@ -469,10 +472,10 @@ def test(col_cluster, table_cluster):
     ] = True
     if X_labeled_by_user is not None:
         selected_samples.update(
-            cel_cluster_sampling_labeling_dict["universal_samples"]
+            cell_cluster_sampling_labeling_dict["universal_samples"]
         )
         original_data_keys.extend(
-            cel_cluster_sampling_labeling_dict["original_data_keys_temp"]
+            cell_cluster_sampling_labeling_dict["original_data_keys_temp"]
         )
 
         X_labeled_by_user_all[
@@ -480,20 +483,20 @@ def test(col_cluster, table_cluster):
         ] = X_labeled_by_user
         y_labeled_by_user_all[
             (str(table_cluster), str(col_cluster))
-        ] = cel_cluster_sampling_labeling_dict["y_labeled_by_user"]
+        ] = cell_cluster_sampling_labeling_dict["y_labeled_by_user"]
 
         predicted_all[
             (str(table_cluster), str(col_cluster))
-        ] = cel_cluster_sampling_labeling_dict["predicted"]
+        ] = cell_cluster_sampling_labeling_dict["predicted"]
         y_test_all[
             (str(table_cluster), str(col_cluster))
-        ] = cel_cluster_sampling_labeling_dict["y_test"]
+        ] = cell_cluster_sampling_labeling_dict["y_test"]
         y_local_cell_ids[
             (str(table_cluster), str(col_cluster))
-        ] = cel_cluster_sampling_labeling_dict["y_cell_ids"]
+        ] = cell_cluster_sampling_labeling_dict["y_cell_ids"]
         unique_cells_local_index_collection[
             (str(table_cluster), str(col_cluster))
-        ] = cel_cluster_sampling_labeling_dict["datacells_uids"]
+        ] = cell_cluster_sampling_labeling_dict["datacells_uids"]
 
     logging.info("Done test; Column cluster: %s; Table cluster %s; Used labels %s ", col_cluster, table_cluster, str(len(X_labeled_by_user) if X_labeled_by_user is not None else 0))
     

@@ -58,9 +58,13 @@ def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget):
         table_group = list(tg_stats.keys())[i]
         if tg_stats[table_group]["max_n_col_groups"] < tg_stats[table_group]["n_cols"]:
             tg_stats[table_group]["max_n_col_groups"] += 1
+            processed = 0
         else:
             processed += 1
-        i += 1     
+        if i < len(table_grouping_dict) - 1:
+            i += 1 
+        else:
+            i = 0    
     total_n_col_groups = sum(val['max_n_col_groups'] for val in tg_stats.values())
     logging.info("Labeling Budget: %s, N Col Groups: %s", labeling_budget, total_n_col_groups)
     with open("tg_stats.pickle", "wb") as f:
