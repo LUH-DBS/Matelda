@@ -162,6 +162,8 @@ def run_strategies(self, d, char_set):
     This method runs (all or the promising) strategies.
     """
     sp_folder_path = os.path.join(d.results_folder, "strategy-profiling")
+    if os.path.exists(sp_folder_path):
+        shutil.rmtree(sp_folder_path)
     if not self.STRATEGY_FILTERING:
         if os.path.exists(sp_folder_path):
             sys.stderr.write(
@@ -328,7 +330,7 @@ def generate_raha_features(parent_path, dataset_name, charsets, dirty_file_name,
     }
     detect.VERBOSE = False
     d = detect.initialize_dataset(dataset_dictionary)
-    d.SAVE_RESULTS = True
+    d.SAVE_RESULTS = False
     d.VERBOSE = False
     d.ERROR_DETECTION_ALGORITHMS = ["OD", "RVD", "PVD"]
     run_strategies(detect, d, charsets)

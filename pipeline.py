@@ -6,6 +6,7 @@ import logging
 import os
 import pickle
 from configparser import ConfigParser
+import time
 
 import marshmallow_pipeline.utils.app_logger
 from marshmallow_pipeline.error_detection import error_detector
@@ -16,6 +17,7 @@ from marshmallow_pipeline.utils.loading_results import \
     loading_columns_grouping_results
 
 if __name__ == "__main__":
+    time_start = time.time()
     configs = ConfigParser()
     configs.read("/home/fatemeh/ED-Scale-mp/ED-Scale/config.ini")
     labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
@@ -178,6 +180,11 @@ if __name__ == "__main__":
         n_cores
     )
 
+    time_end = time.time()
+    logging.info("The experiment took %s seconds", time_end - time_start)
+    with open(os.path.join(results_path, "time.txt"), "w") as file:
+        file.write(str(time_end - time_start))
+    
     logging.info("Getting results")
     get_all_results(
         tables_dict,
@@ -189,4 +196,6 @@ if __name__ == "__main__":
         y_labeled_by_user_all,
         unique_cells_local_index_collection,
         samples,
+        dirty_files_name,
+        clean_files_name
     )

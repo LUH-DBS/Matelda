@@ -63,7 +63,7 @@ def run_santos(aggregated_lake_path: str, output_path: str):
         _type_: _description_
     """
     logging.info("Preparing santos")
-    santos_path = "marshmallow_pipeline/santos/benchmark/tus_benchmark"
+    santos_path = "marshmallow_pipeline/santos/benchmark/eds_benchmark"
     santos_lake_path = os.path.join(santos_path, "datalake")
     santos_query_path = os.path.join(santos_path, "query")
 

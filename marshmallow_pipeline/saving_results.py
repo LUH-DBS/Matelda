@@ -168,7 +168,7 @@ def get_results_per_table(result_df):
     return results_per_table
 
 
-def get_tables_dict(init_tables_dict, sandbox_path):
+def get_tables_dict(init_tables_dict, sandbox_path, dirty_file_names, clean_file_names):
     logging.debug("Getting tables dict")
     all_tables_dict = {}
     table_dirs = os.listdir(sandbox_path)
@@ -179,7 +179,7 @@ def get_tables_dict(init_tables_dict, sandbox_path):
             table_file_name_santos = init_tables_dict[table]
             table_id = hashlib.md5(table_file_name_santos.encode()).hexdigest()
             table_df = read_csv(
-                os.path.join(table_path, "dirty_clean.csv"), low_memory=False
+                os.path.join(table_path, dirty_file_names), low_memory=False
             )
             all_tables_dict[table_id] = {
                 "name": table,
@@ -199,6 +199,8 @@ def get_all_results(
     y_labeled_by_user_all,
     unique_cells_local_index_collection,
     samples,
+    dirty_file_names,
+    clean_file_names
 ):
     logging.info("Getting all results")
     with open(os.path.join(results_dir, "labeled_by_user.pickle"), "wb") as file:
@@ -209,7 +211,7 @@ def get_all_results(
         y_test_all, predicted_all, y_labeled_by_user_all, results_dir, samples
     )
     # logging.info("Getting prediction results")
-    # tables_dict = get_tables_dict(init_tables_dict, tables_path)
+    # tables_dict = get_tables_dict(init_tables_dict, tables_path, dirty_file_names, clean_file_names)
     # results_df = create_predictions_dict(
         # tables_dict,
         # y_test_all,

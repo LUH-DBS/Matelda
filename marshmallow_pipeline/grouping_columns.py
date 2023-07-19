@@ -35,6 +35,7 @@ def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget):
     logging.info("Calculating the number of column groups for each table group")
     tg_stats = {}
     count_all_cells = 0
+    count_all_cols = 0
     if len(table_grouping_dict) == 1:
         tg_stats[0] = {"n_cols": "Dummy Value", "n_cells": "Dummy Value", 
                        "max_n_col_groups": math.floor(labeling_budget / 2)}
@@ -46,15 +47,16 @@ def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget):
             n_cols_in_tg += table_size_dict[table][1]
             n_cells_in_tg += table_size_dict[table][0] * table_size_dict[table][1]
             count_all_cells += n_cells_in_tg
+            count_all_cols += n_cols_in_tg
         max_n_col_groups = min(n_cols_in_tg, 
-            math.floor(labeling_budget * n_cells_in_tg / count_all_cells / 2))# 2 is the minimum number of labels for each column group
+            math.floor(labeling_budget * n_cols_in_tg / count_all_cols / 2))# 2 is the minimum number of labels for each column group
         tg_stats[table_group] = {"n_cols": n_cols_in_tg, "n_cells": n_cells_in_tg, "max_n_col_groups": max_n_col_groups}
     tg_stats = dict(sorted(tg_stats.items(), key = lambda item: item[1]['max_n_col_groups'], reverse=True))
     processed = 0
     i = 0
-    while sum(item['max_n_col_groups'] for item in tg_stats.values()) < labeling_budget and processed < len(table_grouping_dict):
+    while sum(item['max_n_col_groups'] for item in tg_stats.values()) < labeling_budget/2 and processed < len(table_grouping_dict):
         table_group = list(tg_stats.keys())[i]
-        if tg_stats[table_group]["max_n_col_groups"] >  tg_stats[table_group]["n_cols"]:
+        if tg_stats[table_group]["max_n_col_groups"] < tg_stats[table_group]["n_cols"]:
             tg_stats[table_group]["max_n_col_groups"] += 1
         else:
             processed += 1
@@ -113,7 +115,8 @@ def column_grouping(
                 cols["table_path"].append(os.path.join(lake_base_path, table))
                 cols["col_id"].append(col_idx)
 
-        pool.apply_async(
+        logging.debug("Apply for table_group: %s", table_group)
+        pool.apply(
             col_grouping,
             args=(table_group, cols, char_set, tg_stats[table_group]["max_n_col_groups"], mediate_files_path, cg_enabled, col_grouping_alg, n_cores),
         )

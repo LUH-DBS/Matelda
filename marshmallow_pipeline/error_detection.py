@@ -288,12 +288,15 @@ def error_detector(
             all_cell_clusters_records.append(cell_clustering_dict_all[table_group][col_group])
 
     all_cell_clusters_records = update_n_labels(all_cell_clusters_records)
+    cell_clustering_dir = os.path.join(output_path, "cell_clustering")
+    if not os.path.exists(cell_clustering_dir):
+        os.makedirs(cell_clustering_dir)
     with open(
-        os.path.join(output_path, "all_cell_clusters_records.pickle"), "wb"
+        os.path.join(cell_clustering_dir, "all_cell_clusters_records.pickle"), "wb"
     ) as pickle_file:
         pickle.dump(all_cell_clusters_records, pickle_file)
     with open(
-        os.path.join(output_path, "cell_cluster_cells_dict_all.pickle"), "wb"
+        os.path.join(cell_clustering_dir, "cell_cluster_cells_dict_all.pickle"), "wb"
     ) as pickle_file:
         pickle.dump(cell_cluster_cells_dict_all, pickle_file)
 

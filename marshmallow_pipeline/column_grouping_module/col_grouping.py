@@ -39,6 +39,7 @@ def col_grouping(
 
     if cg_enabled:
         logging.info("Column grouping is enabled")
+        logging.info("Grouping Columns in Table Group: %s", table_group)
 
         pipeline = Pipeline(
             [
@@ -67,16 +68,20 @@ def col_grouping(
 
         X = pipeline.fit_transform(cols["col_value"])
 
-        if col_grouping_alg == "km":
-            # For faster computations, you can set the batch_size greater than 256 * number of cores to enable parallelism on all cores (scikit-learn documentation)
-            clusters = MiniBatchKMeans(
-                n_clusters=min(max_n_col_groups, len(X)),
-                batch_size=256 * n_cores,
-            ).fit_predict(X)
+        if max_n_col_groups > 1:
+            if col_grouping_alg == "km":
+                # For faster computations, you can set the batch_size greater than 256 * number of cores to enable parallelism on all cores (scikit-learn documentation)
+                clusters = MiniBatchKMeans(
+                    n_clusters=min(max_n_col_groups, len(X)),
+                    batch_size=256 * n_cores,
+                ).fit_predict(X)
 
-        else:
-            clusters = AgglomerativeClustering(n_clusters=min(max_n_col_groups, len(X))
+            else:
+                clusters = AgglomerativeClustering(n_clusters=min(max_n_col_groups, len(X))
                                                ).fit_predict(X)
+        else:
+            logging.info("The maximum number of column groups is less than 2")
+            clusters = [0] * len(cols["col_value"])
             
     else:
         logging.info("Column grouping is disabled")
