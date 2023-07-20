@@ -20,26 +20,6 @@ from Levenshtein import distance
 from scipy.spatial.distance import pdist, squareform
 
 
-# minimum pairwise distance
-def get_mpd(column):
-    transformed_col = column.to_numpy().reshape(-1, 1)
-    try:
-        distance_matrix = pdist(transformed_col, lambda x, y: distance(x[0], y[0]))
-    except Exception as e:
-        logging.error(e)
-        return
-    sdm = squareform(distance_matrix)
-    np.nan_to_num(sdm, sys.float_info.max)
-    sdm[sdm == 0] = sys.float_info.max
-    mpds = []
-    for i in range(len(column)):
-        if np.min(sdm[i]) < np.median(sdm[i]):
-            mpds.append(1)
-        else:
-            mpds.append(0)
-    return mpds
-
-
 def _strategy_runner_process(self, args):
     """
     This method runs an error detection strategy in a parallel process.
@@ -162,8 +142,6 @@ def run_strategies(self, d, char_set):
     This method runs (all or the promising) strategies.
     """
     sp_folder_path = os.path.join(d.results_folder, "strategy-profiling")
-    if os.path.exists(sp_folder_path):
-        shutil.rmtree(sp_folder_path)
     if not self.STRATEGY_FILTERING:
         if os.path.exists(sp_folder_path):
             sys.stderr.write(
