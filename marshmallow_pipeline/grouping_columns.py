@@ -48,11 +48,12 @@ def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget):
             n_cells_in_tg += table_size_dict[table][0] * table_size_dict[table][1]
         count_all_cells += n_cells_in_tg
         count_all_cols += n_cols_in_tg
-        tg_stats[table_group] = {"n_cols": n_cols_in_tg, "n_cells": n_cells_in_tg, "max_n_col_groups": 0}
+        tg_stats[table_group] = {"n_cols": n_cols_in_tg, "n_cells": n_cells_in_tg, "max_n_col_groups": 1}
     for table_group in table_grouping_dict:
+        remained_labeling_budget = labeling_budget - 2 * sum(item['max_n_col_groups'] for item in tg_stats.values())
         max_n_col_groups = min(tg_stats[table_group]["n_cols"], 
-            math.floor(labeling_budget * tg_stats[table_group]["n_cols"] / count_all_cols / 2))# 2 is the minimum number of labels for each column group
-        tg_stats[table_group]["max_n_col_groups"] = max_n_col_groups
+            math.floor(remained_labeling_budget * tg_stats[table_group]["n_cols"] / count_all_cols / 2))# 2 is the minimum number of labels for each column group
+        tg_stats[table_group]["max_n_col_groups"] += max_n_col_groups
     tg_stats = dict(sorted(tg_stats.items(), key = lambda item: item[1]['max_n_col_groups'], reverse=True))
     processed = 0
     i = 0
