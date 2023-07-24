@@ -498,6 +498,8 @@ def test(col_cluster, table_cluster):
             (str(table_cluster), str(col_cluster))
         ] = cell_cluster_sampling_labeling_dict["datacells_uids"]
 
-    logging.info("Done test; Column cluster: %s; Table cluster %s; Used labels %s ", col_cluster, table_cluster, str(len(X_labeled_by_user) if X_labeled_by_user is not None else 0))
+    init_labels_tg_cg = df_n_labels_glob[(df_n_labels_glob["table_cluster"] == table_cluster) & (df_n_labels_glob["col_cluster"] == col_cluster)]["n_labels"].values[0]
+
+    logging.info("Done test; Column cluster: %s; Table cluster %s; Used labels %s , Init labels: %s", col_cluster, table_cluster, str(len(X_labeled_by_user) if X_labeled_by_user is not None else 0), init_labels_tg_cg)
     
     return {"original_data_keys": original_data_keys, "unique_cells_local_index_collection": unique_cells_local_index_collection, "predicted_all": predicted_all, "y_test_all": y_test_all, "y_local_cell_ids": y_local_cell_ids, "X_labeled_by_user_all": X_labeled_by_user_all, "y_labeled_by_user_all": y_labeled_by_user_all, "selected_samples": selected_samples, "used_labels": used_labels}

@@ -12,7 +12,7 @@ from marshmallow_pipeline.column_grouping_module.col_grouping import (
 )
 from marshmallow_pipeline.utils.read_data import read_csv
 
-def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget):
+def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget, output_path):
     """
     This function calculates the number of column groups for each table group.  
     The number of column groups is calculated according to the following formula:
@@ -70,7 +70,7 @@ def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget):
             i = 0    
     total_n_col_groups = sum(val['max_n_col_groups'] for val in tg_stats.values())
     logging.info("Labeling Budget: %s, N Col Groups: %s", labeling_budget, total_n_col_groups)
-    with open("tg_stats.pickle", "wb") as f:
+    with open(os.path.join(output_path, "tg_stats.pickle"), "wb") as f:
         pickle.dump(tg_stats, f)
     return tg_stats
 
@@ -102,7 +102,7 @@ def column_grouping(
     Returns:
         None
     """
-    tg_stats = get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget)
+    tg_stats = get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget, mediate_files_path)
     logging.info("Group columns")
     pool = multiprocessing.Pool()
     

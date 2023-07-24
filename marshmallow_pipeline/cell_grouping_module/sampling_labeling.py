@@ -171,7 +171,7 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
     values_per_cluster = {k: [] for k in cells_per_cluster.keys()}
     for k in values_per_cluster.keys():
         values_per_cluster[k] = [tuple(x[i]) for i in cells_per_cluster[k]]
-    n_labels = cell_clustering_dict["n_labels_updated"].values[0]
+    n_labels = cell_clustering_dict["n_labels_updated"].values[0]        
     i = 0
     sorted_cluster_idx = 0
     while n_labels > 0 and i < len(sorted_clusters):
@@ -191,20 +191,64 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
     for cluster in labeled_clusters:
         x_cluster = []
         y_cluster = []
-        col_group_cell_idx = cells_per_cluster[cluster]
-        for cell_idx in col_group_cell_idx:
-            x_cluster.append(x[cell_idx])
-            y_cluster.append(y[cell_idx])
-
-        sorted_points = sort_points_by_distance(x_cluster)
         samples_feature_vectors = []
         samples_labels = []
         samples_indices_global = []
         samples_indices_cell_group = []
         dirty_cell_values_cluster = []
-        i = 0
-        j = 0
-        while j < cell_cluster_n_labels[cluster] and i < len(sorted_points):
+        col_group_cell_idx = cells_per_cluster[cluster]
+        for cell_idx in col_group_cell_idx:
+            x_cluster.append(x[cell_idx])
+            y_cluster.append(y[cell_idx])
+
+        if cell_cluster_n_labels[cluster] > 1:
+            try:
+                clustering = MiniBatchKMeans(n_clusters=cell_cluster_n_labels[cluster], batch_size=256 * 64).fit(x_cluster)
+                logging.debug("inner cluster splitting - n_clusters: %s", len(set(clustering.labels_)))
+                clustering_labels = clustering.labels_
+                x_cluster_splited = []
+                y_cluster_splited = []
+                x_idx_cluster_splited = []
+                for i in range(set(clustering_labels)):
+                    x_cluster_splited.append([])
+                    y_cluster_splited.append([])
+                    x_idx_cluster_splited.append([])
+                for x, x_idx in x_cluster:
+                    x_cluster_splited[clustering_labels[x_idx]].append(x)
+                    x_idx_cluster_splited[clustering_labels[x_idx]].append(x_idx)
+                    y_cluster_splited[clustering_labels[x_idx]].append(y[x_idx])
+
+                
+                for mini_cluster in range(len(x_cluster_splited)):
+                    x_cluster_mini = x_cluster_splited[mini_cluster]
+                    sorted_points = sort_points_by_distance(x_cluster_mini)
+                    sample = sorted_points[0]
+                    init_idx = x_idx_cluster_splited[mini_cluster][sample]
+                    if x_cluster_mini[sample] not in samples_feature_vectors:
+                        samples_feature_vectors.append(x_cluster_mini[sample])
+                        samples_labels.append(y_cluster_splited[mini_cluster][sample])
+                        dirty_cell_values_cluster.append(
+                            dirty_cell_values[col_group_cell_idx[init_idx]]
+                        )
+                        samples_indices_global.append(col_group_cell_idx[init_idx])
+                        samples_indices_cell_group.append(init_idx)
+            except Exception as e:
+                logging.debug("inner cluster splitting error: %s", e)
+                logging.debug("picking random samples")
+                while len(samples_feature_vectors) < cell_cluster_n_labels[cluster]:
+                    sample = np.random.randint(0, len(x_cluster))
+                    if x_cluster[sample] not in samples_feature_vectors:
+                        samples_feature_vectors.append(x_cluster[sample])
+                        samples_labels.append(y_cluster[sample])
+                        dirty_cell_values_cluster.append(
+                            dirty_cell_values[col_group_cell_idx[sample]]
+                        )
+                        samples_indices_global.append(col_group_cell_idx[sample])
+                        samples_indices_cell_group.append(sample)
+
+        else:
+            sorted_points = sort_points_by_distance(x_cluster)
+            i = 0
             sample = sorted_points[i]
             if x_cluster[sample] not in samples_feature_vectors:
                 samples_feature_vectors.append(x_cluster[sample])
@@ -214,9 +258,6 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
                 )
                 samples_indices_global.append(col_group_cell_idx[sample])
                 samples_indices_cell_group.append(sample)
-                j+=1
-                i = 0
-            i+=1
 
         samples_dict["cell_cluster"].append(cluster)
         samples_dict["samples"].append(samples_feature_vectors)
