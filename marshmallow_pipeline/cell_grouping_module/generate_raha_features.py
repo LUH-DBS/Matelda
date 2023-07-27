@@ -24,116 +24,120 @@ def _strategy_runner_process(self, args):
     """
     This method runs an error detection strategy in a parallel process.
     """
-    d, algorithm, configuration = args
-    start_time = time.time()
-    strategy_name = json.dumps([algorithm, configuration])
-    strategy_name_hash = str(
-        int(hashlib.sha1(strategy_name.encode("utf-8")).hexdigest(), 16)
-    )
-    outputted_cells = {}
-    if algorithm == "OD":
-        dataset_path = os.path.join(
-            tempfile.gettempdir(), d.name + "-" + strategy_name_hash + ".csv"
+    try:
+        d, algorithm, configuration = args
+        start_time = time.time()
+        strategy_name = json.dumps([algorithm, configuration])
+        strategy_name_hash = str(
+            int(hashlib.sha1(strategy_name.encode("utf-8")).hexdigest(), 16)
         )
-        d.write_csv_dataset(dataset_path, d.dataframe)
-        params = (
-            ["-F", ",", "--statistical", "0.5"]
-            + ["--" + configuration[0]]
-            + configuration[1:]
-            + [dataset_path]
-        )
-        raha.tools.dBoost.dboost.imported_dboost.run(params)
-        algorithm_results_path = dataset_path + "-dboost_output.csv"
-        if os.path.exists(algorithm_results_path):
-            ocdf = pd.read_csv(
-                algorithm_results_path,
-                sep=",",
-                header=None,
-                encoding="utf-8",
-                dtype=str,
-                low_memory=False,
-            ).apply(lambda x: x.str.strip())
-            for i, j in ocdf.values.tolist():
-                if int(i) > 0:
-                    outputted_cells[(int(i) - 1, int(j))] = ""
-            os.remove(algorithm_results_path)
-        os.remove(dataset_path)
-    elif algorithm == "PVD":
-        attribute, ch = configuration
-        j = d.dataframe.columns.get_loc(attribute)
-        for i, value in d.dataframe[attribute].items():
-            try:
-                if len(re.findall("[" + ch + "]", value, re.UNICODE)) > 0:
-                    outputted_cells[(i, j)] = ""
-            except:
-                continue
-    elif algorithm == "RVD":
-        d_col_list = d.dataframe.columns.tolist()
-        configuration_list = []
-        for col_idx, _ in enumerate(d_col_list):
-            if configuration == "FCD":
-                # 1st to col
-                configuration_list.append((d_col_list[0], d_col_list[col_idx]))
+        outputted_cells = {}
+        if algorithm == "OD":
+            dataset_path = os.path.join(
+                tempfile.gettempdir(), d.name + "-" + strategy_name_hash + ".csv"
+            )
+            d.write_csv_dataset(dataset_path, d.dataframe)
+            params = (
+                ["-F", ",", "--statistical", "0.5"]
+                + ["--" + configuration[0]]
+                + configuration[1:]
+                + [dataset_path]
+            )
+            raha.tools.dBoost.dboost.imported_dboost.run(params)
+            algorithm_results_path = dataset_path + "-dboost_output.csv"
+            if os.path.exists(algorithm_results_path):
+                ocdf = pd.read_csv(
+                    algorithm_results_path,
+                    sep=",",
+                    header=None,
+                    encoding="utf-8",
+                    dtype=str,
+                    low_memory=False,
+                ).apply(lambda x: x.str.strip())
+                for i, j in ocdf.values.tolist():
+                    if int(i) > 0:
+                        outputted_cells[(int(i) - 1, int(j))] = ""
+                os.remove(algorithm_results_path)
+            os.remove(dataset_path)
+        elif algorithm == "PVD":
+            attribute, ch = configuration
+            j = d.dataframe.columns.get_loc(attribute)
+            for i, value in d.dataframe[attribute].items():
+                try:
+                    if len(re.findall("[" + ch + "]", value, re.UNICODE)) > 0:
+                        outputted_cells[(i, j)] = ""
+                except:
+                    continue
+        elif algorithm == "RVD":
+            d_col_list = d.dataframe.columns.tolist()
+            configuration_list = []
+            for col_idx, _ in enumerate(d_col_list):
+                if configuration == "FCD":
+                    # 1st to col
+                    configuration_list.append((d_col_list[0], d_col_list[col_idx]))
 
-            elif configuration == "RND":
-                # direct neighbours to col
-                if col_idx != 0:
-                    configuration_list.append(
-                        (d_col_list[col_idx - 1], d_col_list[col_idx])
-                    )
-                else:
-                    configuration_list.append(
-                        (d_col_list[col_idx], d_col_list[col_idx])
-                    )
-            elif configuration == "LND":
-                if col_idx != len(d_col_list) - 1:
-                    configuration_list.append(
-                        (d_col_list[col_idx], d_col_list[col_idx + 1])
-                    )
-                else:
-                    configuration_list.append(
-                        (d_col_list[col_idx], d_col_list[col_idx])
-                    )
-        for conf in configuration_list:
-            l_attribute, r_attribute = conf
-            l_j = d.dataframe.columns.get_loc(l_attribute)
-            r_j = d.dataframe.columns.get_loc(r_attribute)
-            value_dictionary = {}
-            for i, row in d.dataframe.iterrows():
-                if row[l_attribute]:
-                    if row[l_attribute] not in value_dictionary:
-                        value_dictionary[row[l_attribute]] = {}
-                    if row[r_attribute]:
-                        value_dictionary[row[l_attribute]][row[r_attribute]] = 1
-            for i, row in d.dataframe.iterrows():
-                if (
-                    row[l_attribute] in value_dictionary
-                    and len(value_dictionary[row[l_attribute]]) > 1
-                ):
-                    outputted_cells[(i, l_j)] = ""
-                    outputted_cells[(i, r_j)] = ""
-    detected_cells_list = list(outputted_cells.keys())
-    strategy_profile = {
-        "name": strategy_name,
-        "output": detected_cells_list,
-        "runtime": time.time() - start_time,
-    }
-    if self.SAVE_RESULTS:
-        pickle.dump(
-            strategy_profile,
-            open(
-                os.path.join(
-                    d.results_folder,
-                    "strategy-profiling",
-                    strategy_name_hash + ".dictionary",
+                elif configuration == "RND":
+                    # direct neighbours to col
+                    if col_idx != 0:
+                        configuration_list.append(
+                            (d_col_list[col_idx - 1], d_col_list[col_idx])
+                        )
+                    else:
+                        configuration_list.append(
+                            (d_col_list[col_idx], d_col_list[col_idx])
+                        )
+                elif configuration == "LND":
+                    if col_idx != len(d_col_list) - 1:
+                        configuration_list.append(
+                            (d_col_list[col_idx], d_col_list[col_idx + 1])
+                        )
+                    else:
+                        configuration_list.append(
+                            (d_col_list[col_idx], d_col_list[col_idx])
+                        )
+            for conf in configuration_list:
+                l_attribute, r_attribute = conf
+                l_j = d.dataframe.columns.get_loc(l_attribute)
+                r_j = d.dataframe.columns.get_loc(r_attribute)
+                value_dictionary = {}
+                for i, row in d.dataframe.iterrows():
+                    if row[l_attribute]:
+                        if row[l_attribute] not in value_dictionary:
+                            value_dictionary[row[l_attribute]] = {}
+                        if row[r_attribute]:
+                            value_dictionary[row[l_attribute]][row[r_attribute]] = 1
+                for i, row in d.dataframe.iterrows():
+                    if (
+                        row[l_attribute] in value_dictionary
+                        and len(value_dictionary[row[l_attribute]]) > 1
+                    ):
+                        outputted_cells[(i, l_j)] = ""
+                        outputted_cells[(i, r_j)] = ""
+        detected_cells_list = list(outputted_cells.keys())
+        strategy_profile = {
+            "name": strategy_name,
+            "output": detected_cells_list,
+            "runtime": time.time() - start_time,
+        }
+        if self.SAVE_RESULTS:
+            pickle.dump(
+                strategy_profile,
+                open(
+                    os.path.join(
+                        d.results_folder,
+                        "strategy-profiling",
+                        strategy_name_hash + ".dictionary",
+                    ),
+                    "wb",
                 ),
-                "wb",
-            ),
-        )
-    if self.VERBOSE:
-        logging.debug(
-            "%s cells are detected by %s", len(detected_cells_list), strategy_name
-        )
+            )
+        if self.VERBOSE:
+            logging.debug(
+                "%s cells are detected by %s", len(detected_cells_list), strategy_name
+            )
+    except Exception as e:
+        logging.error(e)
+        logging.error("Error in _strategy_runner_process in table: %s, args: %s", d.name, args)
     return strategy_profile
 
 
@@ -311,6 +315,10 @@ def generate_raha_features(parent_path, dataset_name, charsets, dirty_file_name,
     d.SAVE_RESULTS = False
     d.VERBOSE = False
     d.ERROR_DETECTION_ALGORITHMS = ["OD", "RVD", "PVD"]
-    run_strategies(detect, d, charsets)
+    try:
+        run_strategies(detect, d, charsets)
+    except Exception as e:
+        logging.error(e)
+        logging.error("Error in run_strategies in table: %s", dataset_name)
     generate_features(detect, d, charsets)
     return d.column_features

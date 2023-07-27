@@ -11,17 +11,20 @@ from marshmallow_pipeline.cell_grouping_module.generate_raha_features import (
 
 
 def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_dict, dirty_files_name, clean_files_name):
-    features_dict = {}
-    list_dirs_in_snd = os.listdir(sandbox_path)
-    list_dirs_in_snd.sort()
-    table_paths = [[table, sandbox_path, tables_dict[table], table_char_set_dict, dirty_files_name, clean_files_name] for table in list_dirs_in_snd if not table.startswith(".")]
+    try:
+        features_dict = {}
+        list_dirs_in_snd = os.listdir(sandbox_path)
+        list_dirs_in_snd.sort()
+        table_paths = [[table, sandbox_path, tables_dict[table], table_char_set_dict, dirty_files_name, clean_files_name] for table in list_dirs_in_snd if not table.startswith(".")]
 
-    feature_dict_list = itertools.starmap(generate_cell_features, table_paths)
-    for feature_dict_tmp in feature_dict_list:
-        features_dict.update(feature_dict_tmp)
+        feature_dict_list = itertools.starmap(generate_cell_features, table_paths)
+        for feature_dict_tmp in feature_dict_list:
+            features_dict.update(feature_dict_tmp)
 
-    with open(os.path.join(output_path, "features.pickle"), "wb") as filehandler:
-        pickle.dump(features_dict, filehandler)
+        with open(os.path.join(output_path, "features.pickle"), "wb") as filehandler:
+            pickle.dump(features_dict, filehandler)
+    except Exception as e:
+        logging.error(e)
     return features_dict
 
 def generate_cell_features(table, sandbox_path, table_file_name_santos, table_char_set_dict, dirty_files_name, clean_files_name):
@@ -91,5 +94,6 @@ def generate_cell_features(table, sandbox_path, table_file_name_santos, table_ch
         logging.debug("Table: %s", table)
     except Exception as e:
         logging.error(e)
+        logging.error("Table: %s", table)
 
     return features_dict

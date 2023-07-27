@@ -19,7 +19,7 @@ from marshmallow_pipeline.utils.loading_results import \
 def main(labeling_budget):
     time_start = time.time()
     configs = ConfigParser()
-    configs.read("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/config.ini")
+    configs.read("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/config-gitt.ini")
     # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
@@ -48,9 +48,8 @@ def main(labeling_budget):
 
     os.makedirs(experiment_output_path, exist_ok=True)
     os.makedirs(results_path, exist_ok=True)
-    os.makedirs(logs_dir + f"_{exp_name}", exist_ok=True)
+    os.makedirs(logs_dir, exist_ok=True)
     os.makedirs(aggregated_lake_path, exist_ok=True)
-    os.makedirs(mediate_files_path, exist_ok=True)
 
     table_grouping_enabled = bool(int(configs["TABLE_GROUPING"]["tg_enabled"]))
     table_grouping_res_available = bool(int(configs["TABLE_GROUPING"]["tg_res_available"]))
@@ -70,7 +69,7 @@ def main(labeling_budget):
     dirty_files_name = configs["DIRECTORIES"]["dirty_files_name"]
     clean_files_name = configs["DIRECTORIES"]["clean_files_name"]
 
-    marshmallow_pipeline.utils.app_logger.setup_logging(logs_dir + f"_{exp_name}")
+    marshmallow_pipeline.utils.app_logger.setup_logging(logs_dir)
     logging.info("Starting the experiment")
 
     logging.info("Symlinking sandbox to aggregated_lake_path")
@@ -199,3 +198,6 @@ def main(labeling_budget):
         dirty_files_name,
         clean_files_name
     )
+
+if __name__ == "__main__":
+    main(6124)
