@@ -17,9 +17,10 @@ from marshmallow_pipeline.utils.loading_results import \
     loading_columns_grouping_results
 
 def main(labeling_budget):
+    manual_labeling_done = False
     time_start = time.time()
     configs = ConfigParser()
-    configs.read("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/config.ini")
+    configs.read("/home/fatemeh/EDS-Precision-Exp/ED-Scale/config.ini")
     # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
@@ -87,6 +88,8 @@ def main(labeling_budget):
                     dirty_csv_path, os.path.join(aggregated_lake_path, name + ".csv")
                 )
                 tables_dict[os.path.basename(curr_path)] = name + ".csv"
+    with open(os.path.join(experiment_output_path, "tables_dict.pickle"), "wb+") as handle:
+        pickle.dump(tables_dict, handle)
 
     # Table grouping
     if table_grouping_enabled:
@@ -156,29 +159,49 @@ def main(labeling_budget):
 
     logging.info("Starting error detection")
     # TODO: change output foldr of metanome
-    (
-        y_test_all,
-        y_local_cell_ids,
-        predicted_all,
-        y_labeled_by_user_all,
-        unique_cells_local_index_collection,
-        samples,
-    ) = error_detector(
-        cell_feature_generator_enabled,
-        tables_path,
-        column_groups_df_path,
-        experiment_output_path,
-        results_path,
-        labeling_budget,
-        number_of_col_clusters,
-        cluster_sizes_dict,
-        cell_clustering_alg,
-        tables_dict,
-        min_num_labes_per_col_cluster,
-        dirty_files_name, 
-        clean_files_name,
-        n_cores
-    )
+    if manual_labeling_done:
+        (
+            y_test_all,
+            y_local_cell_ids,
+            predicted_all,
+            y_labeled_by_user_all,
+            unique_cells_local_index_collection,
+            samples,
+        ) = error_detector(
+            cell_feature_generator_enabled,
+            tables_path,
+            column_groups_df_path,
+            experiment_output_path,
+            results_path,
+            labeling_budget,
+            number_of_col_clusters,
+            cluster_sizes_dict,
+            cell_clustering_alg,
+            tables_dict,
+            min_num_labes_per_col_cluster,
+            dirty_files_name, 
+            clean_files_name,
+            n_cores,
+            manual_labeling_done
+        )
+    else:
+        error_detector(
+            cell_feature_generator_enabled,
+            tables_path,
+            column_groups_df_path,
+            experiment_output_path,
+            results_path,
+            labeling_budget,
+            number_of_col_clusters,
+            cluster_sizes_dict,
+            cell_clustering_alg,
+            tables_dict,
+            min_num_labes_per_col_cluster,
+            dirty_files_name, 
+            clean_files_name,
+            n_cores,
+            manual_labeling_done)
+        return
 
     time_end = time.time()
     logging.info("The experiment took %s seconds", time_end - time_start)
@@ -199,3 +222,6 @@ def main(labeling_budget):
         dirty_files_name,
         clean_files_name
     )
+
+if __name__ == "__main__":
+    main(948)

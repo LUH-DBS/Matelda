@@ -147,7 +147,7 @@ def sort_points_by_distance(feature_vectors):
     return sorted_indices
 
 
-def sampling(cell_clustering_dict, x, y, dirty_cell_values):
+def sampling(cell_clustering_dict, x, y, dirty_cell_values, datacell_uids):
     logging.debug("Sampling")
     samples_dict = {
         "cell_cluster": [],
@@ -157,6 +157,7 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values):
         "samples_indices_global": [],
         "labels": [],
         "dirty_cell_values": [],
+        "datacell_uids": datacell_uids,
     }
 
     cells_per_cluster = cell_clustering_dict["cells_per_cluster"].values[0]

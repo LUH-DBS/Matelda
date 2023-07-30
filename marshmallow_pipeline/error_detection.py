@@ -41,7 +41,10 @@ def cluster_column_group_init(col_groups_dir, df_n_labels, features_dict):
     global features_dict_glob
     features_dict_glob = features_dict
 
-def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all):
+def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, manual_labeling_done):
+    global manual_labeling_done_glob
+    manual_labeling_done_glob = manual_labeling_done
+
     global df_n_labels_glob
     df_n_labels_glob = df_n_labels
 
@@ -140,7 +143,7 @@ def col_clu_cell_clustering(
     return cell_cluster_cells_dict, cell_clustering_dict
 
 
-def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict):
+def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, manual_labeling_done, output_path, table_cluster, col_cluster):
     logging.info(
         "Sampling and labeling cluster %s",
         str(cell_clustering_df["col_cluster"].values[0]),
@@ -156,24 +159,35 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict):
             y_temp = cell_cluster_cells_dict["y_temp"]
             value_temp = cell_cluster_cells_dict["value_temp"]
             key_temp = cell_cluster_cells_dict["key_temp"]
+            datacells_uids = cell_cluster_cells_dict["datacells_uids"]
 
-            samples_dict = sampling(cell_clustering_df, X_temp, y_temp, value_temp)
-            samples_dict = labeling(samples_dict)
-            universal_samples = {}
-            logging.debug("len samples: %s", str(len(samples_dict["cell_cluster"])))
-            for cell_cluster_idx, _ in enumerate(samples_dict["cell_cluster"]):
-                if len(samples_dict["samples"][cell_cluster_idx]) > 0:
-                    for idx, cell_idx in enumerate(
-                        samples_dict["samples_indices_global"][cell_cluster_idx]
-                    ):
-                        universal_samples.update(
-                            {
-                                key_temp[cell_idx]: samples_dict["labels"][
-                                    cell_cluster_idx
-                                ][idx]
-                            }
-                        )
-            logging.debug("len to_be_added: %s", str(len(universal_samples)))
+            if not manual_labeling_done:
+                samples_dict = sampling(cell_clustering_df, X_temp, y_temp, value_temp, datacells_uids)
+                samples_dict_path = os.path.join(
+                    output_path,
+                    "samples_dict"
+                    )
+                os.makedirs(samples_dict_path, exist_ok=True)
+                with open(os.path.join(samples_dict_path, "samples_dict_{}_{}.pkl".format(str(table_cluster), str(col_cluster))), "wb") as f:
+                    pickle.dump(samples_dict, f)
+                    return None
+            else:
+                samples_dict = labeling(samples_dict)
+                universal_samples = {}
+                logging.debug("len samples: %s", str(len(samples_dict["cell_cluster"])))
+                for cell_cluster_idx, _ in enumerate(samples_dict["cell_cluster"]):
+                    if len(samples_dict["samples"][cell_cluster_idx]) > 0:
+                        for idx, cell_idx in enumerate(
+                            samples_dict["samples_indices_global"][cell_cluster_idx]
+                        ):
+                            universal_samples.update(
+                                {
+                                    key_temp[cell_idx]: samples_dict["labels"][
+                                        cell_cluster_idx
+                                    ][idx]
+                                }
+                            )
+                logging.debug("len to_be_added: %s", str(len(universal_samples)))
         else:
             # we need at least 2 labels per col group (in the cases that we have only one cluster 1 label is enough)
             samples_dict = None
@@ -230,7 +244,8 @@ def error_detector(
     min_num_labes_per_col_cluster,
     dirty_files_name,
     clean_files_name,
-    n_cores
+    n_cores,
+    manual_labeling_done
 ):
     logging.info("Starting error detection")
 
@@ -309,7 +324,7 @@ def error_detector(
             table_clusters.append(table_cluster)
             col_clusters.append(col_cluster)
 
-    with multiprocessing.Pool(initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all), processes=min(len(cell_cluster_cells_dict_all), os.cpu_count())) as pool:
+    with multiprocessing.Pool(initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, manual_labeling_done), processes=min(len(cell_cluster_cells_dict_all), os.cpu_count())) as pool:
         original_data_keys = []
         unique_cells_local_index_collection = {}
         predicted_all = {}
@@ -321,6 +336,8 @@ def error_detector(
         used_labels = 0
         logging.info("Starting parallel processing of clusters")
         pool_results = pool.starmap(test, zip(col_clusters, table_clusters))
+        if not manual_labeling_done:
+            return None
 
         for result in pool_results:
             if result is not None:
@@ -428,6 +445,9 @@ def test(col_cluster, table_cluster):
     selected_samples = {}
     used_labels = 0
 
+    global manual_labeling_done_glob
+    manual_labeling_done = manual_labeling_done_glob
+
     global df_n_labels_glob
     df_n_labels = df_n_labels_glob
 
@@ -448,8 +468,10 @@ def test(col_cluster, table_cluster):
         col_cluster
     ]
     cell_cluster_sampling_labeling_dict = cell_cluster_sampling_labeling(
-        cell_clustering_df, cell_cluster_cells_dict
+        cell_clustering_df, cell_cluster_cells_dict, manual_labeling_done, output_path, table_cluster, col_cluster
     )
+    if not manual_labeling_done:
+        return None
     cell_clustering_dir = os.path.join(output_path, "cell_clustering")
     if not os.path.exists(cell_clustering_dir):
         os.makedirs(cell_clustering_dir)
