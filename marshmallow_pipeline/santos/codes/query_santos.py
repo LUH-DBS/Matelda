@@ -672,7 +672,7 @@ def main(which_benchmark, which_mode):
             value_of_k = [5, 10, 20, 30, 40, 50, 60, len(expected_tables)]
         else:
             logging.info("The ground truth for this table is missing.")
-            k = 150
+            k = 1500
             expected_tables = []
             totalPositive = len(expected_tables)
             value_of_k = [5, 10, 20, 30, 40, 50, 60]
@@ -1050,104 +1050,104 @@ def main(which_benchmark, which_mode):
                 G.add_node(key[0])
             if key[0] != table_name:
                 G.add_edge(table_name, key[0], weight=key[1])
-        temp_map = []
-        for map_item in sortedTableList:
-            temp_map.append(map_item[0])
-        map_output_dict[table_name] = temp_map
-        current_query_time_end = time.time_ns()
-        all_query_time[table_name] = (
-            int(current_query_time_end - current_query_time_start) / 10**9
-        )
-        if which_benchmark == 3:
-            continue
-        logging.info(f"Dynamic K = {k}")
-        logging.info("The best matching tables are:")
-        i = 0
-        dtp = 0
-        dfp = 0
-        temp_true_results = []
-        temp_false_results = []
-        enum = 0
-        for key in sortedTableList:
-            data_lake_table = key[0].split("/")[-1]
-            if enum < 5:
-                logging.info(f"{data_lake_table} {key[1]}")
-            enum += 1
-            if data_lake_table in expected_tables:
-                dtp = dtp + 1
-                temp_true_results.append(data_lake_table)
-                if enum <= 5:
-                    logging.info("true")
-            else:
-                dfp = dfp + 1
-                temp_false_results.append(data_lake_table)
-                if enum <= 5:
-                    logging.info("false")
-            i = i + 1
-            if i >= k:
-                break
-        if dtp + dfp == 0:
-            query_table_yielding_no_results += 1
-        true_output_dict[table_name] = temp_true_results
-        false_output_dict[table_name] = temp_false_results
-        logging.info(f"Current True positives: {dtp}")
-        logging.info(f"Current False Positives: {dfp}")
-        logging.info(f"Current False Negative: {totalPositive - dtp}")
-        try:
-            for i in range(0, len(value_of_k)):
-                tp, fp = getAccuracyResult(
-                    sortedTableList, expected_tables, value_of_k[i]
-                )
-                truePositive[i] = truePositive[i] + tp
-                falsePositive[i] = falsePositive[i] + fp
-                if len(expected_tables) >= map_k:
-                    current_precision = tp / (tp + fp)
-                    avg_pr[i].append(current_precision)
-                    current_recall = tp / (totalPositive)
-                    avg_rc[i].append(current_recall)
-                    falseNegative[i] = falseNegative[i] + (totalPositive - tp)
-        except Exception as e:
-            logging.info("Error in computing precision and recall")
-            logging.exception(e)
-        outputList = []
+        # temp_map = []
+        # for map_item in sortedTableList:
+        #     temp_map.append(map_item[0])
+        # map_output_dict[table_name] = temp_map
+        # current_query_time_end = time.time_ns()
+        # all_query_time[table_name] = (
+        #     int(current_query_time_end - current_query_time_start) / 10**9
+        # )
+        # if which_benchmark == 3:
+        #     continue
+        # logging.info(f"Dynamic K = {k}")
+        # logging.info("The best matching tables are:")
+        # i = 0
+        # dtp = 0
+        # dfp = 0
+        # temp_true_results = []
+        # temp_false_results = []
+        # enum = 0
+        # for key in sortedTableList:
+        #     data_lake_table = key[0].split("/")[-1]
+        #     if enum < 5:
+        #         logging.info(f"{data_lake_table} {key[1]}")
+        #     enum += 1
+        #     if data_lake_table in expected_tables:
+        #         dtp = dtp + 1
+        #         temp_true_results.append(data_lake_table)
+        #         if enum <= 5:
+        #             logging.info("true")
+        #     else:
+        #         dfp = dfp + 1
+        #         temp_false_results.append(data_lake_table)
+        #         if enum <= 5:
+        #             logging.info("false")
+        #     i = i + 1
+        #     if i >= k:
+        #         break
+        # if dtp + dfp == 0:
+        #     query_table_yielding_no_results += 1
+        # true_output_dict[table_name] = temp_true_results
+        # false_output_dict[table_name] = temp_false_results
+        # logging.info(f"Current True positives: {dtp}")
+        # logging.info(f"Current False Positives: {dfp}")
+        # logging.info(f"Current False Negative: {totalPositive - dtp}")
+        # try:
+        #     for i in range(0, len(value_of_k)):
+        #         tp, fp = getAccuracyResult(
+        #             sortedTableList, expected_tables, value_of_k[i]
+        #         )
+        #         truePositive[i] = truePositive[i] + tp
+        #         falsePositive[i] = falsePositive[i] + fp
+        #         if len(expected_tables) >= map_k:
+        #             current_precision = tp / (tp + fp)
+        #             avg_pr[i].append(current_precision)
+        #             current_recall = tp / (totalPositive)
+        #             avg_rc[i].append(current_recall)
+        #             falseNegative[i] = falseNegative[i] + (totalPositive - tp)
+        # except Exception as e:
+        #     logging.info("Error in computing precision and recall")
+        #     logging.exception(e)
+        # outputList = []
     logging.info("----------------------------")
     logging.info("----------------------------")
 
-    computation_end_time = time.time()
-    difference = int(computation_end_time - computation_start_time)
-    logging.info(
-        f"Time taken to process all query tables and logging.info the results in seconds: {difference}"
-    )
-    genFunc.saveDictionaryAsPickleFile(map_output_dict, FINAL_RESULT_PICKLE_PATH)
-    with open(MAP_PATH, "w+", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["query_table", "result_table"])
-        for k, v in map_output_dict.items():
-            counter = 1
-            for value in v:
-                w.writerow([k, value])
-                counter += 1
-                if counter > 20:
-                    break
+    # computation_end_time = time.time()
+    # difference = int(computation_end_time - computation_start_time)
+    # logging.info(
+    #     f"Time taken to process all query tables and logging.info the results in seconds: {difference}"
+    # )
+    # genFunc.saveDictionaryAsPickleFile(map_output_dict, FINAL_RESULT_PICKLE_PATH)
+    # with open(MAP_PATH, "w+", newline="", encoding="utf-8") as f:
+    #     w = csv.writer(f)
+    #     w.writerow(["query_table", "result_table"])
+    #     for k, v in map_output_dict.items():
+    #         counter = 1
+    #         for value in v:
+    #             w.writerow([k, value])
+    #             counter += 1
+    #             if counter > 20:
+    #                 break
 
-    with open(QUERY_TIME_PATH, "w+", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["query_table", "query_time"])
-        for k, v in all_query_time.items():
-            w.writerow([k, v])
+    # with open(QUERY_TIME_PATH, "w+", newline="", encoding="utf-8") as f:
+    #     w = csv.writer(f)
+    #     w.writerow(["query_table", "query_time"])
+    #     for k, v in all_query_time.items():
+    #         w.writerow([k, v])
 
-    if which_benchmark != 3:  # manual verification for real data lake benchmark
-        with open(TRUE_RESULTS_PATH, "w+", newline="", encoding="utf-8") as f:
-            w = csv.writer(f)
-            for k, v in true_output_dict.items():
-                for value in v:
-                    w.writerow([k, value])
+    # if which_benchmark != 3:  # manual verification for real data lake benchmark
+    #     with open(TRUE_RESULTS_PATH, "w+", newline="", encoding="utf-8") as f:
+    #         w = csv.writer(f)
+    #         for k, v in true_output_dict.items():
+    #             for value in v:
+    #                 w.writerow([k, value])
 
-        with open(FALSE_RESULTS_PATH, "w+", newline="", encoding="utf-8") as f:
-            w = csv.writer(f)
-            for k, v in false_output_dict.items():
-                for value in v:
-                    w.writerow([k, value])
+    #     with open(FALSE_RESULTS_PATH, "w+", newline="", encoding="utf-8") as f:
+    #         w = csv.writer(f)
+    #         for k, v in false_output_dict.items():
+    #             for value in v:
+    #                 w.writerow([k, value])
     logging.info(f"Number of nodes: {G.number_of_nodes()}")
     logging.info(f"Number of edges: {G.number_of_edges()}")
     logging.info(f"Nodes in the graph: {list(G.nodes())}")

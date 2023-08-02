@@ -89,17 +89,13 @@ def create_predictions_dict(
     logging.debug("Getting predictions dict")
     rows_list = []
     samp_count = 0
-    for key in unique_cells_local_index_collection.keys():
+    for key in unique_cells_local_index_collection:
         logging.debug("Key: %s", key)
-        for cell_key in list(unique_cells_local_index_collection[key].keys()):
+        for cell_key in unique_cells_local_index_collection[key]:
             try:
                 cell_local_idx = unique_cells_local_index_collection[key][cell_key]
-                y_cell_ids = y_local_cell_ids[key]
-                y_local_idx = (
-                    y_cell_ids.index(cell_local_idx)
-                    if cell_local_idx in y_cell_ids
-                    else -1
-                )
+                y_cell_ids = {id: idx for idx, id in enumerate(y_local_cell_ids[key])}
+                y_local_idx = y_cell_ids.get(cell_local_idx, -1)
                 tmp_dict = {
                     "table_id": cell_key[0],
                     "table_name": all_tables_dict[cell_key[0]]["name"],
@@ -108,12 +104,8 @@ def create_predictions_dict(
                     "col_name": all_tables_dict[cell_key[0]]["schema"][cell_key[1]],
                     "cell_idx": cell_key[2],
                     "cell_value": cell_key[3],
-                    "predicted": predicted_all[key][y_local_idx]
-                    if y_local_idx != -1
-                    else -1,
-                    "label": y_test_all[key][y_local_idx]
-                    if y_local_idx != -1
-                    else samples[(key[0], key[1], cell_local_idx)],
+                    "predicted": predicted_all[key].get(y_local_idx, -1),
+                    "label": y_test_all[key].get(y_local_idx, samples[(key[0], key[1], cell_local_idx)]),
                 }
                 rows_list.append(tmp_dict)
             except Exception as e:
@@ -134,6 +126,7 @@ def create_predictions_dict(
         ],
     )
     return results_df
+
 
 
 def get_results_per_table(result_df):
@@ -210,20 +203,20 @@ def get_all_results(
     get_classification_results(
         y_test_all, predicted_all, y_labeled_by_user_all, results_dir, samples
     )
-    # logging.info("Getting prediction results")
-    # tables_dict = get_tables_dict(init_tables_dict, tables_path, dirty_file_names, clean_file_names)
-    # results_df = create_predictions_dict(
-        # tables_dict,
-        # y_test_all,
-        # y_local_cell_ids,
-        # predicted_all,
-        # unique_cells_local_index_collection,
-        # samples,
-    # )
-    # logging.info("Getting results per table")
-    # results_per_table = get_results_per_table(results_df)
-    # logging.info("Saving results")
-    # with open(os.path.join(results_dir, "results_df.pickle"), "wb") as file:
-        # pickle.dump(results_df, file)
-    # with open(os.path.join(results_dir, "results_per_table.pickle"), "wb") as file:
-        # pickle.dump(results_per_table, file)
+    logging.info("Getting prediction results")
+    tables_dict = get_tables_dict(init_tables_dict, tables_path, dirty_file_names, clean_file_names)
+    results_df = create_predictions_dict(
+        tables_dict,
+        y_test_all,
+        y_local_cell_ids,
+        predicted_all,
+        unique_cells_local_index_collection,
+        samples,
+    )
+    logging.info("Getting results per table")
+    results_per_table = get_results_per_table(results_df)
+    logging.info("Saving results")
+    with open(os.path.join(results_dir, "results_df.pickle"), "wb") as file:
+        pickle.dump(results_df, file)
+    with open(os.path.join(results_dir, "results_per_table.pickle"), "wb") as file:
+        pickle.dump(results_per_table, file)

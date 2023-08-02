@@ -12,7 +12,7 @@ from marshmallow_pipeline.column_grouping_module.col_grouping import (
 )
 from marshmallow_pipeline.utils.read_data import read_csv
 
-def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget):
+def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget, output_path):
     """
     This function calculates the number of column groups for each table group.  
     The number of column groups is calculated according to the following formula:
@@ -46,11 +46,14 @@ def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget):
         for table in table_grouping_dict[table_group]:
             n_cols_in_tg += table_size_dict[table][1]
             n_cells_in_tg += table_size_dict[table][0] * table_size_dict[table][1]
-            count_all_cells += n_cells_in_tg
-            count_all_cols += n_cols_in_tg
-        max_n_col_groups = min(n_cols_in_tg, 
-            math.floor(labeling_budget * n_cols_in_tg / count_all_cols / 2))# 2 is the minimum number of labels for each column group
-        tg_stats[table_group] = {"n_cols": n_cols_in_tg, "n_cells": n_cells_in_tg, "max_n_col_groups": max_n_col_groups}
+        count_all_cells += n_cells_in_tg
+        count_all_cols += n_cols_in_tg
+        tg_stats[table_group] = {"n_cols": n_cols_in_tg, "n_cells": n_cells_in_tg, "max_n_col_groups": 1}
+    for table_group in table_grouping_dict:
+        remained_labeling_budget = labeling_budget - 2 * sum(item['max_n_col_groups'] for item in tg_stats.values())
+        max_n_col_groups = min(tg_stats[table_group]["n_cols"], 
+            math.floor(remained_labeling_budget * tg_stats[table_group]["n_cols"] / count_all_cols / 2))# 2 is the minimum number of labels for each column group
+        tg_stats[table_group]["max_n_col_groups"] += max_n_col_groups
     tg_stats = dict(sorted(tg_stats.items(), key = lambda item: item[1]['max_n_col_groups'], reverse=True))
     processed = 0
     i = 0
@@ -67,7 +70,7 @@ def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget):
             i = 0    
     total_n_col_groups = sum(val['max_n_col_groups'] for val in tg_stats.values())
     logging.info("Labeling Budget: %s, N Col Groups: %s", labeling_budget, total_n_col_groups)
-    with open("tg_stats.pickle", "wb") as f:
+    with open(os.path.join(output_path, "tg_stats.pickle"), "wb") as f:
         pickle.dump(tg_stats, f)
     return tg_stats
 
@@ -99,20 +102,15 @@ def column_grouping(
     Returns:
         None
     """
-    tg_stats = get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget)
+    tg_stats = get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget, mediate_files_path)
     logging.info("Group columns")
     pool = multiprocessing.Pool()
     
     for table_group in table_grouping_dict:
         logging.info("Table_group: %s", table_group)
         cols = {"col_value": [], "table_id": [], "table_path": [], "col_id": []}
-        char_set = set()
         for table in table_grouping_dict[table_group]:
             df = read_csv(os.path.join(path, table))
-            # convert the data frame to a string
-            df_str = df.to_string()
-            # create a set of unique characters
-            char_set.update(set(df_str))
             for col_idx, col in enumerate(df.columns):
                 cols["col_value"].append(df[col].tolist())
                 cols["table_id"].append(hashlib.md5(table.encode()).hexdigest())
@@ -122,7 +120,7 @@ def column_grouping(
         logging.debug("Apply for table_group: %s", table_group)
         pool.apply(
             col_grouping,
-            args=(table_group, cols, char_set, tg_stats[table_group]["max_n_col_groups"], mediate_files_path, cg_enabled, col_grouping_alg, n_cores),
+            args=(table_group, cols, tg_stats[table_group]["max_n_col_groups"], mediate_files_path, cg_enabled, col_grouping_alg, n_cores),
         )
 
     pool.close()

@@ -69,6 +69,8 @@ def run_santos(aggregated_lake_path: str, output_path: str):
 
     logging.info("Symlinking sandbox to santos")
     os.makedirs(santos_path, exist_ok=True)
+    os.makedirs(santos_lake_path, exist_ok=True)
+    os.makedirs(santos_query_path, exist_ok=True)
     shutil.rmtree(santos_lake_path, ignore_errors=True)
     shutil.rmtree(santos_query_path, ignore_errors=True)
     shutil.copytree(aggregated_lake_path, santos_lake_path, copy_function=os.link)
