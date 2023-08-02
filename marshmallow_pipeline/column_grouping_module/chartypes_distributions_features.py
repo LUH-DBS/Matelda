@@ -20,8 +20,7 @@ class CharTypeDistribution(BaseEstimator, TransformerMixin):
     Computes the character distribution of each column
     """
 
-    def __init__(self, char_set):
-        self.char_set = char_set
+    def __init__(self):
         pass
 
     def fit(self, X, y=None):

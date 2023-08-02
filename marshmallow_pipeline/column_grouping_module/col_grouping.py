@@ -18,7 +18,7 @@ from marshmallow_pipeline.column_grouping_module.value_length_features import (
 
 
 def col_grouping(
-    table_group, cols, char_set, max_n_col_groups, mediate_files_path, cg_enabled, col_grouping_alg, n_cores
+    table_group, cols, max_n_col_groups, mediate_files_path, cg_enabled, col_grouping_alg, n_cores
 ):
     """
     Extracts features from a column
@@ -57,7 +57,7 @@ def col_grouping(
                             ),
                             (
                                 "char_distribution",
-                                CharTypeDistribution(char_set),
+                                CharTypeDistribution(),
                             ),
                         ]
                     ),

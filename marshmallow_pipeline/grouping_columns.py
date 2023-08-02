@@ -109,13 +109,8 @@ def column_grouping(
     for table_group in table_grouping_dict:
         logging.info("Table_group: %s", table_group)
         cols = {"col_value": [], "table_id": [], "table_path": [], "col_id": []}
-        char_set = set()
         for table in table_grouping_dict[table_group]:
             df = read_csv(os.path.join(path, table))
-            # convert the data frame to a string
-            df_str = df.to_string()
-            # create a set of unique characters
-            char_set.update(set(df_str))
             for col_idx, col in enumerate(df.columns):
                 cols["col_value"].append(df[col].tolist())
                 cols["table_id"].append(hashlib.md5(table.encode()).hexdigest())
@@ -125,7 +120,7 @@ def column_grouping(
         logging.debug("Apply for table_group: %s", table_group)
         pool.apply(
             col_grouping,
-            args=(table_group, cols, char_set, tg_stats[table_group]["max_n_col_groups"], mediate_files_path, cg_enabled, col_grouping_alg, n_cores),
+            args=(table_group, cols, tg_stats[table_group]["max_n_col_groups"], mediate_files_path, cg_enabled, col_grouping_alg, n_cores),
         )
 
     pool.close()
