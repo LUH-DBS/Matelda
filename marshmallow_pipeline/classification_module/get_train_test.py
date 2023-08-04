@@ -32,9 +32,9 @@ def get_train_test_sets(X_temp, y_temp, samples_dict, cell_clustering_df):
                         y_train.append(y_temp[cell])
                     else:
                         y_train.append(cell_cluster_final_label)
-                        X_test.append(X_temp[cell])
-                        y_test.append(y_temp[cell])
-                        y_cell_ids.append(cell)
+                    X_test.append(X_temp[cell])
+                    y_test.append(y_temp[cell])
+                    y_cell_ids.append(cell)
         except Exception as e:
             logging.error("Error in get_train_test_sets: %s", e)
 

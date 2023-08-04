@@ -20,7 +20,7 @@ def main(labeling_budget):
     time_start = time.time()
     configs = ConfigParser()
     configs.read("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/config.ini")
-    labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
+    # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
 
@@ -89,6 +89,8 @@ def main(labeling_budget):
                 )
                 tables_dict[os.path.basename(curr_path)] = name + ".csv"
 
+    with open(os.path.join(experiment_output_path, "tables_dict.pickle"), "wb+") as handle:
+        pickle.dump(tables_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
     # Table grouping
     if table_grouping_enabled:
         if not table_grouping_res_available:
@@ -219,4 +221,4 @@ def main(labeling_budget):
     )
 
 if __name__ == "__main__":
-    main(378)
+    main(7)
