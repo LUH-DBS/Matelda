@@ -54,6 +54,7 @@ def main(labeling_budget):
 
     table_grouping_enabled = bool(int(configs["TABLE_GROUPING"]["tg_enabled"]))
     table_grouping_res_available = bool(int(configs["TABLE_GROUPING"]["tg_res_available"]))
+    table_grouping_method = configs["TABLE_GROUPING"]["tg_method"]
 
     column_grouping_enabled = bool(int(configs["COLUMN_GROUPING"]["cg_enabled"]))
     column_grouping_res_available = bool(int(configs["COLUMN_GROUPING"]["cg_res_available"]))
@@ -98,8 +99,12 @@ def main(labeling_budget):
             logging.info("Table grouping results are not available")
             logging.info("Executing the table grouping")
             table_grouping_dict, table_size_dict = table_grouping(
-                aggregated_lake_path, experiment_output_path
+                aggregated_lake_path, experiment_output_path, table_grouping_method
             )
+
+            table_g_time = time.time() - time_start
+            logging.info("Table grouping is done")
+            logging.info("Table grouping time: " + str(table_g_time))
         else:
             logging.info("Table grouping results are available")
             logging.info("Loading the table grouping results...")
