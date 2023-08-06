@@ -143,7 +143,7 @@ def main(labeling_budget):
             n_cores
     )
     else:
-        logging.info("Column grouping is disabled")
+        logging.info("Column grouping results are available - loading from disk")
         
 
     logging.info("Removing the symlinks")
@@ -225,5 +225,5 @@ def main(labeling_budget):
         clean_files_name
     )
 
-if __name__ == "__main__":
-    main(7)
+# if __name__ == "__main__":
+#     main(1320)

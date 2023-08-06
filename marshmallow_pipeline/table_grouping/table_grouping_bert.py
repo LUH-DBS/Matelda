@@ -1,3 +1,4 @@
+import logging
 import os
 import time
 import re
@@ -75,7 +76,7 @@ def get_tables_features(base_path, documents, batch_size=5):
     # Get BERT embeddings in batches
     embeddings = []
     for i in range(0, len(documents), batch_size):
-        print(f"Processing batch {i} to {i+batch_size}")
+        logging.debug(f"Processing batch {i} to {i+batch_size}")
         batch_texts = documents[i: i+batch_size]
         batch_embeddings = get_bert_embeddings(batch_texts)
         embeddings.extend(batch_embeddings.tolist())
@@ -93,7 +94,10 @@ def group_tables(base_path, batch_size=5):
     dbscan.fit(embeddings)
 
     max_clusters = max(set(dbscan.labels_))
-    print(f"Number of clusters: {max_clusters + 1}")
+    if max_clusters == -1:
+        logging.info("No clusters found")
+    else:
+        logging.info(f"Number of clusters: {max_clusters + 1}")
     # Create a dictionary to store documents in each cluster
     table_group_dict = {}
     for i, table_name in table_names.items():

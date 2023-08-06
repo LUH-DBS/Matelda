@@ -168,8 +168,8 @@ def split_cell_cluster(cell_cluster_n_labels, n_cores, x_cluster, y_cluster, col
                 y_cluster_splited[clustering_labels[x_idx]].append(y_cluster[x_idx])
 
             for mini_cluster in range(len(x_cluster_splited)):
-                updated_cells_per_cluster[len(updated_cells_per_cluster)] = [col_group_cell_idx[x_idx] for x_idx in x_idx_cluster_splited[mini_cluster]]
-                updated_cell_cluster_n_labels[len(updated_cell_cluster_n_labels)] = 1
+                updated_cells_per_cluster[max(updated_cells_per_cluster.keys())+1] = [col_group_cell_idx[x_idx] for x_idx in x_idx_cluster_splited[mini_cluster]]
+                updated_cell_cluster_n_labels[max(updated_cell_cluster_n_labels.keys())+1] = 1
             updated_cells_per_cluster.pop(cluster)
             updated_cell_cluster_n_labels.pop(cluster)
     except Exception as e:
