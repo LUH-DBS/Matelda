@@ -23,6 +23,7 @@ def main(labeling_budget):
     # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
+    save_mediate_res_on_disk = bool(int(configs["EXPERIMENTS"]["save_mediate_res_on_disk"]))
 
     sandbox_path = configs["DIRECTORIES"]["sandbox_dir"]
     tables_path = os.path.join(sandbox_path, configs["DIRECTORIES"]["tables_dir"])
@@ -48,11 +49,13 @@ def main(labeling_budget):
 
     os.makedirs(experiment_output_path, exist_ok=True)
     os.makedirs(results_path, exist_ok=True)
-    os.makedirs(logs_dir, exist_ok=True)
+    os.makedirs(logs_dir + f"_{exp_name}", exist_ok=True)
     os.makedirs(aggregated_lake_path, exist_ok=True)
+    os.makedirs(mediate_files_path, exist_ok=True)
 
     table_grouping_enabled = bool(int(configs["TABLE_GROUPING"]["tg_enabled"]))
     table_grouping_res_available = bool(int(configs["TABLE_GROUPING"]["tg_res_available"]))
+    table_grouping_method = configs["TABLE_GROUPING"]["tg_method"]
 
     column_grouping_enabled = bool(int(configs["COLUMN_GROUPING"]["cg_enabled"]))
     column_grouping_res_available = bool(int(configs["COLUMN_GROUPING"]["cg_res_available"]))
@@ -65,11 +68,12 @@ def main(labeling_budget):
         int(configs["CELL_GROUPING"]["cell_feature_generator_enabled"])
     )
     cell_clustering_alg = configs["CELL_GROUPING"]["cell_clustering_alg"]
+    cell_clustering_res_available = bool(int(configs["CELL_GROUPING"]["cell_clustering_res_available"]))
 
     dirty_files_name = configs["DIRECTORIES"]["dirty_files_name"]
     clean_files_name = configs["DIRECTORIES"]["clean_files_name"]
 
-    marshmallow_pipeline.utils.app_logger.setup_logging(logs_dir)
+    marshmallow_pipeline.utils.app_logger.setup_logging(logs_dir + f"_{exp_name}")
     logging.info("Starting the experiment")
 
     logging.info("Symlinking sandbox to aggregated_lake_path")
@@ -87,6 +91,9 @@ def main(labeling_budget):
                 )
                 tables_dict[os.path.basename(curr_path)] = name + ".csv"
 
+    if save_mediate_res_on_disk:
+        with open(os.path.join(experiment_output_path, "tables_dict.pickle"), "wb+") as handle:
+            pickle.dump(tables_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
     # Table grouping
     if table_grouping_enabled:
         if not table_grouping_res_available:
@@ -94,8 +101,12 @@ def main(labeling_budget):
             logging.info("Table grouping results are not available")
             logging.info("Executing the table grouping")
             table_grouping_dict, table_size_dict = table_grouping(
-                aggregated_lake_path, experiment_output_path
+                aggregated_lake_path, experiment_output_path, table_grouping_method, save_mediate_res_on_disk
             )
+
+            table_g_time = time.time() - time_start
+            logging.info("Table grouping is done")
+            logging.info("Table grouping time: " + str(table_g_time))
         else:
             logging.info("Table grouping results are available")
             logging.info("Loading the table grouping results...")
@@ -115,12 +126,15 @@ def main(labeling_budget):
         tables_list = tables_dict.values()
         for table in tables_list:
             table_grouping_dict[0].append(table)
-        with open(os.path.join(experiment_output_path, "table_group_dict.pickle"), "wb+") as handle:
-            pickle.dump(table_grouping_dict, handle)
+        if save_mediate_res_on_disk:
+            with open(os.path.join(experiment_output_path, "table_group_dict.pickle"), "wb+") as handle:
+                pickle.dump(table_grouping_dict, handle)
 
+    logging.info("Table grouping is done")
+    logging.info("I need at least 2 labeled cells per table group to work! Thant means you need to label {} cells:".format(2*len(table_grouping_dict)))
+    print("I need at least 2 labeled cells per table group to work! Thant means you need to label {} cells:".format(2*len(table_grouping_dict)))
     # Column grouping
     if not column_grouping_res_available:
-        logging.info("Column grouping is enabled")
         logging.info("Column grouping results are not available")
         logging.info("Executing the column grouping")
         column_grouping(
@@ -135,7 +149,7 @@ def main(labeling_budget):
             n_cores
     )
     else:
-        logging.info("Column grouping is disabled")
+        logging.info("Column grouping results are available - loading from disk")
         
 
     logging.info("Removing the symlinks")
@@ -169,14 +183,14 @@ def main(labeling_budget):
         experiment_output_path,
         results_path,
         labeling_budget,
-        number_of_col_clusters,
         cluster_sizes_dict,
-        cell_clustering_alg,
         tables_dict,
         min_num_labes_per_col_cluster,
         dirty_files_name, 
         clean_files_name,
-        n_cores
+        n_cores,
+        cell_clustering_res_available,
+        save_mediate_res_on_disk
     )
 
     time_end = time.time()
@@ -184,6 +198,25 @@ def main(labeling_budget):
     with open(os.path.join(results_path, "time.txt"), "w") as file:
         file.write(str(time_end - time_start))
     
+
+    logging.info("Saving the results")
+    final_results_path = os.path.join(results_path, "final_results")
+    os.makedirs(final_results_path, exist_ok=True)
+    with open(os.path.join(final_results_path, "tables_dict.pickle"), "wb+") as handle:
+        pickle.dump(tables_dict, handle)
+    with open(os.path.join(final_results_path, "y_test_all.pickle"), "wb+") as handle:
+        pickle.dump(y_test_all, handle)
+    with open(os.path.join(final_results_path, "y_local_cell_ids.pickle"), "wb+") as handle:
+        pickle.dump(y_local_cell_ids, handle)
+    with open(os.path.join(final_results_path, "predicted_all.pickle"), "wb+") as handle:
+        pickle.dump(predicted_all, handle)
+    with open(os.path.join(final_results_path, "y_labeled_by_user_all.pickle"), "wb+") as handle:
+        pickle.dump(y_labeled_by_user_all, handle)
+    with open(os.path.join(final_results_path, "unique_cells_local_index_collection.pickle"), "wb+") as handle:
+        pickle.dump(unique_cells_local_index_collection, handle)
+    with open(os.path.join(final_results_path, "samples.pickle"), "wb+") as handle:
+        pickle.dump(samples, handle)
+
     logging.info("Getting results")
     get_all_results(
         tables_dict,

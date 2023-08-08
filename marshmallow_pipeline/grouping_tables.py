@@ -19,7 +19,7 @@ import marshmallow_pipeline.santos_fd.sortFDs_pickle_file_dict
 
 logger = logging.getLogger()
 
-def table_grouping(aggregated_lake_path: str, output_path: str, table_grouping_method: str) -> dict:
+def table_grouping(aggregated_lake_path: str, output_path: str, table_grouping_method: str, save_mediate_res_on_disk: bool) -> dict:
     """
     Group tables into clusters
 
@@ -52,10 +52,11 @@ def table_grouping(aggregated_lake_path: str, output_path: str, table_grouping_m
     elif table_grouping_method == "bert":
         table_group_dict, table_size_dict = group_tables(aggregated_lake_path, batch_size=5)
 
-    with open(os.path.join(output_path, "table_group_dict.pickle"), "wb+") as handle:
-        pickle.dump(table_group_dict, handle)
-    with open(os.path.join(output_path, "table_size_dict.pickle"), "wb+") as handle:
-        pickle.dump(table_size_dict, handle)
+    if save_mediate_res_on_disk:
+        with open(os.path.join(output_path, "table_group_dict.pickle"), "wb+") as handle:
+            pickle.dump(table_group_dict, handle)
+        with open(os.path.join(output_path, "table_size_dict.pickle"), "wb+") as handle:
+            pickle.dump(table_size_dict, handle)
     return table_group_dict, table_size_dict
 
 

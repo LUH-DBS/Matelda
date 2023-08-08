@@ -3,6 +3,7 @@ import logging
 import os
 import pickle
 import itertools
+import time
 
 from marshmallow_pipeline.utils.read_data import read_csv
 from marshmallow_pipeline.cell_grouping_module.generate_raha_features import (
@@ -10,21 +11,24 @@ from marshmallow_pipeline.cell_grouping_module.generate_raha_features import (
 )
 
 
-def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_dict, dirty_files_name, clean_files_name):
+def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_dict, dirty_files_name, clean_files_name, save_mediate_res_on_disk):
+    start_time = time.time()
     try:
         features_dict = {}
         list_dirs_in_snd = os.listdir(sandbox_path)
         list_dirs_in_snd.sort()
         table_paths = [[table, sandbox_path, tables_dict[table], table_char_set_dict, dirty_files_name, clean_files_name] for table in list_dirs_in_snd if not table.startswith(".")]
-
-        feature_dict_list = itertools.starmap(generate_cell_features, table_paths)
-        for feature_dict_tmp in feature_dict_list:
-            features_dict.update(feature_dict_tmp)
-
-        with open(os.path.join(output_path, "features.pickle"), "wb") as filehandler:
-            pickle.dump(features_dict, filehandler)
+        for table in list_dirs_in_snd:
+             if not table.startswith("."):
+                features_dict.update(
+                    generate_cell_features(table, sandbox_path, tables_dict[table], table_char_set_dict, dirty_files_name, clean_files_name))
+        if save_mediate_res_on_disk:
+            with open(os.path.join(output_path, "features.pickle"), "wb") as filehandler:
+                pickle.dump(features_dict, filehandler)
     except Exception as e:
         logging.error(e)
+    end_time = time.time()
+    logging.info("Cell features generation time: " + str(end_time - start_time))
     return features_dict
 
 def generate_cell_features(table, sandbox_path, table_file_name_santos, table_char_set_dict, dirty_files_name, clean_files_name):

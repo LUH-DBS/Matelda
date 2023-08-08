@@ -23,6 +23,7 @@ def main(labeling_budget):
     # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
+    save_mediate_res_on_disk = bool(int(configs["EXPERIMENTS"]["save_mediate_res_on_disk"]))
 
     sandbox_path = configs["DIRECTORIES"]["sandbox_dir"]
     tables_path = os.path.join(sandbox_path, configs["DIRECTORIES"]["tables_dir"])
@@ -90,8 +91,9 @@ def main(labeling_budget):
                 )
                 tables_dict[os.path.basename(curr_path)] = name + ".csv"
 
-    with open(os.path.join(experiment_output_path, "tables_dict.pickle"), "wb+") as handle:
-        pickle.dump(tables_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    if save_mediate_res_on_disk:
+        with open(os.path.join(experiment_output_path, "tables_dict.pickle"), "wb+") as handle:
+            pickle.dump(tables_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
     # Table grouping
     if table_grouping_enabled:
         if not table_grouping_res_available:
@@ -99,7 +101,7 @@ def main(labeling_budget):
             logging.info("Table grouping results are not available")
             logging.info("Executing the table grouping")
             table_grouping_dict, table_size_dict = table_grouping(
-                aggregated_lake_path, experiment_output_path, table_grouping_method
+                aggregated_lake_path, experiment_output_path, table_grouping_method, save_mediate_res_on_disk
             )
 
             table_g_time = time.time() - time_start
@@ -124,9 +126,13 @@ def main(labeling_budget):
         tables_list = tables_dict.values()
         for table in tables_list:
             table_grouping_dict[0].append(table)
-        with open(os.path.join(experiment_output_path, "table_group_dict.pickle"), "wb+") as handle:
-            pickle.dump(table_grouping_dict, handle)
+        if save_mediate_res_on_disk:
+            with open(os.path.join(experiment_output_path, "table_group_dict.pickle"), "wb+") as handle:
+                pickle.dump(table_grouping_dict, handle)
 
+    logging.info("Table grouping is done")
+    logging.info("I need at least 2 labeled cells per table group to work! Thant means you need to label {} cells:".format(2*len(table_grouping_dict)))
+    print("I need at least 2 labeled cells per table group to work! Thant means you need to label {} cells:".format(2*len(table_grouping_dict)))
     # Column grouping
     if not column_grouping_res_available:
         logging.info("Column grouping results are not available")
@@ -183,7 +189,8 @@ def main(labeling_budget):
         dirty_files_name, 
         clean_files_name,
         n_cores,
-        cell_clustering_res_available
+        cell_clustering_res_available,
+        save_mediate_res_on_disk
     )
 
     time_end = time.time()
@@ -225,5 +232,5 @@ def main(labeling_budget):
         clean_files_name
     )
 
-# if __name__ == "__main__":
-#     main(1320)
+if __name__ == "__main__":
+    main(66)
