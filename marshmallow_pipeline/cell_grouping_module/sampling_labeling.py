@@ -73,7 +73,8 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
         n_clusters=int(n_cell_clusters_per_col_cluster),
         batch_size=256 * n_cores,
     ).fit(x)
-    logging.debug("KMeans - n_cell_clusters_generated: %s", len(set(clustering.labels_)))
+    set_clustering_labels = set(clustering.labels_)
+    logging.debug("KMeans - n_cell_clusters_generated: %s", len(set_clustering_labels))
     clustering_labels = clustering.labels_
     for cell in enumerate(clustering_labels):
         if cell[1] in cells_per_cluster:
@@ -88,8 +89,8 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
     cell_clustering_dict["col_cluster"] = col_cluster
     cell_clustering_dict["n_cells"] = len(x)
     cell_clustering_dict["n_init_labels"] = n_cell_clusters_per_col_cluster
-    cell_clustering_dict["n_produced_cell_clusters"] = len(set(clustering.labels_))
-    cell_clustering_dict["n_current_requiered_labels"] = len(set(clustering.labels_))
+    cell_clustering_dict["n_produced_cell_clusters"] = len(set_clustering_labels)
+    cell_clustering_dict["n_current_requiered_labels"] = len(set_clustering_labels)
     
     cell_clustering_dict["remaining_labels"] = (
         cell_clustering_dict["n_init_labels"]
@@ -150,15 +151,16 @@ def sort_points_by_distance(feature_vectors):
 def split_cell_cluster(cell_cluster_n_labels, n_cores, x_cluster, y_cluster, col_group_cell_idx, updated_cells_per_cluster, updated_cell_cluster_n_labels, cluster):
     try:
         clustering = MiniBatchKMeans(n_clusters=min(len(x_cluster), cell_cluster_n_labels[cluster]), batch_size=256 * n_cores).fit(x_cluster)
-        logging.debug("inner cluster splitting - n_clusters: %s", len(set(clustering.labels_)))
+        set_clustering_labels = set(clustering.labels_)
+        logging.debug("inner cluster splitting - n_clusters: %s", len(set_clustering_labels))
         clustering_labels = clustering.labels_
-        if len(set(clustering.labels_)) < cell_cluster_n_labels[cluster]:
+        if len(set_clustering_labels) < cell_cluster_n_labels[cluster]:
             return updated_cells_per_cluster, updated_cell_cluster_n_labels
         else:
             x_cluster_splited = []
             y_cluster_splited = []
             x_idx_cluster_splited = []
-            for i in set(clustering_labels):
+            for i in set_clustering_labels:
                 x_cluster_splited.append([])
                 y_cluster_splited.append([])
                 x_idx_cluster_splited.append([])

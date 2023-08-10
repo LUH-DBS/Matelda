@@ -237,7 +237,8 @@ def error_detector(
     clean_files_name,
     n_cores,
     cell_clustering_res_available,
-    save_mediate_res_on_disk
+    save_mediate_res_on_disk,
+    pool
 ):
     logging.info("Starting error detection")
 
@@ -248,7 +249,7 @@ def error_detector(
     if cell_feature_generator_enabled:
         logging.info("Generating cell features enabled")
         features_dict = get_cells_features(
-            sandbox_path, output_path, table_charset_dict, tables_dict, dirty_files_name, clean_files_name, save_mediate_res_on_disk
+            sandbox_path, output_path, table_charset_dict, tables_dict, dirty_files_name, clean_files_name, save_mediate_res_on_disk, pool
         )
     else:
         logging.info("Generating cell features disabled, loading from previous results from disk")
@@ -270,7 +271,7 @@ def error_detector(
         # n_processes = min((len(col_group_file_names), os.cpu_count()))
         # logging.debug("Number of processes: %s", str(n_processes))
 
-        with multiprocessing.Pool(initializer=cluster_column_group_init, initargs=(col_groups_dir, df_n_labels, features_dict), processes=16) as pool:
+        with multiprocessing.Pool(initializer=cluster_column_group_init, initargs=(col_groups_dir, df_n_labels, features_dict), processes=n_cores) as pool:
             table_clusters = []
             cell_cluster_cells_dict_all = {}
             cell_clustering_dict_all = {}

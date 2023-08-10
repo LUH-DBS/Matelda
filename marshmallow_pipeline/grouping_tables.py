@@ -1,5 +1,6 @@
 """This module contains the functions for grouping tables into clusters"""
 import logging
+import multiprocessing
 import os
 import pickle
 import shutil
@@ -19,7 +20,7 @@ import marshmallow_pipeline.santos_fd.sortFDs_pickle_file_dict
 
 logger = logging.getLogger()
 
-def table_grouping(aggregated_lake_path: str, output_path: str, table_grouping_method: str, save_mediate_res_on_disk: bool) -> dict:
+def table_grouping(aggregated_lake_path: str, output_path: str, table_grouping_method: str, save_mediate_res_on_disk: bool, pool:multiprocessing.Pool) -> dict:
     """
     Group tables into clusters
 
@@ -50,7 +51,7 @@ def table_grouping(aggregated_lake_path: str, output_path: str, table_grouping_m
                 table_group_dict[table_group_dict_key].append(table)
             table_group_dict_key += 1
     elif table_grouping_method == "bert":
-        table_group_dict, table_size_dict = group_tables(aggregated_lake_path, batch_size=5)
+        table_group_dict, table_size_dict = group_tables(aggregated_lake_path, batch_size=5, pool=pool)
 
     if save_mediate_res_on_disk:
         with open(os.path.join(output_path, "table_group_dict.pickle"), "wb+") as handle:

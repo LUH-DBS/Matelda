@@ -84,6 +84,7 @@ def column_grouping(
     cg_enabled: bool,
     col_grouping_alg: str,
     n_cores: int,
+    pool: multiprocessing.Pool,
 ) -> None:
     """
     This function is responsible for executing the column grouping step.
@@ -104,7 +105,7 @@ def column_grouping(
     """
     tg_stats = get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget, mediate_files_path)
     logging.info("Group columns")
-    pool = multiprocessing.Pool()
+    # pool = multiprocessing.Pool(1)
     
     for table_group in table_grouping_dict:
         logging.info("Table_group: %s", table_group)
@@ -123,5 +124,5 @@ def column_grouping(
             args=(table_group, cols, tg_stats[table_group]["max_n_col_groups"], mediate_files_path, cg_enabled, col_grouping_alg, n_cores),
         )
 
-    pool.close()
-    pool.join()
+    # pool.close()
+    # pool.join()

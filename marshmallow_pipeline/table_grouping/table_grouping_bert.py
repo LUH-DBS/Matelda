@@ -50,7 +50,7 @@ def process_document(file):
     processed_text = preprocess_text(text)
     return processed_text, table_name, table_size
 
-def get_tabls_docs(base_path):
+def get_tabls_docs(base_path, pool):
     # List all files in the base path
     csv_files = []
     for dirpath, _, filenames in os.walk(base_path):
@@ -62,6 +62,12 @@ def get_tabls_docs(base_path):
     documents = []
     table_names = {}
     table_size_dict = {}
+    # results = pool.apply(process_document, csv_files)
+    # for result in results:
+    #     processed_text, table_name, table_size = result
+    #     table_names[len(documents)] = table_name
+    #     documents.append(processed_text)
+    #     table_size_dict[table_name] = table_size
     with ThreadPoolExecutor() as executor:
         futures = [executor.submit(process_document, file) for file in csv_files]
         for future in as_completed(futures):
@@ -85,8 +91,8 @@ def get_tables_features(base_path, documents, batch_size=5):
     embeddings = np.vstack(embeddings)
     return embeddings 
 
-def group_tables(base_path, batch_size=5):
-    documents, table_names, table_size_dict = get_tabls_docs(base_path)
+def group_tables(base_path, batch_size, pool):
+    documents, table_names, table_size_dict = get_tabls_docs(base_path, pool)
     embeddings = get_tables_features(base_path, documents, batch_size)
 
     # Perform clustering
