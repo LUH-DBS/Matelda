@@ -183,8 +183,9 @@ def distribute_labels_in_cell_clusters(cell_cluster_n_labels, sorted_clusters, v
     sorted_cluster_idx = 0
     while n_labels > 0 and i < len(sorted_clusters):
         cluster = sorted_clusters[sorted_cluster_idx]
+        set_values_per_cluster = set(values_per_cluster[cluster])
         # Compare the number of labels with the number of unique feature vectors
-        if cell_cluster_n_labels[cluster] < len(set(values_per_cluster[cluster])):
+        if cell_cluster_n_labels[cluster] < len(set_values_per_cluster):
             cell_cluster_n_labels[cluster] += 1
             n_labels -= 1
             i = 0
@@ -212,20 +213,6 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
     if updated_cell_cluster_n_labels[cluster] > 1:
         while len(samples_feature_vectors) < updated_cell_cluster_n_labels[cluster]:
             sample = np.random.randint(0, len(x_cluster))
-            if x_cluster[sample] not in samples_feature_vectors:
-                samples_feature_vectors.append(x_cluster[sample])
-                samples_labels.append(y_cluster[sample])
-                dirty_cell_values_cluster.append(
-                    dirty_cell_values[col_group_cell_idx[sample]]
-                )
-                samples_indices_global.append(col_group_cell_idx[sample])
-                samples_indices_cell_group.append(sample)
-
-    else:
-        sorted_points = sort_points_by_distance(x_cluster)
-        i = 0
-        sample = sorted_points[i]
-        if x_cluster[sample] not in samples_feature_vectors:
             samples_feature_vectors.append(x_cluster[sample])
             samples_labels.append(y_cluster[sample])
             dirty_cell_values_cluster.append(
@@ -233,6 +220,18 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
             )
             samples_indices_global.append(col_group_cell_idx[sample])
             samples_indices_cell_group.append(sample)
+
+    else:
+        sorted_points = sort_points_by_distance(x_cluster)
+        i = 0
+        sample = sorted_points[i]
+        samples_feature_vectors.append(x_cluster[sample])
+        samples_labels.append(y_cluster[sample])
+        dirty_cell_values_cluster.append(
+            dirty_cell_values[col_group_cell_idx[sample]]
+        )
+        samples_indices_global.append(col_group_cell_idx[sample])
+        samples_indices_cell_group.append(sample)
     return samples_feature_vectors, samples_labels, samples_indices_global, samples_indices_cell_group, dirty_cell_values_cluster
 
 def check_and_split_cell_clusters(x, y, labeled_clusters, cell_cluster_n_labels, cells_per_cluster, n_cores, updated_cells_per_cluster, updated_cell_cluster_n_labels):
