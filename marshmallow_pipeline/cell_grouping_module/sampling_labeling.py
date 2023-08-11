@@ -139,13 +139,10 @@ def update_n_labels(cell_clustering_recs):
     return cell_clustering_df
 
 
-def sort_points_by_distance(feature_vectors):
+def get_the_nearest_point_to_centroid(feature_vectors):
     centroid = np.mean(feature_vectors, axis=0)
-    sorted_indices = sorted(
-        range(len(feature_vectors)),
-        key=lambda i: euclidean(feature_vectors[i], centroid),
-    )
-    return sorted_indices
+    closest_index = min(range(len(feature_vectors)), key=lambda i: euclidean(feature_vectors[i], centroid))
+    return closest_index
 
 
 def split_cell_cluster(cell_cluster_n_labels, n_cores, x_cluster, y_cluster, col_group_cell_idx, updated_cells_per_cluster, updated_cell_cluster_n_labels, cluster):
@@ -222,9 +219,7 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
             samples_indices_cell_group.append(sample)
 
     else:
-        sorted_points = sort_points_by_distance(x_cluster)
-        i = 0
-        sample = sorted_points[i]
+        sample = get_the_nearest_point_to_centroid(x_cluster)
         samples_feature_vectors.append(x_cluster[sample])
         samples_labels.append(y_cluster[sample])
         dirty_cell_values_cluster.append(
