@@ -3,6 +3,7 @@ This module is the main module of the pipeline. It is responsible for
 executing the pipeline steps and storing the results.
 """
 import logging
+import multiprocessing
 import os
 import pickle
 from configparser import ConfigParser
@@ -17,7 +18,6 @@ from marshmallow_pipeline.utils.loading_results import \
     loading_columns_grouping_results
 
 def main(labeling_budget):
-    time_start = time.time()
     configs = ConfigParser()
     configs.read("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/config.ini")
     # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
@@ -75,6 +75,8 @@ def main(labeling_budget):
 
     marshmallow_pipeline.utils.app_logger.setup_logging(logs_dir + f"_{exp_name}")
     logging.info("Starting the experiment")
+    time_start = time.time()
+    pool = multiprocessing.Pool(n_cores)
 
     logging.info("Symlinking sandbox to aggregated_lake_path")
     tables_dict = {}
@@ -100,11 +102,14 @@ def main(labeling_budget):
             logging.info("Table grouping is enabled")
             logging.info("Table grouping results are not available")
             logging.info("Executing the table grouping")
+            before_tg = time.time()
+            logging.debug("Thread pool: " + str(before_tg - time_start))
+            table_g_start = time.time()
             table_grouping_dict, table_size_dict = table_grouping(
-                aggregated_lake_path, experiment_output_path, table_grouping_method, save_mediate_res_on_disk
+                aggregated_lake_path, experiment_output_path, table_grouping_method, save_mediate_res_on_disk, pool
             )
 
-            table_g_time = time.time() - time_start
+            table_g_time = time.time() - table_g_start
             logging.info("Table grouping is done")
             logging.info("Table grouping time: " + str(table_g_time))
         else:
@@ -146,7 +151,8 @@ def main(labeling_budget):
             mediate_files_path,
             column_grouping_enabled,
             column_grouping_alg,
-            n_cores
+            n_cores,
+            pool
     )
     else:
         logging.info("Column grouping results are available - loading from disk")
@@ -190,11 +196,13 @@ def main(labeling_budget):
         clean_files_name,
         n_cores,
         cell_clustering_res_available,
-        save_mediate_res_on_disk
+        save_mediate_res_on_disk,
+        pool
     )
 
     time_end = time.time()
-    logging.info("The experiment took %s seconds", time_end - time_start)
+    print(time_end - time_start)
+    # logging.CRITICAL(f"The experiment took {str(time_end - time_start)} seconds")
     with open(os.path.join(results_path, "time.txt"), "w") as file:
         file.write(str(time_end - time_start))
     
@@ -233,4 +241,4 @@ def main(labeling_budget):
     )
 
 if __name__ == "__main__":
-    main(66)
+    main(1482)
