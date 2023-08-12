@@ -82,14 +82,11 @@ def generate_cell_features(table, sandbox_path, table_file_name_santos, table_ch
                 ] = col_features[col_idx][row_idx]
 
         dirty_df.columns = clean_df.columns
-        diff = dirty_df.compare(clean_df, keep_shape=True).fillna(0)
-        label_df = ((diff.xs('self', axis=1, level=1) != diff.xs('other', axis=1, level=1)).astype(int))
-        # label_df = (
-        #     dirty_df.where(
-        #         dirty_df.astype(str).values != clean_df.astype(str).values
-        #     ).notna()
-        #     * 1
-        # )
+        diff = dirty_df.compare(clean_df, keep_shape=True)
+        self_diff = diff.xs('self', axis=1, level=1)
+        other_diff = diff.xs('other', axis=1, level=1)
+        # Custom comparison. True (or 1) only when values are different and not both NaN.
+        label_df = ((self_diff != other_diff) & ~(self_diff.isna() & other_diff.isna())).astype(int)
         for col_idx, col_name in enumerate(label_df.columns):
             for row_idx in range(len(label_df[col_name])):
                 features_dict[
