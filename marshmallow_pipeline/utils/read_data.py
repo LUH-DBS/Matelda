@@ -34,5 +34,6 @@ def read_csv(path: str, low_memory: bool = False) -> pd.DataFrame:
         pd.read_csv(
             path, sep=",", header="infer", low_memory=low_memory, encoding="latin-1"
         )
-        .applymap(value_normalizer)
+        .applymap(lambda x: value_normalizer(x) if isinstance(x, str) else x)
+
     )
