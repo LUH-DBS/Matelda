@@ -35,5 +35,5 @@ def read_csv(path: str, low_memory: bool = False) -> pd.DataFrame:
             path, sep=",", header="infer", low_memory=low_memory, encoding="latin-1"
         )
         .applymap(lambda x: value_normalizer(x) if isinstance(x, str) else x)
-        .applymap(lambda x: x.replace('"', "") if isinstance(x, str) else x)
+
     )

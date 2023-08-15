@@ -1,3 +1,4 @@
+from concurrent.futures import ThreadPoolExecutor
 import hashlib
 import logging
 import os
@@ -10,17 +11,18 @@ from marshmallow_pipeline.utils.read_data import read_csv
 
 
 def get_classification_results(
-    y_test_all, predicted_all, y_labeled_by_user_all, results_dir, samples
+    y_test_all, predicted_all, y_labeled_by_user_all, results_dir, samples, unique_cells_local_ids_collection
 ):
     logging.debug("Classification results:")
     total_tn, total_fp, total_fn, total_tp = 0, 0, 0, 0
     for i in predicted_all.keys():
+        cell_local_ids = unique_cells_local_ids_collection[i]
+        swapped_cell_local_ids = {v: (k[0], k[1], k[2]) for k, v in cell_local_ids.items()}
         col_cluster_prediction = list(predicted_all[i])
+        for j in range(len(col_cluster_prediction)):
+            if swapped_cell_local_ids[j] in samples:
+                col_cluster_prediction[j] = samples[swapped_cell_local_ids[j]]
         col_cluster_y = y_test_all[i]
-
-        # TODO: Fix this, user labels are not always accurate
-        col_cluster_prediction.extend(y_labeled_by_user_all[i])
-        col_cluster_y.extend(y_labeled_by_user_all[i])
 
         tn, fp, fn, tp = confusion_matrix(
             y_true=col_cluster_y, y_pred=col_cluster_prediction, labels=[0, 1]
@@ -57,11 +59,11 @@ def get_classification_results(
         ) as file:
             pickle.dump(scores, file)
 
-    total_precision = total_tp / (total_tp + total_fp)
-    total_recall = total_tp / (total_tp + total_fn)
+    total_precision = total_tp / (total_tp + total_fp) if total_tp + total_fp > 0 else None
+    total_recall = total_tp / (total_tp + total_fn) if total_tp + total_fn > 0 else None
     total_fscore = (2 * total_precision * total_recall) / (
         total_precision + total_recall
-    )
+    ) if total_precision and total_recall else None
     total_scores = {
         "n_samples": len(samples),
         "total_recall": total_recall,
@@ -77,6 +79,40 @@ def get_classification_results(
     with open(os.path.join(results_dir, "scores_all.pickle"), "wb") as file:
         pickle.dump(total_scores, file)
 
+def process_cell_cell_results(cell_key, key, unique_cells_local_index_collection, y_local_cell_ids, y_test_all, predicted_all, all_tables_dict, samples):
+    try:
+        # print(cell_key)
+        cell_local_idx = unique_cells_local_index_collection[key][cell_key]
+        y_cell_ids = {id: idx for idx, id in enumerate(y_local_cell_ids[key])}
+        y_local_idx = y_cell_ids.get(cell_local_idx, -1)
+        res_dict = {
+            "table_id": cell_key[0],
+            "table_name": all_tables_dict[cell_key[0]]["name"],
+            "table_shape": all_tables_dict[cell_key[0]]["shape"],
+            "col_id": cell_key[1],
+            "col_name": all_tables_dict[cell_key[0]]["schema"][cell_key[1]],
+            "cell_idx": cell_key[2],
+            "cell_value": cell_key[3],
+            "predicted": predicted_all[key][y_local_idx],
+            "label": y_test_all[key][y_local_idx]
+        }
+    except Exception as e:
+        logging.error("Error: %s", e)
+        return None
+    print("key - done: ", key)
+    return res_dict
+
+def proccess_col_group_cell_results(key, unique_cells_local_index_collection, y_local_cell_ids, y_test_all, predicted_all, all_tables_dict, samples, executor):
+    print(key)
+    print(len(unique_cells_local_index_collection[key]))
+    futures = []
+    for cell_key in unique_cells_local_index_collection[key]:
+        future = executor.submit(process_cell_cell_results, \
+                                    cell_key, key, unique_cells_local_index_collection,\
+                                        y_local_cell_ids, y_test_all, predicted_all,\
+                                            all_tables_dict, samples)
+        futures.append(future)
+    return futures
 
 def create_predictions_dict(
     all_tables_dict,
@@ -88,37 +124,19 @@ def create_predictions_dict(
 ):
     logging.debug("Getting predictions dict")
     rows_list = []
-    samp_count = 0
-    for key in unique_cells_local_index_collection.keys():
-        logging.debug("Key: %s", key)
-        for cell_key in list(unique_cells_local_index_collection[key].keys()):
-            try:
-                cell_local_idx = unique_cells_local_index_collection[key][cell_key]
-                y_cell_ids = y_local_cell_ids[key]
-                y_local_idx = (
-                    y_cell_ids.index(cell_local_idx)
-                    if cell_local_idx in y_cell_ids
-                    else -1
-                )
-                tmp_dict = {
-                    "table_id": cell_key[0],
-                    "table_name": all_tables_dict[cell_key[0]]["name"],
-                    "table_shape": all_tables_dict[cell_key[0]]["shape"],
-                    "col_id": cell_key[1],
-                    "col_name": all_tables_dict[cell_key[0]]["schema"][cell_key[1]],
-                    "cell_idx": cell_key[2],
-                    "cell_value": cell_key[3],
-                    "predicted": predicted_all[key][y_local_idx]
-                    if y_local_idx != -1
-                    else -1,
-                    "label": y_test_all[key][y_local_idx]
-                    if y_local_idx != -1
-                    else samples[(key[0], key[1], cell_local_idx)],
-                }
-                rows_list.append(tmp_dict)
-            except Exception as e:
-                samp_count += 1
-    logging.debug("Samples %s", samp_count)
+    with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
+        futures = []
+        for key in unique_cells_local_index_collection:
+            future = executor.submit(proccess_col_group_cell_results, key,
+                                    unique_cells_local_index_collection,
+                                    y_local_cell_ids, y_test_all, predicted_all,
+                                    all_tables_dict, samples, executor)
+            futures.append(future)
+    
+        # Wait for all the tasks to complete
+        for future in futures:
+            rows_list.append(res_dict for res_dict in future.result())
+
     results_df = pd.DataFrame(
         rows_list,
         columns=[
@@ -134,6 +152,7 @@ def create_predictions_dict(
         ],
     )
     return results_df
+
 
 
 def get_results_per_table(result_df):
@@ -208,22 +227,60 @@ def get_all_results(
     logging.info("Getting classification results")
     
     get_classification_results(
-        y_test_all, predicted_all, y_labeled_by_user_all, results_dir, samples
+        y_test_all, predicted_all, y_labeled_by_user_all, results_dir, samples, unique_cells_local_index_collection
     )
-    # logging.info("Getting prediction results")
+    logging.info("Getting prediction results")
     # tables_dict = get_tables_dict(init_tables_dict, tables_path, dirty_file_names, clean_file_names)
     # results_df = create_predictions_dict(
-        # tables_dict,
-        # y_test_all,
-        # y_local_cell_ids,
-        # predicted_all,
-        # unique_cells_local_index_collection,
-        # samples,
+    #     tables_dict,
+    #     y_test_all,
+    #     y_local_cell_ids,
+    #     predicted_all,
+    #     unique_cells_local_index_collection,
+    #     samples,
     # )
     # logging.info("Getting results per table")
     # results_per_table = get_results_per_table(results_df)
     # logging.info("Saving results")
     # with open(os.path.join(results_dir, "results_df.pickle"), "wb") as file:
-        # pickle.dump(results_df, file)
+    #     pickle.dump(results_df, file)
     # with open(os.path.join(results_dir, "results_per_table.pickle"), "wb") as file:
-        # pickle.dump(results_per_table, file)
+    #     pickle.dump(results_per_table, file)
+
+
+def get_all_results_from_disk(output_path, tables_path, dirty_file_names, clean_file_names):
+    logging.info("Getting all results from disk")
+    with open(os.path.join(output_path, "tables_dict.pickle"), "rb") as file:
+        tables_init_dict = pickle.load(file)
+    with open(os.path.join(output_path, "results", "final_results", "y_test_all.pickle"), "rb") as file:
+        y_test_all = pickle.load(file)
+    with open(os.path.join(output_path, "results", "final_results", "y_local_cell_ids.pickle"), "rb") as file:
+        y_local_cell_ids = pickle.load(file)
+    with open(os.path.join(output_path, "results", "final_results", "predicted_all.pickle"), "rb") as file:
+        predicted_all = pickle.load(file)
+    with open(os.path.join(output_path, "results", "final_results", "y_labeled_by_user_all.pickle"), "rb") as file:
+        y_labeled_by_user_all = pickle.load(file)
+    with open(os.path.join(output_path, "results", "final_results", "unique_cells_local_index_collection.pickle"), "rb") as file:
+        unique_cells_local_index_collection = pickle.load(file)
+    with open(os.path.join(output_path, "results", "final_results", "samples.pickle"), "rb") as file:
+        samples = pickle.load(file)
+    get_all_results(
+        tables_init_dict,
+        tables_path,
+        os.path.join(output_path, "results"),
+        y_test_all,
+        y_local_cell_ids,
+        predicted_all,
+        y_labeled_by_user_all,
+        unique_cells_local_index_collection,
+        samples,
+        dirty_file_names,
+        clean_file_names
+    )    
+
+# output_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/output-test-quintet/_otg_Quintet_7_labels"
+# tables_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/data/Quintet"
+# dirty_file_names = "dirty.csv"
+# clean_file_names = "clean.csv"
+
+# get_all_results_from_disk(output_path, tables_path, dirty_file_names, clean_file_names)

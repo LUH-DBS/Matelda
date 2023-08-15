@@ -3,14 +3,14 @@ import shutil
 import pipeline
 
 
-# labeling_budget_dgov = [0.25, 0.5, 0.75]
-labeling_budget_dgov = []
-for i in range (7, 21):
-    labeling_budget_dgov.append(i)
+labeling_budget = [0.10, 0.25, 0.5, 0.75, 1]
+n_cols = 66
+for i in range (5, 21, 5):
+    labeling_budget.append(i)
 
-labeling_budgets_dgov = [round(1511*x) for x in labeling_budget_dgov]
+labeling_budgets_cells = [round(n_cols*x) for x in labeling_budget]
 
-for labeling_budget in labeling_budgets_dgov:
+for labeling_budget in labeling_budgets_cells:
     directories_to_remove = [
         "marshmallow_pipeline/santos/benchmark/*",
         "marshmallow_pipeline/santos/stats/*",

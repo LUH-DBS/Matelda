@@ -5,6 +5,7 @@ import pickle
 import sys
 import multiprocessing
 import itertools
+import time
 
 import pandas as pd
 
@@ -41,7 +42,7 @@ def cluster_column_group_init(col_groups_dir, df_n_labels, features_dict):
     global features_dict_glob
     features_dict_glob = features_dict
 
-def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, manual_labeling_done):
+def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, manual_labeling_done, n_cores, save_mediate_res_on_disk):
     global manual_labeling_done_glob
     manual_labeling_done_glob = manual_labeling_done
 
@@ -57,9 +58,14 @@ def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_
     global cell_cluster_cells_dict_all_glob
     cell_cluster_cells_dict_all_glob = cell_cluster_cells_dict_all
 
+    global n_cores_glob
+    n_cores_glob = n_cores
+
+    global save_mediate_res_on_disk_glob
+    save_mediate_res_on_disk_glob = save_mediate_res_on_disk
 
 def get_cells_in_cluster(group_df, col_cluster, features_dict):
-    original_data_keys_temp = []
+    original_data_keys_temp = [] # (table_id, col_id, cell_idx, cell_value)
     value_temp = []
     X_temp = []
     y_temp = []
@@ -69,6 +75,7 @@ def get_cells_in_cluster(group_df, col_cluster, features_dict):
     all_table_cols = []
 
     try:
+        # appending colid features (onehot encoding)
         c_df = group_df[group_df["column_cluster_label"] == col_cluster]
         for _, row in c_df.iterrows():
             all_table_cols.append((row['table_id'], row['col_id']))
@@ -143,7 +150,7 @@ def col_clu_cell_clustering(
     return cell_cluster_cells_dict, cell_clustering_dict
 
 
-def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, manual_labeling_done, output_path, table_cluster, col_cluster):
+def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, n_cores, manual_labeling_done, output_path, table_cluster, col_cluster):
     logging.info(
         "Sampling and labeling cluster %s",
         str(cell_clustering_df["col_cluster"].values[0]),
@@ -162,7 +169,7 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, 
             datacells_uids = cell_cluster_cells_dict["datacells_uids"]
 
             if not manual_labeling_done:
-                samples_dict = sampling(cell_clustering_df, X_temp, y_temp, value_temp, datacells_uids)
+                samples_dict, cell_clustering_df = sampling(cell_clustering_df, X_temp, y_temp, value_temp, n_cores, datacells_uids)
                 samples_dict_path = os.path.join(
                     output_path,
                     "samples_dict"
@@ -237,14 +244,15 @@ def error_detector(
     output_path,
     results_path,
     n_labels,
-    number_of_col_clusters,
     cluster_sizes_dict,
-    cell_clustering_alg,
     tables_dict,
     min_num_labes_per_col_cluster,
     dirty_files_name,
     clean_files_name,
     n_cores,
+    cell_clustering_res_available,
+    save_mediate_res_on_disk,
+    pool,
     manual_labeling_done
 ):
     logging.info("Starting error detection")
@@ -256,7 +264,7 @@ def error_detector(
     if cell_feature_generator_enabled:
         logging.info("Generating cell features enabled")
         features_dict = get_cells_features(
-            sandbox_path, output_path, table_charset_dict, tables_dict, dirty_files_name, clean_files_name
+            sandbox_path, output_path, table_charset_dict, tables_dict, dirty_files_name, clean_files_name, save_mediate_res_on_disk, pool
         )
     else:
         logging.info("Generating cell features disabled, loading from previous results from disk")
@@ -271,52 +279,68 @@ def error_detector(
         min_num_labes_per_col_cluster=min_num_labes_per_col_cluster,
     )
 
-    logging.info("Clustering column groups")
-    col_group_file_names = [file_name for file_name in os.listdir(col_groups_dir) if ".pickle" in file_name]
-    # n_processes = min((len(col_group_file_names), os.cpu_count()))
-    # logging.debug("Number of processes: %s", str(n_processes))
-    with multiprocessing.Pool(initializer=cluster_column_group_init, initargs=(col_groups_dir, df_n_labels, features_dict), processes=16) as pool:
-        table_clusters = []
-        cell_cluster_cells_dict_all = {}
-        cell_clustering_dict_all = {}
-        col_clusters = []
-        logging.info("Number of column groups: %s", str(len(col_group_file_names)))
-        logging.info("Starting parallel processing of column groups")
-        # Prepare the arguments as tuples
-        args = [(x, n_cores) for x in col_group_file_names]
-        logging.debug("args: %s", str(args))
-        # Use starmap to pass arguments as separate values
-        pool_results = pool.starmap(cluster_column_group, args)
-        logging.info("Storing cluster_column_group results")
-        for result in pool_results:
-            if result is not None:
-                table_clusters.append(result["table_cluster"])
-                cell_cluster_cells_dict_all.update(result["cell_cluster_cells_dict_all"])
-                cell_clustering_dict_all.update(result["cell_clustering_dict_all"])
-                col_clusters.append(result["col_clusters"])
+    if not cell_clustering_res_available:
+        logging.info("Cell Clustering")
+        start_time = time.time()
+        col_group_file_names = [file_name for file_name in os.listdir(col_groups_dir) if ".pickle" in file_name]
+        # n_processes = min((len(col_group_file_names), os.cpu_count()))
+        # logging.debug("Number of processes: %s", str(n_processes))
+
+        with multiprocessing.Pool(initializer=cluster_column_group_init, initargs=(col_groups_dir, df_n_labels, features_dict), processes=n_cores) as pool:
+            table_clusters = []
+            cell_cluster_cells_dict_all = {}
+            cell_clustering_dict_all = {}
+            col_clusters = []
+            logging.info("Number of column groups: %s", str(len(col_group_file_names)))
+            logging.info("Starting parallel processing of column groups")
+            # Prepare the arguments as tuples
+            args = [(x, n_cores) for x in col_group_file_names]
+            logging.debug("args: %s", str(args))
+            # Use starmap to pass arguments as separate values
+            pool_results = pool.starmap(cluster_column_group, args)
+            logging.info("Storing cluster_column_group results")
+            for result in pool_results:
+                if result is not None:
+                    table_clusters.append(result["table_cluster"])
+                    cell_cluster_cells_dict_all.update(result["cell_cluster_cells_dict_all"])
+                    cell_clustering_dict_all.update(result["cell_clustering_dict_all"])
+                    col_clusters.append(result["col_clusters"])
 
 
-    logging.info("Saving clustering results")
-    all_cell_clusters_records = []
-    for table_group in cell_clustering_dict_all:
-        for col_group in cell_clustering_dict_all[table_group]:
-            all_cell_clusters_records.append(cell_clustering_dict_all[table_group][col_group])
+        all_cell_clusters_records = []
+        for table_group in cell_clustering_dict_all:
+            for col_group in cell_clustering_dict_all[table_group]:
+                all_cell_clusters_records.append(cell_clustering_dict_all[table_group][col_group])
 
-    all_cell_clusters_records = update_n_labels(all_cell_clusters_records)
-    cell_clustering_dir = os.path.join(output_path, "cell_clustering")
-    if not os.path.exists(cell_clustering_dir):
-        os.makedirs(cell_clustering_dir)
-    with open(
-        os.path.join(cell_clustering_dir, "all_cell_clusters_records.pickle"), "wb"
-    ) as pickle_file:
-        pickle.dump(all_cell_clusters_records, pickle_file)
-    with open(
-        os.path.join(cell_clustering_dir, "cell_cluster_cells_dict_all.pickle"), "wb"
-    ) as pickle_file:
-        pickle.dump(cell_cluster_cells_dict_all, pickle_file)
-
+        all_cell_clusters_records = update_n_labels(all_cell_clusters_records)
+        cell_clustering_dir = os.path.join(output_path, "cell_clustering")
+        end_time = time.time()
+        logging.info("Cell Clustering took %s seconds", str(end_time - start_time))
+        if save_mediate_res_on_disk:
+            logging.info("Saving cell clustering results")
+            if not os.path.exists(cell_clustering_dir):
+                os.makedirs(cell_clustering_dir)
+            with open(
+                os.path.join(cell_clustering_dir, "all_cell_clusters_records.pickle"), "wb"
+            ) as pickle_file:
+                pickle.dump(all_cell_clusters_records, pickle_file)
+            with open(
+                os.path.join(cell_clustering_dir, "cell_cluster_cells_dict_all.pickle"), "wb"
+            ) as pickle_file:
+                pickle.dump(cell_cluster_cells_dict_all, pickle_file)
+    else:
+        logging.info("Loading cell clustering results from disk")
+        with open(
+            os.path.join(output_path, "cell_clustering", "all_cell_clusters_records.pickle"), "rb"
+        ) as pickle_file:
+            all_cell_clusters_records = pickle.load(pickle_file)
+        with open(
+            os.path.join(output_path, "cell_clustering", "cell_cluster_cells_dict_all.pickle"), "rb"
+        ) as pickle_file:
+            cell_cluster_cells_dict_all = pickle.load(pickle_file)
 
     logging.info("Sampling and labeling clusters")
+    start_time = time.time()
     col_clusters = []
     table_clusters = []
     for table_cluster in cell_cluster_cells_dict_all:
@@ -324,7 +348,7 @@ def error_detector(
             table_clusters.append(table_cluster)
             col_clusters.append(col_cluster)
 
-    with multiprocessing.Pool(initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, manual_labeling_done), processes=min(len(cell_cluster_cells_dict_all), os.cpu_count())) as pool:
+    with multiprocessing.Pool(initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, manual_labeling_done, n_cores, save_mediate_res_on_disk)) as pool:
         original_data_keys = []
         unique_cells_local_index_collection = {}
         predicted_all = {}
@@ -334,10 +358,8 @@ def error_detector(
         y_labeled_by_user_all = {}
         selected_samples = {}
         used_labels = 0
-        logging.info("Starting parallel processing of clusters")
+        logging.info("Starting parallel processing of cell clusters")
         pool_results = pool.starmap(test, zip(col_clusters, table_clusters))
-        if not manual_labeling_done:
-            return None
 
         for result in pool_results:
             if result is not None:
@@ -350,18 +372,22 @@ def error_detector(
                 y_labeled_by_user_all.update(result["y_labeled_by_user_all"])
                 selected_samples.update(result["selected_samples"])
                 used_labels += result["used_labels"]
-
+    end_time = time.time()
+    logging.info("Sampling and labeling clusters took %s seconds", str(end_time - start_time))
     logging.info("Saving results")
-    with open(os.path.join(output_path, "original_data_keys.pkl"), "wb") as filehandler:
-        pickle.dump(original_data_keys, filehandler)
+    if save_mediate_res_on_disk:
+        with open(os.path.join(output_path, "original_data_keys.pkl"), "wb") as filehandler:
+            pickle.dump(original_data_keys, filehandler)
 
-    with open(os.path.join(results_path, "sampled_tuples.pkl"), "wb") as filehandler:
-        pickle.dump(selected_samples, filehandler)
-        logging.info("Number of Labeled Cells: %s", len(selected_samples))
+        with open(os.path.join(results_path, "sampled_tuples.pkl"), "wb") as filehandler:
+            pickle.dump(selected_samples, filehandler)
+            logging.info("Number of Labeled Cells: %s", len(selected_samples))
 
-    with open(os.path.join(output_path, "df_n_labels.pkl"), "wb") as filehandler:
-        pickle.dump(df_n_labels, filehandler)
+        with open(os.path.join(output_path, "df_n_labels.pkl"), "wb") as filehandler:
+            pickle.dump(df_n_labels, filehandler)
 
+    if not manual_labeling_done:
+            return None
     return (
         y_test_all,
         y_local_cell_ids,
@@ -445,6 +471,9 @@ def test(col_cluster, table_cluster):
     selected_samples = {}
     used_labels = 0
 
+    global n_cores_glob
+    n_cores = n_cores_glob
+
     global manual_labeling_done_glob
     manual_labeling_done = manual_labeling_done_glob
 
@@ -460,6 +489,9 @@ def test(col_cluster, table_cluster):
     global cell_cluster_cells_dict_all_glob
     cell_cluster_cells_dict_all = cell_cluster_cells_dict_all_glob
 
+    global save_mediate_res_on_disk_glob
+    save_mediate_res_on_disk = save_mediate_res_on_disk_glob
+
     cell_clustering_df = all_cell_clusters_records[
         (all_cell_clusters_records["table_cluster"] == table_cluster)
         & (all_cell_clusters_records["col_cluster"] == col_cluster)
@@ -468,21 +500,22 @@ def test(col_cluster, table_cluster):
         col_cluster
     ]
     cell_cluster_sampling_labeling_dict = cell_cluster_sampling_labeling(
-        cell_clustering_df, cell_cluster_cells_dict, manual_labeling_done, output_path, table_cluster, col_cluster
+        cell_clustering_df, cell_cluster_cells_dict, n_cores, manual_labeling_done, output_path, table_cluster, col_cluster
     )
     if not manual_labeling_done:
         return None
-    cell_clustering_dir = os.path.join(output_path, "cell_clustering")
-    if not os.path.exists(cell_clustering_dir):
-        os.makedirs(cell_clustering_dir)
-    with open(
-        os.path.join(
-            cell_clustering_dir,
-            f"cell_cluster_sampling_labeling_dict_{table_cluster}_{col_cluster}.pickle",
-        ),
-        "wb",
-    ) as pickle_file:
-        pickle.dump(cell_cluster_sampling_labeling_dict, pickle_file)
+    if save_mediate_res_on_disk:
+        cell_clustering_dir = os.path.join(output_path, "cell_clustering")
+        if not os.path.exists(cell_clustering_dir):
+            os.makedirs(cell_clustering_dir)
+        with open(
+            os.path.join(
+                cell_clustering_dir,
+                f"cell_cluster_sampling_labeling_dict_{table_cluster}_{col_cluster}.pickle",
+            ),
+            "wb",
+        ) as pickle_file:
+            pickle.dump(cell_cluster_sampling_labeling_dict, pickle_file)
 
     X_labeled_by_user = cell_cluster_sampling_labeling_dict["X_labeled_by_user"]
 
