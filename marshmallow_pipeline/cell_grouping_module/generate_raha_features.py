@@ -25,7 +25,6 @@ def _strategy_runner_process(self, args):
     This method runs an error detection strategy in a parallel process.
     """
     # try:
-    logging.info("_strategy_runner_process: Running strategy: %s", args)
     d, algorithm, configuration = args
     start_time = time.time()
     strategy_name = json.dumps([algorithm, configuration])

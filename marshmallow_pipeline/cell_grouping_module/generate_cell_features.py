@@ -39,10 +39,10 @@ def generate_cell_features(table, sandbox_path, table_file_name_santos, table_ch
         table_dirs_path = os.path.join(sandbox_path, table)
 
         dirty_df = read_csv(
-            os.path.join(table_dirs_path, dirty_files_name), low_memory=False
+            os.path.join(table_dirs_path, dirty_files_name), low_memory=False, data_type='str'
         )
         clean_df = read_csv(
-            os.path.join(table_dirs_path, clean_files_name), low_memory=False
+            os.path.join(table_dirs_path, clean_files_name), low_memory=False, data_type='str'
         )
 
         # TODO

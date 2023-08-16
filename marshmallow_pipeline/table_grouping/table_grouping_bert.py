@@ -44,7 +44,7 @@ def get_bert_embeddings(texts):
 # Function for parallel document processing
 def process_document(file):
     table_name = os.path.basename(file)
-    df = read_csv(file)
+    df = read_csv(file, low_memory=False, data_type='default')
     table_size = df.shape
     text = " ".join(df.values.astype(str).flatten())
     processed_text = preprocess_text(text)

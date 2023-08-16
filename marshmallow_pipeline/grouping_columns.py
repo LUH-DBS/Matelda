@@ -111,7 +111,7 @@ def column_grouping(
         logging.info("Table_group: %s", table_group)
         cols = {"col_value": [], "table_id": [], "table_path": [], "col_id": []}
         for table in table_grouping_dict[table_group]:
-            df = read_csv(os.path.join(path, table))
+            df = read_csv(os.path.join(path, table), low_memory=False, data_type='default')
             for col_idx, col in enumerate(df.columns):
                 cols["col_value"].append(df[col].tolist())
                 cols["table_id"].append(hashlib.md5(table.encode()).hexdigest())

@@ -8,7 +8,6 @@ import subprocess
 import time
 
 from marshmallow_pipeline.table_grouping.table_grouping_bert import group_tables
-from marshmallow_pipeline.utils.read_data import read_csv
 
 import networkx.algorithms.community as nx_comm
 import pandas as pd

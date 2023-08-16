@@ -17,7 +17,7 @@ def value_normalizer(value: str) -> str:
     return value
 
 
-def read_csv(path: str, low_memory: bool = False) -> pd.DataFrame:
+def read_csv(path: str, low_memory: bool = False, data_type: str = 'default') -> pd.DataFrame:
     """
     This method reads a table from a csv file path,
     with pandas default null values and str data type
@@ -30,10 +30,20 @@ def read_csv(path: str, low_memory: bool = False) -> pd.DataFrame:
     """
     logging.info("Reading table, name: %s", path)
 
-    return (
-        pd.read_csv(
-            path, sep=",", header="infer", low_memory=low_memory, encoding="latin-1"
-        )
-        .applymap(lambda x: value_normalizer(x) if isinstance(x, str) else x)
+    if data_type == 'default':
+        return (
+            pd.read_csv(
+                path, sep=",", header="infer", low_memory=low_memory, encoding="latin-1"
+            )
+            .applymap(lambda x: value_normalizer(x) if isinstance(x, str) else x)
 
-    )
+        )
+    elif data_type == 'str':
+        return (
+            pd.read_csv(
+                path, sep=",", header="infer", low_memory=low_memory, encoding="latin-1", dtype=str
+            )
+            .applymap(lambda x: value_normalizer(x) if isinstance(x, str) else x)
+
+        )
+

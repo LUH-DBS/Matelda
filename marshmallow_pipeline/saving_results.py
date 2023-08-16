@@ -198,7 +198,7 @@ def get_tables_dict(init_tables_dict, sandbox_path, dirty_file_names, clean_file
             table_file_name_santos = init_tables_dict[table]
             table_id = hashlib.md5(table_file_name_santos.encode()).hexdigest()
             table_df = read_csv(
-                os.path.join(table_path, dirty_file_names), low_memory=False
+                os.path.join(table_path, dirty_file_names), low_memory=False, data_type='str'
             )
             all_tables_dict[table_id] = {
                 "name": table,
