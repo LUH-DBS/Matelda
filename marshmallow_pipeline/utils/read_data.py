@@ -41,9 +41,8 @@ def read_csv(path: str, low_memory: bool = False, data_type: str = 'default') ->
     elif data_type == 'str':
         return (
             pd.read_csv(
-                path, sep=",", header="infer", low_memory=low_memory, encoding="latin-1", dtype=str
+                path, sep=",", header="infer", low_memory=low_memory, encoding="latin-1", dtype=str, keep_default_na=False
             )
             .applymap(lambda x: value_normalizer(x) if isinstance(x, str) else x)
-
         )
 

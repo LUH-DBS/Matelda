@@ -85,7 +85,10 @@ def get_tables_features(base_path, documents, batch_size=5):
         logging.debug(f"Processing batch {i} to {i+batch_size}")
         batch_texts = documents[i: i+batch_size]
         batch_embeddings = get_bert_embeddings(batch_texts)
-        embeddings.extend(batch_embeddings.tolist())
+        if len(batch_embeddings.shape) == 1:
+            embeddings.extend([batch_embeddings.tolist()])
+        else:
+            embeddings.extend(batch_embeddings.tolist())
 
     # Convert the list to numpy array
     embeddings = np.vstack(embeddings)
