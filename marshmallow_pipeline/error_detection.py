@@ -165,6 +165,7 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, 
             key_temp = cell_cluster_cells_dict["key_temp"]
 
             samples_dict, cell_clustering_df = sampling(cell_clustering_df, X_temp, y_temp, value_temp, n_cores)
+            logging.info("Start labeling for cluster %s", str(cell_clustering_df["col_cluster"].values[0]))
             samples_dict = labeling(samples_dict)
             universal_samples = {}
             logging.debug("len samples: %s", str(len(samples_dict["cell_cluster"])))
@@ -198,6 +199,7 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, 
             X_train, y_train, X_test, y_test, y_cell_ids = get_train_test_sets(
                 X_temp, y_temp, samples_dict, cell_clustering_df
             )
+            logging.info("start classification for cluster %s", str(cell_clustering_df["col_cluster"].values[0]))
             predicted = classify(X_train, y_train, X_test)
     except Exception as e:
         logging.error(
@@ -268,10 +270,10 @@ def error_detector(
         logging.info("Cell Clustering")
         start_time = time.time()
         col_group_file_names = [file_name for file_name in os.listdir(col_groups_dir) if ".pickle" in file_name]
-        # n_processes = min((len(col_group_file_names), os.cpu_count()))
+        n_processes = min((len(col_group_file_names), os.cpu_count()))
         # logging.debug("Number of processes: %s", str(n_processes))
 
-        with multiprocessing.Pool(initializer=cluster_column_group_init, initargs=(col_groups_dir, df_n_labels, features_dict), processes=n_cores) as pool:
+        with multiprocessing.Pool(initializer=cluster_column_group_init, initargs=(col_groups_dir, df_n_labels, features_dict), processes=1) as pool:
             table_clusters = []
             cell_cluster_cells_dict_all = {}
             cell_clustering_dict_all = {}
@@ -333,7 +335,7 @@ def error_detector(
             table_clusters.append(table_cluster)
             col_clusters.append(col_cluster)
 
-    with multiprocessing.Pool(initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk)) as pool:
+    with multiprocessing.Pool(processes=1,initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk)) as pool:
         original_data_keys = []
         unique_cells_local_index_collection = {}
         predicted_all = {}

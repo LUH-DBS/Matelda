@@ -17,9 +17,9 @@ from marshmallow_pipeline.saving_results import get_all_results
 from marshmallow_pipeline.utils.loading_results import \
     loading_columns_grouping_results
 
-def main(labeling_budget):
+def main(labeling_budget, execution):
     configs = ConfigParser()
-    configs.read("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/config.ini")
+    configs.read("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/config-dgov.ini")
     # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
@@ -29,7 +29,7 @@ def main(labeling_budget):
     tables_path = os.path.join(sandbox_path, configs["DIRECTORIES"]["tables_dir"])
 
     experiment_output_path = os.path.join(
-        configs["DIRECTORIES"]["output_dir"],
+        configs["DIRECTORIES"]["output_dir"] + f"_{execution}",
         "_"
         + exp_name
         + "_"
@@ -138,6 +138,8 @@ def main(labeling_budget):
     logging.info("Table grouping is done")
     logging.info("I need at least 2 labeled cells per table group to work! Thant means you need to label {} cells:".format(2*len(table_grouping_dict)))
     print("I need at least 2 labeled cells per table group to work! Thant means you need to label {} cells:".format(2*len(table_grouping_dict)))
+    if labeling_budget < 2*len(table_grouping_dict):
+        labeling_budget = 2*len(table_grouping_dict)
     # Column grouping
     if not column_grouping_res_available:
         logging.info("Column grouping results are not available")
@@ -240,5 +242,5 @@ def main(labeling_budget):
         clean_files_name
     )
 
-if __name__ == "__main__":
-    main(1482)
+# if __name__ == "__main__":
+#     main(783, 1)
