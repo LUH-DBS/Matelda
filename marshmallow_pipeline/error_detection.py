@@ -21,6 +21,7 @@ from marshmallow_pipeline.cell_grouping_module.sampling_labeling import (
     labeling,
     sampling,
     update_n_labels,
+    update_samples_dict_with_unlabeled_clusters,
 )
 from marshmallow_pipeline.classification_module.classifier import classify
 from marshmallow_pipeline.classification_module.get_train_test import (
@@ -253,6 +254,7 @@ def error_detector(
         features_dict = get_cells_features(
             sandbox_path, output_path, table_charset_dict, tables_dict, dirty_files_name, clean_files_name, save_mediate_res_on_disk, pool
         )
+
     else:
         logging.info("Generating cell features disabled, loading from previous results from disk")
         with open(os.path.join(output_path, "features.pickle"), "rb") as pickle_file:

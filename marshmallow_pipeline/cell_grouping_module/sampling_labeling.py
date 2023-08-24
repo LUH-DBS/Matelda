@@ -1,6 +1,7 @@
 import copy
 import logging
 import math
+from random import shuffle
 from statistics import mode
 
 import numpy as np
@@ -66,11 +67,12 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
         "errors_per_cluster": [],
     }
     n_cell_clusters_per_col_cluster = min(len(x), n_cell_clusters_per_col_cluster)
+    n_cell_clusters_per_col_cluster_doubled = min(len(x), n_cell_clusters_per_col_cluster*2)
     logging.debug(
-        "KMeans - n_cell_clusters_per_col_cluster: %s", n_cell_clusters_per_col_cluster
+        "KMeans - n_cell_clusters_per_col_cluster: %s", n_cell_clusters_per_col_cluster_doubled
     )
     clustering = MiniBatchKMeans(
-        n_clusters=int(n_cell_clusters_per_col_cluster),
+        n_clusters=int(n_cell_clusters_per_col_cluster_doubled),
         batch_size=256 * n_cores,
     ).fit(x)
     set_clustering_labels = set(clustering.labels_)
@@ -135,6 +137,9 @@ def update_n_labels(cell_clustering_recs):
     elif remaining_labels < 0:
         logging.info("remaining_labels < 0 - remaining_labels: {}".format(remaining_labels))
         logging.info("I need more labels :)")
+        cell_clustering_df["n_labels_updated"] = cell_clustering_df[
+        "n_init_labels"
+    ]
     logging.info("Update n_labels - remaining_labels: {}".format(remaining_labels))
     return cell_clustering_df
 
@@ -264,6 +269,15 @@ def update_samples_dict(cell_clustering_dict, samples_dict, cluster, \
     samples_dict["samples_indices_global"].append(samples_indices_global)
     return cell_clustering_dict, samples_dict
 
+def update_samples_dict_with_unlabeled_clusters(samples_dict, cluster):
+    samples_dict["cell_cluster"].append(cluster)
+    samples_dict["samples"].append([])
+    samples_dict["n_samples"].append(0)
+    samples_dict["labels"].append([])
+    samples_dict["dirty_cell_values"].append([])
+    samples_dict["samples_indices_cell_group"].append([])
+    samples_dict["samples_indices_global"].append([])
+    return samples_dict
 
 def sampling(cell_clustering_dict, x, y, dirty_cell_values, n_cores):
     logging.debug("Sampling")
@@ -279,10 +293,12 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values, n_cores):
 
     cells_per_cluster = cell_clustering_dict["cells_per_cluster"].values[0]
     updated_cells_per_cluster = cell_clustering_dict["cells_per_cluster"].values[0]
-    labeled_clusters = {
-        key: value
-        for key, value in cells_per_cluster.items()
-    }
+    keys = list(cells_per_cluster.keys())
+    shuffle(keys)
+    shuffled_clusters_items = {k: cells_per_cluster[k] for k in keys}
+    midpoint = len(shuffled_clusters_items) // 2
+    labeled_clusters = dict(list(shuffled_clusters_items.items())[:midpoint])
+    unlabeled_clusters = dict(list(shuffled_clusters_items.items())[midpoint:])
     sorted_clusters = sorted(labeled_clusters, key=lambda k: len(labeled_clusters[k]), reverse=True)
     logging.debug("Sampling - sorted_clusters: {}".format(sorted_clusters))
     cell_cluster_n_labels = {k: 0 for k in cells_per_cluster.keys()}
@@ -299,9 +315,13 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values, n_cores):
             
     updated_labeled_clusters = {
         key: value
-        for key, value in updated_cells_per_cluster.items()
+        for key, value in updated_cells_per_cluster.items() if key not in unlabeled_clusters.keys()
     }
-
+    # max_key = max(updated_labeled_clusters.keys())
+    # updated_unlabeled_clusters = {}
+    # for key, value in unlabeled_clusters.items():
+    #     updated_unlabeled_clusters[max_key+1] = value
+    #     max_key += 1
     for cluster in updated_labeled_clusters:
         samples_feature_vectors, samples_labels, \
         samples_indices_global, samples_indices_cell_group, dirty_cell_values_cluster = \
@@ -316,6 +336,10 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values, n_cores):
                         samples_feature_vectors, samples_labels, samples_indices_global, \
                             samples_indices_cell_group, dirty_cell_values_cluster, \
                                 updated_cells_per_cluster, updated_cell_cluster_n_labels)
+    
+    # cell_clustering_dict["cells_per_cluster"].values[0].update(updated_unlabeled_clusters)
+    for cluster in unlabeled_clusters:
+        samples_dict = update_samples_dict_with_unlabeled_clusters(samples_dict, cluster)
         
     logging.debug("Sampling done")
     logging.debug("********cell_cluster: %s", samples_dict["cell_cluster"])

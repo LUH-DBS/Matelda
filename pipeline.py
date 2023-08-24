@@ -19,7 +19,7 @@ from marshmallow_pipeline.utils.loading_results import \
 
 def main(labeling_budget, execution):
     configs = ConfigParser()
-    configs.read("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/config-dgov.ini")
+    configs.read("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/config.ini")
     # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
@@ -242,5 +242,5 @@ def main(labeling_budget, execution):
         clean_files_name
     )
 
-# if __name__ == "__main__":
-#     main(783, 1)
+if __name__ == "__main__":
+    main(66, 1)

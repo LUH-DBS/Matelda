@@ -4,7 +4,7 @@ import pipeline
 
 executions = range(1, 6)
 labeling_budget = [0.10, 0.25, 0.5, 0.75, 1, 2, 3]
-n_cols = 768
+n_cols = 93
 for i in range (5, 21, 5):
     labeling_budget.append(i)
 
