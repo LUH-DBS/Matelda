@@ -78,13 +78,12 @@ def test_col_group_test_cells(res_base_path, mediate_file_path):
                             print("AssertionError test_col_group_test_cells: n_cells = {} != {}".format(n_cells, scores["tp"] + scores["fp"] + scores["fn"] + scores["tn"]))
                             raise AssertionError
                     
-scores_all_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/output-test-quintet/_otg_Quintet_7_labels/results/scores_all.pickle"
-res_base_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/output-test-quintet/_otg_Quintet_7_labels/results"
-mediate_file_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/output-test-quintet/_otg_Quintet_7_labels/mediate_files"
+scores_all_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/Quintet-test-Exp/output_quintet_1/_test_Quintet_66_labels/results/scores_all.pickle"
+res_base_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/Quintet-test-Exp/output_quintet_1/_test_Quintet_66_labels/results"
+mediate_file_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/Quintet-test-Exp/output_quintet_1/_test_Quintet_66_labels/mediate_files"
 with open(scores_all_path, 'rb') as f:
         scores_all = pickle.load(f)
-
-# test_n_cells_evaluated(scores_all, 7589442)
+test_n_cells_evaluated(scores_all, 199772)
 test_measures_calculated(scores_all)
 test_col_groups_res(res_base_path, scores_all)
 test_col_group_test_cells(res_base_path, mediate_file_path)
