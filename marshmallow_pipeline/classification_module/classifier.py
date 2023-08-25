@@ -14,7 +14,6 @@ def classify(X_train, y_train, X_test):
         predicted = [1] * len(X_test)
     else:
         gbc = GradientBoostingClassifier(n_estimators=100)
-        clf = make_pipeline(gbc)
-        clf.fit(np.asarray(X_train), np.asarray(y_train))
-        predicted = clf.predict(X_test)
+        gbc.fit(X_train, y_train)
+        predicted = gbc.predict(X_test)
     return predicted

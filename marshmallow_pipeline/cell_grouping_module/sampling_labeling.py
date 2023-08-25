@@ -149,7 +149,7 @@ def split_cell_cluster(cell_cluster_n_labels, n_cores, x_cluster, y_cluster, col
     try:
         clustering = MiniBatchKMeans(n_clusters=min(len(x_cluster), cell_cluster_n_labels[cluster]), batch_size=256 * n_cores).fit(x_cluster)
         set_clustering_labels = set(clustering.labels_)
-        logging.debug("inner cluster splitting - n_clusters: %s", len(set_clustering_labels))
+        logging.info("inner cluster splitting - n_clusters: %s", len(set_clustering_labels))
         clustering_labels = clustering.labels_
         if len(set_clustering_labels) < cell_cluster_n_labels[cluster]:
             return updated_cells_per_cluster, updated_cell_cluster_n_labels

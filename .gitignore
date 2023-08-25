@@ -15,7 +15,14 @@ output-dgov
 data-git
 output*
 config-*
-
+ocg-otg
+data-toy
+Kaggle*
+git-2-tables
+Quintet*
+dgov*
+data-
+Dgov*
 # Created by https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,visualstudiocode,jetbrains+all,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks,visualstudiocode,jetbrains+all,vim
 
