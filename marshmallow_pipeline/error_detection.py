@@ -25,6 +25,7 @@ from marshmallow_pipeline.cell_grouping_module.sampling_labeling import (
 from marshmallow_pipeline.classification_module.classifier import classify
 from marshmallow_pipeline.classification_module.get_train_test import (
     get_train_test_sets,
+    get_train_test_sets_per_col,
 )
 
 if not sys.warnoptions:
@@ -42,7 +43,7 @@ def cluster_column_group_init(col_groups_dir, df_n_labels, features_dict):
     global features_dict_glob
     features_dict_glob = features_dict
 
-def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk):
+def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode):
     global df_n_labels_glob
     df_n_labels_glob = df_n_labels
 
@@ -60,6 +61,9 @@ def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_
 
     global save_mediate_res_on_disk_glob
     save_mediate_res_on_disk_glob = save_mediate_res_on_disk
+
+    global classification_mode_glob
+    classification_mode_glob = classification_mode
 
 def get_cells_in_cluster(group_df, col_cluster, features_dict):
     original_data_keys_temp = [] # (table_id, col_id, cell_idx, cell_value)
@@ -147,7 +151,7 @@ def col_clu_cell_clustering(
     return cell_cluster_cells_dict, cell_clustering_dict
 
 
-def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, n_cores):
+def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode):
     logging.info(
         "Sampling and labeling cluster %s",
         str(cell_clustering_df["col_cluster"].values[0]),
@@ -196,11 +200,17 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, 
                     X_labeled_by_user.extend(samples_dict["samples"][cell_cluster_idx])
                     y_labeled_by_user.extend(samples_dict["labels"][cell_cluster_idx])
             logging.debug("len X_labeled_by_user: %s", str(len(X_labeled_by_user)))
-            X_train, y_train, X_test, y_test, y_cell_ids = get_train_test_sets(
-                X_temp, y_temp, samples_dict, cell_clustering_df
-            )
-            logging.info("start classification for cluster %s", str(cell_clustering_df["col_cluster"].values[0]))
-            predicted = classify(X_train, y_train, X_test)
+            if classification_mode == 0:
+                X_train, y_train, X_test, y_test, y_cell_ids = get_train_test_sets(
+                    X_temp, y_temp, samples_dict, cell_clustering_df
+                )
+                logging.info("start classification for cluster %s", str(cell_clustering_df["col_cluster"].values[0]))
+                predicted = classify(X_train, y_train, X_test)
+            else:
+                X_train, y_train, X_test, y_test, y_cell_ids, predicted = get_train_test_sets_per_col(
+                    X_temp, y_temp, samples_dict, cell_clustering_df, cell_cluster_cells_dict["datacells_uids"]
+                )
+
     except Exception as e:
         logging.error(
             "Error in cluster %s", str(cell_clustering_df["col_cluster"].values[0])
@@ -240,7 +250,8 @@ def error_detector(
     n_cores,
     cell_clustering_res_available,
     save_mediate_res_on_disk,
-    pool
+    pool,
+    classification_mode
 ):
     logging.info("Starting error detection")
 
@@ -334,8 +345,9 @@ def error_detector(
         for col_cluster in cell_cluster_cells_dict_all[table_cluster]:
             table_clusters.append(table_cluster)
             col_clusters.append(col_cluster)
-
-    with multiprocessing.Pool(processes=1,initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk)) as pool:
+    logging.info("start pool")
+    with multiprocessing.Pool(processes=1,initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode)) as pool:
+        logging.info("pool started")
         original_data_keys = []
         unique_cells_local_index_collection = {}
         predicted_all = {}
@@ -474,6 +486,9 @@ def test(col_cluster, table_cluster):
     global save_mediate_res_on_disk_glob
     save_mediate_res_on_disk = save_mediate_res_on_disk_glob
 
+    global classification_mode_glob
+    classification_mode = classification_mode_glob
+
     cell_clustering_df = all_cell_clusters_records[
         (all_cell_clusters_records["table_cluster"] == table_cluster)
         & (all_cell_clusters_records["col_cluster"] == col_cluster)
@@ -482,7 +497,7 @@ def test(col_cluster, table_cluster):
         col_cluster
     ]
     cell_cluster_sampling_labeling_dict = cell_cluster_sampling_labeling(
-        cell_clustering_df, cell_cluster_cells_dict, n_cores
+        cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode
     )
     if save_mediate_res_on_disk:
         cell_clustering_dir = os.path.join(output_path, "cell_clustering")

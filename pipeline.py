@@ -69,6 +69,7 @@ def main(labeling_budget, execution):
     )
     cell_clustering_alg = configs["CELL_GROUPING"]["cell_clustering_alg"]
     cell_clustering_res_available = bool(int(configs["CELL_GROUPING"]["cell_clustering_res_available"]))
+    classification_mode = int(configs["CELL_GROUPING"]["classification_mode"])
 
     dirty_files_name = configs["DIRECTORIES"]["dirty_files_name"]
     clean_files_name = configs["DIRECTORIES"]["clean_files_name"]
@@ -199,7 +200,8 @@ def main(labeling_budget, execution):
         n_cores,
         cell_clustering_res_available,
         save_mediate_res_on_disk,
-        pool
+        pool,
+        classification_mode
     )
 
     time_end = time.time()
@@ -242,5 +244,5 @@ def main(labeling_budget, execution):
         clean_files_name
     )
 
-# if __name__ == "__main__":
-#     main(783, 1)
+if __name__ == "__main__":
+    main(20*66, 1)
