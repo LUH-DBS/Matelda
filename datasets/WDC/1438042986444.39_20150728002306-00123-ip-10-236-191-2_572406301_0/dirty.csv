@@ -1,0 +1,247 @@
+0,1,2
+ERKEK,KADIN,GENEL
+Medicana * 40 Yaş Altı Erkek Check-up,Medicana * 40 Yaş Altı Kadın Check-up,Medicana * Ekonomik Check-up
+Check-up Muayene,Check-up Muayene,Check-up Muayene
+Açlık Kan Şekeri,Kadın Hastalıklar Muayene,Açlık Kan Şekeri
+Albumin,Açlık Kan Şekeri,ALT (SGPT)
+Alkalen fosfataz (ALP),Albumin,HDL- Kolesterol
+ALT (SGPT),Alkalen fosfataz (ALP),Kan sayımı
+Anti-HBs,ALT (SGPT),Kreatinin
+Anti-HCV,Anti-HBs,LDL-Kolesterol
+AST(SGOT),Anti-HCV,Sedimentasyon 1h
+CRP,AST(SGOT),Tam idrar analizi
+Gamma-Glutamyl Transferaz (GGT),CRP,Total Kolesterol
+HBs Ag,Gamma-Glutamyl Transferaz (GGT),Akciğer grafisi P.A. (tek yön)
+HDL- Kolesterol,HBs Ag,Elektrokardiyogram (EKG)
+HIV Ag/Ab Combo,HDL- Kolesterol,
+Kan sayımı,HIV Ag/Ab Combo,
+Kreatinin,Kan saym,Medicana * Standart Check-up
+LDH,Kreatinin,Check-up Muayene
+LDL-Kolesterol,LDH,Açlık Kan Şekeri
+Sedimentasyon 1h,LDL-Kolesterol,Alkalen fosfataz (ALP)
+Tam idrar analizi,Sedimentasyon 1h,ALT (SGPT)
+Total Kolesterol,Tam idrar analizi,Anti-HBs
+Trigliserid,Total Kolesterol,AST(SGOT)
+TSH,Trigliserid,HBs Ag
+Üre,TSH,HDL- Kolesterol
+Ürik asit,Üre,Kan sayımı
+Elektrokardiyogram (EKG),Ürik asit,Kreatinin
+Akciğer grafisi P.A. (tek yön),Servikal veya vajinal sitoloji yayma preparatlar (PAP smear) ile,LDL-Kolesterol
+Tüm abdomen US,Akciğer grafisi P.A. (tek yön),Sedimentasyon 1h
+,Elektrokardiyogram (EKG),Serbest T4 (FT4)
+,Tüm abdomen US,Tam idrar analizi
+Medicana * Yönetici Erkek Check-up,,Total Kolesterol
+Check-up Muayene,,Trigliserid
+Üroloji Muayene,Medicana * Yönetici Kadın Check-up,TSH
+Göz Muayene,Check-up Muayene,Üre
+Kardiyoloji Muayene,Kadın Hastalıklar Muayene,Ürik asit
+Açlık Kan Şekeri,Kardiyoloji Muayene,Akciğer grafisi P.A. (tek yön)
+Albumin,Göz Muayene,Elektrokardiyogram (EKG)
+Alkalen fosfataz (ALP),Açlık Kan Şekeri,Tüm abdomen US
+ALT (SGPT),Albumin,
+Anti-HBs,Alkalen fosfataz (ALP),
+Anti-HCV,ALT (SGPT),
+AST(SGOT),Anti-HBs,
+Gamma-Glutamyl Transferaz (GGT),Anti-HCV,Medicana * Okul Çağı Sağlık Taraması (Junior Check-up)
+HbA1C,AST(SGOT),Poliklinik muayene (Çocuk Hastalıkları)
+HBs Ag,Ferritin,Poliklinik muayene (Göz Hastalıkları)
+HDL- Kolesterol,Gamma-Glutamyl Transferaz (GGT),Poliklinik muayene (KBB)
+HIV Ag/Ab Combo,HbA1C,Poliklinik muayene (Diş ve Ağız Sağlığı)
+Kan sayımı,HBs Ag,Poliklinik muayene (Çocuk Kardiyolojisi)
+Kreatinin,HDL- Kolesterol,Kan sayımı
+LDH,HIV Ag/Ab Combo,Açlık Kan Şekeri
+LDL-Kolesterol,Kalsiyum (Total),Üre
+PSA serbest,Kalsiyum (Total),Kreatinin
+PSA total,Kan saym,ALT
+Sedimentasyon 1h,Kreatinin,AST
+Serbest T3 (FT3),LDH,Potasyum
+Serbest T4 (FT4),LDL-Kolesterol,Na
+Tam idrar analizi,Serbest T3 (FT3),Ca
+Total Kolesterol,Serbest T4 (FT4),İdrar Kültürü
+Trigliserid,Tam idrar analizi,Gaitada Parazit Aranmas
+TSH,Total Kolesterol,Tam idrar analizi
+Üre,Trigliserid,Transtorasik Ekokardiyografi
+Ürik asit,TSH,Tüm abdomen US
+Akciğer grafisi P.A. (tek yön),Üre,
+Elektrokardiyogram (EKG),Ürik asit,Medicana * Kardiyoloji Check-up
+Transtorasik Ekokardiyografi,Vitamin B12,Kardiyoloji Muayene
+Kardiyovasküler Efor Testi,Servikal veya vajinal sitoloji yayma preparatlar (PAP smear) ile,Açlık Kan Şekeri
+Tüm abdomen US,Mamografi (iki tarafl),CRP
+,Meme US (bilateral),HDL- Kolesterol
+,Tüm abdomen US,Homosistein
+Medicana * 40 Yaş Üstü Erkek Check-up,Akciğer grafisi P.A. (tek yön),Kan sayımı
+Check-up Muayene,Elektrokardiyogram (EKG),Kreatin kinaz (CK)
+Üroloji Muayene,Transtorasik Ekokardiyografi,Kreatin kinaz-MB (CK-MB)
+Kardiyoloji Muayene,Kardiyovasküler Efor Testi,Kreatinin
+Göz Muayene,,LDL-Kolesterol
+Açlk Kan Şekeri,,Sedimentasyon 1h
+Albumin,Medicana * 40 Yaş Üstü Kadın Check-up,Total Kolesterol
+Alkalen fosfataz (ALP),Check-up Muayene,Trigliserid
+ALT (SGPT),Kadın Hastalklar Muayene,TSH
+Anti-HBs,Kardiyoloji Muayene,Üre
+Anti-HCV,Göz Muayene,Elektrokardiyogram (EKG)
+aPTT,Açlk Kan Şekeri,Transtorasik ekokardiyografi
+AST(SGOT),Albumin,Kardiyovasküler stres test
+CRP,Alkalen fosfataz (ALP),
+Gaitada gizli kan,ALT (SGPT),
+Gamma-Glutamyl Transferaz (GGT),Anti-HBs,Medicana * Kardiyoloji Check-up (Koroner BT Anjio İlaveli)
+HbA1C,Anti-HCV,Kardiyoloji Muayene
+HBs Ag,AST(SGOT),Açlık Kan Şekeri
+HDL- Kolesterol,CRP,CRP
+HIV Ag/Ab Combo,Ferritin,HDL- Kolesterol
+Homosistein,Folik Asit,Homosistein
+Kan sayımı,Fosfor,Kan sayımı
+Kan ekeri (tokluk) 2 saatlik,Gaitada gizli kan,Kreatin kinaz (CK)
+Kreatinin,Gamma-Glutamyl Transferaz (GGT),Kreatin kinaz-MB (CK-MB)
+LDH,HbA1C,Kreatinin
+LDL-Kolesterol,HBs Ag,LDL-Kolesterol
+Potasyum,HDL- Kolesterol,Sedimentasyon 1h
+Protrombin Zaman,HIV Ag/Ab Combo,Total Kolesterol
+PSA serbest,Homosistein,Trigliserid
+PSA total,Kalsiyum (Total),TSH
+Sedimentasyon 1h,Kan sayımı,Üre
+Serbest T3 (FT3),Kan Şekeri (tokluk) 2 saatlik,Elektrokardiyogram (EKG)
+Serbest T4 (FT4),Kreatinin,Transtorasik ekokardiyografi
+Tam idrar analizi,LDH,Kardiyovasküler stres test
+Trigliserid,LDL-Kolesterol,BT koroner anjiografisi
+TSH,Potasyum,
+Total Kolesterol,Sedimentasyon 1h,
+Üre,Serbest T3 (FT3),
+Ürik asit,Serbest T4 (FT4),
+Tiroid US,Tam idrar analizi,
+Tüm abdomen US,Total Kolesterol,
+Akciğer grafisi P.A. (tek yön),Trigliserid,
+Elektrokardiyogram (EKG),TSH,
+Transtorasik Ekokardiyografi,Üre,
+Kardiyovasküler Efor Testi,Ürik asit,
+,Vitamin B12,
+,Servikal veya vajinal sitoloji yayma preparatlar (PAP smear) ile,
+Medicana * VIP Executive Erkek Check-up,Mamografi (iki tarafl),
+Check-up Muayene,Meme US (bilateral),
+Üroloji Muayene,Tiroid US,
+Göz Muayene,Tüm abdomen US,
+Kardiyoloji Muayene,Akciger grafisi P.A. (tek yön),
+Açlk Kan Şekeri,Elektrokardiyogram (EKG),
+AFP,Transtorasik Ekokardiyografi,
+Albumin,Kardiyovasküler Efor Testi,
+Alkalen fosfataz (ALP),,
+ALT (SGPT),,
+Anti-HBs,Medicana * VIP Executive Kadın Check-up,
+Anti-HCV,Check-up Muayene,
+aPTT,Kadın Hastalklar Muayene,
+AST(SGOT),Kardiyoloji Muayene,
+CA 19-9,Göz Muayene,
+CEA,Açlık Kan Şekeri,
+CRP,AFP,
+Ferritin,Albumin,
+Gaitada gizli kan,Alkalen fosfataz (ALP),
+Gamma-Glutamyl Transferaz (GGT),ALT (SGPT),
+HbA1C,Anti-HBs,
+HBs Ag,Anti-HCV,
+HDL- Kolesterol,aPTT,
+HIV Ag/Ab Combo,AST(SGOT),
+Homosistein,CA 125,
+Kalsiyum (Total),CA 15-3,
+Kan sayımı,CA 19-9,
+Kan Şekeri (tokluk) 2 saatlik,CEA,
+Kreatinin,CRP,
+LDH,Ferritin,
+LDL-Kolesterol,Gaitada gizli kan,
+Potasyum,HbA1C,
+Protrombin Zaman,HBs Ag,
+PSA serbest,HDL- Kolesterol,
+PSA total,HIV Ag/Ab Combo,
+Sedimentasyon 1h,Kalsiyum (Total),
+Serbest T3 (FT3),Kan saym,
+Serbest T4 (FT4),Kan ekeri (tokluk) 2 saatlik,
+Sodyum,Kreatinin,
+Tam idrar analizi,LDH,
+Total Kolesterol,LDL-Kolesterol,
+Trigliserid,Protrombin Zaman,
+TSH,Sedimentasyon 1h,
+Üre,Serbest T3 (FT3),
+Ürik asit,Serbest T4 (FT4),
+Vitamin B12,Sodyum,
+Akciğer grafisi P.A. (tek yön),Tam idrar analizi,
+Tiroid US,Total Kolesterol,
+Tüm abdomen US,Trigliserid,
+Elektrokardiyogram (EKG),TSH,
+Transtorasik Ekokardiyografi,Üre,
+BT koroner anjiografisi,Ürik asit,
+Normal oda ücreti 1. snf,Vitamin B12,
+,Akciğer grafisi P.A. (tek yön),
+,Servikal veya vajinal sitoloji yayma preparatlar (PAP smear) ile,
+65 YAŞ ÜSTÜ ERKEK GERİATİ CHECK-UP,Elektrokardiyogram (EKG),
+İç Hastalıklar Muayene,Transtorasik ekokardiyografi,
+Üroloji Muayene,BT koroner anjiografisi,
+Göz Hastalklar Muayene,Mamografi (iki tarafl),
+Nöroloji Muayene,Meme US (bilateral),
+Kardiyoloji Muayene,Tiroid US,
+Kan sayımı,Tüm abdomen US,
+Sedimentasyon 1h,Normal oda ücreti 1. snf,
+Protrombin Zaman,,
+aPTT,,
+Açlk Kan Şekeri,65 YAŞ ÜSTÜ KADIN GERİATRİ CHECK-UP,
+Kan Şekeri (tokluk) 2 saatlik,İç Hastalıklar Muayene,
+HbA1C,Kadn Hast. Ve Dogum Muayene,
+İnsulin (Bazal),Göz Muayene,
+Üre,Genel Cerrahi Muayene,
+Kreatinin,Kardiyoloji Muayene,
+Ürik asit,Nöroloji Muayene,
+Protein total,Kan sayımı,
+Albumin,Sedimentasyon 1h,
+Total Kolesterol,Protrombin Zaman,
+HDL- Kolesterol,aPTT,
+LDL-Kolesterol,Açlk Kan Şekeri,
+Trigliserid,Kan Şekeri (tokluk) 2 saatlik,
+Alkalen fosfataz (ALP),HbA1C,
+LDH,insulin (Bazal),
+AST(SGOT),Üre,
+ALT (SGPT),Kreatinin,
+Gamma-Glutamyl Transferaz (GGT),Ürik asit,
+Sodyum,Protein total,
+Potasyum,Albumin,
+Fosfor,Total Kolesterol,
+Kalsiyum (Total),HDL- Kolesterol,
+Magnezyum,LDL-Kolesterol,
+Demir,Trigliserid,
+Demir bağlama kapasitesi total (TIBC),Alkalen fosfataz (ALP),
+Homosistein,LDH,
+CRP,AST(SGOT),
+RF (Kantitatif),ALT (SGPT),
+"ASO, Kantitatif",Gamma-Glutamyl Transferaz (GGT),
+Tam idrar analizi,Sodyum,
+Gaitada gizli kan,Potasyum,
+TSH,Fosfor,
+Serbest T3 (FT3),Kalsiyum (Total),
+Serbest T4 (FT4),Magnezyum,
+Paratiroid Hormonu (PTH\ intakt),Demir,
+Ferritin,Demir bağlama kapasitesi total,
+CEA,Homosistein,
+Vitamin B12,CRP,
+Folik Asit,RF (Kantitatif),
+25-Hidroksivitamin D3,"ASO, Kantitatif",
+CA 19-9,Tam idrar analizi,
+"Testosteron, serbest",Gaitada gizli kan,
+"Testosteron, total",TSH,
+PSA serbest,Serbest T3 (FT3),
+PSA total,Serbest T4 (FT4),
+Akciğer grafisi P.A. (tek yön),Paratiroid Hormonu (PTH\ intakt),
+Tüm abdomen US,Ferritin,
+MR Beyin,CEA,
+Mini mental durum testi,CA 125,
+Elektrokardiyogram (EKG),CA 15-3,
+Transtorasik Ekokardiyografi,Vitamin B12,
+Kardiyovasküler Efor Testi,Folik Asit,
+,25-Hidroksivitamin D3,
+,Servikal veya vajinal sitoloji yayma preparatlar (PAP smear) ile,
+,Akciğer grafisi P.A. (tek yön),
+,Tüm abdomen US,
+,Meme US (bilateral),
+,Mamografi (iki tarafl),
+,Mini mental durum testi,
+,MR Beyin,
+,Elektrokardiyogram (EKG),
+,Transtorasik Ekokardiyografi,
+,Kardiyovasküler Efor Testi,
+,,

@@ -1,0 +1,22 @@
+Description,Type,Target,Comments
+Tile creation crash,Crash,1.3.0,Possibly related to a model change/reset killing the listview delegate item that triggered the change
+Use MyDocs,Packaging,1.3.0,8 GB space in /home/user/MyDocs vs 2 GB in /home/user. Use fremantle patch.
+Use /opt/marble,Packaging,1.3.0,Required by Ovi store guidelines. See fremantle packaging.
+Monav dependency,Packaging,1.3.0,"Small and reliable, no point not to have it installed"
+Use Harmattan colors,Polishing,1.3.0,"Replace: Blue and gray in Navigation activity, lightsteelblue in hightlights"
+Improve visibility of position indicator,Polishing,1.3.0,"In the bottom right of the map: A bit larger, background or glow for distance text"
+Toolbar icon for offline toggle,Polishing,1.3.0,Currently using a non-toolbar theme icon
+Fix float item borders,Polishing,1.3.x,There are pixel errors
+quick Online toggle icon,Polishing,1.3.x,"Where useful, e.g. Routing activity. See Navigation activity"
+Consistent margins and spacing,Polishing,1.3.x,Bad example e.g. map theme selection in Preferences
+Add missing activity icons,Polishing,1.3.x,"Routing, Tracking and Navigation still use generic icons"
+QML Tile Creation Progress Item,Polishing,1.3.x,"QWidget version instantiated by MarbleMap, looks strange and is portrait only"
+Improve whitespace usage in Search/Routing,Polishing,1.3.x,"Use more space for the map whenever possible (e.g. no search result, no turn directions)"
+Remove via points,Feature,1.3.x,Currently deactivated as triggering it from the ViaPointEditor delegate affects the delegate itself (deletes it) which results in a segfault for some reason
+More voice commands,Feature,1.3.x,"Announce destination, GPS loss. Test whether concatenated commands (turn distance) work."
+Improve map matching,Feature,1.3.x,No turn instructions if direction and distance indicate that we're not following the route. Detect that a U-turn is needed and announce it.
+Voice installation progress,Polish,1.3.x,Use a progress bar to show the voice navigation speaker download/installation progress.
+Search result icons,Feature,1.3.x,Add an image provider for placemark icons and use it in search results
+Reverse geocoding for via points,Feature,1.3.x,"Use that instead of ""Point in map"""
+Jump to via point,Feature,1.3.x,Clicking on a via point in the via point editor should center on it
+Last target as route destination,Feature,1.3.x,Keep a model of last route targets and let the user choose from it when editing via points

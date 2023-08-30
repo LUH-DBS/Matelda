@@ -245,4 +245,4 @@ def main(labeling_budget, execution):
     )
 
 if __name__ == "__main__":
-    main(20*66, 1)
+    main(9, 1)

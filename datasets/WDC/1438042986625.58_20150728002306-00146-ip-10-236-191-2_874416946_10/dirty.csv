@@ -1,0 +1,23 @@
+Status,Project,Description,Contact
+DONE,KBlocks,Support for sounds,Mauricio Piacentini
+DONE,kdiamond,Drag jewels,Stefan Majewsky
+DONE,kdiamond,Support for untimed games,Stefan Majewsky
+DONE,KGoldrunner,"Add the Count game (17 levels), contributed by Steve Mann.",Ian Wadham
+DONE,Killbots,New app for 4.2,Parker Coates
+DONE,ksirk,Jabber based net game finding (initial version),Gaël de Chalendar
+DONE,ksirk,KHotNewStuff skins,Gaël de Chalendar
+DONE,ksirk,Map scrolling arrows,Gaël de Chalendar
+DONE,ksirk,Skins editor,Gaël de Chalendar
+DONE,ksirk,Use only names in skins instead of numeric ids,Gaël de Chalendar
+IN PROGRESS,KBreakOut,(Optional) fire on mouse click,Fela Winkelmolen
+IN PROGRESS,libkdegames,New highscore management system,Matt Williams
+TO DO,KBreakOut,Custom levelsets,Fela Winkelmolen
+TO DO,KBreakOut,KHotNewStuff support for themes,Fela Winkelmolen
+TO DO,KBreakOut,Sounds,Fela Winkelmolen
+TO DO,kdiamond,Optional OpenGL rendering,Stefan Majewsky
+TO DO,KGoldrunner,Improvement to sound support and themes,
+TO DO,KMahjongg,Support for sounds,Mauricio Piacentini
+TO DO,KNetWalk,Support for custom and non-square board sizes,Fela Winkelmolen
+TO DO,KSudoku,"Port of ""print game"" feature from old version",Paulo Roberto Cattai
+TO DO,KSudoku,Redesign of symbol themes,Paulo Roberto Cattai
+TO DO,KSudoku,Replace the core engine with a new version that will solve most bugs related to gameplay,Johannes Bergmeier

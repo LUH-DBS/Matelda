@@ -1,0 +1,1523 @@
+Paketti,Tilanne,Tiedosto,Kääntäjä,Ryhmä
+glibc,100% (1457t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+avahi,100% (165t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+tasksel,100% (2t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+tasksel,100% (2t;0f;0u),tasks/po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+tasksel,100% (27t;0f;0u),tasks/po/INTER/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+pam,100% (122t;0f;0u),po/ru.po,Yulia,trans-ru at lists dot fedoraproject dot org
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-java-awt/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-guile/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-java-qtjambi/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-gawk/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-sh/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (4t;0f;0u),gettext-tools/examples/hello-c++-kde/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-csharp-forms/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-c/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-pascal/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-clisp/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-objc-gnustep/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-tcl-tk/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-java-swing/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-objc/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-c-gnome/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-librep/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-csharp/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-c++-wxwidgets/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-java/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-python/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-smalltalk/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-objc-gnome/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-c++/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (3t;0f;0u),gettext-tools/examples/hello-perl/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (14t;0f;0u),gettext-tools/examples/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-c++-qt/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-ycp/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-tcl/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-c++-gnome/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (2t;0f;0u),gettext-tools/examples/hello-php/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (6t;0f;0u),gettext-tools/examples/hello-c-gnome3/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gettext,100% (621t;0f;0u),gettext-tools/po/ru.po,Pavel Maryanov,gnu at mx dot ru
+gettext,100% (41t;0f;0u),gettext-runtime/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gconf,100% (497t;0f;0u),po/ru.po,Yuri Kozlov,gnome-cyr at gnome dot org
+gvfs,100% (606t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+vim,100% (1882t;0f;0u),src/po/ru.cp1251.po,Sergey Alyoshin,
+vim,100% (1882t;0f;0u),src/po/ru.po,Sergey Alyoshin,
+pulseaudio,100% (551t;0f;0u),po/ru.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+texinfo,100% (19t;0f;0u),tp/maintain/lib/libintl-perl/sample/simplecal/po/ru.po,Guido Flohr,guido at imperia dot net
+gcr,100% (254t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gtk+3.0,100% (1234t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gtk+3.0,100% (2110t;0f;0u),po-properties/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+glib2.0,100% (886t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+evolution-data-server,100% (1083t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+caribou,100% (57t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+debconf,100% (70t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+newt,100% (4t;0f;0u),po/ru.po,Nikolai Prokoschenko,debian-l10n-russian at lists dot debian dot org
+atk1.0,100% (169t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+evince,100% (360t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+evince,100% (631t;0f;0u),help/ru/ru.po,Yuri Kozlov,gnome-cyr at gnome dot org
+shadow,100% (558t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+gdk-pixbuf,100% (228t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+cogl,100% (80t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+rygel,100% (244t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+libgnome,100% (273t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+rhythmbox,100% (916t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+rhythmbox,100% (436t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-vfs,100% (305t;0f;0u),po/ru.po,Leonid Kanter,ru at li dot org
+totem,100% (265t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+totem,100% (384t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+linux,100% (11t;0f;0u),debian/templates/po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+glib-networking,100% (29t;0f;0u),po/ru.po,Dmitriy S. Seregin,gnome-cyr at gnome dot org
+gimp,100% (78t;0f;0u),po-python/ru.po,Александр Прокудин,gnome-cyr at lists dot gnome dot org
+gimp,100% (429t;0f;0u),po-libgimp/ru.po,Yuri Myasoedov,gnome-cyr at lists dot gnome dot org
+libgnome-keyring,100% (9t;0f;0u),po/ru.po,Leonid Kanter,ru at li dot org
+colord,100% (202t;0f;0u),po/ru.po,vylekzhanin,Russian (http://www dot transifex dot com/projects/p/colord/language/ru/)
+libsoup2.4,100% (25t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-online-accounts,100% (188t;0f;0u),telepathy-account-widgets/po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-online-accounts,100% (149t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+folks,100% (130t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+at-spi2-core,100% (2t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+brasero,100% (968t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+brasero,100% (147t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-themes-standard,100% (9t;0f;0u),po/ru.po,Yuri Myaseodov,gnome-cyr at gnome dot org
+gst-plugins-good0.10,100% (190t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+libgphoto2,100% (75t;0f;0u),libgphoto2_port/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+libgnomekbd,100% (55t;0f;0u),po/ru.po,Yuri Myaseodov,gnome-cyr at gnome dot org
+libgtop2,100% (40t;0f;0u),po/ru.po,Nickolay V. Shmyrev,gnome-cyr at gnome dot org
+json-glib,100% (44t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+nautilus,100% (1046t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+vte3,100% (13t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gst-plugins-base1.0,100% (162t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+coreutils,100% (1638t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+clutter-1.0,100% (675t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+libwnck3,100% (231t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+libbonobo,100% (107t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+git,100% (2359t;0f;0u),po/ru.po,Dimitriy Ryazantcev,Russian (http://www dot transifex dot com/p/git-po-ru/language/ru/)
+cheese,100% (115t;0f;0u),help/ru/ru.po,Yuri Myasoedov,Russian (gnome-cyr at gnome dot org)
+cheese,100% (120t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-panel,100% (69t;0f;0u),help/fish/ru/ru.po,Yuri Kozlov,gnome-cyr at gnome dot org
+gnome-panel,100% (115t;0f;0u),help/clock/ru/ru.po,Yuri Kozlov,gnome-cyr at gnome dot org
+gnome-panel,100% (507t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+libpeas,100% (31t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-session,100% (60t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-session,100% (6t;0f;0u),debian/po-up/ru.po,ALIAKSEI LABANAU,
+gtksourceview3,100% (613t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+accountsservice,100% (10t;0f;0u),po/ru.po,Yuri Kozlov,Russian (http://www dot transifex dot com/projects/p/freedesktop/language/ru/)
+grep,100% (112t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+adduser,100% (114t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+man-db,100% (201t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+cwidget,100% (14t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+psmisc,100% (85t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gucharmap,100% (397t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gucharmap,100% (131t;0f;0u),help/ru/ru.po,Sergey Mironov,gnome-cyr at gnome dot org
+gnome-menus,100% (27t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-keyring,100% (112t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+mutter,100% (124t;0f;0u),po/ru.po,Ivan Komaritsyn,gnome-cyr at gnome dot org
+libwnck,100% (241t;0f;0u),po/ru.po,Nickolay V. Shmyrev,gnome-cyr at gnome dot org
+xkeyboard-config,100% (1055t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gnome-dictionary,100% (97t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-dictionary,100% (188t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+whois,100% (30t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+libgnomecanvas,100% (95t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+libgnomeui,100% (334t;0f;0u),po/ru.po,Yuri Kozlov,gnome-cyr at gnome dot org
+libbonoboui,100% (115t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+gnome-bluetooth,100% (81t;0f;0u),help/ru/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-bluetooth,100% (102t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+vte,100% (13t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+iso-codes,100% (169t;0f;0u),iso_15924/ru.po,Yuri Kozlov,gnu at mx dot ru
+iso-codes,100% (488t;0f;0u),iso_639/ru.po,Dmitry Sivachenko,gnu at mx dot ru
+iso-codes,100% (275t;0f;0u),iso_4217/ru.po,Dmitry Sivachenko,gnu at mx dot ru
+kbd,100% (302t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+shared-mime-info,100% (655t;0f;0u),po/ru.po,Yuri Kozlov,Russian (http://www dot transifex dot com/projects/p/freedesktop/language/ru/)
+metacity,100% (310t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gtkhtml4.0,100% (317t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gsettings-desktop-schemas,100% (529t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gst-plugins-bad0.10,100% (14t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+yelp,100% (104t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+zenity,100% (190t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+zenity,100% (259t;0f;0u),help/ru/ru.po,Yuri Kozlov,gnome-cyr at gnome dot org
+libgdata,100% (85t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+parted,100% (550t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+libgsf,100% (149t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+apt-listchanges,100% (31t;0f;0u),po/ru.po,Sergey Alyoshin,debian-l10n-russian at lists dot debian dot org
+jbigkit,100% (9t;0f;0u),libjbig/po/ru.po,,
+gnome-packagekit,100% (681t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+binutils,100% (97t;0f;0u),gprof/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+binutils,100% (1312t;0f;0u),bfd/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+binutils,100% (1496t;0f;0u),binutils/po/ru.po,Pavel Maryanov,gnu at mx dot ru
+libsecret,100% (9t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+transmission,100% (494t;0f;0u),transmission-2.84/po/ru.po,Anton Shestakov,gnome-cyr at gnome dot org
+gnome-desktop3,100% (23t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+sudo,100% (169t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gnome-terminal,100% (440t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-terminal,100% (517t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gtk-vnc,100% (22t;0f;0u),po/ru.po,Andrew Grigorev,gnome-cyr at gnome dot org
+gnome-control-center,100% (1467t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-control-center,100% (756t;0f;0u),panels/datetime/po-timezones/ru.po,Yulia,Russian
+gedit,100% (551t;0f;0u),help/ru/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gedit,100% (685t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+libsocialweb,100% (12t;0f;0u),po/ru.po,Yuri Nazarenko,
+gdm3,100% (97t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gdm3,100% (6t;0f;0u),debian/po-up/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+kdeplasma-addons,100% (23t;0f;0u),po/ru/plasma_applet_weather.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (7t;0f;0u),po/ru/plasma_applet_webslice.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (7t;0f;0u),po/ru/plasma_applet_org.kde.plasma.calculator.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (162t;0f;0u),po/ru/plasma_applet_org.kde.plasma.fuzzyclock.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (4t;0f;0u),po/ru/plasma_runner_translator.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (2t;0f;0u),po/ru/plasma_runner_konquerorsessions.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (8t;0f;0u),po/ru/plasma_applet_leavenote.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (12t;0f;0u),po/ru/plasma_applet_org.kde.plasma.fifteenpuzzle.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (9t;0f;0u),po/ru/plasma_runner_CharacterRunner.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (2t;0f;0u),po/ru/plasma_runner_youtube.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (2t;0f;0u),po/ru/plasma_applet_qstardict.po,Nick Shaforostoff,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (10t;0f;0u),po/ru/plasma_runner_spellcheckrunner.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (3t;0f;0u),po/ru/plasma_packagestructure_comic.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (1t;0f;0u),po/ru/plasma_applet_CharSelectApplet.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (1t;0f;0u),po/ru/plasma_runner_browserhistory.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (16t;0f;0u),po/ru/plasma_applet_fileWatcher.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (11t;0f;0u),po/ru/plasma_applet_bubblemon.po,Artem Sereda,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (18t;0f;0u),po/ru/plasma_applet_org.kde.plasma.notes.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (3t;0f;0u),po/ru/plasma_applet_magnifique.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (79t;0f;0u),po/ru/plasma_runner_audioplayercontrol.po,Julia Dronova,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (110t;0f;0u),po/ru/lancelot.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (5t;0f;0u),po/ru/plasma_applet_bookmarks.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (6t;0f;0u),po/ru/plasma_applet_previewer.po,Nick Shaforostoff,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (5t;0f;0u),po/ru/plasma_runner_contacts.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (13t;0f;0u),po/ru/plasma_applet_luna.po,Artem Sereda,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (8t;0f;0u),po/ru/plasma_runner_datetime.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (1t;0f;0u),po/ru/plasma_applet_showdashboard.po,Philip Bocharov,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (1t;0f;0u),po/ru/plasma_runner_mediawiki.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (25t;0f;0u),po/ru/plasma_applet_rssnow.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (2t;0f;0u),po/ru/plasma_runner_converterrunner.po,Yuri Chornoivan,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (5t;0f;0u),po/ru/plasma_applet_kolourpicker.po,Artem Sereda,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (67t;0f;0u),po/ru/liblancelot-datamodels.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (6t;0f;0u),po/ru/plasma_applet_spellcheck.po,Artem Sereda,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (41t;0f;0u),po/ru/plasma_runner_events.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (2t;0f;0u),po/ru/plasma_runner_konsolesessions.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (2t;0f;0u),po/ru/konqprofiles.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (5t;0f;0u),po/ru/plasma_applet_groupingpanel.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (30t;0f;0u),po/ru/plasma_applet_microblog.po,Julia Dronova,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (13t;0f;0u),po/ru/plasma_applet_news.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (19t;0f;0u),po/ru/plasma_applet_incomingmsg.po,Artem Sereda,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (48t;0f;0u),po/ru/plasma_applet_plasmaboard.po,Julia Dronova,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (14t;0f;0u),po/ru/plasma_applet_knowledgebase.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (15t;0f;0u),po/ru/plasma_runner_kopete.po,Artem Sereda,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (10t;0f;0u),po/ru/plasma_applet_org.kde.plasma.timer.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (19t;0f;0u),po/ru/libplasma_groupingcontainment.po,Julia Dronova,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (34t;0f;0u),po/ru/libplasmaweather.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (3t;0f;0u),po/ru/plasma_runner_katesessions.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (13t;0f;0u),po/ru/plasma_applet_life.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (60t;0f;0u),po/ru/plasma_applet_org.kde.plasma.comic.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (43t;0f;0u),po/ru/plasma_applet_qalculate.po,Julia Dronova,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (29t;0f;0u),po/ru/plasma_applet_org.kde.plasma.systemloadviewer.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (30t;0f;0u),po/ru/plasma_applet_frame.po,Julia Dronova,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (17t;0f;0u),po/ru/plasma_applet_binaryclock.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (7t;0f;0u),po/ru/plasma_applet_weatherstation.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (2t;0f;0u),po/ru/plasma_applet_org.kde.plasma.showdesktop.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (2t;0f;0u),po/ru/plasma_applet_unitconverter.po,Artem Sereda,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (2t;0f;0u),po/ru/konsoleprofiles.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+kdeplasma-addons,100% (4t;0f;0u),po/ru/plasma_runner_krunner_dictionary.po,Julia Dronova,kde-russian at lists dot kde dot ru
+gnome-shell,100% (318t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+empathy,100% (188t;0f;0u),telepathy-account-widgets/po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+empathy,100% (768t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+empathy,100% (115t;0f;0u),help/ru/ru.po,Nikita Belobrov,gnome-cyr at gnome dot org
+udisks2,100% (413t;0f;0u),po/ru.po,Serge Vylekzhanin,Russian (http://www dot transifex dot com/projects/p/udisks/language/ru/)
+libgweather,100% (146t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+libgweather,100% (4431t;0f;0u),po-locations/ru.po,vantu5z,vantu5z at mail dot ru
+wine,100% (3195t;0f;0u),po/ru.po,Nikolay Sivov,none
+gnash,100% (2t;0f;0u),./packaging/debian/po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+gstreamer1.0,100% (364t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+exo,100% (286t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/exo/language/ru/)
+xdg-user-dirs,100% (28t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gnome-mime-data,100% (362t;0f;0u),po/ru.po,Dmitry G. Mastrukov,gnome-cyr at gnome dot org
+postgresql-9.4,100% (32t;0f;0u),src/interfaces/ecpg/ecpglib/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (120t;0f;0u),src/interfaces/ecpg/preproc/po/ru.po,Dmitriy Olshevskiy,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (199t;0f;0u),src/interfaces/libpq/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (4142t;0f;0u),src/backend/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (144t;0f;0u),src/bin/pg_ctl/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (458t;0f;0u),src/bin/pg_dump/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (78t;0f;0u),src/bin/pg_controldata/po/ru.po,Dmitriy Olshevskiy,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (175t;0f;0u),src/bin/initdb/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (41t;0f;0u),src/bin/pg_config/po/ru.po,Dmitriy Olshevskiy,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (190t;0f;0u),src/bin/scripts/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (198t;0f;0u),src/bin/pg_basebackup/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (103t;0f;0u),src/bin/pg_resetxlog/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (926t;0f;0u),src/bin/psql/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (162t;0f;0u),src/pl/plpgsql/src/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (35t;0f;0u),src/pl/plperl/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (7t;0f;0u),src/pl/tcl/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+postgresql-9.4,100% (82t;0f;0u),src/pl/plpython/po/ru.po,Alexander Lakhin,pgtranslation-translators at pgfoundry dot org
+gnome-icon-theme,100% (38t;0f;0u),po/ru.po,Nickolay V. Shmyrev,gnome-cyr at gnome dot org
+vte2.91,100% (16t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+notification-daemon,100% (7t;0f;0u),po/ru.po,Yuri Myaseodov,gnome-cyr at gnome dot org
+totem-pl-parser,100% (8t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+mx,100% (16t;0f;0u),po/ru.po,Yuri Nazarenko,
+policykit-1-gnome,100% (46t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gst-plugins-good1.0,100% (107t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+k3b,100% (18t;0f;0u),po/ru/k3bsetup.po,Artem Sereda,kde-russian at lists dot kde dot ru
+k3b,100% (2t;0f;0u),po/ru/kio_videodvd.po,Artem Sereda,kde-russian at lists dot kde dot ru
+k3b,100% (1685t;0f;0u),po/ru/k3b.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+k3b,100% (50t;0f;0u),po/ru/libk3bdevice.po,Artem Sereda,kde-russian at lists dot kde dot ru
+gnome-applets,100% (49t;0f;0u),trashapplet/help/ru/ru.po,Vasiliy Faronov,gnome-cyr at gnome dot org
+gnome-applets,100% (621t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-applets,100% (70t;0f;0u),drivemount/help/ru/ru.po,Salikhov Timur,gnome-cyr at gnome dot org
+gnome-applets,100% (108t;0f;0u),invest-applet/help/ru/ru.po,Yuri Kozlov,gnome-cyr at gnome dot org
+gnome-applets,100% (119t;0f;0u),stickynotes/help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-applets,100% (57t;0f;0u),geyes/help/ru/ru.po,Vasiliy Faronov,gnome-cyr at gnome dot org
+gnome-applets,100% (167t;0f;0u),gweather/help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+synaptic,100% (360t;0f;0u),po-manual/ru.po,Vassili Platonov,ru at li dot org
+menu,100% (68t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+menu,100% (67t;0f;0u),po-sections/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+menu,100% (6t;0f;0u),po-su-to-root/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+gtk2-engines,100% (47t;0f;0u),po/ru.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+gst-plugins-bad1.0,100% (57t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+libpwquality,100% (53t;0f;0u),po/ru.po,triplepointfive,
+gtkspell,100% (5t;0f;0u),po/ru.po,Basil Shubin,ru at li dot org
+yelp-xsl,100% (59t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+thunar,100% (739t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/thunar/language/ru/)
+libxfce4util,100% (7t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/libxfce4util/language/ru/)
+tumbler,100% (44t;0f;0u),po/ru.po,Nick,Russian (http://www dot transifex dot com/projects/p/xfce/language/ru/)
+libxfce4ui,100% (169t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/libxfce4ui/language/ru/)
+libintl-perl,100% (19t;0f;0u),sample/simplecal/po/ru.po,Guido Flohr,guido at imperia dot net
+gnome-settings-daemon,100% (416t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-settings-daemon,100% (37t;0f;0u),debian/po-up/ru.po,Yuri Myasoedov,kde-russian at lists dot kde dot ru
+libgksu,100% (63t;0f;0u),debian/pos/ru.po,Alexander Sashanov,debian-l10-russian at lists dot debian dot org
+gnome-calculator,100% (535t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gksu,100% (36t;0f;0u),debian/pos/ru.po,Sergey Alyoshin,ru at li dot org
+gtksourceview2,100% (538t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+mousetweaks,100% (30t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+eog,100% (290t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-system-monitor,100% (292t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-user-share,100% (29t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-disk-utility,100% (636t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-sushi,100% (11t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+file-roller,100% (268t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+file-roller,100% (191t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-backgrounds,100% (18t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+alacarte,100% (20t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+vino,100% (134t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-media,100% (209t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-media,100% (70t;0f;0u),grecord/doc/ru/ru.po,Vasiliy Faronov,gnome-cyr at gnome dot org
+gnome-media,100% (106t;0f;0u),gst-mixer/doc/ru/ru.po,Vasiliy Faronov,gnome-cyr at gnome dot org
+gnome-media,100% (41t;0f;0u),gstreamer-properties/help/ru/ru.po,Vasiliy Faronov,gnome-cyr at gnome dot org
+gnome-screenshot,100% (78t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+nautilus-sendto,100% (8t;0f;0u),po/ru.po,Dmitriy S. Seregin,gnome-cyr at gnome dot org
+grilo,100% (36t;0f;0u),po/ru.po,Dmitriy S. Seregin,gnome-cyr at gnome dot org
+baobab,100% (57t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+baobab,100% (57t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+adwaita-icon-theme,100% (2t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gdb,100% (1312t;0f;0u),bfd/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gnome-system-log,100% (66t;0f;0u),po/ru.po,Aleksej Kabanov,gnome-cyr at gnome dot org
+gnome-system-log,100% (2t;0f;0u),debian/po-up/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+xdg-user-dirs-gtk,100% (11t;0f;0u),po/ru.po,Leonid Kanter,ru at li dot org
+seahorse,100% (570t;0f;0u),po/ru.po,Ivan Komaritsyn,gnome-cyr at gnome dot org
+gedit-plugins,100% (603t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gedit-plugins,100% (117t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-mahjongg,100% (115t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-mahjongg,100% (63t;0f;0u),po/ru.po,Ivan Komaritsyn,gnome-cyr at gnome dot org
+gnome-contacts,100% (156t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-chess,100% (138t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-chess,100% (224t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+tali,100% (96t;0f;0u),po/ru.po,Ivan Komaritsyn,gnome-cyr at gnome dot org
+four-in-a-row,100% (71t;0f;0u),po/ru.po,Ivan Komaritsyn,gnome-cyr at gnome dot org
+gnome-mines,100% (72t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-tetravex,100% (50t;0f;0u),help/ru/ru.po,Aleksandr Burobin,gnome-cyr at gnome dot org
+gnome-tetravex,100% (45t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+five-or-more,100% (64t;0f;0u),po/ru.po,Ivan Komaritsyn,gnome-cyr at gnome dot org
+hamster-applet,100% (185t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-klotski,100% (62t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-robots,100% (107t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-nettool,100% (219t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-nettool,100% (22t;0f;0u),help/ru/ru.po,Boris Egorov,gnome-cyr at gnome dot org
+gnome-nibbles,100% (93t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-font-viewer,100% (30t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+lightdm,100% (17t;0f;0u),po/ru.po,Alexey Ivanov,ru at li dot org
+vinagre,100% (89t;0f;0u),help/ru/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+vinagre,100% (275t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-video-effects,100% (68t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+xfconf,100% (67t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfconf/language/ru/)
+gnome-sudoku,100% (54t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-sudoku,100% (131t;0f;0u),help/ru/ru.po,Aleksandr Burobin,gnome-cyr at gnome dot org
+gnome-tweak-tool,100% (143t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+iagno,100% (68t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+quadrapassel,100% (79t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+lightsoff,100% (17t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+swell-foop,100% (52t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gst-plugins-ugly0.10,100% (14t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+gnome-shell-extensions,100% (68t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+garcon,100% (34t;0f;0u),po/ru.po,AK,Russian (http://www dot transifex dot com/projects/p/xfce/language/ru/)
+gnome-color-manager,100% (343t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-power-manager,100% (148t;0f;0u),po/ru.po,Julia Dronova,kde-russian at lists dot kde dot ru
+gnome-documents,100% (174t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+libfm,100% (390t;0f;0u),po/ru.po,LStranger,gnome-cyr
+xfce4-power-manager,100% (205t;0f;0u),po/ru.po,Andrei Stepanov,Russian (http://www dot transifex dot com/projects/p/xfce4-power-manager/language/ru/)
+root-system,100% (11t;0f;0u),build/package/debian/po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+xfdesktop4,100% (222t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfdesktop/language/ru/)
+sphinx,100% (177t;0f;0u),sphinx/locale/ru/LC_MESSAGES/sphinx.po,ferm32,
+remmina,100% (75t;0f;0u),remmina-plugins/po/ru.po,Andrey Olykainen,ru at li dot org
+gst-plugins-ugly1.0,100% (14t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+sound-juicer,100% (220t;0f;0u),po/ru.po,Yuri Myasoedov,debian-l10n-russian at lists dot debian dot org
+sound-juicer,100% (102t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-screensaver,100% (58t;0f;0u),po/ru.po,Yuri Myaseodov,gnome-cyr at gnome dot org
+bison,100% (9t;0f;0u),runtime-po/ru.po,Pavel Maryanov,gnu at mx dot ru
+ksysguard,100% (233t;0f;0u),po/ru/ksysguard.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+tomboy,100% (274t;0f;0u),help/ru/ru.po,Oleg Shmelyov,gnome-cyr at gnome dot org
+tomboy,100% (471t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+r-base,100% (354t;0f;0u),src/library/utils/po/R-ru.po,Alexey Shipunov,Russian
+r-base,100% (32t;0f;0u),src/library/tools/po/ru.po,Alexey Shipunov,Russian
+r-base,100% (29t;0f;0u),src/library/tcltk/po/R-ru.po,Alexey Shipunov,Russian
+r-base,100% (9t;0f;0u),src/library/tcltk/po/ru.po,Alexey Shipunov,Russian
+r-base,100% (6t;0f;0u),src/library/stats4/po/R-ru.po,Alexey Shipunov,Russian
+r-base,100% (771t;0f;0u),src/library/stats/po/R-ru.po,Alexey Shipunov,Russian
+r-base,100% (185t;0f;0u),src/library/stats/po/ru.po,Alexey Shipunov,Russian
+r-base,100% (20t;0f;0u),src/library/splines/po/R-ru.po,Alexey Shipunov,Russian
+r-base,100% (1t;0f;0u),src/library/splines/po/ru.po,Alexey Shipunov,Russian
+r-base,100% (29t;0f;0u),src/library/parallel/po/R-ru.po,Alexey Shipunov,ru at li dot org
+r-base,100% (17t;0f;0u),src/library/parallel/po/ru.po,Alexey Shipunov,ru at li dot org
+r-base,100% (26t;0f;0u),src/library/methods/po/ru.po,Alexey Shipunov,dactylorhiza at gmail
+r-base,100% (163t;0f;0u),src/library/grid/po/R-ru.po,Alexey Shipunov,Russian
+r-base,100% (24t;0f;0u),src/library/grid/po/ru.po,Alexey Shipunov,Russian
+r-base,100% (123t;0f;0u),src/library/grDevices/po/R-ru.po,Alexey Shipunov,Russian
+r-base,100% (158t;0f;0u),src/library/grDevices/po/ru.po,Alexey Shipunov,Russian
+r-base,100% (144t;0f;0u),src/library/graphics/po/R-ru.po,Alexey Shipunov,Russian
+r-base,100% (127t;0f;0u),src/library/graphics/po/ru.po,Alexey Shipunov,Russian
+r-base,100% (259t;0f;0u),src/library/base/po/RGui-ru.po,Alexey Shipunov,dactylorhiza at gmail
+evolution-webcal,100% (30t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+xfce4-clipman-plugin,100% (67t;0f;0u),po/ru.po,asvl,Russian (http://www dot transifex dot com/projects/p/xfce/language/ru/)
+xfce4-notes-plugin,100% (57t;0f;0u),po/ru.po,Dima Smirnov,
+gtkspell3,100% (7t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+grilo-plugins,100% (134t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+flex,100% (166t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+dconf-editor,100% (33t;0f;0u),po/ru.po,Ivan Komaritsyn,gnome-cyr at gnome dot org
+libgnome-media-profiles,100% (51t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-flashback,100% (43t;0f;0u),po/ru.po,Dmitry Shachnev,gnome-cyr at gnome dot org
+epiphany-browser,100% (597t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+hitori,100% (36t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+atril,100% (360t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+mate-panel,100% (582t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+gparted,100% (367t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+lightdm-gtk-greeter,100% (24t;0f;0u),po/ru.po,Andrew P.,ru at li dot org
+mate-control-center,100% (635t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+xfce4-panel,100% (394t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfce4-panel/language/ru/)
+kwin,100% (326t;0f;0u),po/ru/kwin_effects.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kwin,100% (167t;0f;0u),po/ru/kcmkwm.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kwin,100% (34t;0f;0u),po/ru/kcmkwinscreenedges.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kwin,100% (14t;0f;0u),po/ru/kwin_scripting.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kwin,100% (27t;0f;0u),po/ru/kcmkwindecoration.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kwin,100% (19t;0f;0u),po/ru/kwin_clients.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kwin,100% (53t;0f;0u),po/ru/kcmkwincompositing.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kwin,100% (33t;0f;0u),po/ru/kcm_kwintabbox.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kwin,100% (41t;0f;0u),po/ru/kcm_kwindesktop.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kwin,100% (11t;0f;0u),po/ru/kcm-kwin-scripts.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kwin,100% (153t;0f;0u),po/ru/kcmkwinrules.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+dialog,100% (23t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+plasma-nm,100% (464t;0f;0u),po/ru/plasmanetworkmanagement-libs.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-nm,100% (55t;0f;0u),po/ru/plasmanetworkmanagement_vpncui.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-nm,100% (27t;0f;0u),po/ru/plasmanetworkmanagement_openconnectui.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-nm,100% (10t;0f;0u),po/ru/plasma_applet_org.kde.plasma.networkmanagement.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-nm,100% (113t;0f;0u),po/ru/plasmanetworkmanagement-kded.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-nm,100% (13t;0f;0u),po/ru/plasmanetworkmanagement_openswanui.po,Victor Ryzhykh,kde-russian at lists dot kde dot ru
+plasma-nm,100% (52t;0f;0u),po/ru/kde5-nm-connection-editor.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-nm,100% (27t;0f;0u),po/ru/plasmanetworkmanagement_strongswanui.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-nm,100% (41t;0f;0u),po/ru/plasmanetworkmanagement_l2tpui.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-nm,100% (33t;0f;0u),po/ru/plasmanetworkmanagement_pptpui.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+gnome-maps,100% (111t;0f;0u),po/ru.po,Ivan Komaritsyn,gnome-cyr at gnome dot org
+network-manager-openvpn,100% (105t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-logs,100% (22t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-logs,100% (43t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-sound-recorder,100% (65t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-music,100% (85t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-clocks,100% (81t;0f;0u),help/ru/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-clocks,100% (77t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-photos,100% (125t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+polari,100% (97t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+bijiben,100% (103t;0f;0u),po/ru.po,Ivan Komaritsyn,gnome-cyr at gnome dot org
+gnome-getting-started-docs,100% (339t;0f;0u),gnome-help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+xfwm4,100% (173t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfwm4/language/ru/)
+xfce4-session,100% (208t;0f;0u),po/ru.po,Nick,Russian (http://www dot transifex dot com/projects/p/xfce/language/ru/)
+thunar-volman,100% (113t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/thunar-volman/language/ru/)
+xfce4-settings,100% (354t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfce4-settings/language/ru/)
+mate-desktop,100% (232t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+orage,100% (1030t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfce-apps/language/ru/)
+plasma-desktop,100% (2t;0f;0u),po/ru/attica_kde.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (101t;0f;0u),po/ru/plasma_applet_org.kde.desktopcontainment.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (26t;0f;0u),po/ru/kcmkeys.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (49t;0f;0u),po/ru/kcmstyle.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (31t;0f;0u),po/ru/knetattach.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (45t;0f;0u),po/ru/kcm_solid_actions.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (13t;0f;0u),po/ru/kcmlaunch.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (5t;0f;0u),po/ru/kcm_standard_actions.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (166t;0f;0u),po/ru/kcm_touchpad.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (8t;0f;0u),po/ru/kcm_lookandfeel.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (8t;0f;0u),po/ru/kcm_splashscreen.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (17t;0f;0u),po/ru/kcmsmserver.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (24t;0f;0u),po/ru/kcmkded.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (8t;0f;0u),po/ru/plasma_applet_touchpad.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (57t;0f;0u),po/ru/plasma_applet_org.kde.plasma.kickoff.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (5t;0f;0u),po/ru/kcm_search.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (45t;0f;0u),po/ru/kcmfonts.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (7t;0f;0u),po/ru/kcmworkspaceoptions.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (9t;0f;0u),po/ru/plasma_applet_org.kde.plasma.trash.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (65t;0f;0u),po/ru/kcm_phonon.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (76t;0f;0u),po/ru/kcm_desktopthemedetails.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (19t;0f;0u),po/ru/kcmtranslations.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (7t;0f;0u),po/ru/plasma_applet_org.kde.plasma.windowlist.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (183t;0f;0u),po/ru/kcmcolors.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (13t;0f;0u),po/ru/kcm_baloofile.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (48t;0f;0u),po/ru/useraccount.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (60t;0f;0u),po/ru/plasma_shell_org.kde.plasma.desktop.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (20t;0f;0u),po/ru/kcmformats.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (8t;0f;0u),po/ru/plasma_runner_plasma-desktop.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (15t;0f;0u),po/ru/plasma_applet_org.kde.plasma.pager.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (64t;0f;0u),po/ru/kcmicons.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (46t;0f;0u),po/ru/joystick.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (11t;0f;0u),po/ru/kcmnotify.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (81t;0f;0u),po/ru/kcmkeyboard.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (30t;0f;0u),po/ru/plasma_applet_org.kde.plasma.taskmanager.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (29t;0f;0u),po/ru/kcm_desktoppaths.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (58t;0f;0u),po/ru/plasma_applet_org.kde.plasma.kicker.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (463t;0f;0u),po/ru/kfontinst.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (1t;0f;0u),po/ru/krdb.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (2t;0f;0u),po/ru/plasma_applet_org.kde.plasma.showActivityManager.po,Nick Shaforostoff,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (1t;0f;0u),po/ru/plasma_toolbox_org.kde.desktoptoolbox.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (32t;0f;0u),po/ru/kcm_autostart.po,Julia Dronova,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (118t;0f;0u),po/ru/kcminput.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (33t;0f;0u),po/ru/kcmkclock.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (51t;0f;0u),po/ru/kcmcomponentchooser.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-desktop,100% (38t;0f;0u),po/ru/kcm_emoticons.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+marco,100% (326t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+xfce4-appfinder,100% (70t;0f;0u),po/ru.po,asvl,Russian (http://www dot transifex dot com/projects/p/xfce/language/ru/)
+caja,100% (1484t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+gnome-desktop,100% (61t;0f;0u),po/ru.po,Yuri Myasoedov,debian-l10n-russian at lists dot debian dot org
+maint-guide,100% (1180t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+mate-settings-daemon,100% (242t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+xfce4-notifyd,100% (29t;0f;0u),po/ru.po,Sergey Alyoshin,xfce-i18n at xfce dot org
+dctrl-tools,100% (100t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+deluge,100% (877t;0f;0u),deluge/i18n/ru.po,Maxim S.,ru at li dot org
+console-common,100% (13t;0f;0u),po/ru.po,Nikolai Prokoschenko,debian-russian at lists dot debian dot org
+muffin,100% (272t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+wdiff,100% (119t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+wdiff,100% (31t;0f;0u),lib/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+digikam,100% (18t;0f;0u),po/ru/kipiplugin_imageviewer.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+digikam,100% (31t;0f;0u),po/ru/kipiplugin_kioexportimport.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+digikam,100% (94t;0f;0u),po/ru/kipiplugin_facebook.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+digikam,100% (65t;0f;0u),po/ru/kipiplugin_sendimages.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+digikam,100% (43t;0f;0u),po/ru/kipiplugin_dngconverter.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+digikam,100% (72t;0f;0u),po/ru/kipiplugin_removeredeyes.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+digikam,100% (15t;0f;0u),po/ru/libkipi.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+digikam,100% (50t;0f;0u),po/ru/kipiplugin_piwigoexport.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+digikam,100% (131t;0f;0u),po/ru/kipiplugin_advancedslideshow.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+digikam,100% (49t;0f;0u),po/ru/kipiplugin_galleryexport.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+digikam,100% (112t;0f;0u),po/ru/kipiplugin_printimages.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+digikam,100% (49t;0f;0u),po/ru/kipiplugin_rawconverter.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+digikam,100% (21t;0f;0u),po/ru/kipiplugin_acquireimages.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+digikam,100% (42t;0f;0u),po/ru/kipiplugin_ipodexport.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+digikam,100% (44t;0f;0u),po/ru/kipiplugin_jpeglossless.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+digikam,100% (52t;0f;0u),po/ru/kipiplugin_shwup.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+digikam,100% (129t;0f;0u),po/ru/kipiplugin_picasawebexport.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+digikam,100% (51t;0f;0u),po/ru/kipiplugin_calendar.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+digikam,100% (83t;0f;0u),po/ru/kipiplugin_htmlexport.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+mate-media,100% (229t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+khelpcenter,100% (29t;0f;0u),po/ru/kcmhtmlsearch.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+khelpcenter,100% (11t;0f;0u),po/ru/htmlsearch.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+khelpcenter,100% (132t;0f;0u),po/ru/khelpcenter.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+mate-utils,100% (688t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+sysstat,100% (75t;0f;0u),nls/ru.po,Yuri Kozlov,gnu at mx dot ru
+liferea,100% (497t;0f;0u),po/ru.po,Leonid Selivanov,
+apper,100% (10t;0f;0u),po/ru/plasma_applet_org.packagekit.updater.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+xarchiver,100% (277t;0f;0u),po/ru.po,Nikita Belobrov,ru at li dot org
+xfce4-terminal,100% (282t;0f;0u),po/ru.po,Sergey Alyoshin,xfce-i18n at xfce dot org
+polkit-kde-agent-1,100% (30t;0f;0u),po/ru/polkit-kde-authentication-agent-1.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+systemsettings,100% (43t;0f;0u),po/ru/systemsettings.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+xfce4-screenshooter,100% (81t;0f;0u),po/ru.po,Kyrill Detinov,Russian (http://www dot transifex dot com/projects/p/xfce-apps/language/ru/)
+libxfcegui4,100% (44t;0f;0u),po/ru.po,Denis Koryavov,Russian
+xfburn,100% (303t;0f;0u),po/ru.po,asvl,Russian (http://www dot transifex dot com/projects/p/xfce/language/ru/)
+thunar-archive-plugin,100% (13t;0f;0u),po/ru.po,Nikita Belobrov,ru at li dot org
+mousepad,100% (306t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfce-apps/language/ru/)
+xfce4-datetime-plugin,100% (19t;0f;0u),po/ru.po,Dima Smirnov,xfce-i18n-ru at xfce dot org
+thunar-media-tags-plugin,100% (58t;0f;0u),po/ru.po,Andrey Fedoseev,xfce-i18n at xfce dot org
+xfce4-weather-plugin,100% (330t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfce-panel-plugins/language/ru/)
+kmenuedit,100% (61t;0f;0u),po/ru/kmenuedit.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kinfocenter,100% (25t;0f;0u),po/ru/kinfocenter.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kinfocenter,100% (17t;0f;0u),po/ru/kcmview1394.po,Styopa Semenukha,kde-russian at lists dot kde dot ru
+kinfocenter,100% (26t;0f;0u),po/ru/kcmnic.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kinfocenter,100% (17t;0f;0u),po/ru/kcm-about-distro.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kinfocenter,100% (92t;0f;0u),po/ru/kcmdevinfo.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kinfocenter,100% (78t;0f;0u),po/ru/kcmopengl.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kinfocenter,100% (52t;0f;0u),po/ru/kcm_energyinfo.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kinfocenter,100% (116t;0f;0u),po/ru/kcminfo.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kinfocenter,100% (35t;0f;0u),po/ru/kcm_memory.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kinfocenter,100% (78t;0f;0u),po/ru/kcmusb.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kinfocenter,100% (66t;0f;0u),po/ru/kcmsamba.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kinfocenter,100% (395t;0f;0u),po/ru/kcm_pci.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+appstream,100% (56t;0f;0u),po/ru.po,Serge Vylekzhanin,
+xfce4-taskmanager,100% (74t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfce-apps/language/ru/)
+ristretto,100% (188t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfce-apps/language/ru/)
+xfce4-mailwatch-plugin,100% (111t;0f;0u),po/ru.po,asvl,Russian (http://www dot transifex dot com/projects/p/xfce/language/ru/)
+xfce4-sensors-plugin,100% (74t;0f;0u),po/ru.po,asvl,
+xfce4-xkb-plugin,100% (17t;0f;0u),po/ru.po,Sergey Alyoshin,xfce-i18n-ru at xfce dot org
+fpc,100% (4t;0f;0u),fpcsrc/packages/fcl-base/examples/intl/restest.ru.po,Maxim Ganetsky,
+fpc,100% (4t;0f;0u),install/debian/po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+xfce4-systemload-plugin,100% (24t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfce-panel-plugins/language/ru/)
+xfce4-cpugraph-plugin,100% (36t;0f;0u),po/ru.po,Urmas,kovtunos at yandex dot ru
+xfce4-mount-plugin,100% (54t;0f;0u),po/ru.po,Sergey Alyoshin,xfce-i18n at xfce dot org
+xfce4-netload-plugin,100% (35t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfce-panel-plugins/language/ru/)
+xfce4-cpufreq-plugin,100% (39t;0f;0u),po/ru.po,asvl,Russian (http://www dot transifex dot com/projects/p/xfce/language/ru/)
+xfce4-places-plugin,100% (45t;0f;0u),po/ru.po,Velisarus,Russian (http://www dot transifex dot com/projects/p/xfce/language/ru/)
+xfce4-diskperf-plugin,100% (38t;0f;0u),po/ru.po,Dima Smirnov,translation-team-lv at lists dot sourceforge dot net
+xfce4-fsguard-plugin,100% (19t;0f;0u),po/ru.po,Urmas,-
+gnome-system-tools,100% (53t;0f;0u),doc/time/ru/ru.po,Pavel Shylenok,gnome-cyr at gnome dot org
+gnome-system-tools,100% (60t;0f;0u),doc/users/ru/ru.po,Pavel Shylenok,gnome-cyr at gnome dot org
+gnome-system-tools,100% (476t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+xfce4-genmon-plugin,100% (19t;0f;0u),po/ru.po,Andriy Kovtun,xfce4-dev at xfce dot org
+xfce4-dict,100% (111t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfce-apps/language/ru/)
+xfce4-verve-plugin,100% (10t;0f;0u),po/ru.po,Nikita Belobrov,ru at li dot org
+xfce4-wavelan-plugin,100% (12t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfce-panel-plugins/language/ru/)
+xfce4-smartbookmark-plugin,100% (9t;0f;0u),po/ru.po,Andriy Kovtun,xfce-i18n at xfce dot org
+avogadro,100% (249t;0f;0u),i18n/avogadro-ru.po,Konstantin Tokarev,ru at li dot org
+cinnamon-desktop,100% (31t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+mate-menus,100% (37t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+qapt,100% (3t;0f;0u),po/ru/plasma-runner-installer.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+qapt,100% (58t;0f;0u),po/ru/qaptbatch.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+qapt,100% (53t;0f;0u),po/ru/qapt-gst-helper.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+geda-gaf,100% (187t;0f;0u),libgeda/po/ru.po,Vladimir Zhbanov,geda-dev at seul dot org
+geda-gaf,100% (2t;0f;0u),gattrib/po/ru.po,Vladimir Zhbanov,geda-dev at seul dot org
+geda-gaf,100% (583t;0f;0u),gschem/po/ru.po,Vladimir Zhbanov,geda-dev at seul dot org
+lxpanel,100% (424t;0f;0u),po/ru.po,Andriy Grytsenko,hsh at runtu dot org
+amarok,100% (21t;0f;0u),po/ru/amarokpkg.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+goobox,100% (164t;0f;0u),po/ru.po,Valek Filippov,gnome-cyr at gnome dot org
+cinnamon-control-center,100% (756t;0f;0u),panels/datetime/po-timezones/ru.po,Yulia,Russian
+mate-polkit,100% (48t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+mate-terminal,100% (337t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+kdeclarative,100% (14t;0f;0u),po/ru/kdeclarative5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+libmateweather,100% (4374t;0f;0u),po-locations/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+libmateweather,100% (181t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+libmatekbd,100% (62t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+engrampa,100% (307t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+mate-power-manager,100% (443t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+deborphan,100% (68t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+pluma,100% (1109t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+eom,100% (318t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+mate-screensaver,100% (132t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+mate-applets,100% (542t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+mate-system-monitor,100% (244t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+audacious-plugins,100% (813t;0f;0u),po/ru.po,Radioactiveman,
+wesnoth-1.12,100% (112t;0f;0u),po/wesnoth-anl/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (180t;0f;0u),po/wesnoth-aoi/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (679t;0f;0u),po/wesnoth-dm/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (463t;0f;0u),po/wesnoth-dw/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (101t;0f;0u),po/wesnoth-editor/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (548t;0f;0u),po/wesnoth-ei/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (1142t;0f;0u),po/wesnoth-httt/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (357t;0f;0u),po/wesnoth-l/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (721t;0f;0u),po/wesnoth-low/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (240t;0f;0u),po/wesnoth-manpages/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (568t;0f;0u),po/wesnoth-manual/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (237t;0f;0u),po/wesnoth-multiplayer/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (516t;0f;0u),po/wesnoth-sof/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (640t;0f;0u),po/wesnoth-sotbe/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (199t;0f;0u),po/wesnoth-tb/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (1t;0f;0u),po/wesnoth-test/ru.po,Fedor Khod'kov,bugs dot wesnoth dot org
+wesnoth-1.12,100% (353t;0f;0u),po/wesnoth-thot/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (1005t;0f;0u),po/wesnoth-trow/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (521t;0f;0u),po/wesnoth-tsg/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (256t;0f;0u),po/wesnoth-tutorial/ru.po,Fedor Khod'kov,
+wesnoth-1.12,100% (1913t;0f;0u),po/wesnoth-utbs/ru.po,Fedor Khod'kov,
+gthumb,100% (1199t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+module-assistant,100% (100t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+kscreen,100% (9t;0f;0u),po/ru/plasma_applet_org.kde.plasma.kscreen.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kscreen,100% (1t;0f;0u),po/ru/kscreen.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+dasher,100% (244t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gftp,100% (634t;0f;0u),po/ru.po,Alexander Orlov,none
+bluefish,100% (14t;0f;0u),src/plugin_zencoding/po/ru.po,Fr. Br. George,gnome-cyr at lists dot gnome dot org
+bluefish,100% (17t;0f;0u),src/plugin_about/po/ru.po,Fr. Br. George,Russian
+bluefish,100% (537t;0f;0u),src/plugin_htmlbar/po/ru.po,Fr. Br. George,Russian
+bluefish,100% (27t;0f;0u),src/plugin_infbrowser/po/ru.po,Eugene Rupakov,ru at li dot org
+bluefish,100% (2t;0f;0u),src/plugin_charmap/po/ru.po,,
+bluefish,100% (60t;0f;0u),src/plugin_snippets/po/ru.po,Fr. Br. George,Russian
+bluefish,100% (24t;0f;0u),src/plugin_entities/po/ru.po,Fr. Br. George,Russian
+gconf-editor,100% (139t;0f;0u),docs/ru/ru.po,Nikita Belobrov,gnome-cyr at gnome dot org
+gconf-editor,100% (98t;0f;0u),po/ru.po,Nickolay V. Shmyrev,gnome-cyr at gnome dot org
+kconfig,100% (94t;0f;0u),po/ru/kconfig5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+libcryptui,100% (654t;0f;0u),po/ru.po,Yuri Myaseodov,gnome-cyr at gnome dot org
+libqapt,100% (3t;0f;0u),po/ru/plasma_runner_installer.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+lxmenu-data,100% (37t;0f;0u),po/ru.po,Max,gnome-cyr at gnome dot org
+gtkhtml3.14,100% (309t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+pcmanfm,100% (296t;0f;0u),po/ru.po,Andriy Grytsenko,
+libksysguard,100% (149t;0f;0u),po/ru/ksgrd.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+libksysguard,100% (6t;0f;0u),po/ru/ksysguardlsofwidgets.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+libksysguard,100% (23t;0f;0u),po/ru/processcore.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+libksysguard,100% (201t;0f;0u),po/ru/processui.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+mate-icon-theme,100% (38t;0f;0u),po/ru.po,Nickolay V. Shmyrev,mate-cyr at gnome dot org
+lxappearance,100% (80t;0f;0u),po/ru.po,Andriy Grytsenko,info at edumandriva dot ru
+gnome-doc-utils,100% (101t;0f;0u),po/ru.po,Leonid Kanter,ru at li dot org
+gpicview,100% (52t;0f;0u),po/ru.po,Alexander,ru at li dot org
+debconf-kde0,100% (14t;0f;0u),po/ru/libdebconf-kde.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+caja-extensions,100% (113t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+audacious,100% (244t;0f;0u),po/ru.po,arinov,
+lxterminal,100% (87t;0f;0u),po/ru.po,Alexander,gnu at mx dot ru
+ekiga,100% (235t;0f;0u),help/ru/ru.po,Vasiliy Faronov,gnome-cyr at gnome dot org
+ekiga,100% (748t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-search-tool,100% (158t;0f;0u),help/ru/ru.po,Yuri Kozlov,gnome-cyr at gnome dot org
+gnome-search-tool,100% (186t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+lxrandr,100% (40t;0f;0u),po/ru.po,Andriy Grytsenko,Russian
+mate-themes,100% (30t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+sonnet,100% (72t;0f;0u),po/ru/sonnet5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+devhelp,100% (107t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+kglobalaccel,100% (9t;0f;0u),po/ru/kglobalaccel5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+lxde-common,100% (5t;0f;0u),po/ru.po,Andriy Grytsenko,
+asterisk,100% (52t;0f;0u),contrib/unistimLang/ru.po,Igor Goncharovsky,
+gnome-codec-install,100% (30t;0f;0u),po/ru.po,Sergey Sedov,ru at li dot org
+lxinput,100% (26t;0f;0u),po/ru.po,Andriy Grytsenko,
+gimp-help,100% (30t;0f;0u),po/ru/filters.po,Vitaly Lomov,gnome-cyr at gnome dot org
+gimp-help,100% (31t;0f;0u),po/ru/filters/animation.po,Vitaly Lomov,gnome-cyr at gnome dot org
+gimp-help,100% (378t;0f;0u),po/ru/filters/artistic.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+gimp-help,100% (107t;0f;0u),po/ru/filters/blur.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+gimp-help,100% (86t;0f;0u),po/ru/filters/combine.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+gimp-help,100% (438t;0f;0u),po/ru/filters/distort.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+gimp-help,100% (142t;0f;0u),po/ru/filters/enhance.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+gimp-help,100% (66t;0f;0u),po/ru/filters/generic.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+gimp-help,100% (367t;0f;0u),po/ru/filters/light-and-shadow.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+gimp-help,100% (78t;0f;0u),po/ru/filters/noise.po,Vitaly Lomov,gnome-cyr at gnome dot org
+gimp-help,100% (121t;0f;0u),po/ru/filters/web.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+gimp-help,100% (307t;0f;0u),po/ru/gimp.po,Александр Прокудин,gnome-cyr at lists dot gnome dot org
+gimp-help,100% (281t;0f;0u),po/ru/glossary.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+gimp-help,100% (69t;0f;0u),po/ru/introduction.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+gimp-help,100% (81t;0f;0u),po/ru/preface.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+gimp-help,100% (333t;0f;0u),po/ru/toolbox/color.po,Александр Прокудин,gnome-cyr at lists dot gnome dot org
+gimp-help,100% (320t;0f;0u),po/ru/toolbox/transform.po,Александр Прокудин,gnome-cyr at lists dot gnome dot org
+gimp-help,100% (122t;0f;0u),po/ru/tutorial.po,Vitaly Lomov,gnome-cyr at gnome dot org
+gimp-help,100% (352t;0f;0u),po/ru/using/preferences.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+kio,100% (1272t;0f;0u),po/ru/kio5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kservice,100% (28t;0f;0u),po/ru/kservice5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdbusaddons,100% (6t;0f;0u),po/ru/kdbusaddons5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kiconthemes,100% (20t;0f;0u),po/ru/kiconthemes5.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+lxmusic,100% (89t;0f;0u),po/ru.po,Max,
+kwallet-kf5,100% (24t;0f;0u),po/ru/kwallet-query.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kwallet-kf5,100% (108t;0f;0u),po/ru/kwalletd5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+anjuta,100% (2060t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+dos2unix,100% (61t;0f;0u),po/ru.po,root,Russian
+lxtask,100% (50t;0f;0u),po/ru.po,Alexander,ru at li dot org
+mate-session-manager,100% (104t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+mate-backgrounds,100% (21t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+lazarus,100% (371t;0f;0u),lcl/languages/lclstrconsts.ru.po,Maxim Ganetsky,
+lazarus,100% (627t;0f;0u),components/turbopower_ipro/languages/ipconst.ru.po,Maxim Ganetsky,
+lazarus,100% (2t;0f;0u),components/turbopower_ipro/languages/iputils.ru.po,Maxim Ganetsky,
+lazarus,100% (7t;0f;0u),components/turbopower_ipro/languages/iphtmlpv.ru.po,Maxim Ganetsky,
+lazarus,100% (630t;0f;0u),components/lazreport/source/languages/lr_const.ru.po,Maxim Ganetsky,
+lazarus,100% (5t;0f;0u),components/lazreport/source/addons/ZeosDB/languages/lrdbzeosconst.ru.po,,
+lazarus,100% (49t;0f;0u),components/lazreport/samples/editor/languages/calleditorwithpkg.ru.po,Maxim Ganetsky,
+lazarus,100% (1t;0f;0u),components/compilers/c/languages/lazcstrconsts.ru.po,Maxim Ganetsky,
+lazarus,100% (9t;0f;0u),components/memds/languages/frmselectdataset.ru.po,Maxim Ganetsky,
+lazarus,100% (7t;0f;0u),components/fpcunit/ide/languages/strtestcaseopts.ru.po,Maxim Ganetsky,
+lazarus,100% (7t;0f;0u),components/fpcunit/ide/languages/fpcunitlazideintf.ru.po,Maxim Ganetsky,
+lazarus,100% (34t;0f;0u),components/fpcunit/languages/guitestrunner.ru.po,Maxim Ganetsky,
+lazarus,100% (50t;0f;0u),components/education/languages/eduoptions.ru.po,Maxim Ganetsky,
+lazarus,100% (1t;0f;0u),components/tdbf/languages/registerdbf.ru.po,Maxim Ganetsky,
+lazarus,100% (153t;0f;0u),components/h2pas/languages/h2passtrconsts.ru.po,Maxim Ganetsky,
+lazarus,100% (34t;0f;0u),components/lazdebuggergdbmi/languages/gdbmistringconstants.ru.po,Maxim Ganetsky,
+lazarus,100% (1t;0f;0u),components/lazdebuggergdbmi/languages/gdbmiserverdebugger.ru.po,Maxim Ganetsky,
+lazarus,100% (41t;0f;0u),components/chmhelp/lhelp/languages/lhelp.ru.po,Maxim Ganetsky,
+lazarus,100% (5t;0f;0u),components/chmhelp/packages/idehelp/languages/lazchmhelp.ru.po,Maxim Ganetsky,
+lazarus,100% (7t;0f;0u),components/printers/design/languages/ideprinting.ru.po,Maxim Ganetsky,
+lazarus,100% (8t;0f;0u),components/activex/languages/activexstrconsts.ru.po,Maxim Ganetsky,
+lazarus,100% (21t;0f;0u),components/todolist/languages/todoliststrconsts.ru.po,Maxim Ganetsky,
+lazarus,100% (25t;0f;0u),components/messagecomposer/languages/messagecomposer.ru.po,Maxim Ganetsky,
+lazarus,100% (18t;0f;0u),components/leakview/languages/heaptrcview.ru.po,Maxim Ganetsky,
+lazarus,100% (3t;0f;0u),components/leakview/languages/leakinfo.ru.po,Maxim Ganetsky,
+lazarus,100% (16t;0f;0u),components/sqldb/languages/sqlstringspropertyeditordlg.ru.po,Maxim Ganetsky,
+lazarus,100% (7t;0f;0u),components/sqldb/languages/registersqldb.ru.po,Maxim Ganetsky,
+lazarus,100% (89t;0f;0u),components/pochecker/languages/pocheckerconsts.ru.po,Maxim Ganetsky,
+lazarus,100% (4t;0f;0u),components/synedit/languages/synmacrorecorder.ru.po,Maxim Ganetsky,
+lazarus,100% (7t;0f;0u),components/synedit/languages/syndesignstringconstants.ru.po,Maxim Ganetsky,
+lazarus,100% (192t;0f;0u),components/synedit/languages/syneditstrconst.ru.po,Maxim Ganetsky,
+lazarus,100% (1t;0f;0u),components/synedit/languages/synhighlighterunixshellscript.ru.po,Maxim Ganetsky,
+lazarus,100% (3t;0f;0u),components/IdeLazLogger/languages/idelogger.ru.po,Maxim Ganetsky,
+lazarus,100% (366t;0f;0u),components/ideintf/languages/objinspstrconsts.ru.po,Maxim Ganetsky,
+lazarus,100% (71t;0f;0u),components/anchordocking/languages/anchordockstr.ru.po,Maxim Ganetsky,
+lazarus,100% (10t;0f;0u),components/macroscript/languages/emsstrings.ru.po,Maxim Ganetsky,
+lazarus,100% (4t;0f;0u),components/lazthread/languages/threadoptionsdialog.ru.po,Maxim Ganetsky,
+lazarus,100% (2t;0f;0u),components/lazthread/languages/reglazthread.ru.po,Maxim Ganetsky,
+lazarus,100% (23t;0f;0u),components/externhelp/languages/externhelpfrm.ru.po,Maxim Ganetsky,
+lazarus,100% (17t;0f;0u),components/sqlite/languages/sqlitecompstrings.ru.po,Maxim Ganetsky,
+lazarus,100% (56t;0f;0u),components/lazsvnpkg/languages/svnclasses.ru.po,Maxim Ganetsky,
+lazarus,100% (24t;0f;0u),components/fppkg/languages/fppkg_const.ru.po,Maxim Ganetsky,
+lazarus,100% (18t;0f;0u),components/dbexport/languages/sdb_consts.ru.po,Maxim Ganetsky,
+lazarus,100% (182t;0f;0u),components/codetools/ide/languages/codystrconsts.ru.po,Maxim Ganetsky,
+lazarus,100% (235t;0f;0u),components/codetools/languages/codetoolsstrconsts.ru.po,Maxim Ganetsky,
+lazarus,100% (4t;0f;0u),components/instantfpc/languages/instantfpcregisterlaz.ru.po,Maxim Ganetsky,
+lazarus,100% (221t;0f;0u),components/jcf2/IdePlugin/lazarus/languages/jcfuiconsts.ru.po,Maxim Ganetsky,
+lazarus,100% (9t;0f;0u),components/jcf2/IdePlugin/lazarus/languages/jcfideregister.ru.po,Maxim Ganetsky,
+lazarus,100% (48t;0f;0u),components/datadict/languages/ldd_consts.ru.po,Maxim Ganetsky,
+lazarus,100% (96t;0f;0u),components/fpweb/languages/fpwebstrconsts.ru.po,Maxim Ganetsky,
+lazarus,100% (22t;0f;0u),components/fpweb/languages/weblazideintf.ru.po,Maxim Ganetsky,
+lazarus,100% (5t;0f;0u),components/fpweb/languages/frmrpcmoduleoptions.ru.po,Maxim Ganetsky,
+lazarus,100% (1t;0f;0u),components/synunihighlighter/languages/synunidesigner.ru.po,Maxim Ganetsky,
+lazarus,100% (1t;0f;0u),components/synunihighlighter/languages/synunireg.ru.po,Maxim Ganetsky,
+lazarus,100% (37t;0f;0u),components/lazutils/languages/lazutilsstrconsts.ru.po,Maxim Ganetsky,
+lazarus,100% (2t;0f;0u),components/lazutils/languages/luresstrings.ru.po,Maxim Ganetsky,
+lazarus,100% (7t;0f;0u),components/daemon/languages/reglazdaemon.ru.po,Maxim Ganetsky,
+lazarus,100% (2t;0f;0u),components/projecttemplates/languages/frmtemplatesettings.ru.po,Maxim Ganetsky,
+lazarus,100% (5t;0f;0u),components/projecttemplates/languages/projecttemplates.ru.po,Maxim Ganetsky,
+lazarus,100% (3t;0f;0u),components/projecttemplates/languages/idetemplateproject.ru.po,Maxim Ganetsky,
+lazarus,100% (8t;0f;0u),components/projecttemplates/languages/frmtemplatevariables.ru.po,Maxim Ganetsky,
+lazarus,100% (35t;0f;0u),languages/debuggerstrconst.ru.po,Maxim Ganetsky,
+lazarus,100% (4717t;0f;0u),languages/lazaruside.ru.po,Maxim Ganetsky,
+lazarus,100% (174t;0f;0u),doceditor/languages/lazde.ru.po,Maxim Ganetsky,
+lazarus,100% (30t;0f;0u),examples/translation/languages/translation_demo.ru.po,Maxim Ganetsky,
+lazarus,100% (26t;0f;0u),examples/lazresexplorer/languages/resexplorer.ru.po,Maxim Ganetsky,
+lazarus,100% (10t;0f;0u),examples/codepageconverter/languages/lazconverter.ru.po,Maxim Ganetsky,
+lazarus,100% (72t;0f;0u),tools/jsonviewer/languages/jsonviewer.ru.po,Maxim Ganetsky,
+lazarus,100% (186t;0f;0u),tools/lazdatadesktop/languages/lazdatadesktop.ru.po,Maxim Ganetsky,
+mate-notification-daemon,100% (37t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+kparts,100% (26t;0f;0u),po/ru/kparts5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+solid,100% (220t;0f;0u),po/ru/solid5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+freeciv,100% (6171t;0f;0u),translations/freeciv/ru.po,Konstantin Vedeneev,freeciv dot ru at freelists dot org
+freeciv,100% (1844t;0f;0u),translations/nations/ru.po,Konstantin Vedeneev,freeciv dot ru at freelists dot org
+kdelibs4support,100% (2336t;0f;0u),po/ru/kdelibs4support.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdiff3,100% (13t;0f;0u),po/ru/kdiff3plugin.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdiff3,100% (13t;0f;0u),po/ru/kdiff3fileitemactionplugin.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+rpart,100% (12t;0f;0u),po/ru.po,Alexey Shipunov,Russian
+rpart,100% (63t;0f;0u),po/R-ru.po,Alexey Shipunov,Russian
+kpackage,100% (85t;0f;0u),po/ru/libkpackage5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+boot,100% (77t;0f;0u),po/R-ru.po,Alexey Shipunov,Russian
+stellarium,100% (2044t;0f;0u),po/stellarium-skycultures/ru.po,Alexander Wolf,Koptev Oleg
+stellarium,100% (2219t;0f;0u),po/stellarium/ru.po,Alexander Wolf,ru at li dot org
+stellarium,100% (6t;0f;0u),po/stellarium-desktop/ru.po,Alexander Wolf,ru at li dot org
+stellarium,100% (6t;0f;0u),po/stellarium-metainfo/ru.po,Alexander Wolf,ru at li dot org
+python-django,100% (297t;0f;0u),django/conf/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (5t;0f;0u),django/contrib/formtools/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (6t;0f;0u),django/contrib/sites/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (7t;0f;0u),django/contrib/redirects/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (6t;0f;0u),django/contrib/sessions/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (18t;0f;0u),django/contrib/flatpages/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (160t;0f;0u),django/contrib/admin/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (33t;0f;0u),django/contrib/admin/locale/ru/LC_MESSAGES/djangojs.po,Алексей Борискин,
+python-django,100% (2t;0f;0u),django/contrib/messages/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (66t;0f;0u),django/contrib/auth/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (61t;0f;0u),django/contrib/comments/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (18t;0f;0u),django/contrib/gis/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (71t;0f;0u),django/contrib/admindocs/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (7t;0f;0u),django/contrib/contenttypes/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+python-django,100% (48t;0f;0u),django/contrib/humanize/locale/ru/LC_MESSAGES/django.po,Алексей Борискин,
+kwindowsystem,100% (1t;0f;0u),po/ru/kwindowsystem5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+khtml,100% (311t;0f;0u),po/ru/khtml5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kcoreaddons,100% (78t;0f;0u),po/ru/kcoreaddons5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+scim,100% (281t;0f;0u),po/ru.po,Yulia Poyarkova,
+kauth,100% (8t;0f;0u),po/ru/kauth5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+ki18n,100% (110t;0f;0u),po/ru/ki18n5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kwidgetsaddons,100% (431t;0f;0u),po/ru/kwidgetsaddons5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kcodecs,100% (53t;0f;0u),po/ru/kcodecs5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kitemviews,100% (4t;0f;0u),po/ru/kitemviews5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kconfigwidgets,100% (114t;0f;0u),po/ru/kconfigwidgets5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+lxlauncher,100% (17t;0f;0u),po/ru.po,Andrej Gritsenko,
+knotifications,100% (6t;0f;0u),po/ru/knotifications5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+gnote,100% (270t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+lxappearance-obconf,100% (27t;0f;0u),po/ru.po,Alexander,info at edumandriva dot ru
+kdevelop,100% (12t;0f;0u),po/ru/kdevokteta.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kdevelop,100% (2t;0f;0u),po/ru/plasma_applet_kdevelopsessions.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kdevelop,100% (39t;0f;0u),po/ru/kdevcustombuildsystem.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kdevelop,100% (3t;0f;0u),po/ru/plasma_runner_kdevelopsessions.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kdevelop,100% (5t;0f;0u),po/ru/kdevcustommake.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kdevelop,100% (8t;0f;0u),po/ru/kdevmanpage.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kdevelop,100% (34t;0f;0u),po/ru/kdevexecuteplasmoid.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+handbrake,100% (678t;0f;0u),gtk/po/ru.po,VictorR2007,Russian (http://www dot transifex dot com/projects/p/handbrake/language/ru/)
+usermode,100% (96t;0f;0u),po/ru.po,Misha Shnurapet,trans-ru at lists dot fedoraproject dot org
+cinnamon-translations,100% (662t;0f;0u),po-export/cinnamon-control-center/cinnamon-control-center-ru.po,vofka,Yuriy end Company
+cinnamon-translations,100% (24t;0f;0u),po-export/cinnamon-bluetooth/cinnamon-bluetooth-ru.po,CyberTailor,ru at li dot org
+cinnamon-translations,100% (1220t;0f;0u),po-export/nemo/nemo-ru.po,ned,ru at li dot org
+cinnamon-translations,100% (22t;0f;0u),po-export/cinnamon-session/cinnamon-session-ru.po,CyberTailor,ru at li dot org
+cinnamon-translations,100% (37t;0f;0u),po-export/cinnamon-screensaver/cinnamon-screensaver-ru.po,CyberTailor,gnome-cyr at gnome dot org
+boinc,100% (1471t;0f;0u),html/languages/translations/ru.po,Nikolay Saharov,
+gdl,100% (96t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+xine-ui,100% (10t;0f;0u),src/xitk/xine-toolkit/po/ru.po,Pavel Maryanov,ru at li dot org
+cinnamon-settings-daemon,100% (572t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+extra-xdg-menus,100% (2t;0f;0u),po/ru.po,Peter Clifton,
+kdesu,100% (7t;0f;0u),po/ru/kdesud5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kcompletion,100% (12t;0f;0u),po/ru/kcompletion5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kjobwidgets,100% (45t;0f;0u),po/ru/kjobwidgets5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+ktextwidgets,100% (121t;0f;0u),po/ru/ktextwidgets5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+planner,100% (533t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+tuxpaint,100% (291t;0f;0u),src/po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+qtcurve,100% (755t;0f;0u),po/ru.po,Julia Dronova,l10n at rosalab dot ru
+breeze,100% (29t;0f;0u),po/ru/breeze_style_config.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+breeze,100% (63t;0f;0u),po/ru/breeze_kwin_deco.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+ghex,100% (232t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+celestia,100% (89t;0f;0u),po2/ru.po,Sergey Leonov,leserg at ua dot fm
+kbookmarks,100% (48t;0f;0u),po/ru/kbookmarks5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+supertuxkart,100% (631t;0f;0u),data/po/ru.po,Oleg,Russian (http://www dot transifex dot com/projects/p/supertuxkart/language/ru/)
+im-config,100% (69t;0f;0u),po/ru.po,Vassili Platonov,ru at li dot org
+gitg,100% (245t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+kde-gtk-config,100% (71t;0f;0u),po/ru/kde-gtk-config.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kcmutils,100% (71t;0f;0u),po/ru/kcmutils5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+knewstuff,100% (150t;0f;0u),po/ru/knewstuff5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+minidlna,100% (22t;0f;0u),po/ru.po,Ivan Mironov,
+gnome-software,100% (429t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+baloo-kf5,100% (1t;0f;0u),po/ru/kio_baloosearch.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+baloo-kf5,100% (2t;0f;0u),po/ru/kio_tags.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+baloo-kf5,100% (15t;0f;0u),po/ru/balooctl.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+baloo-kf5,100% (6t;0f;0u),po/ru/baloo_file_extractor.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+baloo-kf5,100% (7t;0f;0u),po/ru/balooshow.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+baloo-kf5,100% (7t;0f;0u),po/ru/baloosearch.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+baloo-kf5,100% (10t;0f;0u),po/ru/baloo_file.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+baloo-kf5,100% (3t;0f;0u),po/ru/kio_timeline.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+easytag,100% (1012t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+ruby-gettext,100% (1t;0f;0u),samples/po/ru/hello_gtk2.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+ruby-gettext,100% (3t;0f;0u),samples/po/ru/hello_glade2.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+ruby-gettext,100% (3t;0f;0u),samples/po/ru/hello2.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+ruby-gettext,100% (2t;0f;0u),samples/po/ru/hello_noop.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+ruby-gettext,100% (1t;0f;0u),samples/po/ru/hello.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+ruby-gettext,100% (1t;0f;0u),samples/po/ru/hello_plural.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+ruby-gettext,100% (10t;0f;0u),samples/cgi/po/ru/helloerb1.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+ruby-gettext,100% (1t;0f;0u),samples/cgi/po/ru/hellolib.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+ruby-gettext,100% (8t;0f;0u),samples/cgi/po/ru/helloerb2.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+ruby-gettext,100% (14t;0f;0u),samples/cgi/po/ru/main.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+mate-sensors-applet,100% (102t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+kfilemetadata-kf5,100% (66t;0f;0u),po/ru/kfilemetadata.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+pcb,100% (1075t;0f;0u),po/ru.po,Sergey Alyoshin,
+kpty,100% (4t;0f;0u),po/ru/kpty5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kde-cli-tools,100% (71t;0f;0u),po/ru/filetypes.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kde-cli-tools,100% (7t;0f;0u),po/ru/kmimetypefinder.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kde-cli-tools,100% (39t;0f;0u),po/ru/kioclient.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kde-cli-tools,100% (40t;0f;0u),po/ru/kdesu.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kde-cli-tools,100% (26t;0f;0u),po/ru/kstart.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+kde-cli-tools,100% (8t;0f;0u),po/ru/ktraderclient.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kde-cli-tools,100% (22t;0f;0u),po/ru/kcmshell.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+clementine,100% (1290t;0f;0u),src/translations/ru.po,DmitryKX,Russian (http://www dot transifex dot com/projects/p/clementine/language/ru/)
+supertux,100% (39t;0f;0u),data/levels/bonus1/ru.po,Artem Krosheninnikov,Russian (http://www dot transifex dot com/projects/p/supertux/language/ru/)
+supertux,100% (43t;0f;0u),data/levels/world1/ru.po,Дмитрий,Russian (http://www dot transifex dot com/projects/p/supertux/language/ru/)
+supertux,100% (33t;0f;0u),data/levels/bonus2/ru.po,Дмитрий,Russian (http://www dot transifex dot com/projects/p/supertux/language/ru/)
+supertux,100% (48t;0f;0u),data/levels/bonus3/ru.po,Дмитрий,Russian (http://www dot transifex dot com/projects/p/supertux/language/ru/)
+supertux,100% (50t;0f;0u),data/levels/world2/ru.po,Дмитрий,Russian (http://www dot transifex dot com/projects/p/supertux/language/ru/)
+supertux,100% (154t;0f;0u),data/locale/ru.po,Дмитрий,Russian (http://www dot transifex dot com/projects/p/supertux/language/ru/)
+plasma-framework,100% (197t;0f;0u),po/ru/libplasma5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+pdf2djvu,100% (149t;0f;0u),po/ru.po,Kyrill Detinov,none
+plasma-workspace,100% (23t;0f;0u),po/ru/plasmashellprivateplugin.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (19t;0f;0u),po/ru/plasma_applet_org.kde.plasma.lock_logout.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (10t;0f;0u),po/ru/plasma_engine_mpris2.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (18t;0f;0u),po/ru/plasma_runner_solid.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (6t;0f;0u),po/ru/plasma_containmentactions_switchwindow.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (5t;0f;0u),po/ru/plasma_applet_org.kde.plasma.mediacontroller.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (2t;0f;0u),po/ru/plasma_runner_calculatorrunner.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (3t;0f;0u),po/ru/plasma_engine_notifications.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (3t;0f;0u),po/ru/krunner.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (5t;0f;0u),po/ru/plasma_runner_locations.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (2t;0f;0u),po/ru/plasma_applet_org.kde.plasma.systemmonitor.diskactivity.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (2t;0f;0u),po/ru/plasma_applet_org.kde.plasma.systemmonitor.cpu.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (138t;0f;0u),po/ru/plasma_engine_soliddevice.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (7t;0f;0u),po/ru/kcminit.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (3t;0f;0u),po/ru/plasma_applet_org.kde.plasma.systemmonitor.memory.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (12t;0f;0u),po/ru/freespacenotifier.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (4t;0f;0u),po/ru/plasma_applet_org.kde.plasma.calendar.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (2t;0f;0u),po/ru/plasma_runner_webshortcuts.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (18t;0f;0u),po/ru/screenlocker_kcm.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (7t;0f;0u),po/ru/kglobalaccel5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (12t;0f;0u),po/ru/plasma_engine_time.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (3t;0f;0u),po/ru/kio_applications.po,Nick Shaforostoff,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (27t;0f;0u),po/ru/ksmserver.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (1t;0f;0u),po/ru/kio_remote.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (10t;0f;0u),po/ru/plasma_runner_shell.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (25t;0f;0u),po/ru/kuiserver5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (18t;0f;0u),po/ru/plasma_engine_keystate.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (9t;0f;0u),po/ru/kscreenlocker.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (20t;0f;0u),po/ru/plasma_applet_org.kde.plasma.devicenotifier.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (3t;0f;0u),po/ru/plasma_applet_org.kde.plasma.analogclock.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (818t;0f;0u),po/ru/plasma_engine_weather.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (14t;0f;0u),po/ru/plasma_package_plasmashell.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (25t;0f;0u),po/ru/plasma_applet_org.kde.image.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (5t;0f;0u),po/ru/plasma_engine_devicenotifications.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (2t;0f;0u),po/ru/plasma_engine_powermanagement.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (42t;0f;0u),po/ru/libtaskmanager.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (737t;0f;0u),po/ru/plasma_applet_org.kde.plasma.digitalclock.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (30t;0f;0u),po/ru/plasma_lookandfeel_org.kde.lookandfeel.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (16t;0f;0u),po/ru/plasma_applet_quicklaunch.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (2t;0f;0u),po/ru/plasma_runner_recentdocuments.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (2t;0f;0u),po/ru/phonon_kde.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (25t;0f;0u),po/ru/plasma_runner_sessions.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (365t;0f;0u),po/ru/drkonqi.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (31t;0f;0u),po/ru/plasma_applet_org.kde.plasma.battery.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (29t;0f;0u),po/ru/plasma_applet_org.kde.plasma.notifications.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (2t;0f;0u),po/ru/systemmonitor.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (5t;0f;0u),po/ru/soliduiserver.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (6t;0f;0u),po/ru/libkworkspace.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (24t;0f;0u),po/ru/plasmashell.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (21t;0f;0u),po/ru/plasma_applet_org.kde.plasma.systemtray.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (1t;0f;0u),po/ru/plasma_applet_org.kde.plasma.panelspacer.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (7t;0f;0u),po/ru/plasma_containmentactions_contextmenu.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (29t;0f;0u),po/ru/plasma_runner_windows.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (22t;0f;0u),po/ru/plasma_runner_powerdevil.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (18t;0f;0u),po/ru/plasma_applet_org.kde.plasma.clipboard.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (3t;0f;0u),po/ru/plasma_engine_rss.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (14t;0f;0u),po/ru/plasma_runner_kill.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (9t;0f;0u),po/ru/plasma_engine_share.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (18t;0f;0u),po/ru/plasma_engine_network.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (36t;0f;0u),po/ru/plasma_applet_system-monitor.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (6t;0f;0u),po/ru/plasma_runner_baloosearchrunner.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (5t;0f;0u),po/ru/plasma_runner_activities.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (116t;0f;0u),po/ru/klipper.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (3t;0f;0u),po/ru/plasma_runner_windowedwidgets.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (3t;0f;0u),po/ru/plasma_engine_applicationjobs.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (3t;0f;0u),po/ru/plasma_runner_services.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (2t;0f;0u),po/ru/plasma_applet_org.kde.color.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (3t;0f;0u),po/ru/plasma_runner_placesrunner.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (1t;0f;0u),po/ru/plasma_applet_org.kde.plasma.systemmonitor.net.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (8t;0f;0u),po/ru/kscreenlocker_greet.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (4t;0f;0u),po/ru/plasma_runner_bookmarksrunner.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+plasma-workspace,100% (1t;0f;0u),po/ru/plasma_applet_org.kde.plasma.systemmonitor.diskusage.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+blueman,100% (351t;0f;0u),po/ru.po,AlexL,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+kdevplatform,100% (42t;0f;0u),po/ru/kdevcvs.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kdevplatform,100% (5t;0f;0u),po/ru/kdevpastebin.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kdevplatform,100% (130t;0f;0u),po/ru/kdevsubversion.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kdevplatform,100% (4t;0f;0u),po/ru/kdevtemplates_config.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+kdevplatform,100% (4t;0f;0u),po/ru/kdevgenericprojectmanager.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+arandr,100% (37t;0f;0u),data/po/ru.po,HsH,hsh at runtu dot org
+gimp-plugin-registry,100% (162t;0f;0u),separate+/separate+/po/ru.po,Александр Прокудин,gnome-cyr at lists dot gnome dot org
+gimp-plugin-registry,100% (42t;0f;0u),safe-for-web/gimp-save-for-web-0.29.3/po/ru.po,Alexandre Prokoudine,gnome-cyr at lists dot gnome dot org
+gimp-plugin-registry,100% (36t;0f;0u),wavelet-denoise/wavelet-denoise-0.3.1/po/ru.po,Alexandre Prokoudine,gnome-cyr at lists dot gnome dot org
+gimp-plugin-registry,100% (17t;0f;0u),wavelet-decompose/wavelet-decompose-0.1.2/po/ru.po,Alexandre Prokoudine,gnome-cyr at lists dot gnome dot org
+pidgin-otr,100% (100t;0f;0u),po/ru.po,Sergei Smirnov,moscow at hro dot org
+syncevolution,100% (163t;0f;0u),po/ru.po,GLS_Translator_RUS2,Russian (http://www dot transifex dot net/projects/p/meego/team/ru/)
+oxygen,100% (95t;0f;0u),po/ru/oxygen_kwin_deco.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+oxygen,100% (71t;0f;0u),po/ru/oxygen_style_config.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+oxygen,100% (156t;0f;0u),po/ru/oxygen_style_demo.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+oxygen,100% (12t;0f;0u),po/ru/liboxygenstyleconfig.po,Julia Dronova,kde-russian at lists dot kde dot ru
+oxygen,100% (57t;0f;0u),po/ru/oxygen_kdecoration.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+pppoeconf,100% (32t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+bleachbit,100% (235t;0f;0u),po/ru.po,☠Jay ZDLin☠,ru at li dot org
+bluedevil,100% (38t;0f;0u),po/ru/plasma_applet_org.kde.plasma.bluetooth.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+bluedevil,100% (139t;0f;0u),po/ru/bluedevil.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kpeople,100% (11t;0f;0u),po/ru/kpeople5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+clamtk,100% (140t;0f;0u),po/ru.po,☠Jay ZDLin☠,ru at li dot org
+krusader,100% (1737t;0f;0u),po/ru/krusader.po,Alexey D.,kde-russian at lists dot kde dot ru
+muon,100% (8t;0f;0u),po/ru/muon-notifier.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+muon,100% (7t;0f;0u),po/ru/muon-exporter.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+muon,100% (410t;0f;0u),po/ru/libmuon.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+muon,100% (137t;0f;0u),po/ru/muon.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+muon,100% (36t;0f;0u),po/ru/muon-updater.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+muon,100% (67t;0f;0u),po/ru/muon-discover.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+muon,100% (2t;0f;0u),po/ru/plasma_applet_org.kde.muonnotifier.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+banshee,100% (1534t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+shutter,100% (501t;0f;0u),share/shutter/resources/po/shutter/ru.po,Eugene Marshal,ru at li dot org
+shutter,100% (88t;0f;0u),share/shutter/resources/po/shutter-plugins/ru.po,Nkolay Parukhin,ru at li dot org
+shutter,100% (17t;0f;0u),share/shutter/resources/po/shutter-upload-plugins/ru.po,bazilio,ru at li dot org
+kross,100% (35t;0f;0u),po/ru/kross5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+gtkam,100% (193t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+kactivities-kf5,100% (36t;0f;0u),po/ru/kactivities5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+openafs,100% (21t;0f;0u),src/packaging/Debian/po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+mozo,100% (16t;0f;0u),po/ru.po,Stefano Karapetsas,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+aria2,100% (389t;0f;0u),po/ru.po,ITriskTI,ru at li dot org
+powerdevil,100% (8t;0f;0u),po/ru/powerdevilprofilesconfig.po,Julia Dronova,kde-russian at lists dot kde dot ru
+powerdevil,100% (21t;0f;0u),po/ru/powerdevilactivitiesconfig.po,Julia Dronova,kde-russian at lists dot kde dot ru
+powerdevil,100% (56t;0f;0u),po/ru/powerdevil.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+powerdevil,100% (17t;0f;0u),po/ru/powerdevilglobalconfig.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+powerdevil,100% (1t;0f;0u),po/ru/libpowerdevilcommonconfig.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+glabels,100% (438t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+glabels,100% (747t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at lists dot gnome dot org
+mailman,100% (1430t;0f;0u),messages/ru/LC_MESSAGES/mailman.po,Danil Smirnov,danil at smirnov dot la
+kdoctools,100% (4t;0f;0u),po/ru/kdoctools5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+mate-netspeed,100% (58t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+debian-security-support,100% (12t;0f;0u),po/ru.po,Yuri Kozlov,man-pages-ru-talks at lists dot sourceforge dot net
+ktexteditor,100% (1448t;0f;0u),po/ru/ktexteditor5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+poedit,100% (524t;0f;0u),locales/ru.po,vslavik,Russian
+gmtp,100% (256t;0f;0u),po/ru.po,PuppyRus linux Team,http://puppyrus dot org
+0ad,100% (41t;0f;0u),binaries/data/l10n/ru.engine.po,grin.sv,Russian (http://www dot transifex dot com/projects/p/0ad/language/ru/)
+kino,100% (897t;0f;0u),po/ru.po,Michael Shigorin,ru at li dot org
+knotifyconfig,100% (17t;0f;0u),po/ru/knotifyconfig5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+mate-user-share,100% (51t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+konversation,100% (1677t;0f;0u),po/ru/konversation.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+tuxpaint-stamps,100% (813t;0f;0u),po/tuxpaint-stamps-ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+steadyflow,100% (93t;0f;0u),po/ru.po,Maia Kozheva,ru at li dot org
+help2man,100% (49t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+mate-system-tools,100% (476t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+kvirc,100% (25t;0f;0u),po/modules/filetransferwindow/filetransferwindow_ru.po,,kde-russian at lists dot kde dot ru
+kvirc,100% (21t;0f;0u),po/modules/about/about_ru.po,Igor Govorov,ru at li dot org
+kvirc,100% (14t;0f;0u),po/modules/notifier/notifier_ru.po,Igor Govorov,russian
+kvirc,100% (6t;0f;0u),po/modules/python/python_ru.po,Alexander Antsev,
+kvirc,100% (11t;0f;0u),po/modules/torrent/torrent_ru.po,Govorov Igor,Russian
+kvirc,100% (6t;0f;0u),po/modules/perl/perl_ru.po,Igor Govorov,russian
+kvirc,100% (34t;0f;0u),po/modules/sharedfileswindow/sharedfileswindow_ru.po,Alexander Antsev,
+kvirc,100% (16t;0f;0u),po/modules/serverdb/serverdb_ru.po,Alexander Antsev,
+gnome-main-menu,100% (111t;0f;0u),po/ru.po,Yuri Kozlov,gnome-cyr at gnome dot org
+system-config-lvm,100% (344t;0f;0u),po/ru.po,Andrew Zaytsev,fedora-trans-ru at redhat dot com
+fslint,100% (132t;0f;0u),po/ru.po,nIxOiD,
+krunner,100% (3t;0f;0u),po/ru/plasma_runner_example_homefiles.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+ksshaskpass,100% (12t;0f;0u),po/ru/ksshaskpass.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+tuxpaint-config,100% (186t;0f;0u),src/po/ru.po,Yuri Kozlov,man-pages-ru-talks at lists dot sourceforge dot net
+nautilus-share,100% (36t;0f;0u),po/ru.po,Denis Koryavov,gnome-cyr at gnome dot org
+gwyddion,100% (3053t;0f;0u),po/ru.po,Daniil Bratashov,ru at li dot org
+hivex,100% (22t;0f;0u),po/ru.po,rjones,trans-ru at lists dot fedoraproject dot org
+kunitconversion,100% (1858t;0f;0u),po/ru/kunitconversion5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kdnssd-kf5,100% (3t;0f;0u),po/ru/kdnssd5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+comix,100% (262t;0f;0u),messages/ru/LC_MESSAGES/comix.po,Artyom Smirnov,smirnoffjr at gmail dot com
+josm,100% (8899t;0f;0u),i18n/po/ru.po,Nkolay Parukhin,koptev dot oleg at gmail dot com
+kio-extras,100% (1t;0f;0u),po/ru/kio_info.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kio-extras,100% (1t;0f;0u),po/ru/kio_recentdocuments.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+kio-extras,100% (11t;0f;0u),po/ru/kio_thumbnail.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kio-extras,100% (31t;0f;0u),po/ru/kio_sftp.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kio-extras,100% (6t;0f;0u),po/ru/kio_bookmarks.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+kio-extras,100% (2t;0f;0u),po/ru/kio_mtp.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kio-extras,100% (2t;0f;0u),po/ru/kio_archive.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+kio-extras,100% (3t;0f;0u),po/ru/kfileaudiopreview5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kio-extras,100% (18t;0f;0u),po/ru/kio_smb.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+kio-extras,100% (9t;0f;0u),po/ru/kio_nfs.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kio-extras,100% (30t;0f;0u),po/ru/kio_man.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+kio-extras,100% (5t;0f;0u),po/ru/kio_fish.po,Artem Sereda,kde-russian at lists dot kde dot ru
+pidgin-libnotify,100% (12t;0f;0u),po/ru.po,Dmitry Egorkin,Russian
+gnome-boxes,100% (208t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+eiskaltdcpp,100% (909t;0f;0u),eiskaltdcpp-gtk/po/ru.po,Boris Pek,Russian (http://www dot transifex dot com/projects/p/eiskaltdcpp/language/ru/)
+eiskaltdcpp,100% (158t;0f;0u),dcpp/po/ru.po,Boris Pek,
+readahead-fedora,100% (18t;0f;0u),po/ru.po,Yulia,
+nautilus-image-converter,100% (19t;0f;0u),po/ru.po,Paul Chavard,Russian
+frameworkintegration,100% (21t;0f;0u),po/ru/frameworkintegration5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+widelands,100% (24t;0f;0u),po/map_plateau.wmf/ru.po,Nasenbaer,ru at li dot org
+widelands,100% (6t;0f;0u),po/mp_scenario_together_we_re_strong.wmf/ru.po,Georgiy,ru at li dot org
+widelands,100% (106t;0f;0u),po/scenario_atl01.wmf/ru.po,lu,ru at li dot org
+widelands,100% (2t;0f;0u),po/scenario_dummy.wmf/ru.po,Sergey Fukanchik,ru at li dot org
+widelands,100% (44t;0f;0u),po/scenario_emp01.wmf/ru.po,Александр,widelands-public at lists dot sourceforge dot net
+widelands,100% (55t;0f;0u),po/scenario_emp02.wmf/ru.po,Massol,widelands-public at lists dot sourceforge dot net
+widelands,100% (48t;0f;0u),po/scenario_t01.wmf/ru.po,Massol,ru at li dot org
+widelands,100% (164t;0f;0u),po/scenario_tutorial01.wmf/ru.po,Vladimir Kovalenko,ru at li dot org
+widelands,100% (42t;0f;0u),po/win_conditions/ru.po,Urra,ru at li dot org
+widelands,100% (56t;0f;0u),po/world_desert/ru.po,Александр,ru at li dot org
+xfce4-indicator-plugin,100% (31t;0f;0u),po/ru.po,Sergey Alyoshin,xfce-i18n at xfce dot org
+khotkeys,100% (129t;0f;0u),po/ru/khotkeys.po,Julia Dronova,kde-russian at lists dot kde dot ru
+atomix,100% (53t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+picard,100% (258t;0f;0u),po/countries/ru.po,Дмитрий,Russian (http://www dot transifex dot com/projects/p/musicbrainz/language/ru/)
+kjsembed,100% (44t;0f;0u),po/ru/kjsembed5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+kxmlrpcclient,100% (2t;0f;0u),po/ru/libkxmlrpcclient5.po,Andrey Cherepanov,kde-russian at lists dot kde dot ru
+jmol,100% (434t;0f;0u),src/org/jmol/translation/Jmol/ru.po,Ilia Lilov,ru at li dot org
+virt-top,100% (77t;0f;0u),po/ru.po,rjones,trans-ru at lists dot fedoraproject dot org
+udftools,100% (3t;0f;0u),debian/po.bak/ru.po,Basil Shubin,Russian
+giggle,100% (159t;0f;0u),po/ru.po,Trukhachev Alexey,trukhachev at gmail dot com
+pppconfig,100% (137t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+gigolo,100% (142t;0f;0u),po/ru.po,Aleksandr P,Russian (http://www dot transifex dot com/projects/p/xfce/language/ru/)
+transmageddon,100% (70t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+deja-dup,100% (300t;0f;0u),po/ru.po,,ru at li dot org
+desktopnova,100% (3t;0f;0u),po-module-gnome/ru.po,Stefan Haller,ru at li dot org
+desktopnova,100% (6t;0f;0u),po-module-xfce/ru.po,Stefan Haller,ru at li dot org
+desktopnova,100% (10t;0f;0u),po-tray/ru.po,Sergey Sedov,ru at li dot org
+kio-mtp,100% (1t;0f;0u),po/ru/kio_mtp.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+anjuta-extras,100% (41t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnome-devel-docs,100% (162t;0f;0u),platform-overview/ru/ru.po,Yuri Kozlov,gnome-cyr at gnome dot org
+gnome-devel-docs,100% (1253t;0f;0u),hig/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+fprintd,100% (57t;0f;0u),po/ru.po,Yuri Kozlov,Russian (http://www dot transifex dot com/projects/p/freedesktop/language/ru/)
+parole,100% (273t;0f;0u),po/ru.po,Sergey Alyoshin,Russian (http://www dot transifex dot com/projects/p/xfce-apps/language/ru/)
+isomaster,100% (107t;0f;0u),po/ru.po,Antonio_99RUS,
+indicator-applet,100% (18t;0f;0u),po/ru.po,"Dmitriy \""~SH~ [ms]\"" Fedorov",ru at li dot org
+startupmanager,100% (93t;0f;0u),po/ru.po,Alexsandr N.,ru at li dot org
+klavaro,100% (232t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+diffuse,100% (186t;0f;0u),translations/ru.po,Oleg Pakhtusov,opakhtusov at gmail dot com
+gnome-dvb-daemon,100% (203t;0f;0u),po/ru.po,Aleksej Kabanov,gnome-cyr at gnome dot org
+wesnoth-1.13,100% (112t;0f;0u),po/wesnoth-anl/ru.po,Fedor Khod'kov,
+wesnoth-1.13,100% (463t;0f;0u),po/wesnoth-dw/ru.po,Fedor Khod'kov,
+wesnoth-1.13,100% (357t;0f;0u),po/wesnoth-l/ru.po,Fedor Khod'kov,
+wesnoth-1.13,100% (516t;0f;0u),po/wesnoth-sof/ru.po,Fedor Khod'kov,
+wesnoth-1.13,100% (1t;0f;0u),po/wesnoth-test/ru.po,Fedor Khod'kov,bugs dot wesnoth dot org
+wesnoth-1.13,100% (1005t;0f;0u),po/wesnoth-trow/ru.po,Fedor Khod'kov,
+wesnoth-1.13,100% (1913t;0f;0u),po/wesnoth-utbs/ru.po,Fedor Khod'kov,
+oggconvert,100% (44t;0f;0u),po/ru.po,Michael Sinchenko,ru at li dot org
+xchat-gnome,100% (1063t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+pidgin-sipe,100% (221t;0f;0u),po/ru.po,Stefan Becker,Russian (http://www dot transifex dot com/projects/p/pidgin-sipe/language/ru/)
+qof,100% (35t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+vidalia,100% (46t;0f;0u),pkg/win32/po/ru/vidalia_ru.po,runasand,Russian (http://www dot transifex dot net/projects/p/torproject/team/ru/)
+vidalia,100% (12t;0f;0u),src/vidalia/help/content/po/ru/bridges.po,,
+vidalia,100% (40t;0f;0u),src/vidalia/help/content/po/ru/config.po,euneko,
+vidalia,100% (5t;0f;0u),src/vidalia/help/content/po/ru/index.po,Runa Sandvik,
+vidalia,100% (22t;0f;0u),src/vidalia/help/content/po/ru/log.po,euneko,
+vidalia,100% (37t;0f;0u),src/vidalia/help/content/po/ru/netview.po,,Russian (http://www dot transifex dot net/projects/p/torproject/team/ru/)
+vidalia,100% (55t;0f;0u),src/vidalia/help/content/po/ru/server.po,euneko,
+vidalia,100% (32t;0f;0u),src/vidalia/help/content/po/ru/services.po,euneko,
+vidalia,100% (30t;0f;0u),src/vidalia/help/content/po/ru/troubleshooting.po,euneko,
+vidalia,100% (81t;0f;0u),src/vidalia/i18n/po/ru/qt_ru.po,Automatically generated,Russian (http://www dot transifex dot net/projects/p/torproject/language/ru/)
+vidalia,100% (910t;0f;0u),src/vidalia/i18n/po/ru/vidalia_ru.po,Den Arefyev,Russian (http://www dot transifex dot com/projects/p/torproject/language/ru/)
+gnome-subtitles,100% (319t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+nautilus-scripts-manager,100% (24t;0f;0u),po/ru.po,,Russian (http://www dot transifex dot net/projects/p/nautilus-scripts-manager/team/ru/)
+accerciser,100% (221t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+xfce4-mpc-plugin,100% (24t;0f;0u),po/ru.po,Sergey Alyoshin,xfce4-dev at xfce dot org
+docky,100% (337t;0f;0u),po/ru.po,Eugene Marshal,ru at li dot org
+radiotray,100% (46t;0f;0u),po/ru.po,Pavel Ralovets,Russian (http://www dot transifex dot com/projects/p/radiotray/language/ru/)
+solfege,100% (1054t;0f;0u),po/ru.po,Pavel Maryanov,gnu at mx dot ru
+eog-plugins,100% (87t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+spacefm,100% (1564t;0f;0u),po/ru.po,Vladimir Kudrya,Russian (http://www dot transifex dot com/projects/p/spacefm/language/ru/)
+gnome-paint,100% (54t;0f;0u),po/ru.po,Sergey Basalaev,ru at li dot org
+smuxi,100% (25t;0f;0u),po-Server/ru.po,Yuri Myasoedov,Russian (http://www dot transifex dot net/projects/p/smuxi/team/ru/)
+smuxi,100% (40t;0f;0u),po-Engine/ru.po,Yuri Myasoedov,Russian (http://www dot transifex dot net/projects/p/smuxi/team/ru/)
+smuxi,100% (14t;0f;0u),po-Frontend/ru.po,Yuri Myasoedov,Russian (http://www dot transifex dot net/projects/p/smuxi/team/ru/)
+ktp-approver,100% (18t;0f;0u),po/ru/kded_ktp_approver.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+rox,100% (917t;0f;0u),ROX-Filer/src/po/ru.po,Nikita E. Shalaev,ru at li dot org
+ocrfeeder,100% (127t;0f;0u),help/ru/ru.po,Aleksej Kabanov,gnome-cyr at gnome dot org
+ocrfeeder,100% (262t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gtranslator,100% (390t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+ktp-auth-handler,100% (22t;0f;0u),po/ru/ktp-auth-handler.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+gnome-do,100% (144t;0f;0u),po/ru.po,Valerii Kolem,ru at li dot org
+ktp-accounts-kcm,100% (12t;0f;0u),po/ru/kcmtelepathyaccounts_plugin_sunshine.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+ktp-accounts-kcm,100% (116t;0f;0u),po/ru/kcm_ktp_accounts.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+ktp-accounts-kcm,100% (39t;0f;0u),po/ru/kcmtelepathyaccounts_plugin_rakia.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+ktp-accounts-kcm,100% (11t;0f;0u),po/ru/kcmtelepathyaccounts_plugin_idle.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+ktp-text-ui,100% (16t;0f;0u),po/ru/ktp-adiumxtra-protocol-handler.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+sddm-kcm,100% (32t;0f;0u),po/ru/kcm_sddm.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+gnome-do-plugins,100% (582t;0f;0u),po/ru.po,Yevgeny Sysmanov,ru at li dot org
+ltsp,100% (6t;0f;0u),server/ALTLinux/configs/po/ltsp-login.ru.po,,Russian
+kinit,100% (14t;0f;0u),po/ru/kinit5.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+alarm-clock-applet,100% (104t;0f;0u),po/ru.po,Alexey Ivanov,ru at li dot org
+furiusisomount,100% (57t;0f;0u),po/furiusisomount-ru.po,Лев Логинов,ru at li dot org
+gbrainy,100% (172t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gbrainy,100% (1048t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+radeontop,100% (27t;0f;0u),translations/ru.po,Nikoli,ru at li dot org
+kazam,100% (72t;0f;0u),po/ru.po,Eugene Marshal,ru at li dot org
+freedink,100% (42t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+freedink,100% (15t;0f;0u),gnulib/po/ru.po,Yuri Kozlov,gnu at mx dot ru
+milou,100% (10t;0f;0u),po/ru/milou.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+milou,100% (4t;0f;0u),po/ru/plasma_applet_org.kde.milou.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+rhash,100% (93t;0f;0u),po/ru.po,Sergey Basalaev,rhash dot admin at gmail dot com
+dhelp,100% (24t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+gdmap,100% (54t;0f;0u),po/ru.po,Misha Bukin,Russian
+ardour3,100% (628t;0f;0u),libs/ardour/po/ru.po,Alexandre Prokoudine,
+pidgin-privacy-please,100% (36t;0f;0u),po/ru.po,Anatoliy Kozlov,Russian
+seahorse-nautilus,100% (110t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+nemiver,100% (338t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+nautilus-wipe,100% (41t;0f;0u),po/ru.po,Валерий Рябошапко,Russian
+ktp-contact-runner,100% (35t;0f;0u),po/ru/plasma_runner_ktp_contacts.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+minidjvu,100% (92t;0f;0u),po/ru.po,Alexey Kryukov,ru at li dot org
+aegisub,100% (1384t;0f;0u),po/ru.po,Igor Urazov,
+tvtime,100% (247t;0f;0u),po/ru.po,Denis V. Sirotkin,asbel at mail dot ru
+gtick,100% (96t;0f;0u),po/ru.po,Yuri Kozlov,gnu at mx dot ru
+ldm,100% (19t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+renameutils,100% (54t;0f;0u),gnulib-po/ru.po,Yuri Kozlov,gnu at mx dot ru
+tgif,100% (8t;0f;0u),debian/po.sav/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+gtans,100% (55t;0f;0u),po/ru.po,Valek Filippov,ru at li dot org
+gprename,100% (61t;0f;0u),locale/ru.po,,
+geary,100% (430t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+gnome-specimen,100% (23t;0f;0u),po/ru.po,Alexandre Prokoudine,gnome-cyr at gnome dot org
+isoquery,100% (19t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+linuxinfo,100% (22t;0f;0u),po4a/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+linuxinfo,100% (21t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+pybliographer,100% (263t;0f;0u),po/ru.po,Aleksej Kabanov,gnome-cyr at gnome dot org
+agave,100% (34t;0f;0u),po/ru.po,Roxana Chernogolova,ru at li dot org
+d-feet,100% (35t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+viewnior,100% (144t;0f;0u),po/ru.po,Kyrill Detinov,ru at li dot org
+xneur,100% (293t;0f;0u),po/ru.po,Andrew Kuznetsov,Russian
+installation-guide,100% (50t;0f;0u),po/ru/installation-howto.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+installation-guide,100% (19t;0f;0u),po/ru/administrivia.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+installation-guide,100% (4t;0f;0u),po/ru/preface.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+installation-guide,100% (7t;0f;0u),po/ru/bookinfo.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+installation-guide,100% (72t;0f;0u),po/ru/welcome.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+installation-guide,100% (58t;0f;0u),po/ru/gpl.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+gpdftext,100% (51t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+gpdftext,100% (76t;0f;0u),help/ru/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+viewmol,100% (16t;0f;0u),locale/ru/LC_MESSAGES/Viewmol.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+medit,100% (86t;0f;0u),po-gsv/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+cairo-clock,100% (60t;0f;0u),po/ru.po,Valek Filippov,gnome-cyr at gnome dot org
+password-gorilla,100% (345t;0f;0u),utilities/gettext/ru.po,Evgenii Terechkov,ru at li dot org
+mate-indicator-applet,100% (18t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+tagtool,100% (211t;0f;0u),po/ru.po,Pavel Maryanov,docteam at lafox dot net
+transmission-remote-gtk,100% (346t;0f;0u),po/ru.po,Nkolay Parukhin,
+debian-edu-config,100% (53t;0f;0u),www/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+manaplus,100% (366t;0f;0u),data/translations/help/ru.po,vislav,Russian (http://www dot transifex dot com/projects/p/manaplus/language/ru/)
+guayadeque,100% (1019t;0f;0u),po/ru/guayadeque.po,anonbeat,Russian (Russia) (http://www dot transifex dot com/projects/p/guayadeque/language/ru_RU/)
+gip,100% (31t;0f;0u),po/ru.po,Peter Astakhov,gnu at mx dot ru
+unknown-horizons,100% (27t;0f;0u),po/voices/ru.po,Вячеслав,https://hosted dot weblate dot org/projects/uh/voices/ru/
+unknown-horizons,100% (834t;0f;0u),po/uh/ru.po,Grigory Vershinin,https://hosted dot weblate dot org/projects/uh/uh/ru/
+unknown-horizons,100% (22t;0f;0u),po/uh-server/ru.po,Grigory Vershinin,
+wdm,100% (25t;0f;0u),po/ru.po,Grigory Batalov,
+gmpc-plugins,100% (3t;0f;0u),gmpc-shout/po/ru.po,julja,ru at li dot org
+gmpc-plugins,100% (11t;0f;0u),gmpc-alarm/po/ru.po,julja,ru at li dot org
+gmpc-plugins,100% (13t;0f;0u),gmpc-tagedit/po/ru.po,julja,ru at li dot org
+gmpc-plugins,100% (1t;0f;0u),gmpc-lyricwiki/po/ru.po,Maxim S.,ru at li dot org
+xfswitch-plugin,100% (3t;0f;0u),po/ru.po,Pavel Labushev,xfce-i18n-ru at xfce dot org
+byzanz,100% (52t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+emerillon,100% (86t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+indicator-session,100% (56t;0f;0u),po/ru.po,Eugene Marshal,Russian
+snapper,100% (166t;0f;0u),po/ru.po,Novell language,language at novell dot com
+refcard,100% (200t;0f;0u),po4a/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+alleyoop,100% (92t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+libisocodes,100% (5t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+ndisgtk,100% (27t;0f;0u),po/ru.po,Michael Sinchenko,ru at li dot org
+cherrytree,100% (639t;0f;0u),locale/ru.po,Giuseppe Penone,kovtunos at yandex dot ru
+kdevelop-php-docs,100% (15t;0f;0u),po/ru/kdevphpdocs.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+jackeq,100% (21t;0f;0u),po/ru.po,Alexandre Prokoudine,ru at li dot org
+evolution-rss,100% (161t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+moin,100% (933t;0f;0u),MoinMoin/i18n/ru.MoinMoin.po,Eugene Syromyatnikov,moin-devel at lists dot sourceforge dot net
+gnome-phone-manager,100% (97t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+mat,100% (44t;0f;0u),po/ru.po,oulgocke,Russian (http://www dot transifex dot com/projects/p/torproject/language/ru/)
+gnome-osd,100% (77t;0f;0u),po/ru.po,Sergei Zivukov,ru at li dot org
+pdmenu,100% (22t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+gimagereader,100% (240t;0f;0u),po/ru.po,Oleg Moiseichuk,Russian
+plank,100% (45t;0f;0u),po/ru.po,Artem Anufrij,ru at li dot org
+gfxboot,100% (82t;0f;0u),themes/openSUSE/po/ru.po,Alexander Melentiev,opensuse-translation-ru at opensuse dot org
+padre,100% (1415t;0f;0u),share/locale/ru.po,Vladimir Lettiev,Russian
+gui-apt-key,100% (29t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+gwakeonlan,100% (26t;0f;0u),po/ru.po,HsH,Russian
+pidgin-festival,100% (21t;0f;0u),po/ru.po,Lupin Demid,
+flare-engine,100% (226t;0f;0u),mods/default/languages/engine.ru.po,Sergey Basalaev,Russian https://github dot com/SBasalaev/flare-game/wiki/
+focuswriter,100% (7t;0f;0u),resources/unix/po/ru.po,Serhii Haifullin,
+flare-game,100% (270t;0f;0u),mods/alpha_demo/languages/data.ru.po,Sergey Basalaev,ru at li dot org
+flare-game,100% (226t;0f;0u),mods/default/languages/engine.ru.po,Sergey Basalaev,Russian https://github dot com/SBasalaev/flare-game/wiki/
+flare-game,100% (251t;0f;0u),mods/fantasycore/languages/data.ru.po,Sergey Basalaev,ru at li dot org
+python-django-registration,100% (17t;0f;0u),registration/locale/ru/LC_MESSAGES/django.po,,
+gnomint,100% (701t;0f;0u),po/ru.po,David Marín,ru at li dot org
+calcurse,100% (479t;0f;0u),po/ru.po,Aleksey Mekhonoshin,
+firewalld,100% (313t;0f;0u),po/ru.po,Yulia,
+gxneur,100% (218t;0f;0u),po/ru.po,Crew,русский
+gkdebconf,100% (27t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+upnp-router-control,100% (50t;0f;0u),po/ru.po,Alexander 'FONTER' Zinin,ru at li dot org
+win32-loader,100% (66t;0f;0u),l10n/po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+gnac,100% (312t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gnac,100% (25t;0f;0u),help/ru/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+kradio4,100% (7t;0f;0u),convert-presets/po/ru.po,Алексей,kde-russian at lists dot kde dot ru
+kradio4,100% (155t;0f;0u),po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (93t;0f;0u),plugins/alsa-sound/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (84t;0f;0u),plugins/v4lradio/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (10t;0f;0u),plugins/gui-quickbar/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (46t;0f;0u),plugins/radio/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (38t;0f;0u),plugins/oss-sound/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (4t;0f;0u),plugins/mpris/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (51t;0f;0u),plugins/internetradio/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (3t;0f;0u),plugins/soundserver/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (2t;0f;0u),plugins/dbus/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (52t;0f;0u),plugins/lirc/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (49t;0f;0u),plugins/gui-standard-display/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (42t;0f;0u),plugins/gui-docking-menu/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (32t;0f;0u),plugins/shortcuts/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (81t;0f;0u),plugins/recording/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (15t;0f;0u),plugins/timeshifter/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (13t;0f;0u),plugins/gui-error-log/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (39t;0f;0u),plugins/timecontrol/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+kradio4,100% (42t;0f;0u),plugins/streaming/po/ru.po,Алексей Кузнецов,kde-russian at lists dot kde dot ru
+opendict,100% (269t;0f;0u),po/ru.po,AlexL,
+quarry,100% (447t;0f;0u),po/ru.po,Paul Pogonyshev,ru at li dot org
+yad,100% (302t;0f;0u),po/ru.po,Victor Ananjevsky,Russian
+lightdm-kde,100% (11t;0f;0u),po/ru/lightdm_theme_userbar.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+lightdm-kde,100% (14t;0f;0u),po/ru/lightdm_theme_classic.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+espeak-gui,100% (24t;0f;0u),po/ru.po,devcode,ru at li dot org
+djvusmooth,100% (159t;0f;0u),po/ru.po,Kyrill Detinov,openSUSE Translation Team
+sushi,100% (6t;0f;0u),nigiri/po/ru.po,Michael Kuhn,Russian
+sushi,100% (33t;0f;0u),maki/po/ru.po,Michael Kuhn,Russian
+libpam-unix2,100% (46t;0f;0u),po/ru.po,Aleksey Osipov,opensuse-translation-ru at opensuse dot org
+modem-manager-gui,100% (86t;0f;0u),help/ru.po,Alex,Russian (http://www dot transifex dot com/projects/p/modem-manager-gui/language/ru/)
+modem-manager-gui,100% (359t;0f;0u),po/ru.po,Alex,Russian (http://www dot transifex dot com/projects/p/modem-manager-gui/language/ru/)
+modem-manager-gui,100% (12t;0f;0u),appdata/ru.po,Alex,Russian (http://www dot transifex dot com/projects/p/modem-manager-gui/language/ru/)
+modem-manager-gui,100% (27t;0f;0u),man/ru.po,Alex,Russian (http://www dot transifex dot com/projects/p/modem-manager-gui/language/ru/)
+udevil,100% (214t;0f;0u),po/ru.po,ignorantguru,Russian (http://www dot transifex dot com/projects/p/udevil/language/ru/)
+gnome-weather,100% (42t;0f;0u),po/ru.po,Stas Solovey,gnome-cyr at gnome dot org
+spek,100% (43t;0f;0u),po/ru.po,Alexander Kojevnikov,Russian (http://www dot transifex dot com/projects/p/spek/language/ru/)
+sdcv,100% (24t;0f;0u),po/ru.po,Evgeniy Dushistov,ru at li dot org
+flush,100% (604t;0f;0u),po/ru.po,Dmitry Konishchev,
+gnome-web-photo,100% (58t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+sugar-toolkit-gtk3,100% (40t;0f;0u),po/ru.po,Chris,
+x-tile,100% (150t;0f;0u),locale/ru.po,Andriy Kovtun,Russian
+frogr,100% (56t;0f;0u),help/ru/ru.po,Yuri Kozlov,gnome-cyr at gnome dot org
+mate-netbook,100% (11t;0f;0u),po/ru.po,Alexei Sorokin,Russian (http://www dot transifex dot com/projects/p/MATE/language/ru/)
+citadel,100% (60t;0f;0u),po/citadel-setup/ru.po,Alexander Vrublevskiy,debian-l10n-russian at lists dot debian dot org
+binutils-h8300-hms,100% (979t;0f;0u),binutils/po/ru.po,Pavel Maryanov,ru at li dot org
+django-tables,100% (4t;0f;0u),django_tables2/locale/ru/LC_MESSAGES/django.po,Andrii Pryz,well dot i dot beta at gmail dot com
+blam,100% (93t;0f;0u),po/ru.po,Valek Filippov,gnome-cyr at gnome dot org
+deb-gview,100% (54t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+devilspie2,100% (34t;0f;0u),po/ru.po,Roman V. Nikolaev,Russian
+ubuntu-packaging-guide,100% (751t;0f;0u),po/ru.po,Daniel Holbach,ru at li dot org
+python-django-extensions,100% (14t;0f;0u),django_extensions/locale/ru/LC_MESSAGES/django.po,,
+aptoncd,100% (157t;0f;0u),po/ru.po,Sergei Sedov,ru at li dot org
+gkrellm-mailwatch,100% (25t;0f;0u),po/ru.po,Aleksander,ru at li dot org
+kio-gopher,100% (5t;0f;0u),po/ru/kio_gopher.po,Nick Shaforostoff,kde-russian at lists dot kde dot ru
+cycle,100% (65t;0f;0u),msg/ru.po,,
+horizon,100% (141t;0f;0u),horizon/locale/ru/LC_MESSAGES/djangojs.po,Ilya Alekseyev,Russian (http://www dot transifex dot com/projects/p/horizon/language/ru/)
+php-horde-icalendar,100% (1t;0f;0u),Horde_Icalendar-2.1.1/locale/ru/LC_MESSAGES/Horde_Icalendar.po,Automatically generated,i18n at lists dot horde dot org
+virtaal,100% (426t;0f;0u),po/ru.po,Oleg,Translate dot org dot za
+php-horde-logintasks,100% (5t;0f;0u),Horde_LoginTasks-2.0.4/locale/ru/LC_MESSAGES/Horde_LoginTasks.po,Automatically generated,i18n at lists dot horde dot org
+php-horde-perms,100% (5t;0f;0u),Horde_Perms-2.1.5/locale/ru/LC_MESSAGES/Horde_Perms.po,Automatically generated,i18n at lists dot horde dot org
+postr,100% (59t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+freeipa,100% (337t;0f;0u),install/po/ru.po,Petr Viktorin,
+keystone,100% (1t;0f;0u),keystone/locale/ru/LC_MESSAGES/keystone-log-critical.po,openstackjenkins,
+kdesignerplugin,100% (9t;0f;0u),po/ru/kdesignerplugin5_qt.po,Alexander Potashev,kde-russian at lists dot kde dot ru
+almanah,100% (126t;0f;0u),po/ru.po,Yuri Myasoedov,gnome-cyr at gnome dot org
+gcab,100% (32t;0f;0u),po/ru.po,Dmitriy S. Seregin,gnome-cyr at gnome dot org
+openteacher,100% (9t;0f;0u),openteacher/modules/org/openteacher/flashcardexchangeApi/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/noteCalculators/american/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/noteCalculators/french/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/noteCalculators/german/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/noteCalculators/percents/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/noteCalculators/dutch/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/noteCalculators/ects/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (16t;0f;0u),openteacher/modules/org/openteacher/typingTutor/main/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/chars/cyrillic/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/chars/greek/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (3t;0f;0u),openteacher/modules/org/openteacher/chars/symbols/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/lessonTypes/allOnce/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (5t;0f;0u),openteacher/modules/org/openteacher/lessonTypes/interval/translations/ru.po,facepalm,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/lessonTypes/smart/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (10t;0f;0u),openteacher/modules/org/openteacher/userDocumentation/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (2t;0f;0u),openteacher/modules/org/openteacher/noteCalculatorChooser/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (4t;0f;0u),openteacher/modules/org/openteacher/startWidget/translations/ru.po,Egor Bushmelyov,ru at li dot org
+openteacher,100% (6t;0f;0u),openteacher/modules/org/openteacher/teachTypes/repeatAnswer/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/teachTypes/typing/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (6t;0f;0u),openteacher/modules/org/openteacher/teachTypes/hangman/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (7t;0f;0u),openteacher/modules/org/openteacher/teachTypes/inMind/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (2t;0f;0u),openteacher/modules/org/openteacher/teachTypes/shuffleAnswer/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/t2k/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/teachmaster/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/abbyy/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/voca/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/ovr/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/jvlt/translations/ru.po,AleXanDeR_G,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/granule/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/csv_/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/apkg/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/anki2/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/flashqard/translations/ru.po,AleXanDeR_G,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/ot/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/pauker/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/anki/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/wrts/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/vocabularium/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/domingo/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/kvtml/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/backpack/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/overhoor/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/vtrainTxt/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/mnemosyne/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/ottp/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/vokabelTrainer/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/gnuVocabTrain/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/otwd/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/otmd/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/ludem/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/loaders/cuecard/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (2t;0f;0u),openteacher/modules/org/openteacher/loaderGui/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (8t;0f;0u),openteacher/modules/org/openteacher/inputTyping/gui/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/savers/t2k/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/savers/wordsHtml/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (4t;0f;0u),openteacher/modules/org/openteacher/savers/txt/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (3t;0f;0u),openteacher/modules/org/openteacher/savers/csv_/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/savers/odt/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/savers/png/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/savers/mediaHtml/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/savers/ot/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/savers/wrts/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/savers/pdf/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/savers/kvtml/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/savers/topoHtml/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/savers/ottp/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/savers/otwd/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (4t;0f;0u),openteacher/modules/org/openteacher/savers/otmd/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (3t;0f;0u),openteacher/modules/org/openteacher/mobileGenerator/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (8t;0f;0u),openteacher/modules/org/openteacher/studyStackApi/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/settingsFilterer/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/profileDescriptions/teacher/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/profileDescriptions/wordsOnly/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/profileDescriptions/help/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/profileDescriptions/studentAtHome/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/profileDescriptions/testServer/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/profileDescriptions/selfstudy/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/profileDescriptions/all/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/profileDescriptions/studentAtSchool/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (4t;0f;0u),openteacher/modules/org/openteacher/textToSpeech/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (21t;0f;0u),openteacher/modules/org/openteacher/gui/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (8t;0f;0u),openteacher/modules/org/openteacher/testsViewer/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (26t;0f;0u),openteacher/modules/org/openteacher/wrtsApi/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/print/words/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/friendlyTranslationNames/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (3t;0f;0u),openteacher/modules/org/openteacher/translator/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (3t;0f;0u),openteacher/modules/org/openteacher/progressViewer/translations/ru.po,facepalm,ru at li dot org
+openteacher,100% (7t;0f;0u),openteacher/modules/org/openteacher/testViewer/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (8t;0f;0u),openteacher/modules/org/openteacher/teachers/topo/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (2t;0f;0u),openteacher/modules/org/openteacher/teachers/media/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (9t;0f;0u),openteacher/modules/org/openteacher/teachers/words/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (8t;0f;0u),openteacher/modules/org/openteacher/openteacherAuthors/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/listModifiers/wordsNeverAnsweredCorrectly/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/listModifiers/random_/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/listModifiers/hardWords/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/listModifiers/reverse/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/listModifiers/sort/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (8t;0f;0u),openteacher/modules/org/openteacher/uiController/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (2t;0f;0u),openteacher/modules/org/openteacher/recentlyOpened/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (3t;0f;0u),openteacher/modules/org/openteacher/hiddenBrowser/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (11t;0f;0u),openteacher/modules/org/openteacher/vocatrainApi/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (2t;0f;0u),openteacher/modules/org/openteacher/testTypes/topo/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (5t;0f;0u),openteacher/modules/org/openteacher/testTypes/media/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (9t;0f;0u),openteacher/modules/org/openteacher/testTypes/words/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (6t;0f;0u),openteacher/modules/org/openteacher/metadata/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/dialogs/documentation/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (3t;0f;0u),openteacher/modules/org/openteacher/dialogs/settings/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (6t;0f;0u),openteacher/modules/org/openteacher/dialogs/about/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (12t;0f;0u),openteacher/modules/org/openteacher/enterers/topo/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (5t;0f;0u),openteacher/modules/org/openteacher/enterers/plainTextWords/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (8t;0f;0u),openteacher/modules/org/openteacher/quizletApi/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (4t;0f;0u),openteacher/modules/org/openteacher/mediaDisplay/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (2t;0f;0u),openteacher/modules/org/openteacher/execute/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (2t;0f;0u),openteacher/modules/org/openteacher/ttsProviders/topo/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (2t;0f;0u),openteacher/modules/org/openteacher/ttsProviders/words/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (6t;0f;0u),openteacher/modules/org/openteacher/lessonDialogs/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (3t;0f;0u),openteacher/modules/org/openteacher/lessons/topo/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (5t;0f;0u),openteacher/modules/org/openteacher/lessons/words/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (5t;0f;0u),openteacher/modules/org/openteacher/topoMaps/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/settingsWidget/language/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (16t;0f;0u),openteacher/modules/org/openteacher/sourceWithSetupSaver/translations/ru.po,Nkolay Parukhin,ru at li dot org
+openteacher,100% (1t;0f;0u),openteacher/modules/org/openteacher/itemModifiers/foreignKnown/translations/ru.po,Nkolay Parukhin,ru at li dot org
+ogamesim,100% (52t;0f;0u),www/template/lang/ru.po,Dmitry E. Oboukhov,dimka at avanto dot org
+cgit,100% (245t;0f;0u),git/gitk-git/po/ru.po,Alex Riesen,Russian
+gjots2,100% (260t;0f;0u),po/ru.po,Sergey Bezdenezhnyh,ru at li dot org
+ecere-sdk,100% (5t;0f;0u),eda/drivers/sqlite/locale/ru.po,Jerome St-Louis,ru at li dot org
+ecere-sdk,100% (18t;0f;0u),ear/extract/locale/ru.po,Jerome St-Louis,ru at li dot org
+ecere-sdk,100% (45t;0f;0u),ear/cmd/locale/ru.po,Jerome St-Louis,ru at li dot org
+ecere-sdk,100% (1t;0f;0u),compiler/ecc/locale/ru.po,Jerome St-Louis,ru at li dot org
+ecere-sdk,100% (1t;0f;0u),compiler/ecs/locale/ru.po,Jerome St-Louis,ru at li dot org
+ecere-sdk,100% (1t;0f;0u),compiler/ecp/locale/ru.po,Jerome St-Louis,ru at li dot org
+ecere-sdk,100% (172t;0f;0u),ecere/locale/ru.po,Jerome St-Louis,ru at li dot org
+php-horde-syncml,100% (1t;0f;0u),Horde_SyncMl-2.0.5/locale/ru/LC_MESSAGES/Horde_SyncMl.po,Automatically generated,i18n at lists dot horde dot org
+sosreport,100% (36t;0f;0u),po/ru.po,Yulia,Russian
+django-reversion,100% (21t;0f;0u),src/reversion/locale/ru/LC_MESSAGES/django.po,Alexander Yakovlev,ru at li dot org
+nordugrid-arc,100% (4216t;0f;0u),po/ru.po,Oxana Smirnova,Russian
+simple-image-reducer,100% (38t;0f;0u),po/ru.po,Konstantin Korikov,Russian
+gwhere,100% (438t;0f;0u),po/ru.po,Lesnevsky Gennady,Russian
+lxdm,100% (25t;0f;0u),po/ru.po,Alexander,hsh at runtu dot org
+gmult,100% (39t;0f;0u),po/ru.po,AleX,ru at li dot org
+islamic-menus,100% (2t;0f;0u),po/ru.po,أحمد المحمودي (Ahmed El-Mahmoudy),ru at li dot org
+epoptes,100% (122t;0f;0u),po/ru.po,HsH,ru at li dot org
+php-horde-kronolith,100% (204t;0f;0u),kronolith-4.2.8/locale/ru/LC_MESSAGES/kronolith.po,Fedor A. Fetisov,faf at ssc dot ru
+gextractwinicons,100% (25t;0f;0u),po/ru.po,HsH,Russian
+webdruid,100% (496t;0f;0u),po/ru.po,Johan Poirier,tech at jexiste dot org
+php-horde-gollem,100% (91t;0f;0u),gollem-3.0.3/locale/ru/LC_MESSAGES/gollem.po,Anton Nekhoroshih,dev at lists dot horde dot org
+pondus,100% (91t;0f;0u),po/ru.po,Sl_Alex,
+python-django-mptt,100% (28t;0f;0u),mptt/locale/ru/LC_MESSAGES/django.po,Sergey Vishnikin,
+dozzaqueux,100% (298t;0f;0u),languages/lclstrconsts.ru.po,Maxim Ganetsky,
+django-countries,100% (249t;0f;0u),django_countries/locale/ru/LC_MESSAGES/django.po,m.arnold,Russian (http://www dot transifex dot com/projects/p/django-countries/language/ru/)
+obsession,100% (14t;0f;0u),po/ru.po,Vitaly Pashkov,Russian
+php-horde-ingo,100% (110t;0f;0u),ingo-3.2.5/locale/ru/LC_MESSAGES/ingo.po,Alexey Zakharov,i18n at lists dot horde dot org
+jclic,100% (12t;0f;0u),i18n/fromLaunchpad/po/jclic-installer/installer_ru.po,vsink,ru at li dot org
+jclic,100% (196t;0f;0u),i18n/fromLaunchpad/po/jclic-player/PlayerMessages_ru.po,Artem Karimov,ru at li dot org
+jclic,100% (136t;0f;0u),i18n/fromLaunchpad/po/jclic-reportServlets/reportMessages_ru.po,Artem Karimov,ru at li dot org
+jclic,100% (3t;0f;0u),i18n/fromLaunchpad/po/jclic-persistent/PersistentPathsMessages_ru.po,Nkolay Parukhin,ru at li dot org
+jclic,100% (71t;0f;0u),i18n/fromLaunchpad/po/jclic-reportServer/ReportServerMessages_ru.po,Serafim Nenarokov,ru at li dot org
+jclic,100% (80t;0f;0u),i18n/fromLaunchpad/po/jclic-utilities/BasicMessages_ru.po,Nkolay Parukhin,ru at li dot org
+jclic,100% (189t;0f;0u),i18n/fromLaunchpad/po/jclic-core/JClicMessages_ru.po,Serafim Nenarokov,ru at li dot org
+jclic,100% (5t;0f;0u),i18n/fromLaunchpad/po/jclic-shapers/listshapers_ru.po,Nkolay Parukhin,ru at li dot org
+daptup,100% (40t;0f;0u),po/ru.po,Eugene V. Lyubimkin,jackyf dot devel at gmail dot com
+apertium-tolk,100% (3t;0f;0u),po/ru.po,Francis Tyers,Russian
+libpadre-plugin-autoformat-perl,100% (1t;0f;0u),share/locale/Padre__Plugin__Autoformat-ru.po,Anatoly Sharifulin,Russian
+jwchat,100% (322t;0f;0u),po/ru.po,Alexey Borzov,Russian
+minbar,100% (105t;0f;0u),po/ru.po,R. F. Abasquliyev,abdurrauf at mail dot ru
+phamm,100% (99t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+qreator,100% (111t;0f;0u),po/ru.po,Rashid Aliyev,ru at li dot org
+python-django-openstack-auth,100% (21t;0f;0u),openstack_auth/locale/ru/LC_MESSAGES/django.po,Nikita Burtsev,
+ircp-tray,100% (61t;0f;0u),po/ru.po,Minakov Arthur,ru at li dot org
+plasma-sdk,100% (8t;0f;0u),po/ru/remote-widgets-browser.po,Yuri Efremov,kde-russian at lists dot kde dot ru
+plasma-sdk,100% (18t;0f;0u),po/ru/plasmawallpaperviewer.po,Alexander Lakhin,kde-russian at lists dot kde dot ru
+pykickstart,100% (35t;0f;0u),po/ru.po,,Russian
+mutt-kz,100% (1124t;0f;0u),po/ru.po,,mutt-ru at woe dot spb dot ru
+sugar-toolkit-0.88,100% (28t;0f;0u),po/ru.po,Kirill Krinkin,
+ledgersmb,100% (898t;0f;0u),locale/po/ru.po,,
+fts,100% (2t;0f;0u),contrib/packaging/debian/fts/debian/po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+msitools,100% (26t;0f;0u),po/ru.po,Ivan Komaritsyn,gnome-cyr at gnome dot org
+django-sitetree,100% (60t;0f;0u),sitetree/locale/ru/LC_MESSAGES/django.po,Igor Starikov,Russian (http://www dot transifex dot com/projects/p/django-sitetree/language/ru/)
+gvb,100% (69t;0f;0u),po/ru.po,Serge Gavrilenko,ru at li dot org
+ciderwebmail,100% (68t;0f;0u),root/locale/ru/LC_MESSAGES/CiderWebmail.po,Elena Bolshakova,kde-i18n-doc at kde dot org
+pinot,100% (237t;0f;0u),po/ru.po,Nikolay Kachanov,ru at li dot org
+trac-ja-resource,100% (31t;0f;0u),trac/locale/ru/LC_MESSAGES/messages-js.po,Alexandr Prudnikov,trac-dev at googlegroups dot com
+moblin-menus,100% (8t;0f;0u),po/ru.po,Volynets Ievgenii,
+django-taggit,100% (12t;0f;0u),taggit/locale/ru/LC_MESSAGES/django.po,Igor 'idle sign' Starikov,
+django-simple-captcha,100% (3t;0f;0u),captcha/locale/ru/LC_MESSAGES/django.po,,
+oboinus,100% (17t;0f;0u),po/ru.po,Suniobo,Russian
+bisho,100% (26t;0f;0u),po/ru.po,,Russian (http://www dot transifex dot net/projects/p/meego/team/ru/)
+gerstensaft,100% (81t;0f;0u),po/ru.po,Yuri Kozlov,debian-l10n-russian at lists dot debian dot org
+sugar-base,100% (5t;0f;0u),po/ru.po,Kirill Krinkin,
+bognor-regis,100% (4t;0f;0u),po/ru.po,Alexander Mineev,
+sugar-poll-activity,100% (56t;0f;0u),po/ru.po,Kirill Krinkin,

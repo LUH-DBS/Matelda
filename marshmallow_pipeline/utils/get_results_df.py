@@ -33,14 +33,14 @@ def get_res_df_eds(labeling_budgets, res_path, nested_dir_name, exp_name, exec):
     res_df_eds = pd.DataFrame(res_dict)
     return res_df_eds
 
-executions = range(1, 5)
+executions = range(1, 6)
 labeling_budget = [0.10, 0.25, 0.5, 0.75, 1, 2, 3]
-res_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/Quintet-column-wise-classifier-Exp"
-exp_name = "test-2_Quintet"
-nested_dir_name = "output_quintet"
-n_cols = 66
+res_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/results-finished/dgov/Dgov_NTG_Exp"
+exp_name = "NTG_output_lake_high_percent_processed"
+nested_dir_name = "output_dgov"
+n_cols = 768
 for i in range (5, 21, 5):
     labeling_budget.append(i)
 labeling_budgets_cells = [round(n_cols*x) for x in labeling_budget]
 res_df_eds = get_res_df_eds(labeling_budgets_cells, res_path, nested_dir_name, exp_name, executions)
-res_df_eds.to_csv(os.path.join("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/final_csv_results", "quintet_optimized_time.csv"), index=False)
+res_df_eds.to_csv(os.path.join("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/final_csv_results", "dgov_ntg_time.csv"), index=False)
