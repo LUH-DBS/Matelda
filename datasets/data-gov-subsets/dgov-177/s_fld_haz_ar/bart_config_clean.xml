@@ -1,0 +1,279 @@
+<task>
+    <!-- ****************************************************
+                      DATABASES
+    **************************************************** -->
+    <target> 
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql://localhost:5433/bartdb</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>postgres</password>
+        </access-configuration>
+        <import>
+            <input type="csv" separator="," table="clean">/home/fatemeh/ED-Scale/Sandbox_Generation/metanome_input_files/processed/s_fld_haz_ar/clean.csv</input>
+        </import>
+    </target>
+
+    <!-- ****************************************************
+                    DEPENDENCIES
+    **************************************************** -->
+    <dependencies><![CDATA[DCs: 
+
+            e1: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $fldarid1 != $fldarid2 -> #fail. 
+
+        
+            e2: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $staticbfe1 != $staticbfe2 -> #fail. 
+
+        
+            e3: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $sourcecit1 != $sourcecit2 -> #fail. 
+
+        
+            e4: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $fldzone1 != $fldzone2 -> #fail. 
+
+        
+            e5: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $dfirmid1 != $dfirmid2 -> #fail. 
+
+        
+            e6: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $depth1 != $depth2 -> #fail. 
+
+        
+            e7: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $hydroid1 != $hydroid2 -> #fail. 
+
+        
+            e8: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $floodway1 != $floodway2 -> #fail. 
+
+        
+            e9: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $sfhatf1 != $sfhatf2 -> #fail. 
+
+        
+            e10: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $vdatum1 != $vdatum2 -> #fail. 
+
+        
+            e11: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $lenunit1 != $lenunit2 -> #fail. 
+
+        
+            e12: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $velocity1 != $velocity2 -> #fail. 
+
+        
+            e13: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $bferevert1 != $bferevert2 -> #fail. 
+
+        
+            e14: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $deprevert1 != $deprevert2 -> #fail. 
+
+        
+            e15: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $objectid1 == $objectid2, $cstmdlid1 != $cstmdlid2 -> #fail. 
+
+        
+            e16: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $fldarid1 == $fldarid2, $sourcecit1 != $sourcecit2 -> #fail. 
+
+        
+            e17: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $fldarid1 == $fldarid2, $dfirmid1 != $dfirmid2 -> #fail. 
+
+        
+            e18: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $fldarid1 == $fldarid2, $depth1 != $depth2 -> #fail. 
+
+        
+            e19: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $fldarid1 == $fldarid2, $hydroid1 != $hydroid2 -> #fail. 
+
+        
+            e20: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $fldarid1 == $fldarid2, $floodway1 != $floodway2 -> #fail. 
+
+        
+            e21: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $fldarid1 == $fldarid2, $sfhatf1 != $sfhatf2 -> #fail. 
+
+        
+            e22: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $fldarid1 == $fldarid2, $velocity1 != $velocity2 -> #fail. 
+
+        
+            e23: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $fldarid1 == $fldarid2, $cstmdlid1 != $cstmdlid2 -> #fail. 
+
+        
+            e24: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $sourcecit1 == $sourcecit2, $dfirmid1 != $dfirmid2 -> #fail. 
+
+        
+            e25: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $fldzone1 == $fldzone2, $sfhatf1 != $sfhatf2 -> #fail. 
+
+        
+            e26: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $hydroid1 == $hydroid2, $cstmdlid1 != $cstmdlid2 -> #fail. 
+
+        
+            e27: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $bferevert1 == $bferevert2, $deprevert1 != $deprevert2 -> #fail. 
+
+        
+            e28: clean(objectid: $objectid1, dfirmid: $dfirmid1, fldarid: $fldarid1, fldzone: $fldzone1, floodway: $floodway1, sfhatf: $sfhatf1, staticbfe: $staticbfe1, vdatum: $vdatum1, depth: $depth1, lenunit: $lenunit1, velocity: $velocity1, velunit: $velunit1, arrevert: $arrevert1, bferevert: $bferevert1, deprevert: $deprevert1, sourcecit: $sourcecit1, hydroid: $hydroid1, cstmdlid: $cstmdlid1),
+            clean(objectid: $objectid2, dfirmid: $dfirmid2, fldarid: $fldarid2, fldzone: $fldzone2, floodway: $floodway2, sfhatf: $sfhatf2, staticbfe: $staticbfe2, vdatum: $vdatum2, depth: $depth2, lenunit: $lenunit2, velocity: $velocity2, velunit: $velunit2, arrevert: $arrevert2, bferevert: $bferevert2, deprevert: $deprevert2, sourcecit: $sourcecit2, hydroid: $hydroid2, cstmdlid: $cstmdlid2),
+                $deprevert1 == $deprevert2, $bferevert1 != $bferevert2 -> #fail. 
+
+        ]]></dependencies>
+
+    <!-- ****************************************************
+                      CONFIGURATION
+    **************************************************** -->
+    <configuration>
+        <!-- To print extra information in the ouput (default = false) -->
+        <printLog>true</printLog>
+
+        <!-- To load DB every time on start (default = false) -->
+        <recreateDBOnStart>true</recreateDBOnStart>
+
+        <!-- To apply the changes (default = false) -->
+        <applyCellChanges>true</applyCellChanges>
+
+        <!-- To  apply cell changes on a copy of the original target, with a custom suffix (default = true) -->
+        <cloneTargetSchema>true</cloneTargetSchema>
+        <cloneSuffix>_dirty</cloneSuffix>
+
+        <!-- To export the dirty db -->
+        <exportDirtyDB>true</exportDirtyDB>
+        <exportDirtyDBPath>./</exportDirtyDBPath>
+        <exportDirtyDBType>CSV</exportDirtyDBType>
+
+        <!-- To export the changes -->
+        <exportCellChanges>true</exportCellChanges>
+        <exportCellChangesPath>clean_changes.csv</exportCellChangesPath>
+
+        <!-- To compute an estimate of the reparability (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To generate all possible changes (default = false - slow, only for toy examples)-->
+        <generateAllChanges>false</generateAllChanges>
+
+        <!-- To avoid interactions among changes. (default = true) -->
+        <avoidInteractions>true</avoidInteractions>
+
+        <!-- To check, at the end of the process, if changes are detectable. (default = false) -->
+        <checkChanges>true</checkChanges>
+
+        <!-- To compute an estimate of the repairability. Requires checkChanges = true. (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To use an optimized strategy for updates. (default = true) -->
+        <useDeltaDBForChanges>true</useDeltaDBForChanges>
+
+        <!-- Error percentages for dependencies and comparisons 
+        All percentages are wrt table sizes (# tuples) -->
+        <errorPercentages>
+            <defaultPercentage>0.0</defaultPercentage>
+            <vioGenQueries>
+            <vioGenQuery id="e1"><comparison>(objectid1 == objectid2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e1"><comparison>(fldarid1 != fldarid2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(objectid1 == objectid2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(staticbfe1 != staticbfe2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(objectid1 == objectid2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(sourcecit1 != sourcecit2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(objectid1 == objectid2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(fldzone1 != fldzone2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(objectid1 == objectid2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(dfirmid1 != dfirmid2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(objectid1 == objectid2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(depth1 != depth2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e7"><comparison>(objectid1 == objectid2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e7"><comparison>(hydroid1 != hydroid2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e8"><comparison>(objectid1 == objectid2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e8"><comparison>(floodway1 != floodway2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e9"><comparison>(objectid1 == objectid2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e9"><comparison>(sfhatf1 != sfhatf2)</comparison><percentage>0.23728813559322032</percentage></vioGenQuery><vioGenQuery id="e10"><comparison>(objectid1 == objectid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e10"><comparison>(vdatum1 != vdatum2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e11"><comparison>(objectid1 == objectid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e11"><comparison>(lenunit1 != lenunit2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e12"><comparison>(objectid1 == objectid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e12"><comparison>(velocity1 != velocity2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e13"><comparison>(objectid1 == objectid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e13"><comparison>(bferevert1 != bferevert2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e14"><comparison>(objectid1 == objectid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e14"><comparison>(deprevert1 != deprevert2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e15"><comparison>(objectid1 == objectid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e15"><comparison>(cstmdlid1 != cstmdlid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e16"><comparison>(fldarid1 == fldarid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e16"><comparison>(sourcecit1 != sourcecit2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e17"><comparison>(fldarid1 == fldarid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e17"><comparison>(dfirmid1 != dfirmid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e18"><comparison>(fldarid1 == fldarid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e18"><comparison>(depth1 != depth2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e19"><comparison>(fldarid1 == fldarid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e19"><comparison>(hydroid1 != hydroid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e20"><comparison>(fldarid1 == fldarid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e20"><comparison>(floodway1 != floodway2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e21"><comparison>(fldarid1 == fldarid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e21"><comparison>(sfhatf1 != sfhatf2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e22"><comparison>(fldarid1 == fldarid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e22"><comparison>(velocity1 != velocity2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e23"><comparison>(fldarid1 == fldarid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e23"><comparison>(cstmdlid1 != cstmdlid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e24"><comparison>(sourcecit1 == sourcecit2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e24"><comparison>(dfirmid1 != dfirmid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e25"><comparison>(fldzone1 == fldzone2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e25"><comparison>(sfhatf1 != sfhatf2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e26"><comparison>(hydroid1 == hydroid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e26"><comparison>(cstmdlid1 != cstmdlid2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e27"><comparison>(bferevert1 == bferevert2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e27"><comparison>(deprevert1 != deprevert2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e28"><comparison>(deprevert1 == deprevert2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery><vioGenQuery id="e28"><comparison>(bferevert1 != bferevert2)</comparison><percentage>0.20338983050847456</percentage></vioGenQuery></vioGenQueries>
+        </errorPercentages>
+
+        <!-- To control the way in which changing the value -->
+        <dirtyStrategies>
+            <defaultStrategy>
+                <strategy> TypoRandom </strategy>
+            </defaultStrategy> 
+            <!-- possible strategies
+                <strategy chars="*" charsToAdd="3">TypoAddString</strategy>
+                <strategy chars="*" charsToAdd="3">TypoAppendString</strategy>
+                <strategy charsToRemove="3">TypoRemoveString</strategy>
+                <strategy charsToSwitch="3">TypoSwitchValue</strategy>
+                <strategy>TypoActiveDomain</strategy>
+                <strategy>TypoRandom</strategy>
+            -->
+        </dirtyStrategies>
+
+        <randomErrors>
+            <tables>
+                <table name="clean"> 
+                    <percentage>7</percentage> <!-- Percentage is wrt attributes to dirty in the table -->
+                    <attributes>
+                    <atrribute>dfirmid</atrribute><atrribute>fldarid</atrribute><atrribute>fldzone</atrribute><atrribute>floodway</atrribute><atrribute>sfhatf</atrribute><atrribute>vdatum</atrribute><atrribute>lenunit</atrribute><atrribute>sourcecit</atrribute><atrribute>hydroid</atrribute><atrribute>cstmdlid</atrribute></attributes>
+                </table>
+            </tables>
+        </randomErrors>
+    
+        <outlierErrors>
+            <tables>
+                <table name="clean">
+                    <attributes>
+                    <atrribute percentage="0" detectable="true">objectid</atrribute><atrribute percentage="0" detectable="true">staticbfe</atrribute><atrribute percentage="0" detectable="true">depth</atrribute><atrribute percentage="0" detectable="true">velocity</atrribute><atrribute percentage="0" detectable="true">velunit</atrribute><atrribute percentage="0" detectable="true">arrevert</atrribute><atrribute percentage="0" detectable="true">bferevert</atrribute><atrribute percentage="0" detectable="true">deprevert</atrribute></attributes>
+                </table>
+            </tables>
+        </outlierErrors>
+        
+        <!-- The following parameters are used to control the sampling process.
+            All the fields are optional, but they may be crucial to obtain a good random sample.
+            In order to choose the cells to modify, BART will scan the result of a viogen query
+            using the following sampling algorithm:
+            1) First, a number of tuples are skipped. This is a random number choosed btw 
+                0 and (offsetFactor * tableSize)
+            2) Then BART will scan the result and will pickup tuples 
+            with a probability p = probabilityFactor.
+            
+            BART uses three kinds of queries
+            - Symmetric queries: for symmetric viogen queries (see paper)
+            - Inequality queries: for viogen queries without equalities (i.e. inequalities only)
+            - Standard queries: for all other viogen queries
+        -->
+        <vioGenQueriesConfiguration>
+            <!-- STANDARD QUERIES -->
+            <probabilityFactorForStandardQueries>0.25</probabilityFactorForStandardQueries>
+            <offsetFactorForStandardQueries>0.05</offsetFactorForStandardQueries>
+            <!-- SYMMETRIC QUERIES -->
+            <probabilityFactorForSymmetricQueries>0.25</probabilityFactorForSymmetricQueries>
+            <offsetFactorForSymmetricQueries>0.05</offsetFactorForSymmetricQueries>
+            <!-- INEQUALITY QUERIES -->
+            <probabilityFactorForInequalityQueries>0.05</probabilityFactorForInequalityQueries>
+            <offsetFactorForInequalityQueries>0.05</offsetFactorForInequalityQueries>
+            <windowSizeFactorForInequalityQueries>1.5</windowSizeFactorForInequalityQueries>
+        </vioGenQueriesConfiguration>
+
+    </configuration>
+</task>
