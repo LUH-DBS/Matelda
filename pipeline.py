@@ -17,10 +17,10 @@ from marshmallow_pipeline.saving_results import get_all_results
 from marshmallow_pipeline.utils.loading_results import \
     loading_columns_grouping_results
 
-def main(labeling_budget, execution):
+def main(execution):
     configs = ConfigParser()
-    configs.read("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/config-dgov.ini")
-    # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
+    configs.read("config.ini")
+    labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
     save_mediate_res_on_disk = bool(int(configs["EXPERIMENTS"]["save_mediate_res_on_disk"]))
@@ -245,4 +245,4 @@ def main(labeling_budget, execution):
     )
 
 if __name__ == "__main__":
-    main(9, 1)
+    main(1)
