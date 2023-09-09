@@ -4,7 +4,7 @@ run:
 install:
 	conda create -n Error-Detection-at-Scale-mp python=3.10
 	conda run --no-capture-output -n Error-Detection-at-Scale-mp pip install -r requirements.txt
-        conda run --no-capture-output -n Error-Detection-at-Scale-mp python -m nltk.downloader stopwords
+	conda run --no-capture-output -n Error-Detection-at-Scale-mp python -m nltk.downloader stopwords
 
 setup-santos:
 	mkdir -p marshmallow_pipeline/santos/benchmark/

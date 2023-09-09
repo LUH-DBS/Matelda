@@ -18,6 +18,8 @@ make install
 make run
 ```
 
+You will find the results in the results folder and the performance metrics at the end of the log.
+
 ## Utilities
 
 Uninstall:
