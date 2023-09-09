@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_daftar_bukpot_pph_type_all,Type of Daftar Bukti Potong PPh - All User,model_l10n_id_daftar_bukti_potong_pph_type,base.group_user,1,0,0,0
+access_daftar_bukpot_pph_all,Daftar Bukti Potong PPh - All User,model_l10n_id_daftar_bukti_potong_pph,base.group_user,1,0,0,0
+access_daftar_bukpot_pph_type_taxform_manager,Type of Daftar Bukti Potong PPh - Taxform Manager,model_l10n_id_daftar_bukti_potong_pph_type,l10n_id_taxform.manager_group_taxform,1,1,0,0
+access_daftar_bukpot_pph_taxform_user,Daftar Bukti Potong PPh - Taxform User,model_l10n_id_daftar_bukti_potong_pph,l10n_id_taxform.user_group_taxform,1,1,1,1

@@ -1,0 +1,13 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+dfe02602-8fd1-11eb-924d-9cd76263cbd0,genus,Astrodontium,,,Schwägr.,Q55072516,1824,,"Sp. Musc. Frond., Suppl. 2 2: 128. 1824.",,,,,,,wfo-4000003479,3230015,,
+f4473562-8fcd-11eb-924d-9cd76263cbd0,species,canariense,Astrodontium,,"(Brid.) Schwägr.","Q946113,Q55072516",1824,,"Sp. Musc. Frond., Suppl. 2 2: 128. pl. 134 1824",,,,,,,wfo-0001192321,8307059,,
+f4475268-8fcd-11eb-924d-9cd76263cbd0,species,cryptotheca,Astrodontium,,"(Hampe) Schimp.","Q64025,Q63251",1872,,"Mém. Soc. Sci. Nat. Cherbourg 16: 217 1872",,,,e63db388-8fcd-11eb-924d-9cd76263cbd0,,,wfo-0001192322,8270563,,
+f4476f3c-8fcd-11eb-924d-9cd76263cbd0,species,curvirostre,Astrodontium,,"(Hampe) Schimp.","Q64025,Q63251",1872,,"Mém. Soc. Sci. Nat. Cherbourg 16: 218 1872",,,,,,,wfo-0001192323,7744241,,
+f4478bfc-8fcd-11eb-924d-9cd76263cbd0,species,flexisetum,Astrodontium,,Besch.,Q8078265,1899,,"J. Bot. (Morot) 13: 38 1899",,,,,,,wfo-0001192324,7520816,,
+f447a74a-8fcd-11eb-924d-9cd76263cbd0,species,indicum,Astrodontium,,"Dozy & Molk.","Q21338956,Q18986922",1844,,"Ann. Sci. Nat., Bot., sér. 3, 2: 299 1844",,,,,,,wfo-0001192325,8142086,,
+f447c400-8fcd-11eb-924d-9cd76263cbd0,species,secundum,Astrodontium,,"(Harv.) Besch.","Q1378128,Q8078265",1892,,"Ann. Sci. Nat., Bot., sér. 7, 15: 73 1892",,,,ebeccdf0-8fcd-11eb-924d-9cd76263cbd0,,,wfo-0001192326,7709638,,
+f447e0fc-8fcd-11eb-924d-9cd76263cbd0,species,sericeum,Astrodontium,,A.Jaeger,Q21513395,1875,,"Ber. Thätigk. St. Gallischen Naturwiss. Ges. 1875–76: 213 1877",,,,,,,wfo-0001192327,8269430,,
+efa1face-8fcd-11eb-924d-9cd76263cbd0,species,subemersum,Astrodontium,,"Hampe ex Besch.","Q64025,Q8078265",1872,,"Mém. Soc. Sci. Nat. Cherbourg 16: 218 1872",,,,,,,wfo-0001182812,7936106,,
+f447fdf8-8fcd-11eb-924d-9cd76263cbd0,species,tenue,Astrodontium,,Schimp.,Q63251,1872,,"Mém. Soc. Sci. Nat. Cherbourg 16: 218 1872",,,,,,,wfo-0001192328,7638061,,
+f4481c98-8fcd-11eb-924d-9cd76263cbd0,species,treleasei,Astrodontium,,Cardot,Q2504754,1897,,"Rep. (Annual) Missouri Bot. Gard. 8: 66. 9 1897",,,,,,,wfo-0001192329,8366289,,
+1f351b06-8fcc-11eb-924d-9cd76263cbd0,species,crotonoides,Astrogyne,,Benth.,Q731808,1839,,"Pl. Hartw. 14 1839",,,,,,339528-1,wfo-0000340799,3059167,,

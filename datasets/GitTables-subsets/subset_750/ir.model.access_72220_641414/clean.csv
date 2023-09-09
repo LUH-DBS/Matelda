@@ -1,0 +1,13 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_psms_core_settings_manager","powersms.core_accounts","model_powersms_core_accounts","res_groups_psmsmanager",1,1,1,1
+"access_psms_core_external_users","powersms.core_accounts","model_powersms_core_accounts","res_groups_psmsuserse",1,1,1,0
+"access_psms_core_internal_users","powersms.core_accounts","model_powersms_core_accounts","res_groups_psmsusersi",1,1,1,0
+"access_psms_template_settings_manager","powersms.templates","model_powersms_templates","res_groups_psmsmanager",1,1,1,1
+"access_psms_template_external_users","powersms.templates","model_powersms_templates","res_groups_psmsuserse",1,1,0,0
+"access_psms_template_internal_users","powersms.templates","model_powersms_templates","res_groups_psmsusersi",1,1,0,0
+"access_psms_mailbox_settings_manager","powersms.mailbox","model_powersms_smsbox","res_groups_psmsmanager",1,1,1,1
+"access_psms_mailbox_external_users","powersms.mailbox","model_powersms_smsbox","res_groups_psmsuserse",1,1,1,1
+"access_psms_mailbox_internal_users","powersms.mailbox","model_powersms_smsbox","res_groups_psmsusersi",1,1,1,1
+"access_wizard_send_settings_manager","powersms.send.wizard","model_powersms_send_wizard","res_groups_psmsmanager",1,1,1,1
+"access_wizard_send_external_users","powersms.send.wizard","model_powersms_send_wizard","res_groups_psmsuserse",1,1,1,1
+"access_wizard_send_internal_users","powersms.send.wizard","model_powersms_send_wizard","res_groups_psmsusersi",1,1,1,1

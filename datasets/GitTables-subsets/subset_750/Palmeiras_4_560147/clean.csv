@@ -1,0 +1,31 @@
+clube_id,nome,slug,apelido,atleta_id,rodada_id,posicao_id,status_id,pontos_num,preco_num,variacao_num,media_num,jogos_num,RB,FC,GC,CA,CV,SG,DD,DP,GS,FS,PI,A,FT,FD,FF,G,I,PP
+275,Luiz Adriano de Souza da Silva,luiz-adriano,Luiz Adriano,72772,15,5,7,0.5,10.49,-0.31,3.84,10,0,12,0,1,0,0,0,0,0,12,18,0,0,1,5,4,0,0
+275,Willian Gomes de Siqueira,willian,Willian,42116,15,5,6,0,10.18,-1.55,3.97,13,0,9,0,0,0,0,0,0,0,14,19,2,0,3,11,4,5,1
+275,Felipe Melo de Carvalho,felipe-melo,Felipe Melo,38545,15,3,7,3.5,6.46,0.59,0.85,4,0,3,0,1,0,0,0,0,0,3,16,0,0,0,0,0,0,0
+275,Luan Garcia Teixeira,luan,Luan,80692,15,3,5,-0.8,4.74,-0.39,1.65,11,0,9,0,3,0,2,0,0,0,4,39,0,0,0,2,0,2,0
+275,José Rafael Vivian,ze-rafael,Zé Rafael,82455,15,4,7,0.6,9.72,-0.4,3.59,10,0,21,0,2,1,0,0,0,0,27,35,1,0,3,6,2,0,0
+275,Vinicius Silvestre da Costa,vinicius-silvestre,Vinicius Silvestre,85083,15,1,6,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+275,Patrick de Paula Carreiro,patrick-de-paula,Patrick de Paula,107172,15,4,7,1.6,5.36,-0.11,3.71,11,0,16,0,1,0,0,0,0,0,15,55,0,1,5,6,1,0,0
+275,Mayke Rocha de Oliveira,mayke,Mayke,81150,15,2,6,0,5.83,0,2.09,7,0,7,0,1,0,1,0,0,0,4,47,0,0,0,1,0,0,0
+275,Emerson Raymundo Santos,emerson-santos,Emerson Santos,86972,15,3,2,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+275,Wesley Ribeiro Silva,wesley,Wesley,105811,15,5,7,3.8,4.25,0.3,3.24,10,0,9,0,2,0,0,0,0,0,16,31,2,2,7,7,0,4,0
+275,Raphael Cavalcante Veiga,raphael-veiga,Raphael Veiga,94509,15,4,7,1.8,8.31,-0.22,5.13,7,0,8,0,0,0,0,0,0,0,14,41,0,0,1,6,3,0,0
+275,Lucas Esteves de Souza,esteves,Esteves,100846,15,2,7,-4.5,0.78,-1.22,-4.5,1,0,3,0,1,0,0,0,0,0,0,10,0,0,0,0,0,0,0
+275,Luan Silva dos Santos,luan-silva,Luan Silva,102295,15,5,5,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+275,Gustavo Henrique Furtado Scarpa,gustavo-scarpa,Gustavo Scarpa,87999,15,4,6,2.4,5.87,0.44,1,7,0,5,0,1,0,0,0,0,0,2,31,1,0,5,2,0,0,0
+275,Matías Nicolás Viña Susperreguy,vina,Viña,98974,15,2,6,0,9.17,0,4.85,8,0,5,0,1,0,1,0,0,0,10,66,1,0,1,4,0,1,0
+275,Ronielson da Silva Barbosa,rony,Rony,91607,15,5,6,0,8.82,0,0.89,10,0,22,0,1,0,0,0,0,0,19,36,0,0,4,4,0,4,0
+275,Gabriel Vinícius Menino,gabriel-menino,Gabriel Menino,103767,15,4,6,0,4.93,0,2.86,10,0,12,0,2,0,0,0,0,0,20,68,2,0,1,9,0,4,0
+275,Gustavo Raúl Gómez Portillo,gustavo-gomez,Gustavo Gómez,71684,15,3,6,0,12.03,0,3.28,9,0,13,0,1,0,2,0,0,0,9,26,1,0,1,3,1,3,0
+275,Gabriel Veron Fonseca de Souza,gabriel-veron,Gabriel Veron,103764,15,5,6,0.3,5.35,-0.13,4.12,6,0,6,0,0,0,0,0,0,0,4,14,1,0,0,2,2,1,0
+275,Weverton Pereira da Silva,weverton,Weverton,71631,15,1,6,0,8.2,0,0.13,10,0,0,0,0,0,2,4,0,9,0,66,0,0,0,0,0,0,0
+275,Iván Darío Angulo Cortés,ivan-angulo,Iván Angulo,105841,15,5,6,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+275,Ramires Santos do Nascimento,ramires,Ramires,50293,15,4,6,0.9,4.76,0.01,0.72,12,0,7,1,2,0,0,0,0,0,6,28,0,0,1,1,0,0,0
+275,Vanderlei Luxemburgo da Silva,vanderlei-luxemburgo,Vanderlei Luxemburgo,41327,15,6,7,0.57,10.22,-0.32,3.23,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+275,Lucas Rafael Araújo Lima,lucas-lima,Lucas Lima,80583,15,4,6,-1.5,4.1,-0.25,0.71,11,0,14,0,3,0,0,0,0,0,18,90,0,0,3,2,0,1,0
+275,Danilo dos Santos de Oliveira,danilo,Danilo,107231,15,4,7,0,1.33,0.26,0.96,5,0,3,0,2,0,0,0,0,0,1,10,0,0,1,2,0,0,0
+275,Marcos Luis Rocha Aquino,marcos-rocha,Marcos Rocha,63013,15,2,7,2.3,7.47,0.51,1.84,9,0,14,0,1,0,1,0,0,0,9,88,0,0,0,1,0,0,0
+275,Jailson Marcelino dos Santos,jailson,Jailson,72290,15,1,7,-4.6,1.35,-0.62,-3.33,3,0,0,0,1,0,0,1,0,5,0,20,0,0,0,0,0,0,0
+275,Gabriel Silva Vieira,gabriel-silva,Gabriel Silva,103766,15,4,6,0,0.79,0,-0.83,3,0,2,0,1,0,0,0,0,0,0,3,0,0,0,1,0,0,0
+275,Marcelo José de Lima Filho,marcelinho,Marcelinho,107238,15,5,6,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+275,Renan Victor da Silva,renan,Renan,109963,15,2,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

@@ -1,0 +1,13 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+e2548be4-8fd1-11eb-924d-9cd76263cbd0,genus,Cyclanthus,,,"Poit. ex A.Rich.","Q1968431,Q340247",1824,,"Dict. Class. Hist. Nat. 5: 221–222. 1824.",,,,,,30148803-2,wfo-4000010242,2861107,,
+229e4ece-8fcd-11eb-924d-9cd76263cbd0,species,bifolius,Cyclanthus,,Perr.,Q973709,1825,,"Mém. Soc. Linn. Paris 3: 112 1825",,,,,,297620-1,wfo-0000764860,2861113,,
+229e6ad0-8fcd-11eb-924d-9cd76263cbd0,species,bipartitus,Cyclanthus,,"Poit. ex A.Rich.","Q1968431,Q340247",1824,,"Dict. Class. Hist. Nat. 5: 222 1824",,,,,,30336798-2,wfo-0000764861,2861108,,
+e08f63ec-8fcc-11eb-924d-9cd76263cbd0,variety,gracilis,Cyclanthus,bipartitus,Drude,Q63040,1881,,"Fl. Bras. 3(2): 246 1881",,,,,,73645-2,wfo-0000644362,2861112,,
+229e89b6-8fcd-11eb-924d-9cd76263cbd0,species,cristatus,Cyclanthus,,Klotzsch,Q67003,1847,,"Linnaea 20: 469 1847",,,,,,297622-1,wfo-0000764862,2861110,,
+be1e8c16-8fd1-11eb-924d-9cd76263cbd0,species,godseffianus,Cyclanthus,,hort.,,1892,,"Gard. Chron., ser. 3 11: 731 1892",,,,,,,wfo-0001250547,3593869,,
+229ea504-8fcd-11eb-924d-9cd76263cbd0,species,indivisus,Cyclanthus,,R.E.Schult.,Q1124975,1959,,"Bot. Mus. Leafl. 18: 305 1959",,Q100425677,,,,73646-2,wfo-0000764863,2861114,,
+229ec250-8fcd-11eb-924d-9cd76263cbd0,species,plumieri,Cyclanthus,,"Poit. ex A.Rich.","Q1968431,Q340247",1824,,"Dict. Class. Hist. Nat. 5: 222 1824",,,,,,60450347-2,wfo-0000764864,2861111,,
+ddb0148c-8fd1-11eb-924d-9cd76263cbd0,species,plumieri,Cyclanthus,,Poit.,Q1968431,1822,,"Mém. Mus. Hist. Nat. 9: 37 1822",,,,,,297627-1,wfo-0001301607,7414501,,
+ddae22da-8fd1-11eb-924d-9cd76263cbd0,species,rhombens,Cyclanthus,,Oerst.,Q491270,,,,,,,,,,wfo-0001301594,8094307,,
+ddae479c-8fd1-11eb-924d-9cd76263cbd0,species,simicircularis,Cyclanthus,,Oerst.,Q491270,,,,,,,,,,wfo-0001301595,8236513,,
+ddaeb196-8fd1-11eb-924d-9cd76263cbd0,species,triangularis,Cyclanthus,,Oerst.,Q491270,,,,,,,,,,wfo-0001301596,7675848,,

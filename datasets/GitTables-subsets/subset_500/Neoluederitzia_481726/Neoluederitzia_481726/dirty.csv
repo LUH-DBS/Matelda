@@ -1,0 +1,4 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+e7317852-8fd1-11eb-924d-9cd76263cbd0,genus,Neoluederitzia,,,Schinz,Q124491,1894,,"Bull. Herb. Boissier 2: 190. 1894.",,,,,,41726-1,wfo-4000025756,7285845,,
+38b00668-8fcc-11eb-924d-9cd76263cbd0,species,sericocarpa,Neoluederitzia,,Schinz,Q124491,1894,,"Bull. Herb. Boissier 2: 171 1894",,,,,,873328-1,wfo-0000381030,3987125,,
+ad05f252-8fd1-11eb-924d-9cd76263cbd0,species,sikkimensis,Neoluffa,,Chakrav.,Q5898605,1952,,"J. Bombay Nat. Hist. Soc. 50: 895 1952",,,,,,293615-1,wfo-0001219137,3623168,,

@@ -1,0 +1,6 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+9b543c16-9bad-11eb-a8a2-19ed5c03f8d3,genus,Phlyctaeniella,,,Petr.,Q4360385,1922,,"Annls mycol. 20(5/6): 323 (1922)",,,,9b543c16-9bad-11eb-a8a2-19ed5c03f8d3,,,,,9355," "
+d80f52cc-9bac-11eb-a8a2-19ed5c03f8d3,species,cryptica,Phlyctaeniella,,Syd.,,1930,,"Annls mycol. 28: 441 (1930)",,,,d80f52cc-9bac-11eb-a8a2-19ed5c03f8d3,,,,,262415," "
+7274edb4-9bac-11eb-a8a2-19ed5c03f8d3,species,humuli,Phlyctaeniella,,Petr.,Q4360385,1929,,"Annls mycol. 27(5/6): 397 (1929)",,,,7274edb4-9bac-11eb-a8a2-19ed5c03f8d3,,,,,267442," "
+e1a0831a-9bac-11eb-a8a2-19ed5c03f8d3,species,polonica,Phlyctaeniella,,Petr.,Q4360385,1922,,"Annls mycol. 20(5/6): 323 (1922)",,,,e1a0831a-9bac-11eb-a8a2-19ed5c03f8d3,,,,,274884," "
+73b6078a-9bac-11eb-a8a2-19ed5c03f8d3,species,psilostega,Phlyctaeniella,,"(Ellis & G. Martin) Andrian.",Q6206643,1996,,"Mikol. Fitopatol. 30(1): 8 (1996)",,,,83b2459a-9bac-11eb-a8a2-19ed5c03f8d3,,,,,436317," "

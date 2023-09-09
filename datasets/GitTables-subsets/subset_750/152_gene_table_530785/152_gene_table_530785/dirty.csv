@@ -1,0 +1,7 @@
+locus,gene_weight,gene_name,gene_product,COG,operon,regulator,link
+b4567,0.5672787172,yjjZ,protein YjjZ,Function unknown,yjjZ,"RpoD,ppGpp,OxyR,Fur",https://ecocyc.org/gene?orgid=ECOLI&id=G0-10474
+b2392,0.1260383804,mntH,Mn(2(+))/Fe(2(+)): H(+) symporter MntH,Inorganic ion transport and metabolism,mntH,"RpoD,Fur,MntR,OxyR,Nac",https://ecocyc.org/gene?orgid=ECOLI&id=G7254
+b4293,0.10970012850000001,fecI,RNA polymerase sigma factor FecI,Transcription,fecIR,"RpoD,SlyA,Fur",https://ecocyc.org/gene?orgid=ECOLI&id=EG10291
+b0804,0.10484337,ybiX,PKHD-type hydroxylase YbiX,Function unknown,ybiX,,https://ecocyc.org/gene?orgid=ECOLI&id=G6413
+b4292,0.0983572085,fecR,regulator for fec operon%2C periplasmic,Inorganic ion transport and metabolism,fecIR,"RpoD,SlyA,Fur",https://ecocyc.org/gene?orgid=ECOLI&id=EG10292
+b1656,-0.1415992429,sodB,superoxide dismutase (Fe),Energy production and conversion,sodB,"RpoD,ryhB,fnrS,IHF,Crp,NsrR",https://ecocyc.org/gene?orgid=ECOLI&id=EG10954

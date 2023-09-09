@@ -1,0 +1,11 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+e517a046-8fd1-11eb-924d-9cd76263cbd0,genus,Intybellia,,,,,,,,,,,,,,wfo-4000019104,,,
+0efd51b8-8fb3-11eb-924d-9cd76263cbd0,species,callicephala,Intybellia,,Juz.,Q3479734,1951,,"45 1951",,,,,,225713-1,wfo-0000040661,5403667,,
+85e96d66-8fb3-11eb-924d-9cd76263cbd0,species,glareosa,Intybellia,,Boiss.,Q34430,1875,,"P.E. Boissier, Fl. Orient. 3. 1875 883 1875",,,,,,,wfo-0000049938,5691429,,
+cb6407fe-8fbb-11eb-924d-9cd76263cbd0,species,glareosa,Intybellia,,"Schott & Kotschy","Q112191,Q113299",1875,,"ex Boiss. Fl. Orient. [Boissier] 3: 883 1875",,,,,,225714-1,wfo-0000136692,8186125,,
+5f81a90e-8fb3-11eb-924d-9cd76263cbd0,species,incarnata,Intybellia,,Monnier,Q21521652,1829,,"A. Monnier, Ess. Monogr. Hieracium. 1829 79 1829",,,,,,225715-1,wfo-0000047017,5691427,,
+9e831b7e-8fb3-11eb-924d-9cd76263cbd0,species,praemorsa,Intybellia,,"(L.) Monnier","Q1043,Q21521652",1829,,"A. Monnier, Ess. Monogr. Hieracium. 1829 79 1829",,,,,,225716-1,wfo-0000051712,5691424,,
+7409b31c-8fb3-11eb-924d-9cd76263cbd0,species,pulchra,Intybellia,,"(L.) Monnier","Q1043,Q21521652",1829,,"A. Monnier, Ess. Monogr. Hieracium. 1829 79 1829",,,,b6858a62-8fb9-11eb-924d-9cd76263cbd0,,225717-1,wfo-0000048594,5691423,,
+6ab48824-8fb2-11eb-924d-9cd76263cbd0,species,purpurea,Intybellia,,"(Willd.) DC.","Q76353,Q123057",1838,,"Prodr. (DC.) 7(1): 180 1838",,,,,,225718-1,wfo-0000023886,5691421,,
+63848fb8-8fb2-11eb-924d-9cd76263cbd0,species,rosea,Intybellia,,Cass.,Q958431,1821,,"in Dict. Sc. Nat. xxiii. 548. 1821",,,,,,,wfo-0000022966,5691419,,
+b59da1d4-8fb9-11eb-924d-9cd76263cbd0,species,taurica,Intybellia,,Less.,Q76352,1832,,"144 1832",,,,,,225720-1,wfo-0000120705,5691417,,

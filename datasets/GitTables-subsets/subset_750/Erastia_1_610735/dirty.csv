@@ -1,0 +1,3 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+a13f926a-9bad-11eb-a8a2-19ed5c03f8d3,genus,Erastia,,,"Niemelä & Kinnunen",,2005,,"in Niemelä, Kinnunen, Larsson, Schigel & Larsson, Karstenia 45(2): 76 (2005)",,,,a13f926a-9bad-11eb-a8a2-19ed5c03f8d3,,,,,500973," "
+001ae5fc-9bac-11eb-a8a2-19ed5c03f8d3,species,salmonicolor,Erastia,,"(Berk. & M.A. Curtis) Niemelä & Kinnunen",Q662338,2005,,"in Niemelä, Kinnunen, Larsson, Schigel & Larsson, Karstenia 45(2): 76 (2005)",,,,e35aa078-9bac-11eb-a8a2-19ed5c03f8d3,,,,,365694," "
