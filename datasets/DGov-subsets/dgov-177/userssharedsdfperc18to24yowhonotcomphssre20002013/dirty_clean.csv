@@ -1,0 +1,337 @@
+characteristic,sex,raceethnicity,year,percentage,standard_erroron_percentage,noteon_percentage,countinthousands,standard_erroron_countinthousands,noteon_count
+Total,NULL,NULL,2000,23.5%,0.52,NULL,6234.0,143.1,NULL
+Total,NULL,NULL,2001,23.8%,0.52,NULL,6386.0,144.8,NULL
+Total,NULL,NULL,2002,23.7%,0.36,NULL,6475.0,103.6,NULL
+Total,NULL,NULL,2003,22.7%,0.36,NULL,6230.0,105.4,NULL
+Total,NULL,NULL,2004,22.1%,0.35,NULL,6160.0,105.0,NULL
+Total,NULL,NULL,2005,21.9%,0.42,NULL,6125.0,123.1,NULL
+Total,NULL,NULL,2006,21.2%,0.36,NULL,5930.0,105.1,NULL
+Total,NULL,NULL,2007,21.1%,0.37,NULL,5997.0,109.6,NULL
+Total,NULL,NULL,2008,20%,0.34,NULL,5669.0,97.4,NULL
+Total,NULL,NULL,2009,19.4%,0.34,NULL,5573.0,102.2,NULL
+Total,NULL,NULL,2010,19.5%,0.34,NULL,5727.0,104.7,NULL
+Total,NULL,NULL,2011,19.6%,0.37,NULL,5812.0,111.6,NULL
+Total,NULL,NULL,2012,18.7%,0.34,NULL,5647.0,103.9,NULL
+Total,NULL,NULL,2013,17.5%,0.35,NULL,5243.0,106.1,NULL
+Total - Male,Male,NULL,2000,26.1%,0.75,NULL,3463.0,111.2,NULL
+Total - Male,Male,NULL,2001,26.6%,0.75,NULL,3569.0,112.8,NULL
+Total - Male,Male,NULL,2002,25.9%,0.53,NULL,3556.0,80.2,NULL
+Total - Male,Male,NULL,2003,25%,0.52,NULL,3453.0,80.4,NULL
+Total - Male,Male,NULL,2004,25%,0.51,NULL,3545.0,81.5,NULL
+Total - Male,Male,NULL,2005,24.1%,0.52,NULL,3387.0,77.1,NULL
+Total - Male,Male,NULL,2006,23.6%,0.51,NULL,3327.0,74.2,NULL
+Total - Male,Male,NULL,2007,23.5%,0.51,NULL,3388.0,75.2,NULL
+Total - Male,Male,NULL,2008,21.9%,0.48,NULL,3147.0,70.7,NULL
+Total - Male,Male,NULL,2009,21.7%,0.49,NULL,3144.0,74.5,NULL
+Total - Male,Male,NULL,2010,21.7%,0.48,NULL,3215.0,73.0,NULL
+Total - Male,Male,NULL,2011,21.3%,0.51,NULL,3206.0,79.0,NULL
+Total - Male,Male,NULL,2012,20.3%,0.48,NULL,3074.0,72.7,NULL
+Total - Male,Male,NULL,2013,19.3%,0.45,NULL,2920.0,71.8,NULL
+Total - Female,Female,NULL,2000,20.9%,0.7,NULL,2770.0,100.4,NULL
+Total - Female,Female,NULL,2001,21.1%,0.7,NULL,2817.0,101.3,NULL
+Total - Female,Female,NULL,2002,21.5%,0.5,NULL,2919.0,73.3,NULL
+Total - Female,Female,NULL,2003,20.4%,0.49,NULL,2777.0,72.6,NULL
+Total - Female,Female,NULL,2004,19.2%,0.48,NULL,2614.0,70.6,NULL
+Total - Female,Female,NULL,2005,19.6%,0.51,NULL,2737.0,74.2,NULL
+Total - Female,Female,NULL,2006,18.8%,0.44,NULL,2603.0,64.2,NULL
+Total - Female,Female,NULL,2007,18.7%,0.45,NULL,2609.0,67.5,NULL
+Total - Female,Female,NULL,2008,18%,0.44,NULL,2522.0,65.1,NULL
+Total - Female,Female,NULL,2009,17.1%,0.43,NULL,2430.0,63.0,NULL
+Total - Female,Female,NULL,2010,17.4%,0.42,NULL,2512.0,64.1,NULL
+Total - Female,Female,NULL,2011,17.9%,0.49,NULL,2606.0,73.9,NULL
+Total - Female,Female,NULL,2012,17.2%,0.46,NULL,2573.0,71.3,NULL
+Total - Female,Female,NULL,2013,15.6%,0.45,NULL,2323.0,68.1,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2000,18.2%,0.58,NULL,3144.0,106.4,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2001,17.9%,0.59,NULL,2984.0,104.0,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2002,18.5%,0.42,NULL,3148.0,75.9,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2003,17.6%,0.41,NULL,3002.0,75.3,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2004,17.2%,0.4,NULL,2983.0,75.1,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2005,16.8%,0.45,NULL,2926.0,80.4,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2006,16.6%,0.42,NULL,2879.0,76.2,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2007,17.2%,0.38,NULL,2997.0,69.6,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2008,15.6%,0.39,NULL,2740.0,68.3,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2009,15.4%,0.38,NULL,2737.0,71.3,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2010,15.5%,0.4,NULL,2758.0,72.6,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2011,15.9%,0.41,NULL,2793.0,72.6,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2012,15.8%,0.42,NULL,2691.0,71.5,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2013,14.2%,0.4,NULL,2371.0,66.3,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2000,28.8%,1.44,NULL,1114.0,59.4,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2001,29%,1.48,NULL,1077.0,58.7,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2002,27.5%,1.02,NULL,1045.0,41.2,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2003,27.7%,1.04,NULL,1025.0,44.0,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2004,25.4%,1.02,NULL,930.0,41.5,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2005,26.1%,1.28,NULL,995.0,50.6,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2006,23.3%,1.04,NULL,907.0,42.7,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2007,23.6%,1.11,NULL,918.0,44.9,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2008,24.1%,0.99,NULL,944.0,40.6,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2009,24%,1.12,NULL,960.0,46.4,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2010,23.6%,1.05,NULL,962.0,45.4,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2011,23.7%,0.97,NULL,995.0,42.2,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2012,21.3%,0.97,NULL,910.0,43.8,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2013,20.2%,1.02,NULL,886.0,45.9,NULL
+Total - Hispanic,NULL,Hispanic,2000,43.3%,1.56,NULL,1716.0,73.2,NULL
+Total - Hispanic,NULL,Hispanic,2001,42.8%,1.42,NULL,2057.0,78.3,NULL
+Total - Hispanic,NULL,Hispanic,2002,41.6%,1.0,NULL,2031.0,57.0,NULL
+Total - Hispanic,NULL,Hispanic,2003,39.7%,1.0,NULL,1910.0,55.8,NULL
+Total - Hispanic,NULL,Hispanic,2004,39%,0.98,NULL,1941.0,56.3,NULL
+Total - Hispanic,NULL,Hispanic,2005,37.9%,1.15,NULL,1881.0,61.7,NULL
+Total - Hispanic,NULL,Hispanic,2006,37.3%,0.97,NULL,1815.0,50.0,NULL
+Total - Hispanic,NULL,Hispanic,2007,34.6%,1.0,NULL,1761.0,54.0,NULL
+Total - Hispanic,NULL,Hispanic,2008,33%,0.97,NULL,1654.0,49.7,NULL
+Total - Hispanic,NULL,Hispanic,2009,31.2%,1.0,NULL,1581.0,51.9,NULL
+Total - Hispanic,NULL,Hispanic,2010,30.8%,0.89,NULL,1686.0,50.7,NULL
+Total - Hispanic,NULL,Hispanic,2011,28.8%,0.89,NULL,1662.0,52.9,NULL
+Total - Hispanic,NULL,Hispanic,2012,26.5%,0.81,NULL,1652.0,50.8,NULL
+Total - Hispanic,NULL,Hispanic,2013,25.9%,0.95,NULL,1636.0,61.2,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2000,16.4%,2.14,NULL,193.0,27.2,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2001,13.4%,1.88,NULL,173.0,25.8,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2002,12%,1.26,NULL,159.0,17.7,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2003,12.5%,1.39,NULL,142.0,16.8,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2004,12.3%,1.4,NULL,135.0,16.2,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2005,14.6%,1.53,NULL,160.0,17.2,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2006,15.8%,1.74,NULL,178.0,19.9,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2007,12.7%,1.32,NULL,152.0,16.1,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2008,11%,1.18,NULL,125.0,13.5,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2009,12.2%,1.25,NULL,132.0,13.7,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2010,12.3%,1.27,NULL,144.0,15.1,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2011,14.6%,2.13,NULL,184.0,27.6,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2012,12.1%,1.08,NULL,184.0,17.4,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2013,11.3%,1.16,NULL,179.0,18.4,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2000,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2001,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2002,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2003,10.8%,4.62,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2004,14.4%,5.06,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2005,17.7%,4.8,NULL,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2006,17.2%,5.45,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2007,10.5%,3.74,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2008,17.1%,5.68,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2009,15.6%,5.76,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2010,22.8%,5.55,NULL,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2011,12.7%,3.74,NULL,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2012,9.9%,3.07,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2013,12.2%,3.97,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2000,29.5%,5.97,NULL,68.0,16.2,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2001,32.2%,5.39,NULL,95.0,19.2,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2002,34%,4.1,NULL,91.0,13.4,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2003,27.4%,4.55,NULL,53.0,10.2,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2004,39.2%,5.36,NULL,65.0,11.3,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2005,30.5%,4.13,NULL,52.0,8.9,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2006,26.5%,5.06,NULL,43.0,12.8,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2007,34.9%,4.7,NULL,70.0,14.4,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2008,36.8%,4.73,NULL,75.0,15.0,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2009,22.3%,3.17,NULL,51.0,8.8,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2010,27.8%,3.85,NULL,68.0,14.7,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2011,25.1%,3.8,NULL,54.0,9.7,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2012,24.5%,4.06,NULL,55.0,10.2,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2013,17%,3.45,NULL,47.0,12.5,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2000,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2001,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2002,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2003,19.3%,2.61,NULL,89.0,13.3,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2004,20.5%,2.69,NULL,92.0,13.4,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2005,18.8%,2.5,NULL,97.0,13.7,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2006,19.8%,2.16,NULL,94.0,11.1,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2007,19%,2.08,NULL,92.0,11.1,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2008,22.7%,2.69,NULL,118.0,16.3,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2009,20%,2.35,NULL,98.0,13.1,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2010,17.9%,2.27,NULL,88.0,13.1,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2011,20.2%,2.33,NULL,110.0,13.9,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2012,18.9%,2.22,NULL,142.0,17.3,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2013,15.6%,1.92,NULL,109.0,14.6,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2000,20%,0.85,NULL,1743.0,80.8,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2001,20%,0.87,NULL,1675.0,79.3,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2002,19.9%,0.61,NULL,1703.0,56.9,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2003,19.3%,0.6,NULL,1654.0,56.5,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2004,19.6%,0.6,NULL,1726.0,57.8,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2005,18.6%,0.58,NULL,1621.0,52.4,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2006,18.4%,0.59,NULL,1607.0,52.9,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2007,19.2%,0.57,NULL,1690.0,51.4,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2008,17%,0.6,NULL,1512.0,54.8,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2009,17.3%,0.55,NULL,1548.0,52.4,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2010,16.9%,0.56,NULL,1519.0,51.4,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2011,17%,0.57,NULL,1506.0,51.7,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2012,17%,0.63,NULL,1451.0,53.9,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2013,15.8%,0.55,NULL,1332.0,47.7,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2000,33.3%,2.2,NULL,600.0,46.0,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2001,33.2%,2.25,NULL,573.0,45.1,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2002,29.7%,1.53,NULL,528.0,30.9,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2003,29.5%,1.54,NULL,512.0,31.5,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2004,28.6%,1.53,NULL,496.0,30.8,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2005,28.4%,1.68,NULL,512.0,31.3,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2006,26.5%,1.6,NULL,495.0,31.8,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2007,26.1%,1.69,NULL,497.0,33.9,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2008,26.7%,1.32,NULL,501.0,26.8,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2009,26.5%,1.76,NULL,509.0,35.6,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2010,26.5%,1.41,NULL,523.0,29.0,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2011,26.4%,1.49,NULL,538.0,31.8,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2012,23.4%,1.36,NULL,480.0,29.4,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2013,22.8%,1.29,NULL,482.0,29.3,NULL
+Hispanic,Male,Hispanic,2000,46.1%,2.17,NULL,958.0,57.7,NULL
+Hispanic,Male,Hispanic,2001,46.1%,1.96,NULL,1176.0,63.1,NULL
+Hispanic,Male,Hispanic,2002,45.1%,1.38,NULL,1167.0,45.4,NULL
+Hispanic,Male,Hispanic,2003,42.9%,1.37,NULL,1124.0,44.7,NULL
+Hispanic,Male,Hispanic,2004,42.6%,1.34,NULL,1154.0,45.4,NULL
+Hispanic,Male,Hispanic,2005,41.1%,1.65,NULL,1083.0,46.8,NULL
+Hispanic,Male,Hispanic,2006,41.1%,1.46,NULL,1060.0,39.7,NULL
+Hispanic,Male,Hispanic,2007,37.2%,1.26,NULL,1005.0,36.2,NULL
+Hispanic,Male,Hispanic,2008,36%,1.29,NULL,946.0,34.8,NULL
+Hispanic,Male,Hispanic,2009,34.8%,1.38,NULL,917.0,38.3,NULL
+Hispanic,Male,Hispanic,2010,34.2%,1.22,NULL,981.0,35.0,NULL
+Hispanic,Male,Hispanic,2011,31.2%,1.25,NULL,974.0,41.0,NULL
+Hispanic,Male,Hispanic,2012,28.2%,1.24,NULL,921.0,40.7,NULL
+Hispanic,Male,Hispanic,2013,28.8%,1.27,NULL,932.0,43.3,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2000,20.3%,3.25,NULL,122.0,21.7,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2001,15.4%,2.84,NULL,97.0,19.5,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2002,16.2%,2.01,NULL,109.0,14.7,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2003,15.6%,2.18,NULL,87.0,13.1,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2004,15.1%,2.13,NULL,86.0,13.0,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2005,16.1%,2.12,NULL,86.0,11.6,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2006,15.2%,2.17,NULL,88.0,12.5,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2007,15.1%,2.15,NULL,91.0,13.0,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2008,11.5%,1.67,NULL,66.0,9.6,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2009,13.8%,1.78,NULL,79.0,10.5,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2010,14.4%,1.88,NULL,89.0,11.9,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2011,15.4%,2.67,NULL,99.0,17.7,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2012,14.3%,1.6,NULL,109.0,13.0,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2013,9.9%,1.26,NULL,80.0,10.0,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2000,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2001,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2002,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2003,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2004,17.5%,8.47,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2005,22.1%,7.29,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2006,17.9%,7.37,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2007,9.1%,4.32,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2008,12.1%,5.54,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2009,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2010,26.3%,7.47,NULL,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2011,16.5%,6.3,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2012,13.3%,5.08,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2013,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2000,35.4%,8.91,NULL,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2001,31.3%,7.48,NULL,47.0,13.6,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2002,39.4%,6.17,NULL,49.0,9.9,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alask aNative, non-Hispanic",2003,26%,6.49,NULL,24.0,6.9,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2004,36.4%,7.22,NULL,32.0,8.0,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, onn-Hispanic",2005,35.2%,5.78,NULL,30.0,5.6,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2006,31.4%,5.8,NULL,21.0,6.9,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.
+"American Indian/Alaska Native, non-Hispanic",Male,"Aemrican Indian/Alaska Native, non-Hispanic",2007,44.9%,6.78,NULL,52.0,13.0,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Natipve, non-Hispanic",2008,41.5%,7.2,NULL,43.0,9.4,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Aleaska Native, non-Hispanic",2009,25.8%,4.66,NULL,28.0,6.3,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Natvie, non-Hispanic",2010,32.5%,5.36,NULL,41.0,10.2,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2011,26.9%,6.07,NULL,28.0,7.5,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"Ameprican Indian/Alaska Native, non-Hispanic",2012,18.3%,5.07,NULL,21.0,6.1,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hivspanic",2013,24.6%,5.89,NULL,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2000,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2001,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2002,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2003,21.8%,3.93,NULL,48.0,9.8,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2004,19%,3.62,NULL,44.0,9.4,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2005,17.5%,2.88,NULL,45.0,7.6,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2006,20.1%,2.8,NULL,49.0,7.6,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2007,20.9%,3.25,NULL,48.0,8.1,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2008,27.2%,3.58,NULL,74.0,11.3,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2009,21.6%,3.24,NULL,56.0,9.9,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2010,22.1%,3.56,NULL,51.0,9.6,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2011,18.7%,2.91,NULL,53.0,8.8,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2012,22.6%,3.01,NULL,85.0,12.1,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2013,16.1%,2.79,NULL,56.0,10.3,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2000,16.3%,0.79,NULL,1401.0,72.8,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2001,15.7%,0.79,NULL,1309.0,70.5,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2002,17%,0.58,NULL,1445.0,52.6,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2003,15.9%,0.56,NULL,1348.0,51.2,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2004,14.7%,0.54,NULL,1257.0,49.5,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2005,15.1%,0.56,NULL,1305.0,50.5,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2006,14.7%,0.55,NULL,1273.0,50.3,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2007,15.1%,0.52,NULL,1307.0,47.1,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2008,14.2%,0.53,NULL,1227.0,47.2,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2009,13.6%,0.5,NULL,1188.0,45.2,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2010,14.1%,0.53,NULL,1239.0,48.8,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2011,14.8%,0.53,NULL,1288.0,48.0,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2012,14.6%,0.55,NULL,1241.0,48.4,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2013,12.6%,0.5,NULL,1040.0,42.1,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2000,24.9%,1.89,NULL,513.0,42.9,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2001,25.3%,1.93,NULL,504.0,42.5,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2002,25.5%,1.36,NULL,518.0,30.6,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2003,26.1%,1.39,NULL,513.0,31.5,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2004,22.6%,1.35,NULL,434.0,28.9,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2005,23.9%,1.57,NULL,483.0,32.4,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2006,20.4%,1.22,NULL,412.0,26.3,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2007,21.2%,1.25,NULL,421.0,26.6,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2008,21.7%,1.35,NULL,443.0,29.0,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2009,21.7%,1.31,NULL,451.0,28.4,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2010,20.9%,1.41,NULL,440.0,31.1,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2011,21.1%,1.49,NULL,457.0,33.9,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2012,19.3%,1.26,NULL,430.0,30.1,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2013,17.9%,1.4,NULL,404.0,32.5,NULL
+Hispanic,Female,Hispanic,2000,40.3%,2.24,NULL,758.0,52.0,NULL
+Hispanic,Female,Hispanic,2001,39.1%,2.04,NULL,880.0,55.7,NULL
+Hispanic,Female,Hispanic,2002,37.7%,1.43,NULL,864.0,39.7,NULL
+Hispanic,Female,Hispanic,2003,35.8%,1.45,NULL,786.0,38.1,NULL
+Hispanic,Female,Hispanic,2004,34.7%,1.41,NULL,787.0,38.2,NULL
+Hispanic,Female,Hispanic,2005,34.2%,1.36,NULL,797.0,33.1,NULL
+Hispanic,Female,Hispanic,2006,33%,1.12,NULL,755.0,27.9,NULL
+Hispanic,Female,Hispanic,2007,31.7%,1.34,NULL,755.0,34.7,NULL
+Hispanic,Female,Hispanic,2008,29.7%,1.21,NULL,707.0,29.9,NULL
+Hispanic,Female,Hispanic,2009,27.2%,1.21,NULL,664.0,30.0,NULL
+Hispanic,Female,Hispanic,2010,27.1%,1.13,NULL,705.0,30.8,NULL
+Hispanic,Female,Hispanic,2011,26%,1.11,NULL,688.0,30.0,NULL
+Hispanic,Female,Hispanic,2012,24.6%,1.01,NULL,731.0,30.4,NULL
+Hispanic,Female,Hispanic,2013,22.9%,1.12,NULL,704.0,34.8,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2000,12.3%,2.72,NULL,71.0,16.6,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2001,11.5%,2.47,NULL,75.0,17.1,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2002,7.6%,1.46,NULL,50.0,10.0,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2003,9.6%,1.73,NULL,55.0,10.5,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2004,9.3%,1.77,NULL,50.0,9.9,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2005,13.2%,2.06,NULL,74.0,11.8,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2006,16.4%,2.43,NULL,91.0,13.8,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2007,10.2%,1.61,NULL,61.0,9.9,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2008,10.4%,1.73,NULL,59.0,10.0,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2009,10.3%,1.61,NULL,54.0,8.4,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2010,9.9%,1.45,NULL,55.0,8.3,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2011,13.9%,2.36,NULL,85.0,14.8,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2012,9.8%,1.52,NULL,75.0,11.9,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2013,12.8%,1.89,NULL,99.0,15.1,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2000,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2001,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2002,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2003,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2004,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2005,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2006,16.5%,7.32,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2007,12.1%,5.5,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2008,20.4%,7.75,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2009,14.1%,5.95,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2010,19.4%,7.05,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2011,9.6%,4.02,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2012,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2013,16.6%,7.45,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"American Indian/Alaska Native, non-Hispanic",Female,"Americqan Indian/Alaska Native, non-Hispanic",2000,23.8%,7.83,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Natvie, non-Hispanic",2001,33.2%,7.76,NULL,48.0,13.7,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2002,29.2%,5.39,NULL,42.0,9.1,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanci",2003,28.7%,6.37,NULL,29.0,7.6,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2004,42.5%,7.97,NULL,33.0,8.0,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2005,25.9%,5.5,NULL,22.0,5.5,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2006,23.1%,5.6,NULL,22.0,6.8,Interpret data with caution. The coefficient of variation (CV) for this estimate is between 30 and 50 percent.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2007,20.9%,4.47,NULL,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2008,31.9%,6.96,NULL,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2009,19%,4.09,NULL,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-iHspanic",2010,22.8%,4.54,NULL,27.0,6.8,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Idian/Alaska Native, non-Hispanic",2011,23.4%,5.05,NULL,26.0,5.3,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2012,31%,5.53,NULL,34.0,7.3,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2013,9.5%,2.47,NULL,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2000,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2001,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2002,NULL,NULL,Data not available.,NULL,NULL,Data not available.
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2003,17%,3.44,NULL,40.0,9.0,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2004,22.2%,4.0,NULL,48.0,9.7,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2005,20.1%,3.83,NULL,52.0,10.6,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2006,19.6%,3.27,NULL,45.0,8.0,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2007,17.2%,2.5,NULL,44.0,7.0,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2008,17.8%,3.42,NULL,45.0,9.4,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2009,18.3%,2.99,NULL,42.0,7.3,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2010,14.2%,2.74,NULL,37.0,7.4,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2011,21.8%,3.47,NULL,58.0,10.1,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2012,15.2%,2.88,NULL,57.0,11.0,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2013,15%,2.85,NULL,53.0,10.6,NULL
