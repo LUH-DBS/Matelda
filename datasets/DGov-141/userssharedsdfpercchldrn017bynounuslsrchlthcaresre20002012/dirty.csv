@@ -1,0 +1,313 @@
+characteristic,sex,raceethnicity,yearvalue(long),percentage,standarderroronpercentage(double precision),countinthousands(double precision),standarderroroncountinthousands(double precision)
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2000,7%,0.29,5040.0,238.0
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2001,5.8%,0.27,4180.0,219.0
+Toutal,Female,"American Indian/Alaska Native, non-Hispanic",3008,6.1%,0.28,4430.0,228.0
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2003,5.4%,0.26,3920.0,212.0
+Toal,Female,"American Indian/Alaska Native, non-Hispanic",2350,5.4%,0.27,3960.0,222.0
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2005,5.3%,0.25,-1559.2274201190176,197.0
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2006,5.6%,0.32,3890.0,249.0
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2007,6s%,0.33,4430.0,261.0
+Total,Female,"Ameurican Indian/Alaska Native, non-Hispanic",2008,5.7%,0.32,4210.0,260.0
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2009,5.5%,0.31,4050.0,247.0
+Total,Female,"American Indian/Alaska Native, non-Hispanic",1127,5.4%,0.27,4050.0,214.0
+Toal,Female,"American Indian/Alaska Native, non-Hispanic",2011,4%,0.2,2970.0,157.0
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2012,4.1%,0.22,3050.0,169.0
+Total - Male,Male,"American Indian/Alaska Native, nn-Hispanic",2000,6.6%,0.36,2430.0,147.0
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2001,5.7%,0.36,2100.0,143.0
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2002,6.1%,1.8136423062496747,2280.0,141.0
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2003,5.7%,1.9577576701827544,2110.0,144.0
+Total - Male,Male,"American Indian/Alaska Natiev, non-Hispanic",2004,5.7%,0.37,2130.0,150.0
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",1431,5.6%,1.999561215686581,2100.0,139.0
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2006,5.7%,0.46,2575.7831042078287,178.0
+Total - Male,Male,"American Indian/Alaska Native, non-Hipsanic",2007,6.6%,0.45,-1545.318514334554,185.0
+Total - Male,xMale,"American Indian/Alaska Native, non-Hispanic",2008,6.1%,0.47,2290.0,188.0
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2009,5.4%,0.42,2060.0,168.0
+Total - Male,Male,"American Indian/Alasjka Native, non-Hispanic",2010,5.5%,0.35,2080.0,145.0
+Total -Male,Male,"American Indian/Alaska Native, non-Hispanic",2011,.8%,0.27,1460.0,106.0
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2012,4.2%,0.29,1570.0,112.0
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2000,7.4%,0.42,2610.0,163.0
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",1020,5.9%,0.38,2080.0,144.0
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2002,6%,0.4,2150.0,153.0
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2209,5.1%,0.34,1810.0,130.0
+Total - Female,Femadle,"American Indian/Alaska Native, non-Hispanic",2004,5.i1%,0.36,1840.0,138.0
+Total Female,Female,"American Indian/Alaska Native, non-Hispanic",2005,5%,0.33,1790.0,125.0
+Total - Fmeale,Female,"American Indian/Alaska Native, non-Hispanic",2006,5.4%,0.42,1790.0,160.0
+Total - Female,Female,"American Indian/Alaska tNative, non-Hispanic",1769,5.3%,0.41,1920.0,153.0
+Total - Femkale,Fetmale,"American Indian/Alaska Native, non-Hispanic",2008,5.k3%,0.43,1910.0,163.0
+Total - Female,Feemale,"American Indian/Alaska Native, non-Hispanci",2009,5.5%,0.46,1990.0,178.0
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2010,5.4%,0.37,1960.0,140.0
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2011,4.1%,0.29,1510.0,110.0
+Total - Female,emale,"American Indian/Alaska Native, non-Hispanic",1962,4.1%,0.31,1480.0,115.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2000,4.7%,0.33,2150.0,163.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2612,3.1%,0.28,1410.0,137.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2002,3.7%,0.28,1670.0,138.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2003,3.1%,1.8181817955132304,1360.0,136.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",1444,3.3%,0.29,1440.0,137.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2005,3.1%,0.26,1340.0,120.0
+"Total - White, non-Hispanic",Female,"hite, non-Hispanic",2006,3.4%,0.37,1310.0,163.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2007,4.6%,0.41,1920.0,183.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",1146,4.1%,0.42,1700.0,184.0
+"Total - White, non-Hispanic",Female,"Whit, non-Hispanic",2009,4%,0.42,1640.0,180.0
+"Total - White, non-Hispanic",emale,"White, non-Hispanic",2010,3.5%,0.3,1430.0,194.3204660686652
+"Total - White, non-Hispanc",Female,"Whitex, non-Hispanic",2065,2.7%,0.26,1080.0,106.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2012,3.1%,1.7866209086487803,1220.0,120.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2000,8.4%,0.84,870.0,96.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2001,6.5%,0.65,680.0,76.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2002,6.8%,0.77,710.0,87.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hisapnic",2003,6.6%,2.030759461409434,-1523.3733616494897,82.0
+"Total Black, non-Hispanic",Femafle,"Black, non-Hispanic",2004,5.8%,0.77,620.0,87.0
+"Total - Black, non-Hispanic",Female,"Blck, non-Hispanic",2005,6.4%,0.73,690.0,84.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2006,4.5%,0.62,700.0,69.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2007,5.4%,0.66,580.0,72.0
+"Totajl - Black, non-Hispanic",Female,"Black, non-Hispanic",1158,6.2%,0.76,680.0,87.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2009,5.2%,0.6,550.0,67.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2010,5.7%,0.64,2781.6292572267016,70.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2011,5%,0.61,510.0,64.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2012,4%,0.5,400.0,51.0
+Total - Hispanic,Female,Hispanic,2000,13.8%,0.74,1630.0,105.0
+Total - Hispanic,Female,Hispanic,2001,14.5%,0.81,1760.0,116.0
+Total - Hispanic,Female,Hispanic,2002,12.5%,0.71,1580.0,106.0
+Total - Hispanic,emale,Hispanc,2003,11.7%,0.74,2735.16261205872,118.0
+Total - Hispanic,Female,Hispanic,1602,11.1%,0.67,1550.0,109.0
+Total - Hispanic,Female,Hispanic,2005,11.1%,1.785908067645058,2790.4672810642724,112.0
+Total - Hispanic,Female,Hispanic,2006,119%,0.85,1650.0,142.0
+Total - Hispanic,Fmeale,Hipsanic,2007,01.6%,0.75,2768.9258847328074,124.0
+Total - Hispanic,Female,Hispnaic,2008,9.6%,0.73,1510.0,124.0
+Total - Hispanic,Fmeale,Hispanic,2009,9.2%,0.7,1510.0,127.0
+Total - Hispanic,Female,Hispanic,2432,9.8%,0.67,1680.0,131.0
+Total - Hispanic,Female,Hispanic,2011,6.1%,0.44,1060.0,79.0
+Total - Hispanic,Female,Hispaniac,2012,6.3%,0.47,1110.0,90.0
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2000,11%,1.99,270.0,54.0
+"Total - Asian, non-Hispanic",Female,Asian non-Hispanic,2001,8.8%,1.75,210.0,218.93692096262612
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",1299,12.5%,2.37,310.0,64.0
+"Total - Asian, non-Hispanic",Female,"Asan, non-Hispanic",2003,7.4%,1.754721563781295,170.0,36.0
+"Total - Asian, non-Hispanic",Fwemale,"Asian, non-Hispanic",2004,8.6%,1.89,-1411.0171128088978,53.0
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2005,7.1%,1.37,180.0,36.0
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2006,8.6%,1.81,190.0,52.0
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2007,5.7%,-0.3871775253640511,160.0,34.0
+"aTotal - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2008,4.6%,1.07,130.0,30.0
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2009,5.3%,0.99,150.0,29.0
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2010,7.3%,1.05,220.0,34.0
+"Total - Asian, non-Hispanic",Feale,"Asian, non-Hispanic",2011,5.1%,1.04,160.0,34.0
+"Total - Asian, non-Hispanic",Femaole,"Asian, non-Hispanic",2012,6.2%,1.18,200.0,39.0
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2000,5.4%,0.42,90.0,54.0
+"Total - Pacific Islaner, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2001,5.4%,0.42,90.0,54.0
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2002,5.4%,0.42,90.0,54.0
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2003,5.4%,0.42,90.0,54.0
+"Total - Pacific Islander, non-Hispanic",emale,"Pacific Islander, non-Hispanic",2004,5.4%,0.42,90.0,54.0
+"Total - Pacific Islander, non-Hispanic",Femsale,"Pacific Islander, non-Hispanic",1736,54.%,0.42,90.0,54.0
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2006,.4%,0.42,90.0,54.0
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2007,5.4%,0.42,90.0,54.0
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2008,5.f4%,2.1425822277751947,90.0,54.0
+"Total -Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2009,5.4%,0.42,90.0,54.0
+"Total - Pacifi cIslander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2010,5.4%,1.7904175227020351,90.0,54.0
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2011,5.4%,0.42,90.0,54.0
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2012,5w.4%,0.42,90.0,54.0
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2000,5.4%,0.42,90.0,54.0
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2001,5.4%,0.42,90.0,54.0
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, nqon-Hispanic",2002,5.4%,0.42,90.0,54.0
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2003,5.4%,0.42,90.0,54.0
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, no-Hispanic",2004,5.4%,0.42,90.0,54.0
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"Ameriacn Indian/Alaska Native, non-Hispanic",2005,5.4%,0.42,90.0,54.0
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",1250,5.4%,0.42,90.0,205.72277438096745
+"otal - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2007,5.4%,0.42,90.0,54.0
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2008,5.4%,0.42,90.0,54.0
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2009,5.4%,0.42,90.0,54.0
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2010,5j.4%,0.42,90.0,54.0
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2011,5.4%,0.42,90.0,54.0
+"Total - American Indian/Alaska Native, non-Hispanic",Femael,"American Indian/Alaska Native, non-Hispanic",1824,54.%,0.42,2864.283387738334,54.0
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2000,5.4%,0.42,90.0,54.0
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2001,4.7%,1.38,70.0,22.0
+"Total - Two or more races, non-Hispanic",Femjale,"Two or more races, non-Hispanic",2763,8.8%,2.26,150.0,41.0
+"Total - Two or more races, non-Hispanic",emale,"Two or more races, non-Hispanic",2003,5.4%,2.273001167484232,90.0,54.0
+"Total - Two or more races, non-Hispanic",Feamle,"Two or more races, non-Hispanic",2070,5.4%,0.42,90.0,54.0
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanvic",2204,5.4%,0.42,90.0,54.0
+"Total - Two or more races, non-Hispanic",Female,"Two orm ore races, non-Hispanic",2006,6.x4%,-0.3875549274362349,2865.230452144007,40.0
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2007,5.v4%,0.42,90.0,54.0
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2008,5.4%,0.42,90.0,233.0688791498415
+"Total - Two or more races, non-Hispanic",eFmale,"Two or more races, non-Hispanic",2009,3.5%,0.96,80.0,23.0
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hspanic",2010,4%,1.13,110.0,31.0
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2011,4.2%,0.99,110.0,26.0
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2012,3.3%,0.9,100.0,28.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2000,4.5%,0.42,1050.0,103.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2001,2.9%,0.38,680.0,92.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2002,3.5%,0.36,810.0,85.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2003,3.4%,0.39,760.0,96.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2004,3.5%,0.4,780.0,94.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2005,3.1%,0.36,680.0,84.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2006,3.1%,0.46,670.0,101.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2007,5.4%,0.61,1160.0,142.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2008,4.5%,0.64,940.0,139.0
+"White, non-Hispanic",Mle,"White, non-Hispanic",2009,3.5%,0.53,740.0,114.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2010,3.6%,0.41,760.0,196.47712893607377
+"White, non-Hispanic",Male,"White, non-Hispanic",2011,.23%,0.34,480.0,235.60660722205895
+"White, non-Hispanic",Male,"White, non-Hispanic",2012,3.2%,2.120931239175869,650.0,80.0
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2000,7.8%,1.04,410.0,59.0
+"Black, non-Hispanic",Male,"Black, non-Hispanic",1620,6.5%,0.91,2636.918092517045,50.0
+"Black, non-Hispanic",Mae,"Black, no-nHispanic",2002,7.1%,1.01,370.0,57.0
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2003,6.5%,0.96,350.0,54.0
+"Black,n on-Hispanic",Malfe,"Black, onn-Hispanic",2004,6.2%,1.17,340.0,69.0
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2050,6.7%,1.09,370.0,62.0
+"Black, non-Hispanic",Male,"Black, non-Hispanc",2006,5.2%,1.03,370.0,58.0
+"Black, non-Hispanic",Male,"Blakc, non-Hispanic",2007,5.9%,0.99,330.0,54.0
+"Black, non-Hispanic",Male,"Black, non-Hispxanic",2008,6.5%,1.12,-1456.7429013310834,65.0
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2009,5.6%,0.9,300.0,51.0
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2010,5.8%,0.88,310.0,49.0
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2329,5.4%,0.85,280.0,46.0
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2560,4%,-0.3806937801428954,210.0,35.0
+Hispanic,Male,Hispanic,2000,13.3%,0.95,800.0,227.7131170469804
+Hispanic,Male,Hispanic,2001,14.3%,1.07,890.0,77.0
+Hispanic,Male,Hispanci,2002,31.5%,1.0,2538.628254675461,214.19799558065523
+Hispanic,Male,Hispanic,2003,121.%,0.95,830.0,77.0
+Hispanic,Male,Hispanic,2004,118.%,0.9,840.0,73.0
+Hispanic,Male,Hispanic,1465,12.3%,1.02,910.0,83.0
+Hispanic,Male,Hispanic,2120,13.6%,1.28,930.0,109.0
+Hispanic,aMle,Hispanic,2007,10.7%,1.03,840.0,86.0
+Hispanic,ale,Hispanic,2008,x9.9%,0.99,2750.7677394749853,87.0
+Hispanic,Male,Hispanic,2009,9.7%,1.0,820.0,91.0
+Hispanic,Male,Hispanic,2010,9.o1%,0.86,800.0,84.0
+Hisparnic,Male,Hispanic,2011,.2%,0.61,550.0,57.0
+Hispanic,Male,Hsipanic,1004,6.1%,0.64,550.0,62.0
+"Asian, non-Hispanic",Male,"Asian,x non-Hispanic",2000,5.4%,0.42,90.0,54.0
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2001,10.3%,2.89,120.0,35.0
+"Asian, non-ispanic",Male,"Asian, non-Hispanic",2002,12%,2.87,160.0,40.0
+"Asian, non-Hispanic",Male,"Asialn, non-Hispanic",2003,5.4%,0.42,90.0,54.0
+"Asian, non-Hispanic",Malue,"Asian, non-Hispanic",2004,8.1%,2.02,110.0,29.0
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2005,7.4%,1.91,90.0,25.0
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2006,8.5%,2.51,100.0,34.0
+"Asian, non-Hispanic",Malte,"Asian, non-Hispanic",2007,7.2%,1.87,100.0,27.0
+"sian, non-Hispanic",Male,"Asian, non-Hispanic",2008,5.4%,0.42,90.0,54.0
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2009,5.7%,1.48,80.0,22.0
+"Asian,n on-Hispanic",Male,"Asian, non-Hispanic",2010,8.6%,1.56,130.0,26.0
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2011,4.w3%,1.2,70.0,220.0080790466851
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2012,6.6%,1.44,110.0,24.0
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2000,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2001,5.4%,0.42,90.0,54.0
+"Pacific slander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2002,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2003,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Mae,"Pacific Islander, non-Hispanic",2004,54%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2005,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2006,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2007,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2008,5.4%,0.42,-1428.8270131274012,54.0
+"Pacific Isalnder, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2009,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, nonl-Hispanic",2010,5.%4,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",1064,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",ale,"Pacific Islander, non-Hispanic",1357,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2000,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2001,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2002,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2003,.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2004,5.4%,0.42,90.0,54.0
+"Amrican Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2005,5h.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2006,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",eMale,"American Indian/Alaska Native, non-Hispanic",2007,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Male,"American Idnian/Alaska Native, non-Hispanic",2008,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2821,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2010,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/AlaskaNative, non-Hispanic",2011,5.4%,1.9494328688529816,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2012,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",1319,5.4%,0.42,90.0,54.0
+"Two oor more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2001,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Mrale,"Two or mroe races, non-Hispanic",2002,5.4%,-0.3920361501604483,90.0,54.0
+"Two or moreraces, non-Hispanic",Male,"Two or more races, non-Hispanic",2003,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",1390,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Male,"Two or more races, non-ispanic",1784,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",ale,"wTo or more races, non-Hispanic",2006,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2007,5.4%,2.17492071754038,90.0,54.0
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2008,5.4%,1.8163457590870744,90.0,54.0
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2009,5.4%,0.42,90.0,54.0
+"Tw or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2010,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Male,"Two ors more races, non-Hispanic",2011,5.4%,0.42,90.0,54.0
+"To or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2012,5.%4,0.42,90.0,54.0
+"Whitle, non-Hispanic",Femle,"White, non-Hispanic",2000,5%,0.48,1110.0,114.0
+"Whie, non-Hispanic",Female,"White, non-Hispanic",2001,33%,0.42,730.0,96.0
+"White, non-Hispanic",Female,"White, non-Hispanic",2002,3.9%,0.43,860.0,101.0
+"White, non-Hispanic",Female,"Whdite, non-Hispanic",2095,2.8%,0.34,600.0,76.0
+"White, non-Hispanic",Female,"White, non-Hispanic",2004,3.1%,0.4,660.0,88.0
+"White, non-Hispaniac",Female,"White, non-Hispanic",1742,3.1%,0.39,660.0,85.0
+"White, non-Hispanic",Female,"White, non-Hispanic",2006,3.8%,0.56,640.0,120.0
+"White, non-Hispanic",Female,"White, non-Hispanic",2007,3.7%,0.47,760.0,98.0
+"White, non-Hispanic",Femle,"White, non-Hispanic",2008,3.8%,0.55,760.0,117.0
+"White, non-Hispanic",Female,"White, non-Hispanic",2009,4.5j%,0.68,900.0,142.0
+"White, non-Hispanic",Female,"White, non-Hispanic",2010,3.4%,0.44,670.0,90.0
+"White, non-Hispanic",Femlae,"White, non-Hispanic",2011,3%,0.38,590.0,77.0
+"White, non-Hispanic",Female,"Whiet, non-Hispanic",2012,%3,0.43,570.0,84.0
+"Black, non-Hispanic",Female,"Black, non-Hispainc",2000,9%,1.34,460.0,74.0
+"Black, non-Hispanic",Female,"Black, nn-Hispanic",2001,6.5%,1.963121801883372,340.0,52.0
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2002,6.5%,1.12,340.0,61.0
+"Black, non-Hispeanic",Female,"Black, non-Hispanic",2003,6.7%,1.06,350.0,59.0
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2004,5.3%,0.94,280.0,52.0
+"Black, non-Hispanic",Femle,"Black, non-Hispanic",2005,6.1%,0.94,320.0,52.0
+"Black, non-Hispanic",Femafle,"lBack, non-Hispanic",2006,3.8%,0.66,330.0,36.0
+"Black, non-Hispeanic",Female,"Black, non-Hispanic",2007,4.8%,0.85,260.0,45.0
+"Black, non-Hispanic",Female,"Black, non-Hispanic",1224,5.9%,2.2676836253089463,310.0,54.0
+"Black, non-Hispanic",Fmeale,"Black, non-Hispanic",2009,4.7%,0.75,250.0,40.0
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2010,5.5%,0.93,280.0,49.0
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2790,4.6%,0.85,230.0,44.0
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2012,3.9%,0.74,190.0,37.0
+Hspanic,Female,Hispanic,2000,14.3%,1.03,820.0,68.0
+Hispanic,Female,Hispanic,2001,14.6%,2.128868946135438,870.0,73.0
+Hipsanic,Female,Hispanic,2002,11.5%,0.95,710.0,64.0
+Hispanic,Female,Hispanic,2003,11.4%,1.09,750.0,79.0
+Histpanic,Female,Hispanic,2004,10.5%,0.93,710.0,71.0
+Hispanic,Female,Hispanic,2005,9.9%,0.84,700.0,65.0
+Hispanic,Female,Hispanic,2006,10.2%,0.98,720.0,77.0
+Hispanic,Female,Hispanic,2007,10.6%,1.05,-1452.615717940619,84.0
+Hispanic,Female,Hispaxnic,2008,.92%,1.11,710.0,89.0
+Hispanic,Female,Hispanic,1024,8.6%,2.1859485172159303,690.0,82.0
+Hispanic,Female,Hispanic,2010,10.4%,0.97,-1474.5609191418098,90.0
+Hispanic,Female,Hispanic,2011,6%,0.61,510.0,54.0
+Hispanic,Female,Hispanic,2012,6.5%,0.64,560.0,58.0
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2000,13.1%,3.02,160.0,54.0
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2001,7.4%,1.96,90.0,23.0
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2222,13%,3.55,150.0,46.0
+"Asian, non-Hispanisc",Female,"Asian, non-Hispanc",2003,7.7%,2.19,90.0,224.3246279304587
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2004,5.4%,0.42,90.0,54.0
+"Asian, non-Hispanic",Female,"Asian, nokn-Hispanic",2005,6.%,1.97,90.0,26.0
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2006,5.4%,0.42,90.0,54.0
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2007,5.4%,0.42,90.0,54.0
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2008,6a.9%,1.86,100.0,27.0
+"Asian, non-Hispanic",emale,"Asian, non-Hispanic",2009,.9%,1.35,-1464.245867297188,20.0
+"Asian, non-Hispanic",Feale,"Asian, nonH-ispanic",2268,6%,1.35,90.0,21.0
+"Asian, non-Hispanic",Femael,"Asian, non-Hispanic",3005,.9%,1.73,90.0,27.0
+"Asigan, non-Hispanic",Female,"Asian, non-Hispanic",2012,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Fermale,"Pacific Islander, non-Hispanic",2000,e5.4%,0.42,90.0,54.0
+"Pacific Islander, non-ispanic",Female,"Pacific Islander, non-Hispanic",1161,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2002,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Femaple,"Pacific Islander, non-Hispanic",2003,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2004,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2005,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",1619,5.4%,0.42,90.0,54.0
+"Pacific Islafnder, non-Hispanic",Female,"aPcific Islander, non-Hispanic",2007,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2008,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Femle,"Pacific Islander, non-Hispanic",2009,54.%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Fmeale,"Pacific Islander, non-Hispanic",2010,5.4%,0.42,90.0,54.0
+"Pacific Islanjder, non-Hispanic",Female,"Pacific Islander, non-Hispanic",1160,5.4%,0.42,90.0,54.0
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2012,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2000,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2001,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2002,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2003,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2004,5.4%,0.42,90.0,205.45010079545355
+"merican Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",1675,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2006,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2007,5.4%,1.8547517576983568,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2008,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2009,5h.4%,0.42,-1577.3124545213486,54.0
+"American Indian/Alaka Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2010,5.4%,0.42,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2011,5.4%,2.044804275220372,90.0,54.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",1881,5.4%,0.42,-1482.5487107575682,54.0
+"Two or more races, non-Hispanic",Female,"Two or more races, non-iHspanic",2000,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Female,"To or more races, non-Hispanic",2001,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Female,"Two or more races, non-ispanic",2002,5.4%,0.42,90.0,54.0
+"Two or moreraces, non-Hispanic",Femae,"Two or more races, non-Hispanic",2003,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2004,.54%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",1615,5.d4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",1664,5.4%,0.42,2518.643906307654,54.0
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2007,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2008,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2009,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Female,"Two or more arces, non-Hispanic",2010,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2038,5.4%,0.42,90.0,54.0
+"Two or more races, non-Hispanic",eFmale,"Two or more races,e non-Hispanic",2012,5.o4%,0.42,90.0,54.0
