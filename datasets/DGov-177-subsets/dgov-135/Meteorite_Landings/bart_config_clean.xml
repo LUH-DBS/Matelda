@@ -1,0 +1,244 @@
+<task>
+    <!-- ****************************************************
+                      DATABASES
+    **************************************************** -->
+    <target> 
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql://localhost:5433/bartdb</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>postgres</password>
+        </access-configuration>
+        <import>
+            <input type="csv" separator="," table="clean">/home/fatemeh/ED-Scale/Sandbox_Generation/metanome_input_files/processed/Meteorite_Landings/clean.csv</input>
+        </import>
+    </target>
+
+    <!-- ****************************************************
+                    DEPENDENCIES
+    **************************************************** -->
+    <dependencies><![CDATA[DCs: 
+
+            e1: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $name1 == $name2, $id1 != $id2 -> #fail. 
+
+        
+            e2: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $name1 == $name2, $geo_location1 != $geo_location2 -> #fail. 
+
+        
+            e3: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $name1 == $name2, $reclong1 != $reclong2 -> #fail. 
+
+        
+            e4: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $name1 == $name2, $reclat1 != $reclat2 -> #fail. 
+
+        
+            e5: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $name1 == $name2, $massg1 != $massg2 -> #fail. 
+
+        
+            e6: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $name1 == $name2, $recclass1 != $recclass2 -> #fail. 
+
+        
+            e7: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $name1 == $name2, $year1 != $year2 -> #fail. 
+
+        
+            e8: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $name1 == $name2, $nametype1 != $nametype2 -> #fail. 
+
+        
+            e9: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $name1 == $name2, $fall1 != $fall2 -> #fail. 
+
+        
+            e10: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $id1 == $id2, $name1 != $name2 -> #fail. 
+
+        
+            e11: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $id1 == $id2, $geo_location1 != $geo_location2 -> #fail. 
+
+        
+            e12: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $id1 == $id2, $reclong1 != $reclong2 -> #fail. 
+
+        
+            e13: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $id1 == $id2, $reclat1 != $reclat2 -> #fail. 
+
+        
+            e14: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $id1 == $id2, $massg1 != $massg2 -> #fail. 
+
+        
+            e15: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $id1 == $id2, $recclass1 != $recclass2 -> #fail. 
+
+        
+            e16: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $id1 == $id2, $year1 != $year2 -> #fail. 
+
+        
+            e17: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $id1 == $id2, $nametype1 != $nametype2 -> #fail. 
+
+        
+            e18: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $id1 == $id2, $fall1 != $fall2 -> #fail. 
+
+        
+            e19: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $geo_location1 == $geo_location2, $reclong1 != $reclong2 -> #fail. 
+
+        
+            e20: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $geo_location1 == $geo_location2, $reclat1 != $reclat2 -> #fail. 
+
+        
+            e21: clean(name: $name1, id: $id1, nametype: $nametype1, recclass: $recclass1, massg: $massg1, fall: $fall1, year: $year1, reclat: $reclat1, reclong: $reclong1, geo_location: $geo_location1),
+            clean(name: $name2, id: $id2, nametype: $nametype2, recclass: $recclass2, massg: $massg2, fall: $fall2, year: $year2, reclat: $reclat2, reclong: $reclong2, geo_location: $geo_location2),
+                $recclass1 == $recclass2, $nametype1 != $nametype2 -> #fail. 
+
+        ]]></dependencies>
+
+    <!-- ****************************************************
+                      CONFIGURATION
+    **************************************************** -->
+    <configuration>
+        <!-- To print extra information in the ouput (default = false) -->
+        <printLog>true</printLog>
+
+        <!-- To load DB every time on start (default = false) -->
+        <recreateDBOnStart>true</recreateDBOnStart>
+
+        <!-- To apply the changes (default = false) -->
+        <applyCellChanges>true</applyCellChanges>
+
+        <!-- To  apply cell changes on a copy of the original target, with a custom suffix (default = true) -->
+        <cloneTargetSchema>true</cloneTargetSchema>
+        <cloneSuffix>_dirty</cloneSuffix>
+
+        <!-- To export the dirty db -->
+        <exportDirtyDB>true</exportDirtyDB>
+        <exportDirtyDBPath>./</exportDirtyDBPath>
+        <exportDirtyDBType>CSV</exportDirtyDBType>
+
+        <!-- To export the changes -->
+        <exportCellChanges>true</exportCellChanges>
+        <exportCellChangesPath>clean_changes.csv</exportCellChangesPath>
+
+        <!-- To compute an estimate of the reparability (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To generate all possible changes (default = false - slow, only for toy examples)-->
+        <generateAllChanges>false</generateAllChanges>
+
+        <!-- To avoid interactions among changes. (default = true) -->
+        <avoidInteractions>true</avoidInteractions>
+
+        <!-- To check, at the end of the process, if changes are detectable. (default = false) -->
+        <checkChanges>true</checkChanges>
+
+        <!-- To compute an estimate of the repairability. Requires checkChanges = true. (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To use an optimized strategy for updates. (default = true) -->
+        <useDeltaDBForChanges>true</useDeltaDBForChanges>
+
+        <!-- Error percentages for dependencies and comparisons 
+        All percentages are wrt table sizes (# tuples) -->
+        <errorPercentages>
+            <defaultPercentage>0.0</defaultPercentage>
+            <vioGenQueries>
+            <vioGenQuery id="e1"><comparison>(name1 == name2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e1"><comparison>(id1 != id2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(name1 == name2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(geo_location1 != geo_location2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(name1 == name2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(reclong1 != reclong2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(name1 == name2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(reclat1 != reclat2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(name1 == name2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(massg1 != massg2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(name1 == name2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(recclass1 != recclass2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e7"><comparison>(name1 == name2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e7"><comparison>(year1 != year2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e8"><comparison>(name1 == name2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e8"><comparison>(nametype1 != nametype2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e9"><comparison>(name1 == name2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e9"><comparison>(fall1 != fall2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e10"><comparison>(id1 == id2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e10"><comparison>(name1 != name2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e11"><comparison>(id1 == id2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e11"><comparison>(geo_location1 != geo_location2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e12"><comparison>(id1 == id2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e12"><comparison>(reclong1 != reclong2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e13"><comparison>(id1 == id2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e13"><comparison>(reclat1 != reclat2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e14"><comparison>(id1 == id2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e14"><comparison>(massg1 != massg2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e15"><comparison>(id1 == id2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e15"><comparison>(recclass1 != recclass2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e16"><comparison>(id1 == id2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e16"><comparison>(year1 != year2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e17"><comparison>(id1 == id2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e17"><comparison>(nametype1 != nametype2)</comparison><percentage>0.048123195380173234</percentage></vioGenQuery><vioGenQuery id="e18"><comparison>(id1 == id2)</comparison><percentage>0.04593577740834718</percentage></vioGenQuery><vioGenQuery id="e18"><comparison>(fall1 != fall2)</comparison><percentage>0.04593577740834718</percentage></vioGenQuery><vioGenQuery id="e19"><comparison>(geo_location1 == geo_location2)</comparison><percentage>0.04593577740834718</percentage></vioGenQuery><vioGenQuery id="e19"><comparison>(reclong1 != reclong2)</comparison><percentage>0.04593577740834718</percentage></vioGenQuery><vioGenQuery id="e20"><comparison>(geo_location1 == geo_location2)</comparison><percentage>0.04593577740834718</percentage></vioGenQuery><vioGenQuery id="e20"><comparison>(reclat1 != reclat2)</comparison><percentage>0.04593577740834718</percentage></vioGenQuery><vioGenQuery id="e21"><comparison>(recclass1 == recclass2)</comparison><percentage>0.04593577740834718</percentage></vioGenQuery><vioGenQuery id="e21"><comparison>(nametype1 != nametype2)</comparison><percentage>0.04593577740834718</percentage></vioGenQuery></vioGenQueries>
+        </errorPercentages>
+
+        <!-- To control the way in which changing the value -->
+        <dirtyStrategies>
+            <defaultStrategy>
+                <strategy> TypoRandom </strategy>
+            </defaultStrategy> 
+            <!-- possible strategies
+                <strategy chars="*" charsToAdd="3">TypoAddString</strategy>
+                <strategy chars="*" charsToAdd="3">TypoAppendString</strategy>
+                <strategy charsToRemove="3">TypoRemoveString</strategy>
+                <strategy charsToSwitch="3">TypoSwitchValue</strategy>
+                <strategy>TypoActiveDomain</strategy>
+                <strategy>TypoRandom</strategy>
+            -->
+        </dirtyStrategies>
+
+        <randomErrors>
+            <tables>
+                <table name="clean"> 
+                    <percentage>2</percentage> <!-- Percentage is wrt attributes to dirty in the table -->
+                    <attributes>
+                    <atrribute>name</atrribute><atrribute>nametype</atrribute><atrribute>recclass</atrribute><atrribute>fall</atrribute><atrribute>geo_location</atrribute></attributes>
+                </table>
+            </tables>
+        </randomErrors>
+    
+        <outlierErrors>
+            <tables>
+                <table name="clean">
+                    <attributes>
+                    <atrribute percentage="0" detectable="true">id</atrribute><atrribute percentage="0" detectable="true">massg</atrribute><atrribute percentage="0" detectable="true">year</atrribute><atrribute percentage="0" detectable="true">reclat</atrribute><atrribute percentage="0" detectable="true">reclong</atrribute></attributes>
+                </table>
+            </tables>
+        </outlierErrors>
+        
+        <!-- The following parameters are used to control the sampling process.
+            All the fields are optional, but they may be crucial to obtain a good random sample.
+            In order to choose the cells to modify, BART will scan the result of a viogen query
+            using the following sampling algorithm:
+            1) First, a number of tuples are skipped. This is a random number choosed btw 
+                0 and (offsetFactor * tableSize)
+            2) Then BART will scan the result and will pickup tuples 
+            with a probability p = probabilityFactor.
+            
+            BART uses three kinds of queries
+            - Symmetric queries: for symmetric viogen queries (see paper)
+            - Inequality queries: for viogen queries without equalities (i.e. inequalities only)
+            - Standard queries: for all other viogen queries
+        -->
+        <vioGenQueriesConfiguration>
+            <!-- STANDARD QUERIES -->
+            <probabilityFactorForStandardQueries>0.25</probabilityFactorForStandardQueries>
+            <offsetFactorForStandardQueries>0.05</offsetFactorForStandardQueries>
+            <!-- SYMMETRIC QUERIES -->
+            <probabilityFactorForSymmetricQueries>0.25</probabilityFactorForSymmetricQueries>
+            <offsetFactorForSymmetricQueries>0.05</offsetFactorForSymmetricQueries>
+            <!-- INEQUALITY QUERIES -->
+            <probabilityFactorForInequalityQueries>0.05</probabilityFactorForInequalityQueries>
+            <offsetFactorForInequalityQueries>0.05</offsetFactorForInequalityQueries>
+            <windowSizeFactorForInequalityQueries>1.5</windowSizeFactorForInequalityQueries>
+        </vioGenQueriesConfiguration>
+
+    </configuration>
+</task>

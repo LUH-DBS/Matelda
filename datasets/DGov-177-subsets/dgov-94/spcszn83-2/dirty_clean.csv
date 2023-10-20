@@ -1,0 +1,122 @@
+zonename_eight_three,fipszone_eight_three,zone,statezo,abbrev,datum
+HI_1,5101,5876.0,"Hawaiian Islands, Zone 1",HI_1,NULL
+HI_1,5102,5901.0,"Hawaiian Islands, Zone 2",HI_2,NULL
+HI_3,5101,5926.0,"Hawaiian Islands, Zone 3",HI_3,NULL
+HI_3,5104,5951.0,"Hawaiian Islands, Zone 4",HI_4,NULL
+HI_1,5105,5976.0,"Hawaiian Islands, Zone 5",HI_5,NULL
+AK_6,5006,6226.0,"Alaska, Zone 6",AK_6,NULL
+AK_7,5007,6251.0,"Alaska, Zone 7",AK_7,NULL
+AK_9,5009,6301.0,"Alaska, Zone 9",AK_9,NULL
+AK_10,5010,6326.0,"Alaska, Zone 10",AK_10,NULL
+AK_1,5001,6101.0,"Alaska, Zone 1",AK_1,NULL
+AK_4,5004,6176.0,"Alaska, Zone 4",AK_4,NULL
+AK_3,5003,6151.0,"Alaska, Zone 3",AK_3,NULL
+AK_2,5002,6126.0,"Alaska, Zone 2",AK_2,NULL
+AK_5,5005,6201.0,"Alaska, Zone 5",AK_5,NULL
+AK_8,5008,6276.0,"Alaska, Zone 8",AK_8,NULL
+IN_E,1301,3826.0,"Indiana, East",IN_E,NULL
+IN_W,1302,3851.0,"Indiana, West",IN_W,NULL
+IA_N,1401,3876.0,"Iowa, North",IA_N,NULL
+IA_S,1402,3901.0,"Iowa, South",IA_S,NULL
+KS_N,1501,3926.0,"Kansas, North",KS_N,NULL
+AZ_E,201,3151.0,"Arizona, East",AZ_E,NULL
+KS_S,1502,3951.0,"Kansas, South",KS_S,NULL
+AZ_C,202,3176.0,"Arizona, Central",AZ_C,NULL
+KY_N,1601,3976.0,"Kentucky, North",KY_N,NULL
+AZ_W,203,3201.0,"Arizona, West",AZ_W,NULL
+KY_S,1602,4001.0,"Kentucky, South",KY_S,NULL
+AR_N,301,3226.0,"Arkansas, North",AR_N,NULL
+LA_N,1701,4026.0,"Louisiana, North",LA_N,NULL
+AR_S,302,3251.0,"Arkansas, South",AR_S,NULL
+LA_S,1702,4051.0,"Louisiana, South",LA_S,NULL
+CA_1,401,3276.0,"California, Zone I",CA_I,NULL
+CA_2,402,3301.0,"California, Zone II",CA_II,NULL
+ME_E,1801,4076.0,"Maine, East",ME_E,NULL
+CA_3,403,3326.0,"California, Zone III",CA_III,NULL
+ME_W,1802,4101.0,"Maine, West",ME_W,NULL
+CA_4,404,3351.0,"California, Zone IV",CA_IV,NULL
+MD,1900,4126.0,Maryland,MD,NULL
+CA_5,405,3376.0,"California, Zone V",CA_V,NULL
+CA_6,406,3401.0,"California, Zone VI",CA_VI,NULL
+MA_I,2002,4176.0,"Massachusetts, Island",MA_I,NULL
+CO_N,501,3451.0,"Colorado, North",CO_N,NULL
+CO_C,502,3476.0,"Colorado, Central",CO_C,NULL
+CO_S,503,3501.0,"Colorado, South",CO_S,NULL
+MI_N,2111,6351.0,"Michigan, North",MI_N,New
+CT,600,3526.0,Connecticut,CT,NULL
+MI_C,2112,6376.0,"Michigan, Central",MI_C,New
+DE,700,3551.0,Delaware,DE,NULL
+MI_S,2113,6401.0,"Michigan, South",MI_S,New
+FL_N,903,3576.0,"Florida, North",FL_N,NULL
+MN_N,2201,4276.0,"Minnesota, North",MN_N,NULL
+FL_E,901,3601.0,"Florida, East",FL_E,NULL
+MN_C,2202,4301.0,"Minnesota, Central",MN_C,NULL
+FL_W,902,3626.0,"Florida, West",FL_W,NULL
+MN_S,2203,4326.0,"Minnesota, South",MN_S,NULL
+GA_E,1001,3651.0,"Georgia, East",GA_E,NULL
+MS_E,2301,4351.0,"Mississippi, East",MS_E,NULL
+GA_W,1002,3676.0,"Georgia, West",GA_W,NULL
+MS_W,2302,4376.0,"Mississippi, West",MS_W,NULL
+MO_E,2401,4401.0,"Missouri, East",MO_E,NULL
+MO_C,2402,4426.0,"Missouri, Central",MO_C,NULL
+MO_W,2403,4451.0,"Missouri, West",MO_W,NULL
+SD_N,4001,5251.0,"South Dakota, North",SD_N,NULL
+SD_S,4002,5276.0,"South Dakota, South",SD_S,NULL
+TN,4100,5301.0,Tennessee,TN,NULL
+MT,2500,NULL,Montana,MT,NAD83
+TX_N,4201,5326.0,"Texas, North",TX_N,NULL
+TX_NC,4202,5351.0,"Texas, North Central",TX_NC,NULL
+TX_C,4203,5376.0,"Texas, Central",TX_C,NULL
+NE,2600,NULL,Nebraska,NE,NAD83
+TX_SC,4204,5401.0,"Texas, South Central",TX_SC,NULL
+NV_E,2701,4601.0,"Nevada, East",NV_E,NULL
+TX_S,4205,5426.0,"Texas, South",TX_S,NULL
+NV_C,2702,4626.0,"Nevada, Central",NV_C,NULL
+UT_N,4301,5451.0,"Utah, North",UT_N,NULL
+NV_W,2703,4651.0,"Nevada, West",NV_W,NULL
+UT_C,4302,5476.0,"Utah, Central",UT_C,NULL
+NH,2800,4676.0,New Hampshire,NH,NULL
+UT_S,4303,5501.0,"Utah, South",UT_S,NULL
+NJ,2900,4701.0,New Jersey,NJ,NULL
+VT,4400,5526.0,Vermont,VT,NULL
+NM_E,3001,4726.0,"New Mexico, East",NM_E,NULL
+VA_N,4501,5551.0,"Virginia, North",VA_N,NULL
+NM_C,3002,4751.0,"New Mexico, Central",NM_C,NULL
+VA_S,4502,5576.0,"Virginia, South",VA_S,NULL
+NM_W,3003,4776.0,"New Mexico, West",NM_W,NULL
+WA_N,4601,5601.0,"Washington, North",WA_N,NULL
+NY_E,3101,4801.0,"New York, East",NY_E,NULL
+NY_C,3102,4826.0,"New York, Central",NY_C,NULL
+WV_N,4701,5651.0,"West Virginia, North",WV_N,NULL
+NY_W,3103,4851.0,"New York, West",NY_W,NULL
+WV_S,4702,5676.0,"West Virginia, South",WV_S,NULL
+NY_LI,3104,4876.0,"New York, Long Island",NY_LI,NULL
+WI_N,4801,5701.0,"Wisconsin, North",WI_N,NULL
+NC,3200,4901.0,North Carolina,NC,NULL
+ND_N,3301,4926.0,"North Dakota, North",ND_N,NULL
+WI_S,4803,5751.0,"Wisconsin, South",WI_S,NULL
+ND_S,3302,4951.0,"North Dakota, South",ND_S,NULL
+WY_E,4901,5776.0,"Wyoming, Zone I, East",WY_E,NULL
+OH_N,3401,4976.0,"Ohio, North",OH_N,NULL
+WY_EC,4902,5801.0,"Wyoming, Zone II, East Centr",WY_EC,NULL
+OH_S,3402,5001.0,"Ohio, South",OH_S,NULL
+OK_N,3501,5026.0,"Oklahoma, North",OK_N,NULL
+WY_WC,4903,5826.0,"Wyoming, Zone III, West Cent",WY_WC,NULL
+OK_S,3502,5051.0,"Oklahoma, South",OK_S,NULL
+OR_N,3601,5076.0,"Oregon, North",OR_N,NULL
+WY_W,4904,5851.0,"Wyoming, Zone IV, West",WY_W,NULL
+OR_S,3602,5101.0,"Oregon, South",OR_S,NULL
+PA_N,3701,5126.0,"Pennsylvania, North",PA_N,NULL
+PA_S,3702,5151.0,"Pennsylvania, South",PA_S,NULL
+RI,3800,5176.0,Rhode Island,RI,NULL
+SC,3900,NULL,South Carolina,SC,NAD83
+AL_E,101,3101.0,"Alabama, East",AL_E,NULL
+AL_W,102,3126.0,"Alabama, West",AL_W,NULL
+ID_E,1101,3701.0,"Idaho, East",ID_E,NULL
+ID_C,1102,3726.0,"Idaho, Central",ID_C,NULL
+ID_W,1103,3751.0,"Idaho, West",ID_W,NULL
+IL_E,1201,3776.0,"Illinois, East",IL_E,NULL
+WA_S,4602,5626.0,"Washington, South",WA_S,NULL
+WI_C,4802,5726.0,"Wisconsin, Central",WI_C,NULL
+MA_M,2001,4151.0,"Massachusetts, Mainland",MA_M,NULL
+IL_W,1202,3801.0,"Illinois, West",IL_W,NULL

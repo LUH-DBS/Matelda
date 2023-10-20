@@ -1,0 +1,169 @@
+<task>
+    <!-- ****************************************************
+                      DATABASES
+    **************************************************** -->
+    <target> 
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql://localhost:5433/bartdb</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>postgres</password>
+        </access-configuration>
+        <import>
+            <input type="csv" separator="," table="clean">/home/fatemeh/ED-Scale/Sandbox_Generation/metanome_input_files/processed/MD_COVID-19_-_Vaccination_Percent_Age_Group_Population/clean.csv</input>
+        </import>
+    </target>
+
+    <!-- ****************************************************
+                    DEPENDENCIES
+    **************************************************** -->
+    <dependencies><![CDATA[DCs: 
+
+            e1: clean(vaccinationdate: $vaccinationdate1, age_range: $age_range1, first_daily_dose: $first_daily_dose1, first_daily_dose_cumulative: $first_daily_dose_cumulative1, second_daily_dose: $second_daily_dose1, second_daily_dose_cumulative: $second_daily_dose_cumulative1, single_daily_dose: $single_daily_dose1, single_daily_dose_cumulative: $single_daily_dose_cumulative1, thirddailydose: $thirddailydose1, thirddailydosecumulative: $thirddailydosecumulative1, combined_all_doses: $combined_all_doses1, combined_all_doses_cumulative: $combined_all_doses_cumulative1, fully_vaccinated: $fully_vaccinated1, fully_vaccinated_cumulative: $fully_vaccinated_cumulative1, firstboosterdailydose: $firstboosterdailydose1, firstboosterdailydosecumulative: $firstboosterdailydosecumulative1, secondboosterdailydose: $secondboosterdailydose1, secondboosterdailydosecumulative: $secondboosterdailydosecumulative1),
+            clean(vaccinationdate: $vaccinationdate2, age_range: $age_range2, first_daily_dose: $first_daily_dose2, first_daily_dose_cumulative: $first_daily_dose_cumulative2, second_daily_dose: $second_daily_dose2, second_daily_dose_cumulative: $second_daily_dose_cumulative2, single_daily_dose: $single_daily_dose2, single_daily_dose_cumulative: $single_daily_dose_cumulative2, thirddailydose: $thirddailydose2, thirddailydosecumulative: $thirddailydosecumulative2, combined_all_doses: $combined_all_doses2, combined_all_doses_cumulative: $combined_all_doses_cumulative2, fully_vaccinated: $fully_vaccinated2, fully_vaccinated_cumulative: $fully_vaccinated_cumulative2, firstboosterdailydose: $firstboosterdailydose2, firstboosterdailydosecumulative: $firstboosterdailydosecumulative2, secondboosterdailydose: $secondboosterdailydose2, secondboosterdailydosecumulative: $secondboosterdailydosecumulative2),
+                $first_daily_dose_cumulative1 == $first_daily_dose_cumulative2, $thirddailydosecumulative1 != $thirddailydosecumulative2 -> #fail. 
+
+        
+            e2: clean(vaccinationdate: $vaccinationdate1, age_range: $age_range1, first_daily_dose: $first_daily_dose1, first_daily_dose_cumulative: $first_daily_dose_cumulative1, second_daily_dose: $second_daily_dose1, second_daily_dose_cumulative: $second_daily_dose_cumulative1, single_daily_dose: $single_daily_dose1, single_daily_dose_cumulative: $single_daily_dose_cumulative1, thirddailydose: $thirddailydose1, thirddailydosecumulative: $thirddailydosecumulative1, combined_all_doses: $combined_all_doses1, combined_all_doses_cumulative: $combined_all_doses_cumulative1, fully_vaccinated: $fully_vaccinated1, fully_vaccinated_cumulative: $fully_vaccinated_cumulative1, firstboosterdailydose: $firstboosterdailydose1, firstboosterdailydosecumulative: $firstboosterdailydosecumulative1, secondboosterdailydose: $secondboosterdailydose1, secondboosterdailydosecumulative: $secondboosterdailydosecumulative1),
+            clean(vaccinationdate: $vaccinationdate2, age_range: $age_range2, first_daily_dose: $first_daily_dose2, first_daily_dose_cumulative: $first_daily_dose_cumulative2, second_daily_dose: $second_daily_dose2, second_daily_dose_cumulative: $second_daily_dose_cumulative2, single_daily_dose: $single_daily_dose2, single_daily_dose_cumulative: $single_daily_dose_cumulative2, thirddailydose: $thirddailydose2, thirddailydosecumulative: $thirddailydosecumulative2, combined_all_doses: $combined_all_doses2, combined_all_doses_cumulative: $combined_all_doses_cumulative2, fully_vaccinated: $fully_vaccinated2, fully_vaccinated_cumulative: $fully_vaccinated_cumulative2, firstboosterdailydose: $firstboosterdailydose2, firstboosterdailydosecumulative: $firstboosterdailydosecumulative2, secondboosterdailydose: $secondboosterdailydose2, secondboosterdailydosecumulative: $secondboosterdailydosecumulative2),
+                $first_daily_dose_cumulative1 == $first_daily_dose_cumulative2, $thirddailydose1 != $thirddailydose2 -> #fail. 
+
+        
+            e3: clean(vaccinationdate: $vaccinationdate1, age_range: $age_range1, first_daily_dose: $first_daily_dose1, first_daily_dose_cumulative: $first_daily_dose_cumulative1, second_daily_dose: $second_daily_dose1, second_daily_dose_cumulative: $second_daily_dose_cumulative1, single_daily_dose: $single_daily_dose1, single_daily_dose_cumulative: $single_daily_dose_cumulative1, thirddailydose: $thirddailydose1, thirddailydosecumulative: $thirddailydosecumulative1, combined_all_doses: $combined_all_doses1, combined_all_doses_cumulative: $combined_all_doses_cumulative1, fully_vaccinated: $fully_vaccinated1, fully_vaccinated_cumulative: $fully_vaccinated_cumulative1, firstboosterdailydose: $firstboosterdailydose1, firstboosterdailydosecumulative: $firstboosterdailydosecumulative1, secondboosterdailydose: $secondboosterdailydose1, secondboosterdailydosecumulative: $secondboosterdailydosecumulative1),
+            clean(vaccinationdate: $vaccinationdate2, age_range: $age_range2, first_daily_dose: $first_daily_dose2, first_daily_dose_cumulative: $first_daily_dose_cumulative2, second_daily_dose: $second_daily_dose2, second_daily_dose_cumulative: $second_daily_dose_cumulative2, single_daily_dose: $single_daily_dose2, single_daily_dose_cumulative: $single_daily_dose_cumulative2, thirddailydose: $thirddailydose2, thirddailydosecumulative: $thirddailydosecumulative2, combined_all_doses: $combined_all_doses2, combined_all_doses_cumulative: $combined_all_doses_cumulative2, fully_vaccinated: $fully_vaccinated2, fully_vaccinated_cumulative: $fully_vaccinated_cumulative2, firstboosterdailydose: $firstboosterdailydose2, firstboosterdailydosecumulative: $firstboosterdailydosecumulative2, secondboosterdailydose: $secondboosterdailydose2, secondboosterdailydosecumulative: $secondboosterdailydosecumulative2),
+                $fully_vaccinated_cumulative1 == $fully_vaccinated_cumulative2, $thirddailydosecumulative1 != $thirddailydosecumulative2 -> #fail. 
+
+        
+            e4: clean(vaccinationdate: $vaccinationdate1, age_range: $age_range1, first_daily_dose: $first_daily_dose1, first_daily_dose_cumulative: $first_daily_dose_cumulative1, second_daily_dose: $second_daily_dose1, second_daily_dose_cumulative: $second_daily_dose_cumulative1, single_daily_dose: $single_daily_dose1, single_daily_dose_cumulative: $single_daily_dose_cumulative1, thirddailydose: $thirddailydose1, thirddailydosecumulative: $thirddailydosecumulative1, combined_all_doses: $combined_all_doses1, combined_all_doses_cumulative: $combined_all_doses_cumulative1, fully_vaccinated: $fully_vaccinated1, fully_vaccinated_cumulative: $fully_vaccinated_cumulative1, firstboosterdailydose: $firstboosterdailydose1, firstboosterdailydosecumulative: $firstboosterdailydosecumulative1, secondboosterdailydose: $secondboosterdailydose1, secondboosterdailydosecumulative: $secondboosterdailydosecumulative1),
+            clean(vaccinationdate: $vaccinationdate2, age_range: $age_range2, first_daily_dose: $first_daily_dose2, first_daily_dose_cumulative: $first_daily_dose_cumulative2, second_daily_dose: $second_daily_dose2, second_daily_dose_cumulative: $second_daily_dose_cumulative2, single_daily_dose: $single_daily_dose2, single_daily_dose_cumulative: $single_daily_dose_cumulative2, thirddailydose: $thirddailydose2, thirddailydosecumulative: $thirddailydosecumulative2, combined_all_doses: $combined_all_doses2, combined_all_doses_cumulative: $combined_all_doses_cumulative2, fully_vaccinated: $fully_vaccinated2, fully_vaccinated_cumulative: $fully_vaccinated_cumulative2, firstboosterdailydose: $firstboosterdailydose2, firstboosterdailydosecumulative: $firstboosterdailydosecumulative2, secondboosterdailydose: $secondboosterdailydose2, secondboosterdailydosecumulative: $secondboosterdailydosecumulative2),
+                $fully_vaccinated_cumulative1 == $fully_vaccinated_cumulative2, $thirddailydose1 != $thirddailydose2 -> #fail. 
+
+        
+            e5: clean(vaccinationdate: $vaccinationdate1, age_range: $age_range1, first_daily_dose: $first_daily_dose1, first_daily_dose_cumulative: $first_daily_dose_cumulative1, second_daily_dose: $second_daily_dose1, second_daily_dose_cumulative: $second_daily_dose_cumulative1, single_daily_dose: $single_daily_dose1, single_daily_dose_cumulative: $single_daily_dose_cumulative1, thirddailydose: $thirddailydose1, thirddailydosecumulative: $thirddailydosecumulative1, combined_all_doses: $combined_all_doses1, combined_all_doses_cumulative: $combined_all_doses_cumulative1, fully_vaccinated: $fully_vaccinated1, fully_vaccinated_cumulative: $fully_vaccinated_cumulative1, firstboosterdailydose: $firstboosterdailydose1, firstboosterdailydosecumulative: $firstboosterdailydosecumulative1, secondboosterdailydose: $secondboosterdailydose1, secondboosterdailydosecumulative: $secondboosterdailydosecumulative1),
+            clean(vaccinationdate: $vaccinationdate2, age_range: $age_range2, first_daily_dose: $first_daily_dose2, first_daily_dose_cumulative: $first_daily_dose_cumulative2, second_daily_dose: $second_daily_dose2, second_daily_dose_cumulative: $second_daily_dose_cumulative2, single_daily_dose: $single_daily_dose2, single_daily_dose_cumulative: $single_daily_dose_cumulative2, thirddailydose: $thirddailydose2, thirddailydosecumulative: $thirddailydosecumulative2, combined_all_doses: $combined_all_doses2, combined_all_doses_cumulative: $combined_all_doses_cumulative2, fully_vaccinated: $fully_vaccinated2, fully_vaccinated_cumulative: $fully_vaccinated_cumulative2, firstboosterdailydose: $firstboosterdailydose2, firstboosterdailydosecumulative: $firstboosterdailydosecumulative2, secondboosterdailydose: $secondboosterdailydose2, secondboosterdailydosecumulative: $secondboosterdailydosecumulative2),
+                $second_daily_dose_cumulative1 == $second_daily_dose_cumulative2, $thirddailydosecumulative1 != $thirddailydosecumulative2 -> #fail. 
+
+        
+            e6: clean(vaccinationdate: $vaccinationdate1, age_range: $age_range1, first_daily_dose: $first_daily_dose1, first_daily_dose_cumulative: $first_daily_dose_cumulative1, second_daily_dose: $second_daily_dose1, second_daily_dose_cumulative: $second_daily_dose_cumulative1, single_daily_dose: $single_daily_dose1, single_daily_dose_cumulative: $single_daily_dose_cumulative1, thirddailydose: $thirddailydose1, thirddailydosecumulative: $thirddailydosecumulative1, combined_all_doses: $combined_all_doses1, combined_all_doses_cumulative: $combined_all_doses_cumulative1, fully_vaccinated: $fully_vaccinated1, fully_vaccinated_cumulative: $fully_vaccinated_cumulative1, firstboosterdailydose: $firstboosterdailydose1, firstboosterdailydosecumulative: $firstboosterdailydosecumulative1, secondboosterdailydose: $secondboosterdailydose1, secondboosterdailydosecumulative: $secondboosterdailydosecumulative1),
+            clean(vaccinationdate: $vaccinationdate2, age_range: $age_range2, first_daily_dose: $first_daily_dose2, first_daily_dose_cumulative: $first_daily_dose_cumulative2, second_daily_dose: $second_daily_dose2, second_daily_dose_cumulative: $second_daily_dose_cumulative2, single_daily_dose: $single_daily_dose2, single_daily_dose_cumulative: $single_daily_dose_cumulative2, thirddailydose: $thirddailydose2, thirddailydosecumulative: $thirddailydosecumulative2, combined_all_doses: $combined_all_doses2, combined_all_doses_cumulative: $combined_all_doses_cumulative2, fully_vaccinated: $fully_vaccinated2, fully_vaccinated_cumulative: $fully_vaccinated_cumulative2, firstboosterdailydose: $firstboosterdailydose2, firstboosterdailydosecumulative: $firstboosterdailydosecumulative2, secondboosterdailydose: $secondboosterdailydose2, secondboosterdailydosecumulative: $secondboosterdailydosecumulative2),
+                $second_daily_dose_cumulative1 == $second_daily_dose_cumulative2, $thirddailydose1 != $thirddailydose2 -> #fail. 
+
+        ]]></dependencies>
+
+    <!-- ****************************************************
+                      CONFIGURATION
+    **************************************************** -->
+    <configuration>
+        <!-- To print extra information in the ouput (default = false) -->
+        <printLog>true</printLog>
+
+        <!-- To load DB every time on start (default = false) -->
+        <recreateDBOnStart>true</recreateDBOnStart>
+
+        <!-- To apply the changes (default = false) -->
+        <applyCellChanges>true</applyCellChanges>
+
+        <!-- To  apply cell changes on a copy of the original target, with a custom suffix (default = true) -->
+        <cloneTargetSchema>true</cloneTargetSchema>
+        <cloneSuffix>_dirty</cloneSuffix>
+
+        <!-- To export the dirty db -->
+        <exportDirtyDB>true</exportDirtyDB>
+        <exportDirtyDBPath>./</exportDirtyDBPath>
+        <exportDirtyDBType>CSV</exportDirtyDBType>
+
+        <!-- To export the changes -->
+        <exportCellChanges>true</exportCellChanges>
+        <exportCellChangesPath>clean_changes.csv</exportCellChangesPath>
+
+        <!-- To compute an estimate of the reparability (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To generate all possible changes (default = false - slow, only for toy examples)-->
+        <generateAllChanges>false</generateAllChanges>
+
+        <!-- To avoid interactions among changes. (default = true) -->
+        <avoidInteractions>true</avoidInteractions>
+
+        <!-- To check, at the end of the process, if changes are detectable. (default = false) -->
+        <checkChanges>true</checkChanges>
+
+        <!-- To compute an estimate of the repairability. Requires checkChanges = true. (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To use an optimized strategy for updates. (default = true) -->
+        <useDeltaDBForChanges>true</useDeltaDBForChanges>
+
+        <!-- Error percentages for dependencies and comparisons 
+        All percentages are wrt table sizes (# tuples) -->
+        <errorPercentages>
+            <defaultPercentage>0.0</defaultPercentage>
+            <vioGenQueries>
+            <vioGenQuery id="e1"><comparison>(first_daily_dose_cumulative1 == first_daily_dose_cumulative2)</comparison><percentage>1.1875843454790829</percentage></vioGenQuery><vioGenQuery id="e1"><comparison>(thirddailydosecumulative1 != thirddailydosecumulative2)</comparison><percentage>1.1875843454790829</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(first_daily_dose_cumulative1 == first_daily_dose_cumulative2)</comparison><percentage>1.1875843454790829</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(thirddailydose1 != thirddailydose2)</comparison><percentage>1.1875843454790829</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(fully_vaccinated_cumulative1 == fully_vaccinated_cumulative2)</comparison><percentage>1.16059379217274</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(thirddailydosecumulative1 != thirddailydosecumulative2)</comparison><percentage>1.16059379217274</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(fully_vaccinated_cumulative1 == fully_vaccinated_cumulative2)</comparison><percentage>1.16059379217274</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(thirddailydose1 != thirddailydose2)</comparison><percentage>1.16059379217274</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(second_daily_dose_cumulative1 == second_daily_dose_cumulative2)</comparison><percentage>1.16059379217274</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(thirddailydosecumulative1 != thirddailydosecumulative2)</comparison><percentage>1.16059379217274</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(second_daily_dose_cumulative1 == second_daily_dose_cumulative2)</comparison><percentage>1.16059379217274</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(thirddailydose1 != thirddailydose2)</comparison><percentage>1.16059379217274</percentage></vioGenQuery></vioGenQueries>
+        </errorPercentages>
+
+        <!-- To control the way in which changing the value -->
+        <dirtyStrategies>
+            <defaultStrategy>
+                <strategy> TypoRandom </strategy>
+            </defaultStrategy> 
+            <!-- possible strategies
+                <strategy chars="*" charsToAdd="3">TypoAddString</strategy>
+                <strategy chars="*" charsToAdd="3">TypoAppendString</strategy>
+                <strategy charsToRemove="3">TypoRemoveString</strategy>
+                <strategy charsToSwitch="3">TypoSwitchValue</strategy>
+                <strategy>TypoActiveDomain</strategy>
+                <strategy>TypoRandom</strategy>
+            -->
+        </dirtyStrategies>
+
+        <randomErrors>
+            <tables>
+                <table name="clean"> 
+                    <percentage>8</percentage> <!-- Percentage is wrt attributes to dirty in the table -->
+                    <attributes>
+                    <atrribute>vaccinationdate</atrribute><atrribute>age_range</atrribute></attributes>
+                </table>
+            </tables>
+        </randomErrors>
+    
+        <outlierErrors>
+            <tables>
+                <table name="clean">
+                    <attributes>
+                    <atrribute percentage="0" detectable="true">first_daily_dose</atrribute><atrribute percentage="0" detectable="true">first_daily_dose_cumulative</atrribute><atrribute percentage="0" detectable="true">second_daily_dose</atrribute><atrribute percentage="0" detectable="true">second_daily_dose_cumulative</atrribute><atrribute percentage="0" detectable="true">single_daily_dose</atrribute><atrribute percentage="0" detectable="true">single_daily_dose_cumulative</atrribute><atrribute percentage="0" detectable="true">thirddailydose</atrribute><atrribute percentage="0" detectable="true">thirddailydosecumulative</atrribute><atrribute percentage="0" detectable="true">combined_all_doses</atrribute><atrribute percentage="0" detectable="true">combined_all_doses_cumulative</atrribute><atrribute percentage="0" detectable="true">fully_vaccinated</atrribute><atrribute percentage="0" detectable="true">fully_vaccinated_cumulative</atrribute><atrribute percentage="0" detectable="true">firstboosterdailydose</atrribute><atrribute percentage="0" detectable="true">firstboosterdailydosecumulative</atrribute><atrribute percentage="0" detectable="true">secondboosterdailydose</atrribute><atrribute percentage="0" detectable="true">secondboosterdailydosecumulative</atrribute></attributes>
+                </table>
+            </tables>
+        </outlierErrors>
+        
+        <!-- The following parameters are used to control the sampling process.
+            All the fields are optional, but they may be crucial to obtain a good random sample.
+            In order to choose the cells to modify, BART will scan the result of a viogen query
+            using the following sampling algorithm:
+            1) First, a number of tuples are skipped. This is a random number choosed btw 
+                0 and (offsetFactor * tableSize)
+            2) Then BART will scan the result and will pickup tuples 
+            with a probability p = probabilityFactor.
+            
+            BART uses three kinds of queries
+            - Symmetric queries: for symmetric viogen queries (see paper)
+            - Inequality queries: for viogen queries without equalities (i.e. inequalities only)
+            - Standard queries: for all other viogen queries
+        -->
+        <vioGenQueriesConfiguration>
+            <!-- STANDARD QUERIES -->
+            <probabilityFactorForStandardQueries>0.25</probabilityFactorForStandardQueries>
+            <offsetFactorForStandardQueries>0.05</offsetFactorForStandardQueries>
+            <!-- SYMMETRIC QUERIES -->
+            <probabilityFactorForSymmetricQueries>0.25</probabilityFactorForSymmetricQueries>
+            <offsetFactorForSymmetricQueries>0.05</offsetFactorForSymmetricQueries>
+            <!-- INEQUALITY QUERIES -->
+            <probabilityFactorForInequalityQueries>0.05</probabilityFactorForInequalityQueries>
+            <offsetFactorForInequalityQueries>0.05</offsetFactorForInequalityQueries>
+            <windowSizeFactorForInequalityQueries>1.5</windowSizeFactorForInequalityQueries>
+        </vioGenQueriesConfiguration>
+
+    </configuration>
+</task>
