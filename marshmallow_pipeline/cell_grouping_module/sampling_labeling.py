@@ -2,6 +2,7 @@ import copy
 import logging
 import math
 from statistics import mode
+from marshmallow_pipeline.cell_grouping_module.llm_labeling import get_foundation_nodel_prediction
 
 import numpy as np
 import pandas as pd
@@ -194,9 +195,11 @@ def distribute_labels_in_cell_clusters(cell_cluster_n_labels, sorted_clusters, v
             sorted_cluster_idx = 0
     return cell_cluster_n_labels
     
-def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cell_cluster_n_labels, x, y, dirty_cell_values):
+def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cell_cluster_n_labels, 
+                                 x, y, dirty_cell_values, tables_tuples_dict, labeling_method, original_data_keys_temp):
     x_cluster = []
     y_cluster = []
+    key_cluster = []
     samples_feature_vectors = []
     samples_labels = []
     samples_indices_global = []
@@ -206,12 +209,17 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
     for cell_idx in col_group_cell_idx:
         x_cluster.append(x[cell_idx])
         y_cluster.append(y[cell_idx])
+        key_cluster.append(original_data_keys_temp[cell_idx])
 
     if updated_cell_cluster_n_labels[cluster] > 1:
         while len(samples_feature_vectors) < updated_cell_cluster_n_labels[cluster]:
             sample = np.random.randint(0, len(x_cluster))
             samples_feature_vectors.append(x_cluster[sample])
-            samples_labels.append(y_cluster[sample])
+            if labeling_method == 0:
+                samples_labels.append(y_cluster[sample])
+            elif labeling_method == 1:
+                label = get_foundation_nodel_prediction(tables_tuples_dict, key_cluster[sample])
+                samples_labels.append(label)
             dirty_cell_values_cluster.append(
                 dirty_cell_values[col_group_cell_idx[sample]]
             )
@@ -221,7 +229,11 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
     else:
         sample = get_the_nearest_point_to_centroid(x_cluster)
         samples_feature_vectors.append(x_cluster[sample])
-        samples_labels.append(y_cluster[sample])
+        if labeling_method == 0:
+                samples_labels.append(y_cluster[sample])
+        elif labeling_method == 1:
+            label = get_foundation_nodel_prediction(tables_tuples_dict, key_cluster[sample])
+            samples_labels.append(label)
         dirty_cell_values_cluster.append(
             dirty_cell_values[col_group_cell_idx[sample]]
         )
@@ -265,7 +277,7 @@ def update_samples_dict(cell_clustering_dict, samples_dict, cluster, \
     return cell_clustering_dict, samples_dict
 
 
-def sampling(cell_clustering_dict, x, y, dirty_cell_values, n_cores):
+def sampling(cell_clustering_dict, x, y, dirty_cell_values, original_data_keys_temp, n_cores, tables_tuples_dict, labeling_method):
     logging.debug("Sampling")
     samples_dict = {
         "cell_cluster": [],
@@ -310,7 +322,10 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values, n_cores):
                                          updated_cell_cluster_n_labels, 
                                          x, 
                                          y, 
-                                         dirty_cell_values)
+                                         dirty_cell_values, 
+                                         tables_tuples_dict,
+                                         labeling_method,
+                                         original_data_keys_temp)
 
         cell_clustering_dict, samples_dict = update_samples_dict(cell_clustering_dict, samples_dict, cluster, \
                         samples_feature_vectors, samples_labels, samples_indices_global, \

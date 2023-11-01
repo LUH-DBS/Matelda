@@ -43,7 +43,7 @@ def cluster_column_group_init(col_groups_dir, df_n_labels, features_dict):
     global features_dict_glob
     features_dict_glob = features_dict
 
-def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode):
+def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode, labeling_method, tables_tuples_dict):
     global df_n_labels_glob
     df_n_labels_glob = df_n_labels
 
@@ -64,6 +64,12 @@ def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_
 
     global classification_mode_glob
     classification_mode_glob = classification_mode
+
+    global labeling_method_glob
+    labeling_method_glob = labeling_method
+
+    global tables_tuples_dict_glob
+    tables_tuples_dict_glob = tables_tuples_dict
 
 def get_cells_in_cluster(group_df, col_cluster, features_dict):
     original_data_keys_temp = [] # (table_id, col_id, cell_idx, cell_value)
@@ -150,8 +156,8 @@ def col_clu_cell_clustering(
     logging.debug("processing cluster %s ... done", str(col_cluster))
     return cell_cluster_cells_dict, cell_clustering_dict
 
-
-def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode):
+def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, n_cores, 
+                                   classification_mode, labeling_method, tables_tuples_dict):
     logging.info(
         "Sampling and labeling cluster %s",
         str(cell_clustering_df["col_cluster"].values[0]),
@@ -167,8 +173,9 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, 
             y_temp = cell_cluster_cells_dict["y_temp"]
             value_temp = cell_cluster_cells_dict["value_temp"]
             key_temp = cell_cluster_cells_dict["key_temp"]
+            original_data_keys_temp = cell_cluster_cells_dict["original_data_keys_temp"]
 
-            samples_dict, cell_clustering_df = sampling(cell_clustering_df, X_temp, y_temp, value_temp, n_cores)
+            samples_dict, cell_clustering_df = sampling(cell_clustering_df, X_temp, y_temp, value_temp, original_data_keys_temp, n_cores, tables_tuples_dict, labeling_method)
             logging.info("Start labeling for cluster %s", str(cell_clustering_df["col_cluster"].values[0]))
             samples_dict = labeling(samples_dict)
             universal_samples = {}
@@ -251,7 +258,8 @@ def error_detector(
     cell_clustering_res_available,
     save_mediate_res_on_disk,
     pool,
-    classification_mode
+    classification_mode,
+    labeling_method
 ):
     logging.info("Starting error detection")
 
@@ -261,13 +269,15 @@ def error_detector(
     logging.info("Generating cell features")
     if cell_feature_generator_enabled:
         logging.info("Generating cell features enabled")
-        features_dict = get_cells_features(
+        features_dict, tables_tuples_dict = get_cells_features(
             sandbox_path, output_path, table_charset_dict, tables_dict, dirty_files_name, clean_files_name, save_mediate_res_on_disk, pool
         )
     else:
         logging.info("Generating cell features disabled, loading from previous results from disk")
         with open(os.path.join(output_path, "features.pickle"), "rb") as pickle_file:
             features_dict = pickle.load(pickle_file)
+        with open(os.path.join(output_path, "tables_tuples.pickle"), "rb") as pickle_file:
+            tables_tuples_dict = pickle.load(pickle_file)
 
     logging.info("Selecting label")
     cluster_sizes_df = pd.DataFrame.from_dict(cluster_sizes_dict)
@@ -346,7 +356,7 @@ def error_detector(
             table_clusters.append(table_cluster)
             col_clusters.append(col_cluster)
     logging.info("start pool")
-    with multiprocessing.Pool(processes=1,initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode)) as pool:
+    with multiprocessing.Pool(processes=1,initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode, labeling_method, tables_tuples_dict)) as pool:
         logging.info("pool started")
         original_data_keys = []
         unique_cells_local_index_collection = {}
@@ -489,6 +499,12 @@ def test(col_cluster, table_cluster):
     global classification_mode_glob
     classification_mode = classification_mode_glob
 
+    global labeling_method_glob
+    labeling_method = labeling_method_glob
+
+    global tables_tuples_dict_glob
+    tables_tuples_dict = tables_tuples_dict_glob
+
     cell_clustering_df = all_cell_clusters_records[
         (all_cell_clusters_records["table_cluster"] == table_cluster)
         & (all_cell_clusters_records["col_cluster"] == col_cluster)
@@ -497,8 +513,9 @@ def test(col_cluster, table_cluster):
         col_cluster
     ]
     cell_cluster_sampling_labeling_dict = cell_cluster_sampling_labeling(
-        cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode
+        cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode, labeling_method, tables_tuples_dict
     )
+
     if save_mediate_res_on_disk:
         cell_clustering_dir = os.path.join(output_path, "cell_clustering")
         if not os.path.exists(cell_clustering_dir):

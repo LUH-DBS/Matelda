@@ -19,7 +19,7 @@ from marshmallow_pipeline.utils.loading_results import \
 
 def main(labeling_budget, execution):
     configs = ConfigParser()
-    configs.read("config.ini")
+    configs.read("/home/fatemeh/ED-Scale-Oct/ED-Scale/config.ini")
     labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
@@ -70,6 +70,7 @@ def main(labeling_budget, execution):
     cell_clustering_alg = configs["CELL_GROUPING"]["cell_clustering_alg"]
     cell_clustering_res_available = bool(int(configs["CELL_GROUPING"]["cell_clustering_res_available"]))
     classification_mode = int(configs["CELL_GROUPING"]["classification_mode"])
+    labeling_method = int(configs["CELL_GROUPING"]["labeling_method"])
 
     dirty_files_name = configs["DIRECTORIES"]["dirty_files_name"]
     clean_files_name = configs["DIRECTORIES"]["clean_files_name"]
@@ -201,7 +202,8 @@ def main(labeling_budget, execution):
         cell_clustering_res_available,
         save_mediate_res_on_disk,
         pool,
-        classification_mode
+        classification_mode, 
+        labeling_method
     )
 
     time_end = time.time()
@@ -245,4 +247,4 @@ def main(labeling_budget, execution):
     )
 
 if __name__ == "__main__":
-    main(1)
+    main(2000, 1)
