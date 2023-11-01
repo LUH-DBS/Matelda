@@ -17,7 +17,7 @@ from marshmallow_pipeline.saving_results import get_all_results
 from marshmallow_pipeline.utils.loading_results import \
     loading_columns_grouping_results
 
-def main(execution):
+def main(labeling_budget, execution):
     configs = ConfigParser()
     configs.read("config.ini")
     labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
