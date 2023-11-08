@@ -71,7 +71,7 @@ def generate_cell_features(table, sandbox_path, table_file_name_santos, table_ch
                         hashlib.md5(
                             table_file_name_santos.encode()
                         ).hexdigest()
-                    )] = {"header": None, "tuples": {}}
+                    )] = {"header": None, "tuples": {}, "clean": {}}
         
         table_tuples_dict[str(
                         hashlib.md5(
@@ -124,6 +124,12 @@ def generate_cell_features(table, sandbox_path, table_file_name_santos, table_ch
                         "gt",
                     )
                 ] = label_df[col_name][row_idx]
+        for row_idx in range(len(dirty_df)):
+            table_tuples_dict[str(
+                    hashlib.md5(
+                        table_file_name_santos.encode()
+                    ).hexdigest()
+                )]["clean"][row_idx] = clean_df.iloc[row_idx].tolist()
         logging.debug("Table: %s", table)
     except Exception as e:
         logging.error(e)

@@ -8,13 +8,18 @@ def get_foundation_nodel_prediction(tables_tuples_dict, key):
     table_id = key[0]
     header = tables_tuples_dict[table_id]["header"]
     tuple = tables_tuples_dict[table_id]["tuples"][key[2]]
-    attribute = key[1]
+    ground_truth = tables_tuples_dict[table_id]["clean"][key[2]]
+    attribute_idx = key[1]
+    attribute_val = header[attribute_idx]
+    value = tuple[attribute_idx]
+    value_gt = ground_truth[attribute_idx]
     attribute_value_str = ""
     for col_idx, col in enumerate(header):
         attribute_value_str += col + ": " + tuple[col_idx] + ", "
-    prompt = f"tuple: {attribute_value_str}, specified attribute: {attribute}"
+    prompt = f"tuple: {attribute_value_str}, specified attribute: {attribute_val}"
     label = ask_model(prompt)
-    sleep(0.5)
+    logging.info("Asking GPT-3: prompt: " + prompt + " GPT label: " + str(label) + " Dirty Value " + value + " Clean Value " + value_gt)
+    sleep(0.3)
     return label
 
 
