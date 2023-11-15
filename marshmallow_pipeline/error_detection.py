@@ -1,5 +1,6 @@
 from collections import OrderedDict
 import logging
+import math
 import os
 import pickle
 import sys
@@ -33,7 +34,7 @@ if not sys.warnoptions:
 
     warnings.simplefilter("ignore")
 
-def cluster_column_group_init(col_groups_dir, df_n_labels, features_dict):
+def cluster_column_group_init(col_groups_dir, df_n_labels, features_dict, labels_per_cell_group):
     global col_groups_dir_glob 
     col_groups_dir_glob = col_groups_dir
 
@@ -43,7 +44,10 @@ def cluster_column_group_init(col_groups_dir, df_n_labels, features_dict):
     global features_dict_glob
     features_dict_glob = features_dict
 
-def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode, labeling_method, tables_tuples_dict):
+    global labels_per_cell_group_glob
+    labels_per_cell_group_glob = labels_per_cell_group
+
+def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode, labeling_method, llm_labels_per_cell_group, tables_tuples_dict, labels_per_cell_group):
     global df_n_labels_glob
     df_n_labels_glob = df_n_labels
 
@@ -68,8 +72,14 @@ def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_
     global labeling_method_glob
     labeling_method_glob = labeling_method
 
+    global llm_labels_per_cell_group_glob
+    llm_labels_per_cell_group_glob = llm_labels_per_cell_group
+
     global tables_tuples_dict_glob
     tables_tuples_dict_glob = tables_tuples_dict
+
+    global labels_per_cell_group_glob
+    labels_per_cell_group_glob = labels_per_cell_group
 
 def get_cells_in_cluster(group_df, col_cluster, features_dict):
     original_data_keys_temp = [] # (table_id, col_id, cell_idx, cell_value)
@@ -141,7 +151,7 @@ def get_cells_in_cluster(group_df, col_cluster, features_dict):
 
 
 def col_clu_cell_clustering(
-    n_cell_clusters_per_col_cluster, table_cluster, col_cluster, group_df, features_dict, n_cores
+    n_cell_clusters_per_col_cluster, table_cluster, col_cluster, group_df, features_dict, n_cores, labels_per_cell_group
 ):
     logging.debug("Processing cluster %s", str(col_cluster))
     cell_cluster_cells_dict = get_cells_in_cluster(group_df, col_cluster, features_dict)
@@ -151,13 +161,14 @@ def col_clu_cell_clustering(
         cell_cluster_cells_dict["X_temp"],
         cell_cluster_cells_dict["y_temp"],
         n_cell_clusters_per_col_cluster,
-        n_cores
+        n_cores,
+        labels_per_cell_group
     )
     logging.debug("processing cluster %s ... done", str(col_cluster))
     return cell_cluster_cells_dict, cell_clustering_dict
 
 def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, n_cores, 
-                                   classification_mode, labeling_method, tables_tuples_dict):
+                                   classification_mode, labeling_method, tables_tuples_dict, min_n_labels_per_cell_group):
     logging.info(
         "Sampling and labeling cluster %s",
         str(cell_clustering_df["col_cluster"].values[0]),
@@ -175,7 +186,7 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, 
             key_temp = cell_cluster_cells_dict["key_temp"]
             original_data_keys_temp = cell_cluster_cells_dict["original_data_keys_temp"]
 
-            samples_dict, cell_clustering_df = sampling(cell_clustering_df, X_temp, y_temp, value_temp, original_data_keys_temp, n_cores, tables_tuples_dict, labeling_method)
+            samples_dict, cell_clustering_df, n_user_labeled_cells, n_model_labeled_cells = sampling(cell_clustering_df, X_temp, y_temp, value_temp, original_data_keys_temp, n_cores, tables_tuples_dict, labeling_method, -1, min_n_labels_per_cell_group)
             logging.info("Start labeling for cluster %s", str(cell_clustering_df["col_cluster"].values[0]))
             samples_dict = labeling(samples_dict)
             universal_samples = {}
@@ -239,7 +250,7 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, 
         str(cell_clustering_df["col_cluster"].values[0]),
     )
     logging.debug("Number of labels (used): %s", str(len(X_labeled_by_user)))
-    return cell_cluster_sampling_labeling_dict
+    return cell_cluster_sampling_labeling_dict, n_user_labeled_cells, n_model_labeled_cells
 
 
 def error_detector(
@@ -249,6 +260,7 @@ def error_detector(
     output_path,
     results_path,
     n_labels,
+    labels_per_cell_group,
     cluster_sizes_dict,
     tables_dict,
     min_num_labes_per_col_cluster,
@@ -259,7 +271,8 @@ def error_detector(
     save_mediate_res_on_disk,
     pool,
     classification_mode,
-    labeling_method
+    labeling_method,
+    llm_labels_per_cell_group
 ):
     logging.info("Starting error detection")
 
@@ -294,7 +307,7 @@ def error_detector(
         n_processes = min((len(col_group_file_names), os.cpu_count()))
         # logging.debug("Number of processes: %s", str(n_processes))
 
-        with multiprocessing.Pool(initializer=cluster_column_group_init, initargs=(col_groups_dir, df_n_labels, features_dict), processes=1) as pool:
+        with multiprocessing.Pool(initializer=cluster_column_group_init, initargs=(col_groups_dir, df_n_labels, features_dict, labels_per_cell_group), processes=1) as pool:
             table_clusters = []
             cell_cluster_cells_dict_all = {}
             cell_clustering_dict_all = {}
@@ -356,7 +369,7 @@ def error_detector(
             table_clusters.append(table_cluster)
             col_clusters.append(col_cluster)
     logging.info("start pool")
-    with multiprocessing.Pool(processes=1,initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode, labeling_method, tables_tuples_dict)) as pool:
+    with multiprocessing.Pool(processes=1,initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode, labeling_method, llm_labels_per_cell_group, tables_tuples_dict, labels_per_cell_group)) as pool:
         logging.info("pool started")
         original_data_keys = []
         unique_cells_local_index_collection = {}
@@ -369,7 +382,8 @@ def error_detector(
         used_labels = 0
         logging.info("Starting parallel processing of cell clusters")
         pool_results = pool.starmap(test, zip(col_clusters, table_clusters))
-
+        n_user_labeled_cells = 0
+        n_model_labeled_cells = 0
         for result in pool_results:
             if result is not None:
                 original_data_keys.append(result["original_data_keys"])
@@ -381,6 +395,13 @@ def error_detector(
                 y_labeled_by_user_all.update(result["y_labeled_by_user_all"])
                 selected_samples.update(result["selected_samples"])
                 used_labels += result["used_labels"]
+                n_user_labeled_cells += result["n_user_labeled_cells"]
+                n_model_labeled_cells += result["n_model_labeled_cells"]
+                logging.info("Number of used Labeled Cells: %s", str(result["used_labels"]))
+                logging.info("Len selected_samples: %s", str(len(result["selected_samples"])))
+                logging.info("Number of Labeled Cells (user): %s", str(result["n_user_labeled_cells"]))
+                logging.info("Number of Labeled Cells (model): %s", str(result["n_model_labeled_cells"]))
+
     end_time = time.time()
     logging.info("Sampling and labeling clusters took %s seconds", str(end_time - start_time))
     logging.info("Saving results")
@@ -402,6 +423,8 @@ def error_detector(
         y_labeled_by_user_all,
         unique_cells_local_index_collection,
         selected_samples,
+        n_user_labeled_cells,
+        n_model_labeled_cells,
     )
 
 
@@ -418,6 +441,8 @@ def cluster_column_group(file_name, n_cores):
     df_n_labels = df_n_labels_glob
     global features_dict_glob
     features_dict = features_dict_glob
+    global labels_per_cell_group_glob
+    labels_per_cell_group = labels_per_cell_group_glob
 
     with open(os.path.join(col_groups_dir, file_name), "rb") as file:
         group_df = pickle.load(file)
@@ -437,11 +462,11 @@ def cluster_column_group(file_name, n_cores):
         ].values
         for _, col_cluster in enumerate(clusters):
             col_clusters.append(col_cluster)
-            n_cell_groups = (
+            n_cell_groups = (math.floor(
                 df_n_labels[
                     (df_n_labels["table_cluster"] == table_cluster)
                     & (df_n_labels["col_cluster"] == col_cluster)
-                ]["n_labels"].values[0]
+                ]["n_labels"].values[0]/labels_per_cell_group)
             )
 
             (
@@ -453,7 +478,8 @@ def cluster_column_group(file_name, n_cores):
                 col_cluster,
                 group_df,
                 features_dict,
-                n_cores
+                n_cores,
+                labels_per_cell_group
             )
             cell_cluster_cells_dict_all[table_cluster][
                 col_cluster
@@ -466,6 +492,94 @@ def cluster_column_group(file_name, n_cores):
 
     return {"table_cluster": table_clusters, "col_clusters": col_clusters, "cell_cluster_cells_dict_all": cell_cluster_cells_dict_all, "cell_clustering_dict_all": cell_clustering_dict_all}
 
+def cell_cluster_sampling_labeling_combined(
+        cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode, labeling_method, llm_labels_per_cell_group, tables_tuples_dict, labels_per_cell_group):
+    logging.info(
+        "Combined llm human labeling")
+    logging.info(
+        "Sampling and labeling cluster %s",
+        str(cell_clustering_df["col_cluster"].values[0]),
+    )
+    logging.debug(
+        "Number of labels (updated): %s",
+        str(cell_clustering_df["n_labels_updated"].values[0]),
+    )
+
+    try:
+        if cell_clustering_df["n_labels_updated"].values[0] > 1:
+            X_temp = cell_cluster_cells_dict["X_temp"]
+            y_temp = cell_cluster_cells_dict["y_temp"]
+            value_temp = cell_cluster_cells_dict["value_temp"]
+            key_temp = cell_cluster_cells_dict["key_temp"]
+            original_data_keys_temp = cell_cluster_cells_dict["original_data_keys_temp"]
+
+            samples_dict, cell_clustering_df, n_user_labeled_cells, n_model_labeled_cells = sampling(cell_clustering_df, X_temp, y_temp, value_temp, original_data_keys_temp, n_cores, tables_tuples_dict, labeling_method, llm_labels_per_cell_group, min_n_labels_per_cell_group = labels_per_cell_group)
+            logging.info("Start labeling for cluster %s", str(cell_clustering_df["col_cluster"].values[0]))
+            samples_dict = labeling(samples_dict)
+            universal_samples = {}
+            for cell_cluster_idx, _ in enumerate(samples_dict["cell_cluster"]):
+                if len(samples_dict["samples"][cell_cluster_idx]) > 0:
+                    for idx, cell_idx in enumerate(
+                        samples_dict["samples_indices_global"][cell_cluster_idx]
+                    ):
+                        if key_temp[cell_idx] in universal_samples:
+                            logging.error("Error: key already in universal_samples")
+                        universal_samples.update(
+                            {
+                                key_temp[cell_idx]: samples_dict["labels"][
+                                    cell_cluster_idx
+                                ][idx]
+                            }
+                        )
+            logging.debug("len to_be_added: %s", str(len(universal_samples)))
+        else:
+            # we need at least 2 labels per col group (in the cases that we have only one cluster 1 label is enough)
+            samples_dict = None
+
+        if samples_dict is None:
+            return None
+        else:
+            X_labeled_by_user = []
+            y_labeled_by_user = []
+            for cell_cluster_idx, _ in enumerate(samples_dict["cell_cluster"]):
+                if len(samples_dict["samples"][cell_cluster_idx]) > 0:
+                    X_labeled_by_user.extend(samples_dict["samples"][cell_cluster_idx])
+                    y_labeled_by_user.extend(samples_dict["labels"][cell_cluster_idx])
+            logging.debug("len X_labeled_by_user: %s", str(len(X_labeled_by_user)))
+            if classification_mode == 0:
+                X_train, y_train, X_test, y_test, y_cell_ids = get_train_test_sets(
+                    X_temp, y_temp, samples_dict, cell_clustering_df
+                )
+                logging.info("start classification for cluster %s", str(cell_clustering_df["col_cluster"].values[0]))
+                predicted = classify(X_train, y_train, X_test)
+            else:
+                X_train, y_train, X_test, y_test, y_cell_ids, predicted = get_train_test_sets_per_col(
+                    X_temp, y_temp, samples_dict, cell_clustering_df, cell_cluster_cells_dict["datacells_uids"]
+                )
+
+    except Exception as e:
+        logging.error(
+            "Error in cluster %s", str(cell_clustering_df["col_cluster"].values[0])
+        )
+        logging.error(e)
+
+    cell_cluster_sampling_labeling_dict = {
+        "y_test": y_test,
+        "y_cell_ids": y_cell_ids,
+        "predicted": predicted,
+        "original_data_keys_temp": cell_cluster_cells_dict["original_data_keys_temp"],
+        "universal_samples": universal_samples,
+        "X_labeled_by_user": X_labeled_by_user,
+        "y_labeled_by_user": y_labeled_by_user,
+        "datacells_uids": cell_cluster_cells_dict["datacells_uids"],
+    }
+    logging.info(
+        "Finished sampling and labeling cluster %s",
+        str(cell_clustering_df["col_cluster"].values[0]),
+    )
+    logging.debug("Number of labels (used): %s", str(len(X_labeled_by_user)))
+    return cell_cluster_sampling_labeling_dict, n_user_labeled_cells, n_model_labeled_cells
+     
 def test(col_cluster, table_cluster):
     logging.info("Starting test; Column cluster: %s; Table cluster %s", col_cluster, table_cluster)
     original_data_keys = []
@@ -502,8 +616,14 @@ def test(col_cluster, table_cluster):
     global labeling_method_glob
     labeling_method = labeling_method_glob
 
+    global llm_labels_per_cell_group_glob
+    llm_labels_per_cell_group = llm_labels_per_cell_group_glob
+
     global tables_tuples_dict_glob
     tables_tuples_dict = tables_tuples_dict_glob
+
+    global labels_per_cell_group_glob
+    labels_per_cell_group = labels_per_cell_group_glob
 
     cell_clustering_df = all_cell_clusters_records[
         (all_cell_clusters_records["table_cluster"] == table_cluster)
@@ -512,9 +632,14 @@ def test(col_cluster, table_cluster):
     cell_cluster_cells_dict = cell_cluster_cells_dict_all[table_cluster][
         col_cluster
     ]
-    cell_cluster_sampling_labeling_dict = cell_cluster_sampling_labeling(
-        cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode, labeling_method, tables_tuples_dict
-    )
+    if labeling_method != 2:
+        cell_cluster_sampling_labeling_dict, n_user_labeled_cells, n_model_labeled_cells = cell_cluster_sampling_labeling(
+            cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode, labeling_method, tables_tuples_dict, labels_per_cell_group
+        )
+    else:
+        cell_cluster_sampling_labeling_dict, n_user_labeled_cells, n_model_labeled_cells = cell_cluster_sampling_labeling_combined(
+            cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode, labeling_method, llm_labels_per_cell_group, tables_tuples_dict, labels_per_cell_group
+        )
 
     if save_mediate_res_on_disk:
         cell_clustering_dir = os.path.join(output_path, "cell_clustering")
@@ -569,4 +694,4 @@ def test(col_cluster, table_cluster):
 
     logging.info("Done test; Column cluster: %s; Table cluster %s; Used labels %s , Init labels: %s", col_cluster, table_cluster, str(len(X_labeled_by_user) if X_labeled_by_user is not None else 0), init_labels_tg_cg)
     
-    return {"original_data_keys": original_data_keys, "unique_cells_local_index_collection": unique_cells_local_index_collection, "predicted_all": predicted_all, "y_test_all": y_test_all, "y_local_cell_ids": y_local_cell_ids, "X_labeled_by_user_all": X_labeled_by_user_all, "y_labeled_by_user_all": y_labeled_by_user_all, "selected_samples": selected_samples, "used_labels": used_labels}
+    return {"original_data_keys": original_data_keys, "unique_cells_local_index_collection": unique_cells_local_index_collection, "predicted_all": predicted_all, "y_test_all": y_test_all, "y_local_cell_ids": y_local_cell_ids, "X_labeled_by_user_all": X_labeled_by_user_all, "y_labeled_by_user_all": y_labeled_by_user_all, "selected_samples": selected_samples, "used_labels": used_labels, "n_user_labeled_cells": n_user_labeled_cells, "n_model_labeled_cells": n_model_labeled_cells}

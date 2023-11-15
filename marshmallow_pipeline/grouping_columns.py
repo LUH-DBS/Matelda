@@ -12,7 +12,7 @@ from marshmallow_pipeline.column_grouping_module.col_grouping import (
 )
 from marshmallow_pipeline.utils.read_data import read_csv
 
-def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget, output_path):
+def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget, labels_per_cell_group, output_path):
     """
     This function calculates the number of column groups for each table group.  
     The number of column groups is calculated according to the following formula:
@@ -38,7 +38,7 @@ def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget, outp
     count_all_cols = 0
     if len(table_grouping_dict) == 1:
         tg_stats[0] = {"n_cols": "Dummy Value", "n_cells": "Dummy Value", 
-                       "max_n_col_groups": math.floor(labeling_budget / 2)}
+                       "max_n_col_groups": math.floor(labeling_budget / 2 / labels_per_cell_group)}
         return tg_stats
     for table_group in table_grouping_dict:
         n_cols_in_tg = 0
@@ -50,14 +50,14 @@ def get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget, outp
         count_all_cols += n_cols_in_tg
         tg_stats[table_group] = {"n_cols": n_cols_in_tg, "n_cells": n_cells_in_tg, "max_n_col_groups": 1}
     for table_group in table_grouping_dict:
-        remained_labeling_budget = labeling_budget - 2 * sum(item['max_n_col_groups'] for item in tg_stats.values())
+        remained_labeling_budget = labeling_budget - 2 * labels_per_cell_group * sum(item['max_n_col_groups'] for item in tg_stats.values())
         max_n_col_groups = min(tg_stats[table_group]["n_cols"], 
-            math.floor(remained_labeling_budget * tg_stats[table_group]["n_cols"] / count_all_cols / 2))# 2 is the minimum number of labels for each column group
+            math.floor(remained_labeling_budget * tg_stats[table_group]["n_cols"] / count_all_cols / 2 / labels_per_cell_group))# 2 is the minimum number of labels for each column group
         tg_stats[table_group]["max_n_col_groups"] += max_n_col_groups
     tg_stats = dict(sorted(tg_stats.items(), key = lambda item: item[1]['max_n_col_groups'], reverse=True))
     processed = 0
     i = 0
-    while sum(item['max_n_col_groups'] for item in tg_stats.values()) < labeling_budget/2 and processed < len(table_grouping_dict):
+    while sum(item['max_n_col_groups'] for item in tg_stats.values()) < labeling_budget/2/labels_per_cell_group and processed < len(table_grouping_dict):
         table_group = list(tg_stats.keys())[i]
         if tg_stats[table_group]["max_n_col_groups"] < tg_stats[table_group]["n_cols"]:
             tg_stats[table_group]["max_n_col_groups"] += 1
@@ -80,6 +80,7 @@ def column_grouping(
     table_size_dict: Dict,
     lake_base_path: str,
     labeling_budget: int,
+    labels_per_cell_group: int,
     mediate_files_path: str,
     cg_enabled: bool,
     col_grouping_alg: str,
@@ -95,6 +96,7 @@ def column_grouping(
         :param table_size_dict: A dictionary that maps between a table group and the number of cells in it.
         :param lake_base_path: The path to the aggregated lake.
         :param labeling_budget: The labeling budget.
+        :param labels_per_cell_group: The number of labels per cell group.
         :param mediate_files_path: The path to the mediate files.
         :param cg_enabled: A boolean that indicates whether the column grouping step is enabled.
         :param col_grouping_alg: The column grouping algorithm (km for minibatch kmeans or hac for hierarchical agglomerative clustering - default: hac).
@@ -103,7 +105,7 @@ def column_grouping(
     Returns:
         None
     """
-    tg_stats = get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget, mediate_files_path)
+    tg_stats = get_n_col_groups(table_grouping_dict, table_size_dict, labeling_budget, labels_per_cell_group, mediate_files_path)
     logging.info("Group columns")
     # pool = multiprocessing.Pool(1)
     

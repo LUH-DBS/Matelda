@@ -71,6 +71,11 @@ def main(labeling_budget, execution):
     cell_clustering_res_available = bool(int(configs["CELL_GROUPING"]["cell_clustering_res_available"]))
     classification_mode = int(configs["CELL_GROUPING"]["classification_mode"])
     labeling_method = int(configs["CELL_GROUPING"]["labeling_method"])
+    if labeling_method == 2:
+        llm_labels_per_cell_group = int(configs["CELL_GROUPING"]["llm_labels_per_cell_group"])
+    else: 
+        llm_labels_per_cell_group = -1
+    min_n_labels_per_cell_group = int(configs["CELL_GROUPING"]["labels_per_cell_group"])
 
     dirty_files_name = configs["DIRECTORIES"]["dirty_files_name"]
     clean_files_name = configs["DIRECTORIES"]["clean_files_name"]
@@ -152,6 +157,7 @@ def main(labeling_budget, execution):
             table_size_dict,
             sandbox_path,
             labeling_budget,
+            min_n_labels_per_cell_group,
             mediate_files_path,
             column_grouping_enabled,
             column_grouping_alg,
@@ -185,7 +191,7 @@ def main(labeling_budget, execution):
         predicted_all,
         y_labeled_by_user_all,
         unique_cells_local_index_collection,
-        samples,
+        samples, global_n_userl_labels, global_n_model_labels
     ) = error_detector(
         cell_feature_generator_enabled,
         tables_path,
@@ -193,6 +199,7 @@ def main(labeling_budget, execution):
         experiment_output_path,
         results_path,
         labeling_budget,
+        min_n_labels_per_cell_group,
         cluster_sizes_dict,
         tables_dict,
         min_num_labes_per_col_cluster,
@@ -203,7 +210,8 @@ def main(labeling_budget, execution):
         save_mediate_res_on_disk,
         pool,
         classification_mode, 
-        labeling_method
+        labeling_method,
+        llm_labels_per_cell_group
     )
 
     time_end = time.time()
@@ -245,6 +253,8 @@ def main(labeling_budget, execution):
         dirty_files_name,
         clean_files_name
     )
+    
+    logging.info(f"Number of user labeled cells: {global_n_userl_labels}, Number of model labeled cells {global_n_model_labels}")
 
 if __name__ == "__main__":
     main(2000, 1)
