@@ -233,7 +233,8 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
             samples_idx = []
             samples_labels = []
             user_samples = []
-            while len(samples_feature_vectors) < updated_cell_cluster_n_labels[cluster]:
+            outer_while_trial = 5
+            while len(samples_feature_vectors) < updated_cell_cluster_n_labels[cluster] and outer_while_trial > 0:
                 trial = 5
                 unique_sample = True
                 sample = np.random.randint(0, len(x_cluster))
@@ -260,9 +261,11 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
                         dirty_cell_values[col_group_cell_idx[sample]]
                     )
                     if col_group_cell_idx[sample] in samples_indices_global:
-                        print("I am here")
+                        logging.INFO("sample is already in samples_indices_global")
                     samples_indices_global.append(col_group_cell_idx[sample])
                     samples_indices_cell_group.append(sample)
+                else: 
+                    outer_while_trial -= 1
             if labeling_method == 2:
                 n_samples_llm = min(llm_labels_per_cell_group, len(x_cluster) - min_n_labels_per_cell_group)
                 llm_samples_idx = get_random_sample_list(n_samples_llm, x_cluster, user_samples)
@@ -281,7 +284,7 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
                         )
                         samples_feature_vectors.append(x_cluster[s_llm])
                         if col_group_cell_idx[s_llm] in samples_indices_global:
-                            print("I am here")
+                            logging.INFO("sample is already in samples_indices_global")
                         samples_indices_global.append(col_group_cell_idx[s_llm])
                         samples_indices_cell_group.append(s_llm)
                         samples_labels.append(test_labels[s_llm_idx])
@@ -300,7 +303,7 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
                 dirty_cell_values[col_group_cell_idx[sample]]
             )
             if col_group_cell_idx[sample] in samples_indices_global:
-                print("I am here")
+                logging.INFO("sample is already in samples_indices_global")
             samples_indices_global.append(col_group_cell_idx[sample])
             samples_indices_cell_group.append(sample)
     except Exception as e:
