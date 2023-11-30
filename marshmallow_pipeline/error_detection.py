@@ -250,7 +250,7 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, 
         str(cell_clustering_df["col_cluster"].values[0]),
     )
     logging.debug("Number of labels (used): %s", str(len(X_labeled_by_user)))
-    return cell_cluster_sampling_labeling_dict, n_user_labeled_cells, n_model_labeled_cells
+    return cell_cluster_sampling_labeling_dict, cell_clustering_df, samples_dict, n_user_labeled_cells, n_model_labeled_cells
 
 
 def error_detector(
@@ -578,7 +578,7 @@ def cell_cluster_sampling_labeling_combined(
         str(cell_clustering_df["col_cluster"].values[0]),
     )
     logging.debug("Number of labels (used): %s", str(len(X_labeled_by_user)))
-    return cell_cluster_sampling_labeling_dict, n_user_labeled_cells, n_model_labeled_cells
+    return cell_cluster_sampling_labeling_dict, samples_dict, n_user_labeled_cells, n_model_labeled_cells
      
 def test(col_cluster, table_cluster):
     logging.info("Starting test; Column cluster: %s; Table cluster %s", col_cluster, table_cluster)
@@ -633,11 +633,11 @@ def test(col_cluster, table_cluster):
         col_cluster
     ]
     if labeling_method != 2:
-        cell_cluster_sampling_labeling_dict, n_user_labeled_cells, n_model_labeled_cells = cell_cluster_sampling_labeling(
+        cell_cluster_sampling_labeling_dict, cell_clustering_df, samples_dict, n_user_labeled_cells, n_model_labeled_cells = cell_cluster_sampling_labeling(
             cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode, labeling_method, tables_tuples_dict, labels_per_cell_group
         )
     else:
-        cell_cluster_sampling_labeling_dict, n_user_labeled_cells, n_model_labeled_cells = cell_cluster_sampling_labeling_combined(
+        cell_cluster_sampling_labeling_dict, samples_dict, n_user_labeled_cells, n_model_labeled_cells = cell_cluster_sampling_labeling_combined(
             cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode, labeling_method, llm_labels_per_cell_group, tables_tuples_dict, labels_per_cell_group
         )
 
@@ -653,6 +653,24 @@ def test(col_cluster, table_cluster):
             "wb",
         ) as pickle_file:
             pickle.dump(cell_cluster_sampling_labeling_dict, pickle_file)
+
+        with open(
+            os.path.join(
+                cell_clustering_dir,
+                f"samples_dict_{table_cluster}_{col_cluster}.pickle",
+            ),
+            "wb",
+        ) as pickle_file:
+            pickle.dump(samples_dict, pickle_file)
+        
+        with open(
+            os.path.join(
+                cell_clustering_dir,
+                f"cell_clustering_df_{table_cluster}_{col_cluster}.pickle",
+            ),
+            "wb",
+        ) as pickle_file:
+            pickle.dump(cell_clustering_df, pickle_file)
 
     X_labeled_by_user = cell_cluster_sampling_labeling_dict["X_labeled_by_user"]
 
