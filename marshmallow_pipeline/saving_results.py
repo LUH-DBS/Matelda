@@ -15,69 +15,72 @@ def get_classification_results(
 ):
     logging.debug("Classification results:")
     total_tn, total_fp, total_fn, total_tp = 0, 0, 0, 0
-    for i in predicted_all.keys():
-        cell_local_ids = unique_cells_local_ids_collection[i]
-        swapped_cell_local_ids = {v: (k[0], k[1], k[2]) for k, v in cell_local_ids.items()}
-        col_cluster_prediction = list(predicted_all[i])
-        for j in range(len(col_cluster_prediction)):
-            if swapped_cell_local_ids[j] in samples:
-                col_cluster_prediction[j] = samples[swapped_cell_local_ids[j]]
-        col_cluster_y = y_test_all[i]
+    try:
+        for i in predicted_all.keys():
+            cell_local_ids = unique_cells_local_ids_collection[i]
+            swapped_cell_local_ids = {v: (k[0], k[1], k[2]) for k, v in cell_local_ids.items()}
+            col_cluster_prediction = list(predicted_all[i])
+            for j in range(len(col_cluster_prediction)):
+                if swapped_cell_local_ids[j] in samples:
+                    col_cluster_prediction[j] = samples[swapped_cell_local_ids[j]]
+            col_cluster_y = y_test_all[i]
 
-        tn, fp, fn, tp = confusion_matrix(
-            y_true=col_cluster_y, y_pred=col_cluster_prediction, labels=[0, 1]
-        ).ravel()
+            tn, fp, fn, tp = confusion_matrix(
+                y_true=col_cluster_y, y_pred=col_cluster_prediction, labels=[0, 1]
+            ).ravel()
 
-        total_tn += tn
-        total_tp += tp
-        total_fp += fp
-        total_fn += fn
+            total_tn += tn
+            total_tp += tp
+            total_fp += fp
+            total_fn += fn
 
-        precision = tp / (tp + fp) if tp + fp > 0 else None
-        recall = tp / (tp + fn) if tp + fn > 0 else None
-        f_score = (
-            (2 * precision * recall) / (precision + recall)
-            if precision and recall
-            else None
-        )
+            precision = tp / (tp + fp) if tp + fp > 0 else None
+            recall = tp / (tp + fn) if tp + fn > 0 else None
+            f_score = (
+                (2 * precision * recall) / (precision + recall)
+                if precision and recall
+                else None
+            )
 
-        scores = {
-            "col_cluster": i,
-            "precision": precision,
-            "recall": recall,
-            "f_score": f_score,
-            "tp": tp,
-            "fp": fp,
-            "fn": fn,
-            "tn": tn,
+            scores = {
+                "col_cluster": i,
+                "precision": precision,
+                "recall": recall,
+                "f_score": f_score,
+                "tp": tp,
+                "fp": fp,
+                "fn": fn,
+                "tn": tn,
+            }
+
+            logging.info(scores)
+
+            with open(
+                os.path.join(results_dir, "scores_col_cluster_" + str(i[0]) + "_" + str(i[1]) + ".pickle"), "wb"
+            ) as file:
+                pickle.dump(scores, file)
+
+        total_precision = total_tp / (total_tp + total_fp) if total_tp + total_fp > 0 else None
+        total_recall = total_tp / (total_tp + total_fn) if total_tp + total_fn > 0 else None
+        total_fscore = (2 * total_precision * total_recall) / (
+            total_precision + total_recall
+        ) if total_precision and total_recall else None
+        total_scores = {
+            "n_samples": len(samples),
+            "total_recall": total_recall,
+            "total_precision": total_precision,
+            "total_fscore": total_fscore,
+            "total_tp": total_tp,
+            "total_fp": total_fp,
+            "total_tn": total_tn,
+            "total_fn": total_fn,
         }
 
-        logging.info(scores)
-
-        with open(
-            os.path.join(results_dir, "scores_col_cluster_" + str(i[0]) + "_" + str(i[1]) + ".pickle"), "wb"
-        ) as file:
-            pickle.dump(scores, file)
-
-    total_precision = total_tp / (total_tp + total_fp) if total_tp + total_fp > 0 else None
-    total_recall = total_tp / (total_tp + total_fn) if total_tp + total_fn > 0 else None
-    total_fscore = (2 * total_precision * total_recall) / (
-        total_precision + total_recall
-    ) if total_precision and total_recall else None
-    total_scores = {
-        "n_samples": len(samples),
-        "total_recall": total_recall,
-        "total_precision": total_precision,
-        "total_fscore": total_fscore,
-        "total_tp": total_tp,
-        "total_fp": total_fp,
-        "total_tn": total_tn,
-        "total_fn": total_fn,
-    }
-
-    logging.info("Total scores: %s", total_scores)
-    with open(os.path.join(results_dir, "scores_all.pickle"), "wb") as file:
-        pickle.dump(total_scores, file)
+        logging.info("Total scores: %s", total_scores)
+        with open(os.path.join(results_dir, "scores_all.pickle"), "wb") as file:
+            pickle.dump(total_scores, file)
+    except Exception as e:
+        logging.error("Error: %s", e)
 
 def process_cell_cell_results(cell_key, key, unique_cells_local_index_collection, y_local_cell_ids, y_test_all, predicted_all, all_tables_dict, samples):
     try:

@@ -2,11 +2,11 @@ import os
 import shutil
 import pipeline
 
-executions = range(1, 6)
-labeling_budget = [0.10, 0.25, 0.5, 0.75, 1, 2, 3]
+executions = range(1, 2)
+labeling_budget = [2, 5, 10, 15, 20]
 n_cols = 768
-for i in range (5, 21, 5):
-    labeling_budget.append(i)
+# for i in range (5, 21, 5):
+#     labeling_budget.append(i)
 labeling_budgets_cells = [round(n_cols*x) for x in labeling_budget]
 
 for execution in executions:

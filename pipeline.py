@@ -20,7 +20,7 @@ from marshmallow_pipeline.utils.loading_results import \
 def main(labeling_budget, execution):
     configs = ConfigParser()
     configs.read("/home/fatemeh/ED-Scale-Oct/ED-Scale/config.ini")
-    labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
+    # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
     save_mediate_res_on_disk = bool(int(configs["EXPERIMENTS"]["save_mediate_res_on_disk"]))
@@ -257,4 +257,4 @@ def main(labeling_budget, execution):
     logging.info(f"Number of user labeled cells: {global_n_userl_labels}, Number of model labeled cells {global_n_model_labels}")
 
 if __name__ == "__main__":
-    main(2000, 1)
+    main(52, 1)

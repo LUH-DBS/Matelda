@@ -27,6 +27,7 @@ from marshmallow_pipeline.classification_module.classifier import classify
 from marshmallow_pipeline.classification_module.get_train_test import (
     get_train_test_sets,
     get_train_test_sets_per_col,
+    get_train_test_sets_per_col_pseudo,
 )
 
 if not sys.warnoptions:
@@ -224,11 +225,15 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, 
                 )
                 logging.info("start classification for cluster %s", str(cell_clustering_df["col_cluster"].values[0]))
                 predicted = classify(X_train, y_train, X_test)
-            else:
+            elif classification_mode == 1:
                 X_train, y_train, X_test, y_test, y_cell_ids, predicted = get_train_test_sets_per_col(
                     X_temp, y_temp, samples_dict, cell_clustering_df, cell_cluster_cells_dict["datacells_uids"]
                 )
-
+            elif classification_mode == 2:
+                X_train, y_train, X_test, y_test, y_cell_ids, predicted = get_train_test_sets_per_col_pseudo(
+                    X_temp, y_temp, samples_dict, cell_clustering_df, cell_cluster_cells_dict["datacells_uids"]
+                )
+                
     except Exception as e:
         logging.error(
             "Error in cluster %s", str(cell_clustering_df["col_cluster"].values[0])

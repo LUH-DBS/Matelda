@@ -7,6 +7,8 @@ from sklearn.pipeline import make_pipeline
 
 
 def classify(X_train, y_train, X_test):
+    predicted = []
+    gbc = None
     logging.debug("Classification")
     if sum(y_train) == 0:
         predicted = [0] * len(X_test)
@@ -15,5 +17,6 @@ def classify(X_train, y_train, X_test):
     else:
         gbc = GradientBoostingClassifier(n_estimators=100)
         gbc.fit(X_train, y_train)
-        predicted = gbc.predict(X_test)
-    return predicted
+        if len(X_test) > 0:
+            predicted = gbc.predict(X_test)
+    return gbc, predicted
