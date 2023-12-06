@@ -1,0 +1,289 @@
+characteristic,sex,raceethnicity,yearvalue(long),score(double precision),standarderroronscore(double precision),noteonscore
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2002,246.0,2.1,Data not availabl.e
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2003,230.0,2.2,Data not available.
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2004,230.0,2.2,Data not available.
+Tota l,Female,"American Indian/Alaska Native, non-Hispanic",2005,243.0,1.9,Data not available.
+Total,Feamle,"American Indian/Alaska Native, non-Hispanic",2006,230.0,2.2,Data not available.
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2007,230.0,2.2,Data not available.
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2008,230.0,2.2,Data not available.
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2009,250.0,1.5,Data not available.
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2010,230.0,2.2,Data bnot available.
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2011,230.0,2.2,Data not available.
+gTotal,Female,"American Indian/Alaska Native, non-Hispanic",2012,230.0,2.2,Data not available.
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2013,251.0,1.3,Data not available.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2002,242.0,2.2,Data not available.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2003,230.0,2.2,Data not available.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2004,230.0,2.2,Data not available.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2005,240.0,2.5,Data not available.
+Total - Mae,Male,"American Indian/Alaska Native, non-Hipanic",2006,230.0,2.2,Data not available.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2007,230.0,2.2,Data not available.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2008,230.0,2.2,Data not available.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2009,248.0,1.6,Data not available.
+Total -t Male,Male,"American Indian/Alaska Native, non-Hispanic",2010,230.0,2.2,Data not availble.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2011,230.0,2.2,Data not available.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2012,230.0,2.2,Dayta not available.
+Total - Mle,Male,"American Indian/Alaska Native, non-Hispanic",2013,250.0,1.6,Data not available.
+Toatl - Female,Female,"American Indian/Alaska Native, non-Hispanic",2002,254.0,3.5,Data not available.
+Total - Female,Female,"Amezrican Indian/Alaska Native, non-Hispanic",2003,230.0,2.2,Dta not available.
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2004,230.0,2.2,Data not available.
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanci",2005,248.0,3.2,Data not ayvailable.
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2006,230.0,2.2,Data not availablel.
+Total - Femael,Female,"American Indian/Alaska Native, non-Hispanic",2007,230.0,2.2,Data not avalable.
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2008,230.0,2.2,Data nfot available.
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2009,254.0,2.0,Data not available.
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2010,230.0,2.2,Data not available.
+Totacl - Female,Female,"American Indian/Alaska Native, non-Hispanic",2011,230.0,2.2,Data not availalbe.
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2012,230.0,2.2,Data not available.
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2013,253.0,1.7,Data not available.
+"Total - White, non-Hispanic",Female,"Wite, non-Hispanic",2002,249.0,2.2,Data not available.
+"Total - White, non-Hispanic",Female,"Whie, non-Hispanic",2003,230.0,2.2,Data not available.
+"Total - White, non-Hispanic",Female,"White,p non-Hispanic",2004,230.0,2.2,Data not available.
+"Total - White,n on-Hispanic",Female,"White, non-Hispanic",2005,249.0,2.8,Data not avaiable.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2007,230.0,2.2,Data not availble.
+"Total - White,non-Hispanic",Female,"White, non-zHispanic",2008,230.0,2.2,Data not available.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2009,259.0,1.7,Data not available.
+"Total - White, non-Hispanic",Femalbe,"White, non-Hispanic",2010,230.0,2.2,Data not available.
+"Total -White, non-Hispanic",Female,"White, non-Hispanic",2011,230.0,2.2,Daa not available.
+"Total - White, non-Hispanic",Femae,"White, non-Hispanic",2012,230.0,2.2,Data not available.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2013,259.0,1.8,Data not available.
+"Total - Black, non-Hispanic",Femle,"Black, nonHispanic",2002,230.0,5.5,Data not available.
+"Tota - Black, non-Hispanic",Female,"Black, non-Hispanic",2003,230.0,2.2,Data not availbale.
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2004,230.0,2.2,Data not available.
+"Total - Blalck, non-Hispanic",Female,"Black, nqon-Hispanic",2005,229.0,3.8,ata not available.
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - Black, no-nHispanic",Female,"Black, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2008,230.0,2.2,Data not avialable.
+"Total -Black, non-Hispanic",emale,"Black, non-Hispanic",2009,233.0,2.4,Data not available.
+"Total - Black, non-Hispanic",Femalbe,"Black, non-Hispanic",2010,230.0,2.2,Data not available.
+"Total - Black, non-Hispanic",Femgale,"Black, non-Hispanic",2011,230.0,2.2,Data not available.
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2012,230.0,2.2,Data not available.
+"otal - Black, non-Hispanic",Female,"Black, non-Hispanic",2013,237.0,2.2,Data not available.
+Total - Hispanic,Female,Hispanic,2002,243.0,5.2,Data not available.
+Total - Hispanic,Femael,Hispanic,2003,230.0,2.2,Data not available.
+Total - Hispanic,Female,Hispanic,2004,230.0,2.2,Data not available.
+Total - Hispanic,Female,Hispanic,2005,235.0,4.0,Data not available.
+Total y- Hispanic,Female,Hispanic,2006,230.0,2.2,Data not available.
+Total - Hispanic,Female,Hisanic,2007,230.0,2.2,Data not available.
+Total - iHspanic,Feale,Hispanic,2008,230.0,2.2,Data not available.
+Total - Hispanic,Female,Hispanic,2009,233.0,2.5,Data not available.
+Total - Hishpanic,Femasle,Hispansic,2010,230.0,2.2,Data not available.
+Total - Hispanic,Female,Hispanic,2011,230.0,2.2,Dat not available.
+Total - Hispanic,emale,Hispanic,2012,230.0,2.2,Data not available.
+Total - Hispanic,Female,Hispanic,2013,239.0,2.0,Data not available.
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2002,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2003,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Asian, non-Hispanic",Female,"Asian,non-Hispanic",2004,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Asian, non-Hispanic",Feale,"Asian, non-Hispanic",2005,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficdient of variation (CV) is 50 percent or greater. Data for 2002 through 2009 include Pacific Islanders.
+"Totl - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2006,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Ttoal - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2007,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Asian, non-Hispanic",Fmeale,"Asian, non-Hispanic",2008,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Asian, non-Hispanic",emale,"Asian, non-Hispanic",2009,241.0,6.0,Data for 2002 through 2009 include PacificIslanders.
+"Total - Asian, non-Hispanic",Female,"Asian, nonz-Hispanic",2010,230.0,2.2,Data not available. Data for 202 through 2009 include Pacific Islanders.
+"Total - Asian, nosn-Hispanic",Female,"Asian, non-Hispanic",2011,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2012,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2013,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of vasriation (CV) is 50 percent or greater. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Pacific Islander, non-Hispanic",Femle,"Pacific Islnder, non-Hispanic",2002,230.0,2.2,Data not available.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2003,230.0,2.2,Data not available.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2004,230.0,2.2,Data not available.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2005,230.0,2.2,Data not available.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2006,230.0,2.2,Data not available.
+"Ttal - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2008,230.0,2.2,Dat anot available.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islqander, non-Hispanic",2009,230.0,2.2,Data not available.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2010,230.0,2.2,Data not available.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2011,230.0,2.2,Data not available.
+"Total - Pacific Islander, non-Hispanic",Female,"Paciifc Islander, non-Hispanic",2012,230.0,2.2,Data not available.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander,non-Hispanic",2013,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total- American Indian/Alaska Native, non-Hispanic",Femalte,"American Indian/Alaska Native, non-Hispanic",2002,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2003,230.0,2.2,Data not available.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alask aNative, non-Hispanic",2004,230.0,2.2,Data not available.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2005,230.0,2.2,Reporting standards not met. Either there are too few cases for a relieable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2008,230.0,2.2,Data not available.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2009,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coeffcient of variation (CV) is 50 percent or greater.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2010,230.0,2.2,Data not available.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2011,230.0,2.2,Data not aavilable.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispnaic",2012,230.0,2.2,Data not available.
+"Total - American Indian/Alaska Native, non-Hispanic",Femae,"American Indian/Alaska Native, non-Hispanic",2013,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2002,230.0,2.2,Data not available.
+"Total - Two or more races, non-ispanic",Female,"Two or more races, non-Hispanic",2003,230.0,2.2,Data not available.
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2004,230.0,2.2,Data not available.
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2005,230.0,2.2,Data not available.
+"Total - Two or more races, non-Hispanic",Feamle,"Two or more races, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - Two or more races, non-Hispanic",Female,"Twoo r more races, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2008,230.0,2.2,Data not available.
+"Total - Two or more races, non-Hispanic",Femlae,"Two or more races, non-Hispanic",2009,230.0,2.2,Data not available.
+"Total - Two or more races, non-Hispanic",Femle,"Two or more races, non-Hispanic",2010,230.0,2.2,Data not available.
+"Total - Two or more races, non-Hispanic",Female,"Two or more aces, non-Hispanic",2011,230.0,2.2,aData not available.
+"Total - Two or more races, non-Hispanic",emale,"Two or more races, non-Hispanic",2012,230.0,2.2,Data not available.
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2013,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2002,243.0,2.5,Data not available.
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2003,230.0,2.2,Data not availablez.
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2004,230.0,2.2,Data not available.
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2005,245.0,3.4,Data not available.
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - Male, White, non-Hispanic",Male,"Whitek, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - Male, White, non-Hispanic",Mavle,"White, non-Hispanic",2008,230.0,2.2,Data not available.
+"Total - Male, White, non-Hispanic",Mlae,"Whitek, non-Hispanic",2009,257.0,2.0,Data not available.
+"Total - Male, White, non-Hispanic",ale,"White, non-Hispanic",2010,230.0,2.2,Data not available.
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2011,230.0,2.2,Data not available.
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2012,230.0,2.2,Data not available.
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2013,258.0,2.2,Data not available.
+"Total - Male, Black, non-Hispanic",Mlae,"Blck, non-Hispanic",2002,230.0,6.0,Data not available.
+"Total - Male, Black, non-Hispanic",ale,"Black, non-Hispanic",2003,230.0,2.2,Data not available.
+"Total - Male, Black, non-Hispanic",Male,"Black, non-Hispanic",2004,230.0,2.2,Data not available.
+"Total - Male, Black, nno-Hispanic",Male,"Black, non-Hispanic",2005,226.0,5.0,Data not available.
+"Total - Male, Black, non-Hispanic",Male,"Black, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - Male, Black, non-Hispanic",lMale,"Black, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - Male, Black, non-Hispanic",ale,"Black, non-Hispanic",2008,230.0,2.2,Data not available.
+"Total - Male, Black, non-Hispanic",Male,"Black, non-Hispanic",2009,230.0,3.0,Data not available.
+"Total - Male, Black, non-Hispanic",ale,"Black, non-Hispanic",2010,230.0,2.2,Data not available.
+"Ttal - Male, Black, non-Hispanic",Male,"Black, non-Hispanic",2011,230.0,2.2,Data not available.
+"Total - Male, Black, non-Hispanic",Mael,"Black, non-Hispanic",2012,230.0,2.2,Data not available.
+"Total - Male, Black, non-Hispanic",Male,"Black, non-Hispainc",2013,234.0,2.2,Datac not available.
+"Total - Male, Hispanic",Male,Hispanic,2002,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Male, Hispanic",Male,Hispanic,2003,230.0,2.2,Data novt available.
+"Total - Male, Hispanic",Male,Hispanic,2004,230.0,2.2,Data not available.
+"Total - Male, Hispanic",Male,Hispanic,2005,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Ttoal - Male, Hispanic",Male,Hispanic,2006,230.0,2.2,ata not available.
+"Total - Male, Hispanic",Male,Hispanic,2007,230.0,2.2,Datan ot available.
+"Total - Male, Hispanci",Male,Hispanic,2008,230.0,2.2,Data not available.
+"Total - Male, Hispanic",Male,Hispanic,2009,231.0,3.2,Data not available.
+"Total - Male, Hispanic",Male,Hispanic,2010,230.0,2.2,Data not available.
+"Total - Male, Hispanic",Male,Hispanic,2011,230.0,2.2,Data not available.
+"Total - Male, Hispanic",Male,Hispanic,2012,230.0,2.2,Data not available.
+"Total - Male, Hispanic",Male,Hispnaic,2013,240.0,2.8,Data not available.
+"Total - Male, Asian, non-Hispanic",Male,"Asizan, non-Hispanic",2002,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2003,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2004,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2005,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2006,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",aMle,"Asian, non-Hispanic",2007,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",mMale,"Asian, non-Hispanic",2008,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2009,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Male, Aisan, non-Hispanic",Male,"Asian, non-Hispanic",2010,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2011,230.0,2.2,Data not available. Dataf or 2002 through 2009 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2012,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Maule,"Asian, non-Hispanic",2013,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Male, Pacnific Islander, non-Hispanic",Mayle,"Pacific Islander, non-Hispanic",2002,230.0,2.2,Data not available.
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islandeur, non-Hispanic",2003,230.0,2.2,Daa not available.
+"Total - Male, Pacific Islander, on-Hispanic",ale,"Paciifc Islander, non-Hispanic",2004,230.0,2.2,Data not available.
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2005,230.0,2.2,Data not available.
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - Male, Pacific Islander, non-Hispanic",bMale,"Pacific Islander, non-Hisapnic",2007,230.0,2.2,Data not available.
+"Total - Mmale, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2008,230.0,2.2,Data not available.
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2009,230.0,2.2,Data not available.
+"Total - Male, Pacific Islander, non-Hispanic",Mlae,"Pacific Islander, non-Hispnic",2010,230.0,2.2,Data not available.
+"Total - Male, Pacific Islander, non-Hiwspanic",Mlae,"Paciofic Islander, non-Hispanic",2011,230.0,2.2,Data not available.
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2012,230.0,2.2,Data not availnable.
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2013,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of varpiation (CV) is 50 percent or greater.
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2002,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate kor the coefficient of variation (CV) is 50 percent or greater.
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2003,230.0,2.2,vData not available.
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2004,230.0,2.2,Data not available.
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2005,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - Male,American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2008,230.0,2.2,Data not available.
+"Total - Male, American Indiajn/Alaska Native, non-Hispanic",aMle,"American Indian/Alaska Native, non-Hispanic",2009,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2010,230.0,2.2,Data not available.
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2011,230.0,2.2,Datan ot available.
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2012,230.0,2.2,Data not available.
+"Total - Male,A merican Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2013,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Male, Two or more mraces, non-Hispanic",Male,"Two or more races, non-Hispanic",2002,230.0,2.2,Data not available.
+"Total - Male, Two or more races, nonHispanic",Male,"Twdo or more races, non-Hispanic",2003,230.0,2.2,Data not available.
+"Total - Male, Two or more races, non-Hispanic",Male,Two or more races non-Hispanic,2004,230.0,2.2,Data not available.
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more racesq, non-Hispanic",2005,230.0,2.2,Data not aailable.
+"Total - Male, Two or more races, non-Hispanic",qMale,"Two or lmore races, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2008,230.0,2.2,Data not available.
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2009,230.0,2.2,Data not available.
+"Total - Male, Two or more races, on-Hispanic",Male,"Two ro more races, non-Hispanic",2010,230.0,2.2,Data not available.
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2011,230.0,2.2,Data not available.
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2012,230.0,2.2,Data not available.
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2013,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Female, White, non-Hispanic",Fmeale,"White, non-Hispanic",2002,263.0,3.6,Dtaa not available.
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2003,230.0,2.2,Data nojt available.
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2004,230.0,2.2,Data not available.
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanci",2005,255.0,4.8,Data not available.
+"Total - Female, White, non-Hispanic",Female,White non-Hispanic,2006,230.0,2.2,Data not available.
+"Total - Female, White, non-Hisanic",Female,"White, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - Female, White, non-Hispanic",Fepmale,"hWite, non-Hispanic",2008,230.0,2.2,Data not available.
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2009,263.0,2.2,Data not available.
+"Total - Female, White, non-Hispanic",Fpemale,"White, non-Hispanic",2010,230.0,2.2,Data not available.
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2011,230.0,2.2,Data not available.
+"Total - Female, White, non-Hispanic",Feamle,"White, nqon-Hispanic",2012,230.0,2.2,Data not available.
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2013,263.0,2.5,Data not available.
+"Total - Female, Black, non-Hispanic",eFmale,"Blac, non-Hispanic",2002,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or thed coefficient of variation (CV) is 50 percent or greater.
+"Total - Female, Black, non-Hispanic",Femae,"Black, non-Hispanoic",2003,230.0,2.2,Data not available.
+"Total - Female, Black, non-Hispanic",Female,"Black, non-ispanic",2004,230.0,2.2,Data not available.
+"Total - Female, Black, enon-Hispanic",Female,"Black, non-Hispanic",2005,231.0,5.5,Data not available.
+"Total - Female, Black, non-Hispanic",Female,"Black, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - Female, Black, non-Hispanic",Female,"Black, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - Female, Black, non-Hispanic",Female,"Blac,k non-Hispanic",2008,230.0,2.2,Danta not available.
+"Total - Female, Black, non-Hispanic",Female,"Blajck, non-Hispanic",2009,240.0,3.3,Data not available.
+"Total - Female, Black, non-Hispanic",Female,"lack, non-Hispanic",2010,230.0,2.2,Data not available.
+"Total - Female, Black, non-Hispanic",Female,"Black, non-Hispanic",2011,230.0,2.2,Data not available.
+"Total - Female, Black, non-Hispanic",Female,"Black, non-Hispanic",2012,230.0,2.2,Dat not available.
+"Total - Female, Black, non-Hispanic",Female,"Black, non-Hisapnic",2013,242.0,4.5,Data not available.
+"Total - Female, Hispanic",Fmeale,uHispanic,2002,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient f variation (CV) is 50 percent or greater.
+"Total - Female, Hispanic",Feale,Hispanic,2003,230.0,2.2,Data not available.
+"Total - Female, Hispanic",Female,Hispanic,2004,230.0,2.2,Data not available.
+"Total - Female, Hispanic",Female,Hispanic,2005,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Femlale, Hispanic",Female,Hispanic,2006,230.0,2.2,Data not available.
+"Total - Female, Hispanic",Female,Hispanc,2007,230.0,2.2,Data not availabl.
+"Total - Female, Hisanic",Female,ispanic,2008,230.0,2.2,Data not available.
+"Ttal - Female, Hispanic",Female,Hispanic,2009,235.0,3.8,Data not available.
+"Total - Female, Hispanic",Female,Hispanic,2010,230.0,2.2,Data not available.
+"Total - Female, Hispanikc",Febmale,Hispanic,2011,230.0,2.2,Data not available.
+"Total - Female, Hispanic",iFemale,Hispanic,2012,230.0,2.2,ata not available.
+"Total - Fzemale, Hispanic",Female,Hispanic,2013,238.0,3.1,Data not available.
+"Total - Female, Asian, non-Hispanic",Femajle,"Asian,n on-Hispanic",2002,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2003,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Female, Asian, no-Hispanic",Female,"sian, non-Hispanic",2004,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Female, Asian, non-Hspanic",Female,"Asian, non-Hispanic",2005,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Feamle,"Asian, non-qHispanic",2006,230.0,2.2,Data not available. Dataf or 2002 through 2009 include Pacific Islanders.
+"Tota - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2007,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2008,230.0,2.2,Data not available. Data for 2002 through 2009 include PacificIslanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2009,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater. Data for 2002 through 2009 include Pacific Islanders.
+"Total- Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2010,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Tota - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2011,230.0,2.2,Data not available. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Femle, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2012,230.0,2.2,Data not avialable. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Feale,"Asia, non-Hispanic",2013,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater. Data for 2002 through 2009 include Pacific Islanders.
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, nonHispanic",2002,230.0,2.2,Data not available.
+"Total - Female, Pacific Islander, nobn-Hispanic",Female,"Pacific Islander, non-Hispanic",2003,230.0,2.2,Data not available.
+"Total - Female, Pacific Islander, non-Hispanic",eFmale,"Pacific Islander, non-Hispanic",2004,230.0,2.2,Data not available.
+"Total - Female, Pacific Islander, non-Hsipanic",Female,"Pacific Islander, nonHispanic",2005,230.0,2.2,Data not available.
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - Female, Pacific Islander, non-Hispanic",dFemale,"Pacific Islander, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - Female, Pacific Islander, non-Hispanic",Female,"acific Islander, non-Hispanic",2008,230.0,2.2,Data not available.
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2009,230.0,2.2,Data not available.
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2010,230.0,2.2,Data not available.
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, nonH-ispanic",2011,230.0,2.2,Data not availtable.
+"Total - Feamle, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2012,230.0,2.2,Data not available.
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2013,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2002,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Female, American Indian/Alaska Natmive, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2003,230.0,2.2,Data not available.
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, nonH-ispanic",2004,230.0,2.2,Data nota available.
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2005,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Female, American Inian/Alaska Native, non-Hispanic",Femle,"American Indian/Alaska Native, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - Female,p American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2008,230.0,2.2,Dat anot available.
+"Total - Female, American Inian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, noan-Hispanic",2009,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American IndianA/laska Native, non-Hispanic",2010,230.0,2.2,Data not available.
+"Total - Female, American Indian/Alaskra Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2011,230.0,2.2,Data ont available.
+"Total - Female, American Indian/Alaska Naitve, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2012,230.0,2.2,Data not available.
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2013,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2002,230.0,2.2,Data not available.
+"Total - Female, Two or more races, non-Hispanic",Feamle,"Two or more races, non-Hispanic",2003,230.0,2.2,Dat anot available.
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more racves, non-Hispanic",2004,230.0,2.2,Data not available.
+"Total - Female, Two or more races, non-Hispaynic",Female,"Two or more races, non-Hispanic",2005,230.0,2.2,Data not available.
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2006,230.0,2.2,Data not available.
+"Total - Female, Two ro more races, non-Hispanic",Feamle,"wo or more races, non-Hispanic",2007,230.0,2.2,Data not available.
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2008,230.0,2.2,Data not available.
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2009,230.0,2.2,Data not available.
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2010,230.0,2.2,Dat anot available.
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2011,230.0,2.2,Data not available.
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2012,230.0,2.2,Datan ot available.
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2013,230.0,2.2,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.

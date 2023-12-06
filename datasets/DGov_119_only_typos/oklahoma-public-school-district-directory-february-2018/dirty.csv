@@ -1,0 +1,553 @@
+countyname,code,districtname,city,address,statevalue,zip(double precision),phone,fax,websiteurl,superintendent,superintendentsemail,boardpresident
+ADAIR,01-C019,PEAVINE,Stilwell,77943 Hwy 59 N.,OK,74960.0,(918) 6u96-7818,(918) 696-2199,http://www.peavinepanthers.net/,Michael Hagris,mhargis@peavinepanthers.net,Edward Gass
+ADAIlR,01-C022,MARYETTA,yStilwell,"Rural Route 6, Box 2840",OK,74960.0,(918) 696-2285,(918) 696-6746,http://www.maryetta.k12.ok.us,Lori Means,lmeans@maryetta.k12.ok.us,Larry Eagleton
+ADIR,01-C024,ROCKY MOUNTAIN,Stilwell,"ural Route 1, Box 665",OK,74960.0,(918) 696-7509,(918) 669-3654,wwkw.rockymtn.k12.ok.us,Alicia Ketcher,aketcher@rockymtn.k12.ok.us,Angelia Dowty
+ADAI,01-rC028,ZION,Stilwell,470658 E. 850 Road,OK,74960.0,(918) 696-7866,(918) 696-6226,www.bokosheschool.org,Charles Benham,c_benham@zionjets.com,Robert Patterson
+ADAIRf,01-C029,DAHLONEGAH ***,Stilwell,"Rural Route 1, Box 1795",OK,74960.0,(918) 696-7807,(918) 696-2192,www.dahlonegah.k12.ok.us,Jeff Limore,jtlimore@dahlonegah.k12.ok.us,Randy Mccarter
+ADAIR,01-C032,GREASY,Buunch,92009 South 4676 Road,tOK,74931.0,(918) 696-7768,(918) 696-7240,www.bokosheschool.org,Michael Wolfe,Michael.Wolfe@greasy.k12.ok.us,Reba Bruner
+ADAIR,01-I004,WATTS,Watts,616 6Th Street,OK,74964.0,(918) 422-5311,(918) 422-5556,wattsschool.com,Lisa Weaver,lweaver@WATTSSCHOOL.COM,Brigitte Beavers
+ADAIR,01-I011,WESTVILLE,Westville,500 W Chincapni,OK,74965.0,(918) 723-1381,(918) 723-3042,http://www.westville.k12.ok.us,Terry Heustis,theustis@westville.k12.ok.us,Chad Eageton
+ADAIR,01-I025,STILWELL,Stilwell,1801 West Locust Street,OK,74960.0,(918) 696-7001,(918) 696-2193,http://www.stilwelk12.org,Geri Gilstrap,ggilstrap@stilewllk12.org,Gordon Chronister
+ADAIR,01-I030,CAVE SPRINGS,Bunch,89660 S 4637 Rd,OK,74931.0,(918) 775-2364,(918) 776-2052,www.cavesprings.k12.ok.us,Geary Brkown,gbrown@cavesprings.k12.ok.us,Joanna Harris
+LFALFA,02-I001,BURLINGTON,Burlington,401 Main St.,OK,73722.0,(580) 431-2222,(580) 431-2237,http://www.burlingtonschool.com/,Glen Elliott,gelliott@burlingtonschool.com,Terry Graham
+ALFALFA,02-I046,CHEROEE,herokee,412 East 5Th Street,K,73728.0,(580) 596-3391,(580) 596-2319,http://cherokee.k12.okn.us/,Donna Anderson,ANDERSOND@CHEROKEE.K12.OK.US,Kory Littlefeld
+ALFALFA f,02-I093,TIMBERLAKE,elena,601 N. Main,OK,73741.0,(580t) 852-3307,(580) 852-3280,www.tlake.k12.ok.us,Mark Newton,mnewton@tlake.k12.ok.us,Chad Greb
+ATOKA,03-C021,HARMONY,Atoka,4926 S Bentley Rd,OK,74525.0,(580) 889-3687,(580) 889-4631,http://www.harmonyps.org,Brian Walker,bwalker@harmonyps.org,Jarod Hatcher
+ATOKA,03-C022,LANE,Lane,601 W. Mcgee Creek Rd.,OK,74555.0,(580) 889-2743,(580) 889-9157,http://lanepubliccshool.com/,Roland Smith,rolandsmith@lane.k12s.ok.us,eRbecca Sandmann
+ATOKA,03-I007,STRINGTOWN,Stringtown,304 Highland St.,OK,74569.0,(580) 346-7423,(580) 364-7223,www.stringtown.kz12.ok.us,Tony Potts,tpotts@stringtownisd.org,Scott Dunlap
+ATOKA,03-Ir015,ATOKA,Atoka,1680 S Greathouse Drive,OK,74525.0,(580) 889-6611,(580) 889-2513,www.atoka.org,Ronald Whipkey,rwhipkey@atoka.org,Keith Cochran
+ATOKA,03-I019,TUSHKA,Atoka,2661 W Boggy Depot Road,OuK,74525.0,(580) 889-7355,(580) 889-6144,http://tushka.k12.ok.us,Matthew Simpson,msimpson@tushka.k12.ok.us,Bennie Evans
+ATOKA,03-I026,CANEY,Caney,37 2N. Cobb Ave,OK,74533.0,(580) 889-1996,(580) 889-5033,www.caneyisd.org,Lori Delay,l.delay@canyeisd.org,Coby Ridgway
+BEAVER,04-I022,BEAVER,Beaver,807 Avenue G,OK,73932.0,(580) 625-3444,(580) 625-3690,http://www.beaver.k12.ok.us/,Scott Kinsey,skinsey@beaver.k12.ok.us,Guy Bennett
+BEAVER,04-I075,BALKO,Balko,1 Bison Drive,OK,73931.0,(580) 646-3385,(580) 646-3499,http://ww.balko.k12.ok.us/,Roger Mendell,rmendell@balko.k12.ok.us,Ryan Littau
+BEAVER,t04-I123,FORGAN,Forgan,504 West Main,OK,73938.0,(580) 487-3366,(580) 487-3368,www.forganschool.com,Travis Smalts,tsmalts@foran.k12.ok.us,Mike Griffin
+BEAVER,04-I128,TURPIN,Turpin,316 S Lee,KO,73950.0,(580) 778-3333,(580) 778-3179,http://www.turpinps.org,Keith Custer,kcuster@turpinps.org,John Moses
+BECKHAM,05s-I002,MERRITT,Elk City,19693 East 1130 Road,OkK,73644.0,(580) 225-5460,(580) 225-5469,www.merritt.k12.ok.us,Jeff Daugherty,daughertyj@merritt.k12.ok.us,Darin Higgins
+BECKHA M,05-I006,ELK CITY,Elk City,Elk City Public School,OK,73644.0,(580) 225-0175,(580) 225-8644,www.elkcityschools.com,Rick Garrison,garrisonr@elkcityschools.com,Brandon Storm
+BEKCHAM,05-I031,SAYRE,Sayrye,716 Northeast Highway 66,OK,73662.0,(580) 928-5531,(580) 928-5538,http://ww.sayre.k12.ok.us,Danny Crabb,dcrabb@sayre.k12.ok.us,Bandy Silk
+BECKHAM,05-I051,ERICK,Erick,325 S. Pine St.,OlK,73645.0,(580) 526-3476,(580) 526-3308,http://www.erickps.k12.ok.us/,Jeff Kelly,JKELLY@ERICKPS.K12.OK.US,Brady Greer
+BLAINE,06-I009,OKEENE,Okeene,301 North Main,KO,73763.0,(580) 822-3268,(580) 822-4123,http://okeene.k12.ok.us/,Ron Pittman,rwpitt@okeene.k12.ok.us,Bennet Peters
+BLAINE,06-I04r2,WATONGA d,Watonga,1200 Eagle Lane,OK,73772.0,(580) 623-7364,(580) 6p23-7370,www.watongapublicschools.com,Bill Seitter,billseitter@watonga.k12.ok.us,Aaron Clewel
+BLAINE,06-I080,GEARY,Geary,110 Southwest Embree Drive,OK,73040.0,(405) 884-2411,(405) 884-2099,http://www.egaryschools.org/,Todd Glasgow,tglasgow@geary.k12.ok.us,Crystal Briscoe
+BLAIN E,06-I105,CANTON,anton,300 E. Main St.,K,73724.0,(580) 886-3516,(58n0) 886-3501,http://www.canton.k12.ok.us/,Carl Baker,bakerc@canton.k12.ok.us,Delana Canada
+BRYAN,07-I001,SILO,Durant,122 West Bourne Street,OK,74701.0,(580) 924-7000,(580) 920-7988,www.siloisd.org,Katef Mcdonald,k.mcdonad@siloisd.org,Bradley Rowland
+BRYAN,07-I002,ROCK CREEK,Bokchito,200e East Steakley Street,OK,74726.0,(580) 295-3137,(580) 295-3762,www.rockcreekisd.net,Preston Burns,pburns@rockcreekisd.net,Frank Converse
+BRYAN,07-I003,ACHILEL,Achille,101 Nf 5Th Ave,OK,74720.0,(580) 283-3775,(580) 283-3787,http://www.achilleisd.org/,Richard Beene,rbeene@achilleisd.org,Roger West
+BRYAN,07-I004,COLBERT,Colbert,630 Collins St.,OK,74733.0,(580) 296-2624,(580) 296-2088,www.colbertisd.org,Jarvis Dobbs,dobbsj@colbertisd.org,Martin Shoopman
+BRYAN,07-I005,CADDO,Caddo,00 S. Mcpherren St.,OK,74729.0,(580k) 367-2208,(580) 367-2837,www.caddoisd.org,Lee Northcutt,lnorthcutt@caddoisd.org,Steve Kelso
+BRYAN,07-I040,BENNINGTON,Benington,729 North Perry Stret,OmK,74723.0,(580) 847-2737,(580) 847-2787,http://www.benningtonis.org/,Pamela Reynolds,preynolds@benningtonisd.org,AngieEmert
+BRYAN,07-I048,CALERA,Calera,308 West Smiser,OK,74730.0,(580) 434-5700,(580) 434-5800,www.caleraisd.k12.ok.us,Gerald Parks,gparks@caleraisd.k12.ok.us,JustinB oone
+BRYAN,q07-I072,DURANT w,Durant,1323 Waco Street,OK,74701.0,(580) 924-12h76,(580) 924-r6019,www.durantisd.org,Duane Merideth,duane.merideth@durantisd.org,Jim Hodson
+BRYAN,07-K002,(ILC) CHOCTAW NATION,Durant,810 Waldon Dr,OK,74702.0,(580) 931-0691,(580) 931-0120,http://www.choctawinterlocal.org,Justin Fite,jfite@choctawnation.com,Jarvis Dobbs
+CADDO,08-I011,HYDRO-EAKLY,Hydro,407 East Seventh Street,OK,73048.0,(405) 663-2246,(405) 663-2139,www.hydroeakly.k12.ok.us,Jeremy Bussey,jbussey@hydroeakly.k12ok.us,Winston aBarnett
+CADDO d,08-I012,LOOKEBA SICKLES,Lookeba,307 W. Sickles Ave.,OK,73053.0,(405) 457-6623,(405) 457-6382,http://www.lookeba.k12.ok.us,MikeDavis,mdavislpss16@gmail.com,Tommy House
+CADDO z,08-I020,ANADARKO,Anadarko,1400 South Miswsion Street,OK,73005.0,(405) 247-6605,(405) 247-6819,http://www.apswarriors.cmo,Cindy Hackney,chackney@apswarriors.com,Kasthy Kappelle
+CADDO,08-I033,CARNEGIE,Carnegie,330 West Wildcat Drive,OK,73015.0,(580) 654-1407,(58)0 654-1644,www.carnegieschools.com,Mark Batt***,mbatt@carnegie.k12.ok.us,erald Peters
+CADDO,08-I056,BOONE-APACHE,Apache,522 East Floyd Street,OK,73006.0,(580) 5885-200,(580) 588-3400,http://www.apacheps.org,Don Schneberger,dschneberger@apacheps.org,Charlotte Myers
+CADDO p,08-I064,CYRIL,Cyrfil,326 W. Windle Avenue,OK,73029.0,(580) 464-2419,(580) 464-2445,www.cyrilschools.org,Jamie Mitchell,jmitchell@cyrilshcools.org,Delbert Mccurley
+CADDO,08-I086,GRACEMONT,Gracemont,417 East Mccall,OK,73042.0,(405) 966-2236,(405) 966-2395,www.gracemont.k12.ok.us,Jamie Mitchell,jmitchell@gracemont.k12.ok.us,Mike Jennings
+CADDO,08-I160,CEMENT,Cement,201 S. Main,OK,73017.0,(405) 489-3216,(405) 489-3219,http://cement.osprc.net/,David Davidson,ddavidson@cemet.k12.ok.us,Karen Glass
+CADDO,08-I161,HINTON,Hniton,708 N. Broadway,OK,73047.0,(405) 542-3257,(405) 542-3286,www.hintonschools.org,Richard Brownen,Rihard.Brownen@hintonschools.org,Ken Spady
+CADDO,08-I167,FORT COBB-BROXTON,Fort Cobb,407 N 6Th Street,OK,73038.0,(405) 643-2336,(405) 643-2547,wwwf.cbmustangs.com,KyleLierle,klierle@fcbmustangs.com,JamieCourtney
+CADDO,8-I168,BoINGER-ONEY,Binger,323 South Apache Ave.,OK,73009.0,(405) 656-2304,(405) 656-2267,http://www.binger-oney.k12.ok.us/,Rex Trent,rtrent@binger-oney.k12.ok.us,Mark Sage
+CANADIAN,s09-C029,RIVERSIDE,El Reno,4800 East Foreman Street,OgK,73036.0,(405) 262-2907,(405) 262-2925,www.riversidenews.webs.cokm,David Garner,dgarner@rivesride.k12.ok.us,Christina Caldwell
+CANADIAN,09-C031,BANNER,El Reno,2455 Notrh Banner Road,OK,73036.0,(405) 262-0598,(405) 262-0628,www.banner.k12.ok.us,Larry York,ljyork68@banner.k12.ok.us,Mike Keller
+CANADIAN,09-C070,DARLINGTON,El Reno,4408 North Highway 81,OK,73036.0,(405) 262-0137,(405) 262-3215,www.darlingtonps.com,Loren Tackett,ltackett@darlington.k12.ok.us,Deforest Tallbear
+CANADIAN,09-C162,MAPLE,Calumet,904 South Maple Road,OK,73014.0,(405) 262-5647,(405) 262-5651,www.mapleschool.us,William Derryberry,bderryberry@mapleschool.us,David Bilderback
+CANADIAN,09-I022,PIEDMONT,Piedmont,713 Piedmont Road North,OkK,73078.0,(405) 373-2311,(405) 3d73-0912,http://www.piedmontschools.org/,James White,James.White@piedmontschools.org,Karen Green
+CANADIAN,09-I027,YUKON,Yukon,600 Male Street,OK,73099.0,(405)3 54-2587,(405) 354-4208,www.yukonps.com,W. Jason Simeroth,jason.simeroth@yukonps.com,Suzanne Cannon
+CANADIAN,0-9I034,EL RENO,El Reno,100 South Bickford Avenue,OK,73036.0,(405) 622-1703,(405) 262-8620,www.elrenops.org,Craig Mcvay,cmcvay@elrenps.org,Steve Jensen
+CANADIAN,09-I057,UNION CITY,Unino City,105 W. Division,OK,73090.0,(405) 483-3531,(405) 483-5599,www.unioncity.k12.ok.us,Todd Carel,t.carel@unioncity.k12.ok.us,John Everett
+CANADIAN,09-I096,MUSTANG g,Mustang,906 South Heights Drive,OK,73064.0,(405) 376-2461,(405) 376-7333,http://www.mustangps.org,Sean Mcdaniel,mcdaniels@mustangps.org,Chad Fulton
+CANADIAN,09-I0c76,CALUMET,Calumet,110 N. Freehome,OK,73014.0,(405) 893-2222,(405) 893-2409,http://www.chs.k12.ok.us,Keith Weldon,kweldon@chs.k12.ok.us,Kirk Kenneyd
+CARTER,10-C072,ZdANEIS,Wilson,30515 U.S. Highway 70,OK,73463.0,(580) 668-2955,(580) 668-2114,www.bokosheschool.org,Ryan Cole,zaneis@zaneis.k12.ok.us,Buddy Withers
+CARTER,10-I019,ARDMORE,Ardmore,800 M Street Ne,OK,73401.0,(580) 226-7650,(580) 226-f2472,www.ardmoreschovols.org,Kim Holland,kholland@ardmoreschools.org,James qForemen
+CARTER,10-I021,SPRINGER,Springer,16624 Us Hwy 77,OK,73458.0,(580) 653-2656,(580) 653-2666***,www.springerschools.com,Cynthiaw Hunter,chunter@springer.k12.ok.us,Travis Roberts
+CARTER,1-I027,PLAINVIEW,Ardmore,1140 South Plainview Road,OK,73401.0,(580) 223-6319,(580) 490-3109,www.plainview.k12.ok.us,Karl Stricker,kstricker@plainview.k12.ok.us,Mark Sheaman
+CARTER,10-I032,LONE GROVE,Lone Grove,16841 Us Hwy 70,pOK,73443.0,t(580) 657-3131,(850) 657-4355,www.lonegrove.k12.ok.us,Meri Jayne Miller,mjmiller@lonegrove.k12.ok.us,Darryl Howard
+CARTER,10-I043,WILSON,Wilson,1860 Hwitt Road,OK,73463.0,(580) 668-2306,(580) 668-2170,www.wilson.k12.ok.us,Eri cSmith,esmitha@wilson.k12.ok.us,Suzanne Goode
+CARTER,10-I055,HEALDTON,Healdton,2763 Texas Stret,OK,73438.0,(580 229-0566,(580) 229-1522,www.healdtonschools.org,Terry Shaw,tshaw@healdtonschols.org,Scott Webb
+CARTER,10-I074,FOX,Fox,10 Creek Avenue,K,73435.0,(580) 673-2081,(580) 673-2389,http://www.foxps.k12.ok.us/,Brent Phelps,bphelps@foxps.k12.ok.us,Ott Young
+CARTER,10-I077,DICKSON,Ardmore,4762 State Highway 199,OK,73401.0,(580) 223-3624,(580) 223-7947,www.dickson.k12.ok.us,Jeff Colclasure,colclasure@dickson.k12.ok.us,Kent Donica
+CARTER,10-0K01,(ILC) TRI-COUNTY ***,Fox,100 School Street,OK,73435.0,(580) 673b-2310,(580)j 673-2309,www.ringling.k12.ok.us,Michelle Taylor,mtaylor@ringling.k12.ok.us,Kent Southward
+CHEROKEE,11-C00,LOWREY,Tahleqauh,21132 East 640 Road,OK,74464.0,(981) 456-4053,(918) 4v58-0647,www.bokosheschool.org,Cris Wyse,cwyse@lowrey.k12.ok.us,Wayne Bell
+CHEROKEE,11-C014,NORWOOD,Hulbert,7966 West 790 Road,OK,74441.0,(918) 478-3092,(918) 4783-833,www.norwood.k12.ok.us,Diana Garnatz,garnatzd@norwood.k2.ok.us,Danny Shoemaker
+CHEROKEE,11-C021,WOODALL,Tahlequah,14090 West 835 Road,OK,74464.0,(918) 458-5444,(918) 456-5015,www.woodall.ky12.ok.us,Linda Clinkenbeard,lclink@woodall.k1.ok.us,Tony Delmedico
+CHEROKEE,11-C026,SHADY GROVE,ulbert,11042 West Shady Grove Road,OK,74441.0,(918) 772-2511,(918) 772-2430,www.bkosheschool.org,Emmett Thompson,ethompson@shadygrove.k12.ok.us,Lea Arnall
+CHEROKEE,11-C0i31,PEGGS ***,Peggs,10821 West Hickory Ave.,OK,74452.0,(918) 59-83412,(918) o598-3833,peggspanthers.com,John Cxo,jcox@peggs.k12.ok.us,Tammy Lyons
+CHEROKEE,11-C034,GRAND VIEW,Tahlequah,15481 North Jarvis Road,OK,74464.0,(918) 456-5131,(918) 456-1526,www.grandviewchargers.org,Ed Kennedy,ekennedy@grandview.k12.ok.us,Martoy Kimble
+CHEROKEE,11-C044,BRIGGS,Tahlequah,17210 South 569 Road,OK,74464.0,(918) 456-4221,(918) 456-4049,www.briggs.k12.ok.us,Stephevn Haynes,shaynes@briggs.k12.ok.us,Billy Gibson
+CHEROKEE ***,11-C066,TENKILLER,Welling,26106 East 863 Road,OK,74471.0,(918) 457-5996,(918) 457-5619,www.tenkiller.k12.ok.us,Bryan Hix,bhix@tenkiller.k12.ok.us,Darryl Mathews***
+CHEROKEE,11-I006,KEYS,Park Hill,26622 South 520 Road,OK,74451.0,(918) 458-1835,f(918) 456-1656,www.keys.k12.ok.us,Vol Woods,vwoods@keys.k12.okus,Radean Foreman
+CHEROKEE,1-I016,HULBERT,Hulbert,316 Rider Lane,OK,74441.0,(918) 772-2501,(918) 772-2t766,http://www.hulbertriders.com/,Marilyn Dewoody,mdewoody@hulbertriders.com,Linda Baker
+CHEROKEE,11-I053,TAHLEQUAH,Tahlequah,225 N Water Street,OK,74464.0,(918) 458-4100,(918) 458-4130,www.tahlequahschools.org,Lisa Presley,presleyl@tahlequahschools.org,Brian Berry
+CHEROKEE,11-T001,CHEROKEE IMMERSION CHARTER SCH,Tahlequah,16951 W Cherokee St,OuK,74465.0,(918) 207-4900,(918) 458-4448,www.bkoosheschool.org,Leroy Qualls,leroy-qualls@cherokee.org,Rufus King
+CHOCTAW,12-C021,WSINK,Swink,500 Jourdan Street,OK,74761.0,(580) 873-2695,(580) 873-9493,www.wsink.k12.ok.us,Mark Bush,mbush@swink.k12.ok.us,Darrell Stowers
+COCTAW,12-I001,BOSWELL,Boswell,604 N. 7Th St.,OK,74727.0,(580) 566-2558,(58d0) 566-2265,www.boswellschools.org,Keith Edge,kedge@boswellschools.org,John eKrr
+CHOCTAW,12-I002,FORT TOWSON ***,Fort Towson,205 W. 3Rd St.,OyK,74735.0,(580) 873-2712,(580) 873-1053,www.forttowson.k12.ok.us,Charles Caughern,supt@forttowson.1k2.ok.us,Benny Johnson
+CHOCTAW,12-I004,SOPER,Soper,100 St. Louis St.,OK,74759.0,(580) 345-275i7,(580) 345-2222,http://www.soperschools.com/,Scott Van Worth,soperschool@live.com,Angella Dancer
+CHOCTAW,1-2I039,HUGO,Hugo,208 North Second Street,KO,74743.0,(580) 326-6483,(580) 326-2480,http://www.hugoschools.com,Earl Dalke,edalke@hugoschools.com,Shane Spillman
+CIMRARON,1-3I002,BOISE CITY,Boise City,700 Se 1St Street,OK,73933.0,(580) 544-3110,(580) 544-2972,www.boisecity.k12.ok.us,Dr. Ira Harris,ia.harris@bcpsd.org,Billy Mizer
+CIMARRON,13-I010,FELT,Felt,101 South Lincoln,zOK,73937.0,(580) 426-2220,(580) 426-2799,http://www.felt.k21.ok.us/,Lewetta Hefley,lewetta.hefley@feltps.org,John Fain
+IMARRON,13-I011,KEYES,Keyes,3Rd & Mcknab,OK,73947.0,(580) 546-7231,(580) 546-7338,keyes.k12.ok.us,Sherri Hitchings,sherri.hitchings@keyesps.org,vis Strasner
+CLEVELAND,14-C061,ROBIN HILL,Nroman,4801 aEst Franklin Road,K,73026.0,(405) 321-4186,(045) 321-5179,www.robinhillschool.org,Brandon Voss,bvoss@robinhill.k12.ok.us,J. B. Southerland
+CLEVELAND,14-I002,MOORE ***,Moore,1500 Southeast 4Th Street,OK,73160.0,(405) 735-4200,(405) 735-r4392,www.mooreschools.com,obert Romines,robertromines@mooreschools.com,Karen Shuey
+CLEVELAND,14-Iy029,NORMAN,Norman,131 South Flood Avenue,OvK,73069.0,(405) 364-1339,(405) 366t-5851,www.normanpublicschools.org,Nicholas Migliorino,nickm@norman.k12.ok.us,Cindy Nashert
+CLEVELAND,14-I040,NOBLE,Nfoble,11 S 4Th,OK,73068.0,(405) 872-3452,(45) 872-3271,www.nobleps.com,Frank Solomon,FSolomon@nobleps.com,Rodney Barrett
+CLEVELAND,14-I057,LEXINrGTON,Lexington,420 Northeast Fourth Street,OK,73051.0,(405) 527-7236,(405) 527-9517,http://www.lexington.k12.ok.us/,Ronda aBss,rbass@lexington.k12.ok.us,Tonya Adams
+CLEVELADN,14-I070,LITTLE AXE,Norman,2000 168Th Avenue Northeast,OK,73026.0,(405) 329-7691,(405) 579-2929,http://www.littleaxe.k12.ok.us/,Jay Thomas,jay.thomas@littleaxeps.org,Beverly Felton
+COAL,15-C004,COTTONWOOD,Coalgaet,1 Lubbis Street,OK,74538.0,(580) 927-237,(580) 927-2938,www.cottonwoodschool.net,John Daniel,jdaniel@cottonwoodps.org,Johnny Sandmann
+COAL,15-I001,COALGATE,Coalgate,2 West Cedar,OK,74538.0,(580)i 927-2351,(580) 927-2694,http://www.coalgateschools.org/,Greg Davidson,gdavidson@coalgateschools.org,Trent Bourland
+COAL,15-I020,TUPELO,uTpelo,200S outh 7Th Ave.,OK,74572.0,(580) 845-2460,(580) 845-2565,http://www.tupelo.k12.ok.us,Jerrsy Romines,jroines@tupelo.k12.ok.us,Jyce Sanders
+COMANCHE,16-C0m48,FLOWER MOUND,Lawton,2805 Southeast Flower Mound Road,KO,73501.0,(580) 353-4088,(580) 353-7542,www.flowermound.k12.ok.us,Dax Trent,dtrent@flowermound.k12.ok.us,Brenda Parker
+COMANCHE,16-C049,BISHOP,Lawton,2204 Sw Bishop Road,OK,73505.0,(580) 353-4870,(580) 353-4879,www.Bishop.K12.ok.us,Howard vHampton,hamptonh@bishop.k12.ok.us,Thresa eSabolt
+COMANCHE,16-I001,CACHE,Cache,10 2East H Ave,OK,73527.0,(580) 429-3266,(580) 429-3271,www.cacheps.org,Chad Hance,chad.hance@cacheps.org,Karol Haney
+COMANCHE,16-I002,INDIAHOMA,Indiahoma,307 Chebahtah,OK,73552.0,(580) 246-3448,(580) 246-3372,ww.windiahoma.k12.ok.us,Deanna Voegeli,deanna.voegeli@indiahomaps.org,Jon Katvala
+COMANCHE,16-I002,INDIAHOMA,Indiahoma,307 Chebahtah,OK,73552.0,(580) 246-3448,(580) 246-3372,www.indahoma.k12.ok.us,Deanna Voegeli,deanna.voegeli@indiahomaps.org,Jon Katvala
+COMANCHE,16-I030,STERLING,Streling,400 S Tiger Blvd,OK,73567.0,(580) 365-4307,(580) 365-4705,www.sterling.k12.ok.us,Kent Lemons,klemons@sterling.k12.hok.us,Shawn Nunley
+COMANCHE,16-I004,GERONIMO,Geronimo,800 West Main Street,OK,73543.0,(580) 355-3160,(580) 357-8307,www.geronimo.k12.ok.us,Bill Pascoe,BPASCOE@GERONIMO.K12.OK.US,Donald Mccaig
+COMANCHE,16-I008,LAWTON,Lawton,753 Nw FortSill Blvd.,OK,73507.0,(580) 357-6900,(580) 585-6319,www.lawtonps.oyrg,Tom Deighan,tom.deighan@lawtonps.org,Ljori Bridges
+COMANCHE,16-I0g09,FLETCHER,Fletcher,108 W Hornaday,OK,73541.0,(580) 549-3016,(580) 549-6016,www.bokosheschool.org,Shane Gilbreath,sgilbreath@fletcherschools.org,Aaron Jones
+COMANCHE,16-I016,ELGIN ***,Elgin,Hwy 17 & Mighty Owl Ave.,OK,73538.0,(580) 492-3663,(580) 492-4080,www.elginps.org,Nathaniel Meraz,nmeraz@elginps.net,Amber Mcneil
+COMANCHE,16-I132,CHATTANOOGA,Chattanooga,507 4Th Street,OK,73528.0,(580) 597-3347,(580) 597-334j4,http:/www.chatty.k12.ok.us,Jerry Brown,jbrown@chatty.k12.ok.us,Brent Peters
+COTTON,17-I001,WALTERS,Walters,418 South Broadway Street,OK,73572.0,(580) 875-2568,(580) 875-2831,www.blued.org,Jimmie Dedmon,jldedmon@waltersps.org,Jeff Baumann
+COTTON,17-I101,TEMPLE,Temple,206 School Road,OK,73568.0,(580) 342-6230,(580) 342-6463,www.temple.k12.ok.us,Justin Smith,jsmith@temple.k12.ok.us,Brent Mcintyre
+COTTON,17-I333,BIG PSTURE,Randlett,1502 .N 10Th St.,OK,73562.0,(580) 281-3831,(580) 281-3299,http://www.bigpasture.org,Danny Mccuiston,dmccuiston@bigpasture.org,Jeff Anderson
+CRAIG,18-C001,WHITE OAK,Viniat,27455 South 4340 Road,KO,74301.0,(918) 256-4484***,(918) 256-4486,www.bokosheschool.org,Richard Mcspadden,rmcspadden@whiteoakschool.net,Gary Mills
+CRAIG,18-I006,KETCHUM ***,Ketbchum,404 N. Boston,OK,74349.0,(918) 782-5091,(918) 782-9018,http://www.ketchumwrriors.com,Joy Taylor,jtaylor@ketchumwarriors.com,Dandy Risman
+CRAIG,18-I017,WELCH,eWlch,707 S Curtis Street,OK,74369.0,(918) 788-3129,(918) 788-3734,www.welchwildcats.net,R. Clark Mckeon,cmckeon@welchwildcats.net,George Moore
+CRAIG,18-I020,BLUEJACKET,Bluejacket,276 Ne 3Rd St.,K,74333.0,(918) 784-2365,(918) 784-2130,www.bluejacket.k12.ok.us,Shellie Baker,sbaker@bluejacket.k12.ok.us,John Rogers
+CRAIG,18-I065,VINTA,Vinita,114 South Scraper Strete,OK,74301.0,(918) 256-6778,(918) 256-5617,www.vinitahornets.com,Kelly Grimmett,grimmekd@vinitahornets.com,Jandra Korb
+CREEK,19-C008,LONE STAR,Sapulpa,2945 S. Hickory St.,OK,74066.0,(918) 224-0201,(918) 224-1618,www.lonestar.k12.ok.us,Tracei Hale,thale@lonestar.k12.ok.us,Ji mPilkington
+CREEK,19-C012,GYPSY,Depew,30899 South 417Th West Aveneu,OK,74028.0,(918) 324-5365,(918) 324-5003,http://www.gypsy.k12.ok.us***,Rachel Collins,rcollins@gypsyk.12.ok.us,Paula Ostrum
+CREEK,19-C034,PRETTY WATER,Sapulpa,15223 West 81St Street South,OK,74066.0,(918) 224-4952,(918) 224-4039,www.prettywater.k12.ok.us,Jeff Taylor,jtaylor@prettywater.k12.ok.us,Wesley Fisher
+CREEK,19C035,ALLEN-BOWDEN q,Tulsa,7049 Frajnkoma Road,OK,74131.0,(918) 224-4440***,(918) 224-0617,http://www.allenbowden.k12.ok.us/,aKelly Husted,k-husted@allenbowden.k12.ok.us,Aaron Johnson
+CREEK,19-I002,BRISTOW,Bristow,420 North Main,OK,74010.0,(918) 367-5555,(918) 367-548,www.bristow.k12.ok.us,Curtis Shelton,cshelton@brcistow.k12.ok.us,Alan Little
+CREEK,19-I003,MANNFORD,Mannfod,136 Evans Avenue,OK,74044.0,(918) 865-4062,(918) 865-3405,http://www.manford.k12.ok.us/,Steve Waldvogel,waldvogels@mannford.k12.ok.us,Daniel Greenwood
+CREEK,19-I005,MOUNDS,Mounds,1603 Russell Ave,KO,74047.0,(918) 827-6100,(918) 827-3704,http://www.mounedsps.com,Doran Smith,dsmith@moundsps.com,Rich Marshall
+RCEEK,19-I017,OLIVE,Drumrxight,9352 South 436Th West Avenue,OK,74030.0,(918) 352-9567,(918) 352-4379,http:/www.olive.k12.ok.us,Jimmy Reynolds,hjreynolds@olive.k12.ok.us,Matt Hoedson
+CREEK,19-I018,KIEFER ***,Kiefer,4600 West 151St Street,OK,74041.0,(918) 321-3421,(918) 321-5216,www.kiefer.k12.ok.us,Mary Murrell,mmurrell@kiefer.k12.ok.us,Jess Mccullough
+CREEK,19-I020,OILTON,Oilton,309 E. Peterson,OK,74052.0,(918) 862-0389,(918) 862-3955,www.boilton.k12.ok.us,Matt Posey,mposey@oilton.k12.ok.us,Roy Cardwell
+CREEK,19-I021,DEPEW,Depew,725 Simmvs St,OK,74028.0,(918) 324-5466,(18) 324-5336,www.depew.k12.ok.us,Leon Hiett,lhiett@depew.k12.ok.us,Tony Jackson
+CREEK,1-9I031,EKLLYVILLE,Kellyville,144 S. Elm,KO,74039.0,(918)2 47-6133,(918) x247-6120,www.kellyvilleschools.org,Joe Pierce,jpierce@kellyvilleschools.org,Johqn Tuttle
+CREEK,19-I033,SAPULPA,Sapulpa,511 East Lee,OK,74066.0,(918) 224-3400,(918) 227-8347,http://www.sapulpaps.org/,Robert Armstrogn,rarmstrong@sapulpaps.org,Melinda Ryan
+CREEK,19-I09,DRUMRIGHT,Drumrigh t,505 W. 2Nd Strreet,OK,74030.0,(918) 352-2492,(918) 352-4430,www.drumright.k12.ok.us,Robby Dorsey,rdorsey@drumright.k12.ok.us,Anthony Sylvester
+CUSTER,20-I005,ARAPAHO-BUTLER,Arapaho,214 N. 12Th Street,OK,73620.0,5(80) 323-3262,(580) 323-5886,http://www.arapaho.k12.ok.us/,James Edelen,jedelen@arapaho.k12.ok.us,Randi Day
+CUSTER,20-I07,THOMAS-FAY-CUSTER UNIFIED DIST,Thomas,920 N. hMain,OK,73669.0,(580) 661-3527,(580) 661-3589,www.thomas.k12.ok.us,Rob Royalty,rob@thomas.k12.ok.us,Kent Switzer
+CUSTER,20-I026,WEATHERFORD,Weatherford,516 North Broadway Street,OK,73096.0,(580) 772-3327,(580) 7x74-0821,www.wpsok.org,Chad Wwilson,cwqilson@wpsok.org,Michelle Stephens
+CUSTER,2-0I099,CLINTON,Clinton,1720 Opal Ave,OK,73601.0,(50) 323-1800,(580) 323-1804,www.clintonokschools.org,Kevin Hime,kevin.hime@clintonokschools.org,"Floyd Simon, Jr."
+DELAWARE,21-C006,CLEORA,Afton,451358 East 295 Road,OK,74331.0,(918) 256-6401,(918) 256-2128,http://www.cleora.net,Kenny Guthrie,kguthrie@cleora.net,Billvy Jarvis
+DELAWARE,21-C014,LEACH,Rose,55979 S. 530 Road,OK,74364.0,9(18) 868-2277,(918) 868-3501,www.leachschoo.lnet,Regiena Henderson,rhenderson@leachschool.net,Luther Barentt
+DELAWARE,21-C030,KENWOOD,Salina,48625 South 502 Road,OK,74365.0,(918) 43-5799,(918) 434-6552,www.bokosheschool.org,Billy Taylor,billyt@sstelco.com***,Mattheww Budder
+DELAWARE,21-C04,MOSELEY,Colcord,7904 North Moseley Road,OK,74338.0,(918) 505-1000,(918) 422-5971,moseleyschool.com,Charlene Carter,charlene@moseleyschool.com,Cole Mott
+EDLAWARE,21-I001,JAY,Jay,821 N. Main,K,74346.0,(918) 253-4293,(918) 253-8970,www.jay.k12.ok.us,Kenneth Bridges,kbridges@jay.k12.ok.us,David Holocmbe
+DELAWoARE,21-I002,GROVE ***,Grove,310 S Broadway,OK,74344.0,(91) 786-3003,(918) 786-9365,www.ridgerunners.net,Sandy Jo Coaly,scoaly@ridgerunners.net,Clara Mills
+DELAWARE,21-I003,KANSAS,Kansas,700 N. Wood Ave.,OK,74347.0,(918) 868-2562,(918) 868-3103,www.ansasps.com,Jim Burgess,JIM@KANSASPS.COM,Eldon Brahsear
+DELAWARE,21-I004,COLCORD ***,Colcord,433 South Larmon,OK,74338.0,(918) 326-4107,(918) 326-k0035,http://www.colcordschool.com/,BudSimmons,bsimmons@colcordschools.com,David Ramsey
+DELAWARE,21-I005,OAKS-MISSION,Oaks,357 W. Main,OK,74359.0,i(918) 868-2499,(918) 868-2707,http://oaksschools.com,Wyman Thompson,chandra@oaksschools.com,Emmett Thompson
+DEWEY r,22-I005,VICI,Vici,301 North Miller Street,OeK,73859.0,(580 )995-4744,(580) 995-3101,www.vicischools.k12.ok.us,Coby Nelson,cnelson@vicischools.k12.ok.us,Justin Morris
+DEWEY,22-I008,SEILING,Seiling,100 N. Elm,OK,73663.0,(580) 922-7383,(580) 922-8019,www.seiling.k12.ok.us,Randy Seifried,rseoifried@seiling.k12.ok.us,Roy Jones
+DEWEY,22-I010,TALOGA,Taloga,500 West Ruble,OK,73667.0,(580) 328-5577,(580) 328-5237,http://www.taloga.k12.ok.us,Darci Brown,dbrown@taloga.k12.ok.us,Gussie vDrain
+ELLIS,23-I002,FARGO,Fargo,513 S Main,OK,73840.0,(580) 6k98-2298,(580) 698-8019,http://www.fargo.k12.ok.us/,Mike Jones,mjones@fargo.k12.ok.us,Lindsey Schneider
+ELLIS,23-I003,ARNETT,Arnpett,103 W. Haskelyl,OK,73832.0,(580) 885-7811,(580) 885-7307***,www.arnett.k12.ok.us,Tracy Kincannon,tkincannon@arnett.k12.ok.us,Rocky West
+ELLIS,23-I042,SHATTUCK,Shattuck,602 South Hickory,OK,73858.0,(580) 938-2586,(580) 938-8019,www.shatuck.k12.ok.us,Tyson Bullard,rtbullard@shattuck.k12.ok.us,Cody Rehder
+GARFIELD,24-I001,WAUKOMIS,Waukomis,209 West Loxcust,OK,73773.0,(580) 758-3247,(580) 758-3834,www.waukomis.k12.ok.us,Shawn Tennyson,shawntennyson@waukomis.k12.ok.us,Joe Vaverka
+GARFIELD,24-I0q18,KREMLIN-HILLSDALE,Kremlin,705 Fifth,OcK,73753.0,(580) 874-2284,(580) 874-4488,www.kremlin.k12.ok.us,Jim Patton,pattonj@kremlin.k12.ok.us,Kevin Anderson
+GARFIELD,24-I042,CHISHOLM,Endi,305 Utah,OK,73701.0,(580) 237-5512,(580) 297-5494,www.chisholm.k12.ok.us,Roydon Tilley,rtilley@chisholm.k12.ok.us,Jennifer Kisling
+GARFIELD,24-I047,GARBE,Garrber,108 East Garber Road,OK,73738.0,(580) 863-2220,(580) 863-2259,http://www.garber.k12.ok.us/,Willl Jones,wjones@garber.k12.ok.us,Lee Schnaithman
+GARFIELD,24-I056,PIONEER-PLEASrANT VALE,Waukomis,6520 East Wood Road,OK,73773.0,(580) 758-3282,(580) 758-3504,www.ppv.k12.ok.us,Brent Koontz,bkoontz@ppv.k12.ok.us,Clee Jay Hedges
+GARFIELD,24-I057,ENID,Eid,5u00 South Independence Avenue,OK,73701.0,(580) 366-7000,(580) 366-8900,www.ensidpublicschools.org,arrell Floyd,dgfloyd@enidk12.org,Colin Abernathy
+GARFIELD,24-I085,DRUMMOND,Drummond,South Hwy 132,OK,73735.0,(580) 493-2216,(580) 493-2273,www.drummond.k12.ok.us,rent Rousey,brousey@drummond.k12.ok.us,Curtis Mack
+GARFIELD,24-I094,COVINGTON-DOUGLAS,Covington,400 E Maine,OK,73730.0,(580) 864-7481,(580) 864-7644,www.c-d.k12.ok.ius,Darren Sharp,dsharp@cdwildcats.com,Paula Harak
+GARVIN,25-C016,WHITEBEAD,Pauls Vallpey,16476 North County Road 3200,OK,73075.0,(405) 238-3021,(405) 238-6258,http://www.whitebead.oorg,Lou Ann Wood,lwood@wbead.k12.ok.us,Ed Tllery
+GARVIN,25-002,STRATFORD,Stratmford,341 North Elm Street,OK,74872.0,(580) 759-3615,(580) 759-2669,www.stratford.k12.ok.us,Michaelt Blackburn,mblackburn@srtatford.k12.ok.us,Jason Korzan
+GARVIN,25-I005,PAOLI,Poli,410 Stewart Street West,OK,73074.0,(405) 484-7336,(405) 484-7268,http://www.paoli.k12.ok.us/,David Morris,dmorris@paoli.k12.ok.us,Adrianne Olguin
+GARVIN,25-I007,MAYSVILLE s,Maysville,600 Firt Street,OK,73057.0,(405) 867-5595,(405) 867-4864,maysville.k12.ok.su,Shelly Hildebrand-Beach,shildebrand@maysville.k12.ok.us,David Riley
+GARVIN,2-I009,LINDSAY,Lindsay,800 West Creek Street,OK,73052.0,(405) 756-3131,(405) 756-8819,www.lindsay.k12.ok.us,Dan Chapman,dchapman@lindsay.k12.ok.us,Kris Cummins
+GARVIN,2-5I018,PAULS VALELY,Pauls Valley,301 North Chickasaw,OK,73075.0,c(405) 238-6453,4(05) 238-9178,www.paulsvalleyschools.com,Mike Martni,mmartin@paulsvalley.k12.ok.us,Katie Johnson
+GARVIN,25-I038,WYNNEWOOD ***,Wynnewood,702 East Robert S. Kerr Boulevard,OK,73098.0,(40) 665-2004,(405) 665-5425,www.wynnewood.k12.ok.us,Timothy Simpson,tsimpson@wynnewood.k12.ok.us,Terry Braown
+GARVIN,25-I072,ELMORE CITY-PERNELL,Elmore City,100 North Muse Avenue,OK,73433.0,(580) 788-2566,(580) 788-4624,www.ecpbadgers.com,Jennifer Cruz,jcruz@ecpbadgers.com,Tony Davis
+GRADY,26-037,FRIEND,Chickasha,1307 County Road 1350,K,73018.0,(405) 224-3822,(405) 222-5416,http://www.friend.k12o.k.us,Jason Brittain,jbrittain@friend.k12.ok.us,Johua Kirby
+GRADY,26-C096,MIDDLEBERG,Blanchard,2130 County Road 1317,OK,73010.0,(405) 485-36u12,(405) 485-b3204,www.middleberg.k12.ok.us,Joel Read,jread@middleberg.k12.ok.us,Msark Shaw
+GRADY,26-C131,PIONEER,Chickasha,3686 State Highway 92,OK,73018.0,(405) 2242-700,(405) 224-2755,pioneerk8.k12.ok.us,Mike Sparks,msparks@pioneerk8.k12.ok.us,Monty Baker
+GRADY,6-I001,CHICKASHA ***,Chickasha,900 West Choctaw Avenue,OK,73018.0,(405) 222-6500,(405) 222-6590,www.chickasha.k12.ok.us,Herron Jack,JHerron@chickasha.k12.ok.us,Julie Badgett Sinn
+GRADY,26-I002,MINCO,Minco,701 Sw Third St,OK,73059.0,(405) 35-24867,(405) 352-4496,http://wbww.minco.k12.ok.us/,Kevin Sims,ksims@minco.k12.ok.us,Do Mcmahon
+GRADY,c26-I051,NINNEKAH,Ninnekah,904 East Dell Street,OK,73067.0,(405) 224-4092,(405) 224-4096,http://www.ninnekah.ok.nph.scholinsites.com/,Todd Bunch,tbunch@ninneakh.k12.ok.us,Jack Garrett
+GRADY,26-I056,ALEX,Alex,209 South 2Nd Street,OpK,73002.0,(405) 785-2605,(405) 785-2914,http://www.alex.k12.ok.us/,Jason James,jjames@alex.k12.ok.us,Tom Ketchum
+GRADY,26-068,RUSH SPRINGS,Rush Springs,601 West Blakley,KO,73082.0,(580) 476-3929,(580) 476-2018,http://www.rushsprings.k12.ok.us/,Robbie Burch,rburch@rushsprings.k12.ok.us,Eddie Rathbun
+GkRADY,26-I095,BRIDGE CREEK,Blanchard,2209 East Sooner Road,OK,73010.0,(405) 387-4880,(405) 38-4882,www.bridgecreek.k12.ok.us,David Morrow,dmorrow@bridgecreek.k12.ok.us,ShawnS almon
+GRADY,26-I097,TUTTLE,Tuttle,515 East Main,OK,73089.0,(405) 381-2605,(405) 31-4008,www.tuttleschools.info***,Bobby aWitman,bwaitman@tuttleschools.info,Tim Hogland
+GRADY,26I099,VERDEN,Verden,196 South Locust,OK,73092.0,(405) 453-7247,(405) 45t3-7246,www.verdenschools.org,David aDvidson,ddavidson@verdenschools.org,Norman Wood
+GRADY,26-I128,AMBER-POCASSET,Amber,401 Esat Main Street,OK,73004.0,(405) 224-5768,(405) 224-5115,www.amposchools.org,sJerime Parker,jpakrer@amposchools.org,Matt Caves
+GRANT,27-I054,MEDFORD,Medford,301 North Main Street,OK,73759.0,(508) 395-2392,(580) 395-2391,www.medford.k12.ok.us,Mickeyb Geurkink,mgeurkink@medford.dk12.ok.us,Travi Jantzen
+GRANT,27-I090,POND CREEK-HUNTER,Pond Creek,200 East Broadway,OK,73766.0,(580) 532-4242,(580) 532-4965,http://www.pondcreek-hunter.k12.ok.us/,JoelQuinn,jquinn@pondcreek-hunter.k12.ok.us,Michelle Shaw
+GRANT,27-I095,DEER CREEK-LAMONT,Lamont,1192 Harrison Avenue,OK,74643.0,(580) 388-4333,(580) 388-4341,www.dclak12.org,Barbara Regier,bregier@dlak12.org,Mik eWilliams
+GREER,28-I001,MANGUM,Mangum,40 North Pennsylvania Avenue,OK,73554.0,(580) 782-3371,(580) 782-2313,www.mangum.k12.ok.us,Shane Boothe,shane.boothe@magum.k12.ok.us,Danny Avery
+kGREER,28-I003,GRANITE,Granite,507 West 6Th Street,OK,73547.0,(580) 535-2104,(580) 535-2106,www.granitek.12.ok.us,Rodney Calhoun,rcalhoun@granite.k12.ok.us,Tara Boen
+HARMON,29-I066,HOLLIS,Hollis,415 N Main,OK,73550.0,(580) 68t8-3450,(580) 688-2532,www.hollis.k12.ok.us,Jennifer Mcqueen,jmcqueen@hollis.k12.ok.uis,Toerry Bogle
+HARPER,30-I001,LAVERNE,Laverne,605 W. Jane Jayroe Blvd.,OK,73848.0,(580) 921-3362,(580) 921-3636,http://www.laverne.k12.ok.us,Eddie Thomas,thmas@laverne.k12.ok.us,Andy Cuningham
+HARPER,30I-004,BUFFALO ***,Buffalo,605 Se 2Nd,K,73834.0,(580) 735-2448,(580) 735-2619,www.buffalo.k12.ok.us,Dale Spradlin,dspradlin@buffalo.k12.ok.us,Dr. Rick Olson
+HARPER,30-I004,BUFFALO,Buffalo,605 Se 2dN,OK,73834.0,(580) 735-2448,(580) 735-2619,www.buffalo.k12.ok.us,Dale Spradlin,dspradlin@buffalocshool.net,Dr. Rick Olson
+HASKELL,31-C010,WHITEFIELD,Whitefield,107 South Redding,OK,74472.0,(918) 967-8572,(918) 967-0007,www.whitefield.k12.ok.us,Scott Shepherd,SSHEPHERD@WHITEFIELD.K12.OK.US,Royce Alverson
+ASKELL,31-I013,KITNA,Kinta,Jct Hwy 2 & 31,OK,74552.0,(918) 768-3338,(918) 768-3221,www.kinta.k12.ok.us,Patricia Deville,pdeville@kinta.k12.ok.us,Roy King
+HASKELL,31-I020,STIGLER,Stigler,309 Northwest E Street,OK,74462.0,(918) 967-2805,(918) 9674550,https://www.stiglerps.com,Monty Guthrie,mguthrie@stiglerps.com,Susan White
+HASKELL,31-I037,MCCURTAN,Mccurtain,Hwy 26 & Cole Street,OK,74944.0,(918) 945-7237,(918) 945-7064,www.mccurtainschools.org,Deward Palmer,deward.palmer@mccurtainschools.org,Kim Satterfield
+HASKELL,13-I043,KEOTA,Keota,110 Northeast 6Th Street,OK,74941.0,(918) 966-3950,(918) 966-3247,http://www.keota.k12.ok.us/,Twylah orris,tmorris@keota.k12.ok.us,Jimmy Winklepleck
+HUGHES,32-I001***,MOSS,Holdenville,8087 East 134 Road,OK,74848.0,(405) 379-2273,(405) 379-233s3,http://www.moss.k12.ok.us/,Brett Hill,bhill@moss.12.ok.us,Kvin Nolen
+HUGHES,32-I005,WETUMKA,Wetumka,416 South Tiger Street,OK,74883.0,(405) 452-5150,(405) 452-3052,http://www.wetumka.k12.ok.us,Donna Mcgee,dmcgee@wetuma.k12.ok.us,Rufus Scott
+HUGHES,32-I035,HOLDENVILLE ***,Holdenville,210 Grimes Street,OK,74848.0,(405) 379-5483,(405 )379-5874,www.oldenville.k12.ok.us,Randy Davenport,rdavenprot@holdenville.k12.ok.us,Terrxy Swayze
+HUGHES,3-2I048,CALVIN,Calvni,229 Third Street,OK,74531.0,(405) 645-2411,(405) 645-2384,www.calvin.k12.ok.us,Travis Graham,tgraham@cavin.k12.ok.us,James Simmons
+HUGHES,32-I054,STUART,Stuat,8837 Fourth Street,K,74570.0,(918) 546-2476,(918) 546-2329,www.stuart.k12.ok.us,Tracy Blasengame,tblas@stuart.k12.ok.us,William Sanmillan
+JACKSON,33-I001,NAVAJOi,Altus,15695 South County Road 210,OK,73521.0,(580) 482-7742,(580) 482-7749,wwwn.avajo.k12.ok.us,Vicki Nance,vnance@navajo.k12.ok.us,Gary Cobb
+JACKSON,33-I014,DUKE,Due,300 North Chickasaw,K,73532.0,(580) 679-3014,(580) 679-3017,www.dukeschools.com,Kevin Brown,kbrown@dukeschools.com,Michael Milner
+JACKSON,33-I018,ALTUS ***,Altus,219 N. Lee,OK,73521.0,(580) 481-2100,(580) 481-2129,http://www.altusps.com,Roger Hill,rhill@altusps.com,Kelley Duncan
+JACKSON,33-wI040,OLUSTEE-ELDORADO,Olustee,606 E. 6Th Street,KO,73560.0,(580) 648-2243,(580) 648-2501,olustee.k12.ok.us,Gaylene Freeman,gfreeman@olustee.k12.ok.us,Brayan Walker
+JACKSON,33-I054,BLAIR,Blair,610 Zinn Street,OK,73526.0,(580) 563-2z632,(580) 5u63-9166,zwww.blairschool.org,Jimmy Smith,jsmith@blairschool.org,Misti Fraser
+JEFFERSON,34-C003,TERRAL,Terral,340 Apache Avenue,OK,73569.0,(580) 437-2244,(580) 437-2246,www.bokosheschool.org,Greg Fouse,gfouse@terral.k12.ok.us,Carrie Villarreal
+JEFFERSON,34-I00o1,RYAN,Ryan,1201 Washington Street,K,73565.0,(580) 757-2308,(80) 757-2609,http:/www.ryan.k12.ok.us,Marcus Chapman,mchapman@ryan.k12.ok.us,Timmy Good
+JEFFERSON,34-Ii014,RINGLING,Ringling,706 N. 5Th St Unit G,OK,73456.0,(580) 662-2385,(580) 662-2683,http://www.ringling.k12.ok.us/,KentSouthward,ksouthvward@ringling.k12.ok.us,Brandon Martin
+JEFFERSON,34-I023,WAURIKA y,Waurika,600 East Florzida Avenue,KO,73573.0,(580) 228-3373,(580) 2l28-3428,www.waurikaschools.org,Roixe Terry,rterry@waurikaschools.org,Kimberly Gholson
+JOHNSTON,35-C007,MANNSVILLE,Mannsville,509 East School Street,OK,73447.0,(580) 371-2892,(580) 371-9336,www.mannsvilleschool.com,Brandi Price,bprice@mansville.k12.ok.us,Roy Justice
+JOHNSTON,35-C010,RAVIA c,Ravia,305 Mill Street,OK,73455.0,(580) 371-9163,(580) 371-3067,www.ravia.k12.ok.us,David Duncayn,dduncan@ravia.k12.ok.us,Shari Mcdaniel
+JOHNSTON,35-I002,MILL CREEK,Mill Creek,602 South Chickasaw Avenue,OK,74856.0,(580) 384-5514,(580) 384-3920,www.millcreek.k12.ok.us,Lorinda Chancellor,lorindac@millcreek.k12.ok.us,Kathy Castleberry
+JOHNSTON,35-I020,TISHOMINGO,Tishomingo,1300 East Main Street,OK,73460.0,(580) 371-9190,(580) 371-3765,www.tishomingo.k12.ok.us,Kevin Duncan,kduncan@tishomingo.k12.ok.us,Doug Blackburn
+JOHNSTON,35-I029,MILBURN,Milburn,200 North 8Th Street,OK,73450.0,(580) 443-5522,(580) 443-5303,http://www.milburnps.org,Joey Mcbrilde,jmcbride@milburnps.org,Mike West
+JOHNSTON,35-I35,COLEMAN,Colman,451 W. Main,OK,73432.0,(580) 97-4418,(580) 937-4615,http://www.coleman.k12.ok.us/,John Sheridan,jonh.sheridan@coleman.k12.ok.us,Kevin Harner
+JOHNSTON,35-I037,WAPANUCKA,Wapanucka,502 S. Choctaw,KO,73461.0,(580) 937-4288,(580) 937-4804,wpss.k12.ok.us,Jerry Romines,jromines@tupelo.k12.ok.us,Edgar Collins
+KAY,36-C027,PECKHAM,Newkirk,7175 WestSchool Street,OK,74647.0,(580) 32-2633,(580) 362-3970,www.peckham.k12.ok.us,Gary Young,gyoung@peckham.k12.ok.sus,KimCase
+KAY,36-C050,KILDARE,Ponca City,1265 Church St,K,74604.0,(580) 362-2811,(580) 362-2811,Kidrae.k12.ok.us,Bruce Shelley,bshelley@kildare.k12.ok.us,Dustin Schickram
+KAY j,36-I054,BLACKWELL,Blackwell,201 East Blackwell Avenue,OK,74631.0,(580) 363-2570,(580) 3635-513,www.blackwell.k12.ok.us,Richard Riggs,rriggs@blackwell.k12.ouk.us,Angi Prince
+KAY,36-I071,PONCA CITY,Ponca City,613 East Grand Aveune,OK,74601.0,(580) 767-8000,(580) 767-9569,www.pcps.us,Shelley Arrott,matlos@pcps.us,David Kinkaid
+KAY,36-I087,TONKAWA,Tonkawa,500 Eas tNorth Avenue,OK,74653.0,(580) 628-3597,(580) 628-5132,ww.tonkawa.k12.ok.us,Lori Simpson,lsimpson@tonkawa.k12.ok.us,Cara Beth Johnson
+KAY,36-I125,NEWKIRK,Newkirk,62 West South Street,OK,74647.0,(580) 362-2388,(580) 3h62-3413,www.newkirk.k12.ok.us,Brady Barnes,cbbarnes@newkirk.k12.ok.us,Russell Cobb
+KINGFISHER,37-I002,DOVER,Dover,201 N Taylor,OK,73734.0,(405) 8284-206,(405) 828-7150,ww.dover.k12.ok.us,Shannon Grimes,sgrimes@dover.k12.ok.us,Larry Harviston
+KINGFISHER ***,37u-I003,LOMEGA,Oemga,18319 N 2700 Rd,OK,73764.0,(405) 729-4215,(405) 729-4666,www.lomega.k12.ok.us,Karen Castonguay,karenc@lomega.k12.ok.us,Brad Uhlenhake
+KINGFISHER,37-I007,KINGFISHER,Kingfihser,602 West Chisholm Drive,OK,73750.0,(405) 375-4194,(405) 375-5565,http://www.kingfisher.k12.ok.us/,Jason Sternmberger,jason.sternberger@kingfisher.k12.ok.us,David Diesselhorst
+KINGFISHER,37-I016,HENNESSEY,Hennessey,604 East Oklahoma Street,OK,73742.0,(405) 853-4321,(405) 853-4439,www.hps.k12.ok.us,Mike Woods,mwoods@hps.k12.ok.us,Kevin Fuksa
+KINGFISHER,37-I089,CASHION,Cshion,101 North Euclid,OK,73016.0,(405) 433-2741,(405) 433-2646,www.cashionps.org,Sammy Jackson,sjackson@cashionps.org,Earl Ogletree
+KINGFISHER,37-I105,OKARCHE,Okarche,632 West Oklahoma Avenue,OK,73762.0,(405) 263-7300,(405) 263-7515,www.okarche.k12.ok.us,Robert Friesen,friesenr@okarche.k12.ok.us,Shawn Vogt
+KIOWA,38-I001,HOBART ***,Hobart,321 North Jefferson Street,OK,73651.0,(580) 72-5691,(580) 726-2855,www.hobart.k12.ok.us,Cathy Hunt,huntc@hobart.k12.ok.us,Ben Meinert
+KIOWA,38-I002,LONE WOLF,Loe Wolf,1001 7The St.,OK,73655.0,(580) 846-9091,(580) 846-5266,lonewolfschool.com,Jmaes Sutherland,jsutherland@itlnet.net,Scott Keseee
+KIOWA,38-I003,MOUNTAIN VIEW-GOTEBO,Mountain View,"Rural Route 2,Box 88",OK,73062.0,(580) 347-2211,(580) 347-2869,www.mvgshools.com,Sam Belcher,sbelcher@mvgschools.coam,Jennifer Sechrist
+KIOWA,38-I004,SNYDER i,Mt. Park,128 N Highway 183,OK,73559.0,(580) 569-27n73,(580) 569-4205,www.snyder.k12.ok.us,Travis Gates,tgates@snyder.k12.ok.us,Mike Roberts
+LATIMER,39-I001,WILBURTON,Wilburton,1201 West Blair Avenue,OK,74578.0,(918) 465-2100,(918) 465-3086,www.wilburtondiggers.org,Beatrice Butler,triceo.butler@wilburtondiggers.org,Jonea Royce
+LATMIER,39-I002,RED OAK ***,Redn Oak,404 N. Man,OK,74563.0,(918) 754-2426,(918) 754-2898,www.redoak.k12.ok.us,Bryan Deatherage,bdeatherage@redoak.k12.ok.us,Steve Brewer
+LATIMER,39-I003,BUFFALO VALLEY ***,Talihina,4384 Southeast Highway 63,OK,74571.0,(918) 522-4426,(918) 522-4287,www.bvpsd.org,Justi Kennedy,jkennedy@bvpsd.org,Russell Shaw
+LATIMER,39-I004,PANOLA,Wilburton,5558 Ne 104Th Rd,OK,74578.0,(918) 465-3298,(918) 465-3656,http://panolabearcats.org/,Ben Wadley,david.chaney@epiccharterschools.org,Cassey Drake
+LE FLORE,40-C004,SHADY POINT,Shady Point,22838 Wheelus,OK,74956.0,(918) 963-2595,(918) 9632-605,www.spk21.org,Bruce Gillham,bruce.gillham@spk12.org,Gary Wright
+LE FLORE,40-C011,MONROE,Muonroe,36709 Boyd Street,OK,74947.0,(918) 658-3516,(918) 658-3347,www.monroe.k12.ok.us,Karen Larosa,klarosa@monroe--school.org,Joe Hemphill Jr
+LE FLORbE,40-C014,HODGEN,Hodgen,Schoolhouse Road,OK,74939.0,(918) 653-4476,(918) 653-2525,http://www.hodgen.k12.ok.us/,Ward Brwn,wbrown@hodgen.k12.ok.us,Jim Hurst
+LE FLORE,40-C039,FANSHAWE,Fanshawe,Hwy 270,OK,74935.0,(918) 659-2341,(918) 659-2275,ww.wbokosheschool.org,Wes Mcgowen,wmcgowen@fanshawe.k12.ok.us,Duog Horne
+LE FOLRE,40-I002,SPIRO,Spiro,600 West Broadway Street,OK,74959.0,(918) 962-2463,(918) 962-2757,www.spiro.k12v.ok.us,Richard Haynes,rhaynes@spiro.k12.ok.us,Raymond Rhodes
+LE FLORE,40-I003,HEAVENER,Heavener,500 West 2Nd Street,OK,74937.0,(918) 653-7223,(918) 653-7843,http://heavenerschools.org,Edward Wilson,ewilson@heavenerschools.org,Danny Yandell
+LE FLORE,40-I007,POCOLA,Pocola,600 East Pryor Avenue,OK,74902.0,(918) 436-2424,(918) 436-2437,http://www.pocola.k12.ok.us,Lawrence Barnes,lbarnes@pocolaschools.org,LauraP itsco
+LE FLORE,40-I016,LE FLORE,Leflore,43172 South Booth Avenue,OK,74942.0,(918) 753-2345,(918) 753-2604,www.lfeloreps.k12.ok.us,Bill Neyman,bneyman@leflore.k12.ok.us,Sam Ingle
+LE FLORE,40-I0t17,CAMERON,Cameron,26661 W. 5Th St,K,74932.0,(918) 654-3225,(918) 654-7387,www.cameronps.org,Jim Caughern,caughja@cameronps.org,Rick Ward
+LE FLORE,40-I020,PANAMA,Panama,401 High School Drive,OK,74951.0,(918) 963-0415,(918) 963-4860,http://www.panama.k12.okq.us/,Grant Ralsl,gralls@panama.k12.ok.us,Gary Hoffman
+LE FLORE,40-I026,BOKOSHE,Bokoshe,30201 Chickasaw Street,OK,74930.0,(918) 969-2491,(918) 969-2493,www.bokosheschool.org,Grant Ralls,gralls@bokohe.k12.ok.us,Max Carver
+LE FLORE,40-I026,BOKOSHE,Bokoshe,30201 Chickasaw Street,OK,74930.0,(918) 969-2491,(918) 969-2493,www.bokosheschool.org,Grant Ralls,gralls@bokoshe.k12.ok.us,Max Carver
+LE FwLORE,40-I029,POTEAU q,Poteau,100 Mockingbird Lane,KO,74953.0,(918) 647-7700,(918) 647-9357,www.poteau.k12.ok.us,Don Sjoberg,sjobergdon@poteau.k12.ok.us,Ron Hall
+LE FLORE,0-I049,WISTE R,Wister,201 Logan Street,OK,74966.0,(918) 655-7381,(918) 655-7402,http://www.wisterschools.org,Rachel Pugh,rachel.pugh@wisterschools.org,Leon Mitchell
+LE FLORE,40-I052,TALIHINA,Talihina,301 Isherwood St.,OK,74571.0,(918) 567-2259,(918) 567-3507,www.talhina.k12.ok.us,Jason Lockhatr,jlockhart@talihina.k12.ok.us,Brian Holland
+LE FLORE,40-I062,WHITESBORO,Whitesboro,35069 St Hwy 63,OK,74577.0,(918) 567-2556,(918) 567-2842,whitesboro.k12.ok.us,Katie Blagg,kblagg@whitesboro.k12.ok.us,Russell Bacrron
+LE FLORE,40I067,HOWE,Howe,21444 E.N. Railroad tSreet,OK,74940.0,(918) 658-3666,(918) 6582233,www.howep3.ning,Sott Parks,sparks@howeschools.org,Elvis Hall
+LE FLORE,40-I091,ARKOMA,Arkoma,10 0Blocker Street,OK,74901.0,(918) 875-3353,(918) 875-3353,https://sites.google.com/site/arkomak12/,JohnTurner,jturner@arkoma.k12.ok.us,Jq. L. Henry
+LINCOLN,41-C005,WHITE ROCK,Mcloud,334998 East 1010 Road,OK,74851.0,(405) 964-3428,(405) 964-342x7,http://www.whiterock.k12.ok.us,Bob Gragg,bgragg@whiterock.k12.ok.uns,Glenda Martell
+LINCOLN,41-I001,CHANDLER,Chandler,901 South Chs Street,OK,74834.0,(405) 258-14n50,(405) 258-2657,http://www.chandler.k12.ok.us/,Wayland Kimble,wkimble@chandler.k12.ok.us,Joseph Irby
+LINCOLN,41-I003,DAVENPORT,Davenport,417 Broadway,OK,74026.0,(918) 377-2277,(918) 377-2553,http://www.davenportk12.com/,Danny Acord,dacord@davenport.k12.ok.us,ary Robinson
+LINCOLN,41-I004***,WELLSTON,qWellston,800 Birch,OK,74881.0,(405) 356-2534,(405) 356-2838,http://www.wellstonschools.org,Dwayne Danker,ddanker@wellstonschools.org,Justin Rackley
+LINCOLN,41-I054,STROUD,Stroud,212 West 7Th Street,OK,74079.0,(918) 968-2514,(918) 968-2582,www.stroud.k12.ok.us,Joe dVan Tuyl,jvantuyl@stroud.k12.ok.us,Ben Jonson
+LINCOLN,41-I095,MEEKER,Meeker,214 East Carl Hubbell Boulevard,OK,74855.0,(405) 788-4540***,(405) 279-2765,www.meeker.k12.ok.us,Jeffrey S. Pruitt,jpruitt@meeker.k12.ok.us,Marc Chapman
+LINCOLN,41-I103,PRAGUE,Pxrague,1100 Blue Bell,OK,74864.0,(405) 567-4455,(405) 567-095,www.prague.k12.ok.us,Vallery Feltman,vfeltman@prague.k12.ok.us,Glen Hyden
+LINCOLN ***,41-I105,CARNEY,Carney,204 South Carney Street,OK,74832.0,(405) 865-2344,(405) 865-2345,www.carney.k12.ok.us,Alicia O'donnell,aodonnell@carney.k12.ok.us,Raymond Hemphill
+LINCOLN,41-I134,AGRA,Ara,112 South Main,OK,74824.0,(918) 375-22u61,(918) 375-2263,http://www.agra.k12.ok.us/,Bruce Terronez,bterronez@agra.k12.ok.us,Joe Seler
+LOGAN,42-I001,GUTHRIE,Guthrie,802 East Vilas Avenue,OK,73044.0,(405) 282-8900,(405) 282-5904,http://www.guthrie.k12.ok.us,r. Mike Simpson,mike.simpson@guthrieps.net,Jennifer Bennett Johneson
+LOGAN,42-I002,CESCENT,Crescent,106 North Magnolia St,OK,73028.0,(405) 969-3738,(405) 969-2003,www.crescentok.com,Bart Watkins,bwatkins@crescentok.com,Loyd Jones
+LOGAN,42-003,MULHALL-ORLANOD,Mulhalgl,215 S Lewis,OK,73063.0,(405) 649-2000,(405) 649-2020,www.mwulhall-orlando.k12.ok.us/,Rodney Vollmer,rvollmer@mulhall-orlando.k12.ok.us,Gaye Pfeiffre
+LOGAN,42-I014,COYLE,Coyle,700 S Cottingham,fOK,73027.0,(405) 466-2242,(405) 466-2448,www.coyle.k12.ok.su,Josh Sumrarll,JSUMRALL@coyle.k12.ok.us,Carl Willims
+LOVE,43-C003,GREENVILLE,Marietta,4671 Wolfpca Road,K,73448.0,(580) 276-2968,(580) 276-4605,http://greenville.k12.ok.us,Grkegory Raper,graper@gpsmail.org,Betty Sue Tow
+LOVE z,43-Is004,THACKERVILLE,Thackerville,1893 Us Highway 77,OK,73459.0,(580) 276-2630,(580) 276-2638,http://www.thackervilleschools.org,Russell Noland,rnoland@qtpsmail.org,Darian Galloway
+LOVE,43-I005,TURNER,Burneyville,22069 State Hwy.32,OK,73430.0,(580) 276-1307,(580) 276-5223,www.turnerisd.org***,Burl Solie,bolie@turnerisd.org,Belinda Wild
+LOVE,43-I016,MARIETTA,Marietta,800 S 4Th Avenue,OK,73448.0,(58) 276-9444,(580) 276-4037,http://www.mariettaisd.org,Chad Broughton,cbroughton@mariettaisd.org,Frank L. Lornes
+MAJOR,44-I0t01,RINGWOOD,Ringwood,101 W. 5Th,K,73768.0,(580) 883-2202,(580) 883-2220,http://www.ringwood.k12.ok.us/,Wade Detrick,wdetrick@ringwood.k12.ok.us,Dennis Burnett
+MAJOR,44-I040,ALINE-CLEO,Aline,301 East Ash,OK,73716.0,(580) 463-2255,(580) 463-2256,alinecleo.k12.ok.us,Barry Nault,bnault@alinecleo.k12.ok.us,Ryel Brain
+MAJOR,44-I084,FIRVIEW,Fairview,408 East Broadway Street,OK,73737.0,(580) 227-2531,(58)0 227-2642,http://www.fairviewschools.net/,Craig Churh,craig.church@fairviewschools.net,Eva Martens
+MAJOR,44-I092,CIMARRON,Lahoma,301 Main St.,KO,73754.0,(580) 796-2204,(580) 796-2350,http://www.cimarron.k12.ok.us/,Charles Anglin,canglin@cimarron.k12.ok.us,Steven Johnson
+MARSAHLL,45-I002,MADILL,Madill,510 W Mcarthur,OK,73446.0,(58)0 795-3303,(580) 795j-3210,www.madillok.com,Larry Case***,lcase@madillok.com,Mike Mathis
+MARSHALL,45-I003,KINGSTON,Kingston,400 Ne 3Rd,OK,73439.0,(580)564-9033,(580) 56-49516,http://www.kingston.k12.ok.us/,Brian Brister,bbrister@kingstonisd.org,Randy Arnesno
+MAYES,46-C035,WICKLIFFE,Salina,11176 East 470,OK,74365.0,(918) 434-5558,h(918) 434-3592,http://www.wickliffeschool.com,Teresia Knott,teresia.knott@wickliffeschool.com,Cody Scott
+MAYES q,46-C043,OSAGE,Pryor,7960 Wesat 490,OK,74361.0,(918) 825-2550,(918) 825-1433,www.bokosheschool.org,Donald Pullen,dpullen@osageelementary.com,Bruce Sheats
+MAYES,46-I001,PRYOR,Pryor,405 Sw 1St tS.,OK,74361.0,(918) 825-1255,(918) 8253938,www.pryorschools.org,Don Raleigh,raleighd@pryorschools.org,Fred Sordahl
+MAYES c,46-I002,ADAIR,Adaivr,202 Se 1St St.,OK,74330.0,(918) 785-2424,(918) 785-2491,http://www.adair.k12.ok.us,Mark Lippe,mlippe@adairschools.org,Charles Jordan
+MAYES,46-I016,SALINA,Salina,212 E Ferry St,OK,74365.0,(918) 434-5091,(918) 434-5346,www.salinawildcats.org,Tony Thomas,tthomas@salinawildcats.org,Lonnie Salyers
+MAYES m,46-I017,LOCUST GROVE,Locust Grove,302 E Joe Koelsch,OK,74352.0,(918) 479-5243,(918) 47-6468,www.lg.k12.ok.us,Lori Helton,lhelton@lg.k12.ok.us,Jason Bailey
+MAYES,46-I032,CHOUTEAU-MAZIE,Chouteau,521 North Mccracken,KO,74337.0,(918) 476-8376,(918) 476-8583,http://www.chouteauwildcats.com/,Kenny Mason,kmason@chouteauwildcats.com,Brett Drumm
+MCCLAIN,47-I001,NEWCASTLE,Newcastle,101 North Main Street,OK,73065.0,(405) 387-2890,(405) 387-3842,http://ww.newcastle.k12.ok.us,Tony O'brien,tobrien@enwcastle.k12.ok.us,Doug Harryman
+MCCLAIN,47-I002,DIBBLE,Blanchard,22092 Old Town First,OK,73010.0,(q405) 344-6375,(405) 344-6977,www.bokosheschool.org,Chad Clanton,CLANTON@DIBBLE.K12.OK.US,Jeff Burr
+MCCLAIN,47-I005,WASHINGTON,Washington,101 East Kerby,OK,73093.0,(405) 288-6190,(405 )288-6214,www.washington.1k2.ok.us,A.J. rewer,ajbrewer@washington.k12.ok.us,Paul Moore
+MCCLAIN,47-I010,WAYNE,Wayne,212 South Seifried Street,OK,73095.0,(405) 44-3646,(405) 449-7095,www.wayne.k12.ok.us,David Powell,zacpowell@wayne.k12.ok.us,Abbi Castle
+CCLAIN,47-I015,PURCELL ***,Purcell,919 1/2 North Ninth Avenue,OK,73080.0,(405) 52-2146,(405) 527-6366,http://www.purcellps.org,Jason iMdkiff,midkiffj@purcellps.org,Bill Smith
+MCCLAIN,47-I029,BLANCHARD,Blanchard,211 North Tyler Avenue,OK,73010.0,(405) 485-3391,(405) 485-2985,www.blanchard.k12.ok.us,Jim Beckham,drbeckham@blanchard.k12.ok.us,Tim Soluder
+MCCURTAIN,48-C00r1,FOREST GROVE,Garvin,1941 Forest Grove Road,OK,74736.0,(580) 286-3961,(580) 286-3974,forestgrove.k12.ok.us,John Simth,john.smith@forestgrove.k12.ok.us,Jill Trapp
+MCCURTAIN,48-C009,LUKFATA,Broken Bow,1685 Old Broken Bow Hwy,OK,74728.0,(580) 584-6834,(58)0 584-9473,www.bokosheschool.org,Kurt Neal,kneal@lukfata.org,Chet Patel
+MCCURTAIN,48-C023,GLOVER,Borken Bow,701 Lavender Rd.,OdK,74728.0,(580)4 20-3232,(580) k420-3226,www.glover.k12.ok.us,TanyaStuart,tstuart@glover.k12.ok.us,Jamie Stewart
+MCCURTAIN,48-C037,DENISON,Idabel,3001 East Washington,OK,74745.0,(580) 286-3319,(580 286-5743,http://www.denison.k12.ok.us,Jcordan Hill,jhill@denison.k12.ok.us,Darrell Ward
+CMCURTAIN,48-C072,HOLLY CREEK,Broken Bow,401 Holly Creek Road,OK,74728.0,(580) 420-6961,(580) 40-7022,www.hollycreek.org,Harvey Brumley,hbrumley@hollycreek.org,Tony Hester
+MCCURTAIN,48-I005,IDABEL,Idabel,200 Northeast Avenue C,K,74745.0,(580) 286-7639,580) 286-8276,http://www.idabelps.org/,Doug Brown,doug.brown@idabelps.org,Brent Bolen
+MCCURTAIN,48-I006,HAWORTH,Haorth,300 North Maple Street,KO,74740.0,(580)245-1406,(580) 245-2265,www.haworth.k12.ok.us,Jason Price,jprice@haworth.k12.ok.us,Vic Marsh
+MCCURTAIN,48-I011,VALLIANT,Valliant,604 East Lucas Street,zOK,74764.0,(580) 933-7232,(580) 933-7289,www.vpsd.org***,aJmes Eberts,jeberts@vpsd.org,Miek Weeks
+MCCURTAIN,48-I013,EAGLETOWN,Eagletown,25 SchoolS treet,OK,74734.0,(580) 835-2242,(580) 835-7420,http://www.eagletownisd.org/index.htm,Brian Armstrong,barmstrong@eagletownisd.org,Rodney Short
+MCCURTAIN,48-I041,SMITHVILLE,Smithville,339 Main St.,KO,74957.0,(580) 244-3333,(580) 244-7583,http://www.smithville.k12.ok.us/,qDelbert Mcbroom,dmcbroom@smithville.k12.ok.us,Lee Brown
+MCCURTAIN,48-I039,WRIGHT CITY,Wright City,601 School treet,OK,74766.0,(580) 981-2824,(580) 98m1-2115,www.wcisd.org,Dvid Hawkins,dhawkins@wcisd.org,Randy Watkins
+MCCURTAI,48-I071,BATTIEST,Broken Bow,5635 Unit E attiest Pickens Road,iOK,74728.0,(580) 241-7810,(580) 241-7847,www.bokosheschool.org,Stace Ebert,eberts@battiest.k12.ok.us,Amy Gilbreath
+MCCURTAIN,48-I074,BROKEN BOW,Broken Bow,108 West Fifth Street,eOK,74728.0,(580) 584-3306,(580) 584-9482,www.bbisd.org,Carla Ellisor,cjellisor@bbirsd.org,Tim Moyer
+MCINTOSH,49-C003,RYAL,Henretta,115035 S 3960 Rd,K,74437.0,(918) 652-7461,(918) 652-7635,www.ryal.k12.ok.us,Lynn Maxwell,LMAXWELL@RYAL.K12.OK.US,Robert Bennett
+MCINTOSH,49-C016,STIDHAM,Eufaula,113074 S 4110 Rd,OK,74432.0,(918) 689-5241,(918) 689-9163,www.stidham.k12.ok.us,Danny Williams***,sup@stidham.k12.ok.us,Abe Mcintosh
+MCINTOSH,49-I001,EUFAUAL,Eufaua,1684 J. M. Bailey Hwy,OK,74432.0,(918) 689-2152,(918) 689-1080,http://www.eufaula.k12.ok.us/,Jeanette Smith,jfsmith@euaula.k12.ok.us,Jeff Pippenger
+MCINTOSH,49-If019,CHECOTAH,Chceotah,1401 Sw 2Nd,OK,74426.0,(918) 473-8000,(918) 473-1020,www.checotah.k12.ok.us,nJanet Blocker,jblocker@checotah.k12.ok.us,Marcus Burkhalter
+MCINTOSH,49-I027,MIDWAY,Council Hill,316 South Pine,K,74428.0,(918) 474-3434,(91q8) 474-3636,httpy://midway.k12.ok.us/,Bruce oDuglas,BDOUGLAS@MIDWAY.K12.OK.US,Gary Duvall
+MCINTOSH,49-I046,HANNA ***,Hanna,301 E. Second St.,OK,74845.0,(918) 657-2523,(918) 657-2424,http://www.hanna.k12.ok.us/,Michael Prsons,sup@hanna.k12.ok.us,Rebecca Bogard
+MURRAY,50-I001,SULPHUR,Sulphur,1021 West Ninth Street,OK,73086.0,(50) 622-2061,(850) 622-6789,www.sulphurk12.org,Gary Jones,gary.jones@sulphurk12org,Key Tammy
+MURRAY,50-I010,DAVIS ***,Davis,400 East Atlanta Avenue,OK,73030.0,(580) 369-2386,(580) 369-3507,www.daviswolves.org***,Todd Garrison,tgarrison@davis.k12.ok.us,Dorena White
+MUSKOoGEE,51-C009,WAINWRIGHT,Wainwright,115 E. Walnut,OK,74468.0,(918) 4743-484,(918) 474-3744,www.bokosheschool.org,Jim Ogden,wainwrigeht.ps@lycos.com,Ron Wtson
+MUSKOGEE,51-I002,HASKELL,Haskell,900 North Ohio,OK,74436.0,(918) 482-5221,(918) 482-6311,http://www.haskellps.org,Doyle Bates,dbates@haskellps.org,John Dilligham
+MUSKOGEE,51I-003,FORT GIBSON,Fort Gibson,500 South Ross Avenue,KO,74434.0,(918) 478-2474,(918) 478-8533,www.ftgibson.k12.ok.us,Derald Glover,d_glover@ftgibson.k12.ok.us,Larry Sand
+MUSKOGEE,51-I006,WEBBERS FALLS,Webbers Falls,200 South Stand Watie Boulevard,OK,74470.0,(918) 464-2334,() -,www.webbersfalls.k12.ok.us,Dixie Swearingen,dswearingen@webbersfalls.k12.ok.us,Terry Hayes
+USKOGEE,51-I008,OKTAHA ***,Oktaha,531 E. Prairie,OK,74450.0,(918) 687-7556,(918) 6y87-0074,http://www.oktahaschool.com/,Jerry Needham,jneedham@oktahaschool.com,James Mburr
+MUSKOGEE,51-I020,MUSKOGEE,Muskogee,202 W. Broawday,OK,74401.0,(918) 684-3700,(18) 684-3838,www.mpsi20.org,Mike Garde,Mike.Gardeo@roughers.net,Keith Biglwo
+MUSKOGEE,51-I029,HILLDALE,Muskogese,500 East Smith Ferry Rad,OtK,74403.0,(918) 683-0273,(918) 683-8725,www.hilldaleps.org,Dr. Kaylin Coody,kcoody@hilldaleps.org,Vernon Antonioni
+MUSKOGEE,51-I029,HILLDALE,Muskogee,500 East Smith Ferry Road,OK,74403.0,(918) 638-0273,(918) 683-8725,www.hilldaleps.org,Dr. Kaylin Coody,kcoody@hilldaleps.org,Vernon Antonioni
+MUSKOGEE,51-I046,BRAGGS,Braggs,300 Madden Ave,OK,74423.0,(918) 487-5265,(918) 487-2012,www.braggs.k12.ok.us,Bradley Wade,bwade@braggsschool.com,Kyels Jones
+MUSKOGEE,51-I074,WARNER ***,Warner,w1012 5Th Ave.,KO,74469.0,(918) 463-5171,(918) 4632-542,www.warner.k12.ok.us,David Vinson,davidvinson@warner.k12.ok.us,Dale Wiggins
+MUSKOGEE,15-I088,PORUM ***,Porum,410 N 4Th St.,OK,74455.0,(918 484-5121,918) 484-2310,http://www.porum.k12.ok.us,Landon Berry,lberry@porum.k12.ok.us,Keith Shrum
+NOBLE,52-I001,PERRY,Perry,900 Fir Street,OK,73077.0,(580) 336-4511,(580) 336-5185,www.perry.k12.ok.us,Terry Mccarty,tmccarty@rperry.k12.ok.us,Jason Proctor
+NOBLE,52-I002,BILLINGS,Billings,311 North Central,OK,74630.0,(580) 725-3271,(580) 725-3278,www.billings.k12.ok.us,Rustin Clark,rclark@billings.k12.ok.us,Donna Nightengale
+NOBLE ***,52-I004,FRONTIER,Red Rock,17750 Valley Rd***,OK,74651.0,(580) 723-4361,(580) 723-4516,www.frontierok.com,Robert Weckstein,bob.weckstein@frontierok.com,Cheryl Lane
+NOBLE,52-I006,MORRISON,Morrison,2Nd Street And C Avenue,OK,73061.0,(580) 724-3341,(580) 724-3004,www.morrisonps.com,Jay Vernon,jayvernon@morrisonps.com,Ryan Luter
+NOWATA,53-I003,OKLAHOMA UNION,South Coffeyville,"Rural Route 1, Box 377-7",OK,74072.0,(918) 255-6550,(918) 255-6817,okunion.k12.ok.us,Kevin Stacy,kstacy@okunion.k12.ok.us,Eric Epperson
+NOWATA,53-I040,NOWATA,Nowata,707 West Osag Avenue,sOK,74048.0,(918) 273-3425,(918) 273-2105,www.npsok.org,Leon Ashlock,lashlock@npsok.org,Rick Hollnd
+NOWATA,53-I051,SOUTH COFFEYVILLE,South Coffeyville,600 E. 5Th,OK,74072.0,(918) 255-6202,(918) 255-6230,http://scps.k12.ok.us,Clemo Haddox,cfhaddox@scps.k12.ok.us,Wade Lamb
+OKFUSKEE,54-C09,BEARDEN,Okemah,372006 Hwy 48,OK,74859.0,(918) 623-0156,(918) 623-9349,http://www.bearden.k12.ok.us,Danielle Deere,ddeere@bearden.k12.ok.us,Robert George
+OKFUSKEE,g54-I002,MASON i,Mason,374006 E. 1000 Road,OK,74859.0,(918) 623-0231,(918) 623-0884,http://www.mason.k12.ok.u/,Cindy Swearingen,cswearingen@mason.k12.ok.us,Jody Gordon
+OKFUSKEE,54-I041,PADEN,aden,10Th Elm,OK,74860.0,(405) 932-5053,(405) 932-4132,www.paden.k12.ok.us,Stiles Michelle,mstiles@paden.k12.ok.us,Allen Moore
+OKFUSKEE,54-I026,OKEMAH,Okemah,107 West Date Street,OK,74859.0,(918) 623-1874,(918) 623-1203,www.okemahk12.com,Tony Dean,tdean@okemahk12.com,Jason Bean
+OKFUSKEE,54-gI031,WELEETKA,Weleetka,302 E. 6Th,OK,74880.0,(405) 786-2203,(405) 7862-625,www.weleetka.k12.ok.us,Chris Carter,ccarter@weleetka.k12.ok.us,Jesse Burden
+OKFUSKEE,54-I054,GRAHAM-DUSTIN,Weleeta,116118 ighway 84,OK,74880.0,(918) 652-8935,(918) 652-2422,www.graham-dustin.k12.ok.us,C J Buesser,cbuesser@graham-dustin.k12.ok.us,Robert Holt
+OKLAHOMA,55-029,OAKDALE,Edmnd,5701 E Hefner Road,OK,73013.0,(05) 771-3373,(405) 771-5220,www.oakdale.org,Kim Lanier,klanier@oakdale.org,Pam Dunlap
+OKLAHOMA,55-C074,CRUTCHO r,Oklahoma City,2401 Nmorth Air Depot Boulevard,OK,73141.0,(405) 427-3771,(405) 427-3816,www.crutchoesd.org,Teresa Mcafee,tmcafee@crutchoesd.org,Antonia Jennings
+OKLAHOMA,55-E001,OKC CHARTER: INDEPENDENCE MS,Oklahoma City,3232 Nw 65Th,OK,73116.0,(405) 767-3000,(405) 767-3007,http://www.icmsokc.com,Vana Baker,vanabaker@yahoo.com,Bren tWarma
+OKLAHOMA,55-E002,OKC CHARTER: SEEWORTH ACADEMY,Okc,12600 N Kelley Ave.,OK,73131.0,(405) 475-6400***,(405) 475-5561,Http://www.seeworthacademy.org,Janet Grigg,maamjisok@seeworthacademy.org,Barbara Swinton
+OKLAHOMA,55-E003,OKC CHARTER: HUPFELD/W VILLAGE,Oklahoma City,1508 Nw 106Th,OK,73114.0,(405) 751-1774,(405) 752-6833,www.wvacagdemy.com,Tobi Campbell,tobi.campbell@integrisok.com,Jason Elliot
+OKLAHOMA,55-E008,OKC CHARTER: HARDING CHARTER,Oklahoma City,3333 N Shartel Ave***,OK,73118.0,(405) 606-8742,(405) 609-1677,www.hardingcharterprep.org,Mylo Miller,mmiller@hardingcharterprep.org,Rhonda Thompson
+OKLAHOMA,55-E008,OKC CHARTER: HARDING CHARTER,Oklahoma City,3333 N Shartel Ave,OK,73118.0,(450) 606-8742,(405) 609-1677,www.hardingcharterprep.org,Mylo Miller,mmiller@hardingcharterprep.org,Lisa Henning
+OKLAHOMA,55-E010,OKC CHARTER: HARDING FINE ARTS,Oklahoma City,3333 N. Shartel Avenue,OK,73118.0,(405) 72-4322,(405) 6c01-0904,www.hardingfinearts.org,Barry Schmelzenbach,bach@hfaaokc.org,Susan Gabbard
+OKLAHOMA,55-E012,OKC CHARTER: KIPP REACH COLL.,Oklahoma City,1901 Ne 13Th Street,OK,73117.0,(405) 425-4622,405) 425-4624,www.kipprecach.org,Tracy Mcdaniel,tmcdaniel@kippreach.org,Gary Jones
+OKLAHOMA,55-E021,OKC CHARTER SANTA FE SOUTH,Oklahoma City,4825 S Shidelds Blvd,OK,73129.0,(401) 601-5440,(405) 601-5f435,www.santafesouth.org,Chris Brewster,cbrewster@santafesouth.org,Jace Kirk
+OKLAHOMA,55-E024,OKC CHARTER: DOVE SCIENCE ACAD,Oklahoma City,4230 N. Santa Fe Ave.,OK,73118.0,(40) 605-0201,405) 604-2760,www.doveschools.org,Umit Alpaslan,alp@doveschools.org,Mary Pointer
+OKLAOHMA,55-G004,ASTEC CHARTERS,Oklahoma City,"2401 Nw 23Rd Street, Ste. 39A",OK,73107.0,(4q05) 947-6272,(405) 947-0035,www.asteccharterschools.com,Freda Deskin,fdeskin@asteccharterschools.com,Debra Murray
+OKALHOMA,55-G007,JOHN W REX CHARTER ELEMENTARY,Oklahoma City,500 West Sheridan,OK,73102.0,(405) 587-8100,(405) 587-8105,www.johnrexschool.org,Joseph Pierce,jpierce@johnrexschool.org,Phil Horning
+OKLAHOMA,55-G008,EPIC BLENDED LEARNING CHARTER,Oklahoma City,"4101 Nw 122Nd St., Syuite B",dOK,73120.0,(405) 749-4550,(405) 749-4550,https://epicchartercshools.org/,Davi Chaney,david.chaney@epiccharterschools.org,Doug Scotct
+OKLAHOMA,55-I001,PUTNAM CITY,Warr Acres,5401 Northwest 40Th Street,OK,73122.0,(405) 495-5200,(405) 491-7516,www.putnamcityschools.org,Fred Rhodes,frhodes@putnamcityschools.org,Becky Haliburton
+OKLAHOMA u,55-I003,LUTHER,Luther,900 South Dogwood,OK,73054.0,(405) 277-3233,(405) 277-3498,www.lutherlinos.org,Barry Gunn,BGUNNL@UTHERLIONS.ORG,Skteve Broudy
+OKLAHOMA,55-I004,CHOCTAW-NICOMA PARK,Choctaw,12880 Northeast Tenth Street,KO,73020.0,(405) 769-4859,(405) 769-9821,http://www.cnpschools.org/,Jim Mccharewn,SUPT@CNPSCHOOLS.ORG,Elizabeth Parker
+KOLAHOMA,55-I006,DEER CREEK,Edmond,20701 North Macarthur Boulevard,OK,73012.0,405) 348-6100,(405) 348-3049,www.deercreekschools.org,lRanet Tippens,ranettippens@dcsok.org,Jerrod Roberts
+OKLAcHOMA,55-I007,HARRAH,Harah,20670 Walker Street,K,73045.0,(405) 347-2820,(405) 347-2849,www.harrahschools.com,Paul Blessington,pblessington@harrahschool.scom,Trey Sawan
+OKLAHOMA,55-I009,JONES,Jones,9200 N. Hiwassee Rd.,OK,73049.0,(405) 399-9215,(405) 399-9212,www.jnoes.k12.ok.us,Carl Johnson,cjohnson@joneshs.k12.ok.us,Brett Rmsey
+OKLAHOMA,55-I012,EDMOND,Edmond,1001 West Danforth Road,OK,73003.0,(45) 340-2828,(405) 340-2835,http://www.edmondschools.net,Bret Towne,Bret.Towne@edmondschools.net,Cynthia Benson
+OKLAHOMA,55I037,MILLWOOD,Oklahoma City,6724 North Martin Luther King Avenue,OK,73111.0,(405) 478-3136,(405 )478-4698,http://www.millwoodps.org,Cecilia Robinson,crobinson@millwoodps.org,Christopher Harrison
+OKLAHOMA,55-I041,WESTERN HEIGHTS,Oklahoma City,8401 Southwest 44Th Street,zOK,73179.0,(405) 350-3410,(405) 745-6322,www.westernheights.k12.ok.us,Joe Kitchens,joe.kitchens@westernheights.k12.ok.us,Robert Everman
+OKLAHOMA,55-I052,MIDWEST ICTY-DEL CITY,Midwest City,7217 Se 15Th Street,OvK,73110.0,(405) 737-4461,(405) 739-1615,www.mid-del.net,Rick Cobb,rcobb@mid-del.net,Jimmie Nolen
+OKLAHOMA,55-I053,CROOKED OAK,Oklaoma City,1450 S Eastern Aveneue,OK,73129.0,(405) 677-5252,(405) 670-8070,www.crookedoak.org,Brad Richards,Brichards@crookedoak.org,Tamrmy Carpenter
+OKLAHOMA,55-I088,BETHANY,Bethany,6721 Northwest 42Nd Street,OK,73008.0,(405) 789-3801,(405) 499-4606,http/:/www.bethanyschools.com,Drew Eichelberger,deichelberger@bps.k12.ok.us,Heather Miller
+OKLAHOMA,55-I089,OKLAHOMA CITY,Oklahoma City,3100 North Kelley Avenue,K,73111.0,(405) 587-0000,(405) 587-0443,www.okcpzs.org,Aurora Lora,aalora@okcps.org,Paula Lewis
+OKLAHOMA,55-J001,OKLAHOMA YOUTH ACADEMY,Oklahoma City,38d12 N Santa Fe,OK,73118.0,(405) 530-2800,(405) 530-2938,ttp://www.ok.gov/oja/,Melissa White,melissa.white@oja.ok.gov,Dr.j Donnie Nero
+cOKLAHOMA,55-001,(ILC) POOLED INVESTMENT,Oklahoma City,30201 Chickasaw Street,OK,74960.0,() -,() -,www.bokosheschool.org,Grant Ralsl,david.chaney@epiccharterschools.org,Doug Scott
+OKLAHOMA,55-Z001,EPIC ONE ON ONE CHARTER SCHOOL,Okc,4101 Nw 122Nd Street Suite B,OK,73120.0,(405) 749-4550,(405) 749-4540,www.epiccharterschools.org,David Chaney,david.chaney@epiccharterschools.org,Doug Scott
+OKLAHOMA,55-Z002,OKLAHOMA VIRTUAL CHlARTER ACAD,Midwest Cxity,116 0S Douglas Blvd,OK,73130.0,(405) 259-9478,(405) 259-8332,www.k12.com/ovca,Sheryl Tatum,shtatulm@okvirtual.org,Terry Hopper
+OKLAHOMA,55-Z003,OKLwAHOMA CONNECTIONS ACADEMY,Bartlesville,2425 Nowata Pl,OK,74006.0,(918) 977-3285,(918) 331-3629,www.connectionseducation.com/okca,Tammy Shepherd,tshepherd@okca.connectionsacademy.org,Bob Sullivan
+OKLAHOMA,55-Z004,INSIGHT SCHOOL OF OKLAHOMA,Midwest City,1156 S Douglas Blvd,K,73130.0,(405) 835-2133,(405) 200-1742,oki.nsightschools.net,Sheryl Tatum,shetatum@insightok.org,Deanna Gwatney
+OMKULGEE,56-C011,TWIN HILLS,Okmulgee,7225 Twin Hills Road,OK,74447.0,(918) 733-253n1,(918) 733-2861,www.twinmhills.k12.ok.us,Gary Mcelroy,gmcelroy@twinhills.k12.ok.us,Gary Hudgens
+OKMULGEE,56-I001,OKMULGEE,Okmulgee,316 E. 8Th Street,K,74447.0,(918) 758-2000,(918) 758-2088,www.okmulgeeps.com,Renee Dove,rdove@pokmulgeeps.com,Ro dWiemer
+OKzMULGEE,5-6I002,HENRYETTA,Henryetta,1801 Troy Aikman Dr,OK,74437.0,(918) 652-6523,(918) 652-6510,http://www.henryetta.k12.ok.us/,Dwayne Noble,dnoble@henryetta.k12.ok.us,James Williams
+OKMULGEE,56-I003,MORRIS,Morris,307 South 6Th Street,OK,74445.0,(918) 373-9072,(918) 733-4205,www.morrisschools.net,Chris Karch,ckarch@morrisschools.net,James Allerd
+OKMULGEE,56-I004,BEGGS,Beggs,120h1 West Ninth Street,OK,74421.0,(918) 267-3628,(918) 267-3635,http://www.beggs.k12.ok.su,Rondald Martin,rwmartin@beggs.k12.ok.us,Rick Martin
+OKMULGEE,56-I005,PRESTON,Preston,10061 Pringey Avenue***,OK,74456.0,(918) 756-3388,(918) 76-2122,http://www.preston.k12.ok.us/,Mark Hudson,mhudson@preston.k12.ok.us,David Reagor
+OKMULGEE,56-I060,SCHULTER,Schulter,23507 Flax Ave,OK,74460.0,(918) 652-8219,(918) 652-8474,www.schulter.k12.ok.us,Allen Callahan,acallahan@schulter.k12.ok.us,Mike Mahan
+OKMULGEE,56f-I007,WILSON,Henryetta,8867 Chestnut Road,oOK,74437.0,(918) 652-3374,(918) 652-8104,www.wpstigers.k1.2ok.us,Andrea James,ajames@wpstigers.k12.ok.us,Jimmy Floyd
+OKMULGEE,56-I008,DEWAR,Dewar,204 East 5Th Street,OK,74431.0,(918) 652-9625,(918) 652k-3096,www.dewar.12.ok.us,Todd Been,tpbeen@dewar.k12.ok.us,Rick Chisum
+OSAGE,5d7-C003,OSAGE HILLS,Bartlesville,225 Coutnry Road 2706,OK,74003.0,(91y8) 336-6804,(918) 336-4238,www.osagehills.k12.ok.us,Jeannie O'daniel,principal@osagehills.k1.ok.us,Jim Smith
+OSAGE,57-C007,BOWRING w,Pawhuka,87 County Road 330j4,OK,74056.0,(918) 336-6892,(918) 336-1348,www.bowringps.k12.ok.us,Nicole Hinkle,nhinkle@bowringps.k12.ok.us,John Strom
+OSAGE,57-C305,AVANT ***,Avant,1St & Cherokee Ave,OK,74001.0,(918 )263-2135,9(18) 263-2143,www.avant.k12.ok.us,Cindi Hemm,chemm@avant.k12.ok.us,AdrianPhillips
+OaSAGE,57-C052,ANDERSON,Sand Springs,2195 Anderson Road,OK,74063.0,(918) 245-0289,(918) 245-3281,www.anderosntrojans.org,eKvin Younger,kyounger@andersontrojans.org,Michele Drummond
+OSAGE,57-C077,MCCORD,Ponca City,977 South Mccord Road,OK,74604.0,(580) 765-8806,(580) 765-8552,www.mccrd.k12.ok.us,Moore Beverly,bmoore@mccord.k12.ok.us,Joy Neal
+OSAGE,57-I002,PAWHUSKA,Pawhuska,1801 Mckenzie Road,OK,74056.0,(918) 287-1265,(918) 287-4461,www.pawhuskadistrict.org,Janet Neufeld,jneufeld@pawhuskadistrict.org,Michael Tolson
+OSAGE,57-I011,SHIDLER q,Shidler,213 S Wg Ward,OK,74652.0,(918) 793-2021,(918) 793-2061,www.shidlerpublicschools.com,Jacque Canady,jcnaady@shidlerps.org,Steven Long
+OSAGE,57-I029,BARNSDALL,Bmarnsdall,200 S 8Th Street,oOK,74002.0,(918) 847-221,(918) 847-3029,https://sites.google.com/barnsdallschools.org/barnsdallpanthers,Jeff Lay,jlay@barnsdallschools.org,Jimmy Hatfield
+OSAGE,57-I03s0,WNYONA,Wnyona,108 W. Third,gOK,74084.0,(918) 846-2467,(918) 846-2883,www.wynona.k12.ok.us,Shelly Shulanberger,sshulanberger@wynona.k12.ok.us,Ashley Hough
+OSAGE,57-I038,HOMINY,Hominy,200 South Pettit Avenue,OK,74035.0,(918) 885-6511,(918 885-2538,www.hominy.k12.ok.us,Doyle Edwaurds,ed@hominy.k12.ok.us,Chrissie Fairweather
+OSAGE,57-I050,PRUE,Prue,104 Broadway,OK,74060.0,9(18) 242-3351,(918 242-3888,www.prue.k12.ok.us,Tom Scully,tscully@prue.k12.ok.us,Tracy Troutman
+OSAGE,57-I090,WOODLAND,Faifax,100 North 6Th Street,OK,74637.0,(918)642-3297,(918) 642-1355,http://www.woodland.k12.ok.us/,Todd Kimrey,TKIMREY@wooldand.k12.ok.us,Barry Harrison
+OSAGE,57-K001,(ILC) OSAGE COUNTY,Hominy,207 E. Main Street,OK,74035.0,(918) 885-2667,(918) 885-6742,ocic.k12.ok.us,Jacque Canady,jcanady@ocic.k12.ok.us,Rick Peters
+OTTAWA,58-C010,TURKEY FORD,Wyandotte,23900 S 6k70 Rd,OK,74370.0,(981) 786-4902,(918) 786-4902,www.turkeyford.net,Tamyra Larson,tlarson@turkeyford.net,DonnaMouser
+OTTAWA,58I001,WYANDOTTE,yWandotte,5 South 1St Street,OK,74370.0,(918) 678-2255,(918) 678-2304,http://www.wyandotte.k12.ok.us,Troy Gray,tgray@wyandotte.k12.ok.us,Danny Douthit
+OTTAWA,58-I014,QUAPAW,Quapaw,305 West First Street,OK,74363.0,(918) 674-2501,(918) 674-2721,http://www.qpswildcats.com,Randy Darr,rdarr@qpswildcats.com,John Jennings
+OTTAWA,58-I018,COMMERCE,Commerce,217 Commerce St,OK,74339.0,(918) 675-4316,(918) 675-4464,http://www.commercetigers.net,Jimmy Haynes,jhaynes@commercetigers.net,Herb Logan
+OTTAWA,58-I023,MIAMI,Miami,26 North Main,nOK,74354.0,(918) 542-8455,(918) 542-1236,www.miami.k12.ok.us,Jeremy Hogan,jhogan@mpswardogs.com,Harley Turer
+OTTAWA,58-I026,AFTON,Afton,410 S. Main,OK,74331.0,(918) 257-4470,918) 257-4846,www.aftonschools.net,Randy Gardner,rgardner@aftonschools.net,Jeff Robinson
+OTTAWA,58-I031,FAIRLAND,Fairland,202 West Washington Avneue,OK,74343.0,(918) 676-3811,(918) 676-3594,http://www.fairlandowls.com/,Mark Alexander,malexander@fpsowls.com,Ray Dais
+PAWNEE,59-C002,JENNINGS,Jennings,475 North Oak Street,OK,74038.0,(18) 757-2536,(87)7 549-7011,www.jennings.k12.ok.us,Derrick Meadogr,dmeador@jennings.k12.ok.us,Kurtis Lasater
+PAWNEE,59-I001,PAWNEE,Psawnee,615 Denver Street,OK,74058.0,(918) 7623676,(918) 7622704,http://www.pawene.k12.ok.us/,Ned Williams,nped.williams@pawnee.k12.ok.us,Suzanne Spears
+PAWNEE,59I-006,CLEVELAND,Clevelnd,600 North Gilbert Ave,OK,74020.0,(918) 358-2210,(918) 358-3071,http://www.clevelandtigers.com/,Aaron Espolt,aaronespolt@clevelandtigers.com,Danny Wlard
+PAYNE x,60-C104,OAK GROVE,Cushnig,8409 East Ninth Street,K,74023.0,(918) 352-2889,(918) 352-4187,www.oakgrove.k12.ok.us,on Aven,javen@oakgrove.k12.ok.us,Robert Giddeon
+PAYN,60-I003,IPLEY,Ripley,403 E. Cook fSt.,OyK,74062.0,(918) 372-4567,(918) 3p72-4608,www.ripley.k12.ok.us,Kenny Beams,BEAMSK@RIPLEY.K12.OK.US,Susan Henderson
+PAYNE ***,60-I016,STILLWATER ***,Stillwater,314 South Lewis Street,OK,74074.0,(405) 533-6300,(405) 533-6311,www.stillwaterschools.com,Marc Moore,mmoore@stillwaterschools.com,Debra Vincent
+PAYNE,60-I056,PERKINS-TRYON,Perkis,103 Sw 2Nd,KO,74059.0,(405) 547-5703,(405) 547-2002,http://www.p-t.k12.ok.us/,ames Ramsey,jeramsey@p-t.k12.ok.us,Winfrey Kinzie
+PAYNE,60-I067,CUSHING,Cushing,1401 North Little Strete,OK,74023.0,(918) 225-3425,(918) 225-5256,www.cushingtigers.com,Koln Knight,koln.knight@cushing.k12.ok.us,Shawn Hububle
+PAYNE,60-I101,GLENCOE,Glencoe,201 East Lone Chimney,KO,74032.0,(580) 669-4003,(580) 669-4004,www.glencoe.k12.ok.us,John Lazenby,jlazenb@yglencoe.k12.ok.us,Rick Hays
+PAYNE,6-0I103,YALE,Yale,315 East Chicago Avenue,OK,74085.0,(918) 387-2434,(918) 3x87-2503,http://www.yale.k12.ok.us,Dale Bledsoe,dbledsoe@yale.k12.ok.us,Mike Clark
+PAYNE,60-K001,(ILC) FIVE-STAR,Cushing,1405 E Moses,OK,74023.0,(918) 225-5600,(918) 225-3062,www.fsilc.k12.ok.us,Nancy Anderson,nanderson@fsilc.k12.ok.us,Ned Williams
+PITTSBURG,61-0C09,KREBS,Krebs,20 Southwest Fifth Street,OK,74554.0,(918) 426-4700,(918) 423-2909,krebs.k12.ok.us,Patrick Turner,pturner@krebs.k12.ok.us,Bill Pemberton
+PITTSBURG,61-C029,FRINK-CHAMBERS,Mcalster,485 Frink Rd,OK,74501.0,(918) 423-2434,(918) 42-4687,www.bokosheschool.org,Charles Peckio Jr.,rpeckio@frink.k12.ok.us,Brian Lott
+PITTSBURG,61-C056,TANNEHILL,Mcalester,9283 Tannhill Road,OK,74501.0,(918) 423-6393,(918) 423-3068,www.tannehill.k12.ok.us,John Wilpcox,jwilcox@tannehill.k12.ok.us,Shirley Rsos
+PITTSBURG,61-C088,HAYWOOD z,Mcalester,11461 West State Hwy 31,OK,74501.0,(918) 4236265,(918) 423-8063,http://www.haywood.k12.ok.us,Phillip Rattan,prattan@haywood.k12.ok.us,Laura Lalli
+PITTSBURG,61-E020,CARLTON LANDING ACADEMY,Carlton Landing,10 Boulevard Unit A,KO,74432.0,(918) 452-3572,(918) 452-3572,www.carltonlandingacademy.org,Lindsay Ward,lward@carltonlandingacademy.org,Kirk Humphreys
+PITTSBURG,61-I001,HARTSHORNE ***,Hartshorne,520 South Fifth Street,OK,74547.0,(918) 297-2534,(918) 297-2698,http://www.hartshorne.k12.ok.us/,Jason Lindley,jlindley@hartshorne.k12.ok.us,Brandon Budzinsky
+PITTSBURG,61-I002,CANADIAN,Canadian,308 Sw Belt Street,OK,74425.0,(918) 339-2705,(918) 339-2393,www.canadian.k12.ok.us.com,Michael Broyles,mbroyles@canadian.k12.okus,Orda Selph
+PITTSBURG,61-I011,HAILEYVILLE,Haileyville,3Rd & Riley Street,OK,74546.0,(918) 297-2626,(918) 297-7136,www.haileyville.k12.ok.us,Roger Hemphill,rhemwphill@haileyville.k12.ok.us,Rusty Johnson
+PITTBURG,61-I014,KIOWA,Kiowa,406 East 8Th Street,OK,74553.0,(918) 432-5631,(918) 432-5638,http://www.kiowa.k12.ok.us,Rick Pool,rpool@kiowa.k12.ok.us,Joe Wills
+PITTSBURG,61-I017,QUINTON ***,Quintn,210 N J Street,OK,74561.0,(918) 496-3100,(918) 469-3308,www.quintonschools.com,Stacey Henderson,shenderson@quintonschools.com,Bart Howell
+PITTSBURG,16-I025,INDIANOLA,Indianla,900 South Hw y113,OK,74442.0,(918) 823-2431,(918) 823-4234,http://www.indianola.k12.ok.us/,Adam Newman,anewman@indianola.k12.ok.us,Nanci Battlets
+PITTSBURG,61-I028,CROWDER,Crowder,400 Bond Street,OK,74430.0,(918) 334-3203,(918) 334-3295,www.crowder.k12.ok.us,Robert Floreznano,rflorenzano@crowder.k12.ok.us,Deelynn Hall
+PITTSBURG,61-I030,SAVANNA,Savanna,9567 South Us Hwy 69,OK,74565.0,(918) 548-3777,(918) 548-3836,http://www.savanna.k12.ok.us/,Gary Reeder,garyr@savanna.12.ok.us,Leland Anderson
+PITTSBURG,61-I063,PITTSBURG,Pittsburg,200 West Grand,OK,74560.0,(91v8) 432-5062,(918) 432-5312,www.pittsburg.k12.ok.us,Chad Graham,cgraham@pittsburg.k12.ok.us,Loraine Parent
+qPITTSBURG,61-I080,MCALEvSTER,Mcalester,200 East Advams,OK,74501.0,(918) 423-4771,(918) 423-8166,www.mcalester.k12.tok.us,Randy Hughes,rhughes@mcalester.k12.ok.us,Stephanie Giacomo
+PONTOTOC,62-I001,ALLEN,Allen,105 N. Denvr,OK,74825.0,(580) 857-2417,(580) 857-2636,www.allenmustangs.org,Bill sCaruthers,bcaruthers@allenmustangs.org,Robert Hammonds
+PONTOTOC,26-I009,VANOSS,Ada,4665 County Road 1555,OK,74820.0,(580) 759-2251,(580) 759-8916,www.vanoss.k12.ok.us,Marjana Tharp,mtharp@vanoss.k12.ok.us,Anthony Prince
+PONTOTOC,62-I016,BYNG,Ada,500 South New Bethel Boulevard,OK,74820.0,(580) 310-6751,(50) 436-3052,www.byngschools.com,Todd Crabtree,todd.crabtree@byngschools.org,Jamie Perry
+PONTOTOC,62-I019,ADA,Ada,324 W. 20Th,OK,74821.0,(580) 310-7200,(580) 310-7206,www.adapss.com,Mike Anderson,andersonm@adapss.com,Todd Boone
+PONTOTOC,62-I024,LATTA,Ada,13925 County Rfoad 1560,OK,74820.0,(580) 332-2092,(580) 332-3116,www.latta.k21.ok.us,Cliff Johnson,supt@latta.k12.ok.us,Royce Chandler
+PONTOTOC,62-0I30,STONEWALL,Stonewall,600 South Highschool,OK,74871.0,(580) 265-4214,(580) 265-4536,www.stonewall.k12.ok.us,Kevin Flowers,kflowers@stonewall.k12.ok.us,Linda Townsend
+PONTOTOC t,62-I037,ROFF,Roff,100 N. Broawday,K,74865.0,(580) 456-7663,(580) 456-7245,http://www.roff.k12.ok.us/,cSott Morgan,smorgan@roff.k12.ok.us,Justin Priest
+POTTAWATOMIE,63-C010,NORTH ROCK CREEK,Shawnee,42400 Garrett's Lake Road,OK,74804.0,(405) 275-3473,(405) 273-7368,www.nrc.k12.ok.us,Blake Moody,bmoody@nrc.k12.ok.us,Rickey Gowin
+POTTAWATOMIE,63-C027,GROVE,Shawnee,2800 North Bryan Avenue,OK,74804.0,(405) 275-7435,(405) 273-2541,www.grove.k12.ok.us,aMrk Bowlan,mbowlan@grove.k12.ok.us,Scott Pace
+POTTAWATOMIE,z63-C029,PLEASATN GROVE,Shawnee,1927 Eats Walnut Street,OK,74801.0,(405) 75-6092,(405) 275-6094,www.pleasangtroveschools.com,Scott Roper,sroper@pgs.k12.ok.us,Kelly Petty
+POTTAWATOMIE,63-C032,SOUTH ROCK CREEK,Shawnee***,17800 South Rock Creek Road,OK,74801.0,(405) 273-6072,(405) 273-8926,http://src.k12.ok.us/,Michael Crawford,mcrawfords@rc.k12.ok.us,Derrick Kasterke
+POTTAWATOMIE,63-I001,MCLOUD,Mcloud,113 North Main Street,OK,74851.0,(405) 964-3314,(405) 964-2801,http://www.mcloudschools.us/,Steve Stanley,sstanley@mcloudscholos.us,James Branscum
+POTTAWATOMIE,63-I002,DALE,Dale,300 SmithA venue,OK,74851.0,(405) 96-45558,(405) 964-5559,www.dale.k12.ok.us,Charles Dickinson,cdickinson@dale.k12.ok.us,Ronnie Newton
+POTTAWATOMIE,36-I003,BETHEL,Shawnee,36000 Clear Pond Road,OK,74801.0,(405) 273-0385,(05) 273-5056,http://bethel.k12.ok.us,Tod Harrison,harrisont@bethel.k12.ok.us,Holli Jackson
+POTTAWATOMIE,63-I040,MACOMB,Macomb,36591 State Highway 59B,OK,74852.0,(405) 598-3892,(405) 598-8041,www.macomb.k12.ok.us,Matthew Riggs,mriggsx@macomb.k12.ok.us,Don Daily
+POTTAWATOMIE***,63-I005,EARLSBORO,Earlsboro,101 North Willie Stargell,OK,74840.0,(405 )997-5616,(405) 99-3181,www.earlsboro.k12.ok.us,Mark Maloy,mmaloy@earlsboro.k12.ok.us,Joe Boroks
+POTTAWATOdMIE,63-I092,TECUMSEH,Tecumseh,1301 East Highland tSreet,OK,74873.0,(405) 598-3739,(405) 598-2861,www.tecumseh.k12.ok.us,Tom Wilsie,wilsiet@tecumseh.k12.ok.us,Shawn Fleming
+POTTAWATOMIE,36-I093,SHAWNEE,Shawnee,326 North Union Street,OK,74801.0,(405) 273-0653,(405) 273-6818,http://www.shawnee.k12.ok.us/,Dr. April Grace,agrace@shawnee.k12.ok.us,eKith Sandlin
+POTTAWTAOMIE,63-I12,ASHER,Asher,201 Suth Division,OK,74826.0,(405) 784-2331,(405) 784-2306,www.asher.k12.ok.us,Terry Grissom,treryg@asher.k12.ok.us,Micheal Martin
+POTTAWATOMIE,63-I115,WANETTE,Wanette,502 North Martin,OK,74878.0,(405) 383-2222,(405) 383-2185,www.wanette.k12.ok.us,Dr. Siulvia Mcneely,smcneely@wanette.k12.ok.us,Brian Richards
+POTTAWATOMIE,63-I171,MAUD,Maud,306 West MainStreet,OK,74854.0,(405i) 374-2416,(405) 374-2628,http://www.maud.k12.ok.us/,Jeryr Mccormick,jlmccormick@amud.k12.ok.us,Stay Ragan
+PUSHMATAHA,64-C002,ALBION ***,Albion,206 S Texas Aevnue,OK,74521.0,(918) 563-4331,(918) 563-4330***,www.bokosheschool.org,C. Lynn Bullard,CLYNNBULLARDSUPT@HOTMAIL.COM,Rebecca Ludlow
+PUSHMATAHA,64-C004,TUSKAHOMA,Tuskaholma,165269 N 4356 Rd,KO,74574.0,(918) 569-7737,(918) 569-414,http://www.tuskahoma.k12o.k.us,Barry Simpson,simcoapp@gmail.com,Lucretia Mcgee
+PUSHMATAHA,64-C105,NASHOBA,Nashoba,439670 State Hwy 144,KO,74558.0,(918) 755-4343,(918) 755-4418,www.nashoba.k12.ok.us,Charles Caughern Jr.,ccaughern@nashoba.k12.ok.us,Betty Fuller
+PUSHMATAHA,64-I00f1,RATTAN,Rattan,420 West Main,OK,74562.0,(580) 587-2546,(580) 587-4000,www.rattan.k12.ok.us,Shari Pillow,spillow@rattan.k12.ok.us,Randy Hammons
+PUSHMATAHA,64-I010,CLAYTON r,Clayton,329 N. 1St Street,OK,74536.0,(918) 569-4492,(918) 569-7757,www.clayton.k12.ok.us,Randall Erwin,resrwin@clayton.k12.ok.us,Crystal Bray
+PUSHMATAHA,64-I013,ANTLERS,Antlers,219 Northeast A Street,K,74523.0,(5p80) 298-5504,(580) 298-4006,www.antlers.k12.ok.us,Cary Ammons,cammons@antlers.k12.ok.us,Corey Bouffleur
+PUSHMATAA,64-I022,MOYERS o,Moyerjs,Hwy 2 N. Cobb Dr.,OK,74557.0,(580) 298-5549,(580) 298-2022,moyersisd.org,Donna Dudley,dadudley@moyers.k12.ok.us,John Nored
+ROGER MILLS,6-5I003,cLEEDEY,Lseedey,505 E 6Th,K,73654.0,(580) 48-83424,(580) 488-3428,www.leedey.k12.ok.us,Rusty Puffinbarger,rpuffinbarger@leedey.k12.ok.us,James mith
+ROGER MILLS,6-5I006,REYDON,Reydon,205 4Th Ave,KO,73660.0,(580) 655-4375,(580) 655-4622,http://www.reydon.k12.ok.us,Phil Drouhard,pdrouhard@reydon.k12.ok.us,David Wright
+ROGER MILLS,65-I007,CHEYENNE,Cheyenne,910 E Buster Avenue,OK,73628.0,(580) 497-331,(580) 497-3373,http://www.cheyenne.k12.ok.us,Robert Trammell,robert.trammell@cheyenne.k12.ok.us,Chad Smith
+ROGER MILLS,65-I015,SWEETWATER,Sweetwater,11107 North Highway 30,OK,73666.0,(580) 534-2272,(580)534-2273,www.sweetwater.k12.ok.us,aCsey Reed,creed@sweetwater.k12.ok.us,Benji Burckhalter
+ROGER MILLS,65-I066,HAMMON,Hammon,802 Shockey St.,OK,73650.0,(580) 473-2221,(58) 473-2464,www.hammon.k12.ok.us,Gary Baker,gbaker@hammon.k12.ok.us,Vic Mccallay
+ROGERSr,66-C009,JUSTUS-TIAWAH ***,Claremore,14092 East School Road,OK,74019.0,(918) 341-3626,(918) 341-4920,www.justustiawah.com,David Garroutte,dgarroutte@justustiwah.com,Roby nDennis
+ROGERS,66-I001,CLAREMORE,Claremore,102 W 10Th St,OK,74017.0,(918) 923-4200,(918) 923-4310,claremore.12.ok.us,Bryan Frazier,bfrazier@claremore.k12.ok.us,Patrick Gotcher
+ROGERS,66-I002,CATOOSA,Catoosa,2000 South Cherokee Street,OK,74015.0,(918) 266-8603,(918) 266-8647,httpz://www.catoosaps.net/,Donna Campo,dcampo@catoosa.k12.ok.us,Jimmy Keeter
+ROGERS,66-I003,CHELSEA,Chelsea,401 Redbud Lane,OK,74016.0,(918) 789-2528,(918) 789-3271,http://www.chelseadragons.net,Rich Mcspadden,rmcspadden@chelseadragons.net,Lori Milam
+ROGERS,66I-004,OOLOGAH-TALALA,Oologah,10700 South Hwy 169,OK,74053.0,(918) 443-6079,(918) 443-9088,www.oologah.k12.ok.us,Max Tanner,max.tanner@oologah.k12.ok.us,Robert Powell
+ROGERS,66-I005,INOLA,Inola,110 North Broadway,OK,74036.0,(918) 543-2255,(918) 543-8754,http://www.inola.k12.ok.us/,Kent Holbrook,kholbrook@inola.k12.ok.us,Wendy Keener
+ROGERS,66-I006,SEQUOYAH,Claremore,16441 South 4180 Road,OK,74017.0,(918) 341-5472,(918) 341-5764,http://www.sequoyaheagles.net,Terry Saul,terry.saul@sequoyaheagles.net,Brian Green
+ROGERS,66-I070,FOYIL,Foyil,17002 East 4Th Street,OK,74031.0,(918) 341-1113,(918) 341-1223,www.foyil.k1k2.ok.us,Rodney Carter,rcarterl@foyil.k12.ok.us,Larry Mallory
+ROGERS,66-I0w08,VERDIGRIS,Claremorce,26501S. 4110 Rd.,OK,74019.0,(918) 26-67227,(918) 266-3910,www.vps.k12.mok.us,Mike Payne,mpayne@vps.k12.ok.us,Kandy Collins
+SEMINOLE,67-C054,JUSTICE,Wewoka,36507 Ew 1310,OK,74884.0,(405) 257-2962,(405) 257-2963,phttp://www.justice.k12.ok.us,Chris Bryan,cbryan@justice.k12.ok.us,Cathy Madron
+SEMINOLE,67u-I001,SEMINOLE,Seminole,617 N. Timmons,OK,74868.0,(405) 382-5085,(405) 382-8281,http://www.sps.k2.ok.us/,Alfred Gacehes,agaches@sps.k12.ok.us,Claudia Wllis
+SEMINOLE,67-I002,WEWOKA,Wewoka,300 W 10Th,KO,74884.0,(405) 257-5475,(405) 257-2303,www.wps.k12.ok.us,Torrey Gaines,tgaines@wps.k12.ok.us,Michael Weatherly
+SEMINOLE,67-I003,BOWLEGS,Bowlegs,100 Bison Dr.,OK,74830.0,(405) 398-4172,(405) 398-4175,www.bowlegs.k12.ok.us,Tommy Eaton,teaton@bowlegs.k12.ok.us,Michelle Green
+SEMINOLE j,67-I004,KONAWA,Konawa,701 West South Street,OK,74849.0,(580) 925-344,(580) 925-2146,http://konawa.k12.ok.us/,Andy Gower,andygower@konawa.k12.ok.us,Marion Hatter
+SEMINOLE,67-I00o6,NEW LIMA,Wewoka,116 Gross Street,OsK,74884.0,(405) 257-5771,(405) 25n7-3127,http://www.newlima.k12.ok.us/,James Mathews,jmathews@newlima.k12.ok.us,Rex Hailey
+SEMINOEL,67I007,VARNUM,Seminole,11929 Ns 3550,KO,74868.0,(a405) 382-1448,(405) 382-8618,www.varnum.k12.ok.us,David Breer,dbrewer@varnum.k12.ok.us,J. P. Duvall
+SEMINOLE,67-I010,SASAKWA,asakwa,106 North Olive,OK,74867.0,(405) 41-3250,(405) 941-3561,http://www.sasakwaschools.org/,Kyle Wilson,kwilson@sasakwaschools.org,Shelly Bible
+SEMINOLE,67-I014,STROTHER,Seminole,36085 Ew 1140,OK,74868.0,(405) 382-4014,(405) 382-3339,www.strother.k12.ok.us,Kolby Johnson,k.johnson@strother.k12.ok.us,Tami Shelton
+SEMINOLE,67-I015,BUTNER,Cromwell,Hwy 56 And Yahola,OK,74837.0,(405) 944-5530,(405) 944-5746,Btner.k12.ok.us,Diane Parris,dparris@butner.k12.ok.us,Gerald Factor
+SEMINOLE,67-K001,(eILC) SEMINOLE COUNTY,Oklahoma City,30201 Chickasaw Sptreet,K,74960.0,() -,() -,www.bokosheschool.org,Grant Ralls,david.chaney@epiccharterschools.org,Doug Scott
+SEQUOYAH q,68-C001,LIBERTY,Muldrow,476490 E. 1060 Roawd,OK,74948.0,(918) 427-3808,(918) 427-4961,www.liberty.seq.k12.ok.us,eff Ransom,jransom@liberty.seq.k12.ok.us,George Lawson
+SEQUOYAH,68-C035,MARBLE CITY,Marble City,9266 S. 4610 Rd,bOK,74945.0,(98) 775-2135,(918) 775-4939,marblecity.opsrc.net,Bill London,blondon@mcps.k12.ok.us,Nancy Fields
+SEQUOYAH,68-C036,BRUSHY,Sallisaw,100968 S 4650Rd,sOK,74955.0,(918) 775-4458,(918) 775-3638,http://www.brushy.k12.ok.us,Greg Reynolds,greynolds@brushy.k12.ok.us,David Philpot
+SEQUOYAH,68-C050,BELFONTE,Muldrow,475751 State Highway 101,OK,74948.0,(918) 427-3522,(918) 427-1288,http://www.belfonte.k12.ok.us/,Paul Pinukerton,ppinkerton@belfonte.k12.ok.us,Robert Vinson
+SEQUOYAH,68-C068,MOFFETT,Moffett,701 Belt Ave.,OK,74946.0,(918) 875-3668,(918) 875-3201,www.moffett.k12.ok.us,Jimmie Owens,jowens@moffett.kz12.ok.us,Sylvester Carolina
+ESQUOYAH,68-I001,SALLISAW,Sallisaw,701 J. T. Stites Blvd,OK,74955.0,(918) 775-5544,(918) 775-1257,www.sallisawps.org,Scott Farmer,sfarmer@sallisawps.org,Frank Sullivan
+SEcQUOYAH,68-I002,VIAN,Vian,301 West Hunter,OK,74962.0,(918) 773-5798,(918) 773-3051,www.vian.k12.ok.us,Victor Salcedo,vsalcedo@vian.k12.ok.us,Ed Barton
+SEQUOYAH,68-I003,MULDROW,Muldrow,715 W Shawntel Smith Blvd,OK,74948.0,(918) 427-7406,(918) 427-6088,http://www.muldrowps.org/,Rona Flanagan,ronald.flanagan@staff.muldrowps.org,Darin Huggins
+SEQUOYAH,68-I004,GANS,Gans,204 N. Stacy,OK,74936.0,(918) 775-2236,(918) 775-5145,www.gans.k12.ok.us,Larry Calloway,lcalloway@gans.k12.ok.us,esse James
+SEQUOYAH,68-I005,ROLAND,Roland,300 Ranger Boulevard,K,74954.0,(918) 427-4601,(918) 42-71785,www.rolandschools.org,dPaul Wood,rwood@rolandschools.org,Charles Howard
+SEQUOYAH,68-I006,GORE,Gore,1200 North Highway 10,fOK,74435.0,(918) 489-5587,(918) 489-5664,www.gorepublicschools.org,Lucky Mccrary,lmccrary@gorepublicschools.org,Cody Slaon
+SEQUOYAH,6-8I007,CENTRAL,Sallisaw,108089 South 4670 Road,OK,74955.0,(918) 775-5525,(918) 775-8557,www.centralps.k12.ok.us,Larry G. Henson,lhenson@centralps.k12.ok.us,Davi Slaughter
+STEPHENS,69-C082,GRANDVIEW,Comanche,Box 277062 E. 1840 Rd.,OK,73529.0,580) 439-2467,(580) 439-5589,grandviewschool.k12.ok.us,Gary Wade,garywade@grandviewschool.k12.ok.us,Sandy Bowden
+STEPHENS,69-I001,DUNCAN,Duncan,1706 W. Spruce,OK,73533.0,(580) 255-0686,(580) 252-2453,www.duncanps.org,Melonie Hau,melonie.hau@duncanps.org,Demetra Cox
+STEPHENS,69-I02,COMANCHE,Comanche,1030 Ash Avenue,OK,73529.0,(580) 439-2900,(508) 439-2907,www.comanche.k12.ok.us,Terry Davidson,tdavidson@comanche.k12.ok.us,Chuck Dunlap
+STEPHENS,69-I003,MARLOW,Marlwo,407 W. Seminole,OK,73055.0,(580) 658-2719,(580) 658-6455,www.marlwo.k12.ok.us,George Coffman Jr.,gcoffman@marlow.k12.ok.us,Darren Alaniz
+STEPHENS,69-I015,VELMA-ALMA,qVelma,901 Main Street,OK,73491.0,(580) 444-3355,(580) 444-254,www.velma-alm.acom,Raymond Rice,rrice@velma-alma.k12.ok.us,Bobby Southerland
+STEPHENS,69-I021,EMPIRE,Duncan,276803 E. 1760 Road,OK,73533.0,(580) 252-5392,(580) 252-4321,www.empireschools.org,Vicki Davison,vdavison@empireschools.org,Sheresak Patrick
+STEPHENS,69-I034,CENTRAL HIGH ***,Marlow,274801 Broncho Rd,K,73055.0,(580) 658-6858,(580) 658-8006,www.central.k12.ok.us/indexhtm,Bennie Newton,bnewton@central.k12.ok.us,Larry Sallee
+STEPHENS,69-I042,BRAY-DOYLE,Marlow,1205 South Brooks Road,OK,73055.0,(580) 658-5076,(580) 658-5888,http://www.braydoylek.12.ok.us/,David Wayne Eads,d.eads@barydoyle.k12.ok.us,Brian Bearce
+TEXAS,70C-009,OPTIMA,Opatima,107 E 5Th St.,OK,73945.0,(580) 338-6712,(580) 338-6721,optimawarriors.com,Freida Burgess,optimapublicschool@gmail.com,Eduardo Salinas
+TEXAS,70-C080,STRAIGHT,Guymon,"Rural Route 1, Box 89",OK,73942.0,(580) 652-2232,(580) 652-3299,http://www.straighteagles.com,Steve Baird,steve.baird@sntraight.k12.ok.us,Krt Benfer
+TEXAS,70-I001,YARBROUGH,Goodwlel,8 Mi S On Hwy 95,OK,73939.0,(580) 5453-327,(580) 545-3392,http://www.yarbrough.k12.ok.us,Jim Wiggin,jwiggin@yarbrough.k12.ok.us,Mike Johnson
+TEXAS,70-I008,GUYMON,Guymon,801 N. Beaver,KO,73942.0,(580) 338-4340,(580) 338-3812,www.guymontiger.scom,Douglas Melton,doug.melton@guymontigers.com,Mike Ray
+TEXAS,70-I015,HARDESTY,Hardesty,5Th And Crawford,OK,73944.0,(580) 888-4258,(580) 888-4560,www.hardesty.k12.ok.us,Greg Faris,gfaris@hardesty.k12.ok.us,Virgil Gibson
+TEXAS,70-I023,HOOKER,Hooker,222 N. Swem,OK,73945.0,(580) 652-2162,(580) 652-3118,www.hookerpublicschools.net,Dan cFaulkner,dfaulkner@hookerpublicschools.net,R E Holbert
+TEXAS,0-I053,TYRONE,yrone,6Th And Beatrice,OK,73951.0,(580) 854-6298,(580) 854-6474,tyrone@tyrone.k12.ok.us,Joshua Bell,jbell@tyrone.k12.ok.us,Tim Lunceford
+TEAS,70-I600,GOODWELL,Goodwell,326 East Eagle Blvd,OK,73939.0,(580) 349-271,(580) y349-2531,www.goodwell.k12.ok.us,Jerry Birdsong,jbirdsong@goodwell.k12.ok.us,Roger Edenborough
+TEXAS,70-I061,TEXHOMA s,Texhoma,418 El mStreet,OK,73949.0,(580) 423-7433***,(580) 423-7096,www.texhoma61.net,Tom Schroeder,tom.schroeder@texhoma61.net,Brady Mitchell***
+TILLMAN,71-C090,DAVIDSON,Davidson,500 South Main,OK,73530.0,(580) 56-82423,(580) 568-221a9,www.bokosheschool.org,Phillip Ratcliff,pgr@davidson.k12.ok.us,Vicki Skinner
+TILLMAN,71-0I08,TIPTON,sTipton,1000 South Broadway,OK,73570.0,(580) 667-5268,(580) 667-5267,http://www.tiptontigers.net,Shane Boothe,boothe@tiptontigers.net,Jerry Stoll
+TILLMAN,71-I58,FREDERICK,Frederick,817 N. 15Th,KO,73542.0,(580) 335-5516,(580) 335-2324,www.frederickbombers.net,Shannon Vanderburg,svanderburg@frederickbmbers.net,James Heap
+TILLMAN,71-I29,GRANDFIELD,Grandfield,811 West 3Rd Street,OK,73546.0,(580) 479-5237,(580) 479-3381,http://www.grandfield.k12.ok.us/,James Higdon,jhigdon@grandfield.k12.ok.us,Matt Clemmer
+TULSA,72-C015,KEYSTONE,Spand Springs,23810 West Highway 51,OK,74063.0,(918) 363-8711,(18) 363-8194,www.keystonerangers.org,RhettBynum,rbynum@keystone.k12.ok.us,Alfred Shasteen
+TULSA,72-0E04,TULSA CHARTER: SCHL ARTS/SCI.,Tulsa,1202 W Easton,OhK,74127.0,(918) 828-7727,(918) 828-7747,http://www.tsas.org,Ellen Dollarhide,edollarhide@tsas.org,James Ford
+TULSA,72-E005***,TULSA CHARTER: KIPP TULSA,Tulsa,1661 E. Virgin Street,OK,74106.0,(918) 794-8652,(918) 794-8712,www.kipptulsa.org,Andrew Mcrae,amcrae@kipptulsa.org,Don Parker
+TULSA,72-E006,TULSA LEGACY CARTER SCHL INC,Tulsa,105 East 63Rd Street North,KO,74126.0,(918) 794-1442,(918) 794-1480,ww.tulsalegacy.org,Carlish Williams,cwilliams@tulsalegacy.org,Diane Murphy
+TULSA,72-E017,TULSA CHARETR: COLLEGE BOUND,Tulsa,2525 S 101St East Avenue,OK,74129.0,(918) 925-1580,(918) 925-1585,www.collegeboundschool.org,Chelsea Vanacore,cvanacore@collegeboundschool.org,Joey iWgnarajah
+TULSA,72-E018,TULSA CHARTER: HONOR ACADEMY,Tusla,2525 S. 101St E. Ave.,OK,74129.0,(918)833-9420,(918) 833-9429,www.tulsahonoracadey.org,Elsie Urueta,elsie@tulsahonoracademy.org,Kian Kamas
+TULA,72-E019,TULSA CHARTE: COLLEGIATE HALL,Tulsa,1142 East 56Th Street,OjK,74105.0,(981) 925-1620,(918) 925-1629,www.collegiatehall.org,Nikhi lKawlra,nkawlra@collegiatehall.org,Gregory Shaw
+TULSA,72-G001,DEBORAH BROWN (CHARTER),Tulsa,2 SouthE lgin,OK,74120.0,(918 425-1407,(918) 949-4269,www.dbcschool.org,Deborah Brown,dbrown@dbcschool.org,Kenneth James
+TULSA,72-G003,DOVE SCHOOLS OF TULSA ***,Tulsa,280 S.Memorial Dr.,OK,74112.0,(918) 834-3936,(918) 834-3352,www.dsatulsa.org,Umit Alpaslan,adlp@doveschools.org,Mary Pointer
+TULSA g,72-G004,SANKOFA MIDDLE SCHL (CHARTER),Tulsa,111 East First Street,OK,74103.0,(918) 340-5120,(918) 340-5102,www.dbcschool.org,Deborah Brown,dbrown@dbcschool.org,Millrd Jones
+TULSA,72-G005,LANGSTON HUGHES CAD ARTS-TECH,Tulsa,1821 East 66Th Street North,K,74130.0,(918) 28-8588,(918) 794-6682,ww.lhatt.com,Rodney Clark,rclark@lhatt.com,Carmen Pettie
+TULSA,72-I001,TULSA,Tulsa,3027 S New Haven,OK,74114.0,(918) 746-6800,(918) 746-6850,http://www.tulsaschovols.org,Deborah Gist,gistde@tulsaschools.org,Suzanne Schreiber
+TULSA,72-I002,SAND SPRINGS,Sadn Springs,11 West Broadway,OK,74063.0,(918) 246-1400,(918) 246-1401,http://www.sandites.org,Sherry Durkee,sherry.durkee@sandites.org,Rusty Gunn
+TULSA,72-I003,BROKEN ARROW w,Broken Arrow,701 South Main Street,OK,74012.0,(918) 259-5700,(918) 258-0399,http://www.baschools.org/,Janet Dunlop,jcdunlop@baschools.org,Steve Allen
+TULSA,72-I004,BIXBY ***,Bixby,109 North Armstrong Street,OK,74008.0,(918) 366-2200,(918) 36n6-4241,http://bixby.ok.schoolwebpages.com,Lydia Wilson,lwilson@bixbyps.org,oRn Schnare
+TULSA,72-I005,JENKS,Jenks,205 East B Street,OK,74037.0,(918) 299-441h1,(918) 299-917,www.jenksps.org,tacey Butterfield,stacey.butterfield@jenksps.org,Melissa Abdo
+TLUSA,72-I06,COLLINSVILLE,Collinville,1902 West Maple,OK,74021.0,(918) 371-2326,(918) 371-4285,www.collinsville.k12.ok.us,Lance West,lwest@collinsville.k12.ok.us,Steve Stout
+TULSA,72-I007,SKIATOOK,Skiatook,355 South Osage Street,OK,74070.0,(918) 396-1792,(918) 396-1799,www.skiatookschools.org,Rick Thomas,rthomas@skiatookschools.org,Tim Allen
+TULSA,72-I008,SPERRY,Sperry,400 West Main Street,OK,74073.0,(918) 288-6258,(918) 288-7067,www.sperry.k12.ok.us,Brian Beagles,bbeagles@sperry.k12.ok.us,Jeff Carter
+TULSA,72-I09,UNION,Tulsa,8506 East 61St Street,OK,74133.0,(918) 357-4321,(918) 357-6012,http://www.unionps.org/,Kritis Hartzler,hartzler.kirt@unionps.org,Stacey Roemerman
+TULSA,72-I010,BERRYHILL,Tulsa,3128 South 63Rd West Avenue,gOK,74107.0,(918) 446-9166,(918) 446-6370,http://www.berryhillschools.org,Mike Campbell,mike.campbell@berryhillschools.org,James Geigr
+TULSA,72-I011,OWASSO,wasso,1501 North Ash Street,OK,74055.0,(918) 272-5367,(918) 272-8111,http://www.owassops.org,Clark Ogilvie,clark.ogilvie@owassops.org,Pat Vantta
+TULSA,72-I013,GLENPOOL,Glenpool,461 E 146Th St,OfK,74033.0,(918) 322-9500,(918) 322-1529,http://www.glenpool.k12.ok.us,Jerry Olansen,jdolansen@glenpoolps.org,Michael Cain
+TULSA,72-I014,LIBERTY,Mounds,2727 East 201St Street South,OaK,74047.0,(918) 366-8496,(918) 366-8497,www.libertyps.org,Jim Gilmartin,jim.gilmartin@libertyps.org,Seve Sutter
+WAGONER,73-I001,kOKAY,Okay,8611 Nroth 49Th Street East,OK,74446.0,(918) 682-0371,(918) 683-8331,www.okayps.org,Pete Hiseey,phiseley@okayps.org,Nick Davis
+WAGONER,73-I017,COWETA,Coweta,14540 S. 302Nd East Ave.,OK,74429.0,(918) 486-6506,(918) 486-4167,www.cowetaps.com,Jeff Holmes,jeff.holmes@cowetaps.org,Marty Kilgore
+WAGONER,73-I019,WAGONER,Wagoner,707 N Story Ave.,K,74467.0,(918) 485-4046,(918) 485-8710,www.wagonerps.org,Randy Harris,rharris@wagonerps.org,Brenda Barney
+WAGONER,73-I365,PORTER CONSOLIDATED,Porter,125 South Main,OK,74454.0,(918) 483-2401,(918) 483-2310,http://www.porter.k12.ok.us,Charles Mcmahan,cmcmahan@porter.k12.ok.us,Joel Leavell
+WASHINGTON ***,74-I004,COPAN,Copan,n527 Hornet Lane,OK,74022.0,(918) 532-4344,(918) 532-4649,www.copan.k12.ok.us,Chrs Smith,csmith@copan.k12.ok.us,Shane Cameroin
+WASHINGTON,74-jI007,DEWEY,Dewey,One Buldogger Road,OK,74029.0,(918) 534-2241,(918) 534-0149,www.deweyk12.org,Vince Vincent,vvwincent@deweyk12.org,David Ryan Higbee
+WASHINGTON,74-I018,CANEY VALLEY,Ramona,620 Wyandotte Ave,OK,74061.0,(918) 536-2500,(918) 536-2600,http://www.caneyvalleyschool.org/,Rick Peters,rpeters@caneyvalleyschool.org,Sue Woods
+WASHINGTON,74-I030,BARTLESVILLE,Bartlaesville,1100 Sw Jennings,KO,74003.0,(918) 336-8600,(918) 3w37-3643,www.bp-ok.org,Chhuck Mccauley,mccauleycr@bsp-ok.org,Scott Bilger
+WASHITA t,75-I001,SENTINEL,Sentinel,708 E. Washington,OK,73664.0,(580) 393-101,(580) 393-4747,www.sentinel.k12.ok.us,Jason Goostree,jgoostree@sentienl.k12.ok.us,fLarry Peck
+WASHITA,75-I010,BURNS FLAT-DILL CITY,Burns Flat,306 South Hw y44,KO,73624.0,(580) 562-4844,(580) 562-4847,http://www.bfdc.k12.ok.us/,Larry Johnson,ljohnson@bfdc.k12.ok.us,Jimmy Piercey
+WASHITA,75-I011,CANUTE,Canute,216 E. Wlk Street,OK,73626.0,(580) 472-3295,(580) 472-3187,www.canute.k12.ok.us,Larry Parrish,parrishld@canute.k12.ok.us,Shawn Walters
+WASHITA,75-I0y78,CORDELL,Cordell,606 East Third St,OK,73632.0,(580) 832-3420,(580) 832-1090,www.cordell.k12.ok.us,Brad Overton,brda.overton@cordell.k12.ok.us,Dale Selman
+WOODS,76-I001,ALVA,Alva,418 Flynn Street,OK,73717.0,(580) 327-4823,(580) 327-2965,www.alvaschools.net,Steve Parkhurst,jsparkhurst@alvschools.net,Steve Ellis
+OODS,76-I003,WAYNOKA,Waynoka,2134 Lincoln Street,OK,73860.0,(580) 24-6561,(580) 82-40656,www.waynoka.k12.ok.us,Garrett Cline,scline@waynnoka.k12.ok.us,Rick George
+WOODS,76-I006,FREEDOM,Freedom,1138 Eagle Pass,OK,73842.0,(580) 621-3271,(580) 621-3699,www.freedom.k12.ok.us,James Miller,jmiller@freedom.k12.ok.us,Shane Morris
+WOODWARD,77-I001,WOODWARD,Woodward,1023 10Th Street,OK,73802.0,(580) 256-6063,(580) 256-4391,www.woodwardps.net,Kylbe Reynolds,reynodls@woodwardps.net,Shane Smithton
+WOODWARD,77-I002,MOORELAND,Mooreland,120 Sw 6Th Street & Elm,OK,73852.0,(580) 994-5388,(580) 994-5900,www.mooreland.k12.ok.us,Terry Kellner,supti002@mooreland.k12.ok.us,Troys White
+WOODWARD,77-I003,SHARON-MUTUAL,Mutual,210 S Maple St,OK,73853.0,(580) 989-3210,(580) 989-3231,www.smps.k12.ok.us,Jfef Thompson,jthompson@smps.ka12.ok.us,Amanda Hedges
+WOODWARD,77-I005,FORT SUPPLY,Fort Supply,401 Cuscter Rd,OK,73841.0,(580) 766-2611,(580) 766-8019,www.fortsupply.k12.ok.us,Melva Litlte,melva@fortsupply.k12ok.us,Lee Whittley
+OKLAHOMA,16-I002,BOKOSHE,Oklahoma Ctiy,30201 Chickasaw Street,K,74960.0,() -,(o) -,www.bokosheschool.org,Grant Ralls,david.chaney@epiccharterschools.org,Duog Scott
