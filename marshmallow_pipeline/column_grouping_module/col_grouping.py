@@ -5,6 +5,7 @@ import pickle
 from sklearn.cluster import AgglomerativeClustering, MiniBatchKMeans
 from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.impute import SimpleImputer
 
 from marshmallow_pipeline.column_grouping_module.chartypes_distributions_features import (
     CharTypeDistribution,
@@ -63,6 +64,7 @@ def col_grouping(
                     ),
                 ),
                 ("normalizer", MinMaxScaler()),
+                ("imputer", SimpleImputer())
             ]
         )
 
