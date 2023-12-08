@@ -1,8 +1,8 @@
 import copy
 import logging
 import time
-from marshmallow_pipeline.classification_module.classifier import classify
-
+from marshmallow_pipeline.classification_module.classifier import classify, classify_with_cs
+from imblearn.over_sampling import SMOTE, ADASYN
 import pandas as pd
 
 
@@ -207,12 +207,22 @@ def get_train_test_sets_per_col_pseudo(X_temp, y_temp, samples_dict, cell_cluste
         y_train_pseudo_all.extend(y_train_pseudo_cols[col])
     for col in X_test_pseudo_cols:
         X_test_pseudo_all.extend(X_test_pseudo_cols[col])
+
     if sum(y_train_pseudo_all) == 0:
         predicted_pseudo_all = [0] * len(X_test_pseudo_all)
     elif sum(y_train_pseudo_all) == len(y_train_pseudo_all):
         predicted_pseudo_all = [1] * len(X_test_pseudo_all)
     else:
-        gbc, predicted_pseudo_all = classify(X_train_pseudo_all, y_train_pseudo_all, X_test_pseudo_all)
+        # OverSampling
+    
+        logging.info("OverSampling")
+        X_resampled, y_resampled = SMOTE().fit_resample(X_train_pseudo_all, y_train_pseudo_all)
+        # X_resampled, y_resampled = ADASYN().fit_resample(X_train_pseudo_all, y_train_pseudo_all)
+
+
+        # svc, predicted_pseudo_all = classify_with_cs(X_resampled, y_resampled, X_test_pseudo_all)
+
+        gbc, predicted_pseudo_all = classify(X_resampled, y_resampled, X_test_pseudo_all)
     
     predicted_pseudo_all_copy = [int(x) for x in predicted_pseudo_all]
     predicted_pseudo_cols = {}
