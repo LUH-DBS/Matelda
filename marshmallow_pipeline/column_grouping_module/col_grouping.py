@@ -1,10 +1,13 @@
 import logging
 import os
 import pickle
+import numpy as np
 
 from sklearn.cluster import AgglomerativeClustering, MiniBatchKMeans
 from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.preprocessing import MinMaxScaler
+
+from scipy.spatial import distance
 
 from marshmallow_pipeline.column_grouping_module.chartypes_distributions_features import (
     CharTypeDistribution,
@@ -15,6 +18,19 @@ from marshmallow_pipeline.column_grouping_module.data_type_features import (
 from marshmallow_pipeline.column_grouping_module.value_length_features import (
     ValueLengthStats,
 )
+
+def calculate_cluster_centers_and_nearest_point_indices(X, clusters, cols_values):
+    unique_clusters = np.unique(clusters)
+    clusters_and_centers = {}
+    for cluster in unique_clusters:
+        cluster_point_indices = np.where(clusters == cluster)[0]
+        cluster_points = X[cluster_point_indices]
+        cluster_center = np.mean(cluster_points, axis=0)
+        distances = [distance.euclidean(cluster_center, point) for point in cluster_points]
+        nearest_point_index = cluster_point_indices[np.argmin(distances)]
+        clusters_and_centers[cluster] = cols_values[nearest_point_index]
+    return clusters_and_centers
+
 
 
 def col_grouping(
@@ -79,9 +95,15 @@ def col_grouping(
             else:
                 clusters = AgglomerativeClustering(n_clusters=min(max_n_col_groups, len(X))
                                                ).fit_predict(X)
+                clusters_and_centers = calculate_cluster_centers_and_nearest_point_indices(X, clusters, cols["col_value"])
+
         else:
             logging.info("The maximum number of column groups is less than 2")
             clusters = [0] * len(cols["col_value"])
+            centroid = np.mean(X, axis=0)
+            distances = [distance.euclidean(centroid, point) for point in X]
+            nearest_point_idx = np.argmin(distances)
+            clusters_and_centers = {0: (nearest_point_idx, cols["col_value"][nearest_point_idx])}
             
     else:
         logging.info("Column grouping is disabled")
@@ -89,6 +111,7 @@ def col_grouping(
 
     cols_per_cluster = {}
     cols_per_cluster_values = {}
+    cluster_centers = {}
     for col, col_clu in enumerate(clusters):
         if col_clu not in cols_per_cluster:
             cols_per_cluster[col_clu] = []
@@ -115,12 +138,15 @@ def col_grouping(
             col_group_df["col_id"].append(cols["col_id"][c])
 
     col_grouping_res = os.path.join(mediate_files_path, "col_grouping_res")
+    cluster_centers_path = os.path.join(col_grouping_res, "cluster_centers")
     cols_per_clu = os.path.join(col_grouping_res, "cols_per_clu")
     col_df_res = os.path.join(col_grouping_res, "col_df_res")
 
     os.makedirs(col_grouping_res, exist_ok=True)
+    os.makedirs(cluster_centers_path, exist_ok=True)
     os.makedirs(cols_per_clu, exist_ok=True)
     os.makedirs(col_df_res, exist_ok=True)
+
 
     with open(
         os.path.join(cols_per_clu, f"cols_per_cluster_{table_group}.pkl"), "wb+"
@@ -131,5 +157,10 @@ def col_grouping(
         os.path.join(col_df_res, f"col_df_labels_cluster_{table_group}.pickle"), "wb+"
     ) as file:
         pickle.dump(col_group_df, file)
+
+    with open(
+        os.path.join(cluster_centers_path, f"clusters_and_centers_{table_group}.pickle"), "wb+"
+    ) as file:
+        pickle.dump(clusters_and_centers, file)
 
     return col_group_df

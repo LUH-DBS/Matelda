@@ -28,6 +28,7 @@ from marshmallow_pipeline.classification_module.get_train_test import (
     get_train_test_sets,
     get_train_test_sets_per_col,
     get_train_test_sets_per_col_pseudo,
+    get_train_test_sets_per_col_pseudo_knn,
 )
 
 if not sys.warnoptions:
@@ -48,7 +49,7 @@ def cluster_column_group_init(col_groups_dir, df_n_labels, features_dict, labels
     global labels_per_cell_group_glob
     labels_per_cell_group_glob = labels_per_cell_group
 
-def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode, labeling_method, llm_labels_per_cell_group, tables_tuples_dict, labels_per_cell_group):
+def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode, nearest_neighbours_percentage, labeling_method, llm_labels_per_cell_group, tables_tuples_dict, labels_per_cell_group):
     global df_n_labels_glob
     df_n_labels_glob = df_n_labels
 
@@ -81,6 +82,9 @@ def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_
 
     global labels_per_cell_group_glob
     labels_per_cell_group_glob = labels_per_cell_group
+
+    global nearest_neighbours_percentage_glob
+    nearest_neighbours_percentage_glob = nearest_neighbours_percentage
 
 def get_cells_in_cluster(group_df, col_cluster, features_dict):
     original_data_keys_temp = [] # (table_id, col_id, cell_idx, cell_value)
@@ -169,7 +173,7 @@ def col_clu_cell_clustering(
     return cell_cluster_cells_dict, cell_clustering_dict
 
 def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, n_cores, 
-                                   classification_mode, labeling_method, tables_tuples_dict, min_n_labels_per_cell_group):
+                                   classification_mode, nearest_neighbours_percentage, labeling_method, tables_tuples_dict, min_n_labels_per_cell_group):
     logging.info(
         "Sampling and labeling cluster %s",
         str(cell_clustering_df["col_cluster"].values[0]),
@@ -186,8 +190,11 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, 
             value_temp = cell_cluster_cells_dict["value_temp"]
             key_temp = cell_cluster_cells_dict["key_temp"]
             original_data_keys_temp = cell_cluster_cells_dict["original_data_keys_temp"]
-
-            samples_dict, cell_clustering_df, n_user_labeled_cells, n_model_labeled_cells = sampling(cell_clustering_df, X_temp, y_temp, value_temp, original_data_keys_temp, n_cores, tables_tuples_dict, labeling_method, -1, min_n_labels_per_cell_group)
+            if classification_mode == 3:
+                semi_propagation = True
+            else:
+                semi_propagation = False
+            samples_dict, cell_clustering_df, n_user_labeled_cells, n_model_labeled_cells = sampling(cell_clustering_df, X_temp, y_temp, value_temp, original_data_keys_temp, n_cores, tables_tuples_dict, nearest_neighbours_percentage, semi_propagation, labeling_method, -1, min_n_labels_per_cell_group)
             logging.info("Start labeling for cluster %s", str(cell_clustering_df["col_cluster"].values[0]))
             samples_dict = labeling(samples_dict)
             universal_samples = {}
@@ -233,6 +240,10 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, 
                 X_train, y_train, X_test, y_test, y_cell_ids, predicted = get_train_test_sets_per_col_pseudo(
                     X_temp, y_temp, samples_dict, cell_clustering_df, cell_cluster_cells_dict["datacells_uids"]
                 )
+            elif classification_mode == 3:
+                X_train, y_train, X_test, y_test, y_cell_ids, predicted = get_train_test_sets_per_col_pseudo_knn(
+                    X_temp, y_temp, samples_dict, cell_clustering_df, cell_cluster_cells_dict["datacells_uids"]
+                )
                 
     except Exception as e:
         logging.error(
@@ -276,6 +287,7 @@ def error_detector(
     save_mediate_res_on_disk,
     pool,
     classification_mode,
+    nearest_neighbours_percentage,
     labeling_method,
     llm_labels_per_cell_group
 ):
@@ -374,7 +386,7 @@ def error_detector(
             table_clusters.append(table_cluster)
             col_clusters.append(col_cluster)
     logging.info("start pool")
-    with multiprocessing.Pool(processes=1,initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode, labeling_method, llm_labels_per_cell_group, tables_tuples_dict, labels_per_cell_group)) as pool:
+    with multiprocessing.Pool(processes=1,initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode, nearest_neighbours_percentage, labeling_method, llm_labels_per_cell_group, tables_tuples_dict, labels_per_cell_group)) as pool:
         logging.info("pool started")
         original_data_keys = []
         unique_cells_local_index_collection = {}
@@ -630,6 +642,9 @@ def test(col_cluster, table_cluster):
     global labels_per_cell_group_glob
     labels_per_cell_group = labels_per_cell_group_glob
 
+    global nearest_neighbours_percentage_glob
+    nearest_neighbours_percentage = nearest_neighbours_percentage_glob
+
     cell_clustering_df = all_cell_clusters_records[
         (all_cell_clusters_records["table_cluster"] == table_cluster)
         & (all_cell_clusters_records["col_cluster"] == col_cluster)
@@ -639,7 +654,7 @@ def test(col_cluster, table_cluster):
     ]
     if labeling_method != 2:
         cell_cluster_sampling_labeling_dict, cell_clustering_df, samples_dict, n_user_labeled_cells, n_model_labeled_cells = cell_cluster_sampling_labeling(
-            cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode, labeling_method, tables_tuples_dict, labels_per_cell_group
+            cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode, nearest_neighbours_percentage, labeling_method, tables_tuples_dict, labels_per_cell_group
         )
     else:
         cell_cluster_sampling_labeling_dict, samples_dict, n_user_labeled_cells, n_model_labeled_cells = cell_cluster_sampling_labeling_combined(
