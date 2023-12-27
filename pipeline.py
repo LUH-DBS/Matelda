@@ -13,13 +13,13 @@ import marshmallow_pipeline.utils.app_logger
 from marshmallow_pipeline.error_detection import error_detector
 from marshmallow_pipeline.grouping_columns import column_grouping
 from marshmallow_pipeline.grouping_tables import table_grouping
-from marshmallow_pipeline.saving_results import get_all_results
+from marshmallow_pipeline.saving_results_optimized import get_all_results
 from marshmallow_pipeline.utils.loading_results import \
     loading_columns_grouping_results
 
 def main(labeling_budget, execution):
     configs = ConfigParser()
-    configs.read("/home/fatemeh/ED-Scale-Oct/ED-Scale/config.ini")
+    configs.read("/home/fatemeh/EDS-Analysis/ED-Scale/config-typo.ini")
     # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
@@ -70,6 +70,10 @@ def main(labeling_budget, execution):
     cell_clustering_alg = configs["CELL_GROUPING"]["cell_clustering_alg"]
     cell_clustering_res_available = bool(int(configs["CELL_GROUPING"]["cell_clustering_res_available"]))
     classification_mode = int(configs["CELL_GROUPING"]["classification_mode"])
+    if classification_mode == 3:
+        nearest_neighbours_percentage = float(configs["CELL_GROUPING"]["nearest_neighbours_percentage"])
+    else:
+        nearest_neighbours_percentage = -1
     labeling_method = int(configs["CELL_GROUPING"]["labeling_method"])
     if labeling_method == 2:
         llm_labels_per_cell_group = int(configs["CELL_GROUPING"]["llm_labels_per_cell_group"])
@@ -143,10 +147,11 @@ def main(labeling_budget, execution):
                 pickle.dump(table_grouping_dict, handle)
 
     logging.info("Table grouping is done")
-    logging.info("I need at least 2 labeled cells per table group to work! Thant means you need to label {} cells:".format(2*len(table_grouping_dict)))
-    print("I need at least 2 labeled cells per table group to work! Thant means you need to label {} cells:".format(2*len(table_grouping_dict)))
-    if labeling_budget < 2*len(table_grouping_dict):
-        labeling_budget = 2*len(table_grouping_dict)
+    logging.info("I need at least 2 labeled cells per table group to work at all and at least 2 * 6 labeled cells per table group to work effectively! Thant means you need to label {} cells if you want reasonable (!) results:".format(2*6*len(table_grouping_dict)))
+    print("I need at least 2 labeled cells per table group to work at all and at least 2 * 6 labeled cells per table group to work effectively! Thant means you need to label {} cells if you want reasonable (!) results:".format(2*6*len(table_grouping_dict)))
+
+    if labeling_budget < 2* 6 *len(table_grouping_dict):
+        labeling_budget = 2*6*len(table_grouping_dict)
     # Column grouping
     if not column_grouping_res_available:
         logging.info("Column grouping results are not available")
@@ -210,6 +215,7 @@ def main(labeling_budget, execution):
         save_mediate_res_on_disk,
         pool,
         classification_mode, 
+        nearest_neighbours_percentage,
         labeling_method,
         llm_labels_per_cell_group
     )
@@ -257,4 +263,4 @@ def main(labeling_budget, execution):
     logging.info(f"Number of user labeled cells: {global_n_userl_labels}, Number of model labeled cells {global_n_model_labels}")
 
 if __name__ == "__main__":
-    main(52, 1)
+    main(792, 1)
