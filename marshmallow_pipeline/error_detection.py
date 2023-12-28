@@ -7,6 +7,7 @@ import sys
 import multiprocessing
 import itertools
 import time
+import subprocess
 
 import pandas as pd
 
@@ -86,6 +87,16 @@ def test_init(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_
     global nearest_neighbours_percentage_glob
     nearest_neighbours_percentage_glob = nearest_neighbours_percentage
 
+
+def check_spelling(word, checker='aspell'):
+    command = [checker, 'list']
+    result = subprocess.run(command, input=word, text=True, capture_output=True)
+    if result.stdout.strip():
+        return 1 
+    else:
+        return 0  
+
+
 def get_cells_in_cluster(group_df, col_cluster, features_dict):
     original_data_keys_temp = [] # (table_id, col_id, cell_idx, cell_value)
     value_temp = []
@@ -123,6 +134,7 @@ def get_cells_in_cluster(group_df, col_cluster, features_dict):
                     (row['table_id'], row['col_id'], cell_idx, 'og')
                     ].tolist()
                 complete_feature_vector.extend(table_col_features_list)
+                complete_feature_vector.append(check_spelling(row["col_value"][cell_idx]))
                 X_temp.append(complete_feature_vector)                
                 y_temp.append(
                     features_dict[
