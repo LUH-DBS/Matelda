@@ -315,7 +315,7 @@ def generate_raha_features(parent_path, dataset_name, charsets, dirty_file_name,
     d = detect.initialize_dataset(dataset_dictionary)
     d.SAVE_RESULTS = False
     d.VERBOSE = False
-    d.ERROR_DETECTION_ALGORITHMS = ["OD", "RVD"]
+    d.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD"]
     logging.debug("Dataset is initialized.")
     logging.debug("Dataset name: %s", d.name)
     t1 = time.time()

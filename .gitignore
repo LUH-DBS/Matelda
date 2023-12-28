@@ -14,6 +14,7 @@ data-dgov
 output-dgov
 data-git
 output*
+datasets/Typos*
 config-*
 ocg-otg
 data-toy

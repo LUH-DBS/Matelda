@@ -262,5 +262,5 @@ def main(labeling_budget, execution):
     
     logging.info(f"Number of user labeled cells: {global_n_userl_labels}, Number of model labeled cells {global_n_model_labels}")
 
-if __name__ == "__main__":
-    main(792, 1)
+# if __name__ == "__main__":
+#     main(100, 1)

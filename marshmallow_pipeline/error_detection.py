@@ -134,7 +134,7 @@ def get_cells_in_cluster(group_df, col_cluster, features_dict):
                     (row['table_id'], row['col_id'], cell_idx, 'og')
                     ].tolist()
                 complete_feature_vector.extend(table_col_features_list)
-                complete_feature_vector.append(check_spelling(row["col_value"][cell_idx]))
+                complete_feature_vector.append(check_spelling(str(row["col_value"][cell_idx])))
                 X_temp.append(complete_feature_vector)                
                 y_temp.append(
                     features_dict[

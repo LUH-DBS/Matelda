@@ -19,9 +19,10 @@ from marshmallow_pipeline.column_grouping_module.value_length_features import (
     ValueLengthStats,
 )
 
-def calculate_cluster_centers_and_nearest_point_indices(X, clusters, cols_values):
+def calculate_cluster_centers_and_nearest_point_indices(X, clusters, cols_values, table_ids, col_ids):
     unique_clusters = np.unique(clusters)
     clusters_and_centers = {}
+    centroids = []
     for cluster in unique_clusters:
         cluster_point_indices = np.where(clusters == cluster)[0]
         cluster_points = X[cluster_point_indices]
@@ -29,7 +30,8 @@ def calculate_cluster_centers_and_nearest_point_indices(X, clusters, cols_values
         distances = [distance.euclidean(cluster_center, point) for point in cluster_points]
         nearest_point_index = cluster_point_indices[np.argmin(distances)]
         clusters_and_centers[cluster] = cols_values[nearest_point_index]
-    return clusters_and_centers
+        centroids.append((table_ids[nearest_point_index], col_ids[nearest_point_index]))
+    return clusters_and_centers, centroids
 
 
 
@@ -52,6 +54,8 @@ def col_grouping(
         A dataframe of features
 
     """
+    centroids = []
+    clusters_and_centers = {}
 
     if cg_enabled:
         logging.info("Column grouping is enabled")
@@ -95,7 +99,7 @@ def col_grouping(
             else:
                 clusters = AgglomerativeClustering(n_clusters=min(max_n_col_groups, len(X))
                                                ).fit_predict(X)
-                clusters_and_centers = calculate_cluster_centers_and_nearest_point_indices(X, clusters, cols["col_value"])
+                clusters_and_centers, centroids = calculate_cluster_centers_and_nearest_point_indices(X, clusters, cols["col_value"], cols["table_id"], cols["col_id"])
 
         else:
             logging.info("The maximum number of column groups is less than 2")
@@ -104,6 +108,7 @@ def col_grouping(
             distances = [distance.euclidean(centroid, point) for point in X]
             nearest_point_idx = np.argmin(distances)
             clusters_and_centers = {0: (nearest_point_idx, cols["col_value"][nearest_point_idx])}
+            centroids.append((cols["table_id"][nearest_point_idx], cols["col_id"][nearest_point_idx]))
             
     else:
         logging.info("Column grouping is disabled")
@@ -127,6 +132,7 @@ def col_grouping(
         "table_path": [],
         "table_cluster": [],
         "col_id": [],
+        "is_centroid": [],
     }
     for i in set(clusters):
         for c in cols_per_cluster[i]:
@@ -136,6 +142,10 @@ def col_grouping(
             col_group_df["table_path"].append(cols["table_path"][c])
             col_group_df["table_cluster"].append(table_group)
             col_group_df["col_id"].append(cols["col_id"][c])
+            if (cols["table_id"][c], cols["col_id"][c]) in centroids:
+                col_group_df["is_centroid"].append(1)
+            else:
+                col_group_df["is_centroid"].append(0)
 
     col_grouping_res = os.path.join(mediate_files_path, "col_grouping_res")
     cluster_centers_path = os.path.join(col_grouping_res, "cluster_centers")
@@ -162,5 +172,10 @@ def col_grouping(
         os.path.join(cluster_centers_path, f"clusters_and_centers_{table_group}.pickle"), "wb+"
     ) as file:
         pickle.dump(clusters_and_centers, file)
+    
+    with open(
+        os.path.join(cluster_centers_path, f"centroids_{table_group}.pickle"), "wb+"
+    ) as file:
+        pickle.dump(centroids, file)
 
     return col_group_df

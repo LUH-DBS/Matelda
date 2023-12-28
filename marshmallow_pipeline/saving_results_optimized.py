@@ -250,21 +250,21 @@ def get_all_results(
     )
     logging.info("Getting prediction results")
     tables_dict = get_tables_dict(init_tables_dict, tables_path, dirty_file_names, clean_file_names)
-    results_df = create_predictions_dict(
-        tables_dict,
-        y_test_all,
-        y_local_cell_ids,
-        predicted_all,
-        unique_cells_local_index_collection,
-        samples,
-    )
-    logging.info("Getting results per table")
-    results_per_table = get_results_per_table(results_df)
-    logging.info("Saving results")
-    with open(os.path.join(results_dir, "results_df.pickle"), "wb") as file:
-        pickle.dump(results_df, file)
-    with open(os.path.join(results_dir, "results_per_table.pickle"), "wb") as file:
-        pickle.dump(results_per_table, file)
+    # results_df = create_predictions_dict(
+    #     tables_dict,
+    #     y_test_all,
+    #     y_local_cell_ids,
+    #     predicted_all,
+    #     unique_cells_local_index_collection,
+    #     samples,
+    # )
+    # logging.info("Getting results per table")
+    # results_per_table = get_results_per_table(results_df)
+    # logging.info("Saving results")
+    # with open(os.path.join(results_dir, "results_df.pickle"), "wb") as file:
+    #     pickle.dump(results_df, file)
+    # with open(os.path.join(results_dir, "results_per_table.pickle"), "wb") as file:
+    #     pickle.dump(results_per_table, file)
 
 
 def get_all_results_from_disk(output_path, tables_path, dirty_file_names, clean_file_names):
