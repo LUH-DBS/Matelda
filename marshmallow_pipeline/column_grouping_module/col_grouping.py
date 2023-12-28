@@ -6,6 +6,7 @@ import numpy as np
 from sklearn.cluster import AgglomerativeClustering, MiniBatchKMeans
 from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.impute import SimpleImputer
 
 from scipy.spatial import distance
 
@@ -83,6 +84,7 @@ def col_grouping(
                     ),
                 ),
                 ("normalizer", MinMaxScaler()),
+                ("imputer", SimpleImputer())
             ]
         )
 
