@@ -1,0 +1,5 @@
+﻿OBJECTID,ABNAME,AGENCY,DEPT,DIV,FirstName,LastName,Email,Phone,Address,Office,Town,BOUNDARY,PROGMANAGER,PROGMANAGEREMAIL,PROGMANAGERPHONE,BACKUPCONTACT,BACKUPCONTACTEMAIL,BACKUPCONTACTPHONE,PROGRAMEMAIL,PROGRAMPHONE
+55,STORMWATER DISTRICTS,ANR,DEC,DEC WSMD,Terry,Purcell,Terry.Purcell@vermont.gov,802-490-6166,"1 National Life Drive, Main 2nd Floor",ANR - DEC,Montpelier,Southwest,Chris Gianfagna,Chris.Gianfagna@vermont.gov,802-490-6174,,,,,
+237,STORMWATER DISTRICTS,ANR,DEC,DEC WSMD,Michael,Sadler,Michael.Sadler@vermont.gov,802-490-6159,"1 National Life Drive, Main 2nd Floor",ANR - DEC,Montpelier,North,Chris Gianfagna,Chris.Gianfagna@vermont.gov,802-490-6174,,,,,
+273,STORMWATER DISTRICTS,ANR,DEC,DEC WSMD,Aaron,Ferraro,Aaron.Ferraro@vermont.gov,802-490-6168,"1 National Life Drive, Davis 3rd Floor",ANR - DEC,Montpelier,West Central,Chris Gianfagna,Chris.Gianfagna@vermont.gov,802-490-6174,,,,,
+279,STORMWATER DISTRICTS,ANR,DEC,DEC WSMD,Ashley,Preston,Ashley.Preston@vermont.gov,802-490-6170,"1 National Life Drive, Davis 3rd Floor",ANR - DEC,Montpelier,Central and Southeast,Chris Gianfagna,Chris.Gianfagna@vermont.gov,802-490-6174,,,,,

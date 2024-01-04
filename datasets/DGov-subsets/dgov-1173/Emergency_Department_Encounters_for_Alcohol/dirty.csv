@@ -1,0 +1,361 @@
+Year,Geography,Category,VisitType,Dem_Category,Dem_Cat_desc,Dxgroup,Count,Total,Percent
+2020,Statewide,All Diagnosis Groups,ED Admission,Total,All Encounters,Alcohol Related,240180,1851863,13
+2020,Statewide,All Diagnosis Groups,ED Admission,Total,All Encounters,All Others,1611683,1851863,87
+2020,Statewide,All Diagnosis Groups,ED Visit,Total,All Encounters,Alcohol Related,363285,10023851,3.6
+2020,Statewide,All Diagnosis Groups,ED Visit,Total,All Encounters,All Others,9660566,10023851,96.4
+2020,Statewide,All Diagnosis Groups,ED Admission,Sex,Female,Alcohol Related,85793,892625,9.6
+2020,Statewide,All Diagnosis Groups,ED Admission,Sex,Female,All Others,806832,892625,90.4
+2020,Statewide,All Diagnosis Groups,ED Admission,Sex,Male,Alcohol Related,154377,959143,16.1
+2020,Statewide,All Diagnosis Groups,ED Admission,Sex,Male,All Others,804766,959143,83.9
+2020,Statewide,All Diagnosis Groups,ED Visit,Sex,Female,Alcohol Related,129124,5306443,2.4
+2020,Statewide,All Diagnosis Groups,ED Visit,Sex,Female,All Others,5177319,5306443,97.6
+2020,Statewide,All Diagnosis Groups,ED Visit,Sex,Male,Alcohol Related,234087,4716510,5
+2020,Statewide,All Diagnosis Groups,ED Visit,Sex,Male,All Others,4482423,4716510,95
+2020,Statewide,All Diagnosis Groups,ED Admission,Payer,Medi_Cal,Alcohol Related,101057,548688,18.4
+2020,Statewide,All Diagnosis Groups,ED Admission,Payer,Medi_Cal,All Others,447631,548688,81.6
+2020,Statewide,All Diagnosis Groups,ED Admission,Payer,Medicare,Alcohol Related,80229,880040,9.1
+2020,Statewide,All Diagnosis Groups,ED Admission,Payer,Medicare,All Others,799811,880040,90.9
+2020,Statewide,All Diagnosis Groups,ED Admission,Payer,Other/Unk_Payer,Alcohol Related,5874,47528,12.4
+2020,Statewide,All Diagnosis Groups,ED Admission,Payer,Other/Unk_Payer,All Others,41654,47528,87.6
+2020,Statewide,All Diagnosis Groups,ED Admission,Payer,Private_Coverage,Alcohol Related,45667,337771,13.5
+2020,Statewide,All Diagnosis Groups,ED Admission,Payer,Private_Coverage,All Others,292104,337771,86.5
+2020,Statewide,All Diagnosis Groups,ED Admission,Payer,SelfPay,Alcohol Related,7353,37836,19.4
+2020,Statewide,All Diagnosis Groups,ED Admission,Payer,SelfPay,All Others,30483,37836,80.6
+2020,Statewide,All Diagnosis Groups,ED Visit,Payer,Medi_Cal,Alcohol Related,167217,4199044,4
+2020,Statewide,All Diagnosis Groups,ED Visit,Payer,Medi_Cal,All Others,4031827,4199044,96
+2020,Statewide,All Diagnosis Groups,ED Visit,Payer,Medicare,Alcohol Related,66341,1957201,3.4
+2020,Statewide,All Diagnosis Groups,ED Visit,Payer,Medicare,All Others,1890860,1957201,96.6
+2020,Statewide,All Diagnosis Groups,ED Visit,Payer,Other/Unk_Payer,Alcohol Related,9990,342483,2.9
+2020,Statewide,All Diagnosis Groups,ED Visit,Payer,Other/Unk_Payer,All Others,332493,342483,97.1
+2020,Statewide,All Diagnosis Groups,ED Visit,Payer,Private_Coverage,Alcohol Related,81769,2812608,2.9
+2020,Statewide,All Diagnosis Groups,ED Visit,Payer,Private_Coverage,All Others,2730839,2812608,97.1
+2020,Statewide,All Diagnosis Groups,ED Visit,Payer,SelfPay,Alcohol Related,37968,712515,5.3
+2020,Statewide,All Diagnosis Groups,ED Visit,Payer,SelfPay,All Others,674547,712515,94.7
+2020,Statewide,All Diagnosis Groups,ED Admission,Race,All Other,Alcohol Related,13907,116978,11.9
+2020,Statewide,All Diagnosis Groups,ED Admission,Race,All Other,All Others,103071,116978,88.1
+2020,Statewide,All Diagnosis Groups,ED Admission,Race,American Indian/Alaska Native,Alcohol Related,1247,6313,19.8
+2020,Statewide,All Diagnosis Groups,ED Admission,Race,American Indian/Alaska Native,All Others,5066,6313,80.2
+2020,Statewide,All Diagnosis Groups,ED Admission,Race,Asian/Pacific Islander,Alcohol Related,12361,158681,7.8
+2020,Statewide,All Diagnosis Groups,ED Admission,Race,Asian/Pacific Islander,All Others,146320,158681,92.2
+2020,Statewide,All Diagnosis Groups,ED Admission,Race,Black,Alcohol Related,19733,173881,11.3
+2020,Statewide,All Diagnosis Groups,ED Admission,Race,Black,All Others,154148,173881,88.7
+2020,Statewide,All Diagnosis Groups,ED Admission,Race,Hispanic,Alcohol Related,85709,579486,14.8
+2020,Statewide,All Diagnosis Groups,ED Admission,Race,Hispanic,All Others,493777,579486,85.2
+2020,Statewide,All Diagnosis Groups,ED Admission,Race,White,Alcohol Related,107223,816524,13.1
+2020,Statewide,All Diagnosis Groups,ED Admission,Race,White,All Others,709301,816524,86.9
+2020,Statewide,All Diagnosis Groups,ED Visit,Race,All Other,Alcohol Related,22266,658569,3.4
+2020,Statewide,All Diagnosis Groups,ED Visit,Race,All Other,All Others,636303,658569,96.6
+2020,Statewide,All Diagnosis Groups,ED Visit,Race,American Indian/Alaska Native,Alcohol Related,2171,35742,6.1
+2020,Statewide,All Diagnosis Groups,ED Visit,Race,American Indian/Alaska Native,All Others,33571,35742,93.9
+2020,Statewide,All Diagnosis Groups,ED Visit,Race,Asian/Pacific Islander,Alcohol Related,11755,610569,1.9
+2020,Statewide,All Diagnosis Groups,ED Visit,Race,Asian/Pacific Islander,All Others,598814,610569,98.1
+2020,Statewide,All Diagnosis Groups,ED Visit,Race,Black,Alcohol Related,30598,1079366,2.8
+2020,Statewide,All Diagnosis Groups,ED Visit,Race,Black,All Others,1048768,1079366,97.2
+2020,Statewide,All Diagnosis Groups,ED Visit,Race,Hispanic,Alcohol Related,138489,4094700,3.4
+2020,Statewide,All Diagnosis Groups,ED Visit,Race,Hispanic,All Others,3956211,4094700,96.6
+2020,Statewide,All Diagnosis Groups,ED Visit,Race,White,Alcohol Related,158006,3544905,4.5
+2020,Statewide,All Diagnosis Groups,ED Visit,Race,White,All Others,3386899,3544905,95.5
+2020,Statewide,All Diagnosis Groups,ED Admission,Age,0 to 18,Alcohol Related,1504,74996,2
+2020,Statewide,All Diagnosis Groups,ED Admission,Age,0 to 18,All Others,73492,74996,98
+2020,Statewide,All Diagnosis Groups,ED Admission,Age,19 to 39,Alcohol Related,43889,284365,15.4
+2020,Statewide,All Diagnosis Groups,ED Admission,Age,19 to 39,All Others,240476,284365,84.6
+2020,Statewide,All Diagnosis Groups,ED Admission,Age,40 to 59,Alcohol Related,92643,460840,20.1
+2020,Statewide,All Diagnosis Groups,ED Admission,Age,40 to 59,All Others,368197,460840,79.9
+2020,Statewide,All Diagnosis Groups,ED Admission,Age,60+,Alcohol Related,102141,1031639,9.9
+2020,Statewide,All Diagnosis Groups,ED Admission,Age,60+,All Others,929498,1031639,90.1
+2020,Statewide,All Diagnosis Groups,ED Visit,Age,0 to 18,Alcohol Related,7952,1709532,0.5
+2020,Statewide,All Diagnosis Groups,ED Visit,Age,0 to 18,All Others,1701580,1709532,99.5
+2020,Statewide,All Diagnosis Groups,ED Visit,Age,19 to 39,Alcohol Related,120218,3429135,3.5
+2020,Statewide,All Diagnosis Groups,ED Visit,Age,19 to 39,All Others,3308917,3429135,96.5
+2020,Statewide,All Diagnosis Groups,ED Visit,Age,40 to 59,Alcohol Related,149609,2578238,5.8
+2020,Statewide,All Diagnosis Groups,ED Visit,Age,40 to 59,All Others,2428629,2578238,94.2
+2020,Statewide,All Diagnosis Groups,ED Visit,Age,60+,Alcohol Related,85466,2306772,3.7
+2020,Statewide,All Diagnosis Groups,ED Visit,Age,60+,All Others,2221306,2306772,96.3
+2020,Statewide,Alcohol Only,ED Admission,Total,All Alcohol Related Encounters,Acute Alcohol Episode,42615,240180,17.7
+2020,Statewide,Alcohol Only,ED Admission,Total,All Alcohol Related Encounters,Chronic Alcohol Episode,170854,240180,71.1
+2020,Statewide,Alcohol Only,ED Admission,Total,All Alcohol Related Encounters,Co-occuring Acute & Chronic Alcohol Episode,26711,240180,11.1
+2020,Statewide,Alcohol Only,ED Visit,Total,All Alcohol Related Encounters,Acute Alcohol Episode,157433,363285,43.3
+2020,Statewide,Alcohol Only,ED Visit,Total,All Alcohol Related Encounters,Chronic Alcohol Episode,191004,363285,52.6
+2020,Statewide,Alcohol Only,ED Visit,Total,All Alcohol Related Encounters,Co-occuring Acute & Chronic Alcohol Episode,14848,363285,4.1
+2020,Statewide,Alcohol Only,ED Admission,Sex,Female,Acute Alcohol Episode,11457,85793,13.4
+2020,Statewide,Alcohol Only,ED Admission,Sex,Female,Chronic Alcohol Episode,67151,85793,78.3
+2020,Statewide,Alcohol Only,ED Admission,Sex,Female,Co-occuring Acute & Chronic Alcohol Episode,7185,85793,8.4
+2020,Statewide,Alcohol Only,ED Admission,Sex,Male,Acute Alcohol Episode,31154,154377,20.2
+2020,Statewide,Alcohol Only,ED Admission,Sex,Male,Chronic Alcohol Episode,103698,154377,67.2
+2020,Statewide,Alcohol Only,ED Admission,Sex,Male,Co-occuring Acute & Chronic Alcohol Episode,19525,154377,12.6
+2020,Statewide,Alcohol Only,ED Visit,Sex,Female,Acute Alcohol Episode,46719,129124,36.2
+2020,Statewide,Alcohol Only,ED Visit,Sex,Female,Chronic Alcohol Episode,78388,129124,60.7
+2020,Statewide,Alcohol Only,ED Visit,Sex,Female,Co-occuring Acute & Chronic Alcohol Episode,4017,129124,3.1
+2020,Statewide,Alcohol Only,ED Visit,Sex,Male,Acute Alcohol Episode,110662,234087,47.3
+2020,Statewide,Alcohol Only,ED Visit,Sex,Male,Chronic Alcohol Episode,112594,234087,48.1
+2020,Statewide,Alcohol Only,ED Visit,Sex,Male,Co-occuring Acute & Chronic Alcohol Episode,10831,234087,4.6
+2020,Statewide,Alcohol Only,ED Admission,Payer,Medi_Cal,Acute Alcohol Episode,21892,101057,21.7
+2020,Statewide,Alcohol Only,ED Admission,Payer,Medi_Cal,Chronic Alcohol Episode,64277,101057,63.6
+2020,Statewide,Alcohol Only,ED Admission,Payer,Medi_Cal,Co-occuring Acute & Chronic Alcohol Episode,14888,101057,14.7
+2020,Statewide,Alcohol Only,ED Admission,Payer,Medicare,Acute Alcohol Episode,10434,80229,13
+2020,Statewide,Alcohol Only,ED Admission,Payer,Medicare,Chronic Alcohol Episode,64250,80229,80.1
+2020,Statewide,Alcohol Only,ED Admission,Payer,Medicare,Co-occuring Acute & Chronic Alcohol Episode,5545,80229,6.9
+2020,Statewide,Alcohol Only,ED Admission,Payer,Other/Unk_Payer,Acute Alcohol Episode,1379,5874,23.5
+2020,Statewide,Alcohol Only,ED Admission,Payer,Other/Unk_Payer,Chronic Alcohol Episode,3888,5874,66.2
+2020,Statewide,Alcohol Only,ED Admission,Payer,Other/Unk_Payer,Co-occuring Acute & Chronic Alcohol Episode,607,5874,10.3
+2020,Statewide,Alcohol Only,ED Admission,Payer,Private_Coverage,Acute Alcohol Episode,6907,45667,15.1
+2020,Statewide,Alcohol Only,ED Admission,Payer,Private_Coverage,Chronic Alcohol Episode,34152,45667,74.8
+2020,Statewide,Alcohol Only,ED Admission,Payer,Private_Coverage,Co-occuring Acute & Chronic Alcohol Episode,4608,45667,10.1
+2020,Statewide,Alcohol Only,ED Admission,Payer,SelfPay,Acute Alcohol Episode,2003,7353,27.2
+2020,Statewide,Alcohol Only,ED Admission,Payer,SelfPay,Chronic Alcohol Episode,4287,7353,58.3
+2020,Statewide,Alcohol Only,ED Admission,Payer,SelfPay,Co-occuring Acute & Chronic Alcohol Episode,1063,7353,14.5
+2020,Statewide,Alcohol Only,ED Visit,Payer,Medi_Cal,Acute Alcohol Episode,77659,167217,46.4
+2020,Statewide,Alcohol Only,ED Visit,Payer,Medi_Cal,Chronic Alcohol Episode,81168,167217,48.5
+2020,Statewide,Alcohol Only,ED Visit,Payer,Medi_Cal,Co-occuring Acute & Chronic Alcohol Episode,8390,167217,5
+2020,Statewide,Alcohol Only,ED Visit,Payer,Medicare,Acute Alcohol Episode,21527,66341,32.4
+2020,Statewide,Alcohol Only,ED Visit,Payer,Medicare,Chronic Alcohol Episode,42721,66341,64.4
+2020,Statewide,Alcohol Only,ED Visit,Payer,Medicare,Co-occuring Acute & Chronic Alcohol Episode,2093,66341,3.2
+2020,Statewide,Alcohol Only,ED Visit,Payer,Other/Unk_Payer,Acute Alcohol Episode,4726,9990,47.3
+2020,Statewide,Alcohol Only,ED Visit,Payer,Other/Unk_Payer,Chronic Alcohol Episode,4919,9990,49.2
+2020,Statewide,Alcohol Only,ED Visit,Payer,Other/Unk_Payer,Co-occuring Acute & Chronic Alcohol Episode,345,9990,3.5
+2020,Statewide,Alcohol Only,ED Visit,Payer,Private_Coverage,Acute Alcohol Episode,30170,81769,36.9
+2020,Statewide,Alcohol Only,ED Visit,Payer,Private_Coverage,Chronic Alcohol Episode,48751,81769,59.6
+2020,Statewide,Alcohol Only,ED Visit,Payer,Private_Coverage,Co-occuring Acute & Chronic Alcohol Episode,2848,81769,3.5
+2020,Statewide,Alcohol Only,ED Visit,Payer,SelfPay,Acute Alcohol Episode,23351,37968,61.5
+2020,Statewide,Alcohol Only,ED Visit,Payer,SelfPay,Chronic Alcohol Episode,13445,37968,35.4
+2020,Statewide,Alcohol Only,ED Visit,Payer,SelfPay,Co-occuring Acute & Chronic Alcohol Episode,1172,37968,3.1
+2020,Statewide,Alcohol Only,ED Admission,Race,All Other,Acute Alcohol Episode,2954,13907,21.2
+2020,Statewide,Alcohol Only,ED Admission,Race,All Other,Chronic Alcohol Episode,9450,13907,68
+2020,Statewide,Alcohol Only,ED Admission,Race,All Other,Co-occuring Acute & Chronic Alcohol Episode,1503,13907,10.8
+2020,Statewide,Alcohol Only,ED Admission,Race,American Indian/Alaska Native,Acute Alcohol Episode,219,1247,17.6
+2020,Statewide,Alcohol Only,ED Admission,Race,American Indian/Alaska Native,Chronic Alcohol Episode,861,1247,69
+2020,Statewide,Alcohol Only,ED Admission,Race,American Indian/Alaska Native,Co-occuring Acute & Chronic Alcohol Episode,167,1247,13.4
+2020,Statewide,Alcohol Only,ED Admission,Race,Asian/Pacific Islander,Acute Alcohol Episode,1190,12361,9.6
+2020,Statewide,Alcohol Only,ED Admission,Race,Asian/Pacific Islander,Chronic Alcohol Episode,10491,12361,84.9
+2020,Statewide,Alcohol Only,ED Admission,Race,Asian/Pacific Islander,Co-occuring Acute & Chronic Alcohol Episode,680,12361,5.5
+2020,Statewide,Alcohol Only,ED Admission,Race,Black,Acute Alcohol Episode,5895,19733,29.9
+2020,Statewide,Alcohol Only,ED Admission,Race,Black,Chronic Alcohol Episode,11904,19733,60.3
+2020,Statewide,Alcohol Only,ED Admission,Race,Black,Co-occuring Acute & Chronic Alcohol Episode,1934,19733,9.8
+2020,Statewide,Alcohol Only,ED Admission,Race,Hispanic,Acute Alcohol Episode,13403,85709,15.6
+2020,Statewide,Alcohol Only,ED Admission,Race,Hispanic,Chronic Alcohol Episode,62484,85709,72.9
+2020,Statewide,Alcohol Only,ED Admission,Race,Hispanic,Co-occuring Acute & Chronic Alcohol Episode,9822,85709,11.5
+2020,Statewide,Alcohol Only,ED Admission,Race,White,Acute Alcohol Episode,18954,107223,17.7
+2020,Statewide,Alcohol Only,ED Admission,Race,White,Chronic Alcohol Episode,75664,107223,70.6
+2020,Statewide,Alcohol Only,ED Admission,Race,White,Co-occuring Acute & Chronic Alcohol Episode,12605,107223,11.8
+2020,Statewide,Alcohol Only,ED Visit,Race,All Other,Acute Alcohol Episode,11541,22266,51.8
+2020,Statewide,Alcohol Only,ED Visit,Race,All Other,Chronic Alcohol Episode,10002,22266,44.9
+2020,Statewide,Alcohol Only,ED Visit,Race,All Other,Co-occuring Acute & Chronic Alcohol Episode,723,22266,3.2
+2020,Statewide,Alcohol Only,ED Visit,Race,American Indian/Alaska Native,Acute Alcohol Episode,1002,2171,46.2
+2020,Statewide,Alcohol Only,ED Visit,Race,American Indian/Alaska Native,Chronic Alcohol Episode,1058,2171,48.7
+2020,Statewide,Alcohol Only,ED Visit,Race,American Indian/Alaska Native,Co-occuring Acute & Chronic Alcohol Episode,111,2171,5.1
+2020,Statewide,Alcohol Only,ED Visit,Race,Asian/Pacific Islander,Acute Alcohol Episode,3509,11755,29.9
+2020,Statewide,Alcohol Only,ED Visit,Race,Asian/Pacific Islander,Chronic Alcohol Episode,7923,11755,67.4
+2020,Statewide,Alcohol Only,ED Visit,Race,Asian/Pacific Islander,Co-occuring Acute & Chronic Alcohol Episode,323,11755,2.7
+2020,Statewide,Alcohol Only,ED Visit,Race,Black,Acute Alcohol Episode,16039,30598,52.4
+2020,Statewide,Alcohol Only,ED Visit,Race,Black,Chronic Alcohol Episode,13570,30598,44.3
+2020,Statewide,Alcohol Only,ED Visit,Race,Black,Co-occuring Acute & Chronic Alcohol Episode,989,30598,3.2
+2020,Statewide,Alcohol Only,ED Visit,Race,Hispanic,Acute Alcohol Episode,54135,138489,39.1
+2020,Statewide,Alcohol Only,ED Visit,Race,Hispanic,Chronic Alcohol Episode,78270,138489,56.5
+2020,Statewide,Alcohol Only,ED Visit,Race,Hispanic,Co-occuring Acute & Chronic Alcohol Episode,6084,138489,4.4
+2020,Statewide,Alcohol Only,ED Visit,Race,White,Acute Alcohol Episode,71207,158006,45.1
+2020,Statewide,Alcohol Only,ED Visit,Race,White,Chronic Alcohol Episode,80181,158006,50.7
+2020,Statewide,Alcohol Only,ED Visit,Race,White,Co-occuring Acute & Chronic Alcohol Episode,6618,158006,4.2
+2020,Statewide,Alcohol Only,ED Admission,Age,0 to 18,Acute Alcohol Episode,483,1504,32.1
+2020,Statewide,Alcohol Only,ED Admission,Age,0 to 18,Chronic Alcohol Episode,997,1504,66.3
+2020,Statewide,Alcohol Only,ED Admission,Age,0 to 18,Co-occuring Acute & Chronic Alcohol Episode,24,1504,1.6
+2020,Statewide,Alcohol Only,ED Admission,Age,19 to 39,Acute Alcohol Episode,12251,43889,27.9
+2020,Statewide,Alcohol Only,ED Admission,Age,19 to 39,Chronic Alcohol Episode,25896,43889,59
+2020,Statewide,Alcohol Only,ED Admission,Age,19 to 39,Co-occuring Acute & Chronic Alcohol Episode,5742,43889,13.1
+2020,Statewide,Alcohol Only,ED Admission,Age,40 to 59,Acute Alcohol Episode,16321,92643,17.6
+2020,Statewide,Alcohol Only,ED Admission,Age,40 to 59,Chronic Alcohol Episode,63097,92643,68.1
+2020,Statewide,Alcohol Only,ED Admission,Age,40 to 59,Co-occuring Acute & Chronic Alcohol Episode,13225,92643,14.3
+2020,Statewide,Alcohol Only,ED Admission,Age,60+,Acute Alcohol Episode,13558,102141,13.3
+2020,Statewide,Alcohol Only,ED Admission,Age,60+,Chronic Alcohol Episode,80863,102141,79.2
+2020,Statewide,Alcohol Only,ED Admission,Age,60+,Co-occuring Acute & Chronic Alcohol Episode,7720,102141,7.6
+2020,Statewide,Alcohol Only,ED Visit,Age,0 to 18,Acute Alcohol Episode,4940,7952,62.1
+2020,Statewide,Alcohol Only,ED Visit,Age,0 to 18,Chronic Alcohol Episode,2947,7952,37.1
+2020,Statewide,Alcohol Only,ED Visit,Age,0 to 18,Co-occuring Acute & Chronic Alcohol Episode,65,7952,0.8
+2020,Statewide,Alcohol Only,ED Visit,Age,19 to 39,Acute Alcohol Episode,60788,120218,50.6
+2020,Statewide,Alcohol Only,ED Visit,Age,19 to 39,Chronic Alcohol Episode,54722,120218,45.5
+2020,Statewide,Alcohol Only,ED Visit,Age,19 to 39,Co-occuring Acute & Chronic Alcohol Episode,4708,120218,3.9
+2020,Statewide,Alcohol Only,ED Visit,Age,40 to 59,Acute Alcohol Episode,62904,149609,42
+2020,Statewide,Alcohol Only,ED Visit,Age,40 to 59,Chronic Alcohol Episode,79347,149609,53
+2020,Statewide,Alcohol Only,ED Visit,Age,40 to 59,Co-occuring Acute & Chronic Alcohol Episode,7358,149609,4.9
+2020,Statewide,Alcohol Only,ED Visit,Age,60+,Acute Alcohol Episode,28773,85466,33.7
+2020,Statewide,Alcohol Only,ED Visit,Age,60+,Chronic Alcohol Episode,53976,85466,63.2
+2020,Statewide,Alcohol Only,ED Visit,Age,60+,Co-occuring Acute & Chronic Alcohol Episode,2717,85466,3.2
+2021,Statewide,DX Category,ED Admission,Total,All Encounters,Alcohol Related,255362,1962045,13
+2021,Statewide,DX Category,ED Admission,Total,All Encounters,All Others,1706683,1962045,87
+2021,Statewide,DX Category,ED Visit,Total,All Encounters,Alcohol Related,382153,10907850,3.5
+2021,Statewide,DX Category,ED Visit,Total,All Encounters,All Others,10525697,10907850,96.5
+2021,Statewide,Sex,ED Admission,Sex,Female,Alcohol Related,93201,946719,9.8
+2021,Statewide,Sex,ED Admission,Sex,Female,All Others,853518,946719,90.2
+2021,Statewide,Sex,ED Admission,Sex,Male,Alcohol Related,162145,1015204,16
+2021,Statewide,Sex,ED Admission,Sex,Male,All Others,853059,1015204,84
+2021,Statewide,Sex,ED Visit,Sex,Female,Alcohol Related,142827,5842759,2.4
+2021,Statewide,Sex,ED Visit,Sex,Female,All Others,5699932,5842759,97.6
+2021,Statewide,Sex,ED Visit,Sex,Male,Alcohol Related,239242,5063762,4.7
+2021,Statewide,Sex,ED Visit,Sex,Male,All Others,4824520,5063762,95.3
+2021,Statewide,Payer,ED Admission,Payer,Medi_Cal,Alcohol Related,107185,590923,18.1
+2021,Statewide,Payer,ED Admission,Payer,Medi_Cal,All Others,483738,590923,81.9
+2021,Statewide,Payer,ED Admission,Payer,Medicare,Alcohol Related,85526,912048,9.4
+2021,Statewide,Payer,ED Admission,Payer,Medicare,All Others,826522,912048,90.6
+2021,Statewide,Payer,ED Admission,Payer,Other/Unk_Payer,Alcohol Related,6183,54135,11.4
+2021,Statewide,Payer,ED Admission,Payer,Other/Unk_Payer,All Others,47952,54135,88.6
+2021,Statewide,Payer,ED Admission,Payer,Private_Coverage,Alcohol Related,49594,368871,13.4
+2021,Statewide,Payer,ED Admission,Payer,Private_Coverage,All Others,319277,368871,86.6
+2021,Statewide,Payer,ED Admission,Payer,SelfPay,Alcohol Related,6874,36068,19.1
+2021,Statewide,Payer,ED Admission,Payer,SelfPay,All Others,29194,36068,80.9
+2021,Statewide,Payer,ED Visit,Payer,Medi_Cal,Alcohol Related,174976,4678312,3.7
+2021,Statewide,Payer,ED Visit,Payer,Medi_Cal,All Others,4503336,4678312,96.3
+2021,Statewide,Payer,ED Visit,Payer,Medicare,Alcohol Related,70059,2093470,3.3
+2021,Statewide,Payer,ED Visit,Payer,Medicare,All Others,2023411,2093470,96.7
+2021,Statewide,Payer,ED Visit,Payer,Other/Unk_Payer,Alcohol Related,10529,365457,2.9
+2021,Statewide,Payer,ED Visit,Payer,Other/Unk_Payer,All Others,354928,365457,97.1
+2021,Statewide,Payer,ED Visit,Payer,Private_Coverage,Alcohol Related,91716,3123536,2.9
+2021,Statewide,Payer,ED Visit,Payer,Private_Coverage,All Others,3031820,3123536,97.1
+2021,Statewide,Payer,ED Visit,Payer,SelfPay,Alcohol Related,34873,647075,5.4
+2021,Statewide,Payer,ED Visit,Payer,SelfPay,All Others,612202,647075,94.6
+2021,Statewide,Race,ED Admission,Race,All Other,Alcohol Related,14168,120898,11.7
+2021,Statewide,Race,ED Admission,Race,All Other,All Others,106730,120898,88.3
+2021,Statewide,Race,ED Admission,Race,American Indian/Alaska Native,Alcohol Related,1253,6359,19.7
+2021,Statewide,Race,ED Admission,Race,American Indian/Alaska Native,All Others,5106,6359,80.3
+2021,Statewide,Race,ED Admission,Race,Asian/Pacific Islander,Alcohol Related,13786,171393,8
+2021,Statewide,Race,ED Admission,Race,Asian/Pacific Islander,All Others,157607,171393,92
+2021,Statewide,Race,ED Admission,Race,Black,Alcohol Related,21117,186937,11.3
+2021,Statewide,Race,ED Admission,Race,Black,All Others,165820,186937,88.7
+2021,Statewide,Race,ED Admission,Race,Hispanic,Alcohol Related,94888,625119,15.2
+2021,Statewide,Race,ED Admission,Race,Hispanic,All Others,530231,625119,84.8
+2021,Statewide,Race,ED Admission,Race,White,Alcohol Related,110150,851339,12.9
+2021,Statewide,Race,ED Admission,Race,White,All Others,741189,851339,87.1
+2021,Statewide,Race,ED Visit,Race,All Other,Alcohol Related,23864,730061,3.3
+2021,Statewide,Race,ED Visit,Race,All Other,All Others,706197,730061,96.7
+2021,Statewide,Race,ED Visit,Race,American Indian/Alaska Native,Alcohol Related,2022,38039,5.3
+2021,Statewide,Race,ED Visit,Race,American Indian/Alaska Native,All Others,36017,38039,94.7
+2021,Statewide,Race,ED Visit,Race,Asian/Pacific Islander,Alcohol Related,13593,683029,2
+2021,Statewide,Race,ED Visit,Race,Asian/Pacific Islander,All Others,669436,683029,98
+2021,Statewide,Race,ED Visit,Race,Black,Alcohol Related,30372,1158007,2.6
+2021,Statewide,Race,ED Visit,Race,Black,All Others,1127635,1158007,97.4
+2021,Statewide,Race,ED Visit,Race,Hispanic,Alcohol Related,154172,4542596,3.4
+2021,Statewide,Race,ED Visit,Race,Hispanic,All Others,4388424,4542596,96.6
+2021,Statewide,Race,ED Visit,Race,White,Alcohol Related,158130,3756118,4.2
+2021,Statewide,Race,ED Visit,Race,White,All Others,3597988,3756118,95.8
+2021,Statewide,Age,ED Admission,Age,0 to 18,Alcohol Related,1628,83618,1.9
+2021,Statewide,Age,ED Admission,Age,0 to 18,All Others,81990,83618,98.1
+2021,Statewide,Age,ED Admission,Age,19 to 39,Alcohol Related,46417,300019,15.5
+2021,Statewide,Age,ED Admission,Age,19 to 39,All Others,253602,300019,84.5
+2021,Statewide,Age,ED Admission,Age,40 to 59,Alcohol Related,96953,484659,20
+2021,Statewide,Age,ED Admission,Age,40 to 59,All Others,387706,484659,80
+2021,Statewide,Age,ED Admission,Age,60+,Alcohol Related,110352,1093688,10.1
+2021,Statewide,Age,ED Admission,Age,60+,All Others,983336,1093688,89.9
+2021,Statewide,Age,ED Visit,Age,0 to 18,Alcohol Related,8399,1993266,0.4
+2021,Statewide,Age,ED Visit,Age,0 to 18,All Others,1984867,1993266,99.6
+2021,Statewide,Age,ED Visit,Age,19 to 39,Alcohol Related,130265,3647966,3.6
+2021,Statewide,Age,ED Visit,Age,19 to 39,All Others,3517701,3647966,96.4
+2021,Statewide,Age,ED Visit,Age,40 to 59,Alcohol Related,151448,2719939,5.6
+2021,Statewide,Age,ED Visit,Age,40 to 59,All Others,2568491,2719939,94.4
+2021,Statewide,Age,ED Visit,Age,60+,Alcohol Related,91925,2546132,3.6
+2021,Statewide,Age,ED Visit,Age,60+,All Others,2454207,2546132,96.4
+2021,Statewide,Alcohol Category,ED Admission,Total,All Alcohol Related Encounters,Acute Alcohol Episode,42779,255362,16.8
+2021,Statewide,Alcohol Category,ED Admission,Total,All Alcohol Related Encounters,Chronic Alcohol Episode,185118,255362,72.5
+2021,Statewide,Alcohol Category,ED Admission,Total,All Alcohol Related Encounters,Co-occuring Acute & Chronic Alcohol Episode,27465,255362,10.8
+2021,Statewide,Alcohol Category,ED Visit,Total,All Alcohol Related Encounters,Acute Alcohol Episode,155132,382153,40.6
+2021,Statewide,Alcohol Category,ED Visit,Total,All Alcohol Related Encounters,Chronic Alcohol Episode,212963,382153,55.7
+2021,Statewide,Alcohol Category,ED Visit,Total,All Alcohol Related Encounters,Co-occuring Acute & Chronic Alcohol Episode,14058,382153,3.7
+2021,Statewide,Alcohol Category,ED Admission,Sex,Female,Acute Alcohol Episode,11139,93201,12
+2021,Statewide,Alcohol Category,ED Admission,Sex,Female,Chronic Alcohol Episode,74811,93201,80.3
+2021,Statewide,Alcohol Category,ED Admission,Sex,Female,Co-occuring Acute & Chronic Alcohol Episode,7251,93201,7.8
+2021,Statewide,Alcohol Category,ED Admission,Sex,Male,Acute Alcohol Episode,31630,162145,19.5
+2021,Statewide,Alcohol Category,ED Admission,Sex,Male,Chronic Alcohol Episode,110303,162145,68
+2021,Statewide,Alcohol Category,ED Admission,Sex,Male,Co-occuring Acute & Chronic Alcohol Episode,20212,162145,12.5
+2021,Statewide,Alcohol Category,ED Visit,Sex,Female,Acute Alcohol Episode,48199,142827,33.7
+2021,Statewide,Alcohol Category,ED Visit,Sex,Female,Chronic Alcohol Episode,90961,142827,63.7
+2021,Statewide,Alcohol Category,ED Visit,Sex,Female,Co-occuring Acute & Chronic Alcohol Episode,3667,142827,2.6
+2021,Statewide,Alcohol Category,ED Visit,Sex,Male,Acute Alcohol Episode,106879,239242,44.7
+2021,Statewide,Alcohol Category,ED Visit,Sex,Male,Chronic Alcohol Episode,121973,239242,51
+2021,Statewide,Alcohol Category,ED Visit,Sex,Male,Co-occuring Acute & Chronic Alcohol Episode,10390,239242,4.3
+2021,Statewide,Alcohol Category,ED Admission,Payer,Medi_Cal,Acute Alcohol Episode,21677,107185,20.2
+2021,Statewide,Alcohol Category,ED Admission,Payer,Medi_Cal,Chronic Alcohol Episode,69896,107185,65.2
+2021,Statewide,Alcohol Category,ED Admission,Payer,Medi_Cal,Co-occuring Acute & Chronic Alcohol Episode,15612,107185,14.6
+2021,Statewide,Alcohol Category,ED Admission,Payer,Medicare,Acute Alcohol Episode,10574,85526,12.4
+2021,Statewide,Alcohol Category,ED Admission,Payer,Medicare,Chronic Alcohol Episode,69400,85526,81.1
+2021,Statewide,Alcohol Category,ED Admission,Payer,Medicare,Co-occuring Acute & Chronic Alcohol Episode,5552,85526,6.5
+2021,Statewide,Alcohol Category,ED Admission,Payer,Other/Unk_Payer,Acute Alcohol Episode,1454,6183,23.5
+2021,Statewide,Alcohol Category,ED Admission,Payer,Other/Unk_Payer,Chronic Alcohol Episode,4131,6183,66.8
+2021,Statewide,Alcohol Category,ED Admission,Payer,Other/Unk_Payer,Co-occuring Acute & Chronic Alcohol Episode,598,6183,9.7
+2021,Statewide,Alcohol Category,ED Admission,Payer,Private_Coverage,Acute Alcohol Episode,7170,49594,14.5
+2021,Statewide,Alcohol Category,ED Admission,Payer,Private_Coverage,Chronic Alcohol Episode,37668,49594,76
+2021,Statewide,Alcohol Category,ED Admission,Payer,Private_Coverage,Co-occuring Acute & Chronic Alcohol Episode,4756,49594,9.6
+2021,Statewide,Alcohol Category,ED Admission,Payer,SelfPay,Acute Alcohol Episode,1904,6874,27.7
+2021,Statewide,Alcohol Category,ED Admission,Payer,SelfPay,Chronic Alcohol Episode,4023,6874,58.5
+2021,Statewide,Alcohol Category,ED Admission,Payer,SelfPay,Co-occuring Acute & Chronic Alcohol Episode,947,6874,13.8
+2021,Statewide,Alcohol Category,ED Visit,Payer,Medi_Cal,Acute Alcohol Episode,75751,174976,43.3
+2021,Statewide,Alcohol Category,ED Visit,Payer,Medi_Cal,Chronic Alcohol Episode,91139,174976,52.1
+2021,Statewide,Alcohol Category,ED Visit,Payer,Medi_Cal,Co-occuring Acute & Chronic Alcohol Episode,8086,174976,4.6
+2021,Statewide,Alcohol Category,ED Visit,Payer,Medicare,Acute Alcohol Episode,20768,70059,29.6
+2021,Statewide,Alcohol Category,ED Visit,Payer,Medicare,Chronic Alcohol Episode,47394,70059,67.6
+2021,Statewide,Alcohol Category,ED Visit,Payer,Medicare,Co-occuring Acute & Chronic Alcohol Episode,1897,70059,2.7
+2021,Statewide,Alcohol Category,ED Visit,Payer,Other/Unk_Payer,Acute Alcohol Episode,4930,10529,46.8
+2021,Statewide,Alcohol Category,ED Visit,Payer,Other/Unk_Payer,Chronic Alcohol Episode,5295,10529,50.3
+2021,Statewide,Alcohol Category,ED Visit,Payer,Other/Unk_Payer,Co-occuring Acute & Chronic Alcohol Episode,304,10529,2.9
+2021,Statewide,Alcohol Category,ED Visit,Payer,Private_Coverage,Acute Alcohol Episode,32480,91716,35.4
+2021,Statewide,Alcohol Category,ED Visit,Payer,Private_Coverage,Chronic Alcohol Episode,56413,91716,61.5
+2021,Statewide,Alcohol Category,ED Visit,Payer,Private_Coverage,Co-occuring Acute & Chronic Alcohol Episode,2823,91716,3.1
+2021,Statewide,Alcohol Category,ED Visit,Payer,SelfPay,Acute Alcohol Episode,21203,34873,60.8
+2021,Statewide,Alcohol Category,ED Visit,Payer,SelfPay,Chronic Alcohol Episode,12722,34873,36.5
+2021,Statewide,Alcohol Category,ED Visit,Payer,SelfPay,Co-occuring Acute & Chronic Alcohol Episode,948,34873,2.7
+2021,Statewide,Alcohol Category,ED Admission,Race,All Other,Acute Alcohol Episode,2829,14168,20
+2021,Statewide,Alcohol Category,ED Admission,Race,All Other,Chronic Alcohol Episode,9843,14168,69.5
+2021,Statewide,Alcohol Category,ED Admission,Race,All Other,Co-occuring Acute & Chronic Alcohol Episode,1496,14168,10.6
+2021,Statewide,Alcohol Category,ED Admission,Race,American Indian/Alaska Native,Acute Alcohol Episode,180,1253,14.4
+2021,Statewide,Alcohol Category,ED Admission,Race,American Indian/Alaska Native,Chronic Alcohol Episode,913,1253,72.9
+2021,Statewide,Alcohol Category,ED Admission,Race,American Indian/Alaska Native,Co-occuring Acute & Chronic Alcohol Episode,160,1253,12.8
+2021,Statewide,Alcohol Category,ED Admission,Race,Asian/Pacific Islander,Acute Alcohol Episode,1185,13786,8.6
+2021,Statewide,Alcohol Category,ED Admission,Race,Asian/Pacific Islander,Chronic Alcohol Episode,11898,13786,86.3
+2021,Statewide,Alcohol Category,ED Admission,Race,Asian/Pacific Islander,Co-occuring Acute & Chronic Alcohol Episode,703,13786,5.1
+2021,Statewide,Alcohol Category,ED Admission,Race,Black,Acute Alcohol Episode,5697,21117,27
+2021,Statewide,Alcohol Category,ED Admission,Race,Black,Chronic Alcohol Episode,13382,21117,63.4
+2021,Statewide,Alcohol Category,ED Admission,Race,Black,Co-occuring Acute & Chronic Alcohol Episode,2038,21117,9.7
+2021,Statewide,Alcohol Category,ED Admission,Race,Hispanic,Acute Alcohol Episode,13906,94888,14.7
+2021,Statewide,Alcohol Category,ED Admission,Race,Hispanic,Chronic Alcohol Episode,70289,94888,74.1
+2021,Statewide,Alcohol Category,ED Admission,Race,Hispanic,Co-occuring Acute & Chronic Alcohol Episode,10693,94888,11.3
+2021,Statewide,Alcohol Category,ED Admission,Race,White,Acute Alcohol Episode,18982,110150,17.2
+2021,Statewide,Alcohol Category,ED Admission,Race,White,Chronic Alcohol Episode,78793,110150,71.5
+2021,Statewide,Alcohol Category,ED Admission,Race,White,Co-occuring Acute & Chronic Alcohol Episode,12375,110150,11.2
+2021,Statewide,Alcohol Category,ED Visit,Race,All Other,Acute Alcohol Episode,12068,23864,50.6
+2021,Statewide,Alcohol Category,ED Visit,Race,All Other,Chronic Alcohol Episode,11088,23864,46.5
+2021,Statewide,Alcohol Category,ED Visit,Race,All Other,Co-occuring Acute & Chronic Alcohol Episode,708,23864,3
+2021,Statewide,Alcohol Category,ED Visit,Race,American Indian/Alaska Native,Acute Alcohol Episode,834,2022,41.2
+2021,Statewide,Alcohol Category,ED Visit,Race,American Indian/Alaska Native,Chronic Alcohol Episode,1115,2022,55.1
+2021,Statewide,Alcohol Category,ED Visit,Race,American Indian/Alaska Native,Co-occuring Acute & Chronic Alcohol Episode,73,2022,3.6
+2021,Statewide,Alcohol Category,ED Visit,Race,Asian/Pacific Islander,Acute Alcohol Episode,3783,13593,27.8
+2021,Statewide,Alcohol Category,ED Visit,Race,Asian/Pacific Islander,Chronic Alcohol Episode,9500,13593,69.9
+2021,Statewide,Alcohol Category,ED Visit,Race,Asian/Pacific Islander,Co-occuring Acute & Chronic Alcohol Episode,310,13593,2.3
+2021,Statewide,Alcohol Category,ED Visit,Race,Black,Acute Alcohol Episode,15071,30372,49.6
+2021,Statewide,Alcohol Category,ED Visit,Race,Black,Chronic Alcohol Episode,14408,30372,47.4
+2021,Statewide,Alcohol Category,ED Visit,Race,Black,Co-occuring Acute & Chronic Alcohol Episode,893,30372,2.9
+2021,Statewide,Alcohol Category,ED Visit,Race,Hispanic,Acute Alcohol Episode,55453,154172,36
+2021,Statewide,Alcohol Category,ED Visit,Race,Hispanic,Chronic Alcohol Episode,92711,154172,60.1
+2021,Statewide,Alcohol Category,ED Visit,Race,Hispanic,Co-occuring Acute & Chronic Alcohol Episode,6008,154172,3.9
+2021,Statewide,Alcohol Category,ED Visit,Race,White,Acute Alcohol Episode,67923,158130,43
+2021,Statewide,Alcohol Category,ED Visit,Race,White,Chronic Alcohol Episode,84141,158130,53.2
+2021,Statewide,Alcohol Category,ED Visit,Race,White,Co-occuring Acute & Chronic Alcohol Episode,6066,158130,3.8
+2021,Statewide,Alcohol Category,ED Admission,Age,0 to 18,Acute Alcohol Episode,389,1628,23.9
+2021,Statewide,Alcohol Category,ED Admission,Age,0 to 18,Chronic Alcohol Episode,1224,1628,75.2
+2021,Statewide,Alcohol Category,ED Admission,Age,0 to 18,Co-occuring Acute & Chronic Alcohol Episode,15,1628,0.9
+2021,Statewide,Alcohol Category,ED Admission,Age,19 to 39,Acute Alcohol Episode,12280,46417,26.5
+2021,Statewide,Alcohol Category,ED Admission,Age,19 to 39,Chronic Alcohol Episode,28285,46417,60.9
+2021,Statewide,Alcohol Category,ED Admission,Age,19 to 39,Co-occuring Acute & Chronic Alcohol Episode,5852,46417,12.6
+2021,Statewide,Alcohol Category,ED Admission,Age,40 to 59,Acute Alcohol Episode,16125,96953,16.6
+2021,Statewide,Alcohol Category,ED Admission,Age,40 to 59,Chronic Alcohol Episode,67134,96953,69.2
+2021,Statewide,Alcohol Category,ED Admission,Age,40 to 59,Co-occuring Acute & Chronic Alcohol Episode,13694,96953,14.1
+2021,Statewide,Alcohol Category,ED Admission,Age,60+,Acute Alcohol Episode,13978,110352,12.7
+2021,Statewide,Alcohol Category,ED Admission,Age,60+,Chronic Alcohol Episode,88472,110352,80.2
+2021,Statewide,Alcohol Category,ED Admission,Age,60+,Co-occuring Acute & Chronic Alcohol Episode,7902,110352,7.2
+2021,Statewide,Alcohol Category,ED Visit,Age,0 to 18,Acute Alcohol Episode,4442,8399,52.9
+2021,Statewide,Alcohol Category,ED Visit,Age,0 to 18,Chronic Alcohol Episode,3892,8399,46.3
+2021,Statewide,Alcohol Category,ED Visit,Age,0 to 18,Co-occuring Acute & Chronic Alcohol Episode,65,8399,0.8
+2021,Statewide,Alcohol Category,ED Visit,Age,19 to 39,Acute Alcohol Episode,63729,130265,48.9
+2021,Statewide,Alcohol Category,ED Visit,Age,19 to 39,Chronic Alcohol Episode,61971,130265,47.6
+2021,Statewide,Alcohol Category,ED Visit,Age,19 to 39,Co-occuring Acute & Chronic Alcohol Episode,4565,130265,3.5
+2021,Statewide,Alcohol Category,ED Visit,Age,40 to 59,Acute Alcohol Episode,58634,151448,38.7
+2021,Statewide,Alcohol Category,ED Visit,Age,40 to 59,Chronic Alcohol Episode,85880,151448,56.7
+2021,Statewide,Alcohol Category,ED Visit,Age,40 to 59,Co-occuring Acute & Chronic Alcohol Episode,6934,151448,4.6
+2021,Statewide,Alcohol Category,ED Visit,Age,60+,Acute Alcohol Episode,28241,91925,30.7
+2021,Statewide,Alcohol Category,ED Visit,Age,60+,Chronic Alcohol Episode,61191,91925,66.6
+2021,Statewide,Alcohol Category,ED Visit,Age,60+,Co-occuring Acute & Chronic Alcohol Episode,2493,91925,2.7

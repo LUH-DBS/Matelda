@@ -1,0 +1,16 @@
+﻿Year,Date,Type,Clearance_Rate_Percent,F5_year_average_Tempe,National_Rate,National_Rate_5_year_average,ObjectId
+1961,1961/12/31 07:00:00+00,Clearance Rate,114,,,,1
+1970,1970/12/31 07:00:00+00,Clearance Rate,58,,,,2
+1980,1980/12/31 07:00:00+00,Clearance Rate,51,,,,3
+1990,1990/12/31 07:00:00+00,Clearance Rate,40,,,,4
+2000,2000/12/31 07:00:00+00,Clearance Rate,46,,44.5,,5
+2010,2010/12/31 07:00:00+00,Clearance Rate,49,,44.3,,6
+2012,2012/12/31 07:00:00+00,Clearance Rate,34,,43.6,,7
+2013,2013/12/31 07:00:00+00,Clearance Rate,32,,45.2,,8
+2014,2014/12/31 07:00:00+00,Clearance Rate,32,,44.5,,9
+2015,2015/12/31 07:00:00+00,Clearance Rate,38,,42.4,,10
+2016,2016/12/31 07:00:00+00,Clearance Rate,35,34.2,42,43.5,11
+2017,2017/12/31 07:00:00+00,Clearance Rate,36,34.6,42.3,43.28,12
+2018,2018/12/31 07:00:00+00,Clearance Rate,41,36.4,43.1,42.86,13
+2019,2019/12/31 07:00:00+00,Clearance Rate,46,39.2,43.3,42.62,14
+2019,2019/12/31 07:00:00+00,Target Date,,43.5,,,15

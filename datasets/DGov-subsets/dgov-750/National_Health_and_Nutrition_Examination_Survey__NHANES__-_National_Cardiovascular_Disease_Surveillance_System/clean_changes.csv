@@ -1,0 +1,215 @@
+20.break_out_id,AGE02,AGE08
+60.break_out_category,Raxce,Race
+5.indicator_id,NH303,NH002
+88.rowid,NHANES~2007-2008~59~NH004~RAC04~Crude,NHANES~2009-2010~59~NH072~AGE02~Crude
+44.break_out_id,AGE07,RAC04
+9.break_out,Non-Hispanic White,20-24
+56.rowid,NHANES~2007-2008~59~NH004~RAC04~Crude,NHANES~2015-2016~59~NH303~RAC01~Age-Standardized
+3.break_out_id,AGE07,RAC01
+3237.break_out,18-2n4,18-24
+36.break_out_id,RAC04,AGE07
+16.break_out,Other,Female
+26.rowid,NHANES~2007-2008~59~NH024~RAC04~Crude,NHANES~2001-2002~59~NH022~RAC01~Age-Standardized
+14.break_out_category_id,BC04,BOC04
+4.break_out_id,RAC01,GEN02
+28.break_out_category_id,BOC01,BOC03
+51.rowid,NHANES~2015-2016~59~NH074~RAC01~Age-Standardized,NHANES~1999-2000~59~NH024~AGE08~Crude
+73.rowid,NHANES~2013-2014~59~NH005~RAC02~Age-Standardized,NHANES~2007-2008~59~NH403~RAC01~Age-Standardized
+58.rowid,NHANES~2003-2004~59~NH073~RAC03~Crude,NHANES~2001-2002~59~NH024~RAC07~Age-Standardized
+1.break_out_category,ge,Age
+7.break_out_id,RAC04,AGE06
+77.rowid,NHANES~2015-2016~59~NH067~GEN01~Crude,NHANES~1999-2000~59~NH064~GEN01~Age-Standardized
+7.indicator_id,NH603,NH005
+45.break_out_category,Gendre,Gender
+20.break_out_category,ge,Age
+15.break_out_category,aRce,Race
+46.rowid,NHANES~2009-2010~59~NH023~OVR01~Crude,NHANES~2017-2018~59~NH303~RAC01~Crude
+71.rowid,NHANES~2007-2008~59~NH004~RAC04~Crude,NHANES~2015-2016~59~NH701~AGE04~Crude
+43.rowid,NHANES~2015-2016~59~NH401~RAC07~Crude,NHANES~2007-2008~59~NH203~AGE07~Crude
+6.rowid,NHANES~2009-2010~59~NH063~AGE08~Crude,NHANES~2001-2002~59~NH070~AGE07~Crude
+61.break_out_category_id,OC02,BOC02
+6.indicator_id,NH005,NH070
+16.rowid,NHANES~1999-2000~59~NH021~RAC04~Crude,NHANES~2013-2014~59~NH401~GEN02~Crude
+19.break_out,20-24,Hispanic
+13.category_id,2,C2
+7.break_out,Non-Hispanic White,65+
+32.break_out,45-64,Non-Hispanic White
+11.rowid,NHANES~2015-2016~59~NH067~GEN01~Crude,NHANES~2009-2010~59~NH064~AGE07~Crude
+45.rowid,NHANES~2005-2006~59~NH067~RAC07~Crude,NHANES~2009-2010~59~NH072~GEN02~Crude
+24.rowid,NHANES~2003-2004~59~NH401~GEN02~Crude,NHANES~2003-2004~59~NH001~RAC01~Age-Standardized
+23.rowid,NHANES~2003-2004~59~NH072~AGE08~Crude,NHANES~2003-2004~59~NH004~RAC07~Age-Standardized
+29.break_out_category,Acge,Age
+32.break_out_id,GEN01,RAC01
+33.break_out,Overall,65+
+17.break_out_category,Geder,Gender
+4070.break_out_id,GE01,AGE01
+21.topic_id,T5,T13
+8.topic_id,T1,T13
+41.break_out_id,AGE07,RAC01
+1310.topic,Major Cardiovascular Diseaes,Major Cardiovascular Disease
+48.rowid,NHANES~2003-2004~59~NH073~RAC03~Crude,NHANES~2015-2016~59~NH001~AGE07~Crude
+590.break_out_id,AdGE01,AGE01
+36.break_out,Hispanic,35+
+2.break_out_id,RAC04,GEN01
+3.rowid,NHANES~2003-2004~59~NH072~AGE08~Crude,NHANES~2013-2014~59~NH070~RAC01~Crude
+61.rowid,NHANES~2005-2006~59~NH067~RAC07~Crude,NHANES~2013-2014~59~NH303~GEN01~Crude
+38.topic_id,T5,T15
+14.break_out_category,ace,Race
+6090.break_out_id,GAE01,AGE01
+29.break_out,18-l24,18-24
+13.category,Risk Fcators,Risk Factors
+10.break_out_category_id,BOC04,BOC01
+30.rowid,NHANES~2007-2008~59~NH003~RAC01~Age-Standardized,NHANES~2015-2016~59~NH002~AGE02~Crude
+22.break_out,Non-Hispanic White,Overall
+15.break_out_category_id,BOC40,BOC04
+13.rowid,NHANES~2003-2004~59~NH067~OVR01~Crude,NHANES~2013-2014~59~NH303~RAC01~Age-Standardized
+17.rowid,NHANES~1999-2000~59~NH021~RAC04~Crude,NHANES~2007-2008~59~NH401~GEN01~Crude
+4.indicator_id,NH003,NH070
+8.indicator_id,NH002,NH072
+10.break_out_id,RAC01,OVR01
+12.category,Risk Fkactors,Risk Factors
+60.category_id,2,C2
+50.break_out_category,eGnder,Gender
+4.topic_id,T4,T11
+62.rowid,NHANES~2017-2018~59~NH005~GEN02~Crude,NHANES~2013-2014~59~NH023~RAC02~Age-Standardized
+70.rowid,NHANES~2003-2004~59~NH073~RAC03~Crude,NHANES~2013-2014~59~NH003~RAC01~Crude
+52.rowid,NHANES~1999-2000~59~NH023~RAC01~Crude,NHANES~2011-2012~59~NH024~GEN02~Crude
+14.break_out_id,RAC02,RAC01
+11.topic_id,T4,T10
+1286.topic,Majojr Cardiovascular Disease,Major Cardiovascular Disease
+3481.break_out,18-4,18-24
+1428.break_out_id,AGE10,AGE01
+13.break_out_id,AGE07,RAC01
+62.break_out_category_id,BOCz04,BOC04
+10.topic_id,T4,T13
+5.break_out,Other,20-24
+19.rowid,NHANES~2003-2004~59~NH801~AGE04~Crude,NHANES~2017-2018~59~NH072~RAC04~Age-Standardized
+3462.break_out,8-24,18-24
+3.topic_id,T1,T11
+64.rowid,NHANES~2007-2008~59~NH061~AGE07~Crude,NHANES~2007-2008~59~NH801~RAC07~Crude
+4342.break_out,1g8-24,18-24
+37.break_out,Female,Hispanic
+22.break_out_category_id,BOC04,BOC01
+1875.break_out_id,AGEd01,AGE01
+5.topic_id,T10,T5
+60.break_out_category_id,OC04,BOC04
+28.rowid,NHANES~2007-2008~59~NH061~AGE07~Crude,NHANES~2011-2012~59~NH701~AGE02~Crude
+41.rowid,NHANES~2003-2004~59~NH403~OVR01~Crude,NHANES~2007-2008~59~NH001~RAC01~Age-Standardized
+72.rowid,NHANES~2007-2008~59~NH074~AGE08~Crude,NHANES~2007-2008~59~NH303~RAC04~Crude
+19.category_id,rC2,C2
+1.rowid,NHANES~2015-2016~59~NH401~RAC07~Crude,NHANES~2011-2012~59~NH071~AGE05~Crude
+42.break_out_id,RAC01,GEN02
+34.topic_id,T4,T9
+26.break_out_category,Racte,Race
+25.break_out_id,AGE02,RAC07
+84.rowid,NHANES~2003-2004~59~NH001~AGE05~Crude,NHANES~1999-2000~59~NH063~AGE05~Crude
+33.rowid,NHANES~2017-2018~59~NH022~GEN01~Crude,NHANES~2001-2002~59~NH021~AGE06~Crude
+11.break_out,Female,35+
+10.rowid,NHANES~2009-2010~59~NH002~RAC01~Crude,NHANES~2005-2006~59~NH601~OVR01~Crude
+4678.break_out_id,AGE1,AGE01
+57.rowid,NHANES~2007-2008~59~NH074~AGE07~Crude,NHANES~2003-2004~59~NH203~RAC01~Crude
+40.break_out_category_id,BC02,BOC02
+7.topic_id,T21,T6
+75.rowid,NHANES~2005-2006~59~NH067~RAC07~Crude,NHANES~2017-2018~59~NH004~AGE04~Crude
+60.rowid,NHANES~2009-2010~59~NH074~RAC03~Crude,NHANES~2013-2014~59~NH703~RAC02~Age-Standardized
+16.break_out_category_id,BOC04,BOC02
+87.rowid,NHANES~2003-2004~59~NH001~AGE05~Crude,NHANES~2011-2012~59~NH063~RAC01~Age-Standardized
+20.category,Risk Factros,Risk Factors
+17.break_out_id,AGE02,GEN01
+52.break_out_category,eGnder,Gender
+39.rowid,NHANES~2011-2012~59~NH021~AGE07~Crude,NHANES~2015-2016~59~NH004~RAC04~Age-Standardized
+69.rowid,NHANES~2015-2016~59~NH074~AGE07~Crude,NHANES~2005-2006~59~NH001~RAC03~Age-Standardized
+37.rowid,NHANES~2017-2018~59~NH005~GEN02~Crude,NHANES~2005-2006~59~NH022~RAC04~Age-Standardized
+59.category_id,wC2,C2
+34.break_out,Overall,Other
+12.category_id,Cu2,C2
+53.rowid,NHANES~2009-2010~59~NH023~RAC01~Crude,NHANES~1999-2000~59~NH065~OVR01~Crude
+15.break_out_id,AGE08,RAC01
+78.rowid,NHANES~1999-2000~59~NH003~OVR01~Age-Standardized,NHANES~2011-2012~59~NH303~AGE02~Crude
+4852.topic,Majo rCardiovascular Disease,Major Cardiovascular Disease
+2.rowid,NHANES~2003-2004~59~NH401~GEN02~Crude,NHANES~2017-2018~59~NH071~GEN01~Crude
+2.break_out,Non-Hispanic White,Male
+27.category,Risk Facors,Risk Factors
+2.indicator_id,NH004,NH071
+67.rowid,NHANES~2017-2018~59~NH603~OVR01~Age-Standardized,NHANES~1999-2000~59~NH002~RAC04~Crude
+40.rowid,NHANES~2017-2018~59~NH023~AGE06~Crude,NHANES~2009-2010~59~NH070~GEN01~Crude
+51.break_out_category_id,BvOC03,BOC03
+2453.topic,Maor Cardiovascular Disease,Major Cardiovascular Disease
+5.break_out_id,OVR01,AGE02
+21.break_out_category,Gendr,Gender
+66.rowid,NHANES~2007-2008~59~NH065~OVR01~Crude,NHANES~2013-2014~59~NH703~RAC03~Crude
+7.rowid,NHANES~2003-2004~59~NH072~AGE08~Crude,NHANES~2013-2014~59~NH005~AGE06~Crude
+65.rowid,NHANES~2005-2006~59~NH067~RAC07~Crude,NHANES~2013-2014~59~NH501~RAC02~Age-Standardized
+8.break_out_id,RAC04,AGE08
+86.rowid,NHANES~1999-2000~59~NH003~OVR01~Age-Standardized,NHANES~1999-2000~59~NH022~RAC03~Crude
+76.rowid,NHANES~2007-2008~59~NH004~RAC04~Crude,NHANES~2005-2006~59~NH063~RAC02~Crude
+45.category_id,Cx2,C2
+14.rowid,NHANES~1999-2000~59~NH003~RAC01~Crude,NHANES~2009-2010~59~NH003~RAC01~Crude
+20.break_out_category_id,BCO03,BOC03
+24.break_out_category_id,BO0C4,BOC04
+18.rowid,NHANES~2007-2008~59~NH065~OVR01~Crude,NHANES~2011-2012~59~NH801~RAC04~Age-Standardized
+1.topic_id,T1,T13
+23.break_out,20-24,Other
+4858.topic,Major Cardiovacsular Disease,Major Cardiovascular Disease
+40.category_id,2,C2
+51.break_out_category,gAe,Age
+54.rowid,NHANES~2003-2004~59~NH073~RAC03~Crude,NHANES~1999-2000~59~NH024~OVR01~Age-Standardized
+4.break_out,Non-Hispanic White,Female
+4478.break_out,18-42,18-24
+12.rowid,NHANES~2011-2012~59~NH021~AGE07~Crude,NHANES~2009-2010~59~NH101~GEN02~Age-Standardized
+80.rowid,NHANES~2005-2006~59~NH001~RAC02~Age-Standardized,NHANES~2013-2014~59~NH201~RAC02~Age-Standardized
+1899.topic,Major Carldiovascular Disease,Major Cardiovascular Disease
+74.rowid,NHANES~2001-2002~59~NH021~OVR01~Crude,NHANES~1999-2000~59~NH004~AGE07~Crude
+33.topic_id,T3,T9
+28.topic_id,T9,T14
+44.break_out_category_id,BOC02,BOC04
+3.break_out,20-24,Non-Hispanic White
+1.break_out_category_id,BO03,BOC03
+31.break_out,20-24,Male
+81.rowid,NHANES~2007-2008~59~NH004~RAC04~Crude,NHANES~2011-2012~59~NH401~GEN01~Crude
+3324.break_out,8-24,18-24
+16.category_id,2,C2
+12.break_out_category_id,BOC0z2,BOC02
+22.topic_id,T21,T13
+1922.topic,ajor Cardiovascular Disease,Major Cardiovascular Disease
+38.break_out,Female,Non-Hispanic White
+9.category_id,aC2,C2
+85.rowid,NHANES~2015-2016~59~NH002~RAC03~Age-Standardized,NHANES~2007-2008~59~NH073~RAC02~Crude
+33.break_out_category,dAge,Age
+23.break_out_category_id,BOC03,BOC04
+14.category,Cardiovaoscular Diseases,Cardiovascular Diseases
+6.break_out,Non-Hispanic White,35+
+24.category_id,uC1,C1
+29.break_out_category_id,OC03,BOC03
+17.category_id,2,C2
+13.break_out_category_id,BOC40,BOC04
+35.topic_id,T9,T5
+18.category,Rsk Factors,Risk Factors
+27.rowid,NHANES~1999-2000~59~NH003~RAC01~Crude,NHANES~2017-2018~59~NH022~RAC01~Crude
+21.rowid,NHANES~2017-2018~59~NH020~AGE01~Crude,NHANES~2003-2004~59~NH601~GEN01~Age-Standardized
+25.topic_id,T3,T13
+26.category,Risk Fators,Risk Factors
+46.break_out_id,AGE07,RAC01
+32.rowid,NHANES~2001-2002~59~NH061~AGE04~Crude,NHANES~2015-2016~59~NH066~RAC01~Crude
+25.rowid,NHANES~2009-2010~59~NH002~RAC01~Crude,NHANES~2015-2016~59~NH601~RAC07~Age-Standardized
+18.category_id,2,C2
+5635.break_out_id,AE01,AGE01
+42.category_id,wC2,C2
+38.rowid,NHANES~2015-2016~59~NH067~GEN01~Crude,NHANES~2007-2008~59~NH803~RAC01~Age-Standardized
+34.rowid,NHANES~2009-2010~59~NH061~AGE03~Crude,NHANES~2015-2016~59~NH020~RAC07~Age-Standardized
+3.indicator_id,NH003,NH070
+41.category_id,1C,C1
+2.topic_id,T4,T13
+5.rowid,NHANES~2003-2004~59~NH072~AGE08~Crude,NHANES~2013-2014~59~NH002~AGE02~Crude
+18.break_out,25-44,Hispanic
+9.rowid,NHANES~2011-2012~59~NH021~AGE07~Crude,NHANES~2009-2010~59~NH101~AGE02~Crude
+65.break_out_category_id,BOC40,BOC04
+8.break_out,Overall,75+
+19.topic_id,T5,T13
+4.rowid,NHANES~2017-2018~59~NH603~OVR01~Age-Standardized,NHANES~2015-2016~59~NH070~GEN02~Crude
+31.break_out_id,RAC04,GEN01
+29.topic_id,T4,T9
+16.topic_id,T10,T11
+11.break_out_category_id,BOC04,BOC03
+21.break_out_id,RAC01,GEN01
+32.topic_id,T3,T10

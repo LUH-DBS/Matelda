@@ -1,0 +1,6 @@
+﻿OBJECTID,name,reduction,created_user,created_date,last_edited_user,last_edited_date,parking_reduction_areas,Shape__Area,Shape__Length
+1,East Liberty,50% reduction for all uses except residential,,,SDE,2015/12/24 14:03:18+00,East Liberty,3036300.4083252,9483.55997621979
+3,North Side,25% reduction for all uses except residential,,,SDE,2015/12/24 14:03:18+00,North Side,3422819.59442139,7287.56205635303
+5,SP-11 Lower Hill,100% reduction for all uses,SDE,2018/10/09 13:39:50+00,SDE,2018/10/09 13:41:20+00,SP-11 Lower Hill,1892264.3079834,7772.48425617927
+6,Uptown Public Realm District,100% reduction for all uses,SDE,2018/10/09 13:39:50+00,SDE,2018/10/09 13:41:12+00,Uptown Public Realm District,4213033.6640625,16077.0062727804
+7,Downtown,100% reduction for all uses,SDE,2018/10/09 13:39:50+00,SDE,2018/10/09 13:40:48+00,Downtown,15965665.3013,18595.8701098909

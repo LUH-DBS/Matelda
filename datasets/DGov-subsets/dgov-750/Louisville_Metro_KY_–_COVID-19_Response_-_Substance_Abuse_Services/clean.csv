@@ -1,0 +1,1030 @@
+﻿Date,F__distributed,Location,ID,Group_,Gender,Ethnicity,City,State,County,ObjectId
+2021/07/30 00:00:00+00,12,40219,1,Substance,,,,,,1
+2021/08/03 00:00:00+00,12,Unsheltered,2,Substance,,,,,,2
+2021/08/04 00:00:00+00,12,Unsheltered,3,Substance,,,,,,3
+2021/08/04 00:00:00+00,12,40212,4,Substance,,,,,,4
+2021/08/13 00:00:00+00,12,Unsheltered,5,Substance,,,,,,5
+2021/08/17 00:00:00+00,12,see QRT tab,6,Substance,,,,,,6
+2021/08/23 00:00:00+00,12,Unsheltered,7,Substance,,,,,,7
+2021/08/25 00:00:00+00,12,see QRT tab,8,Substance,,,,,,8
+2021/08/27 00:00:00+00,12,40202,9,Substance,,,,,,9
+2021/08/31 00:00:00+00,12,Unsheltered,10,Substance,,,,,,10
+2021/09/01 00:00:00+00,12,see QRT tab,11,Substance,,,,,,11
+2021/09/09 00:00:00+00,12,40202,12,Substance,,,,,,12
+2021/09/20 00:00:00+00,12,Unsheltered,13,Substance,,,,,,13
+2021/09/21 00:00:00+00,12,40202,14,Substance,,,,,,14
+2021/09/21 00:00:00+00,12,Unsheltered,15,Substance,,,,,,15
+2021/09/22 00:00:00+00,12,Unsheltered,16,Substance,,,,,,16
+2021/09/25 00:00:00+00,12,Unsheltered,17,Substance,,,,,,17
+2021/10/01 00:00:00+00,12,Unsheltered,18,Substance,,,,,,18
+2021/10/06 00:00:00+00,12,40202,19,Substance,,,,,,19
+2021/10/07 00:00:00+00,12,Unsheltered,20,Substance,,,,,,20
+2021/10/11 00:00:00+00,12,40202,21,Substance,,,,,,21
+2021/10/12 00:00:00+00,12,Unsheltered,22,Substance,,,,,,22
+2021/10/21 00:00:00+00,12,Unsheltered,23,Substance,,,,,,23
+2021/10/25 00:00:00+00,12,see QRT tab,24,Substance,,,,,,24
+2021/10/27 00:00:00+00,12,Unsheltered,25,Substance,,,,,,25
+2021/10/27 00:00:00+00,12,see QRT tab,26,Substance,,,,,,26
+2021/10/29 00:00:00+00,12,Unsheltered,27,Substance,,,,,,27
+2021/10/29 00:00:00+00,12,see QRT tab,28,Substance,,,,,,28
+2021/11/02 00:00:00+00,12,see QRT tab,29,Substance,,,,,,29
+2021/11/08 00:00:00+00,12,Unsheltered,30,Substance,,,,,,30
+2021/11/09 00:00:00+00,12,see QRT tab,31,Substance,,,,,,31
+2021/11/09 00:00:00+00,12,40215,32,Substance,,,,,,32
+2021/11/10 00:00:00+00,12,Unsheltered,33,Substance,,,,,,33
+2021/11/13 00:00:00+00,12,Unsheltered,34,Substance,,,,,,34
+2021/11/15 00:00:00+00,12,Unsheltered,35,Substance,,,,,,35
+2021/11/15 00:00:00+00,12,see QRT tab,36,Substance,,,,,,36
+2021/11/16 00:00:00+00,12,see QRT tab,37,Substance,,,,,,37
+2021/11/16 00:00:00+00,12,Unsheltered,38,Substance,,,,,,38
+2021/11/17 00:00:00+00,12,40215,39,Substance,,,,,,39
+2021/11/17 00:00:00+00,12,see QRT tab,40,Substance,,,,,,40
+2021/11/19 00:00:00+00,12,40210,41,Substance,,,,,,41
+2021/11/23 00:00:00+00,12,Unsheltered,42,Substance,,,,,,42
+2021/11/24 00:00:00+00,12,see QRT tab,43,Substance,,,,,,43
+2021/11/29 00:00:00+00,12,Unsheltered,44,Substance,,,,,,44
+2021/11/30 00:00:00+00,12,see QRT tab,45,Substance,,,,,,45
+2021/12/01 00:00:00+00,12,Unsheltered,46,Substance,,,,,,46
+2021/12/03 00:00:00+00,12,40202,47,Substance,,,,,,47
+2021/12/10 00:00:00+00,12,40220,48,Substance,,,,,,48
+2021/12/10 00:00:00+00,12,see QRT tab,49,Substance,,,,,,49
+2021/12/10 00:00:00+00,12,40202,50,Substance,,,,,,50
+,14,40210,201,QRT,,,,,,51
+,30,40211,202,QRT,,,,,,52
+,86,40212,203,QRT,,,,,,53
+,12,40213,204,QRT,,,,,,54
+,66,40214,205,QRT,,,,,,55
+,47,40215,206,QRT,,,,,,56
+,28,40216,207,QRT,,,,,,57
+,2,40217,208,QRT,,,,,,58
+,6,40218,209,QRT,,,,,,59
+,8,40219,210,QRT,,,,,,60
+,2,40220,211,QRT,,,,,,61
+,2,40223,212,QRT,,,,,,62
+,7,40229,213,QRT,,,,,,63
+,2,40241,214,QRT,,,,,,64
+,2,40243,215,QRT,,,,,,65
+,4,40245,216,QRT,,,,,,66
+,6,40258,217,QRT,,,,,,67
+,12,40272,218,QRT,,,,,,68
+,4,40291,219,QRT,,,,,,69
+,2,47119,220,QRT,,,,,,70
+,2,47130,221,QRT,,,,,,71
+,2,47150,222,QRT,,,,,,72
+2021/11/16 00:00:00+00,,99999,223,LRT,Male,Unknown,Louisville,KY,Jefferson,73
+2021/07/20 00:00:00+00,,99999,224,LRT,Male,Unknown,Louisville,KY,Jefferson,74
+2021/07/20 00:00:00+00,,99999,225,LRT,Male,Unknown,Louisville,KY,Jefferson,75
+2021/07/16 00:00:00+00,,99999,226,LRT,Female,Unknown,Louisville,KY,Jefferson,76
+2021/07/15 00:00:00+00,,99999,227,LRT,Female,Unknown,Louisville,KY,Jefferson,77
+2021/07/15 00:00:00+00,,99999,228,LRT,Female,Unknown,Louisville,KY,Jefferson,78
+2021/07/11 00:00:00+00,,99999,229,LRT,Female,Unknown,Louisville,KY,Jefferson,79
+2021/07/11 00:00:00+00,,99999,230,LRT,Male,Unknown,Louisville,KY,Jefferson,80
+2021/07/11 00:00:00+00,,99999,231,LRT,Male,Unknown,Louisville,KY,Jefferson,81
+2021/07/07 00:00:00+00,,99999,232,LRT,Female,Unknown,Louisville,KY,Jefferson,82
+2021/07/07 00:00:00+00,,99999,233,LRT,Female,Unknown,Louisville,KY,Jefferson,83
+2021/07/08 00:00:00+00,,99999,234,LRT,Male,Unknown,Louisville,KY,Jefferson,84
+2021/07/12 00:00:00+00,,99999,235,LRT,Male,Unknown,Louisville,KY,Jefferson,85
+2021/07/12 00:00:00+00,,99999,236,LRT,Female,Unknown,Louisville,KY,Jefferson,86
+2021/07/12 00:00:00+00,,99999,237,LRT,Male,Unknown,Louisville,KY,Jefferson,87
+2021/07/12 00:00:00+00,,99999,238,LRT,Male,Unknown,Louisville,KY,Jefferson,88
+2021/07/12 00:00:00+00,,99999,239,LRT,Male,Unknown,Louisville,KY,Jefferson,89
+2021/07/12 00:00:00+00,,99999,240,LRT,Female,Unknown,Louisville,KY,Jefferson,90
+2021/07/12 00:00:00+00,,99999,241,LRT,Male,Unknown,Louisville,KY,Jefferson,91
+2021/07/12 00:00:00+00,,99999,242,LRT,Male,Unknown,Louisville,KY,Jefferson,92
+2021/08/27 00:00:00+00,,99999,243,LRT,Female,Unknown,Louisville,KY,Jefferson,93
+2021/08/27 00:00:00+00,,99999,244,LRT,Male,Unknown,Louisville,KY,Jefferson,94
+2021/08/18 00:00:00+00,,99999,245,LRT,Female,Unknown,Louisville,KY,Jefferson,95
+2021/09/08 00:00:00+00,,99999,246,LRT,Male,Unknown,Louisville,KY,Jefferson,96
+2021/09/08 00:00:00+00,,99999,247,LRT,Female,Unknown,Louisville,KY,Jefferson,97
+2021/09/08 00:00:00+00,,99999,248,LRT,Female,Unknown,Louisville,KY,Jefferson,98
+2021/09/08 00:00:00+00,,99999,249,LRT,Male,Unknown,Louisville,KY,Jefferson,99
+2021/09/08 00:00:00+00,,99999,250,LRT,Female,Unknown,Louisville,KY,Jefferson,100
+2021/07/27 00:00:00+00,,40211,301,LRT,Male,Unknown,Louisville,KY,Jefferson,101
+2021/07/27 00:00:00+00,,40203,302,LRT,Male,Unknown,Louisville,KY,Jefferson,102
+2021/07/27 00:00:00+00,,40211,303,LRT,Male,Unknown,Louisville,KY,Jefferson,103
+2021/07/27 00:00:00+00,,40211,304,LRT,Female,Unknown,Louisville,KY,Jefferson,104
+2021/07/27 00:00:00+00,,40210,305,LRT,Female,Unknown,Louisville,KY,Jefferson,105
+2021/07/27 00:00:00+00,,40211,306,LRT,Male,Unknown,Louisville,KY,Jefferson,106
+2021/07/27 00:00:00+00,,40211,307,LRT,Female,Unknown,Louisville,KY,Jefferson,107
+2021/07/27 00:00:00+00,,40203,308,LRT,Female,Unknown,Louisville,KY,Jefferson,108
+2021/07/27 00:00:00+00,,30211,309,LRT,Female,Unknown,Louisville,KY,Jefferson,109
+2021/07/25 00:00:00+00,,40216,310,LRT,Male,Unknown,Louisville,KY,Jefferson,110
+2021/07/25 00:00:00+00,,40216,311,LRT,Male,Unknown,Louisville,KY,Jefferson,111
+2021/07/25 00:00:00+00,,40216,312,LRT,Male,Unknown,Louisville,KY,Jefferson,112
+2021/07/25 00:00:00+00,,40216,313,LRT,Male,Unknown,Louisville,KY,Jefferson,113
+2021/07/25 00:00:00+00,,40216,314,LRT,Female,Unknown,Louisville,KY,Jefferson,114
+2021/07/25 00:00:00+00,,40216,315,LRT,Female,Unknown,Louisville,KY,Jefferson,115
+2021/07/25 00:00:00+00,,40216,316,LRT,Male,Unknown,Louisville,KY,Jefferson,116
+2021/07/25 00:00:00+00,,40216,317,LRT,Male,Unknown,Louisville,KY,Jefferson,117
+2021/07/25 00:00:00+00,,40216,318,LRT,Female,Unknown,Louisville,KY,Jefferson,118
+2021/07/25 00:00:00+00,,40211,319,LRT,Male,Unknown,Louisville,KY,Jefferson,119
+2021/07/25 00:00:00+00,,40216,320,LRT,Female,Unknown,Louisville,KY,Jefferson,120
+2021/07/25 00:00:00+00,,40212,321,LRT,Male,Unknown,Louisville,KY,Jefferson,121
+2021/07/20 00:00:00+00,,40203,322,LRT,Female,Unknown,Louisville,KY,Jefferson,122
+2021/07/20 00:00:00+00,,40212,323,LRT,Female,Unknown,Louisville,KY,Jefferson,123
+2021/07/20 00:00:00+00,,40211,324,LRT,Male,Unknown,Louisville,KY,Jefferson,124
+2021/07/20 00:00:00+00,,40202,325,LRT,Male,Unknown,Louisville,KY,Jefferson,125
+2021/07/20 00:00:00+00,,40211,326,LRT,Female,Unknown,Louisville,KY,Jefferson,126
+2021/07/20 00:00:00+00,,40210,327,LRT,Female,Unknown,Louisville,KY,Jefferson,127
+2021/07/20 00:00:00+00,,40216,328,LRT,Male,Unknown,Louisville,KY,Jefferson,128
+2021/07/17 00:00:00+00,,40212,329,LRT,Female,Unknown,Louisville,KY,Jefferson,129
+2021/07/16 00:00:00+00,,40212,330,LRT,Female,Unknown,Louisville,KY,Jefferson,130
+2021/07/16 00:00:00+00,,40212,331,LRT,Male,Unknown,Louisville,KY,Jefferson,131
+2021/07/16 00:00:00+00,,40212,332,LRT,Male,Unknown,Louisville,KY,Jefferson,132
+2021/07/16 00:00:00+00,,40212,333,LRT,Male,Unknown,Louisville,KY,Jefferson,133
+2021/07/11 00:00:00+00,,40212,334,LRT,Male,Unknown,Louisville,KY,Jefferson,134
+2021/07/07 00:00:00+00,,40214,335,LRT,Female,Unknown,Louisville,KY,Jefferson,135
+2021/07/07 00:00:00+00,,40214,336,LRT,Female,Unknown,Louisville,KY,Jefferson,136
+2021/07/07 00:00:00+00,,40212,337,LRT,Female,Unknown,Louisville,KY,Jefferson,137
+2021/07/07 00:00:00+00,,40212,338,LRT,Female,Unknown,Louisville,KY,Jefferson,138
+2021/07/07 00:00:00+00,,40214,339,LRT,Male,Unknown,Louisville,KY,Jefferson,139
+2021/07/07 00:00:00+00,,40214,340,LRT,Male,Unknown,Louisville,KY,Jefferson,140
+2021/07/07 00:00:00+00,,40211,341,LRT,Female,Unknown,Louisville,KY,Jefferson,141
+2021/07/07 00:00:00+00,,40211,342,LRT,Female,Unknown,Louisville,KY,Jefferson,142
+2021/07/07 00:00:00+00,,40216,343,LRT,Female,Unknown,Louisville,KY,Jefferson,143
+2021/07/07 00:00:00+00,,40211,344,LRT,Male,Unknown,Louisville,KY,Jefferson,144
+2021/07/07 00:00:00+00,,40223,345,LRT,Female,Unknown,Louisville,KY,Jefferson,145
+2021/07/07 00:00:00+00,,40212,346,LRT,Male,Unknown,Louisville,KY,Jefferson,146
+2021/07/07 00:00:00+00,,40203,347,LRT,Female,Unknown,Louisville,KY,Jefferson,147
+2021/07/07 00:00:00+00,,40203,348,LRT,Female,Unknown,Louisville,KY,Jefferson,148
+2021/07/07 00:00:00+00,,40218,349,LRT,Female,Unknown,Louisville,KY,Jefferson,149
+2021/07/07 00:00:00+00,,40222,350,LRT,Female,Unknown,Louisville,KY,Jefferson,150
+2021/11/30 00:00:00+00,36,40215,151,Substance,,,,,,151
+2021/12/03 00:00:00+00,24,Unsheltered,152,Substance,,,,,,152
+2021/12/10 00:00:00+00,36,40215,153,Substance,,,,,,153
+2021/12/14 00:00:00+00,36,40215,154,Substance,,,,,,154
+2021/12/15 00:00:00+00,36,40215,155,Substance,,,,,,155
+2022/01/20 00:00:00+00,108,see KYHRC doc,156,Substance,,,,,,156
+2022/01/21 00:00:00+00,24,40272,157,Substance,,,,,,157
+2022/01/27 00:00:00+00,24,40202,158,Substance,,,,,,158
+2022/02/08 00:00:00+00,24,Unsheltered,159,Substance,,,,,,159
+2022/02/11 00:00:00+00,96,40202,160,Substance,,,,,,160
+2022/02/16 00:00:00+00,24,Unsheltered,161,Substance,,,,,,161
+2022/02/24 00:00:00+00,3,40292,162,Substance,,,,,,162
+2022/03/08 00:00:00+00,24,Unsheltered,163,Substance,,,,,,163
+2022/03/08 00:00:00+00,24,40212,164,Substance,,,,,,164
+2022/03/18 00:00:00+00,36,40258,165,Substance,,,,,,165
+2022/03/18 00:00:00+00,24,Unsheltered,166,Substance,,,,,,166
+2022/03/21 00:00:00+00,216,see KYHRC doc,167,Substance,,,,,,167
+2022/03/21 00:00:00+00,28,see QRT tab,168,Substance,,,,,,168
+2022/03/23 00:00:00+00,24,see QRT tab,169,Substance,,,,,,169
+2022/04/05 00:00:00+00,18,40203,170,Substance,,,,,,170
+2022/04/12 00:00:00+00,24,Unsheltered,171,Substance,,,,,,171
+2022/04/16 00:00:00+00,96,40212,172,Substance,,,,,,172
+2022/04/27 00:00:00+00,24,Unsheltered,173,Substance,,,,,,173
+2022/05/04 00:00:00+00,36,40258,174,Substance,,,,,,174
+2022/05/04 00:00:00+00,24,Unsheltered,175,Substance,,,,,,175
+2022/05/06 00:00:00+00,24,Unsheltered,176,Substance,,,,,,176
+2022/05/09 00:00:00+00,24,40212,177,Substance,,,,,,177
+2022/05/13 00:00:00+00,96,40202,178,Substance,,,,,,178
+2022/05/16 00:00:00+00,24,Unsheltered,179,Substance,,,,,,179
+2022/05/19 00:00:00+00,24,Unsheltered,180,Substance,,,,,,180
+2022/05/24 00:00:00+00,24,Unsheltered,181,Substance,,,,,,181
+2022/06/03 00:00:00+00,24,Unsheltered,182,Substance,,,,,,182
+2022/06/03 00:00:00+00,96,40202,183,Substance,,,,,,183
+2022/06/06 00:00:00+00,24,Unsheltered,184,Substance,,,,,,184
+2022/06/07 00:00:00+00,24,40202,185,Substance,,,,,,185
+2022/06/07 00:00:00+00,24,Unsheltered,186,Substance,,,,,,186
+2022/06/15 00:00:00+00,24,Unsheltered,187,Substance,,,,,,187
+2022/06/21 00:00:00+00,24,Unsheltered,188,Substance,,,,,,188
+2022/06/22 00:00:00+00,24,Unsheltered,189,Substance,,,,,,189
+2022/06/28 00:00:00+00,24,Unsheltered,190,Substance,,,,,,190
+,8,40118,191,QRT,,,,,,191
+,2,40160,192,QRT,,,,,,192
+,4,40201,193,QRT,,,,,,193
+,13,40202,194,QRT,,,,,,194
+,50,40203,195,QRT,,,,,,195
+,9,40204,196,QRT,,,,,,196
+,4,40205,197,QRT,,,,,,197
+,5,40206,198,QRT,,,,,,198
+,36,40208,199,QRT,,,,,,199
+,2,40209,200,QRT,,,,,,200
+2021/12/10 00:00:00+00,12,Unsheltered,51,Substance,,,,,,201
+2021/12/11 00:00:00+00,12,see QRT tab,52,Substance,,,,,,202
+2021/12/14 00:00:00+00,12,see QRT tab,53,Substance,,,,,,203
+2021/12/15 00:00:00+00,12,see QRT tab,54,Substance,,,,,,204
+2021/12/16 00:00:00+00,12,Unsheltered,55,Substance,,,,,,205
+2021/12/21 00:00:00+00,12,see QRT tab,56,Substance,,,,,,206
+2021/12/27 00:00:00+00,12,Unsheltered,57,Substance,,,,,,207
+2021/12/28 00:00:00+00,12,see QRT tab,58,Substance,,,,,,208
+2021/12/29 00:00:00+00,12,Unsheltered,59,Substance,,,,,,209
+2021/12/30 00:00:00+00,12,see QRT tab,60,Substance,,,,,,210
+2022/01/03 00:00:00+00,12,Unsheltered,61,Substance,,,,,,211
+2022/01/04 00:00:00+00,12,Unsheltered,62,Substance,,,,,,212
+2022/01/05 00:00:00+00,12,Unsheltered,63,Substance,,,,,,213
+2022/01/10 00:00:00+00,12,see QRT tab,64,Substance,,,,,,214
+2022/01/12 00:00:00+00,12,Unsheltered,65,Substance,,,,,,215
+2022/01/14 00:00:00+00,12,Unsheltered,66,Substance,,,,,,216
+2022/01/18 00:00:00+00,12,see QRT tab,67,Substance,,,,,,217
+2022/01/20 00:00:00+00,12,see QRT tab,68,Substance,,,,,,218
+2022/01/20 00:00:00+00,12,Unsheltered,69,Substance,,,,,,219
+2022/01/26 00:00:00+00,12,Unsheltered,70,Substance,,,,,,220
+2022/01/27 00:00:00+00,12,see QRT tab,71,Substance,,,,,,221
+2022/01/28 00:00:00+00,12,Unsheltered,72,Substance,,,,,,222
+2022/01/31 00:00:00+00,12,Unsheltered,73,Substance,,,,,,223
+2022/02/03 00:00:00+00,12,Unsheltered,74,Substance,,,,,,224
+2022/02/05 00:00:00+00,12,see QRT tab,75,Substance,,,,,,225
+2022/02/05 00:00:00+00,12,40202,76,Substance,,,,,,226
+2022/02/07 00:00:00+00,12,see QRT tab,77,Substance,,,,,,227
+2022/02/11 00:00:00+00,12,40202,78,Substance,,,,,,228
+2022/02/16 00:00:00+00,12,see QRT tab,79,Substance,,,,,,229
+2022/02/18 00:00:00+00,12,Unsheltered,80,Substance,,,,,,230
+2022/02/23 00:00:00+00,12,see QRT tab,81,Substance,,,,,,231
+2022/02/24 00:00:00+00,12,see QRT tab,82,Substance,,,,,,232
+2022/03/03 00:00:00+00,12,40213,83,Substance,,,,,,233
+2022/03/04 00:00:00+00,12,see QRT tab,84,Substance,,,,,,234
+2022/03/07 00:00:00+00,12,Unsheltered,85,Substance,,,,,,235
+2022/03/10 00:00:00+00,12,Unsheltered,86,Substance,,,,,,236
+2022/03/10 00:00:00+00,12,see QRT tab,87,Substance,,,,,,237
+2022/03/11 00:00:00+00,12,see QRT tab,88,Substance,,,,,,238
+2022/03/14 00:00:00+00,12,Unsheltered,89,Substance,,,,,,239
+2022/03/15 00:00:00+00,12,Unsheltered,90,Substance,,,,,,240
+2022/03/15 00:00:00+00,12,see QRT tab,91,Substance,,,,,,241
+2022/03/16 00:00:00+00,12,40202,92,Substance,,,,,,242
+2022/03/17 00:00:00+00,12,Unsheltered,93,Substance,,,,,,243
+2022/03/24 00:00:00+00,12,Unsheltered,94,Substance,,,,,,244
+2022/03/28 00:00:00+00,12,Unsheltered,95,Substance,,,,,,245
+2022/03/28 00:00:00+00,12,see QRT tab,96,Substance,,,,,,246
+2022/03/31 00:00:00+00,12,Unsheltered,97,Substance,,,,,,247
+2022/04/01 00:00:00+00,12,40202,98,Substance,,,,,,248
+2022/04/05 00:00:00+00,12,see QRT tab,99,Substance,,,,,,249
+2022/04/07 00:00:00+00,12,40205,100,Substance,,,,,,250
+2022/04/12 00:00:00+00,12,Unsheltered,101,Substance,,,,,,251
+2021/07/07 00:00:00+00,,40217,351,LRT,Male,Unknown,Louisville,KY,Jefferson,252
+2022/04/14 00:00:00+00,12,Unsheltered,102,Substance,,,,,,253
+2022/04/14 00:00:00+00,12,see QRT tab,103,Substance,,,,,,254
+2021/07/03 00:00:00+00,,40211,352,LRT,Male,Unknown,Louisville,KY,Jefferson,255
+2022/04/15 00:00:00+00,12,Unsheltered,104,Substance,,,,,,256
+2021/07/06 00:00:00+00,,40218,353,LRT,Female,Unknown,Louisville,KY,Jefferson,257
+2022/04/15 00:00:00+00,12,see QRT tab,105,Substance,,,,,,258
+2021/07/08 00:00:00+00,,40210,354,LRT,Female,Unknown,Louisville,KY,Jefferson,259
+2022/04/18 00:00:00+00,12,see QRT tab,106,Substance,,,,,,260
+2021/07/08 00:00:00+00,,40212,355,LRT,Female,Unknown,Louisville,KY,Jefferson,261
+2022/04/25 00:00:00+00,12,see QRT tab,107,Substance,,,,,,262
+2021/07/08 00:00:00+00,,40212,356,LRT,Female,Unknown,Louisville,KY,Jefferson,263
+2022/04/27 00:00:00+00,12,see QRT tab,108,Substance,,,,,,264
+2021/07/08 00:00:00+00,,40212,357,LRT,Male,Unknown,Louisville,KY,Jefferson,265
+2022/05/02 00:00:00+00,12,Unsheltered,109,Substance,,,,,,266
+2021/07/08 00:00:00+00,,40203,358,LRT,Male,Unknown,Louisville,KY,Jefferson,267
+2022/05/03 00:00:00+00,12,Unsheltered,110,Substance,,,,,,268
+2021/07/08 00:00:00+00,,40211,359,LRT,Female,Unknown,Louisville,KY,Jefferson,269
+2022/05/04 00:00:00+00,12,Unsheltered,111,Substance,,,,,,270
+2021/07/08 00:00:00+00,,40211,360,LRT,Male,Unknown,Louisville,KY,Jefferson,271
+2022/05/04 00:00:00+00,12,see QRT tab,112,Substance,,,,,,272
+2021/07/12 00:00:00+00,,40211,361,LRT,Male,Unknown,Louisville,KY,Jefferson,273
+2022/05/11 00:00:00+00,12,Unsheltered,113,Substance,,,,,,274
+2021/07/12 00:00:00+00,,40212,362,LRT,Male,Unknown,Louisville,KY,Jefferson,275
+2022/05/11 00:00:00+00,12,see QRT tab,114,Substance,,,,,,276
+2021/07/12 00:00:00+00,,40212,363,LRT,Male,Unknown,Louisville,KY,Jefferson,277
+2022/05/12 00:00:00+00,12,Unsheltered,115,Substance,,,,,,278
+2021/07/12 00:00:00+00,,40203,364,LRT,Male,Unknown,Louisville,KY,Jefferson,279
+2022/05/13 00:00:00+00,12,40212,116,Substance,,,,,,280
+2021/07/12 00:00:00+00,,40210,365,LRT,Female,Unknown,Louisville,KY,Jefferson,281
+2022/05/18 00:00:00+00,12,see QRT tab,117,Substance,,,,,,282
+2021/07/12 00:00:00+00,,40211,366,LRT,Female,Unknown,Louisville,KY,Jefferson,283
+2022/05/20 00:00:00+00,12,see QRT tab,118,Substance,,,,,,284
+2021/07/12 00:00:00+00,,40214,367,LRT,Female,Unknown,Louisville,KY,Jefferson,285
+2022/05/24 00:00:00+00,12,Unsheltered,119,Substance,,,,,,286
+2021/07/12 00:00:00+00,,40203,368,LRT,Male,Unknown,Louisville,KY,Jefferson,287
+2022/05/25 00:00:00+00,12,Unsheltered,120,Substance,,,,,,288
+2021/07/12 00:00:00+00,,40215,369,LRT,Female,Unknown,Louisville,KY,Jefferson,289
+2022/05/31 00:00:00+00,12,Unsheltered,121,Substance,,,,,,290
+2021/07/12 00:00:00+00,,40212,370,LRT,Male,Unknown,Louisville,KY,Jefferson,291
+2022/06/02 00:00:00+00,12,see QRT tab,122,Substance,,,,,,292
+2021/07/12 00:00:00+00,,40202,371,LRT,Male,Unknown,Louisville,KY,Jefferson,293
+2022/06/08 00:00:00+00,12,see QRT tab,123,Substance,,,,,,294
+2021/07/12 00:00:00+00,,40212,372,LRT,Female,Unknown,Louisville,KY,Jefferson,295
+2022/06/09 00:00:00+00,12,40217,124,Substance,,,,,,296
+2021/07/12 00:00:00+00,,40211,373,LRT,Male,Unknown,Louisville,KY,Jefferson,297
+2022/06/17 00:00:00+00,12,40203,125,Substance,,,,,,298
+2021/07/12 00:00:00+00,,40212,374,LRT,Female,Unknown,Louisville,KY,Jefferson,299
+2021/07/30 00:00:00+00,192,see KYHRC doc,126,Substance,,,,,,300
+2021/07/12 00:00:00+00,,40210,375,LRT,Female,Unknown,Louisville,KY,Jefferson,301
+2021/08/04 00:00:00+00,192,40202,127,Substance,,,,,,302
+2021/07/30 00:00:00+00,,40212,376,LRT,Male,Unknown,Louisville,KY,Jefferson,303
+2021/08/06 00:00:00+00,24,Unsheltered,128,Substance,,,,,,304
+2021/07/30 00:00:00+00,,40211,377,LRT,Female,Unknown,Louisville,KY,Jefferson,305
+2021/08/06 00:00:00+00,96,see KYHRC doc,129,Substance,,,,,,306
+2021/08/27 00:00:00+00,,40211,378,LRT,Male,Unknown,Louisville,KY,Jefferson,307
+2021/09/01 00:00:00+00,36,Unsheltered,130,Substance,,,,,,308
+2021/08/27 00:00:00+00,,40210,379,LRT,Female,Unknown,Louisville,KY,Jefferson,309
+2021/09/02 00:00:00+00,192,40202,131,Substance,,,,,,310
+2021/08/27 00:00:00+00,,40215,380,LRT,Female,Unknown,Louisville,KY,Jefferson,311
+2021/09/17 00:00:00+00,48,see QRT tab,132,Substance,,,,,,312
+2021/09/22 00:00:00+00,24,40204,133,Substance,,,,,,313
+2021/08/18 00:00:00+00,,40204,381,LRT,Male,Unknown,Louisville,KY,Jefferson,314
+2021/08/18 00:00:00+00,,40229,382,LRT,Female,Unknown,Louisville,KY,Jefferson,315
+2021/08/18 00:00:00+00,,40204,383,LRT,Female,Unknown,Louisville,KY,Jefferson,316
+2021/08/18 00:00:00+00,,40203,384,LRT,Male,Unknown,Louisville,KY,Jefferson,317
+2021/08/18 00:00:00+00,,40219,385,LRT,Male,Unknown,Louisville,KY,Jefferson,318
+2021/08/18 00:00:00+00,,40211,386,LRT,Male,Unknown,Louisville,KY,Jefferson,319
+2021/09/24 00:00:00+00,24,40202,134,Substance,,,,,,320
+2021/08/18 00:00:00+00,,40211,387,LRT,Male,Unknown,Louisville,KY,Jefferson,321
+2021/09/28 00:00:00+00,72,40202,135,Substance,,,,,,322
+2021/08/18 00:00:00+00,,40211,388,LRT,Female,Unknown,Louisville,KY,Jefferson,323
+2021/10/01 00:00:00+00,108,40202,136,Substance,,,,,,324
+2021/08/11 00:00:00+00,,40212,389,LRT,Male,Unknown,Louisville,KY,Jefferson,325
+2021/10/06 00:00:00+00,60,40202,137,Substance,,,,,,326
+2021/08/11 00:00:00+00,,40210,390,LRT,Male,Unknown,Louisville,KY,Jefferson,327
+2021/10/12 00:00:00+00,36,see QRT tab,138,Substance,,,,,,328
+2021/08/11 00:00:00+00,,40210,391,LRT,Male,Unknown,Louisville,KY,Jefferson,329
+2021/10/13 00:00:00+00,24,40215,139,Substance,,,,,,330
+2021/08/11 00:00:00+00,,40210,392,LRT,Male,Unknown,Louisville,KY,Jefferson,331
+2021/10/15 00:00:00+00,24,Unsheltered,140,Substance,,,,,,332
+2021/08/11 00:00:00+00,,40216,393,LRT,Male,Unknown,Louisville,KY,Jefferson,333
+2021/10/19 00:00:00+00,36,40215,141,Substance,,,,,,334
+2021/08/11 00:00:00+00,,40210,394,LRT,Male,Unknown,Louisville,KY,Jefferson,335
+2021/10/27 00:00:00+00,36,40215,142,Substance,,,,,,336
+2021/08/11 00:00:00+00,,40210,395,LRT,Male,Unknown,Louisville,KY,Jefferson,337
+2021/10/29 00:00:00+00,108,40202,143,Substance,,,,,,338
+2021/08/11 00:00:00+00,,40210,396,LRT,Male,Unknown,Louisville,KY,Jefferson,339
+2021/11/03 00:00:00+00,36,40215,144,Substance,,,,,,340
+2021/08/11 00:00:00+00,,40210,397,LRT,Male,Unknown,Louisville,KY,Jefferson,341
+2021/11/04 00:00:00+00,8,40204,145,Substance,,,,,,342
+2021/08/11 00:00:00+00,,40202,398,LRT,Female,Unknown,Louisville,KY,Jefferson,343
+2021/11/17 00:00:00+00,216,see KYHRC doc,146,Substance,,,,,,344
+2021/08/11 00:00:00+00,,40216,399,LRT,Male,Unknown,Louisville,KY,Jefferson,345
+2021/11/17 00:00:00+00,48,40202,147,Substance,,,,,,346
+2021/08/11 00:00:00+00,,40210,400,LRT,Male,Unknown,Louisville,KY,Jefferson,347
+2021/11/18 00:00:00+00,24,40203,148,Substance,,,,,,348
+2021/11/19 00:00:00+00,32,40204,149,Substance,,,,,,349
+2021/11/30 00:00:00+00,36,40219,150,Substance,,,,,,350
+2021/09/28 00:00:00+00,,99999,251,LRT,Male,Unknown,Louisville,KY,Jefferson,351
+2021/09/28 00:00:00+00,,99999,252,LRT,Female,Unknown,Louisville,KY,Jefferson,352
+2021/09/28 00:00:00+00,,99999,253,LRT,Male,Unknown,Louisville,KY,Jefferson,353
+2021/09/28 00:00:00+00,,99999,254,LRT,Female,Unknown,Louisville,KY,Jefferson,354
+2021/09/28 00:00:00+00,,99999,255,LRT,Female,Unknown,Louisville,KY,Jefferson,355
+2021/09/28 00:00:00+00,,99999,256,LRT,Female,Unknown,Louisville,KY,Jefferson,356
+2021/09/28 00:00:00+00,,99999,257,LRT,Male,Unknown,Louisville,KY,Jefferson,357
+2021/09/28 00:00:00+00,,99999,258,LRT,Male,Unknown,Louisville,KY,Jefferson,358
+2021/09/28 00:00:00+00,,99999,259,LRT,Male,Unknown,Louisville,KY,Jefferson,359
+2021/09/28 00:00:00+00,,99999,260,LRT,Female,Unknown,Louisville,KY,Jefferson,360
+2021/10/22 00:00:00+00,,99999,261,LRT,Male,Unknown,Louisville,KY,Jefferson,361
+2021/10/22 00:00:00+00,,99999,262,LRT,Female,Unknown,Louisville,KY,Jefferson,362
+2021/10/22 00:00:00+00,,99999,263,LRT,Male,Unknown,Louisville,KY,Jefferson,363
+2021/10/22 00:00:00+00,,99999,264,LRT,Female,Unknown,Louisville,KY,Jefferson,364
+2021/10/22 00:00:00+00,,99999,265,LRT,Female,Unknown,Louisville,KY,Jefferson,365
+2021/10/26 00:00:00+00,,99999,266,LRT,Male,Unknown,Louisville,KY,Jefferson,366
+2021/10/26 00:00:00+00,,99999,267,LRT,Female,Unknown,Louisville,KY,Jefferson,367
+2021/10/26 00:00:00+00,,99999,268,LRT,Female,Unknown,Louisville,KY,Jefferson,368
+2021/10/26 00:00:00+00,,99999,269,LRT,Male,Unknown,Louisville,KY,Jefferson,369
+2021/10/19 00:00:00+00,,99999,270,LRT,Female,Unknown,Louisville,KY,Jefferson,370
+2021/10/19 00:00:00+00,,99999,271,LRT,Female,Unknown,Louisville,KY,Jefferson,371
+2021/10/19 00:00:00+00,,99999,272,LRT,Female,Unknown,Louisville,KY,Jefferson,372
+2021/10/19 00:00:00+00,,99999,273,LRT,Male,Unknown,Louisville,KY,Jefferson,373
+2021/10/19 00:00:00+00,,99999,274,LRT,Male,Unknown,Louisville,KY,Jefferson,374
+2021/10/19 00:00:00+00,,99999,275,LRT,Male,Unknown,Louisville,KY,Jefferson,375
+2021/10/01 00:00:00+00,,99999,276,LRT,Female,Unknown,Louisville,KY,Jefferson,376
+2021/10/01 00:00:00+00,,99999,277,LRT,Male,Unknown,Louisville,KY,Jefferson,377
+2021/10/04 00:00:00+00,,99999,278,LRT,Female,Unknown,Louisville,KY,Jefferson,378
+2021/10/04 00:00:00+00,,99999,279,LRT,Female,Unknown,Louisville,KY,Jefferson,379
+2021/10/04 00:00:00+00,,99999,280,LRT,Male,Unknown,Louisville,KY,Jefferson,380
+2021/11/02 00:00:00+00,,99999,281,LRT,Male,Unknown,Louisville,KY,Jefferson,381
+2021/11/02 00:00:00+00,,99999,282,LRT,Male,Unknown,Louisville,KY,Jefferson,382
+2021/11/02 00:00:00+00,,99999,283,LRT,Male,Unknown,Louisville,KY,Jefferson,383
+2021/11/02 00:00:00+00,,99999,284,LRT,Male,Unknown,Louisville,KY,Jefferson,384
+2022/02/08 00:00:00+00,,99999,285,LRT,Male,Unknown,Louisville,KY,Jefferson,385
+2022/02/08 00:00:00+00,,99999,286,LRT,Male,Unknown,Louisville,KY,Jefferson,386
+2021/11/16 00:00:00+00,,40208,287,LRT,Female,Unknown,Louisville,KY,Jefferson,387
+2021/12/14 00:00:00+00,,40202,288,LRT,Male,Unknown,Louisville,KY,Jefferson,388
+2021/11/16 00:00:00+00,,40202,289,LRT,Male,Unknown,Louisville,KY,Jefferson,389
+2021/11/16 00:00:00+00,,40202,290,LRT,Male,Unknown,Louisville,KY,Jefferson,390
+2021/11/16 00:00:00+00,,40202,291,LRT,Male,Unknown,Louisville,KY,Jefferson,391
+2021/11/16 00:00:00+00,,40202,292,LRT,Male,Unknown,Louisville,KY,Jefferson,392
+2022/04/26 00:00:00+00,,,293,LRT,Male,Unknown,Louisville,KY,Jefferson,393
+2021/07/15 00:00:00+00,,40211,294,LRT,Female,Unknown,Louisville,KY,Jefferson,394
+2021/07/15 00:00:00+00,,40211,295,LRT,Male,Unknown,Louisville,KY,Jefferson,395
+2021/07/20 00:00:00+00,,40202,296,LRT,Female,Unknown,Louisville,KY,Jefferson,396
+2021/07/20 00:00:00+00,,40211,297,LRT,Male,Unknown,Louisville,KY,Jefferson,397
+2021/07/20 00:00:00+00,,40211,298,LRT,Female,Unknown,Louisville,KY,Jefferson,398
+2021/07/27 00:00:00+00,,40211,299,LRT,Male,Unknown,Louisville,KY,Jefferson,399
+2021/07/27 00:00:00+00,,40211,300,LRT,Male,Unknown,Louisville,KY,Jefferson,400
+2021/08/11 00:00:00+00,,40210,401,LRT,Male,Unknown,Louisville,KY,Jefferson,401
+2021/08/11 00:00:00+00,,40210,402,LRT,Male,Unknown,Louisville,KY,Jefferson,402
+2021/08/11 00:00:00+00,,40216,403,LRT,Male,Unknown,Louisville,KY,Jefferson,403
+2021/08/11 00:00:00+00,,40216,404,LRT,Female,Unknown,Louisville,KY,Jefferson,404
+2021/08/11 00:00:00+00,,40203,405,LRT,Female,Unknown,Louisville,KY,Jefferson,405
+2021/08/11 00:00:00+00,,40203,406,LRT,Female,Unknown,Louisville,KY,Jefferson,406
+2021/08/11 00:00:00+00,,40203,407,LRT,Male,Unknown,Louisville,KY,Jefferson,407
+2021/08/11 00:00:00+00,,40203,408,LRT,Female,Unknown,Louisville,KY,Jefferson,408
+2021/08/04 00:00:00+00,,40211,409,LRT,Male,Unknown,Louisville,KY,Jefferson,409
+2021/08/04 00:00:00+00,,40210,410,LRT,Male,Unknown,Louisville,KY,Jefferson,410
+2021/08/04 00:00:00+00,,40202,411,LRT,Male,Unknown,Louisville,KY,Jefferson,411
+2021/08/04 00:00:00+00,,40211,412,LRT,Male,Unknown,Louisville,KY,Jefferson,412
+2021/08/04 00:00:00+00,,40210,413,LRT,Male,Unknown,Louisville,KY,Jefferson,413
+2021/08/04 00:00:00+00,,40210,414,LRT,Female,Unknown,Louisville,KY,Jefferson,414
+2021/08/04 00:00:00+00,,40228,415,LRT,Female,Unknown,Louisville,KY,Jefferson,415
+2021/08/04 00:00:00+00,,40212,416,LRT,Female,Unknown,Louisville,KY,Jefferson,416
+2021/08/04 00:00:00+00,,40212,417,LRT,Male,Unknown,Louisville,KY,Jefferson,417
+2021/09/28 00:00:00+00,,40211,501,LRT,Male,Unknown,Louisville,KY,Jefferson,418
+2021/08/04 00:00:00+00,,40216,418,LRT,Male,Unknown,Louisville,KY,Jefferson,419
+2021/08/04 00:00:00+00,,40210,419,LRT,Male,Unknown,Louisville,KY,Jefferson,420
+2021/08/04 00:00:00+00,,40211,420,LRT,Male,Unknown,Louisville,KY,Jefferson,421
+2021/08/04 00:00:00+00,,40210,421,LRT,Male,Unknown,Louisville,KY,Jefferson,422
+2021/09/28 00:00:00+00,,40202,502,LRT,Male,Unknown,Louisville,KY,Jefferson,423
+2021/08/04 00:00:00+00,,40211,422,LRT,Male,Unknown,Louisville,KY,Jefferson,424
+2021/09/28 00:00:00+00,,40211,503,LRT,Male,Unknown,Louisville,KY,Jefferson,425
+2021/08/04 00:00:00+00,,40203,423,LRT,Male,Unknown,Louisville,KY,Jefferson,426
+2021/09/28 00:00:00+00,,40212,504,LRT,Male,Unknown,Louisville,KY,Jefferson,427
+2021/08/04 00:00:00+00,,40210,424,LRT,Male,Unknown,Louisville,KY,Jefferson,428
+2021/09/28 00:00:00+00,,40216,505,LRT,Male,Unknown,Louisville,KY,Jefferson,429
+2021/08/04 00:00:00+00,,40211,425,LRT,Female,Unknown,Louisville,KY,Jefferson,430
+2021/09/28 00:00:00+00,,40210,506,LRT,Male,Unknown,Louisville,KY,Jefferson,431
+2021/12/03 00:00:00+00,,40241,601,LRT,Female,African American,Louisville,KY,Jefferson,432
+2021/08/04 00:00:00+00,,40211,426,LRT,Female,Unknown,Louisville,KY,Jefferson,433
+2021/10/22 00:00:00+00,,40211,507,LRT,Female,Unknown,Louisville,KY,Jefferson,434
+2022/05/21 00:00:00+00,,40211,651,LRT,Female,African American,Louisville,KY,Jefferson,435
+2021/08/04 00:00:00+00,,40203,427,LRT,Female,Unknown,Louisville,KY,Jefferson,436
+2021/08/04 00:00:00+00,,40210,428,LRT,Male,Unknown,Louisville,KY,Jefferson,437
+2021/08/04 00:00:00+00,,40211,429,LRT,Male,Unknown,Louisville,KY,Jefferson,438
+2021/08/03 00:00:00+00,,40214,430,LRT,Male,Unknown,Louisville,KY,Jefferson,439
+2021/08/03 00:00:00+00,,40202,431,LRT,Male,Unknown,Louisville,KY,Jefferson,440
+2021/08/03 00:00:00+00,,40202,432,LRT,Male,Unknown,Louisville,KY,Jefferson,441
+2021/08/03 00:00:00+00,,40215,433,LRT,Female,Unknown,Louisville,KY,Jefferson,442
+2021/08/03 00:00:00+00,,40202,434,LRT,Female,Unknown,Louisville,KY,Jefferson,443
+2021/08/03 00:00:00+00,,40211,435,LRT,Male,Unknown,Louisville,KY,Jefferson,444
+2021/08/03 00:00:00+00,,40210,436,LRT,Female,Unknown,Louisville,KY,Jefferson,445
+2021/08/03 00:00:00+00,,40202,437,LRT,Male,Unknown,Louisville,KY,Jefferson,446
+2021/08/03 00:00:00+00,,40202,438,LRT,Male,Unknown,Louisville,KY,Jefferson,447
+2021/08/01 00:00:00+00,,40228,439,LRT,Female,Unknown,Louisville,KY,Jefferson,448
+2021/08/01 00:00:00+00,,40207,440,LRT,Male,Unknown,Louisville,KY,Jefferson,449
+2021/08/01 00:00:00+00,,40203,441,LRT,Female,Unknown,Louisville,KY,Jefferson,450
+2021/08/01 00:00:00+00,,40216,442,LRT,Male,Unknown,Louisville,KY,Jefferson,451
+2021/08/01 00:00:00+00,,40203,443,LRT,Female,Unknown,Louisville,KY,Jefferson,452
+2021/08/01 00:00:00+00,,40212,444,LRT,Female,Unknown,Louisville,KY,Jefferson,453
+2021/08/01 00:00:00+00,,40218,445,LRT,Female,Unknown,Louisville,KY,Jefferson,454
+2021/08/01 00:00:00+00,,40228,446,LRT,Female,Unknown,Louisville,KY,Jefferson,455
+2021/08/01 00:00:00+00,,40210,447,LRT,Female,Unknown,Louisville,KY,Jefferson,456
+2021/08/01 00:00:00+00,,40210,448,LRT,Female,Unknown,Louisville,KY,Jefferson,457
+2021/09/14 00:00:00+00,,40210,449,LRT,Female,Unknown,Louisville,KY,Jefferson,458
+2021/09/14 00:00:00+00,,40217,450,LRT,Female,Unknown,Louisville,KY,Jefferson,459
+2021/12/21 00:00:00+00,,99999,602,LRT,Female,African American,Louisville,KY,Jefferson,460
+2021/10/22 00:00:00+00,,40207,508,LRT,Female,Unknown,Louisville,KY,Jefferson,461
+2022/05/21 00:00:00+00,,40211,652,LRT,Female,African American,Louisville,KY,Jefferson,462
+2022/01/14 00:00:00+00,,40203,603,LRT,Female,African American,Louisville,KY,Jefferson,463
+2021/10/22 00:00:00+00,,40210,509,LRT,Male,Unknown,Louisville,KY,Jefferson,464
+2022/05/21 00:00:00+00,,40202,653,LRT,Female,African American,Louisville,KY,Jefferson,465
+2022/01/14 00:00:00+00,,40203,604,LRT,Female,African American,Louisville,KY,Jefferson,466
+2021/10/22 00:00:00+00,,40208,510,LRT,Female,Unknown,Louisville,KY,Jefferson,467
+2021/10/26 00:00:00+00,,99999,654,LRT,Male,African American,Louisville,KY,Jefferson,468
+2022/01/14 00:00:00+00,,40202,605,LRT,Female,African American,Louisville,KY,Jefferson,469
+2021/10/22 00:00:00+00,,40210,511,LRT,Female,Unknown,Louisville,KY,Jefferson,470
+2021/10/26 00:00:00+00,,99999,655,LRT,Male,African American,Louisville,KY,Jefferson,471
+2022/01/14 00:00:00+00,,40202,606,LRT,Female,African American,Louisville,KY,Jefferson,472
+2021/10/22 00:00:00+00,,40210,512,LRT,Female,Unknown,Louisville,KY,Jefferson,473
+2021/10/26 00:00:00+00,,99999,656,LRT,Male,African American,Louisville,KY,Jefferson,474
+2022/01/14 00:00:00+00,,40202,607,LRT,Female,African American,Louisville,KY,Jefferson,475
+2021/10/19 00:00:00+00,,40291,513,LRT,Male,Unknown,Louisville,KY,Jefferson,476
+2021/11/30 00:00:00+00,,40212,657,LRT,Male,African American,Louisville,KY,Jefferson,477
+2022/01/14 00:00:00+00,,40202,608,LRT,Female,African American,Louisville,KY,Jefferson,478
+2021/10/19 00:00:00+00,,40218,514,LRT,Female,Unknown,Louisville,KY,Jefferson,479
+2021/11/30 00:00:00+00,,40213,658,LRT,Male,African American,Louisville,KY,Jefferson,480
+2022/01/14 00:00:00+00,,40202,609,LRT,Female,African American,Louisville,KY,Jefferson,481
+2021/10/19 00:00:00+00,,40229,515,LRT,Female,Unknown,Louisville,KY,Jefferson,482
+2021/11/30 00:00:00+00,,40203,659,LRT,Male,African American,Louisville,KY,Jefferson,483
+2022/01/14 00:00:00+00,,40211,610,LRT,Female,African American,Louisville,KY,Jefferson,484
+2021/10/01 00:00:00+00,,40210,516,LRT,Male,Unknown,Louisville,KY,Jefferson,485
+2021/11/30 00:00:00+00,,40203,660,LRT,Male,African American,Louisville,KY,Jefferson,486
+2022/01/14 00:00:00+00,,40210,611,LRT,Female,African American,Louisville,KY,Jefferson,487
+2021/10/01 00:00:00+00,,40211,517,LRT,Male,Unknown,Louisville,KY,Jefferson,488
+2021/11/30 00:00:00+00,,40205,661,LRT,Male,African American,Louisville,KY,Jefferson,489
+2022/01/14 00:00:00+00,,40212,612,LRT,Female,African American,Louisville,KY,Jefferson,490
+2022/01/18 00:00:00+00,,40212,613,LRT,Female,African American,Louisville,KY,Jefferson,491
+2022/01/14 00:00:00+00,,40212,614,LRT,Female,African American,Louisville,KY,Jefferson,492
+2022/01/14 00:00:00+00,,40212,615,LRT,Female,African American,Louisville,KY,Jefferson,493
+2022/01/14 00:00:00+00,,40212,616,LRT,Female,African American,Louisville,KY,Jefferson,494
+2022/01/14 00:00:00+00,,40203,617,LRT,Female,African American,Louisville,KY,Jefferson,495
+2022/01/14 00:00:00+00,,40203,618,LRT,Female,African American,Louisville,KY,Jefferson,496
+2022/01/11 00:00:00+00,,40211,619,LRT,Female,African American,Louisville,KY,Jefferson,497
+2022/01/11 00:00:00+00,,40202,620,LRT,Female,African American,Louisville,KY,Jefferson,498
+2022/01/11 00:00:00+00,,40202,621,LRT,Female,African American,Louisville,KY,Jefferson,499
+2022/01/11 00:00:00+00,,40202,622,LRT,Female,African American,Louisville,KY,Jefferson,500
+2022/01/11 00:00:00+00,,40202,623,LRT,Female,African American,Louisville,KY,Jefferson,501
+2022/01/11 00:00:00+00,,40202,624,LRT,Female,African American,Louisville,KY,Jefferson,502
+2022/01/11 00:00:00+00,,40202,625,LRT,Female,African American,Louisville,KY,Jefferson,503
+2022/01/25 00:00:00+00,,40212,626,LRT,Female,African American,Louisville,KY,Jefferson,504
+2022/01/25 00:00:00+00,,40202,627,LRT,Female,African American,Louisville,KY,Jefferson,505
+2022/01/05 00:00:00+00,,40208,628,LRT,Female,African American,Louisville,KY,Jefferson,506
+2022/01/05 00:00:00+00,,40208,629,LRT,Female,African American,Louisville,KY,Jefferson,507
+2022/01/04 00:00:00+00,,40212,630,LRT,Female,African American,Louisville,KY,Jefferson,508
+2022/01/04 00:00:00+00,,40210,631,LRT,Female,African American,Louisville,KY,Jefferson,509
+2022/01/04 00:00:00+00,,40203,632,LRT,Female,African American,Louisville,KY,Jefferson,510
+2022/01/04 00:00:00+00,,40203,633,LRT,Female,African American,Louisville,KY,Jefferson,511
+2022/01/04 00:00:00+00,,40203,634,LRT,Female,African American,Louisville,KY,Jefferson,512
+2022/01/28 00:00:00+00,,99999,635,LRT,Female,African American,Louisville,KY,Jefferson,513
+2022/02/01 00:00:00+00,,40212,636,LRT,Female,African American,Louisville,KY,Jefferson,514
+2022/02/08 00:00:00+00,,40272,637,LRT,Female,African American,Louisville,KY,Jefferson,515
+2022/02/09 00:00:00+00,,99999,638,LRT,Female,African American,Louisville,KY,Jefferson,516
+2022/03/15 00:00:00+00,,40203,639,LRT,Female,African American,Louisville,KY,Jefferson,517
+2022/03/11 00:00:00+00,,40203,640,LRT,Female,African American,Louisville,KY,Jefferson,518
+2022/03/11 00:00:00+00,,40202,641,LRT,Female,African American,Louisville,KY,Jefferson,519
+2022/03/11 00:00:00+00,,40202,642,LRT,Female,African American,Louisville,KY,Jefferson,520
+2022/03/02 00:00:00+00,,40203,643,LRT,Female,African American,Louisville,KY,Jefferson,521
+2022/03/29 00:00:00+00,,99999,644,LRT,Female,African American,Louisville,KY,Jefferson,522
+2022/03/29 00:00:00+00,,40203,645,LRT,Female,African American,Louisville,KY,Jefferson,523
+2022/05/10 00:00:00+00,,40216,646,LRT,Female,African American,Louisville,KY,Jefferson,524
+2022/05/10 00:00:00+00,,40215,647,LRT,Female,African American,Louisville,KY,Jefferson,525
+2022/05/21 00:00:00+00,,40219,648,LRT,Female,African American,Louisville,KY,Jefferson,526
+2022/05/21 00:00:00+00,,40219,649,LRT,Female,African American,Louisville,KY,Jefferson,527
+2022/05/21 00:00:00+00,,40216,650,LRT,Female,African American,Louisville,KY,Jefferson,528
+2021/10/01 00:00:00+00,,40216,518,LRT,Female,Unknown,Louisville,KY,Jefferson,529
+2021/11/30 00:00:00+00,,40215,662,LRT,Male,African American,Louisville,KY,Jefferson,530
+2021/10/01 00:00:00+00,,40216,519,LRT,Male,Unknown,Louisville,KY,Jefferson,531
+2021/11/30 00:00:00+00,,40215,663,LRT,Male,African American,Louisville,KY,Jefferson,532
+2021/10/01 00:00:00+00,,40216,520,LRT,Male,Unknown,Louisville,KY,Jefferson,533
+2021/11/30 00:00:00+00,,40203,664,LRT,Male,African American,Louisville,KY,Jefferson,534
+2021/10/01 00:00:00+00,,40216,521,LRT,Female,Unknown,Louisville,KY,Jefferson,535
+2021/11/30 00:00:00+00,,40203,665,LRT,Male,African American,Louisville,KY,Jefferson,536
+2021/10/01 00:00:00+00,,40216,522,LRT,Male,Unknown,Louisville,KY,Jefferson,537
+2021/11/30 00:00:00+00,,40203,666,LRT,Male,African American,Louisville,KY,Jefferson,538
+2021/10/01 00:00:00+00,,40216,523,LRT,Female,Unknown,Louisville,KY,Jefferson,539
+2021/10/01 00:00:00+00,,40216,524,LRT,Female,Unknown,Louisville,KY,Jefferson,540
+2021/10/01 00:00:00+00,,40216,525,LRT,Male,Unknown,Louisville,KY,Jefferson,541
+2021/10/01 00:00:00+00,,40216,526,LRT,Male,Unknown,Louisville,KY,Jefferson,542
+2021/10/01 00:00:00+00,,40216,527,LRT,Male,Unknown,Louisville,KY,Jefferson,543
+2021/10/01 00:00:00+00,,40216,528,LRT,Female,Unknown,Louisville,KY,Jefferson,544
+2021/10/01 00:00:00+00,,40203,529,LRT,Female,Unknown,Louisville,KY,Jefferson,545
+2021/10/01 00:00:00+00,,40210,530,LRT,Male,Unknown,Louisville,KY,Jefferson,546
+2021/10/01 00:00:00+00,,40210,531,LRT,Female,Unknown,Louisville,KY,Jefferson,547
+2021/10/01 00:00:00+00,,40210,532,LRT,Female,Unknown,Louisville,KY,Jefferson,548
+2021/10/01 00:00:00+00,,40202,533,LRT,Male,Unknown,Louisville,KY,Jefferson,549
+2021/10/01 00:00:00+00,,40216,534,LRT,Male,Unknown,Louisville,KY,Jefferson,550
+2021/10/04 00:00:00+00,,40212,535,LRT,Male,Unknown,Louisville,KY,Jefferson,551
+2021/10/04 00:00:00+00,,40206,536,LRT,Male,Unknown,Louisville,KY,Jefferson,552
+2021/10/04 00:00:00+00,,47112,537,LRT,Male,Unknown,Louisville,KY,Jefferson,553
+2021/11/02 00:00:00+00,,,538,LRT,,Unknown,Louisville,KY,Jefferson,554
+2021/11/02 00:00:00+00,,,539,LRT,,Unknown,Louisville,KY,Jefferson,555
+2022/03/10 00:00:00+00,,40202,551,LRT,,Unknown,Louisville,KY,Jefferson,556
+2021/11/02 00:00:00+00,,,540,LRT,Male,Unknown,Louisville,KY,Jefferson,557
+2021/11/02 00:00:00+00,,,541,LRT,Male,Unknown,Louisville,KY,Jefferson,558
+2021/11/02 00:00:00+00,,40203,542,LRT,,Unknown,Louisville,KY,Jefferson,559
+2021/11/02 00:00:00+00,,40203,543,LRT,,Unknown,Louisville,KY,Jefferson,560
+2021/11/02 00:00:00+00,,40203,544,LRT,,Unknown,Louisville,KY,Jefferson,561
+2021/11/02 00:00:00+00,,,545,LRT,,Unknown,Louisville,KY,Jefferson,562
+2021/11/02 00:00:00+00,,,546,LRT,,Unknown,Louisville,KY,Jefferson,563
+2021/11/02 00:00:00+00,,,547,LRT,,Unknown,Louisville,KY,Jefferson,564
+2021/12/03 00:00:00+00,,40208,548,LRT,Male,Unknown,Louisville,KY,Jefferson,565
+2021/12/03 00:00:00+00,,40208,549,LRT,Male,Unknown,Louisville,KY,Jefferson,566
+2021/12/03 00:00:00+00,,40208,550,LRT,Male,Unknown,Louisville,KY,Jefferson,567
+2022/03/10 00:00:00+00,,40202,552,LRT,,Unknown,Louisville,KY,Jefferson,568
+2021/11/19 00:00:00+00,,40211,667,LRT,Male,African American,Louisville,KY,Jefferson,569
+2022/03/10 00:00:00+00,,40202,553,LRT,,Unknown,Louisville,KY,Jefferson,570
+2021/11/19 00:00:00+00,,40207,668,LRT,Male,African American,Louisville,KY,Jefferson,571
+2022/03/10 00:00:00+00,,40202,554,LRT,,Unknown,Louisville,KY,Jefferson,572
+2021/11/19 00:00:00+00,,40207,669,LRT,Male,African American,Louisville,KY,Jefferson,573
+2022/03/10 00:00:00+00,,40202,555,LRT,,Unknown,Louisville,KY,Jefferson,574
+2021/11/19 00:00:00+00,,40215,670,LRT,Male,African American,Louisville,KY,Jefferson,575
+2022/03/10 00:00:00+00,,40202,556,LRT,,Unknown,Louisville,KY,Jefferson,576
+2021/11/19 00:00:00+00,,40214,671,LRT,Male,African American,Louisville,KY,Jefferson,577
+2022/03/10 00:00:00+00,,40202,557,LRT,,Unknown,Louisville,KY,Jefferson,578
+2021/11/23 00:00:00+00,,40204,672,LRT,Male,African American,Louisville,KY,Jefferson,579
+2022/03/10 00:00:00+00,,40202,558,LRT,,Unknown,Louisville,KY,Jefferson,580
+2021/11/23 00:00:00+00,,40208,673,LRT,Male,African American,Louisville,KY,Jefferson,581
+2022/03/10 00:00:00+00,,40202,559,LRT,,Unknown,Louisville,KY,Jefferson,582
+2021/11/23 00:00:00+00,,40218,674,LRT,Male,African American,Louisville,KY,Jefferson,583
+2022/03/10 00:00:00+00,,40202,560,LRT,,Unknown,Louisville,KY,Jefferson,584
+2021/11/23 00:00:00+00,,40207,675,LRT,Male,African American,Louisville,KY,Jefferson,585
+2022/03/10 00:00:00+00,,40202,561,LRT,,Unknown,Louisville,KY,Jefferson,586
+2021/11/23 00:00:00+00,,40207,676,LRT,Male,African American,Louisville,KY,Jefferson,587
+2022/03/10 00:00:00+00,,40202,562,LRT,,Unknown,Louisville,KY,Jefferson,588
+2021/11/16 00:00:00+00,,49211,677,LRT,Male,African American,Louisville,KY,Jefferson,589
+2022/03/10 00:00:00+00,,40202,563,LRT,,Unknown,Louisville,KY,Jefferson,590
+2021/11/16 00:00:00+00,,40211,678,LRT,Male,African American,Louisville,KY,Jefferson,591
+2022/03/10 00:00:00+00,,40202,564,LRT,,Unknown,Louisville,KY,Jefferson,592
+2021/11/16 00:00:00+00,,40211,679,LRT,Male,African American,Louisville,KY,Jefferson,593
+2022/03/10 00:00:00+00,,40202,565,LRT,,Unknown,Louisville,KY,Jefferson,594
+2021/11/16 00:00:00+00,,40212,680,LRT,Male,African American,Louisville,KY,Jefferson,595
+2022/03/10 00:00:00+00,,40202,566,LRT,,Unknown,Louisville,KY,Jefferson,596
+2022/03/10 00:00:00+00,,40202,567,LRT,,Unknown,Louisville,KY,Jefferson,597
+2022/03/10 00:00:00+00,,40202,568,LRT,,Unknown,Louisville,KY,Jefferson,598
+2022/03/10 00:00:00+00,,40202,569,LRT,,Unknown,Louisville,KY,Jefferson,599
+2022/04/26 00:00:00+00,,,570,LRT,,Unknown,Louisville,KY,Jefferson,600
+2022/04/26 00:00:00+00,,,571,LRT,,Unknown,Louisville,KY,Jefferson,601
+2022/04/26 00:00:00+00,,,572,LRT,,Unknown,Louisville,KY,Jefferson,602
+2022/05/21 00:00:00+00,,40203,573,LRT,,Unknown,Louisville,KY,Jefferson,603
+2022/05/21 00:00:00+00,,40216,574,LRT,,Unknown,Louisville,KY,Jefferson,604
+2021/10/26 00:00:00+00,,99999,575,LRT,T,African American,Louisville,KY,Jefferson,605
+2021/10/26 00:00:00+00,,40212,576,LRT,Female,African American,Louisville,KY,Jefferson,606
+2021/11/16 00:00:00+00,,40211,577,LRT,Female,African American,Louisville,KY,Jefferson,607
+2021/11/16 00:00:00+00,,40211,578,LRT,Female,African American,Louisville,KY,Jefferson,608
+2021/11/15 00:00:00+00,,40216,579,LRT,Female,African American,Louisville,KY,Jefferson,609
+2021/11/15 00:00:00+00,,40216,580,LRT,Female,African American,Louisville,KY,Jefferson,610
+2021/11/15 00:00:00+00,,40216,581,LRT,Female,African American,Louisville,KY,Jefferson,611
+2021/11/16 00:00:00+00,,40219,582,LRT,Female,African American,Louisville,KY,Jefferson,612
+2021/11/16 00:00:00+00,,40203,583,LRT,Female,African American,Louisville,KY,Jefferson,613
+2021/11/16 00:00:00+00,,40210,584,LRT,Female,African American,Louisville,KY,Jefferson,614
+2021/12/17 00:00:00+00,,40212,585,LRT,Female,African American,Louisville,KY,Jefferson,615
+2021/12/17 00:00:00+00,,40218,586,LRT,Female,African American,Louisville,KY,Jefferson,616
+2021/12/17 00:00:00+00,,,587,LRT,Female,African American,Louisville,KY,Jefferson,617
+2021/12/17 00:00:00+00,,40210,588,LRT,Female,African American,Louisville,KY,Jefferson,618
+2021/12/14 00:00:00+00,,40211,589,LRT,Female,African American,Louisville,KY,Jefferson,619
+2021/12/14 00:00:00+00,,40211,590,LRT,Female,African American,Louisville,KY,Jefferson,620
+2021/12/14 00:00:00+00,,,591,LRT,Female,African American,Louisville,KY,Jefferson,621
+2021/12/14 00:00:00+00,,40211,592,LRT,Female,African American,Louisville,KY,Jefferson,622
+2021/12/14 00:00:00+00,,40216,593,LRT,Female,African American,Louisville,KY,Jefferson,623
+2021/12/14 00:00:00+00,,40210,594,LRT,Female,African American,Louisville,KY,Jefferson,624
+2021/12/10 00:00:00+00,,40203,595,LRT,Female,African American,Louisville,KY,Jefferson,625
+2021/12/10 00:00:00+00,,99999,596,LRT,Female,African American,Louisville,KY,Jefferson,626
+2021/12/10 00:00:00+00,,99999,597,LRT,Female,African American,Louisville,KY,Jefferson,627
+2021/12/03 00:00:00+00,,40203,598,LRT,Female,African American,Louisville,KY,Jefferson,628
+2021/12/03 00:00:00+00,,40210,599,LRT,Female,African American,Louisville,KY,Jefferson,629
+2021/12/03 00:00:00+00,,40203,600,LRT,Female,African American,Louisville,KY,Jefferson,630
+2021/12/14 00:00:00+00,,99999,701,LRT,Male,African American,Louisville,KY,Jefferson,631
+2021/11/16 00:00:00+00,,40211,681,LRT,Male,African American,Louisville,KY,Jefferson,632
+2021/12/14 00:00:00+00,,99999,702,LRT,Male,African American,Louisville,KY,Jefferson,633
+2021/11/16 00:00:00+00,,40210,682,LRT,Male,African American,Louisville,KY,Jefferson,634
+2022/01/14 00:00:00+00,,99999,751,LRT,Male,African American,Louisville,KY,Jefferson,635
+2021/12/14 00:00:00+00,,40203,703,LRT,Male,African American,Louisville,KY,Jefferson,636
+2021/11/16 00:00:00+00,,40203,683,LRT,Male,African American,Louisville,KY,Jefferson,637
+2022/01/14 00:00:00+00,,99999,752,LRT,Male,African American,Louisville,KY,Jefferson,638
+2021/09/14 00:00:00+00,,40203,451,LRT,Female,Unknown,Louisville,KY,Jefferson,639
+2021/12/14 00:00:00+00,,40242,704,LRT,Male,African American,Louisville,KY,Jefferson,640
+2021/11/16 00:00:00+00,,40208,684,LRT,Male,African American,Louisville,KY,Jefferson,641
+2022/01/14 00:00:00+00,,99999,753,LRT,Male,African American,Louisville,KY,Jefferson,642
+2021/12/14 00:00:00+00,,40212,705,LRT,Male,African American,Louisville,KY,Jefferson,643
+2021/09/14 00:00:00+00,,40210,452,LRT,Male,Unknown,Louisville,KY,Jefferson,644
+2021/11/16 00:00:00+00,,40211,685,LRT,Male,African American,Louisville,KY,Jefferson,645
+2022/01/14 00:00:00+00,,99999,754,LRT,Male,African American,Louisville,KY,Jefferson,646
+2021/12/14 00:00:00+00,,40212,706,LRT,Male,African American,Louisville,KY,Jefferson,647
+2021/09/14 00:00:00+00,,40258,453,LRT,Male,Unknown,Louisville,KY,Jefferson,648
+2021/11/16 00:00:00+00,,40208,686,LRT,Male,African American,Louisville,KY,Jefferson,649
+2022/01/14 00:00:00+00,,40203,755,LRT,Male,African American,Louisville,KY,Jefferson,650
+2022/01/14 00:00:00+00,,40210,756,LRT,Male,African American,Louisville,KY,Jefferson,651
+2022/01/14 00:00:00+00,,40202,757,LRT,Male,African American,Louisville,KY,Jefferson,652
+2022/01/14 00:00:00+00,,40212,758,LRT,Male,African American,Louisville,KY,Jefferson,653
+2022/01/18 00:00:00+00,,40218,759,LRT,Male,African American,Louisville,KY,Jefferson,654
+2022/01/18 00:00:00+00,,40218,760,LRT,Male,African American,Louisville,KY,Jefferson,655
+2022/01/18 00:00:00+00,,40218,761,LRT,Male,African American,Louisville,KY,Jefferson,656
+2022/01/14 00:00:00+00,,40211,762,LRT,Male,African American,Louisville,KY,Jefferson,657
+2022/01/14 00:00:00+00,,99999,763,LRT,Male,African American,Louisville,KY,Jefferson,658
+2022/01/14 00:00:00+00,,40203,764,LRT,Male,African American,Louisville,KY,Jefferson,659
+2022/01/14 00:00:00+00,,99999,765,LRT,Male,African American,Louisville,KY,Jefferson,660
+2022/01/14 00:00:00+00,,99999,766,LRT,Male,African American,Louisville,KY,Jefferson,661
+2022/01/14 00:00:00+00,,99999,767,LRT,Male,African American,Louisville,KY,Jefferson,662
+2022/01/14 00:00:00+00,,40203,768,LRT,Male,African American,Louisville,KY,Jefferson,663
+2022/01/11 00:00:00+00,,40210,769,LRT,Male,African American,Louisville,KY,Jefferson,664
+2022/01/25 00:00:00+00,,99999,770,LRT,Male,African American,Louisville,KY,Jefferson,665
+2022/01/25 00:00:00+00,,40211,771,LRT,Male,African American,Louisville,KY,Jefferson,666
+2022/01/25 00:00:00+00,,40203,772,LRT,Male,African American,Louisville,KY,Jefferson,667
+2022/01/25 00:00:00+00,,40202,773,LRT,Male,African American,Louisville,KY,Jefferson,668
+2022/01/25 00:00:00+00,,40202,774,LRT,Male,African American,Louisville,KY,Jefferson,669
+2022/01/25 00:00:00+00,,47150,775,LRT,Male,African American,Louisville,KY,Jefferson,670
+2022/01/25 00:00:00+00,,47150,776,LRT,Male,African American,Louisville,KY,Jefferson,671
+2022/01/25 00:00:00+00,,47150,777,LRT,Male,African American,Louisville,KY,Jefferson,672
+2022/01/25 00:00:00+00,,40211,778,LRT,Male,African American,Louisville,KY,Jefferson,673
+2022/01/25 00:00:00+00,,40210,779,LRT,Male,African American,Louisville,KY,Jefferson,674
+2022/01/05 00:00:00+00,,40208,780,LRT,Male,African American,Louisville,KY,Jefferson,675
+2022/01/04 00:00:00+00,,40212,781,LRT,Male,African American,Louisville,KY,Jefferson,676
+2022/01/04 00:00:00+00,,40203,782,LRT,Male,African American,Louisville,KY,Jefferson,677
+2022/01/04 00:00:00+00,,40203,783,LRT,Male,African American,Louisville,KY,Jefferson,678
+2022/01/04 00:00:00+00,,40203,784,LRT,Male,African American,Louisville,KY,Jefferson,679
+2022/01/04 00:00:00+00,,40203,785,LRT,Male,African American,Louisville,KY,Jefferson,680
+2022/01/04 00:00:00+00,,40203,786,LRT,Male,African American,Louisville,KY,Jefferson,681
+2022/01/04 00:00:00+00,,99999,787,LRT,Male,African American,Louisville,KY,Jefferson,682
+2022/01/04 00:00:00+00,,40203,788,LRT,Male,African American,Louisville,KY,Jefferson,683
+2022/01/28 00:00:00+00,,40210,789,LRT,Male,African American,Louisville,KY,Jefferson,684
+2022/01/28 00:00:00+00,,40203,790,LRT,Male,African American,Louisville,KY,Jefferson,685
+2022/01/28 00:00:00+00,,40202,791,LRT,Male,African American,Louisville,KY,Jefferson,686
+2022/02/08 00:00:00+00,,40204,792,LRT,Male,African American,Louisville,KY,Jefferson,687
+2022/02/08 00:00:00+00,,40291,793,LRT,Male,African American,Louisville,KY,Jefferson,688
+2022/02/09 00:00:00+00,,40211,794,LRT,Male,African American,Louisville,KY,Jefferson,689
+2022/02/09 00:00:00+00,,99999,795,LRT,Male,African American,Louisville,KY,Jefferson,690
+2022/03/11 00:00:00+00,,40218,796,LRT,Male,African American,Louisville,KY,Jefferson,691
+2022/03/11 00:00:00+00,,99999,797,LRT,Male,African American,Louisville,KY,Jefferson,692
+2022/03/29 00:00:00+00,,99999,798,LRT,Male,African American,Louisville,KY,Jefferson,693
+2022/03/29 00:00:00+00,,99999,799,LRT,Male,African American,Louisville,KY,Jefferson,694
+2022/03/29 00:00:00+00,,40203,800,LRT,Male,African American,Louisville,KY,Jefferson,695
+2021/11/16 00:00:00+00,,40208,687,LRT,Male,African American,Louisville,KY,Jefferson,696
+2021/12/14 00:00:00+00,,40210,707,LRT,Male,African American,Louisville,KY,Jefferson,697
+2021/11/16 00:00:00+00,,40208,688,LRT,Male,African American,Louisville,KY,Jefferson,698
+2021/09/14 00:00:00+00,,40210,454,LRT,Male,Unknown,Louisville,KY,Jefferson,699
+2021/12/14 00:00:00+00,,40212,708,LRT,Male,African American,Louisville,KY,Jefferson,700
+2021/09/14 00:00:00+00,,40203,455,LRT,Female,Unknown,Louisville,KY,Jefferson,701
+2021/12/14 00:00:00+00,,40210,709,LRT,Male,African American,Louisville,KY,Jefferson,702
+2021/11/16 00:00:00+00,,40208,689,LRT,Male,African American,Louisville,KY,Jefferson,703
+2021/12/14 00:00:00+00,,40211,710,LRT,Male,African American,Louisville,KY,Jefferson,704
+2021/09/14 00:00:00+00,,40203,456,LRT,Female,Unknown,Louisville,KY,Jefferson,705
+2021/11/16 00:00:00+00,,40208,690,LRT,Male,African American,Louisville,KY,Jefferson,706
+2021/12/14 00:00:00+00,,40211,711,LRT,Male,African American,Louisville,KY,Jefferson,707
+2021/09/14 00:00:00+00,,40213,457,LRT,Male,Unknown,Louisville,KY,Jefferson,708
+2021/11/16 00:00:00+00,,40203,691,LRT,Male,African American,Louisville,KY,Jefferson,709
+2021/12/14 00:00:00+00,,40216,712,LRT,Male,African American,Louisville,KY,Jefferson,710
+2021/09/14 00:00:00+00,,47111,458,LRT,Male,Unknown,Louisville,KY,Jefferson,711
+2021/11/16 00:00:00+00,,40203,692,LRT,Male,African American,Louisville,KY,Jefferson,712
+2021/12/14 00:00:00+00,,40213,713,LRT,Male,African American,Louisville,KY,Jefferson,713
+2021/09/14 00:00:00+00,,40211,459,LRT,Male,Unknown,Louisville,KY,Jefferson,714
+2021/11/15 00:00:00+00,,40210,693,LRT,Male,African American,Louisville,KY,Jefferson,715
+2021/12/14 00:00:00+00,,40211,714,LRT,Male,African American,Louisville,KY,Jefferson,716
+2021/09/14 00:00:00+00,,40210,460,LRT,Male,Unknown,Louisville,KY,Jefferson,717
+2021/11/15 00:00:00+00,,40210,694,LRT,Male,African American,Louisville,KY,Jefferson,718
+2021/12/14 00:00:00+00,,40211,715,LRT,Male,African American,Louisville,KY,Jefferson,719
+2021/09/14 00:00:00+00,,40217,461,LRT,Male,Unknown,Louisville,KY,Jefferson,720
+2021/11/15 00:00:00+00,,40210,695,LRT,Male,African American,Louisville,KY,Jefferson,721
+2021/12/14 00:00:00+00,,40211,716,LRT,Male,African American,Louisville,KY,Jefferson,722
+2021/09/14 00:00:00+00,,40210,462,LRT,Male,Unknown,Louisville,KY,Jefferson,723
+2021/11/15 00:00:00+00,,40210,696,LRT,Male,African American,Louisville,KY,Jefferson,724
+2021/12/14 00:00:00+00,,40211,717,LRT,Male,African American,Louisville,KY,Jefferson,725
+2021/09/14 00:00:00+00,,40210,463,LRT,Female,Unknown,Louisville,KY,Jefferson,726
+2021/11/15 00:00:00+00,,40210,697,LRT,Male,African American,Louisville,KY,Jefferson,727
+2021/11/15 00:00:00+00,,40210,698,LRT,Male,African American,Louisville,KY,Jefferson,728
+2021/12/17 00:00:00+00,,40210,699,LRT,Male,African American,Louisville,KY,Jefferson,729
+2021/12/17 00:00:00+00,,40210,700,LRT,Male,African American,Louisville,KY,Jefferson,730
+2021/09/14 00:00:00+00,,40210,464,LRT,Female,Unknown,Louisville,KY,Jefferson,731
+2021/12/14 00:00:00+00,,40211,718,LRT,Male,African American,Louisville,KY,Jefferson,732
+2021/09/14 00:00:00+00,,40210,465,LRT,Female,Unknown,Louisville,KY,Jefferson,733
+2021/12/14 00:00:00+00,,,719,LRT,Male,African American,Louisville,KY,Jefferson,734
+2021/09/14 00:00:00+00,,40210,466,LRT,Female,Unknown,Louisville,KY,Jefferson,735
+2021/12/14 00:00:00+00,,40211,720,LRT,Male,African American,Louisville,KY,Jefferson,736
+2021/09/14 00:00:00+00,,40210,467,LRT,Female,Unknown,Louisville,KY,Jefferson,737
+2021/12/14 00:00:00+00,,40210,721,LRT,Male,African American,Louisville,KY,Jefferson,738
+2021/09/14 00:00:00+00,,40211,468,LRT,Male,Unknown,Louisville,KY,Jefferson,739
+2021/12/14 00:00:00+00,,40210,722,LRT,Male,African American,Louisville,KY,Jefferson,740
+2021/09/14 00:00:00+00,,,469,LRT,Male,Unknown,Louisville,KY,Jefferson,741
+2021/12/14 00:00:00+00,,40210,723,LRT,Male,African American,Louisville,KY,Jefferson,742
+2021/09/14 00:00:00+00,,,470,LRT,Female,Unknown,Louisville,KY,Jefferson,743
+2021/12/14 00:00:00+00,,40210,724,LRT,Male,African American,Louisville,KY,Jefferson,744
+2021/09/14 00:00:00+00,,40210,471,LRT,Male,Unknown,Louisville,KY,Jefferson,745
+2021/12/14 00:00:00+00,,99999,725,LRT,Male,African American,Louisville,KY,Jefferson,746
+2021/09/14 00:00:00+00,,40217,472,LRT,Male,Unknown,Louisville,KY,Jefferson,747
+2021/12/14 00:00:00+00,,40203,726,LRT,Male,African American,Louisville,KY,Jefferson,748
+2021/09/08 00:00:00+00,,40211,473,LRT,Male,Unknown,Louisville,KY,Jefferson,749
+2021/12/14 00:00:00+00,,40208,727,LRT,Male,African American,Louisville,KY,Jefferson,750
+2021/09/08 00:00:00+00,,40211,474,LRT,Male,Unknown,Louisville,KY,Jefferson,751
+2021/12/14 00:00:00+00,,40211,728,LRT,Male,African American,Louisville,KY,Jefferson,752
+2021/09/08 00:00:00+00,,40211,475,LRT,Female,Unknown,Louisville,KY,Jefferson,753
+2021/12/14 00:00:00+00,,40211,729,LRT,Male,African American,Louisville,KY,Jefferson,754
+2021/09/08 00:00:00+00,,40211,476,LRT,Male,Unknown,Louisville,KY,Jefferson,755
+2021/12/10 00:00:00+00,,40211,730,LRT,Male,African American,Louisville,KY,Jefferson,756
+2021/09/28 00:00:00+00,,40210,477,LRT,Male,Unknown,Louisville,KY,Jefferson,757
+2021/12/10 00:00:00+00,,40210,731,LRT,Male,African American,Louisville,KY,Jefferson,758
+2021/09/28 00:00:00+00,,40208,478,LRT,Male,Unknown,Louisville,KY,Jefferson,759
+2021/12/10 00:00:00+00,,40210,732,LRT,Male,African American,Louisville,KY,Jefferson,760
+2021/09/28 00:00:00+00,,40211,479,LRT,Male,Unknown,Louisville,KY,Jefferson,761
+2021/12/10 00:00:00+00,,40203,733,LRT,Male,African American,Louisville,KY,Jefferson,762
+2021/09/28 00:00:00+00,,40211,480,LRT,Male,Unknown,Louisville,KY,Jefferson,763
+2021/12/10 00:00:00+00,,40211,734,LRT,Male,African American,Louisville,KY,Jefferson,764
+2021/09/28 00:00:00+00,,40211,481,LRT,Male,Unknown,Louisville,KY,Jefferson,765
+2021/12/10 00:00:00+00,,40211,735,LRT,Male,African American,Louisville,KY,Jefferson,766
+2021/09/28 00:00:00+00,,40203,482,LRT,Female,Unknown,Louisville,KY,Jefferson,767
+2021/12/08 00:00:00+00,,99999,736,LRT,Male,African American,Louisville,KY,Jefferson,768
+2021/09/28 00:00:00+00,,40211,483,LRT,Female,Unknown,Louisville,KY,Jefferson,769
+2021/12/03 00:00:00+00,,40203,737,LRT,Male,African American,Louisville,KY,Jefferson,770
+2021/09/28 00:00:00+00,,40208,484,LRT,Male,Unknown,Louisville,KY,Jefferson,771
+2021/12/03 00:00:00+00,,40203,738,LRT,Male,African American,Louisville,KY,Jefferson,772
+2021/09/28 00:00:00+00,,40202,485,LRT,Male,Unknown,Louisville,KY,Jefferson,773
+2021/12/03 00:00:00+00,,40210,739,LRT,Male,African American,Louisville,KY,Jefferson,774
+2021/09/28 00:00:00+00,,40211,486,LRT,Male,Unknown,Louisville,KY,Jefferson,775
+2021/12/03 00:00:00+00,,40210,740,LRT,Male,African American,Louisville,KY,Jefferson,776
+2021/09/28 00:00:00+00,,40203,487,LRT,Female,Unknown,Louisville,KY,Jefferson,777
+2021/12/03 00:00:00+00,,40210,741,LRT,Male,African American,Louisville,KY,Jefferson,778
+2021/09/28 00:00:00+00,,40217,488,LRT,Male,Unknown,Louisville,KY,Jefferson,779
+2021/12/03 00:00:00+00,,40210,742,LRT,Male,African American,Louisville,KY,Jefferson,780
+2021/12/21 00:00:00+00,,40206,743,LRT,Male,African American,Louisville,KY,Jefferson,781
+2021/12/21 00:00:00+00,,40210,744,LRT,Male,African American,Louisville,KY,Jefferson,782
+2021/12/21 00:00:00+00,,40212,745,LRT,Male,African American,Louisville,KY,Jefferson,783
+2021/12/21 00:00:00+00,,99999,746,LRT,Male,African American,Louisville,KY,Jefferson,784
+2021/12/21 00:00:00+00,,40210,747,LRT,Male,African American,Louisville,KY,Jefferson,785
+2021/12/21 00:00:00+00,,40210,748,LRT,Male,African American,Louisville,KY,Jefferson,786
+2021/12/21 00:00:00+00,,40210,749,LRT,Male,African American,Louisville,KY,Jefferson,787
+2022/01/14 00:00:00+00,,40203,750,LRT,Male,African American,Louisville,KY,Jefferson,788
+2021/09/28 00:00:00+00,,40217,489,LRT,Male,Unknown,Louisville,KY,Jefferson,789
+2021/09/28 00:00:00+00,,40210,490,LRT,Male,Unknown,Louisville,KY,Jefferson,790
+2021/09/28 00:00:00+00,,40211,491,LRT,Female,Unknown,Louisville,KY,Jefferson,791
+2021/09/28 00:00:00+00,,40211,492,LRT,Female,Unknown,Louisville,KY,Jefferson,792
+2021/09/28 00:00:00+00,,40209,493,LRT,Male,Unknown,Louisville,KY,Jefferson,793
+2021/09/28 00:00:00+00,,40202,494,LRT,Male,Unknown,Louisville,KY,Jefferson,794
+2021/09/28 00:00:00+00,,40203,495,LRT,Male,Unknown,Louisville,KY,Jefferson,795
+2021/09/28 00:00:00+00,,40216,496,LRT,Male,Unknown,Louisville,KY,Jefferson,796
+2021/09/28 00:00:00+00,,40211,497,LRT,Male,Unknown,Louisville,KY,Jefferson,797
+2021/09/28 00:00:00+00,,40211,498,LRT,Female,Unknown,Louisville,KY,Jefferson,798
+2021/09/28 00:00:00+00,,40202,499,LRT,Male,Unknown,Louisville,KY,Jefferson,799
+2021/09/28 00:00:00+00,,40206,500,LRT,Female,Unknown,Louisville,KY,Jefferson,800
+2021/11/16 00:00:00+00,,40204,859,LRT,Male,White,Louisville,KY,Jefferson,801
+2021/11/15 00:00:00+00,,40210,860,LRT,Male,White,Louisville,KY,Jefferson,802
+2021/11/15 00:00:00+00,,40210,861,LRT,Male,White,Louisville,KY,Jefferson,803
+2021/11/15 00:00:00+00,,40210,862,LRT,Male,White,Louisville,KY,Jefferson,804
+2021/11/15 00:00:00+00,,40210,863,LRT,Male,White,Louisville,KY,Jefferson,805
+2021/11/15 00:00:00+00,,40210,864,LRT,Male,White,Louisville,KY,Jefferson,806
+2021/11/15 00:00:00+00,,99999,865,LRT,Male,White,Louisville,KY,Jefferson,807
+2021/11/15 00:00:00+00,,99999,866,LRT,Male,White,Louisville,KY,Jefferson,808
+2021/12/17 00:00:00+00,,40211,867,LRT,Male,White,Louisville,KY,Jefferson,809
+2021/12/17 00:00:00+00,,40210,868,LRT,Male,White,Louisville,KY,Jefferson,810
+2021/12/17 00:00:00+00,,99999,869,LRT,Male,White,Louisville,KY,Jefferson,811
+2021/12/17 00:00:00+00,,99999,870,LRT,Male,White,Louisville,KY,Jefferson,812
+2021/12/17 00:00:00+00,,99999,871,LRT,Female,White,Louisville,KY,Jefferson,813
+2021/12/14 00:00:00+00,,99999,872,LRT,Male,White,Louisville,KY,Jefferson,814
+2021/12/14 00:00:00+00,,40210,873,LRT,Male,White,Louisville,KY,Jefferson,815
+2021/12/14 00:00:00+00,,40210,874,LRT,Male,White,Louisville,KY,Jefferson,816
+2021/12/14 00:00:00+00,,40211,875,LRT,Male,White,Louisville,KY,Jefferson,817
+2021/12/14 00:00:00+00,,40210,876,LRT,Female,White,Louisville,KY,Jefferson,818
+2021/12/14 00:00:00+00,,40203,877,LRT,Male,White,Louisville,KY,Jefferson,819
+2021/12/14 00:00:00+00,,99999,878,LRT,Male,White,Louisville,KY,Jefferson,820
+2021/12/14 00:00:00+00,,99999,879,LRT,Male,White,Louisville,KY,Jefferson,821
+2022/04/26 00:00:00+00,,40215,801,LRT,Male,African American,Louisville,KY,Jefferson,822
+2021/12/14 00:00:00+00,,40210,880,LRT,Male,White,Louisville,KY,Jefferson,823
+2021/12/14 00:00:00+00,,40202,881,LRT,Male,White,Louisville,KY,Jefferson,824
+2021/12/14 00:00:00+00,,40208,882,LRT,Male,White,Louisville,KY,Jefferson,825
+2021/12/14 00:00:00+00,,40202,883,LRT,Male,White,Louisville,KY,Jefferson,826
+2021/12/14 00:00:00+00,,40202,884,LRT,Male,White,Louisville,KY,Jefferson,827
+2022/04/26 00:00:00+00,,48320,802,LRT,Male,African American,Louisville,KY,Jefferson,828
+2021/12/21 00:00:00+00,,99999,917,LRT,Male,White,Louisville,KY,Jefferson,829
+2021/12/14 00:00:00+00,,40202,885,LRT,Male,White,Louisville,KY,Jefferson,830
+2022/05/10 00:00:00+00,,40202,803,LRT,Male,African American,Louisville,KY,Jefferson,831
+2022/01/14 00:00:00+00,,99999,918,LRT,Male,White,Louisville,KY,Jefferson,832
+2021/12/14 00:00:00+00,,99999,886,LRT,Male,White,Louisville,KY,Jefferson,833
+2022/05/10 00:00:00+00,,40202,804,LRT,Male,African American,Louisville,KY,Jefferson,834
+2022/01/14 00:00:00+00,,99999,919,LRT,Male,White,Louisville,KY,Jefferson,835
+2021/12/14 00:00:00+00,,40202,887,LRT,Female,White,Louisville,KY,Jefferson,836
+2022/01/04 00:00:00+00,,,975,LRT,Female,White,Louisville,KY,Jefferson,837
+2022/05/21 00:00:00+00,,40202,805,LRT,Male,White,Louisville,KY,Jefferson,838
+2021/10/22 00:00:00+00,,99999,806,LRT,Female,White,Louisville,KY,Jefferson,839
+2021/10/22 00:00:00+00,,99999,807,LRT,Female,White,Louisville,KY,Jefferson,840
+2021/10/26 00:00:00+00,,99999,808,LRT,Female,White,Louisville,KY,Jefferson,841
+2021/10/26 00:00:00+00,,40203,809,LRT,Female,White,Louisville,KY,Jefferson,842
+2021/10/26 00:00:00+00,,40229,810,LRT,Female,White,Louisville,KY,Jefferson,843
+2021/10/26 00:00:00+00,,40202,811,LRT,Male,White,Louisville,KY,Jefferson,844
+2021/10/26 00:00:00+00,,99999,812,LRT,Male,White,Louisville,KY,Jefferson,845
+2021/10/26 00:00:00+00,,99999,813,LRT,Male,White,Louisville,KY,Jefferson,846
+2021/10/26 00:00:00+00,,99999,814,LRT,Male,White,Louisville,KY,Jefferson,847
+2021/10/26 00:00:00+00,,40208,815,LRT,Male,White,Louisville,KY,Jefferson,848
+2021/10/28 00:00:00+00,,99999,816,LRT,Male,White,Louisville,KY,Jefferson,849
+2021/11/30 00:00:00+00,,40215,817,LRT,Female,White,Louisville,KY,Jefferson,850
+2021/11/30 00:00:00+00,,40205,818,LRT,Female,White,Louisville,KY,Jefferson,851
+2021/11/30 00:00:00+00,,40205,819,LRT,Female,White,Louisville,KY,Jefferson,852
+2021/11/30 00:00:00+00,,40212,820,LRT,Male,White,Louisville,KY,Jefferson,853
+2021/11/30 00:00:00+00,,40208,821,LRT,Male,White,Louisville,KY,Jefferson,854
+2021/11/30 00:00:00+00,,40212,822,LRT,Male,White,Louisville,KY,Jefferson,855
+2021/11/30 00:00:00+00,,49211,823,LRT,Male,White,Louisville,KY,Jefferson,856
+2021/11/30 00:00:00+00,,40203,824,LRT,Male,White,Louisville,KY,Jefferson,857
+2021/11/30 00:00:00+00,,40212,825,LRT,Male,White,Louisville,KY,Jefferson,858
+2021/11/30 00:00:00+00,,40202,826,LRT,Male,White,Louisville,KY,Jefferson,859
+2021/11/30 00:00:00+00,,40214,827,LRT,Male,White,Louisville,KY,Jefferson,860
+2021/11/19 00:00:00+00,,99999,828,LRT,Female,White,Louisville,KY,Jefferson,861
+2021/11/19 00:00:00+00,,99999,829,LRT,Female,White,Louisville,KY,Jefferson,862
+2021/11/19 00:00:00+00,,40214,830,LRT,Male,White,Louisville,KY,Jefferson,863
+2021/11/19 00:00:00+00,,40216,831,LRT,Male,White,Louisville,KY,Jefferson,864
+2021/11/19 00:00:00+00,,99999,832,LRT,Male,White,Louisville,KY,Jefferson,865
+2021/11/19 00:00:00+00,,99999,833,LRT,Female,White,Louisville,KY,Jefferson,866
+2021/11/19 00:00:00+00,,99999,834,LRT,Female,White,Louisville,KY,Jefferson,867
+2021/11/19 00:00:00+00,,99999,835,LRT,Female,White,Louisville,KY,Jefferson,868
+2021/11/19 00:00:00+00,,99999,836,LRT,Female,White,Louisville,KY,Jefferson,869
+2021/11/19 00:00:00+00,,40214,837,LRT,Male,White,Louisville,KY,Jefferson,870
+2021/11/19 00:00:00+00,,99999,838,LRT,Male,White,Louisville,KY,Jefferson,871
+2021/11/19 00:00:00+00,,99999,839,LRT,Female,White,Louisville,KY,Jefferson,872
+2021/11/23 00:00:00+00,,40211,840,LRT,Male,White,Louisville,KY,Jefferson,873
+2021/11/23 00:00:00+00,,40208,841,LRT,Male,White,Louisville,KY,Jefferson,874
+2021/11/23 00:00:00+00,,40216,842,LRT,Female,White,Louisville,KY,Jefferson,875
+2021/11/23 00:00:00+00,,40216,843,LRT,Female,White,Louisville,KY,Jefferson,876
+2021/11/23 00:00:00+00,,40208,844,LRT,Female,White,Louisville,KY,Jefferson,877
+2021/11/23 00:00:00+00,,40208,845,LRT,Male,White,Louisville,KY,Jefferson,878
+2021/11/23 00:00:00+00,,40208,846,LRT,Male,White,Louisville,KY,Jefferson,879
+2021/11/23 00:00:00+00,,40208,847,LRT,Male,White,Louisville,KY,Jefferson,880
+2021/11/23 00:00:00+00,,40208,848,LRT,Male,White,Louisville,KY,Jefferson,881
+2021/11/16 00:00:00+00,,40214,849,LRT,Male,White,Louisville,KY,Jefferson,882
+2021/11/16 00:00:00+00,,40214,850,LRT,Female,White,Louisville,KY,Jefferson,883
+2021/11/16 00:00:00+00,,40208,851,LRT,Male,White,Louisville,KY,Jefferson,884
+2021/11/16 00:00:00+00,,40202,852,LRT,Female,White,Louisville,KY,Jefferson,885
+2021/11/16 00:00:00+00,,40208,853,LRT,Male,White,Louisville,KY,Jefferson,886
+2021/11/16 00:00:00+00,,40223,854,LRT,Female,White,Louisville,KY,Jefferson,887
+2021/11/16 00:00:00+00,,40211,855,LRT,Female,White,Louisville,KY,Jefferson,888
+2021/11/16 00:00:00+00,,40208,856,LRT,Male,White,Louisville,KY,Jefferson,889
+2021/11/16 00:00:00+00,,40208,857,LRT,Male,White,Louisville,KY,Jefferson,890
+2021/11/16 00:00:00+00,,99999,858,LRT,Female,White,Louisville,KY,Jefferson,891
+2022/01/04 00:00:00+00,,40203,976,LRT,Male,White,Louisville,KY,Jefferson,892
+2021/12/10 00:00:00+00,,99999,888,LRT,Male,White,Louisville,KY,Jefferson,893
+2022/01/14 00:00:00+00,,99999,920,LRT,Female,White,Louisville,KY,Jefferson,894
+2022/01/04 00:00:00+00,,99999,977,LRT,Male,White,Louisville,KY,Jefferson,895
+2021/12/10 00:00:00+00,,40213,889,LRT,Female,White,Louisville,KY,Jefferson,896
+2022/01/14 00:00:00+00,,99999,921,LRT,Male,White,Louisville,KY,Jefferson,897
+2021/12/10 00:00:00+00,,40212,890,LRT,Male,White,Louisville,KY,Jefferson,898
+2022/01/04 00:00:00+00,,40212,978,LRT,Male,White,Louisville,KY,Jefferson,899
+2022/01/14 00:00:00+00,,99999,922,LRT,Male,White,Louisville,KY,Jefferson,900
+2021/12/10 00:00:00+00,,99999,891,LRT,Male,White,Louisville,KY,Jefferson,901
+2022/02/08 00:00:00+00,,40204,979,LRT,Male,White,Louisville,KY,Jefferson,902
+2022/01/14 00:00:00+00,,40211,923,LRT,Female,White,Louisville,KY,Jefferson,903
+2021/12/03 00:00:00+00,,40203,892,LRT,Female,White,Louisville,KY,Jefferson,904
+2022/02/08 00:00:00+00,,40272,980,LRT,Male,White,Louisville,KY,Jefferson,905
+2022/01/14 00:00:00+00,,40210,924,LRT,Female,White,Louisville,KY,Jefferson,906
+2021/12/21 00:00:00+00,,40211,893,LRT,Male,White,Louisville,KY,Jefferson,907
+2022/02/09 00:00:00+00,,99999,981,LRT,Male,White,Louisville,KY,Jefferson,908
+2022/01/14 00:00:00+00,,40210,925,LRT,Female,White,Louisville,KY,Jefferson,909
+2021/12/21 00:00:00+00,,40210,894,LRT,Female,White,Louisville,KY,Jefferson,910
+2022/02/09 00:00:00+00,,40211,982,LRT,Male,White,Louisville,KY,Jefferson,911
+2022/01/14 00:00:00+00,,40210,926,LRT,Female,White,Louisville,KY,Jefferson,912
+2021/12/21 00:00:00+00,,40211,895,LRT,Female,White,Louisville,KY,Jefferson,913
+2022/03/11 00:00:00+00,,40208,983,LRT,Male,White,Louisville,KY,Jefferson,914
+2022/01/14 00:00:00+00,,99999,927,LRT,Male,White,Louisville,KY,Jefferson,915
+2021/12/21 00:00:00+00,,40210,896,LRT,Male,White,Louisville,KY,Jefferson,916
+2022/03/11 00:00:00+00,,40208,984,LRT,Male,White,Louisville,KY,Jefferson,917
+2022/01/14 00:00:00+00,,40208,928,LRT,Female,White,Louisville,KY,Jefferson,918
+2021/12/21 00:00:00+00,,40210,897,LRT,Female,White,Louisville,KY,Jefferson,919
+2022/03/11 00:00:00+00,,40203,985,LRT,Male,White,Louisville,KY,Jefferson,920
+2022/01/14 00:00:00+00,,40203,929,LRT,Male,White,Louisville,KY,Jefferson,921
+2021/12/21 00:00:00+00,,49219,898,LRT,Female,White,Louisville,KY,Jefferson,922
+2022/03/11 00:00:00+00,,40203,986,LRT,Female,White,Louisville,KY,Jefferson,923
+2022/01/14 00:00:00+00,,40203,930,LRT,Male,White,Louisville,KY,Jefferson,924
+2022/01/14 00:00:00+00,,40203,931,LRT,Male,White,Louisville,KY,Jefferson,925
+2022/01/18 00:00:00+00,,99999,932,LRT,Male,White,Louisville,KY,Jefferson,926
+2022/01/18 00:00:00+00,,40203,933,LRT,Female,White,Louisville,KY,Jefferson,927
+2022/01/18 00:00:00+00,,40208,934,LRT,Male,White,Louisville,KY,Jefferson,928
+2022/01/19 00:00:00+00,,40202,935,LRT,Female,White,Louisville,KY,Jefferson,929
+2022/01/19 00:00:00+00,,40202,936,LRT,Female,White,Louisville,KY,Jefferson,930
+2022/01/14 00:00:00+00,,40207,937,LRT,Female,White,Louisville,KY,Jefferson,931
+2022/01/14 00:00:00+00,,99999,938,LRT,Male,White,Louisville,KY,Jefferson,932
+2022/01/14 00:00:00+00,,99999,939,LRT,Female,White,Louisville,KY,Jefferson,933
+2022/01/14 00:00:00+00,,99999,940,LRT,Male,White,Louisville,KY,Jefferson,934
+2022/01/14 00:00:00+00,,40202,941,LRT,Male,White,Louisville,KY,Jefferson,935
+2022/01/14 00:00:00+00,,40210,942,LRT,Male,White,Louisville,KY,Jefferson,936
+2022/01/14 00:00:00+00,,40210,943,LRT,Male,White,Louisville,KY,Jefferson,937
+2022/01/14 00:00:00+00,,99999,944,LRT,Male,White,Louisville,KY,Jefferson,938
+2022/01/14 00:00:00+00,,99999,945,LRT,Male,White,Louisville,KY,Jefferson,939
+2022/01/14 00:00:00+00,,99999,946,LRT,Male,White,Louisville,KY,Jefferson,940
+2022/01/14 00:00:00+00,,99999,947,LRT,Male,White,Louisville,KY,Jefferson,941
+2022/01/14 00:00:00+00,,99999,948,LRT,Male,White,Louisville,KY,Jefferson,942
+2022/01/11 00:00:00+00,,40203,949,LRT,Male,White,Louisville,KY,Jefferson,943
+2022/01/11 00:00:00+00,,40203,950,LRT,Male,White,Louisville,KY,Jefferson,944
+2022/01/11 00:00:00+00,,40203,951,LRT,Male,White,Louisville,KY,Jefferson,945
+2022/01/11 00:00:00+00,,40204,952,LRT,Female,White,Louisville,KY,Jefferson,946
+2022/01/11 00:00:00+00,,99999,953,LRT,Male,White,Louisville,KY,Jefferson,947
+2022/01/11 00:00:00+00,,40210,954,LRT,Female,White,Louisville,KY,Jefferson,948
+2022/01/11 00:00:00+00,,40210,955,LRT,Female,White,Louisville,KY,Jefferson,949
+2022/01/11 00:00:00+00,,40210,956,LRT,Female,White,Louisville,KY,Jefferson,950
+2022/01/11 00:00:00+00,,402211,957,LRT,Female,White,Louisville,KY,Jefferson,951
+2022/01/11 00:00:00+00,,99999,958,LRT,Male,White,Louisville,KY,Jefferson,952
+2022/01/25 00:00:00+00,,40202,959,LRT,Male,White,Louisville,KY,Jefferson,953
+2022/01/25 00:00:00+00,,,960,LRT,Female,White,Louisville,KY,Jefferson,954
+2022/01/25 00:00:00+00,,,961,LRT,Female,White,Louisville,KY,Jefferson,955
+2022/01/25 00:00:00+00,,,962,LRT,Male,White,Louisville,KY,Jefferson,956
+2022/01/25 00:00:00+00,,40207,963,LRT,Female,White,Louisville,KY,Jefferson,957
+2022/01/25 00:00:00+00,,,964,LRT,Male,White,Louisville,KY,Jefferson,958
+2022/01/25 00:00:00+00,,40208,965,LRT,Male,White,Louisville,KY,Jefferson,959
+2022/01/25 00:00:00+00,,40211,966,LRT,Male,White,Louisville,KY,Jefferson,960
+2022/01/25 00:00:00+00,,40216,967,LRT,Female,White,Louisville,KY,Jefferson,961
+2022/01/25 00:00:00+00,,40208,968,LRT,Male,White,Louisville,KY,Jefferson,962
+2022/01/25 00:00:00+00,,40216,969,LRT,Male,White,Louisville,KY,Jefferson,963
+2022/01/25 00:00:00+00,,99999,970,LRT,Female,White,Louisville,KY,Jefferson,964
+2022/01/04 00:00:00+00,,40212,971,LRT,Female,White,Louisville,KY,Jefferson,965
+2022/01/04 00:00:00+00,,40212,972,LRT,Female,White,Louisville,KY,Jefferson,966
+2022/01/04 00:00:00+00,,,973,LRT,Female,White,Louisville,KY,Jefferson,967
+2022/01/04 00:00:00+00,,,974,LRT,Female,White,Louisville,KY,Jefferson,968
+2021/12/21 00:00:00+00,,99999,899,LRT,Male,White,Louisville,KY,Jefferson,969
+2022/03/11 00:00:00+00,,40208,987,LRT,Female,White,Louisville,KY,Jefferson,970
+2021/12/21 00:00:00+00,,99999,900,LRT,Male,White,Louisville,KY,Jefferson,971
+2022/03/29 00:00:00+00,,99999,988,LRT,Female,White,Louisville,KY,Jefferson,972
+2021/12/21 00:00:00+00,,99999,901,LRT,Male,White,Louisville,KY,Jefferson,973
+2022/03/29 00:00:00+00,,99999,989,LRT,Male,White,Louisville,KY,Jefferson,974
+2021/12/21 00:00:00+00,,99999,902,LRT,Male,White,Louisville,KY,Jefferson,975
+2022/03/29 00:00:00+00,,99999,990,LRT,Male,White,Louisville,KY,Jefferson,976
+2021/12/21 00:00:00+00,,40214,903,LRT,Female,White,Louisville,KY,Jefferson,977
+2022/03/29 00:00:00+00,,40208,991,LRT,Male,White,Louisville,KY,Jefferson,978
+2021/12/21 00:00:00+00,,40216,904,LRT,Female,White,Louisville,KY,Jefferson,979
+2022/04/26 00:00:00+00,,40215,992,LRT,Female,White,Louisville,KY,Jefferson,980
+2021/12/21 00:00:00+00,,40210,905,LRT,Female,White,Louisville,KY,Jefferson,981
+2022/05/10 00:00:00+00,,40205,993,LRT,Female,White,Louisville,KY,Jefferson,982
+2022/05/10 00:00:00+00,,40202,994,LRT,Male,White,Louisville,KY,Jefferson,983
+2022/05/10 00:00:00+00,,40203,995,LRT,Female,White,Louisville,KY,Jefferson,984
+2022/05/21 00:00:00+00,,40202,996,LRT,Female,White,Louisville,KY,Jefferson,985
+2022/05/21 00:00:00+00,,40204,997,LRT,Male,White,Louisville,KY,Jefferson,986
+2022/05/21 00:00:00+00,,40202,998,LRT,Female,White,Louisville,KY,Jefferson,987
+2022/05/21 00:00:00+00,,40202,999,LRT,Female,White,Louisville,KY,Jefferson,988
+2022/05/21 00:00:00+00,,40202,1000,LRT,Female,White,Louisville,KY,Jefferson,989
+2021/11/30 00:00:00+00,,40203,1001,LRT,Male,Asian,Louisville,KY,Jefferson,990
+2021/11/30 00:00:00+00,,40203,1002,LRT,Male,Asian,Louisville,KY,Jefferson,991
+2022/01/05 00:00:00+00,,40204,1003,LRT,Female,Asian,Louisville,KY,Jefferson,992
+2021/11/16 00:00:00+00,,40202,1004,LRT,Male,Hispanic,Louisville,KY,Jefferson,993
+2021/11/16 00:00:00+00,,40202,1005,LRT,Male,Hispanic,Louisville,KY,Jefferson,994
+2021/12/03 00:00:00+00,,40208,1006,LRT,Male,Hispanic,Louisville,KY,Jefferson,995
+2021/12/21 00:00:00+00,,99999,1007,LRT,Male,Hispanic,Louisville,KY,Jefferson,996
+2021/12/21 00:00:00+00,,99999,1008,LRT,Male,Hispanic,Louisville,KY,Jefferson,997
+2022/01/28 00:00:00+00,,40202,1009,LRT,Male,Hispanic,Louisville,KY,Jefferson,998
+2021/11/16 00:00:00+00,,40208,1010,LRT,Female,I,Louisville,KY,Jefferson,999
+2021/12/10 00:00:00+00,,40211,1011,LRT,Male,I,Louisville,KY,Jefferson,1000
+2022/05/10 00:00:00+00,,40211,1012,LRT,Male,M,Louisville,KY,Jefferson,1001
+2022/05/21 00:00:00+00,,40203,1013,LRT,Female,M,Louisville,KY,Jefferson,1002
+2022/05/21 00:00:00+00,,40203,1014,LRT,Female,M,Louisville,KY,Jefferson,1003
+2021/11/19 00:00:00+00,,99999,1015,LRT,Male,Mixed,Louisville,KY,Jefferson,1004
+2021/11/16 00:00:00+00,,40211,1016,LRT,Female,Mixed,Louisville,KY,Jefferson,1005
+2021/11/15 00:00:00+00,,99999,1017,LRT,Male,Mixed,Louisville,KY,Jefferson,1006
+2021/12/14 00:00:00+00,,40210,1018,LRT,Female,Mixed,Louisville,KY,Jefferson,1007
+2021/12/14 00:00:00+00,,99999,1019,LRT,Female,Mixed,Louisville,KY,Jefferson,1008
+2022/03/15 00:00:00+00,,99999,1020,LRT,Male,Mixed,Louisville,KY,Jefferson,1009
+2021/08/04 00:00:00+00,,47129,1021,LRT,Female,Unknown,Clarksville,IN,Jefferson,1010
+2021/09/08 00:00:00+00,,40211,1022,LRT,Female,Unknown,Stoney fork,KY,Jefferson,1011
+2022/05/10 00:00:00+00,,47150,1023,LRT,Male,M,New Albany,IN,,1012
+2021/07/07 00:00:00+00,,60628,1024,LRT,Male,Unknown,Chicago,IL,Cook,1013
+2021/07/07 00:00:00+00,,60628,1025,LRT,Male,Unknown,Chicago,IL,Cook,1014
+2021/08/01 00:00:00+00,,47150,1026,LRT,Male,Unknown,New Albany,IN,Floyd,1015
+2021/08/01 00:00:00+00,,40107,1027,LRT,Female,Unknown,Boston,KY,Nelson,1016
+2021/10/19 00:00:00+00,,47130,1028,LRT,Female,Unknown,Jeffersonville,IN,Clark,1017
+2021/10/19 00:00:00+00,,30126,1029,LRT,Male,Unknown,Mableton,GA,Cobb,1018
+2021/12/21 00:00:00+00,,40211,906,LRT,Male,White,Louisville,KY,Jefferson,1019
+2021/12/21 00:00:00+00,,99999,907,LRT,Male,White,Louisville,KY,Jefferson,1020
+2021/12/21 00:00:00+00,,40210,908,LRT,Female,White,Louisville,KY,Jefferson,1021
+2021/12/21 00:00:00+00,,99999,909,LRT,Female,White,Louisville,KY,Jefferson,1022
+2021/12/21 00:00:00+00,,40215,910,LRT,Male,White,Louisville,KY,Jefferson,1023
+2021/12/21 00:00:00+00,,40203,911,LRT,Female,White,Louisville,KY,Jefferson,1024
+2021/12/21 00:00:00+00,,99999,912,LRT,Male,White,Louisville,KY,Jefferson,1025
+2021/12/21 00:00:00+00,,99999,913,LRT,Male,White,Louisville,KY,Jefferson,1026
+2021/12/21 00:00:00+00,,40210,914,LRT,Female,White,Louisville,KY,Jefferson,1027
+2021/12/21 00:00:00+00,,40210,915,LRT,Female,White,Louisville,KY,Jefferson,1028
+2021/12/21 00:00:00+00,,40202,916,LRT,Male,White,Louisville,KY,Jefferson,1029

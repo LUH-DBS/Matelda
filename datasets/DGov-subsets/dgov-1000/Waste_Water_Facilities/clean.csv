@@ -1,0 +1,186 @@
+﻿X,Y,FacilityName,FacilityID,WWInventoryURL
+438106.899794778,46392.8191263228,Bennington,1,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=1&option=view
+498286.585151038,190015.59625372,Barre City,2,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2&option=view
+436843.95820697,275521.684427249,Alburgh,3,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=3&option=view
+524626.074872804,250174.680231705,Barton,4,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=4&option=view
+434363.179881056,134060.416381856,Benson,5,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=5&option=view
+548236.056836675,257153.312042925,Brighton,6,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=6&option=view
+529361.082489453,212428.977934451,Danville,7,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=7&option=view
+454689.048636111,73396.869467015,Manchester,8,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=8&option=view
+491989.73865655,194972.578140429,Montpelier,9,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=9&option=view
+491601.671835411,229230.579125655,Morrisville,10,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=10&option=view
+457252.388042531,129500.024319607,Proctor,12,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=12&option=view
+464051.958473573,29128.5706329873,Readsboro,13,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=13&option=view
+485771.449673724,276646.244160319,Richford,14,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=14&option=view
+499610.524174062,70815.6251490536,Saxtons River,16,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=16&option=view
+438956.695541436,95120.1250195575,Pawlet,19,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=19&option=view
+456540.25492621,121291.752642612,West Rutland,20,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=20&option=view
+497365.284635551,180801.347521508,Williamstown,21,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=21&option=view
+444523.464729898,221378.061863169,Winooski,22,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=22&option=view
+499439.09158368,125561.187100699,Woodstock,23,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=23&option=view
+514946.035020767,127370.434696879,Hartford - WRJ,24,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=24&option=view
+451342.182683588,220615.237518117,GLOBALFOUNDRIES,29,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=29&option=view
+446758.527622553,62916.1475371887,Arlington School,42,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=42&option=view
+485521.748832413,99118.6434755232,Ludlow,43,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=43&option=view
+507460.61696621,271387.332043964,Troy & Jay,44,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=44&option=view
+504645.314498618,69909.982677893,Bellows Falls,45,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=45&option=view
+495982.471054812,37900.0947877835,Brattleboro WWTF,46,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=46&option=view
+442721.387619564,219339.95741758,Burlington Main,47,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=47&option=view
+438914.419112483,225647.020987807,Burlington North,48,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=48&option=view
+444791.994227323,221038.842508002,Burlington River,49,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=49&option=view
+450600.167933665,220274.71213817,Essex Junction,50,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=50&option=view
+445942.078965651,171479.41790573,Middlebury,51,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=51&option=view
+539524.800063398,225543.75190927,Lyndon,52,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=52&option=view
+487445.972490862,184876.055012578,Northfield,53,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=53&option=view
+460131.208265825,122749.267680016,Rutland,54,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=54&option=view
+502504.638691419,86618.0889769877,Springfield,55,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=55&option=view
+509028.210870434,108002.850425456,Windsor Main,57,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=57&option=view
+442673.443301488,211979.639693032,Shelburne 1 (Crown Rd),58,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=58&option=view
+490176.922667144,147214.622888591,Bethel,61,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=61&option=view
+530407.299780929,166578.57588343,Bradford,62,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=62&option=view
+452621.070552065,143630.146702686,Brandon,63,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=63&option=view
+490378.063544742,120705.503443917,Bridgewater,64,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=64&option=view
+575731.588598628,276896.460180981,Canaan,65,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=65&option=view
+442687.343792854,122878.040493654,Castleton,66,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=66&option=view
+491792.548399529,98555.1593027834,Cavendish,67,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=67&option=view
+504282.897487408,164473.468137936,Chelsea,68,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=68&option=view
+493809.017477411,83981.5113963391,Chester,69,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=69&option=view
+475613.076487287,266997.14212851,Enosburg Falls,70,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=70&option=view
+458847.523635324,240414.983778677,Fairfax,71,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=71&option=view
+437075.007140111,121638.751225535,Fair Haven,72,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=72&option=view
+509837.529920035,223899.478942292,Hardwick,73,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=73&option=view
+450083.288998065,203745.46840643,Hinesburg,74,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=74&option=view
+473491.640940021,237930.519320052,Jeffersonville,75,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=75&option=view
+485315.900781443,237244.379731282,Johnson,76,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=76&option=view
+511463.677704292,205375.875485165,Marshfield,78,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=78&option=view
+450380.918764926,237261.166441164,Milton,79,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=79&option=view
+523692.998336827,271111.093608799,Newport City,80,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=80&option=view
+508072.535776878,277066.108460946,North Troy,81,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=81&option=view
+458270.408300643,133765.650440388,Pittsford,83,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=83&option=view
+505744.093320994,197303.582417903,Plainfield,84,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=84&option=view
+439703.352370736,114006.047903941,Poultney,85,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=85&option=view
+498373.900909451,52308.8939391412,Putney,86,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=86&option=view
+441299.833837422,209480.984614228,Shelburne 2 (Harbor Rd),88,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=88&option=view
+461944.273964917,267860.119264414,Sheldon Springs,89,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=89&option=view
+476782.257586193,127431.67523836,Sherburne FD 1,90,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=90&option=view
+449716.503636524,269530.932724842,Swanton,92,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=92&option=view
+461449.252755075,109220.550732941,Wallingford FD 1,93,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=93&option=view
+478539.363103808,205097.631346878,Waterbury,94,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=94&option=view
+468130.296352896,32316.8649759509,Whitingham,95,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=95&option=view
+474289.041026963,31783.28712989,Whitingham - Jacksonville,96,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=96&option=view
+468806.518090072,41251.0103692956,Wilmington,97,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=97&option=view
+508232.813015598,104585.01086434,Windsor Weston Heights,98,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=98&option=view
+506947.366257598,127185.282025619,Hartford - Quechee,99,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=99&option=view
+460116.362180967,211633.629251429,Richmond,100,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=100&option=view
+499482.556230898,144635.509466605,Royalton,101,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=101&option=view
+467671.431824606,44748.9637455638,Cold Brook FD 1 - Direct Discharge,102,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=102&option=view
+453652.613695184,219532.978705593,Chittenden Solid Waste District,103,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=103&option=view
+498911.163232347,30994.4898810447,NorthStar Nuclear Decommissioning Company LLC,118,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=118&option=view
+500616.374836883,183400.768776796,Barre Septic Service,120,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=120&option=view
+458112.273645382,112868.201888574,A1 Sewer and Drain,128,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=128&option=view
+497701.080282677,118315.7187069,Woodstock - South,168,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=168&option=view
+502578.619965954,125576.487088521,Woodstock - Taftsville,169,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=169&option=view
+496148.361013023,43076.3540019364,FiberMark North America Inc,174,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=174&option=view
+443406.416104952,277139.538835311,Alburgh Fire District 1,178,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=178&option=view
+461965.294242687,122373.676479818,Deermont Corp - VT Plating,181,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=181&option=view
+445647.732362423,222938.127558452,Whitcomb Construction                                       ,188,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=188&option=view
+495529.382153813,38716.7622480509,Barrows and Fisher Oil Co,192,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=192&option=view
+442716.863296975,218274.408253006,"Blodgett, G S                                               ",193,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=193&option=view
+490905.487288759,42453.4933080682,Brattleboro Water Treatment Plant,194,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=194&option=view
+443654.495882293,221688.7972401,Burlington Electric McNeil Generating Station,196,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=196&option=view
+513602.021893701,210085.582165324,Cabot,198,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=198&option=view
+443016.840777723,216448.166579003,Champlain Water District,199,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=199&option=view
+578369.594297845,279443.022809598,Ethan Allen,201,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=201&option=view
+443545.98110105,42566.9678372724,Energizer - NCCW                                            ,202,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=202&option=view
+497941.140559292,106970.31604537,Imerys Talc - West Windsor Mill,209,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=209&option=view
+442544.146290412,217568.835290166,Global Companies LLC,211,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=211&option=view
+494974.50518333,192236.852519232,Montpelier Water Treatment Plant,212,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=212&option=view
+442064.458952837,266425.288355043,North Hero Water Treatment Plant,213,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=213&option=view
+498293.25728922,52844.0652134298,Soundview Vermont Holdings,216,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=216&option=view
+501548.892247742,182932.642775913,Rock of Ages,218,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=218&option=view
+540483.077903512,227660.064075519,Lyndonville Water Treatment Plant                           ,219,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=219&option=view
+434702.369211174,165299.961009466,Tri Town Water District 1,225,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=225&option=view
+496388.844067641,180260.145634464,Unifirst,226,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=226&option=view
+504720.297324621,70351.8201642833,TransCanada Hydro Northeast - Bellows Falls,228,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=228&option=view
+468178.364806004,32312.6381101244,TransCanada Hydro Northeast - Harriman Reservoir            ,229,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=229&option=view
+463012.318395199,43457.3092139393,TransCanada Hydro Northeast - Searsburg                     ,230,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=230&option=view
+498856.550177402,30144.9093835944,TransCanada Hydro Northeast - Vernon,231,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=231&option=view
+445107.999451181,39399.3712339167,VT Fish & Wildlife - Bennington Fish Hatchery               ,233,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=233&option=view
+446083.535699454,170354.243077231,Agri-Mark - Middlebury,236,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=236&option=view
+496378.971859333,193563.68646325,Casella Waste Mgmt Inc - multiple facilities,237,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=237&option=view
+480845.202117541,205871.229624255,Ben & Jerrys Waterbury,238,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=238&option=view
+452585.356751102,255188.201741411,Ben & Jerry's St Albans,240,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=240&option=view
+442556.395240265,216579.318973973,Edlund Company,247,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=247&option=view
+443559.151802169,42498.3255303003,Energizer - Mini Alkaline,248,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=248&option=view
+460258.090826112,123085.362490938,General Electric - Columbian Ave,254,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=254&option=view
+462706.036790233,119724.619703114,General Electric - Windcrest Road,255,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=255&option=view
+498317.446028064,51557.7289813647,Green Mountain Spinnery                                     ,257,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=257&option=view
+522065.043783475,267786.009064969,New England Waste Services - Coventry,267,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=267&option=view
+483419.922218628,201403.14102521,Moretown Landfill,283,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=283&option=view
+487188.42575203,145634.111609233,US Dept of Interior-White River NFH                         ,288,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=288&option=view
+461364.054865756,137801.626578537,US Dept of Interior-DEisenhower NFH,290,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=290&option=view
+514806.764607607,211010.583206789,Agri-Mark - Cabot Creamery,314,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=314&option=view
+437403.251526021,42149.2049645758,Vishay Tansitor,451,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=451&option=view
+537682.3495926,212686.837349039,Coltec Industries                                           ,521,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=521&option=view
+464248.263443302,115350.500722161,Carrara & Sons (Clarendon Quarry),524,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=524&option=view
+500272.910677634,89562.2594609109,Springfield Municipal Swimming Pool,534,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=534&option=view
+495985.955979095,207704.208735359,Worcester FD 1,535,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=535&option=view
+480435.446317485,173830.874249328,VT Fish & Wildlife - Roxbury Fish Hatchery,538,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=538&option=view
+483945.692186314,210536.121359604,Waterbury WTP,545,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=545&option=view
+494219.53542411,197425.853988853,Montpelier Swimming Pool,547,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=547&option=view
+454281.699590314,135688.181842414,OMYA Hogback Quarry,553,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=553&option=view
+447613.636019299,62996.4063696469,H & H Properties                                            ,554,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=554&option=view
+501041.567793606,196691.830876961,Lamb Durward & Linda,564,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=564&option=view
+468094.927692188,50960.0400670822,Mt Snow Ltd,653,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=653&option=view
+442914.656060992,218166.711924556,Fortieth Burlington LLC                                     ,670,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=670&option=view
+461300.372266157,108701.769750691,Ames True Temper Inc                                        ,677,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=677&option=view
+532733.749266633,184712.738395684,"Global Partners, LP - P & H Truck Stop",701,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=701&option=view
+454678.254843359,134389.271718433,OMYA East and West - Verpol,703,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=703&option=view
+447312.502387974,221445.738640125,Lime Kiln Quarry West,707,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=707&option=view
+462760.03532555,236766.095638758,Working Dog Septic,741,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=741&option=view
+494578.687899346,36760.5687596488,"G.S. Precision Coating, Inc",746,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=746&option=view
+437104.023382384,33537.9493745165,Pownal,759,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=759&option=view
+493897.618341212,195111.444059909,Cumberland Farms Station 4024                               ,776,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=776&option=view
+498819.266133612,183126.99240051,Pike Industries (Williamstown Quarry),799,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=799&option=view
+442976.829597306,42337.6972855326,VT Dept State Buildings - Bennington State Office Bldg      ,802,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=802&option=view
+523837.19476372,272520.411046605,Columbia Forest Products,812,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=812&option=view
+467670.59700332,44749.9191538186,Cold Brook FD 1 - Golf Course,826,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=826&option=view
+467910.809058349,46723.8768051043,Cold Brook FD 1 - Base Tract,827,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=827&option=view
+448517.89424988,44187.4700795448,Bennington Water Treatment Facility                         ,856,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=856&option=view
+478219.640870859,56151.6448774258,Eagle River Mining,861,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=861&option=view
+453863.534448409,260206.465804716,Malone 75 Swanton Road Properties,873,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=873&option=view
+496039.747967137,36074.6374645786,Cersosimo Lumber Company,906,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=906&option=view
+445495.215246524,176435.353524151,Pike Industries (New Haven),937,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=937&option=view
+441274.763487618,158312.15623784,Cornwall,955,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=955&option=view
+494406.130745007,40444.6725165322,Grafton Village Cheese Co - Brattleboro                     ,956,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=956&option=view
+562041.570433632,212686.258126798,Ampersand Gilman Hydro LP,973,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=973&option=view
+437331.988304854,54439.2488563078,All Out Waste Management                                    ,978,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=978&option=view
+513799.285801977,128102.736021168,Irving Oil Terminals Inc.,1026,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=1026&option=view
+493611.565542062,36341.4419575132,Commonwealth Dairy                                          ,1056,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=1056&option=view
+476169.802986394,83234.4842951417,Chaves Excavating,1066,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=1066&option=view
+482966.439504201,78648.7176456793,Imerys Talc America,1083,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=1083&option=view
+456004.076351414,121587.049913751,Champlain Oil Co-McGanns Mobil                              ,1148,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=1148&option=view
+535797.305639793,199532.295464817,Barnet Hydro                                                ,1169,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=1169&option=view
+461946.409457792,267842.879769217,Sheldon Springs Hydro,1171,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=1171&option=view
+481283.306167516,218937.809075686,Trapp Lager Brewery,1176,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=1176&option=view
+480557.120507051,205608.629852309,Alchemist - Waterbury,2203,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2203&option=view
+491798.431026998,229986.149346807,Lost Nation Brewery,2209,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2209&option=view
+482778.971459039,219583.968134976,Alchemist - Stowe,2229,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2229&option=view
+460042.895879213,211083.711217146,Stone Corral Brewery,2237,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2237&option=view
+493684.825076794,83306.7137235977,Drews LLC,2238,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2238&option=view
+452541.027308989,219883.90704269,IBM,2241,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2241&option=view
+507947.585673239,112532.195853412,Windsor Brewing Company                                     ,2245,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2245&option=view
+441706.322649304,207505.542267132,Fiddlehead Brewing,2254,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2254&option=view
+446561.649955295,168420.288065214,VT AOT -Middlebury Bridge,2271,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2271&option=view
+471154.168010818,236377.14315595,Bryce Farms Inc,2380,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2380&option=view
+439866.671482847,152608.082932582,Richville Farms,2387,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2387&option=view
+437002.602231488,238765.81441416,Bayview Farm,2388,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2388&option=view
+516754.667925999,236568.440302699,Gebbie Farm,2393,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2393&option=view
+444711.666619454,179308.113782948,"Rail View Dairy, LLC",2419,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2419&option=view
+465794.238638351,243841.502987217,Sweet Farm,2423,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2423&option=view
+459781.995175188,241541.139356747,H Bar 9,2424,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2424&option=view
+460164.379324892,268389.547899766,Machia Farm,2425,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2425&option=view
+452670.362004968,246689.109760478,Sizen Dairy Farm,2430,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2430&option=view
+432894.193634399,144068.9405862,"Lucas Dairy, LLC",2440,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2440&option=view
+479149.585655883,261259.021767231,"Leach Farms, Inc",2445,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2445&option=view
+451244.513356889,249158.733969665,Boissonneault Family Farm,2446,https://anrweb.vt.gov/DEC/WWInventory/UpdateFacility.aspx?F=2446&option=view

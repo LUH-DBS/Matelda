@@ -1,0 +1,491 @@
+﻿OBJECTID,AV_LEGEND,IMS_LEGEND,DEP_ID,PROPERTY,AGNCYFN_CD,ACRE_GIS,SHAPE_Length,SHAPE_Area
+1294,DEP Owned Waterbody,Other DEP Property,26,Bashan Lake,EFW,265.54329,28311.580802158,11567019.6035192
+1295,DEP Owned Waterbody,Other DEP Property,30,Beach Pond,EFW,265.85868,26476.450144167,11580757.8921719
+1296,DEP Owned Waterbody,Other DEP Property,32,Beachdale Pond,EFW,39.98261,13328.7346739766,1741635.37184418
+1297,DEP Owned Waterbody,Other DEP Property,41,Beseck Lake,EFW,116.3668,14695.6603425033,5068917.55159912
+1298,DEP Owned Waterbody,Other DEP Property,49,Billings Lake,EFW,96.71568,15252.5858627812,4212918.38282463
+1299,DEP Owned Waterbody,Other DEP Property,65,Bolton Lake,EFW,346.69789,39290.8556984342,15102099.6329363
+1300,DEP Owned Waterbody,Other DEP Property,71,Bolton Notch Pond,EFW,24.76472,6941.82701247221,1078746.81438098
+1301,DEP Owned Waterbody,Other DEP Property,111,Crystal Lake (Middletown),EFW,30.95206,11253.9575137249,1348266.39071693
+1302,DEP Owned Waterbody,Other DEP Property,124,Dodge Pond,EFW,34.02243,7310.60702631163,1482011.13556615
+1303,DEP Owned Waterbody,Other DEP Property,127,Dooley Pond,EFW,21.32378,6271.20305029963,928860.155600973
+1304,DEP Owned Waterbody,Other DEP Property,133,Eagleville Lake,EFW,80.48043,18449.0901771023,3505713.71058046
+1305,DEP Owned Waterbody,Other DEP Property,180,Gardner Lake,EFW,528.1017,31181.7535176394,23004018.1288672
+1306,DEP Owned Waterbody,Other DEP Property,186,Glasgo Pond,EFW,172.485,33711.0187239258,7513416.72761758
+1307,DEP Owned Waterbody,Other DEP Property,190,Gorton Pond,EFW,52.40539,14583.1436980532,2282769.80310752
+1308,DEP Owned Waterbody,Other DEP Property,203,Halls Pond,EFA,83.94079,15825.7849514211,3656446.24499433
+1309,DEP Owned Waterbody,Other DEP Property,223,Hopeville Pond,EFW,160.91931,49162.966254011,7009617.13648912
+1310,DEP Owned Waterbody,Other DEP Property,303,Moodus Reservoir,EFW,446.36593,64143.1076453837,19443622.0112667
+1311,DEP Owned Waterbody,Other DEP Property,308,Morey Pond,EFW,61.31514,10305.42526519,2670876.88492752
+1312,DEP Owned Waterbody,Other DEP Property,346,North Farms Reservoir,EFW,60.02777,9621.34985450153,2614799.2539837
+1313,DEP Owned Waterbody,Other DEP Property,352,Norwich Pond,EFW,29.39866,5067.01995049381,1280600.41891084
+1314,DEP Owned Waterbody,Other DEP Property,361,Pachaug Pond,EFW,838.77485,76589.8147539912,36536886.477786
+1315,DEP Owned Waterbody,Other DEP Property,364,Park Pond,EFW,76.47101,12040.1474913046,3331064.03445312
+1316,DEP Owned Waterbody,Other DEP Property,367,Pattagansett Lake,EFW,125.70165,19706.134432007,5475542.10024788
+1317,DEP Owned Waterbody,Other DEP Property,380,Pickerel Lake,EFW,82.11027,14162.3587409283,3576709.05793847
+1318,DEP Owned Waterbody,Other DEP Property,391,Powers Lake,EFW,146.50684,17778.5091224503,6381812.62366506
+1319,DEP Owned Waterbody,Other DEP Property,396,Quaddick Reservoir,EFW,371.58075,59398.7691950997,16185992.9212046
+1320,DEP Owned Waterbody,Other DEP Property,455,Silver Lake,EFW,140.57934,19689.4245758971,6123611.59537999
+1321,DEP Owned Waterbody,Other DEP Property,491,Tankerhoosen Lakes,EFW,20.55084,10468.4200206431,895191.088030881
+1322,DEP Owned Waterbody,Other DEP Property,494,Tetreault Pond,EFW,39.01301,8909.32102553827,1699399.77653833
+1323,DEP Owned Waterbody,Other DEP Property,499,Tollgate Ponds,EFW,6.57332,2593.69341865025,286332.600995657
+1324,DEP Owned Waterbody,Other DEP Property,506,Uncas Pond,EFW,69.02791,10181.2796597565,3006843.67067206
+1325,DEP Owned Waterbody,Other DEP Property,528,Winchester Lake,EFW,256.58249,28892.5409513642,11176688.7252114
+1326,DEP Owned Waterbody,Other DEP Property,532,Wood Creek Pond,EFW,147.62287,17293.9758702021,6430426.39418798
+1327,DEP Owned Waterbody,Other DEP Property,537,Wyassup Lake,EFW,98.94427,13626.2462283842,4309995.10995413
+1328,DEP Owned Waterbody,Other DEP Property,553,Great Hill Pond,EFW,72.49601,8821.26274602226,3157913.65844952
+1329,DEP Owned Waterbody,Other DEP Property,603,Mashapaug Pond,EFW,297.91918,38090.1617791612,12977307.6076608
+1330,Fish Hatchery,Other DEP Property,14,Atlantic Salmon Holding Facility,EFH,4.96153,2381.62856034774,216123.198037124
+1331,Fish Hatchery,Other DEP Property,78,Burlington Fish Hatchery,EFH,140.67374,15131.3268108057,6127723.81527345
+1332,Fish Hatchery,Other DEP Property,249,Kensington Atlantic Salmon Fish Hatchery,EFH,44.25295,7256.39336666382,1927650.68953871
+1333,Fish Hatchery,Other DEP Property,403,Quinebaug Fish Hatchery,EFH,552.4055,36368.5933736693,24062687.4542223
+1334,Fish Hatchery,Other DEP Property,417,Rainbow Dam Fishway,EFH,2.57996,1684.56217303947,112382.432423036
+1335,Flood Control,Other DEP Property,12,Ashland Dam Flood Control,EC,0.80568,1384.52109054667,35095.1871192915
+1336,Flood Control,Other DEP Property,15,Avery Brook Flood Control Sites 1 and 2,EC,69.19401,14072.882591604,3014079.18616557
+1337,Flood Control,Other DEP Property,57,Blackberry River Flood Control Site 1 (Massachusetts),EC,373.06852,23624.3932479169,16250799.8482536
+1338,Flood Control,Other DEP Property,58,Blackberry River Flood Control Site 15,EC,184.05736,27830.7759537201,8017506.37196252
+1339,Flood Control,Other DEP Property,59,Blackberry River Flood Control Site 5,EC,13.08428,3454.87088547719,569949.089494265
+1340,Flood Control,Other DEP Property,60,Blackberry River Flood Control Site 6,EC,32.08915,6501.6628686358,1397797.8530748
+1341,Flood Control,Other DEP Property,61,Blackberry River Flood Control Site 9,EC,107.37372,11833.9389631658,4677180.57644749
+1342,Flood Control,Other DEP Property,146,Farm Brook Flood Control Site 1,EC,52.07377,7980.14471394113,2268324.53966264
+1343,Flood Control,Other DEP Property,147,Farm Brook Flood Control Site 2,EC,133.97348,21887.965329073,5835861.42311931
+1344,Flood Control,Other DEP Property,174,Furnace Brook-Middle River Flood Control Site 1,EC,152.8522,24629.049920286,6658215.0666894
+1345,Flood Control,Other DEP Property,175,Furnace Brook-Middle River Flood Control Site 2,EC,16.25006,4014.61376402062,707849.706261112
+1346,Flood Control,Other DEP Property,176,Furnace Brook-Middle River Flood Control Site 3,EC,9.3249,2949.94839893365,406191.219948999
+1347,Flood Control,Other DEP Property,177,Furnace Brook-Middle River Flood Control Site 4,EC,134.96867,18052.2066385769,5879211.84973619
+1348,Flood Control,Other DEP Property,178,Furnace Brook-Middle River Flood Control Site 5,EC,414.92173,59313.5738574069,18073918.316757
+1349,Flood Control,Other DEP Property,179,Furnace Brook-Middle River Flood Control Site 6,EC,28.76909,10500.9020698923,1253176.4119798
+1350,Flood Control,Other DEP Property,341,North Branch Park River Flood Control Site 1,EC,285.31093,23177.9159936733,12428094.2238529
+1351,Flood Control,Other DEP Property,342,North Branch Park River Flood Control Site 2,EC,364.78858,33824.7820923965,15890126.9824671
+1352,Flood Control,Other DEP Property,343,North Branch Park River Flood Control Site 3,EC,397.54716,29061.5779713254,17317084.8710978
+1353,Flood Control,Other DEP Property,344,North Branch Park River Flood Control Site 9,EC,156.72284,19770.4991809451,6826819.79497868
+1354,Flood Control,Other DEP Property,348,Norwalk River Flood Control Site 2,EC,383.36874,33186.1439055002,16699475.6164506
+1355,Flood Control,Other DEP Property,349,Norwalk River Flood Control Site 3,EC,130.54393,21870.0252357723,-5686474.42363482
+1356,Flood Control,Other DEP Property,350,Norwalk River Flood Control Site 7b (Spectacle Swamp),EC,143.45747,19674.6570808159,6248982.27771309
+1357,Flood Control,Other DEP Property,428,"Rooster River Flood Control Sites 1,2, and 3",EC,1.07042,928.384268950702,46627.5122412002
+1358,Flood Control,Other DEP Property,460,Slater Dam Flood Control,EC,3.38601,2585.66898238866,147493.896897431
+1359,Flood Control,Other DEP Property,464,South Branch Park River Flood Control (Lower Trout Br Channel),EC,3.93902,4782.37608077855,171582.87365777
+1360,Flood Control,Other DEP Property,465,South Branch Park River Flood Control (Piper and Mill Brooks),EC,3.7109,2287.30707111754,161646.214939017
+1361,Flood Control,Other DEP Property,467,"South Branch Park River Flood Control (Trout Br,upper Ext)",EC,0.81186,2964.15905464486,35364.339503234
+1362,Flood Control,Other DEP Property,468,"South Branch Park River Flood Control (Trout Brook, Middle)",EC,5.71931,9659.39645696272,249132.011076492
+1363,Flood Control,Other DEP Property,469,"South Branch Park River Flood Control (Trout Brook, Upper)",EC,17.15815,9923.3125377011,747405.954957254
+1364,Flood Control,Other DEP Property,470,South Branch Park River Flood Control Site 1 (Talcott),EC,128.79693,14999.9642224268,-5610346.61123957
+1365,Flood Control,Other DEP Property,471,South Branch Park River Flood Control Site 2 (Bugbee),EC,142.63635,21799.364633188,6213214.44843254
+1366,Flood Control,Other DEP Property,472,South Branch Park River Flood Control Site 3,EC,170.36032,19454.0044260494,7420865.97006456
+1367,Flood Control,Other DEP Property,473,South Branch Park River Flood Control Site 5,EC,360.78488,18644.9431130204,15715726.5341242
+1368,Flood Control,Other DEP Property,514,West River Flood Control,EC,0.29618,509.01719562647,12901.6337294309
+1369,Flood Control,Other DEP Property,539,Yantic River Flood Control,EC,10.49242,6042.80713882867,457047.807011267
+1370,Flood Control,Other DEP Property,561,Rooster River Flood Control Sites 4,EC,0.34034,513.756070510607,14825.3555807846
+1371,Historic Preserve,State Park or Preserve,108,Continental Army Hospital Memorial Monument Historic Preserve,ERH,10.19874,3914.33142283328,444255.443526192
+1372,Historic Preserve,State Park or Preserve,240,Industrial Monument Historic Preserve,ERH,2.86487,2273.7405703325,124793.253836242
+1373,Natural Area Preserve,State Park or Preserve,81,Cabin Lot Natural Area Preserve,ERN,42.1459,5413.67882065015,1835867.96114635
+1374,Natural Area Preserve,State Park or Preserve,83,Canaan Mountain Natural Area Preserve,ERN,1441.85305,50691.8944222294,62806867.5215152
+1375,Natural Area Preserve,State Park or Preserve,109,Cox Lot Natural Area Preserve,ERN,56.93627,6912.52432588852,2480134.20485079
+1376,Natural Area Preserve,State Park or Preserve,207,Hammonasset Natural Area Preserve,ERN,415.60477,51132.3213005851,18103671.3471255
+1377,Natural Area Preserve,State Park or Preserve,224,Hopeville Pond Natural Area Preserve,ERN,32.94392,5618.8877419117,1435031.31342642
+1378,Natural Area Preserve,State Park or Preserve,382,Matianuck Sand Dunes,ERN,248.17336,20622.5457460417,10810388.4127028
+1379,Natural Area Preserve,State Park or Preserve,421,Reeves Lot Natural Area Preserve,ERN,50.2823,7133.33730355949,2190288.08138466
+1380,Natural Area Preserve,State Park or Preserve,520,Wharton Brook Natural Area Preserve,ERN,23.89055,5443.90380673347,-1040559.9610276
+1381,Natural Area Preserve,State Park or Preserve,557,Turkey Hill Lot Natural Area Preserve,ERN,80.75122,7970.96783627412,3517509.1636696
+1382,Natural Area Preserve,State Park or Preserve,624,Bluff Point Natural Area Preserve,ERN,116.29678,14647.4174560369,5065867.56037911
+1383,Other,Other DEP Property,34,Beacon Hill,EO,70.33247,10038.1868609798,3063669.92723273
+1384,Other,Other DEP Property,284,Marine District Headquarters,EO,16.24458,5302.75519562208,707610.87180956
+1385,Other,Other DEP Property,335,Nelson Field Park,EO,48.61595,7966.95029963306,2117702.2129128
+1386,Other,Other DEP Property,393,Prospect Ridge Greenbelt,EO,68.95228,10181.081712273,3003549.14496716
+1387,Other,Other DEP Property,402,Quarry Head,EO,35.02532,7908.57675413976,1525696.74871069
+1388,Other,Other DEP Property,425,Rocky Hill Quarry,EO,84.50297,17507.9060605126,3680934.49502759
+1389,Other,Other DEP Property,441,Schagticoke Indian Reservation,EO,285.6648,14953.9449383263,12443509.130732
+1390,Other,Other DEP Property,481,Sterling Radio Tower Site,EO,0.82513,1793.16778906219,35942.3623250118
+1391,Other,Other DEP Property,498,Three Ponds Area,EO,2.36576,1625.11537459785,103052.162990644
+1392,Other,Other DEP Property,548,Beardsley Park,EO,184.38927,35670.928973399,8031964.32509148
+1393,Other,Other DEP Property,562,Indian River,EO,0.63827,721.968331731696,27802.9944008061
+1394,Other,Other DEP Property,581,Taconic Road,EO,83.49205,14175.4812424148,3636899.34998899
+1395,Other,Other DEP Property,582,Treetops,EO,94.20814,13439.6250331656,4103690.24575462
+1396,Other,Other DEP Property,583,Trout Brook Valley,EO,300.0107,21745.8581203945,13068413.7502606
+1397,Other,Other DEP Property,600,Southington DEP,EO,12.06449,5548.98674794419,525527.218967271
+1398,Other,Other DEP Property,606,DEP Bethany Training Center,EO,0.82642,805.786693791265,35998.7978675638
+1399,Other,Other DEP Property,607,Israel Putnam Monument,EO,0.19046,366.151969917331,8296.409395944
+1400,Other,Other DEP Property,609,Bayonet Street,EO,6.81892,2276.26030068283,297030.85589715
+1401,Other,Other DEP Property,614,Fish & Game District 1 HQ,EO,7.97817,2410.39208834881,347527.88147259
+1402,State Forest,State Forest,5,Algonquin State Forest,EXF,2473.13021,173784.662548063,107729121.114615
+1403,State Forest,State Forest,6,American Legion State Forest,EXF,1303.0927,67828.0371096261,-56762562.3206577
+1404,State Forest,State Forest,92,Cockaponset State Forest,EXF,16511.67276,1086438.8537938,-719245512.35171
+1405,State Forest,State Forest,144,Enders State Forest,EXF,1958.76215,92154.1381766509,85323337.8253328
+1406,State Forest,State Forest,235,Housatonic State Forest,EXF,10622.95189,624812.058813616,-462733799.889077
+1407,State Forest,State Forest,243,James L. Goodwin State Forest,EXF,1932.55392,83263.8389869345,84181712.1964964
+1408,State Forest,State Forest,288,Massacoe State Forest,EXF,372.18103,28945.5286902465,16212140.7410463
+1409,State Forest,State Forest,289,Mattatuck State Forest,EXF,4444.68774,361613.697503274,193609823.362333
+1410,State Forest,State Forest,291,Meshomasic State Forest,EXF,9249.9142,496515.450834281,402924651.058058
+1411,State Forest,State Forest,301,Mohawk State Forest,EXF,3742.20102,197185.796033012,-163009604.896781
+1412,State Forest,State Forest,302,Mohegan State Forest,EXF,992.9941,94338.0696643777,-43254647.6497901
+1413,State Forest,State Forest,317,Nassahegon State Forest,EXF,1149.63398,85315.9221500638,50077855.8469121
+1414,State Forest,State Forest,321,Natchaug State Forest,EXF,12596.30839,611097.773947873,-548693243.785167
+1415,State Forest,State Forest,324,Nathan Hale State Forest,EXF,1553.40062,74595.4230166411,67665860.223397
+1416,State Forest,State Forest,333,Naugatuck State Forest,EXF,5119.93446,237454.614941053,-223023390.150897
+1417,State Forest,State Forest,334,Nehantic State Forest,EXF,4224.38528,190291.168975914,184013486.609529
+1418,State Forest,State Forest,336,Nepaug State Forest,EXF,1524.61637,75027.2740442257,66412023.4287932
+1419,State Forest,State Forest,339,Nipmuck State Forest,EXF,9536.96036,421069.722997586,-415428421.350096
+1420,State Forest,State Forest,356,Nye Holman State Forest,EXF,925.3763,102027.071088706,40309230.2226087
+1421,State Forest,State Forest,363,Pachaug State Forest,EXF,26662.31229,1101551.44203529,-1161405317.01102
+1422,State Forest,State Forest,371,Paugnut State Forest,EXF,1701.01705,104621.441805853,74096006.3095644
+1423,State Forest,State Forest,372,Paugussett State Forest,EXF,2126.91794,98077.4793823935,92648545.3907334
+1424,State Forest,State Forest,377,Peoples State Forest,EXF,3102.93925,118720.404630955,135163493.149629
+1425,State Forest,State Forest,389,Pootatuck State Forest,EXF,1052.31936,91384.8826914709,45838847.843868
+1426,State Forest,State Forest,400,Quaddick State Forest,EXF,573.94804,58135.3892226902,25001076.7087983
+1427,State Forest,State Forest,434,Salmon River State Forest,EXF,6622.67117,460937.448510876,288482402.41357
+1428,State Forest,State Forest,450,Shenipsit State Forest,EXF,7158.60914,409913.395298868,-311827755.524534
+1429,State Forest,State Forest,500,Topsmead State Forest,EXF,634.08961,27995.5348749405,27620832.8004677
+1430,State Forest,State Forest,503,Tunxis State Forest,EXF,10162.10507,356888.445497549,-442659574.384398
+1431,State Forest,State Forest,536,Wyantenock State Forest,EXF,4061.56757,246848.482858186,-176921166.422657
+1432,State Forest,State Forest,565,Camp Columbia State Forest,EXF,527.93981,36108.8881791824,22996966.3427438
+1433,State Forest,State Forest,592,Centennial Watershed State Forest,EXF,5256.57135,1212951.27624883,228975332.174609
+1434,State Forest,State Forest,612,Mohegan State Forest Salt Rock Campground,EXF,92.60565,9286.88044194099,4033886.13637939
+1435,State Forest,State Forest,621,Preserve State Forest,EXF,888.78552,51217.9569099039,38715342.5116416
+1436,State Park,State Park or Preserve,46,Bigelow Hollow State Park,EP,514.97929,35257.0307012053,22432408.2918895
+1437,State Park,State Park or Preserve,56,Black Rock State Park,EP,478.68076,25035.0711895201,20851250.2828472
+1438,State Park,State Park or Preserve,64,Bluff Point State Park,EP,67.8345,12551.2065054363,2954858.94622558
+1439,State Park,State Park or Preserve,79,Burr Pond State Park,EP,452.5745,29106.6325050265,19714066.4690605
+1440,State Park,State Park or Preserve,90,Chatfield Hollow State Park,EP,399.07329,25192.8903530059,17383562.9580827
+1441,State Park,State Park or Preserve,94,Collis P. Huntington State Park,EP,1043.41978,47602.2441082487,45451183.6577202
+1442,State Park,State Park or Preserve,116,Day Pond State Park,EP,182.69868,14318.4862018108,7958322.85417289
+1443,State Park,State Park or Preserve,119,Dennis Hill State Park,EP,238.47359,14028.7599479885,10387868.2463156
+1444,State Park,State Park or Preserve,120,Devils Hopyard State Park,EP,891.44543,53643.6909982712,38831207.6217623
+1445,State Park,State Park or Preserve,122,Dinosaur State Park,EP,81.93356,14945.5004224518,3569011.44063228
+1446,State Park,State Park or Preserve,168,Forster Pond State Park,EP,217.53407,17084.5127190303,9475746.24978388
+1447,State Park,State Park or Preserve,169,Fort Griswold State Park,EP,16.73887,6997.61174916384,729142.068129856
+1448,State Park,State Park or Preserve,182,Gay City State Park,EP,799.89187,29915.890188155,34843150.3082879
+1449,State Park,State Park or Preserve,185,Gillette Castle State Park,EP,189.51317,17051.9934412284,-8255171.41721795
+1450,State Park,State Park or Preserve,198,Haddam Meadows State Park,EP,164.54129,17876.4098580973,7167389.86122303
+1451,State Park,State Park or Preserve,202,Haley Farm State Park,EP,275.40004,22582.9782748233,11996377.5422472
+1452,State Park,State Park or Preserve,205,Hammonasset Beach State Park,EP,581.46026,59405.6862717066,25328307.7761484
+1453,State Park,State Park or Preserve,209,Harkness Memorial State Park,EP,329.91387,26993.8676780954,14370990.7225367
+1454,State Park,State Park or Preserve,212,Haystack Mountain State Park,EP,386.14587,34118.1881694129,16820446.6353662
+1455,State Park,State Park or Preserve,215,Higganum Reservoir State Park,EP,136.94435,18239.5607114641,5965272.22973135
+1456,State Park,State Park or Preserve,225,Hopeville Pond State Park,EP,490.04058,42607.8831788615,21346082.27706
+1457,State Park,State Park or Preserve,228,Housatonic Meadows State Park,EP,471.85931,34330.9525586727,20554109.2274403
+1458,State Park,State Park or Preserve,238,Hurd State Park,EP,912.70874,35014.9190244302,39757433.559031
+1459,State Park,State Park or Preserve,239,Indian Well State Park,EP,165.51726,27365.245084587,7209902.82182552
+1460,State Park,State Park or Preserve,242,Ivy Mountain State Park,EP,51.72795,6104.85267289304,2253260.29684046
+1461,State Park,State Park or Preserve,244,John A. Minetto State Park,EP,674.81931,57254.501460419,29395011.3748245
+1462,State Park,State Park or Preserve,250,"Kent Falls State Park, Leased to Sloane-Stanley Museum",EP,28.78118,4889.97384848319,1253702.97278855
+1463,State Park,State Park or Preserve,251,Kent Falls State Park,EP,226.91022,14509.1981187501,9884169.58878859
+1464,State Park,State Park or Preserve,252,Kettletown State Park,EP,575.45328,38010.7309914907,25066644.5722807
+1465,State Park,State Park or Preserve,259,Lake Waramaug State Park,EP,80.37977,9665.48050962235,3501328.76264131
+1466,State Park,State Park or Preserve,279,Macedonia Brook State Park,EP,1828.86605,60690.1204140381,79665086.4444164
+1467,State Park,State Park or Preserve,282,Mansfield Hollow State Park,EP,252.26157,30217.6934937313,10988470.0168641
+1468,State Park,State Park or Preserve,285,Mashamoquet Brook State Park,EP,1006.23139,40752.5567307885,43831263.9119391
+1469,State Park,State Park or Preserve,299,Mohawk Mountain State Park,EP,252.43676,16876.4034355174,10996101.2008701
+1470,State Park,State Park or Preserve,313,Mount Tom State Park,EP,236.18446,17760.6987258283,10288154.0655968
+1471,State Park,State Park or Preserve,325,Nathaniel Lyon Memorial State Park,EP,13.78445,3107.5827369041,600448.062217103
+1472,State Park,State Park or Preserve,357,Old Furnace State Park,EP,413.95827,34740.8921201753,18031950.0086288
+1473,State Park,State Park or Preserve,358,Osbornedale State Park,EP,425.48778,30093.9822536486,18534173.6809278
+1474,State Park,State Park or Preserve,376,Penwood State Park,EP,801.37471,42460.0840204897,-34907755.3015068
+1475,State Park,State Park or Preserve,395,Putnam Memorial State Park,EP,214.20265,17145.8060418729,9330630.27592899
+1476,State Park,State Park or Preserve,401,Quaddick State Park,EP,96.30658,9645.9602412801,4195097.78238398
+1477,State Park,State Park or Preserve,408,Quinnipiac River State Park,EP,323.06064,51823.6978896697,14072465.0019653
+1478,State Park,State Park or Preserve,420,Mooween State Park,EP,591.79157,34529.2734141435,25778337.7550128
+1479,State Park,State Park or Preserve,426,Rocky Neck State Park,EP,678.33824,51253.1946502908,29548295.3880845
+1480,State Park,State Park or Preserve,440,Scantic River State Park,EP,773.31307,108983.265487456,33685382.6142817
+1481,State Park,State Park or Preserve,445,Selden Neck State Park,EP,562.81673,28267.0640364147,24516198.5859446
+1482,State Park,State Park or Preserve,451,Sherwood Island State Park,EP,275.65934,31411.4202567558,12007672.8143825
+1483,State Park,State Park or Preserve,457,Silver Sands State Park,EP,302.64203,34834.0888451592,13183033.9049252
+1484,State Park,State Park or Preserve,461,Sleeping Giant State Park,EP,1574.75916,83238.1498439495,68596234.7427698
+1485,State Park,State Park or Preserve,477,Southford Falls State Park,EP,168.71967,15451.8820925803,-7349407.66184188
+1486,State Park,State Park or Preserve,479,Squantz Pond State Park,EP,170.28347,17476.1496641537,7417518.20466507
+1487,State Park,State Park or Preserve,485,Stratton Brook State Park,EP,189.05993,40672.7429804068,8235417.67299689
+1488,State Park,State Park or Preserve,486,Sunny Brook State Park,EP,463.54865,25013.1434626013,20192098.2643463
+1489,State Park,State Park or Preserve,490,Talcott Mountain State Park,EP,552.19153,65683.8033535601,24053366.7514766
+1490,State Park,State Park or Preserve,508,Wadsworth Falls State Park,EP,283.96309,22965.3548419508,12369382.8075486
+1491,State Park,State Park or Preserve,511,Weir Farm State Park,EP,1.74394,1168.6798206994,75965.8760768774
+1492,State Park,State Park or Preserve,517,West Rock Ridge State Park,EP,1644.35765,123930.603922971,-71627948.7849365
+1493,State Park,State Park or Preserve,521,Wharton Brook State Park,EP,44.86757,6517.74966100172,1954423.46714346
+1494,State Park,State Park or Preserve,530,Windsor Meadows State Park,EP,153.9265,23734.7495799584,6705011.31040434
+1495,State Park,State Park or Preserve,554,Stillwater Pond State Park,EP,225.11925,33019.984400247,-9806017.71115007
+1496,State Park,State Park or Preserve,556,River Highlands State Park,EP,177.28911,16621.9903003925,7722682.73592013
+1497,State Park,State Park or Preserve,566,Eagle Landing State Park,EP,15.85409,3983.02220950156,690601.267155409
+1498,State Park,State Park or Preserve,567,Farm River State Park,EP,60.98265,14210.1598348854,2656393.79267442
+1499,State Park,State Park or Preserve,568,Fort Trumbull State Park,EP,15.50891,3864.40895958398,675565.601301003
+1500,State Park,State Park or Preserve,571,Hop River State Park,EP,43.7568,6819.68308511762,1906038.59917746
+1501,State Park,State Park or Preserve,577,Ross Pond State Park,EP,83.52391,11588.5223363595,3638286.75456366
+1502,State Park,State Park or Preserve,578,Salem Campground,EP,9.77941,3020.0904186686,425989.357614799
+1503,State Park,State Park or Preserve,590,Machimoodus State Park,EP,300.30571,25706.5529691729,13081264.3540192
+1504,State Park,State Park or Preserve,597,Camp Columbia State Park,EP,72.05695,11335.1675917382,3138788.01743398
+1505,State Park,State Park or Preserve,599,Bennett's Pond State Park,EP,459.73251,22395.4708600084,20025867.9992549
+1506,State Park,State Park or Preserve,605,Sunrise State Park,EP,144.92575,14225.2310248681,6312940.32950006
+1507,State Park,State Park or Preserve,622,Seaside State Park,EP,32.39374,6357.71092713589,1411065.50751491
+1508,State Park Scenic Reserve,State Park or Preserve,1,Above All State Park Scenic Reserve,EPS,24.00436,4323.62588556062,1045625.70883172
+1509,State Park Scenic Reserve,State Park or Preserve,38,Beaver Brook State Park Scenic Reserve,EPS,402.55145,29230.9423977331,17535070.9258233
+1510,State Park Scenic Reserve,State Park or Preserve,39,Beckett Hill State Park Scenic Reserve,EPS,261.9531,19843.1663908869,11410631.5768342
+1511,State Park Scenic Reserve,State Park or Preserve,63,Bluff Point Coastal Reserve,EPS,620.57052,47052.1379821153,27031943.7032881
+1512,State Park Scenic Reserve,Other DEP Property,70,Bolton Lake Water Access,EFA,94.68174,15293.2668281754,4124320.25351035
+1513,State Park Scenic Reserve,State Park or Preserve,73,Bolton Notch State Park Scenic Reserve,EPS,102.79019,13672.9274682613,4477522.59043539
+1514,State Park Scenic Reserve,State Park or Preserve,74,Brainard Homestead State Park Scenic Reserve,EPS,29.00758,5326.22953633537,1263564.92676863
+1515,State Park Scenic Reserve,State Park or Preserve,82,Campbell Falls State Park Scenic Reserve,EPS,140.05755,10881.6139240952,6100882.46765108
+1516,State Park Scenic Reserve,State Park or Preserve,115,Dart Island State Park Scenic Reserve,EPS,18.94941,7248.00034052451,825433.087737635
+1517,State Park Scenic Reserve,State Park or Preserve,183,George C. Waldo State Park Scenic Reserve,EPS,149.09314,12130.890742913,6494471.22300968
+1518,State Park Scenic Reserve,State Park or Preserve,184,George D. Seymour State Park Scenic Reserve,EPS,334.03423,22894.870319456,14550472.9738387
+1519,State Park Scenic Reserve,State Park or Preserve,197,Haddam Island State Park Scenic Reserve,EPS,25.43524,5940.18998562161,1107954.54243816
+1520,State Park Scenic Reserve,State Park or Preserve,222,Hopemead State Park Scenic Reserve,EPS,59.15647,7049.55583848682,2576845.647699
+1521,State Park Scenic Reserve,State Park or Preserve,227,Horseguard State Park Scenic Reserve,EPS,105.75446,11755.8924079502,4606645.69718579
+1522,State Park Scenic Reserve,State Park or Preserve,237,Humaston Brook State Park Scenic Reserve,EPS,148.10993,29431.9901953756,6451642.52873972
+1523,State Park Scenic Reserve,State Park or Preserve,253,Killingly Pond State Park Scenic Reserve,EPS,174.37237,21365.4931339228,7595629.9505577
+1524,State Park Scenic Reserve,State Park or Preserve,262,Lamentation Mountain State Park Scenic Reserve,EPS,46.02939,6916.91196603689,2005032.25412596
+1525,State Park Scenic Reserve,State Park or Preserve,278,Lovers Leap State Park Scenic Reserve,EPS,160.41057,27121.8766166987,6987456.59267208
+1526,State Park Scenic Reserve,State Park or Preserve,294,Mianus River State Park Scenic Reserve,EPS,328.95445,32566.4345804032,14329198.7000605
+1527,State Park Scenic Reserve,State Park or Preserve,297,Millers Pond State Park Scenic Reserve,EPS,298.37507,14650.269228816,12997166.1510569
+1528,State Park Scenic Reserve,State Park or Preserve,298,Minnie Island State Park Scenic Reserve,EPS,0.88314,736.515303003043,38469.5373131955
+1529,State Park Scenic Reserve,State Park or Preserve,310,Mount Bushnell State Park Scenic Reserve,EPS,213.64068,27242.0002050444,9306150.81758063
+1530,State Park Scenic Reserve,State Park or Preserve,311,Mount Riga State Park Scenic Reserve,EPS,321.63723,33784.5110228877,14010461.775167
+1531,State Park Scenic Reserve,State Park or Preserve,385,Platt Hill State Park Scenic Reserve,EPS,158.89294,13367.9622001271,6921348.61558879
+1532,State Park Scenic Reserve,State Park or Preserve,388,Pomeroy State Park Scenic Reserve,EPS,203.10678,22484.5360694417,8847295.93758752
+1533,State Park Scenic Reserve,State Park or Preserve,404,Quinebaug Lake State Park Scenic Reserve,EPS,171.37227,17642.6788413748,7464946.30705591
+1534,State Park Scenic Reserve,State Park or Preserve,424,Rocky Glen State Park Scenic Reserve,EPS,55.0409,13322.7121918565,2397571.85487007
+1535,State Park Scenic Reserve,State Park or Preserve,447,Seth Low Pierrepont State Park Scenic Reserve,EPS,310.15941,27783.5707021144,13510489.8752882
+1536,State Park Scenic Reserve,State Park or Preserve,482,Stoddard Hill State Park Scenic Reserve,EPS,54.97095,10003.230027088,2394525.19519279
+1537,State Park Scenic Reserve,State Park or Preserve,487,Sunset Rock State Park Scenic Reserve,EPS,20.51195,7111.5908640339,893496.865088271
+1538,State Park Scenic Reserve,State Park or Preserve,502,Trimountain State Park Scenic Reserve,EPS,152.31845,24000.5006242457,6634965.04378704
+1539,State Park Scenic Reserve,State Park or Preserve,522,Whittemore Glen State Park Scenic Reserve,EPS,87.87384,13730.6939006356,3827769.19495227
+1540,State Park Scenic Reserve,State Park or Preserve,534,Wooster Mountain State Park Scenic Reserve,EPS,444.02073,36382.8978905094,19341465.6613925
+1541,State Park Scenic Reserve,State Park or Preserve,620,Auerfarm State Park Scenic Reserve,EPS,40.4072,6934.30417462939,1760130.39292721
+1542,State Park Scenic Reserve,State Park or Preserve,626,Captain Comer Memorial,EPS,2.53869,2763.59636423433,110584.886849902
+1543,State Park Scenic Reserve,State Park or Preserve,627,Lake Williams State Park Scenic Reserve,EPS,177.36244,15846.5692983808,7725876.97878215
+1544,State Park Trail,State Park or Preserve,2,Airline State Park Trail (North Trail),EPT,65.03944,70686.6784047283,2833106.86626349
+1545,State Park Trail,State Park or Preserve,3,Airline State Park Trail (Northern Section),EPT,201.3482,223083.858458401,-8770698.91267368
+1546,State Park Trail,State Park or Preserve,4,Airline State Park Trail (Southern Section),EPT,206.49005,232074.279536926,8994670.62377471
+1547,State Park Trail,State Park or Preserve,107,Connecticut Valley Railroad State Park Trail,EPT,148.16928,228712.83155358,-6454293.84468604
+1548,State Park Trail,State Park or Preserve,150,Farmington Canal Line State Park Trail,EPT,104.65397,143166.037640488,-4558818.2386881
+1549,State Park Trail,State Park or Preserve,220,Hop River State Park Trail,EPT,121.15565,212606.24256308,5277518.83750909
+1550,State Park Trail,State Park or Preserve,264,Larkin State Park Trail,EPT,108.71964,113584.468511147,4735808.38180136
+1551,State Park Trail,State Park or Preserve,307,Moosup Valley State Park Trail,EPT,61.64982,62355.822925349,2685455.35886187
+1552,Water Access,Other DEP Property,8,Amos Lake Water Access ,EFA,2.22626,1270.49615157574,96975.4577275549
+1553,Water Access,Other DEP Property,11,Ashaway River Water Access,EFA,4.32869,1878.85067525944,188557.065732248
+1554,Water Access,Other DEP Property,16,Avery Pond Water Access ,EFA,2.50266,1777.95281447266,109015.238233651
+1555,Water Access,Other DEP Property,19,Ball Pond Water Access ,EFA,4.07396,1708.56338607049,177460.797865723
+1556,Water Access,Other DEP Property,20,Bantam Lake Water Access,EFA,3.20837,2092.03447308467,139755.99152434
+1557,Water Access,Other DEP Property,29,Bayberry Lane Water Access ,EFA,1.42415,1321.6388844031,62035.9010991066
+1558,Water Access,Other DEP Property,36,Beards Creek Water Access,EFA,3.11229,2021.42308988131,135570.635358383
+1559,Water Access,Other DEP Property,44,Bible Rock Brook Water Access,EFA,2.13475,1265.88674579458,92989.1549009146
+1560,Water Access,Other DEP Property,47,Bigelow Pond Water Access ,EFA,0.39894,550.565215312989,17377.9740400028
+1561,Water Access,Other DEP Property,50,Billings Lake Water Access ,EFA,1.33574,1460.53919907505,58184.5930171448
+1562,Water Access,Other DEP Property,62,Blackledge River Water Access,EFA,2.80446,1566.81134113454,122161.775367887
+1563,Water Access,Other DEP Property,68,Lower Bolton Lake Water Access ,EFA,4.26838,1974.85308714481,185929.943104207
+1564,Water Access,Other DEP Property,75,Branford River Water Access ,EFA,2.65583,1653.53470453805,-115680.479665656
+1565,Water Access,Other DEP Property,84,Candlewood Lake Water Access (Lattins Cove) ,EFA,7.42386,3817.05788083527,323382.224461455
+1566,Water Access,Other DEP Property,93,Cold Spring Brook Water Access,EFA,0.95007,1212.8418259946,41384.955745447
+1567,Water Access,Other DEP Property,97,Connecticut River Water Access (Enfield),EFA,3.8583,2760.13656526912,168066.963447834
+1568,Water Access,Other DEP Property,98,Connecticut River Water Access (Old Saybrook),EFA,5.04392,2059.16039462656,219712.195707135
+1569,Water Access,Other DEP Property,99,Connecticut River Water Access (Suffield),EFA,35.71284,8010.39686591402,1555645.25488416
+1570,Water Access,Other DEP Property,100,Connecticut River Water Access (Windsor South),EFA,1.46441,1079.96517143475,63789.537774905
+1571,Water Access,Other DEP Property,113,Crystal Lake Water Access (Middletown),EFA,0.1652,382.813012640808,7196.0584201963
+1572,Water Access,Other DEP Property,121,Dianas Pool Water Access,EFA,29.06664,7271.08942434382,1266137.57832088
+1573,Water Access,Other DEP Property,123,Dock Road Water Access ,EFA,2.09361,1389.70911670727,91197.1271926978
+1574,Water Access,Other DEP Property,128,Dooley Pond Water Access ,EFA,2.22931,1326.72306014868,97108.4792700497
+1575,Water Access,Other DEP Property,140,East Twin Lake Water Access,EFA,98.88426,10255.4147822311,4307381.22348654
+1576,Water Access,Other DEP Property,142,Eightmile River Water Access (Southington South),EFA,0.41018,639.49552222038,17867.4006497704
+1577,Water Access,Other DEP Property,143,Eightmile River Water Access (Southington North),EFA,1.95692,1417.35249059863,85243.2799739606
+1578,Water Access,Other DEP Property,148,Farm River Water Access,EFA,7.78988,3529.91148420309,339325.64739599
+1579,Water Access,Other DEP Property,151,Farmington River Water Access (Avon),EFA,23.80946,9501.24420420471,1037136.14051767
+1580,Water Access,Other DEP Property,154,Farmington River Water Access (Burlington North),EFA,25.36128,19582.7659928183,1104732.89754623
+1581,Water Access,Other DEP Property,155,Farmington River Water Access (Burlington South),EFA,9.7284,5410.37802971106,423767.352548916
+1582,Water Access,Other DEP Property,156,Farmington River Water Access (Canton and Avon),EFA,7.77974,8079.17216192023,338884.188331811
+1583,Water Access,Other DEP Property,158,Farmington River Water Access (Hartland North),EFA,4.74681,3661.41441947294,206770.148331574
+1584,Water Access,Other DEP Property,159,Farmington River Water Access (New Hartford),EFA,12.27377,4531.8844010998,534643.088713735
+1585,Water Access,Other DEP Property,160,Farmington River Water Access  (Simsbury),EFA,1.34922,1342.43867617619,58771.9472545936
+1586,Water Access,Other DEP Property,161,Farmington River Water Access  (Simsbury and Bloomfield),EFA,5.68703,5033.85949708785,247726.241989131
+1587,Water Access,Other DEP Property,162,Farmington River Water Access  (Windsor),EFA,3.24633,3617.91140601762,141409.782073955
+1588,Water Access,Other DEP Property,166,Fivemile River Water Access (New Canaan North),EFA,1.54452,1240.33418005961,67278.9331059648
+1589,Water Access,Other DEP Property,167,Fivemile River Water Access (New Canaan South),EFA,4.5246,2429.63313229252,197090.943063347
+1590,Water Access,Other DEP Property,172,Fourmile River Water Access ,EFA,12.41706,3564.67699528829,540885.171513742
+1591,Water Access,Other DEP Property,210,Hatch Pond Water Access,EFA,5.35284,3942.30567937734,-233023.529903125
+1592,Water Access,Other DEP Property,213,Hayward Lake Water Access ,EFA,6.50205,4628.86220646051,283228.090673042
+1593,Water Access,Other DEP Property,216,Higganum Reservoir Water Access ,EFA,0.61171,654.988265761374,26645.8306479697
+1594,Water Access,Other DEP Property,218,Highland Lake Water Access ,EFA,1.49047,1314.12526873164,64924.6567075026
+1595,Water Access,Other DEP Property,221,Hop River Water Access,EFA,12.49672,7927.32407529495,544354.983531104
+1596,Water Access,Other DEP Property,229,Housatonic River Water Access (Derby),EFA,1.29136,1248.0715896189,56251.4473897517
+1597,Water Access,Other DEP Property,232,Housatonic River Water Access (New Milford),EFA,2.02511,2638.50313828102,88213.5752921331
+1598,Water Access,Other DEP Property,233,Housatonic River Water Access (Milford),EFA,9.32691,3270.29807548918,406278.58827404
+1599,Water Access,Other DEP Property,247,Jordan Cove Water Access,EFA,16.68681,7739.14561426669,726874.437532599
+1600,Water Access,Other DEP Property,263,Lantern Hill Pond Water Access ,EFA,1.24149,1025.8457625214,54079.269184494
+1601,Water Access,Other DEP Property,266,Lees Pond Dam Water Access,EFA,9.02076,3724.54874488965,392942.696277284
+1602,Water Access,Other DEP Property,268,Lieutenant River Water Access,EFA,3.67708,3965.77274170745,160172.929672301
+1603,Water Access,Other DEP Property,275,Long Pond Water Access ,EFA,8.79817,4630.84514218378,383246.67060486
+1604,Water Access,Other DEP Property,281,Mansfield Hollow Dam Water Access ,EFA,3.62858,1850.78357923843,158060.321786979
+1605,Water Access,Other DEP Property,287,Mashapaug Pond Water Access,EFA,0.94989,1646.05230085165,41376.8887731704
+1606,Water Access,Other DEP Property,290,Menunketsuck River Water Access,EFA,4.9479,2030.01093414267,215529.859476476
+1607,Water Access,Other DEP Property,295,Mianus River Water Access,EFA,15.14571,7591.77345953264,659744.413751006
+1608,Water Access,Other DEP Property,305,Moodus Reservoir Water Access ,EFA,6.92929,3287.74709886098,301838.806791619
+1609,Water Access,Other DEP Property,315,Mystic Oral School - Mystic River Water Access,EFA,66.55827,21382.5880785562,2899266.84186458
+1610,Water Access,Other DEP Property,319,Natchaug River Water Access (Chaplin),EFA,17.8927,5646.4745927366,779402.79854526
+1611,Water Access,Other DEP Property,320,Natchaug River Water Access (Mansfield),EFA,30.92434,5128.48427381331,1347059.06381806
+1612,Water Access,Other DEP Property,327,Naugatuck River Water Access (Ansonia),EFA,4.30649,2813.16908505395,187589.815750203
+1613,Water Access,Other DEP Property,329,Naugatuck River Water Access (Naugatuck North),EFA,17.11831,6210.83009875128,745670.509630125
+1614,Water Access,Other DEP Property,330,Naugatuck River Water Access (Naugatuck South),EFA,5.20757,3902.41180995629,226840.729177598
+1615,Water Access,Other DEP Property,331,Naugatuck River Water Access (Seymour),EFA,0.24521,492.99689448835,10681.2295530522
+1616,Water Access,Other DEP Property,338,Niantic River Water Access ,EFA,3.23335,1866.66501651124,140843.982174815
+1617,Water Access,Other DEP Property,345,North Branch Park River Water Access,EFA,7.50241,5016.18534964007,326803.835373375
+1618,Water Access,Other DEP Property,347,North Farms Reservoir Water Access ,EFA,3.166,3695.98739800337,137910.608111574
+1619,Water Access,Other DEP Property,360,Oxoboxo River Water Access,EFA,4.58254,2676.40300848197,199614.696183745
+1620,Water Access,Other DEP Property,362,Pachaug Pond Water Access,EFA,1.47847,1204.43457906753,64401.8217443025
+1621,Water Access,Other DEP Property,365,Park Pond Water Access (North),EFA,3.1923,1529.4050659383,139056.137822825
+1622,Water Access,Other DEP Property,369,Pattagansett Lake Water Access ,EFA,1.56638,1028.72463050847,68231.448775765
+1623,Water Access,Other DEP Property,381,Pickerel Lake Water Access ,EFA,5.0059,2416.43218782869,218055.986640342
+1624,Water Access,Other DEP Property,387,Point Breeze Water Access,EFA,17.71541,4158.22931225915,771680.336674155
+1625,Water Access,Other DEP Property,397,Quaddick Reservoir Water Access (North),EFA,5.88774,2981.52618847941,256468.84711928
+1626,Water Access,Other DEP Property,398,Quaddick Reservoir Water Access (South),EFA,0.63127,758.034117856725,27498.1207343729
+1627,Water Access,Other DEP Property,405,Quinebaug Lake Water Access ,EFA,15.25573,4264.95807450812,664536.860587378
+1628,Water Access,Other DEP Property,409,Quinnipiac River Water Access (Cheshire),EFA,2.00902,3294.37438979026,87512.5015032617
+1629,Water Access,Other DEP Property,410,Quinnipiac River Water Access (North Haven),EFA,13.44848,8610.49802389577,585813.624840776
+1630,Water Access,Other DEP Property,412,Quinnipiac River Water Access (Southington),EFA,9.14893,2920.95537960417,398525.775383884
+1631,Water Access,Other DEP Property,413,Quinnipiac River Water Access (Wallingford),EFA,1.25975,1123.34170440157,54874.5574669986
+1632,Water Access,Other DEP Property,433,Salmon Brook Water Access,EFA,0.69055,901.177068002071,30080.1614432457
+1633,Water Access,Other DEP Property,435,Salmon River Water Access,EFA,37.23303,9719.50299053182,1621864.13175915
+1634,Water Access,Other DEP Property,439,Saugatuck River Water Access ,EFA,1.06758,1242.08112212747,46503.6884431097
+1635,Water Access,Other DEP Property,443,Seaside Park Water Access ,EFA,3.23445,1570.38490379508,140891.982670245
+1636,Water Access,Other DEP Property,452,Shetucket River Water Access,EFA,6.77931,2471.95762463531,295305.617465373
+1637,Water Access,Other DEP Property,454,Shetucket River Water Access,EFA,78.58352,20214.9451654644,3423084.62070697
+1638,Water Access,Other DEP Property,456,Silver Lake Water Access ,EFA,42.47916,10327.2700064822,1850384.82070559
+1639,Water Access,Other DEP Property,484,Stony Brook Water Access,EFA,11.43965,6797.80138285669,498308.983075436
+1640,Water Access,Other DEP Property,493,Tankerhoosen Lakes Water Access,EFA,3.14447,2956.72557494047,136972.456792706
+1641,Water Access,Other DEP Property,495,Thames River Water Access (Groton),EFA,3.11587,2062.4607465006,135726.565876293
+1642,Water Access,Other DEP Property,496,Thames River Water Access (New London),EFA,4.54852,2905.8685023406,198132.752454739
+1643,Water Access,Other DEP Property,524,Willimantic River Water Access (Willington),EFA,11.00288,7875.50132075922,479283.356422898
+1644,Water Access,Other DEP Property,525,Willimantic River Water Access (Tolland),EFA,0.7959,1035.22636204086,34669.3096679174
+1645,Water Access,Other DEP Property,527,Willimantic River Water Access (Coventry),EFA,25.92499,7108.43045652241,1129288.00375218
+1646,Water Access,Other DEP Property,529,Winchester Lake Water Access ,EFA,39.13229,26625.9045556807,1704595.94689005
+1647,Water Access,Other DEP Property,531,Wononscopomuc Lake Water Access,EFA,0.74987,1389.42026564076,32664.3694982205
+1648,Water Access,Other DEP Property,533,Wood Creek Pond Water Access ,EFA,43.79401,7283.48669436749,1907659.26168839
+1649,Water Access,Other DEP Property,538,Wyassup Lake Water Access ,EFA,0.47703,602.175885991812,20779.3965089276
+1650,Water Access,Other DEP Property,541,Yantic River Water Access,EFA,35.46693,12538.2299712461,1544933.37118981
+1651,Water Access,Other DEP Property,545,Farmington River Water Access (Hartland South),EFA,0.4616,652.051714561894,20107.0656110557
+1652,Water Access,Other DEP Property,547,Willimantic River Water Access (Columbia),EFA,51.29143,8775.45153076271,2234245.92362856
+1654,Water Access,Other DEP Property,558,Farmington River Water Access  (Canton),EFA,7.9437,8713.87022955224,346026.403345806
+1655,Water Access,Other DEP Property,559,Housatonic River Water Access (Salisbury),EFA,2.5782,1853.01524501236,112305.91957881
+1656,Water Access,Other DEP Property,560,Naugatuck River Water Access (Thomaston),EFA,1.26778,1125.62681633539,55224.4796730387
+1657,Water Access,Other DEP Property,563,Fivemile River Water Access  (Darien),EFA,0.81848,866.448427637349,35653.0459595069
+1658,Water Access,Other DEP Property,564,Brewster Pond Water Access,EFA,6.06943,3045.27031543581,264383.372118797
+1659,Water Access,Other DEP Property,572,Little River Water Access,EFA,10.68551,4994.04489758904,465458.772874989
+1660,Water Access,Other DEP Property,573,Lordship Point Water Access,EFA,28.46056,4977.97195901705,1239737.24573407
+1661,Water Access,Other DEP Property,574,Naugatuck River Water Access (Beacon Falls South),EFA,11.10768,6466.23448890694,483848.61253959
+1662,Water Access,Other DEP Property,575,Pattagansett River Water Access,EFA,0.32421,519.694803143119,14122.5844833359
+1663,Water Access,Other DEP Property,585,Gatchen Creek Water Access,EFA,22.74674,5067.84487233019,990843.855370183
+1664,Water Access,Other DEP Property,586,East Aspetuck River Water Access,EFA,3.30703,3692.21949890267,144053.687282444
+1665,Water Access,Other DEP Property,587,Blue Lake Water Access,EFA,0.39323,538.33284142883,17129.2283296304
+1666,Water Access,Other DEP Property,593,Thames River Water Access (Preston),EFA,38.4661,9456.05220121894,1675576.5097832
+1667,Water Access,Other DEP Property,594,Eagleville Lake Water Access,EFA,2.40782,2131.0202728954,104884.213353995
+1668,Water Access,Other DEP Property,595,Willimantic River Water Access (Mansfield),EFA,35.38827,14116.0626039654,1541506.91637535
+1669,Water Access,Other DEP Property,596,Lake of Isles Water Access,EFA,3.25973,1634.62004526637,141993.437673326
+1670,Water Access,Other DEP Property,598,Beseck Lake Water Access,EFA,0.93086,831.219958508622,40548.2068269792
+1671,Water Access,Other DEP Property,601,Gardner Lake Water Access,EFA,2.7704,2584.05424986623,120678.236677762
+1672,Water Access,Other DEP Property,604,Naugatuck River Water Access (Beacon Falls North),EFA,6.09088,3051.5698349016,265317.471613697
+1673,Water Access,Other DEP Property,608,Lake Lillinonah Water Access,EFA,5.62559,3275.23290893111,245049.725998264
+1674,Water Access,Other DEP Property,610,Gorton Pond Water Access,EFA,2.03426,1320.12712963561,88611.9958941831
+1675,Water Access,Other DEP Property,611,Connecticut River Water Access (Windsor North),EFA,2.23008,1476.27116938942,97141.8676453572
+1676,Water Access,Other DEP Property,615,Mamanasco Lake Water Access,EFA,1.9291,1610.54685266455,-84028.8166211876
+1677,Water Access,Other DEP Property,616,Little Pond Water Access,EFA,0.52404,679.087229748766,22827.2106696939
+1678,Water Access,Other DEP Property,617,South Spectacle Lake water Access,EFA,0.25707,455.806830589732,11197.7721430534
+1679,Water Access,Other DEP Property,619,Park Pond Water Access (South),EFA,3.99769,5155.94133302533,174138.75735332
+1680,Water Access,Other DEP Property,623,Halls Pond Water Access,EFA,3.53768,4005.47933497062,154100.779223506
+1681,Wildlife Area,Wildlife Area or Sanctuary,602,Suffield Wildlife Management Area,EW,195.13952,13338.6816786666,8500243.5735524
+1682,Wildlife Area,Wildlife Area or Sanctuary,13,Assekonk Swamp Wildlife Management Area,EW,693.71347,44446.0891672279,30218037.9228738
+1683,Wildlife Area,Wildlife Area or Sanctuary,17,Babcock Pond Wildlife Management Area,EW,1500.43137,75816.8746629615,65358529.2511339
+1684,Wildlife Area,Wildlife Area or Sanctuary,18,Baldwin Marsh Wildlife Management Area,EW,38.31484,5507.15734167698,1668987.89499729
+1685,Wildlife Area,Wildlife Area or Sanctuary,21,Barber Pond Management Wildlife Management Area,EW,72.09453,15612.9761639417,3140425.08840804
+1686,Wildlife Area,Wildlife Area or Sanctuary,23,Barn Island Wildlife Management Area,EW,1018.05745,67058.0358959616,-44346489.1279295
+1687,Wildlife Area,Wildlife Area or Sanctuary,25,Bartlett Brook Wildlife Management Area,EW,704.68745,37950.281519801,30696062.5186586
+1688,Wildlife Area,Wildlife Area or Sanctuary,35,Bear Hill Wildlife Management Area,EW,364.63777,21891.7564181174,15883557.7028605
+1689,Wildlife Area,Wildlife Area or Sanctuary,40,Belding Wildlife Management Area,EW,302.49381,22131.7881738047,13176577.5585124
+1690,Wildlife Area,Wildlife Area or Sanctuary,45,Bigelow Brook Management Wildlife Management  Area,EW,29.75082,5685.59680402816,1295940.74335488
+1691,Wildlife Area,Wildlife Area or Sanctuary,51,Bishop Swamp Management Wildlife Management Area,EW,719.29249,47274.2377712394,31332255.4015431
+1692,Wildlife Area,Wildlife Area or Sanctuary,55,Black Pond Wildlife Management Area,EW,68.47354,14893.2407496275,2982695.51773035
+1693,Wildlife Area,Wildlife Area or Sanctuary,76,Branford River Wildlife Management Area,EW,73.1036,18643.9064657273,3184380.00017657
+1694,Wildlife Area,Wildlife Area or Sanctuary,87,Cedar Swamp Wildlife Management Area,EW,275.72639,36384.3592562951,12010593.350463
+1695,Wildlife Area,Wildlife Area or Sanctuary,88,Charles E. Wheeler Wildlife Management Area,EW,678.55159,163171.620314236,29557589.0311824
+1696,Wildlife Area,Wildlife Area or Sanctuary,91,Clark Creek Wildlife Management Area,EW,25.07905,7782.92476970713,1092439.14290519
+1697,Wildlife Area,Wildlife Area or Sanctuary,102,Connecticut River Wildlife Management Area (Cromwell),EW,4.03891,2701.56340291449,175934.42325304
+1698,Wildlife Area,Wildlife Area or Sanctuary,104,Connecticut River Wildlife Management Area (Portland),EW,3.1729,2404.0071509492,138210.905253796
+1699,Wildlife Area,Wildlife Area or Sanctuary,105,Pequsett Meadows Marsh Wildlife Management Area,EW,12.4634,7697.68978126882,542903.686680517
+1700,Wildlife Area,Wildlife Area or Sanctuary,106,Connecticut River Wildlife Management Area (East Hartford),EW,5.69871,3619.75189745488,248234.913767202
+1701,Wildlife Area,Wildlife Area or Sanctuary,110,Cromwell Meadows Wildlife Management Area,EW,504.40417,41961.2219605836,21971757.9706405
+1702,Wildlife Area,Wildlife Area or Sanctuary,129,Dr. John E. Flaherty Field Trial Area & Wildlife Management  Area,EW,512.16979,36310.5170092962,22310026.9833819
+1703,Wildlife Area,Wildlife Area or Sanctuary,130,Duck Island Wildlife Management Area (Derby and Shelton),EW,4.09483,2668.0138508108,178369.991611878
+1704,Wildlife Area,Wildlife Area or Sanctuary,131,Duck Island Wildlife Management Area (Westbrook),EW,3.27666,1697.31804495221,142730.776847209
+1705,Wildlife Area,Wildlife Area or Sanctuary,132,Durham Meadows Wildlife Management Area,EW,562.54648,57470.6191405403,24504426.6114904
+1706,Wildlife Area,Wildlife Area or Sanctuary,135,East Haven Marsh Wildlife Management Area,EW,21.97004,10205.7158501215,957011.270164104
+1707,Wildlife Area,Wildlife Area or Sanctuary,136,East River Marsh Wildlife Management Area - Right of Way,EW,182.59017,25433.0887536328,7953595.97824889
+1708,Wildlife Area,Wildlife Area or Sanctuary,138,East River Marsh Wildlife Management Area,EW,11.7541,4992.00593664405,512006.65946078
+1709,Wildlife Area,Wildlife Area or Sanctuary,139,East Swamp Wildlife Management Area,EW,76.08438,12028.8783890437,3314222.30415412
+1710,Wildlife Area,Wildlife Area or Sanctuary,145,Falls River Wildlife Management  Area,EW,5.40678,2354.95995491697,235518.321524408
+1711,Wildlife Area,Wildlife Area or Sanctuary,164,Ferry Point Marsh Wildlife Management Area,EW,51.49533,12455.7498944145,2243127.49072982
+1712,Wildlife Area,Wildlife Area or Sanctuary,173,Franklin Swamp Wildlife Management Area,EW,689.15298,51419.3887991371,30019383.9424721
+1713,Wildlife Area,Wildlife Area or Sanctuary,188,Glastonbury Meadows Wildlife Management Area,EW,1.92833,1459.53890414546,83997.7806039619
+1714,Wildlife Area,Wildlife Area or Sanctuary,192,Great Harbor Wildlife Management Area,EW,175.68159,29814.7478121407,7652659.49386794
+1715,Wildlife Area,Wildlife Area or Sanctuary,194,Roger Tory Peterson Wildlife Management Area,EW,561.68952,88360.292951346,24467097.4509386
+1716,Wildlife Area,Wildlife Area or Sanctuary,200,Haddam Neck Wildlife Management Area,EW,120.80853,23438.0060607865,5262398.31260495
+1717,Wildlife Area,Wildlife Area or Sanctuary,201,Hager Creek Marsh Wildlife Management Area,EW,2.97129,1651.51578997932,129428.91305825
+1718,Wildlife Area,Wildlife Area or Sanctuary,204,Hammock River Marsh Wildlife Management Area,EW,101.26514,36555.3050563457,4411092.02739831
+1719,Wildlife Area,Wildlife Area or Sanctuary,214,Higganum Meadows Wildlife Management Area,EW,84.36683,22179.7755469764,3675004.52513217
+1720,Wildlife Area,Wildlife Area or Sanctuary,248,Joshuas Tract Wildlife Management Area,EW,59.73038,7885.53871668574,2601844.72922281
+1721,Wildlife Area,Wildlife Area or Sanctuary,255,Kollar Wildlife Management Area,EW,916.10933,36120.1884040504,39905562.6396031
+1722,Wildlife Area,Wildlife Area or Sanctuary,261,Lake Zoar Wildlife Management Area,EW,53.11052,6903.91613105025,2313485.0981891
+1723,Wildlife Area,Wildlife Area or Sanctuary,272,Little River Wildlife Management Area,EW,48.96515,6205.75800724125,2132913.42438767
+1724,Wildlife Area,Wildlife Area or Sanctuary,273,Lockes Meadow Pond Wildlife Area,EW,9.58029,4036.29016102278,417315.701880825
+1725,Wildlife Area,Wildlife Area or Sanctuary,276,Lords Cove Wildlife Management Area,EW,167.91021,51517.8244779201,7314139.44541522
+1726,Wildlife Area,Wildlife Area or Sanctuary,277,Lords Island Wildlife Management Area,EW,8.36071,3691.30312053288,364190.900355139
+1727,Wildlife Area,Wildlife Area or Sanctuary,283,Mansfield Hollow Wildlife Management  Area,EW,2390.61373,176423.648741463,-104134831.720918
+1728,Wildlife Area,Wildlife Area or Sanctuary,292,Messerschmidt Pond Wildlife Management Area,EW,470.34689,28224.2219207346,20488228.6362726
+1729,Wildlife Area,Wildlife Area or Sanctuary,337,Newgate Wildlife Management Area,EW,445.58694,27083.533689463,19409689.5413111
+1730,Wildlife Area,Wildlife Area or Sanctuary,340,Nod Brook Wildlife Management Area & Field Trail Area,EW,132.34466,13748.8292277225,5764910.31988311
+1731,Wildlife Area,Wildlife Area or Sanctuary,355,Nott Island Wildlife Management Area,EW,80.25289,10877.2311157313,3495801.98238804
+1732,Wildlife Area,Wildlife Area or Sanctuary,370,Pattagansett River Marsh Wildlife Management Area,EW,7.89692,2969.92600803436,343988.29282525
+1733,Wildlife Area,Wildlife Area or Sanctuary,373,Pawcatuck River Wildlife Management Area,EW,27.61172,5082.57888068017,1202761.61229781
+1734,Wildlife Area,Wildlife Area or Sanctuary,374,Pawson Park Marsh Wildlife Management Area,EW,19.02916,5784.13102305213,828906.928485445
+1735,Wildlife Area,Wildlife Area or Sanctuary,375,Pease Brook Wildlife Management Area,EW,213.69698,13811.4850761551,9308603.25188855
+1736,Wildlife Area,Wildlife Area or Sanctuary,378,Pequonnock Valley Wildlife Management Area,EW,379.77629,41958.4738100281,16542988.9628985
+1737,Wildlife Area,Wildlife Area or Sanctuary,384,Pine Orchard Marsh Wildlife Management Area,EW,36.0976,16010.546347249,1572405.00823147
+1738,Wildlife Area,Wildlife Area or Sanctuary,386,Plum Bank Marsh Wildlife Management Area,EW,247.31692,71160.5391660206,10773081.9285169
+1739,Wildlife Area,Wildlife Area or Sanctuary,390,Popes Island Wildlife Management Area,EW,24.10221,5096.16625751083,1049888.05063959
+1740,Wildlife Area,Wildlife Area or Sanctuary,394,"James V. Spignesi, Jr. Wildlife Management  Area",EW,313.28005,30834.0933916186,13646424.2935472
+1741,Wildlife Area,Wildlife Area or Sanctuary,406,Quinebaug Wildlife Management Area,EW,1129.11382,109555.671803736,-49184070.6275227
+1742,Wildlife Area,Wildlife Area or Sanctuary,407,Quinnipiac River Marsh Wildlife Management Area,EW,563.843,98777.6519559775,24560902.7725553
+1743,Wildlife Area,Wildlife Area or Sanctuary,416,Ragged Rock Creek Marsh Wildlife Management Area,EW,197.74314,40644.4278767563,8613656.86750919
+1744,Wildlife Area,Wildlife Area or Sanctuary,419,Raymond Brook Wildlife Management Area,EW,259.8268,31094.9810842225,11318010.1944626
+1745,Wildlife Area,Wildlife Area or Sanctuary,422,Richs Island Wildlife Management  Area,EW,8.97774,3844.48481354442,391068.787471627
+1746,Wildlife Area,Wildlife Area or Sanctuary,423,Robbins Swamp Wildlife Management Area,EW,1579.10877,115332.961265639,68785703.0303861
+1747,Wildlife Area,Wildlife Area or Sanctuary,429,Roraback Wildlife Management Area,EW,2027.29728,97433.3142774374,88308716.4029393
+1748,Wildlife Area,Wildlife Area or Sanctuary,430,Rose Hill Wildlife Management Area,EW,634.45088,48320.5531057868,27636569.9935125
+1749,Wildlife Area,Wildlife Area or Sanctuary,431,Ross Marsh Wildlife Management Area,EW,289.22268,17174.6989416366,12598489.6331906
+1750,Wildlife Area,Wildlife Area or Sanctuary,432,Rutty Creek Wildlife Management Area,EW,1.99547,1179.71342986104,86922.3891761665
+1751,Wildlife Area,Wildlife Area or Sanctuary,437,Salmon River Wildlife Management Area,EW,3.18368,2094.06129382328,138680.612852686
+1752,Wildlife Area,Wildlife Area or Sanctuary,446,Sessions Woods Wildlife Management Area,EW,771.59357,23843.534856113,-33610283.4786933
+1753,Wildlife Area,Wildlife Area or Sanctuary,449,Sharon Mountain Wildlife Management Area,EW,51.04878,8228.57973300818,2223675.85614738
+1754,Wildlife Area,Wildlife Area or Sanctuary,458,Simsbury Wildlife Management Area,EW,347.88712,46039.79335199,15153902.4964621
+1755,Wildlife Area,Wildlife Area or Sanctuary,459,Six Penny Island Wildlife Management Area,EW,23.48106,7204.92956562033,1022830.99920339
+1756,Wildlife Area,Wildlife Area or Sanctuary,463,Snake Meadow Brook Wildlife Management Area,EW,15.50245,4645.34298053971,675283.91098974
+1757,Wildlife Area,Wildlife Area or Sanctuary,474,South Cove Wildlife Management Area,EW,26.02788,9040.8600955568,1133769.93151863
+1758,Wildlife Area,Wildlife Area or Sanctuary,489,Talbot Wildlife Management Area,EW,504.46426,38338.7071234551,21974375.3368602
+1759,Wildlife Area,Wildlife Area or Sanctuary,497,Thatch Bed Marsh Wildlife Management Area,EW,3.55628,2544.39893325033,154911.113858797
+1760,Wildlife Area,Wildlife Area or Sanctuary,509,Wangunk Meadows Wildlife Management Area,EW,639.3337,71277.896285254,27849264.7114124
+1761,Wildlife Area,Wildlife Area or Sanctuary,513,Housatonic River Wildlife Management Area,EW,584.89544,74810.4808501717,-25477863.2564904
+1762,Wildlife Area,Wildlife Area or Sanctuary,515,West River Marsh Wildlife Management Area,EW,9.1577,2921.96384208833,398907.827010521
+1763,Wildlife Area,Wildlife Area or Sanctuary,535,Wopowog Wildlife Management Area,EW,464.92686,33178.0203641768,20252132.9563298
+1764,Wildlife Area,Wildlife Area or Sanctuary,543,Zalesky Wildlife Management Area,EW,253.19688,26535.3171015217,11029211.8512393
+1765,Wildlife Area,Wildlife Area or Sanctuary,569,Goshen Wildlife Management Area,EW,1068.03155,68160.967689942,46523268.1837196
+1766,Wildlife Area,Wildlife Area or Sanctuary,576,Penny Island Wildlife Management Area,EW,0.99757,1196.07077673676,43453.8758289963
+1767,Wildlife Area,Wildlife Area or Sanctuary,588,Eightmile River Wildlife Management Area,EW,310.89608,32364.4844763342,13542579.1227226
+1768,Wildlife Area,Wildlife Area or Sanctuary,589,Zemko Pond Wildlife Management Area,EW,457.25806,28987.0528553071,19918081.4049068
+1769,Wildlife Area,Wildlife Area or Sanctuary,613,Aldo Leopold Wildlife Management Area,EW,552.55181,55686.5872216022,24069060.46721
+1770,Wildlife Area,Wildlife Area or Sanctuary,618,Tankerhoosen Wildlife Management Area,EW,498.23028,23320.9173456884,21702824.2464852
+1771,Wildlife Area,Wildlife Area or Sanctuary,625,Menunketesuck Wildlife Management Area,EW,158.64563,17142.7420280112,6910576.14260326
+1772,Wildlife Area,State Park or Preserve,628,Windsor Wildlife Management Area,EW,133.76731,12461.0131337374,5826880.7168707
+1773,Wildlife Area,Wildlife Area or Sanctuary,630,Candlewood Wildlife Management Area,EW,199.32825,19532.5300898539,-8682695.55897141
+1774,Wildlife Area,Wildlife Area or Sanctuary,631,Democrat Rock Wildlife Management Area,EW,0.04403,172.758597521282,1917.82757796518
+1775,Wildlife Area,Wildlife Area or Sanctuary,632,Meadow Brook Wildlife Management Area,EW,266.07328,16776.0593293278,11590105.5863383
+1776,Wildlife Sanctuary,Wildlife Area or Sanctuary,77,Bride Brook Wildlife Sanctuary,EWS,3.49941,1561.06734431955,152433.902875212
+1777,Wildlife Sanctuary,Wildlife Area or Sanctuary,89,Charter Marsh Wildlife Sanctuary,EWS,241.91156,20353.8364184474,10537625.3392602
+1778,Wildlife Sanctuary,Wildlife Area or Sanctuary,254,Kitchel Wildlife Sanctuary,EWS,541.95935,30499.0239171539,23607654.7221776
+1779,Wildlife Sanctuary,Wildlife Area or Sanctuary,442,Scoville Wildlife Sanctuary,EWS,17.34966,4173.32773307419,755748.160621859
+1780,Wildlife Sanctuary,Wildlife Area or Sanctuary,448,Shade Swamp Wildlife Sanctuary,EWS,634.15676,57091.1740031883,27623757.7687941
+1781,Wildlife Sanctuary,Wildlife Area or Sanctuary,462,Smith-Hubbell Wildlife Sanctuary,EWS,9.64124,2725.85590595074,419970.785671016
+1782,Wildlife Sanctuary,Wildlife Area or Sanctuary,476,South Windsor Wildlife Sanctuary,EWS,42.1229,6040.0323153604,1834866.39530268
+1783,Wildlife Sanctuary,Wildlife Area or Sanctuary,551,Wagner Wildlife Sanctuary,EWS,10.2372,4291.89440988061,445930.470686406
+1784,Water Access,Other DEP Property,549,Mono Pond Water Access,EFA,692.70121,48707.8184922382,29842855.4863798
