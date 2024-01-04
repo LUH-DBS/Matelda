@@ -11,7 +11,7 @@ from marshmallow_pipeline.cell_grouping_module.generate_raha_features import (
 )
 
 
-def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_dict, dirty_files_name, clean_files_name, save_mediate_res_on_disk, pool):
+def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_dict, dirty_files_name, clean_files_name, save_mediate_res_on_disk, pool, raha_config):
     start_time = time.time()
     try:
         list_dirs_in_snd = os.listdir(sandbox_path)
@@ -21,7 +21,7 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_di
         for table in list_dirs_in_snd:
              if not table.startswith("."):
                 features_dict_list.append(
-                    generate_cell_features(table, sandbox_path, tables_dict[table], table_char_set_dict, dirty_files_name, clean_files_name, pool))
+                    generate_cell_features(table, sandbox_path, tables_dict[table], table_char_set_dict, dirty_files_name, clean_files_name, pool, raha_config))
         features_dict = {k: v for d in features_dict_list for k, v in d.items()}
         if save_mediate_res_on_disk:
             with open(os.path.join(output_path, "features.pickle"), "wb") as filehandler:
@@ -32,7 +32,7 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_di
     logging.info("Cell features generation time: " + str(end_time - start_time))
     return features_dict
 
-def generate_cell_features(table, sandbox_path, table_file_name_santos, table_char_set_dict, dirty_files_name, clean_files_name, pool):
+def generate_cell_features(table, sandbox_path, table_file_name_santos, table_char_set_dict, dirty_files_name, clean_files_name, pool, raha_config):
     logging.info("Generate cell features; Table: %s", table)
     features_dict = {}
     try:
@@ -63,7 +63,7 @@ def generate_cell_features(table, sandbox_path, table_file_name_santos, table_ch
         logging.debug("Generate features ---- table: %s", table)
         t1 = time.time()
         col_features = generate_raha_features(
-            sandbox_path, table, charsets, dirty_files_name, clean_files_name, pool
+            sandbox_path, table, charsets, dirty_files_name, clean_files_name, pool, raha_config
         )
         t2 = time.time()
         logging.debug("Generate features ---- table: %s ---- took %s", table, str(t2-t1))
