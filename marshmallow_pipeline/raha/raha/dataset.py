@@ -129,16 +129,3 @@ class Dataset:
         ec_r = 0.0 if len(actual_errors) == 0 else ec_tp / len(actual_errors)
         ec_f = 0.0 if (ec_p + ec_r) == 0.0 else (2 * ec_p * ec_r) / (ec_p + ec_r)
         return [ed_p, ed_r, ed_f, ec_p, ec_r, ec_f]
-########################################
-
-
-########################################
-if __name__ == "__main__":
-    dataset_dict = {
-        "name": "toy",
-        "path": "datasets/dirty.csv",
-        "clean_path": "datasets/clean.csv"
-    }
-    d = Dataset(dataset_dict)
-    print(d.get_data_quality())
-########################################

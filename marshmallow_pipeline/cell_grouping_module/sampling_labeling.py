@@ -65,7 +65,7 @@ def cell_clustering(table_cluster, col_cluster, x, y, n_cell_clusters_per_col_cl
         "cells_per_cluster": [],
         "errors_per_cluster": [],
     }
-    n_cell_clusters_per_col_cluster = min(len(x), n_cell_clusters_per_col_cluster)
+    #n_cell_clusters_per_col_cluster = min(len(x), n_cell_clusters_per_col_cluster)
     logging.debug(
         "KMeans - n_cell_clusters_per_col_cluster: %s", n_cell_clusters_per_col_cluster
     )

@@ -21,7 +21,7 @@ import itertools
 
 import scipy.spatial
 
-import raha
+from marshmallow_pipeline.raha import raha
 ########################################
 
 
