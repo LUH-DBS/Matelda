@@ -426,9 +426,7 @@ def cluster_column_group(file_name, n_cores):
         clusters = df_n_labels[df_n_labels["table_cluster"] == table_cluster][
             "col_cluster"
         ].values
-        print("Table cluster: ", table_cluster)
         for _, col_cluster in enumerate(clusters):
-            print("Col cluster: ", col_cluster)
             col_clusters.append(col_cluster)
             n_cell_groups = (
                 df_n_labels[
@@ -436,7 +434,6 @@ def cluster_column_group(file_name, n_cores):
                     & (df_n_labels["col_cluster"] == col_cluster)
                 ]["n_labels"].values[0]
             )
-            print(n_cell_groups)
 
             (
                 cell_cluster_cells_dict,

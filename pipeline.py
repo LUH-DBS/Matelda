@@ -31,7 +31,7 @@ def main(execution):
     raha_config = {}
     raha_config['save_results'] = bool(int(configs["RAHA"]['save_results']))
     raha_config['strategy_filtering'] = bool(int(configs["RAHA"]['strategy_filtering']))
-    raha_config['error_detection_algorithms'] = configs["RAHA"]['error_detection_algorithms'].split(',')
+    raha_config['error_detection_algorithms'] = configs["RAHA"]['error_detection_algorithms'].split(', ')
 
     experiment_output_path = os.path.join(
         configs["DIRECTORIES"]["output_dir"] + f"_{execution}",

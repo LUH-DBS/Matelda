@@ -38,7 +38,7 @@ import sklearn.kernel_ridge
 import sklearn.neural_network
 import sklearn.feature_extraction
 
-from marshmallow_pipeline.raha import raha
+from marshmallow_pipeline import raha
 ########################################
 
 

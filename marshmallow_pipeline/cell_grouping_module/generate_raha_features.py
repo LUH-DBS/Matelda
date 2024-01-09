@@ -15,7 +15,7 @@ from functools import partial
 
 import numpy as np
 import pandas as pd
-from marshmallow_pipeline.raha import raha
+from marshmallow_pipeline import raha
 from Levenshtein import distance
 from scipy.spatial.distance import pdist, squareform
 
@@ -311,10 +311,12 @@ def generate_raha_features(parent_path, dataset_name, charsets, dirty_file_name,
         "path": parent_path + "/" + dataset_name + "/{}".format(dirty_file_name),
         "clean_path": parent_path + "/" + dataset_name + "/{}".format(clean_file_name),
     }
+    detect.VERBOSE = False
     detect.SAVE_RESULTS = raha_config["save_results"]
     detect.STRATEGY_FILTERING = raha_config["strategy_filtering"]
     detect.ERROR_DETECTION_ALGORITHMS = raha_config["error_detection_algorithms"]
     d = detect.initialize_dataset(dataset_dictionary)
+    d.VERBOSE = False
     d.SAVE_RESULTS = raha_config["save_results"]
     d.ERROR_DETECTION_ALGORITHMS = raha_config["error_detection_algorithms"]
     d.STRATEGY_FILTERING = raha_config["strategy_filtering"]
