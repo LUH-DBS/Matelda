@@ -299,9 +299,7 @@ def error_detector(
     save_mediate_res_on_disk,
     pool,
     classification_mode,
-    nearest_neighbours_percentage,
-    labeling_method,
-    llm_labels_per_cell_group
+    raha_config
 ):
     logging.info("Starting error detection")
 
@@ -311,8 +309,8 @@ def error_detector(
     logging.info("Generating cell features")
     if cell_feature_generator_enabled:
         logging.info("Generating cell features enabled")
-        features_dict, tables_tuples_dict = get_cells_features(
-            sandbox_path, output_path, table_charset_dict, tables_dict, dirty_files_name, clean_files_name, save_mediate_res_on_disk, pool
+        features_dict = get_cells_features(
+            sandbox_path, output_path, table_charset_dict, tables_dict, dirty_files_name, clean_files_name, save_mediate_res_on_disk, pool, raha_config
         )
     else:
         logging.info("Generating cell features disabled, loading from previous results from disk")
@@ -398,7 +396,7 @@ def error_detector(
             table_clusters.append(table_cluster)
             col_clusters.append(col_cluster)
     logging.info("start pool")
-    with multiprocessing.Pool(processes=1,initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode, nearest_neighbours_percentage, labeling_method, llm_labels_per_cell_group, tables_tuples_dict, labels_per_cell_group)) as pool:
+    with multiprocessing.Pool(processes=1,initializer=test_init, initargs=(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells_dict_all, n_cores, save_mediate_res_on_disk, classification_mode, tables_tuples_dict, labels_per_cell_group)) as pool:
         logging.info("pool started")
         original_data_keys = []
         unique_cells_local_index_collection = {}

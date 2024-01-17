@@ -28,6 +28,11 @@ def main(execution):
     sandbox_path = configs["DIRECTORIES"]["sandbox_dir"]
     tables_path = os.path.join(sandbox_path, configs["DIRECTORIES"]["tables_dir"])
 
+    raha_config = {}
+    raha_config['save_results'] = bool(int(configs["RAHA"]['save_results']))
+    raha_config['strategy_filtering'] = bool(int(configs["RAHA"]['strategy_filtering']))
+    raha_config['error_detection_algorithms'] = configs["RAHA"]['error_detection_algorithms'].split(', ')
+
     experiment_output_path = os.path.join(
         configs["DIRECTORIES"]["output_dir"] + f"_{execution}",
         "_"
@@ -214,10 +219,8 @@ def main(execution):
         cell_clustering_res_available,
         save_mediate_res_on_disk,
         pool,
-        classification_mode, 
-        nearest_neighbours_percentage,
-        labeling_method,
-        llm_labels_per_cell_group
+        classification_mode,
+        raha_config
     )
 
     time_end = time.time()

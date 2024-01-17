@@ -1,0 +1,274 @@
+<task>
+    <!-- ****************************************************
+                      DATABASES
+    **************************************************** -->
+    <target> 
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql://localhost:5433/bartdb</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>postgres</password>
+        </access-configuration>
+        <import>
+            <input type="csv" separator="," table="clean">/home/fatemeh/ED-Scale/Sandbox_Generation/metanome_input_files/processed/SDWIS_Percent_GW_NO3_Violations_County_1994-2016_FINAL/clean.csv</input>
+        </import>
+    </target>
+
+    <!-- ****************************************************
+                    DEPENDENCIES
+    **************************************************** -->
+    <dependencies><![CDATA[DCs: 
+
+            e1: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $state_county1 == $state_county2, $fips1 != $fips2 -> #fail. 
+
+        
+            e2: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $state_county1 == $state_county2, $fips_two1 != $fips_two2 -> #fail. 
+
+        
+            e3: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $state_county1 == $state_county2, $county1 != $county2 -> #fail. 
+
+        
+            e4: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $state_county1 == $state_county2, $county_two1 != $county_two2 -> #fail. 
+
+        
+            e5: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $state_county1 == $state_county2, $perc_viol1 != $perc_viol2 -> #fail. 
+
+        
+            e6: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $state_county1 == $state_county2, $cntyfips1 != $cntyfips2 -> #fail. 
+
+        
+            e7: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $state_county1 == $state_county2, $state1 != $state2 -> #fail. 
+
+        
+            e8: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $state_county1 == $state_county2, $statefips1 != $statefips2 -> #fail. 
+
+        
+            e9: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips1 == $fips2, $state_county1 != $state_county2 -> #fail. 
+
+        
+            e10: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips1 == $fips2, $fips_two1 != $fips_two2 -> #fail. 
+
+        
+            e11: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips1 == $fips2, $county1 != $county2 -> #fail. 
+
+        
+            e12: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips1 == $fips2, $county_two1 != $county_two2 -> #fail. 
+
+        
+            e13: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips1 == $fips2, $perc_viol1 != $perc_viol2 -> #fail. 
+
+        
+            e14: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips1 == $fips2, $cntyfips1 != $cntyfips2 -> #fail. 
+
+        
+            e15: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips1 == $fips2, $state1 != $state2 -> #fail. 
+
+        
+            e16: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips1 == $fips2, $statefips1 != $statefips2 -> #fail. 
+
+        
+            e17: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips_two1 == $fips_two2, $state_county1 != $state_county2 -> #fail. 
+
+        
+            e18: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips_two1 == $fips_two2, $fips1 != $fips2 -> #fail. 
+
+        
+            e19: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips_two1 == $fips_two2, $county1 != $county2 -> #fail. 
+
+        
+            e20: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips_two1 == $fips_two2, $county_two1 != $county_two2 -> #fail. 
+
+        
+            e21: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips_two1 == $fips_two2, $perc_viol1 != $perc_viol2 -> #fail. 
+
+        
+            e22: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips_two1 == $fips_two2, $cntyfips1 != $cntyfips2 -> #fail. 
+
+        
+            e23: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips_two1 == $fips_two2, $state1 != $state2 -> #fail. 
+
+        
+            e24: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $fips_two1 == $fips_two2, $statefips1 != $statefips2 -> #fail. 
+
+        
+            e25: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $county1 == $county2, $county_two1 != $county_two2 -> #fail. 
+
+        
+            e26: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $state1 == $state2, $statefips1 != $statefips2 -> #fail. 
+
+        
+            e27: clean(state_county: $state_county1, state: $state1, statefips: $statefips1, cntyfips: $cntyfips1, county: $county1, county_two: $county_two1, fips: $fips1, fips_two: $fips_two1, perc_viol: $perc_viol1),
+            clean(state_county: $state_county2, state: $state2, statefips: $statefips2, cntyfips: $cntyfips2, county: $county2, county_two: $county_two2, fips: $fips2, fips_two: $fips_two2, perc_viol: $perc_viol2),
+                $statefips1 == $statefips2, $state1 != $state2 -> #fail. 
+
+        ]]></dependencies>
+
+    <!-- ****************************************************
+                      CONFIGURATION
+    **************************************************** -->
+    <configuration>
+        <!-- To print extra information in the ouput (default = false) -->
+        <printLog>true</printLog>
+
+        <!-- To load DB every time on start (default = false) -->
+        <recreateDBOnStart>true</recreateDBOnStart>
+
+        <!-- To apply the changes (default = false) -->
+        <applyCellChanges>true</applyCellChanges>
+
+        <!-- To  apply cell changes on a copy of the original target, with a custom suffix (default = true) -->
+        <cloneTargetSchema>true</cloneTargetSchema>
+        <cloneSuffix>_dirty</cloneSuffix>
+
+        <!-- To export the dirty db -->
+        <exportDirtyDB>true</exportDirtyDB>
+        <exportDirtyDBPath>./</exportDirtyDBPath>
+        <exportDirtyDBType>CSV</exportDirtyDBType>
+
+        <!-- To export the changes -->
+        <exportCellChanges>true</exportCellChanges>
+        <exportCellChangesPath>clean_changes.csv</exportCellChangesPath>
+
+        <!-- To compute an estimate of the reparability (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To generate all possible changes (default = false - slow, only for toy examples)-->
+        <generateAllChanges>false</generateAllChanges>
+
+        <!-- To avoid interactions among changes. (default = true) -->
+        <avoidInteractions>true</avoidInteractions>
+
+        <!-- To check, at the end of the process, if changes are detectable. (default = false) -->
+        <checkChanges>true</checkChanges>
+
+        <!-- To compute an estimate of the repairability. Requires checkChanges = true. (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To use an optimized strategy for updates. (default = true) -->
+        <useDeltaDBForChanges>true</useDeltaDBForChanges>
+
+        <!-- Error percentages for dependencies and comparisons 
+        All percentages are wrt table sizes (# tuples) -->
+        <errorPercentages>
+            <defaultPercentage>0.0</defaultPercentage>
+            <vioGenQueries>
+            <vioGenQuery id="e1"><comparison>(state_county1 == state_county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e1"><comparison>(fips1 != fips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(state_county1 == state_county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(fips_two1 != fips_two2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(state_county1 == state_county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(county1 != county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(state_county1 == state_county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(county_two1 != county_two2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(state_county1 == state_county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(perc_viol1 != perc_viol2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(state_county1 == state_county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(cntyfips1 != cntyfips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e7"><comparison>(state_county1 == state_county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e7"><comparison>(state1 != state2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e8"><comparison>(state_county1 == state_county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e8"><comparison>(statefips1 != statefips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e9"><comparison>(fips1 == fips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e9"><comparison>(state_county1 != state_county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e10"><comparison>(fips1 == fips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e10"><comparison>(fips_two1 != fips_two2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e11"><comparison>(fips1 == fips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e11"><comparison>(county1 != county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e12"><comparison>(fips1 == fips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e12"><comparison>(county_two1 != county_two2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e13"><comparison>(fips1 == fips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e13"><comparison>(perc_viol1 != perc_viol2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e14"><comparison>(fips1 == fips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e14"><comparison>(cntyfips1 != cntyfips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e15"><comparison>(fips1 == fips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e15"><comparison>(state1 != state2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e16"><comparison>(fips1 == fips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e16"><comparison>(statefips1 != statefips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e17"><comparison>(fips_two1 == fips_two2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e17"><comparison>(state_county1 != state_county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e18"><comparison>(fips_two1 == fips_two2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e18"><comparison>(fips1 != fips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e19"><comparison>(fips_two1 == fips_two2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e19"><comparison>(county1 != county2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e20"><comparison>(fips_two1 == fips_two2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e20"><comparison>(county_two1 != county_two2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e21"><comparison>(fips_two1 == fips_two2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e21"><comparison>(perc_viol1 != perc_viol2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e22"><comparison>(fips_two1 == fips_two2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e22"><comparison>(cntyfips1 != cntyfips2)</comparison><percentage>0.1545595054095827</percentage></vioGenQuery><vioGenQuery id="e23"><comparison>(fips_two1 == fips_two2)</comparison><percentage>0.12364760432766615</percentage></vioGenQuery><vioGenQuery id="e23"><comparison>(state1 != state2)</comparison><percentage>0.12364760432766615</percentage></vioGenQuery><vioGenQuery id="e24"><comparison>(fips_two1 == fips_two2)</comparison><percentage>0.12364760432766615</percentage></vioGenQuery><vioGenQuery id="e24"><comparison>(statefips1 != statefips2)</comparison><percentage>0.12364760432766615</percentage></vioGenQuery><vioGenQuery id="e25"><comparison>(county1 == county2)</comparison><percentage>0.12364760432766615</percentage></vioGenQuery><vioGenQuery id="e25"><comparison>(county_two1 != county_two2)</comparison><percentage>0.12364760432766615</percentage></vioGenQuery><vioGenQuery id="e26"><comparison>(state1 == state2)</comparison><percentage>0.12364760432766615</percentage></vioGenQuery><vioGenQuery id="e26"><comparison>(statefips1 != statefips2)</comparison><percentage>0.12364760432766615</percentage></vioGenQuery><vioGenQuery id="e27"><comparison>(statefips1 == statefips2)</comparison><percentage>0.12364760432766615</percentage></vioGenQuery><vioGenQuery id="e27"><comparison>(state1 != state2)</comparison><percentage>0.12364760432766615</percentage></vioGenQuery></vioGenQueries>
+        </errorPercentages>
+
+        <!-- To control the way in which changing the value -->
+        <dirtyStrategies>
+            <defaultStrategy>
+                <strategy> TypoRandom </strategy>
+            </defaultStrategy> 
+            <!-- possible strategies
+                <strategy chars="*" charsToAdd="3">TypoAddString</strategy>
+                <strategy chars="*" charsToAdd="3">TypoAppendString</strategy>
+                <strategy charsToRemove="3">TypoRemoveString</strategy>
+                <strategy charsToSwitch="3">TypoSwitchValue</strategy>
+                <strategy>TypoActiveDomain</strategy>
+                <strategy>TypoRandom</strategy>
+            -->
+        </dirtyStrategies>
+
+        <randomErrors>
+            <tables>
+                <table name="clean"> 
+                    <percentage>4</percentage> <!-- Percentage is wrt attributes to dirty in the table -->
+                    <attributes>
+                    <atrribute>state_county</atrribute><atrribute>state</atrribute><atrribute>county</atrribute><atrribute>county_two</atrribute><atrribute>fips_two</atrribute></attributes>
+                </table>
+            </tables>
+        </randomErrors>
+    
+        <outlierErrors>
+            <tables>
+                <table name="clean">
+                    <attributes>
+                    <atrribute percentage="1" detectable="true">statefips</atrribute><atrribute percentage="1" detectable="true">cntyfips</atrribute><atrribute percentage="1" detectable="true">fips</atrribute><atrribute percentage="1" detectable="true">perc_viol</atrribute></attributes>
+                </table>
+            </tables>
+        </outlierErrors>
+        
+        <!-- The following parameters are used to control the sampling process.
+            All the fields are optional, but they may be crucial to obtain a good random sample.
+            In order to choose the cells to modify, BART will scan the result of a viogen query
+            using the following sampling algorithm:
+            1) First, a number of tuples are skipped. This is a random number choosed btw 
+                0 and (offsetFactor * tableSize)
+            2) Then BART will scan the result and will pickup tuples 
+            with a probability p = probabilityFactor.
+            
+            BART uses three kinds of queries
+            - Symmetric queries: for symmetric viogen queries (see paper)
+            - Inequality queries: for viogen queries without equalities (i.e. inequalities only)
+            - Standard queries: for all other viogen queries
+        -->
+        <vioGenQueriesConfiguration>
+            <!-- STANDARD QUERIES -->
+            <probabilityFactorForStandardQueries>0.25</probabilityFactorForStandardQueries>
+            <offsetFactorForStandardQueries>0.05</offsetFactorForStandardQueries>
+            <!-- SYMMETRIC QUERIES -->
+            <probabilityFactorForSymmetricQueries>0.25</probabilityFactorForSymmetricQueries>
+            <offsetFactorForSymmetricQueries>0.05</offsetFactorForSymmetricQueries>
+            <!-- INEQUALITY QUERIES -->
+            <probabilityFactorForInequalityQueries>0.05</probabilityFactorForInequalityQueries>
+            <offsetFactorForInequalityQueries>0.05</offsetFactorForInequalityQueries>
+            <windowSizeFactorForInequalityQueries>1.5</windowSizeFactorForInequalityQueries>
+        </vioGenQueriesConfiguration>
+
+    </configuration>
+</task>

@@ -1,0 +1,159 @@
+<task>
+    <!-- ****************************************************
+                      DATABASES
+    **************************************************** -->
+    <target> 
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql://localhost:5433/bartdb</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>postgres</password>
+        </access-configuration>
+        <import>
+            <input type="csv" separator="," table="clean">/home/fatemeh/ED-Scale/Sandbox_Generation/metanome_input_files/processed/autism_prevalence_studies/clean.csv</input>
+        </import>
+    </target>
+
+    <!-- ****************************************************
+                    DEPENDENCIES
+    **************************************************** -->
+    <dependencies><![CDATA[DCs: 
+
+            e1: clean(author: $author1, title: $title1, year_published: $year_published1, country: $country1, areas: $areas1, age_range: $age_range1, study_years: $study_years1, case_identification_method: $case_identification_method1, case_criterion: $case_criterion1, sample_size: $sample_size1, numberof_cases: $numberof_cases1, asd_prevalence_estimateper_one_zero_zero_zero: $asd_prevalence_estimateper_one_zero_zero_zero1, confidence_intervalci: $confidence_intervalci1, male_female_sex_ratio: $male_female_sex_ratio1, non_hispanic_white_hispanic_prevalence_ratio: $non_hispanic_white_hispanic_prevalence_ratio1, white_black_prevalence_ratio: $white_black_prevalence_ratio1, diagnosis_age_rangemonths: $diagnosis_age_rangemonths1, diagnosis_mean_agemonths: $diagnosis_mean_agemonths1, diagnosis_median_agemonths: $diagnosis_median_agemonths1, iq_score_seven_zero: $iq_score_seven_zero1, adaptive_score_seven_zero: $adaptive_score_seven_zero1, non_verbalor_minimally_verbal: $non_verbalor_minimally_verbal1, percentageof_individual_cooccurring_conditions: $percentageof_individual_cooccurring_conditions1, autism_types_included: $autism_types_included1, linkto_publication: $linkto_publication1, cdc_calculated_values: $cdc_calculated_values1),
+            clean(author: $author2, title: $title2, year_published: $year_published2, country: $country2, areas: $areas2, age_range: $age_range2, study_years: $study_years2, case_identification_method: $case_identification_method2, case_criterion: $case_criterion2, sample_size: $sample_size2, numberof_cases: $numberof_cases2, asd_prevalence_estimateper_one_zero_zero_zero: $asd_prevalence_estimateper_one_zero_zero_zero2, confidence_intervalci: $confidence_intervalci2, male_female_sex_ratio: $male_female_sex_ratio2, non_hispanic_white_hispanic_prevalence_ratio: $non_hispanic_white_hispanic_prevalence_ratio2, white_black_prevalence_ratio: $white_black_prevalence_ratio2, diagnosis_age_rangemonths: $diagnosis_age_rangemonths2, diagnosis_mean_agemonths: $diagnosis_mean_agemonths2, diagnosis_median_agemonths: $diagnosis_median_agemonths2, iq_score_seven_zero: $iq_score_seven_zero2, adaptive_score_seven_zero: $adaptive_score_seven_zero2, non_verbalor_minimally_verbal: $non_verbalor_minimally_verbal2, percentageof_individual_cooccurring_conditions: $percentageof_individual_cooccurring_conditions2, autism_types_included: $autism_types_included2, linkto_publication: $linkto_publication2, cdc_calculated_values: $cdc_calculated_values2),
+                $title1 == $title2, $linkto_publication1 != $linkto_publication2 -> #fail. 
+
+        
+            e2: clean(author: $author1, title: $title1, year_published: $year_published1, country: $country1, areas: $areas1, age_range: $age_range1, study_years: $study_years1, case_identification_method: $case_identification_method1, case_criterion: $case_criterion1, sample_size: $sample_size1, numberof_cases: $numberof_cases1, asd_prevalence_estimateper_one_zero_zero_zero: $asd_prevalence_estimateper_one_zero_zero_zero1, confidence_intervalci: $confidence_intervalci1, male_female_sex_ratio: $male_female_sex_ratio1, non_hispanic_white_hispanic_prevalence_ratio: $non_hispanic_white_hispanic_prevalence_ratio1, white_black_prevalence_ratio: $white_black_prevalence_ratio1, diagnosis_age_rangemonths: $diagnosis_age_rangemonths1, diagnosis_mean_agemonths: $diagnosis_mean_agemonths1, diagnosis_median_agemonths: $diagnosis_median_agemonths1, iq_score_seven_zero: $iq_score_seven_zero1, adaptive_score_seven_zero: $adaptive_score_seven_zero1, non_verbalor_minimally_verbal: $non_verbalor_minimally_verbal1, percentageof_individual_cooccurring_conditions: $percentageof_individual_cooccurring_conditions1, autism_types_included: $autism_types_included1, linkto_publication: $linkto_publication1, cdc_calculated_values: $cdc_calculated_values1),
+            clean(author: $author2, title: $title2, year_published: $year_published2, country: $country2, areas: $areas2, age_range: $age_range2, study_years: $study_years2, case_identification_method: $case_identification_method2, case_criterion: $case_criterion2, sample_size: $sample_size2, numberof_cases: $numberof_cases2, asd_prevalence_estimateper_one_zero_zero_zero: $asd_prevalence_estimateper_one_zero_zero_zero2, confidence_intervalci: $confidence_intervalci2, male_female_sex_ratio: $male_female_sex_ratio2, non_hispanic_white_hispanic_prevalence_ratio: $non_hispanic_white_hispanic_prevalence_ratio2, white_black_prevalence_ratio: $white_black_prevalence_ratio2, diagnosis_age_rangemonths: $diagnosis_age_rangemonths2, diagnosis_mean_agemonths: $diagnosis_mean_agemonths2, diagnosis_median_agemonths: $diagnosis_median_agemonths2, iq_score_seven_zero: $iq_score_seven_zero2, adaptive_score_seven_zero: $adaptive_score_seven_zero2, non_verbalor_minimally_verbal: $non_verbalor_minimally_verbal2, percentageof_individual_cooccurring_conditions: $percentageof_individual_cooccurring_conditions2, autism_types_included: $autism_types_included2, linkto_publication: $linkto_publication2, cdc_calculated_values: $cdc_calculated_values2),
+                $title1 == $title2, $author1 != $author2 -> #fail. 
+
+        
+            e3: clean(author: $author1, title: $title1, year_published: $year_published1, country: $country1, areas: $areas1, age_range: $age_range1, study_years: $study_years1, case_identification_method: $case_identification_method1, case_criterion: $case_criterion1, sample_size: $sample_size1, numberof_cases: $numberof_cases1, asd_prevalence_estimateper_one_zero_zero_zero: $asd_prevalence_estimateper_one_zero_zero_zero1, confidence_intervalci: $confidence_intervalci1, male_female_sex_ratio: $male_female_sex_ratio1, non_hispanic_white_hispanic_prevalence_ratio: $non_hispanic_white_hispanic_prevalence_ratio1, white_black_prevalence_ratio: $white_black_prevalence_ratio1, diagnosis_age_rangemonths: $diagnosis_age_rangemonths1, diagnosis_mean_agemonths: $diagnosis_mean_agemonths1, diagnosis_median_agemonths: $diagnosis_median_agemonths1, iq_score_seven_zero: $iq_score_seven_zero1, adaptive_score_seven_zero: $adaptive_score_seven_zero1, non_verbalor_minimally_verbal: $non_verbalor_minimally_verbal1, percentageof_individual_cooccurring_conditions: $percentageof_individual_cooccurring_conditions1, autism_types_included: $autism_types_included1, linkto_publication: $linkto_publication1, cdc_calculated_values: $cdc_calculated_values1),
+            clean(author: $author2, title: $title2, year_published: $year_published2, country: $country2, areas: $areas2, age_range: $age_range2, study_years: $study_years2, case_identification_method: $case_identification_method2, case_criterion: $case_criterion2, sample_size: $sample_size2, numberof_cases: $numberof_cases2, asd_prevalence_estimateper_one_zero_zero_zero: $asd_prevalence_estimateper_one_zero_zero_zero2, confidence_intervalci: $confidence_intervalci2, male_female_sex_ratio: $male_female_sex_ratio2, non_hispanic_white_hispanic_prevalence_ratio: $non_hispanic_white_hispanic_prevalence_ratio2, white_black_prevalence_ratio: $white_black_prevalence_ratio2, diagnosis_age_rangemonths: $diagnosis_age_rangemonths2, diagnosis_mean_agemonths: $diagnosis_mean_agemonths2, diagnosis_median_agemonths: $diagnosis_median_agemonths2, iq_score_seven_zero: $iq_score_seven_zero2, adaptive_score_seven_zero: $adaptive_score_seven_zero2, non_verbalor_minimally_verbal: $non_verbalor_minimally_verbal2, percentageof_individual_cooccurring_conditions: $percentageof_individual_cooccurring_conditions2, autism_types_included: $autism_types_included2, linkto_publication: $linkto_publication2, cdc_calculated_values: $cdc_calculated_values2),
+                $title1 == $title2, $study_years1 != $study_years2 -> #fail. 
+
+        
+            e4: clean(author: $author1, title: $title1, year_published: $year_published1, country: $country1, areas: $areas1, age_range: $age_range1, study_years: $study_years1, case_identification_method: $case_identification_method1, case_criterion: $case_criterion1, sample_size: $sample_size1, numberof_cases: $numberof_cases1, asd_prevalence_estimateper_one_zero_zero_zero: $asd_prevalence_estimateper_one_zero_zero_zero1, confidence_intervalci: $confidence_intervalci1, male_female_sex_ratio: $male_female_sex_ratio1, non_hispanic_white_hispanic_prevalence_ratio: $non_hispanic_white_hispanic_prevalence_ratio1, white_black_prevalence_ratio: $white_black_prevalence_ratio1, diagnosis_age_rangemonths: $diagnosis_age_rangemonths1, diagnosis_mean_agemonths: $diagnosis_mean_agemonths1, diagnosis_median_agemonths: $diagnosis_median_agemonths1, iq_score_seven_zero: $iq_score_seven_zero1, adaptive_score_seven_zero: $adaptive_score_seven_zero1, non_verbalor_minimally_verbal: $non_verbalor_minimally_verbal1, percentageof_individual_cooccurring_conditions: $percentageof_individual_cooccurring_conditions1, autism_types_included: $autism_types_included1, linkto_publication: $linkto_publication1, cdc_calculated_values: $cdc_calculated_values1),
+            clean(author: $author2, title: $title2, year_published: $year_published2, country: $country2, areas: $areas2, age_range: $age_range2, study_years: $study_years2, case_identification_method: $case_identification_method2, case_criterion: $case_criterion2, sample_size: $sample_size2, numberof_cases: $numberof_cases2, asd_prevalence_estimateper_one_zero_zero_zero: $asd_prevalence_estimateper_one_zero_zero_zero2, confidence_intervalci: $confidence_intervalci2, male_female_sex_ratio: $male_female_sex_ratio2, non_hispanic_white_hispanic_prevalence_ratio: $non_hispanic_white_hispanic_prevalence_ratio2, white_black_prevalence_ratio: $white_black_prevalence_ratio2, diagnosis_age_rangemonths: $diagnosis_age_rangemonths2, diagnosis_mean_agemonths: $diagnosis_mean_agemonths2, diagnosis_median_agemonths: $diagnosis_median_agemonths2, iq_score_seven_zero: $iq_score_seven_zero2, adaptive_score_seven_zero: $adaptive_score_seven_zero2, non_verbalor_minimally_verbal: $non_verbalor_minimally_verbal2, percentageof_individual_cooccurring_conditions: $percentageof_individual_cooccurring_conditions2, autism_types_included: $autism_types_included2, linkto_publication: $linkto_publication2, cdc_calculated_values: $cdc_calculated_values2),
+                $title1 == $title2, $cdc_calculated_values1 != $cdc_calculated_values2 -> #fail. 
+
+        ]]></dependencies>
+
+    <!-- ****************************************************
+                      CONFIGURATION
+    **************************************************** -->
+    <configuration>
+        <!-- To print extra information in the ouput (default = false) -->
+        <printLog>true</printLog>
+
+        <!-- To load DB every time on start (default = false) -->
+        <recreateDBOnStart>true</recreateDBOnStart>
+
+        <!-- To apply the changes (default = false) -->
+        <applyCellChanges>true</applyCellChanges>
+
+        <!-- To  apply cell changes on a copy of the original target, with a custom suffix (default = true) -->
+        <cloneTargetSchema>true</cloneTargetSchema>
+        <cloneSuffix>_dirty</cloneSuffix>
+
+        <!-- To export the dirty db -->
+        <exportDirtyDB>true</exportDirtyDB>
+        <exportDirtyDBPath>./</exportDirtyDBPath>
+        <exportDirtyDBType>CSV</exportDirtyDBType>
+
+        <!-- To export the changes -->
+        <exportCellChanges>true</exportCellChanges>
+        <exportCellChangesPath>clean_changes.csv</exportCellChangesPath>
+
+        <!-- To compute an estimate of the reparability (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To generate all possible changes (default = false - slow, only for toy examples)-->
+        <generateAllChanges>false</generateAllChanges>
+
+        <!-- To avoid interactions among changes. (default = true) -->
+        <avoidInteractions>true</avoidInteractions>
+
+        <!-- To check, at the end of the process, if changes are detectable. (default = false) -->
+        <checkChanges>true</checkChanges>
+
+        <!-- To compute an estimate of the repairability. Requires checkChanges = true. (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To use an optimized strategy for updates. (default = true) -->
+        <useDeltaDBForChanges>true</useDeltaDBForChanges>
+
+        <!-- Error percentages for dependencies and comparisons 
+        All percentages are wrt table sizes (# tuples) -->
+        <errorPercentages>
+            <defaultPercentage>0.0</defaultPercentage>
+            <vioGenQueries>
+            <vioGenQuery id="e1"><comparison>(title1 == title2)</comparison><percentage>0.5</percentage></vioGenQuery><vioGenQuery id="e1"><comparison>(linkto_publication1 != linkto_publication2)</comparison><percentage>0.5</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(title1 == title2)</comparison><percentage>0.5</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(author1 != author2)</comparison><percentage>0.5</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(title1 == title2)</comparison><percentage>0.5</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(study_years1 != study_years2)</comparison><percentage>0.5</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(title1 == title2)</comparison><percentage>0.5</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(cdc_calculated_values1 != cdc_calculated_values2)</comparison><percentage>0.5</percentage></vioGenQuery></vioGenQueries>
+        </errorPercentages>
+
+        <!-- To control the way in which changing the value -->
+        <dirtyStrategies>
+            <defaultStrategy>
+                <strategy> TypoRandom </strategy>
+            </defaultStrategy> 
+            <!-- possible strategies
+                <strategy chars="*" charsToAdd="3">TypoAddString</strategy>
+                <strategy chars="*" charsToAdd="3">TypoAppendString</strategy>
+                <strategy charsToRemove="3">TypoRemoveString</strategy>
+                <strategy charsToSwitch="3">TypoSwitchValue</strategy>
+                <strategy>TypoActiveDomain</strategy>
+                <strategy>TypoRandom</strategy>
+            -->
+        </dirtyStrategies>
+
+        <randomErrors>
+            <tables>
+                <table name="clean"> 
+                    <percentage>2</percentage> <!-- Percentage is wrt attributes to dirty in the table -->
+                    <attributes>
+                    <atrribute>author</atrribute><atrribute>title</atrribute><atrribute>country</atrribute><atrribute>areas</atrribute><atrribute>age_range</atrribute><atrribute>study_years</atrribute><atrribute>case_identification_method</atrribute><atrribute>case_criterion</atrribute><atrribute>confidence_intervalci</atrribute><atrribute>diagnosis_age_rangemonths</atrribute><atrribute>diagnosis_median_agemonths</atrribute><atrribute>percentageof_individual_cooccurring_conditions</atrribute><atrribute>autism_types_included</atrribute><atrribute>linkto_publication</atrribute><atrribute>cdc_calculated_values</atrribute></attributes>
+                </table>
+            </tables>
+        </randomErrors>
+    
+        <outlierErrors>
+            <tables>
+                <table name="clean">
+                    <attributes>
+                    <atrribute percentage="0" detectable="true">year_published</atrribute><atrribute percentage="0" detectable="true">sample_size</atrribute><atrribute percentage="0" detectable="true">numberof_cases</atrribute><atrribute percentage="0" detectable="true">asd_prevalence_estimateper_one_zero_zero_zero</atrribute><atrribute percentage="0" detectable="true">male_female_sex_ratio</atrribute><atrribute percentage="0" detectable="true">non_hispanic_white_hispanic_prevalence_ratio</atrribute><atrribute percentage="0" detectable="true">white_black_prevalence_ratio</atrribute><atrribute percentage="0" detectable="true">diagnosis_mean_agemonths</atrribute><atrribute percentage="0" detectable="true">iq_score_seven_zero</atrribute><atrribute percentage="0" detectable="true">adaptive_score_seven_zero</atrribute><atrribute percentage="0" detectable="true">non_verbalor_minimally_verbal</atrribute></attributes>
+                </table>
+            </tables>
+        </outlierErrors>
+        
+        <!-- The following parameters are used to control the sampling process.
+            All the fields are optional, but they may be crucial to obtain a good random sample.
+            In order to choose the cells to modify, BART will scan the result of a viogen query
+            using the following sampling algorithm:
+            1) First, a number of tuples are skipped. This is a random number choosed btw 
+                0 and (offsetFactor * tableSize)
+            2) Then BART will scan the result and will pickup tuples 
+            with a probability p = probabilityFactor.
+            
+            BART uses three kinds of queries
+            - Symmetric queries: for symmetric viogen queries (see paper)
+            - Inequality queries: for viogen queries without equalities (i.e. inequalities only)
+            - Standard queries: for all other viogen queries
+        -->
+        <vioGenQueriesConfiguration>
+            <!-- STANDARD QUERIES -->
+            <probabilityFactorForStandardQueries>0.25</probabilityFactorForStandardQueries>
+            <offsetFactorForStandardQueries>0.05</offsetFactorForStandardQueries>
+            <!-- SYMMETRIC QUERIES -->
+            <probabilityFactorForSymmetricQueries>0.25</probabilityFactorForSymmetricQueries>
+            <offsetFactorForSymmetricQueries>0.05</offsetFactorForSymmetricQueries>
+            <!-- INEQUALITY QUERIES -->
+            <probabilityFactorForInequalityQueries>0.05</probabilityFactorForInequalityQueries>
+            <offsetFactorForInequalityQueries>0.05</offsetFactorForInequalityQueries>
+            <windowSizeFactorForInequalityQueries>1.5</windowSizeFactorForInequalityQueries>
+        </vioGenQueriesConfiguration>
+
+    </configuration>
+</task>

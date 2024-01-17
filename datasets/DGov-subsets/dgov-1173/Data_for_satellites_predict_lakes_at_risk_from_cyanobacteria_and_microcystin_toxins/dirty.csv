@@ -1,0 +1,11 @@
+Variable,Description,Type,Values,Units
+COMID,National Hydrography Data lake identifier,Integer,,
+LAKE_NAME,Lake name,String,,
+LON_NAD83,Lake centroid longitude in NAD83,Numeric,,Degrees
+LAT_NAD83,Lake centroid latitude in NAD83,Numeric,,Degrees
+VARIABLE,Response variable modeled,String,microcystin|cyanobacteria|chlorophyll_a,
+THRESHOLD,Threshold concentration of the response variable,Factor,0.2|1.0|20000|100000|10|50,
+BLOOM_MAG,Lake area normalized interannual (2008-2011) spatiotemporal mean summer (June-September) bloom magnitude,Numeric,,CI_cyano/km^2
+PROB_EXCEED,Probability of exceeding the threshold,Numeric,"(0,1)",Proportion
+CI_97.5PERC,The upper limit of the 95% confidence interval of the probability estimate,Numeric,"(0,1)",Proportion
+CI_2.5PERC,The lower limit of the 95% confidence interval of the probability estimate,Numeric,"(0,1)",Proportion

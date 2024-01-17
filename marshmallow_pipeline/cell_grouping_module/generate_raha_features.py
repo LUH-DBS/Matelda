@@ -15,7 +15,7 @@ from functools import partial
 
 import numpy as np
 import pandas as pd
-import raha
+from marshmallow_pipeline import raha
 from Levenshtein import distance
 from scipy.spatial.distance import pdist, squareform
 
@@ -298,24 +298,28 @@ def generate_features(self, d, char_set_dict):
     d.column_features = columns_features_list
 
 
-def generate_raha_features(parent_path, dataset_name, charsets, dirty_file_name, clean_file_name, pool):
+def generate_raha_features(parent_path, dataset_name, charsets, dirty_file_name, clean_file_name, pool, raha_config):
     sp_path = (
         parent_path + "/" + dataset_name + "/" + "raha-baran-results-" + dataset_name
     )
     if os.path.exists(sp_path):
         shutil.rmtree(sp_path)
 
-    detect = raha.Detection()
+    detect = raha.detection.Detection()
     dataset_dictionary = {
         "name": dataset_name,
         "path": parent_path + "/" + dataset_name + "/{}".format(dirty_file_name),
         "clean_path": parent_path + "/" + dataset_name + "/{}".format(clean_file_name),
     }
     detect.VERBOSE = False
+    detect.SAVE_RESULTS = raha_config["save_results"]
+    detect.STRATEGY_FILTERING = raha_config["strategy_filtering"]
+    detect.ERROR_DETECTION_ALGORITHMS = raha_config["error_detection_algorithms"]
     d = detect.initialize_dataset(dataset_dictionary)
-    d.SAVE_RESULTS = False
     d.VERBOSE = False
-    d.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD"]
+    d.SAVE_RESULTS = raha_config["save_results"]
+    d.ERROR_DETECTION_ALGORITHMS = raha_config["error_detection_algorithms"]
+    d.STRATEGY_FILTERING = raha_config["strategy_filtering"]
     logging.debug("Dataset is initialized.")
     logging.debug("Dataset name: %s", d.name)
     t1 = time.time()

@@ -1,0 +1,618 @@
+﻿X,Y,OBJECTID_12,Business_Name,Contact_Name,License_Number,License_Type,Address,City,State,County,Zip_Code,Early_Head_Start,Head_Start
+13299639.2257218,926493.990485564,1,Au Gres-Sims ECC, ,DC060378512,Licensed Centers,310 S. Court Street,Au Gres,MI,Arenac,48703,No,Yes
+13476359.5830053,335227.779199481,2,Al-Wali Childcare Center, ,DC820379683,Licensed Centers,12845 Conant,Detroit,MI,Wayne,48212,Yes,No
+13374109.1066273,1157152.53313649,3,Alcona ECC, ,DC010017070,Licensed Centers,181 N. Barlow,Lincoln,MI,Alcona,48742,No,Yes
+13468655.867126,345236.217519686,4,All About Kids, ,DC820315752,Licensed Centers,1619 East State Fair,Detroit,MI,Wayne,48203,No,Yes
+13478796.2683727,342465.589566931,5,Angel's From Above Childcare,Delicia Black,DF820358938,Registered Family Homes,18832 Moenart,Detroit,MI,Wayne,48234,Yes,Yes
+13426793.7480315,317690.343175858,6,"Arthur, Mahalia L",Mahalia L Arthur,DG820317751,Licensed Group Homes,9607 Braile Street,Detroit,MI,Wayne,48228,Yes,Yes
+13439714.7513123,308069.581036747,7,A and W Day Care Center, ,DC820073321,Licensed Centers,6565 Greenfield,Detroit,MI,Wayne,48228,Yes,No
+12608569.3221785,115004.753937006,8,Bell Head Start, ,DC110344344,Licensed Centers,1830 S. 3rd Street,Niles,MI,Berrien,49120,No,Yes
+13510420.7998688,335872.732611552,9,"Alexander, Katina",Katina Alexander,DG820267121,Licensed Group Homes,5793 Old Town,Detroit,MI,Wayne,48224,Yes,No
+13407784.667979,336554.118438318,10,Beck Center Head Start, ,DC820284806,Licensed Centers,27100 Bennett,Redford,MI,Wayne,48240,No,Yes
+13076599.1161417,443361.592847764,11,Baker/Donora Head Start, ,DC330023116,Licensed Centers,840 Baker,Lansing,MI,Ingham,48910,No,Yes
+12896443.4809711,310074.402230978,12,Aysianee & Friends,Toni Clark,DF130282374,Registered Family Homes,191 Waubascon Road,Battle Creek,MI,Calhoun,49016,No,Yes
+13442827.7631234,345563.105314955,13,AWWW They Care Daycare,Sharita Woods,DF820384536,Registered Family Homes,20190 Lesure Street,Detroit,MI,Wayne,48235,Yes,No
+13446646.5029528,330703.913385823,14,2 Day's Child Learning Center, ,DC820289306,Licensed Centers,15075 Meyers,Detroit,MI,Wayne,48227,No,Yes
+13374609.9478346,257372.372703418,15,Belleville Head Start, ,DC820361895,Licensed Centers,13770 Haggerty Road,Belleville,MI,Wayne,48111,Yes,Yes
+13464007.94521,319404.89895013,16,Angel Land Center of Hope, ,DC820094434,Licensed Centers,8642 Linwood,Detroit,MI,Wayne,48206,Yes,No
+13453977.2893701,296617.025590554,17,ACCESS Head Start, ,DC820309040,Licensed Centers,2651 Saulino Court,Dearborn,MI,Wayne,48120,No,Yes
+12730771.1476378,380818.815288708,18,Acatec Lab Head Start, ,DC030302549,Licensed Centers,2891 116th Avenue,Allegan,MI,Allegan,49010,No,Yes
+13091621.1200787,867471.333333328,19,Beaverton CAPS, ,DC260276788,Licensed Centers,106 Tonkin Street,Beaverton,MI,Gladwin,48612,No,Yes
+13473411.8677821,840872.53641732,20,Bad Axe ECC, ,DC320314511,Licensed Centers,1299 S. Thomas Road,Bad Axe,MI,Huron,48413,No,Yes
+13513938.4019029,352814.728674546,21,Avalon Head Start Rm 8, ,DC500303653,Licensed Centers,20000 Avalon,St. Clair Shores,MI,Macomb,48080,No,Yes
+13113447.67979,1818481.92158793,22,Algonquin Head Start, ,DC170023308,Licensed Centers,2307 Andary Avenue,Sault Ste. Marie,MI,Chippewa,49783,No,Yes
+12651421.9504593,299738.119750649,23,Bangor Head Start, ,DC800341734,Licensed Centers,12 N. Walnut Street,Bangor,MI,Van Buren,49013,No,Yes
+12768659.3366142,1068953.16338582,24,"Bailey, Nicole",Nicole Bailey,DG830305468,Licensed Group Homes,7180 W 14 Rd,Mesick,MI,Wexford,49668,No,Yes
+13248828.4839239,786862.568241477,25,Bangor North Head Start, ,DC090363553,Licensed Centers,504 Revilo Drive,Bay City,MI,Bay,48706,No,Yes
+13248828.4839239,786862.568241477,26,Bangor North Preschool, ,DC090309417,Licensed Centers,504 Revilo Dr.,Bay City,MI,Bay,48706,No,Yes
+13252894.1870079,765465.980314955,27,Bay City ECC, ,DC090262416,Licensed Centers,1201 Fourth Street,Bay City,MI,Bay,48708,No,Yes
+13318915.6128609,544891.080052495,28,Atherton Head Start, ,DC250364592,Licensed Centers,2400 Clarice Ave,Burton,MI,Genesee,48519,Yes,Yes
+12804673.6332021,1187950.51115486,29,Angel Care Child Care, ,DC280298583,Licensed Centers,834 Hastings Street,Traverse City,MI,Grand Traverse,49686,No,Yes
+13122043.2519685,282089.094488189,30,Ashton Ridge Head Start, ,DC380093942,Licensed Centers,2921 Ashton Ridge,Jackson,MI,Jackson,49201,No,Yes
+12902116.3743438,1270669.7480315,31,Bellaire Preschool & Kid's Club, ,DC050314164,Licensed Centers,6535 John R. Rodgers Road,Bellaire,MI,Antrim,49615,No,Yes
+13215972.3979659,150593.615157485,32,Adrian Migrant Head Start, ,DC460022237,Licensed Centers,1372 Main Street,Adrian,MI,Lenawee,49221,No,Yes
+13212339.1108924,143136.259842515,33,Adrian Head Start at Garfield, ,DC460284177,Licensed Centers,239 Cross St.,Adrian,MI,Lenawee,49221,Yes,Yes
+13201604.3953412,147190.567913383,34,Adrian Headstart at Lenawee Medical, ,DC460084942,Licensed Centers,200 Sand Creek Highway,Adrian,MI,Lenawee,49221,No,Yes
+13232034.9074803,163793.399278209,35,Adrian Head Start at Porter, ,DC460259775,Licensed Centers,2946 Sutton Road,Adrian,MI,Lenawee,49221,No,Yes
+13216250.1489501,144878.962598428,36,Adrian Head Start at Comstock, ,DC460094115,Licensed Centers,801 E. Maumee,Adrian,MI,Lenawee,49221,No,Yes
+13129372.4685039,177697.77952756,37,Adrian Head Start at Addison, ,DC460268813,Licensed Centers,219 Comstock,Addison,MI,Lenawee,49220,No,Yes
+12916936.8323491,828032.626640424,38,Barryton ECC, ,DC540314027,Licensed Centers,19701 30th Avenue,Barryton,MI,Mecosta,49305,No,Yes
+12893375.4156824,585538.994094491,39,Belding Area Head Start, ,DC340337836,Licensed Centers,100 West Ellis,Belding,MI,Ionia,48809,No,Yes
+13077362.0082021,451291.296916008,40,Beginnings Child Care, ,DC330021974,Licensed Centers,525 N. Pennsylvania,Lansing,MI,Ingham,48912,Yes,Yes
+13042709.7598425,684927.714238852,41,Alma College Head Start, ,DC290251262,Licensed Centers,614 W. Superior Street,Alma,MI,Gratiot,48801,No,Yes
+13050664.7874016,152186.688648298,42,Baily Children's Program, ,DC300384763,Licensed Centers,59 S. Manning St,Hillsdale,MI,Hillsdale,49242,No,Yes
+13223032.6883202,704212.963910759,43,Adams Avenue SISD Saginaw County Head Start, ,DC730284093,Licensed Centers,3427 Adams Ave.,Saginaw,MI,Saginaw,48603,No,Yes
+13423980.4409449,424692.889435694,44,Auburn Hills Head Start, ,DC630369619,Licensed Centers,1500 University Dr.,Auburn Hills,MI,Oakland,48326,No,Yes
+13214785.707021,700840.78510499,45,Arrowwood SISD Saginaw Co. Head Start, ,DC730336393,Licensed Centers,5410 Seidel,Saginaw,MI,Saginaw,48638,No,Yes
+13439852.7595144,360277.313976377,46,Avery Elem School, ,DC630019539,Licensed Centers,14700 Lincoln,Oak Park,MI,Oakland,48237,Yes,Yes
+12670755.4002625,1098934.05216536,47,Bear Lake Migrant Head Start, ,DC510094248,Licensed Centers,10101 Nurnberger Road,Bear Lake,MI,Manistee,49614,No,Yes
+13294319.1650262,273455.414041996,48,Ann Arbor Preschool and Family Center, ,DC810286015,Licensed Centers,2775 Boardwalk,Ann Arbor,MI,Washtenaw,48104,No,Yes
+13324421.8474409,279091.157480314,49,Beatty Early Learning Center, ,DC810344956,Licensed Centers,1661 LeForge Rd,Ypsilanti,MI,Washtenaw,48198,No,Yes
+13383761.2654199,716433.022637799,50,Caro ECC, ,DC790268756,Licensed Centers,1690 Mertz Road,Caro,MI,Tuscola,48723,No,Yes
+13475532.2145669,314614.697834641,51,Cathedral of St. Paul, ,DC820315152,Licensed Centers,4800 Woodward Avenue,Detroit,MI,Wayne,48201,No,Yes
+13438982.6023622,771739.286089242,52,Cass City ECC, ,DC790022821,Licensed Centers,4869 N Seeger,Cass City,MI,Tuscola,48726,No,Yes
+12611021.6010499,108816.307414696,53,Brandywine Head Start, ,DC110344341,Licensed Centers,2428 S. 13th Street,Niles,MI,Berrien,49120,No,Yes
+13436433.2562336,319997.279855639,54,Bibleway Center, ,DC820283463,Licensed Centers,16431 Plymouth,Detroit,MI,Wayne,48227,No,Yes
+13436596.1486221,319992.967191607,55,Bibleway II, ,DC820297901,Licensed Centers,16401 Plymouth Road,Detroit,MI,Wayne,48227,Yes,No
+13496960.4422572,347368.72473754,56,"Bridges, LaShawn P",LaShawn P Bridges,DF820260698,Registered Family Homes,13828 Eastburn,Detroit,MI,Wayne,48205,Yes,No
+13411503.3854987,329185.862204731,57,"Brawner, Channel",Channel Brawner,DG820363834,Licensed Group Homes,26077 Elsinore,Redford,MI,Wayne,48239,Yes,No
+13170968.3713911,551178.496719167,58,Bentley-Bright Beginnings, ,DC780300345,Licensed Centers,1375 W. North Street,Owosso,MI,Shiawassee,48867,No,Yes
+13167977.1692913,488664.132545933,59,Bright Beginnings Learning Center #3, ,DC780309058,Licensed Centers,2312 W. Lansing Rd.,Morrice,MI,Shiawassee,48857,Yes,No
+12952015.9324147,158175.477034122,60,Branch County Head Start - Lincoln, ,DC120314900,Licensed Centers,Lincoln Elementary School 70 Tibbits Avenue,Coldwater,MI,Branch,49036,No,Yes
+12677806.6217192,155649.263451442,61,Cassopolis Head Start, ,DC140337344,Licensed Centers,725 Center,Cassopolis,MI,Cass,49031,No,Yes
+13222062.4799869,514324.754921258,62,Bertha Neal Elementary, ,DC780270907,Licensed Centers,930 W. Main Street,Durand,MI,Shiawassee,48429,No,Yes
+13636014.1302494,533481.922244102,63,Building Blocks, ,DC740067987,Licensed Centers,3021 24th Street,Port Huron,MI,St. Clair,48060,No,Yes
+12983200.8133202,160841.042979002,64,Branch Co. Head Start Quincy, ,DC120303553,Licensed Centers,44 East Liberty Street,Quincy,MI,Branch,49082,No,Yes
+13525533.9862205,382179.84973754,65,Born Center Head Start Rms 19 & 20, ,DC500314373,Licensed Centers,23340 Elmira,St. Clair Shores,MI,Macomb,48082,No,Yes
+13541869.3920604,438136.02395013,66,Burdi Head Start, ,DC500378856,Licensed Centers,29851 24 Mile Road,Chesterfield,MI,Macomb,48051,No,Yes
+12780471.6922572,380550.775590554,67,Brandon Head Start, ,DC030313974,Licensed Centers,1583 University Street,Martin,MI,Allegan,49070,No,Yes
+12344777.2998688,1854836.5839895,68,Brookton Early Childhood Education Center, ,DC520297898,Licensed Centers,275 Lost Creek Dr.,Marquette,MI,Marquette,49855,No,Yes
+13020109.3625328,452219.642060369,69,Bright Start Preschool, ,DC230383954,Licensed Centers,11966 SweetWater Dr.,Grand Ledge,MI,Eaton,48837,Yes,No
+12996422.7339239,404863.645341203,70,"Brock, Carrie D",Carrie D Brock,DG230267697,Licensed Group Homes,76 N. Clinton Trail,Charlotte,MI,Eaton,48813,Yes,No
+13311896.5183727,534621.419619426,71,Bendle Head Start, ,DC250285813,Licensed Centers,South Bendle Elementary 4341 Larkin Dr.,Burton,MI,Genesee,48529,No,Yes
+12781689.4819554,160403.799868762,72,Carol Shippy Early Head Start, ,DC750257335,Licensed Centers,1000 E. Broadway,Three Rivers,MI,St. Joseph,49093,Yes,Yes
+12439084.730315,1600947.0164042,73,Cameron Early Childhood Center, ,DC210343188,Licensed Centers,803 29th Street,Gladstone,MI,Delta,49837,No,Yes
+13022138.3540026,761910.23326771,74,Building Blocks I, ,DC370263210,Licensed Centers,2009 E. Preston,Mount Pleasant,MI,Isabella,48858,Yes,No
+13282885.1994751,375190.766404197,75,Brighton Head Start, ,DC470303230,Licensed Centers,850 Spencer Rd.,Brighton,MI,Livingston,48116,No,Yes
+13072037.5045932,546735.753937006,76,Building Blocks IV St. Johns, ,DC190344266,Licensed Centers,101 W. Cass St.,St. Johns,MI,Clinton,48879,Yes,No
+12830348.0534777,804500.701443568,77,Big Rapids Eastwood ECC, ,DC540330853,Licensed Centers,410 N. Third Avenue,Big Rapids,MI,Mecosta,49307,No,Yes
+12560700.4619423,229086.878280833,78,Benton Harbor Head Start, ,DC110314284,Licensed Centers,465 S. McCord,Benton Harbor,MI,Berrien,49022,No,Yes
+13574832.7509843,706856.592519686,79,Carsonville Pt San Head Start, ,DC760021775,Licensed Centers,4115 E Chandler,Carsonville,MI,Sanilac,48419,No,Yes
+12941970.3034777,540609.950131238,80,Building Blocks V, ,DC340317160,Licensed Centers,830 Harrison Street,Ionia,MI,Ionia,48846,Yes,No
+13199458.2417979,415803.13615486,81,"Braidwood, Holly",Holly Braidwood,DF470323697,Registered Family Homes,8590 Rifle River Drive,Fowlerville,MI,Livingston,48836,Yes,Yes
+13297508.3090551,572620.02526246,82,Cathedral of Faith Ministries (Head Start), ,DC250378641,Licensed Centers,6031 Dupont St.,Flint,MI,Genesee,48505,No,Yes
+13062462.3120079,438344.782480314,83,Burton-Cooney Sharron Y,Sharron Y Burton-Cooney,DG330060745,Licensed Group Homes,2920 Norwich,Lansing,MI,Ingham,48911,Yes,No
+13101949.6633858,434907.117125988,84,"Bristol-Aldrich, Tammy",Tammy Bristol-Aldrich,DF330292090,Registered Family Homes,2672 Morning Glory,Okemos,MI,Ingham,48864,Yes,No
+13058818.32021,652851.08300525,85,Building Blocks III, ,DC290306338,Licensed Centers,125 S. Maple,Ithaca,MI,Gratiot,48847,Yes,Yes
+12602593.8684383,258875.105643049,86,Coloma Head Start, ,DC110297145,Licensed Centers,7048 Curtis,Coloma,MI,Berrien,49038,Yes,Yes
+13275871.1597769,636343.767060369,87,Birch Run North Elem SISD Saginaw Co Head Start, ,DC730284097,Licensed Centers,12450 Church St.,Birch Run,MI,Saginaw,48415,No,Yes
+13251492.332021,669441.510170609,88,Brucker SISD Sag. Co. Head Start, ,DC730304018,Licensed Centers,6005 Fort Rd.,Birch Run,MI,Saginaw,48415,Yes,Yes
+13246069.7221129,692294.15026246,89,Brunkow SISD Saginaw County Head Start, ,DC730315044,Licensed Centers,3000 S. 24th Street,Saginaw,MI,Saginaw,48601,No,Yes
+13009327.4347113,102780.658792645,90,Camden Head Start/ MSRP, ,DC300251230,Licensed Centers,4971 W Montgomery Road,Camden,MI,Hillsdale,49232,No,Yes
+13430491.6620735,222183.042650923,91,"Costantini, Theresa",Theresa M Costantini,DG820266962,Licensed Group Homes,20761 Richard Court,Brownstown,MI,Wayne,48183,No,Yes
+12672117.8300525,827281.771325454,92,Chase Farms Migrant Headstart, ,DC640022201,Licensed Centers,8122 E. Monroe Road,Walkerville,MI,Oceana,49459,No,Yes
+13427672.1036745,327640.968503937,93,Citadel of Praise, ,DC820290964,Licensed Centers,20280 Lyndon,Detroit,MI,Wayne,48223,No,Yes
+13016045.761811,276619.551181108,94,Crowell I & II, ,DC130309726,Licensed Centers,1418 Cooper Street,Albion,MI,Calhoun,49224,No,Yes
+13503558.0613517,341192.688976377,95,Charity Lutheran Head Start, ,DC820018029,Licensed Centers,17220 Kelly Road,Detroit,MI,Wayne,48224,No,Yes
+13057994.3425197,449752.72047244,96,Colt Head Start, ,DC230364114,Licensed Centers,4344 W Michigan Ave,Lansing,MI,Eaton,48917,No,Yes
+13513554.4832677,387803.874343827,97,Close to Home Child Care & Learning Center, ,DC500317504,Licensed Centers,19865 15 Mile Road,Clinton Township,MI,Macomb,48035,Yes,No
+13004182.5728346,849077.629265085,98,Clare CAPS, ,DC180293668,Licensed Centers,1574 E. Washington,Farwell,MI,Clare,48622,No,Yes
+13124337.2916667,1640987.37565617,99,Cedarville Headstart Center, ,DC490016570,Licensed Centers,68 Meridian Road,Cedarville,MI,Mackinac,49719,No,Yes
+13414110.0252625,327285.281824142,100,Darrlisha Newby,Darrlisha Newby,DG820380255,Licensed Group Homes,25215 Ross Drive,Redford,MI,Wayne,48239,Yes,No
+13462454.9025591,324591.912073493,101,Central Collegiate Academy, ,DC820370948,Licensed Centers,2425 Tuxedo,Detroit,MI,Wayne,48206,Yes,Yes
+12993512.3887795,386111.828083992,102,Charlotte Public Schools - Weymouth, ,DC230269432,Licensed Centers,346 State Street,Charlotte,MI,Eaton,48813,Yes,No
+13192144.8267716,539811.0,103,Corunna P. S. C.S. Louise Peacock Campus, ,DC780360829,Licensed Centers,485 McArthur St.,Corunna,MI,Shiawassee,48817,No,Yes
+13485700.6499344,475335.007874012,104,Croswell Head Start, ,DC500303655,Licensed Centers,175 Croswell,Romeo,MI,Macomb,48065,No,Yes
+13476327.039042,357924.046916008,105,Center Line Day Care, ,DC500018019,Licensed Centers,24580 Cunningham,Warren,MI,Macomb,48091,No,Yes
+13476327.039042,357924.046916008,106,Center Line Head Start, ,DC500017752,Licensed Centers,24580 Cunningham,Warren,MI,Macomb,48091,No,Yes
+12989837.2509843,410505.830708668,107,Charlotte Head Start, ,DC230022833,Licensed Centers,1370 N.Clinton Trail,Charlotte,MI,Eaton,48813,No,Yes
+12115137.3566273,2130417.36614174,108,CLK Preschool and Great Explorations, ,DC420378965,Licensed Centers,57070 Mine Street,Calumet,MI,Keweenaw,49913,No,Yes
+12085051.8772966,2038465.77001312,109,Chassell Preschool, ,DC310088220,Licensed Centers,41585 US Hwy 41,Chassell,MI,Houghton,49916,No,Yes
+12116765.265748,2127022.3730315,110,Centennial Child Dev Center, ,DC310016432,Licensed Centers,27001 #4 Road,Calumet,MI,Houghton,49913,No,Yes
+12839131.296916,111316.561351702,111,"Cline, Jody Lyn",Jody Lyn Cline,DG750380571,Licensed Group Homes,107 N Lakeview Ave,Sturgis,MI,St. Joseph,49091,Yes,No
+13292460.3277559,613092.047244102,112,Clio Head Start and Early Head Start, ,DC250328384,Licensed Centers,Clio Early Elem. 301 Rogers Lodge Drive,Clio,MI,Genesee,48420,Yes,Yes
+12836486.9081365,109310.742125988,113,Community Action Sturgis Headstart, ,DC750303289,Licensed Centers,306 S. Nottawa Street,Sturgis,MI,St. Joseph,49091,No,Yes
+13094703.9517716,1511471.3300525,114,Cheboygan 4 ECC, ,DC160344732,Licensed Centers,504 Division Street,Cheboygan,MI,Cheboygan,49721,No,Yes
+13097931.2782152,1510672.81988189,115,Cheboygan 2 ECC, ,DC160295766,Licensed Centers,119 Duncan Street,Cheboygan,MI,Cheboygan,49721,No,Yes
+13096902.6771654,1511248.56496063,116,Cheboygan 3 Head Start, ,DC160268168,Licensed Centers,120 North C Street,Cheboygan,MI,Cheboygan,49721,No,Yes
+13096907.2903543,1511255.125,117,Cheboygan Head Start, ,DC160020101,Licensed Centers,122 North C Street,Cheboygan,MI,Cheboygan,49721,No,Yes
+12720196.8228346,596186.087598428,118,Conklin Migrant Head Start, ,DC700023040,Licensed Centers,P O Box 71 3501 Sehler Road,Conklin,MI,Ottawa,49403,No,Yes
+13065957.4370079,483904.678149611,119,DeWitt Head Start, ,DC190384429,Licensed Centers,3147 Herbison Road,DeWitt,MI,Clinton,48820,No,Yes
+13297683.4750656,582622.860892385,120,Dailey Early Childhood Program, ,DC250267691,Licensed Centers,6236 Neff Road,Mount Morris,MI,Genesee,48458,No,Yes
+12812224.613189,299637.731955379,121,Comstock North Head Start And GSRP, ,DC390343653,Licensed Centers,3100 N. 26th St,Kalamazoo,MI,Kalamazoo,49048,No,Yes
+12789330.1269685,295202.966207355,122,Christian Life Center Head Start, ,DC390346690,Licensed Centers,1225 W. Patterson,Kalamazoo,MI,Kalamazoo,49007,No,Yes
+13073397.8389108,427328.979002625,123,Cradles to Crayons Child Care,LaDawn Caldwell,DG330336238,Licensed Group Homes,101 E Claremore Dr,Lansing,MI,Ingham,48911,Yes,No
+13116956.5613517,454804.667650923,124,Child Development Laboratory-MSU-Haslett Campus, ,DC330275780,Licensed Centers,5750 Academic Way,Haslett,MI,Ingham,48840,No,Yes
+13415747.8083989,425846.972769022,125,"Coleman,  Zina",Zina Coleman,DG630261881,Licensed Group Homes,555 E Madison Avenue,Pontiac,MI,Oakland,48340,Yes,Yes
+13247156.0846457,700711.340551183,126,Claytor SISD Saginaw County Head Start, ,DC730283828,Licensed Centers,3200 Perkins,Saginaw,MI,Saginaw,48601,Yes,Yes
+13426014.9484908,327263.617782146,127,Development Centers Head Start, ,DC820364176,Licensed Centers,14450 Burt Road,Detroit,MI,Wayne,48223,No,Yes
+13426364.2368766,458407.176509187,128,Community Education Resource Ctr, ,DC630018148,Licensed Centers,455 E Scripps Road,Lake Orion,MI,Oakland,48361,Yes,Yes
+13395136.5875984,309928.826115489,129,"Dreamy Day Care 2, LLC", ,DC820372964,Licensed Centers,32503 Ann Arbor Trail,Westland,MI,Wayne,48185,Yes,Yes
+13425116.8166011,342968.950787395,130,Development Centers - Early Head Start, ,DC820361179,Licensed Centers,19740 Burt Road,Detroit,MI,Wayne,48219,Yes,No
+13467453.6059711,303215.92979002,131,Fiore Center - Vista Nuevas H.S., ,DC820248396,Licensed Centers,3950 Toledo,Detroit,MI,Wayne,48209,No,Yes
+13432730.5659449,353460.071194232,132,Eagles Nest Montessori #2, ,DC630243794,Licensed Centers,23666 Southfield Road,Southfield,MI,Oakland,48075,Yes,No
+12983171.476706,859019.457349077,133,Farwell CAPS, ,DC180345634,Licensed Centers,2050 W. Cadillac,Farwell,MI,Clare,48622,No,Yes
+13359921.0839895,1296600.91568242,134,Ella White ECC, ,DC040303165,Licensed Centers,201 N. Ripley,Alpena,MI,Alpena,49707,No,Yes
+12904896.4340551,297632.462926507,135,Doris Hale Child Development Center, ,DC130088768,Licensed Centers,110 Green Street,Battle Creek,MI,Calhoun,49017,No,Yes
+13443058.265748,341429.98884514,136,Development Centers EHS/HS - Hartford, ,DC820362290,Licensed Centers,13735 West Seven Mile,Detroit,MI,Wayne,48235,Yes,Yes
+13439097.8490814,324335.58431758,137,Development Centers EHS/HS Greenfield, ,DC820373046,Licensed Centers,13220 Greenfield,Detroit,MI,Wayne,48227,Yes,Yes
+13462819.1371391,323821.796916008,138,Durfee Elementary & Middle School, ,DC820366689,Licensed Centers,2470 Collingwood St.,Detroit,MI,Wayne,48206,No,Yes
+13455046.1473097,303073.125,139,Eternal Rock Head Start Center, ,DC820299659,Licensed Centers,4300 Lonyo,Detroit,MI,Wayne,48210,Yes,Yes
+13468808.4501312,299522.853018373,140,Earhart Elementary & Middle School, ,DC820365924,Licensed Centers,1000 Scotten Street,Detroit,MI,Wayne,48209,No,Yes
+13048090.7933071,370404.612860888,141,Eaton Rapids Head Start, ,DC230314888,Licensed Centers,501 Union Street,Eaton Rapids,MI,Eaton,48827,No,Yes
+13503671.4944226,375839.284120739,142,Dooley Head Start, ,DC500269534,Licensed Centers,16170 Canberra,Roseville,MI,Macomb,48066,No,Yes
+13626756.1765092,451703.924212605,143,Downriver Head Start, ,DC740304305,Licensed Centers,403 North Mary Street,Marine City,MI,St. Clair,48039,No,Yes
+13504110.9563648,362235.333661422,144,"Dort Head Start - Rms 101, 104", ,DC500309506,Licensed Centers,16225 Dort,Roseville,MI,Macomb,48066,No,Yes
+13412452.9068241,891837.016076118,145,Eagle's Nest Preschool Head Start/GSRP, ,DC320343887,Licensed Centers,6609 Vine Street,Caseville,MI,Huron,48725,No,Yes
+12646146.6896326,180931.279855639,146,Dowagiac Center, ,DC140017867,Licensed Centers,203 S Paul,Dowagiac,MI,Cass,49047,No,Yes
+13222062.4799869,514324.754921258,147,Durand Head Start at Bertha Neal, ,DC780364854,Licensed Centers,930 W Main Street,Durand,MI,Shiawassee,48429,No,Yes
+13044631.9668635,162474.643044621,148,Greenfield Early Childhood, ,DC300362501,Licensed Centers,3471 Beck Road,Hillsdale,MI,Hillsdale,49242,No,Yes
+13282779.0203412,1648930.6722441,149,Drummond Island Head Start, ,DC170088748,Licensed Centers,29935 E Pine Street,Drummond Island,MI,Chippewa,49726,No,Yes
+12690321.5925197,226241.887139112,150,Decatur Head Start, ,DC800087863,Licensed Centers,405 Harrison Street,Decatur,MI,Van Buren,49045,No,Yes
+12654885.1371391,405126.412729666,151,Fennville Head Start, ,DC030285575,Licensed Centers,8 North Street,Fennville,MI,Allegan,49408,No,Yes
+13128100.7372047,1822492.53083989,152,First Years Infant Toddler Center, ,DC170087913,Licensed Centers,510 Ashmum Street,Sault Ste. Marie,MI,Chippewa,49783,Yes,No
+12677165.5744751,232982.116469815,153,Decatur Migrant Head Start, ,DC800023060,Licensed Centers,80195 County Road 358,Decatur,MI,Van Buren,49045,No,Yes
+13470591.4504593,372168.964566931,154,"Dawood, Khalidah",Khalidah Dawood,DF500379809,Registered Family Homes,30124 Warner Avenue,Warren,MI,Macomb,48092,Yes,No
+12766214.4852362,349757.019356951,155,Dix Street Head Start, ,DC030364506,Licensed Centers,503 Dix Street,Otsego,MI,Allegan,49078,No,Yes
+12431035.0849738,1551448.74770342,156,Escanaba Early Childhood Center, ,DC210269151,Licensed Centers,1905 S 21st Street,Escanaba,MI,Delta,49829,Yes,Yes
+13311068.44521,561994.683070868,157,East Side Mission Head Start, ,DC250378668,Licensed Centers,1917 Delaware Ave,Flint,MI,Genesee,48506,No,Yes
+12925091.3428478,717503.406496063,158,Edmore Head Start, ,DC590335987,Licensed Centers,1456 E. N. County Line Rd,Blanchard,MI,Montcalm,49310,No,Yes
+13349921.6981627,559806.740485564,159,Davison I Head Start St John's, ,DC250252821,Licensed Centers,425 Genesee Street,Davison,MI,Genesee,48423,No,Yes
+13084125.2171916,582128.849409446,160,Eureka Elementary, ,DC190342407,Licensed Centers,7550 N. Welling,St. Johns,MI,Clinton,48879,No,Yes
+12595679.8950131,807691.74311024,161,Diman-Wolf Early Childhood Center, ,DC640310279,Licensed Centers,306 W. Johnson Street,Hart,MI,Oceana,49420,Yes,Yes
+13299087.1889764,475030.272309706,162,Fenton Early Head Start, ,DC250305798,Licensed Centers,550 Wood Street,Fenton,MI,Genesee,48430,Yes,No
+13303078.1988189,475089.908464566,163,Fenton Headstart, ,DC250020473,Licensed Centers,Tomek Eastern School 600 Fourth Street,Fenton,MI,Genesee,48430,Yes,Yes
+13073456.9484908,450830.909448817,164,Early Learning Children's Community, ,DC330306630,Licensed Centers,601 N. Washington Sq.,Lansing,MI,Ingham,48933,No,Yes
+13414835.2667323,431528.444553807,165,Evans Carol Ann,Carol Ann Evans,DG630284257,Licensed Group Homes,514 W. Northfield,Pontiac,MI,Oakland,48340,Yes,Yes
+12645838.5511811,599826.589566931,166,Edgewood Elememtary School, ,DC610094070,Licensed Centers,3255 E. Pontaluna Road,Fruitport,MI,Muskegon,49415,No,Yes
+12624528.5456037,624133.868438318,167,Edgewood Elementary, ,DC610361852,Licensed Centers,3028 Howden Street,Muskegon Heights,MI,Muskegon,49444,Yes,Yes
+13398196.2959318,350833.133202106,168,Farmington Community School, ,DC630020162,Licensed Centers,30415 Shiawassee,Farmington,MI,Oakland,48336,No,Yes
+13457993.3976378,356130.203412071,169,Ferndale Early Childhood Center, ,DC630333249,Licensed Centers,2920 Burdette,Ferndale,MI,Oakland,48220,No,Yes
+13421303.7017716,365828.948490813,170,Faith Loving Child Care Center, ,DC630074240,Licensed Centers,23800 Lahser,Southfield,MI,Oakland,48034,Yes,No
+13432735.089895,353306.085301831,171,Eagles Nest Montessori, ,DC630095365,Licensed Centers,17950 Mcclung,Southfield,MI,Oakland,48075,Yes,No
+13127143.1906168,129362.762795269,172,Fun Factory Child Care,Heather AND Hall,DG460377797,Licensed Group Homes,116 West Main St,Hudson,MI,Lenawee,49247,Yes,No
+13472539.8956693,320113.152887136,173,Franklin-Wright Early Start Child Develop. Ctr., ,DC820379528,Licensed Centers,7375 Woodward Avenue,Detroit,MI,Wayne,48202,Yes,Yes
+13421073.6981627,328345.542979002,174,Gwen's Heavens Angel's Day Care,Gwendolyn Marie Shivers,DF820251964,Registered Family Homes,14813 Bramell,Detroit,MI,Wayne,48223,Yes,Yes
+13511097.4934383,328237.227362201,175,Growing Minds Learning Cntr, ,DC820317324,Licensed Centers,16361 Mack Ave,Detroit,MI,Wayne,48224,Yes,No
+13431333.6899606,330278.305446193,176,Greater Ebenezer Mis Bap Ch, ,DC820017354,Licensed Centers,18751 Fenkell,Detroit,MI,Wayne,48223,Yes,No
+13435223.8375984,325278.524278209,177,Greater Burnette Baptist, ,DC820364537,Licensed Centers,16801 Schoolcraft,Detroit,MI,Wayne,48227,Yes,No
+13305923.5495407,538000.620734915,178,GISD Early Childhood, ,DC250347333,Licensed Centers,1221 E Bristol,Burton,MI,Genesee,48529,No,Yes
+13077632.1364829,454653.351377949,179,Grand River Head Start, ,DC330304365,Licensed Centers,1107 E. Grand River Ave.,Lansing,MI,Ingham,48906,Yes,Yes
+11690253.3402231,1865298.84842519,180,Gogebic County Head Start, ,DC270277335,Licensed Centers,304 East Iron Street,Bessemer,MI,Gogebic,49911,Yes,Yes
+13087696.8444882,903096.062335953,181,Gladwin Child Dev Center, ,DC260020886,Licensed Centers,1302 Chatterton,Gladwin,MI,Gladwin,48624,No,Yes
+13044249.906168,1291843.72637795,182,Gaylord ECC, ,DC690021219,Licensed Centers,97 Livingston Boulevard,Gaylord,MI,Otsego,49735,No,Yes
+13044225.2027559,1283762.62270342,183,Gaylord South ECC, ,DC690314192,Licensed Centers,615 S. Elm Street,Gaylord,MI,Otsego,49735,No,Yes
+13633596.0482284,531466.599409446,184,Guadalupe Head Start, ,DC740022191,Licensed Centers,3110 Goulden,Port Huron,MI,St. Clair,48060,No,Yes
+12788212.0675853,535577.763779521,185,Fulton Street Headstart, ,DC410022328,Licensed Centers,2023 East Fulton Street,Grand Rapids,MI,Kent,49503,No,Yes
+12714706.0646326,318859.777559057,186,Gobles Head Start, ,DC800285176,Licensed Centers,409 N. State St.,Gobles,MI,Van Buren,49055,No,Yes
+12364504.1414042,1776116.57349081,187,Gwinn Head Start, ,DC520094391,Licensed Centers,205 Ventura Street,Gwinn,MI,Marquette,49841,No,Yes
+12286827.7946194,1835356.30905512,188,Greenwood Head Start, ,DC520082236,Licensed Centers,704 Greenwood Street,Ishpeming,MI,Marquette,49849,No,Yes
+13574291.0131234,857708.560039371,189,Harbor Beach ECC, ,DC320362997,Licensed Centers,402 South 5th Street,Harbor Beach,MI,Huron,48441,No,Yes
+13019043.1177821,456219.70931758,190,Grand Ledge Head Start, ,DC230343528,Licensed Centers,615 Jones Rd,Grand Ledge,MI,Eaton,48837,No,Yes
+13106672.0643045,267547.272309706,191,Frost Elementary School, ,DC380326902,Licensed Centers,1226 S. Wisner,Jackson,MI,Jackson,49203,No,Yes
+12444774.1486221,1597290.59350394,192,Gladstone Early Childhood Center, ,DC210021703,Licensed Centers,207 12th Street,Gladstone,MI,Delta,49837,No,Yes
+13305129.1151575,552584.952427819,193,GCCARD Child Development Center-Harrison, ,DC250252700,Licensed Centers,719 Harrison Street,Flint,MI,Genesee,48502,Yes,Yes
+13308793.6814304,555037.019028872,194,GISD Head Start at Mott College, ,DC250347337,Licensed Centers,1401 E Court Street,Flint,MI,Genesee,48503,No,Yes
+13070923.3487533,550727.087270334,195,Gateway North GSRP & Adventure Club, ,DC190338994,Licensed Centers,915 N. Lansing Rd.,St. Johns,MI,Clinton,48879,No,Yes
+13261231.1624016,570927.534120739,196,Flushing Early Head Start, ,DC250022740,Licensed Centers,409 Chamberlain Street,Flushing,MI,Genesee,48433,Yes,Yes
+12843660.0291995,1023966.8277559,197,"Gurden, Jami",Jami Gurden,DF830344277,Registered Family Homes,7111 Ponderosa Drive,Cadillac,MI,Wexford,49601,No,Yes
+13303234.8740157,561230.548884511,198,Flint Genesee Jobcorps Child Dev Ctr, ,DC250265896,Licensed Centers,2400 N. Saginaw,Flint,MI,Genesee,48505,No,Yes
+12866956.0770997,1122736.51279527,199,Forest Area Early Learning Center, ,DC280378032,Licensed Centers,104 Janet Street,Fife Lake,MI,Grand Traverse,49633,Yes,Yes
+13203223.3786089,424687.935039371,200,Fowlerville Head Start, ,DC470297197,Licensed Centers,450 N. Hibbard St.,Fowlerville,MI,Livingston,48836,No,Yes
+13081255.7099738,436643.662729666,201,Happy Elephant Child Care Center, ,DC330077389,Licensed Centers,3325 Aurelius,Lansing,MI,Ingham,48910,Yes,No
+13023062.2217848,1195143.04396325,202,Frederic ECC, ,DC200078848,Licensed Centers,6470 Manistee,Frederic,MI,Crawford,49733,No,Yes
+13034565.2808399,1154962.86712599,203,Grayling Head Start, ,DC200297108,Licensed Centers,1000 Michigan Ave,Grayling,MI,Crawford,49738,No,Yes
+12645768.9511155,599828.068897635,204,Fruitport Early Childhood Center, ,DC610097488,Licensed Centers,3113 E. Pontaluna Road,Fruitport,MI,Muskegon,49415,No,Yes
+12614618.9557087,629910.137139112,205,Glenside Head Start & Kid's World Learning Center, ,DC610251458,Licensed Centers,1213 W. Hackley Avenue,Muskegon,MI,Muskegon,49441,No,Yes
+13456648.3441601,422460.428149611,206,Hamlin Child Care Programs, ,DC630019268,Licensed Centers,270 Hamlin,Rochester,MI,Oakland,48307,No,Yes
+12646576.0682415,932926.611548558,207,Fountain Child Development Ctr, ,DC530016619,Licensed Centers,3876 E Main Street,Fountain,MI,Mason,49410,No,Yes
+13473473.0669291,305109.176837265,208,Hernandez Center II, ,DC820298120,Licensed Centers,2051 Rosa Parks Blvd,Detroit,MI,Wayne,48216,No,Yes
+13512207.675853,333954.208661422,209,IntelligentTots Early Learning Center, ,DC820362470,Licensed Centers,17331 E. Warren,Detroit,MI,Wayne,48224,Yes,Yes
+13490524.6706037,328587.347769022,210,Harper Gratiot, ,DC820274035,Licensed Centers,9641 Harper Avenue,Detroit,MI,Wayne,48213,No,Yes
+13067957.6246719,452521.736220479,211,Jenison Early Head Start, ,DC330094353,Licensed Centers,727 N Jenison,Lansing,MI,Ingham,48915,Yes,Yes
+13072609.941273,460953.390091866,212,Hildebrandt Head Start, ,DC330290973,Licensed Centers,3122 N. Turner St.,Lansing,MI,Ingham,48906,No,Yes
+13443192.8038058,314584.921259835,213,Highlites Child Care,Mary Ann Taylor,DF820245532,Registered Family Homes,8566 Freeland,Detroit,MI,Wayne,48228,Yes,Yes
+13446776.9206037,318140.616797894,214,Iris Center, ,DC820291487,Licensed Centers,9611 Iris,Detroit,MI,Wayne,48227,No,Yes
+13226395.5190289,696590.600721791,215,Jerome SISD Saginaw County Head Start, ,DC730364159,Licensed Centers,1515 Sweet,Saginaw,MI,Saginaw,48602,Yes,Yes
+13476294.8969816,386187.211286083,216,Hatherly Head Start, ,DC500363668,Licensed Centers,35201 Davison Street,Sterling Heights,MI,Macomb,48310,No,Yes
+13542192.464895,438056.774934381,217,Higgins Head Start, ,DC500378917,Licensed Centers,29901 24 Mile Road,Chesterfield,MI,Macomb,48051,No,Yes
+13526524.3769685,389464.390748039,218,Jelly Moon Learning Center, ,DC500370599,Licensed Centers,35618 Harper Avenue,Clinton Township,MI,Macomb,48035,Yes,No
+12801329.0324803,449118.90026246,219,"Hyde, Lisa",Lisa Hyde,DF030308300,Registered Family Homes,4214 2nd Street,Caledonia,MI,Allegan,49316,Yes,Yes
+13493702.9110892,361786.602690294,220,Hawthorn Center Head Start, ,DC500314371,Licensed Centers,12900 Frazho Rd,Warren,MI,Macomb,48089,No,Yes
+12759590.078084,508254.531496063,221,Huntington Woods Head Start, ,DC410362898,Licensed Centers,4334 Byron Center Ave.,Wyoming,MI,Kent,49509,No,Yes
+12654888.2575459,474073.925524935,222,Holland Day Care Center, ,DC700016771,Licensed Centers,77 West Eleventh,Holland,MI,Ottawa,49423,Yes,Yes
+12864315.4603018,168055.170275584,223,"Hughes, Michele",Michele Hughes,DF750374393,Registered Family Homes,562 E. State Street,Colon,MI,St. Joseph,49040,Yes,No
+13014406.8914042,908368.008202106,224,Harrison Community Action Preschool (CAPS), ,DC180335909,Licensed Centers,579 N Clare Ave,Harrison,MI,Clare,48625,No,Yes
+12173490.7979003,1588356.65354331,225,James Willis Early Childhood Center, ,DC220094087,Licensed Centers,245 N. Balsam Street,Kingsford,MI,Dickinson,49802,No,Yes
+13105374.8766404,277979.877296582,226,Hunt Elementary Head Start, ,DC380285439,Licensed Centers,1143 N. Brown St.,Jackson,MI,Jackson,49202,No,Yes
+13056277.5121391,1421487.91469817,227,Indian River ECC, ,DC160344731,Licensed Centers,4363 S. Straits Highway,Indian River,MI,Cheboygan,49749,No,Yes
+12722743.5285433,498874.419291332,228,Hudsonville Head Start, ,DC700378969,Licensed Centers,4950 32nd Ave,Hudsonville,MI,Ottawa,49426,No,Yes
+13284335.777231,413264.838910759,229,Hartland Head Start, ,DC470310267,Licensed Centers,9525 E. Highland Road,Howell,MI,Livingston,48843,No,Yes
+13341035.6315617,87029.8251312375,230,Head Start- Smith Rd. Elementary, ,DC580343453,Licensed Centers,1135 Smith Rd,Temperance,MI,Monroe,48182,No,Yes
+12874870.4074803,432678.735236228,231,Hastings Early Head Start, ,DC080251231,Licensed Centers,2049 N. Broadway,Hastings,MI,Barry,49058,Yes,Yes
+13340628.9379921,149610.834973753,232,Head Start-Ida Elementary, ,DC580343448,Licensed Centers,7900 Ida St.,Ida,MI,Monroe,48140,No,Yes
+12633215.617126,802151.16010499,233,Hart Migrant Head Start, ,DC640023072,Licensed Centers,2354 E Polk,Hart,MI,Oceana,49420,No,Yes
+12928517.8684383,528896.606955379,234,Ionia II Head Start, ,DC340021706,Licensed Centers,2191 Harwood Road,Ionia,MI,Ionia,48846,No,Yes
+13063152.1817585,426885.242782146,235,Harley Franks Head Start, ,DC330369059,Licensed Centers,2924 Newark Ave,Lansing,MI,Ingham,48911,No,Yes
+13113053.0055774,454507.867782146,236,Haslett Child Development Center, ,DC330016461,Licensed Centers,1546 Haslett Road,Haslett,MI,Ingham,48840,Yes,No
+13468263.5104987,558152.437335953,237,Imlay City ECC, ,DC440300097,Licensed Centers,Suite C 144 E. Third Street,Imlay City,MI,Lapeer,48444,No,Yes
+13080920.5918635,417773.243766397,238,Holt Head Start, ,DC330364254,Licensed Centers,4552 Spahr Ave,Holt,MI,Ingham,48842,No,Yes
+13419054.4862205,414362.504265085,239,"Henderson, Marcella",Marcella J Henderson,DF630273511,Registered Family Homes,232 Seward St.,Pontiac,MI,Oakland,48342,Yes,Yes
+13159739.4849081,698470.930774271,240,Hemlock SISD Saginaw County Head Start, ,DC730314755,Licensed Centers,200 W. Wilson,Hemlock,MI,Saginaw,48626,No,Yes
+13324427.4580053,472428.19520998,241,Holly Elementary Kids Program, ,DC630093919,Licensed Centers,801 E. Maple,Holly,MI,Oakland,48442,No,Yes
+13054544.3904199,150486.860236228,242,Hillsdale Head Start, ,DC300293821,Licensed Centers,55 Barnard St.,Hillsdale,MI,Hillsdale,49242,No,Yes
+13230198.0045932,707497.784120739,243,"Jackson-Simms, Felita",Felita Jackson-Simms,DF730266622,Registered Family Homes,2414 Mershon,Saginaw,MI,Saginaw,48602,Yes,No
+13341222.480315,276243.444225729,244,Henry Ford Early Learning Center, ,DC810017833,Licensed Centers,2440 E. Clark Rd,Ypsilanti,MI,Washtenaw,48198,No,Yes
+12829357.2956037,693440.112860888,245,Howard City Head Start, ,DC590336380,Licensed Centers,412 E Edgerton Street,Howard City,MI,Montcalm,49329,No,Yes
+13410403.9504593,296727.479986876,246,"Kimbrough, Sheryl A",Sheryl A Kimbrough,DF820282622,Registered Family Homes,301 Arlington Street,Inkster,MI,Wayne,48141,No,Yes
+13436925.2096457,698101.806758523,247,Kingston ECC, ,DC790292154,Licensed Centers,3644 Ross St,Kingston,MI,Tuscola,48741,No,Yes
+12088229.3881234,1949900.56266405,248,June Forest Child Development Center, ,DC070017511,Licensed Centers,211 Pennock Avenue,Baraga,MI,Baraga,49908,Yes,Yes
+12097400.8815617,1941478.32545932,249,L'Anse Child Development Center, ,DC070083033,Licensed Centers,303 Baraga Avenue,L'Anse,MI,Baraga,49946,No,Yes
+13077266.9435696,436641.602690294,250,Kid Time Child Dev Center, ,DC330074794,Licensed Centers,3320 S. Pennsylvania,Lansing,MI,Ingham,48910,No,Yes
+13449055.375,335346.639107615,251,L. A. C. C. Child Care Academy, ,DC820263055,Licensed Centers,16619 Wyoming Street,Detroit,MI,Wayne,48221,Yes,No
+12777248.1850394,295249.003608927,252,KRESA West Campus Head Start, ,DC390343652,Licensed Centers,4606 Croyden Ave,Kalamazoo,MI,Kalamazoo,49006,No,Yes
+11859215.062336,1766364.58103675,253,Lac Vieux Desert Head Start and Early Head Start, ,TribalC1198462,Licensed Centers,"PO Box 249, 23950 Pow-Wow Trail",Watersmeet,MI,Gogebic,49969,Yes,Yes
+13428317.5006562,274316.771653548,254,Johnson Early Head Start, ,DC820378645,Licensed Centers,20701 Wohlfiel,Taylor,MI,Wayne,48180,Yes,Yes
+13489191.4278215,358111.244094491,255,Kennedy Head Start Room, ,DC500344788,Licensed Centers,11333 Kaltz,Warren,MI,Macomb,48089,No,Yes
+13421568.5551181,846191.984908134,256,Laker ECC, ,DC320251435,Licensed Centers,6436 Pigeon,Pigeon,MI,Huron,48755,No,Yes
+13124091.1929134,550820.089238852,257,Kids Early Education Zone, ,DC780378698,Licensed Centers,732 Mabbit Road,Ovid,MI,Shiawassee,48866,No,Yes
+13098625.3454724,1737876.88320211,258,Kinross Head Start, ,DC170068705,Licensed Centers,4730 W Osborn Place,Kincheloe,MI,Chippewa,49752,No,Yes
+12634898.3536745,222000.245406821,259,Keeler Migrant Head Start, ,DC800249670,Licensed Centers,89210 County Road 687,Hartford,MI,Van Buren,49057,No,Yes
+12753054.1453412,627080.600065619,260,Kent City Migrant Head Start, ,DC410091780,Licensed Centers,3385 Rusco Road,Kent City,MI,Kent,49330,No,Yes
+12115808.9097769,2100681.59284776,261,Lake Linden Preschool, ,DC310250364,Licensed Centers,601 Calumet Street,Lake Linden,MI,Houghton,49945,No,Yes
+13458203.3891076,374762.280183733,262,Lamphere Early Childhood Center, ,DC630345639,Licensed Centers,31201 Dorchester,Madison Heights,MI,Oakland,48071,No,Yes
+13324383.6410761,268514.593175858,263,"Kersey, Kesha",Kesha Kersey,DF810301766,Registered Family Homes,436 Orchard,Ypsilanti,MI,Washtenaw,48197,Yes,No
+13015418.3595801,1478543.38517061,264,L T B B Head Start, ,DC240095986,Licensed Centers,233 Tindle Street,Pellston,MI,Emmet,49769,Yes,Yes
+13321071.6994751,572783.261811018,265,Kearsley Head Start, ,DC250314340,Licensed Centers,Buffy Elementary 4235 Crosby St,Flint,MI,Genesee,48506,Yes,Yes
+13347368.3569554,607959.784120739,266,Lakeville Head Start, ,DC250303594,Licensed Centers,131 Woodward St.,Otisville,MI,Genesee,48463,No,Yes
+13449027.8270997,348112.625328079,267,Kendall Care Daycare,Crystal Wartley,DF630377027,Registered Family Homes,21025 Glen Lodge Rd.,Ferndale,MI,Oakland,48220,Yes,Yes
+,,268,Adrian Headstart at Hudson, ,DC460022548,Licensed Centers,746 N. Maple Grove,Hudson,MI,Lenawee,49247,No,Yes
+13046037.4291339,178715.748031497,269,Jonesville Early Childhood Center, ,DC300343645,Licensed Centers,136 Concord Road,Jonesville,MI,Hillsdale,49250,No,Yes
+12882986.6410761,706541.462598428,270,Lakeview Head Start, ,DC590362902,Licensed Centers,9497 Paden Road,Lakeview,MI,Montcalm,48850,No,Yes
+12911102.769357,1178986.36220473,271,Kalkaska Mem Intergen Center, ,DC400093874,Licensed Centers,419 S. Coral Street,Kalkaska,MI,Kalkaska,49646,No,Yes
+13421510.7066929,231824.721456692,272,"Leach, Kristina D",Kristina D Leach,DG820277403,Licensed Group Homes,23919 Thorn Drive,Brownstown,MI,Wayne,48134,Yes,No
+13496554.3730315,327759.163713917,273,Lil Brilliant Mindz, ,DC820379932,Licensed Centers,11457 Shoemaker,Detroit,MI,Wayne,48213,Yes,No
+13471087.2664042,323268.223753273,274,Little Scholars CDC, ,DC820368456,Licensed Centers,8726 Woodward,Detroit,MI,Wayne,48202,Yes,No
+13264437.3024934,471568.861876637,275,Linden Head Start, ,DC250303595,Licensed Centers,8483 W. Silver Lake Rd.,Linden,MI,Genesee,48451,Yes,Yes
+13421705.2503281,330049.582677171,276,Little Scholars CDC, ,DC820368191,Licensed Centers,22420 Fenkell,Detroit,MI,Wayne,48223,Yes,No
+13430854.8677821,331764.385826766,277,"Little Scholars Child Development Center,LLC", ,DC820258877,Licensed Centers,19000 Grand River,Detroit,MI,Wayne,48223,Yes,No
+13068200.0705381,459810.074146986,278,Little Blessings Childcare Center, ,DC330337996,Licensed Centers,2930 North Grand River,Lansing,MI,Ingham,48906,Yes,No
+13068566.3638451,460484.328412071,279,Little Blessings Licensed Day Care,Dianne & Hartwell,DG330246960,Licensed Group Homes,3025 Cynwood,Lansing,MI,Ingham,48906,Yes,No
+13447282.0813648,270584.990157485,280,Lincoln Park Head Start, ,DC820277371,Licensed Centers,3320 Electric,Lincoln Park,MI,Wayne,48146,No,Yes
+13393264.2168635,325964.376968503,281,Livonia Head Start, ,DC820364127,Licensed Centers,32765 Lyndon,Livonia,MI,Wayne,48154,No,Yes
+13443203.3474409,303481.772637799,282,M & M Head Start, ,DC820291786,Licensed Centers,5273 Kenilworth,Dearborn,MI,Wayne,48126,No,Yes
+13449014.0784121,282695.523622051,283,Mark Twain Elementary and Middle School, ,DC820365925,Licensed Centers,12800 Visger Street,Detroit,MI,Wayne,48217,No,Yes
+13389648.3448163,270032.328740165,284,"MacFarlane, Shelley A",Shelley Anne Macfarlane,DG820094435,Licensed Group Homes,9265 Washington,Romulus,MI,Wayne,48174,Yes,No
+12641749.6866798,1630284.71030183,285,Manistique Early Childhood Center, ,DC770016821,Licensed Centers,426 Chippewa Street,Manistique,MI,Schoolcraft,49854,Yes,Yes
+12897808.2119423,136892.081036747,286,Lots of Tots Daycare, ,DC120273725,Licensed Centers,125 N Matteson Street,Bronson,MI,Branch,49028,Yes,No
+12656131.2870735,465410.396653548,287,Maplewood Head Start, ,DC030364457,Licensed Centers,925 Central Ave,Holland,MI,Allegan,49423,No,Yes
+13503466.914042,411157.26115486,288,Macomb Inter. School Dist. Head Start Rm 105, ,DC500264098,Licensed Centers,44001 Garfield Road,Clinton Township,MI,Macomb,48038,No,Yes
+12105763.2900262,2117558.03576115,289,Little Gippers Child Development Center, ,DC310022834,Licensed Centers,56264 US Highway 41,Calumet,MI,Houghton,49913,Yes,No
+12073922.2808399,2073587.00065617,290,Little Red School House, ,DC310082834,Licensed Centers,300 Sharon Avenue,Houghton,MI,Houghton,49931,Yes,Yes
+13110259.2808399,288280.345144361,291,Lyle Torrant Center Head Start, ,DC380018517,Licensed Centers,1175 W. Parnall Road,Jackson,MI,Jackson,49201,No,Yes
+12942346.6302494,1240367.04757218,292,Mancelona Day Care Center, ,DC050022850,Licensed Centers,112 Saint Johns Street,Mancelona,MI,Antrim,49659,Yes,Yes
+13234919.3011811,405872.079396322,293,LESA Early Childhood Programs, ,DC470291968,Licensed Centers,1425 W. Grand River,Howell,MI,Livingston,48843,No,Yes
+12779586.4832677,1097781.6187664,294,Little Bear Child Care, ,DC830379713,Licensed Centers,512 W Wexford Ave,Buckley,MI,Wexford,49620,Yes,No
+13464337.5072179,676827.112860888,295,Marlette Head Start, ,DC760316621,Licensed Centers,2231 VanDyke Road,Marlette,MI,Sanilac,48453,No,Yes
+13316415.4097769,546847.952427819,296,Manley Early Childhood Center, ,DC250261496,Licensed Centers,3002 Farley Street,Flint,MI,Genesee,48507,No,Yes
+13071314.5757874,454218.005905509,297,Maplehill Head Start, ,DC330017785,Licensed Centers,Maple Hill School 640 Maplehill Avenue,Lansing,MI,Ingham,48910,No,Yes
+13064685.7001312,432560.896981627,298,LaRoy Froh Head Start, ,DC330292743,Licensed Centers,2400 Reo Rd.,Lansing,MI,Ingham,48911,No,Yes
+13064164.0321522,436485.271653548,299,LMTS  Child Care Center, ,DC330261459,Licensed Centers,2645 W. Holmes,Lansing,MI,Ingham,48911,Yes,No
+13104576.4242126,348675.005905509,300,Leslie Middle School Preschool, ,DC330366883,Licensed Centers,400 Kimball,Leslie,MI,Ingham,49251,No,Yes
+13413098.7923228,565110.461942256,301,Lapeer Early Head Start, ,DC440306936,Licensed Centers,1559 Imlay City Rd.,Lapeer,MI,Lapeer,48446,Yes,No
+13393758.9081365,560634.854330704,302,Lapeer ECC, ,DC440305116,Licensed Centers,3333 John Conley Dr.,Lapeer,MI,Lapeer,48446,No,Yes
+13365467.1824147,411498.966863513,303,Leapfrog Christian Daycare, ,DC630359678,Licensed Centers,915 Round Lake Road,White Lake,MI,Oakland,48386,Yes,Yes
+12916868.4993438,949485.057086617,304,Marion Head Start, ,DC670309468,Licensed Centers,510 W. Main,Marion,MI,Osceola,49665,No,Yes
+13017801.2404856,199118.712598428,305,Litchfield Head Start, ,DC300291971,Licensed Centers,210 Williams St.,Litchfield,MI,Hillsdale,49252,No,Yes
+13356684.5170604,462495.840223104,306,Little Angels Daycare,Donna Rambeau,DG630272152,Licensed Group Homes,8710 Shore Drive,Davisburg,MI,Oakland,48350,Yes,Yes
+12578233.3444882,897581.344816267,307,Ludington Area FiveCAP Head Start Center, ,DC530296521,Licensed Centers,1115 S. Madison Street,Ludington,MI,Mason,49431,No,Yes
+12612505.4553806,1006627.39829396,308,Manistee Child Development Ctr, ,DC510022753,Licensed Centers,265 First Street,Manistee,MI,Manistee,49660,No,Yes
+13213766.3392389,236525.603018373,309,Manchester Early Childhood Center, ,DC810267000,Licensed Centers,410 City Road,Manchester,MI,Washtenaw,48158,No,Yes
+,,310,Benodjenh Center, ,TribalC1175823,Licensed Centers,2600 N Strongheart Way,Peshawbestown,MI,Leelanau,49682,Yes,Yes
+,,311,Big Rapids/Ferris ECC, ,DC540082336,Licensed Centers,Bishop Hall 101,Big Rapids,MI,Mecosta,49307,No,Yes
+,,312,Blessed Beginnings Daycare,Jennifer Tiggs,DF820349359,Registered Family Homes,50375 I-94 S. Service Dr.,Belleville,MI,Wayne,48111,Yes,No
+,,313,Branch Co Head Start Bronson, ,DC120347527,Licensed Centers,Chicago St. School 501 E. Chicago Street,Bronson,MI,Branch,49028,No,Yes
+,,314,Branch Co. Head Start Girard, ,DC120070770,Licensed Centers,1001 School Drive,Coldwater,MI,Branch,49036,No,Yes
+,,315,Brimley Head Start, ,DC170017180,Licensed Centers,6769 W. M-221,Brimley,MI,Chippewa,49715,No,Yes
+,,316,Bussey Ctr Early Childhood Educ, ,DC630017841,Licensed Centers,19080 W. Twelve Mile Road,Southfield,MI,Oakland,48076,No,Yes
+,,317,Capac Head Start and Portable   F, ,DC740074130,Licensed Centers,Portable A 403 N. Glassford,Capac,MI,St. Clair,48014,No,Yes
+,,318,Chesaning Middle SISD Saginaw Co. Head Start, ,DC730336218,Licensed Centers,431 N. Fourth Streeet,Chesaning,MI,Saginaw,48616,No,Yes
+,,319,CMU Child Development & Learning Lab, ,DC370301802,Licensed Centers,146  EHS Building,Mount Pleasant,MI,Isabella,48859,No,Yes
+,,320,"Copenhaver, Lauren",Lauren Copenhaver,DG750337635,Licensed Group Homes,12021 M216,Marcellus,MI,St. Joseph,49067,Yes,No
+,,321,Crystal Lake Head Start, ,DC590338891,Licensed Centers,217 W Park,Crystal,MI,Montcalm,48818,No,Yes
+,,322,Delton Early Head Start, ,DC080251329,Licensed Centers,10085 S. Wall Lake Road,Delton,MI,Barry,49046,Yes,Yes
+,,323,Dollar Bay Great Explorations, ,DC310262621,Licensed Centers,48475 Maple Drive,Dollar Bay,MI,Houghton,49922,No,Yes
+,,324,Dollar Bay Preschool, ,DC310020432,Licensed Centers,23051 Elm Avenue,Dollar Bay,MI,Houghton,49922,No,Yes
+,,325,Educational Child Care Center, ,DC330019647,Licensed Centers,1715 W Malcolm X Street,Lansing,MI,Ingham,48915,Yes,No
+,,326,Genesee Head Start, ,DC250020303,Licensed Centers,7347 N. Genesee Road,Genesee,MI,Genesee,48437,Yes,Yes
+,,327,Grand Blanc Head Start, ,DC250314339,Licensed Centers,McGarth Elem. G-5288 Todd St,Grand Blanc,MI,Genesee,48439,Yes,Yes
+,,328,Greenville Head Start, ,DC590295110,Licensed Centers,906 Oak Drive - Turk Lake,Greenville,MI,Montcalm,48838,No,Yes
+,,329,Hale ECC, ,DC350284217,Licensed Centers,311 N. Washington,Hale,MI,Iosco,48739,No,Yes
+,,330,Hannahville, ,TribalC1178273,Licensed Centers,N14911 Hannahville R B-1,Wilson,MI,Menominee,49896,Yes,Yes
+,,331,Henry Head Start, ,DC410272478,Licensed Centers,"551 Henry Avenue, SE",Grand Rapids,MI,Kent,49503,No,Yes
+,,332,Hesperia Area Child Dev Center, ,DC620022810,Licensed Centers,M-20 Route 2 5210 One Mile Road,Fremont,MI,Newaygo,49412,No,Yes
+,,333,Iron River Head Start Center, ,DC360259662,Licensed Centers,3257 E. US-2,Iron River,MI,Iron,49935,No,Yes
+,,334,Jacobetti Head Start Center, ,DC520072112,Licensed Centers,Nmu Campus,Marquette,MI,Marquette,49855,No,Yes
+,,335,Johannesburg ECC, ,DC690383871,Licensed Centers,10854 M-32,Johannesburg,MI,Otsego,49751,No,Yes
+,,336,"Kendrick, Malana",Malana Kendrick,DF410284487,Registered Family Homes,"4776 Crestline Court, SW",Wyoming,MI,Kent,49519,Yes,No
+,,337,Lakeland Head Start, ,DC470330859,Licensed Centers,9501 Pettys Drive,Lakeland,MI,Livingston,48143,No,Yes
+,,338,Menominee Early Childhood Center, ,DC550016626,Licensed Centers,Evergreen School N 1329 US Hwy 41,Menominee,MI,Menominee,49858,Yes,Yes
+,,339,Michigan Child Care Center Inc, ,DC730016797,Licensed Centers,511 S Center,Saginaw,MI,Saginaw,48638,No,Yes
+,,340,Michigan Child Care Centers Inc, ,DC730017548,Licensed Centers,St Johns Lutheran 915 Federal,Saginaw,MI,Saginaw,48601,No,Yes
+13163010.6246719,777742.652230978,341,Midland 5 Head Start, ,DC560363554,Licensed Centers,915 E. Sugnet Road,Midland,MI,Midland,48642,No,Yes
+13116334.6062992,795695.972112864,342,Midland/Meridian Head Start, ,DC560284218,Licensed Centers,2534 N West River Rd,Sanford,MI,Midland,48657,No,Yes
+13393527.3618766,669340.7316273,343,Mayville Head Start, ,DC790284219,Licensed Centers,106 Orchard St,Mayville,MI,Tuscola,48744,No,Yes
+13484814.4852362,314863.890419945,344,Matrix Head Start-St. Vincent, ,DC820363599,Licensed Centers,3000 Gratiot,Detroit,MI,Wayne,48207,No,Yes
+13347811.5387139,650007.433070868,345,Millington Head Start, ,DC790364351,Licensed Centers,8537 Gleason Street,Millington,MI,Tuscola,48746,No,Yes
+13497343.3956693,328240.842519686,346,Matrix Head Start-JBN Samaritan, ,DC820363606,Licensed Centers,5555 Conner,Detroit,MI,Wayne,48213,Yes,Yes
+13506207.7729659,323109.912073493,347,Matrix Head Start-Lakewood Manor, ,DC820363595,Licensed Centers,14200 Kercheval,Detroit,MI,Wayne,48215,Yes,Yes
+13500504.9963911,318971.16010499,348,Matrix Head Start-Pathways, ,DC820363605,Licensed Centers,11322 E. Jefferson,Detroit,MI,Wayne,48214,Yes,No
+13512565.8887795,339562.056102365,349,Matrix Head Start-Salem, ,DC820363596,Licensed Centers,21230 Moross,Detroit,MI,Wayne,48236,No,Yes
+13499196.4911417,341043.49868767,350,Mt. Calvery Lutheran, ,DC820286691,Licensed Centers,17100 Chalmers,Detroit,MI,Wayne,48205,No,Yes
+13494849.2703412,329634.350065619,351,Matrix Head Start-Care Village, ,DC820363598,Licensed Centers,11148 Harper,Detroit,MI,Wayne,48213,Yes,Yes
+13463767.3195538,315019.069225729,352,Matrix Head Start-Tabenacle, ,DC820363593,Licensed Centers,2080 W. Grand BLVD,Detroit,MI,Wayne,48208,Yes,Yes
+12836079.6059711,760117.770669296,353,Morley Stanwood Head Start/GSRP, ,DC540363502,Licensed Centers,156 N. Front Street,Stanwood,MI,Mecosta,49346,No,Yes
+13060088.937664,461797.762139112,354,Mt Vernon Head Start, ,DC330022973,Licensed Centers,3338 N Waverly,Lansing,MI,Ingham,48906,No,Yes
+13490486.1263123,327086.786089242,355,Matrix Head Start-Infinity, ,DC820363604,Licensed Centers,9208 Gratiot,Detroit,MI,Wayne,48213,No,Yes
+13490122.0836614,326307.370406821,356,Matrix Head Start-Infinity II, ,DC820363608,Licensed Centers,8900 Gratiot,Detroit,MI,Wayne,48213,Yes,Yes
+13452585.0032808,337816.379921258,357,"Martin, Carmen J",Carmen Jeaneen Martin,DF820092957,Registered Family Homes,17404 Pennington,Detroit,MI,Wayne,48221,Yes,No
+13444462.2641076,325051.845144361,358,Metro Center, ,DC820023213,Licensed Centers,13400 Schaefer,Detroit,MI,Wayne,48227,No,Yes
+13446118.0538058,335586.621062994,359,Martin Luther King Jr Day Care, ,DC820016967,Licensed Centers,16827 Appoline,Detroit,MI,Wayne,48235,Yes,No
+12960294.1158136,285228.893700793,360,Marshall Head Start, ,DC130317163,Licensed Centers,701 N Linden Street,Marshall,MI,Calhoun,49068,No,Yes
+13174018.4724409,488863.692585304,361,Morrice Elementary School, ,DC780268815,Licensed Centers,111 E. Mason St.,Morrice,MI,Shiawassee,48857,No,Yes
+13170064.9862205,766626.987532809,362,Midland Longview Head Start, ,DC560343200,Licensed Centers,337 Lemke Street,Midland,MI,Midland,48642,No,Yes
+13463107.5328084,309196.669619426,363,Matrix Head Start Word of Truth Early, ,DC820378213,Licensed Centers,4914 Lovett,Detroit,MI,Wayne,48210,Yes,No
+13145851.6148294,769867.556430444,364,Midland ECC #1, ,DC560020048,Licensed Centers,Grace Bible Church 2828 Isabella,Midland,MI,Midland,48640,No,Yes
+13489191.4278215,358111.244094491,365,Morningstar Early Head Start, ,DC500349017,Licensed Centers,11333 Kaltz,Warren,MI,Macomb,48089,Yes,No
+13224711.0262467,518420.274606302,366,"My Great Beginnings Child Development Center, Inc.", ,DC780251456,Licensed Centers,5214 S. Durand Rd.,Durand,MI,Shiawassee,48429,Yes,No
+13147763.156168,1792458.80872704,367,"McKenzie, Ann",Ann Mckenzie,DG170097626,Licensed Group Homes,6330 South Nicolet,Sault Ste. Marie,MI,Chippewa,49783,No,Yes
+13469899.9356955,369178.974081367,368,"Nasir, Ghada",Ghada Nasir,DF500370620,Registered Family Homes,29023 Merrick Avenue,Warren,MI,Macomb,48092,Yes,No
+12805701.2585302,155282.678149611,369,"Mills-Sheteron Christine and Sheteron, Emily",Christine and Mills-Sheteron,DG750093244,Licensed Group Homes,230 Birkhold,Centreville,MI,St. Joseph,49032,Yes,No
+13184762.3533465,1175429.03969817,370,Mio ECC, ,DC680021925,Licensed Centers,1539 N Mt Tom Rd,Mio,MI,Oscoda,48647,No,Yes
+13181361.6279528,1149109.76115486,371,Mio Elementary ECC, ,DC680344571,Licensed Centers,1110 W. 8th Street,Mio,MI,Oscoda,48647,No,Yes
+13113344.0111549,270168.475721791,372,McCulloch Elementary School, ,DC380326904,Licensed Centers,216 E. Biddle Street,Jackson,MI,Jackson,49203,No,Yes
+13017247.746063,798153.916666672,373,Mt Pleasant Head Start, ,DC370309820,Licensed Centers,3771 N. Mission Rd.,Rosebush,MI,Isabella,48878,No,Yes
+12982367.0059055,1408580.14698163,374,Munchkin Manor Webcam Daycare, ,DC240358194,Licensed Centers,1040 Cedar Valley Road,Petoskey,MI,Emmet,49770,Yes,Yes
+12894115.687664,774778.486548558,375,Mecosta Remus ECC, ,DC540314113,Licensed Centers,555 W. Main Street,Mecosta,MI,Mecosta,49332,No,Yes
+13302660.4130577,594058.614173234,376,Mt Morris Head Start - Pinehurst, ,DC250314344,Licensed Centers,Pinehurst Elem. 1013 Pinehurst St,Mount Morris,MI,Genesee,48458,Yes,Yes
+13249695.0954724,611666.798228353,377,Montrose Early Head Start, ,DC250379149,Licensed Centers,150 Saginaw Street,Montrose,MI,Genesee,48457,Yes,No
+13250699.8100394,612157.575459316,378,Montrose Head Start, ,DC250314338,Licensed Centers,Carter Elem. 200 Park St,Montrose,MI,Genesee,48457,No,Yes
+13300346.7503281,542284.59547244,379,Neithercut Community School, ,DC250020276,Licensed Centers,2010 Crestbrook,Flint,MI,Genesee,48507,No,Yes
+12581152.3484252,801813.63057743,380,Mears Migrant Early Head Start, ,DC640307904,Licensed Centers,5527 W. Fox Rd.,Mears,MI,Oceana,49436,Yes,No
+12594912.0958005,708261.269028872,381,Montague Area Childhood Center (MACC), ,DC610313914,Licensed Centers,9151 Dicey,Montague,MI,Muskegon,49437,No,Yes
+13132223.6023622,695663.447506562,382,Merrill Elementary SISD Saginaw County Head Start, ,DC730284094,Licensed Centers,345 W. Alice,Merrill,MI,Saginaw,48614,No,Yes
+13186224.5141076,751000.58989501,383,Michigan Child Care Centers Inc, ,DC730021530,Licensed Centers,8800 Carter Road,Freeland,MI,Saginaw,48623,No,Yes
+12992897.9389764,852091.678149611,384,MMCAA Farwell Preschool, ,DC180314320,Licensed Centers,468 E. Ohio,Farwell,MI,Clare,48622,No,Yes
+12690871.5944882,1049539.22801837,385,N Manistee Child Dev Center, ,DC510022246,Licensed Centers,8850 N Highbridge Rd,Kaleva,MI,Manistee,49645,No,Yes
+13363548.8448163,283245.604986876,386,Ply/Can H S Sheldon School, ,DC820095404,Licensed Centers,44649 Michigan Ave,Canton,MI,Wayne,48188,No,Yes
+13258351.9107611,929226.884842515,387,Omer ECC, ,DC060023232,Licensed Centers,131 George St,Omer,MI,Arenac,48749,No,Yes
+13428849.8572835,317188.146653548,388,New Westside Central, ,DC820065071,Licensed Centers,19840 W Chicago,Detroit,MI,Wayne,48228,Yes,No
+13229994.5754593,858813.339238852,389,Pinconning ECC, ,DC090314551,Licensed Centers,204 S. Manitou,Pinconning,MI,Bay,48650,No,Yes
+13382840.7473753,499504.819225729,390,Oakwood Elementary, ,DC630343192,Licensed Centers,2839 Oakwood Rd,Ortonville,MI,Oakland,48462,No,Yes
+13452224.2427821,341265.788713917,391,"Parks, Lorna G",Lorna G Parks,DF820293707,Registered Family Homes,18911 Pennington Drive,Detroit,MI,Wayne,48221,Yes,No
+12731068.6830709,1163166.34973754,392,Paul Oliver Enrichment and Preschool of Lake Ann, ,DC100292396,Licensed Centers,19375 Bronson Lake Road,Interlochen,MI,Benzie,49643,No,Yes
+12693535.3408793,1157141.93372704,393,NMCAA Preschool - Platte River, ,DC100314873,Licensed Centers,11434 Main Street,Honor,MI,Benzie,49640,No,Yes
+12673356.046916,1142258.97670604,394,NMCAA Preschool - Crystal Lake, ,DC100284475,Licensed Centers,7048 Severance,Benzonia,MI,Benzie,49616,No,Yes
+13450596.6686352,315486.661745414,395,Pencil Palace Pre School Cntr, ,DC820016956,Licensed Centers,8800 Joy Rd,Detroit,MI,Wayne,48204,Yes,Yes
+12933945.7877297,1000814.86482939,396,NMCAA Preschool - Falmouth, ,DC570336281,Licensed Centers,219 E. Prosper Rd,Falmouth,MI,Missaukee,49632,No,Yes
+12901308.7870735,1026626.29429133,397,NMCAA Preschool - Missaukee, ,DC570016637,Licensed Centers,1751 S Morey Road,Lake City,MI,Missaukee,49651,No,Yes
+12803413.453084,296308.517388448,398,Northeastern Head Start, ,DC390343820,Licensed Centers,2433 Gertrude,Kalamazoo,MI,Kalamazoo,49048,No,Yes
+12792280.5882546,305015.729986876,399,Parchment Northwood Head Start, ,DC390344912,Licensed Centers,600 Edison St.,Kalamazoo,MI,Kalamazoo,49004,No,Yes
+13382873.6095801,1067601.45209974,400,Oscoda ECC/GSRP, ,DC350333099,Licensed Centers,3630 E. River Road,Oscoda,MI,Iosco,48750,No,Yes
+13451529.9127297,282616.902230978,401,New Paradigm Collegiate Academy, ,DC820370216,Licensed Centers,2450 Beatrice,Detroit,MI,Wayne,48217,No,Yes
+13460046.4524278,296679.730971128,402,Phoenix Multicultural Academy, ,DC820374880,Licensed Centers,7735 Lane St,Detroit,MI,Wayne,48209,No,Yes
+13482877.8720472,892152.100393698,403,North Huron/Kinde ECC, ,DC320022862,Licensed Centers,69 Michigan St,Kinde,MI,Huron,48445,No,Yes
+13141737.0265748,475560.445866138,404,Perry Head Start, ,DC780314081,Licensed Centers,7320 Beard Road,Perry,MI,Shiawassee,48872,No,Yes
+13542092.7916667,454539.654199481,405,"New Haven Head Start, The Yellow Rm", ,DC500363671,Licensed Centers,30375 Clark Street,New Haven,MI,Macomb,48048,No,Yes
+11887852.2086614,1994737.90682414,406,Ontonagon Head Start, ,DC660308019,Licensed Centers,701 Parker Ave.,Ontonagon,MI,Ontonagon,49953,Yes,Yes
+12710997.5488845,267969.602034122,407,Orr Family Child Care,Lacey Orr,DF800381934,Registered Family Homes,726 N. Kalamazoo St,Paw Paw,MI,Van Buren,49079,Yes,No
+12707315.3566273,267112.145013124,408,Paw Paw Head Start, ,DC800378939,Licensed Centers,512 Northh Street,Paw Paw,MI,Van Buren,49079,No,Yes
+12726868.8746719,372108.69520998,409,Pine Trails Head Start, ,DC030285574,Licensed Centers,2950 Center,Allegan,MI,Allegan,49010,No,Yes
+12779320.9947506,354671.212270334,410,Plainwell Head Start, ,DC030250859,Licensed Centers,623 10th Street,Plainwell,MI,Allegan,49080,Yes,Yes
+12273651.800853,1833350.4652231,411,NICE Start and Kids Club, ,DC520082290,Licensed Centers,350 Aspen Ridge Road,Ishpeming,MI,Marquette,49849,No,Yes
+12802717.285105,1187172.05708662,412,NMCAA Preschool - Traverse Heights, ,DC280304810,Licensed Centers,933 Rose Street,Traverse City,MI,Grand Traverse,49686,No,Yes
+12787777.675853,1159468.57841207,413,NMCAA Preschool Chums Plaza, ,DC280364666,Licensed Centers,847 US 31 S,Traverse City,MI,Grand Traverse,49684,No,Yes
+13325724.9317585,267816.514435694,414,Perry Early Learning Center, ,DC810018933,Licensed Centers,550 Perry St,Ypsilanti,MI,Washtenaw,48197,No,Yes
+12220099.2506562,1580388.14730971,415,Norway-Vulcan Head Start, ,DC220330598,Licensed Centers,300 Section Street,Norway,MI,Dickinson,49870,Yes,Yes
+13117890.1161417,278553.517388448,416,Northeast Elementary School, ,DC380299040,Licensed Centers,1024 Fleming St.,Jackson,MI,Jackson,49202,No,Yes
+12834243.4662074,1772764.39238845,417,Newberry Head Start, ,DC480305179,Licensed Centers,207 Newberry Ave.,Newberry,MI,Luce,49868,No,Yes
+12890311.3782808,1302075.57906824,418,NMCAA Preschool - Central Lake, ,DC050273254,Licensed Centers,PO Box 128 8209 W Davis St,Central Lake,MI,Antrim,49622,No,Yes
+12943678.4796588,1240985.95242782,419,NMCAA Preschool - Mancelona, ,DC050016327,Licensed Centers,201 East State St,Mancelona,MI,Antrim,49659,No,Yes
+12966742.355643,1405999.48753281,420,NMCAA Preschool - Petoskey, ,DC240260553,Licensed Centers,1515 Cemetary Rd,Petoskey,MI,Emmet,49770,No,Yes
+13014765.7060367,1438119.914042,421,NMCAA Preschool - Alanson, ,DC240292494,Licensed Centers,7400 North Street,Alanson,MI,Emmet,49706,No,Yes
+13054372.0095144,1025422.30610237,422,NMCAA Preschool - Prudenville, ,DC720020770,Licensed Centers,1015 Short Dr,Prudenville,MI,Roscommon,48651,No,Yes
+13273467.640748,356047.635498688,423,"Ognian, Kelley",Kelley Ognian,DF470309258,Registered Family Homes,8740 Solitude Drive,Brighton,MI,Livingston,48116,No,Yes
+12807653.8287402,1193435.19455381,424,NMC Childrens Learning Center, ,DC280363708,Licensed Centers,1881 College Drive,Traverse City,MI,Grand Traverse,49684,No,Yes
+12804115.1729003,1191331.15583989,425,NMCAA Preschool - Oak Park, ,DC280284472,Licensed Centers,301 S. Garfield Avenue,Traverse City,MI,Grand Traverse,49686,No,Yes
+13072065.9124016,542307.743766397,426,Oakview South GSRP & Adventure Club, ,DC190342405,Licensed Centers,1400 S. Clinton,St. Johns,MI,Clinton,48879,No,Yes
+13297135.9747375,574830.834645674,427,New Standard Head Start, ,DC250363585,Licensed Centers,2040 W Carpenter Rd,Flint,MI,Genesee,48505,No,Yes
+12771825.4340551,1061889.85334645,428,NMCAA Preschool - Mesick, ,DC830020411,Licensed Centers,210 Mesick Ave P O Box 275,Mesick,MI,Wexford,49668,No,Yes
+12844538.6538714,1010007.9550525,429,NMCAA Preschool - Cadillac Marty Paul, ,DC830017584,Licensed Centers,1640 Marty Paul,Cadillac,MI,Wexford,49601,No,Yes
+12854947.8156168,1005579.49343832,430,NMCAA - Lincoln St Early Head Start and Head Start, ,DC830341932,Licensed Centers,716 Lincoln,Cadillac,MI,Wexford,49601,No,Yes
+12844284.8356299,1003727.73425196,431,NMCAA Preschool - Kenwood, ,DC830314884,Licensed Centers,1700 Chestnut Street,Cadillac,MI,Wexford,49601,No,Yes
+12853778.2568898,1060762.86220473,432,NMCAA Preschool - Manton, ,DC830020191,Licensed Centers,110 Fifth St,Manton,MI,Wexford,49663,No,Yes
+12917989.2677165,574313.734908134,433,Orleans Head Start, ,DC340378550,Licensed Centers,5827 Orleans,Orleans,MI,Ionia,48865,No,Yes
+12795114.4642389,1126826.13320211,434,NMCAA Preschool - Hannah, ,DC280020801,Licensed Centers,2912 W M 113,Kingsley,MI,Grand Traverse,49649,No,Yes
+12595982.6692913,766771.279855639,435,New Era Migrant Head Start, ,DC640249847,Licensed Centers,3656 W. Grant,New Era,MI,Oceana,49446,No,Yes
+13071447.4307743,454217.700459316,436,Pine Street Head Start, ,DC330310421,Licensed Centers,600 W. Maple,Lansing,MI,Ingham,48906,No,Yes
+12793005.8628609,257866.251640424,437,Portage Head Start, ,DC390289693,Licensed Centers,325 E. Centre Street,Portage,MI,Kalamazoo,49002,No,Yes
+13410700.8963255,418897.354658797,438,OLHSA Pontiac Head Start, ,DC630073091,Licensed Centers,196 Cesar E. Chavez,Pontiac,MI,Oakland,48343,Yes,Yes
+12634826.8484252,636968.795275584,439,Orchard View Community Ed. Center, ,DC610294146,Licensed Centers,1765 Ada Ave.,Muskegon,MI,Muskegon,49442,No,Yes
+12836920.9685039,949129.833989501,440,Pine River ECC, ,DC670344733,Licensed Centers,107 Bremer Street,Tustin,MI,Osceola,49688,No,Yes
+13465695.7939633,398493.122047246,441,OLHSA Troy Head Start, ,DC630284270,Licensed Centers,4600 Forsyth,Troy,MI,Oakland,48085,No,Yes
+13318514.1459974,477404.083989501,442,Patterson Kids Program, ,DC630019017,Licensed Centers,3231 Grange Hall Rd,Holly,MI,Oakland,48442,No,Yes
+13094507.2326116,132363.020341203,443,Pittsford Elementary Head Start, ,DC300087557,Licensed Centers,9304 Hamilton Street,Pittsford,MI,Hillsdale,49271,No,Yes
+13445006.2900262,353582.674212605,444,Oak Park Head Start, ,DC630310212,Licensed Centers,23401 Morton,Oak Park,MI,Oakland,48237,No,Yes
+12956581.8497375,1353313.25557743,445,NMCAA Preschool - Boyne, ,DC150262066,Licensed Centers,321 S. Park St.,Boyne City,MI,Charlevoix,49712,No,Yes
+12928153.8743438,1333893.55971129,446,NMCAA Preschool - East Jordan Elementary, ,DC150309353,Licensed Centers,304 Fourth Street,East Jordan,MI,Charlevoix,49727,No,Yes
+12893745.375,1390725.62598425,447,NMCAA Preschool - Charlevoix, ,DC150346693,Licensed Centers,108 E. Garfield,Charlevoix,MI,Charlevoix,49720,No,Yes
+12908177.4350394,1182547.91896325,448,NMCAA Preschool - Kalkaska St, ,DC400346843,Licensed Centers,1700 W Kalkaska St,Kalkaska,MI,Kalkaska,49646,No,Yes
+13477086.7985564,342940.40452756,449,Quality Child Care And Learning Center I, ,DC820329000,Licensed Centers,4719 East 7 Mile Road,Detroit,MI,Wayne,48234,Yes,No
+13432262.2414698,314697.366141737,450,Renaissance H.S.Second Grace, ,DC820018741,Licensed Centers,18700 Joy Rd,Detroit,MI,Wayne,48228,No,Yes
+13437138.585958,309734.994094491,451,Renaissance H.S. Ford Memorial, ,DC820022839,Licensed Centers,16400 West Warren,Detroit,MI,Wayne,48228,No,Yes
+13263483.664042,1428132.74606299,452,Rogers City Head Start, ,DC710323237,Licensed Centers,532 W. Erie Ave,Rogers City,MI,Presque Isle,49779,No,Yes
+13516516.9845801,392070.303149611,453,Pure Hearts,Lakesha Montano,DF500381021,Registered Family Homes,36431 Ledgestone,Clinton Township,MI,Macomb,48035,Yes,Yes
+13443877.8225066,337033.131561682,454,Ready 2 Learn Childcare Center, ,DC820343100,Licensed Centers,17300 Schaefer,Detroit,MI,Wayne,48235,Yes,No
+13453572.5242782,280925.655183733,455,River Rouge Head Start, ,DC820088178,Licensed Centers,550 Eaton,River Rouge,MI,Wayne,48218,Yes,Yes
+13388654.4776903,272801.328740165,456,Romulus Head Start - Cory Elementary, ,DC820323597,Licensed Centers,35200 Smith Road,Romulus,MI,Wayne,48174,No,Yes
+13453757.1765092,312949.56036745,457,Renaissance H.S./Unity Center, ,DC820022251,Licensed Centers,7500 Tireman,Detroit,MI,Wayne,48204,No,Yes
+13029261.269685,1616563.39501312,458,Sault Tribe Child Care 225 WaSeh Drive, ,TribalC1190431,Licensed Centers,225 WaSeh Drive,Sault Ste Marie,MI,Mackinac,49781,No,Yes
+13461622.6181102,328106.274934381,459,Renaissance Head Start/New Beginning Center, ,DC820278332,Licensed Centers,13110 Fourteenth St.,Detroit,MI,Wayne,48238,No,Yes
+13457424.5715223,297621.130905509,460,Reyes Center, ,DC820018838,Licensed Centers,Reyes Center 8500 W Vernor,Detroit,MI,Wayne,48209,Yes,Yes
+13023664.5019685,411840.584645674,461,Potterville Head Start, ,DC230347099,Licensed Centers,420 N High Street,Potterville,MI,Eaton,48876,No,Yes
+13484875.7063648,398223.825459316,462,Sally's Home Care,Maysoon Esttaifan,DF500378300,Registered Family Homes,39661 Kingsbury Drive,Sterling Heights,MI,Macomb,48313,Yes,No
+13134672.2801837,1815117.64468504,463,Sault Tribe Child Care 2218 Shunk Rd, ,TribalC1190430,Licensed Centers,2218 Shunk Rd,Sault Ste Marie,MI,Chippewa,49783,Yes,Yes
+13134667.4773622,1815610.55610237,464,Sault Tribe Early Head Start and Head Start, ,TribalC1190383,Licensed Centers,2076 Shunk Rd,Sault Ste Marie,MI,Chippewa,49783,Yes,Yes
+13128012.2667323,1822328.2027559,465,Sault Head Start, ,DC170017118,Licensed Centers,524 Ashmun,Sault Ste. Marie,MI,Chippewa,49783,No,Yes
+12661046.3054462,363264.42979002,466,Pullman Migrant Head Start Ctr, ,DC030022199,Licensed Centers,893 55th St,Pullman,MI,Allegan,49450,No,Yes
+12768712.2185039,516916.916666672,467,Rogers Lane Headstart, ,DC410303131,Licensed Centers,2929 Rogers Lane,Wyoming,MI,Kent,49509,No,Yes
+13520217.6213911,385513.566929132,468,Robbie Hall Parker, ,DC500260745,Licensed Centers,22055 Quinn,Clinton Township,MI,Macomb,48035,No,Yes
+12732355.128937,881158.86942257,469,Robert F. Williams Community & Family Srvc Ctr, ,DC430087336,Licensed Centers,2448 W 44th Street,Baldwin,MI,Lake,49304,No,Yes
+12067803.1420604,2079139.85990813,470,Ryan School, ,DC310020523,Licensed Centers,400 Michigan Street,Hancock,MI,Houghton,49930,Yes,Yes
+12069679.9471785,2075110.17158793,471,Rod Liimatainen Center, ,DC310017513,Licensed Centers,700 Park Avenue,Houghton,MI,Houghton,49931,No,Yes
+12651953.3097113,483956.229002625,472,Rose Park Head Start, ,DC700309437,Licensed Centers,556 Butternut Drive,Holland,MI,Ottawa,49424,No,Yes
+12517196.4701444,148519.853674546,473,Sawyer Head Start, ,DC110340624,Licensed Centers,5791 Sawyer Road,Sawyer,MI,Berrien,49125,No,Yes
+13115037.621063,273297.607283458,474,Salvation Army Head Start, ,DC380285444,Licensed Centers,806 E. Pearl St.,Jackson,MI,Jackson,49201,No,Yes
+12489693.9425853,1612747.68930446,475,Rapid River Early Childhood Center, ,DC210259348,Licensed Centers,10070 U.S. 2,Rapid River,MI,Delta,49878,No,Yes
+13383808.4402887,154923.526902884,476,Riverside Head Start/GSRP Center, ,DC580361493,Licensed Centers,77 N. Roessler,Monroe,MI,Monroe,48162,No,Yes
+13531846.9760499,699643.622375324,477,Sandusky Early Childhood Center, ,DC760343041,Licensed Centers,395 S. Sandusky Road,Sandusky,MI,Sanilac,48471,No,Yes
+12898657.9078084,521295.044291332,478,Saranac Head Start, ,DC340366102,Licensed Centers,250 Pleasant St.,Saranac,MI,Ionia,48881,No,Yes
+13050131.3129921,510406.109908134,479,Riley Elementary School, ,DC190342406,Licensed Centers,5935 W. Pratt Rd.,Dewitt,MI,Clinton,48820,No,Yes
+12798079.2906824,292133.010498688,480,Pre K International Child Care Center, ,DC390340510,Licensed Centers,11 Mills Street,Kalamazoo,MI,Kalamazoo,49048,No,Yes
+12621327.4278215,615274.631561682,481,Ross Park Head Start and GSRP, ,DC610278336,Licensed Centers,121 Randall Road,Muskegon,MI,Muskegon,49441,No,Yes
+12703097.7690289,619519.042979002,482,Ravenna Head Start, ,DC610260399,Licensed Centers,12322 Stafford Street,Ravenna,MI,Muskegon,49451,No,Yes
+12821257.1929134,866553.277230978,483,Reed City ECC, ,DC670345001,Licensed Centers,220 W. Lincoln Avenue,Reed City,MI,Osceola,49677,No,Yes
+13455381.0436352,372121.625656173,484,Royal Oak - Head Start, ,DC630291154,Licensed Centers,707 Girard,Royal Oak,MI,Oakland,48073,No,Yes
+13243638.9202756,701180.566272959,485,"Rohelia, Anna",Anna Rohelia,DF730339696,Registered Family Homes,610 S. 17th Street,Saginaw,MI,Saginaw,48601,Yes,No
+13020348.7230971,124487.5183727,486,Reading Elementary Head Start, ,DC300022789,Licensed Centers,221 Strong Avenue,Reading,MI,Hillsdale,49274,No,Yes
+13229182.351706,708617.296916008,487,Saginaw Career Complex SISD Sag. Co. Head Start, ,DC730304020,Licensed Centers,2102 Weiss St.,Saginaw,MI,Saginaw,48602,No,Yes
+13439860.1286089,349648.095144361,488,Rita Jones,Rita Sonya Jones,DG630085668,Licensed Group Homes,21681 Whitmore,Oak Park,MI,Oakland,48237,Yes,No
+13312201.1801181,272605.511482939,489,"Sadiq, Farrah",Farrah Sadiq,DF810246332,Registered Family Homes,2858 Torrey Avenue,Ann Arbor,MI,Washtenaw,48108,Yes,No
+13422707.6827428,284815.857611552,490,St. Albert the Great Head Start, ,DC820305378,Licensed Centers,4671 Parker Street,Dearborn Heights,MI,Wayne,48125,No,Yes
+13411659.3323491,324197.377624676,491,Shear Head Start, ,DC820309046,Licensed Centers,26141 Schoolcraft,Redford,MI,Wayne,48239,No,Yes
+13402197.4340551,296036.811679795,492,Starfish Family Services, ,DC820086228,Licensed Centers,30000 Hiveley,Inkster,MI,Wayne,48141,Yes,Yes
+13434078.906168,332931.17847769,493,St. Timothy, ,DC820364538,Licensed Centers,15888 Archdale,Detroit,MI,Wayne,48227,No,Yes
+13478727.5022966,312040.97047244,494,St. Peter Claver, ,DC820285876,Licensed Centers,450 Eliot,Detroit,MI,Wayne,48201,Yes,No
+13077263.6840551,437415.069225729,495,"Small Folks Development Center, Inc.", ,DC330258924,Licensed Centers,3140 S. Pennsylvania,Lansing,MI,Ingham,48910,Yes,No
+13450793.9977034,317342.617454067,496,St. John, ,DC820364550,Licensed Centers,4950 Oakman Blvd,Detroit,MI,Wayne,48204,No,Yes
+13029880.2995407,1595061.36975065,497,St Ignace Head Start, ,DC490261154,Licensed Centers,368 Reagon St,St. Ignace,MI,Mackinac,49781,Yes,Yes
+13413167.9425853,320757.471456692,498,SFS Crestwood/St. John Bosco Head Start, ,DC820284583,Licensed Centers,12100 Beech Daly,Redford,MI,Wayne,48239,No,Yes
+12742035.5416667,686978.437335953,499,Southern Newaygo FiveCap Head Start Center, ,DC620257057,Licensed Centers,9815 Mason Drive,Grant,MI,Newaygo,49327,No,Yes
+13432920.7847769,266548.653543308,500,Southgate Head Start /North Pointe, ,DC820343340,Licensed Centers,18635 Bowie,Southgate,MI,Wayne,48195,No,Yes
+13458571.003937,294633.635826766,501,St. Stephens, ,DC820022891,Licensed Centers,St Stephens 1235 Lawndale,Detroit,MI,Wayne,48209,Yes,Yes
+13642323.7847769,541435.423884511,502,St Joseph Head Start, ,DC740018613,Licensed Centers,1407 7th,Port Huron,MI,St. Clair,48060,No,Yes
+12608600.1860236,329723.337598428,503,South Haven Head Start, ,DC800095331,Licensed Centers,540 Alyworth Street,South Haven,MI,Van Buren,49090,No,Yes
+12779388.8382546,492593.920931757,504,South Wood Head Start, ,DC410362897,Licensed Centers,630 66th St. SE,Kentwood,MI,Kent,49548,No,Yes
+12767114.8900919,609885.600065619,505,Sparta Migrant Head Start Ctr, ,DC410022195,Licensed Centers,347 Evergreen Street,Sparta,MI,Kent,49345,No,Yes
+12346450.1469816,1858136.2152231,506,Silver Creek Head Start, ,DC520323417,Licensed Centers,1125 Commerce Dr.,Marquette,MI,Marquette,49855,No,Yes
+12773026.5426509,563287.59416011,507,Schuur Paula,Paula Schuur,DF410309866,Registered Family Homes,4122 Chasseral Drive NW,Comstock Park,MI,Kent,49321,Yes,Yes
+12053895.9704724,2059215.16108924,508,South Range Preschool, ,DC310276741,Licensed Centers,2 Whealkate Ave.,South Range,MI,Houghton,49963,No,Yes
+12863211.5062336,128307.3566273,509,Small Steps Daycare,Amanda Johnson,DG750368253,Licensed Group Homes,203 N Fifth St,Burr Oak,MI,St. Joseph,49030,Yes,No
+12593144.3133202,222278.780511811,510,Spinks Corner Migrant Head Start, ,DC110314441,Licensed Centers,1720 S. Park Road,Benton Harbor,MI,Berrien,49022,No,Yes
+12593144.3133202,222278.780511811,511,Spinks Head Start, ,DC110363058,Licensed Centers,1720 S. Park Road,Benton Harbor,MI,Berrien,49022,No,Yes
+13289474.2047244,556439.777887136,512,Stalker Head Start, ,DC250363583,Licensed Centers,3329 Burnell Ave,Flint,MI,Genesee,48504,No,Yes
+13032001.9222441,320275.954396322,513,Springport Elementary School, ,DC380297911,Licensed Centers,300 West Main St.,Springport,MI,Jackson,49284,No,Yes
+13038266.2454068,737329.320538059,514,Shepherd Head Start, ,DC370260333,Licensed Centers,225 S. Chippewa,Shepherd,MI,Isabella,48883,No,Yes
+12581099.5173884,204465.61811024,515,Sodus Migrant Head Start, ,DC110022204,Licensed Centers,3922 Naomi Road,Sodus,MI,Berrien,49126,No,Yes
+12853687.2004593,1061774.13779527,516,Sinkel-Juliet Jill E,-Juliet Jill Sinkel,DG830285040,Licensed Group Homes,314 S. Michigan Ave.,Manton,MI,Wexford,49663,Yes,Yes
+13407997.7818241,165035.503608927,517,Sodt Head Start/GSRP Center, ,DC580377934,Licensed Centers,2888 Nadeau Rd,Monroe,MI,Monroe,48162,No,Yes
+13298061.972769,498298.047900259,518,Southern Lakes Head Start, ,DC250067838,Licensed Centers,2100 W Thompson Rd,Fenton,MI,Genesee,48430,No,Yes
+12593780.1440289,777398.402887136,519,Shelby Early Childhood Center, ,DC640303951,Licensed Centers,155 Sixth Street,Shelby,MI,Oceana,49455,No,Yes
+12797995.003937,286912.960629925,520,St. Joe Head Start, ,DC390290500,Licensed Centers,936 Lake Street,Kalamazoo,MI,Kalamazoo,49001,No,Yes
+13222621.4852362,711278.420603678,521,Sherwood SISD Saginaw County Head Start, ,DC730336216,Licensed Centers,3870 Shattuck Road,Saginaw,MI,Saginaw,48603,No,Yes
+13218807.1213911,692925.003280833,522,St. Peter & Paul SISD Sag. Co. Head Start, ,DC730309632,Licensed Centers,4705 W. Michigan Ave.,Saginaw,MI,Saginaw,48638,No,Yes
+12932220.8346457,657047.680118114,523,Stanton Head Start, ,DC590292169,Licensed Centers,710 N State St,Stanton,MI,Montcalm,48888,No,Yes
+13389393.4527559,299143.499671921,524,Stottlemyer Early Childhood, ,DC820017226,Licensed Centers,34801 Marquette,Westland,MI,Wayne,48185,No,Yes
+13217150.7956037,939909.644685045,525,Sterling ECC, ,DC060309122,Licensed Centers,255 S. Melita Rd.,Sterling,MI,Arenac,48659,No,Yes
+13464756.296916,340455.433070868,526,UCF-Emmanuel Head Start, ,DC820273690,Licensed Centers,18440 John R,Detroit,MI,Wayne,48203,No,Yes
+13428797.3838583,317264.848097116,527,Tott's Early Learning Center, ,DC820314896,Licensed Centers,20000 W. Chicago St.,Detroit,MI,Wayne,48228,Yes,No
+13438624.2034121,311138.674212605,528,"Taylor-Levy,  Velanda",Velanda Taylor-Levy,DF820338425,Registered Family Homes,7525 Forrer St,Detroit,MI,Wayne,48228,Yes,No
+13483198.7057087,345665.08300525,529,Tiny Tots Academy,Laundrea Willis,DG820378076,Licensed Group Homes,4032 E. Outer Dr.,Detroit,MI,Wayne,48234,Yes,Yes
+13484183.9416011,346762.351377949,530,"Tiller, Gail E",Gail E Tiller,DF820313710,Registered Family Homes,20101 Rogge Street,Detroit,MI,Wayne,48234,Yes,Yes
+13489912.0347769,340511.6433727,531,Time For Kids,Gwendolyn McFall,DF820378336,Registered Family Homes,17864 Beland,Detroit,MI,Wayne,48234,Yes,No
+13499010.3871391,327196.498359576,532,The Nest Institute Villages at Parkside, ,DC820370409,Licensed Centers,5000 Conner St,Detroit,MI,Wayne,48213,Yes,No
+13427952.5164042,343847.866797894,533,The Children's Center Of Wayne County II, ,DC820335984,Licensed Centers,19900 Evergreen,Detroit,MI,Wayne,48219,No,Yes
+13437317.5583989,341133.636811018,534,The Nurturing Nest, ,DC820312562,Licensed Centers,15851 West 7 Mile Road,Detroit,MI,Wayne,48235,Yes,No
+13264715.0406824,531131.610564306,535,Swartz Creek Early Head Start, ,DC250379148,Licensed Centers,8197 Miller Road,Swartz Creek,MI,Genesee,48473,Yes,No
+13414168.1295932,256629.69652231,536,Taylor Head Start, ,DC820276815,Licensed Centers,14616 Duncan,Taylor,MI,Wayne,48180,No,Yes
+13446629.0354331,320651.194881886,537,Third New Hope Baptist Church, ,DC820023212,Licensed Centers,12850 Plymouth,Detroit,MI,Wayne,48227,No,Yes
+13348487.8166011,1015874.70538057,538,Tawas ECC, ,DC350019250,Licensed Centers,235 Monument Rd.,East Tawas,MI,Iosco,48730,No,Yes
+13456670.0252625,336636.96358268,539,Summer Preschool Early Learning Center II, ,DC820255626,Licensed Centers,3121 W. McNichols,Detroit,MI,Wayne,48221,Yes,Yes
+13460027.0698819,304268.453412071,540,SWCS Detroit Early Head Start, ,DC820336213,Licensed Centers,3811 Cicotte,Detroit,MI,Wayne,48210,Yes,Yes
+13545865.0954724,428774.371719167,541,Sugarbush Head Start Rooms A-14, ,DC500344558,Licensed Centers,48400 Sugarbush,New Baltimore,MI,Macomb,48047,No,Yes
+12746254.9002625,509653.547900259,542,"Sullivan, Michelle",Michelle Sullivan,DF410372462,Registered Family Homes,4466 41st Street,Grandville,MI,Kent,49418,Yes,Yes
+12788024.2014436,498954.042650923,543,"Tuo, Tortia",Tortia Tuo,DF410369049,Registered Family Homes,1844 Wilmont Dr. SE,Kentwood,MI,Kent,49508,Yes,Yes
+12749557.5790682,449600.57020998,544,Sycamore Head Start, ,DC030302561,Licensed Centers,2163 142nd Avenue,Dorr,MI,Allegan,49323,No,Yes
+13473339.7716535,363613.77821523,545,The Giving Tree, ,DC500273342,Licensed Centers,3800 E. 11 Mile Rd.,Warren,MI,Macomb,48091,Yes,No
+12802717.285105,1187172.05708662,546,TCAPS Child Care-Traverse Heights, ,DC280076858,Licensed Centers,933 Rose Street,Traverse City,MI,Grand Traverse,49686,No,Yes
+13296072.4419291,556861.062992126,547,Summerfield Comm School, ,DC250269209,Licensed Centers,1360 Milbourne,Flint,MI,Genesee,48504,No,Yes
+13257028.4320866,385308.128937006,548,Three Fires Head Start, ,DC470314242,Licensed Centers,4125 Crooked Lake Road,Howell,MI,Livingston,48843,No,Yes
+12804115.1729003,1191331.15583989,549,TCAPS Child Care - Oak Park, ,DC280088036,Licensed Centers,301 S Garfield,Traverse City,MI,Grand Traverse,49686,Yes,Yes
+12887469.5918635,408129.6433727,550,Sue Drummond Head Start, ,DC080073216,Licensed Centers,2580 Nashville Rd,Hastings,MI,Barry,49058,No,Yes
+13302305.8536745,536529.447178483,551,The Learning Community, ,DC250019429,Licensed Centers,1181 W Scottwood,Flint,MI,Genesee,48507,Yes,No
+13302305.8536745,536529.447178483,552,The Learning Community-Carman Ainsworth, ,DC250347336,Licensed Centers,1181 Scottwood,Flint,MI,Genesee,48507,No,Yes
+13301694.1515748,576643.018044621,553,Tucker Early Childhood Program, ,DC250258902,Licensed Centers,5159 Summit Street,Flint,MI,Genesee,48505,No,Yes
+13096063.7349081,459726.489173234,554,Towar Garden Head Start, ,DC330020637,Licensed Centers,6223 Towar Garden Cr,East Lansing,MI,Ingham,48823,No,Yes
+13422068.1384514,428480.730643049,555,Tots Learning Center & Child Care, ,DC630360686,Licensed Centers,1638 N. Perry,Pontiac,MI,Oakland,48340,No,Yes
+13477866.4160105,303948.041666672,556,Vistas Nuevas Head Start Wccc, ,DC820018607,Licensed Centers,1001 W Fort,Detroit,MI,Wayne,48226,Yes,Yes
+13412491.0774278,291758.894356951,557,Westwood Head Start, ,DC820316230,Licensed Centers,26429 Michigan Ave,Inkster,MI,Wayne,48141,No,Yes
+13466602.8415354,328801.637139112,558,Wayne Metro Head Start-Cortland, ,DC820293896,Licensed Centers,138 Cortland St.,Highland Park,MI,Wayne,48203,No,Yes
+13331334.0708661,684381.708661422,559,Vassar Head Start, ,DC790364347,Licensed Centers,220 Athletic Street,Vassar,MI,Tuscola,48768,No,Yes
+13475613.6223753,332556.747703418,560,Wayne Metro Head Start - Hamtramck, ,DC820274707,Licensed Centers,12031 Mitchell St.,Hamtramck,MI,Wayne,48212,No,Yes
+13505436.1765092,344597.000328079,561,Wayne Metro Head Start - Harper Woods, ,DC820298358,Licensed Centers,19258 Kelly Road,Harper Woods,MI,Wayne,48225,No,Yes
+13513891.1942257,347630.485236228,562,Wayne Metro Head Start - Poupard, ,DC820327764,Licensed Centers,20655 Lennon St,Harper Woods,MI,Wayne,48225,No,Yes
+13433128.335958,311223.803149611,563,"Wilson, Gene",Gene Wilson,DF820358572,Registered Family Homes,7682 Faust,Detroit,MI,Wayne,48228,Yes,Yes
+13426880.3001969,330143.038057745,564,Village of Shiny Stars, ,DC820265289,Licensed Centers,20507 Fenkell,Detroit,MI,Wayne,48223,Yes,No
+13496500.4055118,340813.49868767,565,United Child and Fam Hs Mt Zion, ,DC820017769,Licensed Centers,13560 E Mcnichols,Detroit,MI,Wayne,48205,No,Yes
+13465551.1624016,300332.412729666,566,Vistas Nuevas Hs/Holy Red., ,DC820019731,Licensed Centers,1711 Junction,Detroit,MI,Wayne,48209,No,Yes
+12784862.4763779,282063.280183733,567,Winchell Head Start, ,DC390335267,Licensed Centers,2316 Winchell,Kalamazoo,MI,Kalamazoo,49008,No,Yes
+13250160.5190289,994171.853346452,568,Whittemore ECC, ,DC350333080,Licensed Centers,8970 Prescott Road,Whittemore,MI,Iosco,48770,No,Yes
+13455754.4642389,307893.008202106,569,Vistas Nuevas Head St/Cecil Center, ,DC820020152,Licensed Centers,5690 Cecil,Detroit,MI,Wayne,48210,No,Yes
+13460418.3628609,304451.236876637,570,Vistas Nuevas Hs and St.PeterandPaul, ,DC820019180,Licensed Centers,3810 Gilbert,Detroit,MI,Wayne,48210,Yes,Yes
+13463138.1240157,309102.074146986,571,VNHS-Word Of Truth Center, ,DC820248377,Licensed Centers,4900 Lovett,Detroit,MI,Wayne,48210,No,Yes
+13459678.722769,307268.906496063,572,Voyageur Academy, ,DC820367182,Licensed Centers,4821 Military,Detroit,MI,Wayne,48210,No,Yes
+13458900.3270997,295869.62368767,573,Urban Neighborhood Initiatives (All Saints), ,DC820377730,Licensed Centers,8300 Longworth,Detroit,MI,Wayne,48209,No,Yes
+13555560.386811,480240.12368767,574,Will Lee Head Start Rm 200, ,DC500333101,Licensed Centers,68399 S Forest Street,Richmond,MI,Macomb,48062,No,Yes
+13049135.9284777,1328306.96030183,575,Vanderbilt ECC, ,DC690383406,Licensed Centers,947 Donovan St.,Vanderbilt,MI,Otsego,49795,No,Yes
+13541278.6141732,597855.459645674,576,Yale Head Start, ,DC740310026,Licensed Centers,315 Park,Yale,MI,St. Clair,48097,No,Yes
+13487773.7611549,396342.909120739,577,Walsh Head Start, ,DC500314572,Licensed Centers,38901 Dodge Park Rd,Sterling Heights,MI,Macomb,48312,No,Yes
+12788651.9507874,503235.372047246,578,"Vlasman, Maribeth",Maribeth Vlasman,DG410285056,Licensed Group Homes,2012 Andrew SE,Kentwood,MI,Kent,49508,No,Yes
+13474179.9009186,371722.660761148,579,White Angel Home Day Care,Mariam and Youkhana,DF500359393,Registered Family Homes,4307 Burssens Drive,Warren,MI,Macomb,48092,Yes,No
+13493702.9110892,361786.602690294,580,Warren Woods Early Childhood Center, ,DC500019520,Licensed Centers,Hawthorne Complex 12900 Frazho Road,Warren,MI,Macomb,48089,No,Yes
+12778549.8435039,429591.544291332,581,Wayland Head Start, ,DC030346379,Licensed Centers,507 W. Sycamore Street,Wayland,MI,Allegan,49348,No,Yes
+12761303.1138451,350460.80347769,582,Washington Street Head Start, ,DC030379136,Licensed Centers,538 Washington Street,Otsego,MI,Allegan,49089,No,Yes
+12609254.7043963,233806.930118114,583,Watervliet Migrant Head Start, ,DC110093104,Licensed Centers,745 North M 140,Watervliet,MI,Berrien,49098,No,Yes
+12781034.0570866,165022.06036745,584,Wood Street Head Start, ,DC750017562,Licensed Centers,323 Wood St,Three Rivers,MI,St. Joseph,49093,No,Yes
+13060700.3471129,1374887.93208662,585,Wolverine ECC, ,DC160022816,Licensed Centers,5993 W Sholes Road,Wolverine,MI,Cheboygan,49799,No,Yes
+12431501.9465223,1564672.01377952,586,Webster Early Childhood Center, ,DC210341367,Licensed Centers,1209 N 19th Street,Escanaba,MI,Delta,49829,No,Yes
+13287389.4127297,567032.199146986,587,Westwood Heights Head Start, ,DC250365188,Licensed Centers,3284 N Jennings Rd,Flint,MI,Genesee,48504,No,Yes
+12609556.0928478,254881.803805768,588,Watervliet Head Start, ,DC110378436,Licensed Centers,188 Lucinda Lane,Watervliet,MI,Berrien,49098,Yes,Yes
+12799909.5059055,282900.112860888,589,"Willis, Patricia",Patricia Willis,DF390312075,Registered Family Homes,1611 Palmer Ave.,Kalamazoo,MI,Kalamazoo,49001,Yes,No
+13076368.9012467,422095.228674546,590,YMCA Child Care Center, ,DC330018314,Licensed Centers,900 Long Blvd,Lansing,MI,Ingham,48911,Yes,No
+13105070.4534121,347380.068897635,591,Woodworth Elementary, ,DC330309839,Licensed Centers,212 Pennsylvania,Leslie,MI,Ingham,49251,No,Yes
+12614824.972769,662969.966535434,592,WLACE RP McMillan Elementary, ,DC610259969,Licensed Centers,2885 Hyde Park Road,Muskegon,MI,Muskegon,49445,No,Yes
+12598600.3090551,701167.603018373,593,WLACE WHTL - Community Services Bldg, ,DC610269662,Licensed Centers,541 E. Slocum,Whitehall,MI,Muskegon,49461,No,Yes
+13361663.6643701,378880.216863513,594,Walled Lake Community Ed Center, ,DC630022256,Licensed Centers,615 N Pontiac Trail,Walled Lake,MI,Oakland,48390,No,Yes
+12667733.031168,702809.814960629,595,WLACE Holton Elementary, ,DC610095049,Licensed Centers,Box 159 Fourth Street,Holton,MI,Muskegon,49425,No,Yes
+13233677.0055774,721754.269028872,596,Valley SISD Saginaw Co Head Start, ,DC730297551,Licensed Centers,1815 Tittabawasee Rd.,Saginaw,MI,Saginaw,48604,No,Yes
+13109075.0790682,85996.8234908134,597,Waldron Head Start, ,DC300267918,Licensed Centers,13380 S. Waldron Rd.,Waldron,MI,Hillsdale,49288,No,Yes
+13286741.9750656,333643.289041996,598,Whitmore Lake Early Childhood Center, ,DC810284169,Licensed Centers,8845 Main St,Whitmore Lake,MI,Washtenaw,48189,No,Yes
+,,599,Mini Kampus Nurs Schl and Kgn, ,DC500016584,Licensed Centers,St Margaret Bldg 21201 13 Mile Road,St. Clair Shores,MI,Macomb,48081,Yes,No
+,,600,Mt. Calvary Head Start, ,DC500020723,Licensed Centers,Mt Calvary 8129 Packard,Warren,MI,Macomb,48089,No,Yes
+,,601,NMCAA Preschool - Discovery, ,DC280346560,Licensed Centers,3962 Three Mile Rd,Traverse City,MI,Grand Traverse,49686,No,Yes
+,,602,NMCAA Preschool - Roscommon, ,DC720378438,Licensed Centers,175 West Sunset Drive,Roscommon,MI,Roscommon,49653,No,Yes
+,,603,North Dickinson Head Start Center, ,DC220068859,Licensed Centers,W 6588 M69,Iron Mountain,MI,Dickinson,49801,No,Yes
+,,604,Onaway ECC, ,DC710259106,Licensed Centers,4549 S M-33,Onaway,MI,Presque Isle,49765,No,Yes
+,,605,Richmond Early Childhood Learning Center, ,DC500019814,Licensed Centers,68399 S. Forest,Richmond,MI,Macomb,48062,No,Yes
+,,606,Riverview Head Start, ,DC110380034,Licensed Centers,Suites 109 & 110 777 Riverview,Benton Harbor,MI,Berrien,49022,Yes,No
+,,607,Roosevelt Head Start, ,DC780303421,Licensed Centers,201 W. Brooks,Owosso,MI,Shiawassee,48867,No,Yes
+,,608,South Cedar Head Start, ,DC330250450,Licensed Centers,2357 Commerce Dr.,Holt,MI,Ingham,48842,No,Yes
+,,609,South Godwin Head Start, ,DC410081985,Licensed Centers,"28 Bellevue Street, SE",Wyoming,MI,Kent,49548,No,Yes
+,,610,Springhill Headstart, ,DC410266571,Licensed Centers,"2626 Walker, NW",Walker,MI,Kent,49544,No,Yes
+,,611,St. Johns Head Start, ,DC190269957,Licensed Centers,4179 S. US-27,St. Johns,MI,Clinton,48879,No,Yes
+,,612,St. Louis Head Start, ,DC290267777,Licensed Centers,121 I & K Streets,St. Louis,MI,Gratiot,48880,No,Yes
+,,613,Stepanski Early Childhood Center, ,DC630017147,Licensed Centers,Preschool Latch Key 6010 Hatchery,Waterford,MI,Oakland,48329,No,Yes
+,,614,Superior Central Schools, ,DC020343189,Licensed Centers,E2865 Highway M-94,Eben Junction,MI,Alger,49825,No,Yes
+,,615,Suttons Bay Migrant Head Start, ,DC450301630,Licensed Centers,1878 SW Bayshore Dr.,Suttons Bay,MI,Leelanau,49682,No,Yes
+,,616,Twin Rivers Head Start, ,DC340363304,Licensed Centers,435 Lou Lemke Drive,Muir,MI,Ionia,48860,No,Yes
+,,617,YMCA Dillon Community Center, ,DC830309609,Licensed Centers,9845 Campus Drive,Cadillac,MI,Wexford,49601,No,Yes

@@ -1,0 +1,29 @@
+7.facility_type,STATE OF CALIFORNIA POOLED DATA - Rehabilitation Hospitals or Units,"Community, >250 Beds"
+149.county,Lo Angeles,Los Angeles
+15.facility_name,STATE OF CALIFORNIA POOLED DATA - Acute Care Hospitals,San Leandro Hospital
+9.facility_name,STATE OF CALIFORNIA POOLED DATA - Long-term Acute Care Hospitals,Eden Medical Center
+2.facility_id,140000012.0,NULL
+89.hospital_category_risk_adjustment,AcuteCare Hospital,Acute Care Hospital
+218.hospital_category_risk_adjustment,Acute Care Hospuital,Acute Care Hospital
+99.county,Los Anvgeles,Los Angeles
+76.facility_id,93000002.00,930000020.0
+5.facility_type,STATE OF CALIFORNIA POOLED DATA - Rehabilitation Hospitals or Units,"Community, <125 Beds"
+95.county,os Angeles,Los Angeles
+6.facility_type,STATE OF CALIFORNIA POOLED DATA - Critical Access Hospitals,"Community, >250 Beds"
+126.hospital_category_risk_adjustment,Acute Care Hsopital,Acute Care Hospital
+76.county,Los Aneles,Los Angeles
+8.facility_name,Alameda Hospital,"Alta Bates Summit Medical Center, Rehabilitation Unit"
+104.county,os Angeles,Los Angeles
+4.facility_name,Alameda Hospital,STATE OF CALIFORNIA POOLED DATA - Rehabilitation Hospitals or Units
+197.hospital_category_risk_adjustment,Acute Cpare Hospital,Acute Care Hospital
+11.facility_name,STATE OF CALIFORNIA POOLED DATA - Long-term Acute Care Hospitals,"Kaiser Foundation Hospital, Fremont"
+10.facility_name,STATE OF CALIFORNIA POOLED DATA - Long-term Acute Care Hospitals,Highland Hospital
+9.facility_id,NULL,140000183.0
+12.facility_name,STATE OF CALIFORNIA POOLED DATA - Long-term Acute Care Hospitals,"Kaiser Foundation Hospital, Oakland/Richmond"
+7.facility_name,STATE OF CALIFORNIA POOLED DATA - Acute Care Hospitals,"Alta Bates Summit Medical Center, Alta Bates Campus"
+76.infections_reported,g0,0
+3.facility_name,Alameda Hospital,STATE OF CALIFORNIA POOLED DATA - Critical Access Hospitals
+13.facility_name,STATE OF CALIFORNIA POOLED DATA - Acute Care Hospitals,"Kaiser Foundation Hospital, San Leandro"
+1.facility_type,STATE OF CALIFORNIA POOLED DATA - Critical Access Hospitals,STATE OF CALIFORNIA POOLED DATA - Acute Care Hospitals
+14.facility_name,STATE OF CALIFORNIA POOLED DATA - Acute Care Hospitals,"Kindred Hospital, San Francisco Bay Area"
+6.facility_name,Alameda Hospital,Alta Bates Summit Medical Center

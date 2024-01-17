@@ -1,0 +1,159 @@
+<task>
+    <!-- ****************************************************
+                      DATABASES
+    **************************************************** -->
+    <target> 
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql://localhost:5433/bartdb</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>postgres</password>
+        </access-configuration>
+        <import>
+            <input type="csv" separator="," table="clean">/home/fatemeh/ED-Scale/Sandbox_Generation/metanome_input_files/processed/oklahoma-public-school-site-directory-november-2015/clean.csv</input>
+        </import>
+    </target>
+
+    <!-- ****************************************************
+                    DEPENDENCIES
+    **************************************************** -->
+    <dependencies><![CDATA[DCs: 
+
+            e1: clean(district: $district1, school_site: $school_site1, co_dist_code: $co_dist_code1, site_code: $site_code1, enrollment: $enrollment1, certified_staff: $certified_staff1, grades_low_high: $grades_low_high1, telephone: $telephone1, mailing_address: $mailing_address1, city: $city1, state: $state1, zip: $zip1, county: $county1, principal: $principal1, principal_email: $principal_email1),
+            clean(district: $district2, school_site: $school_site2, co_dist_code: $co_dist_code2, site_code: $site_code2, enrollment: $enrollment2, certified_staff: $certified_staff2, grades_low_high: $grades_low_high2, telephone: $telephone2, mailing_address: $mailing_address2, city: $city2, state: $state2, zip: $zip2, county: $county2, principal: $principal2, principal_email: $principal_email2),
+                $telephone1 == $telephone2, $state1 != $state2 -> #fail. 
+
+        
+            e2: clean(district: $district1, school_site: $school_site1, co_dist_code: $co_dist_code1, site_code: $site_code1, enrollment: $enrollment1, certified_staff: $certified_staff1, grades_low_high: $grades_low_high1, telephone: $telephone1, mailing_address: $mailing_address1, city: $city1, state: $state1, zip: $zip1, county: $county1, principal: $principal1, principal_email: $principal_email1),
+            clean(district: $district2, school_site: $school_site2, co_dist_code: $co_dist_code2, site_code: $site_code2, enrollment: $enrollment2, certified_staff: $certified_staff2, grades_low_high: $grades_low_high2, telephone: $telephone2, mailing_address: $mailing_address2, city: $city2, state: $state2, zip: $zip2, county: $county2, principal: $principal2, principal_email: $principal_email2),
+                $mailing_address1 == $mailing_address2, $state1 != $state2 -> #fail. 
+
+        
+            e3: clean(district: $district1, school_site: $school_site1, co_dist_code: $co_dist_code1, site_code: $site_code1, enrollment: $enrollment1, certified_staff: $certified_staff1, grades_low_high: $grades_low_high1, telephone: $telephone1, mailing_address: $mailing_address1, city: $city1, state: $state1, zip: $zip1, county: $county1, principal: $principal1, principal_email: $principal_email1),
+            clean(district: $district2, school_site: $school_site2, co_dist_code: $co_dist_code2, site_code: $site_code2, enrollment: $enrollment2, certified_staff: $certified_staff2, grades_low_high: $grades_low_high2, telephone: $telephone2, mailing_address: $mailing_address2, city: $city2, state: $state2, zip: $zip2, county: $county2, principal: $principal2, principal_email: $principal_email2),
+                $zip1 == $zip2, $state1 != $state2 -> #fail. 
+
+        
+            e4: clean(district: $district1, school_site: $school_site1, co_dist_code: $co_dist_code1, site_code: $site_code1, enrollment: $enrollment1, certified_staff: $certified_staff1, grades_low_high: $grades_low_high1, telephone: $telephone1, mailing_address: $mailing_address1, city: $city1, state: $state1, zip: $zip1, county: $county1, principal: $principal1, principal_email: $principal_email1),
+            clean(district: $district2, school_site: $school_site2, co_dist_code: $co_dist_code2, site_code: $site_code2, enrollment: $enrollment2, certified_staff: $certified_staff2, grades_low_high: $grades_low_high2, telephone: $telephone2, mailing_address: $mailing_address2, city: $city2, state: $state2, zip: $zip2, county: $county2, principal: $principal2, principal_email: $principal_email2),
+                $city1 == $city2, $state1 != $state2 -> #fail. 
+
+        ]]></dependencies>
+
+    <!-- ****************************************************
+                      CONFIGURATION
+    **************************************************** -->
+    <configuration>
+        <!-- To print extra information in the ouput (default = false) -->
+        <printLog>true</printLog>
+
+        <!-- To load DB every time on start (default = false) -->
+        <recreateDBOnStart>true</recreateDBOnStart>
+
+        <!-- To apply the changes (default = false) -->
+        <applyCellChanges>true</applyCellChanges>
+
+        <!-- To  apply cell changes on a copy of the original target, with a custom suffix (default = true) -->
+        <cloneTargetSchema>true</cloneTargetSchema>
+        <cloneSuffix>_dirty</cloneSuffix>
+
+        <!-- To export the dirty db -->
+        <exportDirtyDB>true</exportDirtyDB>
+        <exportDirtyDBPath>./</exportDirtyDBPath>
+        <exportDirtyDBType>CSV</exportDirtyDBType>
+
+        <!-- To export the changes -->
+        <exportCellChanges>true</exportCellChanges>
+        <exportCellChangesPath>clean_changes.csv</exportCellChangesPath>
+
+        <!-- To compute an estimate of the reparability (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To generate all possible changes (default = false - slow, only for toy examples)-->
+        <generateAllChanges>false</generateAllChanges>
+
+        <!-- To avoid interactions among changes. (default = true) -->
+        <avoidInteractions>true</avoidInteractions>
+
+        <!-- To check, at the end of the process, if changes are detectable. (default = false) -->
+        <checkChanges>true</checkChanges>
+
+        <!-- To compute an estimate of the repairability. Requires checkChanges = true. (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To use an optimized strategy for updates. (default = true) -->
+        <useDeltaDBForChanges>true</useDeltaDBForChanges>
+
+        <!-- Error percentages for dependencies and comparisons 
+        All percentages are wrt table sizes (# tuples) -->
+        <errorPercentages>
+            <defaultPercentage>0.0</defaultPercentage>
+            <vioGenQueries>
+            <vioGenQuery id="e1"><comparison>(telephone1 == telephone2)</comparison><percentage>1.5308911973756156</percentage></vioGenQuery><vioGenQuery id="e1"><comparison>(state1 != state2)</comparison><percentage>1.5308911973756156</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(mailing_address1 == mailing_address2)</comparison><percentage>1.5308911973756156</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(state1 != state2)</comparison><percentage>1.5308911973756156</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(zip1 == zip2)</comparison><percentage>1.4762165117550579</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(state1 != state2)</comparison><percentage>1.4762165117550579</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(city1 == city2)</comparison><percentage>1.4762165117550579</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(state1 != state2)</comparison><percentage>1.4762165117550579</percentage></vioGenQuery></vioGenQueries>
+        </errorPercentages>
+
+        <!-- To control the way in which changing the value -->
+        <dirtyStrategies>
+            <defaultStrategy>
+                <strategy> TypoRandom </strategy>
+            </defaultStrategy> 
+            <!-- possible strategies
+                <strategy chars="*" charsToAdd="3">TypoAddString</strategy>
+                <strategy chars="*" charsToAdd="3">TypoAppendString</strategy>
+                <strategy charsToRemove="3">TypoRemoveString</strategy>
+                <strategy charsToSwitch="3">TypoSwitchValue</strategy>
+                <strategy>TypoActiveDomain</strategy>
+                <strategy>TypoRandom</strategy>
+            -->
+        </dirtyStrategies>
+
+        <randomErrors>
+            <tables>
+                <table name="clean"> 
+                    <percentage>7</percentage> <!-- Percentage is wrt attributes to dirty in the table -->
+                    <attributes>
+                    <atrribute>district</atrribute><atrribute>school_site</atrribute><atrribute>co_dist_code</atrribute><atrribute>grades_low_high</atrribute><atrribute>telephone</atrribute><atrribute>mailing_address</atrribute><atrribute>city</atrribute><atrribute>state</atrribute><atrribute>county</atrribute><atrribute>principal</atrribute><atrribute>principal_email</atrribute></attributes>
+                </table>
+            </tables>
+        </randomErrors>
+    
+        <outlierErrors>
+            <tables>
+                <table name="clean">
+                    <attributes>
+                    <atrribute percentage="1" detectable="true">site_code</atrribute><atrribute percentage="1" detectable="true">enrollment</atrribute><atrribute percentage="1" detectable="true">certified_staff</atrribute><atrribute percentage="1" detectable="true">zip</atrribute></attributes>
+                </table>
+            </tables>
+        </outlierErrors>
+        
+        <!-- The following parameters are used to control the sampling process.
+            All the fields are optional, but they may be crucial to obtain a good random sample.
+            In order to choose the cells to modify, BART will scan the result of a viogen query
+            using the following sampling algorithm:
+            1) First, a number of tuples are skipped. This is a random number choosed btw 
+                0 and (offsetFactor * tableSize)
+            2) Then BART will scan the result and will pickup tuples 
+            with a probability p = probabilityFactor.
+            
+            BART uses three kinds of queries
+            - Symmetric queries: for symmetric viogen queries (see paper)
+            - Inequality queries: for viogen queries without equalities (i.e. inequalities only)
+            - Standard queries: for all other viogen queries
+        -->
+        <vioGenQueriesConfiguration>
+            <!-- STANDARD QUERIES -->
+            <probabilityFactorForStandardQueries>0.25</probabilityFactorForStandardQueries>
+            <offsetFactorForStandardQueries>0.05</offsetFactorForStandardQueries>
+            <!-- SYMMETRIC QUERIES -->
+            <probabilityFactorForSymmetricQueries>0.25</probabilityFactorForSymmetricQueries>
+            <offsetFactorForSymmetricQueries>0.05</offsetFactorForSymmetricQueries>
+            <!-- INEQUALITY QUERIES -->
+            <probabilityFactorForInequalityQueries>0.05</probabilityFactorForInequalityQueries>
+            <offsetFactorForInequalityQueries>0.05</offsetFactorForInequalityQueries>
+            <windowSizeFactorForInequalityQueries>1.5</windowSizeFactorForInequalityQueries>
+        </vioGenQueriesConfiguration>
+
+    </configuration>
+</task>

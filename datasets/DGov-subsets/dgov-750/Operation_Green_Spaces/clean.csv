@@ -1,0 +1,36 @@
+Responsibility_Parks or Operations,Facility,Division,Total Acreage,Maintainable Acreage,Shelter,Rec Center,Senior Center,Pool,Spray Pool,Play Area,Tennis Court with Lights,Tennis Court without NO Lights,Basketball Full Court with Lights,Basketball Full Court without Lights,Basketball half Court with Lights,Basketball Half Court without Lights,Basketball Standards,Multi-Purpose Court,Funnel Ball,Baseball Field with Lights,Baseball Field without lights,Volleball Court,Boccie Court,Hockey Court,Horseshoe,Drinking Fount,Neighborhood,Census Tract,Bleachers,Council Dist,CD Area,Grill,Decorative Foutain,Flag Pole,Grandstand,Control Link for Basketball Courts,Control Link for Tennis Court,Control Linkl for Hockey Court,Dek Hockey Court,Dog Park,Spray Park,Ownership of Facility,Benches,Tables
+Operations,Bates St Triangle,3,0.2,,,,,,,,,,,,,,,,,,,,,,,,South Oakland,409,,5,Yes,,,,,No,No,No,,,,,,
+Operations,Baum Negley Triangle,2,0.2,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,East Liberty,818,0,8,Yes,0,,,,No,No,No,,,,,0,0
+Operations,Bedford Strip,3,0.3,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,Crawford Roberts,305,0,6,Yes,0,,,,No,No,No,,,,,0,0
+Operations,Beechview Monument,5,0.1,,,,,,,,,,,,,,,,,,,,,,,,Beechview,1920,,4,No,,,1,,No,No,No,,,,,2,
+Operations,Brookline Monument,4,0.1,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,Brookline,1918,0,4,No,0,,,,No,No,No,,,,,0,0
+Operations,Craft Triangle,3,0.1,,,,,,,,,,,,,,,,,,,,,,,,South Oakland,409,,5,Yes,,,,,No,No,No,,,,,,
+Operations,Crosstown,6,1.2,,,,,,,,,,,,,,,,,,,,,,,,Central Business District,201,,6,No,,,,,No,No,No,,,,,,
+Operations,East Liberty Strip,2,2,,,,,,,,,,,,,,,,,,,,,,,,East Liberty,1115,,9,Yes,,,,,No,No,No,,,,,,
+Operations,Edgerton Circle,3,0.01,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,Point Breeze,1404,0,8,No,0,,,,No,No,No,,,,,0,0
+Operations,Fort Duquesne Blvd Strip,6,,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,,,0,,Central Business District,0,,,,No,No,No,,,,,0,0
+Operations,Frankstown Triangle 1&2,2,1.8,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,East Liberty,1115,0,9,Yes,0,,,,No,No,No,,,,,0,0
+Operations,Glen Arden Circle & Triangle,3,0.01,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,Point Breeze,1404,0,8,No,0,,,,No,No,No,,,,,0,0
+Operations,Grant Street Islands,6,,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,Central Business District,201,0,6,No,0,,,,No,No,No,,,,,0,0
+Operations,Harris Triangle,3,0.1,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,North Oakland,507,0,6,Yes,0,,,,No,No,No,,,,,0,0
+Operations,Highland Ave Plant Strip,2,0.05,,,,,,,,,,,,,,,,,,,,,,,,East Liberty,1115,,9,Yes,,,,,No,No,No,,,,,,
+Operations,Jail Triangle,6,0.04,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,Central Business District,101,0,6,No,0,,,,No,No,No,,,,,0,0
+Operations,Le Roi Rd Island,3,0.1,,,,,,,,,,,,,,,,,,,,,,,,Point Breeze,1406,,5,No,,,,,No,No,No,,,,,,
+Operations,Liberty Avenue Island,6,,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,Central Business District,101,0,6,No,0,,,,No,No,No,,,,,0,0
+Operations,McPherson Blvd Strip,2,0.7,,,,,,,,,,,,,,,,,,,,,,,,Point Breeze North,1405,,9,No,,,,,No,No,No,,,,,,
+Operations,Mellon Park Island,2,0.7,,,,,,,,,,,,,,,,,,,,,,,,Point Breeze,1404,,8,No,,,,,No,No,No,,,,,,
+Operations,Monitor St and St Phil Islands,3,0.3,,,,,,,,,,,,,,,,,,,,,,,,Squirrel Hill South,1414,,5,No,375,,,,No,No,No,,,,,,
+Operations,Negley Run Strip,2,,,,,,,,,,,,,,,,,,,,,,,,,East Liberty,1113,,9,Yes,,,,,No,No,No,,,,,,
+Operations,Negley-Collins Triangle,2,0.1,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,East Liberty,1113,0,9,Yes,0,,,,No,No,No,,,,,0,0
+Operations,Oakland Square,3,0.5,,,,,,,,,,,,,,,,,,,,,,,,Central Oakland,406,,5,Yes,,,,,No,No,No,,,,,,
+Operations,Parkview Islands,3,0.1,,,,,,,,,,,,,,,,,,,,,,,,Central Oakland,406,,5,Yes,,,,,No,No,No,,,,,,
+Operations,Polish Hill Monument,6,0.01,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,Polish Hill,606,0,7,Yes,0,,,,No,No,No,,,,,0,0
+Operations,Regent Square War Memorial,3,0.01,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,Regent Square,1410,0,5,No,0,,,,No,No,No,,,,,0,0
+Operations,Reynolds St Planting Circle,3,0.3,,,,,,,,,,,,,,,,,,,,,,,,Point Breeze,1406,,5,No,,,,,No,No,No,,,,,2,
+Operations,Sheraden Monument,5,0.1,,,0,0,,,0,0,0,,,,,,,,0,0,,0,0,0,0,Sheraden,2004,0,2,No,0,,,,No,No,No,,,,,0,0
+Operations,Swisshelm War Memorial,3,0.01,,,,,,,,,,,,,,,,,,,,,,,,Swisshelm Park,1411,,5,No,,,1,,No,No,No,,,,,,
+Operations,Thomas Blvd Planting Strip,2,0.7,,,,,,,,,,,,,,,,,,,,,,,,Point Breeze North,1405,,9,No,,,,,No,No,No,,,,,,
+Operations,Vietnam Island,3,0.1,,,,,,,,,,,,,,,,,,,,,,,,Squirrel Hill South,1408,,5,No,,,,,No,No,No,,,,,1,
+Operations,Windermere Circle 1 & 2,3,0.04,,,,,,,,,,,,,,,,,,,,,,,,Swisshelm Park,1411,,5,No,,,,,No,No,No,,,,,,
+Operations,Zulema Passive Area,3,1.1,,,,,,,,,,,,,,,,,,,,,,,,Central Oakland,405,,5,Yes,,,,,No,No,No,,,,,,
+,,,,,,,,,,,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,

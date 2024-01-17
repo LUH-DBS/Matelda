@@ -1,0 +1,96 @@
+_id,datetime_est,site,parameter,is_valid,report_value,unit,unit_description,highest_flag,aqs_parameter_category
+1,2016-01-01T00:00:00,Lincoln,PM25,t,3.0,UG/M3,micrograms per cubic meter,,Particulate
+2,2016-01-01T00:00:00,Lincoln,PER_F2,t,67.0,PERCENT,Percent,,
+3,2016-01-01T00:00:00,Liberty,SO2,t,0.001,PPM,Parts Per Million,C,Criteria Pollutants
+4,2016-01-01T00:00:00,Liberty,SONICWS,t,6.9,MPH,miles per hour,,Meteorological
+5,2016-01-01T00:00:00,Liberty,SONICWD,t,259.0,DEG,Degrees,,Meteorological
+6,2016-01-01T00:00:00,Liberty,H2S,t,0.0,PPM,Parts Per Million,C,
+7,2016-01-01T00:00:00,Liberty,OUT_T,t,-0.4,DEGC,Degrees Celsius,,Meteorological
+8,2016-01-01T00:00:00,Liberty,INT_T,t,25.8,DEGC,Degrees Celsius,,
+9,2016-01-01T00:00:00,North Braddock,OUT_T,t,-0.4,DEGC,Degrees Celsius,,Meteorological
+10,2016-01-01T00:00:00,North Braddock,PM10B,t,18.0,UG/M3,micrograms per cubic meter,,Criteria Pollutants
+11,2016-01-01T00:00:00,North Braddock,BAMRAW,t,831.0,UG/M3,micrograms per cubic meter,,
+12,2016-01-01T00:00:00,North Braddock,BP,t,743.6,MM/HG,millimeters of mercury (torr),,Meteorological
+13,2016-01-01T00:00:00,Liberty,SIGTHETA,t,17.5,DEG,Degrees,,
+14,2016-01-01T00:00:00,Lawrenceville 2,SO2,t,0.0,PPB,Parts Per Billion,,Criteria Pollutants
+15,2016-01-01T00:00:00,Lawrenceville 2,CO,f,,PPB,Parts Per Billion,C,Criteria Pollutants
+16,2016-01-01T00:00:00,Lawrenceville 2,NO,t,0.8,PPB,Parts Per Billion,,NoxCore
+17,2016-01-01T00:00:00,Lawrenceville 2,NOY,t,5.1,PPB,Parts Per Billion,,NoxCore
+18,2016-01-01T00:00:00,Lawrenceville 2,NOYDIF,t,4.2,PPB,Parts Per Billion,,
+19,2016-01-01T00:00:00,Lawrenceville 2,PM10A,f,,UG/M3,micrograms per cubic meter,D,
+20,2016-01-01T00:00:00,Lawrenceville 2,PM10B,f,,UG/M3,micrograms per cubic meter,D,
+21,2016-01-01T00:00:00,Lawrenceville 2,BAMRAW,f,,UG/M3,micrograms per cubic meter,D,
+22,2016-01-01T00:00:00,Lawrenceville 2,PM25B,f,,UG/M3,micrograms per cubic meter,D,
+23,2016-01-01T00:00:00,Lawrenceville 2,INT_T,t,19.4,DEGC,Degrees Celsius,,
+24,2016-01-01T00:00:00,North Braddock,SO2,t,0.0,PPM,Parts Per Million,C,Criteria Pollutants
+25,2016-01-01T00:00:00,North Braddock,INT_T,t,18.4,DEGC,Degrees Celsius,,
+26,2016-01-01T00:00:00,Parkway East,BP,t,732.8,MM/HG,millimeters of mercury (torr),,Meteorological
+27,2016-01-01T00:00:00,Liberty,H2S_SO2,t,0.0,PPM,Parts Per Million,C,
+28,2016-01-01T00:00:00,Liberty 2,PM25T,f,,UG/M3,micrograms per cubic meter,D,Criteria Pollutants
+29,2016-01-01T00:00:00,Parkway East,CO,t,230.1,PPB,Parts Per Billion,C,Criteria Pollutants
+30,2016-01-01T00:00:00,Parkway East,NO,t,1.6,PPB,Parts Per Billion,,NoxCore
+31,2016-01-01T00:00:00,Parkway East,INT_T,t,24.2,DEGC,Degrees Celsius,,
+32,2016-01-01T00:00:00,Liberty 2,PM25,t,2.0,UG/M3,micrograms per cubic meter,,Particulate
+33,2016-01-01T00:00:00,Liberty 2,PM10,t,2.0,UG/M3,micrograms per cubic meter,,Criteria Pollutants
+34,2016-01-01T00:00:00,Liberty 2,PM10_FL,t,63.0,PERCENT,Percent,,
+35,2016-01-01T00:00:00,Liberty 2,PM25_FL,t,34.0,PERCENT,Percent,,
+36,2016-01-01T00:00:00,Liberty 2,PM25(2),t,4.0,UG/M3,micrograms per cubic meter,,Particulate
+37,2016-01-01T00:00:00,North Braddock,SONICWS,t,5.5,MPH,miles per hour,,Meteorological
+38,2016-01-01T00:00:00,North Braddock,SONICWD,t,260.0,DEG,Degrees,,Meteorological
+39,2016-01-01T00:00:00,North Braddock,SIGTHETA,t,32.1,DEG,Degrees,,
+40,2016-01-01T00:00:00,Lincoln,PM10,t,5.0,UG/M3,micrograms per cubic meter,,Criteria Pollutants
+41,2016-01-01T00:00:00,Lincoln,PER_F,t,49.0,PERCENT,Percent,,
+42,2016-01-01T00:00:00,Parkway East,BLACK CARBON,t,224.0,NG/M3,nanograms per cubic meter,,
+43,2016-01-01T00:00:00,Parkway East,BCSTAT,t,0.0,None,Alternate One Description,,
+44,2016-01-01T00:00:00,Harrison Township,OZONE,t,0.027,PPM,Parts Per Million,,Criteria Pollutants
+45,2016-01-01T00:00:00,Harrison Township,NO,t,0.0,PPM,Parts Per Million,,NoxCore
+46,2016-01-01T00:00:00,Harrison Township,NOX,t,0.003,PPM,Parts Per Million,,
+47,2016-01-01T00:00:00,Harrison Township,NO2,t,0.002,PPM,Parts Per Million,,NoxCore
+48,2016-01-01T00:00:00,Harrison Township,OZONE2,t,0.027,PPM,Parts Per Million,,Criteria Pollutants
+49,2016-01-01T00:00:00,Lawrenceville,OZONE,t,0.03,PPM,Parts Per Million,,Criteria Pollutants
+50,2016-01-01T00:00:00,Lawrenceville,OZONE2,t,0.03,PPM,Parts Per Million,,Criteria Pollutants
+51,2016-01-01T00:00:00,Lawrenceville,INT_T,t,18.2,DEGC,Degrees Celsius,,
+52,2016-01-01T00:00:00,Lawrenceville,SONICWS,t,8.4,MPH,miles per hour,,Meteorological
+53,2016-01-01T00:00:00,Lawrenceville,SONICWD,t,252.0,DEG,Degrees,,Meteorological
+54,2016-01-01T00:00:00,Lawrenceville,OUT_RH,t,68.3,PERCENT,Percent,,Meteorological
+55,2016-01-01T00:00:00,Lawrenceville,OUT_T,t,-5.3,DEGC,Degrees Celsius,,Meteorological
+56,2016-01-01T00:00:00,Lawrenceville,BP,t,744.2,MM/HG,millimeters of mercury (torr),,Meteorological
+57,2016-01-01T00:00:00,Lawrenceville,RWS,t,7.8,MPH,miles per hour,,
+58,2016-01-01T00:00:00,Lawrenceville,RWD,t,250.0,DEG,Degrees,,
+59,2016-01-01T00:00:00,Lawrenceville,SIGTHETA,t,20.9,DEG,Degrees,,
+60,2016-01-01T00:00:00,Lawrenceville,PM10RAW,t,829.0,UG/M3,micrograms per cubic meter,,
+61,2016-01-01T00:00:00,Lawrenceville,PM25RAW,t,829.0,UG/M3,micrograms per cubic meter,,
+62,2016-01-01T00:00:00,Lawrenceville,PM10B,t,4.0,UG/M3,micrograms per cubic meter,,
+63,2016-01-01T00:00:00,Lawrenceville,PM25B,t,3.0,UG/M3,micrograms per cubic meter,,
+64,2016-01-01T00:00:00,Lawrenceville,Peak Wind Gust,t,21.2,MPH,miles per hour,,
+65,2016-01-01T00:00:00,South Fayette,SO2,t,0.0,PPM,Parts Per Million,C,Criteria Pollutants
+66,2016-01-01T00:00:00,South Fayette,OZONE,f,,PPM,Parts Per Million,D,Criteria Pollutants
+67,2016-01-01T00:00:00,South Fayette,OZONE2,f,,PPM,Parts Per Million,D,Criteria Pollutants
+68,2016-01-01T00:00:00,South Fayette,OUT_T,t,-1.9,DEGC,Degrees Celsius,,Meteorological
+69,2016-01-01T00:00:00,South Fayette,INT_T,t,18.9,DEGC,Degrees Celsius,,
+70,2016-01-01T00:00:00,South Fayette,WNSP,t,6.9,MPH,miles per hour,,Meteorological
+71,2016-01-01T00:00:00,South Fayette,WNDR,t,256.0,DEG,Degrees,,Meteorological
+72,2016-01-01T00:00:00,Parkway East,PM25T,t,0.0,UG/M3,micrograms per cubic meter,,Criteria Pollutants
+73,2016-01-01T00:00:00,Parkway East,NOX,t,6.3,PPB,Parts Per Billion,,
+74,2016-01-01T00:00:00,Parkway East,NO2,t,4.7,PPB,Parts Per Billion,,NoxCore
+75,2016-01-01T00:00:00,Parkway East,OUT_T,t,-1.0,DEGC,Degrees Celsius,,Meteorological
+76,2016-01-01T00:00:00,Parkway East,SONICWS,t,5.8,MPH,miles per hour,,Meteorological
+77,2016-01-01T00:00:00,Parkway East,SONICWD,t,260.0,DEG,Degrees,,Meteorological
+78,2016-01-01T00:00:00,Parkway East,OUT_RH,t,88.5,PERCENT,Percent,,Meteorological
+79,2016-01-01T00:00:00,South Fayette,SONICWD,t,265.0,DEG,Degrees,,Meteorological
+80,2016-01-01T00:00:00,South Fayette,SONICWS,t,8.0,MPH,miles per hour,,Meteorological
+81,2016-01-01T00:00:00,South Fayette,SIGTHETA,t,21.5,DEG,Degrees,,
+82,2016-01-01T00:00:00,Parkway East,SIGTHETA,t,27.0,DEG,Degrees,,
+83,2016-01-01T00:00:00,Parkway East,UVPM,t,291.0,NG/M3,nanograms per cubic meter,,
+84,2016-01-01T00:00:00,Parkway East,TAPE COUNT,t,728.0,COUNT,Count,,
+85,2016-01-01T00:00:00,Avalon,BAMRAW,t,829.0,UG/M3,micrograms per cubic meter,,
+86,2016-01-01T00:00:00,Avalon,OUT_T,t,-0.2,DEGC,Degrees Celsius,,Meteorological
+87,2016-01-01T00:00:00,Avalon,INT_T,t,21.9,DEGC,Degrees Celsius,,
+88,2016-01-01T00:00:00,Avalon,H2S_SO2,t,0.0,PPM,Parts Per Million,C,
+89,2016-01-01T00:00:00,Avalon,SO2,t,0.0,PPM,Parts Per Million,C,Criteria Pollutants
+90,2016-01-01T00:00:00,Avalon,SONICWS,t,6.8,MPH,miles per hour,,Meteorological
+91,2016-01-01T00:00:00,Avalon,SONICWD,t,273.0,DEG,Degrees,,Meteorological
+92,2016-01-01T00:00:00,Avalon,PM25B,t,6.0,UG/M3,micrograms per cubic meter,,
+93,2016-01-01T00:00:00,Avalon,SIGTHETA,t,25.1,DEG,Degrees,,
+94,2016-01-01T00:00:00,Flag Plaza,CO,t,0.1,PPB,Parts Per Billion,C,Criteria Pollutants
+95,2016-01-01T00:00:00,Flag Plaza,PM10,t,9.0,UG/M3,micrograms per cub
