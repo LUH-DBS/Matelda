@@ -60,7 +60,7 @@ class Detection:
         self.STRATEGY_FILTERING = False
         self.CLASSIFICATION_MODEL = "GBC"  # ["ABC", "DTC", "GBC", "GNB", "SGDC", "SVC"]
         self.LABEL_PROPAGATION_METHOD = "homogeneity"   # ["homogeneity", "majority"]
-        self.ERROR_DETECTION_ALGORITHMS = ["OD", "PVD", "RVD"]   # ["OD", "PVD", "RVD", "KBVD", "TFIDF"]
+        self.ERROR_DETECTION_ALGORITHMS = ["OD", "RVD"]   # ["OD", "PVD", "RVD", "KBVD", "TFIDF"]
         self.HISTORICAL_DATASETS = []
 
     def _strategy_runner_process(self, args):

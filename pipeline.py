@@ -11,20 +11,20 @@ import time
 
 import marshmallow_pipeline.utils.app_logger
 from marshmallow_pipeline.error_detection import error_detector
-from marshmallow_pipeline.grouping_columns import column_grouping
-from marshmallow_pipeline.grouping_tables import table_grouping
-from marshmallow_pipeline.saving_results_optimized import get_all_results
+from marshmallow_pipeline.column_grouping_module.grouping_columns import column_grouping
+from marshmallow_pipeline.table_grouping_module.grouping_tables import table_grouping
+from marshmallow_pipeline.utils.saving_results import get_all_results
 from marshmallow_pipeline.utils.loading_results import \
     loading_columns_grouping_results
 
 def main(execution):
     configs = ConfigParser()
     configs.read("/home/fatemeh/ED-Scale-Oct/ED-Scale/config.ini")
-    # labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
+    labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])
     save_mediate_res_on_disk = bool(int(configs["EXPERIMENTS"]["save_mediate_res_on_disk"]))
-
+    final_result_df = bool(int(configs["EXPERIMENTS"]["final_result_df"]))
     sandbox_path = configs["DIRECTORIES"]["sandbox_dir"]
     tables_path = os.path.join(sandbox_path, configs["DIRECTORIES"]["tables_dir"])
 
@@ -75,15 +75,6 @@ def main(execution):
     cell_clustering_alg = configs["CELL_GROUPING"]["cell_clustering_alg"]
     cell_clustering_res_available = bool(int(configs["CELL_GROUPING"]["cell_clustering_res_available"]))
     classification_mode = int(configs["CELL_GROUPING"]["classification_mode"])
-    if classification_mode == 3:
-        nearest_neighbours_percentage = float(configs["CELL_GROUPING"]["nearest_neighbours_percentage"])
-    else:
-        nearest_neighbours_percentage = -1
-    labeling_method = int(configs["CELL_GROUPING"]["labeling_method"])
-    if labeling_method == 2:
-        llm_labels_per_cell_group = int(configs["CELL_GROUPING"]["llm_labels_per_cell_group"])
-    else: 
-        llm_labels_per_cell_group = -1
     min_n_labels_per_cell_group = int(configs["CELL_GROUPING"]["labels_per_cell_group"])
 
     dirty_files_name = configs["DIRECTORIES"]["dirty_files_name"]
@@ -201,7 +192,7 @@ def main(execution):
         predicted_all,
         y_labeled_by_user_all,
         unique_cells_local_index_collection,
-        samples, global_n_userl_labels, global_n_model_labels
+        samples, global_n_userl_labels
     ) = error_detector(
         cell_feature_generator_enabled,
         tables_path,
@@ -260,10 +251,11 @@ def main(execution):
         unique_cells_local_index_collection,
         samples,
         dirty_files_name,
-        clean_files_name
+        clean_files_name, 
+        final_result_df
     )
     
-    logging.info(f"Number of user labeled cells: {global_n_userl_labels}, Number of model labeled cells {global_n_model_labels}")
+    logging.info(f"Number of user labeled cells: {global_n_userl_labels}")
 
-# if __name__ == "__main__":
-#     main(100, 1)
+if __name__ == "__main__":
+    main(1)

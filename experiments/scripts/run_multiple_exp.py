@@ -3,8 +3,9 @@ import shutil
 import pipeline
 
 executions = range(1, 2)
-labeling_budget = [0.10, 0.25, 0.5, 0.75, 1, 2, 3]
-n_cols = 975
+# labeling_budget = [0.10, 0.25, 0.5, 0.75, 1, 2, 3]
+labeling_budget = [2]
+n_cols = 50
 for i in range (5, 21, 5):
     labeling_budget.append(i)
 labeling_budgets_cells = [round(n_cols*x) for x in labeling_budget]

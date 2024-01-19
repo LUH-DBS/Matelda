@@ -1,12 +1,7 @@
 import copy
 import logging
 import math
-import random
 from statistics import mode
-from sklearn.feature_selection import VarianceThreshold
-
-from sklearn.neighbors import NearestNeighbors
-from marshmallow_pipeline.cell_grouping_module.llm_labeling import few_shot_prediction, get_foundation_model_prediction
 
 import numpy as np
 import pandas as pd
@@ -188,9 +183,8 @@ def distribute_labels_in_cell_clusters(cell_cluster_n_labels, sorted_clusters, v
     if min_n_labels_per_cell_group == 2:
         while sorted_cluster_idx < len(sorted_clusters) and n_labels > 1:
             cluster = sorted_clusters[sorted_cluster_idx]
-            set_values_per_cluster = set(values_per_cluster[cluster])
             # Compare the number of labels with the number of unique feature vectors
-            if cell_cluster_n_labels[cluster] < len(set_values_per_cluster):
+            if cell_cluster_n_labels[cluster] < len(values_per_cluster[cluster]):
                 cell_cluster_n_labels[cluster] += 2
                 n_labels -= 2
             if cell_cluster_n_labels[cluster] == 0:
@@ -201,9 +195,8 @@ def distribute_labels_in_cell_clusters(cell_cluster_n_labels, sorted_clusters, v
     sorted_cluster_idx = 0
     while n_labels > 0 and i < len(sorted_clusters):
         cluster = sorted_clusters[sorted_cluster_idx]
-        set_values_per_cluster = set(values_per_cluster[cluster])
         # Compare the number of labels with the number of unique feature vectors
-        if cell_cluster_n_labels[cluster] < len(set_values_per_cluster):
+        if cell_cluster_n_labels[cluster] < len(values_per_cluster[cluster]):
             cell_cluster_n_labels[cluster] += 1
             n_labels -= 1
             i = 0
@@ -216,7 +209,7 @@ def distribute_labels_in_cell_clusters(cell_cluster_n_labels, sorted_clusters, v
     return cell_cluster_n_labels
     
 def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cell_cluster_n_labels, 
-                                 x, y, dirty_cell_values, tables_tuples_dict, nearest_neighbours_percentage, semi_propagation, labeling_method, llm_labels_per_cell_group, original_data_keys_temp, min_n_labels_per_cell_group):
+                                 x, y, dirty_cell_values, tables_tuples_dict, original_data_keys_temp, min_n_labels_per_cell_group):
     try:
         x_cluster = []
         y_cluster = []
@@ -227,11 +220,6 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
         samples_indices_cell_group = []
         dirty_cell_values_cluster = []
         n_user_labeled_cells = 0
-        n_model_labeled_cells = 0
-        cells_with_propagated_labels_vectors = []
-        cells_with_propagated_labels_cg_idx = []
-        cells_with_propagated_labels_gl_idx = []
-        y_cells_with_propagated_labels = []
         col_group_cell_idx = updated_cells_per_cluster[cluster]
         for cell_idx in col_group_cell_idx:
             x_cluster.append(x[cell_idx])
@@ -239,12 +227,9 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
             key_cluster.append(original_data_keys_temp[cell_idx])
 
         if updated_cell_cluster_n_labels[cluster] > 1:
-            sampled_cells = []
-            samples_idx = []
             samples_labels = []
             user_samples = []
-            outer_while_trial = 5
-            while len(samples_feature_vectors) < updated_cell_cluster_n_labels[cluster] and outer_while_trial > 0:
+            while len(samples_feature_vectors) < updated_cell_cluster_n_labels[cluster]:
                 trial = 5
                 unique_sample = True
                 sample = np.random.randint(0, len(x_cluster))
@@ -253,71 +238,26 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
                     trial -= 1
                 if trial == 0 and sample in user_samples:
                     unique_sample = False
-                if unique_sample:
-                    if semi_propagation:
-                        knn = NearestNeighbors(n_neighbors= round(nearest_neighbours_percentage * len(x_cluster)), metric="euclidean")
-                        knn.fit(x_cluster)
-                        distances, indices = knn.kneighbors([x_cluster[sample]])
-                        for idx in indices[0]:
-                            cells_with_propagated_labels_cg_idx.append(idx)
-                            cells_with_propagated_labels_gl_idx.append(col_group_cell_idx[idx])
-                            cells_with_propagated_labels_vectors.append(x_cluster[idx])
-                            y_cells_with_propagated_labels.append(y_cluster[idx])
-                    user_samples.append(sample)
-                    samples_feature_vectors.append(x_cluster[sample])
-                    if labeling_method == 0:
-                        samples_labels.append(y_cluster[sample])
-                        n_user_labeled_cells += 1
-                    elif labeling_method == 1:
-                        label = get_foundation_model_prediction(tables_tuples_dict, key_cluster[sample])
-                        samples_labels.append(label) 
-                        n_model_labeled_cells += 1
-                    elif labeling_method == 2:
-                        sampled_cells.append(key_cluster[sample])
-                        samples_idx.append(sample)
-                        samples_labels.append(y_cluster[sample])
-                    dirty_cell_values_cluster.append(
-                        dirty_cell_values[col_group_cell_idx[sample]]
-                    )
-                    if col_group_cell_idx[sample] in samples_indices_global:
-                        logging.INFO("sample is already in samples_indices_global")
-                    samples_indices_global.append(col_group_cell_idx[sample])
-                    samples_indices_cell_group.append(sample)
-                else: 
-                    outer_while_trial -= 1
-            if labeling_method == 2:
-                n_samples_llm = min(llm_labels_per_cell_group, len(x_cluster) - min_n_labels_per_cell_group)
-                llm_samples_idx = get_random_sample_list(n_samples_llm, x_cluster, user_samples)
-                llm_samples = [key_cluster[i] for i in llm_samples_idx]
-                if len(llm_samples) > 0:
-                    user_samples_labels_dict = {}
-                    for samp_idx, sample in enumerate(sampled_cells):
-                        user_samples_labels_dict[sample] = samples_labels[samp_idx]
-                    test_labels = few_shot_prediction(tables_tuples_dict, llm_samples, user_samples_labels_dict) 
-                    n_user_labeled_cells += len(sampled_cells)
-                    n_model_labeled_cells += len(test_labels)
-                    
-                    for s_llm_idx, s_llm in enumerate(llm_samples_idx):
-                        dirty_cell_values_cluster.append(
-                            dirty_cell_values[col_group_cell_idx[s_llm]]
-                        )
-                        samples_feature_vectors.append(x_cluster[s_llm])
-                        if col_group_cell_idx[s_llm] in samples_indices_global:
-                            logging.INFO("sample is already in samples_indices_global")
-                        samples_indices_global.append(col_group_cell_idx[s_llm])
-                        samples_indices_cell_group.append(s_llm)
-                        samples_labels.append(test_labels[s_llm_idx])
-                
+
+                if not unique_sample:
+                    logging.debug("sample is not unique")
+                user_samples.append(sample)
+                samples_feature_vectors.append(x_cluster[sample])
+                samples_labels.append(y_cluster[sample])
+                n_user_labeled_cells += 1
+                dirty_cell_values_cluster.append(
+                    dirty_cell_values[col_group_cell_idx[sample]]
+                )
+                if col_group_cell_idx[sample] in samples_indices_global:
+                    logging.INFO("sample is already in samples_indices_global")
+                samples_indices_global.append(col_group_cell_idx[sample])
+                samples_indices_cell_group.append(sample)
+            
         else:
             sample = get_the_nearest_point_to_centroid(x_cluster)
             samples_feature_vectors.append(x_cluster[sample])
-            if labeling_method == 0:
-                samples_labels.append(y_cluster[sample])
-                n_user_labeled_cells += 1
-            elif labeling_method == 1:
-                label = get_foundation_model_prediction(tables_tuples_dict, key_cluster[sample])
-                samples_labels.append(label)
-                n_model_labeled_cells += 1
+            samples_labels.append(y_cluster[sample])
+            n_user_labeled_cells += 1
             dirty_cell_values_cluster.append(
                 dirty_cell_values[col_group_cell_idx[sample]]
             )
@@ -326,34 +266,10 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
             samples_indices_global.append(col_group_cell_idx[sample])
             samples_indices_cell_group.append(sample)
 
-            if semi_propagation:
-                knn = NearestNeighbors(n_neighbors= round(nearest_neighbours_percentage * len(x_cluster)), metric="euclidean")
-                knn.fit(x_cluster)
-                distances, indices = knn.kneighbors([x_cluster[sample]])
-                for idx in indices[0]:
-                    cells_with_propagated_labels_cg_idx.append(idx)
-                    cells_with_propagated_labels_gl_idx.append(col_group_cell_idx[idx])
-                    cells_with_propagated_labels_vectors.append(x_cluster[idx])
-                    y_cells_with_propagated_labels.append(y_cluster[idx])
     except Exception as e:
         logging.error("pick_samples_in_cell_cluster - error: %s", e)
     return samples_feature_vectors, samples_labels, samples_indices_global, samples_indices_cell_group,\
-          dirty_cell_values_cluster, n_user_labeled_cells, n_model_labeled_cells, \
-        cells_with_propagated_labels_vectors, cells_with_propagated_labels_cg_idx, cells_with_propagated_labels_gl_idx, y_cells_with_propagated_labels
-
-def get_random_sample_list(n_samples, x_cluster, user_samples):
-    llm_samples_idx = []
-    for i in range(n_samples):
-        trial = 5
-        sample_llm = np.random.randint(0, len(x_cluster))
-        while (sample_llm in llm_samples_idx or sample_llm in user_samples) and trial > 0:
-            sample_llm = np.random.randint(0, len(x_cluster))
-            trial -= 1
-        if trial == 0 and sample_llm in llm_samples_idx:
-            continue
-        else:
-            llm_samples_idx.append(sample_llm)
-    return llm_samples_idx
+          dirty_cell_values_cluster, n_user_labeled_cells
 
 def check_and_split_cell_clusters(x, y, labeled_clusters, cell_cluster_n_labels, cells_per_cluster, n_cores, updated_cells_per_cluster, updated_errors_per_cluster, updated_cell_cluster_n_labels, min_n_labels_per_cell_group):
     for cluster in labeled_clusters:
@@ -379,8 +295,7 @@ def check_and_split_cell_clusters(x, y, labeled_clusters, cell_cluster_n_labels,
 def update_samples_dict(cell_clustering_dict, samples_dict, cluster, \
                         samples_feature_vectors, samples_labels, samples_indices_global, \
                             samples_indices_cell_group, dirty_cell_values_cluster, \
-                                updated_cells_per_cluster, updated_errors_per_cluster, updated_cell_cluster_n_labels,\
-                                    cells_with_propagated_labels_vectors, cells_with_propagated_labels_cg_idx, cells_with_propagated_labels_gl_idx, y_cells_with_propagated_labels):
+                                updated_cells_per_cluster, updated_errors_per_cluster, updated_cell_cluster_n_labels):
     logging.debug("Update samples dict")
     cell_clustering_dict["cells_per_cluster"].values[0] = updated_cells_per_cluster
     cell_clustering_dict["errors_per_cluster"].values[0] = updated_errors_per_cluster
@@ -392,14 +307,9 @@ def update_samples_dict(cell_clustering_dict, samples_dict, cluster, \
     samples_dict["dirty_cell_values"].append(dirty_cell_values_cluster)
     samples_dict["samples_indices_cell_group"].append(samples_indices_cell_group)
     samples_dict["samples_indices_global"].append(samples_indices_global)
-    samples_dict["cells_with_propagated_labels_vectors"].append(cells_with_propagated_labels_vectors)
-    samples_dict["cells_with_propagated_labels_cg_idx"].append(cells_with_propagated_labels_cg_idx)
-    samples_dict["cells_with_propagated_labels_gl_idx"].append(cells_with_propagated_labels_gl_idx)
-    samples_dict["y_cells_with_propagated_labels"].append(y_cells_with_propagated_labels)
     return cell_clustering_dict, samples_dict
 
-
-def sampling(cell_clustering_dict, x, y, dirty_cell_values, original_data_keys_temp, n_cores, tables_tuples_dict, nearest_neighbours_percentage, semi_propagation, labeling_method, llm_labels_per_cell_group, min_n_labels_per_cell_group):
+def sampling(cell_clustering_dict, x, y, dirty_cell_values, original_data_keys_temp, n_cores, tables_tuples_dict, min_n_labels_per_cell_group):
     logging.debug("Sampling")
     samples_dict = {
         "cell_cluster": [],
@@ -408,11 +318,7 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values, original_data_keys_t
         "samples_indices_cell_group": [],
         "samples_indices_global": [],
         "labels": [],
-        "dirty_cell_values": [],
-        "cells_with_propagated_labels_vectors": [],
-        "cells_with_propagated_labels_cg_idx": [],
-        "cells_with_propagated_labels_gl_idx": [],
-        "y_cells_with_propagated_labels": []
+        "dirty_cell_values": []
     }
 
     cells_per_cluster = cell_clustering_dict["cells_per_cluster"].values[0]
@@ -443,13 +349,10 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values, original_data_keys_t
 
     logging.debug("Number of updated_labeled_clusters: %s", len(updated_labeled_clusters))
     global_n_user_labeled_cells = 0
-    global_n_model_labeled_cells = 0
     for cluster in updated_labeled_clusters:
         logging.debug("Sampling - cluster: %s", cluster)
         samples_feature_vectors, samples_labels, \
-        samples_indices_global, samples_indices_cell_group, dirty_cell_values_cluster, n_user_labeled_cells, \
-        n_model_labeled_cells, cells_with_propagated_labels_vectors, cells_with_propagated_labels_cg_idx, \
-            cells_with_propagated_labels_gl_idx, y_cells_with_propagated_labels = \
+        samples_indices_global, samples_indices_cell_group, dirty_cell_values_cluster, n_user_labeled_cells, = \
             pick_samples_in_cell_cluster(cluster, 
                                          updated_cells_per_cluster, 
                                          updated_cell_cluster_n_labels, 
@@ -457,24 +360,18 @@ def sampling(cell_clustering_dict, x, y, dirty_cell_values, original_data_keys_t
                                          y, 
                                          dirty_cell_values, 
                                          tables_tuples_dict,
-                                         nearest_neighbours_percentage,
-                                         semi_propagation,
-                                         labeling_method,
-                                         llm_labels_per_cell_group,
                                          original_data_keys_temp, 
                                          min_n_labels_per_cell_group)
         global_n_user_labeled_cells += n_user_labeled_cells
-        global_n_model_labeled_cells += n_model_labeled_cells
 
         cell_clustering_dict, samples_dict = update_samples_dict(cell_clustering_dict, samples_dict, cluster, \
                         samples_feature_vectors, samples_labels, samples_indices_global, \
                             samples_indices_cell_group, dirty_cell_values_cluster, \
-                                updated_cells_per_cluster, updated_errors_per_cluster, updated_cell_cluster_n_labels, \
-                                    cells_with_propagated_labels_vectors, cells_with_propagated_labels_cg_idx, cells_with_propagated_labels_gl_idx, y_cells_with_propagated_labels)
+                                updated_cells_per_cluster, updated_errors_per_cluster, updated_cell_cluster_n_labels)
         
     logging.debug("Sampling done")
     
-    return samples_dict, cell_clustering_dict, global_n_user_labeled_cells, global_n_model_labeled_cells
+    return samples_dict, cell_clustering_dict, global_n_user_labeled_cells
 
 
 

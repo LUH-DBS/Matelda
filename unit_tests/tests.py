@@ -3,6 +3,8 @@ import pickle
 
 import pandas as pd
 
+from marshmallow_pipeline.utils.get_lake_info import get_info
+
 
 def test_n_cells_evaluated(scores_all, actual_n_cells):
     n_cells = 0
@@ -15,6 +17,17 @@ def test_n_cells_evaluated(scores_all, actual_n_cells):
         print("Test test_n_cells_evaluated passed!")
     except AssertionError:
         print("AssertionError test_n_cells_evaluated: n_cells = {} != {}".format(n_cells, actual_n_cells))
+        raise AssertionError
+    
+def test_n_errors_considered(scores_all, actual_n_errors):
+    n_errors = 0
+    n_errors += scores_all["total_tp"]
+    n_errors += scores_all["total_fn"]
+    try:
+        assert n_errors == actual_n_errors
+        print("Test test_n_errors_considered passed!")
+    except AssertionError:
+        print("AssertionError test_n_errors_considered: n_errors = {} != {}".format(n_errors, actual_n_errors))
         raise AssertionError
 
 def test_measures_calculated(scores_all):
@@ -77,13 +90,19 @@ def test_col_group_test_cells(res_base_path, mediate_file_path):
                             print("table_cluster: {}, col_cluster: {}".format(table_cluster, col_cluster))
                             print("AssertionError test_col_group_test_cells: n_cells = {} != {}".format(n_cells, scores["tp"] + scores["fp"] + scores["fn"] + scores["tn"]))
                             raise AssertionError
-                    
-scores_all_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/Quintet-test-Exp/output_quintet_1/_test_Quintet_66_labels/results/scores_all.pickle"
-res_base_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/Quintet-test-Exp/output_quintet_1/_test_Quintet_66_labels/results"
-mediate_file_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/Quintet-test-Exp/output_quintet_1/_test_Quintet_66_labels/mediate_files"
+
+sandbox_base_path = "/home/fatemeh/ED-Scale-Oct/ED-Scale/datasets"                             
+sandbox_name = "Quintet"           
+dirty_file_names = "dirty.csv"
+clean_file_names = "clean.csv"
+scores_all_path = "/home/fatemeh/ED-Scale-Oct/ED-Scale/output_quintet_2/_spell_checker_Quintet_2000_labels/results/scores_all.pickle"
+res_base_path = "/home/fatemeh/ED-Scale-Oct/ED-Scale/output_quintet_2/_spell_checker_Quintet_2000_labels/results"
+mediate_file_path = "/home/fatemeh/ED-Scale-Oct/ED-Scale/output_quintet_2/_spell_checker_Quintet_2000_labels/mediate_files"
+
 with open(scores_all_path, 'rb') as f:
         scores_all = pickle.load(f)
-test_n_cells_evaluated(scores_all, 199772)
+test_n_cells_evaluated(scores_all, get_info(sandbox_base_path, sandbox_name, dirty_file_names, clean_file_names)[4])
+test_n_errors_considered(scores_all, get_info(sandbox_base_path, sandbox_name, dirty_file_names, clean_file_names)[5])
 test_measures_calculated(scores_all)
 test_col_groups_res(res_base_path, scores_all)
 test_col_group_test_cells(res_base_path, mediate_file_path)

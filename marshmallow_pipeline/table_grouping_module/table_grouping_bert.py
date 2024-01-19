@@ -1,19 +1,15 @@
 import logging
 import os
-import time
 import re
 from marshmallow_pipeline.utils.read_data import read_csv
 import numpy as np
 from sklearn.cluster import HDBSCAN
 from transformers import BertTokenizer, BertModel
-import pandas as pd
-import nltk
 from nltk.corpus import stopwords
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 nltk_stopwords = set(stopwords.words('english'))
 
-# Use DistilBert
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertModel.from_pretrained('bert-base-uncased')
 
@@ -21,13 +17,6 @@ model = BertModel.from_pretrained('bert-base-uncased')
 def preprocess_text(text):
     # Convert text to lowercase
     text = text.lower()
-    
-    # # Remove punctuation
-    # text = re.sub(r'[^\w\s]', '', text)
-    
-    # # Remove numbers
-    # text = re.sub(r'\d+', '', text)
-    
     # Remove stopwords
     words = text.split()
     words = [word for word in words if word not in nltk_stopwords]
@@ -62,12 +51,6 @@ def get_tabls_docs(base_path, pool):
     documents = []
     table_names = {}
     table_size_dict = {}
-    # results = pool.apply(process_document, csv_files)
-    # for result in results:
-    #     processed_text, table_name, table_size = result
-    #     table_names[len(documents)] = table_name
-    #     documents.append(processed_text)
-    #     table_size_dict[table_name] = table_size
     with ThreadPoolExecutor() as executor:
         futures = [executor.submit(process_document, file) for file in csv_files]
         for future in as_completed(futures):

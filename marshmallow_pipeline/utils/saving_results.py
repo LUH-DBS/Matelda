@@ -1,4 +1,4 @@
-from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
+from concurrent.futures import ProcessPoolExecutor
 import hashlib
 import logging
 import os
@@ -84,7 +84,6 @@ def get_classification_results(
 
 def process_cell_cell_results(cell_key, key, unique_cells_local_index_collection, y_local_cell_ids, y_test_all, col_cluster_prediction, all_tables_dict, samples):
     try:
-        # print(cell_key)
         cell_local_idx = unique_cells_local_index_collection[key][cell_key]
         y_cell_ids = {id: idx for idx, id in enumerate(y_local_cell_ids[key])}
         y_local_idx = y_cell_ids.get(cell_local_idx, -1)
@@ -101,7 +100,7 @@ def process_cell_cell_results(cell_key, key, unique_cells_local_index_collection
             "label": y_test_all[key][y_local_idx]
         }
     except Exception as e:
-        print("Error: ", e)
+        logging.error("Error: ", e)
         return None
     return res_dict
 
@@ -113,8 +112,6 @@ def process_col_group_cell_results(key, unique_cells_local_index_collection, y_l
     for j in range(len(col_cluster_prediction)):
         if swapped_cell_local_ids[j] in samples:
             col_cluster_prediction[j] = samples[swapped_cell_local_ids[j]]
-    if col_cluster_prediction.count(1) != predicted_all[key].count(1):
-        print("I'm here")
     for cell_key in unique_cells_local_index_collection[key]:
         cell_res = process_cell_cell_results(cell_key, key, unique_cells_local_index_collection,\
                                         y_local_cell_ids, y_test_all, col_cluster_prediction,\
@@ -124,7 +121,7 @@ def process_col_group_cell_results(key, unique_cells_local_index_collection, y_l
     all_predicted_as_one = 0
     for cell in all_cell_results:
         all_predicted_as_one += 1 if cell["predicted"] else 0
-    print("Done with col group: ", key, all_predicted_as_one)
+    logging.debug("Done with col group: ", key, all_predicted_as_one)
     return all_cell_results
 
 def create_predictions_dict(
@@ -144,15 +141,12 @@ def create_predictions_dict(
     rows_list = []
     with ProcessPoolExecutor(max_workers=num_threads) as executor:
         futures = []
-        counter = 0
         for batch in key_batches:
 
             futures.append(executor.submit(process_batches, batch,
                                            unique_cells_local_index_collection,
                                            y_local_cell_ids, y_test_all, predicted_all,
                                            all_tables_dict, samples))
-            counter += 1
-            print("counter: ", counter)
         for future in futures:
             rows_list.extend(future.result())
 
@@ -169,7 +163,6 @@ def process_batches(batch, unique_cells_local_index_collection, y_local_cell_ids
                                                           unique_cells_local_index_collection,
                                                           y_local_cell_ids, y_test_all, predicted_all,
                                                           all_tables_dict, samples))
-    # print("Done with batch: ", batch)
     return all_results
 
 
@@ -238,7 +231,8 @@ def get_all_results(
     unique_cells_local_index_collection,
     samples,
     dirty_file_names,
-    clean_file_names
+    clean_file_names,
+    final_result_df=0
 ):
     logging.info("Getting all results")
     with open(os.path.join(results_dir, "labeled_by_user.pickle"), "wb") as file:
@@ -250,21 +244,22 @@ def get_all_results(
     )
     logging.info("Getting prediction results")
     tables_dict = get_tables_dict(init_tables_dict, tables_path, dirty_file_names, clean_file_names)
-    # results_df = create_predictions_dict(
-    #     tables_dict,
-    #     y_test_all,
-    #     y_local_cell_ids,
-    #     predicted_all,
-    #     unique_cells_local_index_collection,
-    #     samples,
-    # )
-    # logging.info("Getting results per table")
-    # results_per_table = get_results_per_table(results_df)
-    # logging.info("Saving results")
-    # with open(os.path.join(results_dir, "results_df.pickle"), "wb") as file:
-    #     pickle.dump(results_df, file)
-    # with open(os.path.join(results_dir, "results_per_table.pickle"), "wb") as file:
-    #     pickle.dump(results_per_table, file)
+    if final_result_df:
+        results_df = create_predictions_dict(
+            tables_dict,
+            y_test_all,
+            y_local_cell_ids,
+            predicted_all,
+            unique_cells_local_index_collection,
+            samples,
+        )
+        logging.info("Getting results per table")
+        results_per_table = get_results_per_table(results_df)
+        logging.info("Saving results")
+        with open(os.path.join(results_dir, "results_df.pickle"), "wb") as file:
+            pickle.dump(results_df, file)
+        with open(os.path.join(results_dir, "results_per_table.pickle"), "wb") as file:
+            pickle.dump(results_per_table, file)
 
 
 def get_all_results_from_disk(output_path, tables_path, dirty_file_names, clean_file_names):
@@ -284,9 +279,9 @@ def get_all_results_from_disk(output_path, tables_path, dirty_file_names, clean_
     with open(os.path.join(output_path, "results", "final_results", "samples.pickle"), "rb") as file:
         samples = pickle.load(file)
 
-    # get_classification_results(
-    #     y_test_all, predicted_all, y_labeled_by_user_all, output_path, samples, unique_cells_local_index_collection
-    # )
+    get_classification_results(
+        y_test_all, predicted_all, y_labeled_by_user_all, output_path, samples, unique_cells_local_index_collection
+    )
     get_all_results(
         tables_init_dict,
         tables_path,
@@ -300,17 +295,3 @@ def get_all_results_from_disk(output_path, tables_path, dirty_file_names, clean_
         dirty_file_names,
         clean_file_names
     )    
-
-# output_path = "/home/fatemeh/EDS-Analysis/ED-Scale/analysis/test_typos_1/_test_DGov_119_only_typos_80_labels"
-# tables_path = "//home/fatemeh/EDS-Analysis/ED-Scale/analysis/DGov_119_only_typos"
-# dirty_file_names = "dirty.csv"
-# clean_file_names = "clean.csv"
-
-# get_all_results_from_disk(output_path, tables_path, dirty_file_names, clean_file_names)
-
-# output_path = "/home/fatemeh/EDS-Analysis/ED-Scale/analysis/test_typos_1/_test_DGov_119_only_typos_15900_labels"
-# tables_path = "//home/fatemeh/EDS-Analysis/ED-Scale/analysis/DGov_119_only_typos"
-# dirty_file_names = "dirty.csv"
-# clean_file_names = "clean.csv"
-
-# get_all_results_from_disk(output_path, tables_path, dirty_file_names, clean_file_names)
