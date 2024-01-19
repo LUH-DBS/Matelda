@@ -3,8 +3,7 @@ import pickle
 
 import pandas as pd
 
-from marshmallow_pipeline.utils.get_lake_info import get_info
-
+from get_lake_info import get_info
 
 def test_n_cells_evaluated(scores_all, actual_n_cells):
     n_cells = 0
@@ -91,13 +90,13 @@ def test_col_group_test_cells(res_base_path, mediate_file_path):
                             print("AssertionError test_col_group_test_cells: n_cells = {} != {}".format(n_cells, scores["tp"] + scores["fp"] + scores["fn"] + scores["tn"]))
                             raise AssertionError
 
-sandbox_base_path = "/home/fatemeh/ED-Scale-Oct/ED-Scale/datasets"                             
+sandbox_base_path = "datasets"                             
 sandbox_name = "Quintet"           
 dirty_file_names = "dirty.csv"
 clean_file_names = "clean.csv"
-scores_all_path = "/home/fatemeh/ED-Scale-Oct/ED-Scale/output_quintet_2/_spell_checker_Quintet_2000_labels/results/scores_all.pickle"
-res_base_path = "/home/fatemeh/ED-Scale-Oct/ED-Scale/output_quintet_2/_spell_checker_Quintet_2000_labels/results"
-mediate_file_path = "/home/fatemeh/ED-Scale-Oct/ED-Scale/output_quintet_2/_spell_checker_Quintet_2000_labels/mediate_files"
+scores_all_path = "output_quintet_1/_spell_checker_Quintet_2000_labels/results/scores_all.pickle"
+res_base_path = "output_quintet_1/_spell_checker_Quintet_2000_labels/results"
+mediate_file_path = "output_quintet_1/_spell_checker_Quintet_2000_labels/mediate_files"
 
 with open(scores_all_path, 'rb') as f:
         scores_all = pickle.load(f)

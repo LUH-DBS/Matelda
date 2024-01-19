@@ -7,7 +7,7 @@ import shutil
 import subprocess
 import time
 
-from marshmallow_pipeline.table_grouping.table_grouping_bert import group_tables
+from marshmallow_pipeline.table_grouping_module.table_grouping_bert import group_tables
 
 import networkx.algorithms.community as nx_comm
 import pandas as pd

@@ -4,7 +4,7 @@ As data lakes become increasingly popular, ensuring high data quality within the
 
 ## Installation 
 
-1. First you need to install [miniconda](https://docs.conda.io/en/latest/miniconda.html).
+1. First you need to install [miniconda](https://docs.conda.io/en/latest/miniconda.html), and "aspell".
 
 2. Setup the repository.
 ```
