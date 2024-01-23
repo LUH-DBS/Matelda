@@ -146,8 +146,6 @@ def main(execution):
     logging.info("I need at least 2 labeled cells per table group to work at all and at least 2 * 6 labeled cells per table group to work effectively! Thant means you need to label {} cells if you want reasonable (!) results:".format(2*6*len(table_grouping_dict)))
     print("I need at least 2 labeled cells per table group to work at all and at least 2 * 6 labeled cells per table group to work effectively! Thant means you need to label {} cells if you want reasonable (!) results:".format(2*6*len(table_grouping_dict)))
 
-    if labeling_budget < 2* 6 *len(table_grouping_dict):
-        labeling_budget = 2*6*len(table_grouping_dict)
     # Column grouping
     if not column_grouping_res_available:
         logging.info("Column grouping results are not available")
