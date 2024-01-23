@@ -100,8 +100,8 @@ mediate_file_path = "output_quintet_1/_spell_checker_Quintet_2000_labels/mediate
 
 with open(scores_all_path, 'rb') as f:
         scores_all = pickle.load(f)
-test_n_cells_evaluated(scores_all, get_info(sandbox_base_path, sandbox_name, dirty_file_names, clean_file_names)[4])
-test_n_errors_considered(scores_all, get_info(sandbox_base_path, sandbox_name, dirty_file_names, clean_file_names)[5])
+test_n_cells_evaluated(scores_all, get_info(sandbox_base_path, sandbox_name, dirty_file_names, clean_file_names)["total_n_cells"])
+test_n_errors_considered(scores_all, get_info(sandbox_base_path, sandbox_name, dirty_file_names, clean_file_names)["total_errors"])
 test_measures_calculated(scores_all)
 test_col_groups_res(res_base_path, scores_all)
 test_col_group_test_cells(res_base_path, mediate_file_path)

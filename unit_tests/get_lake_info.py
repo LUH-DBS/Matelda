@@ -93,4 +93,19 @@ def get_info(sandbox_base_path, sandbox_name, dirty_file_names, clean_file_names
     avg_rows = total_rows / len(dataset_names)
     avg_cols = total_cols / len(dataset_names)
 
-    return error_rate_cells, error_rate_rows, avg_rows, avg_cols, total_n_cells, total_errors, total_error_cells_injected, total_erroneous_rows, total_rows, total_cols, len(dataset_names)
+    lake_info_dict = {
+        "sandbox_name": sandbox_name,
+        "error_rate_cells": error_rate_cells,
+        "error_rate_rows": error_rate_rows,
+        "avg_rows": avg_rows,
+        "avg_cols": avg_cols,
+        "total_n_cells": total_n_cells,
+        "total_errors": total_errors,
+        "total_error_cells_injected": total_error_cells_injected,
+        "total_erroneous_rows": total_erroneous_rows,
+        "total_rows": total_rows,
+        "total_cols": total_cols,
+        "total_datasets": len(dataset_names)
+    }
+
+    return lake_info_dict
