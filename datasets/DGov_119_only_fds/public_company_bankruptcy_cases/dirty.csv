@@ -1,0 +1,130 @@
+district,statevalue,companyname,assetsmillions(double precision),liabilitiesmillions(double precision)
+MD,FL,"A21, Inc.",25.2,30.3
+D,DE,Abitibibowater Inc.,9937.0,2213.0
+MD,FL,Abitibibowater Inc.,134.9,77.6
+D,DE,Accredited Home Lenders Holding Co.,799.5,490.7
+SD,NY,Apex Silver Mines LTD,721.3,930.9
+D,DE,"Applied Solar, Inc.",17.6,29.1
+ND,CA,Abitibibowater Inc.,295.8,315.4
+ND,GA,"Atherogenics, Inc.",72.0,40.0
+WD,MI,"Atherogenics, Inc.",103.7,134.4
+SD,TX,Apex Silver Mines LTD,56.3,24.3
+D,DE,Apex Silver Mines LTD,799.5,490.7
+ND,CA,"Applied Solar, Inc.",2.6,38.3
+SD,FL,BankUnited Financial Corporation,37.7,559.7
+D,DE,Barzel Industries Inc.,365.8,384.6
+HU,TX,Abitibibowater Inc.,80.1,138.9
+D,DE,"Atherogenics, Inc.",50.6,14.2
+ND,OH,"A21, Inc.",27.0,15.0
+D,KA,BankUnited Financial Corporation,512.9,447.4
+D,DE,BankUnited Financial Corporation,480.1,481.3
+D,DE,BankUnited Financial Corporation,96.4,75.5
+SD,TX,Accredited Home Lenders Holding Co.,35.5,17.1
+ED,NC,Apex Silver Mines LTD,1.2,10.4
+ED,CA,Abitibibowater Inc.,6.8,68.0
+ND,GA,Barzel Industries Inc.,366.0,376.8
+ND,TX,Abitibibowater Inc.,0.35,4.4
+SD,NY,"Applied Solar, Inc.",13881.0,24185.0
+SD,NY,Chemtura Corp.,1587.5,3507.4
+ED,VA,Chesapeake Corporation,936.6,937.1
+SD,NY,"Chrysler, LLC., et al.",39300.0,55200.0
+ED,WI,"CIB Maine Bancshares, Inc.",104.8,107.2
+ED,VA,"Circuit City Stores, Inc.",3400.1,2323.3
+ND,CA,"CMR Mortgage Fund II, LLC",45.3,22.0
+D,DE,Constar International Inc.,420.0,538.0
+ND,TX,"Crusader Energy Group, Inc., et al.",750.0,325.8
+D,DE,Dayton Superior Corp.,288.7,405.9
+SD,FL,DNC Multimedia Corporation,1.1,1.2
+D,DE,"Electroglas, Inc.",19.6,31.5
+SD,TX,"Energy Partners, Ltd., et al.",770.4,708.4
+ED,TX,"EnergyTec, Inc. et al.",33.7,12.5
+ED,AK,Equity Media Holdings Corporation,103.1,140.6
+ND,TX,"Espre Solutions, Inc.",1.8,5.8
+ND,TX,"FirstPlus Financial Group, Inc.",15.0,4.5
+CD,CA,"Fleetwood Enterprises, Inc.",559.7,623.5
+SD,NY,Forticell Bioscience,1.0,8.3
+SD,NY,General Growth Properties Inc.,29557.3,27293.7
+SD,NY,General Motors Corp.,82290.0,172819.0
+D,DE,GigaBeam Corp.,3.2,9.4
+D,AZ,"Global Aircraft Dolutions, Inc.",4.6,12.0
+MD,FL,"GPS Industries, Inc.",3.0,27.9
+ND,TX,"Guaranty Financial Group, Inc. et al.",15391.0,14390.0
+ND,IL,"Hartmarx Corp., et al.",483.0,261.0
+D,DE,Haynes Lemmerz International Inc.,2801.5,2659.8
+D,NV,"Herbst Gaming, Inc.(Sands Regent)",5.7,1179.0
+SD,NY,Hydrogen LLC,0.0,10.0
+ND,TX,"Idearc, Inc.",1800.0,9500.0
+D,AZ,"ILX Resorts, Inc.",12.9,29.4
+D,DE,Indalex Holdings Finance Inc.,356.0,456.0
+WD,TX,"IndentiPHI, Inc.",3.1,4.8
+WD,TX,"Introgen Therapeutics, Inc., et al.",9.1,12.9
+SD,NY,ION Media Networks Inc.,1.0,3000.0
+ND,IL,ISCO International Inc.,5.3,25.5
+D,DE,Isolagen Inc.,1.0,88.1
+ND,TX,Knight Energy Corp. et al.,0.5,4.8
+ED,VA,"LandAmerica Financial Group, Inc.",3325.1,2839.8
+SD,NY,"Lehman Brothers Holdings, Inc.",639000.0,613000.0
+SD,NY,Lenox Group Inc.,264.0,238.0
+MD,FL,"Life Sciences, Inc.",1.2,0.8
+WD,VA,Luna Innovations Incorporation,29.8,55.6
+SD,NY,Lyondell Chemical Co.,27.1,19.3
+D,DE,Magna Entertainment Corp.,1049.4,958.6
+SD,CA,"Meruelo Maddux Properties, Inc.",681.8,342.0
+SD,CA,"MicroIslet, Inc.",0.9,5.0
+SD,OH,"Milacron, Inc. et al.",523.3,752.0
+CD,CA,"Modtech Holdings, Inc.",40.9,34.9
+SD,CA,Molecular Imaging Corp.,0.6,16.1
+ED,MI,"Noble International, Ltd., et al.",190.8,38.7
+D,DE,"Nortel Networks, Inc.",11600.0,11800.0
+CD,CA,"North American Scientific, Inc.",6.2,5.8
+D,DE,"Northfield Laboratories, Inc.",10.9,1.8
+ED,AK,One Shackleford Holdings Corporation,103.1,140.6
+ED,TN,"Paladin Holdings, Inc.",10.8,3.2
+SD,TX,"Particle Drilling Technologies, Inc., et al.",2.9,1.4
+SD,FL,Peagus Wireless Corporation,17.4,3.9
+D,MN,"Petters Group Worldwide, LLC/Petters Company Inc.",35.4,2025.6
+ND,TX,Pilgrim's Pride Corporation,3751.8,2719.0
+SD,TX,"Platina Energy Group, Inc.",11.7,13.1
+D,DE,PNG Ventures Inc.,39.9,44.6
+WD,OK,Powder River Petroleum International Inc.,1.9,57.4
+D,DE,"Primus Telecommunications Group, Inc. Group, Inc.",392.7,827.4
+D,DE,"Proliance International, Inc.",160.3,133.5
+SD,FL,"QSGI, Inc.",24.0,22.7
+WD,LA,"Saratoga Resources Inc., et al.",169.3,110.6
+D,DE,"Semgroup, LP",6140.0,7530.0
+SD,FL,"SENDTEC, Inc.",3.7,17.4
+SD,NY,Silicon Graphics Inc.,369.4,664.3
+D,DE,Six Flags Inc.,3030.8,2366.2
+D,DE,Smurfit-Stone Container Corp.,7420.0,5582.0
+ND,TX,"Sonoran Energy, Inc.",47.1,26.4
+D,DE,"Source Interlink Companies, Inc.",2436.0,1995.5
+D,DE,Spansion Inc.,3840.0,2398.0
+WD,TX,"Spectrum Brands, Inc.",10074.4,4445.8
+D,NV,"Station Casinos, Inc.",5725.0,6482.6
+D,ID,Sterling Mining Company,11.7,14.2
+D,CO,"Storm Cat Energy Corporation, et al.",154.8,154.5
+D,CO,"Tapestry Pharmaceuticals, Inc.",11.8,3.7
+S,NJ,Taragon Corporation,840.7,1.0
+D,KS,Team Financial Inc.,0.7,26.7
+D,CO,Telemetrix Inc. et al.,1.0,13.8
+SD,FL,"Teleplus World, Corp.",10.8,21.2
+MD,AL,"The Colonial BancGroup, Inc.",45.0,380.0
+D,MD,Thornburg Mortgage,24400.0,24700.0
+SD,TX,"Transmeridian Exploration, Inc. et al.",377.9,451.7
+D,DE,Triple Crown Media Inc.,33.1,85.9
+SD,NY,Tronox Incorporated,1557.0,1221.6
+D,MD,TVI Corporation,23.3,37.3
+ND,CA,"Tvia, Inc.",5.6,1.1
+ED,TX,TWL Corporation,14.3,37.6
+WD,TX,"TXCO Resources, Inc., et al.",431.9,322.8
+ND,TX,TXP Corporation,3.6,16.8
+SD,NY,U.S. Shipping Partners L.P.,717.4,606.5
+D,DE,Velocity Express Corp.,94.1,120.6
+D,DE,Vermillion Inc.,7.2,32.0
+D,DE,Versun Energy Corp.,3453.0,1913.2
+CD,CA,Vineyard National Bancorp,2098.7,449.7
+ND,GA,"Vubotics, Inc.",0.02,3.6
+D,DE,Washington Mutual Inc.,32896.6,8167.0
+D,DE,"WCI Communications, Inc.",2178.2,1915.0
+D,DE,Worldspace Inc.,0.3,2.1
+ND,IL,"Xechem International, Inc.",3.9,11.1

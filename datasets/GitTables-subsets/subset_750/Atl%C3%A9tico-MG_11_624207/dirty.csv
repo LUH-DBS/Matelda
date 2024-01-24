@@ -1,0 +1,33 @@
+clube_id,nome,slug,apelido,atleta_id,rodada_id,posicao_id,status_id,pontos_num,preco_num,variacao_num,media_num,jogos_num,RB,FC,GC,CA,CV,SG,DD,DP,GS,FS,PI,A,FT,FD,FF,G,I,PP
+282,Fábio Santos Romeu,fabio-santos,Fábio Santos,38229,10,2,6,0,6.19,0,3.3,3,0,2,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0
+282,Diego Tardelli Martins,diego-tardelli,Diego Tardelli,38231,10,5,5,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+282,Alan Steven Franco Palma,franco,Franco,39656,10,4,2,-0.3,5.35,-1.53,3.6,9,0,10,0,0,0,0,0,0,0,9,32,0,0,1,3,3,1,0
+282,Eduardo Colcenti Antunes,eduardo-sasha,Eduardo Sasha,70360,10,5,7,-1.6,6.7,-1.67,3.78,5,0,6,0,0,0,0,0,0,0,7,15,1,0,4,2,1,1,1
+282,Everson Felipe Marques Pires,everson,Everson,72294,10,1,7,-2.4,8,-3,-2.4,1,0,0,0,0,0,0,0,0,1,0,4,0,0,0,0,0,0,0
+282,Réver Humberto Alves Araújo,rever,Réver,52253,10,3,7,9.9,8.71,1.23,4.63,4,0,2,0,0,0,1,0,0,0,4,25,0,0,0,0,1,0,0
+282,Juan Ramón Cazares Sevillano,cazares,Cazares,81682,10,4,6,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+282,Jair Rodrigues Júnior,jair,Jair,81091,10,4,7,0,7.41,0,3.94,8,0,19,0,3,0,0,0,0,0,15,21,2,0,0,2,1,0,0
+282,Victor Leandro Bagy,victor,Victor,52950,10,1,6,0,6.11,0,-7.2,1,0,0,0,0,0,0,0,0,3,0,12,0,0,0,0,0,0,0
+282,Jorge Sampaoli,jorge-sampaoli,Jorge Sampaoli,70800,10,6,7,4.22,13.92,0.55,4.74,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+282,Hyoran Kaue Dalmoro,hyoran,Hyoran,85931,10,4,6,0,12.26,-0.63,4.64,9,0,12,0,1,0,0,0,0,0,12,53,1,1,6,8,2,1,0
+282,Gabriel Costa França,gabriel,Gabriel,87393,10,3,6,0,7.83,0,2.8,1,0,2,0,1,0,1,0,0,0,0,2,0,0,0,0,0,0,0
+282,Nathan Allan de Souza,nathan,Nathan,87009,10,4,2,0.8,9.17,-1.77,4.73,3,0,2,0,0,0,0,0,0,0,0,8,0,0,1,1,1,2,0
+282,Rafael Pires Monteiro,rafael,Rafael,68928,10,1,6,0,7.81,0,2.36,8,0,1,0,0,1,4,5,0,5,0,56,0,0,0,0,0,0,0
+282,Igor Rabello da Costa,igor-rabello,Igor Rabello,89493,10,3,6,1.5,12.3,-0.05,4.6,7,0,8,0,0,0,3,0,0,0,7,33,0,1,0,0,1,0,0
+282,Júnior Osmar Ignacio Alonso Mujica,junior-alonso,Júnior Alonso,88312,10,3,7,1.3,11.14,0.09,4.46,9,0,11,0,2,0,4,0,0,0,1,55,1,1,2,4,0,0,0
+282,Allan Rodrigues de Souza,allan,Allan,96652,10,4,7,4.8,7.3,0.95,1.74,9,0,13,0,1,0,0,0,0,0,4,58,0,0,1,6,0,0,0
+282,Wellington Daniel Bueno,bueno,Bueno,97425,10,3,6,0,8.64,0,6.2,2,0,0,0,0,0,2,0,0,0,1,1,0,0,0,0,0,0,0
+282,Jefferson David Savarino Quintero,savarino,Savarino,98672,10,5,2,11.6,6.01,2.54,1.57,9,0,10,0,1,0,0,0,0,0,9,42,0,2,4,2,1,5,0
+282,Maílton dos Santos de Sá,mailton,Maílton,97898,10,2,6,3.4,3.3,0.33,1.65,2,0,1,0,0,0,0,0,0,0,2,9,0,0,2,1,0,1,0
+282,Marrony da Silva Liberato,marrony,Marrony,101717,10,5,2,0,10.21,0,3.81,8,0,9,0,0,0,0,0,0,0,2,10,0,1,7,2,2,0,0
+282,Cláudio Rodrigues Gomes,guga,Guga,101319,10,2,7,4.2,13.63,-0.93,6.28,7,0,8,0,1,0,4,0,0,0,10,50,1,1,2,2,0,0,0
+282,Dylan Felipe Borrero Caicedo,borrero,Borrero,106843,10,4,6,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+282,Gustavo Henrique Santos,gustavo-henrique,Gustavo Henrique,107963,10,3,6,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+282,Leonardo de Souza Sena,leo-sena,Léo Sena,90572,10,4,6,0,6.21,0,0.8,1,0,1,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0
+282,Gustavo Blanco Petersen Macedo,gustavo-blanco,Gustavo Blanco,91191,10,4,6,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+282,Mariano Ferreira Filho,mariano,Mariano,38877,10,2,6,0,8.85,0,2.98,5,0,5,0,0,0,1,0,0,0,3,63,0,0,1,0,0,0,0
+282,Sávio Moreira de Oliveira,savio,Sávio,109463,10,5,6,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+282,Calebe Gonçalves Ferreira da Silva,calebe,Calebe,109461,10,4,6,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+282,José Marcos Costa Martins,marquinhos,Marquinhos,98765,10,5,6,0,4.3,0,1.81,8,0,9,0,0,0,0,0,0,0,5,28,1,1,1,2,0,3,0
+282,Marcos da Silva França,keno,Keno,86485,10,5,7,4.7,9.05,1.12,1.98,9,0,12,0,1,0,0,0,0,0,8,64,1,2,7,6,0,6,0
+282,Guilherme Antonio Arana Lopes,guilherme-arana,Guilherme Arana,87228,10,2,7,8.5,17.55,1.27,5.42,9,0,8,0,1,0,4,0,0,0,5,89,2,0,5,7,0,1,0

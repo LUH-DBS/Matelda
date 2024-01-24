@@ -1,0 +1,4 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+e6d07002-8fd1-11eb-924d-9cd76263cbd0,genus,Mocquerysia,,,Hua,Q5894426,1893,,"J. Bot. (Morot) vii. (1893) 259",,,,,,4362-1,wfo-4000024518,3231208,,
+5ee31964-8fcd-11eb-924d-9cd76263cbd0,species,epipetiola,Mocquerysia,,"De Wild.",Q2628388,1932,,"Pl. Bequaert. 5: 411 1932",,,,,,365753-1,wfo-0000893763,8224979,,
+5ee2fbd2-8fcd-11eb-924d-9cd76263cbd0,species,multiflora,Mocquerysia,,Hua,Q5894426,1893,,"J. Bot. (Morot) 7: 260 1893",,,,,,111863-1,wfo-0000893762,7788193,,

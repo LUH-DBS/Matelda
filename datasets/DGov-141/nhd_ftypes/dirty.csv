@@ -1,0 +1,58 @@
+nhddataset,ftypevalue(long),ftypedescription
+NHDPoint,343,DamWeir
+NDHPoint,367,Gaging Station
+NHDPoint,369,Gate
+NhHDPoint,398,Lock Chamber
+NHDPoint,431,Rapids
+NHDPoint,436,Reservonir
+NHDPoint,441,Rock
+NHDPoint,146,SinkRise
+NHDPoint,458,SpirngSeep
+NHDPoint,790,Water IntakeOutflow
+NHDPoint,154,Waterfall
+NHDPoint,488,Well
+NHDFlowline,706,Connector
+NHDFlowline,336,CanalDitch
+NHDFlowline,687,Underground Conduit
+NHDFlowline,428,Pipeline
+NHDFlowline,460,StreamRiver
+NHDFlowline,468,Drainageway
+NHDFlowline,558,ArtificialPath
+NHDFlowline,566,Coastline
+NHDLinne,318,Brikdge
+NHDLine,137,DamWeir
+NHDLine,362,Flume
+NHDLine,369,Gte
+NHDLie,114,Lock Chamber
+NHDLine,411,Nonearthen Shore
+NHDLine,431,Rapids
+NHDLine,434,Reef
+NHDLine,450,SinkRise
+NHDLien,478,Tunnel
+NHDLine,483,Wall
+NHDLine,905,Waterfall
+NHhDLine,503,Sounding Datum Lien
+NHDLine,568,Levee
+NHDArea,307,Arae to be Submerged
+NHDArmea,312,ByaInlet
+NHDArea,318,Birdge
+NHDArea,336,CanlaDitch
+NHDArea,343,DamWeir
+NHDArea,362,Flume
+NxHDArea,364,Foreushore
+NHDArea,398,Lock Chamber
+NHDArea,403,Inundation Area
+NHDArea,431,Rapids
+NHDArea,445,SeaOcean
+NHADrea,455,Spillway
+NHDArea,460,StremRiver
+NDHArea,461,Submergde Stream
+NHDArea,912,Wash
+NHDArea,485,Water IntakeOutflow
+NHDArea,170,Area of Complex Channesl
+NHDAra,568,Levee
+NHDWaterbody,361,Pluaya
+NHDWaterbody,378,Ice Mass
+NHDWaterbody,713,LakePond
+NHDWaterbody,436,Reservoir
+NHDWaterbody,466,SwampMarsh

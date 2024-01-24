@@ -1,0 +1,101 @@
+pos,title,artist,last_pos,peak_pos,streak
+1,Informer,Snow,1,1,16
+2,Freak Me,Silk,2,2,10
+3,"Nuthin' But A ""G"" Thang",Dr. Dre,3,2,13
+4,I Have Nothing,Whitney Houston,4,4,9
+5,Don't Walk Away,Jade,5,4,19
+6,"Love Is (From ""Beverly Hills, 90210"")",Vanessa Williams/Brian McKnight,6,6,14
+7,I'm So Into You,SWV,9,7,12
+8,Two Princes,Spin Doctors,8,7,13
+9,Cat's In The Cradle,Ugly Kid Joe,7,6,11
+10,Ditty,Paperboy,11,10,19
+11,Looking Through Patient Eyes,P.M. Dawn,12,11,6
+12,Comforter,Shai,10,10,14
+13,Hip Hop Hooray,Naughty By Nature,14,8,13
+14,Bed Of Roses,Bon Jovi,13,10,14
+15,It Was A Good Day,Ice Cube,24,15,8
+16,I Got A Man,Positive K,16,14,19
+17,Ordinary World,Duran Duran,15,3,16
+18,Angel,Jon Secada,19,18,13
+19,"The Crying Game (From ""The Crying Game"")",Boy George,22,19,7
+20,Mr. Wendal,Arrested Development,17,6,19
+21,If I Ever Lose My Faith In You,Sting,25,21,10
+22,"I'm Every Woman (From ""The Bodyguard"")",Whitney Houston,18,4,16
+23,A Whole New World (Aladdin's Theme),Peabo Bryson & Regina Belle,20,1,19
+24,That's What Love Can Do,Boy Krazy,21,18,14
+25,Who Is It,Michael Jackson,33,25,3
+26,Down With The King,Run-D.M.C.,27,26,6
+27,"The Right Kind Of Love (From ""Beverly Hills, 90210"")",Jeremy Jordan,23,14,20
+28,Nothin' My Love Can't Fix,Joey Lawrence,29,28,8
+29,Forever In Love,Kenny G,26,18,19
+30,I Will Always Love You,Whitney Houston,28,1,24
+31,So Alone,Men At Large,32,31,10
+32,Simple Life,Elton John,30,30,9
+33,Three Little Pigs,Green Jelly,43,33,5
+34,Livin' On The Edge,Aerosmith,46,34,3
+35,Connected,Stereo MC's,42,35,5
+36,Love U More,Sunscreem,37,36,9
+37,Rebirth Of Slick (Cool Like Dat),Digable Planets,31,15,15
+38,Dazzey Duks,Duice,40,38,16
+39,7,Prince And The New Power Generation,36,7,22
+40,Dedicated,R. Kelly & Public Announcement,41,40,9
+41,Sweet Thing,Mary J. Blige,34,28,11
+42,Heal The World,Michael Jackson,39,27,20
+43,Knockin' Da Boots,H-Town,61,43,3
+44,Love Don't Love You,En Vogue,49,44,5
+45,Buddy X,Neneh Cherry,54,45,5
+46,Rhythm Is A Dancer,Snap!,44,5,37
+47,Man On The Moon,R.E.M.,35,30,12
+48,The Morning Papers,Prince And The New Power Generation,51,48,4
+49,I'm Gonna Get You,Bizarre Inc,48,47,14
+50,Show Me Love,Robin S.,67,50,4
+51,"Tarzan Boy (From ""Teenage Mutant Ninja Turtles III"")",Baltimora,52,13,31
+52,Supermodel (You Better Work),RuPaul,50,45,11
+53,Romeo,Dolly Parton & Friends,53,50,7
+54,Tell Me What You Dream,Restless Heart Featuring Warren Hill,58,54,5
+55,Tap The Bottle,Young Black Teenagers,64,55,8
+56,I Feel You,Depeche Mode,57,37,8
+57,What You Won't Do For Love,Go West,55,55,7
+58,Weak,SWV,-1,58,1
+59,Come Undone,Duran Duran,86,59,2
+60,Come In Out Of The Rain,Wendy Moten,59,59,10
+61,I'll Never Get Over You (Getting Over Me),Expose,74,61,5
+62,Hat 2 Da Back,TLC,60,30,12
+63,How I'm Comin',LL Cool J,65,57,4
+64,I See Your Smile,Gloria Estefan,63,48,10
+65,Beautiful Girl,INXS,56,46,10
+66,"Let's Go Through The Motions (From ""Who's The Man?"")",Jodeci,-1,66,1
+67,Candy Everybody Wants,"10,000 Maniacs",69,67,8
+68,Tonight,Def Leppard,77,68,4
+69,Touch My Light,Big Mountain,79,69,3
+70,If I Could,Regina Belle,75,70,4
+71,Closer,Remedy,66,66,5
+72,Shoop Shoop (Never Stop Givin' You Love),Michael Cooper,71,67,7
+73,Get Away,Bobby Brown,62,14,15
+74,Typical Reasons (Swing My Way),Prince Markie Dee And The Soul Convention,80,74,4
+75,Easy,Faith No More,70,58,6
+76,Sleeping Satellite,Tasmin Archer,89,76,2
+77,She's Not Cryin' Anymore,Billy Ray Cyrus,76,70,7
+78,Good Ol' Days,Levert,78,78,6
+79,"Silence Is Broken (From ""Nowhere To Run"")",Damn Yankees,87,79,2
+80,Kiss Of Life,Sade,85,80,6
+81,Alibis,Tracy Lawrence,84,81,2
+82,Funky Child,Lords Of The Underground,82,82,5
+83,Bad Girl,Madonna,72,36,10
+84,That's The Way Love Is,Bobby Brown,-1,84,1
+85,Passionate Kisses,Mary Chapin Carpenter,83,57,11
+86,Have I Told You Lately,Rod Stewart,-1,86,1
+87,Reminisce,Mary J. Blige,88,57,19
+88,Somebody Love Me,Michael W. Smith,73,71,7
+89,Bow Wow Wow,Funkdoobiest,-1,89,1
+90,Knock-N-Boots,Wreckx-N-Effect,94,72,10
+91,Sweet On U,Lo-Key?,-1,91,1
+92,Every Little Thing U Do, Christopher Williams,-1,92,1
+93,It's My Life,Dr. Alban,-1,93,1
+94,Murder She Wrote,Chaka Demus & Pliers,91,57,17
+95,Deeper,Boss,-1,95,1
+96,What's Up,4 Non Blondes,-1,96,1
+97,Save Your Love,Bad Boys Blue,92,81,7
+98,So Close,Dina Carroll,95,95,2
+99,Roll Wit Tha Flava,The Flavor Unit MC's,93,86,4
+100,You're The Love Of My Life/The Love I Lost,Sybil,90,90,2

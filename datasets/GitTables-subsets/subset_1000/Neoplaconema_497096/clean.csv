@@ -1,0 +1,4 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+a848d616-9bad-11eb-a8a2-19ed5c03f8d3,genus,Neoplaconema,,,"B. Sutton",,1977,,"Kew Bull. 31(3): 463 (1977)",,,,a848d616-9bad-11eb-a8a2-19ed5c03f8d3,,,,,9109," "
+56d2b388-9bad-11eb-a8a2-19ed5c03f8d3,species,cymbiforme,Neoplaconema,,"Z.Q. Yuan & C. Mohammed",,,,"Mycol. Res. 101(12): 1533 (1997)",,,,56d2b388-9bad-11eb-a8a2-19ed5c03f8d3,,,,,442576," "
+11cf8d38-9bad-11eb-a8a2-19ed5c03f8d3,species,napelli,Neoplaconema,,"(Maire & Sacc.) B. Sutton","Q2661320,Q707840",1977,,"Kew Bull. 31(3): 463 (1977)",,,,7441115a-9bab-11eb-a8a2-19ed5c03f8d3,,,,,318625," "

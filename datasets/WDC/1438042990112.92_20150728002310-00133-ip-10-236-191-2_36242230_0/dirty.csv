@@ -1,0 +1,75 @@
+Route no,Destination,Via route
+111,Kovalam,"Beach , Thiruvallam, Pachallur"
+111A,Kovalam,Beach Bypass
+111B,Kovalam,"Beach Pallichal Venniyyoor,Panagode,Muttaykadu"
+115,Attukal temple,Manakkadu Attukal
+136,Venganoor,"Thiruvallam, Panangode"
+136A,Venganoor,"Thiruvallam, Agricultural College,Peringamala"
+143,Peringamala,"Thiruvallam, Panangode,Venganoor"
+143A,Peringamala,"Thiruvallam,Agricultural College"
+149,Vizhinjam,"Thiruvallam, Pachallor"
+149A,Vizhinjam,"Thiruvallam,Venganoor"
+155,Veli,"Palayam ,Sanghumugham,Vettukadu"
+155A,Veli,"Valiyathura,Sanghumugham,Vettukadu"
+155B,Veli,"Palayam, Pettah, All Saints College ,Madhavapuram"
+151,Sanghumugham,"Palayam, Petta, All Saints College"
+151A,Sanghumugham,"Valiyathura, airport"
+171,Puthenthope,"Palayam, Petta, All Saints ,Madhavapuram"
+171A,Puthenthope,"Valiyathura,Sanghumugham,All Saints College"
+101,Airport,Valiyathura
+101B,Airport,"Valiyathura, Sulaiman theruvu"
+161,Kochu Veli railway station,Palayam Petta Chakka all saints college
+175,Karikkakam Temple,Palayam Chakka Byepass
+175A,Karikkakam Temple,Palayam Petta Anayara Venpalavattom
+105,Bheema palli,Valiyathura
+105A,Bheema palli,Mukkola
+105B,Bheema palli,Kallumoodu
+173,KIMS,Palayam Petta Anayara Venpalavattom
+555,Medical College,Palayam Pattom
+555A,Medical College,"Palkulangara, Pallimukku Kannammola"
+555B,Medical College,"Palayam ,Kannammola"
+511,Akkulam,Palayam Pattom Ulloor Kesavadasapuram
+511A,Akkulam,Palayam Pattom medical college
+511B,Akkulam,Palayam Kannamoola Medical college
+529,Engineering College,Palayam Pattom Ulloor Kesavadasapuram Srikaryam Chavadimukku
+529A,Engineering College,Palayam Pattom Ulloor Medical college Srikaryam Chavadimukku
+543,Chempazhanthi,Palayam Pattom Ulloor Kesavadasapuram Srikaryam
+543A,Chempazhanthi,Palayam Pattom Ulloor Kesavadasapuram Srikaryam Akkulam
+543B,Chempazhanthi,Palayam Pattom Ullor medical College Srikaryam
+551,Pothencode,Palayam Pattom Ulloor Kesavadasapuram Srikaryam Paudikonam
+552,Santhigiri,Palayam Pattom Ullor Kesavadasapuram Srikaryam Pothencode
+552A,Santhigiri,Palayam Pattom Ulloor Medical College Srikaryam Pothencode
+581,kazhakkoottam,Palayam Pattom Ulloor Kesavadasapuram Srikaryam Karyavattom
+581A,kazhakoottam,Palayam Pattom Ulloor Kesavadasapuram Srikaryam Kulathoor
+585,Kaniyapuram,Palayam Pattom Ullor Kesavadasapuram Srikaryam Kazhakootam
+585A,Kaniyapuram,Palayam Pattom Ulloor Kesavadasapuram Srikaryam Kazhakootam ChanthaVila
+404,Peroorkada,Palayam Vellayambalam Ambalamukku
+404A,Peroorkada,Nanthancode
+404B,Peroorkada,Sasthamangalam Paipinnoodu
+421,Vellanadu,Peroorkada karakkulam Erumba Aruvikkara
+429,Aryanadu,Palayam Vellayambalam Sasthamangalam Vattiyorrkavu nettayam
+429B,Aryanadu,Jagathi Poojapura Peyadu Vilappilsala Uriyakode
+434,Nedumangadu,Palayam Vellayambalam Kavadiyar Peroorkada
+477,Aruvikkara dam,Palayam Vattiyoorkavu Nettyam
+477A,Aruvikkara dam,Palayam Vellayambalam Kavadiyar Peroorkada Erumba
+477B,Aruvikkara dam,Palayam Vellayambalam Kavadiyar Peroorkada karakulam Azhikode
+493,Puliyarakonam,Palayam Vellayambalam Sasthamangalam Vattiyorrkavu Vellaikadvu
+493A,Puliyarakonam,Jagathi poojapura peyad
+493B,Puliyarakonam,Palayalm Pangode thirumala Peyadu
+197,Malayinkeezhu,Karamana Pappanamkode Malayam
+197M,Malayinkeezhu,Jagathi PeyaduKolachira
+399,kattakada,Palayam Bakery DPIThirumala Peyadu
+399B,kattakada,Palayam Bakery Pangode Thirumala Peyadu
+501,Vikas Bhavan,Palayam
+631,Vattapara,Palayam Pattom Kesavadasapuram Mannathala
+631A,Vattapara,Perrokada Kudappanakunnu Mukkola Kallayam
+647,Venjaranmoodu,Palayam Pattom Kesavadasapuram Mannathala Vattapara Vembayam
+647A,Venjaranmoodu,Palayam Pattom Kesavadasapuram Mannathala Vettinadu Knochira Velavoor
+647B,Venjaranmoodu,Palayam Pattom Kesavadasapuram Sreekaryam Paudikonam
+191,Pappanamkode,Karamana
+299,Neyyattinkara,Karamana Pappanamkode Pravachambalam Balaramapuram
+299A,Neyyattinkara,Karamana Thirumala Peyad Malayinkeezhu Oorootambalam Vandannor perumpazhuthoor.
+581B,Kazhakuttom,Palayam Pattom Medical College Ulloor Sreekaryam Kulathur
+581C,Kazhakuttom,Palayam Kannamoola Medical College Sreekaryam Kulathur
+581J,Kazhakuttom,Palayam Petta Anayara Bypass
+585E,Kaniyapuram,Eenchakkal Bypass Technopark Kazhakuttom

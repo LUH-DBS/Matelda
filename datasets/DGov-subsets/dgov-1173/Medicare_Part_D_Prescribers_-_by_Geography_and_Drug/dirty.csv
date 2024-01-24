@@ -1,0 +1,434 @@
+Prscrbr_Geo_Lvl,Prscrbr_Geo_Cd,Prscrbr_Geo_Desc,Brnd_Name,Gnrc_Name,Tot_Prscrbrs,Tot_Clms,Tot_30day_Fills,Tot_Drug_Cst,Tot_Benes,GE65_Sprsn_Flag,GE65_Tot_Clms,GE65_Tot_30day_Fills,GE65_Tot_Drug_Cst,GE65_Bene_Sprsn_Flag,GE65_Tot_Benes,LIS_Bene_Cst_Shr,NonLIS_Bene_Cst_Shr,Opioid_Drug_Flag,Opioid_LA_Drug_Flag,Antbtc_Drug_Flag,Antpsyct_Drug_Flag
+National,,National,1st Tier Unifine Pentips,"Pen Needle, Diabetic",1178,3708,6598.5,102280.76,1313,,2929,5385.3,79992.58,,1052,4167.66,22903.26,N,N,N,N
+National,,National,1st Tier Unifine Pentips Plus,"Pen Needle, Diabetic",1604,4564,7905.6,131927.33,1766,,3681,6603,106683.88,,1450,4415.22,20335.83,N,N,N,N
+National,,National,Abacavir,Abacavir Sulfate,3560,30534,37402.4,7039482.37,4252,,15064,19275.5,3547013.16,,2141,21278.04,186025.79,N,N,N,N
+National,,National,Abacavir-Lamivudine,Abacavir Sulfate/Lamivudine,2933,30248,38810.9,9656849.77,4030,,16574,22159,5457642.63,,2272,23576.53,376349.75,N,N,N,N
+National,,National,Abacavir-Lamivudine-Zidovudine,Abacavir/Lamivudine/Zidovudine,38,118,120,146795.2,32,,74,74,91779.21,,19,1488.48,3939.47,N,N,N,N
+National,,National,Abelcet,Amphotericin B Lipid Complex,67,697,717.4,504545.33,199,,441,452.2,303945.53,,131,947.12,62103.18,N,N,N,N
+National,,National,Abilify,Aripiprazole,2512,15246,19657.3,20467005.13,2172,,4291,5683.5,5359083.5,,691,35948.95,259326.22,N,N,N,Y
+National,,National,Abilify Maintena,Aripiprazole,15911,208282,209057.7,498232295.54,26321,,26497,26639,62087454.83,,3360,484272.75,1162541.41,N,N,N,Y
+National,,National,Abilify Mycite,Aripiprazole,6,31,33,56308.8,,*,,,,*,,70,60,N,N,N,Y
+National,,National,Abiraterone Acetate,Abiraterone Acetate,10065,199302,203684.4,601182558.76,30507,,192710,197031.7,578631141.28,,29429,595635.61,52997200.21,N,N,N,N
+National,,National,Abraxane,Paclitaxel Protein-Bound,176,1200,1200,9534884.71,307,,1147,1147,9045413.72,,284,1957.95,301272.79,N,N,N,N
+National,,National,Absorica,Isotretinoin,40,88,88,163699.34,35,,22,22,33152.66,*,,93.2,3554.07,N,N,N,N
+National,,National,Absorica Ld,"Isotretinoin, Micronized",12,31,31,81264.22,11,*,,,,*,,17.2,796.02,N,N,N,N
+National,,National,Acamprosate Calcium,Acamprosate Calcium,12086,43332,51649.9,7043110.97,13101,,17936,22782.4,2954228.53,,6018,44092.75,680733.73,N,N,N,N
+National,,National,Acanya,Clindamycin Phos/Benzoyl Perox,11,29,29,15964.61,,*,,,,*,,5.3,526,N,N,N,N
+National,,National,Acarbose,Acarbose,25104,180723,355230.1,10748559.29,44193,,155348,311337.9,9383416.55,,38228,101933.09,1548408.35,N,N,N,N
+National,,National,Accolate,Zafirlukast,121,521,982.3,217404.57,103,,445,845.3,187882.45,,89,1384.43,29068.45,N,N,N,N
+National,,National,Accupril,Quinapril Hcl,1178,4302,10293.6,1802400.49,1045,,4177,10042.6,1753793.23,,1019,3343.61,186013.79,N,N,N,N
+National,,National,Accuretic,Quinapril/Hydrochlorothiazide,125,389,1081.2,162706.28,119,#,,,,#,,39.6,10747.72,N,N,N,N
+National,,National,Accutane,Isotretinoin,64,127,127,21588.69,59,,76,76,11607.77,,37,177.9,4568.43,N,N,N,N
+National,,National,Acebutolol Hcl,Acebutolol Hcl,16713,86756,205281.6,5139329.32,20154,,81409,194828.7,4844741.28,,18979,24472.35,1112399.42,N,N,N,N
+National,,National,Acetamin-Caff-Dihydrocodeine,Acetaminophen/Caff/Dihydrocod,410,2525,2527.8,555180.18,797,,1715,1717.5,378106.07,,544,1731.53,83249.35,Y,N,N,N
+National,,National,Acetaminophen,Acetaminophen,45,124,124.3,36485.32,85,,85,85,11297.06,,67,254.53,398.17,N,N,N,N
+National,,National,Acetaminophen-Codeine,Acetaminophen With Codeine,295585,2763009,2776753.1,40716162.06,1209828,,2175295,2187539.1,30516088.02,,992893,1130313.68,9814372.17,Y,N,N,N
+National,,National,Acetazolamide,Acetazolamide,47490,208326,290686.2,16592833.12,76169,,156997,218402,11075733.41,,63074,136028.94,2833899.67,N,N,N,N
+National,,National,Acetazolamide Er,Acetazolamide,16077,81956,113268.5,7353629.38,32775,,58290,78622.3,4119353.17,,26453,61504.08,1023016.87,N,N,N,N
+National,,National,Acetic Acid,Acetic Acid,20428,58534,62346.2,1248962.47,36594,,45409,48446,979465.07,,30148,23071.1,258662.97,N,N,N,N
+National,,National,Acetylcysteine,Acetylcysteine,2970,16666,16740.4,1601619.51,4040,,11220,11262,1055230.11,,3034,5610.41,41813.2,N,N,N,N
+National,,National,Aciphex,Rabeprazole Sodium,2847,11451,23351.7,16176125.3,2504,,9782,20371.8,13726830.5,,2182,18749.44,895894.9,N,N,N,N
+National,,National,Acitretin,Acitretin,6454,41814,52711.7,21444060.03,9236,,34599,44129.9,17000313.02,,7803,31386.17,2115451.26,N,N,N,N
+National,,National,Actemra,Tocilizumab,3278,32321,35637.1,123857181.02,5121,,23279,26000.6,88450354.35,,3671,58943.74,2943686.7,N,N,N,N
+National,,National,Actemra Actpen,Tocilizumab,2771,24046,25853.8,92995740.79,4441,,17233,18655.3,66532146.57,,3117,36763.5,2552004,N,N,N,N
+National,,National,Acthar,Corticotropin,891,6667,7172.8,431097613.87,1158,,2847,3111,172476727.32,,451,39660.15,3858923.32,N,N,N,N
+National,,National,Acthib,Haemoph B Poly Conj-Tet Tox/Pf,861,1418,1422.6,49583.46,1124,,1205,1207.6,40995.42,,946,1076.18,23454.8,N,N,N,N
+National,,National,Actigall,Ursodiol,67,112,168,118792.42,63,#,,,,#,,305.79,10233.65,N,N,N,N
+National,,National,Actimmune,"Interferon Gamma-1b,recomb.",38,423,428.4,25309639.28,50,,202,207.4,12056960.57,,27,89.6,302666.57,N,N,N,N
+National,,National,Activella,Estradiol/Norethindrone Acet,64,300,484.2,135284.56,57,,269,437,122433.82,#,,182.34,31147.51,N,N,N,N
+National,,National,Actonel,Risedronate Sodium,670,2562,5021.4,1788277.96,624,,2459,4856.3,1727628.61,,603,4188.91,200732.77,N,N,N,N
+National,,National,Actoplus Met,Pioglitazone Hcl/Metformin Hcl,53,246,382.6,203503.89,51,,246,382.6,203503.89,,51,376.22,10223.41,N,N,N,N
+National,,National,Actos,Pioglitazone Hcl,417,1619,3281.4,1749928.48,378,,1454,2956.8,1567632.69,,335,1933.24,89392.37,N,N,N,N
+National,,National,Acular,Ketorolac Tromethamine,94,195,251.3,64615.68,94,,159,211.6,54812.27,,80,265.1,5161.86,N,N,N,N
+National,,National,Acular Ls,Ketorolac Tromethamine,35,66,78.3,22762.86,36,#,,,,#,,43.6,3624.01,N,N,N,N
+National,,National,Acuvail,Ketorolac Tromethamine/Pf,153,381,505.3,221208.02,166,,336,431.3,188870.87,,150,1029.1,32512.85,N,N,N,N
+National,,National,Acyclovir,Acyclovir,268345,1827051,2854488,54640346.69,659940,,1506946,2402069.7,44712338.4,,557378,497358.13,10028672.86,N,N,N,N
+National,,National,Acyclovir Sodium,Acyclovir Sodium,87,199,200.3,36696.6,88,,165,166.3,29086.39,,71,56,7850.92,N,N,N,N
+National,,National,Aczone,Dapsone,166,261,314.8,215548.01,166,,144,174,114180.61,,100,473.1,19356.86,N,N,N,N
+National,,National,Adacel Tdap,"Diph,pertuss(Acell),tet Vac/Pf",28149,177846,177932.7,10680031.39,177399,,161074,161128.7,9623660.53,,160728,111849.59,2743292.95,N,N,N,N
+National,,National,Adakveo,Crizanlizumab-Tmca,62,510,510,5852209.87,97,*,,,,*,,437.6,5970.7,N,N,N,N
+National,,National,Adapalene,Adapalene,4748,11956,13256.1,2559732.44,5496,,4932,5770.9,1380338.96,,2650,8016.61,113298.81,N,N,N,N
+National,,National,Adapalene-Benzoyl Peroxide,Adapalene/Benzoyl Peroxide,684,1315,1462.5,125817.7,742,,617,718,52201.91,,397,562.23,10444.88,N,N,N,N
+National,,National,Adcetris,Brentuximab Vedotin,18,84,84,2395839.26,18,,44,44,1233396.76,*,,28,29069.54,N,N,N,N
+National,,National,Adcirca,Tadalafil,772,9421,10671.9,43282513.46,1172,,5796,6641.6,26691182.7,,732,21371.5,1144200.25,N,N,N,N
+National,,National,Adderall,Dextroamphetamine/Amphetamine,2190,10667,11278.6,5793971.05,1765,,3689,4050.7,2074415.91,,689,17589.93,313111.11,N,N,N,N
+National,,National,Adderall Xr,Dextroamphetamine/Amphetamine,6025,26053,27745.2,8415349.85,5317,,8871,9849.2,2968120.15,,1744,73878.25,627042.73,N,N,N,N
+National,,National,Adefovir Dipivoxil,Adefovir Dipivoxil,561,3948,5076,3683848.43,514,,3128,4145,2996524.6,,422,6204.38,272009.94,N,N,N,N
+National,,National,Adempas,Riociguat,1585,47875,48051.9,566366846.37,5430,,36543,36704.9,432772858.58,,4118,229750.06,18202128.59,N,N,N,N
+National,,National,Adlyxin,Lixisenatide,29,116,155.2,107206.69,27,,55,86.4,58667.04,#,,132.8,1607.65,N,N,N,N
+National,,National,Admelog,Insulin Lispro,4679,16992,17986,2222368.91,7142,,12093,12679.3,1394203.45,,5021,28891.65,99999.94,N,N,N,N
+National,,National,Admelog Solostar,Insulin Lispro,9301,31824,38290.5,6134583.94,14111,,22743,27168,3900673.54,,9749,61881.12,246836.96,N,N,N,N
+National,,National,Adrenalin,Epinephrine,718,991,1071.7,27631.15,924,,719,770.3,20314.26,,680,941.67,6699.6,N,N,N,N
+National,,National,Adriamycin,Doxorubicin Hcl,16,42,42,5684.54,19,#,,,,#,,12.4,325.63,N,N,N,N
+National,,National,Advair Diskus,Fluticasone Propion/Salmeterol,186136,1715121,2485157.9,1007343894.1,427430,,1366911,2026735.2,811153522.74,,343868,2415007.8,65814444.94,N,N,N,N
+National,,National,Advair Hfa,Fluticasone Propion/Salmeterol,89749,570864,777595.9,346217478.38,150070,,440154,609477.1,269094625.49,,117466,1244635.91,23768416.43,N,N,N,N
+National,,National,Advocate Pen Needle,"Pen Needle, Diabetic",1778,3750,8712.5,431446.13,1952,,2464,5747.7,263630.36,,1263,7086.88,14123.11,N,N,N,N
+National,,National,Advocate Pen Needles,"Pen Needle, Diabetic",7525,27375,46152.5,2172818.4,9546,,19236,32788.9,1489958.56,,6669,36645.92,109558.1,N,N,N,N
+National,,National,Advocate Syringes,"Syring-Needl,disp,insul,0.3 Ml",545,2699,3538.8,152107.24,833,,2244,2865.2,118338.52,,677,557.15,2640.93,N,N,N,N
+National,,National,Advocate Syringes,"Syringe And Needle,insulin,1ml",1237,6069,8386.7,368312.06,1809,,4413,6098.5,257293.58,,1289,2666.83,9823.3,N,N,N,N
+National,,National,Advocate Syringes,"Syringe-Needle,insulin,0.5 Ml",1103,5984,7994.8,347786.89,1757,,4642,6207,260265.89,,1342,2132.96,8029.35,N,N,N,N
+National,,National,Adzenys Xr-Odt,Amphetamine,188,1041,1106,545688.01,188,,354,373,189265.92,,70,3977.22,46478.04,N,N,N,N
+National,,National,Afinitor,Everolimus,2627,12992,13242.6,216022952.03,2874,,8448,8534.2,136599917.83,,2047,70836.9,4280731.55,N,N,N,N
+National,,National,Afinitor Disperz,Everolimus,60,324,332.2,8602849.16,47,,50,50,1011910.64,,14,52.88,17133.34,N,N,N,N
+National,,National,Afrezza,"Insulin Regular, Human",867,6088,7927,10393693.26,1399,,4654,6153.7,7699425.4,,1042,13108.03,327144.56,N,N,N,N
+National,,National,Aggrenox,Aspirin/Dipyridamole,40,74,90,44158.81,39,,52,65,32521.37,#,,108,5354.74,N,N,N,N
+National,,National,Agrylin,Anagrelide Hcl,148,572,854.5,552597.64,123,,547,818,519205.95,#,,1431.9,64620.25,N,N,N,N
+National,,National,Aimovig Autoinjector,Erenumab-Aooe,21403,330765,380685.5,258862594.24,54659,,124705,145967.4,98102044.68,,21405,846596.49,12854545.94,N,N,N,N
+National,,National,Airduo Digihaler,Fluticasone Propion/Salmeterol,313,533,636.8,268285.41,321,,424,517.8,215208.68,,250,870.54,26152.59,N,N,N,N
+National,,National,Airduo Respiclick,Fluticasone Propion/Salmeterol,381,645,706.2,256265.89,379,,496,544.6,178879.64,,276,2595.66,22059.82,N,N,N,N
+National,,National,Ajovy Autoinjector,Fremanezumab-Vfrm,4492,34240,42321.4,27277465.05,8318,,14309,17976.8,11245224.3,,3604,75611.2,1627016.28,N,N,N,N
+National,,National,Ajovy Syringe,Fremanezumab-Vfrm,4745,35508,43014.3,28469755.65,6907,,13869,17281.8,11161749.31,,2770,96458.89,1632322.14,N,N,N,N
+National,,National,Ak-Poly-Bac,Bacitracin/Polymyxin B Sulfate,222,317,322,4813.22,245,,277,280,4176.99,,217,177.12,1438.32,N,N,N,N
+National,,National,Aklief,Trifarotene,142,241,254.4,149786.26,151,,125,126.5,74838.38,,85,332,10740.9,N,N,N,N
+National,,National,Akten,Lidocaine Hcl/Pf,28,44,48.3,2993.63,34,#,,,,#,,38.09,731.65,N,N,N,N
+National,,National,Akynzeo,Fosnetupitant/Palonosetron,29,226,226,228707.06,62,,189,189,197578.07,#,,1001.93,7146.96,N,N,N,N
+National,,National,Akynzeo,Netupitant/Palonosetron Hcl,47,343,346.3,398550.92,100,,279,282.3,312746.31,,83,1577.01,15975.14,N,N,N,N
+National,,National,Ala-Cort,Hydrocortisone,814,987,996,14670.12,834,,750,758.6,9563.29,,641,460.64,1740.17,N,N,N,N
+National,,National,Ala-Scalp,Hydrocortisone,159,213,213,112657.83,165,,177,177,93293.35,,133,193.59,5058.68,N,N,N,N
+National,,National,Albendazole,Albendazole,5559,8502,8518.6,9489685.25,5860,,5736,5749.8,6039422.63,,4026,17731.71,400941.7,N,N,N,N
+National,,National,Albuked-25,Albumin Human,5,53,53,15877.45,,,28,28,10427.29,*,,55.5,298.4,N,N,N,N
+National,,National,Albutein,Albumin Human,8,35,35,3858.73,,,18,18,1241.29,*,,1.3,250.33,N,N,N,N
+National,,National,Albuterol Sulfate,Albuterol Sulfate,34530,231334,250407.4,11446965.76,83975,,185770,201300.6,8834394.33,,69807,71847.61,763948.54,N,N,N,N
+National,,National,Albuterol Sulfate Hfa,Albuterol Sulfate,492591,12783908,15443830.5,645743980.27,4845968,,9197755,11188794.9,464613075.21,,3726563,12621749.6,120295562.56,N,N,N,N
+National,,National,Alclometasone Dipropionate,Alclometasone Dipropionate,11765,57160,59806.8,3056910.42,38906,,50669,53079.8,2626279.05,,35521,19852.18,811721.77,N,N,N,N
+National,,National,Alcohol Pads,Alcohol Antiseptic Pads,27990,184642,331497.2,11725089.57,54689,,139028,249651.7,8527492.41,,40854,120334.8,195649.3,N,N,N,N
+National,,National,Alcohol Prep Pads,Alcohol Antiseptic Pads,71923,512800,882769.1,18346566.56,179043,,385780,665836.3,12891121.34,,134362,487121.11,654784.16,N,N,N,N
+National,,National,Alcohol Swab,Alcohol Antiseptic Pads,7688,39215,61417.6,116586.48,13617,,30650,48963.1,88106.16,,10501,19293.57,8432.77,N,N,N,N
+National,,National,Alcohol Swabs,Alcohol Antiseptic Pads,30750,138676,232941.5,773524.23,61256,,105446,179848.7,584684.05,,46449,103071.15,44998.99,N,N,N,N
+National,,National,Alcohol Wipes,Alcohol Antiseptic Pads,1418,5718,8192.4,53516.91,2179,,4955,7136.7,46818.55,,1842,6299.03,2168.4,N,N,N,N
+National,,National,Aldactazide,Spironolact/Hydrochlorothiazid,274,834,1748.9,222415.66,266,,770,1658.6,208892.09,,237,803.58,45744.24,N,N,N,N
+National,,National,Aldactone,Spironolactone,625,2148,4913.7,624110.71,619,,1956,4527.6,558443.18,,563,2243.85,85557.37,N,N,N,N
+National,,National,Aldara,Imiquimod,40,67,71.9,7179.95,39,,51,53.5,5732.02,#,,39.6,1854.66,N,N,N,N
+National,,National,Aldurazyme,Laronidase,13,197,197,7750224.9,11,,0,0,0,,0,41.2,200,N,N,N,N
+National,,National,Alecensa,Alectinib Hcl,1176,8278,8552.3,125076789.06,1111,,6688,6939,101021810.91,,909,25444.32,2605580.02,N,N,N,N
+National,,National,Alendronate Sodium,Alendronate Sodium,275692,7503417,16285991,79570139.02,1971866,,7054343,15504775,74569169.16,,1873633,1852742.51,19283316,N,N,N,N
+National,,National,Alfuzosin Hcl Er,Alfuzosin Hcl,71215,820246,1892860.7,25182013.43,226568,,767985,1795108.8,23810407.85,,213205,191877.97,8713464.7,N,N,N,N
+National,,National,Alimta,Pemetrexed Disodium,180,1555,1556.8,9849598.41,304,,1389,1390.8,8633708.26,,270,7329.08,136007.84,N,N,N,N
+National,,National,Alinia,Nitazoxanide,392,641,647.8,1790444.86,472,,418,424.8,999614.54,,322,5832.13,76497.96,N,N,N,N
+National,,National,Aliskiren,Aliskiren Hemifumarate,7819,35309,74104.9,13715500.85,7833,,33517,70774.5,13084018.58,,7429,21743.37,2298355.8,N,N,N,N
+National,,National,Allopurinol,Allopurinol,337432,8986978,20846297.7,135179592.68,2163854,,8130465,19146791.8,123001322.13,,1973736,2486576.98,38976290.81,N,N,N,N
+National,,National,Allzital,Butalbital/Acetaminophen,29,38,39.8,8213.75,30,#,,,,#,,69.69,563.98,N,N,N,N
+National,,National,Almotriptan Malate,Almotriptan Malate,1463,5410,6366.5,1686399,1361,,3374,4136.5,1100668.41,,914,3146.1,159741.37,N,N,N,N
+National,,National,Alocril,Nedocromil Sodium,371,858,1020.4,262378.82,381,,731,865.8,220096.19,,328,1435,28654.12,N,N,N,N
+National,,National,Alogliptin,Alogliptin Benzoate,12151,79735,107675.3,17729909.37,20196,,68991,93265.4,15295034.82,,17194,82587.81,1310686.3,N,N,N,N
+National,,National,Alogliptin-Metformin,Alogliptin Benz/Metformin Hcl,1542,5093,7553.3,1253968.06,1771,,4487,6646.8,1098331.55,,1519,6226.06,76727.32,N,N,N,N
+National,,National,Alogliptin-Pioglitazone,Alogliptin Benz/Pioglitazone,553,2185,3894.3,708784.29,549,,1995,3569.3,649012.93,,494,1727.58,90458.04,N,N,N,N
+National,,National,Alomide,Lodoxamide Tromethamine,163,446,686.4,101314.34,177,,392,618.6,90529.5,,156,388.78,22990.39,N,N,N,N
+National,,National,Alora,Estradiol,267,666,1076.5,123748.67,254,,552,927.4,105080.57,,214,809.71,45610.58,N,N,N,N
+National,,National,Alosetron Hcl,Alosetron Hcl,1936,11564,13045.6,13710215.56,2281,,8801,10163,9878701.4,,1791,9803.41,846259.33,N,N,N,N
+National,,National,Alphagan P,Brimonidine Tartrate,38333,589735,933991.8,202207689.31,141024,,550919,877028.5,189912315.82,,131937,919271.92,23619540.27,N,N,N,N
+National,,National,Alprazolam,Alprazolam,350302,11927356,12902736.9,118675682.1,2276237,,8917184,9796597.4,81261483.96,,1853827,5743571.12,36937975.58,N,N,N,N
+National,,National,Alprazolam Er,Alprazolam,7367,43151,48934,1670509.45,7979,,23706,28236.9,771085.61,,4847,30911.01,413360.13,N,N,N,N
+National,,National,Alprazolam Intensol,Alprazolam,130,228,256.8,25615.89,133,,157,179.8,15103.12,,105,133.16,3837.05,N,N,N,N
+National,,National,Alprazolam Odt,Alprazolam,2497,6972,7664.6,584266.17,2572,,4733,5275.8,321452.81,,1968,3880.21,104899.57,N,N,N,N
+National,,National,Alprazolam Xr,Alprazolam,4706,22795,26221,783785.74,4772,,13263,16049.8,380911.79,,2926,17039.17,207614.25,N,N,N,N
+National,,National,Alrex,Loteprednol Etabonate,7847,29347,36128.6,10095999.18,14093,,26739,33080.6,9202838.99,,12905,39437.63,1160790,N,N,N,N
+National,,National,Altabax,Retapamulin,114,155,159.5,79813.02,123,,139,143.5,70112.93,,112,177.6,8144.99,N,N,N,N
+National,,National,Altace,Ramipril,1650,6352,14790.1,3761562.58,1442,,6175,14409.4,3651624.62,,1403,3355.05,339019.1,N,N,N,N
+National,,National,Altavera,Levonorgestrel/Ethin.Estradiol,832,2624,5053.4,78277.35,752,,15,27.6,210.07,*,,2387.79,3620.91,N,N,N,N
+National,,National,Altoprev,Lovastatin,365,1227,1898.6,1734180.05,326,,1083,1696.5,1536290.85,,285,2481.33,58591.2,N,N,N,N
+National,,National,Altreno,Tretinoin,421,786,856.5,78857.16,577,,712,780,71454.97,,526,280.4,38727.21,N,N,N,N
+National,,National,Alunbrig,Brigatinib,213,1127,1159.1,19416969.7,176,,855,879.1,14429548.06,,131,5216.86,404053.45,N,N,N,N
+National,,National,Alvesco,Ciclesonide,12409,207350,382560.1,31958972.49,79720,,191958,355415.5,29565583.45,,73375,171940.87,7964823.16,N,N,N,N
+National,,National,Alyacen,Norethindrone-Ethin. Estradiol,1529,6501,10035.7,199928.62,1384,,122,181.6,4152.39,,27,4310.11,12062.04,N,N,N,N
+National,,National,Alyq,Tadalafil,834,3966,4381.5,7373729.27,1520,,2699,2998,5027712.82,,1031,11398.65,542565.87,N,N,N,N
+National,,National,Amabelz,Estradiol/Norethindrone Acet,1232,3599,9231.8,523365.13,1221,,3342,8698.6,486638.34,,1132,559.04,226642.39,N,N,N,N
+National,,National,Amantadine,Amantadine Hcl,47610,475688,703297.9,34594284.65,92432,,333314,511299.6,24569582.82,,68669,262666.89,6331865.82,N,N,N,N
+National,,National,Amaryl,Glimepiride,655,2559,5199.5,800348.07,596,,2449,4983.3,770780.61,,569,2422.01,98082.7,N,N,N,N
+National,,National,Ambien,Zolpidem Tartrate,3445,17496,21185.2,12819777.62,2933,,13904,17182,10267060.41,,2400,24263.48,871054.86,N,N,N,N
+National,,National,Ambien Cr,Zolpidem Tartrate,1948,10525,13155.9,7695945.78,1523,,7129,9260.2,5325722.4,,1062,19743.46,472116.56,N,N,N,N
+National,,National,Ambisome,Amphotericin B Liposome,138,693,695,1974072.89,185,,509,511,1395950.31,,123,490.39,112507.48,N,N,N,N
+National,,National,Ambrisentan,Ambrisentan,2360,55865,57458.9,253257870.17,6432,,36684,38052.9,170664539.72,,4241,200831.67,13943001.91,N,N,N,N
+National,,National,Amcinonide,Amcinonide,239,390,459.7,123410.35,236,,357,426.7,113681.28,,220,81.3,9120.4,N,N,N,N
+National,,National,Amerge,Naratriptan Hcl,113,464,556.4,444943.58,96,,333,416.5,301147.33,,71,364.58,34047.85,N,N,N,N
+National,,National,Amethia,L-Norgest/E.Estradiol-E.Estrad,182,344,1040.5,36046.88,172,,0,0,0,,0,421.17,848.3,N,N,N,N
+National,,National,Amethyst,Levonorgestrel/Ethin.Estradiol,166,606,1051.5,41429.63,141,,0,0,0,,0,507.46,2547.84,N,N,N,N
+National,,National,Amicar,Aminocaproic Acid,85,173,182.6,549561.6,80,,109,116.6,308713.36,,53,99.73,24428.28,N,N,N,N
+National,,National,Amikacin Sulfate,Amikacin Sulfate,2054,11338,11600.3,1166913.46,2855,,8723,8943.5,869465.81,,2249,5689.9,198499.86,N,N,Y,N
+National,,National,Amiloride Hcl,Amiloride Hcl,22036,102221,217037.2,2204820.83,25194,,81377,181474.5,1787617.58,,20789,39979.63,854016.29,N,N,N,N
+National,,National,Amiloride-Hydrochlorothiazide,Amiloride/Hydrochlorothiazide,11240,45053,116546.3,1441100,11687,,42839,111767.6,1381853.24,,11147,13175.35,489226.01,N,N,N,N
+National,,National,Aminocaproic Acid,Aminocaproic Acid,1107,2277,2353.3,3501435.85,1098,,1718,1779.9,2497736.32,,835,1425.47,195740.25,N,N,N,N
+National,,National,Amiodarone Hcl,Amiodarone Hcl,207038,2419280,4645882.8,76958229.32,679916,,2249510,4350627.6,71853289.84,,633057,902316.17,17027445.13,N,N,N,N
+National,,National,Amitiza,Lubiprostone,43698,208452,273136.8,89343932.17,68138,,142383,191686.8,61647693.56,,47265,382238.41,6141529.87,N,N,N,N
+National,,National,Amitriptyline Hcl,Amitriptyline Hcl,280865,3690839,6644399.3,83549373.26,831025,,2373383,4579803.9,49965701.89,,568883,2638946.83,23637293.46,N,N,N,N
+National,,National,Amlodipine Besylate,Amlodipine Besylate,556690,44191695,102592645.8,309962668.24,10566606,,39652032,93483963.1,282328287,,9531664,10680049.06,91067894.05,N,N,N,N
+National,,National,Amlodipine Besylate-Benazepril,Amlodipine Besylate/Benazepril,152920,1683486,4208268.2,43800097.34,413164,,1553160,3928562.1,41131807.97,,382880,466255.77,12223560.44,N,N,N,N
+National,,National,Amlodipine-Atorvastatin,Amlodipine/Atorvastatin,22784,96167,235234.1,26059424.54,24699,,89363,222084.5,24623636.25,,23030,33484.91,1418822,N,N,N,N
+National,,National,Amlodipine-Olmesartan,Amlodipine Bes/Olmesartan Med,34496,196523,467104.2,19222156.56,50781,,183866,439635.5,18103169.52,,47495,85641.57,4325953.91,N,N,N,N
+National,,National,Amlodipine-Valsartan,Amlodipine Besylate/Valsartan,48922,290552,701318.2,19555612.86,74812,,268579,655238.2,18251277.11,,69269,113762.21,4009346.27,N,N,N,N
+National,,National,Amlodipine-Valsartan-Hctz,Amlodipine/Valsartan/Hcthiazid,6644,12123,24161.8,1884587.96,7592,,11077,22324.3,1723931.85,,6960,6684.96,158572.55,N,N,N,N
+National,,National,Ammonium Lactate,Ammonium Lactate,86004,1077017,1206241.7,27424145.47,446132,,889627,998797.6,22505019.42,,373564,553412.7,3037897.35,N,N,N,N
+National,,National,Amnesteem,Isotretinoin,880,2264,2290,480559.67,872,,1162,1182,206971.06,,447,1766.21,74878.96,N,N,N,N
+National,,National,Amondys-45,Casimersen,6,66,66,4432004.25,,,0,0,0,#,,4,0,N,N,N,N
+National,,National,Amoxapine,Amoxapine,522,2271,3514.4,192816.21,462,,1686,2807.5,144402.36,,349,2257.26,45249.19,N,N,N,N
+National,,National,Amoxicillin,Amoxicillin,598852,7696447,7776351.3,29658121.75,5287043,,6680280,6753201.7,25032743,,4585164,1687385.76,14318545.16,N,N,Y,N
+National,,National,Amoxicillin-Clavulanate Pot Er,Amoxicillin/Potassium Clav,9738,12980,13034.5,1938958.66,11403,,10682,10728.7,1549347.93,,9477,10206.58,417178.39,N,N,Y,N
+National,,National,Amoxicillin-Clavulanate Potass,Amoxicillin/Potassium Clav,641567,4759953,4782784,57958445,3634743,,3862001,3881515.8,46071703.99,,2981456,2198689.27,21391156.18,N,N,Y,N
+National,,National,Amphetamine Sulfate,Amphetamine Sulfate,157,656,689.7,178588.5,148,,307,325,78324.85,,71,692.64,19502.21,N,N,N,N
+National,,National,Amphotericin B,Amphotericin B,93,379,388,87641.35,112,,265,272,68083.46,,77,428.41,10047.38,N,N,N,N
+National,,National,Ampicillin Sodium,Ampicillin Sodium,3319,21370,21378.3,4089808.12,3699,,17943,17951.3,3399359.47,,3083,18490.41,889888.27,N,N,Y,N
+National,,National,Ampicillin Trihydrate,Ampicillin Trihydrate,38881,99490,104795.1,1450899.23,75069,,86768,91532.8,1247870.58,,66008,35468.87,449020.32,N,N,Y,N
+National,,National,Ampicillin-Sulbactam,Ampicillin Sodium/Sulbactam Na,2887,15983,15983.1,2275978.86,3431,,11044,11044.1,1518405.83,,2444,16009.53,404848.31,N,N,Y,N
+National,,National,Ampyra,Dalfampridine,1424,12987,17005.8,55939976.4,2275,,4719,6407.1,20815893.81,,906,38141.44,1750817.54,N,N,N,N
+National,,National,Amrix,Cyclobenzaprine Hcl,93,370,462.8,844797.58,78,,174,243,403377.68,,38,804.61,13921.84,N,N,N,N
+National,,National,Amzeeq,Minocycline Hcl,326,687,719,358831.31,400,,409,433,214222.83,,245,1020.4,24631.63,N,N,N,N
+National,,National,Anafranil,Clomipramine Hcl,75,341,464.7,1302136.99,54,,219,288.4,650123.44,,34,230.17,23661.48,N,N,N,N
+National,,National,Anagrelide Hcl,Anagrelide Hcl,4862,27252,45316,11739274.95,5437,,25816,43162.8,10935153,,5173,23674.46,1358543.6,N,N,N,N
+National,,National,Analpram Hc,Hydrocortisone/Pramoxine,44,55,63.9,21196.32,45,#,,,,#,,17.4,4921.1,N,N,N,N
+National,,National,Anaspaz,Hyoscyamine Sulfate,64,175,186.8,3406.57,62,,126,134.5,2512.41,,42,84.62,951.07,N,N,N,N
+National,,National,Anastrozole,Anastrozole,75050,1537272,3474378.1,41930099.02,378047,,1429984,3263628.4,39379647.49,,352930,441581.37,10020905.59,N,N,N,N
+National,,National,Androderm,Testosterone,6138,23882,34789.4,19371913.11,5863,,15908,24792.6,13641737.31,,4114,31586.25,1507797.7,N,N,N,N
+National,,National,Androgel,Testosterone,2361,9537,12916,11136663.33,2177,,6553,9378,8011920.42,,1573,17065.5,623460.37,N,N,N,N
+National,,National,Angeliq,Drospirenone/Estradiol,272,915,1804.5,351623.78,255,,818,1615.8,313149.17,,226,1018.53,119600.39,N,N,N,N
+National,,National,Annovera,Segesterone Ac/Ethin Estradiol,54,59,440.2,127233.95,57,,0,0,0,,0,170.8,1245.13,N,N,N,N
+National,,National,Anoro Ellipta,Umeclidinium Brm/Vilanterol Tr,119026,1592801,2063789.4,912156831.39,338632,,1352126,1768115.9,779741145.35,,285219,3773571.25,76111577.58,N,N,N,N
+National,,National,Antara,"Fenofibrate,micronized",241,809,1667.3,743233.02,226,,676,1404,619645.63,,184,882.13,45420.23,N,N,N,N
+National,,National,Antivert,Meclizine Hcl,28,39,47,5874.65,29,#,,,,#,,96.3,609.51,N,N,N,N
+National,,National,Anucort-Hc,Hydrocortisone Acetate,46,51,51,11546,48,#,,,,#,,1.3,0,N,N,N,N
+National,,National,Anusol-Hc,Hydrocortisone,98,139,151.5,23747.42,102,,125,135.5,21929.83,,89,65.61,1938.98,N,N,N,N
+National,,National,Apexicon E,Diflorasone Diacet/Emollient,131,222,245.7,223447.25,128,,208,231.7,210002.97,#,,41.5,10164.28,N,N,N,N
+National,,National,Apidra,Insulin Glulisine,1032,3666,5910.5,3769626.75,930,,2580,4380.5,2719399.28,,671,9689.18,203225.88,N,N,N,N
+National,,National,Apidra Solostar,Insulin Glulisine,3125,10376,18361.4,10318488,2946,,7874,14647.5,7801085.12,,2247,20626.47,578944.51,N,N,N,N
+National,,National,Aplenzin,Bupropion Hbr,563,3477,4393.5,15275568.29,575,,1705,2284.8,7373162.94,,298,4509.71,163546.25,N,N,N,N
+National,,National,Apokyn,Apomorphine Hcl,572,3688,3742.8,91670090.42,884,,2878,2921.5,70766461.22,,714,103425.32,3324639.96,N,N,N,N
+National,,National,Apraclonidine Hcl,Apraclonidine Hcl,1245,4060,5994.3,389748.73,1692,,3670,5481.4,353161.66,,1512,2599.8,103143.37,N,N,N,N
+National,,National,Aprepitant,Aprepitant,1796,9227,9466.6,7124383.11,3800,,6612,6746.9,3637003.47,,2732,11854.29,337467.64,N,N,N,N
+National,,National,Apri,Desogestrel-Ethinyl Estradiol,1787,7004,12862,203598.88,1549,,24,56.8,805.87,*,,5486.78,9567.28,N,N,N,N
+National,,National,Apriso,Mesalamine,3886,17892,29372.8,13562250.78,4185,,15395,25888.1,11868677.65,,3647,26292.62,1687275.33,N,N,N,N
+National,,National,Aptensio Xr,Methylphenidate Hcl,60,271,283.7,82078.43,50,,40,46.7,22587.35,,13,552.58,3243.19,N,N,N,N
+National,,National,Aptiom,Eslicarbazepine Acetate,6000,86168,94693.6,123964203.66,8331,,28244,31173,32960185.15,,2691,100254.51,1417911.91,N,N,N,N
+National,,National,Aptivus,Tipranavir,103,840,881,1661841.33,89,,396,433,825136.34,,45,1824.56,29666.24,N,N,N,N
+National,,National,Aralast Np,Alpha-1-Proteinase Inhibitor,351,3811,3841.8,39351752.95,361,,2387,2410.6,23777380.08,,221,10308.3,1204036.85,N,N,N,N
+National,,National,Aranelle,Norethindrone-Ethin. Estradiol,133,622,971.7,26430.58,105,,13,27.4,606.02,*,,524.45,1821.3,N,N,N,N
+National,,National,Aranesp,Darbepoetin Alfa In Polysorbat,3300,22266,24250.8,50710078.64,5129,,19734,21421.8,45508084.96,,4470,56359.75,2230593.97,N,N,N,N
+National,,National,Arava,Leflunomide,106,395,622.3,852155.43,94,,316,514.3,682282.4,,79,765.22,21786.61,N,N,N,N
+National,,National,Arazlo,Tazarotene,158,242,254.5,112085.43,189,,160,168.5,73734.11,,133,599.18,13276.41,N,N,N,N
+National,,National,Arcalyst,Rilonacept,40,187,201.4,4181082,41,,137,151.4,3140176.9,#,,56.8,94226.3,N,N,N,N
+National,,National,Arestin,Minocycline Hcl Microspheres,713,1354,1354,5500961.13,1262,,1253,1253,4810756.91,,1165,1069,153509.5,N,N,N,N
+National,,National,Arformoterol Tartrate,Arformoterol Tartrate,1201,3655,3675.6,1550312,1346,,3167,3187.6,1342129.81,,1177,4821.64,48163.86,N,N,N,N
+National,,National,Aricept,Donepezil Hcl,671,2454,4497.5,2194176.85,616,,2273,4253.5,2075703.99,,588,4440.24,164009.8,N,N,N,N
+National,,National,Arikayce,Amikacin Liposomal/Neb.Accessr,1143,8063,8342.7,102776816,1729,,7178,7420.1,91449207.84,,1543,56401.86,5294845.69,N,N,Y,N
+National,,National,Arimidex,Anastrozole,451,1853,3235.5,4961362.12,410,,1757,3097.4,4744973.98,,392,1362.88,135186.18,N,N,N,N
+National,,National,Aripiprazole,Aripiprazole,176913,3405458,4574156.7,360873542.39,561345,,1460068,2082202.4,133576683.61,,255386,3050010.83,20017969.74,N,N,N,Y
+National,,National,Aripiprazole Odt,Aripiprazole,1225,6248,6535.3,5515615.02,1243,,1878,1995,1618008.52,,372,10815.49,44798.45,N,N,N,Y
+National,,National,Aristada,Aripiprazole Lauroxil,8135,82069,97672.8,229733158.73,12772,,9467,11195.4,25251555.66,,1428,204161.86,536483.38,N,N,N,Y
+National,,National,Aristada Initio,"Aripiprazole Lauroxil,submicr.",831,1437,1459.2,3222869.75,1327,,141,142,316364.21,,121,7212.38,15675,N,N,N,Y
+National,,National,Arixtra,Fondaparinux Sodium,22,109,121.1,431028.18,21,,58,62.1,204524.62,#,,886.39,6549.33,N,N,N,N
+National,,National,Armodafinil,Armodafinil,15848,106014,135460.6,11061953.06,20262,,61376,83452.8,6179447.66,,12790,78285.43,1923792.72,N,N,N,N
+National,,National,Armonair Digihaler,Fluticasone Propionate,85,156,161,41810.35,86,,132,136,34778.15,,67,523.21,7401.93,N,N,N,N
+National,,National,Armour Thyroid,"Thyroid,pork",48773,293758,607866.9,21204289.37,67062,,259333,544731.8,18793299.86,,60097,294952.25,11965544.69,N,N,N,N
+National,,National,Arnuity Ellipta,Fluticasone Furoate,39493,295676,396616.5,84987215.67,68795,,245995,335020.2,71638476.67,,57072,452656.44,12517820.54,N,N,N,N
+National,,National,Aromasin,Exemestane,248,1050,1739.2,1845636.26,216,,971,1621.2,1721074.86,,192,862.3,102949.5,N,N,N,N
+National,,National,Arthrotec 50,Diclofenac Sodium/Misoprostol,90,369,563.2,260099.95,85,,350,527.2,246124.97,#,,1004.54,24074.8,N,N,N,N
+National,,National,Arthrotec 75,Diclofenac Sodium/Misoprostol,289,1072,1811.5,846830.82,253,,975,1647.2,768902.52,,225,1520.73,72774.81,N,N,N,N
+National,,National,Asa-Butalb-Caffeine-Codeine,Codeine/Butalbital/Asa/Caffein,3233,14649,14921,1846822.64,2681,,11688,11945.3,1436424.68,,2191,14427.43,391609.75,Y,N,N,N
+National,,National,Asacol Hd,Mesalamine,935,2995,4288.4,4565855.17,869,,2382,3490.8,3670575.07,,668,5427.08,332693.51,N,N,N,N
+National,,National,Ascomp With Codeine,Codeine/Butalbital/Asa/Caffein,2165,9603,9752.3,1290770.12,1829,,7789,7924.1,1031181.35,,1511,7418.17,272574.05,Y,N,N,N
+National,,National,Asenapine Maleate,Asenapine Maleate,8881,55528,66202.5,24050061.44,10514,,13547,16972.1,5435083.12,,2516,68540.03,521876.33,N,N,N,Y
+National,,National,Ashlyna,L-Norgest/E.Estradiol-E.Estrad,550,1148,3451.6,117247.6,505,*,,,,*,,1168.4,3901.44,N,N,N,N
+National,,National,Asmanex,Mometasone Furoate,13344,51191,83599.6,18223123.19,14825,,45987,76699.8,16655676.91,,13204,50886.75,3252854.54,N,N,N,N
+National,,National,Asmanex Hfa,Mometasone Furoate,9359,30726,47218.1,8427781.68,10804,,26773,41869.7,7426371.87,,9457,36895.71,1530200.61,N,N,N,N
+National,,National,Aspirin-Dipyridamole Er,Aspirin/Dipyridamole,32122,163433,299590.5,53518701.14,32663,,150250,277174.4,49227024.05,,30097,160084.62,6081232.91,N,N,N,N
+National,,National,Assure Id Insulin Safety,"Syringe,needle,insuln,safe,1ml",11,23,36.8,566.56,12,,23,36.8,566.56,,12,0,130.41,N,N,N,N
+National,,National,Assure Id Insulin Safety,"Syringe,needle,insuln,sf 0.5ml",12,42,50.8,1135.67,13,,42,50.8,1135.67,,13,64.92,218.83,N,N,N,N
+National,,National,Assure Id Pen Needle,"Pen Needle, Diabetic, Safety",108,268,417.4,17386.76,116,,228,362.3,14504.53,,97,176.69,3178.14,N,N,N,N
+National,,National,Astagraf Xl,Tacrolimus,129,652,1011.1,512143.84,109,,407,648,262548.29,,68,2246.21,32556.31,N,N,N,N
+National,,National,Atacand,Candesartan Cilexetil,1187,4650,9505.9,2636638.64,1013,,4551,9271.6,2573727,,982,4407.45,474500.75,N,N,N,N
+National,,National,Atacand Hct,Candesartan/Hydrochlorothiazid,394,1588,3122.2,829717.67,329,,1535,3057.2,810969.35,#,,2842.54,145246.96,N,N,N,N
+National,,National,Atazanavir Sulfate,Atazanavir Sulfate,2474,21569,26733.5,10899806.69,2880,,10500,13556.6,5556063.43,,1431,21029.2,357354.09,N,N,N,N
+National,,National,Atelvia,Risedronate Sodium,192,912,1453,398803.89,198,,872,1394.3,382022.08,,186,1597.54,49970.04,N,N,N,N
+National,,National,Atenolol,Atenolol,304609,7679235,18721729.8,73987661.99,1796035,,7000985,17339583.2,68365346.13,,1653438,1755649.89,21417821.54,N,N,N,N
+National,,National,Atenolol-Chlorthalidone,Atenolol/Chlorthalidone,69099,425724,1069266.1,17870383.27,107836,,387752,988148.2,16474962.76,,98919,185753.46,3643076.95,N,N,N,N
+National,,National,Ativan,Lorazepam,1314,6718,7651,23741082.54,1073,,5091,5887.5,16579033.44,,826,6474.98,553144.97,N,N,N,N
+National,,National,Atomoxetine Hcl,Atomoxetine Hcl,32737,213176,282463.1,33520229.59,40891,,49535,79828.4,8108065.07,,11770,220956.98,2182923.65,N,N,N,N
+National,,National,Atorvastatin Calcium,Atorvastatin Calcium,552083,61087156,147133581.3,836020935.54,14952712,,53602221,131777850.3,741839790.48,,13274537,15800870.94,190152455.43,N,N,N,N
+National,,National,Atovaquone,Atovaquone,13982,62458,65043.9,48258254.57,17652,,39273,41284.3,28927701,,11724,71490.96,3276771.27,N,N,N,N
+National,,National,Atovaquone-Proguanil Hcl,Atovaquone/Proguanil Hcl,6772,14953,18476.2,1921934.43,12988,,13409,16394.3,1628066.01,,11941,5947.2,563375.34,N,N,N,N
+National,,National,Atralin,Tretinoin,9,21,23,13636.74,,*,,,,*,,949.16,302,N,N,N,N
+National,,National,Atripla,Efavirenz/Emtricit/Tenofovr Df,1965,12923,13372.7,40557414.18,2231,,6639,6939,20792606.05,,1150,37066.87,1160585.54,N,N,N,N
+National,,National,Atropine Sulfate,Atropine Sulfate,33714,164179,221669,9481378.32,100348,,133103,180266.1,7510026.37,,87104,132271.2,2069426.23,N,N,N,N
+National,,National,Atrovent Hfa,Ipratropium Bromide,56031,244720,307171.3,133624135.36,69462,,184588,233684.8,101534051.55,,54382,683612.59,6906785.38,N,N,N,N
+National,,National,Aubagio,Teriflunomide,3944,75326,85997.5,724494717.9,9675,,30427,35320,295516867.79,,3943,348114.44,16098128.42,N,N,N,N
+National,,National,Aubra Eq,Levonorgestrel/Ethin.Estradiol,56,224,303.7,6017.19,51,,0,0,0,,0,157.98,276.08,N,N,N,N
+National,,National,Augmentin,Amoxicillin/Potassium Clav,13,13,13,433.04,13,*,,,,*,,15.85,58.86,N,N,Y,N
+National,,National,Aurovela,Norethindrone Ac-Eth Estradiol,422,1061,2060.9,50775.47,396,,19,35.2,553.35,*,,1074.16,3062.21,N,N,N,N
+National,,National,Aurovela 24 Fe,Norethindrone-E.Estradiol-Iron,442,1217,2521.9,80354.68,413,,0,0,0,,0,1567.25,4341.71,N,N,N,N
+National,,National,Aurovela Fe,Norethindrone-E.Estradiol-Iron,2640,7892,16331.5,279391.49,2442,,55,131.2,1955.95,,24,8428.42,21167.85,N,N,N,N
+National,,National,Auryxia,Ferric Citrate,9403,129702,163344.6,199029312.43,29180,,50835,61899.3,64095084.72,,11332,657555.69,3141840.75,N,N,N,N
+National,,National,Austedo,Deutetrabenazine,9567,111650,113136.8,665738597.08,12690,,53892,54987.3,317163256.34,,6002,420686.07,11205333.18,N,N,N,N
+National,,National,Autoshield Duo Pen Needle,"Pen Needle,dual Safety,diabetc",25723,221175,258605.4,18188577.69,52183,,184927,216314.2,15060325.45,,43983,119189.92,1460031.12,N,N,N,N
+National,,National,Autoshield Pen Needle,"Pen Needle, Diabetic, Safety",29,75,99.8,4359.48,26,,53,75.3,3318.48,#,,104,892.08,N,N,N,N
+National,,National,Auvi-Q,Epinephrine,421,558,583,3079706.22,488,,401,420,2101297.19,,374,671.86,39692.43,N,N,N,N
+National,,National,Avalide,Irbesartan/Hydrochlorothiazide,638,2314,4999.5,1371162.13,547,,2253,4882.5,1339258.46,,536,2459.5,189188.59,N,N,N,N
+National,,National,Avandia,Rosiglitazone Maleate,283,657,1102,238965.17,306,,585,999.3,216927.47,,278,1565.84,49470.95,N,N,N,N
+National,,National,Avapro,Irbesartan,2055,7858,17292.1,4168422.28,1780,,7677,16938.1,4079919.27,,1740,6078.33,701782.39,N,N,N,N
+National,,National,Avastin,Bevacizumab,265,3153,3159.6,19162538.59,596,,2740,2746.6,16901393.25,,518,8467.94,348027.78,N,N,N,N
+National,,National,Aveed,Testosterone Undecanoate,168,682,1282.6,987039.26,189,,553,1029.3,795802.59,,156,1397.37,88450.86,N,N,N,N
+National,,National,Aviane,Levonorgestrel/Ethin.Estradiol,948,3622,5780.5,92349.43,855,,21,54.1,600.91,*,,2907.94,6517.76,N,N,N,N
+National,,National,Avita,Tretinoin,13,36,39,3245.75,13,#,,,,#,,5,1143.17,N,N,N,N
+National,,National,Avodart,Dutasteride,1569,7469,14893,3027223.04,1582,,7354,14634,2975224.65,,1554,8194.85,429333.44,N,N,N,N
+National,,National,Avonex,Interferon Beta-1a,2540,25035,27862.5,209146165.92,2961,,16639,18835.7,140832837.99,,1977,120469.39,6385269.36,N,N,N,N
+National,,National,Avonex Pen,Interferon Beta-1a,2857,31034,34524.8,259342985.04,3637,,19029,21474.7,160562491.34,,2235,137649.53,8274152.67,N,N,N,N
+National,,National,Avsola,Infliximab-Axxq,18,59,77.6,146337.48,18,,26,36.4,67223.48,*,,113.9,4501.2,N,N,N,N
+National,,National,Avycaz,Ceftazidime/Avibactam,871,3749,3749,15488474.29,873,,2178,2178,8407572.21,,540,5995.66,472991.02,N,N,Y,N
+National,,National,Aygestin,Norethindrone Acetate,7,22,35.7,4450.86,,*,,,,*,,2.27,672.09,N,N,N,N
+National,,National,Ayvakit,Avapritinib,128,420,420,15536747.39,123,,309,309,11462547.96,,92,237.78,248201.47,N,N,N,N
+National,,National,Azacitidine,Azacitidine,128,972,974.6,3154267.39,192,,946,948.6,3072695.6,#,,2816.23,205075.74,N,N,N,N
+National,,National,Azactam,Aztreonam,286,697,697,338838.83,312,,560,560,271441.52,,260,3215.99,13403.71,N,N,Y,N
+National,,National,Azasan,Azathioprine,564,1795,2857,1468725.81,519,,1210,2043.5,1057328.63,,351,1686.68,76268.43,N,N,N,N
+National,,National,Azasite,Azithromycin,3667,11810,13285.8,3443251.46,5804,,10915,12311.3,3202920.07,,5366,15926.15,480978.01,N,N,N,N
+National,,National,Azathioprine,Azathioprine,46864,406701,792862.2,25646093.9,92096,,308698,622994.6,19018895.17,,70484,215529.88,5078466.53,N,N,N,N
+National,,National,Azelaic Acid,Azelaic Acid,14725,51838,58448.2,8899429.31,29400,,45713,51914.5,7615113.69,,26694,15979.3,1699989.05,N,N,N,N
+National,,National,Azelastine Hcl,Azelastine Hcl,186922,2280811,3331293.3,96853280.41,955124,,1927751,2838921.8,80490598.11,,828055,1193837.84,32005913.61,N,N,N,N
+National,,National,Azelastine-Fluticasone,Azelastine/Fluticasone,21673,90696,124417.2,18021239.48,35122,,80520,111852.7,16149513.26,,31437,33795.5,2583072.88,N,N,N,N
+National,,National,Azelex,Azelaic Acid,1077,2085,2308,1375672.44,1142,,1556,1754.7,1046009.68,,926,2824.72,101462.76,N,N,N,N
+National,,National,Azesco,Prenatal 147/Iron/Folic Acid,263,773,1158,2532373.37,333,,601,867.2,1823710.11,,248,663.64,37366.93,N,N,N,N
+National,,National,Azilect,Rasagiline Mesylate,403,1832,3336.4,3058965.35,377,,1684,3070.4,2789974.1,,346,2844.51,287140.88,N,N,N,N
+National,,National,Azithromycin,Azithromycin,572412,5979655,6242628.3,53333286.24,4272471,,4882610,5104198.8,42766741.98,,3537263,2496772.07,18040931.19,N,N,Y,N
+National,,National,Azopt,Brinzolamide,21871,180119,317885.4,82828564.32,59030,,170213,301199.6,78530866.62,,56004,276824.06,9488984.58,N,N,N,N
+National,,National,Azor,Amlodipine Bes/Olmesartan Med,1334,6701,12249.7,4352589.49,1256,,6431,11745.4,4170610.95,,1199,11329.62,427621.96,N,N,N,N
+National,,National,Azstarys,Serdexmethylphen/Dexmethylphen,7,12,12,4249.19,,*,,,,*,,4,305.13,N,N,N,N
+National,,National,Aztreonam,Aztreonam,1399,4538,4555.3,3150846.09,1577,,3145,3149.9,2038895.35,,1160,5047.44,281045.43,N,N,Y,N
+National,,National,Azulfidine,Sulfasalazine,744,1982,2947.9,579870.87,735,,1678,2562.9,509753.53,,613,2561.36,97138.97,N,N,N,N
+National,,National,Azurette,Desog-E.Estradiol/E.Estradiol,160,646,1028.1,29157.44,147,,38,54.3,1192.38,*,,874.81,1956.91,N,N,N,N
+National,,National,B-D Single Use Alcohol Swab,Alcohol Antiseptic Pads,396,1699,2135,6386.46,550,,1406,1781,5177.28,,455,1112.5,310.14,N,N,N,N
+National,,National,Bacitracin,Bacitracin,15271,39230,40186.1,3796951.83,29161,,34690,35533.1,3339132.84,,26125,24149.29,756091.39,N,N,N,N
+National,,National,Bacitracin-Polymyxin,Bacitracin/Polymyxin B Sulfate,13922,36518,37196.9,566167.53,26281,,31743,32362.2,489694.56,,23199,13371.82,189527.41,N,N,N,N
+National,,National,Baclofen,Baclofen,278372,4828742,6437130.6,140424050.4,1235935,,2852528,3845674.4,71681539.64,,842469,2753473.42,19399466.04,N,N,N,N
+National,,National,Bactrim,Sulfamethoxazole/Trimethoprim,8,17,42,1861.27,,#,,,,*,,29.84,484.39,N,N,Y,N
+National,,National,Bactrim Ds,Sulfamethoxazole/Trimethoprim,137,208,293.5,19870.05,139,,157,227.7,15738.97,,112,94.46,3671.39,N,N,Y,N
+National,,National,Bafiertam,Monomethyl Fumarate,35,112,131.7,767710.26,39,,24,28.2,166857.68,*,,118.8,19055.81,N,N,N,N
+National,,National,Balcoltra,Levonorgest/Eth.Estradiol/Iron,42,108,137.2,32971.18,40,,0,0,0,,0,372.4,302.22,N,N,N,N
+National,,National,Balsalazide Disodium,Balsalazide Disodium,16418,119126,213918.7,25725928.07,26441,,108179,197285.1,23654131.15,,24193,60126.15,5858679.08,N,N,N,N
+National,,National,Balversa,Erdafitinib,270,800,809.5,14992684.51,245,,738,744.9,13932568.37,,227,953.89,525942.14,N,N,N,N
+National,,National,Balziva,Norethindrone-Ethin. Estradiol,365,1472,2533.2,68717.56,317,,34,65.6,1561.82,*,,1547.91,3329.57,N,N,N,N
+National,,National,Band-Aid Gauze Pads,Gauze Bandage,261,534,557.9,2609.64,421,,438,448.4,1887.71,,352,134.03,148.13,N,N,N,N
+National,,National,Banzel,Rufinamide,2075,20366,21694.8,79802168.9,2450,,1312,1369.4,4404226.91,,160,15118.67,102121.32,N,N,N,N
+National,,National,Baqsimi,Glucagon,7737,27990,30315.2,14334350.63,20491,,17573,19195.9,8835610.09,,14010,44864.71,871794.42,N,N,N,N
+National,,National,Baraclude,Entecavir,322,1922,2641.6,3454379.63,293,,1638,2278.3,3022946.02,,238,5529.6,112935.84,N,N,N,N
+National,,National,Basaglar Kwikpen U-100,"Insulin Glargine,hum.Rec.Anlog",166870,1734574,2844750.9,706983626.77,384444,,1319191,2197229.9,526314297.95,,290241,3988938.07,50900239.34,N,N,N,N
+National,,National,Bavencio,Avelumab,25,119,119,1567111.83,25,#,,,,#,,9255.55,61798.07,N,N,N,N
+National,,National,Baxdela,Delafloxacin Meglumine,302,657,677.1,1638812.88,381,,452,468.4,1036181.82,,258,4409.07,54009.05,N,N,Y,N
+National,,National,Bcg (Tice Strain),Bcg Live,191,668,773.1,395987.35,430,,653,755.3,385474.98,,419,1425.43,95889.49,N,N,N,N
+National,,National,Bd Insulin Syringe,"Syringe And Needle,insulin,1ml",13,31,35.9,421.38,15,#,,,,*,,0.74,4.65,N,N,N,N
+National,,National,Bd Insulin Syringe Micro-Fine,"Syringe-Needle,insulin,0.5 Ml",10,35,41,786.69,,,22,26.7,466.25,*,,1.3,0,N,N,N,N
+National,,National,Bd Insulin Syringe Ult-Fine Ii,"Syring-Needl,disp,insul,0.3 Ml",261,508,707.6,14332.5,266,,341,486.6,9548.77,,185,589.16,2467.27,N,N,N,N
+National,,National,Bd Insulin Syringe Ult-Fine Ii,"Syringe And Needle,insulin,1ml",236,506,793.9,16444.66,243,,372,598.6,11555.91,,184,617.14,1910.93,N,N,N,N
+National,,National,Bd Insulin Syringe Ult-Fine Ii,"Syringe-Needle,insulin,0.5 Ml",577,1399,1968.2,39736.68,604,,1062,1506.6,29653.35,,456,1632.52,5344.92,N,N,N,N
+National,,National,Bd Insulin Syringe Ultra-Fine,"Syring-Needl,disp,insul,0.3 Ml",61,98,129.7,2869.3,59,#,,,,#,,71,1019.48,N,N,N,N
+National,,National,Bd Insulin Syringe Ultra-Fine,"Syringe-Needle,insulin,0.5 Ml",179,388,560.2,11499.71,188,,314,456.8,9227.83,,152,483.88,1733.88,N,N,N,N
+National,,National,Beconase Aq,Beclomethasone Dipropionate,1393,4110,6032.6,1684845.32,1302,,3075,4748.2,1320612.24,,1037,4453.52,190313.56,N,N,N,N
+National,,National,Bekyree,Desog-E.Estradiol/E.Estradiol,5,20,23.6,788.48,,,0,0,0,#,,9.1,0,N,N,N,N
+National,,National,Belbuca,Buprenorphine Hcl,9217,187452,188019.4,121429802.96,35667,,84417,84773.4,52400076.58,,16950,660671.98,7652073.71,Y,Y,N,N
+National,,National,Belladonna-Opium,Opium/Belladonna Alkaloids,269,487,487,285850.06,242,,254,254,110444.33,,176,873.06,17656.75,Y,N,N,N
+National,,National,Belsomra,Suvorexant,40226,262681,296069.1,114679084.34,63600,,160035,184311.5,70566728.69,,42054,576780.18,6830494.24,N,N,N,N
+National,,National,Benazepril Hcl,Benazepril Hcl,193391,2403786,6045055.4,26969541.78,577695,,2213159,5631870.5,25232909.35,,535849,590062.16,7082520.61,N,N,N,N
+National,,National,Benazepril-Hydrochlorothiazide,Benazepril/Hydrochlorothiazide,56278,292711,746133.3,15359705.28,73936,,270285,696241.1,14225805.23,,68615,97203.77,2684940.38,N,N,N,N
+National,,National,Bendeka,Bendamustine Hcl,67,321,321,3152118.07,90,,282,282,2754479.42,,79,107.2,81614.77,N,N,N,N
+National,,National,Benicar,Olmesartan Medoxomil,6482,31192,59868.6,18180810.04,6313,,29981,57573.7,17451724.26,,6052,43969.73,2313220.62,N,N,N,N
+National,,National,Benicar Hct,Olmesartan/Hydrochlorothiazide,3392,17106,31303.4,9677029.77,3318,,16256,29663.5,9162347.46,,3149,23941.35,1102398.47,N,N,N,N
+National,,National,Benlysta,Belimumab,2314,29288,30348.7,121887629.3,3812,,6758,7129.2,28003068.47,,867,103537.41,2218166.32,N,N,N,N
+National,,National,Bensal Hp,Salicylic Acid,34,59,59,83932.98,38,,45,45,60742.08,#,,62.4,2835.99,N,N,N,N
+National,,National,Bentyl,Dicyclomine Hcl,11,31,31,13089.61,,#,,,,*,,9.3,120,N,N,N,N
+National,,National,Benzaclin,Clindamycin Phos/Benzoyl Perox,33,76,80,33173.5,30,,15,17,6986.84,*,,84.7,1079.7,N,N,N,N
+National,,National,Benzamycin,Erythromycin/Benzoyl Peroxide,10,19,26.5,1553.64,,*,,,,*,,33.2,129.86,N,N,N,N
+National,,National,Benzonatate,Benzonatate,12450,51325,51771.5,625784.85,34684,,45356,45738.6,536612.61,,30579,75931.73,181973.04,N,N,N,N
+National,,National,Benztropine Mesylate,Benztropine Mesylate,91398,2127173,2501338,28564903.41,273977,,541772,646267,7143874.04,,73670,1395357.56,1425479.85,N,N,N,N
+National,,National,Beovu,Brolucizumab-Dbll,32,234,362.8,546834.95,71,#,,,,#,,300.8,47440.43,N,N,N,N
+National,,National,Bepotastine Besilate,Bepotastine Besilate,4117,19574,26723.4,5408878.48,10242,,18003,24625.1,4976145.52,,9405,9525.12,171837.53,N,N,N,N
+National,,National,Bepreve,Bepotastine Besilate,7173,53202,66513.8,18329006.84,18784,,47764,59658.3,16399594.26,,16785,92997.16,715244.12,N,N,N,N
+National,,National,Berinert,C1 Esterase Inhibitor,63,428,428,40447864.35,68,,99,99,12065626.86,,33,2754.63,934496.05,N,N,N,N
+National,,National,Besivance,Besifloxacin Hcl,5824,89677,95671.7,18028983.94,62954,,83991,89633.4,16872318.7,,59185,156844.45,3745158.04,N,N,N,N
+National,,National,Betadine,Povidone-Iodine,24,62,62,1376.08,38,#,,,,#,,8,992.9,N,N,N,N
+National,,National,Betamethasone Diprop Augmented,Betamethasone Dipropionate,3104,7465,7892.3,720421.83,4148,,6327,6698.5,602102.34,,3632,4333.74,143040.12,N,N,N,N
+National,,National,Betamethasone Diprop Augmented,Betamethasone/Propylene Glyc,68354,421943,451986.5,22910574.1,232719,,362708,389095.3,18905005.02,,204949,203022.47,4657651.96,N,N,N,N
+National,,National,Betamethasone Dipropionate,Betamethasone Dipropionate,129603,756560,805147.5,47559881.81,414038,,639946,682034.7,39625353.39,,359992,458320.85,11698823.68,N,N,N,N
+National,,National,Betamethasone Sod Phos-Acetate,"Betamethasone Acetate,sod Phos",156,347,392,18120.51,273,,304,345.6,15984.04,,237,192.13,3003.93,N,N,N,N
+National,,National,Betamethasone Valerate,Betamethasone Valerate,67215,271441,293340.7,11526917.77,150649,,227185,246463.2,9714082.87,,129605,135416.55,2530860.27,N,N,N,N
+National,,National,Betapace,Sotalol Hcl,98,368,762.1,892875.61,92,,338,704.8,817850.33,#,,1746.96,54847.11,N,N,N,N
+National,,National,Betapace Af,Sotalol Hcl,60,215,376.5,295084.68,49,,202,347.5,269056.66,#,,50,30903.84,N,N,N,N
+National,,National,Betaseron,Interferon Beta-1b,1550,14920,15646.5,130156656.84,1702,,7798,8418.3,69991822.01,,908,74229.43,2707395.37,N,N,N,N
+National,,National,Betaxolol Hcl,Betaxolol Hcl,5791,30788,60186.1,2468657.26,8543,,28930,57046.9,2346247.42,,8091,14238.34,724833.07,N,N,N,N
+National,,National,Bethanechol Chloride,Bethanechol Chloride,26326,206347,287023.6,15121294.58,46685,,168841,238805.8,12287222,,39658,107044.38,2461404.52,N,N,N,N
+National,,National,Bethkis,Tobramycin,12,26,29.5,157431.36,12,,12,12.9,78881.18,*,,741.17,6723.21,N,N,N,N
+National,,National,Betimol,Timolol,7019,30127,51815.6,6614235.65,9816,,28824,49803.7,6339257.38,,9357,40184.3,1561014.26,N,N,N,N
+National,,National,Betoptic S,Betaxolol Hcl,2869,12541,25954.7,5501373.39,3141,,11974,24919,5274550.33,,3008,17910.64,870341.52,N,N,N,N
+National,,National,Bevespi Aerosphere,Glycopyrrolate/Formoterol Fum,23652,150005,191622.6,77560960.15,36882,,119230,153281.6,61968294.44,,29217,428578.65,6534359.83,N,N,N,N
+National,,National,Bexarotene,Bexarotene,491,4152,4364.6,48575283.05,597,,3647,3855.6,42123546.06,,515,24415.24,1479088.34,N,N,N,N
+National,,National,Bexsero,"Meningococcal B Vaccine,4-Comp",1252,2249,2338.7,501505.26,1760,,1860,1946.9,418068.14,,1450,2435.15,123864.23,N,N,N,N
+National,,National,Beyaz,Drospir/Eth Estra/Levomefol Ca,19,53,130.3,32873.11,15,,0,0,0,,0,993.31,397.41,N,N,N,N
+National,,National,Bicalutamide,Bicalutamide,28784,251515,421900.6,9535110.58,79200,,245337,412962.6,9321208.53,,77247,107715.62,3154780.44,N,N,N,N
+National,,National,Bicillin C-R,Pen G Benz/Pen G Procaine,42,84,93.7,27548.56,43,,53,60.5,15786.71,,30,206,2595.55,N,N,Y,N
+National,,National,Bicillin L-A,Penicillin G Benzathine,2379,5399,5978.6,3344777.06,3070,,3421,3825.6,2087105.48,,1907,14735.81,199623.33,N,N,Y,N
+National,,National,Bidil,Isosorbide Dinit/Hydralazine,8275,39143,60419.3,19335830.88,9570,,31756,49189.4,15528479.19,,7586,110182.93,1303511.91,N,N,N,N
+National,,National,Bijuva,Estradiol/Progesterone,298,1151,1553,356967.21,307,,712,970,220642.63,,203,2085.49,74884.96,N,N,N,N
+National,,National,Biktarvy,Bictegrav/Emtricit/Tenofov Ala,18149,593834,620973.3,2196964911.5,66269,,245968,264040.8,926966107.17,,27226,2193599.48,32271612.59,N,N,N,N
+National,,National,Bimatoprost,Bimatoprost,6400,34473,60571.9,5751302.77,10366,,33382,58913.6,5586025.78,,10010,9392.24,774711.78,N,N,N,N
+National,,National,Binosto,Alendronate Sodium,438,1944,2406,729617.81,450,,1449,1868.7,568099.94,,373,1598.61,62550.55,N,N,N,N
+National,,National,Bisoprolol Fumarate,Bisoprolol Fumarate,100405,894340,2137165,40437555.98,229248,,819315,1982659.7,37444958.61,,211331,336048.8,8717364.17,N,N,N,N
+National,,National,Bisoprolol-Hydrochlorothiazide,Bisoprolol/Hydrochlorothiazide,79075,646145,1620006.2,23896965.02,157279,,599016,1520188.3,22327304.36,,146830,185114.56,5877843.5,N,N,N,N
+National,,National,Bivigam,Immun Glob G(Igg)/Gly/Iga Ov50,16,123,123,1419360.95,15,,50,50,321410.37,*,,41.2,45332.88,N,N,N,N
+National,,National,Bleomycin Sulfate,Bleomycin Sulfate,20,36,36.4,3658.58,21,#,,,,#,,6.7,907.28,N,N,N,N
+National,,National,Bleph-10,Sulfacetamide Sodium,33,39,44.3,2730.46,33,#,,,,#,,13.7,432.96,N,N,N,N
+National,,National,Blephamide,Sulfacetamide/Prednisolone,751,1204,1426.6,280958.92,821,,1081,1298,251827.63,,739,1662.14,57173.65,N,N,N,N
+National,,National,Blephamide S.O.P.,Sulfacetamide/Prednisolone,13,15,15,2431.93,13,,15,15,2431.93,,13,5,718.63,N,N,N,N
+National,,National,Blincyto,Blinatumomab,12,82,82,2005937.35,,,48,48,1195819.62,*,,9709.2,42555.34,N,N,N,N
+National,,National,Blisovi 24 Fe,Norethindrone-E.Estradiol-Iron,459,1191,2767.8,86711.24,417,*,,,,*,,1359.4,5497.42,N,N,N,N
+National,,National,Blisovi Fe,Norethindrone-E.Estradiol-Iron,2357,8103,14894.8,232614.17,2159,,87,158,2279.99,,23,7032.81,15342.52,N,N,N,N
+National,,National,Boniva,Ibandronate Sodium,382,1136,2925.8,558382.61,360,,1095,2820.9,537338.82,,346,1590.99,73221.06,N,N,N,N
+National,,National,Bonjesta,Doxylamine Succinate/Vit B6,47,75,80,45579.55,43,*,,,,*,,175.37,232.8,N,N,N,N
+National,,National,Boostrix Tdap,"Diphth,pertuss(Acell),tet Vac",74383,520674,521668.7,33210270.93,518544,,468805,469689.3,29755988.4,,466973,479508.12,16088788.92,N,N,N,N
+National,,National,Bortezomib,Bortezomib,82,564,565.1,3209334.35,121,,498,499.1,2836168.29,,105,5055.28,142908.78,N,N,N,N
+National,,National,Bosentan,Bosentan,694,8661,8697,39854026.09,926,,6050,6070,27892756.19,,641,22084.32,2525475.12,N,N,N,N
+National,,National,Bosulif,Bosutinib,1493,11031,11228.8,147656079.87,1495,,8114,8295.5,103909929.82,,1103,19024.32,2904655.65,N,N,N,N
+National,,National,Botox,Onabotulinumtoxina,5793,50715,138539.5,68456841.88,21090,,24205,65992.5,29957050.13,,10704,181090.91,5142786.37,N,N,N,N
+National,,National,Braftovi,Encorafenib,1178,7035,7100.3,85173607.02,1451,,5942,5994.2,71855233.89,,1228,38167.72,3547577.51,N,N,N,N
+National,,National,Breo Ellipta,Fluticasone/Vilanterol,190165,3063967,4021335.7,1522936680.3,653234,,2495082,3305109.6,1248796119.5,,531864,6605520.65,125151996.67,N,N,N,N
+National,,National,Breztri Aerosphere,Budesonide/Glycopyr/Formoterol,28039,240710,299107.3,179295183.79,82601,,190955,239416.1,143159375.03,,66333,656957.48,11137578.39,N,N,N,N
+National,,National,Briellyn,Norethindrone-Ethin. Estradiol,137,652,850.4,23928.38,119,,12,17.3,464.34,*,,271.9,1900.57,N,N,N,N
+National,,National,Brilinta,Ticagrelor,112555,954027,1495500.4,602255878.4,220674,,810561,1277568.9,513072131.4,,189087,2160919.41,59012110.25,N,N,N,N
+National,,National,Brimonidine Tartrate,Brimonidine Tartrate,75584,1802345,3167588.9,94926200.32,476952,,1665795,2948811.1,87625418.24,,442758,856394.26,16685674.49,N,N,N,N
+National,,National,Brinzolamide,Brinzolamide,16753,97478,189166.4,35642738.29,37006,,93243,181543.8,34229268.39,,35411,64835.8,3509337.08,N,N,N,N
+National,,National,Brisdelle,Paroxetine Mesylate,66,252,399,86096.63,57,,145,248,53391.58,,32,1206.51,14703.38,N,N,N,N
+National,,National,Briviact,Brivaracetam,6495,83745,90706.6,119126963.31,9606,,21986,24012.4,28510917.12,,2772,139713.55,1743503.68,N,N,N,N
+National,,National,Bromfenac Sodium,Bromfenac Sodium,3475,29791,33171.1,5819165.33,14254,,28719,32034.4,5613883.98,,13719,12817.7,817777.45,N,N,N,N
+National,,National,Bromocriptine Mesylate,Bromocriptine Mesylate,7502,40374,67088.7,9785643.5,7353,,23879,44569.6,5355179.97,,4909,29006.48,1075615.54,N,N,N,N
+National,,National,Brompheniramine-Pseudoephed-Dm,Brompheniramine/Pseudoephed/Dm,198,332,332,8010,291,,259,259,6117.96,,231,980.76,2028.97,N,N,N,N
+National,,National,Bromsite,Bromfenac Sodium,3074,33584,46836.1,9704439.84,20220,,31497,43972.3,9093447.98,,18950,71211.46,1395747.63,N,N,N,N
+National,,National,Brovana,Arformoterol Tartrate,1638,7208,7227.7,5000079.77,1822,,6009,6024.4,4078558.11,,1576,17658.4,125119.85,N,N,N,N
+National,,National,Brukinsa,Zanubrutinib,1146,6477,6537.4,82575004.94,1567,,6249,6309.4,79510690.41,,1508,8156.43,3467737.52,N,N,N,N
+National,,National,Bryhali,Halobetasol Propionate,322,612,686.1,238201.03,378,,525,586.4,198240.41,,330,723.8,25717.34,N,N,N,N
+National,,National,Bss,Balanced Salt Irrig Soln No.2,80,298,355.3,13231.7,83,,236,281.3,12048.17,#,,68.34,5951.52,N,N,N,N
+National,,National,Budesonide,Budesonide,15072,120562,127716.4,24786916.5,25454,,98633,105054,19481394.86,,21553,68247.75,987420.09,N,N,N,N
+National,,National,Budesonide Dr,Budesonide,24006,131464,174836.5,24661177.63,44956,,116872,156331.7,21269830.84,,40172,80068.29,6363560.6,N,N,N,N
+National,,National,Budesonide Ec,Budesonide,28655,165468,255395.7,56572699.17,59921,,148146,230204.8,48367937.67,,53923,128964.08,9757004.71,N,N,N,N
+National,,National,Budesonide Er,Budesonide,6993,39023,41862.7,52486063.05,12663,,31231,33723.7,40408579.93,,10436,41286.53,2299567.25,N,N,N,N
+National,,National,Budesonide-Formoterol Fumarate,Budesonide/Formoterol Fumarate,108556,505204,661454.3,176836368.2,205444,,391514,518437.7,138948841.11,,156639,890745.1,15321614.1,N,N,N,N
+National,,National,Bumetanide,Bumetanide,193127,1990254,3471431.7,119263870.73,473414,,1696291,2988347.9,99224546.7,,404669,1083306.49,17827733.88,N,N,N,N
+National,,National,Bunavail,Buprenorphine Hcl/Naloxone Hcl,2,13,13,2948.21,,*,,,,*,,22.49,0,N,N,N,N
+National,,National,Bupap,Butalbital/Acetaminophen,12,27,27.3,28292.03,11,#,,,,*,,100.73,179.77,N,N,N,N
+National,,National,Buphenyl,Sodium Phenylbutyrate,16,153,161.5,3611566.69,15,,26,27.3,442867.23,*,,30.4,20551.56,N,N,N,N
+National,,National,Bupivacaine Hcl,Bupivacaine Hcl,74,186,197,3102.15,110,,121,127.3,1191.27,,79,55.24,536,N,N,N,N
+National,,National,Bupivacaine Hcl,Bupivacaine Hcl/Pf,247,654,705.7,9641.66,429,,477,503.3,5055.25,,351,201.72,1718.5,N,N,N,N
+National,,National,Buprenex,Buprenorphine Hcl,27,252,252.1,840391.84,24,,87,87.1,151952.9,,11,345.09,24444.17,N,N,N,N
+National,,National,Buprenorphine,Buprenorphine,18316,264550,266572.5,86210162.95,55654,,174187,175707.6,55646485.71,,36230,402981.47,8794535.53,Y,Y,N,N
+National,,National,Buprenorphine Hcl,Buprenorphine Hcl,14686,273843,276828.7,18406972.75,34266,,101681,103432.1,6949826.29,,14526,249674.75,1614411.01,Y,Y,N,N
+National,,National,Buprenorphine-Naloxone,Buprenorphine Hcl/Naloxone Hcl,33630,1305396,1311868.9,215645429.37,123607,,367095,370611.1,64877792.21,,40071,1596477.77,8333274.41,N,N,N,N
+National,,National,Bupropion Hcl,Bupropion Hcl,104087,658256,1073402.9,21625997.21,163321,,469279,803214.9,15616901.49,,118932,391490.3,5537096.91,N,N,N,N
+National,,National,Bupropion Hcl Sr,Bupropion Hcl,213903,2275463,4032812.3,71223366.06,548884,,1489884,2861429.1,49621292.11,,379879,1495058.09,19898071.73,N,N,N,N
+National,,National,Bupropion Xl,Bupropion Hcl,268781,5273416,9674872.2,226335436.57,1105393,,3369519,6782253.3,150190204.2,,772287,3499347.58,63999284.65,N,N,N,N
+National,,National,Buspirone Hcl,Buspirone Hcl,272856,5974256,8678871.1,113484327.32,1203499,,3817784,5784082.1,69815384.2,,817968,3304509.06,19220620.35,N,N,N,N
+National,,National,Butalb-Acetaminoph-Caff-Codein,Butalbit/Acetamin/Caff/Codeine,9065,43879,44445.9,5019399.65,7924,,29817,30279.9,3412548.14,,5497,34049.29,960859.1,Y,N,N,N
+National,,National,Butalbital Compound-Codeine,Codeine/Butalbital/Asa/Caffein,1064,4169,4202.2,524682.18,892,,3451,3467.9,417513.77,,744,4255.94,92659.05,Y,N,N,N
+National,,National,Butalbital-Acetaminophen,Butalbital/Acetaminophen,4627,17093,18200.1,3029854.19,4852,,10703,11579.3,2021950.88,,3134,11041.45,240397.12,N,N,N,N
+National,,National,Butalbital-Acetaminophen-Caffe,Butalb/Acetaminophen/Caffeine,112430,778854,815919.5,33208134.51,187711,,482587,510301.2,20789925.91,,121632,453528.86,6618231.43,N,N,N,N
+National,,National,Butalbital-Aspirin-Caffeine,Butalbital/Aspirin/Caffeine,16919,59172,61944.2,3821968.63,16203,,46139,48628.9,3003362.68,,13001,31219.97,1131928,N,N,N,N
+National,,National,Butorphanol Tartrate,Butorphanol Tartrate,3690,30695,31183.9,3344270.78,3233,,13858,14146.4,1532660.04,,1559,41362.82,537830.26,Y,N,N,N
+National,,National,Butrans,Buprenorphine,6450,41916,42492.7,28013753.83,8087,,24898,25293.8,16186246.46,,4804,90256.83,1540715.32,Y,Y,N,N
+National,,National,Bydureon Bcise,Exenatide Microspheres,41011,316105,478828.2,379150013.15,66295,,235563,366026,288746980.11,,49966,651092.67,22841919.13,N,N,N,N
+National,,National,Bydureon Pen,Exenatide Microspheres,21170,54849,77049.9,61049405.31,26390,,39772,57481.8,45387906.82,,19459,164289.25,3344877.65,N,N,N,N
+National,,National,Byetta,Exenatide,6672,28345,49004.2,37987905.49,6282,,23375,41645.1,32049794.21,,5191,55580.17,2681185.61,N,N,N,N
+National,,National,Bynfezia,Octreotide Acetate,62,180,193.5,185247.12,80,,124,131.6,129532.39,,51,803.52,18437.5,N,N,N,N
+National,,National,Bystolic,Nebivolol Hcl,121193,1282589,2504910.7,415346329.18,295701,,1172069,2309359.6,381879323.68,,271489,1858534.56,85800613.41,N,N,N,N
+National,,National,C-Nate Dha,Pnv 11/Iron Fum/Folic Acid/Om3,42,86,140,6596.04,45,,29,60,2765.3,,16,208.23,349.37,N,N,N,N
+National,,National,C

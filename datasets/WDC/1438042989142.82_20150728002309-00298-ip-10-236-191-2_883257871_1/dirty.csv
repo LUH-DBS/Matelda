@@ -1,0 +1,150 @@
+ID,Status,Student,Task title,Issue,Forum,Output
+8,Closed,afeique,Create a Joomla! v 1.5 plugin for Flickr Images,,forum,output
+9,Closed,fealebenpae,Create a Joomla! v 1.5 plugin to convert articles to Pirate Speak,,forum,output
+10,Closed,fealebenpae,Create a Joomla! 1.5 module listing all of the items in a given category,,,output
+11,Closed,severin.schols,Create a module listing a random set of articles excluding frontpage articles,,,output
+12,Closed,Kevin8020,Create a module listing the most popular articles,,,output
+13,Closed,winged_g,Create a module listing the names of authors and number of articles written,,forum,output
+14,Closed,benhiller,Create a module listing the latest article written for each author,,,output
+15,Closed,MiCCAS,Create a module containing a Google Gadget,,,output
+16,Closed,kristofdb,Create a document defining the four types of Joomla! Extensions,,,output
+17,Closed,mariekev...quicknet.nl,Create a unit test plan for the Article Manager,,,output
+18,Closed,AshtonPatMurphy,Introduce at least 3 new end users to the Joomla! Front end and write a report on what happens,,,output
+19,Closed,eikelangbehn,Create a unit test plan for the Frontpage Manager,,forum,output
+20,Closed,ramsay.james,Create a document outlining core features available within Joomla! v 1.5,,forum,output
+21,Closed,AshtonPatMurphy,Introduce at least 3 new end users to the Joomla! Back end for Managers and write a report on what happens,,forum,output
+22,closed,chitsabesh,Create a unit test plan for the Media Manager,,forum,output
+23,Closed,geoffkilps,Create a module to embed Google Analytics into Joomla! v 1.5,,forum,output
+24,Claimed,Benjamin.Haettasch,Create a module that allows an end user to embed a personalized Google Maps,,forum,
+25,Closed,baneweb,Introduce at least 3 new end users to the Joomla! Back end for administrators and write a report on what happens,,forum,output
+26,Closed,Drmmr763,"Create a ""How to Use Joomla!'s Register to Read More"" document",,,output
+28,Closed,allanpoppe,"Create a ""Joomla! Menu Types"" document",,,output
+29,Closed,tohashani,"Create a ""Joomla! Category Blog Layout"" document",,forum,output
+30,Closed,Daniel.sadik,Create a unit test plan for the User Manager,,forum,output
+31,Claimed,draicone,Create a unit test plan for the Module Manager,,forum,
+32,Closed,Kevin8020,Create a section content view that combines a category list with a blog view within each category,,forum,output
+33,Closed,Drmmr763,Create a document explaining how to modify the default Template,,forum,output
+34,Claimed,admin911denial,"Implement ""thank you for your email"" message in contact component",,forum,
+35,Closed,Olivia1990,Select a Team Blog and translate it into a non-English language,,,output
+36,Closed,jbelani1,Upgrade a Joomla! 1.0 component to work in Joomla! 1.5 natively,,forum,output
+37,Closed,khalilqandil,Translate part of the Installation Manual to a non-English Language,,forum,output
+38,Closed,mariekev,Create a unit test plan for the Template Manager,,forum,output
+39,Closed,merty92,Translate part of the Installation Manual to a non-English Language,,forum,output
+40,Claimed,shantanubala,Create a template suitable for use by younger children,,forum,
+41,Closed,Eli.Zehavi,Translate part of the Installation Manual to a non-English Language,,forum,output
+42,Closed,chitsabesh,Create a unit test plan for the Global Configuration and Article Configuration,,forum,output
+43,Closed,draicone,Write some code to parse the CHANGELOG.php and present the information in new ways,,,output
+44,Closed,depresz,Translate part of the Installation Manual to a non-English Language,,,output
+45,Closed,chalet16,Write a DTD for template XML installer files (templateDetails.xml),,forum,output
+47,Closed,mariekev,Translate part of the Installation Manual to a non-English Language,,forum,output
+48,Closed,Kevin8020,Create a Joomla! QuickStart Guide,,forum,output
+49,Closed,slogen123,Create a Video demonstrating how to install XAMPP and Joomla! v 1.5,,forum,output
+50,Closed,kristofdb,Create a Video demonstrating how to backup and restore a database using phpMyAdmin,,forum,output
+51,Closed,ramsay.james,Create a Video demonstrating how to recover your Administrator Password using phpMyAdmin,,forum,output
+53,Claimed,Kevin8020,"Write a document describing how to put rounded corners on modules using the ""rounded"" module style",,,
+54,Closed,Daniel.sadik,Create a Video demonstrating how to install a Joomla! extension,,forum,output
+55,Closed,mdranta,Create a Video demonstrating how to embed media into a Joomla! article,,forum,output
+56,Closed,Brianfast,Create a short (ideally one page) document that explains how to create a new article,,,output
+57,Claimed,takercena,Write a document describing how to use CSS class suffixes in Joomla! 1.5,,forum,
+58,Claimed,schmrz,Write a list of all the CSS classes used by the Joomla! 1.5 core,,forum,
+59,Claimed,tohashani,"Create a document entitled ""Getting Started with Template Overrides.""",,forum,
+60,Closed,annerjb,Write a document describing how to add JavaScript to a Joomla! 1.5 template,,,output
+61,Closed,Drmmr763,Create a troubleshooting procedure to help resolve problems with template installation,,forum,output
+62,Closed,DorFire,Write a document describing how to add browser-specific code to a template,,,output
+63,Closed,trombonechamp,Create a one to two page document that a webmaster could give to a new Joomla! user who is a publisher,,forum,output
+64,Closed,TJ.Ferrell,"Create a tri-fold brochure that answers the question ""What is Free Software?""",,forum,output
+65,Closed,hpatel516,"Create a tri-fold brochure entitled ""Pioneers of Free Software""",,forum,output
+66,Closed,arifshay.oertonay,Create a one to two page document about using the media manager,,forum,output
+67,Closed,hpatel516,"Create a tri-fold brochure entitled ""How to contribute in an open source community""",,,output
+68,Closed,trombonechamp,"Create a tri-fold brochure that answers the question ""What is Joomla!?""",,forum,output
+69,Closed,TJ.Ferrell,"Create a tri-fold brochure entitled ""The Joomla! Project"" that explains how the project is organized",,,output
+70,Closed,yoniwiz,"Create a tri-fold brochure entitled ""Joomla! Core Team"" with brief profiles of core team members",,forum,output
+71,Closed,trombonechamp,Compose and perform a song in celebration of Joomla!,,forum,output
+72,Claimed,demonfire.dev,Create art that captures the spirit of All Together,,,
+74,Closed,igeoffi,"Create a tri-fold brochure entitled ""Using Joomla! for Schools""",,,output
+75,Closed,dummyhead3,"Create a tri-fold brochure entitled ""Joomla! for Small Businesses""",,forum,output
+76,Closed,ramsay.james,"Create a tri-fold brochure entitled ""Joomla! for Worship""",,,output
+77,Closed,rossnmiller,"Create a tri-fold brochure entitled ""Joomla! for Personal Sites and Blogs""",,forum,output
+78,Closed,drethenerd,"Create a tri-fold brochure entitled ""Joomla! for Libraries""",,forum,output
+79,Closed,djyr2003,"Create a tri-fold brochure entitled ""Joomla! for Community Groups""",,,output
+80,Closed,christoph.hochstrasser,"Create a tri-fold brochure entitled ""Joomla! for Not for Profit Organizations""",,forum,output
+82,Closed,DPustulka,"Create a tri-fold brochure entitled ""Joomla! for Higher Education""",,,output
+83,Closed,theY4Kman,"Create a document entitled ""Mootools Tips and Tricks""",,forum,output
+84,Closed,d.c.ddcc,"Create a document entitled ""How to include Squeezebox in your Joomla! Website.""",,forum,output
+85,Closed,Daniel.sadik,"Create a document entitled ""How to include Slimbox in your Joomla! Website.""",,forum,output
+88,Closed,k00lstuffks,"Create a two-page document entitled ""Creating a Custom 404 page""",,forum,output
+89,Closed,annas.rahman,Identify and document frequently asked questions in the Joomla! 1.5 General forum,,,output
+90,Closed,klaus.thenmayer,Identify and document frequently asked questions in the Joomla! 1.0 General forum,,,output
+91,Closed,Milosz.Lewandowski,Write a document on how to create a language definition file for a Joomla! 1.5 template,,,output
+92,Claimed,tungolcild,Write a document on PHP essentials for template designers,,forum,
+93,Closed,deckers.olivier,Write a document on how to replace the logo image in the Milkyway template,,,output
+95,Claimed,mariekev,Write a document describing the extension parameter types available and how to use them,,forum,
+97,ActionNeeded,mandrex,Write a document describing how to add a popup window to a Joomla! 1.5 component,,,
+99,Claimed,fealebenpae,Write a document describing how to add JavaScript and CSS to the page from an extension,,forum,
+100,Claimed,jbelani1,Write a document describing how to use the JPagination class in a component,,forum,
+101,Claimed,kleinheero,Write a document describing how to create a toolbar in a component,,forum,
+102,Closed,igeoffi,Write a document describing how to set up a local help server,,forum,output
+103,Claimed,exhnozoaa,Research commercially available training materials for Joomla!,,forum,
+104,Closed,e.urbach,Write a document explaining how to create a custom HTML module,,,output
+105,Closed,camporter1,Write a document explaining how to use core Joomla! functions to offer file downloads,,,output
+106,Closed,arifshay.oertonay,Write a document explaining how to use core Joomla! functions for a simple photo gallery or portfolio,,,output
+107,Closed,Drmmr763,Write a document explaining how to use the core Joomla! contact functions to create a services or resources directory,,,output
+108,Closed,TJ.Ferrell,Write a document explaining how to use the news flash module to display a random or rotating selection of texts,,forum,output
+109,Closed,baneweb,Write a document explaining how to use the banners component and module featuring parts of a website,,,output
+110,Closed,Benjamin.Haettasch,"Create a document entitled ""Joomla! v 1.5 SEF URLs""",,forum,output
+111,Closed,davydov.stas,"Create a document entitled ""How to remove ""WWW"" from your Domain Name and",,,output
+112,Closed,littlegeniuz,Write a document describing how to package a Joomla! 1.5 template for distribution,,,output
+113,Claimed,helena.drolc,Translate part of the Installation Manual into a non-English language,,forum,
+114,Closed,netantho,Translate part of the Installation Manual to a non-English Language,,forum,output
+115,Claimed,medicalwei,Translate part of the Installation Manual to a non-English Language,,forum,
+116,Claimed,EvgeniyFilatov,Translate part of the Installation Manual to a non-English Language,,forum,
+117,Claimed,TromboneChamp,Create art that captures the spirit of All Together,,forum,
+118,Claimed,slogen123,Create art that captures the spirit of All Together,,,
+119,Closed,fantastic91,Translate part of the Installation Manual to a non-English Language,,forum,output
+121,Closed,md.bustos90,Translate part of the Installation Manual to a non-English Language,,,output
+122,Closed,pe...seznam.cz,Translate part of the Installation Manual to a non-English Language,,forum,output
+123,Closed,unndomiell,Translate part of the Installation Manual to a non-English Language,,forum,output
+125,Closed,depresz,Create a Blog Entry Date Calendar Icon Plugin for Joomla! v 1.5,,forum,output
+126,Closed,depresz,Create a Joomla! v 1.5 Plugin to update Twitter status with article title when published,,forum,output
+127,Closed,skromwijk,Create a Joomla! v 1.5 Content Plugin to embed Scribd Documents,,,output
+128,Closed,thomasfedb,Create a Joomla! v 1.5 CSS for Bar Graphs Plugin,,forum,output
+129,Closed,chalet16,Create a Joomla! v 1.5 Plugin for Footnotes with CSS and Javascript,,forum,output
+130,Closed,s.kromwijk,Create a Joomla! v 1.5 Plugin to implement A List Apart's Automatic Magazine Layout,,forum,output
+131,Closed,annerjb,Create a Joomla! v 1.5 Plugin for Odeo,,forum,output
+133,Closed,m...jonas-brand.de,Create a Joomla! v 1.5 Module for meebome Instant Messaging,,forum,output
+134,Closed,mariekev...quicknet.nl,Create a Joomla! v 1.5 Module for Digg List Stories,,forum,output
+135,Closed,Milosz.Lewandowski,Create a Joomla! v 1.5 Module to implement Technorati searchlet,,forum,output
+136,Closed,v.golev,Create a Joomla! v 1.5 Module for del.icio.us linkrolls,,,output
+137,Closed,v.golev,Create a Joomla! v 1.5 Module to display del.icio.us JSON Feeds,,forum,output
+138,Claimed,jgirata,Create a Joomla! v 1.5 Slideshare Module,,forum,
+139,Closed,benhiller,Create a Joomla! v 1.5 Twitter Module,,forum,output
+140,Closed,Justo.deRivera,Create a Joomla! v 1.5 Blog Sidebar Calendar Component,,forum,output
+141,Claimed,s.kromwijk,Implement JWChat as a Joomla! v 1.5 extension(s) (Advanced),,forum,
+143,Closed,annerjb,Implement Open Flash Chart as a Joomla! v 1.5 Extension,,forum,output
+144,Claimed,chalet16,Create a Facebook Application using Joomla! v 1.5,,forum,
+146,Closed,mariekev,Select a Team Blog and translate it into a non-English language,,forum,output
+147,Claimed,netantho,Create a new Joomla! v 1.5 website for a not for profit organization,,forum,
+148,Claimed,joomgafadi,Create a new Joomla! v 1.5 website for a not-for-profit organization,,forum,
+149,Claimed,m.garciarodriguez,Create a new Joomla! v 1.5 website for a not-for-profit organization,,,
+150,Claimed,ramsay.james,Create a new Joomla! v 1.5 website for a not-for-profit organization,,forum,
+151,Claimed,miccas,Create a new Joomla! v 1.5 website for a not-for-profit organization,,forum,
+152,Claimed,gopi991,Create a new Joomla! v 1.5 website for a not-for-profit organization,,,
+153,Claimed,chitsabesh,Create a new Joomla! v 1.5 website for a not for profit organization,,forum,
+154,Claimed,android93,Create a new Joomla! v 1.5 website for a not-for-profit organization,,forum,
+155,Claimed,fantastic91,Create a new Joomla! v 1.5 website for a not-for-profit organization,,forum,
+156,Claimed,AshtonPatMurphy,Create a new Joomla! v 1.5 website for a not-for-profit organization,,forum,
+157,Closed,tungolcild,Carry out GHOP unit test on the Joomla1 1.5 Test Package: Article Manager,,forum,output
+158,Closed,Kevin8020,Carry out GHOP unit test on the Joomla1 1.5 Test Package: Article Manager,,forum,output
+159,Closed,mariekev...quicknet.nl,Carry out GHOP unit test on the Joomla1 1.5 Test Package: Front Page Maager,,forum,output
+160,Closed,depresz,Carry out GHOP unit test on the Joomla1 1.5 Test Package for the Front Page Manager,,forum,output
+161,Closed,mariekev...quicknet.nl,Carry out GHOP unit test on the Joomla1 1.5 Test Package: Media Manager,,forum,output
+162,Closed,Milosz.Lewandowski,Carry out GHOP unit test on the Joomla1 1.5 Test Package: Media Manager,,forum,output
+163,Closed,ramsay.james,Carry out GHOP unit test on the Joomla1 1.5 Test Package: Template Manager,,forum,output
+164,Closed,depresz,Carry out GHOP unit test on the Joomla1 1.5 Test Package: Template Manager,,forum,output
+165,Closed,depresz,Carry out GHOP unit test on the Joomla1 1.5 Test Package: Menu Manager,,forum,output
+166,Closed,ramsay.james,Carry out GHOP unit test on the Joomla1 1.5 Test Package: Menu Manager,,forum,output
+167,Closed,miccas,Create a Video of the GHOP Joomla! Quickstart Guide Task #48,,forum,output
+168,Claimed,depresz,Implement Avatar/Gravatars for Joomla! v 1.5,,forum,
+169,Closed,baneweb,Identify Joomla! v 1.5 Websites in Joomla! Site Showcase,,forum,output
+170,Claimed,Justo.deRivera,Implement MetaWeblog API to interact with Joomla! v 1.5 xml-rpc plugin,,forum,
+171,Claimed,Drmmr763,Document how to add TinyMCE Spell Checker plugin to Joomla! v 1.5,,forum,

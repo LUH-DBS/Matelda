@@ -1,0 +1,137 @@
+﻿OBJECTID,Bank_Name,HCPB_Num,Comment,AltName,SA_Credits,Checked,DB_Check,Bank_Status_20221216,Key_SA_w_species,Shape_Leng,Shape__Area,Shape__Length
+1,Grasslands Mitigation Bank,1798-2013-07-R4, , ,Seasonal Wetlands,Westervelt,Yes,Open,1,,24725723714.4922,1504309.01939849
+2,Grasslands Mitigation Bank,1798-2013-07-R4, , ,Giant Garter Snake,Westervelt,Yes,Open,2,,18032517165.7188,1232762.44034078
+3,Pilgrim Creek Mitigation Bank,1802-1999-038-5,Caltrans Only Credits,Pilgrim Creek WA,"Primary SA: Wetlands; Coastal sage scrub (CA Gnatcatcher)(Caltrans Only Credits)",Folder,Yes,Open (Sold Out),3,,2082665684.21484,323409.880049387
+4,Pilgrim Creek Mitigation Bank,1802-1999-038-5,Caltrans Only Credits Sale after performance standard met,Pilgrim Creek WA,"Secondary SA: Wetlands; Coastal sage scrub (CA Gnatcatcher)(Caltrans Only Credits)",Folder,Yes,Open (Sold Out),4,,843031198.09375,120257.891237506
+5,Barry Jones Wetland Mitigation Bank,1802-1997-001-06,"Eastern edge of SA may be ""fuzzy"". Check with sponsor",Skunk Hollow Wetland Mitigation Bank,Wetlands,Folder,Maybe.changed from VP Pres,Open,5,,5223698982.54688,323136.858194698
+6,Carinalli-Todd Road Mitigation Bank,1802-2006-009-03,Boundary of Santa Rosa Plain, ,"Vernal Pool/Seasonal Wetland Creation and Preservation; Sebastopol Meadowfoam, Sonoma Sunshine",Folder,Blank. None present,Open,6,,552899465.925781,132589.962592611
+7,Elsie Gridley Mitigation Bank,1802-2004-008-02, , ,Vernal Pools and Associated Species,Folder - maps,No - VP Preservation?,Open,7,,5925616743.21484,501172.12901124
+8,Hale Mitigation Bank,1802-1999-036-03, ,Santa Rosa Plain Vernal Pool ER,"California tiger salamander; Sebastopol meadow foam; Sonoma sunshine; Wetlands",Folder- minor dev,No mention of plant species,Open,8,,552462687.8125,130467.665996123
+9,Hazel Mitigation Bank,1802-2005-006-03, ,Santa Rosa Plain Vernal Pool ER,Seasonal Wetlands,Binder - Dev Plan,No,Open,9,,552226075.449219,131868.552481102
+10,Horn Avenue Mitigation Bank,1802-2005-014-03, ,Santa Rosa Plain Vernal Pool ER,Seasonal Wetlands,Folder - minor diff,Blank. None present,Open,10,,472663696.34375,94710.0976895015
+11,Beach Lake Mitigation Bank,1802-1993-041-02,"Caltrans only credits Only below 1500 ft in Amador, Calaveras, Colusa, El Dorado, Nevada, Placer, Sacramento, San Joaquin, Solano, Stanislaus, Sutter, Tuolumne, Yolo, Yuba", ,"Freshwater wetland (seasonal & permanent), Woody riparian (forested & scrub/shrub),  Valley Oak woodland, Swainson's hawk foraging habitat (Caltrans Only Credits)",Folder,Yes.,Open,11,,34318642658.918,2651736.87410031
+12,Daley Ranch Conservation Bank,2835-1997-003-5,"East edge actually representation of edge of cismontane SD County; not line", ,"Chaparral, Coastal Sage Scrub, Wetlands, Non-Native Grassland, Oak Riparian Woodland",Folder - SA figure,Yes,Open,12,,6671157844.05469,475927.435399137
+13,Palo Prieto Conservation Bank,1802-2005-019-03,San Luis Obispo County, ,San Joaquin Kit Fox,web,Yes,Open,13,,12924065850.0781,733939.939162318
+14,Kern Water Bank Conservation Bank,2081-1995-027-04,, ,"San Joaquin kit fox; Tipton kangaroo rat; San Joaquin Wooly threads, Swainson's Hawk",web site,Fixed. Blank Changed ot match desc. iin bank info,Open,14,,9868984607.17578,538137.913902688
+15,North Suisun Mitigation Bank,1802-2005-007-03, , ,California Tiger Salamander,Wildlands,Yes,Open,15,,13591266385.2656,570433.359239042
+16,North Suisun Mitigation Bank,1802-2005-007-03, , ,"Vernal Pool Preservation, Vernal Pool Creation",Wildlands,No,Open,16,,6163462680.03125,517243.429719197
+17,Sacramento River Ranch Mitigation Bank,1802-2007-011-02, ,Sacramento River Ranch Wetland Mitigation Bank,"Freshwater Marsh, Jurisdictional Riparian",Folder ExB,Yes,Open,17,,4963839744.85156,516140.598506785
+18,Sutter Basin Conservation Bank,1802-2011-004-02, , ,Giant Garter Snake,Westervelt,Yes,Open (Sold Out),18,,10029572727.6563,802856.290673296
+19,Santa Paula Creek Mitigation Bank,1802-2011-006-05,"SA based on HUs; May mitigate outside SA on case-by-case basis as approved by CDFW", ,CDFW 1600 - Waters of the State,web,No,Open,19,,8258916923.17969,626924.987082621
+20,Santa Paula Creek Mitigation Bank,1802-2011-006-05,"SA based on HUs; May mitigate outside SA on case-by-case basis as approved by CDFW", ,"Wetlands, Coastal Sage and Floodplain Scrub, Chaparral, Riparian and Upland Woodland",web,No. no wetlands,Open,20,,12417690631.9727,724832.490151652
+21,San Vicente Conservation Bank,1802-1996-01-R5,SA from text description -county, ,"Coastal Sage Scrub, Chaparral ( CA Gnatcatcher)",Folder BEI p2,Yes,Open,21,,15600400045.7422,667756.168747129
+22,Colusa Basin Mitigation Bank,1798-2013-01-R2, , ,Giant Garter Snake,Westervelt,Yes,Open,22,,8682895174.90234,955185.762871909
+23,La Purisima Conservation Bank,1798-2013-03-R5, , ,California Tiger Salamander,Vollmar Consulting,Yes,Open,23,,9772248940.04297,495437.202273366
+24,Chiquita Canyon Conservation Bank,1802-2004-006-05,"Only areas outside of HCP or NCCP; defined by counties", ,"Coastal sage scrub; California gnatcatcher",Folder - BEI,Yes,Open,24,,138449649731.414,2151712.79234376
+25,Liberty Island Conservation Bank,1802-2009-021-02, , ,"Chinook salmon, Central Valley steelhead, Delta smelt, Longfin smelt, Tule Marsh, shaded riverine aquatic",Folder,Maybe. Also WST,Open,25,,4835637126.39844,477111.497974626
+26,Soquel Canyon Mitigation Bank,1798-2013-02-R6,Projects outside SA may mitigate on case-by-case basis. No mitigation for tidal impacts., ,Wetlands,"Folder ExB, web","Maybe.. changed to wetland, per DB",Open,26,,8479590549.00391,676315.281766532
+27,Soquel Canyon Mitigation Bank,1798-2013-02-R6,Projects outside SA may mitigate on case-by-case basis. No mitigation for tidal impacts., ,CDFW 1602: Waters of the State,"Folder ExB, web",No. Not mentioned,Open,27,,4368618850.57813,465562.947650767
+28,San Luis Rey Mitigation Bank,1798-2013-02-R5,May allow projects outside of SA to mitigate on project by project basis, ,"Floodplain Riparian; Floodplain Mosaic Wetlands, Wetlands, Riparian",Folder BEI ExB,Yes. Changed to clarify based on DB,Open,28,,2705431689.20313,326815.4732025
+29,Brook Forest Mitigation Bank,1798-2013-06-R5,May have species credits in future, ,"Habitat: Diegan coastal sage scrub; Open Engelmann oak woodland; Mafic southern mixed chaparral; Native grassland; Southern coast live oak riparian; Non-native grassland. Species:  Engelmann oak;",Folder,Blank. Not Clear,Open,29,,1996404404.33203,500353.216247894
+30,Brook Forest Mitigation Bank,1798-2013-06-R5, , ,Waters of the State Primary Service Area,web,No. Not Present,Open,30,,2705431689.20313,326815.4732025
+31,Clay Station Mitigation Bank,1802-1999-050-02,verified as amended SA per our documents, ,Vernal Pool,Folder-amend 1,Maybe. change to VP per DB,Open,31,,7664828550.75391,414310.078429891
+32,SMUD Nature Preserve Mitigation Bank,1802-2009-017-02,SMUD Only Credits, ,"Seasonal Wetland, Vernal Pool, Vernal Swale; Native Grassland;  California tiger salamander; Tricolored blackbird;  CEQA plant species: Boggs Lake Hedge-hyssop; Dwarf downingia; Legenere(SMUD Only Credits)  ",Folder,Yes,Open,32,,14900712836.3945,552045.655091897
+33,Desmond Mitigation Bank,1802-2005-003-03, , ,"Wetlands (Riparian, Seasonal Wetlands); Sebastopol Meadowfoam",Folder (RIBITS),"No - only mentions CTS, others credit table",Open,33,,429138480.246094,90745.7039367527
+34,Martin Conservation Bank,1802-2007-001-03,Based on Santa Rosa Plain Conservation Strategy =- generalized, ,California Tiger Salamander,Folder - Maps,Yes,Open,34,,485375356.742188,137698.883898876
+35,Hazel Mitigation Bank,1802-2005-006-03, ,Santa Rosa Plain Vernal Pool ER,California Tiger Salamander,Binder - Dev Plan,Yes,Open,35,,485375356.742188,137698.883898876
+36,Carinalli-Todd Road Mitigation Bank,1802-2006-009-03,"copied Martin, which was digitized from map. Rough.", ,California Tiger Salamander,Folder,Blank. None present,Open,36,,485375356.742188,137698.883898876
+37,Cornerstone Lands Conservation Bank,2081-1999-020-05,County of San Diego per BEI, ,MSCP threatened and endangeres species credits: coastal sage scrub/non-native grassland/CA Gnatcatcher,Folder-BEI,Yes. removed Caltrans Only,Open,37,,15601185011.7578,674518.29785846
+38,Crestridge Conservation Bank,1802-1995-043-5,"MSCP and MHCP and subareas per amendment figure; excludes areas near coast", ,"Oak riparian woodland; Inland sage scrub; Chaparral; Non-native grassland/CA Gnatcatcher",Folder-amendment,Yes. added CA gnatcatcher,Open,38,,5810065132.08984,740769.304955673
+39,Alton North Conservation Bank,1802-2007-005-03, , ,"California Tiger Salamander, Vernal Pool Preservation (Burke's Goldfields, Sonoma Sunshine)",Folder,Yes,Open,39,,383144584.046875,227303.685449966
+40,Elsie Gridley Mitigation Bank,1802-2004-008-02, , ,"Swainson's Hawk, Burrowing Owl",web,No,Open,40,,20110976628.8516,866280.99079359
+41,North County Habitat Bank,1802-2007-002-05, , ,"Primary SA - Wetlands (Sold Out), Riparian Enhancement (Sold Out), Upland, Coastal Sage Scrub",McCollum Web,"No riparian, but sold out anyway",Open,41,,614017303.59375,116833.67932999
+42,Swift/Turner Conservation Bank,1802-2006-006-03, , ,"CA Tiger Salamander, Wetland Restoration (Sebastopol meadowfoam, Sonoma Sunshine, Burkes Goldfields)",Folder,Blank. None mentioned,Open,42,,383144584.046875,227303.685449966
+43,Petersen Ranch Mitigation Bank,1798-2013-04-R5, , ,Swainson's Hawk Foraging,SA Desc (Exhibit B),Yes,Open,43,,8223124725.32422,471430.766328937
+44,Petersen Ranch Mitigation Bank,1798-2013-04-R5, , ,"CEQA - Alluvial floodplain; Ephemeral stream; Wetland riparian; Non-wetland riparian; Freshwater marsh; Open water, Seasonal wetland; Chaparral, Great Basin scrub; Valley and Foothill",SA Desc (Exhibit B),Blank. No credits listed,Open,44,,12164731037.707,772700.311540439
+45,Petersen Ranch Mitigation Bank,1798-2013-04-R5, , ,Waters of the State,SA Desc (Exhibit B),Blank. No Credits listed,Open,45,,8630997880.34375,506444.822005189
+46,Ramona Conservation Bank,1798-2013-01-R5,Service Area within South County MSCP - East Otay Mesa Specific Plan Area,Ramona Grasslands Conservation Bank,Primary SA: Non-native grassland/burrowing owl habitat,McCollum web,Yes,Open,46,,18061359.3554688,25436.5014271009
+47,Ramona Conservation Bank,1798-2013-01-R5,Secondary Service Area,Ramona Grasslands Conservation Bank,Secondary SA: Non-native grassland/burrowing owl habitat,McCollum web,Yes,Open,47,,1270272407.6875,365352.414330354
+48,Ramona Conservation Bank,1798-2013-01-R5,Service Area within North County MSCP,Ramona Grasslands Conservation Bank,Vernal Pool Conservation,McCollum web,Yes,Open,48,,355217426.027344,145221.686237918
+49,Alkali Sink Conservation Bank,1798-2015-01-R4, , ,Swainson's Hawk,SA Maps (folder),Yes,Open,49,,48669553993.6523,1365855.90569511
+50,Alkali Sink Conservation Bank,1798-2015-01-R4, , ,Burrowing Owl,SA Maps (folder),Yes,Open,50,,49078923355.7852,1208587.89355207
+51,Burdell Ranch Wetland Mitigation Bank,1802-1999-002-3, , ,Wetlands (non-tidal),Folder,Yes,Open,51,,2910991543.34766,319698.82318928
+52,Brook Forest Mitigation Bank,1798-2013-06-R5, , ,Waters of the State Secondary Service Area,web,No. Not Present,Open,52,,1516589478.31641,419323.907935828
+53,Manchester Avenue Conservation Bank,2835-1997-005-05,Conservation credits for biological impacts within the San Diego MHCP and MSCP areas., ,"Orange-throated whiptail; San Diego thorn mint; Southern maritime chaparral; Coastal sage Scrub; Coastal gnatcatcher habitat",Folder - BEI,No orange throated whiptail,Open,53,,15600400045.7422,667756.168747129
+54,Sparling Ranch Conservation Bank,1798-2013-08-R4, , ,California Tiger Salamander,RIBBITS,Yes,Open,54,,26181889543.293,1008085.1196717
+55,West Mojave Conservation Bank,1798-2016-01-R4, , ,Intermittent stream/Riparian (Wash/Waters),Folder ExB,Yes,Open,55,,83720911937.8398,2088543.43202064
+56,West Mojave Conservation Bank,1798-2016-01-R4, , ,Desert Tortoise,Folder ExB,Yes,Open,56,,67646209023.3906,1711967.09630159
+57,West Mojave Conservation Bank,1798-2016-01-R4, , ,Mojave Ground Squirrel,Folder ExB,Yes,Open,57,,31295551790.1328,989837.194717026
+58,Bryte Ranch Conservation Bank,1798-2013-02-R2,"Amendment mentions modified SA, but every source has this one",Bryte Ranch Mitigation Bank,"Burrowing Owl Foraging Habitat, Swainson's Hawk Foraging Habitat","Folder, RIBITS, Web","Yes. Also VPFS, VPTS (not added)",Open,58,,7906743676.79297,417375.910673865
+59,Oursan Ridge Conservation Bank,1802-2012-013-03, , ,Alameda Whipsnake,Folder,Yes,Open,59,,6725922609.28516,416851.899268165
+60,Bullock Bend Mitigation Bank,1798-2014-01-R2, , ,CDFW 1600 Riparian,Westervelt,Yes,Open,60,,20911618287.9727,1107431.55002706
+61,Bullock Bend Mitigation Bank,1798-2014-01-R2, , ,Central Valley Spring-run Chinook Salmon,Westervelt,No. Not Present,Open,61,,39637071383.1016,1918783.05615822
+62,Bullock Bend Mitigation Bank,1798-2014-01-R2, , ,NOAA Central Valley Steelhead,Westervelt,No. Not Present,Open,62,,55969359106.0898,2417299.61042283
+63,Bullock Bend Mitigation Bank,1798-2014-01-R2, , ,Sacramento River Winter-run Chinook Salmon,Westervelt,No. Not Present,Open,63,,18529358454.668,2700374.05760955
+64,Bullock Bend Mitigation Bank,1798-2014-01-R2, , ,Swainson's Hawk,Westervelt,Yes,Open,64,,7198109464.80469,601135.309770232
+65,Burke Ranch Conservation Bank,1802-2011-007-03, , ,"California Tiger Salamander, Burrowing Owl",Westervelt,Yes,Open,65,,13591271467.957,570433.446674855
+66,Burke Ranch Conservation Bank,1802-2011-007-03,"Only ""Valley Floor Grassland Conservation Areas"", See Draft Solano MHCP, Version 2.2, June 15, 2009", ,Swainson's Hawk,Westervelt,Yes,Open,66,,3791265175.90234,345066.747263605
+67,Colusa Basin Mitigation Bank,1798-2013-01-R2, , ,Seasonal Wetland,Westervelt,Yes,Open,67,,23627450758.9609,1069206.73898423
+68,Cosumnes Floodplain Mitigation Bank,1802-2009-001-02,SA appears to have changed since original (checked WES web and used their data), ,"Floodplain mosaic wetlands;Floodplain riparian habitat;Shaded riverine aquatic habitat",Westervelt,"Maybe; no riparian forest",Open (Sold Out),68,,16124401552.9766,864708.270659185
+69,Dutchman Creek Conservation Bank,1798-2013-02-R4, , ,California Tiger Salamander,Westervelt,Yes,Open (Sold Out),69,,19948269571.7383,788251.66405176
+70,Dutchman Creek Conservation Bank,1798-2013-02-R4, , ,San Joqauin Kit Fox,Westervelt,No,Open (Sold Out),70,,19880040143.6875,937732.792311675
+71,Dutchman Creek Conservation Bank,1798-2013-02-R4, , ,"Swainson's Hawk Foraging, Burrowing Owl",Westervelt,"No SWHA; BO present",Open (Sold Out),71,,30114524160.2344,1046604.24034811
+72,Dutchman Creek Conservation Bank,1798-2013-02-R4, , ,Western Spadefoot Toad,Westervelt,No. Mentions VPFS and VPTS,Open (Sold Out),72,,15317594427.668,1224517.86143946
+73,Meridian Ranch Mitigation Bank,1802-2009-012-02, , ,Vernal Pool Preservation,Westervelt,Maybe.Mentioned - check,Open,73,,5541377295.88281,667626.855449586
+74,Meridian Ranch Mitigation Bank,1802-2009-012-02, , ,Vernal Pool Creation,Westervelt,"Maybe.Mentioned as ""vernal pool""- check",Open,74,,7433436873.56641,756576.921914508
+75,Meridian Ranch Mitigation Bank,1802-2009-012-02, , ,Swainson's Hawk,Westervelt,Yes,Open,75,,1378796462.46875,145812.45906566
+76,Ohlone West Conservation Bank,1802-2012-012-03, , ,Alameda Whipsnake,Westervelt,Yes,Open,76,,5726169538.26953,430539.534559557
+77,Ohlone West Conservation Bank,1802-2012-012-03, , ,California Tiger Salamander,Westervelt,Yes,Open,77,,12747450780.8672,626276.463115935
+78,Van Vleck Ranch Mitigation Bank,1802-2008-008-02, , ,Swainson's Hawk,Westervelt,Yes,Open,78,,1008384849.38281,156241.768747482
+79,San Miguel Conservation Bank,1802-1997-60-5,Approx SA. Actually Cis-montane San Diego County below 3500', ,"Coastal sage scrub; Southern mixed/chamise chaparral; Native (perennial) grassland; Seasonal stock pond; Dry marsh/riparian scrub; San Diego barrel cactus, Coastal California gnatcatcher",Exhibit G (folder),No.  Not present,Open,79,,8909497402.23828,1611169.40019965
+80,Heights of Pala Mesa Conservation Bank,2835-1999-004-5,"MSCP and MHCP and subareas except for 5 miles along coast; other areas considered on case by case basis", ,"Chaparral, Coastal Sage Scrub, CA Gnatcatcher",Folder - Exhibit C,Yes,Open,80,,15601185011.7578,674518.29785846
+81,La Purisima Conservation Bank,1798-2013-03-R5, , ,Western Spadefoot Toad,Vollmar Consulting,Yes,Open,81,,4529023228.52734,338155.461168509
+82,Margaret West Conservation Bank,1802-2008-001-03,"copied Martin, which was digitized from map. Rough.", ,"California tiger salamander; Sebastopol meadowfoam",Folder - Maps,Yes,Open,82,,485375356.742188,137698.883898876
+83,Stillwater Plains Mitigation Bank,1802-2000-033-01, , ,"VP Species, Slender Orcutt Grass, Boggs Lake Hedge-hyssop",web,"No. Not mentioned, but VP Pres is",Open,83,,8577787019.21484,759294.367322505
+84,Stillwater Plains Mitigation Bank,1802-2000-033-01, , ,"Emergent wetland, Vernal pool, Vernal Swale",web,Mentions seasonal wetland,Open,84,,7117951370.42969,463331.687549371
+85,Alkali Sink Conservation Bank,1798-2015-01-R4, , ,San Joaquin Kit Fox,SA Maps (folder),Yes,Open,85,,13315426328.6445,639834.082803198
+86,Elsie Gridley Mitigation Bank,1802-2004-008-02,Below 1500' to 1800' in elevation to east, ,California Tiger Salamander,"Folder, Web",Yes,Open,86,,30353603402.4336,806287.31089695
+87,SMUD Nature Preserve Mitigation Bank,1802-2009-017-02,SMUD Only Credits, ,Waters of the State (SMUD Only Credits),Folder,No,Open,87,,8391192365.49609,641718.753035603
+88,Cajon Creek Habitat Conservation Management Area,2081-1996-056-5,Mitigation outside of service area permitted on a case-by-case basis. SA is Santa Ana River watershed within San Bernardino County., ,Riversidian alluvial fan sage scrub or other habitats,Region,Yes,Open,88,,3810946077.28125,429742.611815876
+89,Ohlone Preserve Conservation Bank,1802-2000-050-03,Sold Out per Fletcher web site, ,CA Tiger Salamander,web (close),Yes,Open,89,,21088087119.5742,1037476.2178218
+90,Ohlone Preserve Conservation Bank,1802-2000-050-03,Sold Out per Fletcher web site, ,Alameda Whipsnake,web - Fletcher,Yes,Open,90,,5708223852.07813,420135.686445876
+91,Mountain House Conservation Bank,1802-2011-005-03,Sold Out per Fletcher web site, ,San Joaquin Kit Fox,Web - Fletcher,Yes,Open,91,,5416283230.42969,497682.476079145
+92,Mountain House Conservation Bank,1802-2011-005-03,Sold Out per Fletcher web site, ,California Tiger Salamander,Web - Fletcher,Yes,Open,92,,20242818363.4844,729518.328258532
+93,Mountain House Conservation Bank,1802-2011-005-03,Sold Out per Fletcher web site, ,Western Burrowing Owl,Web - Fletcher,Yes,Open,93,,9278692423.69531,481412.257190217
+94,Mountain House Conservation Bank,1802-2011-005-03,Sold Out per Fletcher web site, ,Swainson's Hawk,Web - Fletcher,Yes,Open,94,,1305113696.05859,128064.894429716
+95,Laguna Mitigation Bank,1802-1999-040-3,,Carinalli,"CTS, VP Preservation (and assoc species), Oak Savannah, Grasslands",Ecosys Marketplace,Blank. No credit info,Open,95,,3122898070.55469,311919.944058113
+96,Sunrise Douglas Mitigation Bank,1802-1997-74-2,, ,Wetlands,Folder,Yes,Open,96,,7745041728.60156,683230.964676627
+97,Black Mountain Conservation Bank,1798-2016-02-R4, , ,"Desert Tortoise, Mojave Ground Squirrel",Wildlands,"Yes, also mentions Le Conte's Thrasher",Open,97,,87791047768.1641,1591268.65640472
+98,Muzzy Ranch Conservation Bank,1798-2013-02-R3, , ,California Tiger Salamander,Muzzy ranch Web site,Yes,Open,98,,14889729311.7813,560175.473741556
+99,Muzzy Ranch Conservation Bank,1798-2013-02-R3, , ,Contra Costa Goldfields,Muzzy ranch Web site,No,Open,99,,3592616405.28125,362198.983440006
+100,Muzzy Ranch Conservation Bank,1798-2013-02-R3, , ,Preserved Streams (Stream Channel),Muzzy ranch Web site,Yes,Open,100,,3353384718.16406,342393.357029178
+101,Muzzy Ranch Conservation Bank,1798-2013-02-R3, , ,"Burrowing Owl, Swainson's Hawk",Folder - Exhibit B-1,Yes,Open,101,,8250881788.00781,839961.736094443
+102,Black Mountain Conservation Bank,1798-2016-02-R4, , ,Streams,Wildlands,Yes,Open,102,,66816178163,1536674.50702866
+103,Antonio Mountain Ranch Mitigation Bank,1798-2013-03-R2,, ,Swainson's Hawk Foraging,Folder SA Exhibit B,Yes,Open,103,,1328516270.74609,140046.630317147
+104,Antonio Mountain Ranch Mitigation Bank,1798-2013-03-R2,, ,"CTS, VP Preservation (and assoc species), Oak Savannah, Grasslands",Folder SA Exhibit B,Yes,Open,104,,1743065820.01172,209501.80191851
+105,Antonio Mountain Ranch Mitigation Bank,1798-2013-03-R2,, ,"CDFW 1600 Intermittent Stream, Perennial Stream, Perennial Marsh,Floodplain Seasonal Wetland, Riparian",Folder SA Exhibit B,Yes,Open,105,,3163935647.125,287322.896923359
+106,Willow Road Conservation Bank,1798-2013-11-R5,,,"Coastal Sage Scrub (CA Gnatcatcher), Chaparral",Folder BEI,Yes,Open,106,,1391753442.40625,823674.464030562
+107,Riverpark Mitigation Bank,1798-2015-01-R6,Only Phase I complete as of 6/5/2020,,Riparian/Riverine Habitat,Region,Yes,Open,107,,9034462578.55078,551765.265120733
+108,Cleveland Corridor Conservation Bank,1798-2017-03-R5,,,"Various Woodlands, Riparian, Coastal Sage Scrub",web site,Yes,Open,108,,2000824566.31641,839593.92687419
+109,Dolan Ranch Conservation Bank,1802-1998-070-2,,,Vernal Pools and Associated Species,"Wildlands, Inc.",No,Open,109,,6150002636.00391,525591.587241037
+110,Dolan Ranch Conservation Bank,1802-1998-070-2,,,Giant Garter Snake,"Wildlands, Inc.",No,Open,110,,11227380618.75,560254.792867183
+111,Alton South Conservation Bank,1802-2007-004-03,,,California Tiger Salamander,Region,Yes,Approved (Not Opened),111,,520828543.417969,167375.873602153
+112,Alton Lane Conservation Bank,1798-2014-04-R3,,,CTS,sent by region,Yes,Approved (Not Opened),112,,520828543.417969,167375.873602153
+113,North Delta Fish Conservation Bank,1802-2012-08-03,,,Longfin Smelt,sent by region,,Open,113,,5443404708.46484,1336037.0327925
+114,North Delta Fish Conservation Bank,1802-2012-08-03,,,Delta Smelt,sent by region,,Open,114,,4826666103.55469,548781.274598822
+115,Antelope Valley Conservation Bank,1798-2020-03-R4,,,Stream,sent by region,,Open,115,,36378539540.0859,1705673.92044375
+116,Antelope Valley Conservation Bank,1798-2020-03-R4,,,Western Joshua Tree,sent by region,,Open,116,,91326575674.0352,1671464.37998326
+117,Mojave Desert Tortoise Conservation Bank,1798-2018-02-R6,,,Mohave Ground Squirrel,bank web site,No,Open,117,,20746761727.6836,924795.754860066
+118,Mojave Desert Tortoise Conservation Bank,1798-2018-02-R6,,,Ephemeral/Intermittent Stream,bank web site,No,Open,118,,42862212748.3047,1214155.30344069
+119,Mojave Desert Tortoise Conservation Bank,1798-2018-02-R6,,,"Desert Tortoise, Burrowing Owl",bank web site,No,Open,119,,76700430022.8359,1654059.86193085
+120,Mojave River Watershed Mitigation Bank,1798-2014-01-R6,,,Waters of the State for Desert Ephemeral Wash and Desert Playa Lakebed,bank web site,No,Open,120,,52564566843.4414,1661507.88160751
+121,Fenner Valley Desert Tortoise Conservation Bank,1798-2013-01-R6,Areas outside may be acceptable with agency permission,,desert tortoise,BEI,No,Approved (Not Opened),122,,134930852559.559,2202831.11088815
+122,Rancho Jamul Mitigation Bank,1802-2000-040-05,,,"Wetlands; Riparian; Oak Woodlands-Mitigation of In-Kind Impacts",From original data,,Open (Sold Out),124,,1621154561.89844,428067.429973249
+123,Rancho Jamul Mitigation Bank,1802-2000-040-05,,,"Wetlands; Riparian; Oak Woodlands-Primary Service Area",From original data,,Open (Sold Out),125,,1606574788.67578,273369.011919885
+124,Wildlands Mitigation Bank,1802-2002-001-02, ,,"Burrowing Owl, Seasonal Wetlands, Seasonal Marsh, Perennial Marsh, Riparian, Vernall Pool Creation",From original data,,Open (Sold Out),126,,29952007883.3086,821628.117210291
+125,Haera Wildlife Conservation Bank,1802-2001-010-03,,,Burrowing Owl,From original data,,Open (Sold Out),127,,11572850607.5547,599783.381983695
+126,Haera Wildlife Conservation Bank,1802-2001-010-03,,,San Joaquin Kit Fox,From original data,,Open (Sold Out),128,,4930654320.19531,496625.251258561
+127,Pope Ranch Conservation Bank,1802-2001-019-02,Check Service Area boundaries - why is primary and GGS?,,Giant Garter Snake,From original data,,Open (Sold Out),129,,5718786687.76172,418935.517551399
+128,Kimball Island Mitigation Bank,1802-1997-099-2,,,"Palustrine Emergent Marsh, Riverine Aquatic Bed, Riparian, SRA - CEQA, CESA, Sec 1600",From original data,,Open (Sold Out),130,,7925420607.94531,349102.947796587
+129,Orchard Creek Conservation Bank,2835-1996-070-2,,,VP Preservation,From original data,,Open (Sold Out),131,,9316319837.64844,517805.287982054
+130,Springtown Natural Community Reserve,2835-1996-008-03,No mitigation for wetlands which are continuous with the San Francisco Bay Estuary,,"Vernal Pool Preservation or Creation, Vernal Swale, BUOW, CTS, Emergent Wetlands",From original data,,Open (Sold Out),132,,21059900408.2578,514528.2580142
+131,Agua Fria Conservation Bank,1802-2001-23-04,,,"BUOW, SJKF",From original data,,Open (Sold Out),133,,10236959102.332,602114.769176486
+132,Coles Levee Ecosystem Preserve,2081-1992-027-04,No public credits. Species not clear. Took species from other banks from USFWS list. ,,All Species on List,From original data,,Open (Sold Out),134,,10886232615.5586,573320.562449538
+133,Piedra Azul Conservation Bank,1798-2019-01-R4,,,Swainson's Hawk Foraging,From Region,,Approved (Not Opened),135,1252873.82375,37957944214.7227,1564491.15111143
+134,Piedra Azul Conservation Bank,1798-2019-01-R4,,,San Joaquin Kit Fox,From Region,,Approved (Not Opened),136,572008.705942,12132013129.7656,720541.95836482
+135,Piedra Azul Conservation Bank,1798-2019-01-R4,,,California Tiger Salamander,From Region,,Approved (Not Opened),137,738049.138917,30418600627.3164,932948.47564187
+136,Piedra Azul Conservation Bank,1798-2019-01-R4,,,Western Burrowing Owl,From Region,,Approved (Not Opened),138,891286.471708,42117630158.8672,1114328.02927103

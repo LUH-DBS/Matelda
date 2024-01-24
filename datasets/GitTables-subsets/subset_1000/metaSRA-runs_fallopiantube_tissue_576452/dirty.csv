@@ -1,0 +1,21 @@
+sra_study_id,study_title,sra_sample_id,sample_name,sra_experiment_id,sra_run_id
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS408352,,SRX2097197,SRR4116629
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS408352,,SRX260508,SRR811938
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS524803,,SRX2097213,SRR4116605
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS524803,,SRX411738,SRR1082520
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS524540,,SRX2097201,SRR4116617
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS524540,,SRX408711,SRR1076584
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS526660,,SRX2097225,SRR4116593
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS526660,,SRX421924,SRR1101693
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS524311,,SRX2097261,SRR4116558
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS524311,,SRX406011,SRR1071359
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS524423,,SRX2097249,SRR4116569
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS524423,,SRX407459,SRR1074140
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS524855,,SRX2097237,SRR4116581
+SRP012682,Genotype-Tissue Expression (GTEx) Common Fund Project,SRS524855,,SRX412370,SRR1083776
+ERP006650,RNA-seq of coding RNA from tissue samples of 127 human individuals representing 32 different tissues.,ERS526280,,ERX537317,ERR579134
+ERP006650,RNA-seq of coding RNA from tissue samples of 127 human individuals representing 32 different tissues.,ERS526289,,ERX537326,ERR579150
+ERP006650,RNA-seq of coding RNA from tissue samples of 127 human individuals representing 32 different tissues.,ERS526265,,ERX537302,ERR579136
+ERP006650,RNA-seq of coding RNA from tissue samples of 127 human individuals representing 32 different tissues.,ERS526268,,ERX537305,ERR579128
+ERP006650,RNA-seq of coding RNA from tissue samples of 127 human individuals representing 32 different tissues.,ERS526268,,ERX537305,ERR579155
+ERP006650,RNA-seq of coding RNA from tissue samples of 127 human individuals representing 32 different tissues.,ERS526267,,ERX537304,ERR579124

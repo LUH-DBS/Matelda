@@ -1,0 +1,242 @@
+﻿OBJECTID,Fire_Operations_Priority_Area_N,FIAT_Planning_Area_Name,Protection_Purpose_Need,Total_Acres_Fire_Operations_Pri,Priority_Ranking,FIAT_Assessment_Area,SHAPE_Length,SHAPE_Area
+1,"Two Post Well, Proposed",Brothers,"Focal Habitat; Emphasis Area",76.38739,1,Central Oregon,1970.73820749219,-308998.630161705
+2,"Berger Ridge Well, Proposed",Brothers,"Focal Habitat; Emphasis Area",76.382233,1,Central Oregon,1970.67168285888,-308977.76927492
+3,Brothers Sage Grouse Priority,Brothers,"Focal Habitat; Emphasis Area",143990.03,1,Central Oregon,167035.174521536,-582706994.454016
+4,Paulina Sage Grouse Priority,Paulina,"Focal Habitat; Emphasis Area",36778.52,1,Central Oregon,111756.923218393,-148837394.790818
+5,12 Mile Sage Grouse Priority,12 Mile,"Focal Habitat; Emphasis Area",135897.34,1,Central Oregon,226660.745159817,-549957040.732063
+6,"Hampton, Proposed Base ",Brothers,"Focal Habitat; Emphasis Area",2.0155332,1,Central Oregon,319.951455298938,-8135.9545276651
+7,"Paulina, Proposed Base ",Paulina,"Focal Habitat; Emphasis Area",2.0108094,1,Central Oregon,319.576330910224,-8116.88784872454
+8,Hay Creek East,Hay Creek,"Focal Habitat; Emphasis Area",18572.359,2,Central Oregon,41700.8292555844,-75159673.1786606
+9,Hay Creek West,Hay Creek,"Focal Habitat; Emphasis Area",17205.943,1,Central Oregon,49797.9020166837,-69629984.6702913
+10,Brothers Fire Operations Priority,Brothers,"Focal Habitat; Emphasis Area",11245.641,2,Central Oregon,38430.5382278041,-45509492.0946464
+11,Brothers Fire Operations Priority,Brothers,"Focal Habitat; Emphasis Area",29798.285,2,Central Oregon,66590.9494162605,-120589378.393197
+12,Brothers Fire Operations Priority,Brothers,"Focal Habitat; Emphasis Area",8977.0947,2,Central Oregon,47412.1853011875,-36329011.5909504
+13,Brothers Fire Operations Priority,Brothers,"Focal Habitat; Emphasis Area",135.78203,2,Central Oregon,3573.82043482434,-549490.3621697
+14,Brothers Fire Operations Priority,Brothers,"Focal Habitat; Emphasis Area",23128.922,2,Central Oregon,51492.6569815686,-93599613.6880046
+15,Paulina Sage Grouse Priority,Paulina,"Focal Habitat; Emphasis Area",2466.0271,2,Central Oregon,15486.9209990877,-9979657.27805775
+16,Paulina Sage Grouse Priority,Paulina,"Focal Habitat; Emphasis Area",1201.2731,2,Central Oregon,15940.1006179543,-4861379.45119182
+17,Paulina Sage Grouse Priority,Paulina,"Focal Habitat; Emphasis Area",53252.93,2,Central Oregon,146673.746493999,-215506980.300338
+18,Paulina Sage Grouse Priority,Paulina,"Focal Habitat; Emphasis Area",84.17691,2,Central Oregon,2739.12228139245,-340651.864677838
+19,12 Mile Sage Grouse Priority,12 Mile,"Focal Habitat; Emphasis Area",76879.766,2,Central Oregon,242634.438024036,-311121371.048443
+20,Beulah Fire 1st Priority,Beulah, ,360436.28,1,Northern Great Basin,824787.570752545,-1458633607.81094
+21,Beulah Fire 2nd Priority,Beulah, ,43779.859,2,Northern Great Basin,554101.63023883,-177170783.928307
+22,Beulah Fire 3rd Priority,Beulah, ,85799.93,3,Northern Great Basin,459749.835271338,-347219945.27964
+23,Bowden Hills Fire 1st Priority,Bowden Hills, ,16659.104,1,Northern Great Basin,37117.505035041,-67416987.6112908
+24,Curlew Fire 1st Priority,Curlew, ,14073.724,1,Northern Great Basin,140486.762940954,-56954328.4036929
+25,Curlew Fire 2nd Priority,Curlew, ,44217.555,2,Northern Great Basin,548178.745516126,-178942052.721135
+26,Curlew Fire 3rd Priority,Curlew, ,138077.31,3,Northern Great Basin,696140.97274782,-558778963.245649
+27,Greater Owyhee Fire 1st Priority,Greater Owyhee, ,732839.25,1,Northern Great Basin,949170.418528488,-2965694658.28393
+28,Greater Owyhee Fire 2nd Priority,Greater Owyhee, ,338948.16,2,Northern Great Basin,426103.35506924,-1371674260.80954
+29,Jim Sage Fire 1st Priority,Jim Sage, ,73599.25,1,Northern Great Basin,234421.892261318,-297845530.194692
+30,Jim Sage Fire 2nd Priority,Jim Sage, ,5503.085,2,Northern Great Basin,138732.721002582,-22270188.8486262
+31,Jim Sage Fire 3rd Priority,Jim Sage, ,65795.242,3,Northern Great Basin,274508.750848961,-266263829.131773
+32,Mainstem Malheur Fire 1st Priority,Mainstem Malheur, ,281085.94,1,Northern Great Basin,499153.011800128,-1137514208.15533
+33,Mainstem Malheur Fire 3rd Priority,Mainstem Malheur, ,216882.06,3,Northern Great Basin,437775.266101701,-877690428.566257
+34,North Fork Fire 1st Priority,North Fork, ,271323.66,1,Northern Great Basin,1153293.46674258,-1098007628.67758
+35,North Fork Fire 2nd Priority,North Fork, ,709469.38,2,Northern Great Basin,2305212.05155753,-2871120033.02168
+36,North Fork Fire 3rd Priority,North Fork, ,66474.141,3,Northern Great Basin,398135.143663848,-269011263.046268
+37,Oakley Fire 1st Priority,Oakley, ,67427.281,1,Northern Great Basin,805255.005440402,-272868458.549682
+38,Oakley Fire 2nd Priority,Oakley, ,54233.363,2,Northern Great Basin,1172350.24666703,-219474591.987882
+39,Oakley Fire 3rd Priority,Oakley, ,172326.09,3,Northern Great Basin,863859.997875517,-697378846.835245
+40,Oneil Fire 1st Priority,Oneil, ,882874.25,1,Northern Great Basin,2174680.14152889,-3572864634.61101
+41,Oneil Fire 2nd Priority,Oneil, ,498330.78,2,Northern Great Basin,1707111.93857605,-2016672730.01518
+42,Oneil Fire 3rd Priority,Oneil, ,86723.383,3,Northern Great Basin,693023.179762386,-350957003.053654
+43,Otis Fire 1st Priority,Otis, ,223264.77,1,Northern Great Basin,133755.713871057,-903520307.026677
+44,Otis Fire 2nd Priority,Otis, ,18545.98,2,Northern Great Basin,55208.3391860992,-75052908.5295413
+45,Owyhee Desert 1st Priority,Owyhee Desert, ,536047.62,1,Northern Great Basin,493553.973172652,-2169307305.65556
+46,Owyhee Desert 2nd Priority,Owyhee Desert, ,15025.401,2,Northern Great Basin,115184.134626096,-60805631.9948255
+47,Owyhee Desert 3rd Priority,Owyhee Desert, ,351.47485,3,Northern Great Basin,7916.53466729078,-1422367.89839731
+48,Owyhee North Fire 1st Priority,Owyhee North, ,273095.22,1,Northern Great Basin,283295.49431901,-1105176921.02128
+49,Owyhee North Fire 2nd Priority,Owyhee North, ,35175.727,2,Northern Great Basin,63136.7635391992,-142351086.80912
+50,Owyhee North Fire 3rd Priority,Owyhee North, ,238499.62,3,Northern Great Basin,315558.593361812,-965173570.888977
+51,Owyhee North OR Fire 1st Priority,Owyhee North, ,205271.52,1,Northern Great Basin,835949.526166337,-830704194.931628
+52,Owyhee North OR Fire 2nd Priority,Owyhee North, ,128182.07,2,Northern Great Basin,669479.0312789,-518734342.332291
+53,Owyhee North OR Fire 3rd Priority,Owyhee North, ,106634.63,3,Northern Great Basin,515483.262041228,-431534980.026187
+54,Owyhee South Fire 1st Priority,Owyhee South, ,1218592.9,1,Northern Great Basin,569987.074607648,-4931469372.41507
+55,Owyhee South Fire 2nd Priority,Owyhee South, ,269856.75,2,Northern Great Basin,2465664.90172966,-1092071271.51507
+56,Owyhee South Fire 3rd Priority,Owyhee South, ,546976.88,3,Northern Great Basin,2965654.02140731,-2213536361.2784
+57,Rogerson Fire 1st Priority,Rogerson, ,712385.38,1,Northern Great Basin,978960.539180446,-2882920679.37861
+58,Rogerson Fire 2nd Priority,Rogerson, ,284932.91,2,Northern Great Basin,1502353.23533177,-1153082307.69751
+59,Rogerson Fire 3rd Priority,Rogerson, ,321507.5,3,Northern Great Basin,1252650.44688157,-1301094428.10421
+60,Sheephead East Fire 1st Priority,Sheepshead East, ,36252.816,1,Northern Great Basin,101939.386178552,-146709911.31702
+61,Sheephead East Fire 2nd Priority,Sheepshead East, ,4276.9214,2,Northern Great Basin,57759.3094901232,-17308084.4863989
+62,Sheephead East Fire 3rd Priority,Sheepshead East, ,243.77396,3,Northern Great Basin,5773.67087649341,-986518.02107174
+63,Sheephead West Fire 1st Priority,Sheepshead West , ,28018.965,1,Northern Great Basin,71580.5748466726,-113388710.439537
+64,Sheephead West Fire 2nd Priority,Sheepshead West , ,10313.107,2,Northern Great Basin,52833.9843282642,-41735658.7078083
+65,Sheephead West Fire 3rd Priority,Sheepshead West , ,3560.1562,3,Northern Great Basin,20914.1034597747,-14407439.0315225
+66,Tuscarora Fire 1st Priority,Tuscarora, ,126648.15,1,Northern Great Basin,558302.765509258,-512526774.471368
+67,Tuscarora Fire 2nd Priority,Tuscarora, ,461200.06,2,Northern Great Basin,1412629.82167593,-1866410079.3735
+68,Tuscarora Fire 3rd Priority,Tuscarora, ,80471.484,3,Northern Great Basin,555141.649070291,-325656475.265692
+69,West Box Elder Fire 1st Priority,West Box Elder, ,532587.19,1,Northern Great Basin,750514.094342081,-2155303560.44264
+70,West Box Elder Fire 2nd Priority,West Box Elder, ,130863.13,2,Northern Great Basin,1006791.77332641,-529584207.661064
+71,West Box Elder Fire 3rd Priority,West Box Elder, ,167486.97,3,Northern Great Basin,671206.938045691,-677795577.851782
+72,Antelope Flat-Big Lost Fire 2nd Priority,Antelope Flat-Big lost, ,120253.95,2,"Snake, Salmon, and Beaverhead",655671.60743241,-486650380.448425
+73,Antelope Flat-Big Lost Fire 3rd Priority,Antelope Flat-Big lost, ,217342.98,3,"Snake, Salmon, and Beaverhead",1038048.01657576,-879555664.371999
+74,Bennett Hill Fire 1st Priority,Bennett Hill, ,226391.34,1,"Snake, Salmon, and Beaverhead",391033.267433632,-916173093.502576
+75,Bennett Hill Fire 3rd Priority,Bennett Hill, ,189172.53,3,"Snake, Salmon, and Beaverhead",750491.311190713,-765553902.034163
+76,Big Desert Fire 1st Priority,Big Desert, ,564861.19,1,"Snake, Salmon, and Beaverhead",338395.785245606,-2285911775.63046
+77,Big Lost Fire 2nd Priority,Big Lost, ,50042.734,2,"Snake, Salmon, and Beaverhead",65888.7818962246,-202515723.626696
+78,Big Lost Fire 3rd Priority,Big Lost, ,124773,3,"Snake, Salmon, and Beaverhead",105125.879950015,-504938307.590472
+79,Birch Creek Fire 2nd Priority,Birch Creek, ,47660.285,2,"Snake, Salmon, and Beaverhead",64890.4892079372,-192874288.118309
+80,Hat Creek Fire 2nd Priority,Hat Creek, ,85819.047,2,"Snake, Salmon, and Beaverhead",414507.020997269,-347297292.800303
+81,Hat Creek Fire 3rd Priority,Hat Creek, ,30574.559,3,"Snake, Salmon, and Beaverhead",303307.285136679,-123730822.833209
+82,Lemhi Birch Fire 2nd Priority,Lemhi Birch, ,96578.812,2,"Snake, Salmon, and Beaverhead",640528.899407548,-390840502.375001
+83,Lemhi Birch Fire 3rd Priority,Lemhi Birch, ,163090.98,3,"Snake, Salmon, and Beaverhead",746963.397548783,-660005648.600858
+84,Little Lost Fire 2nd Priority,Little Lost, ,72685.016,2,"Snake, Salmon, and Beaverhead",343204.307607932,-294145763.507769
+85,Little Lost Fire 3rd Priority,Little Lost, ,56345.102,3,"Snake, Salmon, and Beaverhead",351202.521747851,-228020493.299426
+86,Little Wood Fire 3rd Priority,Little Wood, ,227013.03,3,"Snake, Salmon, and Beaverhead",302452.273173444,-918688954.386528
+87,Magic Fire 1st Priority,Magic, ,973601.75,1,"Snake, Salmon, and Beaverhead",1327420.71026903,-3940025739.87179
+88,Magic Fire 3rd Priority,Magic, ,625981.88,3,"Snake, Salmon, and Beaverhead",1854562.26076819,-2533258219.09517
+89,Medicine Lodge Fire 2nd Priority,Medicine Lodge, ,146565.86,2,"Snake, Salmon, and Beaverhead",118245.607659942,-593130898.31414
+90,Medicine Lodge Fire 3rd Priority,Medicine Lodge, ,77993.688,3,"Snake, Salmon, and Beaverhead",99943.3935970551,-315629206.263169
+91,Pahsimeroi Fire 2nd Priority,Pahsimeroi, ,143961.98,2,"Snake, Salmon, and Beaverhead",456784.863093,-582593344.685792
+92,Pahsimeroi Fire 3rd Priority,Pahsimeroi, ,111589.47,3,"Snake, Salmon, and Beaverhead",452761.572457545,-451586478.762542
+93,Sand Creek Fire 2nd Priority,Sand Creek, ,84542.32,2,"Snake, Salmon, and Beaverhead",117879.162660921,-342130563.091612
+94,Sand Creek Fire 3rd Priority,Sand Creek, ,317329.88,3,"Snake, Salmon, and Beaverhead",200782.994689327,-1284188135.32982
+95,Table Butte Fire 1st Priority,Table Butte, ,80594.867,1,"Snake, Salmon, and Beaverhead",117921.861376562,-326155783.716621
+96,Twin Buttes Fire 1st Priority,Twin Buttes, ,638900.75,1,"Snake, Salmon, and Beaverhead",261480.663896695,-2585539178.54261
+97,Twin Buttes Fire 2nd Priority,Twin Buttes, ,56872.285,2,"Snake, Salmon, and Beaverhead",71190.4938258504,-230153921.25989
+98,Twin Buttes Fire 3rd Priority,Twin Buttes, ,60877.801,3,"Snake, Salmon, and Beaverhead",76591.6838037587,-246363673.99394
+99, ,Sonomas,Both,77443.859,1,Southern Great Basin,389406.799686396,-313404187.475999
+100, ,Reese R. Yomba Desatoya,Both,417134.91,1,Southern Great Basin,899035.772785765,-1688084714.84713
+101, ,Cooks Creek,Both,84622.203,1,Southern Great Basin,279768.358492444,-342453900.847745
+102, ,Punchbowl,Both,422482.41,1,Southern Great Basin,495762.632533792,-1709725602.93915
+103, ,Antelope Valley,Both,131423.48,1,Southern Great Basin,648209.669303577,-531851999.819251
+104, ,Bates Callaghan,Both,851259.19,1,Southern Great Basin,2071841.54142487,-3444923749.95351
+105, ,South Fork,Both,276723.06,1,Southern Great Basin,1746119.75993607,-1119858459.46189
+106, ,Ruby,Both,152427.88,1,Southern Great Basin,263413.463410821,-616853749.70696
+107, ,Table Mtn Hamlin Valley,Both,305466.44,1,Southern Great Basin,1026936.88656538,-1236178862.68339
+108, ,Cortez,Both,20984.098,1,Southern Great Basin,117985.149075437,-84919634.0234617
+109, ,Cherry Creek,Both,314530.72,1,Southern Great Basin,830155.509481833,-1272860635.2449
+110, ,Egan,Both,244574.42,1,Southern Great Basin,716377.922961746,-989757575.972352
+111, ,Western White Pine,Both,557667.25,1,Southern Great Basin,880074.812408231,-2256799300.5592
+112, ,North Spring,Both,259111.34,1,Southern Great Basin,504692.094398292,-1048586408.72796
+113, ,Bald Hills,Both,179013.98,1,Southern Great Basin,370713.476852771,-724443885.292698
+114, ,Johns Valley,Both,21.006424,1,Southern Great Basin,1532.53728635601,-85009.9850396433
+115, ,Parker Mountain,"Focal Habitat; Emphasis Area",51202.984,1,Southern Great Basin,1004178.45091196,-207211133.132634
+116, ,Long Valley,Both,178906.52,1,Southern Great Basin,415444.838930497,-724008955.644032
+117, ,Steptoe Cave,Both,185601.98,1,Southern Great Basin,623565.380746899,-751104551.755634
+118, ,Sonomas,Both,18120.201,2,Southern Great Basin,113196.892760429,-73329849.4608329
+119, ,Reese R. Yomba Desatoya,Both,127839.4,2,Southern Great Basin,870380.426523704,-517347692.603457
+120, ,Cooks Creek,Both,56848.645,2,Southern Great Basin,300435.680831879,-230058309.50544
+121, ,Punchbowl,Both,111589.43,2,Southern Great Basin,532127.494744623,-451586389.820516
+122, ,Antelope Valley,Both,90656.867,2,Southern Great Basin,607242.139494325,-366875317.69885
+123, ,Bates Callaghan,Both,265711.38,2,Southern Great Basin,1811978.92105181,-1075295838.60427
+124, ,South Fork,Both,102987.64,2,Southern Great Basin,818236.262033832,-416776206.216045
+125, ,Ruby,Both,38174.105,2,Southern Great Basin,163420.732260381,-154485119.437637
+126, ,Table Mtn Hamlin Valley,Both,10591.116,2,Southern Great Basin,222285.083708689,-42860727.5507358
+127, ,Cortez,Both,42732.242,2,Southern Great Basin,95010.6880828492,-172931244.091329
+128, ,Cherry Creek,Both,10824.575,2,Southern Great Basin,135049.058379495,-43805503.5228396
+129, ,Egan,Both,44861.125,2,Southern Great Basin,391443.707484368,-181546529.743409
+130, ,Western White Pine,Both,36470.715,2,Southern Great Basin,386306.472811047,-147591749.370255
+131, ,North Spring,Both,8560.6768,2,Southern Great Basin,114645.710802397,-34643828.2888183
+132, ,Bald Hills,Both,4673.959,2,Southern Great Basin,95778.6463023001,-18914839.9929883
+133, ,Johns Valley,Both,20695.309,2,Southern Great Basin,296362.015010237,-83750941.1081069
+134, ,Parker Mountain,Both,216919.97,2,Southern Great Basin,1575212.49895877,-877843939.26583
+135, ,Long Valley,Both,22173.789,2,Southern Great Basin,180253.03527623,-89734142.6174829
+136, ,Steptoe Cave,Both,7703.085,2,Southern Great Basin,120155.920155349,-31173278.0729313
+137, ,Sonomas,Both,89460.031,3,Southern Great Basin,302672.691419567,-362031899.874212
+138, ,Reese R. Yomba Desatoya,Both,214585.66,3,Southern Great Basin,746090.41512914,-868397336.907781
+139, ,Cooks Creek,Both,12447.408,3,Southern Great Basin,201972.154296838,-50372872.4734379
+140, ,Punchbowl,Both,175700.62,3,Southern Great Basin,373673.235859619,-711035175.43956
+141, ,Antelope Valley,Both,45948.652,3,Southern Great Basin,193302.236347824,-185947606.583483
+142, ,Bates Callaghan,Both,283310.62,3,Southern Great Basin,2322283.99645889,-1146517427.68976
+143, ,South Fork,Both,155907.03,3,Southern Great Basin,1408785.84136395,-630933395.588509
+144, ,Ruby,Both,57602.949,3,Southern Great Basin,309171.677093554,-233110870.902831
+145, ,Table Mtn Hamlin Valley,Both,263916.28,3,Southern Great Basin,993009.152545082,-1068031332.55788
+146, ,Cortez,Both,7347.4238,3,Southern Great Basin,59542.3453099541,-29733970.2282301
+147, ,Cherry Creek,Both,102344.11,3,Southern Great Basin,669980.848583656,-414171907.043884
+148, ,Egan,Both,133119.59,3,Southern Great Basin,461305.986461486,-538715902.162586
+149, ,Western White Pine,Both,119238.82,3,Southern Great Basin,591545.138845991,-482542400.532086
+150, ,North Spring,Both,68215.266,3,Southern Great Basin,364624.843724526,-276057373.354912
+151, ,Bald Hills,Both,35405.355,3,Southern Great Basin,190094.795396236,-143280394.104813
+152, ,Johns Valley,Both,105415.1,3,Southern Great Basin,387238.731007028,-426599783.212608
+153, ,Parker Mountain,Both,439114.5,3,Southern Great Basin,1911751.10057426,-1777033355.73165
+154, ,Long Valley,Both,41653.496,3,Southern Great Basin,258894.578454755,-168565719.61363
+155, ,Steptoe Cave,Both,155125.09,3,Southern Great Basin,694858.425940276,-627768981.53017
+156, ,Panguitch,Both,505116,3,Southern Great Basin,1798859.87630574,-2044131930.86668
+157, ,Panguitch,Both,54559.16,1,Southern Great Basin,957779.177239879,-220793083.32369
+158, ,Panguitch,Both,99801.484,2,Southern Great Basin,775038.60773491,-403882268.431521
+159,Lone Willow Second Priority FO,Lone Willow,"Focal Habitat; Emphasis Area",155841.75,2,Western Great Basin,179923.840548466,-630669216.631387
+160,Black Rock Second Priority FO,Black Rock,"Focal Habitat; Emphasis Area",99934.023,2,Western Great Basin,244174.682756219,-404418646.604626
+161,Black Rock First Priority FO,Black Rock,"Focal Habitat; Emphasis Area",127052.77,1,Western Great Basin,264936.849801762,-514164330.180876
+162,Lone Willow Third Priority FO,Lone Willow,"Focal Habitat; Emphasis Area",128844.07,3,Western Great Basin,237539.893391557,-521413485.155342
+163,Black Rock Third Priority FO,Black Rock,"Focal Habitat; Emphasis Area",47214.867,3,Western Great Basin,91565.9633754761,-189958273.006845
+164,Lone Willow First Priority FO,Lone Willow,"Focal Habitat; Emphasis Area",122382.32,1,Western Great Basin,165060.190733537,-495263668.551426
+165,Clover Flat First Priority FO,Clover Flat,"Focal Habitat; Emphasis Area",31524.242,1,Western Great Basin,52317.4314856185,-127574078.900475
+166,South Warner First Priority FO,South Warner,"Focal Habitat; Emphasis Area",37522.148,1,Western Great Basin,51216.6735307677,-151846743.324022
+167,North Warner First Priority FO,North Warner,"Focal Habitat; Emphasis Area",44056.766,1,Western Great Basin,82764.9555297986,-178291411.288783
+168,Beaty Butte First Priority FO,Beaty Butte,"Focal Habitat; Emphasis Area",346878.16,1,Western Great Basin,342773.820650664,-1403766145.05743
+169,Beaty Butte Second Priority FO,Beaty Butte,"Focal Habitat; Emphasis Area",55236.477,2,Western Great Basin,53716.7635633023,-223534093.221802
+170,Orejana West First Priority FO,Orejana West,"Focal Habitat; Emphasis Area",124780.85,1,Western Great Basin,127057.218287085,-504970204.964695
+171,North Warner Second Priority FO,North Warner,"Focal Habitat; Emphasis Area",249344.25,2,Western Great Basin,236263.47342148,-1009060379.81383
+172,Gravelly Second Priority FO,Gravelly,"Focal Habitat; Emphasis Area",2794.9219,2,Western Great Basin,22135.4091821275,-11310647.47133
+173,Gravelly First Priority FO,Gravelly,"Focal Habitat; Emphasis Area",39730.371,1,Western Great Basin,74769.5126375032,-160783101.575142
+174,Hart Mountain First Priority FO,Hart Mountain,Focal Habitat,176396.55,1,Western Great Basin,169044.459711077,-713851470.732562
+175,Hart Mountain Second Priority FO,Hart Mountain,Focal Habitat,65281.258,2,Western Great Basin,116172.575499822,-264183870.8392
+176,Sheldon First Priority FO,Sheldon,Focal Habitat,422650.84,1,Western Great Basin,271090.573170099,-1710407303.15373
+177,Shinn First Prioirty FO: Rush Fire,Shinn,"Focal Habitat; Emphasis Area",155184.56,1,Western Great Basin,307519.92202423,-628009633.382348
+178,Shinn Second Priority FO: West of Rush Fire,Shinn,"Focal Habitat; Emphasis Area",108340.62,2,Western Great Basin,147795.524584352,-438438951.544203
+179,Shinn First Priority FO: East of Rush Fire,Shinn,"Focal Habitat; Emphasis Area",149166.61,1,Western Great Basin,307982.783176431,-603655862.931792
+180,Horse Lake First Priority FO,Horse Lake,"Focal Habitat; Emphasis Area",26427.932,1,Western Great Basin,49493.6634077473,-106950045.648836
+181,Horse Lake Second Priority FO,Horse Lake,"Focal Habitat; Emphasis Area",66922.969,2,Western Great Basin,79845.4864970274,-270827641.977207
+182,Madeline Plains Third Priority FO,Madeline Plains,"Focal Habitat; Emphasis Area",39959.125,3,Western Great Basin,55343.8190876659,-161708842.599307
+183,Madeline Plains First Priority FO,Madeline Plains,"Focal Habitat; Emphasis Area",19093.992,1,Western Great Basin,43590.9326039322,-77270645.2747666
+184,Shaffer Mountain Connectivity Second Priority FO,Shaffer Mountain Connectivity,Emphasis Area,5682.1294,2,Western Great Basin,20845.2542267838,-22994761.9958078
+185,Shaffer Mountain Connectivity First Priority FO,Shaffer Mountain Connectivity,Emphasis Area,11362.093,1,Western Great Basin,43153.175593312,-45980758.1098342
+186,"High Rock First Priority FO: < 6,000 ft",High Rock,"Focal Habitat; Emphasis Area",46288.086,1,Western Great Basin,256236.163946373,-187321243.369809
+187,High Rock Third Priority FO,High Rock,"Focal Habitat; Emphasis Area",26690.543,3,Western Great Basin,113002.103001514,-108012794.315255
+188,"High Rock First Priority FO: Wyoming Sagebrush >  6,000 ft",High Rock,"Focal Habitat; Emphasis Area",73625,1,Western Great Basin,135565.504524914,-297949812.386086
+189,"High Rock Second Priority FO: > 6,000 ft",High Rock,"Focal Habitat; Emphasis Area",73955.836,2,Western Great Basin,245967.23434431,-299288665.171605
+190,Vya First Priority FO,Vya,"Focal Habitat; Emphasis Area",164395.77,1,Western Great Basin,304220.0563909,-665286071.828621
+191,Vya Third Priority FO,Vya,"Focal Habitat; Emphasis Area",40526.418,3,Western Great Basin,153254.703178336,-164004594.413124
+192,"Wall Canyon Second Prioirty FO: 2B Cool/Moist > 5,500 ft ",Wall Canyon,Focal Habitat,14816.459,2,Western Great Basin,34463.6544123394,-59960084.0505517
+193,"Wall Canyon Second Priority FO: Bull Creek North Slope > 5,500 ft",Bull Creek,"Focal Habitat; Emphasis Area",11404.825,2,Western Great Basin,38433.8404216194,-46153689.6690907
+194,"Wall Canyon First Priority FO: 3B Wyoming Big Sage < 5,500 ft ",Wall Canyon,"Focal Habitat; Emphasis Area",99289.539,1,Western Great Basin,150406.628747163,-401810503.513921
+195,"Wall Canyon Third Priority FO: Low Sagebrush > 5,500 ft",Wall Canyon,"Focal Habitat; Emphasis Area",13221.62,3,Western Great Basin,65961.064793583,-53505998.5639315
+196,Bull Creek Third Priority FO,Bull Creek,"Focal Habitat; Emphasis Area",12485.507,3,Western Great Basin,47088.9026725071,-50527055.1161824
+197,"Bull Creek First Priority FO: Wyoming Big Sagebrush > 5,500 ft",Bull Creek,"Focal Habitat; Emphasis Area",19517.037,1,Western Great Basin,82374.9915537053,-78982645.8518665
+198,"Massacre Third Priority FO: Low Sagebrush > 5,500 ft",Massacre,"Focal Habitat; Emphasis Area",41013.703,3,Western Great Basin,91291.3187138192,-165976570.676649
+199,"Massacre Second Priority FO: Big Sagebrush  > 5,500 ft",Massacre,"Focal Habitat; Emphasis Area",15220.218,2,Western Great Basin,67694.042888376,-61594036.3108652
+200,"Massacre Third Priority FO: Dry Lake Bed  > 5,500 ft",Massacre,"Focal Habitat; Emphasis Area",9968.96,3,Western Great Basin,35174.3544573849,-40342949.372894
+201,"Wall Canyon First Priority FO: 3B Wyoming Big Sage > 5,500 ft ",Wall Canyon,"Focal Habitat; Emphasis Area",6073.5024,1,Western Great Basin,31127.1797103211,-24578591.6241163
+202,"Wall Canyon Second Priority FO: Lost Fire > 5,500 ft",Wall Canyon,"Focal Habitat; Emphasis Area",23488.127,2,Western Great Basin,75194.4149902037,-95053078.2227046
+203,"Massacre Second Priority FO: Mixed Sagebrush > 5,500 ft",Massacre,"Focal Habitat; Emphasis Area",28889.023,2,Western Great Basin,87602.5619173201,-116909733.205447
+204,Massacre First Priority FO,Massacre,"Focal Habitat; Emphasis Area",12070.843,1,Western Great Basin,31978.7684075201,-48848967.0731467
+205,"Wall Canyon Second Priority FO: Mixed sagebrush > 5,500 ft",Wall Canyon,"Focal Habitat; Emphasis Area",51049.07,2,Western Great Basin,106352.312751457,-206588263.156809
+206,"Bull Creek First Priority FO: Salt Scrub or Water < 5,500 ft",Bull Creek,"Focal Habitat; Emphasis Area",10924.722,1,Western Great Basin,50049.5696255644,-44210778.7675319
+207,"Bull Creek Second Priority FO: Mountain Big Sagebrush > 5,500 ft",Bull Creek,"Focal Habitat; Emphasis Area",892.29828,2,Western Great Basin,11309.1429976078,-3611003.01949383
+208,"Bull Creek Second Priority FO: Mixed Sagebrush > 5,500 ft",Bull Creek,"Focal Habitat; Emphasis Area",5206.3848,2,Western Great Basin,21020.4114807694,-21069491.7672242
+209,Vya Second Priority FO,Vya,"Focal Habitat; Emphasis Area",29981.838,2,Western Great Basin,150437.137892992,-121332189.978222
+210,"High Rock Second Priority FO: Lost Fire > 6,000 ft",High Rock,"Focal Habitat; Emphasis Area",17352.07,2,Western Great Basin,64651.5477213667,-70221337.7992381
+211,"Massacre Second Priority FO: Mixed Sagebrush > 5,500 ft West",Massacre,"Focal Habitat; Emphasis Area",9071.001,2,Western Great Basin,62387.2839434515,36709056.4283837
+212,Madeline Plains Connectivity Third Priority FO,Madeline Plains Connectivity,Emphasis Area,89522.219,3,Western Great Basin,94053.3358106848,-362283565.538485
+213,"Wall Canyon Second Priority FO: North Slope > 5,500 ft",Wall Canyon,"Focal Habitat; Emphasis Area",35027.355,2,Western Great Basin,82586.2573321994,-141750679.146577
+214,Madeline Plains Connectivity Second Priority FO,Madeline Plains Connectivity,Emphasis Area,104577.57,2,Western Great Basin,124977.230697553,-423210417.349423
+215,Duck Flat First Priority FO,Duck Flat,"Focal Habitat; Emphasis Area",37982.043,1,Western Great Basin,69118.7085968263,-153707875.366663
+216,Duck Flat Second Priority FO,Duck Flat," Focal Habitat; Emphasis Area",58681.723,2,Western Great Basin,94449.2478694349,-237476513.630276
+217,Duck Flat Third Priority FO,Duck Flat,"Focal Habitat; Emphasis Area",32429.461,3,Western Great Basin,78730.8460620627,-131237368.533657
+218,Madeline Plains Second Priority FO,Madeline Plains,"Focal Habitat; Emphasis Area",13939.214,2,Western Great Basin,33065.3105994392,-56409998.182393
+219,Cold Springs First Priority FO,Cold Springs,"Focal Habitat; Emphasis Area",24990.117,1,Western Great Basin,90287.5548973229,-101131418.656848
+220,Cold Springs Second Priority FO,Cold Springs,"Focal Habitat; Emphasis Area",46982.66,2,Western Great Basin,94927.9151210663,-190132081.6098
+221,Shaffer Mountain Connectivity Second Priority FO: Mud Flat,Shaffer Mountain Connectivity,Emphasis Area,2170.8481,2,Western Great Basin,15781.5871569707,-8785110.33167223
+222,"Wall Canyon First Priority FO: Bull Creek South Slope > 5,500 ft",Wall Canyon,"Focal Habitat; Emphasis Area",39670.52,1,Western Great Basin,118693.415349861,-160540894.139145
+223,"Bull Creek First Priority FO: South Slope > 5,500 ft",Bull Creek,"Focal Habitat; Emphasis Area",5824.5249,1,Western Great Basin,23873.8401555575,-23571015.4612619
+224,Pueblo First Priority FO,Pueblo,"Focal Habitat; Emphasis Area",100630.77,1,Western Great Basin,91321.0838583204,-407238257.594571
+225,Trout Creek West Second Priority FO,Trout Creek West,"Focal Habitat; Emphasis Area",55681.855,2,Western Great Basin,77970.9530799077,-225336468.600105
+226,Frenchglen First Priority FO: Unburned,Frenchglen,"Focal Habitat; Emphasis Area",149675.86,1,Western Great Basin,166437.80699058,-605716711.968465
+227,Orejana East First Priority FO: East,Orejana East,"Focal Habitat; Emphasis Area",156180.98,1,Western Great Basin,218047.36479607,-632042038.378948
+228,Frenchglen First Priority FO: Burned,Frenchglen,"Focal Habitat; Emphasis Area",39483.801,1,Western Great Basin,60444.0631129095,-159785269.453668
+229,Orejana East First Priority FO: Burned,Orejana East,"Focal Habitat; Emphasis Area",158168.8,1,Western Great Basin,164002.744114622,-640086417.424295
+230,Roaring Springs First Priority FO,Roaring Springs,"Focal Habitat; Emphasis Area",40239.609,1,Western Great Basin,65112.4218507845,-162843919.112478
+231,Orejana East Second Priority FO: Non PPA,Orejana East,"Focal Habitat; Emphasis Area",44265.824,2,Western Great Basin,95342.1151055371,-179137430.564708
+232,Roaring Springs Second Priority FO,Roaring Springs,"Focal Habitat; Emphasis Area",35569.82,2,Western Great Basin,68494.4553673327,-143945960.455421
+233,Pueblo Second Priority FO,Pueblo,"Focal Habitat; Emphasis Area",55575.922,2,Western Great Basin,68144.2070453737,-224907772.167252
+234,Trout Creek West First Priority FO,Trout Creek West,"Focal Habitat; Emphasis Area",48319.441,1,Western Great Basin,90730.3069977465,-195541849.405208
+235,Trout Creek East First Priority FO: Caldera,Trout Creek East,"Focal Habitat; Emphasis Area",70070.906,1,Western Great Basin,99949.4811426884,-283566882.787857
+236,Trout Creek East Second Priority FO,Trout Creek East,"Focal Habitat; Emphasis Area",119419.04,2,Western Great Basin,252875.778623729,-483271691.82839
+237,Trout Creek East First Priority FO: Holloway and Long Draw,Trout Creek East,"Focal Habitat; Emphasis Area",56278.652,1,Western Great Basin,114807.290874159,-227751620.924073
+238,Trout Creek East First Priority FO: Unburned,Trout Creek East,"Focal Habitat; Emphasis Area",89712.273,1,Western Great Basin,247125.283910277,-363052684.097343
+239,Virginia Ranges First Priority FO,Virginia Ranges,Focal Habitat,49706.125,1,Western Great Basin,133302.673411544,-201153555.251325
+240,Virginia Ranges Second Priority FO,Virginia Ranges,Focal Habitat,87594.812,2,Western Great Basin,133283.366580565,-354483639.185749
+241,Virginia Ranges Third Priority FO,Virginia Ranges,"Focal Habitat; Emphasis Area",8311.8369,3,Western Great Basin,64141.2001048726,-33636810.3080048

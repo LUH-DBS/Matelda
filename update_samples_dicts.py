@@ -13,6 +13,6 @@ def update_dicts(samples_df_path, samples_dict_base_path):
         with open(path, 'wb') as f:
             pickle.dump(samples, f)
 
-samples_dict_base_path = "test-dirs/samples_dict"
-samples_df_path = "test-dirs/sampling_df.csv"
+samples_dict_base_path = "/home/fatemeh/VLDB-Jan-Manual-Exp/ED-Scale/output_quintet_1/_spell_checker_Quintet_66_labels/samples_dict"
+samples_df_path = "/home/fatemeh/VLDB-Jan-Manual-Exp/ED-Scale/output_quintet_1/sampling_df.csv"
 update_dicts(samples_df_path, samples_dict_base_path)

@@ -1,0 +1,7 @@
+0	ReplaceConstant	org.geotools.filter.function.FilterFunction_interiorRingN.evaluate(Ljava/lang/Object;)Ljava/lang/Object;:50 - ReplaceConstant - 0 -> 1
+1	ReplaceConstant	org.geotools.filter.function.FilterFunction_interiorRingN.evaluate(Ljava/lang/Object;)Ljava/lang/Object;:53 - ReplaceConstant - Filter Function problem for function interiorRingN argument #0 - expected type Geometry -> 
+2	ReplaceConstant	org.geotools.filter.function.FilterFunction_interiorRingN.evaluate(Ljava/lang/Object;)Ljava/lang/Object;:58 - ReplaceConstant - 1 -> 0
+3	ReplaceConstant	org.geotools.filter.function.FilterFunction_interiorRingN.evaluate(Ljava/lang/Object;)Ljava/lang/Object;:61 - ReplaceConstant - Filter Function problem for function interiorRingN argument #1 - expected type int -> 
+4	InsertUnaryOp	org.geotools.filter.function.FilterFunction_interiorRingN.evaluate(Ljava/lang/Object;)Ljava/lang/Object;:65 - InsertUnaryOp Negation of arg1
+5	InsertUnaryOp	org.geotools.filter.function.FilterFunction_interiorRingN.evaluate(Ljava/lang/Object;)Ljava/lang/Object;:65 - InsertUnaryOp IINC 1 arg1
+6	InsertUnaryOp	org.geotools.filter.function.FilterFunction_interiorRingN.evaluate(Ljava/lang/Object;)Ljava/lang/Object;:65 - InsertUnaryOp IINC -1 arg1

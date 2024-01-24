@@ -23,5 +23,5 @@ def label(sampling_df_path, manual_labels_base_path):
     print(f"labeled: {labeled}")
     sampling_df.to_csv(os.path.join(os.path.dirname(sampling_df_path), "labeled_sampling_df.csv"), index=False)
 
-label("/home/fatemeh/EDS-Precision-Exp/test-dirs/sampling_df.csv", 
-      "/home/fatemeh/EDS-Precision-Exp/test-dirs/experiments_2_lables_checked")
+label("/home/fatemeh/VLDB-Jan-Manual-Exp/ED-Scale/output_quintet_1/sampling_df.csv", 
+      "/home/fatemeh/VLDB-Jan-Manual-Exp/ED-Scale/output_quintet_1/_spell_checker_Quintet_66_labels")

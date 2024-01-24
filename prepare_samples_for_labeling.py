@@ -38,9 +38,9 @@ def get_sampling_df(samples, tables_hash_dict, table_cluster, col_cluster):
     return sampling_df
 
 
-path = "/home/fatemeh/EDS-Precision-Exp/ED-Scale/output-precision/_precision-exp_wdc-sampled_378_labels/samples_dict/samples_dict_0_0.pkl"
-tables_dict_path = "/home/fatemeh/EDS-Precision-Exp/ED-Scale/output-precision/_precision-exp_wdc-sampled_378_labels/tables_dict.pickle"
-base_path = "/home/fatemeh/EDS-Precision-Exp/ED-Scale/output-precision/_precision-exp_wdc-sampled_378_labels/samples_dict"
+# path = "/home/fatemeh/EDS-Precision-Exp/ED-Scale/output-precision/_precision-exp_wdc-sampled_378_labels/samples_dict/samples_dict_0_0.pkl"
+tables_dict_path = "/home/fatemeh/VLDB-Jan-Manual-Exp/ED-Scale/output_quintet_1/_spell_checker_Quintet_66_labels/tables_dict.pickle"
+base_path = "/home/fatemeh/VLDB-Jan-Manual-Exp/ED-Scale/output_quintet_1/_spell_checker_Quintet_66_labels/samples_dict"
 tables_hash_dict = get_hashed_table_names(tables_dict_path)
 sampling_results = []
 for path in os.listdir(base_path):
@@ -52,5 +52,5 @@ for path in os.listdir(base_path):
         sampling_results.append(get_sampling_df(samples, tables_hash_dict, table_cluster, col_cluster))
 
 sampling_df = pd.concat(sampling_results)
-sampling_df.to_csv("sampling_df.csv")
+sampling_df.to_csv("/home/fatemeh/VLDB-Jan-Manual-Exp/ED-Scale/output_quintet_1/sampling_df.csv")
 print(sampling_df)

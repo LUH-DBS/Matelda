@@ -1,0 +1,45 @@
+Social Security Administration (SSA),,,,,,
+Enumeration Accuracy,,,,,,
+"NOTE: A fiscal year (FY) runs from October-September. For example, October of FY 2015 is October of calendar year 2014.",,,,,,
+,,,,,,
+Fiscal Year,Process,Sample,Projected Population,Errors,Projected Errors,Accuracy
+2015,Social Security Offices,570,"1,418,414",0,0,100.0%
+2015,Enumeration at Birth,235,"3,116,245",0,0,100.0%
+2015,Enumeration at Entry,598,"221,828",0,0,100.0%
+2015,TOTAL,"1,403","4,756,487",0,0,100.0%
+2014,Social Security Offices,563,"1,431,502",0,0,100.0%
+2014,Enumeration at Birth,221,"2,869,345",0,0,100.0%
+2014,Enumeration at Entry,600,"186,720",3,934,99.5%
+2014,TOTAL,"1,384","4,487,567",3,934,100.0%
+2013,Social Security Offices,592,"1,693,943",0,0,100.0%
+2013,Enumeration at Birth,236,"3,071,573",0,0,100.0%
+2013,Enumeration at Entry,600,"168,346",6,"1,683",99.0%
+2013,TOTAL,"1,428","4,933,862",6,"1,683",100.0%
+2012,Social Security Offices,582,"1,137,483",1,"1,954",99.8%
+2012,Enumeration at Birth,267,"3,204,026",0,0,100.0%
+2012,Enumeration at Entry,629,"155,097",6,"1,479",99.0%
+2012,TOTAL,"1,478","4,496,606",7,"3,433",99.9%
+2011,Social Security Offices,591,"1,160,712",2,"3,928",99.7%
+2011,Enumeration at Birth,292,"3,578,685",0,0,100.0%
+2011,Enumeration at Entry,625,"123,014",6,"1,181",99.0%
+2011,TOTAL,"1,508","4,862,411",8,"5,109",99.9%
+2010,Social Security Offices,636,"1,322,665",0,0,100.0%
+2010,Enumeration at Birth,300,"3,706,855",0,0,100.0%
+2010,Enumeration at Entry,633,"137,142",10,"2,167",98.4%
+2010,TOTAL,"1,569","5,166,662",10,"2,167",99.9%
+2009,Social Security Offices,599,"1,358,322",0,0,100.0%
+2009,Enumeration at Birth,294,"3,951,431",0,0,100.0%
+2009,Enumeration at Entry,602,"98,933",20,"3,287",96.7%
+2009,TOTAL,"1,495","5,408,686",20,"3,287",99.9%
+2008,Social Security Offices,630,"1,554,557",1,"2,467",99.8%
+2008,Enumeration at Birth,301,"3,953,710",0,0,100.0%
+2008,Enumeration at Entry,601,"107,044",19,"3,384",96.8%
+2008,TOTAL,"1,532","5,615,311",20,"5,851",99.9%
+2007,Social Security Offices,649,"1,439,573",5,"11,090",99.2%
+2007,Enumeration at Birth,300,"4,167,877",0,0,100.0%
+2007,Enumeration at Entry,599,"68,777",8,919,98.7%
+2007,TOTAL,"1,548","5,676,227",13,"12,009",99.8%
+2006,Social Security Offices,668,"1,500,000",53,"118,756",92.1%
+2006,Enumeration at Birth,300,"4,100,000",0,0,100.0%
+2006,Enumeration at Entry,595,"53,000",17,"1,491",97.2%
+2006,TOTAL,"1,563","5,653,000",70,"120,247",97.9%

@@ -1,0 +1,337 @@
+characteristic,sex,raceethnicity,year,score,standard_error,note
+Total,NULL,NULL,2000,211.0,1.4,NULL
+Total,NULL,NULL,2001,NULL,NULL,NULL
+Total,NULL,NULL,2002,217.0,0.5,NULL
+Total,NULL,NULL,2003,216.0,0.3,NULL
+Total,NULL,NULL,2004,NULL,NULL,NULL
+Total,NULL,NULL,2005,217.0,0.2,NULL
+Total,NULL,NULL,2006,NULL,NULL,NULL
+Total,NULL,NULL,2007,220.0,0.3,NULL
+Total,NULL,NULL,2008,NULL,NULL,NULL
+Total,NULL,NULL,2009,220.0,0.3,NULL
+Total,NULL,NULL,2010,NULL,NULL,NULL
+Total,NULL,NULL,2011,220.0,0.3,NULL
+Total,NULL,NULL,2012,NULL,NULL,NULL
+Total,NULL,NULL,2013,221.0,0.3,NULL
+Total - Male,Male,NULL,2000,206.0,1.4,NULL
+Total - Male,Male,NULL,2001,NULL,NULL,NULL
+Total - Male,Male,NULL,2002,214.0,0.5,NULL
+Total - Male,Male,NULL,2003,213.0,0.3,NULL
+Total - Male,Male,NULL,2004,NULL,NULL,NULL
+Total - Male,Male,NULL,2005,214.0,0.2,NULL
+Total - Male,Male,NULL,2006,NULL,NULL,NULL
+Total - Male,Male,NULL,2007,216.0,0.3,NULL
+Total - Male,Male,NULL,2008,NULL,NULL,NULL
+Total - Male,Male,NULL,2009,216.0,0.3,NULL
+Total - Male,Male,NULL,2010,NULL,NULL,NULL
+Total - Male,Male,NULL,2011,217.0,0.3,NULL
+Total - Male,Male,NULL,2012,NULL,NULL,NULL
+Total - Male,Male,NULL,2013,217.0,0.3,NULL
+Total - Female,Female,NULL,2000,217.0,1.6,NULL
+Total - Female,Female,NULL,2001,NULL,NULL,NULL
+Total - Female,Female,NULL,2002,220.0,0.5,NULL
+Total - Female,Female,NULL,2003,220.0,0.3,NULL
+Total - Female,Female,NULL,2004,NULL,NULL,NULL
+Total - Female,Female,NULL,2005,220.0,0.3,NULL
+Total - Female,Female,NULL,2006,NULL,NULL,NULL
+Total - Female,Female,NULL,2007,223.0,0.3,NULL
+Total - Female,Female,NULL,2008,NULL,NULL,NULL
+Total - Female,Female,NULL,2009,223.0,0.3,NULL
+Total - Female,Female,NULL,2010,NULL,NULL,NULL
+Total - Female,Female,NULL,2011,223.0,0.4,NULL
+Total - Female,Female,NULL,2012,NULL,NULL,NULL
+Total - Female,Female,NULL,2013,224.0,0.3,NULL
+Total - Male,NULL,"White, non-Hispanic",2000,223.0,1.2,NULL
+Total - Male,NULL,"White, non-Hispanic",2001,NULL,NULL,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2002,227.0,0.3,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2003,227.0,0.2,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2004,NULL,NULL,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2005,228.0,0.2,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2006,NULL,NULL,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2007,230.0,0.2,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2008,NULL,NULL,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2009,229.0,0.3,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2010,NULL,NULL,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2011,230.0,0.3,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2012,NULL,NULL,NULL
+"Total - White, non-Hispanic",NULL,"White, non-Hispanic",2013,231.0,0.3,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2000,189.0,1.9,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2001,NULL,NULL,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2002,198.0,0.6,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2003,197.0,0.4,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2004,NULL,NULL,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2005,199.0,0.3,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2006,NULL,NULL,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2007,203.0,0.4,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2008,NULL,NULL,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2009,204.0,0.5,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2010,NULL,NULL,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2011,205.0,0.4,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2012,NULL,NULL,NULL
+"Total - Black, non-Hispanic",NULL,"Black, non-Hispanic",2013,205.0,0.5,NULL
+Total - Hispanic,NULL,Hispanic,2000,188.0,3.1,NULL
+Total - Hispanic,NULL,Hispanic,2001,NULL,NULL,NULL
+Total - Hispanic,NULL,Hispanic,2002,199.0,1.4,NULL
+Total - Hispanic,NULL,Hispanic,2003,199.0,0.6,NULL
+Total - Hispanic,NULL,Hispanic,2004,NULL,NULL,NULL
+Total - Hispanic,NULL,Hispanic,2005,201.0,0.5,NULL
+Total - Hispanic,NULL,Hispanic,2006,NULL,NULL,NULL
+Total - Hispanic,NULL,Hispanic,2007,204.0,0.5,NULL
+Total - Hispanic,NULL,Hispanic,2008,NULL,NULL,NULL
+Total - Hispanic,NULL,Hispanic,2009,204.0,0.5,NULL
+Total - Hispanic,NULL,Hispanic,2010,NULL,NULL,NULL
+Total - Hispanic,NULL,Hispanic,2011,205.0,0.5,NULL
+Total - Hispanic,NULL,Hispanic,2012,NULL,NULL,NULL
+Total - Hispanic,NULL,Hispanic,2013,207.0,0.5,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2000,223.0,5.7,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2001,NULL,NULL,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2002,223.0,1.7,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2003,225.0,1.3,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2004,NULL,NULL,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2005,227.0,0.8,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2006,NULL,NULL,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2007,231.0,1.0,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2008,NULL,NULL,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2009,234.0,1.1,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2010,NULL,NULL,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2011,236.0,1.3,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2012,NULL,NULL,NULL
+"Total - Asian, non-Hispanic",NULL,"Asian, non-Hispanic",2013,237.0,1.1,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2000,NULL,NULL,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2001,NULL,NULL,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2002,NULL,NULL,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2003,NULL,NULL,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2004,NULL,NULL,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2005,NULL,NULL,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2006,NULL,NULL,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2007,NULL,NULL,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2008,NULL,NULL,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2009,NULL,NULL,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2010,NULL,NULL,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2011,214.0,1.8,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2012,NULL,NULL,NULL
+"Total - Pacific Islander, non-Hispanic",NULL,"Pacific Islander, non-Hispanic",2013,210.0,2.5,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2000,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2001,NULL,NULL,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2002,207.0,2.0,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2003,202.0,1.4,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2004,NULL,NULL,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2005,205.0,1.3,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2006,NULL,NULL,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2007,206.0,1.2,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2008,NULL,NULL,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2009,206.0,1.2,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2010,NULL,NULL,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2011,204.0,1.3,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2012,NULL,NULL,NULL
+"Total - American Indian/Alaska Native, non-Hispanic",NULL,"American Indian/Alaska Native, non-Hispanic",2013,206.0,1.5,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2000,NULL,NULL,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2001,NULL,NULL,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2002,NULL,NULL,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2003,NULL,NULL,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2004,NULL,NULL,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2005,NULL,NULL,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2006,NULL,NULL,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2007,NULL,NULL,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2008,NULL,NULL,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2009,NULL,NULL,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2010,NULL,NULL,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2011,225.0,1.3,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2012,NULL,NULL,NULL
+"Total - Two or more races, non-Hispanic",NULL,"Two or more races, non-Hispanic",2013,225.0,1.0,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2000,218.0,1.3,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2001,NULL,NULL,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2002,224.0,0.4,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2003,223.0,0.3,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2004,NULL,NULL,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2005,225.0,0.3,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2006,NULL,NULL,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2007,227.0,0.3,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2008,NULL,NULL,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2009,226.0,0.3,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2010,NULL,NULL,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2011,227.0,0.3,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2012,NULL,NULL,NULL
+"White, non-Hispanic",Male,"White, non-Hispanic",2013,228.0,0.3,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2000,180.0,2.7,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2001,NULL,NULL,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2002,193.0,0.6,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2003,192.0,0.5,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2004,NULL,NULL,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2005,194.0,0.4,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2006,NULL,NULL,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2007,199.0,0.5,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2008,NULL,NULL,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2009,199.0,0.6,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2010,NULL,NULL,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2011,200.0,0.5,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2012,NULL,NULL,NULL
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2013,200.0,0.6,NULL
+Hispanic,Male,Hispanic,2000,182.0,3.2,NULL
+Hispanic,Male,Hispanic,2001,NULL,NULL,NULL
+Hispanic,Male,Hispanic,2002,197.0,1.4,NULL
+Hispanic,Male,Hispanic,2003,196.0,0.8,NULL
+Hispanic,Male,Hispanic,2004,NULL,NULL,NULL
+Hispanic,Male,Hispanic,2005,199.0,0.5,NULL
+Hispanic,Male,Hispanic,2006,NULL,NULL,NULL
+Hispanic,Male,Hispanic,2007,201.0,0.6,NULL
+Hispanic,Male,Hispanic,2008,NULL,NULL,NULL
+Hispanic,Male,Hispanic,2009,201.0,0.6,NULL
+Hispanic,Male,Hispanic,2010,NULL,NULL,NULL
+Hispanic,Male,Hispanic,2011,203.0,0.7,NULL
+Hispanic,Male,Hispanic,2012,NULL,NULL,NULL
+Hispanic,Male,Hispanic,2013,204.0,0.6,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2000,218.0,6.7,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2001,NULL,NULL,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2002,219.0,2.0,NULL
+"Asian, non-Hispanic",Male,"Asian, non-oHispanic",2003,221.0,1.8,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2004,NULL,NULL,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2005,224.0,1.1,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2006,NULL,NULL,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2007,227.0,1.2,NULL
+"Asian, non-Hispanic",Male,"Asian, nno-Hispanic",2008,NULL,NULL,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2009,229.0,1.3,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2010,NULL,NULL,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2011,232.0,1.4,NULL
+"Asian, non-Hispanic",Male,"sAian, non-Hispanic",2012,NULL,NULL,NULL
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2013,233.0,1.4,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2000,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2001,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2002,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2003,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2004,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2005,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2006,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2007,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2008,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2009,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2010,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2011,212.0,3.3,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2012,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2013,205.0,3.3,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2000,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2001,NULL,NULL,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2002,202.0,2.8,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2003,197.0,2.1,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2004,NULL,NULL,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"Amereican Indian/Alaska Native, non-Hispanic",2005,200.0,1.4,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"Aemrican Indian/Alaska Native, non-Hispanic",2006,NULL,NULL,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hwispanic",2007,203.0,1.5,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, nodn-Hispanic",2008,NULL,NULL,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Nativse, non-Hispanic",2009,203.0,2.0,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"Americnan Indian/Alaska Native, non-Hispanic",2010,NULL,NULL,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, nno-Hispanic",2011,198.0,2.1,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hisanic",2012,NULL,NULL,NULL
+"American Indian/Alaska Native, non-Hispanic",Male,"American ndian/Alaska Native, non-Hispanic",2013,204.0,2.1,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2000,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2001,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2002,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2003,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2004,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2005,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2006,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2007,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2008,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2009,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2010,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2011,222.0,1.4,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2012,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2013,220.0,1.3,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2000,228.0,1.5,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2001,NULL,NULL,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2002,231.0,0.3,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2003,231.0,0.3,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2004,NULL,NULL,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2005,231.0,0.3,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2006,NULL,NULL,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2007,233.0,0.3,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2008,NULL,NULL,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2009,232.0,0.3,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2010,NULL,NULL,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2011,233.0,0.3,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2012,NULL,NULL,NULL
+"White, non-Hispanic",Female,"White, non-Hispanic",2013,234.0,0.3,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2000,197.0,1.7,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2001,NULL,NULL,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2002,202.0,0.7,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2003,202.0,0.5,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2004,NULL,NULL,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2005,204.0,0.4,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2006,NULL,NULL,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2007,207.0,0.5,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2008,NULL,NULL,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2009,209.0,0.5,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2010,NULL,NULL,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2011,210.0,0.6,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2012,NULL,NULL,NULL
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2013,210.0,0.5,NULL
+Hispanic,Female,Hispanic,2000,194.0,3.8,NULL
+Hispanic,Female,Hispanic,2001,NULL,NULL,NULL
+Hispanic,Female,Hispanic,2002,202.0,1.5,NULL
+Hispanic,Female,Hispanic,2003,203.0,0.7,NULL
+Hispanic,Female,Hispanic,2004,NULL,NULL,NULL
+Hispanic,Female,Hispanic,2005,204.0,0.6,NULL
+Hispanic,Female,Hispanic,2006,NULL,NULL,NULL
+Hispanic,Female,Hispanic,2007,207.0,0.5,NULL
+Hispanic,Female,Hispanic,2008,NULL,NULL,NULL
+Hispanic,Female,Hispanic,2009,207.0,0.7,NULL
+Hispanic,Female,Hispanic,2010,NULL,NULL,NULL
+Hispanic,Female,Hispanic,2011,208.0,0.6,NULL
+Hispanic,Female,Hispanic,2012,NULL,NULL,NULL
+Hispanic,Female,Hispanic,2013,209.0,0.6,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2000,229.0,6.3,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2001,NULL,NULL,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2002,228.0,2.3,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2003,228.0,1.6,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2004,NULL,NULL,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2005,231.0,1.0,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2006,NULL,NULL,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2007,235.0,1.2,NULL
+"Asian, non-Hispanic",Female,"Asian, onn-Hispanic",2008,NULL,NULL,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2009,240.0,1.5,NULL
+"Asian, non-Hispanic",Female,"sAian, non-Hispanic",2010,NULL,NULL,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2011,239.0,1.7,NULL
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2012,NULL,NULL,NULL
+"Asian, non-Hispanic",Female,"Asain, non-Hispanic",2013,240.0,1.2,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2000,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2001,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2002,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2003,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2004,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2005,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2006,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2007,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2008,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2009,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2010,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2011,216.0,2.6,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2012,NULL,NULL,NULL
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2013,217.0,3.6,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/AlaskaNative, non-Hispanic",2000,NULL,NULL,Reporting standards not met. Either there are too few cases for a reliable estimate or the coefficient of variation (CV) is 50 percent or greater.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indiyan/Alaska Native, non-Hispanic",2001,NULL,NULL,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"Amefrican Indian/Alaska Native, non-Hispanic",2002,211.0,2.1,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2003,206.0,1.5,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Natidve, non-Hispanic",2004,NULL,NULL,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Ntive, non-Hispanic",2005,210.0,1.6,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2006,NULL,NULL,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"Amerdican Indian/Alaska Native, non-Hispanic",2007,208.0,1.5,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2008,NULL,NULL,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Naptive, non-Hispanic",2009,209.0,1.3,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native ,non-Hispanic",2010,NULL,NULL,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"Americman Indian/Alaska Native, non-Hispanic",2011,209.0,1.7,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hipanic",2012,NULL,NULL,NULL
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hipanic",2013,208.0,2.0,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2000,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2001,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2002,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2003,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2004,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2005,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2006,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2007,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2008,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2009,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2010,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2011,229.0,1.8,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2012,NULL,NULL,NULL
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2013,229.0,1.3,NULL

@@ -1,0 +1,58 @@
+0,1,2,3,4,5,6,7
+,,,,,,,
+,,,,,,,
+Location,Number of Facilities,,Cold Storage (Square Feet in thousands),,Dry Storage (Square Feet in thousands),,Segment Served*
+Alabama,2,,184,,130,,BL
+Alaska,1,,41,,28,,BL
+Arizona,2,,129,,117,,"BL, O"
+Arkansas,2,,131,,88,,"BL, O"
+California,17,,"1,284",,"1,225",,"BL, S, O"
+Colorado,4,,274,,212,,"BL, S, O"
+Connecticut,3,,160,,110,,"BL, O"
+District of Columbia,1,,7,,7,,BL
+Florida,15,,"1,199",,889,,"BL, S, O"
+Georgia,5,,294,,431,,"BL, S, O"
+Idaho,2,,84,,88,,BL
+Illinois,6,,402,,535,,"BL, S, O"
+Indiana,1,,100,,109,,BL
+Iowa,1,,93,,95,,BL
+Kansas,1,,177,,171,,BL
+Kentucky,1,,92,,106,,BL
+Louisiana,1,,134,,113,,BL
+Maine,1,,59,,50,,BL
+Maryland,2,,291,,252,,BL
+Massachusetts,2,,249,,229,,"BL, S"
+Michigan,3,,320,,300,,"BL, S"
+Minnesota,3,,239,,194,,BL
+Mississippi,1,,95,,69,,BL
+Missouri,2,,106,,94,,"BL, S"
+Montana,1,,120,,121,,BL
+Nebraska,1,,143,,129,,BL
+Nevada,3,,193,,156,,"BL, O"
+New Jersey,4,,140,,453,,"BL, O"
+New Mexico,1,,120,,108,,BL
+New York,4,,417,,361,,"BL, O"
+North Carolina,6,,332,,303,,"BL, S, O"
+North Dakota,1,,46,,59,,BL
+Ohio,6,,407,,423,,"BL, S, O"
+Oklahoma,4,,192,,149,,"BL, S, O"
+Oregon,3,,177,,160,,"BL, S"
+Pennsylvania,4,,459,,405,,"BL, S"
+Rhode Island,1,,3,,-,,BL
+South Carolina,1,,191,,98,,BL
+Tennessee,5,,406,,426,,"BL, O"
+Texas,19,,"1,107",,"1,053",,"BL, S, O"
+Utah,1,,161,,107,,BL
+Virginia,3,,564,,410,,BL
+Washington,1,,134,,92,,BL
+Wisconsin,3,,287,,299,,"BL, O"
+Bahamas,1,,90,,23,,BL
+"Alberta, Canada",3,,209,,202,,BL
+"British Columbia, Canada",8,,280,,232,,"BL, O"
+"Manitoba, Canada",1,,78,,74,,BL
+"New Brunswick, Canada",2,,85,,41,,BL
+"Newfoundland, Canada",1,,33,,22,,BL
+"Nova Scotia, Canada",1,,31,,42,,BL
+"Ontario, Canada",10,,435,,394,,"BL, O"
+"Quebec, Canada",6,,148,,202,,BL
+"Saskatchewan, Canada",1,,40,,54,,BL

@@ -1,0 +1,89 @@
+﻿Eligible,Zip_Code,DPA_Cond_Commit__Amount,Purchase_Price,Closing_Date,Before_1978_,Loan_Type,First_Time_Homeowner,F__of_Bedrooms,AMI,Race,Household_Size,Household_Type,HH_Monthly_Income,New_Construction,Neighborhood,Council_Dist_,Date_Closed,ObjectId
+Closed,40215,32000,160000,7/7/2022,Yes,FHA,Yes,1,60-80%,African American,2,Single Parent,3787.67,No,Shawnee,5,7-Jul-22,1
+Closed,40216,34000,170000,7/15/2022,Yes,FHA,Yes,3,50-60%,African American,5,Single Parent,4101.67,No,PRP,1,15-Jul-22,2
+Closed,40218,40000,200000,7/19/2022,No,Conventional,Yes,3,60-80%,Others,5,Two Parents,5246.25,No,Bon Air,26,19-Jul-22,3
+Closed,40212,3000,112000,7/20/2022,No,Conventional,Yes,3,50-60%,African American,3,Single Parent,3375.76,No,Russell,5,20-Jul-22,4
+Closed,40218,28650,191000,7/21/2022,No,Conventional,Yes,3,30-50%,African American,5,Single Parent,3104.83,No,Unicorp,2,21-Jul-22,5
+Closed,40210,23800,119000,7/25/2022,No,FHA,Yes,4,50-60%,African American,4,Single Parent,3218.01,No,Park Hill,4,25-Jul-22,6
+Closed,40212,22000,110000,7/26/2022,No,Conventional,Yes,3,50-60%,African American,1,Single/Non-Elderly,2416.92,No,Russell,5,26-Jul-22,7
+Closed,40216,31000,155000,7/26/2022,Yes,FHA,Yes,3,60-80%,African American,1,Single/Non-Elderly,3504.58,No,St. Dennis,1,26-Jul-22,8
+Closed,40216,30800,154000,7/29/2022,Yes,Conventional,Yes,3,60-80%,African American,1,Single/Non-Elderly,2896.33,No,St. Dennis,1,29-Jul-22,9
+Closed,40215,31200,156000,7/29/2022,Yes,Conventional,Yes,3,50-60%,African American,3,Single Parent,3239.58,No,Beechmont,21,29-Jul-22,10
+Closed,40211,40000,200000,8/3/2022,Yes,Conventional,Yes,3,50-60%,African American,3,Single Parent,3420.49,No,Chickasaw,5,3-Aug-22,11
+Closed,40245,33000,165000,8/3/2022,No,Conventional,Yes,3,60-80%,African American,1,Single/Non-Elderly,3468.25,Yes,Unicorp,19,3-Aug-22,12
+Closed,40204,37400,187000,8/4/2022,Yes,Conventional,Yes,2,60-80%,African American,1,Single/Non-Elderly,3447.71,No,Germantown,6,4-Aug-22,13
+Closed,40212,14600,73000,8/15/2022,Yes,Conventional,Yes,2,0-30%,White,1,Single/Non-Elderly,1219,No,Shawnee,5,15-Aug-22,14
+Closed,40212,34000,170000,8/17/2022,Yes,Conventional,Yes,3,30-50%,African American,6,Single Parent,3203.17,No,Shawnee,5,17-Aug-22,15
+Closed,40258,40000,190000,8/19/2022,No,FHA,Yes,3,60-80%,Mixed Race,4,Single Parent,5038.58,No,Unicorp,12,19-Aug-22,16
+Closed,40211,38000,190000,8/23/2022,Yes,FHA,Yes,3,50-60%,African American,3,Single Parent,2993.08,No,Shawnee,5,23-Aug-22,17
+Closed,40210,34500,175000,8/26/2022,Yes,FHA,Yes,5,60-80%,African American,6,Two Parents,77240.8,No,California,4,26-Aug-22,18
+Closed,40216,29400,196000,8/29/2022,Yes,Conventional,Yes,3,0-30%,African American,4,Single Parent,22416,No,St. Dennis,1,29-Aug-22,19
+Closed,40216,44000,220000,9/7/2022,Yes,FHA,Yes,3,60-80%,African American,6,Single Parent,5912.83,No,Shively,3,,20
+Closed,40210,41800,209000,8/5/2022,Yes,Conventional,Yes,3,60-80%,African American,4,Single Parent,4583.33,No,Hallmark,3,7-Sep-22,21
+Closed,40211,16000,80000,9/8/2022,Yes,FHA,Yes,3,30-50%,African American,2,Single Parent,1933.75,No,Shawnee,5,,22
+Closed,40215,21000,105000,9/14/2022,Yes,FHA,Yes,2,60-80%,African American,1,Single/Non-Elderly,3139.33,No,Jacobs,3,14-Sep-22,23
+Closed,40216,36800,185000,9/20/2022,Yes,FHA,Yes,3,0-30%,African American,3,Single Parent,2499.33,No,Shively,5,,24
+Closed,40258,42000,210000,9/20/2022,Yes,FHA,Yes,3,60-80%,African American,1,Single/Non-Elderly,55802,No,PRP,4,,25
+Closed,40219,43600,218000,9/22/2022,Yes,FHA,Yes,3,60-80%,African American,3,Single Parent,56544.44,No,Okolona,13,,26
+Closed,40208,30400,155000,9/23/2022,Yes,FHA,Yes,4,30-50%,African American,5,Single Parent,45605,No,South Louisville,3,,27
+Closed,40211,16875,112500,9/29/2022,Yes,Conventional,Yes,3,0-30%,African American,1,Single/Non-Elderly,,No,Russell,4,,28
+Closed ,40218,18800,125000,10/3/2022,No,FHA,Yes,3,0-30%,White,2,Other,1260,No,West Buechel,10,44837,29
+Closed ,40245,19500,129900,10/12/2022,No,Conventional,Yes,2,0-30%,African American,1,Elderly,861,No,Worthington Hills,17,44846,30
+Closed ,40203,42100,210600,10/12/2022,Yes,Conventional,Yes,4,60-80%,African American,2,Single Parent,4384.83,No,Portland,5,44846,31
+Closed ,40229,24600,160000,10/14/2022,Yes,Conventional,Yes,3,0-30%,White,2,Single Parent,2695.33,No,Jefferson Forest,24,44848,32
+Closed ,40203,32400,165000,10/5/2022,No,Conventional,Yes,3,60-80%,African American,2,Single Parent,3484.67,No,Smoketown Jackson,4,44839,33
+Closed ,40258,35200,180000,10/20/2022,No,Conventional,Yes,3,60-80%,African American,3,Single Parent,4228.67,No,PRP,1,44854,34
+Closed ,40213,28300,144000,10/17/2022,Yes,Conventional,Yes,2,60-80%,African American,1,Single/Non-Elderly,3544.93,No,Newburg,2,44851,35
+Closed ,40216,35000,188000,10/21/2022,Yes,FHA,Yes,3,60-80%,African American,5,Single Parent,5334.29,No,St. Dennis,1,44855,36
+Closed ,40219,39000,195000,10/26/2022,Yes,Conventional,Yes,3,30-50%,White,4,Single Parent,3562.11,No,Okolona,24,44860,37
+Closed ,40216,30000,150000,10/25/2022,Yes,Conventional,No,3,60-80%,African American,1,Elderly,3424.92,No,Shively,3,44859,38
+Closed ,40218,43400,217000,10/27/2022,Yes,Conventional,Yes,3,60-80%,Others,3,Single Parent,4333,No,Bon Air,26,44861,39
+Closed ,40218,25800,129000,10/26/2022,Yes,Conventional,Yes,2,60-80%,African American,2,Single Parent,4117.75,No,Bashford Manor,10,44860,40
+Closed ,40216,32000,160000,10/28/2022,Yes,Conventional,Yes,3,60-80%,African American,3,Single/Non-Elderly,3215.75,No,St.Dennis,1,44862,41
+Closed ,40229,30800,205000,10/28/2022,Yes,Conventional,Yes,3,0-30%,White,3,Single Parent,861,No,Okolona,24,44862,42
+Closed ,40212,19500,100000,10/26/2022,Yes,FHA,Yes,2,60-80%,African American,2,Single/Non-Elderly,3371.31,No,Shawnee,5,44860,43
+Closed ,40211,31000,174000,10/27/2022,Yes,FHA,Yes,3,60-80%,African American,2,Single Parent,4334.55,No,Chickasaw,5,44861,44
+Closed ,40211,28000,140000,10/28/2022,Yes,Conventional,Yes,3,60-80%,African American,1,Single/Non-Elderly,3346.54,No,Chickasaw,5,44862,45
+Closed ,40258,36600,183000,11/3/2022,Yes,Conventional,Yes,3,60-80%,White,2,Single Parent,3646,No,PRP,12,44868,46
+Closed ,40211,20000,115000,11/15/2022,Yes,FHA,Yes,2,60-80%,African American,1,Single/Non-Elderly,2632.5,No,Chickasaw,5,44880,47
+Closed ,40213,32500,165000,11/11/2022,Yes,Conventional,Yes,3,60-80%,White,1,Single/Non-Elderly,3496,No,Lynnview,21,44876,48
+Closed ,40210,24000,120000,11/17/2022,Yes,FHA,Yes,3,50-60%,African American,2,Single Parent,2894.09,No,Park Hill,6,44882,49
+Closed ,40258,33000,165000,11/22/2022,Yes,FHA,Yes,3,60-80%,African American,2,Single Parent,3629.67,No,PRP,12,44887,50
+Closed ,40245,25500,127500,11/28/2022,Yes,Conventional,Yes,2,60-80%,White,1,Single/Non-Elderly,3190,No,Shively,3,44893,51
+Closed ,40219,40600,203000,11/3/2022,Yes,Conventional,Yes,3,60-80%,African American,2,Single Parent,3824.73,No,Okolona,24,44868,52
+Closed ,40258,36000,180000,11/28/2022,Yes,FHA,Yes,3,60-80%,African American,2,Single Parent,4347.42,No,PRP,12,44893,53
+Closed ,40215,27000,180000,11/30/2022,Yes,Conventional,Yes,3,0-30%,African American,3,Single Parent,1047,No,Taylor Berry,3,44895,54
+Closed ,40216,36000,180000,12/6/2022,Yes,FHA,Yes,3,30-50%,African American,3,Single Parent,2696.58,No,St.Dennis,1,44901,55
+Closed ,40211,23000,115000,12/1/2022,Yes,Conventional,Yes,4,50-60%,African American,1,Single/Non-Elderly,2931.33,No,Russell,5,44896,56
+Closed ,40212,17400,116000,12/8/2022,No,Conventional,Yes,3,30-50%,African American,1,Single/Non-Elderly,1387.58,No,Portland,5,44903,57
+Closed ,40216,39900,199500,12/9/2022,Yes,Conventional,Yes,3,60-80%,African American,5,Two Parents,5474.73,No,Shively,3,44904,58
+Closed ,40218,30700,155000,12/9/2022,Yes,Conventional,Yes,3,60-80%,African American,1,Single/Non-Elderly,3480.6,No,Newburg,2,44904,59
+Closed ,40217,27900,197000,12/12/2022,Yes,Conventional,Yes,3,0-30%,African American,3,Single Parent,998.08,No,Audubon,10,44907,60
+Closed ,40215,22000,110000,12/13/2022,Yes,Conventional,Yes,2,60-80%,Others,1,Single/Non-Elderly,3853.86,No,Beechmont,21,44908,61
+Closed ,40218,15000,100000,12/9/2022,Yes,Conventional,Yes,2,0-30%,African American,2,Single Parent,841,No,Bashford Manor,10,44904,62
+Closed ,40213,32000,160000,11/4/2022,Yes,FHA,Yes,2,60-80%,African American,1,Single/Non-Elderly,3780.4,No,Lynnview,21,44869,63
+Closed ,40216,39000,195000,12/21/2022,Yes,Others,Yes,3,60-80%,African American,2,Single Parent,2990,No,cloverleaf,15,44916,64
+Closed ,40215,29980,149900,12/22/2022,Yes,Conventional,Yes,3,60-80%,African American,2,Single Parent,3605.59,No,Iroquis,15,44917,65
+Closed ,40210,26700,134000,12/16/2022,Yes,Conventional,Yes,3,50-60%,African American,4,Single Parent,3640,No,California,4,44911,66
+Closed ,40258,44000,220000,12/22/2022,Yes,FHA,Yes,4,30-50%,African American,5,Single Parent,2932.8,No,PRP,12,44917,67
+Closed ,40272,35900,179900,12/27/2022,Yes,FHA,Yes,4,60-80%,White,5,Two Parents,6003.29,No,Valley Station,12,44922,68
+Closed ,40218,33400,167000,1/4/2023,Yes,Conventional,Yes,3,60-80%,White,2,Single Parent,3913.46,No,Buechel,10,44930,69
+Closed ,40210,32400,162000,12/29/2022,Yes,FHA,Yes,3,50-60%,African American,5,Single/Non-Elderly,3877.79,No,Hallmark,3,44924,70
+Closed ,40219,29500,197000,1/5/2023,Yes,Conventional,Yes,4,0-30%,African American,4,Single Parent,1169,No,Okolona,24,44931,71
+Closed ,40218,26000,130000,1/6/2023,Yes,FHA,Yes,2,60-80%,African American,3,Two Parents,3528.08,No,Bashford Manor,10,44932,72
+Closed ,40216,49000,245000,1/27/2023,no,Conventional,yes,3,30-50%,African American,3,single parent,2458.83,yes,prp,1,44953,73
+Closed ,40211,19800,99000,1/19/2023,Yes,Conventional,Yes,3,30-50%,White,1,Single/Non-Elderly,2266.88,No,Park Duvalle,1,44945,74
+Closed ,40258,31300,220000,1/26/2023,yes,Conventional,Yes,3,60-80%,African American,3,Single Parent,4165,no,PRP,12,44952,75
+Closed ,40218,26300,183000,1/19/2023,yes,Conventional,Yes,3,0-30%,African American,5,Two Parents,1597,no,Newburg,2,44945,76
+Closed,40208,20400,100000,12/22/2022,Yes,Conventional,Yes,3,60-80%,African American,1,Single/Non-Elderly,3208.4,No,Taylor Berry,6,44917,77
+Closed,40216,34200,171000,12/28/2022,Yes,Conventional,Yes,3,50-60%,White,4,Single Parent,3687.61,No,St. Dennis,1,44923,78
+Closed,40258,29700,201000,12/2/2022,yes,Conventional,yes,3,50-60%,African American,2,Single Parent,3041.75,No,PRP,12,44923,79
+Closed,40216,34000,170000,12/28/2022,Yes,Conventional,Yes,3,50-60%,African American,4,Single Parent,3856.67,No,Cloverleaf,3,44923,80
+Closed,40203,35800,179000,12/28/2022,Yes,Conventional,Yes,2,60-80%,White,1,Single/Non-Elderly,3813.33,No,Shelby Park,6,44923,81
+Closed,40214,27000,180000,1/5/2023,Yes,Conventional,Yes,4,50-60%,African American,3,Single Parent,3104,No,Iroquis,21,44931,82
+Closed,40216,34400,172000,1/9/2023,Yes,FHA,Yes,2,60-80%,African American,1,Single/Non-Elderly,3921.39,No,PRP,12,44935,83
+Closed,40210,27500,139000,1/12/2023,Yes,FHA,Yes,3,50-60%,African American,1,Single/Non-Elderly,3438.11,No,California,4,44938,84
+closed,40258,40000,200000,1/18/2023,Yes,Conventional,Yes,3,50-60%,African American,3,Single Parent,3833.33,No,PRP,12,44944,85
+Closed,40216,24000,120000,18/18/2023,no,Conventional,Yes,2,60-80%,African American,1,Single/Non-Elderly,3154.67,No,Shively,3,44944,86
+Closed,40118,22500,150000,1/12/2023,No,Conventional,Yes,2,30-50%,African American,1,Single/Non-Elderly,2346.08,No,Fairdale,13,44938,87
+Closed,40212,25600,128000,1/13/2023,yes,FHA,Yes,4,60-80%,African American,3,Single Parent,4468.12,no,Portland,5,44939,88

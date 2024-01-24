@@ -1,0 +1,1638 @@
+,word
+0,accuracy
+1,adam optimization
+2,apache spark
+3,autoregression
+4,word
+5,python
+6,backpropogation
+7,bagging
+8,bar chart
+9,bayes theorem
+10,bayesian statistics
+11,bias-variance trade-off
+12,big data
+13,binary variable
+14,binomial distribution
+15,boosting
+16,bootstrapping
+17,box plot
+18,business analytics
+19,business intelligence
+22,categorical variable
+23,classification
+24,classification threshold
+25,clustering
+26,computer vision
+27,concordant-discordant ratio
+28,confidence interval
+29,confusion matrix
+30,continuous variable
+31,convergence
+32,convex function
+33,correlation
+34,cosine similarity
+35,cost function
+36,covariance
+37,cross entropy
+38,cross validation
+41,data mining
+42,dbscan
+43,decision boundary
+44,decision tree
+45,deep learning
+46,descriptive statistics
+47,dependent variable
+48,decile
+49,degree of freedom
+50,dimensionality reduction
+51,dplyr
+52,dummy variable
+55,flume
+56,frequentist statistics
+57,gated recurrent unit (gru)
+58,ggplot2
+59,go
+60,goodness of fit
+61,gradient descent
+62,hadoop
+63,hidden markov model
+64,hierarchical clustering
+65,histogram
+66,hive
+67,holdout sample
+68,holt-winters forecasting
+69,hyperparameter
+70,hyperplane
+71,hypothesis
+72,inferential statistics
+73,iqr
+74,iteration
+75,julia
+76,k-means
+77,keras
+78,knn
+79,kurtosis
+80,labeled data
+81,lasso regression
+82,line chart
+83,linear regression
+84,log loss
+85,logistic regression
+86,long short term memory (lstm)
+87,machine learning
+88,mahout
+89,mapreduce
+90,market basket analysis
+91,market mix modeling
+92,maximum likelihood estimation
+93,mean
+94,median
+95,mis
+96,ml-as-a-service (mlaas)
+97,mode
+98,naive bayes
+99,nan
+100,normal distribution
+101,normalization
+102,numpy
+103,one shot learning
+104,oozie
+105,ordinal variable
+106,outlier
+107,overfitting
+108,pandas
+109,parameters
+110,pattern recognition
+111,pie chart
+112,pig
+113,polynomial regression
+114,pre-trained model
+115,precision and recall
+116,predictor variable
+117,principal component analysis (pca)
+118,p-value
+119,python
+120,pytorch
+121,r
+122,range
+123,recommendation engine
+124,regression
+125,regression spline
+126,regularization
+127,reinforcement learning
+128,residual
+129,response variable
+130,ridge regression
+131,root mean squared error (rmse)
+132,rotational invariance
+135,scala
+136,semi-supervised learning
+137,skewness
+138,smote
+139,spatial-temporal reasoning
+140,standard deviation
+141,standardization
+142,standard error
+143,supervised learning
+144,svm
+145,tensorflow
+146,tokenization
+147,torch
+148,transfer learning
+149,true negative
+150,true positive
+151,type i error
+152,type ii error
+153,t-test
+154,underfitting
+155,univariate analysis
+156,unsupervised learning
+157,z-test
+158,zookeeper
+159,algorithm
+160,angularjs
+161,artificial intelligence
+162,backpropagation
+163,bayes' theorem
+164,bayesian network
+165,bias
+168,chi-square test
+171,coefficient
+172,computational linguistics
+177,cross-validation
+178,d3
+179,data engineer
+181,data science
+182,data structure
+183,data wrangling
+184,decision trees
+187,dimension reduction
+188,discrete variable
+189,econometrics
+190,feature
+191,feature engineering
+192,gate
+193,gradient boosting
+196,independent variable
+197,javascript
+198,k-means clustering
+199,k-nearest neighbors
+200,latent variable
+201,lift
+202,linear algebra
+204,logarithm
+207,machine learning model
+208,markov chain
+209,matlab
+210,matrix
+212,mean absolute error
+213,mean squared error
+216,model
+217,monte carlo method
+218,moving average
+219,n-gram
+220,naive bayes classifier
+221,neural network
+223,nosql
+224,null hypothesis
+225,objective function
+228,p value
+229,pagerank
+231,perceptron
+232,perl
+233,pivot table
+234,poisson distribution
+235,posterior distribution
+236,predictive analytics
+237,predictive modeling
+238,principal component analysis
+239,prior distribution
+240,probability distribution
+242,"quantile, quartile"
+244,random forest
+247,root mean squared error
+248,ruby
+249,s curve
+250,sas
+251,scalar
+252,scripting
+253,serial correlation
+254,shell
+255,spatiotemporal data
+256,spss
+257,sql
+259,standard normal distribution
+260,standardized score
+261,stata
+262,"strata, stratified sampling"
+264,support vector machine
+265,t-distribution
+266,tableau
+267,time series data
+268,uima
+270,variance
+271,vector
+272,vector space
+273,weka
+274,a/b testing
+276,action
+277,activation function
+278,active learning
+279,adagrad
+280,agent
+281,agglomerative clustering
+282,ar
+283,area under the pr curve
+284,area under the roc curve
+285,artificial general intelligence
+287,attribute
+288,auc (area under the roc curve)
+289,augmented reality
+290,automation bias
+291,average precision
+293,bag of words
+294,baseline
+295,batch
+296,batch normalization
+297,batch size
+298,bayesian neural network
+299,bellman equation
+300,bias (ethics/fairness)
+301,bias (math)
+302,bigram
+303,binary classification
+304,binning
+306,bounding box
+307,broadcasting
+308,bucketing
+309,calibration layer
+310,candidate generation
+311,candidate sampling
+312,categorical data
+313,centroid
+314,centroid-based clustering
+315,checkpoint
+316,class
+317,classification model
+319,class-imbalanced dataset
+320,clipping
+321,cloud tpu
+323,co-adaptation
+324,collaborative filtering
+325,confirmation bias
+327,continuous feature
+328,convenience sampling
+331,convex optimization
+332,convex set
+333,convolution
+334,convolutional filter
+335,convolutional layer
+336,convolutional neural network
+337,convolutional operation
+338,cost
+339,counterfactual fairness
+340,coverage bias
+341,crash blossom
+342,critic
+343,cross-entropy
+345,custom estimator
+346,data analysis
+347,data augmentation
+348,dataframe
+349,data set or dataset
+350,dataset api (tf.data)
+352,decision threshold
+354,deep model
+355,deep neural network
+356,deep q-network (dqn)
+357,demographic parity
+358,dense feature
+359,dense layer
+360,depth
+361,depthwise separable convolutional neural network (sepcnn)
+362,device
+364,dimensions
+365,discrete feature
+366,discriminative model
+367,discriminator
+368,disparate impact
+369,disparate treatment
+370,divisive clustering
+371,downsampling
+372,dqn
+373,dropout regularization
+374,dynamic model
+375,eager execution
+376,early stopping
+377,embeddings
+378,embedding space
+379,empirical risk minimization (erm)
+380,ensemble
+381,python
+382,episode
+383,epoch
+384,epsilon greedy policy
+385,equality of opportunity
+386,equalized odds
+387,estimator
+388,example
+389,experience replay
+390,experimenter's bias
+391,exploding gradient problem
+392,fairness constraint
+393,fairness metric
+394,false negative (fn)
+395,false positive (fp)
+396,false positive rate (fpr)
+398,feature column (tf.feature_column)
+399,feature cross
+401,feature extraction
+402,feature set
+403,feature spec
+404,feature vector
+405,federated learning
+406,feedback loop
+407,feedforward neural network (ffn)
+408,few-shot learning
+409,fine tuning
+410,forget gate
+411,full softmax
+412,fully connected layer
+413,gan
+414,generalization
+415,generalization curve
+416,generalized linear model
+417,generative adversarial network (gan)
+418,generative model
+419,generator
+420,gradient
+421,gradient clipping
+423,graph
+424,graph execution
+425,greedy policy
+426,ground truth
+427,group attribution bias
+428,hashing
+429,heuristic
+430,hidden layer
+432,hinge loss
+433,holdout data
+436,i.i.d.
+437,image recognition
+438,imbalanced dataset
+439,implicit bias
+440,incompatibility of fairness metrics
+441,independently and identically distributed (i.i.d)
+442,individual fairness
+443,inference
+444,in-group bias
+445,input function
+446,input layer
+447,instance
+448,interpretability
+449,inter-rater agreement
+450,intersection over union (iou)
+451,iou
+452,item matrix
+453,items
+456,keypoints
+457,kernel support vector machines (ksvms)
+459,k-median
+460,l1 loss
+461,l1 regularization
+462,l2 loss
+463,l2 regularization
+464,label
+465,labeled example
+466,lambda
+467,landmarks
+468,layer
+469,layers api (tf.layers)
+470,learning rate
+471,least squares regression
+472,linear model
+475,logits
+477,log-odds
+478,long short-term memory (lstm)
+479,loss
+480,loss curve
+481,loss surface
+482,lstm
+484,majority class
+485,markov decision process (mdp)
+486,markov property
+487,matplotlib
+488,matrix factorization
+489,mean absolute error (mae)
+490,mean squared error (mse)
+491,metric
+492,metrics api (tf.metrics)
+493,mini-batch
+494,mini-batch stochastic gradient descent (sgd)
+495,minimax loss
+496,minority class
+497,ml
+498,mnist
+500,model capacity
+501,model function
+502,model training
+503,momentum
+504,multi-class classification
+505,multi-class logistic regression
+506,multinomial classification
+507,nan trap
+508,natural language understanding
+509,negative class
+511,neuron
+513,nlu
+514,node (neural network)
+515,node (tensorflow graph)
+516,noise
+517,non-response bias
+519,numerical data
+521,objective
+523,offline inference
+524,one-hot encoding
+525,one-shot learning
+526,one-vs.-all
+527,online inference
+528,operation (op)
+529,optimizer
+530,out-group homogeneity bias
+531,outliers
+532,output layer
+535,parameter
+536,parameter server (ps)
+537,parameter update
+538,partial derivative
+539,participation bias
+540,partitioning strategy
+542,performance
+543,perplexity
+544,pipeline
+545,policy
+546,pooling
+547,positive class
+548,post-processing
+549,pr auc (area under the pr curve)
+550,precision
+551,precision-recall curve
+552,prediction
+553,prediction bias
+554,predictive parity
+555,predictive rate parity
+556,premade estimator
+557,preprocessing
+559,prior belief
+560,proxy (sensitive attributes)
+561,proxy labels
+562,q-function
+563,q-learning
+564,quantile
+565,quantile bucketing
+566,quantization
+567,queue
+569,random policy
+570,rank (ordinality)
+571,rank (tensor)
+572,rater
+573,recall
+574,recommendation system
+575,rectified linear unit (relu)
+576,recurrent neural network
+577,regression model
+579,regularization rate
+580,reinforcement learning (rl)
+581,replay buffer
+582,reporting bias
+583,representation
+584,re-ranking
+585,return
+586,python
+587,ridge regularization
+588,rnn
+589,roc (receiver operating characteristic) curve
+590,root directory
+593,sampling bias
+594,savedmodel
+595,saver
+597,scaling
+598,scikit-learn
+599,scoring
+600,selection bias
+602,sensitive attribute
+603,sentiment analysis
+604,sequence model
+605,serving
+606,session (tf.session)
+607,shape (tensor)
+608,sigmoid function
+609,similarity measure
+610,size invariance
+611,sketching
+612,softmax
+613,sparse feature
+614,sparse representation
+615,sparse vector
+616,sparsity
+617,spatial pooling
+618,squared hinge loss
+619,squared loss
+620,state
+621,state-action value function
+622,static model
+623,stationarity
+624,python
+625,step size
+626,stochastic gradient descent (sgd)
+627,stride
+628,structural risk minimization (srm)
+629,subsampling
+630,python
+631,supervised machine learning
+632,synthetic feature
+633,tabular q-learning
+634,target
+635,target network
+636,temporal data
+637,tensor
+638,tensorboard
+640,tensorflow playground
+641,tensorflow serving
+642,tensor processing unit (tpu)
+643,tensor rank
+644,tensor shape
+645,tensor size
+646,termination condition
+647,test set
+648,tf.example
+649,tf.keras
+650,time series analysis
+651,timestep
+652,tower
+653,tpu
+654,tpu chip
+655,tpu device
+656,tpu master
+657,tpu node
+658,tpu pod
+659,tpu resource
+660,tpu slice
+661,tpu type
+662,tpu worker
+663,training
+664,training set
+665,trajectory
+667,translational invariance
+668,trigram
+669,true negative (tn)
+670,true positive (tp)
+671,true positive rate (tpr)
+672,unawareness (to a sensitive attribute)
+674,unlabeled example
+675,unsupervised machine learning
+676,upweighting
+677,user matrix
+678,validation
+679,validation set
+680,vanishing gradient problem
+681,wasserstein loss
+682,weight
+683,weighted alternating least squares (wals)
+684,wide model
+685,width
+686,abductive logic programming
+687,abductive reasoning
+688,abstract data type
+689,abstraction
+690,accelerating change
+691,action language
+692,action model learning
+693,action selection
+695,adaptive algorithm
+696,adaptive neuro fuzzy inference system
+697,admissible heuristic
+698,affective computing
+699,agent architecture
+700,ai accelerator
+701,ai-complete
+703,algorithmic efficiency
+704,algorithmic probability
+705,alphago
+706,ambient intelligence
+707,analysis of algorithms
+708,python
+709,answer set programming
+710,anytime algorithm
+711,application programming interface
+712,approximate string matching
+713,approximation error
+714,argumentation framework
+716,artificial immune system
+718,artificial intelligence markup language
+719,artificial neural network
+720,association for the advancement of artificial intelligence
+721,asymptotic computational complexity
+722,attributional calculus
+724,automata theory
+725,automated planning and scheduling
+726,automated reasoning
+727,autonomic computing
+728,autonomous car
+729,autonomous robot
+731,backpropagation through time
+732,backward chaining
+733,bag-of-words model
+734,bag-of-words model in computer vision
+736,bayesian programming
+737,bees algorithm
+738,behavior informatics
+739,behavior tree
+740,belief-desire-intention software model
+741,bias–variance tradeoff
+743,big o notation
+744,binary tree
+745,blackboard system
+746,boltzmann machine
+747,boolean satisfiability problem
+748,brain technology
+749,branching factor
+750,brute-force search
+751,capsule neural network
+752,case-based reasoning
+753,chatbot
+754,cloud robotics
+755,cluster analysis
+756,cobweb
+757,cognitive architecture
+758,cognitive computing
+759,cognitive science
+760,combinatorial optimization
+761,committee machine
+762,commonsense knowledge
+763,commonsense reasoning
+764,computational chemistry
+765,computational complexity theory
+766,computational creativity
+767,computational cybernetics
+768,computational humor
+769,computational intelligence
+770,computational learning theory
+772,computational mathematics
+773,computational neuroscience
+774,computational number theory
+775,computational problem
+776,computational statistics
+777,computer-automated design
+778,computer audition
+779,computer science
+781,concept drift
+782,connectionism
+783,consistent heuristic
+784,constrained conditional model
+785,constraint logic programming
+786,constraint programming
+787,constructed language
+788,control theory
+790,crossover
+791,darkforest
+792,dartmouth workshop
+794,data fusion
+795,data integration
+798,data set
+799,data warehouse
+800,datalog
+802,decision support system
+803,decision theory
+804,decision tree learning
+805,declarative programming
+806,deductive classifier
+807,deep blue
+809,deepmind technologies
+810,default logic
+811,description logic
+812,developmental robotics
+813,diagnosis
+814,dialogue system
+816,discrete system
+817,distributed artificial intelligence
+818,dynamic epistemic logic
+819,eager learning
+820,ebert test
+821,echo state network
+822,embodied agent
+823,embodied cognitive science
+824,error-driven learning
+825,ensemble averaging
+826,ethics of artificial intelligence
+827,evolutionary algorithm
+828,evolutionary computation
+829,evolving classification function
+830,existential risk
+831,expert system
+832,fast-and-frugal trees
+834,feature learning
+835,feature selection
+837,first-order logic
+838,fluent
+839,formal language
+840,forward chaining
+841,frame
+842,frame language
+843,frame problem
+844,friendly artificial intelligence
+845,futures studies
+846,fuzzy control system
+847,fuzzy logic
+848,fuzzy rule
+849,fuzzy set
+850,game theory
+851,general game playing
+852,generative adversarial network
+853,genetic algorithm
+854,genetic operator
+855,glowworm swarm optimization
+858,graph database
+859,graph theory
+860,graph traversal
+861,halting problem
+864,hidden unit
+865,hyper-heuristic
+866,ieee computational intelligence society
+867,incremental learning
+868,inference engine
+869,information integration
+870,information processing language
+871,intelligence amplification
+872,intelligence explosion
+873,intelligent agent
+874,intelligent control
+875,intelligent personal assistant
+876,interpretation
+877,intrinsic motivation
+878,issue tree
+879,junction tree algorithm
+880,kernel method
+881,kl-one
+882,knowledge acquisition
+883,knowledge-based system
+884,knowledge engineering
+885,knowledge extraction
+886,knowledge interchange format
+887,knowledge representation and reasoning
+888,lazy learning
+889,lisp
+890,logic programming
+891,long short-term memory
+892,machine vision
+894,markov decision process
+895,mathematical optimization
+897,machine listening
+898,machine perception
+899,mechanism design
+900,mechatronics
+901,metabolic network reconstruction and simulation
+902,metaheuristic
+903,model checking
+904,''modus ponens''
+905,''modus tollens''
+906,monte carlo tree search
+907,multi-agent system
+908,multi-swarm optimization
+909,mutation
+910,mycin
+912,naive semantics
+913,name binding
+914,named-entity recognition
+915,named graph
+916,natural language generation
+917,natural language processing
+918,natural language programming
+919,network motif
+920,neural machine translation
+921,neural turing machine
+922,neuro-fuzzy
+923,neurocybernetics
+924,neuromorphic engineering
+925,node
+926,nondeterministic algorithm
+927,nouvelle ai
+928,np
+929,np-completeness
+930,np-hardness
+931,occam's razor
+932,offline learning
+933,online machine learning
+934,ontology learning
+935,openai
+936,opencog
+937,open mind common sense
+938,open-source software
+939,partial order reduction
+940,partially observable markov decision process
+941,particle swarm optimization
+942,pathfinding
+944,predicate logic
+947,principle of rationality
+948,probabilistic programming
+949,production system
+950,programming language
+951,prolog
+952,propositional calculus
+954,qualification problem
+955,quantifier
+956,quantum computing
+957,query language
+958,r programming language
+959,radial basis function network
+961,reasoning system
+963,region connection calculus
+965,reservoir computing
+966,resource description framework
+967,restricted boltzmann machine
+968,rete algorithm
+969,robotics
+970,rule-based system
+971,satisfiability
+972,search algorithm
+973,selection
+974,self-management
+975,semantic network
+976,semantic reasoner
+977,semantic query
+978,semantics
+979,sensor fusion
+980,separation logic
+981,similarity learning
+982,simulated annealing
+983,situated approach
+984,situation calculus
+985,selective linear definite clause resolution
+986,python
+987,software engineering
+989,sparql
+990,speech recognition
+991,spiking neural network
+993,statistical classification
+994,statistical relational learning
+995,stochastic optimization
+996,stochastic semantic analysis
+997,stanford research institute problem solver
+998,subject-matter expert
+999,superintelligence
+1001,support-vector machines
+1002,swarm intelligence
+1003,symbolic artificial intelligence
+1004,synthetic intelligence
+1005,systems neuroscience
+1006,technological singularity
+1007,temporal difference learning
+1008,tensor network theory
+1010,theoretical computer science
+1011,theory of computation
+1012,thompson sampling
+1013,time complexity
+1014,transhumanism
+1015,transition system
+1016,tree traversal
+1017,true quantified boolean formula
+1018,turing machine
+1019,turing test
+1020,type system
+1022,vision processing unit
+1023,watson
+1024,weak ai
+1025,world wide web consortium
+1026,a.net
+1027,a-0 system
+1028,a+
+1029,abap
+1030,abc
+1031,abc algol
+1032,acc
+1033,accent
+1034,ace dasl (distributed application specification language)
+1035,action!
+1036,actionscript
+1037,actor
+1038,ada
+1039,adenine
+1040,advpl
+1041,agda
+1042,agilent vee
+1043,agora
+1044,aimms
+1045,aldor
+1046,alef
+1047,alf
+1048,algol 58
+1049,algol 60
+1050,algol 68
+1051,algol w
+1052,alice
+1053,alma-0
+1054,ambienttalk
+1055,amiga e
+1056,amos
+1057,ampl
+1058,angelscript
+1059,apache pig latin
+1060,apex
+1061,apl
+1062,app inventor for android's visual block language
+1063,applescript
+1064,apt
+1065,arc
+1066,arexx
+1067,argus
+1068,assembly language
+1069,autohotkey
+1070,autoit
+1071,autolisp / visual lisp
+1072,averest
+1073,awk
+1074,axum
+1075,b
+1076,babbage
+1077,ballerina
+1078,bash
+1079,basic
+1080,batch file (windows/ms-dos)
+1081,bc
+1082,bcpl
+1083,beanshell
+1084,bertrand
+1085,beta
+1086,bliss
+1087,blockly
+1088,bloop
+1089,boo
+1090,boomerang
+1091,bosque
+1092,c – iso/iec 9899
+1093,c-- (c minus minus)
+1094,c++ (c plus plus) – iso/iec 14882
+1095,c*
+1096,c# (c sharp) – iso/iec 23270
+1097,c/al
+1098,caché objectscript
+1099,c shell (csh)
+1100,caml
+1101,cayenne
+1102,cduce
+1103,cecil
+1104,cesil
+1105,céu
+1106,ceylon
+1107,cfengine
+1108,cg
+1109,ch
+1110,chapel
+1111,charm
+1112,chill
+1113,chip-8
+1114,chomski
+1115,chuck
+1116,cilk
+1117,cl (ibm)
+1118,claire
+1119,clarion
+1120,clean
+1121,clipper
+1122,clips
+1123,clist
+1124,clojure
+1125,clu
+1126,cms-2
+1127,cobol – iso/iec 1989
+1128,cobolscript – cobol scripting language
+1129,cobra
+1130,coffeescript
+1131,coldfusion
+1132,comal
+1133,combined programming language (cpl)
+1134,comit
+1135,common intermediate language (cil)
+1136,common lisp (also known as cl)
+1137,compass
+1138,component pascal
+1139,constraint handling rules (chr)
+1140,comtran
+1141,cool
+1142,coq
+1143,coral 66
+1144,corvision
+1145,cowsel
+1146,cpl
+1147,cryptol
+1148,crystal
+1149,csound
+1150,cuneiform
+1151,curl
+1152,curry
+1153,cybil
+1154,cyclone
+1155,cypher query language
+1156,cython
+1157,ceemac
+1158,d
+1159,dart
+1160,darwin
+1161,dataflex
+1163,datatrieve
+1164,dbase
+1165,dc
+1166,dcl
+1167,delphi
+1168,dinkc
+1169,dibol
+1170,dog
+1171,draco
+1172,drakon
+1173,dylan
+1174,dynamo
+1175,dax (data analysis expressions)
+1176,e
+1177,ease
+1178,easy pl/i
+1179,easytrieve plus
+1180,ec
+1181,ecmascript
+1182,edinburgh imp
+1183,egl
+1184,python
+1185,elan
+1186,elixir
+1187,elm
+1188,emacs lisp
+1189,emerald
+1190,epigram
+1191,epl (easy programming language)
+1192,epl (eltron programming language)
+1193,erlang
+1194,es
+1195,escher
+1196,espol
+1197,esterel
+1198,etoys
+1199,euclid
+1200,euler
+1201,euphoria
+1202,euslisp robot programming language
+1203,cms exec (exec)
+1204,exec 2
+1205,executable uml
+1206,ezhil
+1207,f
+1208,f#
+1209,f*
+1210,factor
+1211,fantom
+1212,faust
+1213,ffp
+1214,fish
+1215,fjölnir
+1216,fl
+1217,flavors
+1218,flex
+1219,floop
+1220,flow-matic
+1221,focal
+1222,python
+1223,foil
+1224,formac
+1225,@formula
+1226,forth
+1227,fortran – iso/iec 1539
+1228,fortress
+1229,fp
+1230,franz lisp
+1231,freebasic
+1232,futhark
+1233,f-script
+1234,game maker language (scripting language)
+1235,gamemonkey script
+1236,gams
+1237,gap
+1238,g-code
+1239,gdscript
+1240,genie
+1241,gdl
+1242,george
+1243,glsl
+1244,gnu e
+1245,gnu guile
+1247,go!
+1248,goal
+1249,gödel
+1250,golo
+1251,gom (good old mad)
+1252,google apps script
+1253,gosu
+1254,gotran
+1255,gpss
+1256,graphtalk
+1257,grass
+1258,grasshopper
+1259,groovy
+1260,hack
+1261,haggis
+1262,hal/s
+1263,halide (programming language)
+1264,hamilton c shell
+1265,harbour
+1266,hartmann pipelines
+1267,haskell
+1268,haxe
+1269,hermes
+1270,high level assembly
+1271,hlsl
+1272,hollywood
+1273,holyc
+1274,hop
+1275,hopscotch
+1276,hope
+1277,hugo
+1278,hume
+1279,hypertalk
+1280,io
+1281,ioke
+1282,icon
+1283,ibm basic assembly language
+1284,ibm hascript
+1285,ibm informix-4gl
+1286,ibm rpg
+1287,idl
+1288,idris
+1289,inform
+1290,j
+1291,j#
+1292,j++
+1293,jade
+1294,jal
+1295,janus (concurrent constraint programming language)
+1296,janus (time-reversible computing programming language)
+1297,jass
+1298,java
+1299,javafx script
+1300,javascript(scripting language)
+1301,jess (programming language)
+1302,jcl
+1303,jean
+1304,join java
+1305,joss
+1306,joule
+1307,jovial
+1308,joy
+1309,jscript
+1310,jscript .net
+1312,jython
+1313,k
+1314,kaleidoscope
+1315,karel
+1316,kee
+1317,kixtart
+1318,klerer-may system
+1319,kif
+1320,kojo
+1321,kotlin
+1322,krc
+1323,krl
+1324,krl (kuka robot language)
+1325,krypton
+1326,kornshell (ksh)
+1327,kodu
+1328,kv
+1329,labview
+1330,ladder
+1331,lansa
+1332,lasso
+1333,lava
+1334,lc-3
+1335,lean
+1336,legoscript
+1337,lil
+1338,lilypond
+1339,limbo
+1340,limnor
+1341,linc
+1342,lingo
+1343,linq
+1344,lis
+1345,lisa
+1346,language h
+1347,lisp – iso/iec 13816
+1348,lite-c
+1349,lithe
+1350,little b
+1351,lll
+1352,logo
+1353,logtalk
+1354,lotusscript
+1355,lpc
+1356,lse
+1357,lsl
+1358,livecode
+1359,livescript
+1360,lua
+1361,lucid
+1362,lustre
+1363,lyapas
+1364,lynx
+1365,m2001
+1366,m4
+1367,m#
+1368,machine code
+1369,mad (michigan algorithm decoder)
+1370,mad/i
+1371,magik
+1372,magma
+1373,máni
+1374,maple
+1375,mapper (now part of bis)
+1376,mark-iv (now vision:builder)
+1377,mary
+1379,masm microsoft assembly x86
+1380,math-matic
+1381,maude system
+1382,maxima (see also macsyma)
+1383,max (max msp – graphical programming environment)
+1384,maxscript internal language 3d studio max
+1385,maya (mel)
+1386,mdl
+1387,mercury
+1388,mesa
+1389,mheg-5 (interactive tv programming language)
+1390,microcode
+1391,microscript
+1392,miis
+1393,milk (programming language)
+1394,mimic
+1395,minid
+1396,mirah
+1397,miranda
+1398,miva script
+1400,model 204
+1401,modelica
+1402,modula
+1403,modula-2
+1404,modula-3
+1405,mohol
+1406,moo
+1407,mortran
+1408,mouse
+1409,mpd
+1410,msl
+1411,mumps
+1412,mupad
+1413,mutan
+1414,mystic programming language (mpl)
+1415,nasm
+1416,napier88
+1417,neko
+1418,nemerle
+1419,nesl
+1420,net.data
+1421,netlogo
+1422,netrexx
+1423,newlisp
+1424,newp
+1425,newspeak
+1426,newtonscript
+1427,nial
+1428,nickle (nitin)
+1429,nim
+1430,nix (systems configuration language)
+1431,npl
+1432,not exactly c (nxc)
+1433,not quite c (nqc)
+1434,nsis
+1435,nu
+1436,nwscript
+1437,nxt-g
+1438,o:xml
+1439,oak
+1440,oberon
+1441,obj2
+1442,object lisp
+1443,objectlogo
+1444,object rexx
+1445,object pascal
+1446,objective-c
+1447,objective-j
+1448,obliq
+1449,ocaml
+1450,occam
+1451,occam-π
+1452,octave
+1453,omnimark
+1454,opa
+1455,opal
+1456,opencl
+1457,openedge abl
+1458,opl
+1459,openvera
+1460,ops5
+1461,optimj
+1462,orc
+1463,orca/modula-2
+1464,oriel
+1465,orwell
+1466,oxygene
+1467,oz
+1468,p
+1469,p4
+1470,p′′
+1471,parasail (programming language)
+1472,pari/gp
+1473,pascal – iso 7185
+1474,pascal script
+1475,pcastl
+1476,pcf
+1477,pearl
+1478,peoplecode
+1480,pdl
+1481,pharo
+1482,php
+1483,pico
+1484,picolisp
+1485,pict
+1486,pike
+1487,pilot
+1488,pipelines
+1489,pizza
+1490,pl-11
+1491,pl/0
+1492,pl/b
+1493,pl/c
+1494,pl/i – iso 6160
+1495,pl/m
+1496,pl/p
+1497,pl/sql
+1498,pl360
+1499,planc
+1500,plankalkül
+1501,planner
+1502,plex
+1503,plexil
+1504,plus
+1505,pop-11
+1506,pop-2
+1507,postscript
+1508,portable
+1509,pov-ray sdl
+1510,powerhouse
+1511,powerbuilder – 4gl gui application generator from sybase
+1512,powershell
+1513,ppl
+1514,processing
+1515,processing.js
+1516,prograph
+1517,proiv
+1518,project verona
+1520,promal
+1521,promela
+1522,prose modeling language
+1523,protel
+1524,providex
+1525,pro*c
+1526,pure
+1527,pure data
+1528,purescript
+1530,q (programming language from kx systems)
+1531,q# (microsoft programming language)
+1532,qalb
+1533,quantum computation language
+1534,qtscript
+1535,quakec
+1536,qpl
+1537,.ql
+1539,r++
+1540,racket
+1541,raku
+1542,rapid
+1543,rapira
+1544,ratfiv
+1545,ratfor
+1546,rc
+1547,reason
+1548,rebol
+1549,red
+1550,redcode
+1551,refal
+1552,rexx
+1553,rlab
+1554,roop
+1555,rpg
+1556,rpl
+1557,rsl
+1558,rtl/2
+1560,rust
+1561,s
+1562,s2
+1563,s3
+1564,s-lang
+1565,s-plus
+1566,sa-c
+1567,sabretalk
+1568,sail
+1570,sasl
+1571,sather
+1572,sawzall
+1574,scheme
+1575,scilab
+1576,scratch
+1577,script.net
+1578,sed
+1579,seed7
+1580,python
+1581,sensetalk
+1582,sequencel
+1583,serpent
+1584,setl
+1585,simpol
+1586,signal
+1587,simple
+1588,simscript
+1589,simula
+1590,simulink
+1591,singularity
+1592,sisal
+1593,slip
+1594,small
+1595,smalltalk
+1596,sml
+1597,strongtalk
+1598,snap!
+1599,snobol (spitbol)
+1600,snowball
+1601,sol
+1602,solidity
+1603,sophaeros
+1604,source
+1605,spark
+1606,speakeasy
+1607,speedcode
+1608,spin
+1609,sp/k
+1610,sps
+1612,sqr
+1613,squeak
+1614,squirrel
+1615,sr
+1616,s/sl
+1617,starlogo
+1618,strand
+1620,stateflow
+1621,subtext
+1622,sbl
+1623,supercollider
+1624,supertalk
+1625,swift (apple programming language)
+1626,swift (parallel scripting language)
+1627,sympl
+1628,systemverilog
+1629,t
+1630,tacl
+1631,tacpol
+1632,tads
+1633,tal
+1634,tcl
+1635,python
+1636,teco
+1637,telcomp
+1638,tex
+1640,tie
+1641,"tmg, compiler-compiler"
+1642,tom
+1643,toi
+1644,topspeed
+1646,trac
+1647,ttm
+1648,t-sql
+1649,transcript
+1650,ttcn
+1651,turing
+1652,tutor
+1653,txl
+1654,typescript
+1655,tynker
+1656,ubercode
+1657,ucsd pascal
+1658,umple
+1659,unicon
+1660,uniface
+1661,unity
+1662,unix shell
+1663,unrealscript
+1664,vala
+1665,verilog
+1666,vhdl
+1667,vim script
+1668,viper
+1669,visual dataflex
+1670,visual dialogscript
+1671,visual foxpro
+1672,visual j++
+1673,visual lisp
+1674,visual objects
+1675,visual prolog
+1676,"watfiv, watfor"
+1677,webassembly
+1678,webdna
+1679,whiley
+1680,winbatch
+1681,wolfram language
+1682,wyvern
+1683,x++
+1684,x10
+1685,xbase
+1686,xbase++
+1687,xbl
+1688,xc (targets xmos architecture)
+1689,xharbour
+1690,xl
+1691,xojo
+1692,xotcl
+1693,xod
+1694,xpl
+1695,xpl0
+1696,xquery
+1697,xsb
+1698,xsharp
+1699,xslt
+1700,xtend
+1701,yaml
+1702,yorick
+1703,yql
+1704,yoix
+1705,yui
+1706,z notation
+1707,"zebra, zpl, zpl2"
+1708,zeno
+1709,zetalisp
+1710,zig
+1711,zopl
+1712,zpl
+1713,z++
+1714,neural network
+1715,bayes
+1716,statistics
+1717,random forest
+1718,gradient
+1719,tensorflow
+1720,numpy
+1721,scipy
+1722,matplotlib
+1723,linear
+1724,logistic
+1725,time series
+1726,nlp
+1727,nltk
+1728,monte carlo
+1729,simulation
+1730,reinforcement
+1731,unsupervised
+1732,supervised
+1733,regression
+1734,classification
+1735,sentiment
+1736,regex
+1737,github
+1738,stochastic
+1739,scikit
+1740,inference
+1741,causal
+1742,probability
+1743,cloud
+1744,aws
+1745,azure
+1746,seo
+1747,d3
+1748,seaborn
+1749,ggplot
+1750,elasticsearch
+1751,cassandra
+1752,jupyter
+1753,django
+1754,spark
+1755,excel
+1756,sql
+1757,spss
+1758,rstudio
+1759,mongodb
+1760,hbase
+1761,pandas
+1762,angularjs
+1763,scala
+1764,ruby
+1765,php
+1766,java
+1767,haskell
+1768,saas
+1769,node.js
+1770,javascript
+1771,
+1772,
+1773,

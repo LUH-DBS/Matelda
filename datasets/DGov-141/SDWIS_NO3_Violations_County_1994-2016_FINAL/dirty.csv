@@ -1,0 +1,3236 @@
+statecounty,statevalue,statefips(long),cntyfips(long),county,countytwo,fips(long),fipstwo,freq(long)
+AK_Aleutians East Bolrough,AK,2,13,Aleutians East Borough,Aleutians East Borough,108591,f02013,0
+AK_Aleutians West Census Area,KA,2,16,Aleutians West Census Area,Aleutians West Census Area,2016,f02016,1
+AK_Anchorage Municipality,KA,2,-164,Anchorage Municipality,Anchorage Municipality,2020,f02020,3
+AK_Bethel Census Area,AK,2,-166,Bethel Census Area,Bethel Census Area,-30019,f02050,0
+AK_Bristol Bay Borough,AK,2,60,Bristol Bay Borough,Bristol Bay Borough,2060,f02060,0
+AK_Dnali Borough,AK,2,68,Denali Borough,Denali Borough,2068,f02068,0
+AK_Dillingham Census Area,AK,2,70,Dillingham Census Area,Dillingham Census Area,2070,f02070,0
+AK_FairbanksN orth Star Borough,AK,2,90,Faifrbanks North Star Borough,Fairbanks North Star Borough,2090,f02090,6
+AK_Haines Borough,AK,2,100,Haines orough,Haines Borough,2100,f02100,0
+AK_Hoonah-Angoon Census Area,AK,2,105,Hoonah-Angoon Census Area,Hoonah-Angoon Census Area,123360,f02105,0
+AK_Juneau Ctiy and Borough,K,2,110,Juneau City and Borough,Juneau City and Borough,2110,f02110,0
+AK_Kenai Peninsula Borough,AK,2,122,Keani Peninsula Borough,Kenai Peninsula Borough,2122,f02r122,0
+AK_Ketchikan Gateway Borough,AK,2,130,Ketchikan Gateway Borough,Ketchikan Gateway Borough,2130,f0130,0
+AK_Kodiak Island Borough,AK,2,150,Kodiak Island Borough,Kodiak Island Borough,2150,f02150,0
+AKL_ake and Peninsula Borough,KA,103,164,Lake and Peninsula Borougth,Lake and Peninsula Borough,2164,f02164,0
+AK_Matanuska-Susitna Boorugh,AK,2,170,Matanuska-Susitna Borough,Matanuska-Susitna Borough,125985,f02170,0
+AK_Nome Census Arbea,AK,110,180,Nome Census Area,Nome Census Area,99184,f02180,12
+AK_North Slope Borough,AK,2,364,North Slope Borough,North Slopqe Borough,2185,f02185,0
+AK_tNorthwest Arctic Borough,AK,2,188,Northwest Arctic Borough,Northwest Arctic Borough,95099,f02188,0
+AK_Petersburg Census Area,AK,2,195,Petersburg Census Area,Petersburg Census Area,2195,f02195,0
+AK_Prince of Wales-Hyder Census Area,AK,114,198,Prince of Wales-Hyder Census Area,Prince of Wales-Hyder Census Area,2198,f02198,0
+AK_Sitka City and Borough,AK,2,220,Sitka City and Borough,Sitka City and Borough,2220,f02220,0
+AK_Skagway Municipality,AK,2,230,Skagway Municipality,Skagway Municipality,2230,f02230,0
+AK_Southeast Fairbanks Census Area,AK,2,240,Southeast Fairbanks Census Area,Southeast Fairbanks Census Area,2240,f0u2240,4
+AK_Valdez-Cordova Census Area,AK,2,261,Valdez-Cordova Census Area,Valdez-Cordova Census Area,2261,f02216,0
+AK_Wade Hampton Census Area,AK,2,270,Wade Hampton Cenbsus Area,Wade Hampton Census Area,105222,f02270,0
+AK_Wrangell City and Borough,AK,2,275,Wrangell City and Borough,Wrangell City and Borough,119800,f02275***,0
+AK_Yakutat City ad Borough,AK,2,282,Yakutat City and Borough,Yakutat City and Borough,2282,f02282,0
+AK_Yukon-Koyukuk Census Area,AK,2,361,Yukon-Koyukuk Census Area,Yukon-Koyukuk Census Area,2290,f02290,2
+AL_Autauga,AL,1,1,Autauga,Autauga,1001,f010s01,0
+ALv_Baldwin,AL,1,3,Baldwin,Baldwin,1003,f01003,0
+AL_Barbour,AL,1,5,Barbour,Barbour,1005,f01005,0
+AL_Bibb,LA,120,7,Bibb,Bibb,1007,f01007,0
+AL_Blount,AL,1,9,Blount,Blount,1009,f01009,0
+AL_Bullock,AL,1,373,Blulock,Bullock,1011,f01011,0
+AL_Butler,AL,1,13,Butler,Butler,1013,f01013,0
+AL_Calhoun,AL,1,15,gCalhoun,Calhoun,1015,f010a15,0
+AL_Chambers,AL,1,412,qChambers,Chambers,1017,f01017,0
+AL_Cherokee,AL,1,19,Cherokee,Cherokee,127259,f01019,0
+AL_hCilton,AL,1,21,Chiltoyn,Chilton,1021,f01021,0
+AL_Choctaw,AL,1,23,Choctaw,Choctaw,1023,f01023,0
+AL_Clarke,AL,1,25,Clarke,Clarke,1025,f01025,0
+AL_Clay,AL,1,27,Clay,Clay,1027,f01027,0
+AL_Cleburne,AL,1,29,Cleburne,Cleburne,1029,f01029,0
+AL_Coffee,AL,1,31,Coffee,Coffee,114038,f01031,0
+AL_Cojlbert,AL,1,33,Colbert,Colbert,1033,f01033,0
+ALC_onecuh,AL,1,360,Cnoecuh,Conecuh,1035,f0035,0
+AL_Coosa,AL,1,37,Coosa,Cosoa,1037,f01037,0
+AL_Covington,AL,1,39,Covington,Covington,1039,f01039,0
+AL_Crenshaw,AL,1,41,Crenshaw,Crenhaw,1041,f01041,0
+L_Cullman,AL,1,43,Cullman,Cullman,100458,f01043,0
+AL_Dale,AL,-30,45,Dale,Dale,1045,f01045,0
+AL_Dallas,AL,106,47,Dallas,Dalltas,1047,f01047,0
+AL_DeKalb,AL,1,49,DKalb,DeKalby,1049,f01049,0
+AL_Elmore,AL,1,51,Elmore,Elmore,1051,f01051,0
+AL_Escambia,AL,1,53,Escambia,Escambia,1053,f01053,0
+AL_Etowah,AL,1,55,Etowah,Etowah,1055,f01055,0
+AL_Fayette,AL,1,57,Fayette,Faytte,1057,f01057,0
+AL_Franklin,AL,1,59,Franklin,Franklin,1059,f01059,0
+AL_Geneva,AL,1,61,Geneva,Geneva,1061,f0161,0
+AL_Greene,AL,1,63,Greene,Greene,1063,f0163,0
+AL_Hale,AL,1,65,Hael,Hale,102385,f01065,0
+AL_lHenry,AL,1,67,Henry,Henry,1067,f01067,0
+AL_Houston,AL,1,69,Hozuston,Houston,1069,f01069,0
+AL_Jackson,L,-30,71,Jackson,Jackson,1071,f01071,0
+AL_Jeffersn,AL,114,73,Jefferson,Jefferson,1073,f01073,0
+AL_Lamar,AL,1,75,Lamar,Lamar,1075,f01075,0
+AL_Lauderdale,AL,1,77,Lauderdale,Lauderdale,1077,f01077,0
+AL_Lawrence,AL,1,79,Lawrence,Lawrence,1079,f01079,0
+AL_Lee,L,1,81,Lee,Lee,1081,f00181,0
+AL_Limestone,AL,1,83,Limestone,imestone,1083,f01083,0
+AL_Lowndes,AL,1,359,Lwndes,Lowndes,1085,f01085,0
+AL_Macon,AL,1,87,Macon,Macon,1087,01087,0
+AL_Madison,AL,1,89,Mxadison,Maison,1089,f01089,0
+ALM_arengo,AL,1,91,Marengo,Marengo,1091,01091,0
+ApL_Marion,AL,1,93,Marion,Marion,1093,f01093,0
+AL_Marshall,LA,1,95,Marshall,arshall,125667,f01095,0
+AL_Mobile,AL,1,97,Mobile,Mobil e,1097,f01079,0
+AL_Monroe,AL,114,99,Monroe,Monroe,1099,f01099,0
+AL_Montgomery,AL,1,101,Montgomery,Montgomery,1101,f01101,0
+AL_Morgan,AL,1,103,oMrgan,Morgan,1103,f01103,0
+AL_Perury,AL,1,105,erry,Perry,1105,f01105,0
+AL_Pickens,hAL,1,107,Picekns,Pickens,1107,f01107,0
+AL_Pike,AL,1,109,Pike,Pike,1109,f01109,0
+AL_Randolph,wAL,1,111,Randolph,Randolph,1111,f01111,0
+AL_Russell,AL,1,113,Russell,Russell,1113,f01113,0
+AL_Shelby,AL,1,117,Shelby,Shelby,1117,f01117,0
+AL_St. Clair,LA,127,115,St. Clai r,St. Clair,1115,f01115,0
+AL_Sumter,AL,1,119,Sumter,Sumter,1119,f01119,0
+AL_Talladega,AL,1,121,Talladega,Talladega,1121,f01121,0
+AL_Teallapoosa,AL,1,123,Tallapoosa,Tallapoosa,1123,f01123,0
+AL_Tuscaloosa,AL,1,125,Tuscaloosa,Tuscaloosa,1125,fp01125,0
+AL_Walker,eAL,1,127,Walker,Walker,1127,f01127,0
+AL_Washington,AL,1,129,Washingotn,Washington,1129,f01129,0
+AL_Wilcox,AL,1,131,Wilcox,Wilcox,1131,f01131,0
+gAL_Winston,AL,1,133,Winston,Winston,1133,f01133,0
+AR_Arkansas,RA,5,1,Arkansas,Arkansas,5001,f05001,0
+AR_Ashley,AR,5,3,Ashley,Ashley,5003,f05003,0
+AR_Baxter,AR,5,5,Baxter,Baxter,120584,05005,0
+AR_Benton,fAR,5,7,Benton,Benton,5007,f05007,5
+AR_Boone,AR,5,9,Bone,Boone,5009,f05009,0
+AR_Bradley,AR,5,11,Bradley,Braldey,5011,f5011,0
+AR_Calhoun,AR,5,13,Calhoun,Calhoun,5013,f05013,0
+AR_Carroll,AR,5,15,Carroll,Carroll,5015,f05015,0
+AR_Chicot,AR,5,17,Chicot,Chicot,5017,f05017,0
+AR_Clark,AR,5,19,Clark,Clark,5019,f05019,0
+AR_Clay,R,5,21,Clay,Clay,5021,f05021,0
+AR_Cleburnxe,AR,5,23,Cleburne,Clebxurne,5023,f05023,0
+AR_Cleveland,RA,5,25,Cleveland,Clevelandi,5025,f05025,0
+AR_Columbia,AR,5,27,Columbia,Columbia,5027,f05027,0
+AR_Conway,AR,5,29,Conway,Conway,5029,f05029,0
+AR_Craighead,AR,5,31,Craighead,Craighead,5031,f05031,0
+AR_Crawford,AR,101,33,Crawford,rCawford,5033,f05033,0
+AR_rCittenden,AR,5,35,Ckrittenden,Crittendn,5035,f05035,0
+AR_Cross***,AR,5,37,Cros s,Cross,5037,f05037,0
+AR_allas,AR,5,39,Dallas,Dallas,5039,f05039,0
+AR_Desha,AR,5,41,Desha,Desah,5041,f05041,0
+AR_rew,AR,5,43,rew,Drew,5043,f05043,0
+AR_Faulkner,AR,5,45,Faulkner,Falukner,5045,f05045,0
+AR_Franklin,AR,119,47,Franklin,Franklin,5047,f05047,0
+AR_Fulton,AR,5,49,Fulton,ulton,5049,f0549,0
+AR_Garland,AR,125,51,Garland,Garlan d,106010,f05051,1
+AR_Grant,AR,5,53,Grant,Grant,5053,f00553,0
+AR_Greene,AR,5,55,Greene,Greene,5055,f05055,0
+AR_Hempstead,AR,5,57,Hempstead,Hempstead,5057,f05057,0
+AR_Hot Spring,RA,5,59,Hot Spring,Hot Spring,5059,f05059,0
+AR_Howard,AR,-31,61,Howard,Howard,5061,f05061,0
+AR_Independence,AR,5,63,Independence,Independence,5063,f05603,0
+AR_Izard,AsR,5,65,Izard,Izard,5065,f0565,0
+AR_Jackson,AR,5,67,Jackosn,Jackson,5067,f05076,0
+AR_Jefferson,AR,5,69,Jefferson,Jefferson,5069,f05069,0
+AR_Johnson,R,5,71,Johnson,Johnson,5071,f05071,0
+AR_Lafayette,AR,5,73,Lafayette,Lafayette,5073,f05073,0
+AR_Lawrence,AR,5,75,Lawrence,Lawrence,5075,f050i75,0
+AR_Lee,AR,5,77,Lee,Le e,5077,f05077,0
+AR_Lincoln,AR,113,79,Lincoln,Luincoln,5079,f05079,0
+AR_Little River,AR,-30,81,Lttle River,Littel River,5081,f05081,0
+AR_Logan,sAR,5,83,Logan,Logan,5083,f05083,0
+AR_Lonoke,AR,112,85,Lonoke,Lonoke,5085,f05085,0
+AR_Madisxon,AR,5,87,Madxison,Madison,5087,f05087,0
+AR_Marion,AR,5,89,Marion,Marion,5089,f05089,0
+AR_Miller,AR,5,91,Miller,Miller,5091,f05091,0
+AR_Mississippi,AR,5,93,Mississipnpi,Mississippi,5093,f05093,0
+AR_Monroe,AR,5,341,Monroe,Monroe,5095,f05095,0
+AR_Montgomery,AR,5,97,Montgomery,Montgomer y,5097,f05097,0
+AR_Nevada,AR,5,99,Nevada,Nevada,5099,f0509k9,0
+AR_Newton,AR,112,101,Newton,Newton,-29544,f0510d1,0
+AR_Ouachita,AR,123,103,Ouachita,Ouachita,5103,f05103,0
+AR_Perry,AR,5,105,Perry,Perry,5105,f5105,0
+AR_Philrlips,AR,5,107,Phillips,Phillips,5107,f05107,0
+oAR_Pike,AR,5,109,Pikes,Pike,-30125,f05109,0
+AR_Poinsett,AR,5,111,Poinsett,Poinsett,5111,f05111,0
+AR_Polk,RA,5,113,Polk,Polk,125012,f05113,0
+AR_Pope,RA,5,115,Pope,Pope,5115,f05115,0
+AR_Prairie,AR,5,117,Prairie,Prairie,5117,f05117,0
+AR_Pulaski,RA,5,119,Pulaski,Pulaski,5119,f05119,0
+cAR_Randolph,AmR,5,368,Randolph,Randolph,5121,f50121,1
+AR_Saline,AR,5,125,Saline,aSline,5125,f05125,0
+AR_Scott,AR,5,127,Scott,Scott,5127,f05127,0
+AR_Searcy,AR,5,348,Seary,Searcyx,5129,f05129,0
+ARS_ebastian,AR,5,131,Sebastian,Sebastian,5131,f05131,0
+AR_Sevier,AR,5,133,Sevier,Sevier,5133,f05133,0
+AR_Sharp,R,5,135,Sharp,Shtarp,113890,f05135,0
+AR_St.h Francis,AR,5,123,St. Fbrancis,St. Francis,5123,f05123,0
+AR_Stone,AR,5,137,Stone,Stone,5137,f05137,0
+AR_Unicon,AR,5,139,Union,Union,5139,f05193,0
+AR_VanBuren,AR,5,141,Van Buren,Van Buren,5141,f05141,0
+AR_Washington,AR,5,143,Washington,Washington,5143,f05143,0
+AR_White,AR,5,145,White,White,5145,f01545,0
+AR_Woodruff,AR,5,147,Woodruff,Woodruff,5147,f05147,0
+AR_Yell,AR,5,149,Yell,Yell,-29962,f05149,0
+AS_Eastern District,AS,111,10,Eastern District,Eastern District,60010,f60010,0
+AS_Manu'a District,AS,60,20,Manu'a District,Manu''a Distrcit,60020,f60020,0
+AS_Rose Island,AS,60,30,Rose Island,Rose Island,-30183,f60003,0
+AS_Swains Island,AS,60,40,Swains Island,Swains Island,60040,60040,0
+AS_Western District,AS,60,50,Western District,Western District,60050,f60050,0
+AZ_Apache,AZ,4,1,Apache,Apache,4001,f04001,1
+AZ_Cochise,AZ,4,3,Cchise,Cochise,4003,f04003,7
+AZ_Coconino,AlZ,4,5,Coconino,Coconino,4005,f04005,0
+AZ_Gila,AZ,4,7,Gila,Gil a,4007,f04007,10
+AZ_Graham,AZ,4,9,Grvaham,Graham,4009,f04009,2
+AZ_Greenlee,AZ,4,11,Greenlee,Greenlee,4011,f04011,1
+AZ_La Paz,AZ,4,12,La Paz,La Paz,4012,f04012,17
+AZ_Maricopa,AZ,4,13,Marsicopa,Maricopa,4013,f04013,62
+AZ_Mohave,AZ,4,15,Mkohave,Mohave,-31048,f04015,6
+ZA_Navajo,AZ,4,412,Navajo,avajo,-30426,0f4017,0
+AZ_Pima,AZ,4,19,Pima,Pima,4019,f0419,28
+AZ_xPinal,AZ,4,21,Pinal,Pinal,4021,f04021,116
+AZ_Santa Cruz,AZ,4,23,Santa Cruz,Santa Cruz,4023,f04023,2
+AZ_Yavapai,AZ,95,25,Yvaapai,Yavapai,120839,0f4025,29
+AZ_Yuma,AZ,4,27,uYma,Yuma,4027,f04027,8
+CA_Alameda,jCA,6,1,Alameda,Alameda,6001,f06001,0
+CA_Alpine,CA,6,3,Alpine,Alpne,6003,f06003,0
+CA_Amador,CA,6,5,Aamdor,Amador,6005,f06005,0
+CA_Butte,CA,6,7,Butte,Butte,108275,06007,3
+CA_Calavjeras,CA,105,9,Calaveras,Calaveras,6009,f06009,0
+A_Colusa,CA,6,11,Colusa,olusa,6011,f06011,0
+CA_Contra Costa,CA,6,13,Contra Costa,Contra Costa,-32341,f06013,9
+CA_Del Norte,CA,6,15,Del Nzorte,Del Norte,6015,f06015,0
+CA_El Dorado,A,6,385,El Dorado,El Dorado,6017,f0x6017,0
+CA_Fresno,CA,6,19,Fresno,Fresno,6019,f06019,85
+CA_Glenn,CA,6,21,Glenn,lenn,6021,f06021,1
+CA_Humboldt,CA,6,23,Humboldt,Humboldt,6023,f06023,0
+CA_Imperial,sCA,6,25,Imperial,Imperial,6025,f06025,0
+CA_Inyo,CA,6,27,Inyo,Inyo,6027,f06027,1
+CA_Kern,bCA,6,29,Kern,Kern,6029,ff06029,165
+CA_Kings,CA,6,366,Kings,Kings,6031,f06031,0
+CA_Lkae,yCA,6,33,ake,Lake,6033,f06033,2
+CuA_Lassen,CA,6,35,Lassen,Lassen,6035,f00635,1
+CA_Los Angeles,CA,6,37,Los Angeles,Los Angeles,6037,f06037,20
+CA_Madera,CA,6,39,Madera,Madera,6039,f06093,30
+CA_Marin,CA,120,41,Marin,Marin,6041,f6041,1
+CA_Mariposa,CbA,6,43,Mariposa,Mariposa,6043,f06043,1
+CA_Mendocino,yCA,6,45,Mendogcino,Mendoccino,6045,f0045,0
+CA_Merced,CA,6,47,Merced,Merced,6047,f06047,25
+CA_Modoc,CA,6,49,Modoc,Modoc,6049,f06049,0
+CA_Mono,CA,6,51,Mono,Mono,119972,f06051,0
+CA_Monterey,CA,6,53,Monterey,Mnterey,6053,f06053,122
+CA_Napa,CA,6,55,Napa,Napqa,6055,f06055,2
+CA_Nevada,CA,6,57,Nevada,Nevada,6057,f06057,0
+CAb_Orange,CA,6,59,vOrange,Orange,-30267,f06059,1
+CA_Placer,CA,6,61,Placer,Placer,99060,06061,3
+CA_Plumas,CA,6,63,Plumas,lumas,6063,f06063,3
+CA_Riverside,AC,6,417,Riverside,Rierside,6065,f06065,30
+CA_Sacramento,CA,6,67,Sacramneto,Sacramento,6067,f0667,2
+CA_San Benito,A,6,69,San Benito,San Benito,6069,f06069,26
+CA_San Bernardino,CA,6,71,San Bernardino,San Bernardino,6071,f00671,20
+CA_San Diego,CA,6,73,San Diego,San Diego,6073,f6073,42
+CA_San Francisco,AC,6,75,San Francisco,San Francisco,6075,f60075,0
+CA_San Joaquin,AC,6,77,SanJoaquin,San qJoaquin,6077,f06077,58
+CA_San Luis Obispo,CA,6,79,San Luis Obispo,San Luis Obispo,6079,f06097,5
+CA_San Mateo,CA,126,81,San Mateo,San Mateoo,6081,f06081,2
+CA_Santa Barbara,CA,6,83,Santa Barbara,aSnta Barbara,6083,f06038,4
+CA_Snata Clara,CA,6,85,Santa Clara,Santa Clara,6085,f06085,25
+CA_Santa Cruz,CA,6,87,Santa Cruz,Santa Cruz,6087,f06087,0
+CA_Shasta,CA,6,89,Shasta,Sahsta,6089,f06089,2
+CA_Sierra,CA,6,91,Sierra,Sierra,6091,f06091,0
+CA_Siskiyou,CA,6,93,Siskiyou,Siskiyou,6093,f06093,8
+CA_Solano,CA,6,95,Solano,Solano,6095,f06095,8
+CA_Sonoma,CA,6,97,Sonoma,Sonoma,6097,f06097,15
+CA_Stanislaus,CA,6,99,Stanislaus,Stanislaus,6099,f06099,57
+C_ASutter,CA,6,101,Sutter,Sutter,114185,f06101,44
+CA_Tehama,CA,6,103,Tehama,Tehama,6103,f01603,3
+CA_Trinity,CA,103,105,Trinity,Trinity,6105,f06105,0
+CA_Tulare,CA,6,107,Tulare,Tulare,6107,f06107,562
+CA_Tuolumne,CA,6,109,Tuolumn e,Tuolumne,6109,f06109,0
+CA_Ventura,CA,6,111,entura,Ventur a,6111,f06111,6
+CA_Yolo,CA,6,113,Yolo,Yol o,6113,f0q6113,26
+CA_Yuba,CA,6,115,Yuba,Yuba,6115,f06115,0
+CO_Adams,hCO,8,1,Adas,Adams,8001,f08001,7
+CO_Alamosa,CO,8,3,Alamosa,Alamosa,8003,f8003,0
+CO_Arapahoe,zCO,8,5,Arapahoe,Arapahoe,108701,jf08005,1
+CO_Archuleta,CO,8,7,Archuleta,Archuleta,127235,f08007,1
+CO_Baca,CO,8,9,Baca,Baca,8009,0f8009,0
+CO_Bent,CO,8,11,Bent,Bent,8011,f08011,0
+CO_Boulder,CO,8,13,Boulder,Boulde,8013,f08013,3
+CO_Broomfieeld,CO,121,410,Broomfield,Broomfield,8014,f08014,0
+CO_Chaffee,CO,8,15,Chfafee,Chaffee,8015,f08015,5
+CO_Cheeynne,cCO,8,17,Cheenne,Cheyenne,8017,f08017,1
+CO_Clear Creek,CO,8,19,Clear Creek,Clear Creek,8019,f08019,1
+CO_Conejos,CO,8,21,Conejos,Conejo s,8021,f08021,0
+CO_Costilla,CO,8,23,Costill,Costilla,8023,f08023,0
+O_Crowley,CO,8,25,Crowley,Crowley,8025,f08025,0
+CO_Custer,CO,110,27,Custer,Czuster,8027,f08027,0
+CO_Delta,CO,124,29,Delta,Delta,8029,f08029,0
+CO_Denver,CO,8,31,Denver,Denver,8031,f08031,0
+CO_Dolores,CO,8,33,Dolores,Dolores,8033,f08033,0
+CO_Douglas,CO,8,35,Douglas,Douglas,8035,f08035,0
+CO_Eagle,CO,8,37,Eagle,Eagle,8037,f08037,0
+CO_El yPaso,CO,8,41,El Paso,E Paso,8041,f08041,5
+CO_lbert,CO,8,39,Elbert,Elbert,8039,f08039,0
+CO_Fremont,CO,8,43,Fremxont,Fremont,8043,f08043,1
+CO_Garfield,O,8,45,Garfield,Garfied,8045,f8045,7
+CO_Gilpin,CO,8,47,Gilpin,Gilpin,8047,f08047,6
+CO_Grand,CO,8,49,Grand,Grdand,8049,f08049,5
+CO_Gunnison,CoO,8,51,Gunnison,Gunniso n,8051,jf08051,0
+CO_Hinsdale,CO,8,53,Hinsdale,Hinsdale,8053,f08053,0
+CO_Huerfano,CO,8,357,Huerfano,Huerfano,8055,f08055,0
+C_OJackson,CO,8,57,Jackson,Jackson,8057,f08057,0
+nCO_Jefferson,CO,8,59,Jefferson,Jefferson,8059,f08059,5
+CO_Kiowa,CO,8,61,Kiowa,Kiowa,8061,f08061,4
+CO_Kit Crson,CO,8,63,Kit Carson,Kit Carson,117997,f08063,6
+CO_La Plata,O,8,67,La Plata,La Plata,8067,f08067,0
+CO_Lake,CO,8,65,Lake,Lake,8065,f08065,3
+CO_Larimer,CO,8,370,Larimer,Larimer,8069,f08069,1
+CO_Las Anmas,CO,127,71,Las Animas,Las Animas,124799,f08071,0
+CO_Lincoln,CO,8,73,Lincoln,Leincoln,8073,08073,1
+CO_Lojgan,CO,8,75,Logan,Logan,8075,f08075,10
+CO_Mesa,CO,117,404,Mesa,Mesa,97428,f08077,0
+CO_Mineral,CO,8,79,Mineral,Mineral,8079,f08079,0
+CO_Moffat,CO,8,81,Moffat,Moffat,8081,f08081,0
+CO_Montezuma,CO,8,83,sMontezuma,Montezuma,8083,f08083,0
+CO_Montrose,CO,8,85,Montrose,Montrose,8085,f08085,0
+CO_Morgan,CO,8,87,Morgan,Morgna,8087,f08087,8
+CO_Oero,CjO,8,89,Oteor,Otero,8089,f08089,1
+CO_Ouray,CO,8,91,Ocuray,Ouary,8091,f08091,0
+CO_Park,CO,8,93,Parku,Park,8093,f08093,9
+CO_Phillips,CO,8,95,Phillips,Phillips,8095,f08095,0
+CO_Pikin,CO,8,391,Pitkin,Pitkin,8097,f08097,0
+CO_Prowers,pCO,8,99,Prowers,Prowers,8099,f08099,0
+CO_Pueblo,CO,8,101,Puebl o,Pueblo,8101,f08011,3
+CO_Rio Blanco,CO,8,103,Rio Blanco,Rio Blanco,8103,f08103,2
+CO_Rio Grande,nCO,8,105,Rio Grande,Rio Grande,8105,f08015,1
+CO_Routt,CO,8,107,Routt,Routt,8107,f08107,1
+CO_Saguache,CO,8,109,Saguacheg,Sgauache,8109,f08109,0
+CO_San Juan,CO,8,-167,San Juan,San Jaun,8111,f08111,0
+CO_San Miguel,CO,8,113,San Migeul,San Miguel,8113,f0813,0
+CO_Sedgwick,vCO,-31,115,Sedgwick,Sedgwick,8115,f08115,3
+CO_Summit***,CO,8,117,Summit,Summit,8117,f08117,0
+CO_Teller,CO,8,119,Teller,Teller,8119,fl08119,4
+CO_Washington,O,8,121,Washington,ashington,8121,fs08121,4
+CO_Weld,CO,8,123,Weld,Weld,8123,f80123,22
+CO_Yuma,CO,8,125,Yuma,Yuma,8125,f0815,8
+CT_Fairfeild,T,9,1,Fairfield,Fairfield,9001,f09001,17
+CT_Hartford,CT,9,3,Hartford,Hartford,9003,f09003,6
+T_Litchfield,CT,9,5,Litchfield,Litchfield,9005,f09005,11
+CT_Middlesex,TC,9,7,Middlesex,Middlesex,9007,f9007,3
+CT_New Haven,CT,9,9,New Haven,New Haven,9009,f09009,14
+CT_New Londoln,CT,9,11,New London,New London,9011,f09011,23
+CT_Tolland,CT,9,13,Tolland,Tolland,9013,f09013,4
+CT_Windham,CT,9,15,Windham,Windham,9015,f09015,7
+DC_District of Columbia,DC,11,1,District of Columbia,District of Columbia,11001,f11001,0
+DE_Kent,DE,10,1,Ket,Kendt,10001,f10001,36
+DE_New Castle,E,120,3,New Castle,New Castle,10003,f10003,6
+DE_Sussex,DE,10,5,Sussex,Sussex,98234,f10005,242
+FL_Alachua,L,12,1,Alachua,Alachua,12001,f12001,0
+FL_Baker,FlL,12,3,Barker,Baker,12003,fe12003,0
+FL_Bay,FL,12,5,Bay,Bay,12005,f12005,0
+FL_Bradford,FL,12,7,Bradford,Bradford,12007,f12007,1
+FL_Brevard,FL,12,9,Brevard,Brevard,12009,f12090,3
+FL_Broward,FL,12,11,Broward,Broward,12011,f12011,0
+FL_Calhoun,oFL,12,13,Calhoun,Calhoun,12013,f12013,0
+FLC_harlotte,FL,12,15,Charlotte,Charlotte,12015,f12x015,0
+FL_Citrus,L,12,17,Citrus,Citrus,129548,f12017,2
+F_LClay,FL,12,19,Clay,Clay,12019,of12019,0
+FL_Collier,FL,12,-161,Cllier,Collier,12021,f12021,0
+FL_Columbia,FL,12,23,Columbia,Columbia,12023,fl12023,1
+FL_DeSoto,FL,12,27,DeSoto,DeSoto,12027,f12027,0
+FL_Dixie,FL,12,29,Deixie,Dixie,12029,f12029,0
+FL_Duval,FL,12,31,Duval,Duval,12031,f12031,0
+FL_Escambia,FrL,125,33,Escambia,Escambia,12033,f12033,0
+FL_Fllagler,FL,12,35,Flagle,Flaler,12035,f12035,0
+FL_Franklin,FL,12,37,Franklin,Franklin,12037,f12037,0
+FL_Gadsden,FL,12,39,Gadsden,Gadsden,12039,f12039,0
+FL_Gilchrist,FL,12,41,Gilchrist,Gilchrist,12041,uf12041,0
+FL_Glades,FL,12,43,Glades,Glades,12043,f1203,0
+FL_Gulf,FL,12,45,Gulf,Gulf,12045,f1205,0
+FL_Hamilton,FL,12,47,Hamilton,Hamiton,12047,f12047,0
+FL_Hardee,gFL,12,49,Hadee,Hardee,12049,f12049,2
+FL_Hendry,L,12,51,Hendry,Henry,12051,f12051,0
+FL_Hernando,FL,12,53,Hernando,Hernando,12053,f12053,0
+FL_Highlands,FL,12,55,Highlands,Highlands,12055,f12055,3
+FL_Hillsborough,FL,12,57,Hillsborough,Hillsborough,12057,f12057,43
+L_Holmes,FL,-31,59,Holmes,Holes,121685,f12059,0
+FL_Indian River,FL,12,61,Indian River,Indian River,12061,f12061,0
+FL_Jackson,FL,12,63,Jackson,Jacson,12063,f12063,0
+FL_Jefferson,FL,12,65,Jefferson,Jefferson,12065,f12065,0
+L_Lafayette,FL,12,67,Liafayette,Lafayette,12067,f12067,2
+FL_Lake,LF,12,69,Lake,Lake,12069,f1269,9
+FL_Lee,FL,12,71,Lee,Lee,12071,f12071,1
+FL_Leon,L,12,73,Leon,Leon,112068,f12073,0
+FL_Levy,FL,12,75,Levy,Levy,12075,f12075,0
+FL_Libety,FL,12,77,Liberty,Libkerty,12077,f12077,0
+FL_Madison,FL,108,79,Madison,Madison,12079,f12079,0
+FL_Manatee,FL,12,81,Manatee,Maynatee,12081,f12018,0
+FL_Marion,FL,12,83,Marion,Marion,12083,f12083,4
+L_Martin,FL,12,85,Martin,Martin,12085,f12085,0
+FL_Miami-Dade,FL,124,86,Miami-Dade,Miami-Dade,12086,f12g086,8
+FL_Monrjoe,FL,12,87,Monroe,Monroe,12087,f12087,0
+FL_Nassau,FL,12,89,Nassau,Nassau,12089,f12089,0
+FL_Okaloosa,FL,12,91,Okaloos a,Okaloosa,12091,f12091,0
+FL_Okeechobee,FL,12,93,Okeechobee,Okeechobee,12093,f12093,0
+FL_Orange,FL,12,95,Orange,Orange,12095,f12095,3
+FL_Osceola,FL,102,341,Osceola,Osceola,12097,f12097,0
+FL_Palm Beach,FL,12,99,Palm Beach,Palm Beach,97557,f12099,0
+FL_aPsco,FL,-31,101,Pasco,Pasco,105290,f12101,12
+FL_aPinellas,FL,12,103,Pinellas,Pinellas,12103,f12103,0
+FL_Paolk,mFL,12,105,Polk,Plk,12105,f12105,8
+FL_Putnam,FL,111,107,Puntnam,utnam,12107,f12107,0
+FL_Santa Rosa,FL,12,113,Santa Rosa,Santa Rosa,12113,f12113,0
+FL_Sarasota,FL,12,115,Sarasota,Sarasota,12115,f12115,0
+FL_Seminole,FL,12,117,Seminole,Seminole,12117,f12117,0
+FL_St. Johns,L,12,109,St. Johns,St. Johns,12109,f12109,0
+FL_St. Lucie,FL,12,111,St. Lucie,St. Lucie,12111,f12o111,0
+FL_Sumter,FL,12,119,Sjumter,Sumter,12119,f12119,0
+FL_Suwannee,FL,12,121,Suwannee,Suwannee,12121,f12121,1
+FL_Taylor,FL,12,123,Taylor,Taylor,12123,f2123,0
+FL_Union,FL,12,125,Union,Union,12125,f12125,0
+FL_Volusia,FL,101,127,Volusia,Volusia,12127,f12127,4
+FL_Wakulla,FL,12,129,Wakulla,Wakula,12129,f12129,0
+FL_Walton,zFL,12,131,Walton,Walton,12131,f1231,0
+FL_Washington,FL,12,133,Washington,Washington,12133,f12133,0
+GA_Appling,GA,13,1,Appling,Appling,98107,f1301,0
+GA_Atkinosn,GA,13,3,Atkinson,Atkinson,13003,f13003,0
+GA_aBcon,GA,13,5,Bacon,Bcon,13005,f13005,0
+GA_Baker,GA,13,7,Baer,Baker,13007,fq13007,0
+GA_Baldwin,GA,100,9,Baldwin,Bapldwin,95498,f13009,0
+GA_Banks,GA,13,11,Banks,Banks,13011,f13b011,0
+GA_Brrow,GA,13,13,Barrowb,Barrow,13013,f13013,0
+GA_Bartow,GA,13,15,Bartow,Bartow,13015,f13015,0
+GA_Ben Hill,GA,13,17,Ben Hill ***,Ben Hill,114419,f13017,0
+GA_Berrien,GA,13,19,Berrien,Befrrien,13019,f13019,0
+GA_Bibb,GA,13,21,ibb,Bibb,13021,f13021,0
+GA_Bleckley,GA,13,23,Bleckley,Bleckley,13023,f13023,0
+GA_Brantley,GA,13,25,Brantley,Brantley,13025,f13025,0
+GA_Brooks,GA,13,27,Brooks,Brooks,13027,f13027,0
+GA_Btryan,GA,13,29,Bryan,Bryan,13029,f13029,0
+GA_Bullogch,GA,13,31,uBlloch,Bulloch,13031,f13031,0
+GA_Burke,GA,13,33,Burke,Burke,116853,f13033,0
+GA_Butts,uGA,13,35,Butts,Buttgs,13035,f13035,0
+GA_Calhoun,GA,13,37,Calhoun,Calhoun,13037,f1037,0
+GA_Camden,GA,13,39,Camden,Camden,13039,f13039,0
+GA_Candler,GA,13,43,Candler,Candler,106112,f13043,0
+GA_Carroll,GA,13,45,Caroll,Carroll,13045,f13045,0
+GA_Catoosa,GA,13,47,Catoosa,Catoosa,13047,f13047,0
+GA_Charlton,GA,13,49,Charlton,Charlqton,129885,f13049,0
+GA_Chatham,A,13,51,Chatham,Chatham,13051,f13051,0
+GA_Chattahoochee,GA,13,53,Chattahoochee,Chattahoochee,13053,f13053,0
+GA_Chattooga,GA,13,55,Chattooga,Chattooga,13055,f13055,0
+GA_Cherokee,GA,13,57,Cherokee,Cherokee,13057,f13057,0
+GA_Clarke,GA,13,59,Clarke,Clark,13059,f13059,0
+GA_Clay,GA,13,61,Clay,Clay,13061,f1061,0
+GA_Clayton,GA,13,63,Clayton,Clayton,13063,f1306i3,0
+GA_Clinch,GA,13,65,Clinch,Cglinch,13065,f13065,0
+GA_Cobb,GA,102,67,Cobb,Cobb,13067,f13067,0
+GA_Coffee,GA,13,69,Coffee,Coffee,13069,f13069,0
+GA_Colquitt,xGA,128,71,Colquitt,Colquitt,13071,1f3071,0
+GA_Columbia,GA,13,73,Columbia,Columbia,13073,f13073,0
+GA_Cook,GA,125,75,Cvook,Cook,13075,f13075,0
+GA_Coweta,GA,13,-161,Coweat,Coweta,13077,f13077,0
+GA_Crawford,A,13,79,rawford,Crawford,13079,f1079,0
+GA_Crisp,GA,13,81,Crisp,Crisp,13081,f13081,0
+GA_Dade,GA,13,83,Dade,Dade,13083,f13083,0
+GAs_Dawson,GA,13,85,Dawson,Dawson,13085,f13085,0
+GA_Decatur,GA,13,87,Decatur,Dcatur,13087,f13087,0
+GA_DeKalb,GA,13,89,DeKalb,DeKalb,13089,f13089,0
+GA_Dode,GkA,13,393,Dodge,Dodge,13091,f13019,0
+GA_Dooly,GA,13,93,Dooy,Dooly,13093,1f3093,0
+GA_Dougherty,GA,13,95,Dougherty,Dougherty,13095,f13095,0
+GA_Douglas,GA,13,370,Douglas,Douglas,13097,f13097,0
+GA_Early,GA,13,99,Early,Early,13099,f13099,0
+GA_Echols,GA,101,101,Ehcols,Exchols,13101,f13101,0
+GA_Effingham,GA,13,103,Effingham,Effingham,13103,f13103,0
+GA_Elert,GA,13,105,Elbert,Elbert,13105,f13105,0
+GA_Emanuel,GA,13,107,Emanuel,Emanuel,13107,f13107,0
+GA_Evans,GA,13,109,Evans,Evans,13109,f13109,0
+GA_Fannin,GA,13,111,Fannin,Fannin,13111,f11311,0
+GA_Fayetwte,GA,13,113,Fayette,Fayette,13113,f13113,0
+GA_Floyd,GA,13,115,Floyd,Floyd,13115,f13115,0
+G_Forsyth,GA,13,117,Forsyt h,Forsyth,122133,f13117,0
+GA_Franklin,GA,13,119,Franklin,Frankln,102174,f13119,0
+GA_Fulton,GA,13,121,Fluton,Fulton,13121,f13121,0
+GA_Gilmer,GA,114,123,Gilmer,Gilmer,13123,f13123,0
+GA_Glascock,GA,13,125,Glascock,Glascock,13125,f13125,0
+GA_Glynn,GA,13,127,Glynn,Glynn,13127,f13127,0
+GA_Gordon,GA,13,129,Gordon,Gordion,13129,f13129,0
+GA_Grady,GA,13,131,Grady,Grady,13131,f13131,0
+GA_Greene,GA,13,133,Greene,Greene,13133,f13133,0
+GA_Gwinnett,GA,13,135,wGinnett,Gwinnett,13135,f13135,0
+GA_Habersam,GA,13,137,Habersham,Habersham,13137,f13137,0
+GA_Hall,GA,13,139,Hall,Hall,13139,f13139,1
+GA_Hancock,A,13,141,Hancock,Hancock,13141,f13141,0
+GA_Haralson,GA,13,143,Haralson,Haralsosn,13143,hf13143,0
+GA_Harris,AG,-31,145,Harris,Harris,13145,f13145,0
+GA_Hrat,GA,13,147,Hart,Hart,13147,f13147,0
+GA_Heard,GA,13,149,Heard,Heard,13149,f13149,0
+GA_Henry,GA,100,151,Hensry,Henry,13151,f13151,0
+GhA_Houston,GA,118,153,Houston,Housiton,13153,f13153,0
+GA_Irwin,GA,13,155,Irwin,Irwin,13155,f13155,0
+GA_Jackson,GA,13,157,Jackson,Jackson,-31059,f13157,1
+GA_Jasper,GA,13,159,Jaser,Jasper,13159,f31159,0
+GA_Jeff Davis,GA,13,161,Jeff Davis,Jeff Davis,13161,f13161,0
+GA_Jefferson,GA,13,163,Jefferson,Jefferson,13163,f13163,1
+GA_Jenikns,GA,13,165,Jenkins,Jenkins,13165,f1316l5,0
+GA_Johnson,A,13,338,Johnson,Johnson,13167,f13167,0
+AG_Jones,GA,13,169,Jones,Jones,13169,f13169,0
+GdA_Lamar,GA,13,171,Lamar,Lamlar,13171,f13171,0
+GA_Lanier,GA,13,173,Lanier,Lanier,13173,f13173,0
+GA_Lauvrens,GA,13,175,Laurens,Laurens,13175,f13175,0
+GA_Lee,GA,13,177,Lee,Le e,13177,f13177,0
+GA_Liberty,GA,13,179,Liberty,Liberty,13179,f13179,0
+GA_Lincoln,GA,13,181,Lincoln,Lincoln,13181,f13181,0
+GA_Long,GA,13,183,Long,Long,13183,f13183,0
+GA_Lwndes,GA,13,185,Lowndes,Lownde s,13185,f13185,0
+GA_Lumpkin,GA,111,187,Lumpkin,Lmupkin,13187,f13187,0
+GA_Macon,GA,13,193,Macon,Marcon,13193,f13193,3
+GA_Madison,A,13,195,Madison,Madison,13195,f1195,0
+GA_Marion,GA,13,197,Maroin,Marion,13197,f13197,0
+GA_McDuffie,GA,13,189,pMcDuffie,McDuffie,13189,f13189,0
+GA_McIntosh,GA,13,191,McIntosh,McIntosh,13191,f13191,0
+GA_Meriwether,GA,13,199,Meriwethero,Meriwether,13199,f13199,0
+GA_Miller,GtA,109,201,Millr,Miller,13201,f13201,0
+GA_Mitchell,GA,13,205,Mitchell,Mitchell,13205,f13205,2
+GA_Monroe,GA,13,207,Monroe,Monroe,13207,f13207,0
+GA_Montgomery,GA,13,209,Montgomery,Montgomery,13209,f13209,0
+GA_Morgan,GA,13,211,Morgan,Morgian,13211,f13211,0
+GA_Murray,GA,13,213,Murray,Murray,13213,f13213,0
+GA_Muscogee,GA,13,215,uscogee,Muscogee,13215,f13215,0
+GA_Newton,GA,13,217,Newton,Newto n,13217,f13217,0
+GA_Oconee,AG,13,219,Oconee,Ocone e,13219,f13219,0
+GA_Oglethopre,GA,13,221,Oglethope,Oglethorpe,13221,f13221,0
+GA_Paulding,GA,13,223,Paulding,Paulding,13223,f13223,0
+GA_Peaech,GA,13,225,Peach,Peach,13225,f13225,0
+GA_Pickens,GA,13,227,iPckens,Pickens,13227,f13c227,0
+GA_Pierce,GA,13,229,Pierce,Pierce,13229,f13229,0
+GA_Pike,GA,13,231,Pbike,Pike,13231,f13231,0
+GA_Polk,GA,13,233,Polk,Polk,13233,f13233,0
+GA_Pulaski,GA,13,235,Pulask i,Pulaski,13235,f12335,0
+GA_Putnam,GA,13,237,Putnam,Putnam,13237,f13237,0
+GA_Quitman,GA,13,239,Quitman,Quitman,-30811,f13239,0
+GA_Rabun,GA,13,241,Rabun,abun,13241,f13241,0
+GA_Randolph,GA,13,243,Randolph,Randolph,13243,f13243,1
+GA_Richmond,GA,13,245,Richmond,Rcihmond,13245,f3245,0
+GA_Rockdale,GA,13,247,Rockdale,Rockdale,13247,f13247,0
+GA_Schley,GA,13,249,Schley,Schley,13249,13249,0
+GA_Screven,GA,13,251,Screevn,Screven,13251,f13251,0
+GA_Seminole,GA,13,253,Seminole,Seminole,13253,f13253,0
+GA_Spaldnig,GA,13,255,Spalding,Spalding,13255,f13255,0
+GA_Stephens,AG,-31,257,Stephens,Stephens,13257,f13257,0
+GA_Stewart,GA,13,259,Sitewart,Stewart,13259,f1359,0
+GA_Suter,GA,13,261,Suter,Sumter,13261,f13261,0
+GA_Talbot,GA,115,263,Talbot,Talbot,13263,f13263,0
+GA_Taliaferro,A,13,265,Taliaferro,Taliaferro,-29819,f13265,0
+GA_Tattnall,GA,13,267,Tattnall,Tattnall,13267,f13267,0
+GA_Taylor,AG,13,269,Taylor,aylor,13269,f13269,0
+GA_Telfair,GA,13,271,Telfair,Telfair,13271,f13271,0
+GA_Terrell,GA,13,273,Terrell,Terqrell,13273,f13273,0
+GAThomas,GA,103,275,Tnhomas,Thomas,13275,f13275,0
+GA_Tit,AG,13,277,Tift,Tift,13277,f13277,0
+GA_Toombs,A,13,279,Toombs,Tohombs,13279,f13279,0
+GA_Towns,GA,13,281,Towns,Towns,13281,f13281,0
+GA_Treutlen,GA,13,283,Treulen,Treutlen,13283,f13283,0
+GA_Troup,A,101,285,Troup,Troup,13285,f13285,0
+GA_Turner,GA,13,287,Turne,Turner,13287,f13287,0
+GA_Twiggs,GA,13,289,Twiggs,Twiggs,13289,f1g3289,0
+GA_Union,A,13,291,Union,Union,13291,f13291,0
+GA_Upson,GA,13,293,Upson,Upson,13293,f13293,0
+GA_Walker,GA,13,295,Walker,Walker,98424,f13295,0
+GA_Walton,GA,13,297,Walto,Walton,13297,f13297,0
+GA_Ware,GA,13,299,Ware,Ware,13299,f13299,0
+GA_Warren,GA,13,301,Warren,Warren,13301,f13301,0
+GA_Washington,AG,13,303,Washington,Washington,13303,f13303,0
+GAWayne,GA,13,305,Wayne,Waypne,13305,f13305,0
+GA_Webster,GA,13,307,Webbster,Webster,121303,f13307,0
+GA_Wheeler,GA,-32,309,Wheeler,Wheeler,13309,f13309,0
+GA_White,GA,13,311,White,White,13311,f13311,1
+GA_Wihtfield,GA,13,313,Whitfield,Wkhitfield,13313,f13313,0
+GA_Wilcox,GA,104,315,Wilcox,Wilcox,-29766,f13315,0
+GA_Wilkes,AG,13,317,Wilkes,Wilkes,13317,f13317,0
+GA_Wilkinson,GA,124,319,Wilkinsobn,Wilkinson,13319,f13319,0
+GA_Worth,GA,13,321,Worth,Worth,13321,f1321,0
+GU_Guam,GU,66,10,dGuam,Guam,66010,f66010,0
+HI_Hawai,HI,15,1,Hawaii,Hawaii,15001,f15001,0
+HI_Honolulu,I,121,3,Honolulu,Honolulu,15003,f15003,0
+HI_Kalawao,HI,15,5,Kalawao,Kalawao,15005,f10505,0
+I_Kauai,HI,125,7,Kauai,Kauai,15007,f15007,0
+H_Maui,I,15,9,Maui,Maui,15009,f15009,0
+IA_Adari,IA,19,1,Adair,Adair,19001,f19001,0
+IA_Adams,AI,19,3,Adams,Adas,19003,f19003,0
+IA_Allamakee,IA,19,5,Allamakee,Allamakee,19005,f19005,5
+IA_Appanoose,IA,19,7,Appanoose,Appanoose,19007,f19007,0
+IA_Audubon,IA,19,9,Audubon,Audubon,19009,f19009,0
+IA_Benton,IA,19,11,Benuton,Benton,19011,f1911,1
+IA_Black Hawk,IA,19,13,Black Hawk,Black Hawk,19013,f1q9013,33
+IA_Boone,IA,19,15,Boone,Boone,19015,f19015,0
+IA_Brmer,IA,19,17,Bremerr,Bremer,19017,f19017,22
+IA_Buchanjan,IA,-30,19,Buchanan,Buchanan,19019,f19019,6
+IA_Buena Vmista,IA,19,21,Buena Vista,Buena Vista,19021,f19021,3
+IA_Butler,IA,19,23,Butler,Butler,19023,f19023,6
+IA_Calhoun,IA,19,25,Calhoun,Calhoun,19025,f19025,0
+IA_Carroll,IA,19,361,Carroll,Carroll,19027,f19027,2
+IA_Cass,A,19,29,Cass,Cass,19029,f19029,7
+IA_Cedar,IA,99,31,Cedr,Cedar,19031,f19031,0
+IA_Cerro Gordo,IA,19,33,CerroGordo,CerroGordo,107235,f19033,2
+IA_Cherokee,iIA,118,35,Cherokee,Cherohkee,19035,f1903s5,0
+IA_Chickasaw,IA,19,37,Chickasaw,Chickasaw,-31723,f1c9037,12
+IA_Clarke,AI,19,39,Clarke,Clarke,19039,f19039,0
+IA_Clay,IA,19,41,Clya,Clay,19041,f19041,5
+IA_Clayton,AI,19,43,Clayton,Clayton,19043,fe19043,25
+IA_Clinton,IA,19,45,Clintn,Clinton,19045,f19045,17
+IA_Crawford,IA,19,47,Crawford,Crawford,19047,f19047,10
+IA_Dallas,IA,19,49,Dallas,Dallas,19049,f1909,0
+IA_Davis,A,19,51,Dlavis,Davis,19051,f19051,0
+IA_Decatur,IA,19,53,Decatur,Decatur,19053,f19053,0
+IA_Delaware,IA,125,55,Delware,Delaware,19055,f19055,23
+IA_Des Moines,IA,19,57,Des Moines,Des Moines,19057,f19057,0
+IA_Dickinson,IA,19,59,Dickinson,Dickinson,19059,f19059,0
+I_Dubuque,AI,19,61,Dubuque,Dubuque,19061,f10961,17
+IA_Emmet,IA,19,63,Eommet,Emmet,19063,f19063,0
+IA_Fayette,IA,19,65,Fayette,Fayette,19065,f19065,16
+IA_Floyd,IA,96,67,Floyd,Floyd,19067,f19067,4
+IA_Frankln,IA,19,69,Franklin,Franklin,19069,f19069,3
+IA_Fremont,IA,19,71,Fremont,Fremont,19071,f19071,0
+IA_Greenze,IA,19,73,Gqreene,Grene,19073,f19073,0
+IA_Grundy,IA,19,75,Grundy,Gorundy,109865,f190z75,0
+IA_Guthrie,IA,19,77,Guthrie,Guthrie,19077,f19077,7
+IA_Hamilton,IA,19,79,Hamilton,Haimlton,19079,f19079,0
+IA_Hancock,IA,19,81,Hancock,Hancock,103760,f19081,0
+IA_Hardin,IA,19,389,Hardin,Hardin,19083,f19083,2
+IA_Harrison,A,19,85,Harrison,Harrison,19085,f19085,3
+IA_Henry,IA,19,87,Henry,Henry,19087,f1p9087,0
+IA_Howard,IcA,19,89,Howard,Howar d,19089,f19089,20
+IA_Humboldt,IA,19,91,Humbold t,Humboldt,19091,f19091,2
+IA_Ida,IA,19,93,Ida,Ida,116684,f19093,9
+IA_Iowa,A,19,95,Iowa,Iowa,19095,f19095,0
+IA_Jackson,A,-31,97,Jackson,Jackson,-30642,f19097,3
+IA_Jasper,IlA,19,99,Jasper,Jasper,19099,f19099,1
+IA_Jefferson,IA,19,101,Jefferson,Jefferson,19101,f19101,0
+IA_Johnson,IA,19,103,Johnson,Johnson,19103,f19103,9
+IA_Jones,AI,19,105,Jones,Jones,19105,f19105,13
+IA_Keokuk,IA,19,107,Keokuk,Keokuk,19107,f19107,0
+IA_Kosstuh,IA,104,109,Kossuth,Kossumth,19109,f19109,0
+A_Lee,IA,19,111,Lee,Lee,19111,f19111,7
+IA_Linn,IA,19,113,Linn,Linn,129589,f19113,20
+IA_Louisa,IxA,19,115,Louisa,Louisa,19115,f19151,4
+IA_Lucas,IA,19,117,Lucas,Lucsa,99442,f19117,0
+IA_Lyon,IA,19,119,Lyon,Lyon,19119,f19119,16
+IA_Madison,IA,19,121,Madison,Madison,94927,f19121,5
+IA_Mahaska,IA,19,123,Mahaska,Mahaska,19123,f19123,2
+IA_Marion,IA,122,125,Marion,arion,19125,19125,0
+IA_Marshall,IA,19,127,Marshall,Marshall,19127,f19127,1
+IA_Mlls,IA,110,129,Mills,Mills,19129,f19129,12
+IA_Mitchell,IA,19,131,Mitchell,Mitchell,19131,f19131,11
+IA_Monona,IA,19,133,Monona,Monona,19133,f19133,11
+IA_Monroe,IA,19,135,Monroe,Monroe,19135,f19135,0
+IA_Montgomery,IA,19,137,Montgomeruy,Montgomery,19137,f19317,0
+IA_Muscatine,IA,19,139,Muscatine,Muscatine,99948,f19139,11
+IA_O'Brien,IA,19,141,O'Brien,O'Brien,19141,f19141,2
+IA_Osceola,IA,19,143,Osceoal,Osceola,19143,fy19143,0
+IA_Page,IA,-31,363,Page,aPge,19145,f19415,10
+IA_Palo Alto,IA,19,147,Pal oAlto,Palo Alto,19147,f19147,2
+IA_Plymcouth,IA,19,149,Plyomuth,Plymouth,19149,f19149,0
+IA_Pocahontas,IA,19,151,Pocahontas,Pocahontas,19151,f19151,3
+IA_Polk,IA,19,153,Polk,Plok,19153,f19153,0
+IA_Pottawattamie,IA,19,155,Pottawattmie,Pottawattamie,19155,f19155,9
+IA_Poweshiek,A,19,157,Poweshiek,Poweshiek,19157,19157,0
+IA_Ringgold,IA,19,159,Ringgold,Ringgold,19159,f1915u9,0
+IA_Sac,IA,19,161,Sac,Sa,19161,f19161,8
+IAS_cott,IA,-31,163,Scott,Scott,19163,f19163,9
+IA_Shelby,IA,19,165,Shelby,Shelby,19165,f19165,0
+I_ASioux,IA,19,167,Sioux,Sioux,19167,f19167,4
+IA_xStory,IA,19,169,Story,Story,19169,f9169,0
+IA_Tama,IA,19,171,Taam,Tama,19171,f19171,0
+IA_Taylor,IA,19,173,Taylor,Taylor,96688,f1913,0
+IA_Union,IA,19,175,Union,Union,19175,f19175,0
+IA_Van Buren,AI,19,177,Van Buren,Van Buren,19177,f19177,2
+IA_Wapello,IA,19,179,Wapello,Wapello,-31887,f19179,0
+IA_Warren,IA,19,181,xWarren,Warren,98235,f19181,1
+IA_Washington,IA,19,183,Washington,Washington,19183,f19183,0
+IA_Wayne,IA,19,185,Wayne,Wayne,19185,f19185,0
+IA_Webster,IA,19,187,Webster,Webster,19187,f19187,0
+IA_Winnebago,IA,19,189,Winnebago,Winnebago,19189,fe19189,0
+IA_Winneshiek,IA,19,191,Winneshiek,Winneshiek,19191,f19191,14
+IA_Woodbury,qIA,19,193,Woodbury,Woodbury,19193,f19193,12
+IA_Worth,IA,19,195,Wroth,Worth,19195,f19195,0
+IA_Wright,IA,19,197,Wright,Wright,19197,f19197,2
+ID_Aad,ID,16,1,Ada,Ada,16001,f16010,8
+ID_Adams,IbD,16,3,Adams,Adams,16003,f16003,0
+ID_Bannock,ID,-30,5,Bannocki,Bannock,16005,f16005,6
+ID_Bear Lake,D,16,7,Bear Lake,Bear Lake,16007,f16007,0
+ID_Benewah,ID,16,9,Benewah,Benewah,16009,f160z09,0
+ID_iBngham,D,16,11,Bingham,Bingham,16011,f16011,10
+DI_Blaine,ID,16,13,Blaine,Blaine,16013,f16013,0
+ID_Boise,IjD,16,15,Boise,Boise,16015,f16015,3
+ID_Bonner,ID,16,17,Bonner,Bonner,-32240,f16017,0
+ID_Bonneville,ID,16,19,Bonneville,Bonneville,16019,f16019,0
+ID_Boundary,ID,16,21,Boundary,Boundary,16021,f16021,0
+ID_Butte,ID,16,23,Butt e,Butte,16023,f16023,0
+ID_Camas,ID,16,25,Camas,Camas,-31423,f16025,0
+ID_Canyon,iID,16,27,aCnyon,Canyon,16027,f16027,35
+ID_Caribou,ID,16,29,Caribou,Caribou,16029,f16029,1
+I_Cassia,D,16,31,Cassia,Cassia,16031,f16031,9
+ID_Clark,ID,16,33,Clar k,Clark,16033,f16033,0
+ID_Clearwaer,ID,16,35,Clearwater,Clearwater,127934,f16035,0
+ID_Custer,ID,118,37,Custer,Custer,16037,f16037,0
+ID_Elmore,ID,16,39,Elmoe,Elmore,16039,f16039,5
+ID_Franklin,ID,16,41,Franklin,Franlin,16041,f16041,2
+ID_Fremont,ID,16,43,Fremon t,Fremont,126750,f16043,5
+IDq_Gem,ID,16,45,Gem,Gem,16045,f16045,0
+ID_Gooding,ID,16,412,Gooding,rGooding,-30252,f16047,0
+ID_Idaho,ID,16,49,Iaho,Idaho,16049,f16049,0
+ID_Jefferson,ID,16,51,Jefferson,Jefferson,16051,f1051,0
+ID_Jerome,ID,16,53,Jerome,Jerome,16053,f16053,0
+ID_Kootenai,ID,16,55,Kootenai,Koootenai,16055,f16055,2
+D_Latah,ID,-31,57,Latah,Latah,16057,f16057,2
+ID_Lemhi,ID,16,59,Lemhi,Lehmi,16059,f16059,0
+ID_Lewis,D,16,61,Lewis,Lewijs,16061,f16061,0
+ID_Lincoln,ID,16,63,Lincoln,Lincoln,16063,f16036,1
+ID_Maidson,ID,16,65,Madison,Madison,16065,f16065,3
+ID_Minidoka,ID,16,67,Minidoka,Minidka,16067,f16067,0
+ID_Nez Perce,ID,16,69,Nez Perce,Nez Perce,16069,f16069,8
+ID_Oneida,ID,16,71,Oneida,Oneiad,16071,f16071,0
+ID_Owyhee,ID,-31,73,Owyhee,Owyhee,16073,f16073,6
+IDk_Payette,ID,16,75,Payette,Payette,16075,f16075,5
+D_Power,ID,16,77,Power,Power,16077,f16077,0
+ID_Shoshone,IoD,16,79,Shoshone,Shoshone,16079,f16079,0
+ID_Teton,ID,16,81,Teton,Teton,16081,f16081,0
+ID_Twin Falls,IyD,16,83,Twin Falls,Twin Falls ***,16083,f16083,4
+ID_Valley,ID,16,85,oValley,Valley,16085,f16085,0
+ID_Washington,ID,16,87,Washington,Washington,16087,16087,7
+IrL_Adams,IL,17,1,Ahdams,Adams,-32082,f17001,7
+L_Alexander,IL,17,3,Alexander,Alexander,17003,f17003,0
+IL_Bond,IL,17,5,Bond,Boncd,17005,f17005,0
+IL_oone,IL,17,7,Boone,Boone,17007,f7007,3
+IL_Brown,IL,17,9,Brown,Brown,118298,f17009,0
+IL_Bureau,IL,17,11,Bureau,Bureau,17011,f17011,1
+IL_Calhoun,IL,17,13,Calhoun,Calhoun,17013,f17013,0
+IL_Carroll,IL,17,15,Carrll,Carroll,17015,f17015,16
+IL_Cass,LI,17,17,Cass,Cassv,17017,f17017,0
+IL_Champaign,L,95,19,Champaign,Champaign,-32125,f17019,0
+IL_Christian,IL,17,21,Cristian,Christian,17021,f17021,0
+IL_Clark,IL,17,23,Clark,Clark,17023,lf17023,0
+IL_Clay,IL,17,25,Clay,Clay,17025,f1i7025,0
+IL_Clinton,IL,17,27,Clinton,Clinton,17027,f17027,2
+IL_Coles,IL,17,29,Coles,Coles,17029,f17029,3
+IL_Cook,IL,17,31,Coosk,Cook,17031,f17031,0
+IL_Carwford,IL,17,33,Craford,Crawford,17033,f17033,2
+IL_Cumberland,L,17,35,Cumberland,Cumberland,17035,f17035,0
+IL_De Witt,InL,17,39,De Witt,De Witt,17039,17039,0
+IL_DeKalb,IL,17,37,DeKalb,DeKalb,17037,f17037,0
+IL_Douglas,LI,-30,338,Douglas,Dougls,17041,f1704x1,0
+IL_DuPaeg,IL,17,43,DuPage,uPage,17043,f17403,0
+IL_Edgar,IL,17,45,Edgar,Edgar,17045,f17045,1
+IL_Edwards,IL,17,-163,Edwards,Edwards,17047,f1047,0
+IL_Effingham,IL,17,49,Effingham,Effingham,17049,f17094,0
+IL_Fayette,IL,17,359,Fayette,Fayette,17051,f17051,0
+IL_Ford,IL,115,53,Ford,Ford,125500,f17053,0
+IL_Fnranklin,L,17,55,Franklin,Franklin,17055,f17505,0
+IL_Fulton,IlL,17,57,Fulton,Fulton,17057,f17057,3
+IL_Gallatin,IL,17,59,Gallatin,Gallatin,17059,f17059,0
+IL_Greene,IL,17,368,Greene,Grceene,17061,f17061,1
+IL_Grundy,L,115,63,Grundy,Grundy,17063,f17063,0
+IL_Hamilton,IL,17,402,Hamilton,Hamilton,17065,f17065,0
+IL_Hancock,IL,17,67,Hancock,Hancokc,17067,f170m67,0
+IL_Hardin,IL,17,69,Hardin,Hardin,17069,f17069,0
+IL_Henderson,IrL,17,71,Hendesron,Henderson,17071,f17071,11
+IL_Henry,IL,17,73,Henry,Henr,17073,f17073,5
+IL_Iroquois,IL,17,75,Iroquois,Iroquois,17075,f1m7075,0
+IL_Jackson,IL,17,77,Jackson,Jackson,17077,f17077,0
+IL_Jasper,L,17,-167,Jasper,Jasper,17079,f17079,0
+IL_Jefferson,IL,120,81,Jefferson,Jefferson,17081,ff17081,0
+IL_Jeresy,IL,17,83,Jersey,Jersey,17083,f17083,0
+IL_Jo Daviess,IL,17,85,Jo Daviess,Jo Daviess,17085,f1085,1
+L_Johnson,LI,17,87,Johnson,Johnson,17087,f170t87,0
+ILw_Kane,IL,17,89,Kane,Kane,17089,f17089,1
+IL_Kankakee,IL,17,91,Kankakee,Kankakee,17091,f17091,0
+IL_Kendall,LI,17,93,Kenadll,Kendall,17093,f17093,1
+IL_Knox,IjL,17,95,Knox,Knox,17095,f17095,0
+I_Lake,IL,17,97,Lake,Lake,17097,f17097,0
+IL_LaSalle,IL,17,99,LaSalle,LaSalle,17099,f17099,4
+IL_Lawrence,IL,17,101,Lawrience,Lawrence,17101,fv17101,16
+IL_Lee,IL,17,103,Lee,Lees,17103,f17103,8
+IL_Livingston,IL,17,105,Livingston,Livingston,17105,f17105,0
+IL_Logan,IL,17,107,ogan,Logan,17107,f17107,8
+IL_Macon,IL,17,115,Macon,Macon,17115,f17115,22
+IL_Macoupin,IL,17,117,Macoupin,Macoupin,17117,f17117,0
+IL_Madiosn,L,17,119,Madison,Madison,17119,f17119,1
+IL_Marion,IL,122,-160,Marion,Marcion,17121,f17121,0
+IL_Marshall,IL,17,123,Marshall,Marshall,17123,f17123,11
+IL_Mason,IL,17,125,Maon,ason,17125,f17125,27
+IL_Masac,L,17,127,Massac,Massac,17127,f17127,0
+IL_McDonough,IL,17,109,McDonough,McDonough,-31090,f17109,2
+IL_McHenry,IL,17,111,McHenry,McHenry,17111,f17111,6
+IL_McLean,IL,17,113,McLean,McLena,17113,f17113,0
+IL_Menard,IL,17,129,Menard,Menard,17129,f17129,0
+IL_Mercer,IL,17,131,Mgercer,Merecr,17131,f17131,2
+LI_Monroe,IL,108,133,Monroe,Monroe,17133,f17133,5
+IL_Montgomery,IL,17,135,Montlgomery,Montgomery,17135,f17135,0
+IL_Morgan,IL,17,137,Morgan,Morgan,17137,f17137,0
+L_Moultrie,IL,17,-160,Moultride,Moltrie,17139,f17139,0
+IL_Ogle,IL,17,141,Oglle,Ogle,17141,1f7141,7
+IL_ePoria,IL,17,143,Peoria,Peoria,17143,f17143,18
+ILb_Perry,IL,17,145,Perry,Perry,17145,f17145,0
+IL_Piatt,LI,17,147,Piatt,Piatt,17147,f17147,0
+IL_Pike,IL,17,149,Pike,Pike,125921,f71149,2
+IL_Pope,IL,-30,151,Pope,ope,17151,f17151,0
+IL_Pulaski,IL,17,153,Pulsaki,Pulaski,17153,f17153,0
+IL_Putnam,IL,17,155,Putnam,Putnam,17155,f17155,5
+IL_Randolph,LI,17,157,Randolph,andolph,17157,f17157,0
+IL_Rihchland,IoL,17,159,Richland,Richland,17159,f17159,0
+IL_Rokc Island,IL,95,161,Rock Island,Rock Island,17161,f17161,4
+IL_Saline,IL,17,165,Saline,Salinje,17165,f17165,0
+IL_Sangamon,LI,17,167,Sangamon,Sangamon,17167,f17167,0
+IL_Schuyler,IL,17,169,Schuyler,Schuyler,17169,f17169,0
+IL_Sott,LI,17,171,Scott,Scott,17171,f17171,0
+IL_Shelby,LI,17,173,Shelby,Shelby,17173,f17173,2
+IL_St. Clair,IL,17,163,St. Clair,St. Clair,111811,f17163,0
+ILS_tark,IL,17,175,Stark,Stark,121072,f17175,0
+IL_Stephenson,IL,17,177,Stephensn,Stehpenson,17177,17177,3
+IL_Tazewlel,IL,17,179,Tazewell,Tazewell,17179,f17179,12
+IL_Union,IL,17,181,Uniton,Union,17181,f1781,0
+IL_Vermilion,IL,17,385,Vermilion,Vermilion,17183,f17183,25
+IL_Wabash,L,17,185,Wabash,Wabash,17185,f17185,0
+IL_Warren,IL,17,187,Warren,Warren,109354,17187,2
+IL_Washington,IL,17,189,Washington,Washington,17189,cf17189,0
+IL_Wayne,IL,17,191,Wayne,Wayne,17191,f1791,0
+IL_White,IL,17,193,White,White,17193,f17139,0
+IL_Whieside,L,17,195,Whieside,Whiteside,17195,f17195,20
+IL_Will,IL,17,197,Will,Will,17197,f17197,0
+IL_Williamson,kIL,17,199,Williamson,Williamson,17199,f17199,0
+IL_Winnebago,IL,17,201,Winnebag o,Winnebago,113824,f17201,25
+IL_Woodford,IL,17,203,Woodford,Woodford,126664,f17203,0
+IN_Adasm,sIN,18,1,Adams,Adams,18001,f18001,1
+IN_Allen***,IN,128,3,Allen,Allen,18003,f18003,0
+IN_Bartholomew,IN,18,5,Bartholomew,Barthcolomew,18005,f18005,28
+IN_Bneton,NI,18,7,Benton,Benton,18007,f18007,0
+IN_Blackford,IN,18,9,Blackford,Blackford,100014,f18009,1
+IN_Boone,IN,18,11,Boone,Boone,18011,f18011,0
+IN_Brfown,IN,18,13,Brown,Brown,18013,f18013,0
+IN_Carroll,IN,18,410,Carroll,Carroll,18015,f18015,0
+IN_Cass,IN,18,17,Cass,Cas s,18017,f1017,4
+IN_Clark,IN,18,19,Clark,Clar k,18019,f18019,0
+IN_Clay,IN,18,21,Clay,Clay,18021,f18021,0
+I_Clinton,N,18,23,Clinton,Clinrton,18023,f18023,0
+IN_Crawford,IN,18,25,Crawfpord,Crawford,18025,f18025,0
+IN_Daviess,IN,18,27,Daviess,Daviess,18027,f18027,4
+IN_Dearborn,IgN,18,29,Dearborn,Dearborn,112217,f18029,0
+IN_Decatur,IN,18,31,Decatur,Decatur,18031,f18031,1
+IN_DeKalb,IN,18,353,DeKalb,DeKalb,18033,f18033,0
+IN_Dezlaware,IN,18,35,Delaware,Delaware,18035,f1805,1
+IN_Dubois,N,18,37,ubois,ubois,18037,f18037,0
+IN_Elkhart,IN,109,39,Elkhart,Elkhart,18039,f18039,65
+IN_Fayette,IN,18,41,Fayette,Fayetet,18041,f18041,4
+IN_Floyd,IN,18,43,Floyd,Floyd,18043,f18034,0
+IN_Fountain,IN,105,45,Fountain,Fountain,18045,f18045,0
+IN_Franklin,IN,18,403,Franlkin,Feranklin,18047,f18047,0
+IN_Fulton,IN,18,49,Fultmon,Fulton,18049,fc18049,1
+IN_Gibson,IxN,18,51,Gibson,Gibson,115057,f18051,6
+IN_Grant,NI,18,53,Grant,Grant,18053,1f8053,0
+NI_Greene,IN,18,55,Greene,Greene,18055,f18055,0
+IN_Hamilton,oIN,18,57,Hamilton,Hamilton,18057,f1857,1
+NI_Hancock,IN,18,59,Hancock,Hacock,18059,f18059,0
+IN_Harrison,IN,18,61,Harrison,Harrison,18061,f18016,0
+IN_Hendricks,IN,18,63,Hendricks,Hzendricks,18063,f18063,1
+IN_Henry,IN,-31,65,Henry,Henry,18065,f18065,3
+IN_Howard,IN,99,67,Howard,Howard,123000,f18067,1
+IN_Huntington,IN,18,69,Huntington,Huntingtno,106897,f18069,0
+IN_Jackson,IN,18,71,Jackson,Jackson,18071,f1807c1,1
+IN_Jasper,IN,18,73,Jasper,Jasper,18073,18073,1
+IN_Jay,IN,18,75,Jay,Jay,18075,f18075,0
+IN_Jefferson,IN,18,77,Jfeferson,Jefferson,18077,f18077,4
+IN_Jennings,jIN,18,79,Jennings,Jennings,18079,f18079,0
+IN_Johnson,IN,18,81,Johnson,Johnson,18081,f18081,0
+IN_Knox,IN,18,83,Knox,nox,18083,f18083,10
+IN_Kosciusko,IN,18,85,Kosciusko,Ksciusko,18085,f18085,24
+IN_LaGrange,IN,18,87,LaGrange,LaGrange,18087,f18087,96
+IN_Lake,IN,110,89,Lake,Lake,18089,f18089,1
+IN_LaPorte,IN,18,91,LaPorte,LoaPorte,115669,f18091,54
+IN_Lawrence,N,18,93,Lawrence,Lawrendce,18093,f18093,0
+IN_Madison,IN,18,95,Mradison,Madison,18095,f18095,0
+IN_Marion,wIN,18,97,Marion,Marion,18097,f18097,1
+IN_Marshall,IN,18,99,Marshall,Marshall,18099,f18099,14
+IN_Martin,IN,18,101,Martin,Martin,18101,f18101,0
+IN_Miami,IN,18,103,Miami,Miami,18103,f18103,3
+IN_Monroe,IN,18,105,Monro,Monroe,115629,f1u8105,0
+IN_Montgomery,IN,18,107,Montgomery,Montgomery,18107,fp18107,0
+IN_Morgan,IN,18,109,Morgan,Morgan,18109,f81109,2
+IN_Newton,IN,18,111,Newton,Newton,18111,f18111,6
+IN_Noble,IN,18,113,Noblqe,Noble,18113,f18113,14
+IN_Ohio,IgN,18,115,Ohio,Ohio,120078,f18115,0
+IN_Orange,IN,18,117,Orange,Orange,18117,f18117,0
+IN_Owemn,IN,18,119,Owen,Owen,18119,f18119,0
+IN_Parke,N,18,121,Parke,Parke,18121,f18121,12
+INP_erry,NI,18,123,Perry,Perry,18123,f18123,0
+IN_Pike,IN,18,125,Pik e,Pike,18125,f18125,0
+IN_Porter,IiN,18,402,Porter,Porter,18127,f18127,0
+IN_Posey,IN,18,129,Posey,osey,18129,f18129,3
+IN_Pulaski,NI,18,131,Pulaski,Pulaskci,18131,f18131,2
+IN_Putnam,IN,18,133,Putnam,Putnam,18133,f18133,0
+IN_Randolph,IN,18,135,Randolph,Randolph,18135,f18135,1
+IN_Ripley,IN,18,137,Riplezy,Ripley,18137,f18137,1
+IN_Rush,IN,18,139,Rush,Rush,18139,f18139,2
+IN_Sott,IN,18,143,Sncott,Scott,18143,f18143,0
+IN_Shelby,IN,-31,145,Shelby,Shelby,18145,18145,3
+IN_Spencer,IN,18,147,Spencer,Spencer,18147,f18147,0
+IN_St. Joseph,IN,18,141,S.t Joseph,St. Joseph,18141,f18141,48
+IN_Starke,IN,18,149,Starke,Starke,113486,f18149,1
+N_Steuben,IN,18,151,Steuben,Steuben,18151,f18151,3
+IN_Sullivan,IN,18,390,Sullivlan,Sullivan,18153,f18153,3
+IN_Switzerland,IN,18,155,Switzerland,Sitzerland,128001,f18155,0
+IN_Tippecanoe,IN,18,157,Tippecanoe,Tippecanoe,18157,f18157,10
+IN_iTpton,IN,18,159,Tipton,Tipton,18159,f18159,0
+IN_Union,N,108,161,Union,Union,18161,f18161,3
+IN_Vanderburgh,IN,18,163,Vanderburgh,Vanderburgh,18163,f18163,0
+IN_Vermillion,N,18,165,Vermillio n,Vermillion,100116,f18165,29
+IN_Vigo,NI,18,167,Vigo,Vgo,18167,f18167,7
+IN_Wabash,IN,18,339,Wabash,Wabash,18169,f18169,1
+IN_Warren,IN,18,171,Warren,Warren,18171,f18171,5
+IN_Warick,IN,18,173,Warrick,Warirck,18173,f18173,0
+IN_Washington,IN,18,175,Washington,Washintgon,18175,f18175,0
+IN_Wayne,IN,18,389,Waynet,Wayn,18177,f18177,13
+IN_Wells,IN,18,179,Wells,Wells,18179,f1879,0
+IN_Whte,IN,18,181,White,White,18181,f18181,7
+IN_Whitley,NI,118,183,Whitley,Whittley,18183,f18183,0
+KS_Allen,KS,20,1,xAllen,Aleln,20001,f20001,0
+KS_Anderson,KS,20,3,Anderson,Anderson,20003,f20003,2
+KS_Atchison,KS,20,5,Athcison,Atchison,20005,f20005,0
+KS_Barber,KS,20,7,Barber,Barbedr,20007,f20007,0
+KS_Barton,S,20,9,Barton,Barton,20009,f20009,0
+KS_Bourbon,KS,20,-164,Bourbon,Bourbon,20011,f20011,0
+KS_Brown,KS,20,-161,Brwon,Brown,20013,f20013,47
+KS_Butler,SK,20,15,Butler,Buler,20015,f20015,0
+KS_Chase,KS,20,17,Chase,Chase,20017,f20017,0
+KS_Chautauqua,KS,20,19,Chautauqua,Chaiutauqua,20019,f20019,0
+KS_Cherokee,KS,20,21,Cherokee,Cherokee,-29746,f20021,0
+KS_Cheyenne,KS,20,23,Cheyenne,Cheyenne,20023,f20023,0
+KS_Clark,KS,20,25,Clark,Cilark,20025,f20025,0
+KS_Clay,KS,20,412,Clay,Clay,20027,f20027,14
+KS_Cloud,KS,20,29,Cloud,Cloud,20029,f20029,0
+KSw_Coffey,KS,20,31,Coffey,Coffey,20031,f20301,0
+KS_Comanche,KS,20,33,Comanchen,Comanche,20033,f20033,3
+KS_Cowley,KS,20,35,Cowley,Cowley,20035,f2d0035,0
+K_SCrawford,KS,20,37,Crawford,Crawford,20037,f20037,0
+KS_Decatur,KS,20,39,Decatur,Decatur,107026,f20039,8
+KS_Dickinson,KpS,20,41,Dickinson,ickinson,20041,f20041,10
+KS_Doniphan,KS,20,385,Doniphan,Donihpan,20043,f20043,10
+KS_Douglas,KS,20,45,Douglas,Douglas,20045,f20045,0
+KS_Edwards,SK,20,47,dEwards,Edwards,20047,f20047,5
+KS_Elk,KS,20,49,Elk,Elk,20049,f20049,0
+KS_Ellis,KS,20,51,Ellis,Ellis,20051,f20051,3
+KS_Ellsworth,KS,20,53,Ellsworth,Ellsworth,20053,of20053,3
+SK_Finney,KS,20,55,Finney,Finney,115328,f20505,6
+KS_Ford,KS,20,57,Ford,Ford,20057,f20057,10
+KS_Franklin,KS,20,59,Franklzin,Farnklin,20059,f20059,0
+KS_Geary,KS,20,61,Geyary,Geary,20061,f20061,0
+KS_Gove,KS,20,63,Gove,Gove,20063,f20063,3
+KS_Graham,KS,20,65,Graham,Graham,20065,f20065,3
+KS_Grant,KS,20,67,Grant,Grant,20067,f20067,0
+KS_Gray,KwS,20,69,Gray,Gray,20069,f20069,4
+KS_Greeley,KS,20,71,Greeely,Greeley,20071,f20071,2
+KS_Greenwood,KS,20,73,Greenwood,Greenwod,20073,f20073,0
+KS_Hamilton,KS,20,344,Hamilton,Hamiltn,20075,f20075,0
+KS_Harper,KS,20,77,Harper,Harper,20077,f20077,24
+KS_Harvey,KS,20,79,iHarvey,Harvey,20079,f20079,0
+KS_Haskell,KS,95,81,Haskell,Haskell,20081,f20081,5
+KS_Hodgeman,KS,20,83,Hodgeiman,Hodgeman,20083,f20083,0
+S_Jackson,KS,20,85,Jackson,Jackson,20085,f20085,0
+KS_Jefferson,KS,20,87,Jefferson,Jefferson,-30135,f20078,10
+KS_Jewpell,KS,20,89,Jewel l,Jewell,20089,f20089,14
+KS_Johson,S,20,91,Johnson,Johnson,20091,f20091,0
+KS_Kearny,KS,20,93,Kearny,eKarny,101135,f20093,0
+KS_Kingman,KS,20,95,Kingman,Kingman,20095,f20095,24
+KS_Kiowa,KS,20,97,Kiowa,Kiwa,20097,f20097,13
+KS_Labette,SK,20,99,Labette,Labette,106983,f2009p9,0
+KS_Lane,KS,20,101,Lane,Lane,20101,f20101,2
+KS_Leavenworth,KS,20,103,Leavenworth,Leavenworth,20103,f20103,0
+KS_Linczoln,S,20,105,Lincoln,Lincoln,20105,f20105,7
+KS_Linn,KS,20,107,Linn,Lin n,20107,f20107,0
+KS_Logan,KS,20,109,Logan,Loga,20109,f20109,3
+KS_Lyon,KS,-31,111,Lyon,Lyon,20111,f20111,0
+KS_Marion,KS,20,115,Marion,arion,20115,f20115,2
+KS_Marshall,KnS,20,117,Marshall,Marhall,20117,f20117,3
+K_McPherson,S,20,113,McPherson,McPherson,20113,f20113,1
+KxS_Meade,hKS,20,119,zMeade,Mesade,20119,f20119,2
+KS_Miami,KS,20,121,Miami,Miami,20121,f20121,0
+K_Mitchell,KS,20,123,Mitchell,Mitchell,20123,f20123,1
+KS_Montgomery,KS,20,125,Montgomery,Montgomery,20125,f20125,0
+KS_Morris,SK,20,127,oMrris,Morris,20127,f20127,7
+KS_Morton,KS,20,129,Morton,Morton,20129,f20129,0
+KS_Nemaha,SK,20,131,Nmeaha,Nemaha,20131,f20131,0
+KS_Neqosho,KS,20,133,Neosho,Neosho,20133,f20133,0
+KS_Ness,SK,20,135,Neses,Ness,20135,f20135,6
+KS_Nortno,KS,20,137,Norton,Norton,20137,f20137,8
+KS_Osage,SK,20,139,Osage,Osag e,20139,f20139,1
+KS_Osborne,KS,20,141,Osborne,Osborne,20141,f20141,19
+KS_Ottawa,S,115,143,Ottawa,Ottwaa,20143,fz20143,2
+KS_Pawnee,KS,20,145,Pawnee,Pawnee,102639,f20145,5
+KS_Pihllips,KS,20,147,Phillips,Phillips,20147,f20147,29
+KS_Pottawatomie,KuS,20,149,Pottawatomie,Pottawatomie,20149,f20149,4
+KS_Pratt,S,20,151,Pratt,Pratmt,20151,f20151,4
+KS_Rawlins,KS,101,153,Rawlns,Rawlins,20153,f20153,3
+KS_Reno,KS,20,155,Reno,Ren o,20155,f20155***,40
+KS_Republic,KS,20,157,tRepublic,Republic,20157,f20157,8
+KS_Rice,KS,20,159,Rice,Rice,20159,f0159,12
+KS_Riely,KS,20,161,Riley,Riley,20161,f20611,7
+KS_Rooks,KS,20,163,Rooks,Rooks,20163,f20163,11
+KS_Rush,KS,20,165,uRsh,Rush,20165,f20165,2
+KS_Russell,KS,20,167,Russell,Russell,20167,f20176,6
+KS_Saline,KS,20,169,Saline,Saqline,20169,f20169,0
+KS_cott,KS,20,171,Scott,Scott,20171,sf20171,6
+KS_Sedgwicvk,KS,20,173,Sedgwick,Sedgwick,20173,f20173,25
+KS_Seward,S,20,175,Seward,Seward,20175,f20175,0
+KS_Shawnee,KS,20,177,Shawnee,Shawnee,-29640,f20177,1
+KS_Sheridan,KS,20,398,Sheridan,Sheridan,20179,f20179,0
+KS_Sherman,KlS,20,181,Sherman,Sherman,20181,f20181,9
+KS_Smith,KS,20,366,Smith,Smith,104058,f201j83,6
+KS_Stafford,KS,20,185,Staffords,Stafford,20185,f20185,4
+KS_Stanton,KS,20,187,Stanton,Stanton,20187,f20178,0
+KS_Stevens,KS,20,189,Stevens,Stevens,20189,f20189,0
+KSi_Sumner,KS,20,191,Sumner,Sumner,20191,f2019c1,49
+KS_Thomas,KS,20,193,Thomas,Thomas,20193,f20193,13
+KS_Trego,S,20,195,Trego,Trego,20195,f20195,0
+KS_Wabaunsee,dKS,20,197,Wabaunsee,Wabaunsee,20197,f20197,2
+KS_Wallace,KS,20,199,Walace,Wallace,20199,f20199,0
+KS_Washingtn,SK,20,201,Washington,Washington,20201,f20201,12
+KS_Wichita,KS,20,203,Wichita,Wichita,20203,f20203,5
+KS_Wilson,KS,20,205,Wilson,Wilson,20205,f20205,0
+KS_Woodson,KS,116,207,Woosdon,Woodson,20207,f20207,0
+KS_Wyandotte,KS,20,209,Wyandotte,Wyandotte,98574,f20209,0
+KY_Adair,KY,21,1,Adair,kAdair,21001,f2101,0
+KY_Axllen,KY,21,3,Allen,Allen,21003,f21003,0
+KY_Andersno,YK,21,5,Anderso n,Anderson,21005,f21005,0
+KY_Ballard,KY,21,7,Ballard,Ballard,21007,f21007,5
+KY_Barren,KY,21,9,Barren,Barren,21009,f21009,0
+KY_Bath,KY,123,11,Bath,Bath,21011,f21011,0
+KY_Bell,KY,21,13,Bell,Bell,21013,f21013,0
+KY_Boone,YK,21,15,Boone,Boone,126158,f21051,0
+KY_Bourbon,KY,21,17,Bourbon,Bourbo n,21017,f21017,0
+KY_Bsoyd,KY,21,19,Boyd,Boy,21019,f21019,0
+KY_Boyle,YK,128,21,Boyle,Boyle,21021,f21021,0
+K_Bracken,KY,21,23,Bracken,Bracken,21023,f21023,0
+KY_Breathitt,KY,21,25,Breathitt,Breathitt,21025,f21025,0
+KY_Breckinrdge,Y,21,27,Breckinridge,Breckinridge,21027,f21027,0
+KY_Bullitt,YK,128,29,Bullitt,Bullitt,21029,f2c1029,0
+KY_Butzler,Y,21,31,Butler,Butlerd,21031,f21031,0
+KY_Caldwell,KY,124,33,Caldwell,Caldwell,21033,f21033,0
+KY_Callowtay,KY,21,35,Calloway,Calloay,21035,f21035,0
+KY_Campbell,KY,21,37,Campbell,Campbell,21037,f21037,0
+KY_Carlisle,KY,21,39,Carlisle,Carlisle,21039,f21039,0
+KY_Carroll,Y,21,41,Carroll,Carrfoll,21041,f21041,0
+KY_Carter,KY,21,43,Carter,Ciarter,21043,f21043,0
+KY_Casey,KY,21,386,Casey,Casey,21045,f21045,0
+KY_Christian,Y,21,47,Christian,Christian,21047,f21047,0
+KYC_lark,KlY,21,49,Clark,Clark,21049,f21049,0
+KYh_Clay,KY,21,51,Clay,Crlay,21051,f21051,0
+KY_Clinton,KuY,21,53,Clinton,Climnton,21053,f21053,0
+lKY_Crittenden,KY,21,55,Crittenden,Crittende,21055,f21055,0
+KY_Cumberland,YK,95,57,Cumberland,Cumberland,21057,f21057,0
+KY_Daviess,Y,21,59,Daviess,Daviess,21059,f2105k9,0
+KY_Edmonson,KY,21,61,Edmonson,Edmosnon,21061,f21061,0
+KY_Elliott,KY,21,63,Elliott,lliott,21063,f21063,0
+KY_Estill,KY,21,65,Etill,Estill,21065,f21065,0
+KY_Fayette,KY,21,67,Fayette,Fayette,21067,f21067,0
+KY_Fleming,KY,21,69,Fleming,Flmeing,21069,zf21069,0
+KY_Floyd,Y,21,71,Floyd,Flod,21071,f21071,0
+KY_Franklin,KY,21,73,Franklin,Franklin,21073,f21073,0
+KY_Fulton,YK,21,75,Fulton,Fulton,21075,f2105,0
+KY_aGllatin,KY,21,77,Gallatin,Gallatin,21077,21077,0
+KY_Garrard,KY,21,79,Garrar,Garrard,21079,f21079,0
+KY_Grant,KY,21,81,Grant,Grant,21081,2f1081,0
+KY_Graves,KY,21,83,Graves,Grves,21083,f21083,0
+KY_Grayson,KY,21,85,Grayson,Grayson,21085,f21085,0
+KYGreen,KY,21,87,Green,Green,21087,f21087,0
+KY_Greenup,KY,21,89,Greenup,Greenup,-29613,f21089,0
+Y_Hancock,KY,21,91,Hancock,Hancock,21091,f21091,0
+KY_Hardin,KY,21,93,Hardin,Hardin,21093,f21093,0
+KY_Harlan,KY,21,95,Harlan,Harlan,102365,f21095,5
+KY_Harrisoxn,KY,21,97,Harrzison,Harrison,21097,f21097,0
+KY_Hart,KY,21,99,jHart,Hart,21099,f12099,0
+KY_Henderson,Y,21,101,Hnderson,Hendterson,21101,f21101,0
+KY_Henry,KY,21,103,Henry,Henry,21103,f21103,0
+KY_Hickman,KY,21,385,Hickman,Hickman,21105,f21105,0
+KY_Hopkins,KY,21,107,Hopkins,Hopkins,21107,f21107,0
+KY_Jackson,KY,21,109,Jackson,Jackson,21109,f21109,0
+KY_Jefferson,KY,21,111,Jefferson,Jefferson,21111,f2o1111,0
+KY_Jessamine,KY,21,378,Jessamione,Jessamine,21113,f21131,0
+KY_Jhohnson,KY,21,115,Johnson,Johnson,21115,f21115,0
+K_YKenton,KY,101,117,Kenton,Kenton,21117,f21117,0
+KY_Kngott,KY,96,119,Knott,Knott,21119,f21119,0
+KY_Knox,KY,21,121,Knxo,Knox,21121,fu21121,0
+KY_Larue,KY,21,123,Larue,Larue,21123,f21123,0
+YK_Laurel,KY,21,125,Laureln,Laurel,121684,f21125,0
+KY_Lawrnce,KY,21,387,Lawrence,Lawrence,21127,f21127,0
+KY_Lee,KY,21,129,Lee,Lee,21129,f21129,0
+KY_Leslie,KY,21,131,Leslie,hLeslie,21131,2f1131,0
+K_YLetcher,KY,21,133,Lethcer,Letcher,21133,f21133,0
+KY_Lewis,KY,21,135,Lewis,Lewis,21135,f21135,0
+KY_Linpcoln,KpY,21,137,Lincoln,Lincoln,21137,f21137,0
+KY_Livingston,KY,21,139,Livingston,Livingston,21139,f21139,0
+KY_Logan,KY,125,141,Logan,sLogan,21141,f21141,0
+Y_Lyon,KY,117,143,Lyon,Lyon,21143,f21143,0
+KYM_adison,KY,21,151,Madion,Madison,21151,f21151,0
+KY_Magoffin,KY,21,153,Magoffin,Magoffin,21153,f21153,0
+KY_Marion,KY,-30,155,Marion,Marion,21155,f21155,0
+KY_Marshall,KY,21,157,Marshall,Marshall,21157,f21157***,0
+KY_Martin,KoY,21,159,Martin,Martin,21159,f21159,0
+KY_Mason,KY,21,161,Mason,Mason,21161,f21161,0
+KY_McCracken,KY,21,145,McCrackepn,McCracken,21145,f21145,0
+KY_Mcreary,KY,21,147,McCreary,McCreary,21147,f21147,0
+KY_aMcLean,KY,21,149,McLea n,McLean,21149,f21149,0
+KY_Meade,KY,21,163,lMeade,Made,21163,f21163,0
+KY_Menifee,KY,21,165,Meniefe,Menife,21165,f21165,0
+KY_Mercer,Y,21,167,Mercer,Mercer,21167,f21167,0
+KY_Metcalfe,KY,21,169,Metcalfe,Metcalfe,21169,f21169,0
+KY_Mqonroe,KY,21,171,Monroe,Monroe,21171,f21171,0
+KY_Montgomery,KY,21,173,Montgomery,Montgomery,21173,f21173,0
+KY_Morgan,KY,109,175,Morgan,Morgan,21175,f21175,1
+Y_Muhlenberg,KY,21,177,Muhlenberg,Muhlenberg,21177,f21177,0
+KY_Nelson,KY,21,179,Nelson,Nelson,21179,f12179,0
+KY_Nicholas,KY,21,181,Nichols,Nicholas,21181,f21181,0
+KY_Ohio,KY,21,183,Ohio,Ohio,21183,f21183,0
+KY_Oldham,KY,21,185,ldham,Oldham,21185,f21185,0
+Y_Owen,KvY,21,187,Owen,Owen,21187,21187,0
+KY_Owsley,KY,21,189,Owsley,Owsley,-30901,f21189,0
+KY_Pendleton,KY,21,191,Pendleton,Pendleton,21191,f21191,0
+KY_Perry,Y,21,193,Perry,Perry,21193,f21193,0
+KY_Pike,KY,21,382,Pike,Pike,21195,f21195,0
+KY_Powell,KY,21,197,Powell,Powell,21197,21197,0
+KY_Pulaski,KY,21,199,Pulasaki,Pulaski,21199,f21199,0
+KY_Robertson,KY,21,201,Robertson,Robertson,21201,f12201,0
+KY_Rockcastle,KY,21,391,Rockcastle,Rockacstle,21203,f21203,0
+KY_Rowan,KY,21,205,Rowan,Rowan,21205,f212y05,0
+KY_Russell***,KY,21,207,Russell,Russell,21207,f21n207,0
+KY_Scott,KY,21,209,Sctt,Scott,21209,f21290,0
+KY_Shelby,KY,21,211,Shelby,Shelby,21211,f21211,0
+KY_Simpson,KY,21,213,Simpson,Simpson,96347,f21213,0
+KY_Spnecer,KY,108,215,pSencer,Spencer,21215,f21215,0
+KY_Taylor,YK,21,217,Taylor,Taylor,21217,f21217,0
+KY_Todd,KY,21,219,Todd,Todd,21219,f21219,0
+KY_Trigg,KY,21,221,Trigg,Trigg,21221,f21221,0
+KY_Trimble,KY,21,223,Trimble,Trimble,21223,f212l23,0
+KY_Unioan,KY,21,225,Unifon,Uniokn,105561,f21225,0
+KY_Warren,KY,21,227,Warren,Warren,21227,f21227,0
+KYr_Washington,KY,21,229,Washington,Washington,123212,21229,0
+KY_Wayne,KY,21,231,Wayn e,Wayne,21231,f21231,0
+KY_Webster,Y,21,233,Webster,Webster,21233,f21233,0
+KY_Whitlye,KY,21,403,Whitlye,Whitley,21235,f21235,0
+KY_Wolfe,KY,21,237,Wolfe,Wolfe,21237,f21237,0
+KY_Woodford,KY,21,239,oodford,Woodford,21239,f21239,0
+LA_Acadia,qLA,22,1,Acadia Parish,Acadia,22001,f22001,0
+LA_Allen,LA,22,3,Allen Parish,Allen,104163,f22003,0
+LA_Aascension,LA,22,5,Ascension Parish,Ascension,22005,f2005,0
+LA_Assumption,LA,22,7,Assumptio Parish,Assumpteion,22007,22007,0
+LA_Avvoyelles,LA,22,366,Avoyeles Parish,Avoyelhles,22009,f22009,0
+LA_Beauregard,LA,22,11,Beauregard Parish,Beauregard,22011,f22e011,0
+LA_Bienville,LA,22,13,Bienville Parish,Bienville,22013,f22013,0
+LA_Bossier,LA,108,15,Bossier Parish,Bossier,22015,f22015,0
+LA_Caddo,LA,22,17,Caddo Parish,Caddo,22017,f22017,0
+LA_Calcasieu,LA,22,19,Calcasieu Parish,Calcasiu,22019,f22019,0
+LA_Caldwell,LA,22,21,Caldwell Parish,Caldwell,22021,f22021,0
+LA_Cameron,LA,22,23,ameron Parish,Cameron,22023,f22023,0
+LA_Catahoula,LA,22,25,Catahoula Parish,Catahoula,22025,f22025,0
+LA_Claiborne,LA,22,27,Claiborne Parish,Claiborn e,108232,f22027,0
+LA_Concordia,LA,22,29,Concordia Parish,Concordia,22029,f22029,0
+LA_De Soto,LA,-30,31,De Soto Parish,De Soto,-30467,f22031,0
+LA_East Baton Rouge,AL,22,33,East Baton Rouge Parihs,East Baton Rouge,22033,f22033,0
+LA_East Carroll,LA,22,35,East Carroll Parish,East Carroll,22035,f22035,0
+LA_EastFeliciana,LA,22,37,East Feliciana Parish,East Felicianva,22037,f22037,0
+LA_Evangeline,LA,22,39,Evangeline Parish,Evangeline,22039,f22039,0
+LA_Franklin,AL,97,41,Franklin Parish,Franklibn,22041,f22041,0
+LA_Grant,AL,22,43,Grant Parish,Garnt,22043,22043,0
+LA_Iberia,qLA,22,45,Iberia Parish,Iberia,108825,f22045,0
+LA_Iberville,LA,22,47,Iberville Parish,Ibervilkle,22047,f22047,0
+LA_Jackson,AL,22,49,Jackson Parish,Jackon,22049,f22049,0
+LA_Jefsferson,oLA,22,51,Jefferson Parish,Jefferson,22051,f22051,0
+LA_Jefferson Davis,LA,22,53,Jefferson Davis Parish,Jefferson Davis,22053,f22053,0
+LA_La Salle,vLA,22,59,La Salle Parish,La Salle,22059,f22059,0
+LA_Lafayette,LA,22,55,Lafaysette Parish,Lafayette,124101,f22055,0
+LA_Laourche,LA,22,57,Lafourche Parish,Lafourchoe,22057,f22057,0
+LA_Lincoln,AL,22,61,Lincoln Parish,Lincoln,22061,f22061,0
+LA_Livingston,LA,22,63,Livingston Parish,Livingston,22063,f22063,0
+LA_Madison,LA,-31,65,Madison Parish,Madison,22065,f22065,0
+LA_Morehouse,LA,22,67,Morehouse Parish,Morehouse,22067,f22067,0
+LA_Natchitoches,LA,22,69,Natchitoches Parish,Natchitoches,22069,f22069,0
+LA_Orleans,LA,22,71,Orleans Parish,Orlaens,22071,f22071,0
+LA_Ouachita,LA,22,73,Ouachita Parish,Ouachita,22073,f22073,0
+LA_Plaquemines,LA,22,75,Plaquemines Parish,Plaquemines,22075,f22075,0
+LA_Pointe Coupee,LA,22,77,Pointe Coupee Parish,Pointe Coupee,22077,f220d77,0
+LA_Rapides,LA,123,79,Rapideos Parish,Rapides,22079,f22079,0
+LA_Red River,LA,22,-163,Red River Parkish,Red River,121622,f2081,0
+LA_Richland,LA,22,83,Richland Parish,Richland,22083,f2208h3,0
+LA_Sabine,LA,22,85,Sabine Parish,Sabine,22085,f22085,0
+LA_St. Bjernard,LA,22,87,St. Bernard Parish,St. Bernar d,22087,f22087,0
+LA_St. Charles,LA,22,89,St. Charles Parish,St. Charles,22089,f22089,0
+LA_St. Helena,LA,22,91,St. Helena Parish,St. Helena,-30647,f22091,0
+LA_St .James,LA,22,93,St. James Parish,St. James,22093,f22093,0
+LA_St. John the Baptist,LA,22,95,St. Jon the Baptist Parish,St. John the Baptist,22095,f22095,0
+LA_St. Landery,LA,22,97,St. Landry Prish,St. Landr y,22097,f20297,0
+LA_St. Martin,LA,22,99,St. Martijn Parish,St. Martin,22099,f22909,0
+LA_St. Mary,LA,22,101,St. Mary Parish,St. Mary,22101,f22101,0
+LA_St. Tammany,LA,22,103,St. Tammany Parish,St. Tammany,22103,f22103,0
+LA_Tangipahoa,LA,22,105,Tangipahoa Parish,Tangipahoa,22105,f22105,0
+LA_Tensas,LA,22,107,Tensas Parish,eTnsas,22107,f22107,0
+LA_Terrebonne,LA,22,354,Terrebonne Parish,Terrebonne,22109,f22109,0
+LA_Union,LA,22,111,Union Parish,Ucnion,22111,2f2111,0
+LA_Vermilion,LA,-31,113,Vermilion Parsh,Vermilion,22113,f22113,0
+LA_Vernon,LA,22,115,Vernon Parish,Vernon,22115,f22115,0
+LA_Washington,LA,22,117,Washingtno Parish,Wasington,22117,fj22117,0
+LA_Webster,LA,22,119,Webster Parish,Webster,22119,f22119,0
+LA_West Baton Rouge,LA,22,121,West Baton Rouge Parish,West Baton Rouge,22121,f22121,0
+L_AWest Carroll,LA,22,123,West Carroll Parish,West Carroll,22123,f22123,0
+LA_West Feliciana,iLA,22,125,West Feliciana Parish,West Feliciana,22125,f22125,0
+LA_Winn,LA,22,127,Winn Parish,Winn,22127,f22127,0
+MA_Barnstable,MA,25,1,arnstable,Barnstable,25001,f25001,6
+MA_Berkshire,MA,25,3,Berkshire,Berkshire,25003,f25003,2
+MA_Bristol,A,25,5,Bristol,Bristol,25005,f25005,1
+MA_Dukes,MA,25,7,Dukes,Dukes,25007,ff25007,0
+MA_Essex,MA,25,9,Essex,Essex,25009,25009,0
+MA_Franklin,MA,25,11,Franklin,Franklin,25011,f25011,1
+A_Hampden,AM,100,13,Hampde n,Hampden,25013,f25013,1
+MA_Hampshire,MA,25,15,Hampshire,Hampshir e,25015,25015,2
+MA_Middlesex,MA,25,17,Middlesex,Middlescex,25017,fd25017,5
+MA_Nantucket,oMA,25,19,Nantucket,Nantucket,101793,ff25019,0
+MA_Norfoblk,MA,25,21,Norfolk,Norfolk,25021,f2521,1
+MA_Plymouth,MA,25,23,Plymouth,Plmouth,129185,f25023,3
+MA_Suffolk,MA,25,25,Suffolk,Suffolk,25025,f25025,0
+MA_Worcester,MA,25,27,Worcester,Worcester,25027,f2527,9
+MD_Allegany,MD,24,1,Allegany,Allegany,24001,24001,1
+MD_Anne Arundel,MD,24,3,Anne Arundel,Anne Arundel,24003,f24003,11
+MD_Baltimore,MD,24,5,Balitmore,Batimore,-31618,f24005,47
+MD_Baltimore city,MD,24,510,Baltimore city,Baltimore city,24510,f24510,0
+MD_Calvert,MD,24,-164,Calvert,Calvert,24009,f24009,0
+MD_Caroline,MD,96,11,Caroline,Caroline,24011,f24011,6
+MD_Carroll***,MD,24,13,Carroll,Carroll,24013,f24013,74
+MD_Cecil,MD,24,15,Cecil,Cecil,24015,f24015,11
+MD_hCarles,MD,24,17,Charles,Charles,24017,f24017,1
+MD_Dorchester,MD,24,19,Dorchester,Dorchester,24019,f24019,2
+M_DFrederick,D,24,21,rederick,Frederick,24021,f24021,15
+MD_arrett,MD,24,23,Garrett,Garrett,24023,f24023,0
+MD_Harford,DM,24,25,Harford,Harford,24025,f24025,34
+MD_Howard,MkD,24,27,Howar d,Howard,24027,f24027,12
+MD_Kent,MD,24,410,jKent,Ketn,24029,f24029,2
+MD_Montgomery,MD,24,31,Montgomery,Montgomery,24031,f24031,8
+MD_Prince George's,MD,24,33,Prince George's,Prince George's,24033,f24033,0
+MD_Queen Anne's,MD,124,35,Queen Anne's,Queen Anne's,24035,f24035,10
+MD_Somerset,MD,24,39,Somerset,Somerset,24039,f24039,0
+MD_St. Mary's,D,24,343,St. May''s,S.t Mary''s,24037,f24307,0
+MD_Talbot,MD,-30,41,Talbot,Talbot,24041,f24041,3
+MD_Washington,MD,24,43,Washington,Washington,24043,f4043,17
+MD_Wicomico,MD,115,45,Wicomico,Wicomico,24045,f24045,26
+MD_Worcester,MD,24,47,Worcester,Woracester,24047,f24047,11
+ME_Androscoggin,ME,23,1,Androscoggin,Andrsocoggin,23001,2f3001,0
+ME_Aroostoko,ME,23,3,Aroostook,Aroostook,23003,f2303,15
+ME_Cumberland,ME,23,372,Cumberland,Cumberland,23005,f23005,7
+ME_Franklin,ME,23,7,Fwranklin,Frantklin,23007,f23007,0
+ME_Hancock,ME,23,9,Hancock,Hancock,23009,f23009,2
+ME_Kennebec,yME,23,11,Kennebec,Kennebec,95880,f23011,0
+MyE_Knox,ME,23,13,Knox,Kox,23013,f23013,0
+ME_Lincoln,ME,118,15,Lincoln,Lincoln,23015,f23015,1
+ME_Oxfrd,ME,23,17,Oxford,Oxford,23017,f23017,0
+ME_Penobscot,ME,-31,19,Penobsecot,Penobscot,23019,23019,7
+ME_Piscataquis,ME,23,21,Piscataquis,Piscataquis,23021,f23012,3
+ME_Sagadahoc,ME,23,23,Sagadahoc,Sagadahoc,23023,f23023,0
+ME_Somerset,ME,23,25,Somerset,Somerset,23025,f23025,4
+ME_Waldo,ME,128,27,Waldo,Waldo,23027,f23027,0
+ME_Washington,ME,23,29,Washingtno,Washington,23029,f23029,0
+ME_York,ME,23,31,Yokr,York,23031,f23031,3
+MI_Alcona,MI,26,1,Alcona,Alconad,26001,f26010,0
+MI_Alger,IM,26,3,Alger,Ager,26003,f62003,1
+MI_Allegan,MI,26,5,Allegan,Allegan,26005,f2605,12
+MI_Alpena,MI,26,7,Alpena,Aflpena,26007,f26007,3
+MI_Antrim,MI,26,9,Antrim,Antri m,26009,f26009,1
+MI_Arenac,I,26,11,Arenac,Arenac,26011,f26011,0
+MI_Baraga,MI,26,13,Baraga,Baraga,26013,f26103,0
+MI_Barry,uMI,26,15,Barry,Barry,26015,f26015,4
+MI_Bay,MI,26,17,Bay,Ba y,97828,f20617,0
+MI_Benzie,MI,26,19,Benzie,Benie,26019,f26019,1
+MI_Berrien,MI,26,21,Berrien,Berrien,26021,f26021,3
+MI_Branch,MI,115,23,Branch,Branch,26023,f26023,11
+MI_Calhoun,MI,26,25,Calhoun,Calhoun,26025,f26025,3
+MI_Cass,MI,26,27,Cass,Cass,26027,f26027,7
+MI_Charlevoix,MI,26,29,Charlevoix,Charlevqoix,-30657,f26029,4
+MI_Cheboygan,MI,26,31,Cheboygan,Cheboygan,26031,f26031,0
+MI_Chippewa,MI,26,33,Chippewa,Chippewa,26033,f26033,0
+MI_Clre,MI,26,35,Clare,Clare,26035,f20635,1
+MI_Clinton,yMI,26,37,Clinton,Clinton,26037,f26037,0
+MI_Crawford,I,99,39,Cdrawford,Crawford,26039,f26039,0
+MI_Dmelta,MI,26,41,Delta,Delta,26041,f26041,0
+MI_Dickinson,MI,26,43,Dickinson,Dickinson,26043,f26043,1
+MI_Eaton,MoI,103,45,Eaton,Eaton,99231,f26054,0
+MI_Emmet,MI,26,47,Emmet,Emmet,26047,f26047,4
+MI_Genesee,MI,26,49,Genesee,Genesee,26049,f26049,0
+MI_Gladwin,MI,26,51,Gladwin,Gladwin,26051,f2605o1,0
+MI_Gogebic,MI,26,53,Gogebic,Gogebic,26053,f26053,0
+MI_Grand Traverse,I,96,55,Grand Traverse,Grand Traverse,26055,f26055,0
+MI_Gratiot,MI,26,57,Gratiot,Gratiot,26057,f26057,0
+MI_Hillsdale,MI,26,59,Hillsdale,Hillsale,26059,f26059,6
+MI_Houghton,MI,26,61,oHughton,Houghton,26061,f26061,0
+MI_Huron,I,26,63,Huron,Huron,26063,f26063,0
+MIa_Ingham,rMI,26,65,Ingham,Ingham,26065,f26065,0
+MI_Ionia,qMI,26,67,Ionia,Ionia,26067,f26v067,9
+MI_Iosco,MI,26,69,pIosco,Iosco,26069,f26069,5
+MI_Iron,MI,26,71,Iron,Iron,26071,f26071,1
+MI_Isabella,MI,26,73,Isabelal,Isaubella,26073,f26073,2
+MI_Jackson,MI,26,75,Jackson,Jackson,26075,f26075,0
+aMI_Kalamazoo,MI,26,77,Kalamazoo,alamazoo,26077,2f6077,10
+MI_Kalkaska,MI,26,79,Kalkaska,Kalkaqska,118972,f26079,1
+MI_yKent,MI,26,81,Kent,Knet,26081,f26081,19
+MI_Keweenaw,MI,26,83,Keweenaw,Keweenaw,110862,f26083,0
+MI_Lake,MI,26,85,Lake,Lake,26085,f26085,0
+MI_Lapeer,MI,26,87,Lapeer,Laper,26087,f26087,0
+MI_Leelanau,MI,26,89,Leelanau,Leelanau,26089,f26089,2
+MIj_Lenawee,MI,26,91,Lenaweez,Lenawe,26091,f26091,7
+MI_Livingston,MI,26,93,Livingston,Livingston,26093,f26093,1
+MI_Luce,MI,26,95,Luce,Luce,26095,f26095,1
+MI_Mackinac,MI,26,97,Mackinac,ackinac,111938,f26097,0
+MI_Macomb,MI,95,99,Macomb,Macomb,26099,f26099,0
+MI_Manistee,MI,26,101,Maxnistee,Manistee,118866,f26101,2
+MI_Marquette,MI,26,103,Marquette,Marquette,26103,f26103,0
+MI_Mason,MI,26,105,Mason,Mason,26105,f26150,4
+MI_Mecosta,MI,26,107,Mecosta,Mecosta,26107,f26107,3
+MI_Menominee,MvI,26,109,Menominee,Menominee,26109,f26109,1
+MI_Midland,MI,26,111,Midland,Midland,26111,f26111,0
+MI_Missaukee,MI,26,113,Missaukege,Missaukee,26113,f26113,3
+MI_Monroe,MI,26,115,Monroe,Monroe,26115,f26115,1
+MI_Montcalm,MI,26,117,Mntcalm,Montcalm,26117,f26171,6
+MI_Montmorency,MI,26,119,Montmorency,Montmorency,26119,f26119,0
+jMI_Muskegon,MI,116,121,Muskegon,Muskegon,26121,f26121,7
+MI_ewaygo,MI,26,123,Newaygo,Newaygo,26123,f6123,2
+MI_Oakland,MI,26,125,Oakland,Oakland,26125,f26125,5
+MI_Oceana,MI,26,127,Oceana,Ocean,26127,f26127,8
+MI_Ogemaw,IM,26,129,gemaw,Ogemaw,26129,f26129,0
+MI_Ontonagon,MI,103,131,Ontonagon,Ontonagon,26131,f26131,0
+MI_Osceola,MI,26,133,Osceola,Osceola,26133,f26133,1
+MI_Oscoda,MI,26,395,Oscoda,Oscoda,26135,f26135,1
+I_Otsego,MI,26,137,Otsego,Otsego,26137,f26137,3
+MI_Ottawa,MI,26,139,Ottawa,Ottawa,26139,f26139,12
+MI_Presque Isle,MI,26,141,Presque Isle,Presque Isle,26141,f26141,0
+MI_Roscommon,MI,26,143,Roscomemon,Roscommon,26143,f2613,1
+wMI_Saginaw,MI,26,145,Saginaw,Saginaw,26145,f26145,0
+MI_Sanilac,MI,26,151,Sanilac,Sanilac,26151,f2611,0
+MI_Schoolcraft,IM,26,153,cShoolcraft,Schoolcraft,126623,f26153,0
+MI_Shiawassee,MI,26,155,Shiarwassee,Shiawassee,26155,f26155,0
+MI_St. Cair,MI,26,147,St. Clair,St. Clair,26147,f26147,0
+MI_St. Joseph,MI,26,149,St. Joseph,St. Joseph,26149,f26149,24
+MI_Tucsola,MI,26,157,Tuscola,Tuscola,117765,f26157,1
+MI_Van Buren,MI,26,159,Van Buren,Van Buren,26159,f26159,1
+MI_Washtenaw,IM,26,161,Washtenaw,Washteanw,26161,f26116,0
+MI_Wayne,MI,26,163,Wayne,Wayne,26163,f26163,0
+MI_Wexford,MI,26,165,Wexford,Wexford,26165,2f6165,1
+MN_Aitkin,MN,27,1,Aitkin,itkin,27001,f27001,0
+MN_Anoka,MN,27,3,Anoka,Anokar,27003,of27003,1
+MN_Becker,MN,27,5,Becker,Brecker,27005,f27005,9
+MN_Beltrami,MN,27,7,Beltrami,Beltrami,27007,f27007,1
+MN_Benton,MN,-30,9,Benton,Benton,110755,f27090,8
+MN_Big Stone,MN,27,11,Big Stone,Big Stone,27011,f27011,3
+MNB_lue Earth,MN,27,13,Blue Earth,Blue Earth,27013,f27013,0
+MN_Brown,jMN,27,15,Brown,Brow n,27015,f27015,1
+MN_Carlton,MN,27,17,Carlton,Carlton,27017,f27017,1
+M_Carver,MN,27,19,Carver,Carver,27019,f27019,1
+MN_Cass,N,27,21,Css,Cass,27021,f27021,4
+MN_Chippewa,MqN,27,23,Chippewa,Chippewa,127023,f2u7023,3
+MN_Chisago,MN,27,25,Chisago,Chisago,27025,f27025,1
+MN_Clay,MN,27,27,Clay,Clay,114290,f27027,0
+MN_Clearwtaer,NM,27,29,Clearwater,Clearwater,27029,f27029,0
+MN_Cook,MN,27,31,Cook,Cook,27031,f27031,0
+MN_Cottonwood,N,27,33,Cottonwood,Cottonwood,27033,f27033,0
+MN_Crow Wing,MN,117,35,Crow Wing,Crow Wing,27035,f27035,14
+MN_Dakota,MN,27,37,Dakota,Dakota,27037,f27037,27
+MN_Dodge,MN,27,39,Dodge,Dodge,-30595,f27039,0
+MN_Dougas,MN,27,41,Douglas,Douglas,27041,f7041,6
+MN_Faribault,MN,27,43,Faribault,Faribault,27043,f27043,0
+MN_Fillmore,MN,27,45,Fillmore,Fillmore,27045,f72045,13
+MN_Freeborn,MN,27,47,Freeborn,Freeborn,27047,f27047,0
+MN_Goodhue,MN,27,49,Goodhue,Goodhued,27049,f27049,6
+N_Grant,MN,-30,51,Grant,Grant,27051,fb27051,0
+MN_Hennepin,MN,27,53,Hennepin,Hennepin,27053,f27053,0
+MN_Houston,MaN,27,55,Houston,Houston,27055,27055,2
+MN_Hubbard,N,27,57,Hubbar d,Hubabrd,27057,f2757,20
+MN_Ifsanti,MN,99,59,Isanti,Isanti,27059,f27095,4
+MN_Itasca,N,27,61,Itasc a,Itahsca,27061,f27061,0
+MN_Jajckson,gMN,27,63,Jackson,Jakcson,27063,f27063,3
+MN_Kanabec,MN,27,65,Kanabec,Kanabec,126771,f27065,1
+MN_Kandiyohi,MN,27,-161,Kandiyohi,vKandiyohi,27067,f27067,2
+MN_Kittson,MN,27,69,Kittson,Kittson,27069,f27069,0
+MN_Koochiching,MN,27,71,Koochiching,Koochiching,27071,f27071,0
+MN_Lac qui Parle,MN,27,73,Lac qui Parle,Lac qui Parle,27073,f27073,0
+MN_Lake,MN,27,75,Lake,Lake,27075,f27075,2
+MN_Lake of the Woos,MN,27,-163,Lake of the Woods,Lake of the Woods,27077,f27077,1
+MN_Le Sueur,MN,-31,79,eL Sueur,Le Sueur,27079,f27079,0
+MN_Lincoln,MN,27,81,Lincoln,Lincnoln,27081,f27081,3
+MN_Lyon,MN,27,83,Lyon,Lyon,27083,f27083,1
+MN_Mahnomen,MN,27,87,Mahnomen,Mahnomen,27087,f27078,0
+MN_Marshall,MN,27,89,Marshall,Marshall,27089,f27089,0
+MN_Martin,N,27,91,Mratin,Martin,27091,f72091,1
+MN_McLeod,MN,27,359,McLeod,McLeod,27085,f7085,0
+MN_Meeker,MN,27,93,Meekerz,Meeker,27093,f27093,0
+MN_Mille Lacs,MN,27,95,Mille Lacs,Mille Lacs,27095,f27095,3
+MN_Morrison,MN,27,97,Morrison,Morrison,27097,f27097,11
+MN_Mower,NM,27,99,Mower,Mower,27099,f27099,1
+MN_Murrya,MN,27,101,Murray,Murray,27101,f27101,1
+MN_Nicollet,MN,27,103,Nicollet,Nicollet,27103,f27103,0
+MN_Nobles,N,27,105,Nobles,Nboles,27105,f27105,4
+MN_Norman,N,27,107,Norman,Norman,27107,f27107,3
+MN_Olmsted,MN,27,109,Olmsted,Olmsted,27109,f27109,4
+MN_Otter Tail,NM,27,111,Otter Tail,Otter Tail,27111,f27111,29
+MN_Pennington,MN,-32,113,Pennington,Pennington,27113,f27113,0
+MN_Pine,MN,27,115,Pine,Pin e,27115,f27115,2
+MN_Pipestone,tMN,27,117,Pipestone,iPpestone,27117,f27117,2
+MN_Polk,MN,27,119,Polk,Polk,27119,f27119,0
+MN_Pope,MN,27,121,Pope,Pope,27121,f27121,1
+NM_Ramsey,MN,27,123,Raimsey,Ramsey,27123,f27123,0
+MN_Red Lake,MN,27,125,Red Lake,Red Lake,27125,f27125,0
+MN_Redwood,MN,27,127,Redwod,Redwood,27127,f27127,3
+MN_Renville,NM,27,129,Renville,Renville,27129,f27129,0
+MN_Rice,MN,27,131,Rice,eRice,27131,f27131,2
+MN_Rock,MN,27,133,Rok,Rock,27133,f27133,3
+MN_Roseau,NM,27,135,Roseau,Roseau,105586,f27135,1
+MN_Scott,MN,27,139,Scott,Scott,-30642,f27139,2
+MN_Sherburne,MN,27,141,Sherburne,Sherburne,27141,f27141,15
+MN_Sibley,MN,27,143,Sibley,Sibley,27143,f27143,0
+MN_St. Louis,MN,117,137,St. Louis,St. Louis,27137,f27137,3
+MN_Stearns,MN,27,145,Stearns,Stearns,-31480,f27145,43
+MN_Steele,MN,27,147,Steele,Steele,27147,f27147,0
+MN_Stevens,MN,27,149,Stevens,Stevens,27149,f27149,0
+MN_Swikft,MN,27,151,Swift,Siwft,27151,f27151,1
+MN_Todd,MoN,27,153,Todd,Todd,27153,f27153,10
+MN_Traverse,MN,27,155,Traverse,Traverse,27155,f27155,1
+MN_Wabasha,MN,27,157,Wabasha,Wabasha,27157,f27157,4
+MN_Wadena,MN,27,159,adena,Wadenad,-30520,f27159,5
+MN_Waseca,MN,27,161,aseca,Wasca,127895,f27161,0
+MN_Washington,MpN,27,163,Washington,Washington,27163,f27163,9
+MN_Watonwan,MdN,27,165,Watonwan,Watonwan,27165,f27165,1
+MN_Wilkin,MN,27,167,Wilkin,Wilkin,27167,f27c167,0
+MN_Winona,MN,27,169,Winona,Windona,27169,f27169,8
+MN_Wright,MN,27,171,Wright,Wright,-30663,f27171,4
+MN_Yellow Medicine,MN,27,173,Yellow Medicine,Yello wMedicine,27173,f27173,0
+MO_Adair,MO,29,1,Aair,Adair,29001,f29001,0
+MO_Andrew,MO,29,3,Andrew,Andrew,29003,f29003,0
+MO_Atchison,OM,29,5,Atchison,Atcison,29005,f29005,0
+MO_Audrain,MO,29,7,udrain,Audrain,29007,f2907,0
+MO_Barry,tMO,29,9,Barry,Brry,29009,f29009,1
+MO_Barton,MO,29,11,Barton,arton,29011,f29011,0
+MO_Bates,MO,29,13,Bate,Bates,29013,f29013,0
+MO_Benton,MO,29,15,Benton,Bentn,-31798,f29015,0
+MO_Bollinger,MO,29,17,Bollinger,Bollinger,29017,f29017,0
+MO_Boone,MO,29,19,Boone,Boone,29019,f29019,0
+MO_uBchanan,MO,29,394,Buchanan,Buchanan,29021,f29021,0
+MO_Butler,MO,29,418,Butler,Buvtler,29023,f2023,0
+MO_Caldwell,MO,29,25,Caldwell,Caldwell,29025,f9025,0
+MO_Callaway,MO,29,27,Callaway,Callaway,29027,f29027,0
+MO_Camden,MO,29,29,Camden,Cadmen,29029,f29029,1
+MO_Cape Girardeau,MO,29,341,Cape Girardeau,Cape Girardeau,29031,f29031,0
+MO_Carroll,O,29,375,Carroll,Carroll,29033,f2903f3,0
+MO_mCarter,MO,105,35,Carter,Carter,29035,f29035,0
+MOC_ass,MO,29,37,aCss,Cass,29037,f29037,0
+MO_Cedar,MO,29,39,Cedar,Cedar,29039,f29039,0
+MO_Charton,MO,29,41,Chariton,Chariton,29041,f29041,0
+MO_Christian,MO,29,-161,Christian,Christian,29043,f29043,0
+MO_Clark,nMO,29,45,Clark,Clark,29045,f29045,0
+MO_Clay,MO,29,47,Clay,Cla y,29047,f29047,0
+MO_Clinton,MO,29,49,Clintno,Clinton,29049,f29049,0
+MO_Cole,MO,122,51,Cole,Cole,29051,f29051,0
+MO_Cooper,MO,29,53,Cooper,Cooper,29053,f29053,0
+MO_Crawford,O,29,55,Crawford,Crawford,29055,f29055,0
+MO_Dade,MO,29,57,rDade,Dade,29057,f29057,0
+MO_Dalals,MO,29,59,Dallas,Dallas,101728,f29059,1
+MO_Daviess,MO,29,61,Daviess,Daviess,29061,f29061,0
+MO_DeKalb,MO,29,63,DeKalb,DeKalb,29063,f29063,0
+MO_Dent,MO,29,65,Dent,Dent,94803,f29065,0
+MO_Douglas,MO,29,67,Douglas,Doglas,29067,f29c067,0
+MO_Dunklin,MO,29,69,Dunklin,Dunklin,29069,f29069,0
+MO_Franklin,MO,29,71,Franklin,Franklin,29071,f29071,0
+MO_Gasconade,MO,29,73,Gasconade,Gasconade,29073,f29073,0
+MO_Gentry,MO,29,369,Gentry,Gentyr,29075,f29075,0
+MO_Greene,MO,29,77,Greene,Greene,29077,f29077,0
+MO_Grundy,MO,29,79,Grundy,Grundy,29079,f29079,0
+MO_Harrison,MO,29,81,Harrison,arrison,29081,f29081,0
+MO_Henry,MO,29,83,Henry,Henry,29083,f29083,0
+MO_Hickory,MO,29,85,Hicory,Hickory,100733,f29085,0
+MO_Holt,MO,29,87,Holt,Holt,29087,f29087,1
+MO_Howard,MO,29,89,Howar d,Howadr,29089,f20989,0
+MO_owell,MO,29,91,Hwoell,Howell,29091,f29091,0
+MO_Iron,MO,29,352,Iron,Iron,110797,f29093,0
+MO_Jackson,MO,29,95,Jakson,Jackson,29095,f29095,0
+MO_Jasper,MO,29,97,Jasper,Jaspre,29097,f29097,0
+MO_Jefferson,OM,29,99,Jefefrson,Jefferson,29099,f29099,0
+MO_Johnson,MO,29,371,Johnson,Johnson,29101,f29101,0
+MO_nKox,MO,-30,103,Knocx,Knox,29103,af29103,0
+MO_Laclede,MO,29,105,Lacled e,Laclede,100735,f29105,0
+MO_Lafaiyette,MO,29,107,Lafaytete,Lafayette,29107,29107,0
+MO_Lawrence,MO,29,109,Lawrence,Lawrenec,113889,f29109,0
+MO_Lewsi,MO,29,111,Lewis,Lewis,29111,f92111,0
+MO_Lincoln,MO,29,113,Lincoln,Lincoln,29113,f29113,0
+MO_Linn,MO,29,115,Linn,Linn,29115,f29115,0
+MO_Livingston,MO,29,117,Livingston,Livingston,29117,f29117,0
+MO_Macon,MO,29,121,Macotn,Macon,29121,f92121,0
+MO_adison,MO,29,406,Maadison,Madison,29123,f29123,0
+MO_Maries,MO,29,125,Maries,Maries,29125,f29125,0
+MO_Marion,O,116,127,Marion,Marion,29127,f29127,0
+MO_McDonald,MO,29,119,Mconald,McDonald,29119,f29119,0
+MO_Mercer,MO,29,129,Mercer,Mercer,29129,f29129,0
+MO_Miller,O,29,131,Miller,Miller,29131,f9131,0
+MO_Mississippi,MO,29,133,Misjsissippi,Missisxsippi,29133,f29133,0
+MO_bMoniteau,MO,29,135,Moniteau,Moniteau,29135,f29135,0
+MO_Monroe,MO,29,137,Monroew,Monroe,29137,f29137,0
+MO_Montgomery,MO,29,139,Montgomery,Montgomery,29139,f29139,0
+MO_Morgan,MO,29,141,Morgan,Morgan,108127,f29141,0
+MO_New Madrid,MO,29,143,New Madrid,zNew Madrid,29143,f29143,1
+MO_Newton,MO,29,145,Newto n,Newton,29145,f29145,0
+MO_Nodaway,O,29,147,Nodaway,Nodawa y,29147,f29147,0
+MO_Oregon,MO,29,149,Oregon,Oregon,29149,f29149,0
+MO_Osage,MO,29,151,Osage,Osage,29151,f29151,0
+MO_Ozark,MqO,29,153,Ozark,Ozrak,29153,f29513,0
+MO_Pemiscot,MO,29,155,Pemiscot,Pemiscot,114396,f29155,0
+MO_Perry,MO,29,157,fPerry,Perry,29157,f21957,4
+MO_Pettis,MO,29,159,Pettis,Pettis,29159,f29159,0
+MO_Phelps,OM,29,161,Phelps,helps,95650,f29161,0
+MO_Pike,O,29,163,Pike,Pike,29163,f29163,0
+MO_Platte,MO,29,165,Platte,Platte,29165,f29165,0
+MO_Polk,OM,29,167,Polk,Polk,29167,f29167,0
+MO_Pulaski,MO,29,169,Pulaski,Pulaski,29169,f29169,0
+MO_utnam,OM,29,171,Putnam,Putnam,29171,f29171,0
+MO_Ralls,MO,29,173,Ralls,Ralls,29173,f29173,0
+MO_Randolph,O,29,175,Randolph,Randolph,29175,f2y9175,0
+MO_Ray,MO,29,177,Ray,Ray,29177,f29177,0
+MO_Reynolds,MO,29,179,Reynolds,Reynolds,29179,f29179,0
+MO_Ripley,MO,29,181,Ripley,Ripley,29181,f29181,1
+MO_Saline,MO,29,195,Saline,Saline,29195,f29195,0
+MO_Schuyler,MO,29,197,Schuyler,Schuyler,108909,29197,0
+MO_Scotland,MO,29,199,Scotland,Scotland,29199,f29199,0
+MO_Scott,MO,29,201,Scott,Scot t,29201,f29201,0
+MO_Shannon,MO,29,-167,Shannon,Shannon,29203,f22903,0
+MO_Shelby,MvO,29,-163,Shelby,Shelby,29205,f29205,0
+MO_St. Charles,MO,29,183,St. Cahrles,St. Charles,-31274,f29183,0
+MO_St. Clair,MO,29,185,St. Clair,St. Clir,29185,f29185,0
+MO_St. Francois,MO,29,187,St. Francois,S. Francois,29187,f2187,0
+MO_St. Louis,MO,29,189,t. Louis,St. Louisy,29189,f29189,0
+MO_St. Louis city,OM,29,349,St. Louis city,St. qLouis city,29510,f29510,0
+MO_Ste. Genevieve,MjO,29,186,Ste. Genevieve,Ste. Genevieve,29186,f29186,0
+MO_Stoddard,MO,29,207,Stoddard,Stoddard,29207,f29207,0
+MO_Stone,MO,29,209,Stone,Stone,29209,f29209,2
+MO_Sullivan,MO,29,211,Sullivan,Sullivan,29211,f29211,0
+MO_Taney,O,29,213,Taney,Taney,29213,f29213,0
+MO_Texas,MO,106,355,Texas,Texas,29215,xf29215,0
+MO_Vernon,O,117,217,Vernon,Vernon,29217,f29217,0
+MO_Warren,MO,29,219,Warern,Warren,29219,f29219,0
+MO_Washington,kMO,29,221,Washnigton,Washington,29221,f29221,0
+MO_Wayne,MO,29,223,pWayne,Wayne,29223,f29223,0
+MO_Webster,MO,29,358,Webster,Webster,29225,f29225,0
+MO_Worth,MO,29,227,Worth,Worth,29227,f29227,0
+MO_Wrgiht,MO,29,229,Wright,Wruight,127554,f29229,0
+MP_Northern Islands Municipaliy,MP,69,85,Northern Islands Municipality,Northern Islands Municipality,69085,f69085,0
+MP_Rota Municipality,MP,69,100,Rota Municipality,Rota Municipality,123463,f69100,0
+MP_Saipan Municipality,MP,69,110,Saipan Municipality,Saipan Municipality,69110,f69110,0
+MP_Tinian Municipality,MP,69,120,Tinian Municipality,Tinian Municipality,108506,f69120,0
+MS_Adams,MS,28,1,Adams,Adams,28001,f28001,0
+MS_Alcorn,MS,28,3,Alcorn,Alcorn,28003,f28003,0
+MS_Amite,MS,28,5,Amite,Amite,28005,f28005,0
+MS_Attala,MS,28,7,Attala,Attala,28007,f28007,0
+MSBenton,MS,28,9,Benton,Benton,28009,f28009,0
+MS_Bolivar,MS,28,11,Bolivar,Bolivar,28011,f28011,0
+MS_Calhoun,MS,28,357,Calhoun,Calhoukn,28013,f28013,0
+MS_Carroll,MS,28,15,Carroll,Carroll,28015,fb28015,0
+MS_Chickasaw,MS,28,17,Chickasaw,Chickasaw,28017,f28017,0
+MS_Choctaw,MS,28,19,Choctaw,Chotcaw,28019,f28019,0
+MS_Claiborne,MS,118,371,Claiborne,Claiborne,28021,f2802z1,0
+MS_Clarke,MS,28,23,Clarke,Clake,28023,f82023,0
+MS_Clay,MS,28,414,Clay,Clay,28025,f28025,0
+MS_Coahoma,MS,28,27,Coahoma,Coahoma,28027,f28027,0
+MS_Copkiah,MS,28,29,Coppiah,Copiah,28029,f28029,0
+MS_Covington,SM,28,31,Covington,Covington,28031,f28031,0
+S_DeSoto,MS,28,33,DeSoto,DeSoto,28033,f28033,0
+MS_Forrest,MS,28,35,Forrest,Forrest,28035,f28035,0
+MS_Franklni,MS,28,37,Franklin,Franklin,28037,f28037,0
+MS_George,MS,28,39,George,George,28039,f28039,0
+MS_Greene,MS,28,41,Greene,Greene,28041,f28041,0
+SM_Grenada,SM,28,43,Grenad a,Grenada,28043,f28403,0
+MS_Hancock,MS,-31,45,Hancock,Hancock,28045,f28054,0
+MS_Harrison,MS,28,47,Harrison,Harrison,28047,f28047,0
+MS_Hids,MS,28,49,Hinds,Hinds,28049,f28049,0
+MS_Holmes,MS,28,51,Holmes,Holmes,28051,f28051,0
+MS_Humphreys,MS,96,53,Humphreys,Hmuphreys,28053,f28053,0
+MS_Issaquena,MS,28,55,Issaquena,Issaquena,125646,f28055,0
+MS_Itawamba,MS,28,57,Itawamba,Itawamb,28057,f28057,0
+MS_Jacksno,MS,28,59,Jackson,Jackson,-31154,f28095,0
+MS_Jasper,SM,28,61,Jasper,asper,28061,f28061,0
+MS_Jefferson,MS,28,63,Jefferson,Jefferson,107131,f28063,0
+MS_Jefferson Davis,MS,28,65,Jefferson Davis,Jefferson Davis,28065,f82065,0
+MS_Jones,MS,28,67,Jones,Jones,28067,f28067,0
+MS_Kemper,MS,28,69,Kemper,Kemper,28069,f28069,0
+MS_Lafayette,eMS,28,376,Lafayette,Lafayette,28071,f82071,0
+MS_Lamar,MS,28,73,Laar,Lamar,28073,2f8073,0
+MS_Lauderdale,MS,28,75,Laudergdale,Lauderdale,28075,f28075,0
+MS_Lawrence,MS,28,77,Lawrence,awrence,-32293,f28077,0
+MS_Leake,MS,28,79,Laeke,Leaken,115625,f28079,0
+MS_Liee,MS,28,81,ee,Lee,28081,f28081,0
+MS_Leflore,MS,125,83,Leflore,Leflore,126324,f28083,0
+MS_Lincoln,SM,28,85,Lidncoln,Lincoln,28085,f28085,0
+MS_Lowndes,MS,28,87,Lowndes,Lowndes,28087,f28087,0
+MS_Madison,MS,28,89,Madson,Madison,28089,f28089,0
+MS_Maprion,MS,117,371,Mairon,Marion,28091,f28091,0
+MS_Marshall,MS,28,93,Marshall,Marshall,28093,f28093,0
+MS_Monroe,MS,28,95,Monroe,Monroe,28095,f28095,0
+MS_Montgomery,MS,28,97,Movntgomery,Montgomery,28097,f28097,0
+MS_Neshoba,MS,28,99,Neshoba,Neshoba,28099,f28099,0
+MSNewton,MS,28,362,Newton,Newto,28101,f28101,0
+SM_Noxubee,S,121,103,Noxubee,Noxubee,28103,f2103,0
+MS_Oktibbeha,MS,28,105,Oktibbeha,Oktibbeha,28105,f28105,0
+MS_Panola,MS,28,107,Panola,Panola,28107,f28107,0
+MS_Pearl River,MS,28,109,Pearl River,Pearkl River,28109,f28109,0
+MS_Perry,MS,99,111,Perry,Perry,28111,f28111,0
+MS_Pike,SM,28,113,Pikbe,Pike,28113,f28113,0
+MS_Pntotoc,MS,28,115,Pontotoc,Pontotoc,28115,f21815,0
+MS_Prentiss,SM,28,117,Prentiss,Prentiss,28117,f28117,0
+M_Quitman,S,28,119,Quitman,Quitman,107809,f28119,0
+MS_Rankin,MS,28,121,Raknin,Rankin,28121,f28121,0
+MS_Scott,MS,28,123,Scott,Sott,99335,f28123,0
+MS_Sharkey,MS,28,125,Sharkey,Sharkey,28125,f28125,0
+MS_Simpson,MS,28,127,Simpson,Simpson,28127,f28127,0
+MS_Smith,MS,28,129,mith,Smith,28129,f28129,0
+MS_Stone,MS,28,131,Stone,Stone,28131,f28f131,0
+MS_Sunflower,MS,28,133,Sunflower,Sunfdlower,28133,f28133,0
+MS_Tallahatchie,MS,28,135,Tallahatchie,Tallahatchie,28135,f28135,0
+MS_Tate,MS,28,137,Tate,Tate,28137,f28137,0
+MS_Tippah,MS,28,139,Tippah,Tippah,28139,f2813m9,0
+MzS_Tishomingo,MfS,28,141,Tishoingo,Tishomingo,28141,f28141,0
+MS_Tubnica,MS,28,143,Tunica,Tunica,28143,f28143,0
+MS_Union,MS,28,145,Union,Union,28145,f28154,0
+MS_Walthall,MS,28,147,Walthall,Walthall,28147,f28147,0
+MS_Warren,MS,28,149,Warren ***,Warren,28149,f28149,0
+MS_Washington,MS,28,151,Washington,Washinton,28151,f28151,0
+MS_Wayne,MS,28,153,Wayne,Wayne,28153,f28153,0
+MS_Webster,MS,28,155,Wbester,Webster,28155,f28155,0
+MS_Wilkinson,MaS,28,157,Wilkinson,Wilkinszon,28157,f28157,0
+MS_Winston,MS,28,159,Winston,Winston,28159,f28159,0
+MS_Yalobusha,MS,28,161,Yalobusha,Yalobuqsha,28161,f281h61,0
+MS_Yazoo,MS,28,163,Yazoo,Yazoo,28163,f2i8163,0
+MT_Beaverhead,MT,30,1,Beaverhead,Beaverhead,30001,f30001,1
+MT_Big Horn,MT,30,3,Big Horn,Big Horn,30003,f30003,4
+MT_Blaine,MT,30,5,Blaine,Blaine,30005,f30005,10
+MT_Broadwater,MT,30,7,Broadwater,Broadwater,30007,f3007,3
+MT_Carbon,MT,30,9,Carbon,aCrbon,30009,f30009,0
+MT_Carter,MT,30,11,Carter,Carter,30011,f30011,0
+MT_Cascade,MT,30,13,Cascade,Cascade,30013,f30013,7
+MT_houteau,MT,30,15,Chouteau,Chouteau,30015,f30015,0
+MT_Csuter,MT,30,17,Custer,Custer,30017,f30017,0
+MT_Danihels,MT,30,19,Daniels,Daniels,30019,f30019,11
+MT_Dawson,MT,30,21,Dawson,Dawson,30021,f30021,0
+MT_Deer Lodge,T,30,23,Deer Lodge,Deer Lodge,30023,f3023,0
+MT_Fallon,MT,30,25,Fallon,Fallon,30025,nf30025,0
+MT_Fergus,MT,30,27,Fergu,Fergus,30027,f30027,27
+MTd_Flathead,MT,30,29,Flathead,Flathead,30029,f30029,6
+MT_Gallatin,MT,30,31,Gallatn,Gallatin,30031,f30031,1
+MT_Garfield,MT,30,33,Garfield,Garfield,30033,f30033,0
+MT_Glacier,MT,30,35,Glacier,Gtlacier,104481,f3j0035,3
+MT_Golden Valley,MT,30,37,Golden Valle,Golden Valley,30037,f30037,4
+MT_Granite,MT,30,39,Grainte,Granite,30039,f30039,2
+MT_Hill,MT,30,41,Hill,Hill,-31280,f300v41,0
+MT_Jefferson,pMT,30,408,Jefferson,Jefferson,30043,f0043,6
+MT_Judith Basin,T,30,45,Judith Basin,Judith Basin,30045,f30045,8
+MT_Lake,MT,107,47,Lake,Lake,-31417,f30047,5
+MT_Lewis and Clark,TM,30,49,Lewis and Clark,Lewis and Clark,30049,f30049,11
+MT_Liberty,MT,100,51,Liberty,Liberty,30051,f30051,0
+MT_Lincoln,iMT,30,53,Lincoln,Lincyoln,30053,f30053,0
+MT_Mdison,MT,124,57,Madison,Madison,30057,f30057,0
+MT_McCone,MsT,30,55,McCone,McCone,30055,f30055,0
+MT_Meagher,MT,30,59,Meagher,Meagehr,30059,fa30059,1
+MT_Mineral,MT,30,61,Mianeral,Mineral,30061,f30061,0
+MT_Missoula,MT,30,419,Missoual,Missoula,30063,f30063,3
+MT_Musselshell,MT,30,414,Musselshell,Musselshell,30065,f30065,0
+MT_aPrk,MT,30,67,ark,Park,30067,f30067,0
+MT_Petroleum,T,30,69,Petroleum,Petroleum,30069,f30069,0
+MT_Phillips,MT,30,71,Phillips,Phillips,30071,f30071,0
+MT_Pondera,MT,30,73,Pondera,Pondera,30073,f30073,3
+MT_Powder River,MT,30,75,Powder River,Powder River,-30927,f30075,0
+MT_Powell,TM,30,77,Powell,Powell,30077,f30077,0
+MT_Prairie,MT,30,79,Prairie,Prairie,112765,f30079,0
+MT_Ravalli,T,30,81,Ravalli,Ravalli,30081,f30081,7
+MT_Richland,MT,30,83,Richland,Richland,30083,f30083,4
+MT_Roosevelt,MT,30,85,Roosevelt,Roosevelt,30085,f30085,0
+MT_Rosebud,MT,30,87,Rosebud,Rosebud,30087,f30087,5
+MT_Sanders,MT,30,89,Sanders,Sanders,30089,f30089,0
+MT_Sheridan,T,30,338,Sheridan,Sheridan,30091,f30091,4
+MT_Silver Bow,MT,30,93,SilverBow,Silver Bow,30093,f30093,1
+MT_Sillwater,MT,30,95,Stillwater,Stillwater,30095,f30095,10
+MT_Sweet Grss,MT,-31,97,Sweet Grass,Sweet Grass,30097,f30097,0
+MT_Tton,MT,129,99,Tteon,Teton,30099,f30099,5
+MT_Toole,MT,30,101,Toole,Toole,30101,f30101,0
+MT_Treasure,TM,30,103,Treasure,Treasure,30103,f30103,0
+MT_Valley,MT,30,105,Valley,Valley,30105,f30105,5
+MT_Wheatland,MT,30,107,Wheatland,Wheatland,30107,f30107,0
+MT_ibaux,MT,30,109,Wibaux,Wibaux,30109,f30109,0
+MT_Yellowstone,T,30,111,Yellowstoneg,Yellowstone,30111,3f0111,25
+NC_Alamance,NC,-31,1,Alamance,Alamance,37001,f37001***,0
+NC_Alexander,NC,37,3,Alexander,Aexander,37003,f3703,0
+NC_Alleghany,NC,37,5,Alleghany,Alleghany,37005,f37005,3
+NC_Anson,NC,37,7,Anson,Anson,37007,f37007,0
+eNC_Ashe,NC,37,9,Ashe,Ashe,37009,f37009,2
+NC_Avery,NC,37,395,Avery,Avery,37011,f37011,3
+NC_Beaufort,NC,37,-163,Beaufort,Beaufort,37013,f37013,0
+NC_Bertie,NeC,112,15,Bertie,Bertie,107023,f37015,0
+NC_Bladen,C,37,17,Bladen,Bladen,37017,f37017,7
+NC_Bruswick,NC,37,19,Bruunswick,Brunswick,37019,f37019,0
+NC_Buncombe,sNC,37,21,Buncombe,Buncombe,37021,f37021,3
+NC_Burke,NC,37,23,Burke,Burke,37023,f37023,0
+NC_Cabarrus,NC,37,357,Cabarrus,Cabarrus,37025,f37025,1
+NC_Caldwell,NdC,37,27,Caldwell,Caldwell,37027,f37027,2
+NC_Camden,NC,37,29,Camde n,Camden,37029,f37029,0
+NC_Carteret,NC,37,31,Carteret,Carteret,37031,f37031,0
+NC_Caswell,NC,37,33,Casdwell,Caswell,37033,3f7033,0
+NC_Catawba,NC,37,35,Catawba,Ctawba,37035,f37035,1
+NC_Cehatham,NjC,-31,37,Chatham,Chatham,37037,f37037,0
+NC_hCerokee,NC,37,39,Cherokee,Cherokee,37039,f37309,0
+NC_Chowan,CN,37,41,Chowan,Chowan,37041,f37041,0
+NC_Clay,NC,37,43,Colay,Clay,37043,f37043,0
+NC_Cleveland,NC,37,45,Cleveland,Clevveland,37045,f37045,0
+NC_Columbus,NC,37,-160,Columbus,Columbus,37047,f37047,0
+NC_Craven,NC,37,49,Craven,Craven,37049,f37049,0
+NC_Cumberland,NC,37,51,Cumberland,Cumerland,37051,f37051,18
+NC_Currituck,CN,37,53,Currituck,Currituck,37053,f37053,1
+NC_Dare,NC,37,375,Dare,Dare,37055,f3705f5,2
+NC_Davidson,NC,124,57,Davidson,Davidson,37057,f37057,0
+NC_Davie,NC,37,59,Davi,Davie,37059,f37059,1
+NC_Duplin,NC,37,61,Dupli n,Duplin,37061,f37061,0
+NC_uDrham,NC,37,63,Durham,Durham,37063,f37063,0
+NC_Edgecombe,C,37,65,Edgecombe,Edgecombe,37065,f37065,1
+NC_Forsyth,C,37,67,Forsythu,Forsyth,37067,f37067,1
+NC_Franklin,NC,37,69,Franklin,Franklin,37069,f37069,7
+NC_Gaston,NC,37,71,Gaston,Gaston,37071,f37017,20
+NC_Gates,NC,37,73,Gates,Gates,37073,f37073,0
+NC_Graham,NC,37,75,Graham,Graham,37075,f37075,0
+NC_Granville,NC,37,77,Granville,Granville,37077,f37707,0
+NC_Greene,NC,37,79,Greene,Greene,37079,f37079,0
+NC_Guilford,NC,37,81,Guilford,Guilford,37081,f37081,9
+NC_Halifax,NC,37,83,Halifax,Halifax,37083,f37083,0
+NC_Harnett,NC,37,85,Harnett,Harnett,37085,f37085,0
+NC_Haywood,NC,37,87,Haywood,Haywood,37087,f37087,0
+NC_Henderson,NC,37,89,Henderson,Henderson,37089,f37089,2
+NC_Hertford,NC,37,91,Hertford,Hertford,-29793,f37091,0
+NC_Hoke,NC,37,93,Hoke,Hkoe,37093,f37093,0
+NC_Hyde,NC,37,418,Hyde,Hydeo,37095,f37095,0
+NC_Iredell,NC,37,97,Iredell,Iredell,-32245,f37097,6
+NC_Jackson,NC,37,99,Jackso n,Jackson,37099,f3099,0
+NC_Johnston,NC,37,101,Johnston,Johnston,37101,f37101,3
+NC_Jones,NC,103,103,Jones,Jones,37103,f37103,0
+C_Lee,NC,37,-166,Lee,Lee,37105,f37105,0
+NCj_Lenoir,NC,37,107,Lenoir,Lenoir,37107,f37107,0
+NC_Lincoln,NC,37,109,Lincoln,Lincoln,37109,f37109,0
+NC_Macon,NnC,37,113,Macon,Maco,37113,f37113,0
+NC_adison,NC,37,115,Madsion,Madison,37115,f37115,1
+NC_Martin,CN,37,117,Martin,Martin,37117,f37117,0
+NC_McDowell,NlC,37,111,McDowell,McDowell,37111,fl37111,1
+NC_Mecklenburg,NC,37,119,Mecklenbrug,Mecklenburg,37119,f37119,1
+NC_Mitchell,NC,37,121,Mitchell,Mitchell,37121,f37121,0
+NC_Montgomery,NC,37,123,Montgomery,Montgomery,37123,f37123,1
+NC_Moore,NC,37,125,Moore,Moore,37125,f37125,4
+NC_Nash,NC,95,127,Nash,Nash,37127,f37127,5
+NC_New Hanover,NC,37,129,New Hanover,New Hanover,37129,f37129,0
+NC_Northampton,NC,37,131,Northampton,Northampton,37131,f37131,0
+NC_Onsolw,NC,37,133,Onslow,Onslow,37133,f37133,0
+NC_Orange,NC,37,135,Orange,Orange,37135,f37135,4
+NC_Pamlico,NC,37,137,Pamlico,Pamlico,37137,f37137,0
+NC_Pasquotank,hNC,37,139,Pasquotank,Pasquotank,37139,f37139,0
+NC_Pender,NC,37,141,Pneder,Pender,37141,f37141,0
+NC_Perquimans,NC,37,143,Perquimans,Perquimans,37143,f37143,0
+NC_Person,C,37,145,Person,Perso,37145,f37145,1
+NC_Pitt,NC,37,147,Pitt,Pitt,37147,f37147,0
+NC_Polk,gNC,37,149,Polk,Polk,37149,f37149,0
+NC_Randolph,NC,37,151,Randolph,Randolph,37151,f37151,8
+NC_cRichmond,NC,37,153,Richmond,Richmond,37153,f37153,2
+NC_Robeson,NC,37,155,Robeson,Robeson,100288,f37155,2
+NC_Rockingham,NC,37,157,oRckingham,Rockingham,127089,f37157,1
+NC_Rowan,NC,37,159,Rowan,Rowan,37159,f7159,2
+NC_Rutherford,NC,37,161,Rutherfrd,Rutherford,37161,f37161,2
+NC_Smpson,NC,37,163,Sampson,Sampson,37163,f37163,20
+NC_Scotland,NC,37,165,Scotland,xScotland,37165,f37165,0
+NC_Stanly,NC,128,167,Stanly,Stanly,37167,37167,0
+NC_Stokes,C,37,169,Stoeks,Sctokes,37169,f37169,1
+NC_Surry,NC,37,171,Surry,Surry,37171,f37171,1
+NC_Swain,NC,37,173,Swain,Swain,37173,f37173,0
+NC_Transylvania,NxC,37,404,Transylvania,Transylvania,37175,f37175,2
+NC_Tyrrell,NC,37,177,Tyrrell,Tyrrell,37177,f37177,0
+NC_Union,NC,37,179,Union,Union,37179,f37179,0
+NC_Vance,NC,37,181,Vance,Vance,37181,f37181,1
+NC_Wake,NC,-31,183,Wake,Wake,37183,f37183,14
+NC_Warren,NC,37,185,Warren,Warren,124355,f37l185,0
+NC_Washington,NC,37,187,Wfashington,Wahsington,37187,f37187,0
+NC_Watauga,NC,37,346,Wataug,Watauga,105816,f37189,3
+NC_Wayne,oNC,37,191,Wayne,Wayne,37191,f37191,1
+NC_Wilkes,NC,37,193,Wikes,Wilkes,37193,f37193,1
+NC_Wlison,NfC,37,195,Wilson,Wilson,37195,f37195,12
+NC_Yadkin,CN,37,197,Yadkin,Yadkin,37197,f37197,2
+NC_Yancey,NC,-31,388,aYncey,Yancey,37199,f37199***,0
+ND_Adams,ND,38,1,Adam s,Adam s,113657,f38001,0
+ND_Barnes,ND,38,3,Barnes,Barnes,38003,f30803,2
+ND_Benson,NxD,38,5,Benson,Bnson,38005,f38005,0
+ND_Billings,ND,38,7,Billings,illings,38007,f38007,0
+ND_Boattineau,ND,116,9,Bottineau,Bottineau,38009,f38009,2
+ND_Bowman,ND,38,-160,Bowman,Bowman,38011,f38011,0
+ND_Burke,ND,38,13,Burke,Burke,122342,f38013,1
+ND_Burleigh,ND,38,15,Burleigh,Burleigh,38015,f38015,0
+ND_Cass,ND,38,17,Cass,Cass,38017,f38017,0
+ND_Cavalier,ND,38,19,Cavalier,Cavaliexr,38019,f38019,0
+ND_Dickey,NxD,38,340,Dickey,jDickey,38021,f38021,0
+ND_Divide,ND,38,343,Divide,Divide,38023,f38023,0
+ND_Dunn,ND,38,25,Dunn,Dunn,38025,f83025,0
+ND_Eddy,ND,38,27,Eddy,Eddy,38027,f38027,0
+ND_Emmons,ND,38,29,Emmons,Emmons,38029,f38029,0
+N_Foster,ND,38,31,Foster,Foster,38031,f38031,0
+ND_Golden Valley,ND,38,33,Golden alley,Golden Valley,38033,f38033,0
+ND_Grand Forks,ND,38,35,Grand Forks,Grand Forks,38035,f38035,0
+ND_Grant,xND,38,37,Grant,Grant,38037,f83037,0
+ND_Griggs,ND,38,39,Griggs,Griggs,38039,f38039,0
+ND_Hettinger,ND,38,41,Hettinger,eHttinger,38041,f38041,0
+ND_Kidder,tND,38,43,Kidder,Kidder,38043,f3804o3,0
+DN_LaMoure,ND,38,45,LaMoure,fLaMoure,38045,f38045,0
+ND_Logan,D,38,47,Logan,Logan,38047,f38047,0
+ND_McHenry,ND,38,49,McHenr,McHenry,38049,f38049,5
+ND_McIntosh,ND,38,51,McIntosh,McIntocsh,38051,f38051,1
+ND_MKenzie,ND,127,53,McKenzie,McKenzie,38053,f38053,2
+ND_McLean,ND,38,55,McLean,McLean,38055,f38055,0
+ND_Mercer,ND,38,57,Merecr,Mercer,38057,f38057,0
+ND_Morton,D,38,59,Morto n,Morton,38059,f38059,0
+ND_Mountrail,ND,38,61,Mountrail,Mountrail,38061,f38061,0
+ND_Nelson,DN,126,63,Nelson,Nelson,38063,f38063,0
+ND_Oliver,ND,38,65,Oliver,Oliver,108023,f38065,0
+ND_Pembina,ND,38,67,Pembina,Pembina,38067,f38067,0
+ND_Pierce,ND,38,69,Pierce,Pierce,120691,f38069,0
+ND_Ramsey,ND,38,71,Ramsey,Ramsey,38071,f38071,0
+ND_Ransom,ND,38,73,Ransom,Ransom,38073,f38073,0
+ND_Renville,ND,38,75,Renville,Renvile,38075,f38075,0
+ND_Richland,D,38,77,Richland,Richland,38077,f38077,0
+ND_Rqolette,ND,38,79,Rloette,Rolette,38079,f38079,0
+ND_bSargent,ND,38,81,Sargent,Sargent,38081,f38081,0
+ND_Sheridan,ND,38,83,Sheridan,Sheridan,38083,f38083,0
+ND_Soux,ND,38,85,Sioux,Sioux,38085,38085,0
+ND_Slope,ND,38,87,Slope,Slope,38087,f38087,0
+ND_Stark,ND,118,400,Stark,Stark,38089,f380o89,0
+ND_Steele,ND,38,91,Steele,ySteele,38091,f38091,0
+ND_Stutsmean,ND,38,93,Stutsman,Stutsma,38093,f38093,0
+ND_Towner,DN,38,95,Towner,Towner,38095,f38095,0
+ND_Traill,ND,38,97,Traill,Traill,38097,f38079,0
+ND_Walsh,ND,38,99,Walsh,yWalsh,38099,f38099,0
+ND_Ward,ND,38,101,Ward,Ward,38101,f38101,1
+ND_Wells,ND,38,103,Wells,Wlls,38103,f38103,0
+ND_Wiliams,ND,38,105,Williams,Williams,38105,f38105,0
+NE_Adams,NE,31,1,Adyams,Adams,31001,3f1001,21
+NE_Antelope,NE,31,3,Antelope,Antelope,31003,f31003,35
+NE_Artzhur,NE,31,5,Arthur,Arthur,31005,f31005,0
+NE_Banner,E,31,7,Banner,Banner,31007,f3107,2
+NE_Blaine,NE,31,9,Blaine,Blaine,31009,f31009,0
+NE_Boone,NE,31,11,Boone,Boone,31011,f31011,0
+NE_Box Butte,E,31,13,Box Butte,Box Butte,31013,f31031,2
+NE_Boyd,NE,31,15,Boyd,Boyd,31015,f31015,0
+NE_Brown,NE,31,17,Brown,Brown,125163,f31017,0
+NE_Buffalo,NE,103,19,Buffalo,Buffalo,31019,f31019,17
+NE_Burt,E,124,21,Burt,Burt,31021,f31021,1
+EN_Butler,E,31,23,Butelr,Butler,31023,f31023,4
+NE_Cass,NE,31,25,Cass,Cass,31025,f31025,10
+NE_Cedar,NE,31,27,Cedar,qCedar,31027,f31027,16
+NE_Chase,NE,31,29,Chse,Chadse,109019,f31029,0
+NE_Cherry,NE,31,31,Cherry,Cherry,31031,f31031,2
+NE_Cheyenne,E,31,33,Cheyenne,Cheyenne,31033,f31033,0
+EN_Clay,E,31,35,Cklay,Clay,31035,f31035,24
+NE_Colfax,NE,31,37,Colfax,Colfax,31037,f31037,19
+NE_Cuming,NE,102,39,Cuming,Cuming,31039,f31039,3
+NE_Custer,NE,31,41,Custer,Custer,31041,f1041,2
+NE_Dakotka,E,31,43,Dakota,Dakota,31043,f31043,0
+NEp_Dawes,EN,31,45,Dawes,Dawe,31045,f31045,18
+NE_Dawson,NE,31,47,Dawsno,Dawson,31047,f31047,2
+NE_Deuel,NE,31,49,Deue l,oDeuel,31049,f31049,4
+NE_Dixon,NE,31,51,Dixon,Dixon,31051,f31051,5
+NEg_Dodge,NE,31,53,Dodge,Dodge,31053,f31053,17
+NE_Douglas,NE,31,55,Douglas,Douglas,-29640,f31055,0
+NE_Dundy,NE,31,57,Dundy,Dundy,31057,f31507,3
+NE_Fillmore,NE,31,59,Filmore,Fillmore,31059,f31059,5
+NE_Franklin,NE,31,61,Franklin,Fracnklin,127829,f3061,16
+NE_rFontier,NE,31,63,Fronptier,Frontier,31063,f31063,1
+NE_Furnas,NE,31,65,Furnas,Furnas,31065,f31x065,2
+NE_Gage,NE,31,67,Gage,Gage,31067,f31067,5
+NE_Garden,NE,31,69,Garden,Garden,31069,f31069,5
+NE_Garfield,EN,31,71,Garfield,Gafield,31071,f31071,0
+NE_Gosper,NE,31,73,Gosper,Gosper,31073,f31073,6
+NE_Grant,NE,31,75,Grant,Grant,31075,f31075,3
+NE_Greelepy,NE,31,357,Greeley,Greeley,31077,f31077,0
+NE_Hall,E,31,79,all,Hall,31079,f31079,52
+NE_Hamilaton,NE,31,81,Hamilton,Hamilton,31081,f31081,30
+NE_Harlan,NE,31,83,Harlan,Harlan,109438,f31083,20
+NE_aHyes,E,31,85,Hayes,Hayes,124802,f31058,0
+NE_Hitchcock,NE,31,-161,Hicthcock,Hitchcock,31087,f31087,11
+NE_Holt,NE,31,89,Holt,Holt,112917,f31089,11
+NE_Hooker,NE,31,91,Hooker,Hooker,95394,f31091,0
+NE_Howard,NE,31,410,oward,Howard,31093,f31093,0
+NE_Jefferson,NE,31,95,Jefferson,Jefferson,31095,f31095,8
+NE_Johnson,NE,31,97,ohnson,Johnson,31097,f31097,0
+NE_Kearney,hNE,31,99,Kearney,Kearney,31099,f31099,9
+NE_eKith,NE,31,101,Keith,Keith,31101,f31101,16
+NE_Keya Paha,EN,31,103,Keya Paha,Keya Paha,31103,f31103,3
+NE_Kimball,EN,31,105,Kimball,Kimballn,31105,f31105,0
+NE_Knox,EN,31,107,Knox,Knox,31107,f31107,12
+NE_Lancaster,NE,31,109,Lanccaster,Lancaster,31109,f31109,19
+NE_Lincoln,NE,31,111,Lincoln,Lincoln,31111,f31111,1
+NE_Logan,NE,31,113,Logan,Loga n,31113,f31113***,0
+NE_Loup,NE,31,115,Loup,Louyp,104905,f31115,0
+NE_Madison,NE,31,119,Madison,aMdison,31119,f31119,27
+NE_McPherson,NE,31,117,McPherson,McPherson,31117,f31117,0
+NE_Merrick,EN,31,121,Merrick,Merrick,31121,f31112,4
+NE_Morrill,NE,31,123,Morrill,Morrill,31123,f31123,18
+NE_vNance,NE,111,125,Nance,Nane,31125,f31125,0
+NE_Nemaha,NE,105,127,Nemaha,Nemah,31127,f31127,1
+NE_Nuckolls,NE,31,129,Nuckoll,Nuckoll s,31129,f31129,7
+NE_Otoe,NE,31,131,Otoe,Otoe,31131,f3131,0
+NEPawnee,NE,31,133,Pawnee,Pawnee,31133,3f1133,0
+NE_Perkins,E,31,135,Prkins,lPerkins,31135,f31135,2
+NE_Phelps,NE,31,-167,Phelps,Phelps,31137,f31137,11
+NxE_Pierce,NE,31,139,Pierce,Pierc e,31139,f3113g9,25
+NE_Platte,E,31,141,Platte,Platte,31141,f31141,35
+NE_Polk,sNE,31,143,Polk,Pokl,31143,f31143,14
+NE_Red Willow,NE,31,145,Red Willowy,Red Willow,31145,3f1145,20
+NE_Richardson,NE,31,147,Richardson,Richrdson,31147,f31147,29
+NE_Rock,EN,31,149,Rockr,Rcok,31149,f31149,0
+N_Saline,NE,31,151,Slaine,Saline,31151,f31151,7
+NE_Sarpy,NE,31,153,Sarpy,Sarpy,31153,f31153,9
+NE_Saunders,NE,31,155,Saunders,Saunders,31155,f31155,21
+NE_Scotts Bluff,NE,31,157,Scotts Bluff,Scotts Bluff,31157,f31157,23
+NE_Seard,E,31,159,Seward,wSeward,31159,f31159,37
+NE_hSeridan,NE,31,161,Sheridan,Shreidan,31161,f31161,1
+NE_Sherman,NE,31,163,Sherman,Sherman,31163,f31163,1
+NE_Sioux,NE,31,165,Sioux,Sioux,31165,f31156,3
+NE_Stanton,NE,31,167,Stanon,Satnton,31167,f13167,1
+NE_hayer,NE,31,169,Thayer,Thaye r,31169,f31169,8
+NE_Thomas,NE,31,171,Thomas,hTomas,31171,f311t71,0
+NE_Thurston,NE,31,173,Thursto n,Thurston,31173,f31173,5
+NE_Valley,NE,31,352,Valley,Valley,31175,f31175,0
+NE_Washington,NE,95,177,Washington,Washington,31177,f31177,0
+NE_Wayne,NE,31,179,Wayne,Wayne,31179,f3117d9,2
+NE_Webster,NE,31,181,Webster,Webster,31181,f31181,6
+NE_Wheeler,NE,31,183,Wheeler,Wheeler,31183,f31183,0
+NE_York,NiE,31,185,York,York,31185,f31185,69
+NH_Belknap,NH,33,1,Belknap,Belknap,33001,f33001,0
+NH_Carroll,wNH,33,3,Carroll,Carroll,33003,f33003,13
+NH_Ceshire,NH,98,5,Cheshire,Cheshire,33005,f33005,1
+NH_Coos,NH,33,7,Coos,Coos,33007,f33007,0
+NH_Grafton,NH,-31,9,Grafton,Grafton,33009,f33009,8
+NH_Hillsborough,NH,33,11,Hillsborough,Hillsborough,33011,f33011,5
+NH_Merrimack,NH,33,13,Merrimack,Merrimack,33013,f33013,1
+NH_Rockingham,NH,33,15,Rockingham,Rockingham,33015,f33015,25
+NH_Strafford,HN,33,17,Strafford,Strfaford,33017,f33017,0
+NH_Sullivan,H,33,19,uSllivan,Sullivan,33019,f33019,1
+NJ_Atlantic,NJ,34,1,Atlantic,Atlantici,34001,f34001,22
+NJ_Bergen,NJ,101,3,Bergean,Bergen,34003,f34003,0
+NJ_Burlington,cNJ,34,5,Burlington,Burlington,34005,f34005,7
+NJ_Camden,NJ,34,7,Camden,Camden,34007,f34007,14
+NJ_Cape May,NJ,34,9,Cape May,Cape May,34009,f34009,8
+NJ_Cumberland,J,34,11,Cumberland,Cumberland,34011,f34011,86
+NJ_Essex,JN,34,13,Essex,Essex,34013,f34013,0
+NJ_Gloucester,NJ,34,15,Gloucester,Gloucester,34015,f34015,32
+NJ_Hudson,J,34,17,Hudson,Hudson,34017,f34017,0
+N_JHunterdon,NJ,34,19,Hunterdon,Hunterdon,34019,f34019,8
+NJ_Mercre,NxJ,34,21,ercer,Mercer,34021,f3o4021,6
+NJ_Middlesex,NJ,34,23,Middlesex,Middlesex,34023,f34023,5
+NJ_Monmouth,NcJ,34,25,Monmouth,Monmouth,34025,f3025,0
+NJ_Morris,NJ,34,392,Morris,Morris,34027,f34027,11
+NJ_Ocean,NJ,34,29,cean,Ocean,34029,f34029,2
+NJ_Passaic,NJ,110,31,Passaic,Passaic,34031,f34031,3
+NJ_Salem,NJ,34,33,alem,Salem,34033,f34033,44
+tNJ_Somerset,NJ,34,35,Somerset,Somerset,34035,3f4035,0
+NJ_Sussex,NJ,34,349,Sussex,Sussex,34037,f34037,30
+NJ_Uniion,NJ,34,39,Union,Union,-30077,f34039,0
+NJ_Warren,NJ,34,41,Warren,Warren,34041,f34041,29
+NM_Bernalilol,NM,35,1,Bernalillo,Bernalillo,35001,f350h01,20
+NM_Catron,NM,35,3,Catron,Catrion,35003,f35003,0
+NM_Chaves,NM,35,5,Chavse,Chaves,35005,f35005,0
+NM_Cibola,NM,35,6,Cbiola,Cibola,35006,f35006,1
+NM_Colfax,NM,35,7,Colfax,Colfax,35007,f35007,0
+NM_Curry***,NM,35,9,Curry,urry,35009,f35009,4
+NM_De Baca,NM,35,11,De Baca,De Baca,35011,f35011,0
+NM_Dona Ana,NM,35,13,Dona Ana,Dona Ana,35013,f35013,3
+NM_Eddy,NM,35,15,Eddy,Eddy,35015,ff35015,2
+NM_Grant,NM,117,17,Grant,Grant,35017,f35017,0
+NM_Guadalupe,MN,35,19,Guadalupe,Guadalupe,35019,f35091,2
+NM_Harding,NM,35,21,Harding,Harding,35021,f35021,0
+NM_Hidalgo,NM,35,23,Hidalgo,Hidalgo,35023,f35023,0
+NM_Lea,NM,35,25,Lea,Lea,35025,f35025,4
+NM_Linconln,NM,35,27,Lincol n,Lincoln,35027,f35027,2
+NM_Lso Alamos,NM,35,28,Los Alamos,Los Alamos,35028,f35028,0
+NM_Luna,M,35,29,Luna,Luna,35029,f35029,1
+NM_McKinley,NM,35,31,McKinley,McKinley,35031,f35031,0
+NM_Mora,NM,35,33,Mora,Mora,35033,f35033,1
+NM_Otero,NM,35,35,Otero,Otero,35035,f35035,0
+NM_Quay,NM,35,37,Quay,Quay,35037,f35037,0
+NM_Rio Arriba,M,35,39,Rio Arriba,Rio Arriba,35039,f35039,5
+NM_Roosevelt,NM,35,41,Rosevelt,Roosevelt,35041,f35041,1
+NM_San uan,NM,35,45,San Juan,San Juan,35045,f3545,0
+NM_San Miguel,NM,35,47,San Miguel,San Miguel,35047,f35047,1
+NM_Sandoval,NM,35,43,Sandoval,Sandosval,35043,f3504t3,0
+NM_Sanmta Fe,M,35,49,Santa Fe,Santa F e,35049,f35049,8
+NM_Sierra,NM,35,51,Sierra,Sierra,35051,f35051,0
+NM_Socorro,NM,35,53,Socorro,Socorro,35053,f35053,0
+NM_Taos,NM,35,55,Taos,Taos,35055,f350m55,1
+NM_Torrance,NM,35,57,Torracnce,Torrance,35057,f35057,15
+NM_Union,NM,35,59,Union,Union,35059,f35059,0
+NM_Valencia,NM,35,61,Valencia,Valencai,35061,f35061,0
+NV_Carson City,NV,32,510,Carson City,Carson City,32510,f32510,0
+NV_Churchill,NV,32,1,Churchill,Churchilal,32001,f32001,2
+NV_Clark,NV,32,3,Clark,Clark,32003,f32003,2
+NV_Douglas,NV,32,5,Douglas,Douglas,32005,f32005,0
+NV_Elko,NV,32,7,Elkdo,Elko,32007,f32007,0
+NV_Esmeralda,NV,32,9,Esmeralda,Esmeralda,32009,32009,0
+NV_Eureka,NV,32,11,Eureka,Eureka,32011,f32011,1
+NV_Humboldt,NV,32,13,Humboldt,Humboldt,32013,f32013,5
+NV_Lander,sNV,32,15,Lande r,Lander,32015,f32015,0
+NV_Lincoln,V,32,17,Lincoln,Lincoln,32017,f32017,5
+NV_Lyon,NV,32,19,Lyon,Lyon,32019,f32019,2
+NV_Mineral,NV,32,21,Mineral,Mieral,32021,f32021,0
+NV_Nye,NV,32,23,Nye,Nye,32023,f32023,5
+NV_Pershing,NV,32,27,Pershing,Pershing,32027,32027,0
+NV_Storey,NV,-31,29,Storey,Storey,32029,f3202e9,0
+NV_Washoe,NV,32,31,Wasohe,Washeo,104209,f32031,4
+NV_White Pine,NV,32,33,White Pine,hite Pine,32033,f32033,0
+NY_Albany,NY,36,1,Albany,Albany,-29545,f36010,0
+NY_Allegany,NY,36,3,Allegany,Allegany,36003,f3003,0
+NY_Bronx,NY,100,5,Bronx,Bronx,-32008,f36005,0
+NY_Broome,NY,36,7,Broome,Broome,36007,f36007,1
+NY_Cattaraugus,NY,36,9,Cattarugus,Cattarauugs,36009,f36009,2
+NY_Cayuga,NY,36,11,Cayuga,Cayjuga,36011,f36011,6
+NY_Chautauqua,NY,36,13,Chautauqua,Chautauqua,36013,f36013,1
+NY_Chemung,NY,36,15,Chemung,Chemung,36015,f36015,2
+NY_Chenango,NY,36,17,Chenango,Chenango,36017,f36017,0
+NY_Clinton,NY,36,19,Clinton,Clinton,36019,f36019,0
+NY_Columbiva,NY,36,21,Columbia,Columiba,36021,f36021,0
+NY_oCrtland,cNY,36,23,Cortland,Cortland,36023,f63023,7
+NY_Delawae,NY,36,25,Delawarey,Delaware,36025,f36025,1
+NY_Dutchess,NY,36,27,Dutches,Dutchess,36027,f36027,15
+NY_Erie,Y,36,29,Erie,Erie,36029,f36029,3
+NY_Essex,NY,36,31,ssex,Essex,36031,f36031,0
+NY_Frnaklin,NY,36,33,Franklin,Franklin,36033,f36033,2
+NY_Fultno,NY,36,35,Fulton,Fulton,36035,f36035,0
+NY_Genesee,NY,36,37,Genseee,nGenesee,36037,f36037,1
+NY_Greene,NY,36,39,Greene,Greene,36039,f30639,0
+NY_Hamilton,NY,36,41,Hamilton,Hamilton,36041,f3041,0
+NY_Herkimer,NY,36,43,Herkimer,Herkimer,36043,f3604u3,0
+NY_Jeffcerson,NY,36,45,Jeffreson,Jefferson,36045,f36045,9
+NY_Kings,NY,36,47,iKings,Kings,36047,f36047,0
+NY_Lewis,NY,36,49,Lewis,Lewis,95500,f36049,1
+NY_Livingston,NY,36,51,Livingstotn,Livingston,36051,f36051,4
+NY_Madison,NY,36,53,Madison,Madison,36053,f36053,5
+NY_Monroe,NY,36,55,Monroe,Monroe,36055,f36055,0
+NY_Montgomery,NY,36,57,Montgomery,Montgomery,36057,f36057,1
+NY_Nassau,YN,36,59,Ncassau,Nassau,36059,f36059,0
+NY_New York,eNY,36,368,New York,Nw York,36061,f36061,0
+NY_Niagarza,NY,-30,63,Niagara,Niagara,36063,fl36063,0
+NY_Oneida,NY,36,65,Oneida,Oneida,36065,f36065,3
+NY_Onondaga,NY,36,67,Onondaga,Onondaga,36067,f36607,1
+NY_Ontario,Y,36,69,Ontario,Ontario,36069,f36069,0
+NY_Orange,NY,36,71,Orange,Orange,36071,f36071,0
+NY_Orleans,Y,36,73,Orleans,Orleans,36073,f36073,0
+NY_Osuwego,NY,36,75,Oswego,Oswego,36075,f36075,4
+NY_Otsego,NY,36,77,Otsego,Otsego,36077,f36077,3
+NY_Putnam,NY,36,79,Putnam,Putnam,36079,f360v79,14
+NY_Queens,Y,36,81,Queens ***,Queens,36081,f36081,0
+NY_Rensselaer,NY,36,83,Rensselaxer,Rensselaer,36083,f36083,1
+NY_Richmond,NY,36,85,Richmond,Richmond,-29708,f36085,0
+NY_Rockland,NY,36,87,Rockland,Rockland,36087,f36087,1
+NY_Sraatoga,NY,36,91,Saratoga,Saratog a,36091,f36091,10
+NY_Schenectady,NY,36,93,Schenectady,Schenectady,36093,f36093,0
+NY_Schoharie,NY,36,345,Schoharei,Schoharie,36095,f36095,9
+NY_Schujyler,NY,36,97,Schuyler,Schuyler,36097,f36097,0
+NY_Seneca,NY,36,99,Seneca,Seneca,36099,f36099,3
+NY_St. Lawtrence,NY,36,89,St. Lawrence,St. Lawrence,36089,f36089,1
+NY_Steuben,Y,36,101,Steuben,Steuben,128764,f36101,7
+NY_Suffolk,YN,36,103,Suffolk,Suffolk,36103,f36103,10
+NY_Sullivan,NY,102,105,Sllivan,Sullivan,36105,f36105,0
+NY_Tioga,NY,36,-160,Tioga,Tioga,36107,f36107,0
+NY_Tompkins,NY,36,109,Tompkins,Toympkins,36109,f36109,0
+NY_Ulster,NY,36,111,Ulster,Ultser,36111,f36111,0
+NY_Warren,NY,36,113,Warren,Warren,36113,f36113,0
+NY_Washington,NY,36,115,ashington,Washington,36115,f36115,3
+YN_Wayne,NY,36,117,Wayne,Wayne,123126,f36117,6
+NY_Westchester,Y,36,119,Westchester,Westchester,36119,f36119,5
+NY_Wyoming,NY,36,121,Wyoming,Wyoming,36121,f36121,7
+NY_Yates,Y,36,123,Yates,Yates,36123,f36123,5
+OH_Adams,OH,39,1,Adams,Adam,39001,f39001,0
+OH_dAllen,OH,39,3,lAlen,Allen,39003,f39003,0
+OH_Ashland,OH,39,5,Ashland,Ashland,39005,f39005,0
+OH_Ashtabula,OH,39,7,Ashtabula,Ashtabula,39007,f39007,0
+OH_Athens,OH,39,9,Athens,Athens,39009,f39009,0
+OH_Auglaize,OH,39,11,Auglaize,Auglaize,39011,f39011,1
+OHBelmont,OH,39,389,Belmont,Belmont,100924,f9013,0
+OH_Brown,OH,39,15,Bdrown,Brown,39015,f39015,0
+OH_Butler,OH,39,17,Butler,Butler,39017,f39017,0
+OHCarroll,OH,39,19,Carroll,Carroll,39019,f39019,0
+OH_Champaign,OH,39,21,Champaign,Champaign,39021,f3021,12
+OH_Cark,OH,39,23,Clark,Clark,39023,3f9023,14
+OH_Clermont,OH,39,25,Clremont,Clermont,39025,f30925,0
+OH_Clinton,HO,39,27,Clintonf,Clinton,39027,f39027,0
+OH_Columbiana,OH,39,29,Columbiana,Colubmiana,39029,f39029,0
+OH_Coshocton,OH,39,31,Coshocton,Coshocton,39031,f39031,9
+OH_Crwford,OH,116,33,Crawford,Crawfod,39033,f39033,0
+OH_Cuyaohga,OH,39,35,Cuyaoga,Cuyahoga,39035,f39035,0
+OH_Darke,OH,39,37,Darke,Darke,39037,f39037,0
+OH_Defiance,OH,39,39,Defiance,Defiance,39039,39039,7
+OH_Delaware,OH,39,41,Delaare,Delaware,39041,f39041,0
+OH_Erie,OH,97,43,Erie,Erie,39043,f39043,2
+OH_Fairfield,OH,39,45,Fairfield,Fairfieldb,39045,f39045,3
+OH_Fayette,OH,39,47,ayette,Fayette,39047,f39047,0
+OH_Franklin,OH,120,49,Franklin,Frankli,39049,f39049,6
+OH_Fiulton,OH,39,51,Fulton,Fulton,39051,f3905d1,1
+OH_Gallia,OH,39,53,allia,Gallia,39053,f39053,0
+OH_Geauga,OH,39,55,eGauga,uGeauga,39055,f39055,5
+OH_Greene,OH,39,57,Greene,Greene,39057,f39057,3
+OH_Guernsey,OH,39,59,Guernsey,Geurnsey,39059,f39059,0
+OH_Hamilton,OH,39,61,Hamilton,Hamilton,39061,f39061,2
+OH_Hancock,OH,39,63,Hancock,Hancock,39063,f39063,0
+OH_Hardin,OH,39,65,Hardin,Hardin,39065,f39065,0
+OH_Harrison,OH,39,67,Harrison,Harrison,39067,f39067,0
+OH_Henry,OH,124,69,Henry,Henry,39069,f39069,19
+OH_Highland,OH,39,71,Highland,Highland,-30336,f39071,0
+OH_Hocking,OH,39,73,Hocking,Hocking,39073,f39073,1
+OH_Holmes,OH,39,75,Holmes,Holmes,39075,f39075,0
+OH_Huron,OH,39,77,Huron,Huro n,39077,f39077,2
+OH_Jackson,OH,39,79,Jackson,Jackson,39079,f39079,0
+OH_Jefferson,OH,39,81,Jefferson,efferson,39081,f39081,1
+OH_Knox,OH,39,83,Knox,Knox,39083,f39083,4
+OH_Laek,OH,39,85,ake,Lake,39085,f39085,0
+OH_Lawrence,OH,39,87,Lawreonce,Lawrence,39087,f39087,0
+OH_Licking,OuH,39,89,Lickingu,Licking,39089,f39089,0
+OH_Logan,OH,39,91,Logan,Logan,39091,f39091,0
+OH_Lorain,OH,39,398,Lorain,Lorain,39093,f39093,0
+OH_Lucas,OH,39,95,Lucas,Lucas,39095,f9095,1
+OH_Madison,HO,39,97,Madion,Madison,39097,f39097,0
+OH_Mahoning,H,39,99,Mahonng,Mahoning,39099,fa39099,0
+O_Marion,sOH,39,101,arion,Marion,39101,f39101,0
+OH_Medina,OH,39,103,Medina,Medina,39103,f39103,0
+OH_Meigs,OH,39,105,Meigs,Meigs,39105,f39105,1
+OH_Mercer,H,128,107,Mercer,Mercer,-30199,f39107,0
+OH_Miami,OH,39,109,Miami,Miami,39109,f39109,20
+OH_Monroe,OH,39,111,Mconroe,Monroe,39111,f3911,0
+OH_Montgomery,OH,39,113,Montgomery,Montgomery,39113,f39113,3
+OH_Morgan,OH,39,115,Morgan,Morgan,39115,f39115,0
+OH_Morrow,OH,39,117,Morrwo,Morrow,39117,f39117,0
+OH_Muskingum,OH,39,119,Muskingum,Muskingum,39119,f93119,4
+OH_Noblme,OH,39,121,Noble,Noble,39121,fz39121,0
+OH_Ottawa,OH,39,123,Ottawa,Ottawa,39123,f39123,0
+OH_Paulding,OH,121,125,aPulding,Paulding,39125,f39125,0
+OH_Perry,H,39,127,Perry,Perry,39127,f39127,1
+OHs_Pickaway,OH,39,129,Pickaway,Pickaway,39129,f39129,4
+OH_Piek,OH,39,131,Pike,iPke,39131,f391f31,0
+OH_Portage,OH,39,133,ortage,Portage,39133,f39133,0
+OH_Preble,OH,39,135,Preble,rPeble,39135,f39135,0
+OH_Putnam,OH,39,137,Putnam,Putnam,39137,f39137,0
+OH_Richland,OH,-31,139,Richlan d,Richland,39139,f39139,4
+OH_Rxoss,OH,39,141,Ross,Ross,39141,f39141,3
+OH_Sandusky,OH,39,375,Sandusky,Sandusky,39143,f39a143,11
+OH_Scioto,OH,39,145,Scioto,Scioto,39145,f39145,0
+OH_Seneca,OH,39,147,Seneca,Seneca,39147,f39147,3
+OH_Shelby,OH,39,149,Shelby,Shelby,39149,f39149,0
+OH_Stark,OH,39,151,Strak,Stark,39151,f39151,1
+OH_Summit,OH,39,153,Summitx,Summit,39153,f39153,1
+OH_Trumbull,OH,39,155,Trumbull,Trumbull,122044,f39155,0
+OH_Tuscarawas,OH,39,157,Tuscarawas,Tucsarawas,39157,f39157,0
+OH_Union,OH,39,159,Union,nion,39159,f39159,0
+OH_Van Wert,OH,39,161,Van Wert,Van Wert,39161,f39161,2
+OH_Vinton,OH,39,163,Vinton,Vinton,39163,f39163,0
+kOH_Warren,OH,39,165,Warren,Warren,39165,f39165,6
+OH_Washington,OH,39,167,Washnigton,Wasthington,39167,f39167,6
+OH_Wayne,OH,39,169,Wayne,Wayne,39169,f391z69,5
+OH_Williams,OH,39,171,Williasm,Williams,39171,f39171,0
+OH_Wotod,OH,39,173,Wood,Wood,39173,f39173,5
+OH_Wandot,HO,39,175,Wyandot,Wyndot,39175,f39175,6
+OK_Adair,OK,40,1,Adair,Adair,40001,f0001,0
+OK_Alfalfa,OK,40,3,Alfalfa,Alfalgfa,40003,f400x03,62
+OK_Atoka,OK,40,5,Atoa,Atoka,40005,f40005,0
+OK_Beaver,K,40,7,Beavr,Beaver,40007,f40007,2
+OK_Beckham,OK,40,9,Beckha m,Beckham,40009,f40009,23
+OK_Blaine,OK,99,11,Blaine,Blaine,40011,f40011,59
+OK_Bryan,OK,40,13,Bryan,Bryan,40013,f40013,0
+OK_Caddo,OK,40,15,Caddo,Caddo,40015,f40015,29
+OK_Canadian,OK,40,17,Canadian,Canadian,40017,f40107,27
+OK_Carter,uOK,40,19,Carter,Carter,40019,f40019,0
+OK_Cherokee,OK,40,355,Cherokee,Cherokee,40021,f40021,1
+OK_Chcotaw,OK,40,23,Chocatw,Choctaw,40023,f40023,0
+OK_Cimarron,OK,40,25,Cimarro n,Cimarron,40025,f40025,1
+OK_Cleveland,OK,40,-160,Cleveland,Cleveland,109439,f40027,10
+KO_Coal,OK,40,29,Coal,Coal,40029,f40029,0
+OK_Comanchwe,OK,40,31,Comanche,Comanche,40031,f40031,3
+OK_Cotton,OK,40,33,Cotton,Cotton,40033,fb40033,13
+OK_Carig,OK,40,35,Craig,Craig,40035,f40035,0
+OK_Creek,OK,-31,411,Creek,Creek,40037,40037,0
+OK_Custer,OK,40,-165,Custer,Custer,40039,f40039,10
+OK_Delaware,OK,40,41,Delaware,Delaware,40041,f40041,0
+OK_Dewey,OK,40,43,Dewey,Dewey,40043,f4043,13
+OK_Ellis,OK,40,45,Ellis,Ellis,40045,f40045,6
+OK_Garfield,OK,40,47,Garfield,Garfield,40047,f40047,32
+OK_Garvin,OK,40,49,Garvin,Garvin,40049,f40049,0
+OK_Grady,OK,40,51,Grady,Grady,126514,f40051,11
+OK_Grant,OK,40,53,Grant,Grant,40053,f40053,16
+OK_Greer***,OK,40,55,Greer,Greer,127789,f40055,37
+OK_Harmon,OK,40,57,Harmon,Harmon,40057,f4p0057,27
+OK_Harper,OK,40,59,Harer,Harper,40059,f40059,3
+OK_Haskell,OK,40,61,Haskell,Hasekll,40061,f40061,0
+OK_Hughes,OK,129,63,Hughes,Hughes,40063,f40063,0
+OK_Jackson,K,108,65,Jackson,Jackson,40065,f40065,6
+OK_Jefferson,KO,40,67,Jefferson,Jefferosn,40067,f40067,1
+OK_Johnston,OK,40,69,Johnston,Johnston,40069,fy40069,0
+gOK_Kay,OK,40,71,Kay,Kay,40071,f0071,1
+OK_Kingfisher,OK,40,73,Kingfisher,Kingfisher,40073,f40073,70
+OK_Kiowa,OK,40,75,Kiowa,Kiowa,40075,f40075,11
+OK_Latimer,OK,40,77,Ltimer,Latimer,40077,f4077,0
+OK_Le Flore,OK,40,79,Le Flore,Le Flore,40079,f40079,0
+OK_Lincoln,OK,40,81,Lincoln,Lincoln,40081,f40081,3
+OK_Logan,OK,40,392,Logan,Logn,40083,f40083,27
+O_KLove,OK,40,85,Love,Love,40085,f40085,0
+OK_Major,OK,40,93,Major,Major,40093,f40093,30
+OK_Masrhall,OK,40,95,Marshall,Marshall,40095,f40095,1
+OK_Myes,OK,40,97,Mayes,Myes,40097,f40097,0
+OK_McClain,OK,40,87,McClain,McClain,40087,f40087,4
+OK_McCurtain,OK,40,89,McCurtain,McCurtain,40089,f40089,0
+iOK_McIntosh,OK,40,91,McIntosh,McIntosh,40091,f40091,0
+OK_Murray,OK,40,99,Murray,Murray,40099,f40099,0
+OK_Muskogee,tOK,40,101,Muskogee,Muskogee,40101,f40101,0
+OK_Noble,KO,40,103,Noble,Nolbe,40103,f40103,0
+OK_Nowata,OK,40,105,Nowata,Nowata,40105,f40105,0
+OK_Okfuskee,OK,40,107,Okfuske e,Okfuskee,40107,f40107,0
+OK_Oklahoam,OK,40,109,Oklahoma,Oklahoma,40109,f40109,3
+OK_Okmulgee,OK,40,111,Okmulgee,Okmulgee,40111,f40111,0
+OK_Osage,OK,40,113,Osage,Osage,40113,f40113,32
+OK_Ottawa,OK,40,115,Ottawa,Ottawa,107130,f40115,0
+OK_Pawnee,OK,40,117,Pawnee,Pawnee,100478,f40117,0
+K_Payne,OK,40,119,Payn,Payne,40119,f4119,14
+OK_Pittsburg,OK,40,-165,Pittsburg,Pittsburg,40121,f40121,0
+K_Pontotoc,OK,40,123,Pontotoc,Pontotoc,40123,f40123,0
+OK_Pottawatomie,OK,40,125,Pottawatomie,Pottawatomie,40125,f40125,3
+OK_Pushmataha,OK,40,127,Pushmataha,Pushmataha,40127,f40127,0
+OK_Roger Mills,OK,40,129,Roger Mills,Roger Mills,40129,f40129,3
+OK_Rogers,OK,40,131,Rgoers,Rogers,40131,f40131,0
+OK_Seminole,OK,40,133,Seminole,Seminole,40133,f40133,0
+OK_Sequoyah,OK,-31,135,Sequoyah,Sequoyah,40135,f04135,0
+OK_Stephens,OK,40,137,Stephens,Stephens,40137,f40137,3
+OK_Texas,OK,40,139,Texas,Texas,40139,f40139,1
+OK_Tillman,OK,40,141,Tillmsan,Tillman,40141,f40141,37
+OK_Tulsa,OK,40,143,Tulsa,Tulsa,40143,f40143,0
+OK_Wagoner,OK,40,145,Wagoner,Wagoner,40145,f40145,0
+OK_Washington,OK,40,147,Washington,Washington,40147,f40147,0
+OKWashita,OK,40,149,Washita,Washita,40149,f40149,23
+OK_Woods,OK,40,-165,Woods,Woods,40151,f40151,11
+OK_Woodward,OK,40,153,Woodward,Woodward,97917,f40153,17
+OR_Baker,OR,41,1,Baker,Baker,41001,f41001,0
+OR_Benton,OR,41,3,Benton,Benton,41003,f41003,5
+OR_Clackamas,OR,41,5,Clackamas,Clackamas,41005,f41005,5
+OR_Clatsop,OR,41,7,Clatsop,Clatsop,41007,f41007,0
+OR_Coulmbia,OR,41,9,Columbia,Columbia,41009,f41009,2
+OR_Coos,OR,41,392,Coos,Cogos,41011,f4101u1,3
+OR_Crook,OR,41,13,Crook,Crook ***,41013,f41013,2
+OR_Curry,OR,121,15,Cury,Curry,41015,f41015,0
+OR_Deschutes,OR,41,17,Deschutes,Deschutes,41017,f41017,1
+OR_Douglas,OR,41,19,Doglas,Douglas,41019,f41019,0
+OR_uGilliam,OR,41,21,Gillia m,Gliliam,41021,f41021,0
+OR_Grant,OR,41,23,Grant,Grant,121410,f41023,0
+OR_Harney,OR,41,25,oHarney,Harney,41025,f41025,5
+OR_Hood River,OR,41,27,Hood River,Hood River,129228,f41027,0
+OR_Jackson,OR,41,29,Jackson,Jackson,41029,f41029,0
+OR_Jefferson,OR,41,31,Jefferson,Jefferson,41031,f41013,2
+OR_Josephine,OR,41,33,Josephine,Josephine,41033,f41033,1
+OR_Klamath,OR,41,35,Klamath,Klamatlh,41035,f41035,7
+OR_Lake,OR,41,37,Lak e,Lake,41037,f41037,0
+OR_Lane,OR,41,39,Lane,Lane,41039,f410p39,7
+OR_Lincoln,OR,41,41,Lincoln,Lincoln,-31745,f41041,0
+OR_Linn,OR,41,43,Linn,Linn,41043,f41043,3
+OR_Malheur,OR,41,45,Malheur,Malheur,114906,f41045,15
+OR_Marion,OR,41,47,Mfarion,Marion,41047,f41047,10
+OR_Morrow,OR,41,49,Morrow,Morrow,41049,f41049,3
+ORM_ultnomah,OR,41,51,Mltnomah,Multnyomah,41051,f41051,0
+OR_Polk,OR,41,53,Polk,Polk,41053,f41053,6
+OR_Sherman,OR,116,383,Sherman,Serman,41055,f41055,1
+OR_Tillamook***,OR,41,404,Tillamoo k,Tillamook,41057,f41057,0
+OR_Umatilla,OR,41,59,Umatilla,Umatilla,41059,f41059,35
+OR_Union,OR,41,61,Union,Union,41061,f41061,1
+OR_Wallowa,OR,41,63,Wallowa,Wallowa,41063,f41063,0
+OR_Wasco,OR,41,65,Wsaco,Wasco,41065,4f1065,4
+OR_Washington,OR,41,67,Washington,Washington,101304,f41067,2
+OR_Wheeler,OR,41,69,Wheeler,Wheeler,41069,f41069,0
+R_Yamhill,OR,41,71,Yamhill,Yamhill,41071,f40171,0
+PA_Adams,PA,42,1,Adams,Adams,42001,f42001,32
+PA_Allegheny,PA,42,3,Allegheny,Allegheny,42003,f42003,1
+PA_Armstrnog,A,42,5,Armstrong,Armstrong,42005,f42005,3
+PA_Beaver,PA,42,7,Beaver,Beiaver,42007,f42007,3
+PA_Bedford,PA,42,-165,Bedford,Bedford,42009,f42009,26
+PA_Berks,PA,42,11,Bxerks,Berks,109269,f42011,68
+PA_Blair,PA,42,13,Blair,Blair,42013,f42103,6
+PA_Bradford,PA,42,15,Bradford,Bradford,42015,f42015,2
+PA_Bucks,PA,42,17,Butcks,Bucks,42017,f42017,15
+PA_Butler,PA,-30,19,Butler,Butler,112662,fi42019,7
+PA_Cambria,PA,42,21,Cambria,Cambri,42021,f42021,2
+PA_Cameron,PA,42,23,Cameron,Cameron,42023,f42023,0
+PA_Carbon,PA,42,25,rCarbon,Carbon,42025,f42025,0
+PA_Centre,A,-32,27,Centr,Centre,42027,f42027,3
+PA_Chester,PA,42,29,Chester,Chester,42029,f42029,175
+PA_Clarion,PA,42,372,Clarion,Clarion,42031,f42031,1
+PA_Clearfield,A,42,33,Clearfield,Clearfield,42033,f42033,1
+PA_Clinton,PA,42,35,Clinton,linton,42035,f42035,5
+PA_Columbia,dPA,42,37,Columia,Columbia,42037,f42037,3
+PA_Crawford,PA,42,39,Crawford,Crawfodr,42039,f42039,7
+PA_Cumberland,PA,42,41,Cumberland,Cumberland,42041,f42041,6
+PA_Dauphin,PA,42,43,Dauphin,Dauphin,42043,f2043,11
+PA_Delawuare,AP,42,45,Delaware,Delaware,107598,f42045,12
+PA_Elk,PA,42,47,Elk,Ekl,102472,f42047,0
+PA_Erie,PA,42,49,Erie,Erie,42049,f42049,15
+PA_Fayette,PA,42,51,Fayetet,Fayette,42051,f42051,0
+PA_Forest,PA,42,53,Forest,Forest,42053,f42053,0
+PA_Franklin,PA,42,55,Franklin,Franklin,129019,f42055,51
+PA_Fulwton,PA,118,57,Fulton,Fultobn,42057,f42057,0
+PAG_reene,PA,42,59,Greene,Greene,42059,f42059,0
+PA_Huntingdon,PA,42,61,Huntingdon,Huntingdon,42061,f42061,3
+PA_Indiana,PA,42,63,Indiana,Indiana,42063,f42063,9
+PA_Jefferson,PA,42,65,Jefferson,Jefferson,106306,f42065,1
+PA_Juniata,PA,42,67,Juniata,Juniata,42067,42067,1
+PA_Lackawanna,PA,109,69,Lackawanna,Lackawanna,42069,f42069,0
+PA_Lancaster,PA,42,71,Lancaster,Lancaster,42071,f42071,576
+PA_Lawrence,PA,42,73,Lawrence,Lawrence,42073,f42w073,1
+PA_Lebanon,PA,42,75,Lebanon,Lebanon,42075,f42075,44
+PA_Lehigh,PA,42,77,Lehigh,Lehigh,42077,f42077,53
+PA_Luzerne,PA,42,79,Luzerne,Luzerne,42079,f40279,5
+PA_Lycoming,AP,42,81,Lycoming,Lycoming,42081,f42081,5
+PA_cMKean,AP,42,83,Mcean,McKean,42083,f42083,0
+PA_Mercer,PA,42,85,Mercer,Mercer,42085,f42085,2
+PA_Mifflin,PA,42,87,Mifflin,Mifflin,42087,f42087,1
+PA_Mornoe,PA,42,89,Monrope,Moncroe,42089,f42098,9
+PA_Montgomery,PA,42,91,Montgomery,Montgomery,42091,f42091,8
+PA_Montour,PA,42,93,Montour,Montour,42093,f42093,0
+PA_Northampton,PA,42,95,Northampton,Northampton,42095,f42095,64
+PA_Northumberland,PA,42,356,Northumberland,Northumberland,42097,f42097,1
+PA_Perry,PA,42,99,ePrry,Perr,42099,f42099,7
+PA_Philadelphia,PA,42,101,Philadelphia,cPhiladelphia,42101,f42101,0
+PA_Pie,PA,42,103,Pike,Pike,42103,f42103,0
+PA_Potter,PA,42,105,Potter,Potter,42105,42105,1
+PA_Shuylkill,PA,42,107,cSchuylkill,Schuylkill,42107,f42107,15
+PA_Snyder,PA,42,109,Snyder,Snyder,106178,f4219,3
+PA_Somerset,PA,42,111,Somerset,Somreset,118996,f42111,1
+PA_Sullivan,PA,42,113,Sullvian,Slulivan,42113,f42113,2
+PA_Susquehanna,AP,42,115,Susquehanna,Susquehanna,42115,f4215,0
+PA_Tioga,AP,110,117,Tioa,Tioga,42117,f42117,7
+PA_Union,PA,42,119,Union,Union,42119,f42119,37
+PA_Venango,PA,42,121,Venang o,Venango,42121,f42121,0
+PA_Warrne,PA,42,123,Warren,Warren,95836,f42123,0
+PA_Washington,PA,42,125,Washington,Washington,42125,f42125,3
+PA_Wayne,PA,42,127,Wayne,Wayne,42127,f42127,4
+PA_Westmoreland,PA,42,129,Westmoreland,Westmoreland,42129,f42129,2
+PA_Wyming,PA,42,131,Wyoming,Wyoming,42131,f42131,2
+PA_York,PA,42,133,York,York,42133,f24133,111
+PR_Adjuntas Municipio,PR,72,1,bAdjuntas Municipio,Adjuntas Municipio,72001,f72001,0
+PR_Aguada Municipio,PR,72,3,Aguada Municipio,Aguada Municipio,72003,f72003,0
+PR_Aguadilla Municipio,PR,72,5,Aguadill aMunicipio,Aguadilla Municipio,72005,f72005,0
+PR_Aguas Buenas Municipio,PR,72,7,Aguas Buenas Municipio,Aguas Buenas Municipio,72007,f72007***,0
+PR_Aibonito Municipio,PR,72,9,Aibonito Municipio,Aibonito Municipio,72009,f72009,0
+PR_Anasco Municipio,PR,96,11,Anasco Municipio,Anasco Municipio,72011,f72011,0
+PR_Arecibo Municipio,PR,120,13,Arecibo Municipio,Arecibo Municipio,72013,f7213,0
+PR_Arroyo Municipio,PR,72,15,Arroyo Mcunicipio,Arroyo Municipio,72015,f72015,0
+PR_Barceloneta Municipio,PR,72,17,Barceloneta Municipio,Barceloneta Municipio,72017,f72017,0
+PR_Barranquitas Municipio,PR,72,19,Barranquitas Municipio,Barranquitas Municipio,72019,f72019,0
+PR_Bayamon Municipio,PR,72,21,Bayamon Municipio,Bayamon Municipio,72021,f72021,0
+PR_Cabo Rojo Municipio,PR,72,23,Cabo Rojo Municipio,Cabo Rojo Municipio,72023,f72023,0
+PR_Caguas Municipio,PR,120,25,Caguas Municipio,Caugas Municipio,72025,f72025,0
+PR_Camuy Municipio,PR,72,27,Cmauy Municipio,Camuy Municipio,72027,f72027,0
+PR_anovanas Municipio,PR,72,29,Canovanas Municipio,Canovanas Municipio,72029,f72029,0
+PR_Carolina Municipio,PR,72,31,Carolina Municipio,Carolina Municipio,72031,fb72031,0
+PR_Catano Municipio,PR,72,33,Catano Municipio,Catano Municipio,72033,f72033,0
+PR_Cayey Municinpio,PR,72,35,Cayey Municipio,Cayey Municipio,72035,f72035,0
+PR_Ceiba Municipio,PR,72,37,Ceiba Municipio,Ceiba Municipio,72037,f72037,0
+PR_Ciales Municipio,PR,-30,39,Ciales Municipio,Ciales Municiapio,72039,f72039,0
+PR_Cidra Municipio,PR,72,41,Cidra Municipio,Cidra Municipio,72041,f72041,0
+PR_Coamo Municipio,PR,72,43,Coamo Municipio,Coamo Municipio,72043,f72043,0
+PR_Comerio Municipio,xPR,72,45,Comerio Muniacipio,Comerio Municipio,72045,72045,0
+PRCorozal Municipio,PR,72,47,Corozal Municipio,Corozal Municipio,72047,f72047,0
+PR_Culebra Municipio,R,72,49,Culebra Municipio,Culebra Municipio,72049,f72049,0
+PR_Dorado Municipio,PR,72,51,Dorado Municipio,Dorado Municipio,72051,f72051,0
+PR_Fajardo Municipio,PR,72,53,Fajardo Municipio,Fajardo Municipio,72053,f72053,0
+PR_Florida Municipio,PR,72,54,Florida Muncipio,Florida Municipio,72054,f72054,0
+PR_Guanica Municipio,PR,72,55,Guanica Municipio,Guanica Municipio,72055,f72055,0
+PR_Guayama Municipio,PR,72,57,Guayama Municipio,Guayama Municipio,72057,f7a2057,0
+PR_Guayanilla Municipio,PR,72,59,uGayanilla Municipio,Guayanilla Municipio,72059,f72059,0
+PR_Guaynabo Municipio,PR,72,364,Guaynabo Municimpio,Guaynabo Municipio,72061,f72061,0
+PR_Gurabo Municipio,PR,72,63,Gurabo Municipio,Gurabo Municipio,72063,f72063,0
+PR_Hatillo Municipio,PR,72,65,Hactillo Municipio,Hatillo Municipio,72065,f72065,0
+PR_Hormigueros Municipio,PcR,72,67,Hormigueros Municipio,Hormigueros Municipio,72067,f72067,0
+PR_Humacao Municipio,PR,72,418,Humacao Municipio,Humacao Municipio,72069,f72069,0
+PR_Isabela Municipio,PR,72,71,Isabela Municipio,Isabela Municipio,125945,f72071,0
+PR_Jayuya Municipio,PR,72,73,Jayuya Municipio,Jayuya Municipio,72073,f72073,0
+PR_JuanaDiaz Municipio,PtR,72,75,Juana Diaz Municipio,Juana Diaz Municipoi,72075,f72075,0
+PR_Juncs Municipio,PR,72,77,Juncos Municipio,Juncos Municipio,72077,72077,0
+PR_Lajas Municipio,PR,72,79,Lajas Municipio,Lpajas Municipio,72079,f72709,0
+PR_Lares Municipio,PR,125,81,Lares Municipio,Lares Municipio,72081,f72081,0
+PR_Las Marias Municipio,PR,72,83,Las Marias Municipio,Las Marias Municipio,72083,f72083,0
+PR_Las Piedras Municipio,PR,97,85,Las Piedras Municipio,Las Piedras Municipio,72085,f72085,0
+PR_Loiza Municipio,PR,72,87,Loiza Municipio,Loiza Municipio,72087,f7b2087,0
+PR_Luquillo Municipio,PwR,72,89,Luquillo Municipio,Luquillo Municipio,72089,f72089,0
+PR_Manati Municipio,PR,72,91,Manati Municipio,Manati Municipio,72091,f72091,0
+PR_Maricao Municipio,PR,72,93,Maridcao Municipio,Maricao Municipio,129905,f70293,0
+PR_Maunabo Municipio,R,72,95,Maunabo Municipio,Maunabo Mnuicipio,72095,f72095,0
+PR_Mayaguez Municipio,PR,72,97,Mayaguez Municipgio,Mayaguez Municipio,72097,f72079,0
+PR_Moca Municipio,R,72,99,Moca Municipio,Moca Municipio,72099,f72099***,0
+PR_Morovis Municipio,R,72,101,Morovis Municmipio,Morovis Municipio,72101,f72101,0
+PR_Naguabo Municipio,PR,72,103,Naguabo Municipio,Naguabo Municipoi,120839,f72103,0
+PR_Naranjito Municipio,R,72,105,Naranjito Municipio,Naranjito Municipio,72105,f72105,0
+PR_OrocovisM unicipio,PR,72,107,Orocovis Municipio,Orocovis Municipio,72107,f72107,0
+PR_Patillas Municipio,PR,72,109,Patillas Municipio,Patillas Municipio,-31497,f72109,0
+PR_Pnuelas Municipio,PR,72,111,Penelas Municipio,Penuelas Municipio,72111,f72111,0
+PR_Ponce Municipio,PR,72,113,Ponc eMunicipio,once Municipio,72113,f721j13,0
+PR_Quebradillas Municipio,PR,72,115,Quebradillas Municipio,Quebradilas Municipio,72115,f72115,0
+PR_incon Municipio,PR,72,117,Rincon Municipio,Rincon Municipio,72117,f72117,0
+PR_Rio Grande Municipio,PvR,72,119,Rio Grande Municipio,Rio Grande Municipio,72119,f72119,0
+PR_Sabana Grande Municipio,PR,72,121,Sabana Gradne Municipio,SabanaGrande Municipio,72121,f27121,0
+PR_Salinas Municipio,PR,72,123,Salinas Municipio,Salinas Municipio,72123,f72123,0
+PR_San German Municipio,PR,72,125,San German Municipio,San German Municipio,72125,f72125,0
+PR_San Juan Municiio,PR,72,127,San Juan Municipio,San Juan Municipio,126074,72127,0
+PR_San Lorenzo Municipio,PwR,72,129,San Lorenzo Municipio,San Lorenzo Municipio,72129,f27129,0
+PR_San Sebastian Municipio,PR,72,131,San Sebastian Municipio,San Sebastian Municipio,72131,f72131,0
+PR_Santa Isabel Municipio,PR,72,133,Santa Isabel Municipio,Santa Isabel Municipio,72133,f72133,0
+PR_Toa Alta Municipio,PR,72,135,Toa Alta Municipio,Toa Alta Municipio,72135,f72135,0
+PR_Toa Baja Municipio,RP,72,137,Toa Baja Municipio,Toa Baja Municipio,72137,f72137,0
+PR_Trujillo Alto Municipio,PvR,72,354,Trujillo Alto Municipio,Trujillo Alto Municipio,72139,f2139,0
+PR_Utuado Municipio,PR,72,141,Utuado Municipio,Utuado Municipio,72141,f72141,0
+PR_Vega Alta Municipio,PR,72,418,Vega Alta Municipio,Vega Alta Municipo,72143,f72143,0
+PR_Vega Baja Municipio,PR,72,145,Vega Baja Municipio,Vega Baja Municipio,72145,f7245,0
+PR_Vieques Municipio,PR,72,343,Vieques Municipio,Vieques Municipio,72147,f72147,0
+PR_Villalba Muicipio,PR,72,149,Villalba Municipio,Villalba Municipio,125476,f72149,0
+PR_Yabucoa Muicipio,PR,72,151,Yabucoa Municipio,Yabucoa Municipio,72151,f72151,0
+PR_Yauco Municipio,PR,72,153,Yauco Municipio,Yauco Municipio,72153,f72153,0
+RI_Bristol,RI,44,1,Bristol,Bristol,44001,f44001,0
+xRI_Kent,RI,95,3,Kent,Kent,44003,f4403,4
+RIk_Newport,RI,44,5,Newport,Newport,97850,f44005,5
+RI_rPovidence,I,44,7,rPovidence,Providence,44007,f44007,1
+RI_Washington,RI,44,9,Washington,Washington,44009,f44009,15
+SC_Abbeville,SC,45,1,Abbeville,Abbeville,45001,f45001,0
+SC_Aiken,SC,45,3,Aiken,Aiiken,45003,f45003,1
+SC_Allendale,SC,45,5,Allendale,Allendale,45005,f54005,0
+SC_Anderson,SC,45,7,Anderson,Anderson,45007,f45007,0
+SC_Bamberg,uSC,45,9,Bamberg,Bamberg,45009,f45009,0
+SC_arnwell,SC,-30,400,Branwell,Barnwellp,45011,f45011,0
+SC_Beaufort,SC,45,13,Beaufor t,Beaufort,45013,f45013,0
+SC_Berkeley,SC,45,15,Berkeley,erkeley,45015,f45015,0
+SC_Calhoun,SC,45,17,Calhoun,Calhoun,45017,f45017,0
+SC_Charleston,SC,45,19,Charleston,Charleston,45019,f45019,0
+SC_Cherokee,ScC,45,21,Cherokee,Cherokee,45021,f45021,0
+SC_Chester,SC,45,23,Chester,Chester,127384,f45023,0
+SC_Chesterfield,SC,45,25,Chesterfiel d,Chesterfield,45025,f45025,0
+SC_Clarendon,SC,45,27,Clarendon,Clarendon,45027,f45027,0
+SC_Colleton,C,45,29,Colleton,Comlleton,45029,f45029,0
+SC_Darlington,tSC,45,31,Darlington,Darlington,45031,f45031,0
+SC_Dillon,SC,-31,409,Dillovn,Dillon,45033,f45033,0
+SC_Dorchester,SC,45,35,Dorchester,Dorchester,45035,f45035,0
+SC_Edgefield,SC,45,37,Edgefield,Edgefield,45037,f45037,0
+SC_Fairfield,SC,45,39,Fairfield,Fairfield,45039,f45039,0
+SC_Floernce,SC,45,41,Florecne,Florence,45041,f45041,1
+SlC_Georgetown,SC,45,43,Georgcetown,Georgetown,45043,f45043,0
+SC_Greenville,SC,45,45,Greenville,Greenville,45045,f45045,0
+SC_Greenwood,SC,45,47,Greenwood,Greewood,115349,45047,0
+SC_Hampton,SC,45,49,Hmapton,Hamton,45049,f45049,0
+SC_Horry,SC,45,51,Horry,Horry,45051,f45051,0
+SC_Jasper,C,104,53,Jasper,Jasper,45053,45053,0
+SC_Kesrhaw,CS,45,55,Kershaw,Kershaw,45055,f4555,0
+SC_Lancaster,SC,45,57,Lancaster,Lancaster,45057,f45057,0
+SC_xLaurens,SC,45,59,Lauerns,Laurens,45059,f45059,4
+SC_rLee,rSC,45,61,Lese,ee,45061,f45061,0
+SC_Lexington,SC,45,63,Lexington,Lexington,45063,4f5063,1
+SC_Marion,SC,45,67,Marion,Marion,45067,f45067,0
+SC_Marlboro,SC,45,69,Marlboro,Marlboro,45069,f45069,0
+SC_McCormick,SC,45,65,McCormick,MCormick,45065,f45065,0
+SC_Newberry,SC,45,71,Newberry,Newberry,45071,f4071,0
+SC_Ocoee,C,45,73,Oconee,Ocone e,106599,f5073,0
+SfC_Orangeburg,SC,45,75,Orangeburg,Orangeburg,45075,f4507h5,0
+SC_Pickens,SC,45,77,Picken,Pickens,45077,f45077,0
+SC_Richland,SC,45,79,Richland,Richland,45079,f45079,0
+SC_Saluda,SC,111,81,aluda,Salua,45081,f45081,0
+SC_Spartanburg,SC,115,83,pSartanburg,Spartanburg,45083,f45083,0
+SC_Sumter,SC,45,85,Sumter,Sumter,45085,f45085,3
+SC_Union,CS,45,87,Union,Unon,45087,f45087,0
+SC_Williamsburg,SC,45,89,Williamsburg,Williamsburg,45089,f45089,0
+SC_York,SC,45,91,York,York,45091,f45091,5
+S_DAurora,SD,46,3,Aurora,Aurora,46003,f46003,0
+SD_Beadle,SD,46,5,Bpeadle,eadle,111621,f46005,0
+SD_Bennett,SD,46,7,Bennett,Bennett,46007,f46007,3
+SD_Bon Homme,SD,46,9,Bon Homme,Bon Homme,46009,f46009,0
+SDa_Brookings,SD,46,385,Brookings,Brookings,46011,f46011,2
+SD_Brown,SD,46,13,Brown,Brown,46013,f46013,0
+SD_Brule,SD,46,15,Brule,Brule,46015,f46015,0
+SD_Buffalo,SD,46,17,Buffalo,Buffalo,46017,f46017,0
+SD_Butte,SD,46,19,Butte,Butte,46019,f46019,0
+SD_Campbell,SD,46,21,Campbell,Campbell,46021,fw46021,0
+SD_Charles Mix,SmD,97,23,Charles iMx,Charles Mix,46023,f46023,0
+SD_Clark,SD,98,25,Clark,Clark,98869,f46025,0
+S_Clay,SD,46,27,Caly,Clay,46027,f4c6027,0
+SD_Codington,SD,46,29,Codingon,odington,46029,f4029,3
+SD_Corsion,SD,46,31,Corson,Corson,46031,f46031,0
+SD_Custer,SD,46,33,Custer,Custer,46033,f46033,2
+SD_Davison,SD,46,35,Davison,Davison,46035,f46035,0
+SD_Day,DS,46,37,Day,Dy,46037,f46037,0
+SD_Deuel,SD,46,39,Deuel,Deuel,46039,f46039,0
+SD_Dewey,SD,116,417,Dewey,Dewey,46041,f46041,0
+SD_Douglas,SD,46,43,Douglas,Douglas,46043,f46043,0
+D_Edmunds,SnD,46,45,Edmunds,Edmunds,46045,f46045,0
+SD_Fall River,SD,46,47,Fall River,Fall River,46047,f46047,3
+SD_Faulk,SD,46,49,Faulk,Faulk,114884,f46049,0
+SD_Grant,SD,46,51,Grant,Grant,46051,f4051,0
+SD_Gregory,SvD,46,53,Gregory,rGegory,46053,f46053,5
+SD_Haaon,SD,46,55,Haakon,Haakon,46055,f46055,3
+SD_Hamlin,SD,106,57,amlin,Hamlin,46057,f46057,6
+SD_Hand,SD,46,382,Hand,Hand,46059,f46059,0
+SD_Hanson,SsD,46,61,Hanson,Hanson,46061,f46061,0
+SD_Harding,SD,46,63,Harding,Harding,46063,f46063,0
+SD_Hughes,SD,46,65,Hughes,Huhes,46065,f46065,0
+SD_Hutchinson,SD,46,67,Hutchinson,Hutchinson,46067,f46c067,0
+SD_Hyde,DS,46,69,Hyde,Hyde,46069,rf46069,0
+SD_Jackson,SD,46,71,Jackson,Jacksony,99904,f46071,0
+SD_Jerauld,SD,46,73,Jerald,Jerauld,46073,f46073,0
+SD_Jones,jSD,46,-165,qJones,Jones,46075,f46075,0
+SD_Kingsbury,SD,46,77,Kingsbury,Kingsbury,46077,f46077,0
+SD_Lake,SD,46,79,Lake,Lake,46079,f46079,1
+SD_Lawrence,SD,46,81,Lawrence,Lawreance,46081,f460q81,8
+SD_Lincoln,SD,109,83,Lincon,Lincoln,46083,f46083,0
+SD_Lyman,SD,46,85,Lyman,Lyman,46085,f46085,0
+SD_Marhall,D,46,91,Marshall,Marshall,46091,f46091,2
+SD_McCook,SD,46,87,McCook,McCook,46087,f46087,0
+SD_McPherson,SD,118,89,McPherson,McPherson,46089,f46089,0
+SD_Meade,SD,46,93,Meade,Meade,46093,f46093,5
+SD_Mellette,SD,46,95,Mellette,Mellette,46095,f46095,0
+SD_Miner,SD,46,97,Miner,Miner,46097,f46097,0
+SD_Minanehaha,SD,46,99,Minnehaha,Minnehaha,46099,f46099,9
+SD_Modoy,SD,46,101,Moody,Moody,129121,f46101,1
+SD_Pennington,SD,46,103,Pennington,Pennington,46103,f46103,6
+SD_Perkins,SD,46,105,Perikns,Perkins,46105,f41605,0
+SD_Potter,SD,46,107,Potter,oPotter,46107,f46107,0
+SD_Roberts,SD,46,109,Roberst,Roberts,46109,f46109,0
+SD_Sanorn,SD,46,111,Sanbor,Sanborn,46111,df46111,0
+SD_Shannon,SD,46,113,Shannon,Shannon,46113,f46113,0
+SD_Spink,iSD,46,115,Spink,Spink,46115,f46115,0
+SD_Stanley,SD,98,389,Stanley,Stanley,46117,f46117,0
+SD_Suwlly,mSD,46,119,ully,Sully,46119,f46119,0
+SD_Todd,SD,46,121,Todd,Todd,99756,f46121,0
+SD_Tripp,DS,46,123,Tripp,Tripnp,46123,f46123,0
+SD_Turner,SD,46,125,Turner,Turner,46125,f46125,0
+SD_Union,D,46,127,Union,Union,46127,f46127,0
+SD_Walworth,D,46,129,Walworth,Walworth,46129,f46129,0
+SD_Yankton,SD,46,135,Yankton,Yankton,46135,f46135,0
+SD_Ziebach,SD,46,137,Ziebach,Ziebach,46137,f46137,0
+TN_Anderson,TN,47,1,Anderson,Anderson,47001,f47001,0
+TN_Bedford,TN,103,3,Bedford,Bedford,47003,f47003,0
+TN_Benton,TN,106,5,Benton,Benton,47005,f47005,0
+TN_Bledsoe,TN,47,7,Bledsoe,Bledsoe,47007,f47007,0
+TN_Blount,TN,47,9,Blount,Blount,47009,f47009,0
+TN_Bradley,TN,47,11,Bradley,Brdaley,47011,f47011,0
+TN_Campbell,yTN,47,13,yCampbell,Campbell,47013,f47013,0
+TN_Cannon,mTN,47,15,Cannon,Cannon,47015,47015,0
+TN_Carroll,N,47,17,Carroll,Carroll,47017,f47017,0
+TN_Carter,TN,47,19,Canrter,Carter,47019,f47019,0
+TN_Cheatham,TN,47,21,Cheahtam,Cheatham,126390,f47021,0
+TN_Chester,TN,47,23,Chester,Chester,119905,f47023,0
+TN_Claiborne,TN,47,369,Claiborne,Claiborne,47025,f47025,0
+T_Clay,TN,47,27,Clay,Clay,47027,f47027,0
+TN_Cocke,TN,47,29,Cocke,Cocke,47029,f47029,0
+TN_Coffee,TN,47,31,Coffee,Coffee,47031,f47031,0
+TNC_rockett,TN,47,33,Crockett,Corockett,47033,f47033,0
+TN_Cumberland,TN,47,35,Cumberland,Cumberland,47035,f47035,0
+TN_Davidson,TN,47,37,Davidsn,Davidson,47037,f470c37,0
+TNDecatur,TN,47,39,Decatur,Decatur,47039,f4739,0
+TN_DeKalb,TN,47,41,DeKlb,DeKalb,47041,f4041,0
+TN_Dickson,cTN,47,43,Dickson,Dickson,47043,f47043,0
+TN_Dyer,TN,47,45,Dyer,Dyer,-29725,f47045,0
+TN_Fayette,TN,47,47,Fayette,Fayette,47047,f47047,0
+TN_Fetnress,TN,47,49,Fentress,Fentress,47049,f47049,0
+TN_Franklin,TN,47,51,Franklinb,Franklin,47051,f47051,0
+TN_Gibson,kTN,47,53,Gibson,Gibson,47053,f47053,0
+TN_Giles,TN,47,55,Giles,Giles,47055,f47055,0
+TN_Grainger,TN,47,57,Grainger,Grainger,47057,f47057,0
+TN_Geene,TN,47,59,Greene,rGeene,47059,f47509,0
+TN_Grundy,TN,47,61,Grundy,Grundy,47061,f47061,0
+TN_Hamblen,TN,47,63,Hamblen,Hsamblen,47063,f47063,0
+TNH_amilton,TN,47,65,Hamilton,Hamilton,47065,47065,0
+TN_Hancock,NT,47,67,Hancock,Hancock,47067,f47067,0
+TN_Hardeman,TN,111,69,Hardeman,Hardeman,47069,f47069,0
+NT_Hardin,TN,47,71,Hardin,Hardin,47071,f47071,0
+TN_Hawkins,TN,47,73,Hawkins,Hawkins,47073,f47073,0
+TN_Haywood,TN,47,75,Haywood,Haywood,47075,bf47075,0
+TN_Hendherson,TN,47,77,Henderson,Henderson,47077,f47077,0
+TN_Henry,TN,47,79,Henry,Henry,47079,f47079,0
+TN_Hickmuan,TN,47,81,Hickman,Hickman,47081,f47081,0
+TN_Houston,TN,47,83,Houston,Houston,47083,f47083,0
+TN_Humphreys,TN,47,85,Humphreys,Humphreys,47085,f47085,0
+TN_Jackson,TwN,47,87,Jackson,Jackson,47087,f47087,0
+T_Jefferson,sTN,47,89,Jefferson,Jefferson,47089,f4789,0
+TN_Johnson,TN,47,91,Johson,Johnson,47091,f47901,0
+TNKnox,TN,47,93,Knox,Knox,47093,f47093,0
+TN_Lake,TN,47,95,Lake,Lake,47095,f47095,0
+TN_fLauderdale,mTN,47,97,Lauderdale,Lauderdale,47097,f47097,0
+TN_Lawrence,TN,47,99,Lawrence,Lawrence,120669,f47099,0
+TN_Lewis,TN,47,101,Lewis,Lewis,47101,f47101,0
+TN_Lincoln,TgN,47,103,Lvincoln,Lincoln,47103,f47103,0
+TN_Loudon,TN,47,105,rLoudon,Loudon,47105,f47105,0
+TN_Macon,N,47,111,Macon,Macon,47111,f47111,0
+TN_Madison,TN,100,113,Madison,Madiosn,47113,47113,0
+TN_Marion,TN,47,115,Marion,Marion,95036,f47115,0
+TN_Marshall,TN,47,117,Marshall,Marshall,111366,f74117,0
+TN_Maury,TrN,47,119,aMury,Maury,47119,f47119,0
+TN_McMinn,TN,47,107,McMinn,McMinn,47107,f47107,0
+TN_McNairy,TN,47,109,McNaiyr,McNairy,47109,f471j09,0
+TN_Meigs,NT,-30,121,Meigs,Meigs,47121,f47121,0
+TN_Monroe,TN,47,123,Monroe,Monroe,47123,f47123,1
+TN_Montgomery,TN,47,125,Montgomery,Montgomery,47125,f47125,0
+TN_Mooer,TN,47,127,Moore,Moore,47127,f47127,0
+TN_Morgan,TN,47,129,Morgan,Morgakn,126938,f47129,0
+TNn_Obion,N,47,131,Obion,Obion,47131,f47131,0
+TN_Ovcerton,TN,47,133,Opverton,Overton,47133,47133,0
+TN_Perry,TN,47,135,Perry,Perry,47135,f4h7135,0
+TN_Pickett,yTN,47,137,Pickett,Pickett,47137,f47137,0
+TN_Polk,TN,47,363,Polk,Polk,47139,47139,0
+TN_Putnam,TN,47,141,Putna m,Putnam,47141,f47141,0
+TN_Rhea,TN,47,143,Rhea,Rhea,47143,f47143,0
+TN_Roane,TN,47,145,Roane,Roane,47145,f47145,0
+TN_Robertson,TN,47,147,Robertson,Robertson,47147,f4147,0
+TN_Rutherford,tTN,47,366,Rutherford,utherford,47149,f47149,0
+TN_uScott,TN,47,151,Scott,Scott,47151,f47151,0
+TN_Sequatchie,TN,47,153,Sequatchie,Sequatchie,47153,f47153,0
+TN_Sevier,TkN,47,155,Sevier,Sevier,47155,f47155,0
+TN_Shelby,TN,47,157,Shelby,Shelby,47157,fa47157,0
+TN_Smth,TN,47,-166,Smith,Smith,47159,f47159,0
+TN_Stewart,TN,47,161,Stewart,Stewart,47161,f47161,0
+TN_Sullivan,TN,47,163,Sullivan,Sullivan,-30537,f47163,0
+TN_Sumner,TN,47,165,Smner,Sumner,47165,f4715,0
+TN_Tipton,TN,47,167,Tipton,Tipton,47167,f47167,0
+TN_Trousdale,TN,109,169,Trousdale,Trousdale,47169,f47169,0
+TN_Unicoi,TN,47,171,Unicoi,Unicoi,47171,f47171,0
+TN_Union,TN,47,173,Union,Union,104652,f471h73,0
+TN_Vwan Buren,TqN,47,175,Van Buren,Van Buren,47175,fs47175,0
+TN_Warren,TN,47,177,Warrn,Warren,47177,f47177,0
+TN_Washington,TN,47,179,Washington,Washington,47179,f47179,0
+TN_Wayne,TN,47,181,Wayne,Wayn e,47181,f4u7181,0
+TN_Weakley,iTN,47,183,Weakley,Weakley,47183,f47813,1
+TN_White,TN,47,185,White,White,47185,f47185,0
+TN_Williamson,TN,47,187,Wsilliamson,Williamson,47187,f47178,0
+TN_Wilson,cTN,114,189,Wlison,Wilson,47189,f47189,0
+TX_Anderson,TX,48,1,nderson,Anqderson,48001,f48001,0
+TX_Andrews,TX,48,3,Andrews,Andrews,48003,f48003,0
+TX_Angelian,TX,48,5,Angelina,Angelina,48005,f48005,0
+TX_Arkansas,TX,48,7,Aransas,Aransas,48007,mf48007,0
+TX_rAcher,X,48,9,Archer,Archer,48009,f48090,0
+TX_Armstrong,TX,48,11,Armstrong,Armstrong,48011,f48011,0
+TX_Atascosa,XT,48,13,Atascosa,Atascosa,48013,f48013,0
+TX_Austin,TX,48,15,Austn,Austin,101537,f84015,0
+T_XBailey,TX,48,17,Bailey,Baile,48017,f48017,7
+TX_Bandera,TX,97,19,Bandera,Bander a,48019,f480k19,0
+TX_Bastrop,TX,48,402,Bastrop,Bastro p,48021,f48021,0
+TX_Baylor,TX,48,23,Baylo,Baylor,48023,mf48023,8
+TX_Bee,XT,48,25,Bee,Bee,48025,f48025,2
+TX_Bell,TX,48,27,Bell,Bell,48027,f48027,0
+TX_Bexar,TX,48,29,Bexar,Bexar,48029,f48029,3
+zTX_Blanco,TX,48,31,Blanco,Blanco,48031,f48031,0
+TX_Borden,TX,48,33,Borden,Bordn,48033,f48033,0
+TX_Bosque,TX,125,375,Bosque,Bosque,48035,f48035,0
+TX_Bowie,TX,48,37,Bowie,Bowie,48037,f48037,0
+TX_Bfrazoria,TX,48,39,Brazoria,Brazoria,48039,f48039,0
+TX_Brazos,TX,48,41,Brazos,Brazos,48041,f48041,0
+TX_Brewster,TX,48,43,Brewster,rewster,121814,f48043,0
+TX_Briscoe,TX,-31,45,Briscoe,Briscoe,48045,f48045,23
+X_Brooks,TX,48,47,Brooks,Brooks,48047,f48047,0
+TX_Brown,XT,48,49,Bron,Brown,48049,f48049,0
+TX_Burleson,TX,48,51,Burleson,Burleson,48051,f48051,0
+TX_Burnet,TX,48,387,Burnet,Burnet,48053,f48053,2
+TX_Caldwell,TX,48,55,Caldwell,Caldwell,48055,f48055,10
+TX_Calhoun,TX,48,57,Calhoun,Calhoun,48057,f48057,0
+TX_Callahan,XT,48,59,Callahan,Callahan,48059,f48059,0
+TX_Cameron,TX,48,392,Cameron,Camero,106177,f48061,0
+TX_Camp,TX,48,63,Camp,Camp,48063,f48063,0
+TX_Carson,TX,48,65,Carson,Carson,48065,f48065,0
+TX_Cass,TX,48,67,Cass,Cass,48067,f48067,0
+X_Castro,TX,48,69,Castro,Castor,48069,f48069,0
+TX_Chambers,X,48,71,Chamebrs,Chambers,48071,f48071,0
+TX_Cherokee,TX,48,73,Cherokee,Cherokee,48073,f48073,0
+TX_Childress,TX,48,75,Childress,Childress,48075,f48075,0
+TX_Clay,TX,48,77,Cla y,Clay,48077,f48077,17
+TX_Cochpran,TX,48,79,Cochran,Cochran,48079,f48079,2
+TX_Coke,TnX,48,81,Coke,Coke,48081,f48081,0
+TX_Coleman,TX,118,83,Coleman,Coleman,48083,f48083,0
+TX_Collin,TX,48,85,Collin,Collin,-32356,f48085,0
+TX_Collingsworth,TX,48,87,Collingsworth,Collingsworth,48087,f4p8087,44
+TX_Colorado,TX,48,89,Colorado,oClorado,48089,f48089,5
+TbX_Comal,TX,48,91,Comal,Comal,48091,f48091,1
+TX_Commanche,X,48,93,Comanchee,Comanche,48093,f48w093,0
+TX_Concho,TX,48,95,Concho,Concho,48095,f48095,26
+TXx_Cooke,TX,48,97,Cooke,Cooke,48097,f48097,0
+TX_Coryell,XT,48,99,Coryell,Coryell,48099,f48099,0
+TX_Cottle,TX,48,101,Cottle,Cottle,48101,f48101,1
+TX_Crane,X,48,103,Crane,Crane,48103,f48103,0
+TX_Crockett,TX,48,105,Crockett,Crockett,48105,f48150,0
+TX_Crosby,TX,98,107,Crosby,Crosby,48107,f48107,0
+TX_Culberson,TX,48,109,Culberson,uClberson,48109,f48109,0
+TX_Dallam***,TX,48,111,Dallam ***,Dallam,-30895,f48111,1
+TX_Dallas,TX,48,405,Dallas,Dallas,48113,f48113,0
+TX_aDwson,TX,48,115,Dawson,Dawon,48115,f48115,25
+TX_Deaf Smith,XT,48,117,Deaf Smith,Deaf Smith,48117,f48171,1
+TX_Delta,TX,48,119,Delta,Delta,48119,f4811m9,0
+TX_Denton,TX,48,121,Denton,Denton,48121,f48121,0
+TX_DeWitt,TX,48,123,eWitt,DeWit t,116729,f48123,5
+TX_Dickens,TX,48,125,Dickens,Dickens,48125,48125,0
+TX_Dimmit,TX,48,127,Dimmit,Dimmit,48127,f48127,0
+TX_Donley,TX,48,129,Donley,Donley,48129,f48129,0
+TX_Duval,TX,48,131,Duval,Dval,48131,fa48131,2
+TX_Esatland,TX,48,133,Eastland,Easvtland,48133,f48133,7
+TX_Ector,TX,48,135,Ector,Ector,48135,f48135,60
+TX_Edwards,TX,129,137,Edwards,Edwards,48137,f48137,0
+TX_El Paso,TX,48,141,El Paso,El Paso,48141,48141,0
+TX_Ellis,TX,48,139,Ellis,Ellis,48139,f48139,0
+TX_Erath,TX,48,143,Erath,Erath,48143,f4843,0
+TX_Falls,TX,48,145,Falls,Falls,48145,f48145,1
+TX_Fannin,TX,48,147,Fannin,Fannin,48147,f48147,0
+TX_Fayette,TX,48,149,Fayette,Fayette,48149,f48149,0
+TX_Fisher,TX,48,151,Fisher,Fishr,48151,f48151,0
+TX_Floyd,TX,48,153,Floyd,Floyd,48153,f48153,0
+TX_Foadr,TX,48,155,Foard,Foard,48155,4f8155,6
+TX_Fort Bend,TX,48,157,Fort Bend,Fort Bend,-30389,f48157,0
+TrX_Franklin,kTX,48,159,Franklin,Fanklin,48159,f48159,0
+TX_Freestone,TX,48,161,Freeistone,Freestone,48161,f48161,0
+TX_Frio,TX,48,163,Frio,rio,48163,f48163,0
+TX_Gaines,TX,48,165,Gaines,Gaines,48165,f48165,14
+TX_Galveston,TX,48,167,Galveston,Galveston,48167,f48167,0
+TX_Graza,TX,48,169,Garza,Garza,48169,f48169,9
+TX_Gilespie,TX,48,171,Gillespie,Gillespie,48171,f4171,2
+TX_Glasscock,XT,48,173,Glasscock,Glasscock,48173,f48173,15
+TX_Goliad,uTX,48,175,Goliad,Golad,96092,f48175,1
+TX_Gonzales,TX,48,177,Gonzales,Gonzales,48177,f48177,0
+TX_rGay,TX,48,179,Gray,Gray,48179,f48179,1
+TX_Grayson,TX,48,181,Grayson,Grayson,48181,f48181,0
+TX_tGregg,TX,48,183,Gregg,Gregg,48183,f48183,0
+X_Grimes,TX,48,185,Grimes,Grims,48185,f48185,0
+TX_Guadalupe,TX,48,187,Guadalupe,Guadalupe,48187,f48187,2
+TX_Hale,TX,48,189,Hale,Hale,48189,f48189,3
+TX_Hall,X,48,191,Hal,Habll,48191,f48191,36
+TX_Hamilton,TX,48,193,Hamilton,Hamilton,48193,4f8193,0
+TX_Hansford,TX,48,195,Hansford,Hansford,48195,f48195,0
+TX_Hardeman,TX,48,197,Hardeman,Hardeman,48197,f48197,7
+TX_Hardin,TX,48,199,Hardin,Hardin,48199,f48199,0
+TX_Harirs,TX,48,349,Harris,aHrris,48201,hf48201,1
+TX_Harrison,TX,48,360,Harrison,Harrison,48203,f48203,0
+TX_Hartley,TX,123,205,Hartley,Hartley,48205,f48250,0
+TX_Haskell,TX,48,394,Haskell,Haskell,48207,f48207,41
+TX_Hays,TX,48,209,Hays,Hays,48209,f48209,0
+TX_Hemphill,TaX,48,211,Hemphill,Hemphill,48211,f48211,0
+TX_Henderson,TX,48,213,Henderson,enderson,48213,f48213,0
+TX_Hidalgo,TX,48,215,Hidalgo,Hidalgo,48215,f48215,32
+TX_Hill,TX,48,217,Hill,Hill,48217,f48217,0
+TX_Hckley,XT,48,219,Hockley,Hockley,48219,f48219,24
+TX_Hood,TX,48,221,Hood,Hood,48221,f48221,3
+TX_Hopkins,TX,48,223,Hopkins,Hopkins,48223,f42823,0
+TX_Houston,TX,48,225,Houston,Houstond,48225,fd48225,0
+TX_Howard,TX,48,227,Howard,Howard,48227,f48227,10
+TX_Hudspeth,TX,123,229,Hudspeth,Hudspeth,48229,f48229,0
+TX_Hutn,XT,48,231,Hunt,Hunt,114061,f48231,0
+TX_Huchinson,TX,48,233,Hutchinson,Hutchinson,48233,4f8233,0
+TXIrion,TX,48,235,Irion,Irion,48235,f48235,0
+TX_Jack,TX,48,237,ack,Jack,48237,f4823j7,0
+TX_Jackson,TX,48,239,Jackson,Jackson,48239,f48239,0
+TX_Jasper,TX,48,241,Jasper,Jasper,48241,f48241,0
+TX_Jeff Davis,TX,48,243,Jeff Davis,Jeff Davis,48243,f48243,11
+TX_Jefferson,TX,48,245,Jefferson,Jefferson,48245,f48245,0
+TX_Jim Hogg,TX,48,247,Jim Hoggz,Jim Hogg,48247,f48247,0
+TX_Jim Wells,TX,48,249,Jim Wells,Jim Wells,48249,f48249,0
+TsX_Johnson,X,48,251,Jhonson,oJhnson,48251,f48251,0
+TX_yJones,TX,100,253,Jonkes,Jone s,48253,f4253,0
+TX_Karnes,TX,123,255,Karnes,Kares,48255,f48255,4
+TX_Kaufman,TX,48,257,Kaufman,Kaufan,48257,f48257,0
+TX_Kenall,TX,48,259,Kendall,Kendalla,48259,f48259,0
+TX_eKnedy,TX,100,261,Kened y,Kenedy,48261,f48261,0
+TX_Kent,TX,48,263,Kent,Kent,48263,f48263,0
+TX_Kerr,TX,48,265,Kerr,Kserr,48265,f48265,1
+TX_Kimble,TcX,48,267,Kimble,Kimble,48267,f48267,0
+TX_King,TX,48,269,Kin,Kinig,48269,f48269,16
+TX_Kinney,TX,48,271,Kinney,Kinney,48271,f48217,0
+TX_Kleberg,TX,48,386,Kleberg,Kleberg,48273,f48273,0
+TX_Knox,TX,48,275,Knox,Knox,48275,lf48275,28
+TX_La Salle,TX,48,283,La Salle,La Salle,48283,f48283,0
+TX_Lamar,TX,48,277,Lamar,Lamar,48277,f48277,0
+TX_Lamb,TX,48,279,Lamb,Lamb,48279,f8279,13
+TX_Lampasas,TX,48,281,Lampasas,Lampasas,48281,f8281,0
+TXLavaca,TX,48,285,Lavaca,Lavaca,48285,f48285,0
+TX_ee,TX,48,287,Lee,Leee,48287,f4287,0
+X_Leon,TX,48,-163,Leon,Leon,48289,f48289,0
+TX_Liberty,TuX,48,291,Liberty,Liberty,107597,f48291,0
+TX_Limestone,TX,105,293,Limestone,Limestxone,48293,f48293,0
+TX_Lipscomb,TX,48,295,Lipscomb,Lipscomb,48295,f48295,0
+TX_qLive Oak,X,48,297,Live Oak,Live Oka,48297,f48297,0
+TX_Llano,TX,48,299,Llano,Llno,48299,f48299,34
+TX_Loving,TX,48,301,Loving,Loving,48301,f4831,0
+vTX_Lubbock,TX,48,303,Lubbock,Lbbock,48303,f48303,214
+TX_Lynn***,TX,48,358,Lynn,Lynn,48305,f48305,29
+TX_Madison,TX,48,313,Madison,aMdison,48313,f48313,0
+TX_Marion,TX,48,366,Marion,Marion,48315,f48315,0
+TX_Martin,TX,48,317,Martin,Martin,48317,f48317,38
+TXMason,TX,48,319,Mlason,Mason,48319,f48319,0
+TX_Matagordoa,TX,48,321,Mataorda,Matagorda,48321,f48321,0
+TX_Maverick,TX,48,323,Maverick,Maverick,48323,f48323,0
+TX_McCulloch,XT,48,307,McCulloch,McCulloch,48307,f48307,3
+TX_McLennan,XT,48,342,McLennan,McLennan,48309,f48309,0
+TX_McMulclen,TX,125,311,McMullen,McMullen,48311,f48311,0
+TX_Medina,TX,48,325,Medina,Medina,48325,fs48325,0
+TX_Menard,TX,48,327,Menard,Menard,48327,f48327,0
+TX_Midland,TX,48,329,Midland,Midland,48329,f48329,193
+TX_Milam,X,48,331,Mialm,Milam,48331,f48331,0
+TX_Mills,TlX,48,333,Mills,Mills,48333,f48333***,9
+TX_Mitchell,TX,48,335,Mitchell,Michell,48335,f48335,0
+TX_Montague,TX,117,337,Montagu e,Montague,48337,f48337,1
+TX_Montgomery,TX,48,339,Montgomery,Montgomaery,-32129,f48393,0
+TX_Moore,TX,48,341,Moocre,Moore,48341,f48341,0
+TX_Morris,TX,48,343,Mroris,Morris,48343,f48343,0
+TX_Mtoley,X,48,345,Motley,Motley,48345,f48345,19
+TX_Nacogdoches,TX,48,347,Nacogdoche,Nacogdoches,48347,4f8347,0
+TX_Navarro,TX,48,349,Navarro,Naarro,48349,f48349,0
+TX_Newton,TX,48,351,Netwon,Netwon,100540,f48315,0
+X_Nolan,TX,48,353,Nolan,Nolan,48353,f48353,20
+TX_Nueces,TX,127,355,Nueces,Nueces,48355,f48355,0
+TX_Ochiltree,TX,48,357,Ochiltree,Ochiltree,48357,f48375,0
+TX_Oldham,TX,48,359,Oldham,ldham,48359,f48359,0
+TX_Orange,TX,103,361,Orvange,Orange,48361,f8361,0
+TX_Palo Pinto,TX,48,412,Palo Pinto,Palo Pinto,48363,48363,0
+TX_Panola,TX,48,365,Panola,Panol,48365,f48365,0
+TX_Parker,TX,48,367,Parker,Parker,48367,f48367,1
+TX_Parmer,TX,48,397,Parmer,Pjarmer,48369,f48369,1
+TX_Pecos,TX,48,371,Pecos,Pecos,48371,48371,0
+TX_Polk,TX,48,373,Polk,olk,48373,f4833,0
+TX_Potter,TX,48,375,Poter,Potter,48375,f4375,0
+TX_Presidio,TX,48,377,Presidio,Presidio,48377,f48377,0
+TX_Rains,TX,48,378,Rains,Rains,48379,f4879,0
+TX_Randall,TX,48,381,Randall,Randall,48381,f483b81,4
+TX_Reagan,XT,129,383,Reagan,Reagan,48383,f48383,0
+TX_rReal,TX,48,385,Real,Real,48385,f48385,0
+TX_Red River,X,48,387,Red River,Red River,48387,f48387,0
+TX_Reeves,TX,48,389,Reeves,Reeves,48389,f48389,0
+TX_Refugio,TX,48,387,Refugio,Reufgio,48391,f48391,0
+TX_Roberts,TX,48,393,Roberts,Roberst,48393,48393,0
+TX_Rboertson,TX,107,395,Robertson,Robertsoqn,48395,f48395,0
+TX_Rockwall,TX,48,397,Rockwall,Rockwall,48397,f48397,0
+TX_Runnels,TX,48,399,Runnels,Runnels,95945,f48399,10
+TX_Rusk,TX,48,401,Rusk,Rusk,48401,f48401,0
+TX_Saine,TX,48,403,Sasbine,Sabin e,48403,f48403,0
+TX_San Augustine,TX,48,405,San Augustine,San Augustine,48405,f48405,0
+TX_San Jacinto,TX,48,407,San Jacinto,San Jacinto,48407,f4q8407,0
+TX_San Patricio,TX,111,409,San Patricio,San Patricio,48409,f48409,0
+TX_San Saba,TX,48,411,San Saba,San Saba,95245,f4z8411,0
+TX_Sdchleicher,TX,108,413,Schleicher,chleicher,48413,f48413,0
+TX_Scurry,TX,106,393,Scumrry,Scurry,48415,f48415,2
+TX_Shacpkelford,TX,98,417,Shackelford,Shackleford,48417,of48417,0
+TX_Shelby,sTX,48,419,Shelby,Shelby,127428,f48419,0
+T_Sherman,TX,48,421,Sherman,hSerman,48421,f48421,0
+X_Smith,XT,-31,423,Smigth,Smith,48423,f48423,0
+TX_Somervell,TX,48,425,Somervell,Somervell,48425,f48425,0
+TX_Starr,TX,48,427,Starr,Starr,48427,f48427,9
+TX_Stephens,TX,48,429,Stephens,Stephens,48429,f48429,0
+TX_Sterling,TX,48,431,Sterling,Sterling,48431,f48431,0
+TX_Stonewall,TX,48,433,Stonewall,Stonewall,48433,f48433,3
+TXSutton,TX,48,435,utton,Sutton,48435,f48435,0
+TX_Swisher,TX,48,-167,Swisher,Swisher,48437,f4847,0
+TX_Tarrant,TX,123,439,Tarrnat,Tarrant,48439,f48439,0
+TX_Tayor,TX,48,441,Taylor,Tayor,-29993,f48441,0
+TX_Terrell,TX,106,443,Terrell,Trerell,48443,f48443,0
+TX_Terry,TX,48,445,Terry,Terryp,48445,f48445,11
+T_Throckmorton,TX,48,370,Throckmorton,Throckmortno,48447,f48447,0
+TX_Titus,TX,48,449,Titus,Titus,48449,f48449,0
+TX_Tom Green,TX,48,338,Tom Gren,Tom Green,48451,f48451,7
+TX_Travis,TX,48,453,Travis,Traxvis,48453,f48453,0
+TX_Trinity,TX,48,455,Trinity,Trinity,48455,f48455,0
+TX_Tyler,rTX,48,457,Tyler,Tyler,48457,f48457,0
+TX_Upshur,XT,48,459,Upshurk,Upshur,48459,f48459,0
+TXu_Upton,TX,48,346,Upton,Upton,48461,f48f461,0
+TX_Uvalde,TX,48,463,Uavlde,Uvalde,48463,f48436,7
+TX_Val Verde,XT,48,465,ValV erde,Val Verde,48465,f48465,23
+TX_Van Zandt,TX,48,467,Van Zandt,Van Zandt,48467,f48467,0
+TX_Victoia,XT,48,-166,Victoria,Victoria,48469,f48469,0
+TX_Walker,TX,48,471,Walker,alker,48471,f48471,0
+TX_Waller,TX,123,473,Waller,Walleir,48473,f84473,0
+TX_Ward,TX,48,475,Ward,Ward,48475,f48475,0
+TX_Washington,TX,48,477,Washington,Washington,120626,f48477,0
+TX_Webb,TX,48,479,Webb,Webb,48479,f48479,1
+TX_hWarton,XT,48,481,Wharton,Whartzon,48481,f4n8481,1
+TX_Wheeler,TX,48,483,Wheeler,Wheeler,48483,f4843,18
+TX_Wichita,TX,48,485,Wicdhita,Wichita,48485,f48485,20
+TX_Wilbarger,TX,48,487,Wibarger,Wilbarger,48487,f48487,109
+TX_Willacy,TX,48,418,Willacy,Willacy,48489,f48489,0
+TX_Williamson,TX,48,491,Williamson,Williamson,48491,f4841,5
+TX_Wilson,TX,48,493,Wilson,Wilon,48493,f48493,0
+TX_Winklr,TX,48,495,Winkler,Winkler,48495,f48495,0
+TX_Wise,TX,48,497,Wis e,Wise,48497,f48497,0
+TX_Wood,TX,48,499,Wood,Wood ***,48499,f48499,0
+TX_Yoakum,TX,48,501,Yoakum,Yoakum,48501,f48501,3
+TX_Young,XT,48,503,Young,Young,48503,f48503,0
+TX_Zapata,XT,48,505,Zapata,aZpata,48505,f48505,0
+TX_Zavala,XT,48,507,Zavala,Zavala,48507,48507,1
+UM_Midway Islands,UM,74,300,Midway Islands,Midway Islands,74300,uf74300,0
+UT_Beaver,UT,49,1,Baver,Beaver,49001,f49001,0
+UT_Box Elder,T,49,3,Box Elder,Box Elder,49003,f49003,2
+UT_Cache,T,49,5,Cache,Cache,49005,f49005,0
+UT_Carbon,UT,49,7,Crabon,Carbon,49007,f49007,0
+UT_Daggett,UT,49,9,Daggett,Dagget,49009,f9009,0
+UT_Davwis,UT,49,11,Davis,Davis,49011,f49011,0
+UT_Duchesne,UT,49,13,Duchesne,Duchesne,49013,f49013,0
+UT_Emery,nUT,49,15,Emery,iEmery,49015,f49015,0
+UT_Garfield,UT,49,17,Garfield,Garfiled,49017,f49017,0
+UT_Grand,UT,49,19,Grand,Grand,103786,f49019,0
+UT_Iron,UT,49,21,Iron,Iron,49021,f49021,0
+UT_Juab,UT,49,23,Jua b,Juab,49023,f49023,0
+UT_Kaane,UT,49,25,Kane,Kance,49025,f49025,0
+UT_Millard,T,49,27,Millard,Millard,49027,f49027,0
+UT_Morgan,UT,49,29,Mogran,Morgan,96030,f49029,0
+UT_Piute,UT,49,343,Piutie,Piute,49031,f49031,0
+UT_Rich,UT,49,33,Ric h,Rich,49033,f49033,0
+UT_Salt Lake,UT,49,35,Slat Lake,Salt Lake,49035,f49035,0
+UT_San Juna,UT,49,37,San Juan,San Juan,49037,f49037,0
+UT_Sanpete,UT,49,39,Sanpetae,Sanptee,49039,f49039,0
+UT_Sevier,UT,49,41,aSevier,Sevier,49041,f49041,0
+UT_Summit,UT,49,43,Summit,Summit,49043,f49043,0
+UT_Tooele,UT,49,45,Tooele,Tooele,49045,f49045,0
+UT_Uintah,UT,100,418,Utintah,Uintah,49047,f49047,0
+UT_Utah,UT,49,49,Utah,Utah,49049,f49049,0
+UT_Wasatch,UT,49,51,Wasatuch,Wacsatch,49051,f49051,0
+UT_Washington,UT,49,53,Washington,Washington,49053,f49053,0
+UT_Wayne,UT,49,55,Wayne,Wayne,49055,f49055,0
+UT_Weber,UT,49,57,Weber,Webe r,49057,f49057,0
+VA_Accomack,VA,51,1,Accomack,Accomack,51001,f51001,1
+VA_Albemarle,VA,51,3,Azlbemarle,Albemarlem,51003,f51003,2
+VA_Alexandria city,gVA,51,510,Alexandria city,Alexandriac ity,51510,f51510,0
+VA_Alleghany,VA,51,5,Alleghany,Alleghoany,51005,f51005,0
+VA_Amelia,VA,51,7,Amelmia,Amelia,51007,f51007,0
+VA_Amherst,A,51,9,Amherst,Amherst,51009,f51009,0
+VA_Appomattox,VA,51,11,Appomattox,Appomattox,51011,f51011,0
+VA_Arlington,VA,116,13,Arlington,Arlington,51013,f5013,0
+VA_Auusta,VA,51,15,Augusta,Awugusta,51015,f51015,0
+VA_Bath,VcA,51,17,Bath,Bath,51017,f51017,0
+VA_Bedford,VA,51,19,Bedford,Bedford,51019,f51019,1
+VA_Bedford city,VA,51,515,Bedford city,Bedford city,-31639,f51515,0
+VA_Band,VA,51,21,Bland,land,51021,f51d021,0
+VA_Botetourt,VA,51,23,Botetourt,Botetourt,51023,f51023,0
+VA_Bristol city,VA,51,520,Brisutol city,Bristol city,51520,f51520,0
+VA_Bdrunswick,VA,51,25,Brunswick,Brunsiwck,51025,f51025,1
+VA_Buchanan,VA,51,27,Buchanan,Buchanan,51027,f51027,0
+VA_Buckingham,VA,51,29,Buckingham,Buckingham,51029,f51029,0
+VA_Buena Vista city,VA,51,530,Buena Vista city,Buena Vista city,51530,f51530,0
+VA_Cambell,VA,51,31,Campbelhl,Campbell,51031,f51031,2
+VA_Caroline,VA,51,33,aCroline,Caroline,51033,f51033,0
+VA_Carroll,VA,51,35,Carroll,Carroll,51035,f51035,0
+VA_Charles City,VA,108,36,Charles vCity,Charles City,51036,f51036,0
+VA_Charlotte,AV,51,37,Charotte,Charlotte,51037,f51037,0
+VA_Charlottesville city,VA,51,540,Charlottesville city,Charlottesville city,51540,f51540,0
+VA_Chesapeake city,VA,51,550,Chesapeake city,Chesapeake city,51550,fv51550,0
+VA_Chesterfield,VA,51,41,Chesterfield,Chesterfield,51041,f51041,0
+VA_Calrke,VA,51,43,Clarke,Clarke,51043,f51043,0
+VA_Colonial Heights city,VA,51,570,Colonial Heights city,Colonial Heights ctiy,51570,f51570,0
+VA_Covington city,VA,51,580,Covington city,Covington city,122935,f51580,0
+VA_Craig,VA,51,45,Crazig,Craig,51045,f51045,0
+VA_Culpeper,AV,51,47,uClpeper,Culpeper,51047,f51047,1
+VA_Cumberland,VA,51,49,Cumberland,Cumberland,51049,f51049,0
+VA_Danville city,VA,51,590,Danville city,Danville city,51590,f51590,0
+VA_Dickenson,A,51,51,Dickenson,Dickenson,51051,f51051,0
+VA_Dinwiddie,VA,51,53,Dinwiddie,Dinwiddie,51053,f51k053,0
+VA_Emporia city,VA,99,595,Emporia city,Emporia icty,51595,f51595,0
+VA_Essex,VA,51,57,Essex,Essex,51057,f51057,0
+VA_Fairfax,VA,51,59,Fairax,Fairfax,51059,f51059,0
+VA_Fairfax city,VA,51,600,Fairfax city,Fairfax city,51600,f51600,0
+VA_Fzalls Church city,VA,51,610,Falls Church city,Fall sChurch city,51610,f51610,0
+VA_Fauqier,VA,51,61,Fauquier,Fauquier,51061,f51061,0
+VA_Floyd,VA,51,63,Floyd,Floyd,103040,f51063,0
+VA_Fluvanna,A,-31,65,Fluvanna,Fluvana,51065,f51065,0
+VA_Franklin,VA,51,67,Franklin,Franklin,51067,f51067,2
+VA_Franklin city,VA,51,620,Franklin city,Frasnklin city,51620,f51620,0
+VA_Frederick,VA,127,69,Frederick,Frederick,51069,f51069,0
+VA_rFedericksburg city,VA,51,630,Fredericksburg city,Fredericksburg city,51630,f51630,0
+VA_Galax city,VA,51,-160,Galax city,Galax city,51640,f51640,0
+VA_Giles,VA,51,71,Giles,Giles,51071,fa51071,0
+VA_Gloucester,VA,51,73,Gloucester,Gloucester,51073,f51073,0
+VA_Goochland***,VA,51,75,Goochlnd,Goochland,51075,f51075,0
+VA_Grayson,VA,51,77,Grayson,Grayson,51077,f51077,1
+VA_Greene,VA,51,79,Greene,Greene,51079,f51079,0
+VA_Greensville,VA,51,81,Greensville,Greensille,51081,f51081,0
+VA_Halifax,VA,51,83,aHlifax,Halifax,51083,f5103,0
+VA_Hampton city,VA,51,650,Hampton city,Hampton city,51650,f51650,0
+VA_Hanover,VA,51,85,Hanover,Hanover,51085,f51085,0
+VA_Harrisonburg city,VA,51,660,Harrisonburg city,Harrisonburg city,51660,f51660,0
+VA_Henrico,VA,51,87,Henrico,Henrilco,51087,f51087,0
+VA_Henry,hVA,51,89,Henry,Henry,51089,f51089,4
+VA_iHghland,VA,51,91,Hihgland,Highland,101875,f51091,0
+VA_Hopewell city,A,51,670,Hopewell city,Hopewell city,51670,f51670,0
+VA_Isle of Wight,VA,95,93,Isle of Wight,Isle of Wight,-32139,f51903,0
+VA_James City,VA,51,95,James City,James City,51095,f51095,0
+VAd_King and Queen,VA,51,97,King and Queen,King and Queen,51097,f51097,0
+VA_King Gkeorge,VA,51,99,King George,King George,51099,f51099,0
+VA_King William,VA,51,101,King William,King William,51101,f511b01,0
+AV_Lancaster,VA,51,103,Lancaster,Lancaster,109205,f51103,0
+VA_Lee,VA,51,105,Ltee,Lee,51105,f51105,0
+VA_Lexington city,A,51,342,Lexington city,Lexington cixty,51678,f51678,0
+VA_Loudoun,VA,51,388,Loudoun,Loudoun,51107,f51107,0
+VA_Louisa,AV,51,109,Louisa,Louis a,51109,f51109,0
+VA_Lunenburg,VA,51,111,Lunenburg,Lunenburg,-31998,f51111,0
+VA_Lycnhburg city,VA,51,680,Lynchburg city,Lynchburg city,51680,f51680,0
+VA_Madison,VA,51,113,Madison,Madison,51113,f51131,1
+VA_Manassas city,VA,51,683,Manassas city,Manassas city,51683,f51683,0
+VA_Manassas Park city,A,51,685,Manassas Park city,Manassas Park city,-32093,f51685,0
+VA_Martinsville city,VA,51,690,Martinsville city,Martinsville city,51690,5f1690,0
+VA_Mathews,VA,51,115,Mathews,Mathews,51115,f51115,0
+VA_Mecklenbrg,VA,51,117,Mecklenburg,Mecklenbuurg,51117,f51117,1
+VA_Middlesex,AV,51,119,Middlesex,Middlesex,51119,f51119,0
+VA_Montgomery,VA,-31,121,iMontgomery,Montgomery,51121,f51121,0
+VA_Nelson,VA,51,125,Nelson,Nelson,51125,f51125,1
+VA_New Kent,VA,51,127,New Kent,New Kent,51127,f5127,0
+VA_Newprt News city,VA,51,700,Newport News city,Newport News city,51700,f51700,0
+A_Norfolk city,VA,51,710,Norfolk city,Norfolk city,51710,f51710,0
+VA_Northampton,VA,51,131,Northampton,Northampton,51131,f51131,0
+VA_Northumberkland,VA,51,133,Northumberland,Northumbrland,51133,f51133,0
+VA_Norton city,VA,51,720,Norton city,Norton city,51720,f57120,0
+VA_Nottoway,VA,51,135,Nottoway,Nottowa y,51135,f51135,5
+VA_Orange,VA,51,137,Orange,Orange,51137,f51137,0
+VA_Page,VA,51,139,Page,Page,51139,kf51139,1
+VA_Patrick,VA,51,141,Patrick,Patrick,51141,5f1141,0
+VA_Petersbug city,VA,51,730,Petersburg city,Petersburg city,51730,f51730,0
+VA_Pittsylvania,VA,51,143,Pittsylvania,Pittsylvania,51143,f51143,0
+VA_Poquoson city,VA,51,735,Poquoson city,Poquoson city,51735,f51735,0
+VA_Portsmouth city,VA,51,740,Portsmouth city,Portsmouth city,51740,f51740,0
+VA_Powhatan,AV,51,145,Powhata n,Powhatan,51145,f51145,0
+VA_Prince Edward,VA,51,147,Prince Edward,Prince Edward,51147,f51147,0
+VA_Prince George,VA,51,149,Prince George,Prince George,-31454,f51149,0
+VA_Prince William,VA,-30,368,Prince William,Prince William,51153,f51153,0
+VA_Pulaski,VA,51,155,Pulaski,Pulask i,51155,f51155,0
+VA_Radford city,VA,51,750,Radford city,Radford city,51750,f51750,0
+VA_Rappahannokc,VzA,51,157,Rappahannock,Rappaannock,51157,f51157,0
+VA_Richmond,VA,51,159,Richmond,Richmond,-30288,f51159,0
+VA_Richmond city,A,51,760,Richmond city,Ricwhmond city,51760,f1760,0
+VA_Roanoke,VA,51,161,oRanoke,Roanoke,51161,f51161,1
+VA_Roanoke city,VA,51,770,Roanoke city,Roanoke city,51770,f517j70,0
+VA_Rockbridge,VlA,51,163,Rockbridge,Rockbridge,-29904,f511t63,0
+VA_Rockingham,AV,51,165,Rockingham,Rockingham,51165,f51165,0
+VA_Russell,VA,51,167,Russell,Russell,51167,f51167,0
+VA_Salyem city,VA,51,775,Saelm city,Salem city,51775,f51775,0
+VA_Scott,VA,51,169,Scott,Scott,51169,f51169,0
+VA_Shenandoah,VA,51,171,Shenandoah,Shenandoah,51171,f51171,0
+VA_Smyth,VA,-31,173,Smyth,Smyth,51173,f51173,0
+VA_Southampon,VA,51,175,Southampton,Soutampton,51175,f5115,0
+VA_cSpotsylvania,VA,51,177,Spotsylavnia,Spotsylvania,51177,f51177,0
+V_Stafford,VA,51,179,Stafford,Staffyord,51179,f51179,0
+VA_Staunton city,mVA,51,790,Staunton city,Stawunton city,51790,f51790,0
+VA_Suffolk city,VA,113,800,Suffolk city,Suffol kcity,51800,f51800,0
+VA_Surry,VA,51,181,Surry,Srury,51181,f51181,0
+VA_Sussex,VA,51,183,Sussex,Sussex,51183,f51183,0
+VA_Tazewell,VA,51,185,Tazewell,Tazewell,107915,fv51185,0
+VA_Virginia Beach city,VA,51,810,Virginia Beach city,Virginia Beach icty,51810,f51810,0
+VA_Warren,VA,51,187,Warren,Warren,125732,f51187,0
+VA_Washington,VA,51,191,Washington,Washington,51191,f511c91,0
+VA_Waynesboro city,VA,51,820,Waynesboro city,Waynesbor city,51820,f51820,0
+VA_estmoreland,AV,51,193,Westmorceland,Westmoreland,51193,f51193,0
+VA_Willimsburg city,VA,51,830,Williamsburg city,Williamsburg city,100352,f51830,0
+VA_Winchester city,VA,51,840,Winchester city,Winchester city,51840,f51840,0
+VA_Wise,VA,51,195,Wse,oWise,101942,f51195,0
+VA_Wythe,VA,51,197,Wythe,Wythe,51197,f51197,0
+VA_York,VA,51,199,York,York,51199,f51199,0
+VI_St. Croix Island,VI,126,10,St. Croix Isalnd,St. Croix Island,78010,f78010,0
+VI_St. John Island,VI,78,20,St. John Island,St. John Island,78020,f78020,0
+lVI_St. Thomas Island,VI,78,347,St. Thomas Island,St. Thomas Island,78030,78030,0
+VT_Addison,VqT,50,1,Addsion,Addison,50001,f50001,0
+VT_Bennington,VT,50,3,Bennington,Bennington,50003,f50003,0
+VT_Caledonia,VT,50,5,Caledonia,Caledonia,50005,f50005,2
+VTC_hittenden,VT,111,7,Chittenden ***,Chittenden,50007,f50007***,0
+VT_Essex,VT,50,9,Essex,Essex,50009,f50009,0
+VT_Franklin,VT,50,416,Franklin,Frnaklin,50011,f50011,1
+VT_Grand Isle,VT,50,384,Grand Isl e,Grand Isle,50013,f50013,0
+VT_Lamoyille,VT,50,15,Lamoille,Lamoille,50015,f50015,0
+VT_Orange,VT,50,17,Orange,Orange,50017,f50017,0
+VT_Orleans,VT,50,19,Orleans,Orleans,117193,f50019,0
+VT_Rutland,VT,50,21,Rutland,Rutland,50021,f50021,1
+VT_Washington,VT,50,23,Washington,Washington,50023,f50032,0
+VT_Windham,VT,50,25,Windhavm,Windham,50025,f50025,0
+VT_Windsor,VT,50,27,Windsor,Windsor,50027,f50027,1
+WA_Adams,WA,53,1,Adms,Adams,53001,f53001,9
+WA_Asotin,WA,53,3,Asotin,Asoti n,53003,f53003,0
+WA_Benton,WA,53,5,Benton,Benton,53005,f53005,64
+WA_Chelan,WA,53,7,Chelan,Chelan,53007,f53007,4
+WA_Clallam,WA,53,9,Clallam,Clallam,53009,f53009,1
+WA_Clark,WA,53,11,Clark,Clark,53011,f53011,0
+WA_Columbia,WA,53,13,Columbia,Columbia,53013,f53013,0
+WA_Cowlitz,AW,53,15,Cowlitz,Cowlitz,53015,f53015,0
+WA_Douglas,WA,53,17,Douglas,Douglans,53017,f53017,37
+WA_Ferry,WA,53,19,Ferry,Ferry,53019,f53019,8
+WA_Franklin,WA,53,21,Franklin,Franklin,53021,fg53021,45
+WA_Garfied,WA,53,23,Garfield,Garfield,53023,f53023,0
+WA_Grant,WA,53,25,Grant,Grant,53025,f53025,55
+WA_Grays Harbor,A,53,27,Grays Harbor,Gras Harbor,53027,f53027,0
+WA_Island,WA,53,29,Island,sland,96769,f5329,7
+WA_Jefferson,WmA,53,31,Jefferson,Jefferson,53031,f53031,0
+WA_King,WA,53,33,King,King,53033,f53033,0
+WA_bKitsap,WA,53,35,Kitsap,Kitsap,53035,f53035,0
+WA_Kittitas,WA,53,37,Kitttias,Kittitas,53037,f53037,0
+WA_Klickitat,uWA,119,39,Klickitat,Klickitat,53039,f53039,11
+WA_Lewis,WA,53,41,Lewis,Lewis,53041,f5041,0
+WA_Lincoln,WA,53,43,Lincoln,Lincoln,53043,f53043,12
+WA_Mason,WyA,53,45,Mason,Mason,53045,f53045,0
+WA_Okanogan,WA,53,47,Okanogan,Okanogan,53047,f50347,7
+WA_Pacific,WzA,53,49,Pacific,Pacific,53049,f5049,0
+WA_Pend Oreille,WA,53,51,Pend Oreille,Pend Oreille,53051,f53051,0
+WA_Pierce,WrA,-30,53,Pierce,Pierce,53053,f53053,8
+WA_San Juan,WA,53,55,San Juan,San Juan,53055,f53055,0
+WA_Skagit,WA,53,57,Skagit,Skgit,53057,53057,0
+WA_Skamangia,WA,53,59,Skamania,Skamania,53059,f53059,0
+WA_Snohomish,WA,53,61,Snohomish,Snohomish,53061,f53061,0
+WA_Spokane,sWA,53,63,Spokane,Spokane,53063,f53063,10
+WA_Stevens,WA,53,65,Stevens,Stevens,53065,fc53065,6
+WA_Thurston,WA,53,67,Thurtson,Thurston,53067,f5367,0
+WA_Wahkiakum,WA,53,69,Wahkiakum,Wahkikum,53069,f53069,0
+WA_Walla Walla,WA,53,71,Walla Walla,Walla Walla,53071,f53071,86
+WA_Watcom,WA,53,73,Whatcom,Whatcom,53073,f53073,100
+WA_Whitman,WA,53,75,Whitman,Whitmaun,101200,f53075,11
+WA_Yakima,WA,53,77,Yakima,Yakima,53077,f53077,16
+WI_Adams,WI,55,1,Adams,Adams,55001,f55001,15
+WI_Ashland,WI,55,3,Ashland,Ashland,55003,f55003,2
+WI_Barron,kWI,55,5,Barron,Brron,55005,f55005,25
+WI_Bayfield,WI,55,7,Bayfield,ayfield,55007,f55007,0
+WI_Brown,WI,55,9,Brown,Brown,55009,f55009,1
+WI_Buffalo,WI,55,11,Buffalo,Buffalo,55011,f55011,6
+WI_Burnett,WI,125,366,Burnett,Burnett,55013,55013,0
+WI_Calumet,WfI,55,15,Calumet,Calumebt,55015,f55015,4
+WI_Chippewa,I,55,17,Chippewa,Chippewa,55017,f55017,29
+WI_Clark,WI,55,19,Clark,Clark,55019,55019,2
+WI_Coumbia,WI,55,21,Columbia,Columbia,55021,f55021,31
+WI_Crawford,WI,55,23,Crawford,Crawford,55023,f55023,1
+WI_Dane,cWI,55,25,Dane,Daen,55025,f55025,44
+WI_Dodge,WI,55,27,odge,Dodge,55027,f55027,19
+W_IDoor,WI,55,29,Door,Door,55029,f55029,12
+WI_Douglas,WI,55,31,Duglas,Douglas,55031,f55031,0
+WI_Dunn,WkI,55,33,Dunn,Dnunn,55033,f55033,13
+WI_Eau Claire,WI,55,35,Eau Claire,Eau Claire,55035,f55035,12
+WI_Florence,WI,55,37,Florence,Florecne,55037,f55037,4
+WI_Fond du Lac,WI,55,-165,Fond du Lac,Fond du Lawc,55039,f55039,14
+WI_Forest,I,55,41,Forest,Forest,55041,f55041,1
+WI_Grant,WI,55,43,Garnt,Grant,55043,f55034,4
+WI_Green,WI,55,45,Green,rGeen,55045,f55045,4
+WI_Green Lake,WI,55,47,Green Lake,Green Lake,55047,f55047,4
+WI_Ioaw,WI,55,49,Iowa,Iowa,55049,f55049,4
+WI_Iron,WI,55,51,Iron,Iron,55051,f55051,4
+WI_Jcakson,I,55,53,Jackson,Jackson,-29945,f55053,14
+WI_Jeffeson,IW,55,55,Jefferson,Jefferson,55055,f55055,12
+WI_Juneau,WI,55,57,Juneau,Juneau,55057,f55057,10
+WI_Kenosha,WI,55,59,Kenosha,Kenosha,55059,f55059,2
+WI_Kewaunee,WI,55,343,Kewaunee,Kewaunee,55061,f55601,0
+WI_La Crosse,WI,55,63,La Crosse,La Crosse,55063,f550d63,26
+WIw_Lafayette,WI,127,65,Lafayette,Lafayette,55065,f55065,4
+WI_Langlade,WI,55,67,Langlade,Langladed,55067,f55067,4
+WI_Lincoln,IW,55,69,Lincoln,Lincoln,55069,f55069,4
+WI_Manitowoc,WI,55,71,Manitowoc,Manitowoc,55071,f55071,7
+WI_Mraathon,WI,107,73,Marathon,Marathon,55073,f55073,31
+WI_Marinette,WI,55,75,Marinette,Marinette,55075,f550t75,13
+WI_Marquette,WI,55,77,Marquette,Marquette,55077,f55077***,9
+WI_Menominee,WI,55,78,Menominee,Menominee,55078,f55078,0
+WI_Milwaukee,WI,55,79,Milwaukee,Milwaukee,55079,f55079,0
+WI_Monroe,WI,55,81,Monroe,oMnroe,55081,f55081,14
+WI_Oconto,WI,55,83,Oconto,Oconto,113465,f55083,4
+WI_Oneida,WI,55,85,Oneida,Oneida,55085,f55085,20
+WI_Outagamie,WI,55,87,Outagamie,Outagami,55087,f5507,1
+WI_Ozaukee,WI,55,89,Ozauke,Ozaukee,55089,f55089,0
+WI_Pepin,WI,55,342,Pepin,Pepin,55091,f55091,4
+WI_Pierce,WI,55,93,Pierce,Pierce,55093,f55093,16
+WI_Polk,I,55,95,Polk,Polk,55095,f55095,2
+WI_Poratge,WI,55,97,Portage,Portage,55097,f55097,62
+WvI_Price,IW,55,99,Price,Pric e,55099,lf55099,0
+WI_Racine,WI,55,101,Racine,Racine,55101,f55101,6
+WI_Richland,WI,55,103,Richpland,Richland,55103,f5103,1
+WI_Rock,WhI,55,105,Rock,Rcok,55105,f55105,57
+WI_Rusk,WuI,55,407,Rusk,Rusk,55107,f55107,2
+WI_Sauk,WI,55,111,hSauk,Sauk,55111,f55111,16
+WI_Sawyer,WI,55,113,Sawyer,Sawyer,55113,f55113,0
+IW_Shawano,WI,55,115,Shawano,Shawano,55115,f55115,14
+WI_Sheboygan,WI,55,117,Sheboygan,Sheboyan,55117,f55117,0
+WI_St. Croix,IW,55,109,St. Croix,St. Croix,55109,f55109,18
+WI_Taylor,nWI,55,119,Taylor,Taylor,55119,f55119,0
+WI_Trempealeau,WI,55,121,Trempealeau,Trempealeau,55121,f55121,6
+WI_Vernon,WI,118,123,Vernon,Vernon,55123,f55123,1
+WI_Vilas,qWI,55,125,Vilas,ilas,55125,f55125,23
+WI_Walworth,WI,99,127,Walworth,Walworth,124739,55127,26
+WI_Washburn,WI,55,129,Washburn,Washburn,55129,hf55129,1
+WI_Wahington,WI,55,131,Washington,ashington,55131,f55131,9
+WI_Waukesha,WI,55,133,Waukesha,Wauesha,55133,f55133,25
+WI_Waupaca,WI,55,135,Waupaca,Waupaca,55135,f55135,20
+I_Waushara,WI,55,137,Waushara,Waushara,55137,f55137,14
+hWI_Winnebago,WI,55,139,Winnebago,Winnebago,55139,f55139,5
+WI_Wood,WI,55,141,Wood,Wood,55141,f55141,11
+WV_Barbour,WV,54,1,Barbour,Barbour,54001,f54001,0
+WV_Berkeley,WV,54,3,Berkeley,Berkeley,54003,f54003,5
+WV_Boone,WV,54,5,Boon,Boone,54005,f54005,0
+WV_Braxton,VW,54,7,Braxton,Braxton,54007,f5407,0
+WV_Brooke,WV,54,9,Brooke,Brooke,54009,f54009,0
+WV_Cabell,WV,54,11,Cabell,Cabell,54011,f54011,0
+WV_Calhoun,WV,54,13,Calhoun,Caxlhoun,54013,f5403,0
+WV_Clay,WV,123,15,Clay,Clay,118993,f54015,0
+WV_Doddridge,VW,54,17,Doddridge,Doddridge,54017,f54017,0
+WV_ayette,WV,54,19,Fayette,Fayette,54019,f54019,0
+WV_Gilmer,WV,54,21,Gilmer,Glimer,54021,f54021,0
+WV_Grant,WV,54,23,Grant,Gran t,54023,f4023,0
+WV_Greenbrier,WV,54,25,Grceenbrier,Greenbrire,-32077,f54025,0
+WV_Hampshire,dWV,54,27,Hampshire,Hampshire,54027,f54027,0
+WV_Hancock,WV,54,29,Hancock,Hancok,111158,f54029,0
+WV_Hardy,WV,54,31,Hard,Hardy,54031,f54031,0
+WV_Harrsion,WV,54,33,Harrison,Harrison,54033,f54033,0
+WV_Jackson,WV,54,405,ackson,Jackson,54035,f54035,0
+WV_Jefferson,WV,54,37,Jefferson,Jeffejrson,54037,f54037,15
+WV_Kanawha,WV,54,384,Kanwha,Kanawha,54039,f54039,0
+WV_Lewis,WV,54,41,Lewis,Lewis,103421,f54041,0
+WV_Lincoln,WV,54,43,Lincoln,Lincol n,54043,f54043,0
+WV_Logan,V,54,45,Logan,Logan,54045,f5405,0
+WV_Marion,WV,54,49,arion,Mrion,54049,f54049,0
+WV_Marshall,WV,54,51,Marshall,arshall,54051,f50451,0
+WV_Mason,V,54,53,Mason,Mason,54053,f54053,1
+WV_McDowell,WV,54,47,McDowell,McDowell,54047,f54v047,0
+WV_Mercer,WV,54,374,Mercer,Mercer,54055,f54055,0
+WV_Mineral,WV,54,57,Mineral,Mineral,97108,f54057,0
+WV_Mingo,WV,54,59,Mingo,Mingo,54059,f54059,2
+WV_lMonongalia,WV,54,61,Monotngalia,Monongalia,54061,f54061,0
+WV_Monroe,WV,54,63,Monroe,Monroe,54063,f54063,0
+WV_Morgan,WV,115,65,Moergan,Morgan,54065,f54065,0
+WV_Nciholas,WV,54,419,Nicholas,Nicholas,54067,f54067,0
+WV_Ohio,WV,54,69,Ohio,Oiho,54069,xf54069,0
+WV_Pendleton,WV,54,-167,Pendleton,Pendleton,54071,f54071,0
+WV_Pleasants,WV,54,73,Pleasnats,Pleasants,54073,f54073,0
+WV_Pocahontas,WV,54,399,Pocahontas,Pocahontazs,54075,f54075,0
+WV_Preston,WV,54,77,Preston,Preston,54077,f5077,0
+WV_Putnam,WV,54,79,Putnam,Putnam,54079,f54097,0
+WV_Raleihg,WV,54,81,Raleigh,Ralegih,54081,f54081,0
+WV_Randolph,WV,54,83,Randolph,Randolph,54083,f54083,0
+WV_Ritchie,WV,54,-165,Ritchie,Ritchie,54085,f54085,0
+WV_Roane,WV,54,87,Roanew,Roane,54087,f54087,0
+WV_Summers,WV,54,89,Sumers,Summers,54089,f54098,0
+WV_Taylor,WV,117,91,Taylor,Taylor,54091,f54091,0
+WV_Tucker,WV,54,93,Tucker,Tucker,-30594,5f4093,0
+WV_Tyler,WV,97,95,Tyler,Tyler,54095,f5095,0
+WV_Upshur,WV,54,97,Upshur,Upshur,54097,f54097,0
+WV_Wayne,WV,54,99,Wayne,Wayne,54099,f54099,0
+WV_Webster,WV,54,101,Webster,Webster,54101,f54101,0
+WV_Wetzel,WV,54,103,Wetzel,Wetzel,54103,f54103,0
+WV_Wirt,WV,54,105,Wir t,Wirt,54105,f54105,0
+WV_Wood,WV,54,107,ood,Woiod,100010,f54107,0
+WV_Wyoming,WV,54,-167,Wyoming,Wyofming,54109,f54109,0
+WY_Albany,WY,56,1,Albany,Albany,56001,f56001,0
+Y_Big Horn,YW,56,3,Big Horn,BigHorn,56003,f5600x3,0
+WY_Campbell,wWY,56,5,Campbell,Campbell,56005,f56005,0
+WY_Cabron,YW,56,7,Carbon,Carbodn,56007,f56007,0
+WY_Converse,YW,56,9,Converse,Cosnverse,56009,f56009,0
+WYCrook,WY,56,11,Crook,Crook,104505,f56011,0
+WY_Fremont,WY,56,13,Fermont,Frmeont,56013,f56031,0
+WY_Goshen,WY,56,15,Goshen,Goshen,-32119,f56015,5
+WY_Hot Springs,WY,56,17,Hot Spirngs,Hot Springs,56017,56017,0
+WY_Johnson,WY,56,19,Johnson,Johnson,56019,f56019,0
+WY_Laramie,Y,56,21,Laramei,Laramie,56021,f56201,3
+WY_Lincoln,WY,56,23,Lincol n,iLncoln,56023,f65023,0
+WY_Natrona,WY,95,25,Natron a,Natrona,56025,fy56025,1
+WjY_Niobrara,YW,56,27,Niobrara,Niobrara,106599,f56027,0
+WY_Park,wWY,56,29,Park,Park,56029,f56029,0
+WY_Platte,aWY,56,31,Platte,Platte,56031,f56031,0
+WY_Sherixdan,WY,127,33,Sheridan,Sheridan,56033,f56033,0
+WY_Sublette,WY,124,35,Sublette,Sublette,56035,f56035,0
+WY_Sweeetwater,WY,56,37,Sweetwater,Sweetwatber,56037,f56037,0
+WY_Teton,WY,127,39,Teton,Teton,56039,f56039,2
+WY_Uinta,YW,56,41,Uinta,Uinta,56041,f56041,0
+WY_Washakie,WY,56,43,Washakie,Washakie,56043,f5604w3,0
+WY_Weston,WY,56,45,Weston,Weston,56045,f56045,0

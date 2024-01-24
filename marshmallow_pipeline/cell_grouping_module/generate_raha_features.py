@@ -15,7 +15,7 @@ from functools import partial
 
 import numpy as np
 import pandas as pd
-import raha
+from marshmallow_pipeline import raha
 from Levenshtein import distance
 from scipy.spatial.distance import pdist, squareform
 
@@ -25,7 +25,6 @@ def _strategy_runner_process(self, args):
     This method runs an error detection strategy in a parallel process.
     """
     # try:
-    logging.info("_strategy_runner_process: Running strategy: %s", args)
     d, algorithm, configuration = args
     start_time = time.time()
     strategy_name = json.dumps([algorithm, configuration])
@@ -225,18 +224,10 @@ def run_strategies(self, d, char_set, pool):
                     logging.debug("RVD configurations: %s", len(configuration_list))
 
             random.shuffle(algorithm_and_configurations)
-            # strategy_profiles_list = []
-            # for [d, algorithm, configuration] in algorithm_and_configurations:
-            #     strategy_profiles_list.append(_strategy_runner_process(d, [d, algorithm, configuration]))
-            # multiprocessing.freeze_support()
-            # logging.debug("len algorithm_and_configurations: %s", len(algorithm_and_configurations))
-            # pool = multiprocessing.Pool(64)
             _strategy_runner_process_ = partial(_strategy_runner_process, d)
             strategy_profiles_list = pool.map(
                 _strategy_runner_process_, algorithm_and_configurations
             )
-            # pool.close()
-            # pool.join()
             logging.debug(
                 "%%%%%%%%%%%%%%%%%%%%%%All strategies are run on the dataset.%%%%%%%%%%%%%%%%%%%%%%"
             )
@@ -299,24 +290,28 @@ def generate_features(self, d, char_set_dict):
     d.column_features = columns_features_list
 
 
-def generate_raha_features(parent_path, dataset_name, charsets, dirty_file_name, clean_file_name, pool):
+def generate_raha_features(parent_path, dataset_name, charsets, dirty_file_name, clean_file_name, pool, raha_config):
     sp_path = (
         parent_path + "/" + dataset_name + "/" + "raha-baran-results-" + dataset_name
     )
     if os.path.exists(sp_path):
         shutil.rmtree(sp_path)
 
-    detect = raha.Detection()
+    detect = raha.detection.Detection()
     dataset_dictionary = {
         "name": dataset_name,
         "path": parent_path + "/" + dataset_name + "/{}".format(dirty_file_name),
         "clean_path": parent_path + "/" + dataset_name + "/{}".format(clean_file_name),
     }
     detect.VERBOSE = False
+    detect.SAVE_RESULTS = raha_config["save_results"]
+    detect.STRATEGY_FILTERING = raha_config["strategy_filtering"]
+    detect.ERROR_DETECTION_ALGORITHMS = raha_config["error_detection_algorithms"]
     d = detect.initialize_dataset(dataset_dictionary)
-    d.SAVE_RESULTS = False
     d.VERBOSE = False
-    d.ERROR_DETECTION_ALGORITHMS = ["PVD", "OD", "RVD"]
+    d.SAVE_RESULTS = raha_config["save_results"]
+    d.ERROR_DETECTION_ALGORITHMS = raha_config["error_detection_algorithms"]
+    d.STRATEGY_FILTERING = raha_config["strategy_filtering"]
     logging.debug("Dataset is initialized.")
     logging.debug("Dataset name: %s", d.name)
     t1 = time.time()

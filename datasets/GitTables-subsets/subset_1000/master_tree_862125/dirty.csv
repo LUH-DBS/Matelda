@@ -1,0 +1,585 @@
+Type,Name,CoFullName,Parent,Class1,Status,Error,LastUpdate
+Industry,Health Care,Health Care,SP500,,,,
+Industry,Financials,Financials,SP500,,,,
+Industry,Energy,Energy,SP500,,,,
+Industry,Utilities,Utilities,SP500,,,,
+Industry,Basic Materials,Basic Materials,SP500,,,,
+Industry,Capital Goods,Capital Goods,SP500,,,,
+Industry,Transport,Transport,SP500,,,,
+Industry,Consumer Staples,Consumer Staples,SP500,,,,
+Industry,Telecom,Telecom,SP500,,,,
+Industry,Technology,Technology,SP500,,,,
+Industry,Consumer Cyclicals,Consumer Cyclicals,SP500,,,,
+Industry,Pharmaceuticals,Pharmaceuticals,Health Care,,,,
+Industry,Medical Products,Medical Products,Health Care,,,,
+Industry,Biotechnology,Biotechnology,Health Care,,,,
+Industry,Health Insurance,Health Insurance,Health Care,,,,
+Industry,Specialized Services,Specialized Services,Health Care,,,,
+Industry,Asset Management,Asset Management,Financials,,,,
+Industry,Regional Banks,Regional Banks,Financials,,,,
+Industry,Credit Services,Credit Services,Financials,,,,
+Industry,Money Center Banks,Money Center Banks,Financials,,,,
+Industry,REITs,REITs,Financials,,,,
+Industry,Life Insurance,Life Insurance,Financials,,,,
+Industry,Insurance - Poperty/Casualty,Insurance - Poperty/Casualty,Financials,,,,
+Industry,Insurance - Multiline,Insurance - Multiline,Financials,,,,
+Industry,Exchange Operators,Exchange Operators,Financials,,,,
+Industry,Investment Banking/Brokerage,Investment Banking/Brokerage,Financials,,,,
+Industry,Oil - Integrated Majors,Oil - Integrated Majors,Energy,,,,
+Industry,Oil Services,Oil Services,Energy,,,,
+Industry,Exploration Refining and Mktg,Exploration Refining and Mktg,Energy,,,,
+Industry,Electric Utilities,Electric Utilities,Utilities,,,,
+Industry,Oil and Gas Pipelines,Oil and Gas Pipelines,Utilities,,,,
+Industry,Agricultural Supplies,Agricultural Supplies,Basic Materials,,,,
+Industry,Chemicals,Chemicals,Basic Materials,,,,
+Industry,Gold Mining,Gold Mining,Basic Materials,,,,
+Industry,Paper and Forest Products,Paper and Forest Products,Basic Materials,,,,
+Industry,Mining,Mining,Basic Materials,,,,
+Industry,Metals,Metals,Basic Materials,,,,
+Industry,Electrical Equipment,Electrical Equipment,Capital Goods,,,,
+Industry,Manufacturing - Diversified,Manufacturing - Diversified,Capital Goods,,,,
+Industry,Aerospace/Defense,Aerospace/Defense,Capital Goods,,,,
+Industry,Containers,Containers,Capital Goods,,,,
+Industry,Manufacturing - Specialized,Manufacturing - Specialized,Capital Goods,,,,
+Industry,Trucks and Parts,Trucks and Parts,Capital Goods,,,,
+Industry,Machinery - Diversified,Machinery - Diversified,Capital Goods,,,,
+Industry,Waste Management,Waste Management,Capital Goods,,,,
+Industry,Heavy Construction,Heavy Construction,Capital Goods,,,,
+Industry,Solar Power,Solar Power,Capital Goods,,,,
+Industry,Airlines,Airlines,Transport,,,,
+Industry,Railroads,Railroads,Transport,,,,
+Industry,Air Freights/Couriers,Air Freights/Couriers,Transport,,,,
+Industry,Truckers,Truckers,Transport,,,,
+Industry,Beveregas (non-alcoholic),Beveregas (non-alcoholic),Consumer Staples,,,,
+Industry,Food,Food,Consumer Staples,,,,
+Industry,Personal Care,Personal Care,Consumer Staples,,,,
+Industry,Household Products,Household Products,Consumer Staples,,,,
+Industry,Tobacco,Tobacco,Consumer Staples,,,,
+Industry,Food Retailers,Food Retailers,Consumer Staples,,,,
+Industry,Beveregas (alcoholic),Beveregas (alcoholic),Consumer Staples,,,,
+Industry,Telephone,Telephone,Telecom,,,,
+Industry,Cellular/Wireless,Cellular/Wireless,Telecom,,,,
+Industry,Software,Software,Technology,,,,
+Industry,Hardware,Hardware,Technology,,,,
+Industry,Internet,Internet,Technology,,,,
+Industry,Communication Equipment,Communication Equipment,Technology,,,,
+Industry,Semiconductors,Semiconductors,Technology,,,,
+Industry,Semiconductors Equipment,Semiconductors Equipment,Technology,,,,
+Industry,Data Storage,Data Storage,Technology,,,,
+Industry,Technology Services,Technology Services,Technology,,,,
+Industry,Recreation and Entertainment,Recreation and Entertainment,Consumer Cyclicals,,,,
+Industry,Autos and Parts,Autos and Parts,Consumer Cyclicals,,,,
+Industry,Broadcasting and Media,Broadcasting and Media,Consumer Cyclicals,,,,
+Industry,Retailers - General Merchandise,Retailers - General Merchandise,Consumer Cyclicals,,,,
+Industry,Retailers - Specialty,Retailers - Specialty,Consumer Cyclicals,,,,
+Industry,Retailers - Department Stores,Retailers - Department Stores,Consumer Cyclicals,,,,
+Industry,Retailers - Drug Stores,Retailers - Drug Stores,Consumer Cyclicals,,,,
+Industry,Restaurants,Restaurants,Consumer Cyclicals,,,,
+Industry,Publishing,Publishing,Consumer Cyclicals,,,,
+Industry,Apparel,Apparel,Consumer Cyclicals,,,,
+Industry,Recreation - Casinos,Recreation - Casinos,Consumer Cyclicals,,,,
+Industry,Footware,Footware,Consumer Cyclicals,,,,
+Industry,Building Materials,Building Materials,Consumer Cyclicals,,,,
+Industry,Recreation - Others,Recreation - Others,Consumer Cyclicals,,,,
+Stock,XOM,Exxon Mobil Corpo,Oil - Integrated Majors,Value,OK,,6/6/10 12:00 AM
+Stock,MSFT,Microsoft Corpora,Software,Value,OK,,6/6/10 12:00 AM
+Stock,BHP,BHP Billiton Limi,Mining,Value,OK,,6/6/10 12:00 AM
+Stock,WMT,Wal-Mart Stores,Retailers - General Merchandise,Value,OK,,6/6/10 12:00 AM
+Stock,BRK.A,Berkshire Hathawa,Insurance - Multiline,Value,OK,,6/6/10 12:00 AM
+Stock,AAPL,Apple Inc.,Hardware,Value,OK,,6/6/10 12:00 AM
+Stock,PG,Procter & Gamble,Household Products,Value,OK,,6/6/10 12:00 AM
+Stock,HBC,HSBC Holdings pl,Money Center Banks,Value,OK,,6/6/10 12:00 AM
+Stock,GOOG,Google Inc.,Internet,Value,OK,,6/6/10 12:00 AM
+Stock,JNJ,Johnson & Johnson,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,BP,BP p.l.c. Common,Oil - Integrated Majors,Value,OK,,6/6/10 12:00 AM
+Stock,GE,General Electric,Electrical Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,JPM,JP Morgan Chase &,Money Center Banks,Value,OK,,6/6/10 12:00 AM
+Stock,IBM,International Bus,Technology Services,Value,OK,,6/6/10 12:00 AM
+Stock,VALE,VALE S.A. Americ,Mining,Value,OK,,6/6/10 12:00 AM
+Stock,T,AT&T Inc.,Telephone,Value,OK,,6/6/10 12:00 AM
+Stock,WFC,Wells Fargo & Com,Regional Banks,Value,OK,,6/6/10 12:00 AM
+Stock,CVX,Chevron Corporati,Oil - Integrated Majors,Value,OK,,6/6/10 12:00 AM
+Stock,CSCO,Cisco Systems In,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,BAC,Bank of America C,Money Center Banks,Value,OK,,6/6/10 12:00 AM
+Stock,PFE,Pfizer Inc. Comm,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,HMC,Honda Motor Compa,Autos and Parts,Value,OK,,6/6/10 12:00 AM
+Stock,TOT,Total S.A.,Oil - Integrated Majors,Value,OK,,6/6/10 12:00 AM
+Stock,KO,Coca-Cola Company,Beveregas (non-alcoholic),Value,OK,,6/6/10 12:00 AM
+Stock,ORCL,Oracle Corporatio,Software,Value,OK,,6/6/10 12:00 AM
+Stock,NVS,Novartis AG Commo,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,HPQ,Hewlett-Packard C,Hardware,Value,OK,,6/6/10 12:00 AM
+Stock,VOD,Vodafone Group Pl,Cellular/Wireless,Value,OK,,6/6/10 12:00 AM
+Stock,INTC,Intel Corporation,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,PBR,Petroleo Brasilei,Oil - Integrated Majors,Value,OK,,6/6/10 12:00 AM
+Stock,RTP,Rio Tinto Plc Com,Mining,Value,OK,,6/6/10 12:00 AM
+Stock,PEP,Pepsico Inc. Com,Beveregas (non-alcoholic),Value,OK,,6/6/10 12:00 AM
+Stock,RDS.A,Royal Dutch Shell,Oil - Integrated Majors,Value,OK,,6/6/10 12:00 AM
+Stock,C,Citigroup Inc. C,Money Center Banks,Value,OK,,6/6/10 12:00 AM
+Stock,SNY,Sanofi-Aventis SA,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,PM,Philip Morris Int,Tobacco,Value,OK,,6/6/10 12:00 AM
+Stock,GSK,GlaxoSmithKline P,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,UN,Unilever NV Commo,Food,Value,OK,,6/6/10 12:00 AM
+Stock,GS,Goldman Sachs Gro,Investment Banking/Brokerage,Value,OK,,6/6/10 12:00 AM
+Stock,ABT,Abbott Laboratori,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,VZ,Verizon Communica,Telephone,Value,OK,,6/6/10 12:00 AM
+Stock,SI,Siemens AG Americ,Electrical Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,MRK,Merck & Company,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,SLB,Schlumberger N.V.,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,COP,ConocoPhillips Co,Oil - Integrated Majors,Value,OK,,6/6/10 12:00 AM
+Stock,CBY,Cadbury plc ADS -,Beveregas (non-alcoholic),Value,OK,,6/6/10 12:00 AM
+Stock,MCD,McDonald's Corpor,Restaurants,Value,OK,,6/6/10 12:00 AM
+Stock,V,Visa Inc. Visa In,Credit Services,Value,OK,,6/6/10 12:00 AM
+Stock,OXY,Occidental Petrol,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,UTX,United Technologi,Aerospace/Defense,Value,OK,,6/6/10 12:00 AM
+Stock,QCOM,QUALCOMM Incorpor,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,AZN,Astrazeneca PLC C,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,DIS,Walt Disney Compa,Recreation and Entertainment,Value,OK,,6/6/10 12:00 AM
+Stock,MT,Arcelor Mittal NY,Metals,Value,OK,,6/6/10 12:00 AM
+Stock,UPS,United Parcel Ser,Air Freights/Couriers,Value,OK,,6/6/10 12:00 AM
+Stock,MMM,3M Company Common,Manufacturing - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,AMZN,Amazon.com Inc.,Internet,Value,OK,,6/6/10 12:00 AM
+Stock,AMGN,Amgen Inc.,Biotechnology,Value,OK,,6/6/10 12:00 AM
+Stock,BCS,Barclays PLC Comm,Money Center Banks,Value,OK,,6/6/10 12:00 AM
+Stock,SAP,SAP AG ADS,Software,Value,OK,,6/6/10 12:00 AM
+Stock,CS,Credit Suisse Gro,Investment Banking/Brokerage,Value,OK,,6/6/10 12:00 AM
+Stock,TEVA,Teva Pharmaceutic,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,HD,Home Depot Inc.,Retailers - Specialty,Value,OK,,6/6/10 12:00 AM
+Stock,UBS,UBS AG Common Sto,Investment Banking/Brokerage,Value,OK,,6/6/10 12:00 AM
+Stock,TS,Tenaris S.A. Amer,Metals,Value,OK,,6/6/10 12:00 AM
+Stock,TSM,Taiwan Semiconduc,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,NOK,Nokia Corporation,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,MDT,Medtronic Inc. Co,Medical Products,Value,OK,,6/6/10 12:00 AM
+Stock,ACL,Alcon Inc Common,Medical Products,Value,OK,,6/6/10 12:00 AM
+Stock,CVS,CVS Caremark Corp,Retailers - Drug Stores,Value,OK,,6/6/10 12:00 AM
+Stock,SU,Suncor Energy In,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,BA,Boeing Company (T,Aerospace/Defense,Value,OK,,6/6/10 12:00 AM
+Stock,ABB,ABB Ltd Common St,Electrical Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,USB,U.S. Bancorp Comm,Regional Banks,Value,OK,,6/6/10 12:00 AM
+Stock,AXP,American Express,Credit Services,Value,OK,,6/6/10 12:00 AM
+Stock,AMX,America Movil S.,Cellular/Wireless,Value,OK,,6/6/10 12:00 AM
+Stock,DAI,Daimler AG Common,Autos and Parts,Value,OK,,6/6/10 12:00 AM
+Stock,KFT,Kraft Foods Inc.,Food,Value,OK,,6/6/10 12:00 AM
+Stock,NVO,Novo Nordisk A/S,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,GILD,Gilead Sciences,Biotechnology,Value,OK,,6/6/10 12:00 AM
+Stock,MO,Altria Group Inc,Tobacco,Value,OK,,6/6/10 12:00 AM
+Stock,F,Ford Motor Compan,Autos and Parts,Value,OK,,6/6/10 12:00 AM
+Stock,BMY,Bristol-Myers Squ,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,CL,Colgate-Palmolive,Household Products,Value,OK,,6/6/10 12:00 AM
+Stock,MON,Monsanto Company,Agricultural Supplies,Value,OK,,6/6/10 12:00 AM
+Stock,DEO,Diageo plc Common,Beveregas (alcoholic),Value,OK,,6/6/10 12:00 AM
+Stock,MS,Morgan Stanley Co,Investment Banking/Brokerage,Value,OK,,6/6/10 12:00 AM
+Stock,TGT,Target Corporatio,Retailers - General Merchandise,Value,OK,,6/6/10 12:00 AM
+Stock,ABX,Barrick Gold Corp,Gold Mining,Value,OK,,6/6/10 12:00 AM
+Stock,RIMM,Research In Motio,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,UNH,UnitedHealth Grou,Health Insurance,Value,OK,,6/6/10 12:00 AM
+Stock,LLY,Eli Lilly and Com,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,CAT,Caterpillar Inc.,Machinery - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,EMR,Emerson Electric,Electrical Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,PKX,POSCO Common Stoc,Metals,Value,OK,,6/6/10 12:00 AM
+Stock,EMC,EMC Corporation C,Data Storage,Value,OK,,6/6/10 12:00 AM
+Stock,BAX,Baxter Internatio,Medical Products,Value,OK,,6/6/10 12:00 AM
+Stock,APA,Apache Corporatio,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,SNE,Sony Corporation,Hardware,Value,OK,,6/6/10 12:00 AM
+Stock,BK,Bank of New York,Regional Banks,Value,OK,,6/6/10 12:00 AM
+Stock,LOW,Lowe's Companies,Retailers - Specialty,Value,OK,,6/6/10 12:00 AM
+Stock,APC,Anadarko Petroleu,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,WAG,Walgreen Company,Retailers - Drug Stores,Value,OK,,6/6/10 12:00 AM
+Stock,TWX,Time Warner Inc.,Broadcasting and Media,Value,OK,,6/6/10 12:00 AM
+Stock,UNP,Union Pacific Cor,Railroads,Value,OK,,6/6/10 12:00 AM
+Stock,POT,Potash Corporatio,Agricultural Supplies,Value,OK,,6/6/10 12:00 AM
+Stock,DOW,Dow Chemical Comp,Chemicals,Value,OK,,6/6/10 12:00 AM
+Stock,FCX,Freeport-McMoRan,Mining,Value,OK,,6/6/10 12:00 AM
+Stock,MFC,Manulife Series F,Life Insurance,Value,OK,,6/6/10 12:00 AM
+Stock,INFY,Infosys Technolog,Technology Services,Value,OK,,6/6/10 12:00 AM
+Stock,NKE,Nike Inc. Common,Footware,Value,OK,,6/6/10 12:00 AM
+Stock,DTV,DIRECTV,Broadcasting and Media,Value,OK,,6/6/10 12:00 AM
+Stock,WIT,Wipro Limited Com,Technology Services,Value,OK,,6/6/10 12:00 AM
+Stock,HON,Honeywell Interna,Electrical Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,DD,E.I. du Pont de N,Chemicals,Value,OK,,6/6/10 12:00 AM
+Stock,MET,MetLife Inc. Com,Life Insurance,Value,OK,,6/6/10 12:00 AM
+Stock,DVN,Devon Energy Corp,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,EBAY,eBay Inc.,Internet,Value,OK,,6/6/10 12:00 AM
+Stock,TXN,Texas Instruments,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,ERIC,LM Ericsson Telep,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,MA,Mastercard Incorp,Credit Services,Value,OK,,6/6/10 12:00 AM
+Stock,LMT,Lockheed Martin C,Aerospace/Defense,Value,OK,,6/6/10 12:00 AM
+Stock,EXC,Exelon Corporatio,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,TRI,Thomson Reuters C,Publishing,Value,OK,,6/6/10 12:00 AM
+Stock,MHS,MedcoHealth Solut,Specialized Services,Value,OK,,6/6/10 12:00 AM
+Stock,GG,Goldcorp Incorpor,Gold Mining,Value,OK,,6/6/10 12:00 AM
+Stock,BLK,BlackRock Inc. C,Asset Management,Value,OK,,6/6/10 12:00 AM
+Stock,HAL,Halliburton Compa,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,CCL,Carnival Corporat,Recreation - Others,Value,OK,,6/6/10 12:00 AM
+Stock,PHG,Koninklijke Phili,Electrical Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,GD,General Dynamics,Aerospace/Defense,Value,OK,,6/6/10 12:00 AM
+Stock,CELG,Celgene Corporati,Biotechnology,Value,OK,,6/6/10 12:00 AM
+Stock,TRV,The Travelers Com,Insurance - Poperty/Casualty,Value,OK,,6/6/10 12:00 AM
+Stock,GLW,Corning Incorpora,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,ESRX,Express Scripts,Specialized Services,Value,OK,,6/6/10 12:00 AM
+Stock,WLP,WellPoint Inc. C,Health Insurance,Value,OK,,6/6/10 12:00 AM
+Stock,FDX,FedEx Corporation,Air Freights/Couriers,Value,OK,,6/6/10 12:00 AM
+Stock,MOS,Mosaic Company (T,Agricultural Supplies,Value,OK,,6/6/10 12:00 AM
+Stock,XTO,XTO Energy Inc. C,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,DELL,Dell Inc.,Hardware,Value,OK,,6/6/10 12:00 AM
+Stock,COST,Costco Wholesale,Retailers - General Merchandise,Value,OK,,6/6/10 12:00 AM
+Stock,RIG,Transocean Ltd (S,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,SO,Southern Company,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,SCCO,Southern Copper C,Mining,Value,OK,,6/6/10 12:00 AM
+Stock,ACN,Accenture plc. Cl,Technology Services,Value,OK,,6/6/10 12:00 AM
+Stock,ECA,Encana Corporatio,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,SYT,Syngenta AG Commo,Agricultural Supplies,Value,OK,,6/6/10 12:00 AM
+Stock,COV,Covidien plc. Ord,Medical Products,Value,OK,,6/6/10 12:00 AM
+Stock,PNC,PNC Financial Ser,Regional Banks,Value,OK,,6/6/10 12:00 AM
+Stock,KMB,Kimberly-Clark Co,Household Products,Value,OK,,6/6/10 12:00 AM
+Stock,NEM,Newmont Mining Co,Gold Mining,Value,OK,,6/6/10 12:00 AM
+Stock,PRU,Prudential Financ,Insurance - Multiline,Value,OK,,6/6/10 12:00 AM
+Stock,DE,Deere & Company C,Machinery - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,BEN,Franklin Resource,Asset Management,Value,OK,,6/6/10 12:00 AM
+Stock,EOG,EOG Resources In,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,GIS,General Mills In,Food,Value,OK,,6/6/10 12:00 AM
+Stock,PX,Praxair Inc. Com,Chemicals,Value,OK,,6/6/10 12:00 AM
+Stock,ITW,Illinois Tool Wor,Manufacturing - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,TCK,Teck Resources Lt,Mining,Value,OK,,6/6/10 12:00 AM
+Stock,YHOO,Yahoo! Inc.,Internet,Value,OK,,6/6/10 12:00 AM
+Stock,STT,State Street Corp,Asset Management,Value,OK,,6/6/10 12:00 AM
+Stock,JCI,Johnson Controls,Manufacturing - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,RTN,Raytheon Company,Aerospace/Defense,Value,OK,,6/6/10 12:00 AM
+Stock,SCHW,The Charles Schwa,Investment Banking/Brokerage,Value,OK,,6/6/10 12:00 AM
+Stock,DUK,Duke Energy Corpo,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,ADP,Automatic Data Pr,Technology Services,Value,OK,,6/6/10 12:00 AM
+Stock,MRO,Marathon Oil Corp,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,VMW,Vmware Inc. Comm,Software,Value,OK,,6/6/10 12:00 AM
+Stock,CME,CME Group Inc.,Exchange Operators,Value,OK,,6/6/10 12:00 AM
+Stock,MBT,Mobile TeleSystem,Cellular/Wireless,Value,OK,,6/6/10 12:00 AM
+Stock,K,Kellogg Company C,Food,Value,OK,,6/6/10 12:00 AM
+Stock,TMO,Thermo Fisher Sci,Manufacturing - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,HES,Hess Corporation,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,RCI,Rogers Communicat,Cellular/Wireless,Value,OK,,6/6/10 12:00 AM
+Stock,NSC,Norfolk Souther C,Railroads,Value,OK,,6/6/10 12:00 AM
+Stock,FPL,FPL Group Inc. C,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,ADM,Archer-Daniels-Mi,Food,Value,OK,,6/6/10 12:00 AM
+Stock,NOC,Northrop Grumman,Aerospace/Defense,Value,OK,,6/6/10 12:00 AM
+Stock,KMP,Kinder Morgan Ene,Oil and Gas Pipelines,Value,OK,,6/6/10 12:00 AM
+Stock,CSX,CSX Corporation C,Railroads,Value,OK,,6/6/10 12:00 AM
+Stock,BDX,Becton Dickinson,Medical Products,Value,OK,,6/6/10 12:00 AM
+Stock,ADBE,Adobe Systems Inc,Software,Value,OK,,6/6/10 12:00 AM
+Stock,AGN,Allergan Inc. Co,Medical Products,Value,OK,,6/6/10 12:00 AM
+Stock,VIP,Open Joint Stock,Cellular/Wireless,Value,OK,,6/6/10 12:00 AM
+Stock,BIDU,Baidu Inc.,Internet,Value,OK,,6/6/10 12:00 AM
+Stock,VIA.B,Viacom Inc. Clas,Broadcasting and Media,Value,OK,,6/6/10 12:00 AM
+Stock,NOV,National Oilwell,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,TYC,Tyco Internationa,Manufacturing - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,ENB,Enbridge Inc Comm,Oil and Gas Pipelines,Value,OK,,6/6/10 12:00 AM
+Stock,AMT,American Tower Co,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,TJX,TJX Companies In,Apparel,Value,OK,,6/6/10 12:00 AM
+Stock,ALL,Allstate Corporat,Insurance - Poperty/Casualty,Value,OK,,6/6/10 12:00 AM
+Stock,SBUX,Starbucks Corpora,Restaurants,Value,OK,,6/6/10 12:00 AM
+Stock,CB,Chubb Corporation,Insurance - Poperty/Casualty,Value,OK,,6/6/10 12:00 AM
+Stock,CHK,Chesapeake Energy,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,PCP,Precision Castpar,Metals,Value,OK,,6/6/10 12:00 AM
+Stock,SPLS,Staples Inc.,Retailers - Specialty,Value,OK,,6/6/10 12:00 AM
+Stock,COF,Capital One Finan,Credit Services,Value,OK,,6/6/10 12:00 AM
+Stock,MCK,McKesson Corporat,Specialized Services,Value,OK,,6/6/10 12:00 AM
+Stock,KSS,Kohl's Corporatio,Retailers - General Merchandise,Value,OK,,6/6/10 12:00 AM
+Stock,AMAT,Applied Materials,Semiconductors Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,WM,Waste Management,Waste Management,Value,OK,,6/6/10 12:00 AM
+Stock,AEP,American Electric,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,FMS,Fresenius Medical,Specialized Services,Value,OK,,6/6/10 12:00 AM
+Stock,YUM,Yum! Brands Inc.,Restaurants,Value,OK,,6/6/10 12:00 AM
+Stock,L,Loews Corporation,Insurance - Multiline,Value,OK,,6/6/10 12:00 AM
+Stock,RAI,Reynolds American,Tobacco,Value,OK,,6/6/10 12:00 AM
+Stock,PCG,Pacific Gas & Ele,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,MOT,Motorola Inc. Co,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,PEG,Public Service En,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,BHI,Baker Hughes Inco,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,BBY,Best Buy Co. Inc,Retailers - Specialty,Value,OK,,6/6/10 12:00 AM
+Stock,BAM,Brookfield Asset,Asset Management,Value,OK,,6/6/10 12:00 AM
+Stock,BRCM,Broadcom Corporat,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,BIIB,Biogen Idec Inc,Biotechnology,Value,OK,,6/6/10 12:00 AM
+Stock,APD,Air Products and,Chemicals,Value,OK,,6/6/10 12:00 AM
+Stock,HIT,Hitachi Ltd. Com,Machinery - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,PSA,Public Storage Co,REITs,Value,OK,,6/6/10 12:00 AM
+Stock,GPS,Gap Inc. (The) C,Apparel,Value,OK,,6/6/10 12:00 AM
+Stock,GENZ,Genzyme Corporati,Biotechnology,Value,OK,,6/6/10 12:00 AM
+Stock,JNPR,Juniper Networks,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,ETR,Entergy Corporati,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,KR,Kroger Company (T,Food Retailers,Value,OK,,6/6/10 12:00 AM
+Stock,CTSH,Cognizant Technol,Technology Services,Value,OK,,6/6/10 12:00 AM
+Stock,HNZ,H.J. Heinz Compan,Food,Value,OK,,6/6/10 12:00 AM
+Stock,ASML,ASML Holding N.V.,Semiconductors Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,SE,Spectra Energy Co,Oil and Gas Pipelines,Value,OK,,6/6/10 12:00 AM
+Stock,PCAR,PACCAR Inc.,Trucks and Parts,Value,OK,,6/6/10 12:00 AM
+Stock,ATVI,Activision Blizza,Software,Value,OK,,6/6/10 12:00 AM
+Stock,NUE,Nucor Corporation,Metals,Value,OK,,6/6/10 12:00 AM
+Stock,AU,AngloGold Ashanti,Gold Mining,Value,OK,,6/6/10 12:00 AM
+Stock,AA,Alcoa Inc. Common,Metals,Value,OK,,6/6/10 12:00 AM
+Stock,ISRG,Intuitive Surgica,Medical Products,Value,OK,,6/6/10 12:00 AM
+Stock,TROW,T. Rowe Price Gro,Asset Management,Value,OK,,6/6/10 12:00 AM
+Stock,SYMC,Symantec Corporat,Software,Value,OK,,6/6/10 12:00 AM
+Stock,AET,Aetna Inc. Common,Health Insurance,Value,OK,,6/6/10 12:00 AM
+Stock,AVP,Avon Products In,Personal Care,Value,OK,,6/6/10 12:00 AM
+Stock,WMB,Williams Companie,Oil and Gas Pipelines,Value,OK,,6/6/10 12:00 AM
+Stock,KGC,Kinross Gold Corp,Gold Mining,Value,OK,,6/6/10 12:00 AM
+Stock,NWS,News Corporation,Broadcasting and Media,Value,OK,,6/6/10 12:00 AM
+Stock,NTRS,Northern Trust Co,Regional Banks,Value,OK,,6/6/10 12:00 AM
+Stock,STJ,St. Jude Medical,Medical Products,Value,OK,,6/6/10 12:00 AM
+Stock,CCE,Coca-Cola Enterpr,Beveregas (non-alcoholic),Value,OK,,6/6/10 12:00 AM
+Stock,CAH,Cardinal Health,Specialized Services,Value,OK,,6/6/10 12:00 AM
+Stock,NBL,Noble Energy Inc.,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,MRVL,Marvell Technolog,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,WFT,Weatherford Inter,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,CMCSK,Comcast Corporati,Broadcasting and Media,Value,OK,,6/6/10 12:00 AM
+Stock,ZMH,Zimmer Holdings,Medical Products,Value,OK,,6/6/10 12:00 AM
+Stock,ED,Consolidated Edis,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,STI,SunTrust Banks I,Regional Banks,Value,OK,,6/6/10 12:00 AM
+Stock,VNO,Vornado Realty Tr,REITs,Value,OK,,6/6/10 12:00 AM
+Stock,DO,Diamond Offshore,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,EL,Estee Lauder Comp,Personal Care,Value,OK,,6/6/10 12:00 AM
+Stock,BSX,Boston Scientific,Medical Products,Value,OK,,6/6/10 12:00 AM
+Stock,ETN,Eaton Corporation,Manufacturing - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,TEL,Tyco Electronics,Electrical Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,FE,FirstEnergy Corpo,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,CMI,Cummins Inc. Comm,Trucks and Parts,Value,OK,,6/6/10 12:00 AM
+Stock,CA,CA Inc.,Software,Value,OK,,6/6/10 12:00 AM
+Stock,COH,Coach Inc. Commo,Retailers - Specialty,Value,OK,,6/6/10 12:00 AM
+Stock,CPB,Campbell Soup Com,Food,Value,OK,,6/6/10 12:00 AM
+Stock,PGR,Progressive Corpo,Insurance - Poperty/Casualty,Value,OK,,6/6/10 12:00 AM
+Stock,NE,Noble Corporation,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,CCI,Crown Castle Inte,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,LVS,Las Vegas Sands C,Recreation - Casinos,Value,OK,,6/6/10 12:00 AM
+Stock,SHLD,Sears Holdings Co,Retailers - Department Stores,Value,OK,,6/6/10 12:00 AM
+Stock,A,Agilent Technolog,Manufacturing - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,TSP,Telecomunicacoes,Cellular/Wireless,Value,OK,,6/6/10 12:00 AM
+Stock,RSG,Republic Services,Waste Management,Value,OK,,6/6/10 12:00 AM
+Stock,CAG,ConAgra Foods In,Food,Value,OK,,6/6/10 12:00 AM
+Stock,PGN,Progress Energy I,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,MHP,McGraw-Hill Compa,Publishing,Value,OK,,6/6/10 12:00 AM
+Stock,EIX,Edison Internatio,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,LLL,L-3 Communication,Aerospace/Defense,Value,OK,,6/6/10 12:00 AM
+Stock,NTAP,NetApp Inc.,Data Storage,Value,OK,,6/6/10 12:00 AM
+Stock,CCJ,Cameco Corporatio,Mining,Value,OK,,6/6/10 12:00 AM
+Stock,IP,International Pap,Paper and Forest Products,Value,OK,,6/6/10 12:00 AM
+Stock,PCLN,priceline.com Inc,Internet,Value,OK,,6/6/10 12:00 AM
+Stock,VLO,Valero Energy Cor,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,IR,Ingersoll-Rand pl,Machinery - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,AGU,Agrium Inc. Commo,Agricultural Supplies,Value,OK,,6/6/10 12:00 AM
+Stock,AMP,Ameriprise Financ,Asset Management,Value,OK,,6/6/10 12:00 AM
+Stock,INTU,Intuit Inc.,Software,Value,OK,,6/6/10 12:00 AM
+Stock,AMTD,TD Ameritrade Hol,Investment Banking/Brokerage,Value,OK,,6/6/10 12:00 AM
+Stock,MUR,Murphy Oil Corpor,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,HIG,Hartford Financia,Insurance - Multiline,Value,OK,,6/6/10 12:00 AM
+Stock,EQR,Equity Residentia,REITs,Value,OK,,6/6/10 12:00 AM
+Stock,SWY,Safeway Inc. Comm,Food Retailers,Value,OK,,6/6/10 12:00 AM
+Stock,PH,Parker-Hannifin C,Manufacturing - Specialized,Value,OK,,6/6/10 12:00 AM
+Stock,DAL,Delta Air Lines I,Airlines,Value,OK,,6/6/10 12:00 AM
+Stock,STX,Seagate Technolog,Data Storage,Value,OK,,6/6/10 12:00 AM
+Stock,FITB,Fifth Third Banco,Regional Banks,Value,OK,,6/6/10 12:00 AM
+Stock,SII,Smith Internation,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,AEG,AEGON N.V. Common,Life Insurance,Value,OK,,6/6/10 12:00 AM
+Stock,SLE,Sara Lee Corporat,Food,Value,OK,,6/6/10 12:00 AM
+Stock,BXP,Boston Properties,REITs,Value,OK,,6/6/10 12:00 AM
+Stock,ITT,ITT Corporation C,Electrical Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,CBS,CBS Corporation C,Broadcasting and Media,Value,OK,,6/6/10 12:00 AM
+Stock,S,Sprint Nextel Co,Telephone,Value,OK,,6/6/10 12:00 AM
+Stock,AEM,Agnico-Eagle Mine,Gold Mining,Value,OK,,6/6/10 12:00 AM
+Stock,COL,Rockwell Collins,Aerospace/Defense,Value,OK,,6/6/10 12:00 AM
+Stock,HSY,The Hershey Compa,Food,Value,OK,,6/6/10 12:00 AM
+Stock,LUV,Southwest Airline,Airlines,Value,OK,,6/6/10 12:00 AM
+Stock,CI,CIGNA Corporation,Health Insurance,Value,OK,,6/6/10 12:00 AM
+Stock,NVDA,NVIDIA Corporatio,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,SNN,Smith & Nephew SN,Medical Products,Value,OK,,6/6/10 12:00 AM
+Stock,FSLR,First Solar Inc.,Solar Power,Value,OK,,6/6/10 12:00 AM
+Stock,DISH,DISH Network Corp,Broadcasting and Media,Value,OK,,6/6/10 12:00 AM
+Stock,TTM,Tata Motors Ltd T,Autos and Parts,Value,OK,,6/6/10 12:00 AM
+Stock,WDC,Western Digital C,Data Storage,Value,OK,,6/6/10 12:00 AM
+Stock,WY,Weyerhaeuser Comp,Paper and Forest Products,Value,OK,,6/6/10 12:00 AM
+Stock,CRM,Salesforce.com In,Software,Value,OK,,6/6/10 12:00 AM
+Stock,FRX,Forest Laboratori,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,CHRW,C.H. Robinson Wor,Air Freights/Couriers,Value,OK,,6/6/10 12:00 AM
+Stock,ADI,Analog Devices I,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,GR,Goodrich Corporat,Aerospace/Defense,Value,OK,,6/6/10 12:00 AM
+Stock,CLX,Clorox Company (T,Household Products,Value,OK,,6/6/10 12:00 AM
+Stock,DOV,Dover Corporation,Machinery - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,VFC,V.F. Corporation,Apparel,Value,OK,,6/6/10 12:00 AM
+Stock,GFI,Gold Fields Ltd.,Gold Mining,Value,OK,,6/6/10 12:00 AM
+Stock,ENL,Reed Elsevier NV,Publishing,Value,OK,,6/6/10 12:00 AM
+Stock,M,Macy's Inc Common,Retailers - Department Stores,Value,OK,,6/6/10 12:00 AM
+Stock,JWN,Nordstrom Inc. C,Retailers - Department Stores,Value,OK,,6/6/10 12:00 AM
+Stock,AZO,AutoZone Inc. Co,Retailers - Specialty,Value,OK,,6/6/10 12:00 AM
+Stock,XRX,Xerox Corporation,Hardware,Value,OK,,6/6/10 12:00 AM
+Stock,BG,Bunge Limited Bun,Food,Value,OK,,6/6/10 12:00 AM
+Stock,X,United States Ste,Metals,Value,OK,,6/6/10 12:00 AM
+Stock,WYNN,Wynn Resorts Lim,Recreation - Casinos,Value,OK,,6/6/10 12:00 AM
+Stock,BCR,C.R. Bard Inc. C,Medical Products,Value,OK,,6/6/10 12:00 AM
+Stock,LNC,Lincoln National,Insurance - Multiline,Value,OK,,6/6/10 12:00 AM
+Stock,HUM,Humana Inc. Commo,Health Insurance,Value,OK,,6/6/10 12:00 AM
+Stock,ICE,IntercontinentalE,Exchange Operators,Value,OK,,6/6/10 12:00 AM
+Stock,MU,Micron Technology,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,RL,Polo Ralph Lauren,Apparel,Value,OK,,6/6/10 12:00 AM
+Stock,CSC,Computer Sciences,Technology Services,Value,OK,,6/6/10 12:00 AM
+Stock,MAT,Mattel Inc.,Recreation - Others,Value,OK,,6/6/10 12:00 AM
+Stock,CBE,Cooper Industries,Machinery - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,EP,El Paso Corporati,Oil and Gas Pipelines,Value,OK,,6/6/10 12:00 AM
+Stock,ABC,AmerisourceBergen,Specialized Services,Value,OK,,6/6/10 12:00 AM
+Stock,Q,Qwest Communicati,Telephone,Value,OK,,6/6/10 12:00 AM
+Stock,STM,STMicroelectronic,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,ROK,Rockwell Automati,Electrical Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,GNW,Genworth Financia,Life Insurance,Value,OK,,6/6/10 12:00 AM
+Stock,TAP,Molson Coors Brew,Beveregas (alcoholic),Value,OK,,6/6/10 12:00 AM
+Stock,HST,Host Hotels & Res,REITs,Value,OK,,6/6/10 12:00 AM
+Stock,FLR,Fluor Corporation,Heavy Construction,Value,OK,,6/6/10 12:00 AM
+Stock,PFG,Principal Financi,Asset Management,Value,OK,,6/6/10 12:00 AM
+Stock,EXPD,Expeditors Intern,Air Freights/Couriers,Value,OK,,6/6/10 12:00 AM
+Stock,FISV,Fiserv Inc.,Software,Value,OK,,6/6/10 12:00 AM
+Stock,PAA,Plains All Americ,Oil and Gas Pipelines,Value,OK,,6/6/10 12:00 AM
+Stock,GWW,W.W. Grainger In,Electrical Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,DFS,Discover Financia,Credit Services,Value,OK,,6/6/10 12:00 AM
+Stock,ALU,Alcatel-Lucent Co,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,LTD,Limited Brands I,Apparel,Value,OK,,6/6/10 12:00 AM
+Stock,DTE,DTE Energy Compan,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,SNDK,SanDisk Corporati,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,SHW,Sherwin-Williams,Building Materials,Value,OK,,6/6/10 12:00 AM
+Stock,NYX,NYSE Euronext Com,Exchange Operators,Value,OK,,6/6/10 12:00 AM
+Stock,CVC,Cablevision Syste,Broadcasting and Media,Value,OK,,6/6/10 12:00 AM
+Stock,XLNX,Xilinx Inc.,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,UNM,Unum Group Common,Life Insurance,Value,OK,,6/6/10 12:00 AM
+Stock,CHKP,Check Point Softw,Software,Value,OK,,6/6/10 12:00 AM
+Stock,JCP,J.C. Penney Compa,Retailers - Department Stores,Value,OK,,6/6/10 12:00 AM
+Stock,GRMN,Garmin Ltd.,Hardware,Value,OK,,6/6/10 12:00 AM
+Stock,EXPE,Expedia Inc.,Internet,Value,OK,,6/6/10 12:00 AM
+Stock,FAST,Fastenal Company,Building Materials,Value,OK,,6/6/10 12:00 AM
+Stock,BJS,BJ Services Compa,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,MGA,Magna Internation,Autos and Parts,Value,OK,,6/6/10 12:00 AM
+Stock,TSN,Tyson Foods Inc.,Food,Value,OK,,6/6/10 12:00 AM
+Stock,XL,Select Sector SPD,Insurance - Poperty/Casualty,Value,OK,,6/6/10 12:00 AM
+Stock,ADSK,Autodesk Inc.,Software,Value,OK,,6/6/10 12:00 AM
+Stock,CNH,CNH Global N.V. C,Machinery - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,MCO,Moody's Corporati,Credit Services,Value,OK,,6/6/10 12:00 AM
+Stock,GPC,Genuine Parts Com,Autos and Parts,Value,OK,,6/6/10 12:00 AM
+Stock,NBR,Nabors Industries,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,ESV,Ensco Internation,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,SIAL,Sigma-Aldrich Cor,Chemicals,Value,OK,,6/6/10 12:00 AM
+Stock,KEY,KeyCorp Common St,Regional Banks,Value,OK,,6/6/10 12:00 AM
+Stock,RCL,Royal Caribbean C,Recreation - Others,Value,OK,,6/6/10 12:00 AM
+Stock,MFE,MCAFEE Inc,Software,Value,OK,,6/6/10 12:00 AM
+Stock,WFMI,Whole Foods Marke,Food Retailers,Value,OK,,6/6/10 12:00 AM
+Stock,AEE,Ameren Corporatio,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,HRS,Harris Corporatio,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,HOG,Harley-Davidson,Recreation - Others,Value,OK,,6/6/10 12:00 AM
+Stock,LUK,Leucadia National,Building Materials,Value,OK,,6/6/10 12:00 AM
+Stock,LZ,Lubrizol Corporat,Chemicals,Value,OK,,6/6/10 12:00 AM
+Stock,MIL,Millipore Corpora,Manufacturing - Specialized,Value,OK,,6/6/10 12:00 AM
+Stock,PLD,ProLogis Share of,REITs,Value,OK,,6/6/10 12:00 AM
+Stock,PCL,Plum Creek Timber,REITs,Value,OK,,6/6/10 12:00 AM
+Stock,FLEX,Flextronics Inter,Manufacturing - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,NRG,NRG Energy Inc.,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,MDR,McDermott Interna,Heavy Construction,Value,OK,,6/6/10 12:00 AM
+Stock,WAT,Waters Corporatio,Manufacturing - Specialized,Value,OK,,6/6/10 12:00 AM
+Stock,FLS,Flowserve Corpora,Electrical Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,TXT,Textron Inc. Comm,Aerospace/Defense,Value,OK,,6/6/10 12:00 AM
+Stock,AMD,Advanced Micro De,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,DRI,Darden Restaurant,Restaurants,Value,OK,,6/6/10 12:00 AM
+Stock,TIF,Tiffany & Co. Com,Retailers - Specialty,Value,OK,,6/6/10 12:00 AM
+Stock,SLM,SLM Corporation,Credit Services,Value,OK,,6/6/10 12:00 AM
+Stock,RHT,Red Hat Inc. Com,Software,Value,OK,,6/6/10 12:00 AM
+Stock,HRL,Hormel Foods Corp,Food,Value,OK,,6/6/10 12:00 AM
+Stock,JOYG,Joy Global Inc.,Machinery - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,VMC,Vulcan Materials,Building Materials,Value,OK,,6/6/10 12:00 AM
+Stock,ERTS,Electronic Arts I,Software,Value,OK,,6/6/10 12:00 AM
+Stock,CNP,CenterPoint Energ,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,CMA,Comerica Incorpor,Regional Banks,Value,OK,,6/6/10 12:00 AM
+Stock,KLAC,KLA-Tencor Corpor,Semiconductors Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,BLL,Ball Corporation,Containers,Value,OK,,6/6/10 12:00 AM
+Stock,IGT,International Gam,Recreation - Others,Value,OK,,6/6/10 12:00 AM
+Stock,OI,Owens-Illinois I,Containers,Value,OK,,6/6/10 12:00 AM
+Stock,MAS,Masco Corporation,Building Materials,Value,OK,,6/6/10 12:00 AM
+Stock,HAS,Hasbro Inc. Comm,Recreation - Others,Value,OK,,6/6/10 12:00 AM
+Stock,MKC,McCormick & Compa,Food,Value,OK,,6/6/10 12:00 AM
+Stock,DLTR,Dollar Tree Inc.,Retailers - General Merchandise,Value,OK,,6/6/10 12:00 AM
+Stock,PDE,Pride Internation,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,FDO,Family Dollar Sto,Retailers - General Merchandise,Value,OK,,6/6/10 12:00 AM
+Stock,AKAM,Akamai Technologi,Internet,Value,OK,,6/6/10 12:00 AM
+Stock,VRSN,VeriSign Inc.,Internet,Value,OK,,6/6/10 12:00 AM
+Stock,PLL,Pall Corporation,Manufacturing - Specialized,Value,OK,,6/6/10 12:00 AM
+Stock,MGM,MGM Mirage Common,Recreation - Casinos,Value,OK,,6/6/10 12:00 AM
+Stock,CHD,Church & Dwight C,Household Products,Value,OK,,6/6/10 12:00 AM
+Stock,LM,Legg Mason Inc.,Asset Management,Value,OK,,6/6/10 12:00 AM
+Stock,CE,Celanese Corporat,Chemicals,Value,OK,,6/6/10 12:00 AM
+Stock,CINF,Cincinnati Financ,Insurance - Poperty/Casualty,Value,OK,,6/6/10 12:00 AM
+Stock,BWA,BorgWarner Inc. C,Autos and Parts,Value,OK,,6/6/10 12:00 AM
+Stock,EMN,Eastman Chemical,Chemicals,Value,OK,,6/6/10 12:00 AM
+Stock,LRCX,Lam Research Corp,Semiconductors Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,JBHT,J.B. Hunt Transpo,Truckers,Value,OK,,6/6/10 12:00 AM
+Stock,CCK,Crown Holdings I,Containers,Value,OK,,6/6/10 12:00 AM
+Stock,ELN,Elan Corporation,Pharmaceuticals,Value,OK,,6/6/10 12:00 AM
+Stock,NDAQ,The NASDAQ OMX Gr,Exchange Operators,Value,OK,,6/6/10 12:00 AM
+Stock,MWV,Meadwestvaco Corp,Paper and Forest Products,Value,OK,,6/6/10 12:00 AM
+Stock,ERJ,Embraer-Empresa B,Aerospace/Defense,Value,OK,,6/6/10 12:00 AM
+Stock,WPO,Washington Post C,Publishing,Value,OK,,6/6/10 12:00 AM
+Stock,TMK,Torchmark Corpora,Life Insurance,Value,OK,,6/6/10 12:00 AM
+Stock,GCI,Gannett Co. Inc.,Publishing,Value,OK,,6/6/10 12:00 AM
+Stock,MI,New M&I Corporati,Regional Banks,Value,OK,,6/6/10 12:00 AM
+Stock,PETM,PetSmart Inc,Retailers - Specialty,Value,OK,,6/6/10 12:00 AM
+Stock,ANF,Abercrombie & Fit,Apparel,Value,OK,,6/6/10 12:00 AM
+Stock,LSI,LSI Corporation C,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,MHK,Mohawk Industries,Building Materials,Value,OK,,6/6/10 12:00 AM
+Stock,DWA,Dreamworks Animat,Recreation and Entertainment,Value,OK,,6/6/10 12:00 AM
+Stock,JBL,Jabil Circuit In,Electrical Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,SIRI,Sirius XM Radio I,Broadcasting and Media,Value,OK,,6/6/10 12:00 AM
+Stock,AIG,American Internat,Insurance - Multiline,Value,OK,,6/6/10 12:00 AM
+Stock,CVH,Coventry Health C,Health Insurance,Value,OK,,6/6/10 12:00 AM
+Stock,NSM,National Semicond,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,STZ,Constellation Bra,Beveregas (alcoholic),Value,OK,,6/6/10 12:00 AM
+Stock,HBAN,Huntington Bancsh,Regional Banks,Value,OK,,6/6/10 12:00 AM
+Stock,CMG,Chipotle Mexican,Restaurants,Value,OK,,6/6/10 12:00 AM
+Stock,SVU,SuperValu Inc. Co,Food Retailers,Value,OK,,6/6/10 12:00 AM
+Stock,SUN,Sunoco Inc. Comm,Exploration Refining and Mktg,Value,OK,,6/6/10 12:00 AM
+Stock,SAY,Satyam Computer S,Technology Services,Value,OK,,6/6/10 12:00 AM
+Stock,AVY,Avery Dennison Co,Manufacturing - Specialized,Value,OK,,6/6/10 12:00 AM
+Stock,GT,Goodyear Tire & R,Autos and Parts,Value,OK,,6/6/10 12:00 AM
+Stock,AGCO,AGCO Corporation,Machinery - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,FWLT,Foster Wheeler AG,Heavy Construction,Value,OK,,6/6/10 12:00 AM
+Stock,ETFC,E*TRADE Financial,Investment Banking/Brokerage,Value,OK,,6/6/10 12:00 AM
+Stock,RDC,Rowan Companies,Oil Services,Value,OK,,6/6/10 12:00 AM
+Stock,AMR,AMR Corporation C,Airlines,Value,OK,,6/6/10 12:00 AM
+Stock,UAUA,UAL Corporation,Airlines,Value,OK,,6/6/10 12:00 AM
+Stock,GIL,Gildan Activewear,Apparel,Value,OK,,6/6/10 12:00 AM
+Stock,SHAW,Shaw Group Inc. (,Heavy Construction,Value,OK,,6/6/10 12:00 AM
+Stock,VAL,Valspar Corporati,Building Materials,Value,OK,,6/6/10 12:00 AM
+Stock,AB,Allianceberstein,Asset Management,Value,OK,,6/6/10 12:00 AM
+Stock,WFR,MEMC Electronic M,Semiconductors,Value,OK,,6/6/10 12:00 AM
+Stock,ZION,Zions Bancorporat,Regional Banks,Value,OK,,6/6/10 12:00 AM
+Stock,TLAB,Tellabs Inc.,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,IACI,IAC/InterActiveCo,Internet,Value,OK,,6/6/10 12:00 AM
+Stock,STP,Suntech Power Hol,Solar Power,Value,OK,,6/6/10 12:00 AM
+Stock,HBI,Hanesbrands Inc.,Apparel,Value,OK,,6/6/10 12:00 AM
+Stock,JDSU,JDS Uniphase Corp,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,BKC,Burger King Holdi,Restaurants,Value,OK,,6/6/10 12:00 AM
+Stock,WSM,Williams-Sonoma,Retailers - Specialty,Value,OK,,6/6/10 12:00 AM
+Stock,TEX,Terex Corporation,Machinery - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,RGC,Regal Entertainme,Recreation and Entertainment,Value,OK,,6/6/10 12:00 AM
+Stock,NVLS,Novellus Systems,Semiconductors Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,WEN,Wendy's/Arby's Gr,Restaurants,Value,OK,,6/6/10 12:00 AM
+Stock,ODP,Office Depot Inc,Retailers - Specialty,Value,OK,,6/6/10 12:00 AM
+Stock,NCR,NCR Corporation C,Hardware,Value,OK,,6/6/10 12:00 AM
+Stock,SPWRA,SunPower Corporat,Solar Power,Value,OK,,6/6/10 12:00 AM
+Stock,LSTR,Landstar System,Truckers,Value,OK,,6/6/10 12:00 AM
+Stock,BJ,BJ's Wholesale Cl,Retailers - General Merchandise,Value,OK,,6/6/10 12:00 AM
+Stock,MWW,Monster Worldwide,Internet,Value,OK,,6/6/10 12:00 AM
+Stock,R,Ryder System Inc,Truckers,Value,OK,,6/6/10 12:00 AM
+Stock,EAT,Brinker Internati,Restaurants,Value,OK,,6/6/10 12:00 AM
+Stock,MIR,Mirant Corp Commo,Electric Utilities,Value,OK,,6/6/10 12:00 AM
+Stock,NYT,New York Times Co,Publishing,Value,OK,,6/6/10 12:00 AM
+Stock,MTW,Manitowoc Company,Machinery - Diversified,Value,OK,,6/6/10 12:00 AM
+Stock,EK,Eastman Kodak Com,Recreation - Others,Value,OK,,6/6/10 12:00 AM
+Stock,CNW,Con-Way Inc. Com,Truckers,Value,OK,,6/6/10 12:00 AM
+Stock,USG,USG Corporation C,Building Materials,Value,OK,,6/6/10 12:00 AM
+Stock,JBLU,JetBlue Airways C,Airlines,Value,OK,,6/6/10 12:00 AM
+Stock,UA,Under Armour Inc,Apparel,Value,OK,,6/6/10 12:00 AM
+Stock,CIEN,Ciena Corporation,Communication Equipment,Value,OK,,6/6/10 12:00 AM
+Stock,JACK,Jack In The Box I,Restaurants,Value,OK,,6/6/10 12:00 AM
+Stock,BKS,Barnes & Noble I,Retailers - Specialty,Value,OK,,6/6/10 12:00 AM
+Stock,TTWO,Take-Two Interact,Software,Value,OK,,6/6/10 12:00 AM
+Stock,LDK,LDK Solar Co. Inc,Solar Power,Value,OK,,6/6/10 12:00 AM
+Stock,CROX,Crocs Inc.,Footware,Value,OK,,6/6/10 12:00 AM
+Stock,SSP,E.W. Scripps Comp,Publishing,Value,OK,,6/6/10 12:00 AM

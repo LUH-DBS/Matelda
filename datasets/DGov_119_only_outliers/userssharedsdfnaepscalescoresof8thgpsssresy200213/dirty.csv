@@ -1,0 +1,289 @@
+characteristic,sex,raceethnicity,yearvalue(long),score(double precision),standarderror(double precision)
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2002,263.0,0.5
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2003,139.42522862030964,0.2
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2004,248.0,0.3
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2005,260.0,0.2
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2682,248.0,0.3
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2007,261.0,0.2
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2716,248.0,0.3
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2009,262.0,0.3
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2010,248.0,0.3
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2011,264.0,0.2
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2012,248.0,0.3
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2660,266.0,0.2
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2470,258.0,0.5
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2003,256.0,0.3
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",1649,208.52717423106915,0.3
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",3001,255.0,0.2
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2917,248.0,0.3
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2007,256.0,0.3
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2769,248.0,0.3
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2009,258.0,0.3
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",1415,248.0,0.3
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2011,259.0,0.3
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2012,314.9093323592453,0.3
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2013,261.0,0.3
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",1410,267.0,0.5
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2003,267.0,0.3
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2004,248.0,0.3
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",1728,266.0,0.2
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2006,248.0,0.3
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2007,173.20608758999956,0.3
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2008,403.4679963723402,0.3
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2009,267.0,0.3
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2713,248.0,0.3
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2011,268.0,0.3
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2012,248.0,0.3
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2013,271.0,0.3
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2002,271.0,0.5
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2003,270.0,0.2
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2004,248.0,0.3
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2005,269.0,0.2
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2006,248.0,0.3
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2007,270.0,0.2
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2008,248.0,0.3
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2009,271.0,0.2
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2815,203.5500286598691,0.3
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2011,272.0,0.3
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2012,248.0,0.3
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2013,275.0,0.2
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2455,244.0,0.8
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2003,244.0,0.5
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",1447,248.0,0.3
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2005,395.6679019398719,0.4
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2006,248.0,0.3
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",1646,244.0,0.4
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2008,358.48322936877264,0.3
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2009,149.09614830940671,0.4
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2838,248.0,0.3
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2011,248.0,0.5
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2012,248.0,0.3
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2013,181.91183549172507,0.4
+Total - Hispanic,Female,Hispanic,2243,245.0,1.3676963146174537
+Total - Hispanic,Female,Hispanic,2003,244.0,0.7
+Total - Hispanic,Female,Hispanic,2004,248.0,0.3
+Total - Hispanic,Female,Hispanic,2005,245.0,0.4
+Total - Hispanic,Female,Hispanic,2006,325.80181128744834,0.3
+Total - Hispanic,Female,Hispanic,2007,246.0,0.4
+Total - Hispanic,Female,Hispanic,2008,248.0,0.3
+Total - Hispanic,Female,Hispanic,2009,248.0,0.6
+Total - Hispanic,Female,Hispanic,1838,248.0,0.3
+Total - Hispanic,Female,Hispanic,2897,192.4468036047504,0.5
+Total - Hispanic,Female,Hispanic,2865,248.0,0.3
+Total - Hispanic,Female,Hispanic,2013,255.0,0.4
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2002,265.0,1.7
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2003,268.0,1.2
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2004,248.0,0.3
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2005,377.0436738701629,1.3271933547537182
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2006,315.8337547725048,0.3
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2007,269.0,1.2
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",1935,248.0,0.3
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2009,273.0,1.1
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2010,248.0,0.3
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2011,277.0,1.1
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2012,326.58498116680823,0.3
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2013,280.0,1.0
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2002,248.0,0.3
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2003,248.0,0.3
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2004,160.72528186174205,1.4561686295594665
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",1639,248.0,0.3
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2006,390.3270208486424,0.3
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2007,248.0,0.3
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2008,248.0,0.3
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2009,248.0,0.3
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2010,248.0,0.3
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",1760,251.0,1.3041264716420664
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2012,310.08410950483585,0.3
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2013,258.0,2.6
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2002,252.0,2.5
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2003,248.0,1.3294888821634132
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2004,248.0,0.3
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2005,251.0,1.2
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2006,303.7473598671303,0.3
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2007,248.0,1.2
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2008,248.0,0.3
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2009,252.0,1.1
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2010,248.0,0.3
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2011,313.5130471385016,1.3
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2012,248.0,0.3
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2013,382.001840934935,1.0
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2002,248.0,0.3
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2067,248.0,0.3
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2004,248.0,0.3
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2005,248.0,0.3
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2006,248.0,0.3
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2007,248.0,0.3
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2008,248.0,0.3
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2009,145.32217652322018,0.3
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2010,248.0,0.3
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2011,267.0,1.2
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2012,248.0,0.3
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2013,163.98947887798946,0.9
+"White, non-Hispanic",Male,"White, non-Hispanic",2002,266.0,0.5
+"White, non-Hispanic",Male,"White, non-Hispanic",1574,265.0,0.3
+"White, non-Hispanic",Male,"White, non-Hispanic",2004,248.0,0.3
+"White, non-Hispanic",Male,"White, non-Hispanic",3026,264.0,0.2
+"White, non-Hispanic",Male,"White, non-Hispanic",2006,248.0,0.3
+"White, non-Hispanic",Male,"White, non-Hispanic",1090,265.0,1.490523257366042
+"White, non-Hispanic",Male,"White, non-Hispanic",2008,248.0,0.3
+"White, non-Hispanic",Male,"White, non-Hispanic",2009,267.0,0.3
+"White, non-Hispanic",Male,"White, non-Hispanic",2010,248.0,0.3
+"White, non-Hispanic",Male,"White, non-Hispanic",2011,267.0,0.3
+"White, non-Hispanic",Male,"White, non-Hispanic",2012,134.9632090682923,1.5443038166256853
+"White, non-Hispanic",Male,"White, non-Hispanic",2013,270.0,0.3
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2002,199.6023451425596,0.8
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2003,169.02309830346687,0.6
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2004,303.74438821774464,0.3
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2005,236.0,0.5
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2006,185.22610332143196,0.3
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2007,238.0,0.5
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2008,248.0,0.3
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2009,240.0,0.5
+"Black, non-Hispanic",Male,"Black, non-Hispanic",1193,248.0,0.3
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2011,242.0,0.6
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2207,248.0,0.3
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2478,178.76289871196028,0.6
+Hispanic,Male,Hispanic,2002,241.0,1.1
+Hispanic,Male,Hispanic,2003,240.0,0.8
+Hispanic,Male,Hispanic,2004,248.0,0.3
+Hispanic,Male,Hispanic,2005,241.0,0.5
+Hispanic,Male,Hispanic,2006,248.0,0.3
+Hispanic,Male,Hispanic,1127,393.1006019316088,0.6
+Hispanic,Male,Hispanic,2008,248.0,0.3
+Hispanic,Male,Hispanic,2009,243.0,1.45434615759049
+Hispanic,Male,Hispanic,2010,248.0,0.3
+Hispanic,Male,Hispanic,1058,307.64478256608146,0.6
+Hispanic,Male,Hispanic,2012,248.0,0.3
+Hispanic,Male,Hispanic,2013,251.0,0.5
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2002,262.0,2.6
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2003,315.56455587181307,2.6
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2004,200.1650489608178,0.3
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2568,265.0,1.0
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2006,248.0,0.3
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2634,265.0,1.3
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2008,248.0,0.3
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2009,268.0,1.2
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2010,248.0,0.3
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2011,272.0,1.1
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2012,248.0,0.3
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2013,274.0,1.1
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",1966,248.0,0.3
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2003,248.0,0.3
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2949,248.0,0.3
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2290,248.0,0.3
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2006,248.0,0.3
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2007,248.0,0.3
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2008,248.0,0.3
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2009,248.0,0.3
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2041,248.0,0.3
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2011,245.0,2.9
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2012,248.0,0.3
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2649,249.0,4.4
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2002,246.0,3.5
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2836,339.79389505293835,2.3
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2004,178.41580621944024,0.3
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2005,247.0,1.7
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2006,248.0,0.3
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2007,376.4503980293032,1.7
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2008,248.0,0.3
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2009,247.0,1.9
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2010,248.0,0.3
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2011,193.9809331748355,1.7
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2012,248.0,0.3
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2013,120.2524973466594,1.5
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2002,205.61104398503804,0.3
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2003,248.0,0.3
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2004,248.0,0.3
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2005,201.3090787273798,0.3
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2006,248.0,1.3074906800525723
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2007,248.0,0.3
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2008,146.183514367885,0.3
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2009,319.986168506984,0.3
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2126,248.0,0.3
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2011,260.0,1.7
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2012,151.05076893003115,0.3
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2013,263.0,1.4
+"White, non-Hispanic",Female,"White, non-Hispanic",2002,276.0,0.6
+"White, non-Hispanic",Female,"White, non-Hispanic",2003,276.0,0.3
+"White, non-Hispanic",Female,"White, non-Hispanic",2004,248.0,0.3
+"White, non-Hispanic",Female,"White, non-Hispanic",2005,275.0,0.2
+"White, non-Hispanic",Female,"White, non-Hispanic",2006,248.0,0.3
+"White, non-Hispanic",Female,"White, non-Hispanic",2007,275.0,0.3
+"White, non-Hispanic",Female,"White, non-Hispanic",2008,377.03955072224863,0.3
+"White, non-Hispanic",Female,"White, non-Hispanic",2009,276.0,0.3
+"White, non-Hispanic",Female,"White, non-Hispanic",2616,248.0,1.3872146910821648
+"White, non-Hispanic",Female,"White, non-Hispanic",2011,192.84765757694365,0.3
+"White, non-Hispanic",Female,"White, non-Hispanic",2012,248.0,0.3
+"White, non-Hispanic",Female,"White, non-Hispanic",2013,280.0,0.3
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2002,330.3585812791415,0.9
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2003,157.4055975520455,1.5427661459786
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2004,248.0,0.3
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2005,248.0,0.5
+"Black, non-Hispanic",Female,"Black, non-Hispanic",1483,354.4671767789714,1.5030837572626738
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2007,250.0,0.5
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2008,248.0,0.3
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2009,251.0,1.483072692297386
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2010,248.0,0.3
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2011,253.0,0.5
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2012,248.0,0.3
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2039,255.0,0.5
+Hispanic,Female,Hispanic,2002,249.0,1.0
+Hispanic,Female,Hispanic,2003,248.0,0.8
+Hispanic,Female,Hispanic,2004,248.0,0.3
+Hispanic,Female,Hispanic,2005,249.0,0.6
+Hispanic,Female,Hispanic,2006,248.0,0.3
+Hispanic,Female,Hispanic,2007,250.0,0.6
+Hispanic,Female,Hispanic,2008,248.0,0.3
+Hispanic,Female,Hispanic,2009,252.0,0.7
+Hispanic,Female,Hispanic,2010,248.0,0.3
+Hispanic,Female,Hispanic,2654,382.26915388833,0.6
+Hispanic,Female,Hispanic,2012,248.0,0.3
+Hispanic,Female,Hispanic,2013,259.0,0.6
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2002,311.8714993175238,1.9
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2003,273.0,1.9
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2004,321.96219125799234,0.3
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2005,274.0,1.0
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2006,248.0,0.3
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2007,274.0,1.5
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2008,248.0,0.3
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2009,122.54347109644316,1.6
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2010,215.28189071691463,0.3
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2011,282.0,1.5
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2012,248.0,0.3
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",1935,286.0,1.3
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2002,248.0,0.3
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2003,248.0,0.3
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2273,248.0,0.3
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2005,248.0,0.3
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",1828,248.0,0.3
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2007,248.0,0.3
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2008,127.51265914117224,0.3
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2009,248.0,0.3
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2453,248.0,0.3
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2011,168.1045197315485,2.9
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2012,248.0,0.3
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2013,267.0,3.6
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2002,258.0,1.9
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2412,138.97088806676842,2.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",1138,248.0,0.3
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2005,255.0,1.5
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2006,248.0,0.3
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2007,255.0,1.5
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2008,248.0,0.3
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",1829,257.0,1.5
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",3029,248.0,0.3
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2011,257.0,2.0
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2012,248.0,0.3
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2013,256.0,1.4
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2002,248.0,0.3
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2003,248.0,0.3
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2354,248.0,0.3
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2005,248.0,0.3
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2006,248.0,0.3
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2007,191.01548302117612,0.3
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",1736,248.0,0.3
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2009,248.0,0.3
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2010,167.02030409349527,0.3
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2011,273.0,1.6
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2012,248.0,0.3
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2013,128.94749458526323,1.2

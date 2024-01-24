@@ -1,0 +1,313 @@
+characteristic,sex,raceethnicity,year,earnings,standard_erroron_earnings,noteon_earnings,countinthousands,standard_erroron_countinthousands,noteon_count
+Total ,,,2000,20800.0,248.0,,4095.0,98.0,
+Total ,,,2001,19450.0,234.0,,4117.0,80.0,
+Total ,,,2002,19910.0,258.0,,3955.0,78.0,
+Total ,,,2003,19970.0,220.0,,3971.0,79.0,
+Total ,,,2004,19070.0,363.0,,4042.0,95.0,
+Total ,,,2005,19010.0,813.0,,3927.0,81.0,
+Total ,,,2006,20070.0,558.0,,3939.0,91.0,
+Total ,,,2007,19830.0,332.0,,3940.0,101.0,
+Total ,,,2008,17370.0,845.0,,3831.0,93.0,
+Total ,,,2009,17040.0,618.0,,3690.0,88.0,
+Total ,,,2010,15790.0,39.0,,3597.0,99.0,
+Total ,,,2011,16310.0,375.0,,3413.0,94.0,
+Total ,,,2012,15930.0,398.0,,3488.0,86.0,
+Total - Male,Male,,2000,24000.0,490.0,,2379.0,75.0,
+Total - Male,Male,,2001,22040.0,299.0,,2399.0,61.0,
+Total - Male,Male,,2002,21700.0,372.0,,2377.0,61.0,
+Total - Male,Male,,2003,21220.0,340.0,,2387.0,61.0,
+Total - Male,Male,,2004,21880.0,722.0,,2465.0,69.0,
+Total - Male,Male,,2005,21170.0,620.0,,2372.0,63.0,
+Total - Male,Male,,2006,21400.0,843.0,,2406.0,60.0,
+Total - Male,Male,,2007,20880.0,510.0,,2460.0,65.0,
+Total - Male,Male,,2008,20140.0,923.0,,2373.0,76.0,
+Total - Male,Male,,2009,19970.0,917.0,,2254.0,63.0,
+Total - Male,Male,,2010,17830.0,381.0,,2222.0,75.0,
+Total - Male,Male,,2011,18200.0,509.0,,2064.0,67.0,
+Total - Male,Male,,2012,17960.0,346.0,,2177.0,69.0,
+Total - Female,Female,,2000,18400.0,524.0,,1716.0,64.0,
+Total - Female,Female,,2001,16860.0,553.0,,1718.0,52.0,
+Total - Female,Female,,2002,18510.0,494.0,,1578.0,50.0,
+Total - Female,Female,,2003,17470.0,710.0,,1585.0,50.0,
+Total - Female,Female,,2004,15810.0,879.0,,1577.0,60.0,
+Total - Female,Female,,2005,15280.0,916.0,,1555.0,49.0,
+Total - Female,Female,,2006,17070.0,103.0,,1533.0,59.0,
+Total - Female,Female,,2007,17280.0,709.0,,1480.0,65.0,
+Total - Female,Female,,2008,15790.0,628.0,,1458.0,53.0,
+Total - Female,Female,,2009,14840.0,1088.0,,1436.0,56.0,
+Total - Female,Female,,2010,12000.0,662.0,,1375.0,58.0,
+Total - Female,Female,,2011,13930.0,777.0,,1349.0,58.0,
+Total - Female,Female,,2012,14000.0,717.0,,1311.0,55.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2000,22190.0,316.0,,2585.0,78.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2001,20750.0,315.0,,2647.0,64.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2002,20420.0,338.0,,2468.0,62.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2003,21190.0,290.0,,2513.0,63.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2004,20590.0,521.0,,2524.0,76.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2005,20450.0,851.0,,2371.0,68.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2006,20340.0,242.0,,2378.0,70.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2007,20160.0,855.0,,2404.0,80.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2008,17950.0,1065.0,,2382.0,74.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2009,19230.0,798.0,,2190.0,69.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2010,15640.0,252.0,,2166.0,84.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2011,17300.0,1005.0,,1899.0,76.0,
+"Total - White, non-Hispanic",,"White, non-Hispanic",2012,17910.0,422.0,,1890.0,69.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2000,18670.0,874.0,,588.0,43.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2001,18690.0,1087.0,,566.0,43.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2002,17150.0,996.0,,525.0,41.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2003,14980.0,922.0,,552.0,42.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2004,16640.0,1423.0,,544.0,33.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2005,15900.0,967.0,,560.0,34.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2006,19040.0,1319.0,,568.0,38.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2007,16280.0,797.0,,579.0,36.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2008,16930.0,2086.0,,496.0,33.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2009,12850.0,853.0,,589.0,33.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2010,14890.0,1219.0,,458.0,31.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2011,12190.0,774.0,,471.0,34.0,
+"Total - Black, non-Hispanic ",,"Black, non-Hispanic ",2012,12130.0,774.0,,545.0,35.0,
+Total - Hispanic,,Hispanic,2000,20000.0,506.0,,782.0,50.0,
+Total - Hispanic,,Hispanic,2001,19450.0,459.0,,757.0,49.0,
+Total - Hispanic,,Hispanic,2002,19150.0,480.0,,795.0,50.0,
+Total - Hispanic,,Hispanic,2003,18720.0,520.0,,742.0,48.0,
+Total - Hispanic,,Hispanic,2004,18190.0,77.0,,780.0,37.0,
+Total - Hispanic,,Hispanic,2005,18470.0,547.0,,792.0,34.0,
+Total - Hispanic,,Hispanic,2006,19320.0,958.0,,817.0,35.0,
+Total - Hispanic,,Hispanic,2007,18570.0,717.0,,787.0,34.0,
+Total - Hispanic,,Hispanic,2008,17140.0,1484.0,,773.0,37.0,
+Total - Hispanic,,Hispanic,2009,16930.0,811.0,,736.0,30.0,
+Total - Hispanic,,Hispanic,2010,16700.0,989.0,,799.0,35.0,
+Total - Hispanic,,Hispanic,2011,16160.0,443.0,,835.0,42.0,
+Total - Hispanic,,Hispanic,2012,15580.0,598.0,,869.0,38.0,
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2000,21330.0,3487.0,,84.0,15.0,Data for 2000 and 2001 include Pacific Islanders.
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2001,19450.0,2620.0,,87.0,15.0,Data for 2000 and 2001 include Pacific Islanders.
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2002,22340.0,1464.0,,79.0,15.0,Data for 2000 and 2001 include Pacific Islanders.
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2003,23060.0,1847.0,,81.0,15.0,Data for 2000 and 2001 include Pacific Islanders.
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2004,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2005,18510.0,1954.0,,85.0,15.0,Data for 2000 and 2001 include Pacific Islanders.
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2006,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2007,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2008,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2009,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2010,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2011,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Asian, non-Hispanic",,"Asian, non-Hispanic",2012,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2000,,,Data not available.,,,Data not available.
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2001,,,Data not available.,,,Data not available.
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2002,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2003,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2004,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2005,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2006,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2007,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2008,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2009,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2010,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2011,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Pacific Islander, non-Hispanic",,"Pacific Islander, non-Hispanic",2012,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2000,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2001,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2002,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2003,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2004,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2005,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2006,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2007,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2008,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2009,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2010,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2011,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - American Indian/Alaska Native, non-Hispanic",,"American Indian/Alaska Native, non-Hispanic",2012,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2000,,,Data not available.,,,Data not available.
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2001,,,Data not available.,,,Data not available.
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2002,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2003,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2004,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2005,16130.0,3053.0,,78.0,10.0,
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2006,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2007,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2008,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2009,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2010,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2011,14920.0,3691.0,,99.0,13.0,
+"Total - Two or more races, non-Hispanic",,"Two or more races, non-Hispanic",2012,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2000,25330.0,547.0,,1515.0,60.0,
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2001,23340.0,778.0,,1547.0,49.0,
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2002,22980.0,893.0,,1479.0,48.0,
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2003,22710.0,582.0,,1535.0,49.0,
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2004,24190.0,1230.0,,1554.0,58.0,
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2005,23340.0,403.0,,1437.0,50.0,
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2006,22580.0,773.0,,1453.0,46.0,
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2007,22000.0,161.0,,1497.0,59.0,
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2008,20820.0,1113.0,,1511.0,62.0,
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2009,21180.0,458.0,,1361.0,50.0,
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2010,17800.0,803.0,,1306.0,62.0,
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2011,19510.0,540.0,,1186.0,57.0,
+"Total - Male, White, non-Hispanic",Male,"White, non-Hispanic",2012,19350.0,1289.0,,1210.0,53.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2000,20000.0,1795.0,,275.0,30.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2001,19450.0,1078.0,,293.0,31.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2002,16590.0,1409.0,,288.0,31.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2003,18820.0,817.0,,294.0,31.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2004,17940.0,1466.0,,279.0,25.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2005,16640.0,1657.0,,305.0,26.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2006,20100.0,640.0,,320.0,26.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2007,18490.0,2353.0,,347.0,24.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2008,19920.0,2026.0,,280.0,25.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2009,12860.0,2002.0,,306.0,22.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2010,15740.0,930.0,,278.0,26.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2011,12050.0,708.0,,260.0,22.0,
+"Total - Male, Black, non-Hispanic ",Male,"Black, non-Hispanic ",2012,12230.0,958.0,,312.0,26.0,
+"Total - Male, Hispanic",Male,Hispanic,2000,21330.0,595.0,,495.0,40.0,
+"Total - Male, Hispanic",Male,Hispanic,2001,20230.0,520.0,,474.0,39.0,
+"Total - Male, Hispanic",Male,Hispanic,2002,21240.0,542.0,,514.0,41.0,
+"Total - Male, Hispanic",Male,Hispanic,2003,19470.0,651.0,,476.0,39.0,
+"Total - Male, Hispanic",Male,Hispanic,2004,18700.0,863.0,,513.0,30.0,
+"Total - Male, Hispanic",Male,Hispanic,2005,19960.0,1216.0,,501.0,26.0,
+"Total - Male, Hispanic",Male,Hispanic,2006,20670.0,783.0,,537.0,31.0,
+"Total - Male, Hispanic",Male,Hispanic,2007,19560.0,987.0,,520.0,26.0,
+"Total - Male, Hispanic",Male,Hispanic,2008,19140.0,1371.0,,481.0,27.0,
+"Total - Male, Hispanic",Male,Hispanic,2009,17860.0,1533.0,,476.0,23.0,
+"Total - Male, Hispanic",Male,Hispanic,2010,17880.0,664.0,,529.0,28.0,
+"Total - Male, Hispanic",Male,Hispanic,2011,17840.0,879.0,,498.0,30.0,
+"Total - Male, Hispanic",Male,Hispanic,2012,17940.0,2254.0,,556.0,31.0,
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2000,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2001,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2002,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2003,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2004,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2005,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2006,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2007,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2008,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2009,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2010,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2011,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Asian, non-Hispanic",Male,"Asian, non-Hispanic",2012,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2000,,,Data not available.,,,Data not available.
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2001,,,Data not available.,,,Data not available.
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2002,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2003,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2004,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2005,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2006,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2007,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2008,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2009,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2010,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2011,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2012,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2000,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2001,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2002,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2003,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2004,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2005,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2006,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2007,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2008,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2009,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2010,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2011,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2012,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2000,,,Data not available.,,,Data not available.
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2001,,,Data not available.,,,Data not available.
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2002,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2003,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2004,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2005,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2006,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2007,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2008,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2009,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2010,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2011,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Male, Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2012,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2000,18670.0,702.0,,1070.0,50.0,
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2001,17760.0,669.0,,1100.0,42.0,
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2002,19150.0,579.0,,989.0,40.0,
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2003,18720.0,588.0,,978.0,39.0,
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2004,16360.0,1011.0,,970.0,45.0,
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2005,15660.0,911.0,,934.0,41.0,
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2006,17060.0,471.0,,924.0,46.0,
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2007,18430.0,1019.0,,907.0,48.0,
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2008,15790.0,938.0,,870.0,43.0,
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2009,14660.0,1285.0,,830.0,45.0,
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2010,12740.0,1066.0,,859.0,47.0,
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2011,13930.0,1449.0,,713.0,42.0,
+"Total - Female, White, non-Hispanic",Female,"White, non-Hispanic",2012,13970.0,1509.0,,679.0,40.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2000,17330.0,860.0,,312.0,32.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2001,18150.0,1411.0,,273.0,30.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2002,18580.0,1209.0,,238.0,28.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2003,12480.0,792.0,,258.0,29.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2004,12940.0,2271.0,,265.0,23.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2005,15030.0,1499.0,,255.0,20.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2006,17090.0,1100.0,,247.0,24.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2007,15340.0,1111.0,,233.0,24.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2008,15490.0,1380.0,,216.0,22.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2009,12770.0,1062.0,,283.0,24.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2010,13460.0,970.0,,180.0,19.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2011,12250.0,2095.0,,210.0,22.0,
+"Total - Female, Black, non-Hispanic ",Female,"Black, non-Hispanic ",2012,11990.0,1031.0,,233.0,21.0,
+"Total - Female, Hispanic",Female,Hispanic,2000,17060.0,1361.0,,287.0,31.0,
+"Total - Female, Hispanic",Female,Hispanic,2001,16210.0,1123.0,,284.0,30.0,
+"Total - Female, Hispanic",Female,Hispanic,2002,16590.0,1090.0,,281.0,30.0,
+"Total - Female, Hispanic",Female,Hispanic,2003,16220.0,1343.0,,266.0,29.0,
+"Total - Female, Hispanic",Female,Hispanic,2004,16590.0,1219.0,,268.0,22.0,
+"Total - Female, Hispanic",Female,Hispanic,2005,15570.0,1243.0,,291.0,21.0,
+"Total - Female, Hispanic",Female,Hispanic,2006,16960.0,775.0,,280.0,20.0,
+"Total - Female, Hispanic",Female,Hispanic,2007,16410.0,1229.0,,268.0,21.0,
+"Total - Female, Hispanic",Female,Hispanic,2008,15640.0,549.0,,292.0,21.0,
+"Total - Female, Hispanic",Female,Hispanic,2009,15560.0,1154.0,,260.0,20.0,
+"Total - Female, Hispanic",Female,Hispanic,2010,12580.0,697.0,,270.0,19.0,
+"Total - Female, Hispanic",Female,Hispanic,2011,14880.0,619.0,,337.0,25.0,
+"Total - Female, Hispanic",Female,Hispanic,2012,14390.0,880.0,,313.0,23.0,
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2000,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2001,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2002,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2003,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2004,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2005,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2006,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2007,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2008,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2009,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2010,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2011,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Asian, non-Hispanic",Female,"Asian, non-Hispanic",2012,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.,,,Reporting standards not met (too few cases for a reliable estimate). Data for 2000 and 2001 include Pacific Islanders.
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2000,,,Data not available.,,,Data not available.
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2001,,,Data not available.,,,Data not available.
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2002,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2003,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2004,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2005,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2006,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2007,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2008,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2009,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2010,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2011,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2012,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2000,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2001,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2002,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2003,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2004,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2005,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2006,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2007,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2008,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2009,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2010,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2011,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2012,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2000,,,Data not available.,,,Data not available.
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2001,,,Data not available.,,,Data not available.
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2002,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2003,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2004,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2005,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2006,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2007,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2008,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2009,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2010,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2011,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).
+"Total - Female, Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2012,,,Reporting standards not met (too few cases for a reliable estimate).,,,Reporting standards not met (too few cases for a reliable estimate).

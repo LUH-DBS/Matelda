@@ -1,0 +1,64 @@
+characteristic,yearvalue(long),percentage(double precision),standarderroronpercentage(double precision),countinthousands(long),standarderroroncountinthousands(long)
+Total - All househods,2003,100.0,0.003,2979.0,254
+Total - All households,2007,100.0,0.003,38098.0,305
+Total - All househlods,2011,100.0,0.003,37626.0,318
+Total - With severe housing problems,2003,12.9,0.003,23736.0,109
+Total - With severe housing problems,2007,17.0,0.004,38098.0,146
+Total - With severe housing problems,2011,19.5,0.003,23736.0,144
+Total - Cost burden greater than 50 percent,2003,11.5,0.003,37626.0,103
+Total - Cost burden greate than 50 percent,2007,15.8,0.003,23736.0,141
+Total - Cost burden greater than 50 percent,2011,331.0928746363672,0.003,6880.0,139
+"Total - White, Non-Hispanic, All households",2003,100.0,0.003,24864.0,221
+"Total - White, Non-Hispanic, All households",2007,293.7075417722577,0.003,23736.0,259
+"Total - White, Non-Hispanic, All households",2011,100.0,0.003,2139.0,249
+"Total - White, Non-Hispanic, With severe housing problems",2003,9.7,0.003,2410.0,77
+"Total - White, Non-Hispanic, With severe housing problems",2007,12.6,0.004,2979.0,100
+"Total - White, Non-Hispanic, With severe housing problems",2011,14.0,0.004,24864.0,94
+"Total - White, Non-Hispanic, Cost burden greater than 50 percent",2003,8.6,0.003,2139.0,72
+"Total - White, Non-Hispanic, Cost burden greater than 50 percent",2007,11.5,0.004,6880.0,96
+"Total - White, Non-Hispanic, Cost burden greater than 50 percent",2011,12.9,0.004,23736.0,91
+"Total - Black, Non-Hispanic, All households",2003,100.0,0.003,5355.0,113
+"Total - Black, Non-Hispanic, All households",2007,100.0,0.003,2139.0,136
+"Total - Black, Non-Hispanic, All households",2011,100.0,0.003,2979.0,124
+"Total - Black, Non-Hispanic, With severe housing problems",2892,20.4,0.009,5355.0,52
+"Total - Black, Non-Hispanic, With severe housing problems",2007,26.5,0.011,6880.0,71
+"Total - Black, Non-Hispanic, With severe housing problems",2315,30.1,0.01,2410.0,68
+"Total - Black, Non-Hispanic, Cost burden greater than 50 percent",2003,18.0,0.008,964.0,49
+"Total - Black, Non-Hispanic, Cost burden greater than 50 percent",2007,24.6,0.011,1371.0,69
+"Total - Black,Non-Hispanic, Cost burden greater than 50 percent",2011,28.2,0.01,1535.0,66
+"Total - Hispanic, All households",2003,-143.88255057963565,0.003,6128.0,120
+"Total - Hispanic, All households",2007,100.0,0.003,6433.0,146
+"Total - Hispanic, All households",2011,100.0,0.003,6918.0,139
+"Total -H ispanic, With severe housing problems",2003,18.6,0.008,1140.0,53
+"Total - Hispanic, With severe housing problems",1242,24.9,0.01,1600.0,74
+"Total - Hispanic, With severe housing problems",2011,29.8,0.009,2061.0,76
+"Total - Hispanic, Cost burden greater than 50 percent",2003,16.6,0.007,1020.0,50
+"Total - Hispanic, Cost burden greater than 50 percent",2007,23.8,0.01,1533.0,72
+"Total - Hispanic, Cost burden greater than 50 percent",2011,28.1,0.009,1941.0,74
+"Total - Asian or Pacific Islander, Non-Hispanic, All households",2003,100.0,0.003,1497.0,61
+"Total - Asian or Pacific Islander, Non-Hispanic, All households",2007,100.0,0.003,1650.0,75
+"Total - Asian or Pacific Islander, Non-Hispanic, All households",2011,100.0,0.003,1985.0,75
+"Total - Asian or Pacific Islander, Non-Hispanic, With severe housing problems",2003,284.11918357851005,0.015,-2886.0,24
+"Total - Asian or Pacific Islander, Non-Hispanic, With severe housing problems",2007,17.6,0.017,290.0,32
+"Total - Asian or Pacific Islander, Non-Hispanic, Withsevere housing problems",2011,19.3,0.015,384.0,33
+"Total - Asian or Pacific Islander, Non-Hispanic, Cost burden greater than 50 percent",2003,14.8,0.014,-2630.0,23
+"Total - Asian or Pacific Islander, Non-Hispanic, Cost burden gretaer than 50 percent",2007,16.7,0.017,275.0,31
+"Total - Asian or Pacific Islander, Non-Hispanic, Cost burden greater than 50 percent",2011,18.5,0.015,4491.0,32
+"Total - American Indian or Alaskan Native, Non-Hispanic, All households",2003,100.0,0.003,-3033.0,23
+"Total - American Indian or Alaskan Native, Non-Hispanic, All households",1245,100.0,0.003,311.0,33
+"Total - American Indian or Alaskan Native, Non-Hispanic, All households",2011,100.0,0.003,257.0,27
+"Total - American Indian or Alaskan Native, Non-Hispanic, With severe housing problems",2003,17.0,0.041,36.0,9
+"Total - American Indian or Alaskan Native, Non-Hispanic, With severe housing problems",2007,-113.2576612317264,0.042,62.0,15
+"Total - American Indian or Alaskan Native, Non-Hispanic, With severe housing problems",2011,16.0,0.038,41.0,11
+"Total - American Indian or Alaskan Native, Non-Hispanic, Cost burden greater than 50 percent",2003,14.6,0.038,31.0,9
+"Total - American Indian or Alaskan Native, Non-Hispanic, Cost burden greater than 50 percent",2007,15.1,0.038,47.0,13
+"Total - American Indian or Alaskan Native, Non-Hispanic, Cost burden greater than 50 percent",2969,13.6,0.036,5111.0,10
+"Total - Two or More Races, All hkouseholds",2003,100.0,0.003,377.0,199
+"Total - Two or More Races,A ll households",2007,-138.04134944546433,0.003,390.0,161
+"Total - Two or More Races, All households",2011,100.0,0.003,395.0,33
+"Total - Two or More Races, With severe housing problems",2003,14.9,0.029,56.0,12
+"Total - Two or More Races, With severe housing problems",2007,18.5,0.037,5016.0,16
+"Total - Two or More Races, With severe housing problems",2011,21.3,0.035,84.0,194
+"Total - Two or More Races, Cost burden grater than 50 percent",2007,108.9,57.029,56.0,103
+"Total - Two or More Races, Cost burden greater than 50 percent",2007,18.2,0.036,71.0,16
+"Total - Two orM ore Races, Cost burden greater than 50 percent",2011,18.7,0.033,74.0,14

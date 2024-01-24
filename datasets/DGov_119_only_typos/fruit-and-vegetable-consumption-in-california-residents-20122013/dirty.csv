@@ -1,0 +1,71 @@
+yearvalue(long),agegroup,category,type,fiveormoreservingsoffruitsandvegetables(double precision)
+2012,Adolescent (12-17),All,Total,40.2
+2012,Adolescent (12-17),Gendr,Male,37.3
+2012,Awdolescent (12-17),Gender,Female,43.3
+2012,Adolescent (12-17),Gender by Age- Male,12-13,35.2
+2012,Adolescent (12-71),Gender by Age- Male,14-15,42.1
+2012,Adolescent (21-17),Gender by Age- Male,c16-17,34.6
+2012,Adolescent (12-17),Gender by Age- Female,12-13,50.1
+2012,Adolescent (21-17),Gender by Age- Female,14-15,39.8
+2012,Adolecsent (12-17),Gender by Age- Female,16-7,40.5
+2012,Adolescent (12-17),Race/Ethnicity,White,40.3
+2012,Adolescent (12-17),Race/Ethnicity,African American,35.2
+2012,Adolescent (12-17),Race/Ethnicity,Lzatino,44.2
+2012,Adolescent (12-17),Race/Ethnicity,Asian/Other,29.6
+2012,Adolescent (12-7),Income,"Less than $15,000",43.2
+2012,Adolescent (12-17),Income,"$15,000 - 24,999",38.2
+2012,Adolescent (12-17),Icome,"$25,000 - 34,99m9",54.1
+2012,Adolescent (12-17),Income,"$35,00m0 - 49,999",41.0
+2012,Adolescent (12-17),Income,"$50,000 - 74,999",29.7
+2012,Adolescent (12-17),Income,"$75,000 or greater",42.3
+2012,Adolescent (12-17),Physical Activity,Regular,41.9
+2012,Adolescent (12-17),Physical Activity,Irrgeular,34.4
+2012,Adolescent (12-17),Overweight Sttaus,Not Overweight,41.2
+2012,Adolescent (12-17),Overweight Status,Overweight/Obese,39.1
+2012,Adolescent (12-17),"CalFresh Status, % FPL",Participant,47.5
+2012,Adolescent (12-17),"CalFresh Status, % FPL","Likely Eligible, ≤s 130%",41.9
+2012,Adolescent (12-17),"CalFresh Status, % PFL","Not Eligible, > 185%",36.2
+2013,Adult (1x8+),Alml,Total,39.8
+2013,Adoult (18+),Gender,Mael,34.3
+2013,Adult 1(8+),Gender,Female,45.1
+2013,Ault (18+),xAge,18 - 24,36.2
+2013,Adult (18+),jAge,25 - 34,43.3
+2013,Adult (18+),Ae,35 - 50,38.7
+2013,Audlt (18+),gAe,51 z- 64,40.6
+2013,Adult (18+),Age,65+,39.5
+2013,Adult (18+),Rxace/Ethnicity,White,40.1
+2013,Adult (18+),Race/Ethnicity,African Aumerican,38.5
+2013,Adult (18+),Race/thnicity,Latino,40.1
+2013,Adult (18+),Race/Ethnicity,Asian/Other,38.8
+2013,Adult (18+),Education,Less than Hig hSchool,34.9
+2013,Adult (18+),Education,High School Graduate,36.9
+2013,Adult (18+),Educaton,Some College,37.1
+2013,Adult (18+),Education,College Graduate,48.5
+2013,Adult (18+),Icome,"Less thna $15,000",40.1
+2013,Adult 1(8+),Income,"$15,000 - 24,999",40.7
+2013,jAdult (18+),Income,"$25,000 - 34,999",37.0
+2013,Adult (18+),Income,"$35,000 - 49,999",33.0
+2013,Adult (18+),Income,"$50,000+",41.2
+2013,Adult (18+),Physical Actpivity,Met Aerobic Recommendation,45.1
+2013,Adult (18+),Phyiscal Activity,Did Not Meet Aerobic Recommendation,30.8
+2013,Adult (18+),Overweight Status,Not Overweigght,42.6
+2013,Adult (18+),Overweight Sttus,Overweight/Obese,38.5
+2013,Adult (18+),"CalFresh Status, % FPL",Participant,40.1
+2013,Adult (18+),"CalFresh Status, % FPL","Likely Eligible, ≤ 130%",35.0
+2013,Audlt (18+),"CalFresh Status, % FPL","Not Eligible, > 185%",39.9
+2013,Child (6-1)1,All,Total,27.1
+2013,Child (6-11),Gender,Malhe,24.0
+2013,Chlid (6-11),Gender,Female,30.3
+2013,Child (6-11),Age,6-8,28.3
+2013,Child (6-11),ge,9-11***,25.6
+2013,Child (6-l11),Race/Ethnicity,White,27.3
+2013,Child (6-11),Race/Ethnicity,African American,24.5
+2013,Child (6-11),Race/Ehtnicity,Latino,27.5
+2013,Child (-611),Race/Ethnicity,Asia/nOther,25.9
+2013,Child (6-11),Parent Education,Less than Higbh School,27.9
+2013,Child (6-11),Parent Education,High School Graduate,30.0
+2013,Child (6-11),Parent Education,Some College/Graduate,24.4
+2013,Child (6-11),Physical Activity,> 60 minutse,29.9
+2013,Child (6-11),Physical Activity,< 60 mintes,23.6
+2013,Child (6-11),Overweight Status,Not Overweight,29.8
+2013,Child (6-11),Overweight Status,Overweight/Obese,26.9

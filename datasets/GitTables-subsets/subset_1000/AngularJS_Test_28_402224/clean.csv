@@ -1,0 +1,8 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,@http://cafetownsend-angular-rails.herokuapp.com/login,,
+2,Username,"Click the [<Object>] ",Click,,,AngularJS_Test
+3,Username,Enter the value [<Data>] in the Field [<Object>],Set,@Luke,,AngularJS_Test
+4,Password,"Click the [<Object>] ",Click,,,AngularJS_Test
+5,Password,Enter the Decrypted value [<Data>] in the Field [<Object>],setEncrypted,@RQ1RQ3/eoAqQT63ET3T5lA== Enc,,AngularJS_Test
+6,Login,"Click the [<Object>] ",Click,,,AngularJS_Test
+7,Charlie Shen,"Click the [<Object>] ",Click,,,AngularJS_Test

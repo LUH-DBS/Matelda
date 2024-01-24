@@ -1,0 +1,55 @@
+food_id,food_name,food_price,food_category,food_score
+9ba7972c-ad17-46ed-a83d-d24e77eb938e,Omlet Dünyası,"21,50 TL",Kahvaltılıklar,5.0
+c1d5b9a1-8fda-4edc-a4f4-4ef684c7b482,Gevrek Kahvaltı,"19,00 TL",Kahvaltılıklar,5.0
+dfcc1083-927b-4525-9264-2c4aff35f132,Sade Omlet,"14,50 TL",Kahvaltılıklar,5.0
+3870a9d8-87d6-41a1-a616-c30733c6118d,Egeli Tost,"20,00 TL",Tostlar,5.0
+7a9e6fbd-f42b-4117-a1d4-45e89a93b6f6,Karışık Tost,"21,50 TL",Tostlar,5.0
+8104870d-8b1f-41d5-b3fe-acfd30f39199,Kaşarlı Tost,"16,00 TL",Tostlar,5.0
+d5dfc6a9-6ca3-4777-9008-949cfe59918a,Karışık Sandviç,"23,00 TL",Sandviçler,5.0
+ab34a148-3c1a-4b85-803d-fc06237f3464,Ton Balıklı Sandviç,"25,00 TL",Sandviçler,5.0
+f171ae64-620a-4139-91dd-a7afce0be4af,Jambonlu Sandviç,"23,00 TL",Sandviçler,5.0
+6424c936-b9b3-4d12-9d01-68f2f648c636,Izgara Tavuk,"32,00 TL",Ana Yemekler,5.0
+0FD653B2-49D2-49F8-8821-230274B8ECFF,Köri Soslu Tavuk,"31,50 TL",Ana Yemekler,5.0
+1376b855-5bf9-44db-b428-e654e7df7028,Karışık Pizza,"28,50 TL",Pizzalar (30 cm.),3.0
+a08db968-5dc2-4541-a5ae-d70e5d662448,Margherita Pizza,"25,00 TL",Pizzalar (30 cm.),3.0
+dc795c43-a38c-4776-b7a6-9c0fc80e22f3,Vejetaryen Pizza,"26,00 TL",Pizzalar (30 cm.),3.0
+4bfea742-0767-4838-ace9-12eb7aefcc7e,Big Chicken Burger,"25,50 TL",Burgerler,5.0
+73268e1a-5622-4b5c-aabc-79a3202b9586,Klasik Burger,"29,00 TL",Burgerler,5.0
+11f61541-25f8-4116-87a9-92d0ff90108d,Spaghetti Bolonez,"30,00 TL",Makarnalar,5.0
+5e6cbcbc-3e7d-4da5-aabe-b24cb6f2f095,Fettuccine Alfredo,"30,00 TL",Makarnalar,5.0
+937b2273-9d9d-41a6-8d83-cfcf66b3be41,Mantı,"29,00 TL",Makarnalar,5.0
+c605e6e5-5438-4977-b2ba-a1e2cb1dabf6,Penne Arrabbiata,"28,00 TL",Makarnalar,5.0
+df1f01e0-2ede-4c7b-a71a-e6e39fc98fed,Penne Alfredo,"28,00 TL",Makarnalar,5.0
+13bb606c-666c-4ff4-85bd-4b8d25eb6557,Etli Wrap,"35,00 TL",Wraps,5.0
+79c171a3-4f43-4cfd-9d4f-7a80e5b76022,Tavuklu Wrap,"30,50 TL",Wraps,5.0
+563d6713-09d1-4f4e-8474-d74944e91102,Sıcak Sepet,"26,00 TL",Yan Ürünler,5.0
+29757ed8-032c-436e-aad8-e9c95561d42c,Sezar Salata,"29,00 TL",Salatalar,5.0
+55da610f-4abf-445f-a97f-661b270d2d67,Ton Balıklı Salata,"29,50 TL",Salatalar,5.0
+dc3be2b3-f6a5-453d-8890-0f00fc8ee3e1,Diyet Salata,"27,00 TL",Salatalar,5.0
+620f26de-e503-4df6-a748-603345d24990,Kara Orman Meyveli Pasta,"16,00 TL",Pastalar,12.0
+45a905b1-45f8-4a51-8410-096bea2b7ff4,Mozaik Pasta,"16,00 TL",Pastalar,7.0
+26835472-8053-4b7f-977a-d2a6cd29ac51,Iced Americano,"15,50 TL",Soğuk Kahveler,5.0
+b8b5d9eb-08c6-4c54-835b-e32526d268f1,Iced Latte,"17,00 TL",Soğuk Kahveler,5.0
+c7df3f45-6029-4c58-9cc8-1dc55852d88e,Iced Mocha,"18,50 TL",Soğuk Kahveler,5.0
+01e51ac7-3ed8-4a3f-b8a8-4439ea45b70f,Latte,"14,50 TL",Sıcak Kahveler,10.0
+42d61202-5b1e-4247-9c09-1649c9cb1507,Guatemala,"15,00 TL",Sıcak Kahveler,5.0
+531c8d71-fe32-4a8e-96d4-927212cb3913,White Mocha,"14,50 TL",Sıcak Kahveler,5.0
+72279d0c-6a00-45c0-9ea8-c6b81af1bf9c,Filtre Kahve,"14,00 TL",Sıcak Kahveler,6.0
+97ffb3df-5cac-4ea8-ace2-64d206d23414,Colombian Suprema,"15,00 TL",Sıcak Kahveler,5.0
+98cd43ae-2f7c-4eff-bea9-917d8238c4cf,Kenya AA,"15,00 TL",Sıcak Kahveler,5.0
+b902c6b1-1782-4295-92cb-5373881502a3,Mocha,"15,00 TL",Sıcak Kahveler,5.0
+89168aa5-ea0a-41d3-9f38-9b9ad41d743d,Beyaz Sıcak Çikolata,"15,00 TL",Sıcak İçecekler,5.0
+769233d6-c504-44c9-83f4-9bd0561c8e79,Bitter Sıcak Çikolata,"15,00 TL",Sıcak İçecekler,5.0
+ddc24f9e-811d-4ebc-be66-c9b1ed634a68,Damla Sakızlı Fındık Parçacıklı Salep,"15,00 TL",Sıcak İçecekler,5.0
+9420a7fe-f1d7-4ce2-9b30-166344b263ed,Pink,"18,50 TL",Sıcak İçecekler,5.0
+4168e5a1-aa06-43c2-9b36-39458d01e2ae,Salep,"15,00 TL",Sıcak İçecekler,5.0
+a098c155-f8e4-4901-bac9-389678b1a864,Sıcak Çikolata,"15,00 TL",Sıcak İçecekler,5.0
+d60dc95a-8027-469a-aed7-c284c2100777,Çikolatalı Milkshake,"18,50 TL",Milkshakes,5.0
+a485b54d-beb5-44ab-801a-54405bbde14c,Karamelli Milkshake,"18,50 TL",Milkshakes,5.0
+0c89b123-153d-4e90-abac-38e80c69cee6,Vanilyalı Milkshake,"18,50 TL",Milkshakes,5.0
+f8a54182-6651-4d78-8e5b-c74ec7042134,Çilekli Frozen,"17,50 TL",Frozens,5.0
+1dbdd40e-4b9e-43a9-97b9-e91e293d0b2d,Muzlu Frozen,"17,50 TL",Frozens,5.0
+17c15ba7-6b98-49c4-91b4-e5f331017a66,Oreolu Frappe,"18,50 TL",Frappes,5.0
+0097221e-43e4-4bf0-a66d-9af04e62873c,Mocha Frappe,"17,50 TL",Frappes,5.0
+234d729e-d3f3-4a34-b255-a89a571897e0,Karamelli Frappe,"17,50 TL",Frappes,5.0
+c0c53833-964a-4899-adfd-2260bfddaffc,Poşet,"0,25 TL",Poşet,5.0

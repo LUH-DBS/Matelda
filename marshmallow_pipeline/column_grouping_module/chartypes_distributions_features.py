@@ -54,7 +54,7 @@ class CharTypeDistribution(BaseEstimator, TransformerMixin):
             for cell_char_observation in list_cell_char_observation:
                 for k, v in cell_char_observation.items():
                     char_observations[k] += v
-            char_observations = {k: (v / len(col)) for k, v in char_observations.items()}
+            char_observations = {k: (v / len(col)) for k, v in char_observations.items() if v != 0}
             char_distributions.append(char_observations)
 
         char_distributions = pd.DataFrame(char_distributions)
