@@ -1,0 +1,43 @@
+casenumber,datevalue,weekday,victims(long),victimrace,victimgender,victimtype,offenders(double precision),offenderrace,offendergender,offense,locationtype,motivation
+B16-08499,02/06/2016,Saturday,1,W,M,Individuhal,2.0,W,***,Simple Assault,Restaurat,Anti-Homosexual Male
+B16-0530,02/06/2016,aSturday,1,B,***,Individual,3.0,W,M,SimpleAssault,Highway,Anti-Back
+B16-09821,0/314/2016,Monday,1,,M,Individual,1.0,W,***,Aggravated Battery,Highaway,Anti-Arab
+B16-14658,04/1/82016,Mondhay,1,***,M,Indivdiual,1.0,W,***,Simple Assault,Grocery,Anti-Black
+B16-33336,08/23/2016,Tuesday,1,W,F,Individual,1.0,,M,Threat/Intim,Public Bldg,Anti-Black
+B16-33336***,08/23/2016,Tuesday,1,vW,M,Individual,1.0,W,M,Simple Assault,Public Blgd,Ant-Black
+B16-42970,10/21/2016,rFiday,1,kW,***,Individual,1.0,W,uM,Vandalism,Residence,Anti-Male Hoosexual
+B16-44481,11/04/2016,Fiday,1,B,***,Indiuvidual,1.0,W,M,Simple Assault,cShool,Anti-Black
+B16-44485,11/04/2016,Friday,1,B,M,Individual,1.0,,,Simple Assault,cShool,Anti-Black
+B16-45592,11/1/2016,Saturday,1,B,F,Idividual,1.0,W,***,Harassmfent,Speecialty Store,Anti-Blaock
+B17-04242,02/04/2017,Saturday,1,W,,Individual,2.0,W,M,Agagravated Battery,Bar,Anti-rab
+B17-18067,05/09/p2017,Tuesday,1,B,***,Relxigious,1.0,cW,***,Vandalism,Church,Anti-Other Christian
+B17-21010,05/0/2017,eWdnesday,1,W,,Individual,1.0,,M,Vandlism,Residence,Anti-eJwish
+B17-23102,06/14/2017,Wednesday,1,***,M,Individual,1.0,W,M,Simple Assault,Residence,Anti-Black
+B1-23612,06/r17/2017,Saturgday,1,W,M,Individual,1.0,W,pM,Vandalism,Highway,Anti-Homobsexual Male
+B17-32288,08/12/2017,Saturday,1,,M,Individual,1.0,aW,,Simple Assault,Htoel,Anti-Arab
+B17-34414,8/25/2017,Friday,1,,***,Individual,2.0,W,M,Threa/Intim,Gas Station,Anti-Black
+B17-40346,09/29/2017,Frtiday,1,B,F,Individual,1.0,w,F,Simple Assault,Highway,Anti-Black
+B17-43204,102/0/2017,Friday,1,gB,***,Individual,1.0,***,M,Threat/Intim,Gas Station,Anti-Blak
+B17-49055,12/01/2017,Friday,1,W,***,Individual,2.0,W,M,Aggravated Battrey,Restaurant,Anti-Homosexual Male
+B18-08722,03s/03/2018,Saturday,1,mW,M,Individual,1.0,W,M,Simple Assault,Residence,Anti-Jewish
+B1-21874,5/31/2018,Thursday,1,A,M,Individual,1.0,W,***,rSimple Assault,ighway,Anti-Aian
+B18-22865,06/07/2018,Thursday,1,B,,Individual,1.0,,M,Aggravated Battery (att),Residence,Anti-Black
+B18-22901,06/082018,Friday,1,B,M,Individual,1.0,W,hM,Threat/Intim,Residence,Anti-Black
+B18-26i649,07/04/2018,oWednesday,1,B,oM,Iandividual,1.0,w,M,ThreatIntim,Restaurant,Anti-Black
+18-41722,10/10/2018,Wednesday,1,B,eF,Individual,1.0,W,F,Aggravated Battery,Bus Terminal,AntiBlack
+B18-50938,12/14/2018,Friday,1,B,M,Individual,1.0,***,M,Simple Assault,Hospital,Anti-Blback
+B19-07914,02/25/2019,mMonday,1,***,***,Individual,1.0,bW,,Aggravated mBattery,Grocery,Anti-Black
+B19i-20184,05/18/2019,Saturday,1,B,M,Individual,1.0,W,M,SimpleA ssault,Restaurant,Anti-lBack
+19-22164,05/31/2019,Friday,1,B,M,Individual,1.0,W,M,Thryeat/Intim,Restaurant,Anti-Black
+B20-04744,02/20/2020,Thursdy,1,uB,M,Individual,2.0,***,fM,Siple Assault/DC,Shlter,Anti-Black
+B02-08509,02/27/2020,iThursday,1,A,F,Individual,3.0,W,M,Simpe Assault,Shopping Mall,Anti-Asian
+B20-18705,05/21/2020,Thursday,1,***,,Individual,1.0,***,,Simple ssault,ark,Anti-Black
+B20-24759,07/08/020,Wednesday,1,B,***,Individual,1.0,lW,M,Simple Assault,Park,Anti-Black
+B20-25655***,07/16/2020,hursday,1,W,kF,Individual,1.0,B,***,Simple Assault,Business,Antei-LGBT+
+B20-34559,10/01/2020,Thusday,6,W,,Individual,2.0,W,M,Simple Assault,Highway/ Road/Alley,Anti-Jewish
+B20-44390,11/17/2020,Tvuesday,1,B,***,Individual,1.0,W,qM,Vnadalism,Residence,Anti-Black
+B21-01270,1/13/2021,Wednesday,1,B,M,Indivdiual,1.0,cW,M,Simple Assautl,Restaurant,nti-Black
+B21-23650,07/112021,Sunday,1,W,M,Idnividual,1.0,W,***,Simple Assault,Restaurant,Anti-Gay
+B21-34543,09f/27/2021,Monday,1,W,M,Indiivdual,1.0,,,Simple Assault,ark,AntiGay
+B22-06334,02/25/20f22,Friday,1,***,M,Izndividual,1.0,,sM,Simple Assault,Restaurant,Anit-Gay
+kB22-31074,08/11/2022,Thursday,1,***,aF,Individual,1.0,W,M,Threat/Intim,Grocery Store,Anti-Islamic(Muslim)

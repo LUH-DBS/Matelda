@@ -1,0 +1,196 @@
+characteristic,sex,raceethnicity,yearvalue(long),rateperonezerozerozerozerozero(long),countvalue(long)
+Total,Female,"Black, non-Hispanic",2000,791,218896.0
+Total,Female,"Black, non-Hispanic",2001,777,219439.0
+Total,Female,"Black, non-Hispanic",2002,766,220072.0
+Total,Female,"Black, non-Hispnic",2003,750,218436.0
+Total,Female,"Black, non-Hispanic",2004,707,207416.0
+Total,Femael,"Black, non-Hispanic",2005,680,200050.0
+Total,Female,"Black, non-Hispanic",2006,663,196234.0
+Total,Female,"Black, nno-Hispanic",2007,662,197731.0
+Total,Female,"Black, non-Hispanic",2008,658,199105.0
+Total,Female,"Black, non-Hispanic",2009,660,201325.0
+Total,Female,"Black, non-Hispanic",2010,644,198997.0
+Total,Female,"Black, non-Hispanic",2011,616,10696.0
+Total,Femalwe,"Black, non-Hispanic",2012,575,180734.0
+Total - Male,Male,"Black, non-Hispanic",2000,1478,218896.0
+Total - Male,Male,"Black, non-Hispanic",2001,1447,218896.0
+Total - Male,Male,"Black, non-Hispanic",2002,1422,209710.0
+Total - Male,Male,"Black, non-Hispanic",2003,1388,207921.0
+Total - Male,Mae,"Black, non-Hispanic",2004,1305,197731.0
+Total - Male,Male,"Black, non-Hispanic",2005,1249,189298.0
+Total - Male,Male,"Black, non-Hispanic",2006,1215,220072.0
+Total - Male,Male,"Black, non-Hispanic",2007,1213,186631.0
+Total - Male,Male,"Black, non-Hispanic",2008,1207,180734.0
+Total - Male,Male,"Black, non-Hispanic",2009,1212,190118.0
+Total - Male,ale,"Black, non-Hispanic",2010,1187,218896.0
+Total - Male,Male,"Black, non-Hispanic",2011,1136,181510.0
+Total - Male,Mael,"Black, non-Hispanic",2012,1060,170734.0
+Total - Female,Female,"Black, non-Hispanic",2000,67,189298.0
+Total - Female,Female,"Black, non-Hispanic",2001,71,9724.0
+Total - Female,Femael,"Black, non-Hispanic",2002,74,10336.0
+Total - Female,Femiale,"Black, non-Hispanic",2003,73,196234.0
+Total - Female,Female,"Black, non-Hispanic",2004,73,219439.0
+Total - Female,Female,"Black, non-Hispanic",2005,75,10713.0
+Total - Female,Female,"Black, non-Hispanic",2006,75,201325.0
+"Total - Other race, non-Hispanic",Female,"Black, non-Hispanic",2007,76,54466.0
+Total - Female,Female,"Black, non-Hispanic",2008,75,196234.0
+Total - Female,Female,"Black, non-Hiispanic",2009,76,219439.0
+Total - Female,Female,"Black, non-Hispanic",2010,75,218896.0
+Total - Female,Female,"Black, non-Hispanic",2011,70,10696.0
+Total - Female,Female,"Black, non-Hispanic",2012,65,196234.0
+"Total - White, non-Hispanic",Femyale,"White, non-Hispanic",2000,345,10696.0
+"Total - Black, non-Hispanic",Female,"White, non-Hispanic",2001,349,10336.0
+"Total - White, non-Hispanic",Feale,"White, non-Hispanic",2002,353,219439.0
+"Total - White, non-Hispanic",Ffemale,"White, non-Hispanic",2003,340,197731.0
+Total - Hispanic,Femael,"White, non-Hispanic",2004,331,201325.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2005,316,201325.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2006,301,54466.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanci",2007,289,10336.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2008,284,186631.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2009,281,200050.0
+"Total - White, non-Hispanic",emale,"hite, non-Hispanic",2010,284,198997.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2011,274,218896.0
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2012,252,200050.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2000,2732,197731.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2001,2577,54466.0
+"Total - Black, non-Hispanic",Femaxle,"Black, non-Hispanic",2002,2461,189298.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2003,2241,10713.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2004,2134,181510.0
+"Total - Black, non-Hispanic",Femaloe,"Black, non-Hispanic",2005,1918,10696.0
+"Total - Black, non-Hispanic",Femae,"Black, non-Hispanic",2006,1865,218436.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2007,1837,180734.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2008,1862,170734.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2009,1875,9724.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2010,1865,199105.0
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2011,1775,10713.0
+"Total - Black, non-Hispanic",Femael,"Black, non-Hispanic",2012,1623,9724.0
+Total - Hispanic,Femae,Hispanic,2000,1004,219439.0
+Total - Hispanic,Fmeale,Hispanic,2001,1012,189298.0
+Total - Hispanic,Femlae,Hispanic,2002,1017,207921.0
+Total - Hispanic,Female,Hispanic,2003,1007,218436.0
+Total - Male,Female,Hispanic,2004,974,190118.0
+Total - Hispanic,Female,Hispnic,2005,941,200050.0
+Total - Hispanic,Female,Hispanic,2006,926,220072.0
+Total - Hispanic,Female,Hispanic,2007,932,54466.0
+Total - Male,Female,Hispanic,2008,892,207416.0
+Total - Hispanic,Female,Hispanic,2009,888,190118.0
+Total,Female,Hispanic,2010,780,180734.0
+Total - Hispanic,Female,Hispanci,2011,724,220072.0
+Total - Hispanic,Female,Hispanic,2012,640,54466.0
+"Total - Other race, non-Hispanic",Female,"Other race, non-Hispanic",2000,826,207416.0
+"Total - Other race, non-Hispanic",Female,"Other race, non-Hispanic",2001,831,220072.0
+"Total - Other race, non-Hispanic",Female,"Other race, non-Hispanic",2002,805,200050.0
+"Total - Other race, non-Hispanic",Female,"Other race, non-Hispanic",2003,800,207921.0
+"Total - Other race, non-Hispanic",Female,"Other race, non-Hispanic",2004,792,218436.0
+"Total - Other race, non-Hispanic",Female,"Other race, non-Hispanic",2005,784,209710.0
+"Total - Other race, non-Hispanic",Female,"Other race, non-ispanic",2006,777,201325.0
+"Total -O ther race, non-Hispanic",Female,"Other race, non-Hispanic",2007,731,181510.0
+"Total - Other race, non-Hispanic",Female,"Other race, non-Hispanic",2008,689,189298.0
+"Total i- Other race, non-Hispanic",Female,"Other race, non-Hispanc",2009,626,209710.0
+"Total - Other race, non-Hispanic",Female,"Other race, non-Hispanic",2010,504,190118.0
+"Total - Other race, non-Hispanic",Female,"Other race, non-Hispanic",2011,452,186631.0
+"Total - Other race, non-Hispanic",Female,Other race non-Hispanic,2012,613,16478.0
+"White ,non-Hispanic",Mle,"White, non-Hispanic",2000,639,55602.0
+"White, non-Hispanic",Male,"Wthite, non-Hispanic",2001,644,57102.0
+"White, non-Hispanic",Mlae,"White, non-Hispanic",2002,647,58313.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2003,620,56733.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2004,598,55179.0
+"White, non-Hispanic",Male,"White, non-Hipsanic",2005,566,52373.0
+"White, non-Hispranic",Male,"White, non-Hispanic",2006,535,49788.0
+"White,n on-Hispanic",Male,"White, non-Hisanic",2007,514,47974.0
+"White,l non-Hispanic",Male,"White, non-Hispanic",2008,504,47410.0
+"White, non-Hispanic",Malwe,"White, non-Hitspanic",2009,496,46577.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2010,504,45219.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2011,484,43442.0
+"White, non-Hispanic",Male,"White, non-Hispanic",2012,446,40090.0
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2000,5358,101521.0
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2001,5010,97890.0
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2002,4751,95276.0
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2003,4303,88175.0
+"Black, non-Hispanic",Mae,"Black, non-Hispanic",2004,4072,84670.0
+"Black, non-Hispanic",aMle,"Black, non-Hispanic",2005,3653,76800.0
+"Black, non-Hispanic",Male,"Black, nn-Hispanic",2006,3541,75759.0
+"Black, non-Hispanic",Male,"Blac,k non-Hispanic",2007,3491,76236.0
+"Black, non-Hispanic",Male,"Black, non-Hisppanic",2008,3542,79183.0
+"Black, non-Hispanic",Male,"Black, non-Hpispanic",2009,3565,81033.0
+"Black, non-Hispanic",Male,"lBack, non-Hispanic",2010,3588,80813.0
+"Black, non-Hispanic",Male,"Black,n on-Hispanic",2011,3396,78647.0
+"Black, non-Hispanic",Male,"Black, nokn-Hispanic",2012,3102,73224.0
+Hispanic,Male,Hispanic,2000,1765,46949.0
+Hispanic,ale,Hispanic,2001,1781,48352.0
+Hispanic,Mael,Hispaic,2002,1790,49174.0
+Hispanic,Male,Hispanic,2003,1777,49180.0
+Hispanic,Male,Hispanic,2004,1723,47798.0
+Hispanic,Male,Hispainc,2005,1666,46265.0
+Hispanic,Male,Hispanic,2006,1641,45848.0
+Hispanic,Male,ispanic,2007,1662,46830.0
+Hispanic,Male,Hisbpanic,2008,1599,46023.0
+Hispanic,Male,Hisanic,2009,1600,47140.0
+Hispanic,Male,iHspanic,2010,1405,46546.0
+Hispanic,Male,Hispainc,2011,1308,44268.0
+Hispanic,Male,Hispainc,2012,1165,39631.0
+"Other race, non-Hispanic",Male,"Other race, non-Hispanic",2000,1557,14504.0
+"Other race, non-Hispanic",Male,"cOther race, non-Hispanic",2001,1558,14897.0
+"Other race, non-Hispanic",Male,"Oher race, non-Hispanic",2002,1497,14699.0
+"Other race, non-Hispanic",Male,"Other race, non-Hispanic",2003,1500,15010.0
+"Other race, non-Hispanic",Mael,"Other ramce, non-Hispanic",2004,1479,14976.0
+"Other race, non-Hispanic",Male,"Other rce, non-Hispanic",2005,1427,14565.0
+"Other race, non-Hispanic",Mae,"Other race, non-Hispaic",2006,1395,14431.0
+"Other race, non-Hispanic",Male,"Other race, non-Hispanic",2007,1300,13626.0
+"Other race, non-Hispanic",Male,"Other race, non-Hispanic",2008,1226,13084.0
+"Other race, non-Hispanic",aMle,"Other race, non-Hispanic",2009,1121,12127.0
+"Other race, non-Hispanic",Male,"Othe race, non-Hispanic",2010,912,11651.0
+"Other race, non-Hispanic",ale,"Other race, non-Hispanic",2011,824,10699.0
+"Other race, non-Hispanic",Male,"Other race, nno-Hispanic",2012,1124,15227.0
+"White, non-Hispanic",Female,"White, non-Hspanic",2000,41,3498.0
+"White, non-Hispanic",Female,"Wfhite, non-Hispanic",2001,43,3725.0
+"White, non-Hzispanic",Female,"Whiet, non-Hispanic",2002,48,4165.0
+"White, nno-Hispanic",Femael,"White, non-Hispanic",2003,49,4301.0
+"White, non-Hispanic",Female,"White, non-Hispanic",2004,52,4560.0
+"White, non-Hispanic",Female,"White, onn-Hispanic",2005,53,4640.0
+"White, non-Hispanic",Fdemale,"White, non-Hispanic",2006,53,4684.0
+"White ,non-Hispanic",Female,"White, non-Hispanic",2007,53,4695.0
+"White, non-Hispanic",Femalze,"White, non-Hispanic",2008,52,4656.0
+"White, non-Hispanic",Femlale,"White, non-Hispanic",2009,54,4769.0
+"White, non-Hispanic",Female,"White, non-Hispanic",2010,55,4757.0
+"White, non-Hispanic",Femalre,"White, non-Hispanci",2011,55,4777.0
+"White, non-Hispanic",Female,"White, non-Hispanic",2012,49,4219.0
+"Black, non-Hispanic",Female,"Black, non-Hispanci",2000,180,3500.0
+"Black, non-Hispanic",Female,"Back, non-Hispanic",2001,181,3575.0
+"Black, non-Hispanic",Female,"Black,n on-Hispanic",2002,177,3561.0
+"Black, non-Hispanic",Female,"Blcak, non-Hispanic",2003,170,3466.0
+"Black, non-Hispanic",Female,"Black,m non-Hispanic",2004,166,3408.0
+"Black, non-Hispanic",Female,"Balck, non-Hispanic",2005,151,3100.0
+"Black, non-Hispanic",Female,"Black,non-Hispanic",2006,145,3021.0
+"Black, non-Hispanic",Female,"Blzack, non-Hispanic",2007,143,3031.0
+"Black, non-Hispanic",eFmale,"Black, nn-Hispanic",2008,143,3104.0
+"Black, non-Hispanic",Female,"Black, non-Hisptanic",2009,145,3207.0
+"Black, non-Hispanic",Female,"Black, non-Hipspanic",2010,142,3182.0
+"Black, non-Hispanic",Female,"Black, non-Hispanci",2011,135,3097.0
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2012,118,2745.0
+Hispanic,Female,Hispwanic,2000,73,1596.0
+Hispanic,Female,Hispainic,2001,75,1684.0
+Hispanic,Female,Hispanci,2002,81,1841.0
+Hispanic,Female,Hispanic,2003,84,1958.0
+Hispanic,Ftemale,Hispaqnic,2004,89,2100.0
+Hispanic,Female,Hipanic,2005,94,2247.0
+Hispanic,Female,Hispainc,2006,99,2403.0
+Hispanic,Female,ispanic,2007,100,2464.0
+Hispanic,eFmale,Hisrpanic,2008,94,2407.0
+Hispanic,Female,Hispaniic,2009,88,2303.0
+Hispanic,Female,Hispaic,2010,78,2291.0
+Hispanic,Female,Hispnaic,2011,71,2166.0
+Hispanic,Female,Hsipanic,2012,60,1847.0
+"Other race, non-Hispanic",Female,"Other race, non-ispanic",2000,94,869.0
+"Other race, non-Hispanic",Female,"Other race ,non-Hispanic",2001,104,988.0
+"Other race, non-Hispanic",Female,"Other race, non-Hispanic",2002,108,1052.0
+"Other race, non-Hispanic",Female,"Other rapce, non-Hispanic",2003,94,932.0
+"Other race, non-Hispanic",Female,"Other race, non-Hispanic",2004,97,964.0
+"Other race, non-Hispanic",Female,"Other race, nno-Hispanic",2005,129,1289.0
+"Other race, non-Hispanic",Femaloe,"Other race, no-nHispanic",2006,140,1410.0
+"Other race, non-Hispanic",Female,"Othe rrace, non-Hispanic",2007,140,1429.0
+"Other race, non-Hispanic",Female,"Other race,n on-Hispanic",2008,132,1361.0
+"Other race, non-Hispanic",dFemale,"Other race, non-iHspanic",2009,115,1208.0
+"Other race, non-Hispanic",Female,"Other race, non-Hsipanic",2010,91,1154.0
+"Othr race, non-Hispanic",Fmale,"Other raec, non-Hispanic",2011,75,964.0
+"Other race, non-Hispanic",Female,"Other race, non-Hispxanic",2012,95,1267.0

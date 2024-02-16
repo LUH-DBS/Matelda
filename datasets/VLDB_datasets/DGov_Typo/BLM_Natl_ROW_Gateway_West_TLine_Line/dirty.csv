@@ -1,0 +1,19 @@
+objectid(long),segment,sourcefile,shape_length_two(double precision),name_web_ex,namevalue,shape_length(double precision)
+1,2,EGW_Eng_Facilities_20181112.gdb/CL_ROW,196940.67893019,Gateway West,Gateway West,196940.67893019
+2,3a,EGW_Eng_Facilities_20181112g.db/CL_ROW,10991.0248623096,Gateway West,Gateway West,10991.0248623096
+3,3,EGW_Eng_Facilities_20181112.gdb/CL_ROW,99993.6544044538,Gateway West,Gtaeway West,99993.6544044538
+4,1aW,EGW_Eng_Facilities_20181112.gdb/CL_ROW,36315.2267186836,Gateway West,Gateway West,36315.2267186836
+5,Distribution line,EGW_Eng_Facilities_20811112.gdb/CL_ROW,6396.10451784602,Gateway West,Gateway West,6396.10451784602
+6,Distriution line,EGW_Eng_Facilities_20181112.gdb/CL_ROW,26350.3803740717,Gateway West,Gateway Wst,26350.3803740717
+7,1W,GatewayWest_AuthorizedRoutes (7/19/1)8,252809.772980279,Gateway West,Gateway West,252809.772980279
+8,4a,CL_ROW_180709.shp,155617.927722668,Gateway West,Gateway West,155617.927722668
+9,b,CL_ROW_180709.shp,127663.802730862,Gateway West,Gateway West,127663.802730862
+10,4c,CL_ROW_180709.shp,149378.297694515,Gateway West,Gatheway West,149378.297694515
+11,1Wc,EGW_Eng_Facilities_20181112.gdb/CL_ROW,34512.2354253363,Gateway West,Gateway West,34512.2354253363
+12,i5,GWW_Idaho_Routes_ROD.shp (Provided 12/17/18),221044.969284819,Gateway West,Gateway West,221044.969284819
+13,6,GWW_Idaho_Routes_ROD.shp (Provided 12/17/18),186164.103617035,Gateway West,Gateway West,186164.103617035
+14,7,GWW_Idaho_Routes_ROD.shp (Provided 12/17/18),283600.253753719,Gateway West,Gateway West,283600.253753719
+15,8,GWW_Idaho_Routes_ROD.shp (Provided 12/17/18),283083.581366352,Gateway West,Gateway West,283083.581366352
+16,9,GWW_Idaho_Routes_ROD.shp (Provided 12/17/18),342997.162848486,Gateway West,Gateway West,342997.162848486
+17,Toana Road Variation 1,GWW_Idaho_Routes_ROD.shp (Provided 12/17/18),18632.5799949388,Gateway West,Gateway West,18632.5799949388
+18,10,GWW_Idaho_Routes_ROD.shp (Provided 12/17/18),75233.5116016941,Gateway West,Gateway West,75233.5116016941
