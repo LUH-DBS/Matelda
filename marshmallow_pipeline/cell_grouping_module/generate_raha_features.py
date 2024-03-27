@@ -119,30 +119,19 @@ def _strategy_runner_process(self, args):
         l_j = d.dataframe.columns.get_loc(l_attribute)
         r_j = d.dataframe.columns.get_loc(r_attribute)
         value_dictionary = {}
-        confidence_score_denom = 0
-        confidence_score_nom = 0
-        support = 0
-        confidence = 0
+        
         for i, row in d.dataframe.iterrows():
             if row[l_attribute]:
-                confidence_score_denom += 1
                 if row[l_attribute] not in value_dictionary:
                     value_dictionary[row[l_attribute]] = {}
                 if row[r_attribute]:
-                    value_dictionary[row[l_attribute]][row[r_attribute]] = 1
-        n_violations_in_group = 0
-        
+                    value_dictionary[row[l_attribute]][row[r_attribute]] = 1        
         
         for i, row in d.dataframe.iterrows():
             if row[l_attribute] in value_dictionary and len(value_dictionary[row[l_attribute]]) > 1:
                 outputted_cells[(i, l_j)] = "LRVD"
                 outputted_cells[(i, r_j)] = "RRVD"
-                n_violations_in_group += 1
-            elif row[l_attribute] in value_dictionary and len(value_dictionary[row[l_attribute]]) == 1:
-                confidence_score_nom += 1
 
-        confidence = confidence_score_nom / confidence_score_denom
-        support = confidence_score_nom / d.dataframe.shape[0]
     detected_cells_list = list(outputted_cells.keys())
     strategy_profile = {
         "name": strategy_name,
@@ -287,46 +276,62 @@ def generate_features(self, d, char_set_dict):
     This method generates features.
     """
     columns_features_list = []
+    
     for j in range(d.dataframe.shape[1]):
         strategy_profiles = []
+        parsed_keys = []
+        strategy_profiles_dict_rvd_orig = {}
+        strategy_profile_dict_all_without_rvd = {}
         for strategy_profile in d.strategy_profiles:
             strategy = json.loads(strategy_profile["name"])
             if strategy[0] == "PVD":
                 if strategy[1][0] == d.dataframe.columns[j]:
                     strategy_profiles.append(strategy_profile)
+                    parsed_keys.append(strategy)
+                    strategy_profile_dict_all_without_rvd[str(strategy)] = strategy_profile
+            elif strategy[0] == "RVD_orig":
+                strategy_profiles_dict_rvd_orig[str(strategy)] = strategy_profile
+                parsed_keys.append(strategy)
             else:
-                strategy_profiles.append(strategy_profile)
-        parsed_keys = [
-            json.loads(str(key["name"])) for key in strategy_profiles
-        ]  # Parse the keys into Python objects
+                strategy_profiles.append(strategy_profile)  
+                parsed_keys.append(strategy)
+                strategy_profile_dict_all_without_rvd[str(strategy)] = strategy_profile
         sorted_keys = sorted(parsed_keys)
         sorted_strategy_profiles = dict()
         RVD_orig_outputs = {}
         n_rvd_rules_left, n_rvd_rules_right = 0, 0
         total_n_rules_col = (len(d.dataframe.columns) - 1)*2
-        for key in sorted_keys:
-            for strategy_profile in strategy_profiles:
-                name = json.loads(str(strategy_profile["name"]))
-                if name == key:
-                    if name[0] == "RVD_orig":
-                        if d.dataframe.columns[j] in name[1]:
-                            if name[1][0] == d.dataframe.columns[j]:
-                                n_rvd_rules_left += 1
-                            elif name[1][1] == d.dataframe.columns[j]:
-                                n_rvd_rules_right += 1
-                            for c in strategy_profile["output"]:
-                                if c[1] == j:
-                                    violation_type = strategy_profile["outputted_cells"][c]
-                                    if c[0] in RVD_orig_outputs:
-                                        RVD_orig_outputs[c[0]]["total_violations"] += 1
-                                        RVD_orig_outputs[c[0]][violation_type] += 1                                        
+        t0 = time.time()
+        try:
+            for key in sorted_keys:
+                if key[0] == "RVD_orig":
+                    name = json.loads(strategy_profiles_dict_rvd_orig[str(key)]["name"])
+                    strategy_profile_output = strategy_profiles_dict_rvd_orig[str(key)]["output"]
+                    strategy_profile_outputted_cells = strategy_profiles_dict_rvd_orig[str(key)]["outputted_cells"]
+                    if d.dataframe.columns[j] in name[1]:
+                        if name[1][0] == d.dataframe.columns[j]:
+                            n_rvd_rules_left += 1
+                        elif name[1][1] == d.dataframe.columns[j]:
+                            n_rvd_rules_right += 1
+                        for c in strategy_profile_output:
+                            if c[1] == j:
+                                violation_type = strategy_profile_outputted_cells[c]
+                                if c[0] in RVD_orig_outputs:
+                                    RVD_orig_outputs[c[0]]["total_violations"] += 1
+                                    RVD_orig_outputs[c[0]][violation_type] += 1                                        
+                                else:
+                                    if violation_type == "LRVD":
+                                        RVD_orig_outputs[c[0]] = {"total_violations": 1, "LRVD": 1, "RRVD": 0}
                                     else:
-                                        if violation_type == "LRVD":
-                                            RVD_orig_outputs[c[0]] = {"total_violations": 1, "LRVD": 1, "RRVD": 0}
-                                        else:
-                                            RVD_orig_outputs[c[0]] = {"total_violations": 1, "LRVD": 0, "RRVD": 1}
-                    else:
-                        sorted_strategy_profiles[str(key)] = strategy_profile["output"]                        
+                                        RVD_orig_outputs[c[0]] = {"total_violations": 1, "LRVD": 0, "RRVD": 1}
+                else:
+                    sp_output = strategy_profile_dict_all_without_rvd[str(key)]["output"]
+                    sorted_strategy_profiles[str(key)] = sp_output
+        except Exception as e:
+            logging.error(e)
+            logging.error("Error in loop 1")         
+        t1 = time.time()
+        logging.debug("Time - loop 1: %s", str(t1 - t0))              
         
         strategy_profiles = [str(k) for k in sorted_strategy_profiles]
         feature_vectors = np.zeros((d.dataframe.shape[0], len(strategy_profiles) + 15))
@@ -341,21 +346,24 @@ def generate_features(self, d, char_set_dict):
                     if cell[1] == j:
                         feature_vectors[cell[0], strategy_index] = 1.0
 
+        t0 = time.time()
         for row_idx in RVD_orig_outputs:
             idx = len(strategy_profiles)
             total_violations = RVD_orig_outputs[row_idx]["total_violations"]
-            insert_idx = idx + get_bucket(total_violations / total_n_rules_col)
+            insert_idx = idx + get_bucket(total_violations / total_n_rules_col if total_n_rules_col > 0 else 0)
             feature_vectors[row_idx, insert_idx] = 1
 
             idx += 5
             LRVD_violations = RVD_orig_outputs[row_idx]["LRVD"]
-            insert_idx = idx + get_bucket(LRVD_violations / n_rvd_rules_left)
+            insert_idx = idx + get_bucket(LRVD_violations / n_rvd_rules_left if n_rvd_rules_left > 0 else 0)
             feature_vectors[row_idx, insert_idx] = 1
 
             idx += 5
             RRVD_violations = RVD_orig_outputs[row_idx]["RRVD"]
-            insert_idx = idx + get_bucket(RRVD_violations / n_rvd_rules_right)
+            insert_idx = idx + get_bucket(RRVD_violations / n_rvd_rules_right if n_rvd_rules_right > 0 else 0)
             feature_vectors[row_idx, insert_idx] = 1
+        t1 = time.time()
+        logging.debug("Time - loop 2: %s", str(t1 - t0))
 
         if self.VERBOSE:
             logging.debug(
