@@ -248,8 +248,6 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
                 dirty_cell_values_cluster.append(
                     dirty_cell_values[col_group_cell_idx[sample]]
                 )
-                if col_group_cell_idx[sample] in samples_indices_global:
-                    logging.INFO("sample is already in samples_indices_global")
                 samples_indices_global.append(col_group_cell_idx[sample])
                 samples_indices_cell_group.append(sample)
             
@@ -261,8 +259,7 @@ def pick_samples_in_cell_cluster(cluster, updated_cells_per_cluster, updated_cel
             dirty_cell_values_cluster.append(
                 dirty_cell_values[col_group_cell_idx[sample]]
             )
-            if col_group_cell_idx[sample] in samples_indices_global:
-                logging.INFO("sample is already in samples_indices_global")
+            
             samples_indices_global.append(col_group_cell_idx[sample])
             samples_indices_cell_group.append(sample)
 
