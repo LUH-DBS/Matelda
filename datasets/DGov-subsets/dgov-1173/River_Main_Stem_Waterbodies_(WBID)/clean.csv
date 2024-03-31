@@ -1,0 +1,38 @@
+﻿OBJECTID,WBID,WBNAME,WBDESC
+1,VT01-04,Batten Kill,Batten Kill mainstem from the NY border up to the confluence of the West Branch
+2,VT03-01,Lower Otter Creek,Otter Creek mainstem from its mouth to the confluence with the Middlebury River
+3,VT03-03,Mid-Mainstem Otter Creek,Otter Creek Mid-Mainstem from the mouth of the Middlebury River up to the mouth of Furnace Brook
+4,VT03-05,Upper  Otter Creek,Otter Creek mainstem from the confluence of Furnace Brook up to the confluence with the Mill River
+5,VT06-01,Lower Missisquoi River,Missisquoi River mainstem from the mouth to the confluence with Tyler Branch
+6,VT06-02,Mid Missisquoi River,Mississquoi River mainstem from the confluence of Tyler Branch upstream to the Canadian border
+7,VT07-02,Lower Mid-Lamoille River,Lower Mid-Lamoille River from Arrowhead Mountain Lake upstream to Fairfax Dam
+8,VT07-04,Upper Mid-Lamoille River,Upper Mid-Lamoille River mainstem from Fairfax Dam to Cadys Falls Dam
+9,VT07-07,Upper Lamoille River,Upper Lamoille River mainstem from Cadys Falls Dam to Hardwick Dam
+10,VT08-01,Lower Winooski River,Winooski River mainstem from its mouth at Lake Champlain up to the confluence of Alder Brook
+11,VT08-03,Lower Mid-Winooski River,Lower Mid-Winooski mainstem from the confluence of Alder Brook to the confluence of the Little River
+12,VT08-05,Upper Mid-Winooski River,Winooski River mainstem from the confluence of the Little River to the confluence of Stevens Branch
+13,VT08-07,Upper Winooski River,Winooski River mainstem from the confluence of Stevens Branch to the confluence of Molly's Brook
+14,VT08-18,Mad River,Mad River mainstem from its mouth to Stetson Brook
+15,VT09-01,Lower White River Main Stem,White River mainstem from the mouth to the confluence with Third Branch
+16,VT09-02,Middle White River Main Stem,White River mainstem from the Third Branch mouth to the West Branch mouth
+17,VT10-01,Lower Ottauquechee River,Lower Ottauquechee River mainstem from the mouth to the confluence of Kedron Brook excluding North Hartland Reservoir
+18,VT10-03,Mid-Ottauquechee River,Mid Ottauquechee River mainstem from the confluence of Kedron Brook to confluence of Broad Brook
+19,VT10-05,Upper Ottauquechee River,Ottauquechee River mainstem from confluence of Broad Brook up to confluence of Roaring Brook
+20,VT10-11,Lower Black River,Black River mainstem from mouth to dam at North Springfield Reservoir
+21,VT11-01,Lower Williams River,Williams River mainstem from its mouth to the confluence of the Middle Branch
+22,VT11-07,Lower West River,Lower West River from its mouth to the confluence with Grassy Brook
+23,VT11-10,Mid-West River,West River mainstem from the confluence of Grassy Brook to the confluence of the Winhall River
+24,VT11-17,Upper West River,West River mainstem from confluence of Winhall River to its headwaters
+25,VT13-01,Upper Southern Connecticut River,"Connecticut River mainstem from Wilder Dam down to confluence of Sugar River NH /Ascutney VT       (NHR80104060-00.0109; NHR80104090-00.0109)"
+26,VT13-02,Upper Mid-Southern Connecticut River,"Connecticut River mainstem from the confluence of Sugar River, NH/Ascutney,VT down to Bellows Falls Dam     (NHR80104130-00.0109)"
+27,VT13-03,Mid-Southern Connecticut River,"Connecticut River mainstem from the Bellows Falls Dam down to confluence of West River    (NHR80104172-00.0109; NHR80104176-00.2009)"
+28,VT13-04,Vernon Impoundment,Connecticut River mainstem from the confluence of West River downstream to Vernon Dam                                  NHR80104176-00.0709
+29,VT13-05,Lower Connecticut River,"Connecticut River mainstem from the Vernon Dam downstream to the Massachusetts border    (NHR80104176-00.0109; NHR80201070-00.0109)"
+30,VT15-01,Passumpsic Main Stem,Passumpsic River mainstem from its mouth to the confluence of the East and West Branches
+31,VT16-01,Upper Connecticut River,"Upper Connecticut River mainstem from Canada to the mouth of the Nulhegan River                                               (NHR80101060-00.0109;  NHR 80101110-00.1309)."
+32,VT16-02,Lower Upper Connecticut,"Upper Connecticut River mainstem from the confluence of the Nulhegan River to the confluence of the Ammonoosuc River     (NHR80101110-00.109; NHR80101140-00.109)"
+33,VT16-03,Northern Connecticut River,"Connecticut River mainstem from the confluence of Upper Ammonoosuc to Gilman Dam.  (NHR80101160-00.0109; NHR80101180-00.0109; NHR80101230-00.2209)"
+34,VT16-04,Moore Impoundment,Moore Impoundment of Connecticut River (Gilman Dam to Moore Dam)  (NHL80101230-00.2001)
+35,VT16-05,Comerford Impoundment,Comerford Impoundment of the Connecticut River ( Moore Dam to Comerford Dam)                                                (NHL80101230-00.1901)
+36,VT16-06,Mid-Northern Connecticut River,"Main Stem - Comerford Dam to confluence of Wells River                                                                                                NHL80101230-00.1801; NHR80101230-00.0109"
+37,VT16-07,Lower Northern Connecticut River,"Connecticut River mainstem - confluence of Wells River to Wilder Dam  NHR80104010-00.0109; NHR80101230-00.2209"

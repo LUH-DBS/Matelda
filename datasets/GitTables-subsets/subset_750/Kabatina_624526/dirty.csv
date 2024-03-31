@@ -1,0 +1,9 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+0e08c904-9bac-11eb-a8a2-19ed5c03f8d3,genus,Kabatina,,,"R. Schneid. & Arx",,1966,,"Phytopath. Z. 57: 179 (1966)",,,,0e08c904-9bac-11eb-a8a2-19ed5c03f8d3,,,,,8657," "
+351e4478-9bad-11eb-a8a2-19ed5c03f8d3,species,abietis,Kabatina,,"Butin & Pehl",,,,"Mycol. Res. 97(11): 1340 (1993)",,,,351e4478-9bad-11eb-a8a2-19ed5c03f8d3,,,,,360942," "
+1e48d9a2-9bad-11eb-a8a2-19ed5c03f8d3,species,juniperi,Kabatina,,"R. Schneid. & Arx",,1966,,"Phytopath. Z. 57: 181 (1966)",,,,1e48d9a2-9bad-11eb-a8a2-19ed5c03f8d3,,,,,332694," "
+f3c7acd6-9bab-11eb-a8a2-19ed5c03f8d3,species,mahoniae,Kabatina,,"A.W. Ramaley",,1992,,"Mycotaxon 43: 443 (1992)",,,,f3c7acd6-9bab-11eb-a8a2-19ed5c03f8d3,,,,,355520," "
+731cf090-9bac-11eb-a8a2-19ed5c03f8d3,species,populi,Kabatina,,"Butin & R. Schneid.",,1976,,"Phytopath. Z. 85(1): 39 (1976)",,,,731cf090-9bac-11eb-a8a2-19ed5c03f8d3,,,,,315991," "
+1e49b7aa-9bad-11eb-a8a2-19ed5c03f8d3,species,thujae,Kabatina,,"R. Schneid. & Arx",,1966,,"Phytopath. Z. 57: 180 (1966)",,,,1e49b7aa-9bad-11eb-a8a2-19ed5c03f8d3,,,,,332695," "
+2c690098-9bad-11eb-a8a2-19ed5c03f8d3,variety,juniperi,Kabatina,thujae,"(R. Schneid. & Arx) M. Morelet",,1973,,"Bulletin de la Société des Sciences naturelles et d'Archéologie de Toulon et du Var 204: 8 (1973)",,,,1e48d9a2-9bad-11eb-a8a2-19ed5c03f8d3,,,,,348285," "
+f97ce11e-9bab-11eb-a8a2-19ed5c03f8d3,variety,thujae,Kabatina,thujae,"R. Schneid. & Arx",,1966,,"Phytopath. Z. 57: 180 (1966)",,,,f97ce11e-9bab-11eb-a8a2-19ed5c03f8d3,,,,,426678," "

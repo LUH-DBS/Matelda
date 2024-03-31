@@ -1,0 +1,285 @@
+﻿OBJECTID,DBARC_COD,DIVIDE,AV_LEGEND,IMS_LEGEND,LENGTH_MI,SHAPE_Length
+1,1,Major drainage basin divide,Major,Major,15.02190017,79315.6610769057
+2,1,Major drainage basin divide,Major,Major,13.76869964,72698.6315193768
+3,1,Major drainage basin divide,Major,Major,18.11890029,95667.592381563
+4,1,Major drainage basin divide,Major,Major,8.88488006,46912.157516286
+5,1,Major drainage basin divide,Major,Major,14.7013998,77623.2567510253
+6,1,Major drainage basin divide,Major,Major,13.55309963,71560.2498505273
+7,1,Major drainage basin divide,Major,Major,13.45219993,71027.3707088788
+8,1,Major drainage basin divide,Major,Major,6.57904005,34737.3390197115
+9,2,Regional drainage basin divide,Regional,No Show,8.89801979,46981.5490911915
+10,1,Major drainage basin divide,Major,Major,15.63560009,82555.9758074386
+11,1,Major drainage basin divide,Major,Major,7.60774993,40168.9287070769
+12,1,Major drainage basin divide,Major,Major,16.3729,86448.9309389931
+13,1,Major drainage basin divide,Major,Major,12.37160015,65322.0581158151
+14,1,Major drainage basin divide,Major,Major,11.09869956,58600.9537496227
+15,2,Regional drainage basin divide,Regional,No Show,12.08670043,63817.9371492268
+16,1,Major drainage basin divide,Major,Major,16.30520057,86091.5938766398
+17,2,Regional drainage basin divide,Regional,No Show,7.1153202,37568.8919101637
+18,1,Major drainage basin divide,Major,Major,11.4730997,60578.162918231
+19,2,Regional drainage basin divide,Regional,No Show,3.49136996,18434.4565873804
+20,2,Regional drainage basin divide,Regional,No Show,12.44060039,65686.3520561582
+21,3,Subregional drainage basin divide,Subregional,No Show,10.46259975,55242.5531815405
+22,2,Regional drainage basin divide,Regional,No Show,4.15761995,21952.2320117268
+23,2,Regional drainage basin divide,Regional,No Show,5.7773199,30504.2435611116
+24,1,Major drainage basin divide,Major,Major,11.9900999,63307.7755949425
+25,2,Regional drainage basin divide,Regional,No Show,8.74055004,46150.1331486556
+26,1,Major drainage basin divide,Major,Major,5.16420984,27267.0556916527
+27,2,Regional drainage basin divide,Regional,No Show,6.81744003,35996.0991675418
+28,3,Subregional drainage basin divide,Subregional,No Show,4.56344985,24095.0335697558
+29,1,Major drainage basin divide,Major,Major,10.30780029,54425.1314261758
+30,4,Local drainage basin divide,Local,No Show,4.14405012,21880.5753634321
+31,1,Major drainage basin divide,Major,Major,11.10309982,58624.3392117851
+32,5,Stream reach basin divide,Stream Reach,No Show,0.40526899,2139.81866848743
+33,4,Local drainage basin divide,Local,No Show,0.24433,1290.05931681086
+34,3,Subregional drainage basin divide,Subregional,No Show,8.16858005,43130.1079835744
+35,1,Major drainage basin divide,Major,Major,6.29034996,33213.0335730139
+36,1,Major drainage basin divide,Major,Major,13.11069965,69224.2898816399
+37,1,Major drainage basin divide,Major,Major,10.69589996,56474.4917637468
+38,1,Major drainage basin divide,Major,Major,7.04132986,37178.2357946597
+39,1,Major drainage basin divide,Major,Major,11.00349998,58098.3359185075
+40,1,Major drainage basin divide,Major,Major,6.50468015,34344.7170150913
+41,1,Major drainage basin divide,Major,Major,13.57970046,71700.7471422756
+42,1,Major drainage basin divide,Major,Major,10.19699954,53840.1609184746
+43,1,Major drainage basin divide,Major,Major,10.05720043,53101.9887244562
+44,1,Major drainage basin divide,Major,Major,12.2645998,64757.0747200303
+45,1,Major drainage basin divide,Major,Major,14.10499954,74474.5205410201
+46,1,Major drainage basin divide,Major,Major,11.53979969,60930.1194939006
+47,1,Major drainage basin divide,Major,Major,15.14509963,79966.0484925935
+48,1,Major drainage basin divide,Major,Major,9.94589042,52514.3173614969
+49,1,Major drainage basin divide,Major,Major,12.52890014,66152.7251130865
+50,1,Major drainage basin divide,Major,Major,10.48890018,55381.2815143322
+51,1,Major drainage basin divide,Major,Major,10.89500045,57525.7401496909
+52,1,Major drainage basin divide,Major,Major,14.44439983,76266.2355822719
+53,1,Major drainage basin divide,Major,Major,8.57841968,45294.0622056975
+54,1,Major drainage basin divide,Major,Major,4.87152004,25721.6290800569
+55,1,Major drainage basin divide,Major,Major,6.45901012,34103.5936950711
+56,1,Major drainage basin divide,Major,Major,8.10886955,42814.8271490766
+57,1,Major drainage basin divide,Major,Major,12.99269962,68601.2038435855
+58,1,Major drainage basin divide,Major,Major,8.53178024,45047.8039078486
+59,1,Major drainage basin divide,Major,Major,7.07532978,37357.736685021
+60,1,Major drainage basin divide,Major,Major,13.17199993,69548.2656940222
+61,1,Major drainage basin divide,Major,Major,13.12320041,69290.5504166231
+62,1,Major drainage basin divide,Major,Major,7.99061012,42190.4129887296
+63,1,Major drainage basin divide,Major,Major,6.15717983,32509.9266916934
+64,1,Major drainage basin divide,Major,Major,7.40297985,39087.7282712523
+65,3,Subregional drainage basin divide,Subregional,No Show,10.69099998,56448.6626043925
+66,1,Major drainage basin divide,Major,Major,13.14900016,69426.8312375369
+67,1,Major drainage basin divide,Major,Major,8.97856998,47406.8338385425
+68,1,Major drainage basin divide,Major,Major,5.59736013,29554.0391457277
+69,1,Major drainage basin divide,Major,Major,2.06711006,10914.3212727174
+70,1,Major drainage basin divide,Major,Major,5.18304014,27366.43814003
+71,1,Major drainage basin divide,Major,Major,7.06843996,37321.3767561453
+72,3,Subregional drainage basin divide,Subregional,No Show,4.9868102,26330.3679182313
+73,1,Major drainage basin divide,Major,Major,2.90885996,15358.7985769179
+74,1,Major drainage basin divide,Major,Major,6.10544013,32236.7018699992
+75,1,Major drainage basin divide,Major,Major,5.09389019,26895.7650276831
+76,1,Major drainage basin divide,Major,Major,1.51549994,8001.82758489053
+77,1,Major drainage basin divide,Major,Major,7.81332015,41254.3500977749
+78,1,Major drainage basin divide,Major,Major,10.18690013,53786.8251932045
+79,1,Major drainage basin divide,Major,Major,14.83469963,78327.3435093342
+80,1,Major drainage basin divide,Major,Major,15.74450016,83130.7908395404
+81,1,Major drainage basin divide,Major,Major,1.28000998,6758.47170144704
+82,1,Major drainage basin divide,Major,Major,8.36386966,44161.215389382
+83,3,Subregional drainage basin divide,Subregional,No Show,12.37919998,65361.9811316437
+84,1,Major drainage basin divide,Major,Major,15.81309986,83492.9115073296
+85,1,Major drainage basin divide,Major,Major,12.64640045,66772.880651336
+86,1,Major drainage basin divide,Major,Major,1.66515004,8791.98073757886
+87,1,Major drainage basin divide,Major,Major,8.62992,45565.9804316954
+88,1,Major drainage basin divide,Major,Major,3.31898999,17524.2645377745
+89,0,Not a drainage basin divide,No Show,No Show,0.326386,1723.31707544062
+90,1,Major drainage basin divide,Major,Major,6.96185016,36758.565692769
+91,1,Major drainage basin divide,Major,Major,6.79844999,35895.7884727372
+92,1,Major drainage basin divide,Major,Major,6.92050981,36540.3078767841
+93,0,Not a drainage basin divide,No Show,No Show,0.04630419,244.486567856662
+94,1,Major drainage basin divide,Major,Major,2.81165003,14845.5025012645
+95,0,Not a drainage basin divide,No Show,No Show,0.0080553,42.5318032337046
+96,0,Not a drainage basin divide,No Show,No Show,0.02337259,123.406986095018
+97,1,Major drainage basin divide,Major,Major,5.42284011,28632.5750324727
+98,1,Major drainage basin divide,Major,Major,2.42316007,12794.2923824676
+99,1,Major drainage basin divide,Major,Major,2.91074991,15368.7563524428
+100,2,Regional drainage basin divide,Regional,No Show,0.0374655,197.81838644803
+101,0,Not a drainage basin divide,No Show,No Show,0.01408199,74.3534515471804
+102,0,Not a drainage basin divide,No Show,No Show,0.00949219,50.1187524163792
+103,1,Major drainage basin divide,Major,Major,7.40983009,39123.9086819697
+104,1,Major drainage basin divide,Major,Major,9.49077033,50111.2570656632
+105,1,Major drainage basin divide,Major,Major,6.73795986,35576.4416879102
+106,1,Major drainage basin divide,Major,Major,5.99632978,31660.6348884596
+107,1,Major drainage basin divide,Major,Major,6.84163999,36123.8373307879
+108,8,Shoreline,Shoreline,Shoreline,4.8379302,25544.2965537643
+109,8,Shoreline,Shoreline,Shoreline,6.57890987,34736.6272585134
+110,8,Shoreline,Shoreline,Shoreline,4.64488983,24525.0365595175
+111,8,Shoreline,Shoreline,Shoreline,6.50853013,34365.0496458028
+112,1,Major drainage basin divide,Major,Major,2.77470993,14650.4913358853
+113,8,Shoreline,Shoreline,Shoreline,3.46542,18297.4393104919
+114,0,Not a drainage basin divide,No Show,No Show,0.0143688,75.866871072496
+115,1,Major drainage basin divide,Major,Major,5.42186021,28627.4327291634
+116,0,Not a drainage basin divide,No Show,No Show,0.05132329,270.986765595921
+117,8,Shoreline,Shoreline,Shoreline,4.8512001,25614.3470432134
+118,1,Major drainage basin divide,Major,Major,1.38735997,7325.27857430433
+119,8,Shoreline,Shoreline,Shoreline,5.80250978,30637.2506427018
+120,0,Not a drainage basin divide,No Show,No Show,0.01207439,63.7527067437427
+121,1,Major drainage basin divide,Major,Major,12.72469997,67186.3610602152
+122,1,Major drainage basin divide,Major,Major,3.82214999,20180.9555535124
+123,1,Major drainage basin divide,Major,Major,4.41512012,23311.8441396574
+124,8,Shoreline,Shoreline,Shoreline,2.15535998,11380.2826808086
+125,8,Shoreline,Shoreline,Shoreline,5.32252979,28102.976534651
+126,8,Shoreline,Shoreline,Shoreline,3.35836005,17732.1555656178
+127,8,Shoreline,Shoreline,Shoreline,5.6258502,29704.4906312718
+128,8,Shoreline,Shoreline,Shoreline,8.33815002,44025.4507345905
+129,1,Major drainage basin divide,Major,Major,4.27194976,22555.9048100616
+130,8,Shoreline,Shoreline,Shoreline,2.45149993,12943.9268004148
+131,0,Not a drainage basin divide,No Show,No Show,0.0145346,76.7426189673708
+132,8,Shoreline,Shoreline,Shoreline,7.82082986,41293.9600326968
+133,1,Major drainage basin divide,Major,Major,7.14293003,37714.6526620712
+134,8,Shoreline,Shoreline,Shoreline,0.48022699,2535.59875389201
+135,0,Not a drainage basin divide,No Show,No Show,0.01428989,75.4500042700267
+136,8,Shoreline,Shoreline,Shoreline,4.57427978,24152.1738272581
+137,8,Shoreline,Shoreline,Shoreline,0.516725,2728.30646377049
+138,0,Not a drainage basin divide,No Show,No Show,0.01849469,97.6522926747254
+139,0,Not a drainage basin divide,No Show,No Show,0.01738099,91.7719404010587
+140,8,Shoreline,Shoreline,Shoreline,5.36805009,28343.2981254097
+141,0,Not a drainage basin divide,No Show,No Show,0.0126184,66.6253120925492
+142,3,Subregional drainage basin divide,Subregional,No Show,7.94832992,41967.162475517
+143,8,Shoreline,Shoreline,Shoreline,0.84482699,4460.68576785639
+144,8,Shoreline,Shoreline,Shoreline,1.14771997,6059.9713336421
+145,0,Not a drainage basin divide,No Show,No Show,0.18076099,954.418256559432
+146,1,Major drainage basin divide,Major,Major,6.27028989,33107.1353297822
+147,0,Not a drainage basin divide,No Show,No Show,0.0102527,54.1342745540003
+148,8,Shoreline,Shoreline,Shoreline,7.83388996,41362.9571151143
+149,1,Major drainage basin divide,Major,Major,1.05845999,5588.68782956423
+150,3,Subregional drainage basin divide,Subregional,No Show,4.00544977,21148.7617154309
+151,0,Not a drainage basin divide,No Show,No Show,0.01369019,72.2842330594754
+152,0,Not a drainage basin divide,No Show,No Show,0.05694489,300.669519438712
+153,8,Shoreline,Shoreline,Shoreline,3.83947992,20272.4398878618
+154,1,Major drainage basin divide,Major,Major,9.33224964,49274.2737582593
+155,0,Not a drainage basin divide,No Show,No Show,0.00752115,39.7117737253134
+156,8,Shoreline,Shoreline,Shoreline,5.74632978,30340.6101954547
+157,1,Major drainage basin divide,Major,Major,5.91168022,31213.667614379
+158,0,Not a drainage basin divide,No Show,No Show,0.0298301,157.503236686031
+159,0,Not a drainage basin divide,No Show,No Show,0.01335289,70.5033275667928
+160,0,Not a drainage basin divide,No Show,No Show,0.0109767,57.9571374235119
+161,0,Not a drainage basin divide,No Show,No Show,0.83240097,4395.07907952198
+162,0,Not a drainage basin divide,No Show,No Show,0.00810148,42.7761117695326
+163,0,Not a drainage basin divide,No Show,No Show,0.02251599,118.884490501811
+164,0,Not a drainage basin divide,No Show,No Show,0.08668959,457.720720756835
+165,0,Not a drainage basin divide,No Show,No Show,0.02284649,120.629486626959
+166,8,Shoreline,Shoreline,Shoreline,1.08133995,5709.45955035322
+167,8,Shoreline,Shoreline,Shoreline,1.89783,10020.5624014403
+168,0,Not a drainage basin divide,No Show,No Show,0.0159671,84.3067541522739
+169,8,Shoreline,Shoreline,Shoreline,6.58000993,34742.4468053254
+170,8,Shoreline,Shoreline,Shoreline,2.51259994,13266.5494212175
+171,8,Shoreline,Shoreline,Shoreline,0.209068,1103.87887214567
+172,8,Shoreline,Shoreline,Shoreline,1.89761996,10019.4486659064
+173,8,Shoreline,Shoreline,Shoreline,0.00175767,9.28006693272808
+174,8,Shoreline,Shoreline,Shoreline,4.13783979,21847.7703170508
+175,0,Not a drainage basin divide,No Show,No Show,0.0129514,68.3839958207553
+176,8,Shoreline,Shoreline,Shoreline,0.94744199,5002.49533534239
+177,0,Not a drainage basin divide,No Show,No Show,0.03671419,193.85123662811
+178,1,Major drainage basin divide,Major,Major,11.70839977,61820.3135465425
+179,8,Shoreline,Shoreline,Shoreline,4.62888002,24440.4855034053
+180,8,Shoreline,Shoreline,Shoreline,5.35554981,28277.3089476692
+181,8,Shoreline,Shoreline,Shoreline,1.87114,9879.60112883354
+182,1,Major drainage basin divide,Major,Major,2.90527009,15339.8291557507
+183,8,Shoreline,Shoreline,Shoreline,2.98353004,15753.0282664436
+184,8,Shoreline,Shoreline,Shoreline,2.5366199,13393.3725335408
+185,8,Shoreline,Shoreline,Shoreline,5.20191001,27466.0725197619
+186,0,Not a drainage basin divide,No Show,No Show,0.127679,674.147279195333
+187,3,Subregional drainage basin divide,Subregional,No Show,3.63203001,19177.1170887027
+188,0,Not a drainage basin divide,No Show,No Show,0.01050029,55.4416833483627
+189,0,Not a drainage basin divide,No Show,No Show,0.01867279,98.5933694189042
+190,8,Shoreline,Shoreline,Shoreline,2.96606993,15660.8409806964
+191,8,Shoreline,Shoreline,Shoreline,4.27782011,22586.9140868354
+192,8,Shoreline,Shoreline,Shoreline,1.17486,6203.25989751771
+193,8,Shoreline,Shoreline,Shoreline,5.44566011,28753.096427466
+194,0,Not a drainage basin divide,No Show,No Show,0.0188823,99.6983985926399
+195,8,Shoreline,Shoreline,Shoreline,6.85539007,36196.438671519
+196,8,Shoreline,Shoreline,Shoreline,5.97750997,31561.2614506906
+197,8,Shoreline,Shoreline,Shoreline,5.35289001,28263.2360508949
+198,8,Shoreline,Shoreline,Shoreline,4.81782007,25438.0885851108
+199,8,Shoreline,Shoreline,Shoreline,3.9474399,20842.4536052425
+200,8,Shoreline,Shoreline,Shoreline,4.31685018,22792.9817055334
+201,8,Shoreline,Shoreline,Shoreline,4.87987995,25765.7936578726
+202,8,Shoreline,Shoreline,Shoreline,1.37690997,7270.06933188897
+203,0,Not a drainage basin divide,No Show,No Show,0.0165289,87.2724765366249
+204,8,Shoreline,Shoreline,Shoreline,5.94721984,31401.3163791961
+205,8,Shoreline,Shoreline,Shoreline,4.83731985,25541.0585831193
+206,1,Major drainage basin divide,Major,Major,5.88262987,31060.2942402928
+207,1,Major drainage basin divide,Major,Major,6.57995986,34742.1775791353
+208,8,Shoreline,Shoreline,Shoreline,4.62838983,24437.8944777345
+209,0,Not a drainage basin divide,No Show,No Show,0.00746667,39.4241709143303
+210,8,Shoreline,Shoreline,Shoreline,2.35388994,12428.5631800744
+211,1,Major drainage basin divide,Major,Major,5.71648979,30183.045068828
+212,0,Not a drainage basin divide,No Show,No Show,0.158294,835.793398208322
+213,8,Shoreline,Shoreline,Shoreline,7.28084993,38442.9017441458
+214,1,Major drainage basin divide,Major,Major,1.45676994,7691.75568883846
+215,0,Not a drainage basin divide,No Show,No Show,0.143663,758.540878804179
+216,1,Major drainage basin divide,Major,Major,4.08441019,21565.6944896021
+217,8,Shoreline,Shoreline,Shoreline,1.33815002,7065.44106911065
+218,8,Shoreline,Shoreline,Shoreline,0.97528302,5149.4956595784
+219,0,Not a drainage basin divide,No Show,No Show,0.0414403,218.804739534898
+220,1,Major drainage basin divide,Major,Major,6.37498998,33659.9578773679
+221,8,Shoreline,Shoreline,Shoreline,1.22379994,6461.64923775807
+222,0,Not a drainage basin divide,No Show,No Show,0.03111759,164.30079308548
+223,0,Not a drainage basin divide,No Show,No Show,0.08598949,454.023928125145
+224,0,Not a drainage basin divide,No Show,No Show,0.168666,890.557690425252
+225,8,Shoreline,Shoreline,Shoreline,0.810898,4281.54391792952
+226,8,Shoreline,Shoreline,Shoreline,4.32597017,22841.1118336431
+227,1,Major drainage basin divide,Major,Major,6.78275012,35812.9074693798
+228,8,Shoreline,Shoreline,Shoreline,3.57201004,18860.2028557509
+229,8,Shoreline,Shoreline,Shoreline,3.77241992,19918.3701566478
+230,0,Not a drainage basin divide,No Show,No Show,0.140281,740.68331461167
+231,1,Major drainage basin divide,Major,Major,6.55819988,34627.3241814702
+232,8,Shoreline,Shoreline,Shoreline,6.03639984,31872.2034475405
+233,1,Major drainage basin divide,Major,Major,2.48468995,13119.1670588014
+234,8,Shoreline,Shoreline,Shoreline,4.57102012,24134.9763903722
+235,0,Not a drainage basin divide,No Show,No Show,0.04775359,252.139105269046
+236,8,Shoreline,Shoreline,Shoreline,10.26809978,54215.8174936314
+237,0,Not a drainage basin divide,No Show,No Show,0.0559955,295.655775327468
+238,0,Not a drainage basin divide,No Show,No Show,0.01071519,56.576496880422
+239,8,Shoreline,Shoreline,Shoreline,2.21229004,11680.9022150166
+240,0,Not a drainage basin divide,No Show,No Show,0.07304079,385.654960615891
+241,8,Shoreline,Shoreline,Shoreline,8.40528964,44379.938594628
+242,0,Not a drainage basin divide,No Show,No Show,0.0144923,76.5184797510657
+243,8,Shoreline,Shoreline,Shoreline,1.66812002,8807.67904426652
+244,0,Not a drainage basin divide,No Show,No Show,0.0238882,126.13047603165
+245,1,Major drainage basin divide,Major,Major,6.54862022,34576.7080598048
+246,8,Shoreline,Shoreline,Shoreline,1.49154996,7875.35925324355
+247,8,Shoreline,Shoreline,Shoreline,6.04368019,31910.61519456
+248,0,Not a drainage basin divide,No Show,No Show,0.08683169,458.471706244038
+249,8,Shoreline,Shoreline,Shoreline,5.33905982,28190.2270824867
+250,8,Shoreline,Shoreline,Shoreline,6.78799009,35840.5665313155
+251,8,Shoreline,Shoreline,Shoreline,4.12486982,21779.3032574527
+252,8,Shoreline,Shoreline,Shoreline,4.22643995,22315.5986619133
+253,0,Not a drainage basin divide,No Show,No Show,0.0094819,50.0638237077118
+254,8,Shoreline,Shoreline,Shoreline,4.50969982,23811.2242030866
+255,0,Not a drainage basin divide,No Show,No Show,0.0118696,62.6707910608996
+256,0,Not a drainage basin divide,No Show,No Show,0.09070689,478.932472221202
+257,0,Not a drainage basin divide,No Show,No Show,0.03168139,167.277561424338
+258,8,Shoreline,Shoreline,Shoreline,4.37144994,23081.2351402704
+259,8,Shoreline,Shoreline,Shoreline,3.90208005,20602.9776179692
+260,8,Shoreline,Shoreline,Shoreline,2.96298003,15644.5588424345
+261,0,Not a drainage basin divide,No Show,No Show,0.0300161,158.484877801774
+262,1,Major drainage basin divide,Major,Major,5.76811981,30455.6725643012
+263,8,Shoreline,Shoreline,Shoreline,6.18468999,32655.1799880079
+264,0,Not a drainage basin divide,No Show,No Show,0.01067719,56.3754415647244
+265,8,Shoreline,Shoreline,Shoreline,5.46013021,28829.4997960398
+266,8,Shoreline,Shoreline,Shoreline,2.2298901,11773.8235053628
+267,0,Not a drainage basin divide,No Show,No Show,0.00677134,35.7528316721052
+268,0,Not a drainage basin divide,No Show,No Show,0.11741399,619.946247808825
+269,8,Shoreline,Shoreline,Shoreline,2.24755001,11867.0783568904
+270,0,Not a drainage basin divide,No Show,No Show,0.01129859,59.6566636150774
+271,8,Shoreline,Shoreline,Shoreline,8.22045993,43404.0302905537
+272,8,Shoreline,Shoreline,Shoreline,3.1333599,16544.1292061754
+273,8,Shoreline,Shoreline,Shoreline,4.33055019,22865.281587466
+274,8,Shoreline,Shoreline,Shoreline,4.69240999,24775.9318198429
+275,8,Shoreline,Shoreline,Shoreline,5.24412012,27688.9628897654
+276,8,Shoreline,Shoreline,Shoreline,5.61317014,29637.5364996738
+277,8,Shoreline,Shoreline,Shoreline,6.10669994,32243.3867480891
+278,0,Not a drainage basin divide,No Show,No Show,0.05833949,308.031986808173
+279,8,Shoreline,Shoreline,Shoreline,0.34446299,1818.761851942
+280,8,Shoreline,Shoreline,Shoreline,5.05508995,26690.867485186
+281,8,Shoreline,Shoreline,Shoreline,6.73354005,35553.099952947
+282,1,Major drainage basin divide,Major,Major,7.02607011,37097.6515600839
+283,8,Shoreline,Shoreline,Shoreline,4.70993995,24868.4907814451
+284,8,Shoreline,Shoreline,Shoreline,3.25495004,17186.1179671369

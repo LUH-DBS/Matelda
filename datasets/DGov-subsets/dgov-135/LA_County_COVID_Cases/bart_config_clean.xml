@@ -1,0 +1,189 @@
+<task>
+    <!-- ****************************************************
+                      DATABASES
+    **************************************************** -->
+    <target> 
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql://localhost:5433/bartdb</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>postgres</password>
+        </access-configuration>
+        <import>
+            <input type="csv" separator="," table="clean">/home/fatemeh/ED-Scale/Sandbox_Generation/metanome_input_files/processed/LA_County_COVID_Cases/clean.csv</input>
+        </import>
+    </target>
+
+    <!-- ****************************************************
+                    DEPENDENCIES
+    **************************************************** -->
+    <dependencies><![CDATA[DCs: 
+
+            e1: clean(county: $county1, state: $state1, fips: $fips1, date: $date1, lat: $lat1, lon: $lon1, cases: $cases1, deaths: $deaths1, peopletested: $peopletested1, statecases: $statecases1, statedeaths: $statedeaths1, newcases: $newcases1, newdeaths: $newdeaths1, newstatecases: $newstatecases1, newstatedeaths: $newstatedeaths1),
+            clean(county: $county2, state: $state2, fips: $fips2, date: $date2, lat: $lat2, lon: $lon2, cases: $cases2, deaths: $deaths2, peopletested: $peopletested2, statecases: $statecases2, statedeaths: $statedeaths2, newcases: $newcases2, newdeaths: $newdeaths2, newstatecases: $newstatecases2, newstatedeaths: $newstatedeaths2),
+                $date1 == $date2, $statecases1 != $statecases2 -> #fail. 
+
+        
+            e2: clean(county: $county1, state: $state1, fips: $fips1, date: $date1, lat: $lat1, lon: $lon1, cases: $cases1, deaths: $deaths1, peopletested: $peopletested1, statecases: $statecases1, statedeaths: $statedeaths1, newcases: $newcases1, newdeaths: $newdeaths1, newstatecases: $newstatecases1, newstatedeaths: $newstatedeaths1),
+            clean(county: $county2, state: $state2, fips: $fips2, date: $date2, lat: $lat2, lon: $lon2, cases: $cases2, deaths: $deaths2, peopletested: $peopletested2, statecases: $statecases2, statedeaths: $statedeaths2, newcases: $newcases2, newdeaths: $newdeaths2, newstatecases: $newstatecases2, newstatedeaths: $newstatedeaths2),
+                $date1 == $date2, $statedeaths1 != $statedeaths2 -> #fail. 
+
+        
+            e3: clean(county: $county1, state: $state1, fips: $fips1, date: $date1, lat: $lat1, lon: $lon1, cases: $cases1, deaths: $deaths1, peopletested: $peopletested1, statecases: $statecases1, statedeaths: $statedeaths1, newcases: $newcases1, newdeaths: $newdeaths1, newstatecases: $newstatecases1, newstatedeaths: $newstatedeaths1),
+            clean(county: $county2, state: $state2, fips: $fips2, date: $date2, lat: $lat2, lon: $lon2, cases: $cases2, deaths: $deaths2, peopletested: $peopletested2, statecases: $statecases2, statedeaths: $statedeaths2, newcases: $newcases2, newdeaths: $newdeaths2, newstatecases: $newstatecases2, newstatedeaths: $newstatedeaths2),
+                $date1 == $date2, $cases1 != $cases2 -> #fail. 
+
+        
+            e4: clean(county: $county1, state: $state1, fips: $fips1, date: $date1, lat: $lat1, lon: $lon1, cases: $cases1, deaths: $deaths1, peopletested: $peopletested1, statecases: $statecases1, statedeaths: $statedeaths1, newcases: $newcases1, newdeaths: $newdeaths1, newstatecases: $newstatecases1, newstatedeaths: $newstatedeaths1),
+            clean(county: $county2, state: $state2, fips: $fips2, date: $date2, lat: $lat2, lon: $lon2, cases: $cases2, deaths: $deaths2, peopletested: $peopletested2, statecases: $statecases2, statedeaths: $statedeaths2, newcases: $newcases2, newdeaths: $newdeaths2, newstatecases: $newstatecases2, newstatedeaths: $newstatedeaths2),
+                $date1 == $date2, $deaths1 != $deaths2 -> #fail. 
+
+        
+            e5: clean(county: $county1, state: $state1, fips: $fips1, date: $date1, lat: $lat1, lon: $lon1, cases: $cases1, deaths: $deaths1, peopletested: $peopletested1, statecases: $statecases1, statedeaths: $statedeaths1, newcases: $newcases1, newdeaths: $newdeaths1, newstatecases: $newstatecases1, newstatedeaths: $newstatedeaths1),
+            clean(county: $county2, state: $state2, fips: $fips2, date: $date2, lat: $lat2, lon: $lon2, cases: $cases2, deaths: $deaths2, peopletested: $peopletested2, statecases: $statecases2, statedeaths: $statedeaths2, newcases: $newcases2, newdeaths: $newdeaths2, newstatecases: $newstatecases2, newstatedeaths: $newstatedeaths2),
+                $date1 == $date2, $newstatecases1 != $newstatecases2 -> #fail. 
+
+        
+            e6: clean(county: $county1, state: $state1, fips: $fips1, date: $date1, lat: $lat1, lon: $lon1, cases: $cases1, deaths: $deaths1, peopletested: $peopletested1, statecases: $statecases1, statedeaths: $statedeaths1, newcases: $newcases1, newdeaths: $newdeaths1, newstatecases: $newstatecases1, newstatedeaths: $newstatedeaths1),
+            clean(county: $county2, state: $state2, fips: $fips2, date: $date2, lat: $lat2, lon: $lon2, cases: $cases2, deaths: $deaths2, peopletested: $peopletested2, statecases: $statecases2, statedeaths: $statedeaths2, newcases: $newcases2, newdeaths: $newdeaths2, newstatecases: $newstatecases2, newstatedeaths: $newstatedeaths2),
+                $date1 == $date2, $newcases1 != $newcases2 -> #fail. 
+
+        
+            e7: clean(county: $county1, state: $state1, fips: $fips1, date: $date1, lat: $lat1, lon: $lon1, cases: $cases1, deaths: $deaths1, peopletested: $peopletested1, statecases: $statecases1, statedeaths: $statedeaths1, newcases: $newcases1, newdeaths: $newdeaths1, newstatecases: $newstatecases1, newstatedeaths: $newstatedeaths1),
+            clean(county: $county2, state: $state2, fips: $fips2, date: $date2, lat: $lat2, lon: $lon2, cases: $cases2, deaths: $deaths2, peopletested: $peopletested2, statecases: $statecases2, statedeaths: $statedeaths2, newcases: $newcases2, newdeaths: $newdeaths2, newstatecases: $newstatecases2, newstatedeaths: $newstatedeaths2),
+                $date1 == $date2, $newstatedeaths1 != $newstatedeaths2 -> #fail. 
+
+        
+            e8: clean(county: $county1, state: $state1, fips: $fips1, date: $date1, lat: $lat1, lon: $lon1, cases: $cases1, deaths: $deaths1, peopletested: $peopletested1, statecases: $statecases1, statedeaths: $statedeaths1, newcases: $newcases1, newdeaths: $newdeaths1, newstatecases: $newstatecases1, newstatedeaths: $newstatedeaths1),
+            clean(county: $county2, state: $state2, fips: $fips2, date: $date2, lat: $lat2, lon: $lon2, cases: $cases2, deaths: $deaths2, peopletested: $peopletested2, statecases: $statecases2, statedeaths: $statedeaths2, newcases: $newcases2, newdeaths: $newdeaths2, newstatecases: $newstatecases2, newstatedeaths: $newstatedeaths2),
+                $date1 == $date2, $newdeaths1 != $newdeaths2 -> #fail. 
+
+        
+            e9: clean(county: $county1, state: $state1, fips: $fips1, date: $date1, lat: $lat1, lon: $lon1, cases: $cases1, deaths: $deaths1, peopletested: $peopletested1, statecases: $statecases1, statedeaths: $statedeaths1, newcases: $newcases1, newdeaths: $newdeaths1, newstatecases: $newstatecases1, newstatedeaths: $newstatedeaths1),
+            clean(county: $county2, state: $state2, fips: $fips2, date: $date2, lat: $lat2, lon: $lon2, cases: $cases2, deaths: $deaths2, peopletested: $peopletested2, statecases: $statecases2, statedeaths: $statedeaths2, newcases: $newcases2, newdeaths: $newdeaths2, newstatecases: $newstatecases2, newstatedeaths: $newstatedeaths2),
+                $statecases1 == $statecases2, $cases1 != $cases2 -> #fail. 
+
+        
+            e10: clean(county: $county1, state: $state1, fips: $fips1, date: $date1, lat: $lat1, lon: $lon1, cases: $cases1, deaths: $deaths1, peopletested: $peopletested1, statecases: $statecases1, statedeaths: $statedeaths1, newcases: $newcases1, newdeaths: $newdeaths1, newstatecases: $newstatecases1, newstatedeaths: $newstatedeaths1),
+            clean(county: $county2, state: $state2, fips: $fips2, date: $date2, lat: $lat2, lon: $lon2, cases: $cases2, deaths: $deaths2, peopletested: $peopletested2, statecases: $statecases2, statedeaths: $statedeaths2, newcases: $newcases2, newdeaths: $newdeaths2, newstatecases: $newstatecases2, newstatedeaths: $newstatedeaths2),
+                $statecases1 == $statecases2, $deaths1 != $deaths2 -> #fail. 
+
+        ]]></dependencies>
+
+    <!-- ****************************************************
+                      CONFIGURATION
+    **************************************************** -->
+    <configuration>
+        <!-- To print extra information in the ouput (default = false) -->
+        <printLog>true</printLog>
+
+        <!-- To load DB every time on start (default = false) -->
+        <recreateDBOnStart>true</recreateDBOnStart>
+
+        <!-- To apply the changes (default = false) -->
+        <applyCellChanges>true</applyCellChanges>
+
+        <!-- To  apply cell changes on a copy of the original target, with a custom suffix (default = true) -->
+        <cloneTargetSchema>true</cloneTargetSchema>
+        <cloneSuffix>_dirty</cloneSuffix>
+
+        <!-- To export the dirty db -->
+        <exportDirtyDB>true</exportDirtyDB>
+        <exportDirtyDBPath>./</exportDirtyDBPath>
+        <exportDirtyDBType>CSV</exportDirtyDBType>
+
+        <!-- To export the changes -->
+        <exportCellChanges>true</exportCellChanges>
+        <exportCellChangesPath>clean_changes.csv</exportCellChangesPath>
+
+        <!-- To compute an estimate of the reparability (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To generate all possible changes (default = false - slow, only for toy examples)-->
+        <generateAllChanges>false</generateAllChanges>
+
+        <!-- To avoid interactions among changes. (default = true) -->
+        <avoidInteractions>true</avoidInteractions>
+
+        <!-- To check, at the end of the process, if changes are detectable. (default = false) -->
+        <checkChanges>true</checkChanges>
+
+        <!-- To compute an estimate of the repairability. Requires checkChanges = true. (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To use an optimized strategy for updates. (default = true) -->
+        <useDeltaDBForChanges>true</useDeltaDBForChanges>
+
+        <!-- Error percentages for dependencies and comparisons 
+        All percentages are wrt table sizes (# tuples) -->
+        <errorPercentages>
+            <defaultPercentage>0.0</defaultPercentage>
+            <vioGenQueries>
+            <vioGenQuery id="e1"><comparison>(date1 == date2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e1"><comparison>(statecases1 != statecases2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(date1 == date2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(statedeaths1 != statedeaths2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(date1 == date2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(cases1 != cases2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(date1 == date2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(deaths1 != deaths2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(date1 == date2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(newstatecases1 != newstatecases2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(date1 == date2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(newcases1 != newcases2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e7"><comparison>(date1 == date2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e7"><comparison>(newstatedeaths1 != newstatedeaths2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e8"><comparison>(date1 == date2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e8"><comparison>(newdeaths1 != newdeaths2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e9"><comparison>(statecases1 == statecases2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e9"><comparison>(cases1 != cases2)</comparison><percentage>0.5128205128205128</percentage></vioGenQuery><vioGenQuery id="e10"><comparison>(statecases1 == statecases2)</comparison><percentage>0.41025641025641024</percentage></vioGenQuery><vioGenQuery id="e10"><comparison>(deaths1 != deaths2)</comparison><percentage>0.41025641025641024</percentage></vioGenQuery></vioGenQueries>
+        </errorPercentages>
+
+        <!-- To control the way in which changing the value -->
+        <dirtyStrategies>
+            <defaultStrategy>
+                <strategy> TypoRandom </strategy>
+            </defaultStrategy> 
+            <!-- possible strategies
+                <strategy chars="*" charsToAdd="3">TypoAddString</strategy>
+                <strategy chars="*" charsToAdd="3">TypoAppendString</strategy>
+                <strategy charsToRemove="3">TypoRemoveString</strategy>
+                <strategy charsToSwitch="3">TypoSwitchValue</strategy>
+                <strategy>TypoActiveDomain</strategy>
+                <strategy>TypoRandom</strategy>
+            -->
+        </dirtyStrategies>
+
+        <randomErrors>
+            <tables>
+                <table name="clean"> 
+                    <percentage>5</percentage> <!-- Percentage is wrt attributes to dirty in the table -->
+                    <attributes>
+                    <atrribute>county</atrribute><atrribute>state</atrribute><atrribute>date</atrribute></attributes>
+                </table>
+            </tables>
+        </randomErrors>
+    
+        <outlierErrors>
+            <tables>
+                <table name="clean">
+                    <attributes>
+                    <atrribute percentage="0" detectable="true">fips</atrribute><atrribute percentage="0" detectable="true">lat</atrribute><atrribute percentage="0" detectable="true">lon</atrribute><atrribute percentage="0" detectable="true">cases</atrribute><atrribute percentage="0" detectable="true">deaths</atrribute><atrribute percentage="0" detectable="true">peopletested</atrribute><atrribute percentage="0" detectable="true">statecases</atrribute><atrribute percentage="0" detectable="true">statedeaths</atrribute><atrribute percentage="0" detectable="true">newcases</atrribute><atrribute percentage="0" detectable="true">newdeaths</atrribute><atrribute percentage="0" detectable="true">newstatecases</atrribute><atrribute percentage="0" detectable="true">newstatedeaths</atrribute></attributes>
+                </table>
+            </tables>
+        </outlierErrors>
+        
+        <!-- The following parameters are used to control the sampling process.
+            All the fields are optional, but they may be crucial to obtain a good random sample.
+            In order to choose the cells to modify, BART will scan the result of a viogen query
+            using the following sampling algorithm:
+            1) First, a number of tuples are skipped. This is a random number choosed btw 
+                0 and (offsetFactor * tableSize)
+            2) Then BART will scan the result and will pickup tuples 
+            with a probability p = probabilityFactor.
+            
+            BART uses three kinds of queries
+            - Symmetric queries: for symmetric viogen queries (see paper)
+            - Inequality queries: for viogen queries without equalities (i.e. inequalities only)
+            - Standard queries: for all other viogen queries
+        -->
+        <vioGenQueriesConfiguration>
+            <!-- STANDARD QUERIES -->
+            <probabilityFactorForStandardQueries>0.25</probabilityFactorForStandardQueries>
+            <offsetFactorForStandardQueries>0.05</offsetFactorForStandardQueries>
+            <!-- SYMMETRIC QUERIES -->
+            <probabilityFactorForSymmetricQueries>0.25</probabilityFactorForSymmetricQueries>
+            <offsetFactorForSymmetricQueries>0.05</offsetFactorForSymmetricQueries>
+            <!-- INEQUALITY QUERIES -->
+            <probabilityFactorForInequalityQueries>0.05</probabilityFactorForInequalityQueries>
+            <offsetFactorForInequalityQueries>0.05</offsetFactorForInequalityQueries>
+            <windowSizeFactorForInequalityQueries>1.5</windowSizeFactorForInequalityQueries>
+        </vioGenQueriesConfiguration>
+
+    </configuration>
+</task>

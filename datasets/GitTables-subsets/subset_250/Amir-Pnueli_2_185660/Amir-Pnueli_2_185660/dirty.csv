@@ -1,0 +1,272 @@
+2019,real-time logic timed automaton
+2018,temporal logic fair discrete system
+2012,low dimensional hybrid system - decidable undecidable dont know
+2012,verification multi-linked heap
+2012,synthesis reactive1 design
+2012,
+2012,effective synthesis asynchronous system gr1 specification
+2010,towards component based design hybrid system safety stability
+2010,proving refuted symbolic model checker proof generator
+2010,temporal verification reactive system response
+2010,jtlv framework developing verification algorithm
+2010,revisiting synthesis gr1 specification
+2010,perspective system informatics 7th international andrei ershov memorial conference psi 2009 novosibirsk russia june 15-19 2009 revised paper
+2009,controller synthesis lsc requirement
+2009,synthesis program temporal property specification
+2008,sound complete deductive system ctl* verification
+2008,using abstraction verify arbitrary temporal property
+2008,checking temporal property discrete timed continuous behavior
+2008,mechanical verification transactional memory non-transactional memory access
+2008,discriminative model checking
+2008,covac compiler validation program analysis cross-product
+2008,program analysis compiler validation
+2008,merit temporal tester
+2008,need compassion
+2007,specify compile run hardware psl
+2007,modular ranking abstraction
+2007,synthesizing controller bounded-response property
+2007,interactive presentation automatic hardware synthesis specification case study
+2007,verifying correctness transactional memory
+2007,synthesizing reactive system lsc requirement using play-engine
+2007,dont care modeling logical framework developing predictive system model
+2007,shape analysis single-parent heap
+2006,reduced functional consistency uninterpreted function
+2006,monitoring interface fault
+2006,model checking strong fairness
+2006,liveness invisible ranking
+2006,psl model checking run-time verification via tester
+2006,mitl timed automaton
+2006,liveness invisible invariant
+2006,invisible safety distributed protocol
+2006,faster solution rabin streett game
+2006,ranking abstraction recursive program
+2006,synthesis reactive1 design
+2005,validating loop optimization
+2005,translation run-time validation loop transformation
+2005,bridging gap fair simulation trace inclusion
+2005,discrete-time uml semantics concurrency communication safety-critical application
+2005,compositional approach ctl* verification
+2005,ranking abstraction companion predicate abstraction 
+2005,synthesis revisited generating statechart model scenario-based requirement
+2005,verification procedural program
+2005,tvoc translation validator optimizing compiler
+2005,iiv invisible invariant verifier
+2005,real time temporal logic past present future
+2005,ranking abstraction companion predicate abstraction
+2005,refining undecidability frontier hybrid automaton
+2005,separating fairness well-foundedness analysis fair discrete system
+2005,temporal logic scenario-based specification
+2005,abstraction liveness
+2005,shape analysis predicate abstraction
+2004,model checking abstraction aid parameterized system survey
+2004,validating translation industrial optimizing compiler
+2004,range allocation separation logic
+2004,recognizable timed language
+2004,smart play-out extended time forbidden element
+2004,liveness incomprehensible ranking
+2004,deductive verification uml model tlpvs
+2004,liveness invisible ranking
+2003,erratum small model property small volume 178 number 1 2002 page 279-293
+2003,voc methodology translation validation optimizingcompilers
+2003,tlpvs pvs-based ltl verification system
+2003,bridging gap fair simulation trace inclusion
+2003,robdd size simple cnf formula
+2003,formal modeling c elegans development scenario-based approach
+2003,parameterized verification probabilistic abstraction
+2003,smart play-out
+2003,model-checking abstraction aid parameterized system
+2003,hybrid system computation control 6th international workshop hscc 2003 prague czech republic april 3-5 2003 proceeding
+2002,timec time constraint language ilp processor compilation
+2002,voc translation validator optimizing compiler
+2002,translation run-time validation optimized code
+2002,small model property small
+2002,complete proof system qptl
+2002,validating software pipelining optimization
+2002,liveness 0 1 infty-counter abstraction
+2002,deductive proof system ctl
+2002,network invariant action
+2002,embedded system challenge specification verification
+2002,smart play-out behavioral requirement
+2002,understanding uml formal semantics concurrency communication real-time uml
+2002,application formal method biology
+2002,automatic verification probabilistic free choice
+2001,verification augmented abstraction automata-theoretic view
+2001,symbolic model checking rich assertional language
+2001,scheduling time-constrained instruction pipelined processor
+2001,parameterized verification automatically computed inductive assertion
+2001,beyond regular model checking
+2001,falsification verification
+2001,range allocation equivalence logic
+2001,stick stone coding scheme parameterized verification
+2001,automatic deductive verification invisible invariant
+2000,verification clocked hybrid system
+2000,verification augmented finitary abstraction
+2000,propositional temporal logic decidability completeness
+2000,control data abstraction cornerstone practical formal verification
+2000,rigorous development embedded system
+2000,keynote address abstraction composition symmetry little deduction remedy state explosion
+2000,liveness acceleration parameterized verification
+2000,formal verification ricart-agrawala algorithm
+2000,comparison two verification method speculative instruction execution
+1999,proving refinement using transduction
+1999,decidable integration graph
+1999,translation validation signal c
+1999,deciding equality formula small domain instantiation
+1999,verifying liveness augmented abstraction
+1999,perfect verification combining model checking deductive analysis verify real-life software
+1999,orthogonal polyhedron representation computation
+1999,framework scheduler synthesis
+1999,verifying tomasulos algoithm refinement
+1998,code validation tool cvt automatic verification compilation process
+1998,fast algorithm scheduling time-constrained instruction processor ilp
+1998,deductive v model-theoretic approach formal verification abstract invited talk
+1998,herbrand automaton hardware verification
+1998,discretization delay timed automaton digital circuit
+1998,translation validation dc+ c*
+1998,verification data-insensitive circuit in-order-retirement case study
+1998,fair synchronous transition system liveness proof
+1998,algorithmic verification linear temporal logic specification
+1998,translation validation synchronous language
+1998,modularization abstraction key practical formal verification
+1998,translation validation
+1998,compositionality significant difference international symposium compos97 bad malente germany september 8-12 1997 revised lecture
+1997,progress symbolic verification timed automaton
+1997,symbolic model checking rich ssertional language
+1997,verifying out-of-order execution
+1997,compositional real-time semantics statemate design
+1997,two decade temporal logic achievement challenge abstract
+1997,verifying liveness property reactive system tutorial abstract
+1997,data-structures verification timed automaton
+1997,verification engineering future profession turing award lecture
+1996,using ghost variable prove refinement
+1996,platform combining deductive algorithmic verification
+1996,verification clocked hybrid system
+1995,temporal verification reactive system - safety
+1995,learnability infinitary regular set
+1995,reachability analysis dynamical system piecewise-constant derivative
+1995,timing analysis asynchronous circuit using timed automaton
+1995,verifying clocked transition system
+1995,complete proof system qptl
+1995,
+1995,synthesis discrete controller timed system extended abstract
+1994,temporal proof methodology timed transition system
+1994,proving partial order property
+1994,development hybrid system
+1994,prooving safety property hybrid system
+1994,symbolic controller synthesis discrete timed system
+1994,compositional verification real-time system
+1994,temporal verification diagram
+1993,model reactivity
+1993,probabilistic verification
+1993,decision algorithm full propositional temporal logic
+1993,reachability analysis planar multi-limear system
+1993,temporal logic
+1993,temporal verification simulation refinement
+1993,verification parameterized program
+1992,temporal logic reactive concurrent system - specification
+1992,vital liveness verifying timing property reactive hybrid system extended abstract
+1992,system specification refinement temporal logic
+1992,timed hybrid statecharts textual representation
+1992,verifying hybrid system
+1992,towards refining temporal specification hybrid system
+1992,integration graph class decidable hybrid system
+1992,characterization temporal property class
+1992,good digital clock
+1992,time concurrency
+1992,temporal proof methodology reactive system
+1991,completing temporal picture
+1991,learnability infinitary regular set
+1991,specifying proving serializability temporal logic
+1991,faithfulness formal model
+1991,communication directed logic variable
+1991,temporal proof methodology real-time system
+1991,timed transition system
+1991,timed hybrid system
+1991,step semantics statecharts
+1990,statemate working environment development complex reactive system
+1990,tight bound complexity cascaded decomposition automaton
+1990,distributed reactive system hard synthesize
+1990,proving partial order liveness property
+1990,interleaving model real-time
+1990,temporal proof methodology reactive system
+1990,explicit clock temporal logic
+1990,hierarchy temporal property
+1989,learning omega-regular language query counter-examples preliminary report
+1989,completing temporal picture
+1989,synthesis asynchronous reactive module
+1989,specification verification vlsi system
+1989,synthesis reactive module
+1989,temporal logic specification altrincham uk april 8-10 1987 proceeding
+1988,grammar dimension machine drawing
+1988,framework synthesis reactive module
+1988,application temporal logic specification real-time system
+1988,statemate working environment development complex reactive system
+1988,anchored version temporal framework
+1987,high level concurrent programming
+1987,formal semantics statecharts extended abstract
+1987,hierarchy temporal property abstract
+1987,specification verification concurrent program forall-automata
+1987,specification implementation concurrently accessed data structure abstract data type approach
+1987,specification verification concurrent program forall-automata
+1986,verification multiprocess probabilistic protocol
+1986,specification development reactive system invited paper
+1986,choppy logic
+1986,probabilistic verification tableau
+1986,really abstract concurrent model temporal logic
+1986,application temporal logic specification verification reactive system survey current trend
+1985,linear branching structure semantics logic reactive system
+1985,proving termination prolog program
+1985,glory past
+1985,checking finite state concurrent program satisfy linear specification
+1984,adequate proof principle invariance liveness property concurrent program
+1984,verification probabilistic program
+1984,interesting part process logic uninteresting translation pl pdl
+1984,linear-history semantics language distributed programming
+1984,fair termination revisited-with delay
+1984,symmetric economical solution mutual exclusion problem distributed system
+1984,automatic program generation distributed cooperative computation
+1984,scope static checking definitional language
+1984,hardware implementation csp primitive verification
+1984,verification multiprocess probabilistic protocol
+1984,temporal verification carrier-sense local area network protocol
+1984,may compose temporal logic specification
+1983,temporal logic branching time
+1983,propositional dynamic logic nonregular program
+1983,termination probabilistic concurrent program
+1983,compilation nonprocedural specification computer program
+1983,solution problem no2
+1983,symmetric economical solution mutual exclusion problem distributed system extended abstract
+1983,proving precedence property temporal way
+1983,exit decidable context free propositional dynamic logic
+1983,cook temporal proof system pet language
+1983,extremely fair treatment probabilistic algorithm
+1982,deterministic propositional dynamic logic finite model complexity completeness
+1982,termination probabilistic concurrent program
+1982,interesting part process logic uninteresting - translation pl pdl
+1981,automatic programming finite state linear program
+1981,temporal semantics concurrent program
+1981,propositional dynamic logic context-free program
+1981,finite model deterministic propositional dynamic logic
+1981,impartiality justice fairness ethic concurrent termination
+1981,realizing equational specification
+1981,result propositional dynamic logic nonregular program
+1981,verification concurrent program temporal proof principle
+1981,temporal logic branching time
+1980,linear history semantics distributed language extended abstract
+1980,synchronous scheme decision problem
+1980,temporal basis fairness
+1979,use nonprocedural specification language associated program generator software development
+1979,modal logic program
+1979,temporal semantics concurrent program
+1978,proof method cyclic program
+1977,backtracking recursive computation
+1977,direct algorithm checking equivalence llk grammar
+1977,temporal logic program
+1977,simple program decision problem
+1977,complete axiomatic system proving deduction recursive program
+1974,axiomatic approach total correctness program
+1973,decidable property monadic functional schema
+1972,permutation graph transitive graph
+1971,marked directed graph
+1970,formalization property functional program
+1969,formalization property recursively defined function

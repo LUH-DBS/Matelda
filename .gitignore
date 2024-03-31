@@ -14,15 +14,18 @@ data-dgov
 output-dgov
 data-git
 output*
+datasets/Typos*
 config-*
 ocg-otg
 data-toy
-Kaggle*
+data-kaggle
 git-2-tables
-Quintet*
+DGov*
 dgov*
-data-
 Dgov*
+results-finished
+datasets/toy_dataset*
+raha_test_toy
 # Created by https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,visualstudiocode,jetbrains+all,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks,visualstudiocode,jetbrains+all,vim
 

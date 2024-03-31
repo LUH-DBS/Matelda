@@ -1,0 +1,229 @@
+<task>
+    <!-- ****************************************************
+                      DATABASES
+    **************************************************** -->
+    <target> 
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql://localhost:5433/bartdb</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>postgres</password>
+        </access-configuration>
+        <import>
+            <input type="csv" separator="," table="clean">/home/fatemeh/ED-Scale/Sandbox_Generation/metanome_input_files/processed/data_gov_bldg_rexus/clean.csv</input>
+        </import>
+    </target>
+
+    <!-- ****************************************************
+                    DEPENDENCIES
+    **************************************************** -->
+    <dependencies><![CDATA[DCs: 
+
+            e1: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $bldg_address_one1 != $bldg_address_one2 -> #fail. 
+
+        
+            e2: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $bldg_zip1 != $bldg_zip2 -> #fail. 
+
+        
+            e3: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $bldgansi_usable1 != $bldgansi_usable2 -> #fail. 
+
+        
+            e4: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $bldg_city1 != $bldg_city2 -> #fail. 
+
+        
+            e5: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $construction_date1 != $construction_date2 -> #fail. 
+
+        
+            e6: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $bldg_county1 != $bldg_county2 -> #fail. 
+
+        
+            e7: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $bldg_address_two1 != $bldg_address_two2 -> #fail. 
+
+        
+            e8: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $total_parking_spaces1 != $total_parking_spaces2 -> #fail. 
+
+        
+            e9: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $bldg_state1 != $bldg_state2 -> #fail. 
+
+        
+            e10: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $congressional_district1 != $congressional_district2 -> #fail. 
+
+        
+            e11: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $region_code1 != $region_code2 -> #fail. 
+
+        
+            e12: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $historical_status1 != $historical_status2 -> #fail. 
+
+        
+            e13: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $bldg_status1 != $bldg_status2 -> #fail. 
+
+        
+            e14: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $property_type1 != $property_type2 -> #fail. 
+
+        
+            e15: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $historical_type1 != $historical_type2 -> #fail. 
+
+        
+            e16: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $aba_accessibility_flag1 != $aba_accessibility_flag2 -> #fail. 
+
+        
+            e17: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $location_code1 == $location_code2, $owned_leased1 != $owned_leased2 -> #fail. 
+
+        
+            e18: clean(location_code: $location_code1, region_code: $region_code1, bldg_address_one: $bldg_address_one1, bldg_address_two: $bldg_address_two1, bldg_city: $bldg_city1, bldg_county: $bldg_county1, bldg_state: $bldg_state1, bldg_zip: $bldg_zip1, congressional_district: $congressional_district1, bldg_status: $bldg_status1, property_type: $property_type1, bldgansi_usable: $bldgansi_usable1, total_parking_spaces: $total_parking_spaces1, owned_leased: $owned_leased1, construction_date: $construction_date1, historical_type: $historical_type1, historical_status: $historical_status1, aba_accessibility_flag: $aba_accessibility_flag1),
+            clean(location_code: $location_code2, region_code: $region_code2, bldg_address_one: $bldg_address_one2, bldg_address_two: $bldg_address_two2, bldg_city: $bldg_city2, bldg_county: $bldg_county2, bldg_state: $bldg_state2, bldg_zip: $bldg_zip2, congressional_district: $congressional_district2, bldg_status: $bldg_status2, property_type: $property_type2, bldgansi_usable: $bldgansi_usable2, total_parking_spaces: $total_parking_spaces2, owned_leased: $owned_leased2, construction_date: $construction_date2, historical_type: $historical_type2, historical_status: $historical_status2, aba_accessibility_flag: $aba_accessibility_flag2),
+                $bldg_address_one1 == $bldg_address_one2, $historical_type1 != $historical_type2 -> #fail. 
+
+        ]]></dependencies>
+
+    <!-- ****************************************************
+                      CONFIGURATION
+    **************************************************** -->
+    <configuration>
+        <!-- To print extra information in the ouput (default = false) -->
+        <printLog>true</printLog>
+
+        <!-- To load DB every time on start (default = false) -->
+        <recreateDBOnStart>true</recreateDBOnStart>
+
+        <!-- To apply the changes (default = false) -->
+        <applyCellChanges>true</applyCellChanges>
+
+        <!-- To  apply cell changes on a copy of the original target, with a custom suffix (default = true) -->
+        <cloneTargetSchema>true</cloneTargetSchema>
+        <cloneSuffix>_dirty</cloneSuffix>
+
+        <!-- To export the dirty db -->
+        <exportDirtyDB>true</exportDirtyDB>
+        <exportDirtyDBPath>./</exportDirtyDBPath>
+        <exportDirtyDBType>CSV</exportDirtyDBType>
+
+        <!-- To export the changes -->
+        <exportCellChanges>true</exportCellChanges>
+        <exportCellChangesPath>clean_changes.csv</exportCellChangesPath>
+
+        <!-- To compute an estimate of the reparability (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To generate all possible changes (default = false - slow, only for toy examples)-->
+        <generateAllChanges>false</generateAllChanges>
+
+        <!-- To avoid interactions among changes. (default = true) -->
+        <avoidInteractions>true</avoidInteractions>
+
+        <!-- To check, at the end of the process, if changes are detectable. (default = false) -->
+        <checkChanges>true</checkChanges>
+
+        <!-- To compute an estimate of the repairability. Requires checkChanges = true. (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To use an optimized strategy for updates. (default = true) -->
+        <useDeltaDBForChanges>true</useDeltaDBForChanges>
+
+        <!-- Error percentages for dependencies and comparisons 
+        All percentages are wrt table sizes (# tuples) -->
+        <errorPercentages>
+            <defaultPercentage>0.0</defaultPercentage>
+            <vioGenQueries>
+            <vioGenQuery id="e1"><comparison>(location_code1 == location_code2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e1"><comparison>(bldg_address_one1 != bldg_address_one2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(location_code1 == location_code2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(bldg_zip1 != bldg_zip2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(location_code1 == location_code2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(bldgansi_usable1 != bldgansi_usable2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(location_code1 == location_code2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(bldg_city1 != bldg_city2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(location_code1 == location_code2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(construction_date1 != construction_date2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(location_code1 == location_code2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(bldg_county1 != bldg_county2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e7"><comparison>(location_code1 == location_code2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e7"><comparison>(bldg_address_two1 != bldg_address_two2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e8"><comparison>(location_code1 == location_code2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e8"><comparison>(total_parking_spaces1 != total_parking_spaces2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e9"><comparison>(location_code1 == location_code2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e9"><comparison>(bldg_state1 != bldg_state2)</comparison><percentage>0.39467749210645</percentage></vioGenQuery><vioGenQuery id="e10"><comparison>(location_code1 == location_code2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e10"><comparison>(congressional_district1 != congressional_district2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e11"><comparison>(location_code1 == location_code2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e11"><comparison>(region_code1 != region_code2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e12"><comparison>(location_code1 == location_code2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e12"><comparison>(historical_status1 != historical_status2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e13"><comparison>(location_code1 == location_code2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e13"><comparison>(bldg_status1 != bldg_status2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e14"><comparison>(location_code1 == location_code2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e14"><comparison>(property_type1 != property_type2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e15"><comparison>(location_code1 == location_code2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e15"><comparison>(historical_type1 != historical_type2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e16"><comparison>(location_code1 == location_code2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e16"><comparison>(aba_accessibility_flag1 != aba_accessibility_flag2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e17"><comparison>(location_code1 == location_code2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e17"><comparison>(owned_leased1 != owned_leased2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e18"><comparison>(bldg_address_one1 == bldg_address_one2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery><vioGenQuery id="e18"><comparison>(historical_type1 != historical_type2)</comparison><percentage>0.38340099233198</percentage></vioGenQuery></vioGenQueries>
+        </errorPercentages>
+
+        <!-- To control the way in which changing the value -->
+        <dirtyStrategies>
+            <defaultStrategy>
+                <strategy> TypoRandom </strategy>
+            </defaultStrategy> 
+            <!-- possible strategies
+                <strategy chars="*" charsToAdd="3">TypoAddString</strategy>
+                <strategy chars="*" charsToAdd="3">TypoAppendString</strategy>
+                <strategy charsToRemove="3">TypoRemoveString</strategy>
+                <strategy charsToSwitch="3">TypoSwitchValue</strategy>
+                <strategy>TypoActiveDomain</strategy>
+                <strategy>TypoRandom</strategy>
+            -->
+        </dirtyStrategies>
+
+        <randomErrors>
+            <tables>
+                <table name="clean"> 
+                    <percentage>8</percentage> <!-- Percentage is wrt attributes to dirty in the table -->
+                    <attributes>
+                    <atrribute>location_code</atrribute><atrribute>bldg_address_one</atrribute><atrribute>bldg_address_two</atrribute><atrribute>bldg_city</atrribute><atrribute>bldg_county</atrribute><atrribute>bldg_state</atrribute><atrribute>congressional_district</atrribute><atrribute>bldg_status</atrribute><atrribute>property_type</atrribute><atrribute>owned_leased</atrribute><atrribute>construction_date</atrribute><atrribute>historical_type</atrribute><atrribute>historical_status</atrribute><atrribute>aba_accessibility_flag</atrribute></attributes>
+                </table>
+            </tables>
+        </randomErrors>
+    
+        <outlierErrors>
+            <tables>
+                <table name="clean">
+                    <attributes>
+                    <atrribute percentage="1" detectable="true">region_code</atrribute><atrribute percentage="1" detectable="true">bldg_zip</atrribute><atrribute percentage="1" detectable="true">bldgansi_usable</atrribute><atrribute percentage="1" detectable="true">total_parking_spaces</atrribute></attributes>
+                </table>
+            </tables>
+        </outlierErrors>
+        
+        <!-- The following parameters are used to control the sampling process.
+            All the fields are optional, but they may be crucial to obtain a good random sample.
+            In order to choose the cells to modify, BART will scan the result of a viogen query
+            using the following sampling algorithm:
+            1) First, a number of tuples are skipped. This is a random number choosed btw 
+                0 and (offsetFactor * tableSize)
+            2) Then BART will scan the result and will pickup tuples 
+            with a probability p = probabilityFactor.
+            
+            BART uses three kinds of queries
+            - Symmetric queries: for symmetric viogen queries (see paper)
+            - Inequality queries: for viogen queries without equalities (i.e. inequalities only)
+            - Standard queries: for all other viogen queries
+        -->
+        <vioGenQueriesConfiguration>
+            <!-- STANDARD QUERIES -->
+            <probabilityFactorForStandardQueries>0.25</probabilityFactorForStandardQueries>
+            <offsetFactorForStandardQueries>0.05</offsetFactorForStandardQueries>
+            <!-- SYMMETRIC QUERIES -->
+            <probabilityFactorForSymmetricQueries>0.25</probabilityFactorForSymmetricQueries>
+            <offsetFactorForSymmetricQueries>0.05</offsetFactorForSymmetricQueries>
+            <!-- INEQUALITY QUERIES -->
+            <probabilityFactorForInequalityQueries>0.05</probabilityFactorForInequalityQueries>
+            <offsetFactorForInequalityQueries>0.05</offsetFactorForInequalityQueries>
+            <windowSizeFactorForInequalityQueries>1.5</windowSizeFactorForInequalityQueries>
+        </vioGenQueriesConfiguration>
+
+    </configuration>
+</task>

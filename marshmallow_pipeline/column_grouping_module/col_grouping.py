@@ -1,10 +1,14 @@
 import logging
 import os
 import pickle
+import numpy as np
 
 from sklearn.cluster import AgglomerativeClustering, MiniBatchKMeans
 from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.impute import SimpleImputer
+
+from scipy.spatial import distance
 
 from marshmallow_pipeline.column_grouping_module.chartypes_distributions_features import (
     CharTypeDistribution,
@@ -15,7 +19,6 @@ from marshmallow_pipeline.column_grouping_module.data_type_features import (
 from marshmallow_pipeline.column_grouping_module.value_length_features import (
     ValueLengthStats,
 )
-
 
 def col_grouping(
     table_group, cols, max_n_col_groups, mediate_files_path, cg_enabled, col_grouping_alg, n_cores
@@ -36,7 +39,7 @@ def col_grouping(
         A dataframe of features
 
     """
-
+    
     if cg_enabled:
         logging.info("Column grouping is enabled")
         logging.info("Grouping Columns in Table Group: %s", table_group)
@@ -63,6 +66,7 @@ def col_grouping(
                     ),
                 ),
                 ("normalizer", MinMaxScaler()),
+                ("imputer", SimpleImputer())
             ]
         )
 
@@ -79,10 +83,11 @@ def col_grouping(
             else:
                 clusters = AgglomerativeClustering(n_clusters=min(max_n_col_groups, len(X))
                                                ).fit_predict(X)
+
         else:
             logging.info("The maximum number of column groups is less than 2")
             clusters = [0] * len(cols["col_value"])
-            
+
     else:
         logging.info("Column grouping is disabled")
         clusters = [0] * len(cols["col_value"])
@@ -121,6 +126,7 @@ def col_grouping(
     os.makedirs(col_grouping_res, exist_ok=True)
     os.makedirs(cols_per_clu, exist_ok=True)
     os.makedirs(col_df_res, exist_ok=True)
+
 
     with open(
         os.path.join(cols_per_clu, f"cols_per_cluster_{table_group}.pkl"), "wb+"

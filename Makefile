@@ -1,9 +1,10 @@
 run:
-	conda run --no-capture-output -n Error-Detection-at-Scale-mp python3 pipeline.py
+	conda run --no-capture-output -n Error-Detection-at-Scale-mp python pipeline.py
 
 install:
 	conda create -n Error-Detection-at-Scale-mp python=3.10
 	conda run --no-capture-output -n Error-Detection-at-Scale-mp pip install -r requirements.txt
+	conda run --no-capture-output -n Error-Detection-at-Scale-mp python -m nltk.downloader stopwords
 
 setup-santos:
 	mkdir -p marshmallow_pipeline/santos/benchmark/
@@ -19,24 +20,8 @@ setup-santos:
 	conda run --no-capture-output -n Error-Detection-at-Scale-mp python3 marshmallow_pipeline/santos/codes/Yago_subclass_extractor.py
 	conda run --no-capture-output -n Error-Detection-at-Scale-mp python3 marshmallow_pipeline/santos/codes/Yago_subclass_score.py
 
-clean-santos:
-	rm -rf marshmallow_pipeline/santos/benchmark/*
-	rm -rf marshmallow_pipeline/santos/stats/*
-	rm -rf marshmallow_pipeline/santos/hashmap/*
-	rm -rf marshmallow_pipeline/santos/groundtruth/*
-	rm -rf results
-
-clean-yago:
-	rm -rf marshmallow_pipeline/santos/yago/*
-
-clean-logs:
-	rm -rf marshmallow_pipeline/logs
-	rm -rf logs
-
-clean-all: clean-santos clean-yago clean-logs
-
 uninstall:
 	conda remove -n Error-Detection-at-Scale-mp --all
 
-.PHONY: run, install, uninstall, setup-santos, clean-santos, clean-logs, clean-all, clean-yago
+.PHONY: run, install, uninstall, setup-santos
 .DEFAULT_GOAL := run

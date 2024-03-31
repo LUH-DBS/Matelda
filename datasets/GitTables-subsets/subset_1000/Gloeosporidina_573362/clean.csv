@@ -1,0 +1,9 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+9f623966-9bad-11eb-a8a2-19ed5c03f8d3,genus,Gloeosporidina,,,Petr.,Q4360385,1921,,"Annls mycol. 19(3/4): 214 (1921)",,,,9f623966-9bad-11eb-a8a2-19ed5c03f8d3,,,,,8353," "
+2e274af8-9bac-11eb-a8a2-19ed5c03f8d3,species,canthiicola,Gloeosporidina,,"B. Sutton",,1980,,"The Coelomycetes (Kew) 519 (1980)",,,,2e274af8-9bac-11eb-a8a2-19ed5c03f8d3,,,,,116282," "
+2e277190-9bac-11eb-a8a2-19ed5c03f8d3,species,cecidii,Gloeosporidina,,"(Kohlm.) B. Sutton",,1980,,"The Coelomycetes (Kew) 517 (1980)",,,,160fb148-9bad-11eb-a8a2-19ed5c03f8d3,,,,,116283," "
+0e9f48ba-9bad-11eb-a8a2-19ed5c03f8d3,species,cercocarpi,Gloeosporidina,,"(Ellis & Everh.) B. Sutton & Pollack",Q6206643,,,"Mycologia 65(5): 1133 (1973)",,,,37b26300-9bac-11eb-a8a2-19ed5c03f8d3,,,,,314557," "
+36038e7a-9bad-11eb-a8a2-19ed5c03f8d3,species,cryptomeriae,Gloeosporidina,,Kubono,,1993,,"Trans. Mycol. Soc. Japan 34(2): 264 (1993)",,,,36038e7a-9bad-11eb-a8a2-19ed5c03f8d3,,,,,361901," "
+317d6998-9bad-11eb-a8a2-19ed5c03f8d3,species,lasiopetali,Gloeosporidina,,"B. Sutton",,1991,,"Sydowia (1991)",,,,317d6998-9bad-11eb-a8a2-19ed5c03f8d3,,,,,355155," "
+4b5dc3fe-9bac-11eb-a8a2-19ed5c03f8d3,species,moravica,Gloeosporidina,,Petr.,Q4360385,1921,,"Annls mycol. 19(3/4): 214 (1921)",,,,4b5dc3fe-9bac-11eb-a8a2-19ed5c03f8d3,,,,,222145," "
+58af1de0-9bad-11eb-a8a2-19ed5c03f8d3,species,platani,Gloeosporidina,,"Butin & Kehr",,1998,,"Eur. J. For. Path. 28(5): 299 (1998)",,,,58af1de0-9bad-11eb-a8a2-19ed5c03f8d3,,,,,444901," "

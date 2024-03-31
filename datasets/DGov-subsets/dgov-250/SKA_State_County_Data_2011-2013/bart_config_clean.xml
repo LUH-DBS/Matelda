@@ -1,0 +1,174 @@
+<task>
+    <!-- ****************************************************
+                      DATABASES
+    **************************************************** -->
+    <target> 
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql://localhost:5433/bartdb</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>postgres</password>
+        </access-configuration>
+        <import>
+            <input type="csv" separator="," table="clean">/home/fatemeh/ED-Scale/Sandbox_Generation/metanome_input_files/processed/SKA_State_County_Data_2011-2013/clean.csv</input>
+        </import>
+    </target>
+
+    <!-- ****************************************************
+                    DEPENDENCIES
+    **************************************************** -->
+    <dependencies><![CDATA[DCs: 
+
+            e1: clean(region: $region1, regioncode: $regioncode1, period: $period1, statefips: $statefips1, countyfips: $countyfips1, fips: $fips1, allproviders: $allproviders1, allprimarycareproviders: $allprimarycareproviders1, allphysicians: $allphysicians1, allprimarycarephysicians: $allprimarycarephysicians1, allnursepractitioners: $allnursepractitioners1, allprimarycarenursepractitioners: $allprimarycarenursepractitioners1, allphysicianassistants: $allphysicianassistants1, allprimarycarephysicianassistants: $allprimarycarephysicianassistants1),
+            clean(region: $region2, regioncode: $regioncode2, period: $period2, statefips: $statefips2, countyfips: $countyfips2, fips: $fips2, allproviders: $allproviders2, allprimarycareproviders: $allprimarycareproviders2, allphysicians: $allphysicians2, allprimarycarephysicians: $allprimarycarephysicians2, allnursepractitioners: $allnursepractitioners2, allprimarycarenursepractitioners: $allprimarycarenursepractitioners2, allphysicianassistants: $allphysicianassistants2, allprimarycarephysicianassistants: $allprimarycarephysicianassistants2),
+                $fips1 == $fips2, $countyfips1 != $countyfips2 -> #fail. 
+
+        
+            e2: clean(region: $region1, regioncode: $regioncode1, period: $period1, statefips: $statefips1, countyfips: $countyfips1, fips: $fips1, allproviders: $allproviders1, allprimarycareproviders: $allprimarycareproviders1, allphysicians: $allphysicians1, allprimarycarephysicians: $allprimarycarephysicians1, allnursepractitioners: $allnursepractitioners1, allprimarycarenursepractitioners: $allprimarycarenursepractitioners1, allphysicianassistants: $allphysicianassistants1, allprimarycarephysicianassistants: $allprimarycarephysicianassistants1),
+            clean(region: $region2, regioncode: $regioncode2, period: $period2, statefips: $statefips2, countyfips: $countyfips2, fips: $fips2, allproviders: $allproviders2, allprimarycareproviders: $allprimarycareproviders2, allphysicians: $allphysicians2, allprimarycarephysicians: $allprimarycarephysicians2, allnursepractitioners: $allnursepractitioners2, allprimarycarenursepractitioners: $allprimarycarenursepractitioners2, allphysicianassistants: $allphysicianassistants2, allprimarycarephysicianassistants: $allprimarycarephysicianassistants2),
+                $region1 == $region2, $regioncode1 != $regioncode2 -> #fail. 
+
+        
+            e3: clean(region: $region1, regioncode: $regioncode1, period: $period1, statefips: $statefips1, countyfips: $countyfips1, fips: $fips1, allproviders: $allproviders1, allprimarycareproviders: $allprimarycareproviders1, allphysicians: $allphysicians1, allprimarycarephysicians: $allprimarycarephysicians1, allnursepractitioners: $allnursepractitioners1, allprimarycarenursepractitioners: $allprimarycarenursepractitioners1, allphysicianassistants: $allphysicianassistants1, allprimarycarephysicianassistants: $allprimarycarephysicianassistants1),
+            clean(region: $region2, regioncode: $regioncode2, period: $period2, statefips: $statefips2, countyfips: $countyfips2, fips: $fips2, allproviders: $allproviders2, allprimarycareproviders: $allprimarycareproviders2, allphysicians: $allphysicians2, allprimarycarephysicians: $allprimarycarephysicians2, allnursepractitioners: $allnursepractitioners2, allprimarycarenursepractitioners: $allprimarycarenursepractitioners2, allphysicianassistants: $allphysicianassistants2, allprimarycarephysicianassistants: $allprimarycarephysicianassistants2),
+                $region1 == $region2, $statefips1 != $statefips2 -> #fail. 
+
+        
+            e4: clean(region: $region1, regioncode: $regioncode1, period: $period1, statefips: $statefips1, countyfips: $countyfips1, fips: $fips1, allproviders: $allproviders1, allprimarycareproviders: $allprimarycareproviders1, allphysicians: $allphysicians1, allprimarycarephysicians: $allprimarycarephysicians1, allnursepractitioners: $allnursepractitioners1, allprimarycarenursepractitioners: $allprimarycarenursepractitioners1, allphysicianassistants: $allphysicianassistants1, allprimarycarephysicianassistants: $allprimarycarephysicianassistants1),
+            clean(region: $region2, regioncode: $regioncode2, period: $period2, statefips: $statefips2, countyfips: $countyfips2, fips: $fips2, allproviders: $allproviders2, allprimarycareproviders: $allprimarycareproviders2, allphysicians: $allphysicians2, allprimarycarephysicians: $allprimarycarephysicians2, allnursepractitioners: $allnursepractitioners2, allprimarycarenursepractitioners: $allprimarycarenursepractitioners2, allphysicianassistants: $allphysicianassistants2, allprimarycarephysicianassistants: $allprimarycarephysicianassistants2),
+                $regioncode1 == $regioncode2, $region1 != $region2 -> #fail. 
+
+        
+            e5: clean(region: $region1, regioncode: $regioncode1, period: $period1, statefips: $statefips1, countyfips: $countyfips1, fips: $fips1, allproviders: $allproviders1, allprimarycareproviders: $allprimarycareproviders1, allphysicians: $allphysicians1, allprimarycarephysicians: $allprimarycarephysicians1, allnursepractitioners: $allnursepractitioners1, allprimarycarenursepractitioners: $allprimarycarenursepractitioners1, allphysicianassistants: $allphysicianassistants1, allprimarycarephysicianassistants: $allprimarycarephysicianassistants1),
+            clean(region: $region2, regioncode: $regioncode2, period: $period2, statefips: $statefips2, countyfips: $countyfips2, fips: $fips2, allproviders: $allproviders2, allprimarycareproviders: $allprimarycareproviders2, allphysicians: $allphysicians2, allprimarycarephysicians: $allprimarycarephysicians2, allnursepractitioners: $allnursepractitioners2, allprimarycarenursepractitioners: $allprimarycarenursepractitioners2, allphysicianassistants: $allphysicianassistants2, allprimarycarephysicianassistants: $allprimarycarephysicianassistants2),
+                $regioncode1 == $regioncode2, $statefips1 != $statefips2 -> #fail. 
+
+        
+            e6: clean(region: $region1, regioncode: $regioncode1, period: $period1, statefips: $statefips1, countyfips: $countyfips1, fips: $fips1, allproviders: $allproviders1, allprimarycareproviders: $allprimarycareproviders1, allphysicians: $allphysicians1, allprimarycarephysicians: $allprimarycarephysicians1, allnursepractitioners: $allnursepractitioners1, allprimarycarenursepractitioners: $allprimarycarenursepractitioners1, allphysicianassistants: $allphysicianassistants1, allprimarycarephysicianassistants: $allprimarycarephysicianassistants1),
+            clean(region: $region2, regioncode: $regioncode2, period: $period2, statefips: $statefips2, countyfips: $countyfips2, fips: $fips2, allproviders: $allproviders2, allprimarycareproviders: $allprimarycareproviders2, allphysicians: $allphysicians2, allprimarycarephysicians: $allprimarycarephysicians2, allnursepractitioners: $allnursepractitioners2, allprimarycarenursepractitioners: $allprimarycarenursepractitioners2, allphysicianassistants: $allphysicianassistants2, allprimarycarephysicianassistants: $allprimarycarephysicianassistants2),
+                $statefips1 == $statefips2, $region1 != $region2 -> #fail. 
+
+        
+            e7: clean(region: $region1, regioncode: $regioncode1, period: $period1, statefips: $statefips1, countyfips: $countyfips1, fips: $fips1, allproviders: $allproviders1, allprimarycareproviders: $allprimarycareproviders1, allphysicians: $allphysicians1, allprimarycarephysicians: $allprimarycarephysicians1, allnursepractitioners: $allnursepractitioners1, allprimarycarenursepractitioners: $allprimarycarenursepractitioners1, allphysicianassistants: $allphysicianassistants1, allprimarycarephysicianassistants: $allprimarycarephysicianassistants1),
+            clean(region: $region2, regioncode: $regioncode2, period: $period2, statefips: $statefips2, countyfips: $countyfips2, fips: $fips2, allproviders: $allproviders2, allprimarycareproviders: $allprimarycareproviders2, allphysicians: $allphysicians2, allprimarycarephysicians: $allprimarycarephysicians2, allnursepractitioners: $allnursepractitioners2, allprimarycarenursepractitioners: $allprimarycarenursepractitioners2, allphysicianassistants: $allphysicianassistants2, allprimarycarephysicianassistants: $allprimarycarephysicianassistants2),
+                $statefips1 == $statefips2, $regioncode1 != $regioncode2 -> #fail. 
+
+        ]]></dependencies>
+
+    <!-- ****************************************************
+                      CONFIGURATION
+    **************************************************** -->
+    <configuration>
+        <!-- To print extra information in the ouput (default = false) -->
+        <printLog>true</printLog>
+
+        <!-- To load DB every time on start (default = false) -->
+        <recreateDBOnStart>true</recreateDBOnStart>
+
+        <!-- To apply the changes (default = false) -->
+        <applyCellChanges>true</applyCellChanges>
+
+        <!-- To  apply cell changes on a copy of the original target, with a custom suffix (default = true) -->
+        <cloneTargetSchema>true</cloneTargetSchema>
+        <cloneSuffix>_dirty</cloneSuffix>
+
+        <!-- To export the dirty db -->
+        <exportDirtyDB>true</exportDirtyDB>
+        <exportDirtyDBPath>./</exportDirtyDBPath>
+        <exportDirtyDBType>CSV</exportDirtyDBType>
+
+        <!-- To export the changes -->
+        <exportCellChanges>true</exportCellChanges>
+        <exportCellChangesPath>clean_changes.csv</exportCellChangesPath>
+
+        <!-- To compute an estimate of the reparability (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To generate all possible changes (default = false - slow, only for toy examples)-->
+        <generateAllChanges>false</generateAllChanges>
+
+        <!-- To avoid interactions among changes. (default = true) -->
+        <avoidInteractions>true</avoidInteractions>
+
+        <!-- To check, at the end of the process, if changes are detectable. (default = false) -->
+        <checkChanges>true</checkChanges>
+
+        <!-- To compute an estimate of the repairability. Requires checkChanges = true. (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To use an optimized strategy for updates. (default = true) -->
+        <useDeltaDBForChanges>true</useDeltaDBForChanges>
+
+        <!-- Error percentages for dependencies and comparisons 
+        All percentages are wrt table sizes (# tuples) -->
+        <errorPercentages>
+            <defaultPercentage>0.0</defaultPercentage>
+            <vioGenQueries>
+            <vioGenQuery id="e1"><comparison>(fips1 == fips2)</comparison><percentage>0.14632107023411367</percentage></vioGenQuery><vioGenQuery id="e1"><comparison>(countyfips1 != countyfips2)</comparison><percentage>0.14632107023411367</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(region1 == region2)</comparison><percentage>0.14632107023411367</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(regioncode1 != regioncode2)</comparison><percentage>0.14632107023411367</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(region1 == region2)</comparison><percentage>0.14632107023411367</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(statefips1 != statefips2)</comparison><percentage>0.14632107023411367</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(regioncode1 == regioncode2)</comparison><percentage>0.14632107023411367</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(region1 != region2)</comparison><percentage>0.14632107023411367</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(regioncode1 == regioncode2)</comparison><percentage>0.14632107023411367</percentage></vioGenQuery><vioGenQuery id="e5"><comparison>(statefips1 != statefips2)</comparison><percentage>0.14632107023411367</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(statefips1 == statefips2)</comparison><percentage>0.13586956521739127</percentage></vioGenQuery><vioGenQuery id="e6"><comparison>(region1 != region2)</comparison><percentage>0.13586956521739127</percentage></vioGenQuery><vioGenQuery id="e7"><comparison>(statefips1 == statefips2)</comparison><percentage>0.13586956521739127</percentage></vioGenQuery><vioGenQuery id="e7"><comparison>(regioncode1 != regioncode2)</comparison><percentage>0.13586956521739127</percentage></vioGenQuery></vioGenQueries>
+        </errorPercentages>
+
+        <!-- To control the way in which changing the value -->
+        <dirtyStrategies>
+            <defaultStrategy>
+                <strategy> TypoRandom </strategy>
+            </defaultStrategy> 
+            <!-- possible strategies
+                <strategy chars="*" charsToAdd="3">TypoAddString</strategy>
+                <strategy chars="*" charsToAdd="3">TypoAppendString</strategy>
+                <strategy charsToRemove="3">TypoRemoveString</strategy>
+                <strategy charsToSwitch="3">TypoSwitchValue</strategy>
+                <strategy>TypoActiveDomain</strategy>
+                <strategy>TypoRandom</strategy>
+            -->
+        </dirtyStrategies>
+
+        <randomErrors>
+            <tables>
+                <table name="clean"> 
+                    <percentage>2</percentage> <!-- Percentage is wrt attributes to dirty in the table -->
+                    <attributes>
+                    <atrribute>region</atrribute><atrribute>regioncode</atrribute></attributes>
+                </table>
+            </tables>
+        </randomErrors>
+    
+        <outlierErrors>
+            <tables>
+                <table name="clean">
+                    <attributes>
+                    <atrribute percentage="0" detectable="true">period</atrribute><atrribute percentage="0" detectable="true">statefips</atrribute><atrribute percentage="0" detectable="true">countyfips</atrribute><atrribute percentage="0" detectable="true">fips</atrribute><atrribute percentage="0" detectable="true">allproviders</atrribute><atrribute percentage="0" detectable="true">allprimarycareproviders</atrribute><atrribute percentage="0" detectable="true">allphysicians</atrribute><atrribute percentage="0" detectable="true">allprimarycarephysicians</atrribute><atrribute percentage="0" detectable="true">allnursepractitioners</atrribute><atrribute percentage="0" detectable="true">allprimarycarenursepractitioners</atrribute><atrribute percentage="0" detectable="true">allphysicianassistants</atrribute><atrribute percentage="0" detectable="true">allprimarycarephysicianassistants</atrribute></attributes>
+                </table>
+            </tables>
+        </outlierErrors>
+        
+        <!-- The following parameters are used to control the sampling process.
+            All the fields are optional, but they may be crucial to obtain a good random sample.
+            In order to choose the cells to modify, BART will scan the result of a viogen query
+            using the following sampling algorithm:
+            1) First, a number of tuples are skipped. This is a random number choosed btw 
+                0 and (offsetFactor * tableSize)
+            2) Then BART will scan the result and will pickup tuples 
+            with a probability p = probabilityFactor.
+            
+            BART uses three kinds of queries
+            - Symmetric queries: for symmetric viogen queries (see paper)
+            - Inequality queries: for viogen queries without equalities (i.e. inequalities only)
+            - Standard queries: for all other viogen queries
+        -->
+        <vioGenQueriesConfiguration>
+            <!-- STANDARD QUERIES -->
+            <probabilityFactorForStandardQueries>0.25</probabilityFactorForStandardQueries>
+            <offsetFactorForStandardQueries>0.05</offsetFactorForStandardQueries>
+            <!-- SYMMETRIC QUERIES -->
+            <probabilityFactorForSymmetricQueries>0.25</probabilityFactorForSymmetricQueries>
+            <offsetFactorForSymmetricQueries>0.05</offsetFactorForSymmetricQueries>
+            <!-- INEQUALITY QUERIES -->
+            <probabilityFactorForInequalityQueries>0.05</probabilityFactorForInequalityQueries>
+            <offsetFactorForInequalityQueries>0.05</offsetFactorForInequalityQueries>
+            <windowSizeFactorForInequalityQueries>1.5</windowSizeFactorForInequalityQueries>
+        </vioGenQueriesConfiguration>
+
+    </configuration>
+</task>

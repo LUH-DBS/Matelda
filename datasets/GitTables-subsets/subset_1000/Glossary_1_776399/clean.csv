@@ -1,0 +1,105 @@
+classID,termID,term,definition
+biomechanicshelp,1,Acceleration,"The change in velocity of an object over time (either a change in speed or a change in direction of motion). Units are (See also Velocity.)
+"
+biomechanicshelp,2,Active Insufficiency,"The inability of a muscle to produce active tension because its length is too short or too long due to the position of the joint(s) it crosses. (See also Passive insufficiency.)
+"
+biomechanicshelp,3,Biomechanical Advantage,"The ability of a lever to make work ""easier""; equals the force lever arm divided by the resistance lever arm.
+"
+biomechanicshelp,4,Body Mechanic,"How well a person uses biomechanical principles in lifting, working, moving (said to be ""good"" or ""poor"")
+"
+biomechanicshelp,5,Center of Gravity,"the imaginary point of an object around which the mass is evenly distributed (for short, COG). May be inside or outside the object. (See also Line of Gravity)
+"
+biomechanicshelp,6,Closed Kinetic Chain,"when the distal end of a body part is fixed, and muscle action causes the proximal end to move (also called the reverse action for that muscle). Example: doing a pull-up, where the forearm is fixed at the wrist, and the biceps brachii pulls the upper arm upward, toward the wrist. (See also Open kinetic chain.)
+"
+biomechanicshelp,7,Composition of Forces,"adding two or more force vectors together (considering both their magnitude and their direction) to get the resultant. Example: two people are pushing from adjacent corners of a refrigerator: the resultant or outcome of their efforts is the composition of their forces. Can be found graphically by moving the point of application of one vector to the tip of the other vector without changing its direction. The tip of the moved vector indicates the tip of the resultant vector; the point of application of the unmoved vector is the point of application of the resultant vector.
+"
+biomechanicshelp,8,Compression,"a force which acts to push a material together, usually, making it shorter and wider. ""Joint compression"" means the bringing together of the two surfaces making up the joint. (See also Distraction.)
+"
+biomechanicshelp,9,Concentric,"a type of muscle contraction in which the muscle produces active tension while it is shortening. Example: the quadriceps while kicking a ball forward. (See also Eccentric and Isometric.)
+"
+biomechanicshelp,10,Concurrent,"a pattern of movement or position of a two or more joint muscle where the muscle body is lengthened over some joint(s) and shortened over the other joint(s), keeping the overall muscle at its more efficient length for producing tension. Example: with the wrist extended and the fingers flexed, the finger flexors are lengthened over the wrist and shortened over the IP and MCP joints, therefore able to produce greatest tension (in making a fist). (See also Countercurrent.)
+"
+biomechanicshelp,11,Countercurrent,"a pattern of movement or position of a two or more joint muscle where the muscle body is either lengthened over both (or all) joints, or shortened over both (or all) joints. This pattern usually produces a state of active or passive insufficiency. (See also Concurrent.)
+"
+biomechanicshelp,12,Curvilinear motion,"movement which is a combination of rotary and translatory motions (also called angular and linear motions). Example: walking, or bringing a spoon of soup to the mouth. (See also Rotary and Translatory motions.)
+"
+biomechanicshelp,13,Distraction,"a force tending to pull apart an object, usually making it longer and narrower. ""Joint distraction"" forces tend to pull the two surfaces of a body joint away from each other, as in ""traction."" (See also Compression.)
+"
+biomechanicshelp,14,Eccentric,"a type of muscle contraction in which the muscle produces tension while it is lengthening. Example: while walking downstairs the quadriceps of the trailing foot produces tension to resist the pull of gravity, in lowering the body to the next lower step. (See also Concentric, Isometric)
+"
+biomechanicshelp,15,Equilibrium,"state of an object with a net force of zero acting upon it; also, the state of balance of an object with respect to its supporting surface: a. stable equilibrium b. unstable equilibrium c. disequilibrium object is at rest and will object is at rest but will object is falling, resist forces tending to tend to fall over with an tip it over. external force applied.
+"
+biomechanicshelp,16,External force,"a force which acts on a body (usually, the human body or a body part) from outside, such as friction, gravity, traction or a push or pull from another body.
+"
+biomechanicshelp,17,Force,"a push or pull exerted by one body upon another, affecting motion: is a vector quantity, with both magnitude and direction; represented by an arrow: the length indicating magnitude, the tail indicating the point of application on the body being moved, the arrow head indicating direction of action.
+"
+biomechanicshelp,18,Force couple,"two or more forces acting together on a body to cause rotation in one direction. Example: the abdominal muscles tilt the pelvis backward by pulling up on the anterior, while the biceps femoris also tilts the pelvis backward by pulling down on the posterior.
+"
+biomechanicshelp,19,Friction,"the force acting between two bodies in contact which opposes motion. If the bodies are at rest, called static friction, if in motion, kinetic friction. Generally, static friction between two bodies is greater than kinetic friction between the same two.
+"
+biomechanicshelp,20,Gravity,"attraction between any two boides, dependent on their mass. Practically speaking, the attraction of the earth on any object on the earth. Creates a vector, the line of gravity, whose point of application is the center of gravity of the object, whose direction is toward the center of the earth, and whose magnitude is dependent upon the mass of the object.
+"
+biomechanicshelp,21,Internal Force,"force which acts inside the body to determine or alter movement, such as muscle force, reactive force (of bone or tendon, etc.), or even friction.
+"
+biomechanicshelp,22,Isometric,"type of muscle contraction in which the muscle produces tension without changing length. (See also Concentric and Eccentric)
+"
+biomechanicshelp,23,Kinematics,"the description of motions
+"
+biomechanicshelp,24,Kinesiology,"the study of muscle and joint action in human motion
+"
+biomechanicshelp,25,Kinetics,"the forces which cause motion
+"
+biomechanicshelp,26,Laws of Motion,"See Newton's Laws
+"
+biomechanicshelp,27,Length-Tension Relationship,"relationship between the length of a muscle and the tension it can produce: maximum tension at resting length (about mid-range), much less tension both at short lengths (active insufficiency) and at long lengths (active or passive insufficiency). Tension produced is the total of active tension (from muscle contraction) plus passive tension (from elastic connective tissue).
+"
+biomechanicshelp,28,Lever Arm,"perpendicular distance from the force vector to the axis of motion. The greater the lever arm, the greater the torque a given force will produce (torque = force x lever arm)
+"
+biomechanicshelp,29,Lever systems,"arrangement of force, axis and resistance along a lever. 1st class (""FAR"")- force and resistance on opposite sides of axis, such as a seesaw, or the skull on the cervical vertebrae. 2nd class (""ARF"")- force is farther from the axis than resistance, allowing greater loads to be lifted, but more slowly and through less distance, such as a wheelbarrow. 3rd class (""AFR"")- force is closer to the axis than resistance, allowing for greater speed and distance moved, but with smaller loads (most joints in the body).
+"
+biomechanicshelp,30,Line of Gravity,"the gravity vector (or LOG), with point of application at the center of gravity of an object, pointing toward the center of the earth. (See also Gravity and Center of Gravity.)
+"
+biomechanicshelp,31,Linear Force System,"two or more forces acting on the same object along the same line, such as a tug of war along a rope. The resultant force is easily found by adding or subtracting the magnitude of the forces (which team is pulling harder?). (See also Parallel force system.)
+"
+biomechanicshelp,32,Mass,"the amount of matter in an object. Is constant wherever the object is located (on earth, on moon, in space). Not the same as Weight (see also) which changes depending on the strength of gravity.
+"
+biomechanicshelp,34,Open Kinetic Chain,"movement when the proximal end of a body part is fixed, and the distal end is free to move. Example: throwing a ball, combing hair, hammering a nail. (See also Closed kinetic chain.)
+"
+biomechanicshelp,35,Parallel Force System,"two or more vectors which act on the same object at different points of application (commonly, a lever system). (See also Linear force system.)
+"
+biomechanicshelp,36,Passive Insufficiency,"when a muscle is already stretched to its maximum length, its antagonist can contract no farther. Example: contractures of the biceps brachii prevent the triceps from fully straightening (extending) the elbow. (See also Active insufficiency.)
+"
+biomechanicshelp,37,Power,"amount of work done by a force per second (P = Work/Time). Measured in watts (metric) or horsepower (English). (See also Work.)
+"
+biomechanicshelp,38,Pulley System,"anatomic pulleys (sesamoid bones, bony prominences) are fixed pulleys, changing the direction of muscle pull. They may increase the angle of muscle attachment, and therefore increase that muscle’s ability to produce rotary motion. Movable pulleys (there are none in the body) increase the mechanical advantage of the pulling force by carrying the resistance weight over several strands of rope or cable.
+"
+biomechanicshelp,39,Reactive Force,"an internal or external force which exists in reaction to an applied force (Newton’s 3rd Law of Motion). Example: when the foot strikes the ground in walking, the ground pushes back with an equal and opposite reactive force (unless the around is soft, then the foot sinks in). Or, when a joint undergoes compression due to forces, the joint surfaces push back with an equal and opposite reactive force (unless the bone or cartilage is too soft, then the compression crushes the joint).
+"
+biomechanicshelp,40,Newton's First Law of Motion,"INERTIA: a body at rest will remain at rest, and a body in motion will remain in motion, unless acted upon by an unbalanced force (cars stops suddenly, passenger keeps going until the windshield is hit)."
+biomechanicshelp,41,Newton's Second Law of Motion,"ACCELERATION: the acceleration produced in an object of a given mass is proportional to the force applied (twice the force produces twice the acceleration). In equation form, F = m x a."
+biomechanicshelp,42,Newton's Third Law of Motion,"REACTION: for every action there is an equal and opposite reaction. Example: jumping from a boat pushes the boat in the opposite direction. Or, compression force on a joint causes joint surface to push back equally hard."
+biomechanicshelp,43,Resolution of Forces,"splitting a vector apart into its rotary and translatory components (that is. its ability to produce rotary motion and compression or distraction at a joint). First the axis of motion must be established, then the movable body part, then the perpendicular to that part at the point of force application. The components are then found by the rectangle rule (See tutorial section, ""Resolution of forces."") (See also Composition of Forces.)
+"
+biomechanicshelp,44,Rotary Motion,"movement of a body part around a fixed axis; different points on the body part are moving at different speeds. Example: as the hip is flexed with a straight knee to kick a ball, the foot moves faster than the knee. (See also Translatory motion.)
+"
+biomechanicshelp,45,Scalar,"a quantity having only magnitude, where direction or orientation are unimportant, such as mass, length, time. Contrast quantities where direction or orientation are important: weight, force, velocity. (See also Vector.)
+"
+biomechanicshelp,46,Speed-Load Relationship,"the principle of muscle action which states that the greater the speed of movement, the smaller the load which can be moved, and vice versa. Also called the ""Force-velocity relationship."" (See also Length-Tension relationship.)
+"
+biomechanicshelp,47,Stability,"the ability of an object (especially, the human body) to maintain its position against gravity. The wider the base of support of the object, and the lower its center of gravity, the greater its stability. The more difficult it is to move the line of gravity outside the base of support, the greater the stability of the object. (See also Equilibrium.)
+"
+biomechanicshelp,48,Synergy,"literally, ""working together."" Sequential patterns of muscle contraction which produce complex human movements, such as gait, hammering a nail, or typing. Groups of muscles typically contract in precise order with precise timing and force to create the smooth skilled movement.
+"
+biomechanicshelp,49,Tension,"a force exerting a pull on an object, specifically, the force exerted by a muscle on a movable body part at any point in the joint's range of motion. (See also Length-Tension relationship.)
+"
+biomechanicshelp,50,Torque,"the tendency of a force to produce rotary motion around an axis. Torque = force x lever arm of that force. Therefore, torque is increased either by increasing the magnitude of the force fic. by lengthening the lever arm (applying the force farther from the axis). If a force applied to a movable part has already been resolved into its translatory and rotary components (see Resolution of forces), the magnitude of the force is the magnitude of its rotary component, and the lever arm is the distance from the axis to the point of application of the force.
+"
+biomechanicshelp,51,Translatory Motion,"movement in a straight line in which all points on the moved part travel at the same speed. Example: the hand, during elbow extension/shoulder flexion for a handshake. (See also Rotary motion.)
+"
+biomechanicshelp,52,Vector,"quantity possessing both magnitude and direction, such as velocity, acceleration, or force. As drawn, a vector is an arrow whose length represents its magnitude, whose tail represents its point of application on a body, and whose tip represents its direction:
+"
+biomechanicshelp,53,Velocity,"movement of an object possessing both speed and direction (and therefore a vector quantity). Units for linear velocity (translatory motion) are meters/second or feet/second, while for angular velocity (rotary motion) they are radians/second or degrees/second. (See also Acceleration.)
+"
+biomechanicshelp,54,Weight,"the amount an object is attracted by the force of gravity. The weight of an object is different on earth than on the moon, because the moon's gravity is weaker. Its mass, however, would always be the same, no matter where in the universe that object is (as far as we know).
+"
+biomechanicshelp,55,Units of Measurement,the scientific name for the quantity of a variable:

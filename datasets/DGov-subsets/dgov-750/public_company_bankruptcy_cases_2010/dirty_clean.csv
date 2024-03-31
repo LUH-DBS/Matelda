@@ -1,0 +1,65 @@
+district,state,companyname,assetsmillions,liabilitiesmillions
+NULL,NULL,"ABC-NACO, Inc.",75,170
+D,DE,"ABC-NACO, Inc.",363,331
+ND,IL,"ABC-NACO, Inc.",7,75
+SD,NY,American Mortgage Acceptance Company,6.37,119.968
+D,DE,"Barzel Industries, Inc.",366,385
+SD,TX,Baseline Oil & Gas Corp.,80,139
+SD,NY,Blockbuster,"1,017.04","1,464.94"
+SD,FL,"BSML, Inc.",6.94,9.97
+CD,CA,"California Coastal Communities, Inc.",291.00,231.00
+ND,IL,"Canopy Financial, Inc.",18.99,25.84
+D,DE,Capital Growth Systems Inc.,26.97,17.146
+D,CO,"Ceragenix Pharmaceuticals, Inc. et al.",1.50,12.96
+MD,FL,"Certified Diabetic Services, Inc.",0.40,0.81
+D,DE,Chem Rx Corp.,169.69,178.28
+ED,WI,"CIB Maine Bancshares, Inc.",105,107
+SD,NY,Ciena Capitol LLC,521.00,584.00
+SD,NY,CIT Group Inc.,"71,019.20","64,901.20"
+SD,NY,Citadel Broadcastig Corp.,"1,400.58","2,464.31"
+ND,IL,"Corus Bankshares, Inc.",314.15,532.94
+SD,TX,Cross Canyon Energy Corp.,53.35,41.81
+WD,WI,"DiscoverNet, In.",701,403
+ND,CA,"ECO2 Plastics, Inc.",1.70,6.39
+SD,TX,Edge Petroleum Corp.,264,234
+SD,NY,FairPoint Communications,"3,235.60","3,234.47"
+CD,CA,FirstFed Financial Corp.,4.47,159.65
+D,NV,Firstfold Corp.,17.96,26.98
+D,DE,GigaBeam Corp.,3.18,9.396
+SD,NY,GSC Group,119.79,313.56
+D,DE,GSI Group,555,370
+ND,TX,"Guaranty Financial Group, Inc. et al.","15,391.00","14,390.00"
+CA,CA,Imperial Capitol Bancorp Inc.,20.00,190.86
+ND,IL,"Isco International, Inc.",5.28,25.46
+SD,NY,Jennifer Covertibles Inc.,25.97,46.353
+SD,NY,"Jesup & Lamont, Inc. , JWA",41.15,24.564
+D,CO,Kolorfusion International Inc.,596.70,2.49
+D,MD,"Kore Holdings, Inc.",                                     ----,                                    ----
+WD,TX,"MDI, Inc.",5.18,2.99
+SD,FL,Medical Staffing Network,96,150
+SD,NY,"Mesa Air Group, Inc.",975.49,868.59
+D,DE,"Neenah Enterprises, Inc.",286.61,449.10
+D,AZ,NutraCea,83.70,18.90
+D,DE,"Orleans Homebuilders, Inc.",591.46,560.13
+D,MN,Otter Tail AG Enterprises LLC,67,86
+D,DE,"PNG Ventures, Inc.",40,45
+SD,FL,"Protective Products of America, Inc.",27,29
+ND,TX,"Provident Royalties, L.L.C et al.",443.31,466.05
+D,PR,R & G Financial Corporation,40,421
+D,CO,Rancher Energy Corp.,32.30,11.58
+D,NJ,RCLC,16.37,10.371
+D,DE,"Regent Comms., Inc. , Riveria Holdings",166.51,68.49
+WD,TX,South Texas Oil Company,49.07,27.90
+SD,NY,"Spongetech Delivery Systems, Inc.",0.50,                                       ----
+ND,OH,Stamford Industrial Group,62.20,14.31
+D,DE,The Penn Traffic Company,150.38,136.87
+D,DE,TLC Vision Corp.,130.07,166.85
+D,DE,"Topspin Medical, Inc.",0.36,0.54
+SD,NY,"Trico Marine Services, Triple Crown Media",535.20,472.7
+D,DE,"U.S. Concrete, Inc.",389.16,399.35
+CD,CA,U.S. Dry Cleaning Services Corporation,19.07,                                     ----
+D,DE,Velocity Express Corp.,94,121
+D,DE,Vermillioin Inc.,7.15,32.015
+D,DE,"Vion Pharmaceuticals, Inc.","3,030.85","2,366.24"
+D,DE,Visteon Corp.,"4,577.03","5,324.03"
+D,DE,"Xerium Technologies, Inc.",694,813

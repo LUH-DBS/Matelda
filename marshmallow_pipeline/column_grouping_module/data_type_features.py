@@ -35,7 +35,8 @@ class DataTypeFeatures(BaseEstimator, TransformerMixin):
                         pass
                 type_counts[value_type] += 1
             for key in type_counts:
-                type_ratios[key] = type_counts[key]/len(col)
+                if type_counts[key] != 0:
+                    type_ratios[key] = type_counts[key]/len(col)
             all_cols_types.append(type_ratios)
         # Convert the dictionary of feature counts to a pandas dataframe
         features_df = pd.DataFrame(all_cols_types)

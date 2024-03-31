@@ -1,0 +1,104 @@
+Citing Patent,Filing date,Publication date,Applicant,Title
+US5636162 *,"Jun 12, 1996","Jun 3, 1997",Texas Instruments Incorporated,Erase procedure
+US5712819 *,"May 22, 1996","Jan 27, 1998",Harari; Eliyahou,Flash EEPROM system with storage of sector characteristic information within the sector
+US5715193 *,"May 23, 1996","Feb 3, 1998","Micron Quantum Devices, Inc.",Flash memory system and method for monitoring the disturb effect on memory cell blocks due to high voltage conditions of other memory cell blocks
+US5726933 *,"May 15, 1997","Mar 10, 1998","Taiwan Semiconductor Manufacturing Company, Ltd.",Clipped sine shaped waveform to reduce the cycling-induced electron trapping in the tunneling oxide of flash EEPROM
+US5764571 *,"Feb 27, 1995","Jun 9, 1998",Btg Usa Inc.,Electrically alterable non-volatile memory with N-bits per cell
+US5822251 *,"Sep 29, 1997","Oct 13, 1998","Bit Microsystems, Inc.",Expandable flash-memory mass-storage using shared buddy lines and intermediate flash-bus between device-specific buffers and flash-intelligent DMA controllers
+US5835415 *,"Dec 29, 1997","Nov 10, 1998",Harari; Eliyahou,Flash EEPROM memory systems and methods of using them
+US5844841 *,"Apr 18, 1997","Dec 1, 1998",Kabushiki Kaisha Toshiba,Memory system
+US5862081 *,"Jan 5, 1998","Jan 19, 1999",Harari; Eliyahou,Multi-state flash EEPROM system with defect management including an error correction scheme
+US5909390 *,"Dec 16, 1997","Jun 1, 1999",Harari; Eliyahou,Techniques of programming and erasing an array of multi-state flash EEPROM cells including comparing the states of the cells to desired values
+US5920501 *,"Feb 27, 1998","Jul 6, 1999","Micron Technology, Inc.",Flash memory system and method for monitoring the disturb effect on memory cell blocks due to high voltage conditions of other memory cell blocks
+US5956743 *,"Sep 29, 1997","Sep 21, 1999","Bit Microsystems, Inc.",Transparent management at host interface of flash-memory overhead-bytes using flash-specific DMA having programmable processor-interrupt of high-level operations
+US5963473 *,"Dec 12, 1997","Oct 5, 1999","Micron Technology, Inc.",Flash memory system and method for monitoring the disturb effect on memory cell blocks due to high voltage conditions of other memory cell blocks
+US5963480 *,"Nov 12, 1998","Oct 5, 1999",Harari; Eliyahou,Highly compact EPROM and flash EEPROM devices
+US6000006 *,"Aug 25, 1997","Dec 7, 1999","Bit Microsystems, Inc.",Unified re-map and cache-index table with dual write-counters for wear-leveling of non-volatile flash RAM mass storage
+US6002614 *,"Nov 21, 1997","Dec 14, 1999",Btg International Inc.,"Memory apparatus including programmable non-volatile multi-bit memory cell, and apparatus and method for demarcating memory states of the cell"
+US6016274 *,"Mar 20, 1998","Jan 18, 2000",Kabushiki Kaisha Toshiba,Semiconductor memory device
+US6034897 *,"Apr 1, 1999","Mar 7, 2000","Lexar Media, Inc.",Space management for managing high capacity nonvolatile memory
+US6064591 *,"Oct 9, 1998","May 16, 2000",Kabushiki Kaisha Toshiba,Memory system
+US6104640 *,"Nov 18, 1998","Aug 15, 2000",Btg International Inc.,Electrically alterable non-violatile memory with N-bits per cell
+US6122195 *,"Jun 11, 1999","Sep 19, 2000","Lexar Media, Inc.",Method and apparatus for decreasing block write operation times performed on nonvolatile memory
+US6128695 *,"Sep 18, 1998","Oct 3, 2000","Lexar Media, Inc.",Identification and verification of a sector within a block of mass storage flash memory
+US6134151 *,"Mar 6, 2000","Oct 17, 2000","Lexar Media, Inc.",Space management for managing high capacity nonvolatile memory
+US6141249 *,"Sep 3, 1999","Oct 31, 2000","Lexar Media, Inc.",Organization of blocks within a nonvolatile memory unit to effectively decrease sector write operation time
+US6223308,"Mar 7, 2000","Apr 24, 2001","Lexar Media, Inc.",Identification and verification of a sector within a block of mass STO rage flash memory
+US6243321,"Jan 28, 2000","Jun 5, 2001",Btg Int Inc,Electrically alterable non-volatile memory with n-bits per cell
+US6246613,"Oct 4, 1999","Jun 12, 2001",Btg International Inc.,"Memory apparatus including programmable non-volatile multi-bit memory cell, and apparatus and method for demarcating memory states of the cell"
+US6256755,"Oct 19, 1998","Jul 3, 2001",International Business Machines Corporation,Apparatus and method for detecting defective NVRAM cells
+US6262918,"Jun 30, 2000","Jul 17, 2001","Lexar Media, Inc.",Space management for managing high capacity nonvolatile memory
+US6324121,"Feb 28, 2001","Nov 27, 2001",Btg International Inc.,Electrically alterable non-volatile memory with n-bits per cell
+US6327189,"Feb 28, 2001","Dec 4, 2001",Btg International Inc.,Electrically alterable non-volatile memory with n-bits per cell
+US6339545,"Feb 28, 2001","Jan 15, 2002",Btg International Inc.,Electrically alterable non-volatile memory with n-bits per cell
+US6339546,"Sep 15, 2000","Jan 15, 2002","Hitachi, Ltd.",Storage device counting error correction
+US6343034,"Jan 28, 2000","Jan 29, 2002",Btg International Inc.,Electrically alterable non-volatile memory with n-bits per cell
+US6344998,"Feb 28, 2001","Feb 5, 2002",Btg International Inc.,Electrically alterable non-volatile memory with N-Bits per cell
+US6353554,"Dec 12, 2000","Mar 5, 2002",Btg International Inc.,"Memory apparatus including programmable non-volatile multi-bit memory cell, and apparatus and method for demarcating memory states of the cell"
+US6356486,"Jun 5, 2000","Mar 12, 2002",Btg International Inc.,Electrically alterable non-volatile memory with n-bits per cell
+US6393513,"Apr 23, 2001","May 21, 2002","Lexar Media, Inc.",Identification and verification of a sector within a block of mass storage flash memory
+US6404675,"Feb 28, 2001","Jun 11, 2002",Btg International Inc.,Electrically alterable non-volatile memory with n-bits per cell
+US6460148,"Jun 21, 2001","Oct 1, 2002",Altera Corporation,Enhanced embedded logic analyzer
+US6480416 *,"Dec 18, 2001","Nov 12, 2002","Hitachi, Ltd.",Storage device counting error correction
+US6567307,"Feb 28, 2002","May 20, 2003","Lexar Media, Inc.",Block management for mass storage
+US6570790,"Nov 17, 1993","May 27, 2003",Sandisk Corporation,Highly compact EPROM and flash EEPROM devices
+US6584012,"Jun 4, 2002","Jun 24, 2003",Btg International Inc.,Electrically alterable non-volatile memory with N-bits per cell
+US6584015,"Sep 19, 2002","Jun 24, 2003","Hitachi, Ltd.",Storage device counting error correction
+US6724656,"May 5, 2003","Apr 20, 2004",Btg International Inc.,Electrically alterable non-volatile memory with n-bits per cell
+US6751123,"May 7, 2003","Jun 15, 2004",Renesas Technology Corp.,Storage device counting error correction
+US6813678,"Jan 20, 1999","Nov 2, 2004","Lexar Media, Inc.",Flash memory system
+US6831865,"Oct 28, 2002","Dec 14, 2004",Sandisk Corporation,Maintaining erase counts in non-volatile storage systems
+US6870763,"Mar 25, 2004","Mar 22, 2005",Btg International Inc.,Electrically alterable non-volatile memory with n-bits per cell
+US6898662,"Sep 27, 2002","May 24, 2005","Lexar Media, Inc.",Memory system sectors
+US6914817,"Feb 11, 2003","Jul 5, 2005",Sandisk Corporation,Highly compact EPROM and flash EEPROM devices
+US6973531,"Oct 28, 2002","Dec 6, 2005",Sandisk Corporation,Tracking the most frequently erased blocks in non-volatile memory systems
+US6985992,"Oct 28, 2002","Jan 10, 2006",Sandisk Corporation,Wear-leveling in non-volatile storage systems
+US7032087,"Oct 28, 2003","Apr 18, 2006",Sandisk Corporation,Erase count differential table within a non-volatile memory system
+US7035967,"Oct 28, 2002","Apr 25, 2006",Sandisk Corporation,Maintaining an average erase count in a non-volatile storage system
+US7039788,"Oct 28, 2002","May 2, 2006",Sandisk Corporation,Method and apparatus for splitting a logical block
+US7075825,"Mar 25, 2004","Jul 11, 2006",Btg International Inc.,Electrically alterable non-volatile memory with n-bits per cell
+US7089349,"Oct 28, 2003","Aug 8, 2006",Sandisk Corporation,Internal maintenance schedule request for non-volatile memory system
+US7096313,"Oct 28, 2002","Aug 22, 2006",Sandisk Corporation,Tracking the least frequently erased blocks in non-volatile memory systems
+US7103732,"Oct 28, 2002","Sep 5, 2006",Sandisk Corporation,Method and apparatus for managing an erase count block
+US7171536,"Oct 9, 2003","Jan 30, 2007",Sandisk Corporation,Unusable block management within a non-volatile memory system
+US7174440,"Oct 2, 2003","Feb 6, 2007",Sandisk Corporation,Method and apparatus for performing block caching in a non-volatile memory system
+US7181611,"Oct 14, 2003","Feb 20, 2007",Sandisk Corporation,Power management block for use in a non-volatile memory system
+US7188228,"Oct 1, 2003","Mar 6, 2007",Sandisk Corporation,Hybrid mapping implementation within a non-volatile memory system
+US7234036,"Oct 28, 2002","Jun 19, 2007",Sandisk Corporation,Method and apparatus for resolving physical blocks associated with a common logical block
+US7254668,"Oct 28, 2002","Aug 7, 2007",Sandisk Corporation,Method and apparatus for grouping pages within a block
+US7287118,"Feb 25, 2006","Oct 23, 2007",Sandisk Corporation,Maintaining an average erase count in a non-volatile storage system
+US7356442,"Oct 5, 2006","Apr 8, 2008",International Business Machines Corporation,End of life prediction of flash memory
+US7471119,"May 18, 2007","Dec 30, 2008",Denso Corporation,Electronic circuit device
+US7526599,"Oct 2, 2003","Apr 28, 2009",Sandisk Corporation,Method and apparatus for effectively enabling an out of sequence write process within a non-volatile memory system
+US7559004,"Oct 1, 2003","Jul 7, 2009",Sandisk Corporation,Dynamic redundant area configuration in a non-volatile memory system
+US7610438,"Jan 17, 2007","Oct 27, 2009","Super Talent Electronics, Inc.",Flash-memory card for caching a hard disk drive with data-area toggling of pointers stored in a RAM lookup table
+US7640389,"Feb 28, 2006","Dec 29, 2009","Freescale Semiconductor, Inc.",Non-volatile memory having a multiple block erase mode and method therefor
+US7657702,"Feb 13, 2009","Feb 2, 2010",Sandisk Corporation,Partial block data programming and reading operations in a non-volatile memory
+US7702880,"Dec 28, 2006","Apr 20, 2010",Sandisk Corporation,Hybrid mapping implementation within a non-volatile memory system
+US7809962,"Dec 27, 2006","Oct 5, 2010",Sandisk Corporation,Power management block for use in a non-volatile memory system
+US7818490,"Oct 13, 2005","Oct 19, 2010",Sandisk Corporation,Partial block data programming and reading operations in a non-volatile memory
+US7970987,"Oct 7, 2010","Jun 28, 2011",Sandisk Corporation,Partial block data programming and reading operations in a non-volatile memory
+US8040727,"Aug 28, 1998","Oct 18, 2011",Sandisk Corporation,Flash EEprom system with overhead data stored in user data sectors
+US8108179,"Mar 3, 2008","Jan 31, 2012",International Business Machines Corporation,End of life prediction of flash memory
+US8108180,"Mar 3, 2008","Jan 31, 2012",International Business Machines Corporation,End of life prediction of flash memory
+US8316177,"Jun 24, 2011","Nov 20, 2012",Sandisk Corporation,Partial block data programming and reading operations in a non-volatile memory
+US8412879,"Oct 2, 2003","Apr 2, 2013",Sandisk Technologies Inc.,Hybrid implementation for error correction codes within a non-volatile memory system
+US8706990,"Mar 30, 2012","Apr 22, 2014",Sandisk Technologies Inc.,Adaptive internal table backup for non-volatile memory system
+US8788725,"May 8, 2013","Jul 22, 2014","Bitmicro Networks, Inc.",Multilevel memory bus system for solid-state mass storage
+US8910017,"Jul 2, 2012","Dec 9, 2014",Sandisk Technologies Inc.,Flash memory with random partition
+US8959307,"Nov 13, 2008","Feb 17, 2015","Bitmicro Networks, Inc.",Reduced latency memory read transactions in storage devices
+US9043669,"May 18, 2012","May 26, 2015","Bitmicro Networks, Inc.",Distributed ECC engine for storage media
+US20040080985 *,"Oct 28, 2002","Apr 29, 2004","Sandisk Corporation, A Delaware Corporation",Maintaining erase counts in non-volatile storage systems
+US20040080998 *,"Oct 9, 2003","Apr 29, 2004",Sandisk Corporation,Unusable block management within a non-volatile memory system
+US20040083333 *,"Oct 2, 2003","Apr 29, 2004",Sandisk Corporation,Hybrid implementation for error correction codes within a non-volatile memory system
+US20040083334 *,"Oct 2, 2003","Apr 29, 2004",Sandisk Corporation,Method and apparatus for managing the integrity of data in non-volatile memory system
+US20040083348 *,"Oct 2, 2003","Apr 29, 2004",Sandisk Corporation,Method and apparatus for performing block caching in a non-volatile memory system
+US20040083405 *,"Oct 14, 2003","Apr 29, 2004",Sandisk Corporation,Power management block for use in a non-volatile memory system
+US20040103241 *,"Oct 2, 2003","May 27, 2004",Sandisk Corporation,Method and apparatus for effectively enabling an out of sequence write process within a non-volatile memory system
+US20040177212 *,"Oct 28, 2002","Sep 9, 2004",Sandisk Corporation,Maintaining an average erase count in a non-volatile storage system
+US20040179397 *,"Mar 25, 2004","Sep 16, 2004",Btg International Inc.,Electrically alterable non-volatile memory with n-bits per cell
+US20040199714 *,"Apr 26, 2004","Oct 7, 2004",Petro Estakhri,Increasing the memory performance of flash memory devices by writing sectors simultaneously to multiple flash memory devices
+US20040242009 *,"Mar 25, 2004","Dec 2, 2004",Btg International Inc.,Electrically alterable non-volatile memory with n-bits per cell
+US20050018527 *,"Jun 14, 2004","Jan 27, 2005",Gorobets Sergey Anatolievich,Non-volatile memory control
+US20050091445 *,"Oct 28, 2003","Apr 28, 2005",Sandisk Corporation,Internal maintenance schedule request for non-volatile memory system
+US20140156921 *,"Feb 7, 2014","Jun 5, 2014",OCZ Storage Solutions Inc.,Methods for writing data to non-volatile memory-based mass storage devices

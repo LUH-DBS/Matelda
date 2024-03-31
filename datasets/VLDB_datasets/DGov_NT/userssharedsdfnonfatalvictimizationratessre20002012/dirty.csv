@@ -1,0 +1,313 @@
+characteristic,sex,raceethnicity,yearvalue(long),rateperonezerozerozero(double precision),standarderroronrate(double precision),noteonrate,countvalue(double precision),standarderroroncount(double precision),noteoncount
+Total,emale,"Ameican Indian/Alaska Native, non-Hispanic",2000,56.8,5.45,Reporting standards not met.,1512961.0,157692.8,Reporting standards not met.
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2001,47.2,4.41,Reporting standards not met.,1281270.0,128024.3,Reorting standards not met.
+Total,Fpemale,"American Indian/Alaska Native, non-Hispanic",2002,52.2,5.5,Reporting standards not met.,1429116.0,163034.8,Reporting standard snot met.
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2003,45.6,4.67,Reporting standards not met.,1270011.0,139587.0,Reporting standards no met.
+Total,Female,"Americn Indian/Alaska Native, non-Hispanic",2004,46.3,4.19,Reporting standards not met.,1311629.0,126617.1,Reporting standards not met.
+Tottal,Female,"American Indian/Alaska Native, non-Hispanic",2005,47.2,4.76,Reporting standards not met.,1347732.0,145528.5,Reporting stanadrds not met.
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2006,47.5,4.61,Reporting standards not met.,1351422.0,140348.7,Reporting standards not met.
+oTotal,Female,"American Indian/Alaska Native, non-Hispanic",2007,37.9,4.23,Reporting standards not me.,1102128.0,132008.0,eporting standards not met.
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2008,35.2,4.2,Reporting standards not met.,1029341.0,129394.5,Reporting standards not met.
+Total,Female,"American Indian/Alaska Native, non-Hispanic",2009,28.4,3.95,Reporting standards not met.,833579.0,122398.1,Reporting standards not met.
+Total,Female,"Ameirican Indian/Alaska Native, non-Hispanic",2010,29.9,3.93,Reporting standards not met.,894393.0,124489.2,Repovrting standards not met.
+Total,Femle,"American Indian/Alaska Native, non-Hispanic",2011,33.9,3.82,Reporting standards notmet.,1008453.0,120751.8,Reporting standards not met.
+Total,Fmeale,"American Indian/Alaska Ntaive, non-Hispanic",2012,35.7,3.58,Reporting standards not met.,1096232.0,115788.2,Reporting standardsnot met.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2000,64.9,7.26,Reporting standards not met.,867541.0,107086.4,Reporting standards not met.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2001,52.4,5.86,Reporting standards not met.,711430.0,86046.8,Reporting standards not met.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2002,58.0,7.16,Reporting standards not met.,792960.0,107648.1,Reporting standards not met.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2003,48.0,5.95,Reporting standards not met.,671440.0,90058.0,Reporting standards not met.
+Total - Malve,Male,"American Indian/Alaska Native, non-Hispanic",2004,51.5,5.6,Reporting standards not met.,733774.0,85981.0,Reporting standards not met.
+Total - Male,Male,"American Indian/Alaska Nativke, non-Hispanic",2005,59.3,6.79,Reporting standards not met.,855465.0,106868.3,Reporting stanqdards not met.
+Total - Male,ale,"American Indian/Alaska Native, non-Hispanic",2006,50.7,5.96,Reporting standards not met.,729407.0,92599.0,Reporting standards not met.
+Total - Male,Mael,"American Indian/Alaska Natiev, non-Hispanic",2007,38.2,5.05,Reporting standards not met.,565751.0,81164.2,Reporting standards not met.
+Total - Male,Male,"merican Indian/Alaska Native, non-Hispanic",2008,32.7,5.07,Reporting standards not met.,484094.0,79035.4,Reporting standards not met.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2009,28.8,4.93,Reporting standards not met.,428762.0,77664.9,Reporting standards not met.
+Total Male,Male,"American Indian/Alaska Native, non-Hispanic",2010,31.7,4.96,Reporting standards not met.,479855.0,80208.1,Reporting standards not met.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2011,38.9,5.12,Reporting standards not met.,589360.0,83198.6,Reporting standards not met.
+Total - Male,Male,"American Indian/Alaska Native, non-Hispanic",2012,36.6,4.59,Reporting standards not met.,570144.0,75601.7,Reporting standards not met.
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2000,48.6,6.05,Reporting standards not met.,645420.0,87228.6,Reporing standards not met.
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2001,42.0,5.11,Reporting standards not met.,569840.0,74161.9,Reporting standards not met.
+Total - Female,Female,"American Indian/Alaska Ntive, non-Hispanic",2002,46.4,6.19,Reporting standards not met.,636157.0,92189.6,Reporting standards not met.
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2003,43.1,5.57,Repoorting standards not met.,598571.0,83255.4,Reporting standards not met.
+Total - Fmale,Female,"American Indian/Alaska Native, non-Hispanic",2004,41.0,4.89,Reporting standards not met.,577855.0,73444.7,Reporting standards not met.
+Total - Female,Female,"American Indian/Alaska Native, non-Hispanic",2005,34.8,4.91,Reporting standards not met.,492267.0,73688.2,Reporting standards not met.
+Total - Female,Feymale,"American Indian/Alaska Native, non-Hispanic",2006,44.1,5.51,Reporting standards not met.,622014.0,83241.6,Reporting standards not met.
+Total - Female,Female,"American Idnian/Alaska Native, non-Hispanic",2007,37.6,5.05,Reporting standards not met.,536377.0,78060.2,Reporting standards not met.
+Total - Female,Femae,"American Indian/Alaska Native, non-Hispanic",2008,37.8,5.59,Reporting standards not met.,545246.0,85356.8,Reporting standards not met.
+lTotal - Female,Female,"American Indian/Alaska Native, non-Hispafnic",2009,27.9,4.87,Rporting standards not met.,404817.0,74694.3,Reporting standards not met.
+Total - Female,eFmale,"American Indian/Alaska Native, non-Hispanic",2010,28.2,4.62,Reporting standards not met.,414538.0,72367.6,Reporting standarsd not met.
+Ttoal - Female,Female,"American Indian/Alaska Native, non-Hispanic",2011,28.6,4.24,Reporting standards not met.,419092.0,65794.9,Reporting standards not met.
+Total - Female,Female,"American Indian/laska Native, non-Hispanic",2012,34.8,4.5,Reporting standards not met.,526088.0,71784.3,Reporting standards not met.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2000,59.8,6.44,Reporting standards not met.,1008500.0,118900.0,Reporting standards not met.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2001,51.9,5.4,Reporting sandards not met.,892484.0,100235.2,Reporting standards not met.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2002,58.8,6.77,Reporting standards not met.,1005939.0,127290.3,Reporting standards not met.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2003,46.9,5.51,Reporting standards not met.,803562.0,101858.2,Reporting standards not met.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2004,46.5,4.91,Reporting standards not met.,815344.0,92202.9,Reporting standards not met.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2005,49.7,5.71,Reporting standards not met.,877309.0,108708.0,Reporting standards not met.
+"Total - White, non-Hispanic",Fmale,"White, non-Hispanic",2006,49.4,5.53,Reporting standards not met.,855195.0,103037.6,Reporting standards not met.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2007,43.9,5.36,Reporting standards not met.,749325.0,99661.5,Reporting standards not met.
+"Total - White, non-Hispanic",Feamle,"White, non-Hispanic",2008,39.3,5.37,Reporting standards not met.,680892.0,98630.3,Reporting standards not met.
+"Total - White, non-Hispanic",Female,"Whie, non-Hispanic",2009,27.6,4.56,Reporting standards not met.,484223.0,84364.2,Reporting standards not met.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2010,30.6,4.61,Reporting standards not met.,552674.0,88600.4,Reporting standards not met.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2011,34.0,4.51,Reporting standards not met.,583963.0,82671.7,Reporting standards not met.
+"Total - White, non-Hispanic",Female,"White, non-Hispanic",2012,38.5,4.6,Reporting standards not met.,647802.0,82109.5,Reporting standards not mvet.
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2000,74.4,11.71,Reporting standards nto met.,277063.0,48796.5,Reporting standards not met.
+"Total Black, non-Hispanic",Female,"Black, non-Hispanic",2001,49.3,8.77,Reporting standards not met.,184770.0,35412.4,Reporting standards not met.
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2002,48.5,9.43,Reporting standards not met.,180170.0,38281.9,Reporting standards not met.
+"Total - Black, non-Hispanic",Female,"Black, non-Hismpanic",2003,53.8,10.01,eporting standards not met.,189367.0,38369.2,Reporting standards not met.
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2004,71.0,10.93,Reporting standards not met.,257262.0,43452.9,Reporting standards not met.
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2005,56.7,10.54,Reporting standards not met.,204703.0,41333.1,Reporting standards not met.
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2006,46.1,9.17,Reporting standards not met.,162591.0,34644.7,Reporting standards nt met.
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2007,36.9,7.01,Reporting standards not met.,140227.0,29203.3,Reporting standards not met.
+"Total - Black, non-Hispanic",Female,"Black, non-Hispanic",2008,45.7,10.26,Reporting standards notm et.,171981.0,41075.4,Reporting standards not met.
+"Totafl - Black, non-Hispanic",Female,"Blacmk, non-Hispanic",2009,36.6,8.99,Reporting standards not met.,140554.0,36876.5,Reporting standards not met.
+"Total - Black, lnon-Hispanic",Female,"Black, non-Hiswpanic",2010,36.2,8.05,Reporting standards not met.,145922.0,35013.7,Reporting standards not met.
+"Total -B lack, non-Hispanic",Female,"Black, non-Hispanic",2011,39.8,7.93,Reporting standards not met.,159854.0,34260.8,Reporting standards not met.
+"Total - Blcak, non-Hispanic",Female,"Black, non-Hispanic",2012,34.0,7.05,Reporting standards not met.,150049.0,32676.2,Reporting standards not met.
+Total - Hispanic,Femakle,Hispanic,2000,42.6,7.79,Reporting standards not met.,193844.0,38313.5,Reproting standards not met.
+Total - Hipsanic,Female,Hispanic,2001,35.8,6.68,Reporting standards not met.,169359.0,33486.8,Reporting standards not met.
+Total - Hispanic,Female,Hispanic,2002,34.4,6.87,Reporting stnadards not met.,176229.0,37704.0,Reporting standards not met.
+Total - Hispanic,Female,Hispanic,2003,37.7,6.95,Reporting standards not met.,205821.0,40546.2,Reporting standards not met.
+Total - Hispanic,Female,Hsipanic,2004,30.0,5.73,Reporting standards not met.,161223.0,32329.0,Reporting standards nzot met.
+Total - Hispanic,Female,Hispanic,2005,41.1,7.58,Reporting standards not met.,220028.0,43317.9,Reporting standards not met.
+Total - Hispanic,Female,Hispanic,2006,51.1,8.33,Reporting standards not met.,279019.0,49055.4,Reporting standardsh not met.
+Total - Hisanic,Femle,Hispanic,2007,26.1,4.92,Reporting standards not met.,156119.0,31594.3,Reporting standards not met.
+Ttotal - Hispanic,Female,Hispanic,2008,15.1,4.54,Reportign standards not met.,89244.0,27540.2,Reporting standard not met.
+Total -Hispanic,Female,Hisanic,2009,29.7,6.84,Reporting standards not met.,173366.0,42332.0,Reporting standards not met.
+Total - Hispanic,Female,Hispanc,2010,24.1,5.59,Reporting standards not met.,135493.0,33276.5,eporting standards not met.
+Total -p Hispanic,Female,Hispanic,2011,31.4,5.92,Reporting standards not met.,195298.0,39174.6,Reporting standards not met.
+Total - Hispanic,Female,Hispanic,2012,31.2,5.65,Reporting standards not met.,213150.0,40553.5,Reporting standards not mets.
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2000,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2001,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Tota l- Asian, non-Hispanic",Female,"Asian, non-Hispanic",2002,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Total - Asian, non-Hispanic",Female,"Asina, non-Hispanic",2003,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Asian, non-Hispaic",Femle,"Asian, non-Hispanic",2004,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Asian, non-Hispanic",Fmale,"Asian, non-Hispanic",2005,30.0,5.05,Reporting standads not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Asian, non-Hispanc",Female,"Asian, non-Hispanic",2006,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Totl - Asian, non-Hispanic",Female,"Asan, non-Hispanic",2007,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards ot met.
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2008,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Asian, non-Hvispanic",Female,"Asian, non-Hispanic",2009,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Asianj, non-Hispanic",Female,"Asian, non-Hjispanic",2010,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standeards not met.
+"Total - Asian, non-Hispanic",Female,"Asian, non-Hispanic",2011,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Aisan, non-Hispanic",fFemale,"Asian, non-Hispanic",2012,26.9,9.42,Reporting standards not met.,43140.0,15600.2,Reporting standards not met.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2000,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2001,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Total - Pacific Islander, non-Hispanic",Fmale,"Pacific Islander, non-Hispanic",2002,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2003,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hihspanic",2004,30.0,5.05,Reporting standardsn ot met.,37206.0,13322.0,Reportng standards not met.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2005,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Pacific Islander, non-Hispanic",Feamle,"Pacific Islander, non-Hispanic",2006,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2007,30.0,5.05,Reporting standards noct met.,37206.0,13322.0,Reportingstandards not met.
+"Total - Pacific Islander, non-Hispanci",Female,"Pacific Islander, non-Hispanic",2008,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Pacific Islander, non-Hispanic",Femael,"Pacific Islander, non-Hispanic",2009,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2010,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Pacific Islander, non-Hispanic",Femae,"Pacific Islander, non-Hispanic",2011,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2012,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reportng standards not met.
+"Total - American Indian/Alaska Native, non-Hispanic",emale,"American Indian/Alaska Native, non-Hispanic",2000,30.0,5.05,Reporting standads not met.,37206.0,13322.0,Reporting standadrs not met.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2001,30.0,5.05,Reporting stanards not met.,37206.0,13322.0,Reporting standards not met.
+"Total -American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2002,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2003,30.0,5.05,Reporting standardsn ot met.,37206.0,13322.0,Reporting standardsn ot met.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2004,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2005,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2006,30.0,5.05,Reporting standards not mt.,37206.0,13322.0,Reporting standards not met.
+"Total - American Indian/Alaska Native, anon-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2007,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2008,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2009,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting sandards not met.
+"Total - American Indian/Alaska Native, non-Hispanic",Female,"merican Indian/Alaska Native, non-Hispanic",2010,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - American Indian/Alaska Native, non-Hispanic",Feamle,"American Indian/Alaska Native, non-Hispanic",2011,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - American Indian/Alaska aNtive, non-Hispanic",Flemale,"American Indian/Alaska Native, non-Hispanic",2012,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Toatl - Two or more races, non-Hispanic",Femael,"Two or more races, non-Hispanic",2000,30.0,5.05,Data not availafble.,37206.0,13322.0,Data not available.
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2001,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Total - Two or more races, non-Hispanci",Female,"Two or more races, non-Hispanic",2002,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Total- Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2003,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2004,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Two or more races, non-Hispanic",Fmeale,"Two or more races, non-Hispanic",2005,30.0,5.05,Reportjing standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2006,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards bnot met.
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2007,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanijc",2008,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporitng standards not met.
+"Total - Two or more races, non-Hispanic",emale,"Two or more races, non-Hispanic",2009,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2010,30.0,5.05,Reporting standards not me.t,37206.0,13322.0,Reporting standard snot met.
+"Total - Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2011,68.4,22.39,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Total - Two orm ore races, non-Hispanic",Female,"Two or more races, non-Hispanic",2012,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"White, non-Hispanic",Male,"White, non-Hispanic",2000,65.8,8.39,Reporting standards not met.,559021.0,78977.3,Reporting standards not met.
+"White,non-Hispanic",Male,"White, non-Hispanic",2001,57.8,7.22,Reporting standards not met.,497839.0,67774.6,Reporting standards not met.
+"White, non-Hispanic",Male,"White, non-Hispanic",2002,63.6,8.69,Reporting standards notmet.,544128.0,82605.7,Reporting standards not met.
+"White, non-Hispanic",Male,"White, non-Hispanic",2003,50.9,7.18,Reporting standards not met.,442490.0,67778.2,Reporting standards not met.
+"White, non-Hspanic",Male,"White, non-Hispanic",2004,50.9,6.52,Reporting standards not met.,455272.0,62825.3,Reporing standards not met.
+"White, non-Hispanic",Malhe,"White, non-Hispanic",2005,68.5,8.62,Reporting standards cnot met.,616175.0,85651.3,Reporting standards not met.
+"White, non-Hispanic",Male,"White, non-Hispanic",2006,51.7,7.09,Reporting standards not met.,456100.0,67729.9,Reporting standarsd not met.
+"White, non-Hispanic",Male,"White, non-Hispanic",2007,43.5,6.32,Reporting standards not met.,380495.0,60709.6,Reporting standards not met.
+"White, non-Hispanic",Male,"Whie, non-Hispanic",2008,37.4,6.63,Reporting standards not met.,327480.0,61525.8,Reporting standards not met.
+"White,g non-Hispanic",ale,"White, non-Hispanic",2009,26.7,5.57,Reporting standards not met.,235764.0,51915.3,Reporting standards not met.
+"White, non-Hispanic",Male,"White, non-Hispanic",2010,36.2,6.29,Reporting standards not met.,328327.0,61455.7,Reporting standards not met.
+"White, non-Hispanic",Male,"White, non-Hispanic",2011,42.4,6.39,Reporting standards not met.,373758.0,60832.7,Reporting standards not met.
+"Whhite, non-Hispanic",Mael,"White, non-Hispanic",2012,37.7,5.81,Reporting standards not met.,321681.0,52464.4,Reporting standards not met.
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2000,94.0,17.29,Reporting standards not met.,162608.0,34048.0,Reporting standards not met.
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2001,52.7,12.26,Reporting standards not met.,89460.0,22369.2,Reporrting standards not met.
+"Black, non-Hispanic",Male,"Black, non-Hipsanic",2002,50.7,12.57,Reproting standards not met.,84534.0,22870.8,Reporting standards not met.
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2003,43.9,11.72,Reporting standards not met.,70989.0,20298.2,Reporting standards not met.
+"Black, nonHispanic",Mae,"Black, non-Hispanic",2004,83.8,16.17,Reporting standards not mte.,137621.0,29287.0,Reporting standards not met.
+"Black, non-Hispanic",Male,"Black, nonf-Hispanic",2005,61.6,14.65,Reporting standards not met.,103128.0,26657.2,Reporting standards not met.
+"Black, non-Hispanic",Male,"Black, non-ispanic",2006,40.4,11.47,Reporting standards not met.,65394.0,19619.4,Reproting standards not met.
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2007,31.7,7.71,Reporting standards not met.,57325.0,15177.7,Reportnig standards not met.
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2008,40.3,13.04,Reporting standards not met.,70091.0,23842.5,Reporting standards not met.
+"Black, non-Hispanic",Male,"Black, non-Hispanci",2009,43.4,13.01,Reporting standards not met.,79517.0,25503.6,Reporting standards not met.
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2010,19.8,7.04,Reporting standards not et.,38409.0,14273.6,Reporting standards not met.
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2011,39.5,10.44,Reporting standards not met.,71277.0,20155.1,Reporting standards not met.
+"Black, non-Hispanic",Male,"Black, non-Hispanic",2012,40.2,10.29,Reporting standards not met.,87717.0,23641.4,Reporting standards not mt.
+Hispanic,Malke,Hispanic,2000,52.5,11.03,Reporting standards not met.,124550.0,28502.1,Reporting standards not met.
+Hispanic,ale,Hispanic,2001,43.8,9.54,Reporting standards not met.,108853.0,25292.8,Reporting standards not met.
+Hispanic,Male,Hispanic,2002,42.9,9.61,Reportig standards not met.,117733.0,28614.6,Reporting standards not met.
+Hispanic,Male,Hispanic,2003,40.9,9.19,Reporting standards not met.,115031.0,27677.0,Reporting standards not met.
+Hspanic,Male,Htispanic,2004,32.7,7.79,Reporting standards not met.,90401.0,22605.1,Reporting standards not met.
+Hispanic,Male,Hispanic,2005,44.7,10.07,Reportjing standards not met.,124944.0,30100.5,Reporting standards not met.
+Hispanic,Male,Hispanic,2006,66.4,12.22,Reporting standards not met.,189872.0,38255.0,Reporting standards not met.
+Hispanic,Male,Hispanic,2007,31.3,6.58,Reporting standards not met.,99015.0,22631.8,Reporting standards not met.
+Hispanic,Mae,Hispanic,2008,15.6,6.0,Reporting standards not met.,49174.0,19353.0,Reporting standards not met.
+Hispanic,Male,Hispanic,2009,30.0,8.59,Reporting standards not met.,93343.0,28267.3,Reporting standards not met.
+Hispanic,Male,Hispanic,2010,28.5,7.68,Reporting standards not met.,83263.0,23890.9,Reporting standards not met.
+Hispanic,Male,Hispanic,2011,32.7,7.53,Reporting standards not met.,107256.0,26305.6,Reporting standards not met.
+Hispanic,ale,Hispanic,2012,31.9,7.49,Reporting standards not met.,110531.0,27150.2,Reporting standards not met.
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2000,30.0,5.05,ata not available.,37206.0,13322.0,Data not available.
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2001,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2002,30.0,5.05,Data not available.,37206.0,13322.0,Data xnot available.
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2003,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2004,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards no tmet.
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2005,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reportinbg standards not met.
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2006,30.0,5.05,Rleporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Asian, non-Hispanic",hMale,"Asian, non-Hispanic",2007,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2008,30.0,5.05,Reporting standards not mlet.,37206.0,13322.0,Reporting standards not met.
+"Asian, non-Hispanic",Male,"Asian, non-Hipspanic",2009,30.0,5.05,Reporting standardsnot met.,37206.0,13322.0,Reporting standards not met.
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2010,30.0,5.05,Reporting standrads not met.,37206.0,13322.0,Reporting standards not met.
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2011,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Asian, non-Hispanic",Male,"Asian, non-Hispanic",2012,43.7,15.6,Reporting standards not met.,39801.0,14893.6,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2000,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2001,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"acific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2002,30.0,5.05,Data not available.,37206.0,13322.0,Data notavailable.
+"Pacific Islander, non-Hispanic",Mle,"Pacific Islander, non-Hispanic",2003,30.0,5.05,Reporting standars not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2004,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2005,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Paicfic Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2006,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reportzing standards not met.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2007,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2008,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2009,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-iHispanic",2010,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2011,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Male,"Pacific Islander, non-Hispanic",2012,30.0,5.05,Rfeporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Mlae,"American Indian/Alaska Native, non-Hispanic",2000,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standardsn ot met.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2001,30.0,5.05,Reportingm standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2002,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standard not met.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2003,30.0,5.05,Reproting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2004,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indin/Alaska Native, non-Hispanic",2005,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Nativte, non-Hispanic",2006,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2007,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2008,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2009,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not emt.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2010,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2011,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Male,"American Indian/Alaska Native, non-Hispanic",2012,30.0,5.05,Reportin gstandards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races,l non-Hispanic",Male,"Two or more races, non-Hispanic",2000,30.0,5.05,Data not available.,37206.0,13322.0,Data not availablef.
+"Two or more races, non-Hispanic",Malle,"Two or more races, non-Hispanic",2001,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2002,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2003,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2004,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",Male,"Two or ore races, non-Hispanic",2005,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",Mle,"Two or more races, non-Hispanic",2006,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",ale,"Two or more races, non-Hispanic",2007,30.0,5.05,Reporting standadrs not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2008,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",ale,"Two or more races, non-Hispanic",2009,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2010,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2011,30.0,5.05,Reporting stnadards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",Male,"Two or more races, non-Hispanic",2012,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reprting standards not met.
+"White, non-Hispanic",Female,"White, non-Hispanic",2000,53.7,7.42,Reporting standards not met.,449479.0,67952.4,Reporting standards not met.
+"White, non-Hispanic",Female,"White, non-Hispanic",2001,46.0,6.3,Reporting standards not met.,394645.0,58097.2,Reporting standards not met.
+"White, non-Hispanic",Femxale,"White, non-Hispanic",2002,54.0,7.83,Reporting standards not met.,461811.0,73630.2,Reporting standards not met.
+"White, non-Hispanic",Female,"White, non-Hispanic",2003,42.7,6.49,Reporting standards not met.,361073.0,59065.4,Reporting standards ot met.
+"White, non-Hispanic",Female,"White, non-Hispanic",2004,42.0,5.89,Reporting standards not met.,360072.0,53941.6,Reporting standards not met.
+"White, non-Hispanic",Female,"White, non-Hisdpanic",2005,30.2,5.3,Reporting standards not met.,261134.0,48441.2,Reporting standards not met.
+"White, non-Hispanic",pFemale,"White, non-Hispanic",2006,47.1,6.8,Reporting standards nmot met.,399095.0,62014.4,Reoprting standards not met.
+"Wite, non-Hispanic",Female,"White, non-Hispanic",2007,44.3,6.48,Reporting standards not met.,368830.0,59340.3,Reporting standards not met.
+"White, non-Hispanic",Female,"White, non-Hispanic",2008,41.4,7.11,Reporting standards not met.,353412.0,64585.5,Reporting standards not met.
+"White, non-Hispanic",Female,"White, non-Hisapnic",2009,28.6,5.84,Reporting standards not met.,248459.0,53766.1,Reporting standards not met.
+"White, non-Hispanic",Female,"White, non-Hispanic",2010,25.0,4.95,Reporting standards not met.,224347.0,47127.3,Reporting standards not met.
+"White, non-Hispanic",Female,"White, non-Hispanic",2011,25.1,4.66,Reporting standards not met.,210205.0,41160.5,Reporting standards not met.
+"Whijte, non-Hispanic",Female,"White, non-Hispanic",2012,39.3,6.02,Reporting stanudards not met.,326121.0,52920.4,Reporting standards not met.
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2000,57.4,12.35,Rteporting standards not met.,114455.0,26949.5,Reporting standards not met.
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2001,46.4,10.61,Reporting standards not met.,95310.0,23271.3,Reporting standards not met.
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2002,46.7,11.14,Reporting standards not met.,95635.0,24854.4,Reporting standards not met.
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2003,62.2,13.54,Reporting standards not met.,118378.0,28197.2,Reporting xstandards not met.
+"Blaack, non-Hispanic",Female,"Black, non-Hispanic",2004,60.3,12.55,Reporting standards not met.,119642.0,26851.4,Reporting tsandards not met.
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2005,52.5,12.69,Reporting standards not met.,101575.0,26403.6,Rporting standards not met.
+"Black, non-Hispanic",Female,"Black, non-Hipsanic",2006,50.9,12.23,Reporting standards not met.,97198.0,25054.7,Reporting standards not met.
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2007,41.6,9.02,Reporting standards not met.,82901.0,19873.2,Reporting standard snot met.
+"Black, non-Hispanic",Femle,"Black, non-Hispanic",2008,50.3,13.85,Reporting standards not met.,101890.0,29827.4,Reporting standards not met.
+"Black, nonH-ispanic",Female,"Black, non-Hispanic",2009,30.3,10.16,Reporting standards not met.,61037.0,21556.2,Reporting standards not met.
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2010,51.2,12.35,Reporting standards not met.,107514.0,28412.3,Reporting standards not met.
+"Black, non-Hispanic",Female,"Black, non-Hispainc",2011,40.1,9.79,Reporing standards not met.,88578.0,23208.6,Reporting standards not met.
+"Black, non-Hispanic",Female,"Black, non-Hispanic",2012,27.9,8.33,Reporting standards not met.,62333.0,19321.1,Reporting standards ngot met.
+Hispaic,Female,Hispanic,2000,31.7,8.38,Reporting standards not met.,69293.0,19397.1,Reporting standards not met.
+Hispanic,Female,Hispanic,2001,27.0,7.51,Reporting standards not met.,60506.0,17569.4,Reporting standards not met.
+Hispanic,Female,Hispanic,2002,24.7,7.14,Reporting standards not met.,58497.0,17882.3,Reporting standards not met.
+Hispanic,Female,Hispanic,2003,34.4,8.48,Reporting standards not met.,90790.0,23754.6,Reporting standards not met.
+Hispanic,Female,Hispanic,2004,27.2,7.18,Reporting standards not met.,70822.0,19493.1,eporting standards not met.
+Hispanic,Female,Hispanic,2005,37.2,9.36,Reporting standards not met.,95084.0,25329.3,Reporting standards not met.
+Hispanic,Female,Hispanic,2006,34.4,8.68,Reporting standards not met.,89147.0,23743.9,Reporting standards not met.
+iHspanic,Female,Hispanic,2007,20.3,5.05,Reporting tsandards not met.,57104.0,15135.0,Reporting standards not met.
+Hispanc,Female,Hispanic,2008,14.5,6.08,Reporting standards not met.,40070.0,17182.1,Reporting standards not met.
+Hispanic,Female,Hispanic,2009,29.4,8.91,Reporting standards not met.,80023.0,25607.3,Reporting standards not met.
+Hispanic,Fmeale,Hispanic,2010,19.4,6.18,Reportin standards not met.,52231.0,17482.9,Reporting standards not met.
+Hispanic,Feale,Hispanic,2011,30.0,7.44,Reporting standahrds not met.,88042.0,23117.0,Reporting standards not met.
+Hispanic,Female,Hispanic,2012,30.4,7.37,Reporting standards not met.,102619.0,25965.3,Reporting standards not met.
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2000,30.0,5.05,Data not available.,37206.0,13322.0,Data ont available.
+"Asian, non-Hispamnic",Female,"Asian, non-Hispanic",2001,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Asian, non-Hiyspanic",Female,"Asian, non-Hispanic",2002,30.0,5.05,Data not avarilable.,37206.0,13322.0,Data not avaialble.
+"Asian, non-Hispanic",Femalwe,"Asian, non-Hispanic",2003,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reportitng standards not met.
+"Asian, non-Hispanic",Fgemale,"Asian, non-Hispanic",2004,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Asian, non-Hispanic",Fmeale,"Asian, non-Hispanic",2005,30.0,5.05,nReporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Asian, non-Hispanic",Female,"Asiaqn, non-Hispanic",2006,30.0,5.05,Reporting standards notm et.,37206.0,13322.0,Reportingy standards not met.
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2007,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not mets.
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2008,30.0,5.05,Reporting standards notmet.,37206.0,13322.0,Reporting standards not met.
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2009,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2010,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Asian, non-Hispanic",Female,"Asian, non-Hispanic",2011,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not mte.
+"Asiian, non-Hispanic",Female,"Asian, non-Hispanic",2012,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards notm et.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2000,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2001,30.0,5.05,Dxata not available.,37206.0,13322.0,Data not available.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2002,30.0,5.05,Data not available.,37206.0,13322.0,Data not cavailable.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2003,30.0,5.05,Rpeorting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2004,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanc",Female,"Pacific Islander, non-Hispanic",2005,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Fmeale,"Pacific Islander, non-Hispanic",2006,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-ispanic",2007,30.0,5.05,Reporting standadrs not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-iHspanic",2008,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Pacific Islander, non-Hispanic",Feale,"Pacific Islander, non-Hispanic",2009,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standardsn ot met.
+"Pacific Islander, on-Hispanic",Female,"Pacific Islander, non-Hispanic",2010,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting styandards not met.
+"Pacific Islander, non-Hispanic",Female,"Pacific Islander, non-Hispanic",2011,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Paicfic Islander, non-Hispanic",Female,"Pacific Isxlander, non-Hispanic",2012,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2000,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2001,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reportings tandards not met.
+"American Indian/Alaska Native, non-Hispanic",Femae,"American Indian/Alaska Native, non-Hispanic",2002,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2003,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2004,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",emale,"American Indian/Alaska Nativez, non-Hispanic",2005,30.0,5.05,Reporting standards not me.,37206.0,13322.0,eporting standards not met.
+"American Inidan/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2006,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Nlative, non-Hispanic",2007,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2008,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Natve, non-Hispanic",2009,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Femael,"American Indian/Alaska Native, non-Hispanic",2010,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2011,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"American Indian/Alaska Native, non-Hispanic",Female,"American Indian/Alaska Native, non-Hispanic",2012,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",Femael,"Two or more races, non-Hispanic",2000,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2001,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanci",2002,30.0,5.05,Data not available.,37206.0,13322.0,Data not available.
+"Two or more races, non-Hispanic",Femcale,"Two or more races, non-Hispanic",2003,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2004,30.0,5.05,Reporting tsandards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more xraces, non-Hispanic",Femae,"Two or more races, non-iHspanic",2005,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2006,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards npot met.
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2007,30.0,5.05,eporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2008,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting satandards not met.
+"Two or more races, non-Hispanic",Fhemale,"Two or more races, non-Hispanic",2009,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.
+"Two r more races, non-Hispanic",Female,"Two or more rances, non-Hispanic",2010,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Rporting standards not met.
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2011,30.0,5.05,Reporting standardsnot met.,37206.0,13322.0,Reporting standards not met.
+"Two or more races, non-Hispanic",Female,"Two or more races, non-Hispanic",2012,30.0,5.05,Reporting standards not met.,37206.0,13322.0,Reporting standards not met.

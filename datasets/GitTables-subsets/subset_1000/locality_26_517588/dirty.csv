@@ -1,0 +1,65 @@
+election_administration_id,external_identifier_type,external_identifier_othertype,external_identifier_value,name,polling_location_ids,state_id,type,other_type,id
+,ocd-id,,ocd-division/country:us/state:co/county:adams,ad0050,poll69799542 poll87715964 poll37370478 poll33263184 poll10010718 poll8780319 poll96897133 poll95894847 poll64763141 poll7828650 poll38652488 poll62026748 poll4430758 poll38372537 poll31259372,st08,other,,loc0001
+,ocd-id,,ocd-division/country:us/state:co/county:alamosa,alam0052,poll20195063,st08,other,,loc0002
+,ocd-id,,ocd-division/country:us/state:co/county:arapahoe,arapa0161,poll48228135 poll29683591 poll95489713 poll89586512 poll8679123 poll33103719 poll88498720 poll37097236 poll99929633 poll46388957 poll25081321 poll82371974 poll12375734 poll3565733 poll90388009 poll31162671 poll57646969 poll74466791 poll50680356 poll806119 poll63759349 poll53775014 poll35653096 poll96307704 poll22554314,st08,other,,loc0003
+,ocd-id,,ocd-division/country:us/state:co/county:archuleta,archul0182,poll84105846,st08,other,,loc0004
+,ocd-id,,ocd-division/country:us/state:co/county:baca,b0187,poll44035951,st08,other,,loc0005
+,ocd-id,,ocd-division/country:us/state:co/county:bent,b0195,poll3004360,st08,other,,loc0006
+,ocd-id,,ocd-division/country:us/state:co/county:boulder,boul0240,poll25390782 poll56391380 poll79178545 poll8827772 poll39664691 poll4391924 poll37585564 poll61947427 poll66857568 poll1721866 poll12783650 poll51510152 poll95731813 poll73543532 poll74138553 poll46155643,st08,other,,loc0007
+,ocd-id,,ocd-division/country:us/state:co/county:broomfield,broomfi0245,poll16105873 poll98092374 poll62121497,st08,other,,loc0008
+,ocd-id,,ocd-division/country:us/state:co/county:chaffee,chaf0257,poll91729346 poll39703908,st08,other,,loc0009
+,ocd-id,,ocd-division/country:us/state:co/county:cheyenne,cheye0265,poll19256122,st08,other,,loc0010
+,ocd-id,,ocd-division/country:us/state:co/county:clear_creek,clear_cr0267,poll49956019,st08,other,,loc0011
+,ocd-id,,ocd-division/country:us/state:co/county:conejos,cone0270,poll2037122,st08,other,,loc0012
+,ocd-id,,ocd-division/country:us/state:co/county:costilla,costi0276,poll70885164,st08,other,,loc0013
+,ocd-id,,ocd-division/country:us/state:co/county:crowley,crow0278,poll64096261,st08,other,,loc0014
+,ocd-id,,ocd-division/country:us/state:co/county:custer,cus0282,poll55579525,st08,other,,loc0015
+,ocd-id,,ocd-division/country:us/state:co/county:delta,de0285,poll54930732 poll99511595,st08,other,,loc0016
+,ocd-id,,ocd-division/country:us/state:co/county:denver,den0882,poll46555760 poll50309526 poll9162185 poll95335760 poll86285904 poll33875540 poll4865238 poll50600404 poll88710391 poll2495047 poll84164412 poll33853800 poll12776632 poll66395827 poll7255666 poll64162666 poll52411446 poll58297983 poll66504232 poll46071337 poll79463007 poll10912798 poll24955425 poll671705 poll55626878 poll22424621,st08,other,,loc0017
+,ocd-id,,ocd-division/country:us/state:co/county:dolores,dolo0295,poll12401578,st08,other,,loc0018
+,ocd-id,,ocd-division/country:us/state:co/county:douglas,doug0313,poll19928269 poll543058 poll69593697 poll27200274 poll41198165 poll66557983,st08,other,,loc0019
+,ocd-id,,ocd-division/country:us/state:co/county:eagle,ea0345,poll48083763 poll28361863 poll49016915 poll97883875,st08,other,,loc0020
+,ocd-id,,ocd-division/country:us/state:co/county:el_paso,el_p0396,poll88461509 poll9956005 poll94394160 poll82315982 poll11626548 poll27975571 poll71570020 poll52506905 poll2900295 poll18702274 poll28007797 poll9689482 poll10709892 poll89843682 poll89208973 poll74189758 poll23094922 poll86680022 poll36528695 poll48536998 poll40147855 poll82411542 poll43709850 poll33848065 poll67392851,st08,other,,loc0021
+,ocd-id,,ocd-division/country:us/state:co/county:elbert,elb0435,poll57854279,st08,other,,loc0022
+,ocd-id,,ocd-division/country:us/state:co/county:fremont,frem0442,poll45491307,st08,other,,loc0023
+,ocd-id,,ocd-division/country:us/state:co/county:garfield,garfi0450,poll5980598 poll19648490,st08,other,,loc0024
+,ocd-id,,ocd-division/country:us/state:co/county:gilpin,gil0454,poll51141578,st08,other,,loc0025
+,ocd-id,,ocd-division/country:us/state:co/county:grand,gr0461,poll72078351,st08,other,,loc0026
+,ocd-id,,ocd-division/country:us/state:co/county:gunnison,gunni0468,poll71954125 poll1444601,st08,other,,loc0027
+,ocd-id,,ocd-division/country:us/state:co/county:hinsdale,hinsd0904,poll98033681,st08,other,,loc0028
+,ocd-id,,ocd-division/country:us/state:co/county:huerfano,huerf0469,poll45863722,st08,other,,loc0029
+,ocd-id,,ocd-division/country:us/state:co/county:jackson,jack0471,poll86263256,st08,other,,loc0030
+,ocd-id,,ocd-division/country:us/state:co/county:jefferson,jeffer0497,poll25780804 poll7535703 poll65074775 poll55454265 poll70944661 poll79015726 poll9012494 poll21172474 poll26901836 poll36895768 poll29818260 poll72687525,st08,other,,loc0031
+,ocd-id,,ocd-division/country:us/state:co/county:kiowa,ki0533,poll18889272,st08,other,,loc0032
+,ocd-id,,ocd-division/country:us/state:co/county:kit_carson,kit_car0536,poll2165191,st08,other,,loc0033
+,ocd-id,,ocd-division/country:us/state:co/county:la_plata,la_pl0558,poll70738083 poll72313997 poll28160773,st08,other,,loc0034
+,ocd-id,,ocd-division/country:us/state:co/county:lake,l0541,poll80096771,st08,other,,loc0035
+,ocd-id,,ocd-division/country:us/state:co/county:larimer,lari0589,poll13289914 poll81509380 poll81811168 poll54382856 poll46430206 poll79169021 poll25964955,st08,other,,loc0036
+,ocd-id,,ocd-division/country:us/state:co/county:las_animas,las_ani0598,poll19391024,st08,other,,loc0037
+,ocd-id,,ocd-division/country:us/state:co/county:lincoln,linc0599,poll56414353,st08,other,,loc0038
+,ocd-id,,ocd-division/country:us/state:co/county:logan,lo0900,poll96382638,st08,other,,loc0039
+,ocd-id,,ocd-division/country:us/state:co/county:mesa,m0619,poll79460306 poll76514836 poll55574113 poll86553632 poll21931558 poll60305581,st08,other,,loc0040
+,ocd-id,,ocd-division/country:us/state:co/county:mineral,mine0629,poll45595897,st08,other,,loc0041
+,ocd-id,,ocd-division/country:us/state:co/county:moffat,mof0642,poll47768807,st08,other,,loc0042
+,ocd-id,,ocd-division/country:us/state:co/county:montezuma,montez0647,poll67482386,st08,other,,loc0043
+,ocd-id,,ocd-division/country:us/state:co/county:montrose,montr0661,poll16756309 poll4135583 poll61523106,st08,other,,loc0044
+,ocd-id,,ocd-division/country:us/state:co/county:morgan,mor0663,poll83259366,st08,other,,loc0045
+,ocd-id,,ocd-division/country:us/state:co/county:otero,ot0670,poll98131425,st08,other,,loc0046
+,ocd-id,,ocd-division/country:us/state:co/county:ouray,ou0678,poll61995007,st08,other,,loc0047
+,ocd-id,,ocd-division/country:us/state:co/county:park,p0679,poll7777405 poll3653053,st08,other,,loc0048
+,ocd-id,,ocd-division/country:us/state:co/county:phillips,phill0692,poll62779751,st08,other,,loc0049
+,ocd-id,,ocd-division/country:us/state:co/county:pitkin,pit0698,poll1309913,st08,other,,loc0050
+,ocd-id,,ocd-division/country:us/state:co/county:prowers,prow0703,poll57233365,st08,other,,loc0051
+,ocd-id,,ocd-division/country:us/state:co/county:pueblo,pue0715,poll91787213 poll34493619 poll56242137 poll92092338 poll98796056 poll76796823,st08,other,,loc0052
+,ocd-id,,ocd-division/country:us/state:co/county:rio_blanco,rio_blan0729,poll64037064 poll89583177,st08,other,,loc0053
+,ocd-id,,ocd-division/country:us/state:co/county:rio_grande,rio_gran0735,poll57049059,st08,other,,loc0054
+,ocd-id,,ocd-division/country:us/state:co/county:routt,ro0740,poll44859783,st08,other,,loc0055
+,ocd-id,,ocd-division/country:us/state:co/county:saguache,sagua0743,poll37602447,st08,other,,loc0056
+,ocd-id,,ocd-division/country:us/state:co/county:san_juan,san_j0750,poll59268607,st08,other,,loc0057
+,ocd-id,,ocd-division/country:us/state:co/county:san_miguel,san_mig0755,poll76529795 poll69152569,st08,other,,loc0058
+,ocd-id,,ocd-division/country:us/state:co/county:sedgwick,sedgw0762,poll64650628,st08,other,,loc0059
+,ocd-id,,ocd-division/country:us/state:co/county:summit,sum0770,poll1296449,st08,other,,loc0060
+,ocd-id,,ocd-division/country:us/state:co/county:teller,tel0772,poll88144032,st08,other,,loc0061
+,ocd-id,,ocd-division/country:us/state:co/county:washington,washing0776,poll9492729,st08,other,,loc0062
+,ocd-id,,ocd-division/country:us/state:co/county:weld,w0785,poll23953029 poll12693883 poll39226430 poll75170666 poll29212238,st08,other,,loc0063
+,ocd-id,,ocd-division/country:us/state:co/county:yuma,y0811,poll15932601,st08,other,,loc0064

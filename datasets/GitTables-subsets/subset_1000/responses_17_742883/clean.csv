@@ -1,0 +1,1497 @@
+userid,snippet,r_group,time,cause,explanation,fix
+9,prog0971,ocaml,357038,let base a = a,"pipe is trying to add two identity functions together, like so:
+
+f (\a -> a) (\x -> x + x)
+(\a -> a) + (\a + a)","
+let pipe fs base = 
+  let f a x = x a in 
+    List.fold_left f base fs;;
+
+let _ = pipe [(fun x  -> x + x); (fun x  -> x + 3)] 3;;
+"
+9,palindrome,nanomaly,461762,| hd::tl -> helper (hd :: xs) tl in helper,"helper is defined at | hd::tl -> case with a second arg, but its signature only has one arg
+
+also, helper is not actually doing anything because it is passed an empty list [] in listReverse. but this is a different error.","
+let listReverse l =
+  let rec helper xs = function 
+    | [] -> xs 
+    | hd::tl -> (helper tl) @ [hd]
+  in helper l;;
+
+let palindrome (w : char list) =
+  if (listReverse w) = w 
+  then true 
+  else false;;
+"
+9,prog0223,ocaml,356652,let f a x = x ,f discards the first arg and returns the second arg but line 6 expects an expr with the same type as the first arg / accumulator,"
+let bigMul l1 l2 =
+  let f (a,l) x = (a*x, x::l) in
+  let base = (0, []) in
+  let args = l1 in 
+  let (_,res) = List.fold_left f base args in
+    res;;
+
+let _ = bigMul [9] [9];;
+(* semantically this still isn't correct since,
+* assuming bigMul is multiplication,
+* this just multiplies everything by 0 *)"
+9,prog3382,nanomaly,138119,"((g b), b)","g is defined to return a boolean, while wwhile clearly expects a function as the first element of its tuple arg","
+let rec wwhile (f,b) =
+  let rec wwhelper f b =
+    let (b',c') = f b in 
+    if c' = false 
+    then b' 
+    else wwhelper f b' in
+  wwhelper f b;;
+
+let fixpoint (f,b) = 
+  wwhile (let g x = (f x) <> x in 
+          (f, b));;
+"
+9,prog2746,ocaml,506337,| hd::tl -> [a + hd] :: tl,"head is supposed to be an element, not another list","
+let rec mulByDigit i l =
+  let comb a b = 
+    match b with 
+    | [] -> [a] 
+    | hd::tl -> (a + hd) :: tl in
+
+  let rec mBDhelper i x =
+    match x with
+    | [] -> []
+    | hd::tl ->
+        if (hd * i) > 9
+        then ((hd * i) / 10) :: (comb ((hd * i) mod 10) (mBDhelper i tl))
+        else (hd * i) :: (mBDhelper i tl) in
+
+  mBDhelper i l;;
+"
+9,gist1,nanomaly,70201,| 2 -> buildSine buildX,"buildSine expects an expr, not a function","type expr =
+  | VarX
+  | VarY
+  | Sine of expr
+  | Cosine of expr
+  | Average of expr * expr
+  | Times of expr * expr
+  | Thresh of expr * expr * expr * expr
+
+let buildSine e = Sine e
+let buildX () = VarX
+let buildY () = VarY
+
+let rec build (rand,depth) =
+  match rand (0, depth) with
+  | 0 -> buildX
+  | 1 -> buildY
+  | 2 -> buildSine (buildX ())
+  | _ -> buildX
+"
+9,gist2,ocaml,191432,let seen' = seen @ h,"@ appends two lists, while h is only an element","let removeDuplicates l =
+  let rec helper (seen,rest) =
+    match rest with
+    | [] -> seen
+    | h::t ->
+        let seen' = h :: seen in 
+        let rest' = let is_in i = (i mod 2) = 0 in 
+                    List.filter is_in t in
+        helper (seen', rest') in
+  List.rev (helper ([], l))
+"
+9,gist3,nanomaly,133299,additivePersistence (sumList (digitsOfInt (digits n))),"digitsOfInt expects an integer arg, but this expr passes a list to it","let rec digitsOfInt n =
+  if n < 1 
+  then []
+  else (digitsOfInt (n / 10)) @ [n mod 10]
+
+let digits n = digitsOfInt (abs n)
+
+let rec sumList xs = match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)
+
+let rec additivePersistence n =
+  if sumList (digitsOfInt (digits n)) < 10
+  then n
+  else additivePersistence (sumList (digitsOfInt n))
+"
+9,prog3197,ocaml,103296,digHelper (sumList n) ,"sumList expects an integer arg, but this expr passes an int to it","
+let rec sumList xs = 
+  match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t);;
+
+let rec digitalRoot n =
+  let rec digHelper n = 
+    if n < 10 
+    then n
+    else digHelper (sumList [n]) in
+  digHelper n;;
+"
+10,gist2,nanomaly,10671,,,"let removeDuplicates l =
+  let rec helper (seen,rest) =
+    match rest with
+    | [] -> seen
+    | h::t ->
+        let seen' = seen @ h in 
+        let rest' = let is_in i = (i mod 2) = 0 in 
+                    List.filter is_in t in
+        helper (seen', rest') in
+  List.rev (helper ([], l))
+"
+10,gist3,ocaml,18700,,,"let rec digitsOfInt n =
+  if n < 1 
+  then []
+  else (digitsOfInt (n / 10)) @ [n mod 10]
+
+let digits n = digitsOfInt (abs n)
+
+let rec sumList xs = match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)
+
+let rec additivePersistence n =
+  if sumList (digitsOfInt (digits n)) < 10
+  then n
+  else additivePersistence (sumList (digitsOfInt (digits n)))
+"
+10,prog3197,nanomaly,10503,,,"
+let rec sumList xs = 
+  match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t);;
+
+let rec digitalRoot n =
+  let rec digHelper n = 
+    if n < 10 
+    then n
+    else digHelper (sumList n) in
+  digHelper n;;
+"
+10,prog2746,nanomaly,10430,,,"
+let rec mulByDigit i l =
+  let comb a b = 
+    match b with 
+    | [] -> [a] 
+    | hd::tl -> [a + hd] :: tl in
+
+  let rec mBDhelper i x =
+    match x with
+    | [] -> []
+    | hd::tl ->
+        if (hd * i) > 9
+        then ((hd * i) / 10) :: (comb ((hd * i) mod 10) (mBDhelper i tl))
+        else (hd * i) :: (mBDhelper i tl) in
+
+  mBDhelper i l;;
+"
+10,gist1,ocaml,5806,,,"type expr =
+  | VarX
+  | VarY
+  | Sine of expr
+  | Cosine of expr
+  | Average of expr * expr
+  | Times of expr * expr
+  | Thresh of expr * expr * expr * expr
+
+let buildSine e = Sine e
+let buildX () = VarX
+let buildY () = VarY
+
+let rec build (rand,depth) =
+  match rand (0, depth) with
+  | 0 -> buildX
+  | 1 -> buildY
+  | 2 -> buildSine buildX
+  | _ -> buildX
+"
+10,prog0223,nanomaly,29050,,,"
+let bigMul l1 l2 =
+  let f a x = x in
+  let base = (0, []) in
+  let args = l1 in 
+  let (_,res) = List.fold_left f base args in
+    res;;
+
+let _ = bigMul [9] [9];;
+"
+10,prog3382,ocaml,3287,,,"
+let rec wwhile (f,b) =
+  let rec wwhelper f b =
+    let (b',c') = f b in 
+    if c' = false 
+    then b' 
+    else wwhelper f b' in
+  wwhelper f b;;
+
+let fixpoint (f,b) = 
+  wwhile (let g x = (f x) <> x in 
+          ((g b), b));;
+"
+10,palindrome,ocaml,2599,,,"
+let listReverse l =
+  let rec helper xs = function 
+    | [] -> xs 
+    | hd::tl -> helper (hd :: xs) tl 
+  in helper [];;
+
+let palindrome (w : char list) =
+  if (listReverse w) = w 
+  then true 
+  else false;;
+"
+10,prog0971,nanomaly,4657,,,"
+let pipe fs = 
+  let f a x = x a in 
+  let base a = a in 
+    List.fold_left f base fs;;
+
+let _ = pipe [(fun x  -> x + x); (fun x  -> x + 3)] 3;;
+"
+12,prog0971,nanomaly,606984,Line 3: f a x = x a,"It is supposed to be a function composition, not application","
+let pipe fs = 
+  let f a b x = b (a x) in 
+  let base a = a in 
+    List.fold_left f base fs;;
+
+let _ = pipe [(fun x  -> x + x); (fun x  -> x + 3)] 3;;
+"
+12,palindrome,ocaml,119384,Line 6: helper [],Parameter l was never used,"
+let listReverse l =
+  let rec helper xs = function 
+    | [] -> xs 
+    | hd::tl -> helper (hd :: xs) tl 
+  in helper [] l;;
+
+let palindrome (w : char list) =
+  if (listReverse w) = w 
+  then true 
+  else false;;
+"
+12,prog0223,nanomaly,376408,"Where's the multiplication? Why is l2 never used? What is this, biginteger multiplication?","I don't even know the intended functionality here, in spite of the descriptive name bigMul.","
+let bigMul l1 l2 =
+  let f a x = x in
+  let base = (0, []) in
+  let args = l1 in 
+  let (_,res) = List.fold_left f base args in
+    res;;
+
+let _ = bigMul [9] [9];;
+"
+12,prog3382,ocaml,429212,"let g x = (f x) <> x in 
+          ((g b), b)","wwhile is supposed to get a function as the first param, not a value","
+let rec wwhile (f,b) =
+  let rec wwhelper f b =
+    let (b',c') = f b in 
+    if c' = false 
+    then b' 
+    else wwhelper f b' in
+  wwhelper f b;;
+
+let fixpoint (f,b) = 
+  let g x = 
+    let t = f x in
+    (t,t<>x)
+  in
+  wwhile (g,b);;
+"
+12,prog2746,nanomaly,290861,[a + hd] :: tl,"Cons requires a single element, not a list.
+
+Also, I feel like we have bigger bugs here if the recursive mBDhelper on line 13 returns a list longer than expected. It will end up adding the carry in the wrong location.","
+let rec mulByDigit i l =
+  let comb a b = 
+    match b with 
+    | [] -> [a] 
+    | hd::tl -> (a + hd) :: tl in
+
+  let rec mBDhelper i x =
+    match x with
+    | [] -> []
+    | hd::tl ->
+        if (hd * i) > 9
+        then ((hd * i) / 10) :: (comb ((hd * i) mod 10) (mBDhelper i tl))
+        else (hd * i) :: (mBDhelper i tl) in
+
+  mBDhelper i l;;
+"
+12,gist1,ocaml,76843,buildX,"buildX is a function, which needs to be invoked","type expr =
+  | VarX
+  | VarY
+  | Sine of expr
+  | Cosine of expr
+  | Average of expr * expr
+  | Times of expr * expr
+  | Thresh of expr * expr * expr * expr
+
+let buildSine e = Sine e
+let buildX () = VarX
+let buildY () = VarY
+
+let rec build (rand,depth) =
+  match rand (0, depth) with
+  | 0 -> buildX
+  | 1 -> buildY
+  | 2 -> buildSine (buildX())
+  | _ -> buildX
+"
+12,gist2,nanomaly,218553,"seen@h ... 
+also why is is_in i = (i mod 2) = 0?!","First, h is not a list","let removeDuplicates l =
+  let rec helper (seen,rest) =
+    match rest with
+    | [] -> seen
+    | h::t ->
+        let seen' = seen @ [h] in 
+        let rest' = let is_in i = (i <> h) in 
+                    List.filter is_in t in
+        helper (seen', rest') in
+  List.rev (helper ([], l))
+"
+12,gist3,ocaml,150816,(digitsOfInt (digits n)),digits already invokes digitsOfInt,"let rec digitsOfInt n =
+  if n < 1 
+  then []
+  else (digitsOfInt (n / 10)) @ [n mod 10]
+
+let digits n = digitsOfInt (abs n)
+
+let rec sumList xs = match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)
+
+let rec additivePersistence n =
+  if n < 10
+  then n
+  else additivePersistence (sumList digits n))
+"
+12,prog3197,nanomaly,256545,"    if n < 10 
+    then n
+    else digHelper (sumList n) in","n < 10 implies that we wanted n to be an int, but simList says we wanted [int]. ","
+let rec sumList xs = 
+  if n = 0 then 0 else n mod 10 + sumList (n/10)
+
+let rec digitalRoot n =
+  let rec digHelper n = 
+    if n < 10 
+    then n
+    else digHelper (sumList n) in
+  digHelper n;;
+"
+14,prog0971,nanomaly,556390,I think the f function is defined incorrectly in pipe.,"The f function switches the order of the function and the value, so it causes the first function supplied to appear to be wrong.","
+let pipe fs = 
+  let f x a = x a in 
+  let base a = a in 
+    List.fold_left f base fs;;
+
+let _ = pipe [(fun x  -> x + x); (fun x  -> x + 3)] 3;;
+"
+14,palindrome,ocaml,98194,"""helper []"" should be ""helper l []""","The helper function was only partially applied in listReverse, and the input wasn't being used.","
+let listReverse l =
+  let rec helper xs = function 
+    | [] -> xs 
+    | hd::tl -> helper (hd :: xs) tl 
+  in helper l [];;
+
+let palindrome (w : char list) =
+  if (listReverse w) = w 
+  then true 
+  else false;;
+"
+14,prog0223,nanomaly,539601,Maybe let f a x = x ? I'm having trouble telling what this program is supposed to actually do.,"Definitely the base and the return of f aren't the same, which means that the fold isn't working.","
+let bigMul l1 l2 =
+  let f a x = (a,x) in
+  let base = (0, []) in
+  let args = l1 in 
+  let (_,res) = List.fold_left f base args in
+    res;;
+
+let _ = bigMul [9] [9];;
+"
+14,prog3382,ocaml,463618,"I think the (g b) is, but I honestly have no idea what this function is trying to accomplish.",Because wwhile expects f to be a function that hasn't already been applied.,"
+let rec wwhile (f,b) =
+  let rec wwhelper f b =
+    let (b',c') = f b in 
+    if c' = false 
+    then b' 
+    else wwhelper f b' in
+  wwhelper f b;;
+
+let fixpoint (f,b) = 
+  wwhile (let g x = (f x) <> x in 
+          ((g), b));;
+"
+14,prog2746,nanomaly,341940,[a + hd],"[a + hd] shouldn't be in the list bracket things, it should just be an int so that it can be cons'd","
+let rec mulByDigit i l =
+  let comb a b = 
+    match b with 
+    | [] -> [a] 
+    | hd::tl -> (a + hd) :: tl in
+
+  let rec mBDhelper i x =
+    match x with
+    | [] -> []
+    | hd::tl ->
+        if (hd * i) > 9
+        then ((hd * i) / 10) :: (comb ((hd * i) mod 10) (mBDhelper i tl))
+        else (hd * i) :: (mBDhelper i tl) in
+
+  mBDhelper i l;;
+"
+14,gist1,ocaml,315453,"I guess buildSine buildX, but the design here is super strange. Apparently build is supposed to return a function that expects unit, but a more reasonable design would be to supply the unit ourselves. So to be compliant with the rest of the implementation, we could change buildSine buildX; or, we could change the rest so that the unit parameter is actually passed to all the build functions.","buildX and buildY expect a unit, but buildSine expects an expression","type expr =
+  | VarX
+  | VarY
+  | Sine of expr
+  | Cosine of expr
+  | Average of expr * expr
+  | Times of expr * expr
+  | Thresh of expr * expr * expr * expr
+
+let buildSine e = Sine e
+let buildX () = VarX
+let buildY () = VarY
+
+let rec build (rand,depth) =
+  match rand (0, depth) with
+  | 0 -> buildX ()
+  | 1 -> buildY ()
+  | 2 -> buildSine (buildX ())
+  | _ -> buildX ()
+"
+14,gist2,nanomaly,171728,seen @ h,@ expects two lists. h is not a list.,"let removeDuplicates l =
+  let rec helper (seen,rest) =
+    match rest with
+    | [] -> seen
+    | h::t ->
+        let seen' = seen @ [h] in 
+        let rest' = let is_in i = (i mod 2) = 0 in 
+                    List.filter is_in t in
+        helper (seen', rest') in
+  List.rev (helper ([], l))
+"
+14,gist3,ocaml,399415,digitsOfInt (digits n),Because digits is clearly a wrapper for digitsOfInt.,"let rec digitsOfInt n =
+  if n < 1 
+  then []
+  else (digitsOfInt (n / 10)) @ [n mod 10]
+
+let digits n = digitsOfInt (abs n)
+
+let rec sumList xs = match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)
+
+let rec additivePersistence n =
+  if sumList ((digits n)) < 10
+  then n
+  else additivePersistence (sumList ((digits n)))
+"
+14,prog3197,nanomaly,577681,definitely (sumList n),because n is not a list. We kinda need another function to turn n into a list of digits,"
+let rec sumList xs = 
+  match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t);;
+
+let rec digitalRoot n =
+  let rec digHelper n = 
+    if n < 10 
+    then n
+    else digHelper (sumList (listOfDigits n)) in
+  digHelper n;;
+"
+15,prog0971,ocaml,576714,let f a x = x a in ...,"Computing (x a) applies x to the accumulator (a function) instead of to the result of applying that function. Thus OCaml expect x to have a function type, but the plus requires an int.","
+let pipe fs = 
+  let f a b x = b (a x) in 
+  let base a = a in 
+    List.fold_left f base fs;;
+
+let _ = pipe [(fun x  -> x + x); (fun x  -> x + 3)] 3;;
+"
+15,palindrome,nanomaly,139150,helper [],"helper is a function that takes two lists, but is called with only one argument. This gives (listReverse w) a function type instead of a list type.","
+let listReverse l =
+  let rec helper xs = function 
+    | [] -> xs 
+    | hd::tl -> helper (hd :: xs) tl 
+  in helper [] l;;
+
+let palindrome (w : char list) =
+  if (listReverse w) = w 
+  then true 
+  else false;;
+"
+15,prog0223,ocaml,647658,"let base = (0, []) in ...","The fold ignores the accumulator and returns the next element in the list on every iteration. Since the accumulator's type is deduced from base (as well as being unpacked in the let (_,res) = ... assignment), every element of the list must have that type.","(* I'm actually not sure what this program
+   is supposed to do. Presumably the real
+   problem is in the accumlator function,
+   but since I don't know the desired result
+   I just made the type error go away. *)
+let bigMul l1 l2 =
+  let f a x = x in
+  let base = 0 in
+  let args = l1 in 
+  let res = List.fold_left f base args in
+    res;;
+
+let _ = bigMul [9] [9];;
+"
+15,prog3382,nanomaly,525478,"wwhile (let g x = (f x) <> x in ((g b), b))",The argument to wwhile should be a function and an argument instead of a boolean and an argument.,"
+let rec wwhile (f,b) =
+  let rec wwhelper f b =
+    let (b',c') = f b in 
+    if c' = false 
+    then b' 
+    else wwhelper f b' in
+  wwhelper f b;;
+
+let fixpoint (f,b) = 
+  wwhile (let g x = (f x, (f x) <> x) in 
+          (g, b));;
+"
+15,prog2746,ocaml,721804,[a + hd],"The first case of the match returns a list of int, while the second case of the match returns a list of list of int. (We know a must have type int because of the + operator.)","
+let rec mulByDigit i l =
+  let comb a b = 
+    match b with 
+    | [] -> [a] 
+    | hd::tl -> (a + hd) :: tl in
+
+  let rec mBDhelper i x =
+    match x with
+    | [] -> []
+    | hd::tl ->
+        if (hd * i) > 9
+        then ((hd * i) / 10) :: (comb ((hd * i) mod 10) (mBDhelper i tl))
+        else (hd * i) :: (mBDhelper i tl) in
+
+  mBDhelper i l;;
+"
+15,gist1,nanomaly,80008,buildSine buildX,"buildSine takes an expression, but was given a function.","type expr =
+  | VarX
+  | VarY
+  | Sine of expr
+  | Cosine of expr
+  | Average of expr * expr
+  | Times of expr * expr
+  | Thresh of expr * expr * expr * expr
+
+let buildSine e = Sine e
+let buildX () = VarX
+let buildY () = VarY
+
+let rec build (rand,depth) =
+  match rand (0, depth) with
+  | 0 -> buildX
+  | 1 -> buildY
+  | 2 -> buildSine (buildX ())
+  | _ -> buildX
+"
+15,gist2,ocaml,246187,seen @ h,"The (@) operator takes two lists. Since h must be a list, for (h::t) to have matched, t must have been a list of lists. However, (List.filter is_in) expects t to be a list of ints instead.","let removeDuplicates l =
+  let rec helper (seen,rest) =
+    match rest with
+    | [] -> seen
+    | h::t ->
+        let seen' = h :: seen in 
+        let rest' = let is_in i = (i mod 2) = 0 in 
+                    List.filter is_in t in
+        helper (seen', rest') in
+  List.rev (helper ([], l))
+"
+15,gist3,nanomaly,183262,digitsOfInt (digits n),"Since digits is defined in terms of digitsOfInt, it returns a list. Passing the result to digitsOfInt results in a type error comparing the list to an integer.","let rec digitsOfInt n =
+  if n < 1 
+  then []
+  else (digitsOfInt (n / 10)) @ [n mod 10]
+
+let digits n = digitsOfInt (abs n)
+
+let rec sumList xs = match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)
+
+let rec additivePersistence n =
+  if sumList (digits n) < 10
+  then n
+  else additivePersistence (sumList (digits n))
+"
+15,prog3197,ocaml,347016,sumList n,"sumList expects an int list, but digHelper passes it an int.","(* I am not sure what this is actually
+   supposed to compute. Is it supposed to
+   be like additivePersistence from the
+   previous question? I can make the type
+   error go away, but without knowing how
+   to reduce the input, the recursive
+   case will never terminate... *)
+let rec sumList xs = 
+  match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t);;
+
+let rec digitalRoot n =
+  let rec digHelper n = 
+    if n < 10 
+    then n
+    else digHelper n in
+  digHelper n;;
+"
+17,prog0971,ocaml,566853,x + x,Because the + operator can't be applied to two things that are not ints,"
+let pipe fs = 
+  let f a x = x a in 
+  let base a = a in 
+    List.fold_left f base fs;;
+
+let _ = pipe 3 [(fun x  -> x + x); (fun x  -> x + 3)];;
+"
+17,palindrome,nanomaly,162798,helper [],helper is missing an argument for the list,"
+let listReverse l =
+  let rec helper xs = function 
+    | [] -> xs 
+    | hd::tl -> helper (hd :: xs) tl 
+  in helper [] l;;
+
+let palindrome (w : char list) =
+  if (listReverse w) = w 
+  then true 
+  else false;;
+"
+17,prog0223,ocaml,460620,List.fold_left f base args,"Because the accumulator for fold (and therefore the return type of fold) is a pair of a number and a list, but the function just returns its argument.  ","
+let bigMul l1 l2 =
+  let f a x = x in
+  let base = 0 in
+  let args = l1 in 
+  let res = List.fold_left f base args in
+    res;;
+
+let _ = bigMul [9] [9];;
+"
+17,prog3382,nanomaly,270178,"let (b',c') = f b","The first argument returned is the boolean, not the second","
+let rec wwhile (f,b) =
+  let rec wwhelper f b =
+    let (c',b') = f b in 
+    if c' = false 
+    then b' 
+    else wwhelper f b' in
+  wwhelper f b;;
+
+let fixpoint (f,b) = 
+  wwhile (let g x = (f x) <> x in 
+          ((g b), b));;
+"
+17,prog2746,ocaml,340927,[a + hd] :: tl,"Since a + hd is wrapped in square brackets it is a list, but should just be a value","
+let rec mulByDigit i l =
+  let comb a b = 
+    match b with 
+    | [] -> [a] 
+    | hd::tl -> (a + hd) :: tl in
+
+  let rec mBDhelper i x =
+    match x with
+    | [] -> []
+    | hd::tl ->
+        if (hd * i) > 9
+        then ((hd * i) / 10) :: (comb ((hd * i) mod 10) (mBDhelper i tl))
+        else (hd * i) :: (mBDhelper i tl) in
+
+  mBDhelper i l;;
+"
+17,gist1,nanomaly,225442,"match rand (0, depth) with
+  | 0 -> buildX
+  | 1 -> buildY
+  | 2 -> buildSine buildX
+  | _ -> buildX","The buildX and buildY functions need to be called with unit as the argument, otherwise they are partial functions","type expr =
+  | VarX
+  | VarY
+  | Sine of expr
+  | Cosine of expr
+  | Average of expr * expr
+  | Times of expr * expr
+  | Thresh of expr * expr * expr * expr
+
+let buildSine e = Sine e
+let buildX () = VarX
+let buildY () = VarY
+
+let rec build (rand,depth) =
+  match rand (0, depth) with
+  | 0 -> buildX ()
+  | 1 -> buildY ()
+  | 2 -> buildSine (buildX ())
+  | _ -> buildX ()
+"
+17,gist2,ocaml,134807,seen' = seen @ h,"Using list append, so h must be a list. But actually it is an element - should wrap it in square brackets to build a list","let removeDuplicates l =
+  let rec helper (seen,rest) =
+    match rest with
+    | [] -> seen
+    | h::t ->
+        let seen' = seen @ [h] in 
+        let rest' = let is_in i = (i mod 2) = 0 in 
+                    List.filter is_in t in
+        helper (seen', rest') in
+  List.rev (helper ([], l))
+"
+17,gist3,nanomaly,199232,(digitsOfInt (digits n)),the argument to digitsOfInt is (digits n) which itself is a list,"let rec digitsOfInt n =
+  if n < 1 
+  then []
+  else (digitsOfInt (n / 10)) @ [n mod 10]
+
+let digits n = digitsOfInt (abs n)
+
+let rec sumList xs = match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)
+
+let rec additivePersistence n =
+  if sumList (digitsOfInt n) < 10
+  then n
+  else additivePersistence (sumList (digitsOfInt n))
+"
+17,prog3197,ocaml,137411,if n < 10,"n is used as an integer, but the integer is (sumList n)","
+let rec sumList xs = 
+  match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t);;
+
+let rec digitalRoot n =
+  let rec digHelper n = 
+    if (sumList n) < 10 
+    then (sumList n)
+    else digHelper (sumList n) in
+  digHelper n;;
+"
+18,prog0971,nanomaly,257287,let f a x = x a in ,the code is attempting to add two identity functions,"
+let pipe fs = 
+  let f a x = a x in 
+  let base a = a in 
+    List.fold_left f base fs;;
+
+let _ = pipe [(fun x  -> x + x); (fun x  -> x + 3)] 3;;
+"
+18,palindrome,ocaml,332560,in helper [],helper was not called on the list,"
+let listReverse l =
+  let rec helper xs = function 
+    | [] -> xs 
+    | hd::tl -> helper (hd :: xs) tl 
+  in helper [] l;;
+
+let palindrome (w : char list) =
+  if (listReverse w) = w 
+  then true 
+  else false;;
+"
+18,prog0223,nanomaly,705375,"let (_,res) = List.fold_left f base args","The fold operation returns an int, and is attempting to be assigned to a pair","
+let bigMul l1 l2 =
+  let f a x = x in
+  let base = (0, []) in
+  let args = l1 in 
+  let res = List.fold_left f base args in
+    res;;
+
+let _ = bigMul [9] [9];;
+"
+18,prog3382,ocaml,537592,"wwhile (let g x = (f x) <> x in 
+          ((g b), b))","g should return a pair, and just the function should be passed to while.","
+let rec wwhile (f,b) =
+  let rec wwhelper f b =
+    let (b',c') = f b in 
+    if c' = false 
+    then b' 
+    else wwhelper f b' in
+  wwhelper f b;;
+
+let fixpoint (f,b) = 
+  wwhile (let g x = ((f x),(f x) <> x) in 
+          (g, b));;
+"
+18,prog2746,nanomaly,126582,[a + hd],This should be an integer rather than a list,"
+let rec mulByDigit i l =
+  let comb a b = 
+    match b with 
+    | [] -> [a] 
+    | hd::tl -> (a + hd) :: tl in
+
+  let rec mBDhelper i x =
+    match x with
+    | [] -> []
+    | hd::tl ->
+        if (hd * i) > 9
+        then ((hd * i) / 10) :: (comb ((hd * i) mod 10) (mBDhelper i tl))
+        else (hd * i) :: (mBDhelper i tl) in
+
+  mBDhelper i l;;
+"
+18,gist1,ocaml,134507,Sine e,"should be an initializer, not a function call","type expr =
+  | VarX
+  | VarY
+  | Sine of expr
+  | Cosine of expr
+  | Average of expr * expr
+  | Times of expr * expr
+  | Thresh of expr * expr * expr * expr
+
+let buildSine e = Sine(e)
+let buildX () = VarX
+let buildY () = VarY
+
+let rec build (rand,depth) =
+  match rand (0, depth) with
+  | 0 -> buildX
+  | 1 -> buildY
+  | 2 -> buildSine buildX
+  | _ -> buildX
+"
+18,gist2,nanomaly,307999,seen @ h,concatenating a list with a single value from the head,"let removeDuplicates l =
+  let rec helper (seen,rest) =
+    match rest with
+    | [] -> seen
+    | h::t ->
+        let seen' = seen @ [h] in 
+        let rest' = let is_in i = (i mod 2) = 0 in 
+                    List.filter is_in t in
+        helper (seen', rest') in
+  List.rev (helper ([], l))
+"
+18,gist3,ocaml,200183,let digits n = digitsOfInt (abs n),this creates a list when I think we just want the positive version of n,"let rec digitsOfInt n =
+  if n < 1 
+  then []
+  else (digitsOfInt (n / 10)) @ [n mod 10]
+
+let digits n = (abs n)
+
+let rec sumList xs = match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)
+
+let rec additivePersistence n =
+  if sumList (digitsOfInt (digits n)) < 10
+  then n
+  else additivePersistence (sumList (digitsOfInt (digits n)))
+"
+18,prog3197,nanomaly,243929,if n < 10 ,this causes the compiler to infer that n is an int when it should be a list,"
+let rec sumList xs = 
+  match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t);;
+
+let rec digitalRoot n =
+  let rec digHelper n = 
+    if (sumList n) < 10 
+    then n
+    else digHelper (sumList n) in
+  digHelper n;;
+"
+19,prog0971,ocaml,2027488,"""pipe [(fun x  -> x + x); (fun x  -> x + 3)] 3"" is at fault",The elements of the list do not match the expected type,"
+let pipe fs = 
+  let f a x = x a in 
+  let base a = a in 
+    List.fold_left f base fs;;
+
+let _ = pipe [(fun x a -> x a + a); (fun x  -> x a + 3)] 3;;
+"
+19,palindrome,nanomaly,504770,The helper function is wrong,"""listReverse w"" resolves to a function which is then compared for equality with a char list","
+let rec listReverse l = function
+  | [] -> []
+  | hd::tl -> List.append (listReverse tl) [hd];;
+
+let palindrome (w : char list) =
+  if (listReverse w) = w 
+  then true 
+  else false;;
+"
+19,prog0223,ocaml,572823,"It's hard to tell without knowing this program's intent, but it may be line 6 ""(_,res)""","the result of ""List.fold_left f base args"" is forced to be a tuple (similarly with f) so l1 is expected to be a tuple","
+let bigMul l1 l2 =
+  let f a x = x in
+  List.fold_left f (0, []) l1;;
+
+let _ = bigMul [9] [9];;
+"
+19,prog3382,nanomaly,392302,"""(g b)"" on line 12",function g has been applied to a value (thus resolving to a value) when wwhile wanted a function,"
+let rec wwhile (f,b) =
+  let rec wwhelper f b =
+    let (b',c') = f b in 
+    if c' = false 
+    then b' 
+    else wwhelper f b' in
+  wwhelper f b;;
+
+let fixpoint (f,b) = 
+  wwhile (let g x = (f x) <> x in 
+          (g, b));;
+"
+19,prog2746,ocaml,341071,"""[a + hd]"" is at fault","The list constructor ""::"" takes an element of some type and a list of elements of the same type. Here, ""::"" is given two lists","
+let rec mulByDigit i l =
+  let comb a b = 
+    match b with 
+    | [] -> [a] 
+    | hd::tl -> (a + hd) :: tl in
+
+  let rec mBDhelper i x =
+    match x with
+    | [] -> []
+    | hd::tl ->
+        if (hd * i) > 9
+        then ((hd * i) / 10) :: (comb ((hd * i) mod 10) (mBDhelper i tl))
+        else (hd * i) :: (mBDhelper i tl) in
+
+  mBDhelper i l;;
+"
+19,gist1,nanomaly,221659,"""buildSine buildX"" is at fault","""buildX"" is a function but was never resolved before being passed to ""buildSine""","type expr =
+  | VarX
+  | VarY
+  | Sine of expr
+  | Cosine of expr
+  | Average of expr * expr
+  | Times of expr * expr
+  | Thresh of expr * expr * expr * expr
+
+let buildSine e = Sine e
+let buildX () = VarX
+let buildY () = VarY
+
+let rec build (rand,depth) =
+  match rand (0, depth) with
+  | 0 -> buildX
+  | 1 -> buildY
+  | 2 -> buildSine (buildX ())
+  | _ -> buildX
+"
+19,gist2,ocaml,261232,"""seen @ h"" is at fault","""seen @ h"" causes h to be a list. This causes t to be a list of lists, causing List.filter to fail since it is expecting t to be a one-dimensional list (because is_in is expecting an int)","let removeDuplicates l =
+  let rec helper (seen,rest) =
+    match rest with
+    | [] -> seen
+    | h::t ->
+        let seen' = h :: seen in 
+        let rest' = let is_in i = (i mod 2) = 0 in 
+                    List.filter is_in t in
+        helper (seen', rest') in
+  List.rev (helper ([], l))
+"
+19,gist3,nanomaly,260411,"""(digitsOfInt (digits n))"" is at fault",Calling digits on a number returns a list. But it's an error to then call digitsOfInt on a list,"let rec digitsOfInt n =
+  if n < 1 
+  then []
+  else (digitsOfInt (n / 10)) @ [n mod 10]
+
+let digits n = digitsOfInt (abs n)
+
+let rec sumList xs = match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)
+
+let rec additivePersistence n =
+  if sumList (digits n) < 10
+  then n
+  else additivePersistence (sumList (digits n))
+"
+19,prog3197,ocaml,195924,"""digHelper (sumList n)""",sumList expects a list but was given an int instead,"(* This error can't be fixed because of the lack of intent *)
+let rec sumList xs = 
+  match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t);;
+
+let rec digitalRoot n =
+  let rec digHelper n = 
+    if n < 10 
+    then n
+    else digHelper (sumList n) in
+  digHelper n;;
+"
+21,prog0971,ocaml,1668716,5 List.fold_left f base fs;;,"base is a function 'a->a' =<fun>
+(fun x -> x + x) base ---> base + base
+ function cannot be added to function","
+let pipe fs b= 
+  let f a x = x a in 
+  let base a = a in 
+    List.fold_left f (base b) fs;;
+
+let _ = pipe [(fun x  -> x + x); (fun x  -> x + 3)] 3;;
+"
+21,palindrome,nanomaly,897332,6 in helper [];;,"helper is a function with 2 parameters.
+the helper in line6 has only 1 parameter which make (listReverse l) be a function ","
+let listReverse l =
+  let rec helper xs = function 
+    | [] -> xs 
+    | hd::tl -> helper (hd :: xs) tl 
+  in helper [] l;;
+
+let palindrome (w : char list) =
+  if (listReverse w) = w 
+  then true 
+  else false;;
+"
+21,prog0223,ocaml,901505,3 let f a x =x in,"because of line 6 fold_left, the return type of f in line 3 should be the same with base. However x has type int, which leads to this error.
+I do not know what this function is for, so the simplest way to correct it is 
+make f a x =(0,x::[]) in","
+let bigMul l1 l2 =
+  let f a x = (0,x::[]) in
+  let base = (0, []) in
+  let args = l1 in 
+  let (_,res) = List.fold_left f base args in
+    res;;
+
+let _ = bigMul [9] [9];;
+"
+21,prog3382,nanomaly,1242203,"line 12 ((g b),b));;","From line 4 we can see the return type of function f with parameter b should b a pair with right element of type bool.
+However, from line 12, we find that (g,b) is bool instead of a function.
+So we have to make ""g"" a function return a pair and change (g b) to g","
+let rec wwhile (f,b) =
+  let rec wwhelper f b =
+    let (b',c') = f b in 
+    if c' = false 
+    then b' 
+    else wwhelper f b' in
+  wwhelper f b;;
+
+let fixpoint (f,b) = 
+  wwhile (let g x = (x,(f x) <> x) in 
+          (g, b));;
+"
+21,prog2746,ocaml,913386,line 6:| hd::tl -> [a + hd] :: tl in,"function comb take a pair and return a int list.
+But in line 6, int ::int list ----> int list.
+So [a + hd ] should be changed to ( a + hd), which has a int type.","
+let rec mulByDigit i l =
+  let comb a b = 
+    match b with 
+    | [] -> [a] 
+    | hd::tl -> (a + hd) :: tl in
+
+  let rec mBDhelper i x =
+    match x with
+    | [] -> []
+    | hd::tl ->
+        if (hd * i) > 9
+        then ((hd * i) / 10) :: (comb ((hd * i) mod 10) (mBDhelper i tl))
+        else (hd * i) :: (mBDhelper i tl) in
+
+  mBDhelper i l;;
+"
+21,gist1,nanomaly,781592,line 10:let buildSine e = Sine e,Sine is not a function,"type expr =
+  | VarX
+  | VarY
+  | Sine of expr
+  | Cosine of expr
+  | Average of expr * expr
+  | Times of expr * expr
+  | Thresh of expr * expr * expr * expr
+
+let buildSine e = e
+let buildX () = VarX
+let buildY () = VarY
+
+let rec build (rand,depth) =
+  match rand (0, depth) with
+  | 0 -> buildX
+  | 1 -> buildY
+  | 2 -> buildSine buildX
+  | _ -> buildX
+"
+21,gist2,ocaml,631588,line 6:let seen' = seen @ h in ,"h should be an element instead of a list
+if h is a' list then t is a' list list, which is not compatible.","let removeDuplicates l =
+  let rec helper (seen,rest) =
+    match rest with
+    | [] -> seen
+    | h::t ->
+        let seen' = h::seen in 
+        let rest' = let is_in i = (i mod 2) = 0 in 
+                    List.filter is_in t in
+        helper (seen', rest') in
+  List.rev (helper ([], l))
+"
+21,gist3,nanomaly,965941,"The problem is in line13 and line 15.
+digits n return type int list and if digitsOfInt take a list which will be incompatible with line 3","function ""digits"" n return type ""int list"" and if digitsOfInt takes a list, which will be incompatible with line 3.
+I think it does not make sense to use digitsofInt and digits at the same time. So the best fix is remove either one.","let rec digitsOfInt n =
+  if n < 1 
+  then []
+  else (digitsOfInt (n / 10)) @ [n mod 10]
+
+let digits n = digitsOfInt (abs n)
+
+let rec sumList xs = match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)
+
+let rec additivePersistence n =
+  if sumList (digitsOfInt n) < 10
+  then n
+  else additivePersistence (sumList (digitsOfInt n))
+"
+21,prog3197,ocaml,357982,line 11 else digHelper (sumList n) in,"Function sumList takes a list and return type int.
+However n<10 means n is a int, which leads to the incompability.
+","
+let rec sumList xs = 
+  match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t);;
+
+let rec digitalRoot n =
+  let rec digHelper n = 
+    if n < 10 
+    then n
+    else digHelper (sumList [n]) in
+  digHelper n;;
+"
+23,prog0971,ocaml,625121,(fun x  -> x + x),X expects a integer while it returns a function in real.,"
+let pipe fs b = 
+  let f a x = x a in 
+  let base a = a in 
+    List.fold_left f (base b) fs;;
+
+let _ = pipe [(fun x  -> x + x); (fun x  -> x + 3)] 3;;
+"
+23,palindrome,nanomaly,445919,hd::tl -> helper (hd :: xs) tl,Function help should have two parameters.,"
+let listReverse l =
+  let rec helper xs = function 
+    | [] -> xs 
+    | hd::tl -> helper (hd :: xs) tl 
+  in helper [] l;;
+
+let palindrome (w : char list) =
+  if (listReverse w) = w 
+  then true 
+  else false;;
+"
+23,prog0223,ocaml,365073,"let (_,res) = List.fold_left f base args in
+    res;;","Base and args should have same type, otherwise it can not execute.","
+let bigMul l1 l2 =
+  let f a x = (0, args) in
+  let base = (0, []) in
+  let args = l1 in 
+  let (_,res) = List.fold_left f base args in
+    res;;
+
+let _ = bigMul [9] [9];;
+"
+23,prog3382,nanomaly,2273325,"let fixpoint (f,b) = 
+  wwhile (let g x = (f x) <> x in 
+          ((g b), b));;","Function wwhile should return a function as the first parameter, rather than a pair.","
+let rec wwhile (f,b) =
+  let rec wwhelper f b =
+    let (b',c') = f b in 
+    if c' = false 
+    then b' 
+    else wwhelper f b' in
+  wwhelper f b;;
+
+let fixpoint (f,b) = 
+  wwhile (let g x = (f x) <> x in 
+          (g , b));;
+"
+23,prog2746,ocaml,5457844,hd::tl -> [a + hd] :: tl in,The first parameter should not be a [] type.,"
+let rec mulByDigit i l =
+  let comb a b = 
+    match b with 
+    | [] -> [a] 
+    | hd::tl -> a + hd :: tl in
+
+  let rec mBDhelper i x =
+    match x with
+    | [] -> []
+    | hd::tl ->
+        if (hd * i) > 9
+        then ((hd * i) / 10) :: (comb ((hd * i) mod 10) (mBDhelper i tl))
+        else (hd * i) :: (mBDhelper i tl) in
+
+  mBDhelper i l;;
+"
+23,gist1,nanomaly,55301,let buildSine e = Sine e,Sine is not a function so it cannot contain a parameter.,"type expr =
+  | VarX
+  | VarY
+  | Sine of expr
+  | Cosine of expr
+  | Average of expr * expr
+  | Times of expr * expr
+  | Thresh of expr * expr * expr * expr
+
+let buildSine e = e
+let buildX () = VarX
+let buildY () = VarY
+
+let rec build (rand,depth) =
+  match rand (0, depth) with
+  | 0 -> buildX
+  | 1 -> buildY
+  | 2 -> buildSine buildX
+  | _ -> buildX
+"
+23,gist2,ocaml,170718,let seen' = seen @ h in,t should be an int list rather than a list-typed list.,"let removeDuplicates l =
+  let rec helper (seen,rest) =
+    match rest with
+    | [] -> seen
+    | h::t ->
+        let seen' = seen @ [h] in 
+        let rest' = let is_in i = (i mod 2) = 0 in 
+                    List.filter is_in t in
+        helper (seen', rest') in
+  List.rev (helper ([], l))
+"
+23,gist3,nanomaly,113885,if sumList (digitsOfInt (digits n)) < 10,DigitsOfInt and digits n have same function.,"let rec digitsOfInt n =
+  if n < 1 
+  then []
+  else (digitsOfInt (n / 10)) @ [n mod 10]
+
+let digits n = digitsOfInt (abs n)
+
+let rec sumList xs = match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)
+
+let rec additivePersistence n =
+  if sumList (digits n) < 10
+  then n
+  else additivePersistence (sumList (digits n))
+"
+23,prog3197,ocaml,104791,else digHelper (sumList n) in,Sumlist requires a list as an input.,"
+let rec sumList xs = 
+  match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t);;
+
+let rec digitalRoot n =
+  let rec digHelper n = 
+    if n < 10 
+    then n
+    else digHelper (sumList [n]) in
+  digHelper n;;
+"
+22,prog0971,nanomaly,444549,,,"
+let pipe fs = 
+  let f a x = x a in 
+  let base a = a in 
+    List.fold_left f base fs;;
+
+let _ = pipe [(fun x  -> x + x); (fun x  -> x + 3)] 3;;
+"
+22,palindrome,ocaml,449748,Line 6: helper [],"It did not apply l to the function helper, so the function listReverse returned a function.","
+let listReverse l =
+  let rec helper xs = function 
+    | [] -> xs 
+    | hd::tl -> helper (hd :: xs) tl 
+  in helper [];;
+
+let palindrome (w : char list) =
+  if (listReverse w) = w 
+  then true 
+  else false;;
+"
+22,prog0223,nanomaly,335106,Line 3: Return the first formal instead.,"The original f returned the list element, which was not a pair, so it did not match (_, res)","
+let bigMul l1 l2 =
+  let f a x = x in
+  let base = (0, []) in
+  let args = l1 in 
+  let (_,res) = List.fold_left f base args in
+    res;;
+
+let _ = bigMul [9] [9];;
+"
+22,prog3382,ocaml,347466,Line 12: the arguments were applied in the reverse order.,f should be a function and b should be a boolean.,"
+let rec wwhile (f,b) =
+  let rec wwhelper f b =
+    let (b',c') = f b in 
+    if c' = false 
+    then b' 
+    else wwhelper f b' in
+  wwhelper f b;;
+
+let fixpoint (f,b) = 
+  wwhile (let g x = (f x) <> x in 
+          ((g b), b));;
+"
+22,prog2746,nanomaly,611929,Line 6: Added redundant brackets ,(::) has type a -> a list -> a list,"
+let rec mulByDigit i l =
+  let comb a b = 
+    match b with 
+    | [] -> [a] 
+    | hd::tl -> [a + hd] :: tl in
+
+  let rec mBDhelper i x =
+    match x with
+    | [] -> []
+    | hd::tl ->
+        if (hd * i) > 9
+        then ((hd * i) / 10) :: (comb ((hd * i) mod 10) (mBDhelper i tl))
+        else (hd * i) :: (mBDhelper i tl) in
+
+  mBDhelper i l;;
+"
+22,gist1,ocaml,269783,Lines 16-19: No parentheses ,build X and build Y are functions that take in a unit as parameters.,"type expr =
+  | VarX
+  | VarY
+  | Sine of expr
+  | Cosine of expr
+  | Average of expr * expr
+  | Times of expr * expr
+  | Thresh of expr * expr * expr * expr
+
+let buildSine e = Sine e
+let buildX () = VarX
+let buildY () = VarY
+
+let rec build (rand,depth) =
+  match rand (0, depth) with
+  | 0 -> buildX
+  | 1 -> buildY
+  | 2 -> buildSine buildX
+  | _ -> buildX
+"
+22,gist2,nanomaly,70173,Line 6: Lack of brackets around h.,(@) has type a list -> a list -> a list,"let removeDuplicates l =
+  let rec helper (seen,rest) =
+    match rest with
+    | [] -> seen
+    | h::t ->
+        let seen' = seen @ h in 
+        let rest' = let is_in i = (i mod 2) = 0 in 
+                    List.filter is_in t in
+        helper (seen', rest') in
+  List.rev (helper ([], l))
+"
+22,gist3,ocaml,210307,"Lines 13, 15: DigitsOfInt was applied to a list.",DigitsOfInt was applied to a list.,"let rec digitsOfInt n =
+  if n < 1 
+  then []
+  else (digitsOfInt (n / 10)) @ [n mod 10]
+
+let digits n = digitsOfInt (abs n)
+
+let rec sumList xs = match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)
+
+let rec additivePersistence n =
+  if sumList (digitsOfInt (digits n)) < 10
+  then n
+  else additivePersistence (sumList (digitsOfInt (digits n)))
+"
+22,prog3197,nanomaly,65445,Line 11,DigHelper was applied to a list.,"
+let rec sumList xs = 
+  match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t);;
+
+let rec digitalRoot n =
+  let rec digHelper n = 
+    if n < 10 
+    then n
+    else digHelper (sumList n) in
+  digHelper n;;
+"
+26,prog0971,nanomaly,1319614,"it indicates that the 'x+x' is at fault on line 7, I believe this is due a typing issue with the accumulator",the type error occurs b/c we are applying x+x where x is the identity function 'base',"
+let pipe fs = 
+  let f a x = x a in 
+  let base a = a in 
+    List.fold_left f base fs;;
+
+let _ = pipe [(fun a x  -> (a x) + (a x)); (fun a x  -> (a x) + 3)] 3;;
+"
+26,palindrome,ocaml,228895,line 9 -> listReverse w = w,listReverse w is returning a function instead of a ,"
+let listReverse l =
+  let rec helper xs = function 
+    | [] -> xs 
+    | hd::tl -> helper (hd :: xs) tl 
+  in helper l [];;
+
+let palindrome (w : char list) =
+  if (listReverse w) = w 
+  then true 
+  else false;;
+"
+26,prog0223,nanomaly,866262,"line 6-7, let (_,res) = List.fold_left f base args in
+    res;;","because the number 9 (output from the fold) cannot be unpacked to match the expected (_, res). I can get rid of the error but I dont quite know what the function should do...if it is supposed to multiply the input numbers and get the result 81, then i would need to make different changes","
+let bigMul l1 l2 =
+  let f a x = x in (* f is snd - take 2 things, return the 2nd *)
+  let base = 0 in
+  let args = l1 in 
+  let res = List.fold_left f base args in
+    res;;
+
+let _ = bigMul [9] [9];;
+"
+26,prog3382,ocaml,353406,(g b),it is a bool when it should be a function from one type to a tuple of that type with bool,"
+let rec wwhile (f,b) =
+  let rec wwhelper f b =
+    let (b',c') = f, b in 
+    if c' = false 
+    then b' 
+    else wwhelper f b' in
+  wwhelper f b;;
+
+let fixpoint (f,b) = 
+  wwhile (let g x = (f x) <> x in 
+          ((g b), b));;
+"
+26,prog2746,nanomaly,506251,line 6: [a + hd] :: tl,"list constructor applied to an 'int' head and an 'int list list' tail on line 13 and 14, just wrap the head","
+let rec mulByDigit i l =
+  let comb a b = 
+    match b with 
+    | [] -> [a] 
+    | hd::tl -> [a + hd] :: tl in
+
+  let rec mBDhelper i x =
+    match x with
+    | [] -> []
+    | hd::tl ->
+        if (hd * i) > 9
+        then [((hd * i) / 10)] :: (comb ((hd * i) mod 10) (mBDhelper i tl))
+        else [(hd * i)] :: (mBDhelper i tl) in
+
+  mBDhelper i l;;
+"
+26,gist1,ocaml,162721,buildX on line 18,"buildX is a function which takes a () - unit object and returns an expression, Sine takes an exp as input","type expr =
+  | VarX
+  | VarY
+  | Sine of expr
+  | Cosine of expr
+  | Average of expr * expr
+  | Times of expr * expr
+  | Thresh of expr * expr * expr * expr
+
+let buildSine e = Sine e
+let buildX = VarX
+let buildY = VarY
+
+let rec build (rand,depth) =
+  match rand (0, depth) with
+  | 0 -> buildX
+  | 1 -> buildY
+  | 2 -> buildSine buildX
+  | _ -> buildX
+"
+26,gist2,nanomaly,172848,"line 6, seen @ h",h is an elelent of a list while seen is a list and you are attempting to append the two...,"let removeDuplicates l =
+  let rec helper (seen,rest) =
+    match rest with
+    | [] -> seen
+    | h::t ->
+        let seen' = seen @ [h] in 
+        let rest' = let is_in i = (i mod 2) = 0 in 
+                    List.filter is_in t in
+        helper (seen', rest') in
+  List.rev (helper ([], l))
+"
+26,gist3,ocaml,136465,line 13 : digits n,digitsofint expects an integer but an int_list is provided (the return of digits is a list),"let rec digitsOfInt n =
+  if n < 1 
+  then []
+  else (digitsOfInt (n / 10)) @ [n mod 10]
+
+let digits n = digitsOfInt (abs n)
+
+let rec sumList xs = match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)
+
+let rec additivePersistence n =
+  if sumList ( (digits n)) < 10
+  then n
+  else additivePersistence (sumList ((digits n)))
+"
+26,prog3197,nanomaly,611710,"lines 3-5: match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t)",sumLIst is passed an integer n on line 11 and then attempts to match that int to list constructors ,"(* start copied from stack overflow *)
+let digits2 d =
+    let rec dig acc d =
+        if d < 10 then d::acc
+        else dig ((d mod 10)::acc) (d/10) in
+    dig [] d
+;;
+(* end copy from stack overflow *)
+
+let rec sumList xs = 
+  match xs with 
+  | [] -> 0 
+  | h::t -> h + (sumList t);;
+
+(* what is this function supposed to do? 
+... nvm just looked up what digital root was... 
+This would be a lot easier with the function from the last question which 
+gave me the list of digits of a number... 
+nvm i thought of something... then i forgot and just went to stack overflow*)
+let rec digitalRoot n =
+  let rec digHelper n = 
+    if n < 10 
+    then n
+    else digHelper (sumList (digits2 n)) in
+  digHelper n;;
+"

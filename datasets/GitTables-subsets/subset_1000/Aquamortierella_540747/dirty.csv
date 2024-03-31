@@ -1,0 +1,3 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+a1fac54e-9bad-11eb-a8a2-19ed5c03f8d3,genus,Aquamortierella,,,"Embree & Indoh",,1967,,"Bull. Torrey bot. Club 94: 464 (1967)",,,,a1fac54e-9bad-11eb-a8a2-19ed5c03f8d3,,,,,20047," "
+186eeaf8-9bad-11eb-a8a2-19ed5c03f8d3,species,elegans,Aquamortierella,,"Embree & Indoh",,1967,,"Bull. Torrey bot. Club 94: 464 (1967)",,,,186eeaf8-9bad-11eb-a8a2-19ed5c03f8d3,,,,,326416," "

@@ -1,0 +1,17 @@
+3.assettype,community_nonprofit_orgs,bus_stops
+29.concatdatasourceurl,https://data.wprdc.org/dataset/allegheny-coaunty-weights-and-measures-inspections,https://data.wprdc.org/dataset/allegheny-county-weights-and-measures-inspections
+4.concatdatasourcename,WPRDC Dataset: Allegheny County Restaurant/Food Facility Inspections and Locations: Geocoded Food Facilities,WPRDC Dataset: Allegheny County Polling Place Locations (May 2018)
+9.concatdatasourceurl,https://data.wprdc.org/dataset/allegheny-county-park-facilities|https://data.wprdc.org/dataset/pittsburgh-parks|https://data.wprdc.org/dtaset/playground-equipment,https://data.wprdc.org/dataset/allegheny-county-park-facilities|https://data.wprdc.org/dataset/pittsburgh-parks|https://data.wprdc.org/dataset/playground-equipment
+4.assettype,community_nonprofit_orgs,polling_places
+20.concatdatasourceurl,https://wbww.pals.pa.gov/#/page/search,https://www.pals.pa.gov/#/page/search
+3.concatdatasourcename,WPRDC Dataset: Allegheny County Restaurant/Food Facility Inspections and Locations: Geocoded Food Facilities,WPRDC Dataset: Port Authority Bus Stop Usage
+21.concatdatasourceurl,hettps://www.pals.pa.gov/#/page/search,https://www.pals.pa.gov/#/page/search
+5.assettype,restaurants,faith-based_facilities
+36.assettype,post_ofices,post_offices
+7.concatdatasourcename,|Open Data PA Dataset: dPublic and Private Education Institutions 2017 Education,|Open Data PA Dataset: Public and Private Education Institutions 2017 Education
+23.concatdatasourcename,Pennsylvania Licensng System,Pennsylvania Licensing System
+12.concatdatasourcename,WPRDC aDta: Primary Care Access 2014 Data,WPRDC Data: Primary Care Access 2014 Data
+19.assettype,supemrarkets,supermarkets
+12.assettype,doctorsoffices,doctors_offices
+2.concatdatasourcename,WPRDC Dataset: Allegheny County Restaurant/Food Facility Inspections and Locations: Geocoded Food Facilities,IRS: Exempt Organizations Business Master File Extract|WPRDC Dataset: Pittsburgh Fish Fries (2020)
+6.assettype,restaurants,hair_salons

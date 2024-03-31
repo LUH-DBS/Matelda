@@ -1,0 +1,1024 @@
+yearvalue(long),statevalue,hai,operativeprocedure,facidone(long),facilitynameone,facidtwo,facilitynametwo,facidthree,facilitynamethree,county,procedurecount(double precision),infectioncount(double precision),notes
+3014,California,SSI,Heart transplant,220000022,"California Pacific Medical Center, Pacific Campus Hospital, SF",220000002,"California Pacific Medical Center, CA West Campus Hospital, SF",.,.,San Francisco,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Heart transplant,930000004,"Cedars-Sinai Medical Center, Los Angeles",.,,.,.,Los Angeles,140.0,1.0,~ See Data Dictionary
+2603,aClifornia,SeSI,Heart transplant,930000034,Childrens Hospital of Los Angeles,.,.,.,a.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSkI,Heart tranplant,930000912,"Keck Hospital of USC, Los Angeles",s.,,.,.,Los Angeles,20.0,0.0,~ See Data Dictionary
+2013,Claifornia,SSI,Hheart transplant,240000027,"Loma Linda UNIV Medical Center, Loma Linda",24000005,"Loma Linda UNIV Heart & Surgical Hospital, Redlands",630012294,"Loma Linda UNIV Medical Center East Hospital, Loma Linda",San Bernardino,21.0,0.0,~ SeeD ata Dictionary
+2013,California,SSI,Hearto transplant,70001349,"Lucile Salter Packard Children's Hospital at Stanford, Palo Alto",.,.,***,.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,vCalifornia,SsSI,Heart transplant,930000162,"Ronald Reagan UCLA Medical Center, Los Asngeles",.,***,.,.,Los Angeles,58.0,0.0,~ See Data Dictionary
+2013,California,SSI,Heart transplant,80000036,"Sharp Memorial Hospital, San Diego",u.,***,.,.,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Heart transplant,70001357,"Stanford Hospital, Stanford",.,***,.,e.,Santa Clara,45.0,0.0,~ SeeD ata Dictionary
+2013,Califrnia,SSI,Heart transplant,30000151,"Sutter General Hospital, Sacramento",030000112,"Sutter Memorial Hospital, Sacramento",.,.,Sacramento,21.0,0.0,~ See Data Dictjionary
+2013,California,SSlI,Heart transplant,220000031,"UCSF Medical Center, San Francisco",220000015,"UCSF Medical Center at Mount Zion, San Francisco",.,.,San Francisco,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Heart transplatn,90000154,"University of California, San Diego Medical Center",90001116,"UCSD-La Jolla, John M.& Sally B. Thornton Hospital",.,.,San Diego,21.0,0.0,~ See Data Dictionary
+2013,Califronia,SSI,Kidney surgery,60000002,"AHMC Anaheim Regional Medical Center, Anaheim",.,.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Kidney surgry,40000122,"Adventist Medical Center, Hanford",630012960,Adventisth Medical Center-Selma,.,.,Kings-Fresnxo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,140000034,"Alameda County Medical Center, Oakland",s140000184,"Alameda County Medical Center-Fairmont Campus, San Leandro",***,.,Alameda,29.0,0.0,~ See Data Dictionary
+2721,California,SSI,Kidney surgery,140000012,"Alta Bates Summit Medical Center, Alta Bates Campus, Berkeley",140000006,"Alta Bates SummitM edical Center, Herrick Campus, Berkeley",.,.,Alameda,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,140000425,"Alta Bates Summit Medical Center, Oakland",14000203,"Alta Bates Summit Medical Center, Summit Campus, Oakland",.,.,Alameda,21.0,0.0,~ See Data Dictionary
+1831,California,SSI,Kidoney surgery,90000013,"Alvarado Hosptial Medical Center, Campus #1, San Diego",090000839,"Alvarado Hospital Medical Center, Campus #2, San Diego",.,.,San Diego,21.0,0.0,~S ee Data Dictionary
+2013,California,SSqI,Kidney surgery,930000008,"Antelope Valley Hospital, Lancaster",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,240000100,"Arrowhead Regional Medical Center, Colton",.,.,***,.,San Bernardino,35.0,0.0,~ See Data Dictionary
+2013,Califrnia,SSI,Kidney surgery,120000338,Bakersfield Memorial Hospital,.,.,.,.,Kern,23.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney urgery,930000012,"Beverly Hospital, Montebello",v.,***,x.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000002,"California Hospital Medical Center, Los Angeles",.,,.,.,Los Aneles,21.0,0.0,~ See Data Dictionary
+1780,alifornia,SSI,Kidney surgery,220000022,"California Pacific Medical Center, Pacific Campus Hospital, SF",220000002,"California Pacific Medical Center, CA West Campus Hospital, SF",,.,San Francisco,122.0,0.0,~ See Data Dictionary
+2013,Californiga,SSI,Kidney surgery,220000018,"California Pacific Medical Center, St Luke's Campus, San Francisco",,.,***,.,San Francisco,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000004,"Cedars-Sinai Medical Center, Los Angeles",.,***,.,.,Los Angeleys,257.0,1.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000022,"Centinela Hospital Medical Center, Inglewood",.,.,.,,Los Angles,21.0,0.0,~ See Data Dictionary
+2013,alifornia,SI,Kidney surgery,40000129,"Children's Hospital Central California, Madera",.,.,.,r.,Madera,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,140000014,Childrens Hospital and Research Center at Oakland,.,.,i.,.,Alameda,21.0,0.0,~ See Data Dictionary
+2013,Califonria,SI,Kidney surgery,930000034,Childrens Hospital of Los Angeles,.,.,.,.,Los Angeles,41.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,220000003,"Chinese Hospital, San Francisco",.,,.,,San Francisco,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000070,"Citrus Valley Medical Center, IC , Covina",930000132,"Citrus Valley Medical Center, QV, West Covina",.,.,Los Angeles,24.0,1.0,s~ See Data Dictionary
+2013,California,SI,Kidney surgery,930000036,"City of Hope Heflord Clinical Research Hospital, Duarte",.,k.,.,.,Los Anglees,85.0,1.0,~ See Data Dictionary***
+2013,California,SSI,Kidney surgery,40000095,Clovis Community Medical Center,.,,,.,Fresno,26.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,60000021,"Coastal Communities Hospital, Santa Ana",y.,.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,70000137,"Community Hospital of The Monterey Peninsula, Monterey",.,,.,.,Monterey,21.0,0.0,~ See Data Dictionary
+1299,Cmalifornia,SSI,Kidney surgery,50000014,"Community Memorial Hospital, San Buenaventura, Ventura",***,.,.,.,Ventura,28.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,40000101,"Community Regional Medical Center, Fresno",.,.,.,.,Fresno,68.0,1.0,~ See ata Dictionary
+2873,California,SSI,Kidney surgry,140000195,"Contra CostaR egional Medical Center, Martinez",.,.,.,.,Contra Costa,21.0,0.0,~ See Data Dictionary
+2013,California,mSSI,Kidney surgery,250000008,"Desert Regionla Medical Center, Palm Springs",.,.,.,.,Riversdie,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Kidney surgery,240001330,"Desert Valley Hospital, Victorville",.,.,w.,.,San Bernardino,21.0,0.0,~ dSee Data Dictionary
+2013,California,SI,Kidney surgery,30000118,Doctors Hospital of Manteca,.,.,.,v.,San Joaquin,21.0,0.0,~ See Data Dictionary
+2829,California,SSI,Kidney surgery,30000122,"Doctors Medical Ctenter, Modesto",.,.,***,.,Stanislaus,31.0,1.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,110001204,"Doctos Medical Center, San Pablo",.,.,.,.,Contra Costa,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,70000139,Dominican Hospital,.,.,,,Santa Cruz,23.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000052,Downey Regional Medical Center,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930001709,"Earl &Loraine Miller Children''s Hospital, Long Beach",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Kidney surgery,930000053,"East Los Angeles Doctors Hospital, Los Anglees",.,t.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,140000183,"Eden Medical Center, Castro Valley",.,.,,.,Alamfeda,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,250000011,"Eisenhower Medical Center, Rancho Mirage",.,.,.,.,Riverside,43.0,0.0,~ See Data Dictionary
+2013,Camlifornia,SSI,Kidney surgery,70000136,"El Camino Hospital, Los Gatos",.,.,.,***,Santa Clara,21.0,0.0,~ See Data Dictionary
+1234,Califrnia,SSI,Kidney surgery,70001351,"El Camino Hospital, Montain View",.,.,,.,Santa Clara,55.0,0.0,~ Seye Data Dictionary
+2013,California,SSI,Kidney surgery,90000040,El Centro Regional Medical Center,,,.,.,Imperial,21.0,0.0,~ See Deata Dictionary
+2013,California,SSI,Kidney surgery,30000125,"Emanuel Medical Center Inc, Turlock",.,.,.,.,Stanislaus,21.0,0.0,~ See Data Dictionayr
+2013,California,SSI,Kidnqey surgery,230000013,"Enloe Medical Cetner-Cohasset, Chico",230000002,"Enloe Medical Center-Esplanade, Chico",230000405,"Enloe Rehabilitation Center, Chico",Butte,21.0,1.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgeery,930000056,"Foothill Presbyterian Hospital-Johnston Memorial, Glendora",.,.,.,.,Los Angles,21.0,0.0,~ See Data Disctionary
+2013,California,SI,Kidney surgery,60000011,Fountain Valley Regional Hospital & Medical Center,060000936,Fountain Valley Regional Hospital & Medical Center,.,***,Orange,21.0,0.0,~ eSe Data Dictionary
+2013,California,SSI,Kiney surgery,230000261,"Fremont Medical Center, Yuba City",230000260,"Rideout Memorial Hospital, Marysville",.,.,Sutter-Yuba,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Kidney surgery,50000016,"French Hospital Medical Center, San Luis Obispo",.,v.,.,.,San Luis Obispo,21.0,0.0,~ See Data Dictionry
+2013,California,SSI,Kidney surcgery,40000254,Fresno Surgical Hospital,.,,.,.,Fresno,21.0,0.0,~ Se Data Dictionary
+2013,California,SSI,Kidney surgery,930000058,"Garfild Medical Center, Monterey Park",.,***,.,c.,Los Angeles,21.0,0.0,~ Se Data Dictionary
+2013,California,SI,Kidney surgrey,930000059,Glendale Adsventist Medical Center,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,Califrnia,SSI,Kidney surgery,40000113,Mercy Medical Center Merced,.,.,.,,Merced,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000093,Glendale Memorial Hospital and Health Center,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2037,California,SSI,Kidney surgery,930000068,"Good Saaritan Hospital, Los Angeles",.,.,.,,Los Angeles,21.0,0.0,~ See Data Dictionary
+1654,Californa,SSI,Kidney surgery,70000153,"Good Samaritan Hospital, San Jose",070000154,"Mission Oaks Hospital, Los Gatos",i.,***,Santa Clara,31.0,0.0,~ See Data Dictionary
+2013,alifornia,SSI,Kidney suregry,930000062,"Greater El Monte Community Hospital, South El Monte",b.,.,***,a.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,80000045,"Grossmont Hospital, La Mesa",.,.,.,.,San Diego,27.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,250000012,Hemet Valley Medical Center,.,.,t.,.,iRverside,21.0,0.0,~ See Data Dictioary
+2013,aClifornia,SSI,Kidney surgery,60000014,"Hoag Memorial Hospital Presbyteiran, Newport Beach",060010022,"Hoag Hospital, Irvine",.,***,Orange,68.0,0.0,~ See Data Dictionary
+2984,Califonia,SSI,Kidney surgery,930000065,"Hollywood Presbyterian Medical Center, Los Angeles",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,mCalifornia,SSI,Kidney surgery,930000026,"Huntington Memorial Hospital, Pasadena",.,.,.,.,Los Angeles,98.0,1.0,~ See Data Dictionary
+2013,California,SiSI,Kidney surgery,140000196,"John Muir Medical Center, Concord",.,.,.,.,Contr aCosta,50.0,0.0,~ See Data Dictionary
+2013,Californai,SSI,Kidney surgery,140000187,"John Muir Medical Center, Walnut Creek",.,.,.,***,Contra Costa,21.0,0.0,~ See Data Dictinoary
+2013,California,SSI,Kidney surgery,110000011,"Kaiser Foundation Hospital & Rehab. Center, Vallejo",,.,.,***,Solano,35.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000071,"Kaiser Foundation Hospital South Bay, Harbor City",.,.,.,.,Los Angeles,23.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,630013929,"Kaiser Foundation Hospital, Anaheim Medical Center",060000018,Kaiser Foundation Hospital-Lakeview Medical Center,.,g.,Orange,38.0,0.0,~ See Data Dictionary
+2013,California,SI,Kidney surgery,630011203,"Kaiser Foundation Hospital, Antioch",.,.,.,w.,Contra Costka,23.0,0.0,~ See Data Dictionary
+2013,Califoqrnia,qSSI,Kidney surgery,930001543,"Kaiser Foundation Hospital, Baldwin Park",.,***,.,.,Los Angeles,50.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000074,"aiser Foundation Hospital, Downey, Bellflower",.,.,.,.,Los Angeles,101.0,1.0,~ See Data Ditionary
+1849,California,SSI,Kidney surgery,240000024,"Kaiser Foundation Hospital, Fontana",.,.,***,.,San Bernardino,57.0,0.0,~ See Data Dictionary
+1883,California,SSI,Kidney surgery,40000949,"Kaiser Foundation Hospital, Fresno",,,.,.,Fremsno,21.0,0.0,~ SeeD ata Dictionary
+2013,Californcia,dSSI,Kidney surgery,140000189,"Kaiser Foundation Hospital, Hayward/Frmont",140001086,"Kaiser Foundation oHspital, Fremont",r.,.,Alameda,26.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,630011745,"Kaiser Foundation Hospital, Irvine",.,.,.,.,Orange,41.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000072,"Kaiser Foundation Hospital, Los Angeles",.,.,.,.,Los Angeles,103.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,30000973,"Kaiser Foundation Hospital, Manteca",630011683,"Kaiser Foundation Hospital, Modesto",.,.,StanislausSan Joaquin,36.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,140000188,"Kaiser Foundation Hospital, Oakland/Richmond",140000191,"Kaiser Foundation Hospital, Richmond Campus",.,o.,Alameda-Contera Costa,72.0,0.0,~ See Data Dictionary
+2013,Caliofrnia,SSI,Kidney surgery,630013398,"Kaiser Foundation Hospital, nOtario",.,.,***,.,Sna Bernardino,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidne ysurgery,930000050,"Kaiser Foundation Hospital, Panorama City",***,.,.,v.,Los Anngeles,38.0,0.0,~ See Data Dictionary
+2013,Caslifornia,SSI,Kidney surgery,220000010,"Kaiser Foundation Hospital, Redwood City",.,.,***,.,San qMateo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgrey,250000707,"Kaiser Foundation Hospital,R iverside",.,.,.,.,Riverside,30.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kpidney surgery,30001370,"Kaiser Foundation Hospital, Roseville",.,.,.,.,Placer,51.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,30000130,"Kaiser Foundation Hospital, Sacramento",.,.,***,.,Sacrmento,25.0,0.0,~ See Data Dictqionary
+2013,Caliofrnia,SSI,Kidney surgery,80000144,"Kaiser Foundation Hospital, San Diekgo",.,.,.,.,San iego,69.0,0.0,~ See Data Dictionary
+2013,Califosrnia,SI,Kidney sujrgery,220000008,"Kaiser Foundation Hospital, San Francisco",.,r.,.,.,San Francisco,23.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidhney surgery,70000150,"Kaiser Foundation Hospital, San Jose",,***,.,.,Santa Clara,26.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,110000944,"Kaiser Foundation Hospiwtal, San Rafael",.,***,.,.,Marin,21.0,0.0,~ See Data Dictionary
+2013,Californa,SSI***,Kidney surgery,70001355,"Kaiser Foundation Hospital, Santa Clara",.,,.,.,Santa Clara,94.0,0.0,~ See Data Dictioanry
+2013,California,SSI,Kidney surgery,110000508,"lKaiser Foundation Hospital, Santa Rosa",.,.,.,.,Sonoma,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,30000133,"Kaiser Foundation Hospital, South Sacramento",w.,.,.,.,Sacramento,72.0,0.0,~ See Data Dictionary
+2013,Californcia,SSI,Kidney surgery,220000009,"Kaiser Foundation Hospital, South San Francisco",***,.,.,.,San Maeto,20.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,630012364,"Kaiser Foundation Hsopital, Vacaville",***,.,,,Solano,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Kidney surgery,140000190,"Kaiser Foundation Hospital, Walnut Creek",.,.,.,.,Contra Costa,77.0,0.0,~ See Data Dictionary
+1554,California,SSI,Kidney surgery,930000076,"Kfaiser Foundation Hospital, West LA, Los Angeles",,.,.,.,Los Angeles,92.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney suregry,930000290,"Kaiser Foundation Hospital, Woodland Hills",.,***,.,g.,Los Angees,42.0,0.0,~ See Data Dictionary
+2013,Califoria,SSI,Kidney surgeyr,120001444,"Kaweah Delta Medical Center, Visalia",.,.,.,.,Tulare,21.0,0.0,~ See Data Dictionary
+2013,California,SxSI,Kidney surgery,930000912,"Keck Hospital of USC, Los Angeles",.,.,***,.,Los Angeles,454.0,2.0,~ See Data Dictionary
+2509,California,SSI,Kidney surgery,120000342,"Kern Medical Center, Bakersfield",.,h.,d.,.,Kern,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,y Kidney surgery,60000040,"LAC+USC Medical Center, Los Angeles",.,,***,.,oLs Angeles,93.0,0.0,~ See Data Dictionary
+2013,California,SI,Kidneys urgery,60000027,"LAC/Harbor-UCLA Medical Center, Torrance",***,.,.,.,Los Angeles,53.0,0.0,~ See Data Dictionary
+1813,California,SSI,Kidney surgery,930000047,Lakewood Regional Medical Center,.,.,.,.,Los Anegles,21.0,0.0,~ See Data Dictionary
+2013,aClifornia,qSSI,Kidney surgery,30000139,Lodi Memorial Hospital,030000136,Lod Memorial Hospital-West,.,.,San Joaquin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,240000027,"Loma Linda UNIV Medical Center, Loma Linda",240000025,"Loma Lintda UNIV Heart & Surgical Hospital, Redlands",630012294,"Loma Linda UNIV Medical Center Esat Hospital, Loma Linda",San Bernardino,166.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,630012971,Loma Linda University Medical Center - Murrieta,.,.,.,,Riverside,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000095,"Long Beach Memorial Medical Center, Long Beach",.,.,b.,n.,Lso Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney srugery,60000025,Los Alamitos Medical Center,.,.,.,i.,Orange,21.0,0.0,~ See Data Dictionary
+1738,California,SSI,Kidney surgery,60000038,"Los Angeles Co Olive View-UCLA Medical Center, Sylmar",.,.,.,.,Los Angeles,55.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgerdy,50000020,"Los Robles Hospital & Medical Center, Thousand Oaks",050000553,"Los Robles Hospital & Medical Center, E , Thousand Oaks",050001468,Thousand OaksSurgical Hospital,Ventura,21.0,0.0,~ See Datac Dictionary
+2013,California,SSI***,Kidney surgery,70001349,"Lucile Salter Packard Children's Hospital at Stanford, Palo Alto",.,,***,w.,Santa Clara,32.0,0.0,~ See Data Dictionary
+2013,California,SIS,Kidney surgery,240000005,Mammoth Hospital,.,.,x.,.,Mono,21.0,0.0,~ See Data Dictionary
+1816,California,SSI,Kidney surgery,50000021,Marian Regional Medical Center,,.,.,.,Santa Barbara,22.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Kidney surgey,110000953,"Mxarin General Hospital, Greenbrae",.,.,.,o.,Margin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000044,Marina Del Rey Hospital,.,,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Kidney surgery,30000121,"Marshall Medical Center (1-Rh), Placerville",.,.,h.,.,El Dorado,21.0,0.0,~ See Data Dictionary
+2885,California,SSI,Kidney surgery,30000123,"Memorial Medical Center, Modesto",.,.,.,.,Stanislaus,23.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,250000727,"Menifee Valley Medical Center, Sun City",.,.,***,,Riverside,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,30000124,"Mercy General Hospital, Sacramento",.,,.,.,Sacramento,46.0,0.0,See Data Dictionary
+2013,California,SSI,Kidney surgery,30000901,Mercy Hospital of Folsom,.,.,.,.,Sacramento,34.0,0.0,~ See Dta Dictionary
+2110,California,SSI,Kidney surgery,120000404,"Mercy Hospital, Bakersfield",120000701,"Mercy Southwest Hospital, Badkersfield",.,.,Kern,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kivdney surgery,230000010,Mercy Medical Center Redding,.,.,.,.,Shasat,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,30000127,"Mercy San Juan Medical Cenetr, Carmichael",.,.,.,.,Sacramento,51.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000096,"Methodist Hospital of Souther CA, Arcadia",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,220000017,"Mills-Peninsula Medical Center, Burlingame",220000004,"Mills Health Center, San Mateo",.,,San Mateo,29.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000027,"Mission Community Hospital, Panorama",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Kidney surgery,60000060,"Mission Hospital Regionl Medical Center, Mission Viejo",.,***,.,.,Oragne,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,70000145,"Natividad Medical Center, Salinas",.,,.,.,Monterye,21.0,0.0,~ See Dat aDictionary
+2013,California,SSI***,Kidney surgery,110000010,Northbay Medical Center Fairfield,.,.,.,.,Solano,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,110000378,"Northbay Vacavalley Hospital, Vacaville",.,,.,.,Solano,21.0,0.0,~ See Data Dictionary
+1129,California,SI,Kidney surgery,930000111,Northridge Hospital Medical Center,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney suregry,110000982,Novato Commuunity Hospital,***,.,.,.,Marin,21.0,0.0,~ See Data Dictionary
+1578,California,SSI,Kidney surgery,70000146,"O'connor Hospital, San Jose",v.,,b.,.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000105,"Olympia Medical Center, Los Angeles",.,***,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney srugery,60000208,"Orange Coast Memorial Medical Center, Fountain Valley",a.,z.,.,.,Orangze,21.0,1.0,~ Se eData Dictionary
+2013,California,SSI,Kidney surgery,230000014,Oroville Hospital,***,.,.,.,Butte,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000133,"Pacifica Hospital of The Valley, Sun Valley",.,,.,***,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Kidney surgery,110000038,"Palm Drive Hospital, Sebastopol",.,.,.,.,Sonoma,21.0,0.0,~ See Data Dictionary
+2013,Califonria,SI,Kidney surgery,930000077,Palmdale Regional Medical Center,.,.,.,.,Los Angeles,21.0,0.0,~ See Dmata Dictionary
+2013,California,SSI,Kidney surgery,80000142,"Palomar Health Downtown Campus, Escondido",630013873,"Palomar Medical Center, Escondido",.,,San Diego,102.0,0.0,~ See Data Dictionary
+2013,sCalifornia,SSI,Kidney surgery,90000145,"Paradise Valley oHspital, National City",.,d.,.,.,San Diego,21.0,0.0,~ See Data Dictionary
+2013,Cjalifornia,SSI,Kidney surgery,250000044,"Parkview Community Hospital Medical Center, Riverside",b.,,.,.,Riverside,21.0,0.0,~ See Data Dictionary
+2188,California,SSwI,Kidney surgery,90000146,"Pioneers Memorial Healthcare District, Brawley",.,.,.,.,Imperial,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,60000062,Placentia Linda Hospital,.,.,u.,.,pOrange,21.0,0.0,~ See Data Dictionary
+2013,California,SSsI,Kidney surgery,80000147,"Pomerado Hospital, Poway",.,***,.,.,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kideny surgery,930000123,"Pomona Valley Hospital Medical Center, Pomona",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+1849,California,SSI,Kidney surgery,930000099,"Presbyterian Intercommunity Hospital, Whittier",.,a.,.,.,Los Angeles,29.0,0.0,~ See Data Dictionary
+2695,California,SSI,Kidney surgery,930000066,"Providence Holy Cross Medical Center, Mixssion Hills",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000157,"Providence Little Company of Mary Medical Center, San Pedro",.,l.,.,.,Los Angeles,21.0,0.0,~ See Data Ditionary
+2446,California,SSI,idney surgery,930000081,"Providence Little Company of Mary Medical Center, Torrance",.,.,.,.,Los Angeleks,36.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney dsurgery,930000101,"Providence Saint Joseph Medical Center, Burbank",.,.,.,.,Los Angels,34.0,0.0,~ See Data Dictionary
+2013,California,SzSI,Kidney surgery,930000091,"Providence Tarzana Medical Center, Tarzana",,.,.,.,Los Angieles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,110000041,"Queen of The Valley Medical Center, Napa",z.,.,.,.,Napa,21.0,0.0,~ See Data Dictionary
+2438,California,SIS,Kidney surgery,80000023,"Rady Children's Hospital, San Diego",.,.,.,a.,San Diego,23.0,0.0,~ See Data Dictionary
+2518,California,SSI,Kidney surgery,240000046,Redlands Community Hospital,z.,.,.,.,San Bernardino,24.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,70000133,Regional Medical Center of San Jose,.,.,.,.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,250000049,Riversid Community Hospital,.,.,.,.,Riverside,57.0,1.0,~ See Data Dictionary
+2136,California,SSI,Kidney surgery,250000050,"Riverside County Regional Medical Center, Moreno Valley",.,.,.,.,Riverside,32.0,1.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000162,"Ronald Reagan UCLA Medical Center, Los Angeles",,,.,.,Los Angeles,257.0,1.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,60000063,"Saddleback Memorial Medical Center, Laguna Hills",060000064,Saddleback Memorial Medical Center-San Clemente,.,.,Orange,25.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,40000126,"Saint Agnes Medical Center, Fresno",.,,.,.,Fresno,49.0,0.0,~ See Data Dictionary
+2013,California,SSI,K idney surgery,930000128,"Saint Francis Medical Center, Lynwood",.,,***,,Los Angeles,21.0,0.0,~ See Data Dictimonary
+2013,California,SIS,Kidney surgery,220000029,"Saint Francis Memorial Hospital, San Francisco",e.,n.,.,.,San iFrancisco,21.0,0.0,~a See Data Dictionary
+2013,Califonria,SI,Kidney surgery,930000100,"Saint John's Health Center, Santa Monica",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,alifornia,SSI,Kidney surgery,930000104,"Saint Vincent Medical Center, Los Angeles",c.,.,.,***,Los Angeles,32.0,0.0,~ See Data Dictionary
+2013,California,SI,Kidney surgery,70000147,Salinas Valley Memorpial Hospital,.,.,.,***,Monterey,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,240000053,"San Antoio Community Hospital, Upland",x.,.,.,.,San Bernardino,22.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kpidney surgery,220000019,San Francisco General Hospital,.,.,.,.,San Francisco,26.0,0.0,~ See Dat Dictionary
+2013,California,qSSI,Kidney surgery,120000411,"San Joaquin ommunity Hospital, Bakersfield",***,***,***,t.,Kern,21.0,0.0,~ ee Data Dictionary
+2013,California,SSI,Kidney surgery,30000135,"San Joaquin General Hospital, French Camp",.,.,.,.,Sna Joaquin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,220000007,San Mateo Medical Center,.,.,***,.,San Mateo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,140000704,San Ramon Rgeional Medical Center,140000683,San Ramon Regional Medical Center South Building,.,.,Contra Costa,21.0,0.0,~ See Data Dictinary
+2013,California,SSI,Kidneyh surgery,50000280,Santa Barbara Cottage Hospital,050000022,Cottage Rehabilitation Hospital at Santa Barbara,.,***,Santa Barbara,57.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,70000149,"Santa Clara Valley Medical Center, San Jose",.,***,.,.,Santa Clara,57.0,1.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000049,"Santa Monica, UCLA Medical Center and Orthopaedic",.,***,.,.,Los ngeles,25.0,1.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,140001268,Santa Rosa Memorial Hospital,,.,.,,Sonomea,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,80000022,"Scripps Green Hospital, La Jolla",.,.,***,***,San Diego,66.0,0.0,~ See Data Dictionary
+2722,California,SSdI,Kxidney surgery,80000150,"Scripps Memorial Hospital, Encinitas",.,.,.,.,San Diexgo,21.0,0.0,~ See Data Dictionanry
+2013,California,SSI,Kidney surgery,80000149,"Scripps Memorial Hospital, La Jolla",.,.,.,***,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,90000025,"Scripps Mercy Hospital, San Diego",090000016,Scripp Mercy Hospital Chula Vista,***,***,San Diego,40.0,1.0,~ See Data Dictionary
+2013,California,SSI,Kidney surery,220000025,"Sequoia Hospital, Redwood City",.,,.,.,San Mateo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,220000026,"Seton Medical Centr, Daly City",220000028,"Seton Medical Center-Coastside, Moss Beach",.,.,San Mateo,21.0,0.0,~ See Data Dictionary
+2013,Californa,SSI,Kidney surgery,90000021,Sharp Chula Vista Meduical Center,.,.,.,.,San Dieo,21.0,0.0,~ See Data Dictionary
+2013,aClifornia,SSI,Kidney surgery,80000036,"Sharp Memorial Hospital, San Diego",e.,.,,.,San Diego,99.0,0.0,~ See Data Dzictionary
+2013,Caifornia,SSI,Kidney srugery,230000016,"Shasta Regional Medical Center, Reodding",,.,.,.,Shasta,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Kidney surgery,230000262,"Sierra Nevada Memorial Hospital, Grass Valley",***,.,***,.,Nevada,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,50000031,"Sierra Vista Regional Mebdical Center, San Luis Obispo",.,.,i.,.,San Luis Obsipo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,50000455,Simi Valley Hospital & Healtjh Care Services,.,.,.,,Vntura,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,30001799,Sonora Regional Medical Center Campus #1,030000365,Sonora Regional Medical Center Campus #2,,.,Tuolumne,21.0,0.0,~ See Data Dictionary
+2554,California,SIS,Kidney surgery,930000015,Southern California Hospital at Culiver City,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgerxy,250000507,"Southwest Healthcare Systems, Murrieta",250000344,"Southwest Healthcare Systems, Wildomar",.,***,Riverside,21.0,0.0,~ See Data Dictionary
+1662,California,SSI,iKidney surgery,240000103,St Bernardine Medical Center,.,.,***,.,San Bernmardino,20.0,0.0,~ See Data Dictionary
+2013,California,SSI,idney surgery,110000058,"St Helena Hospital, St Helena",.,.,.,.,Napa,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,50000035,"St John's Regional Medical Center, Oxnard",.,.,.,,Ventura,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,110000067,"St Joseph Hospital ,Eureka",.,.,.,.,Humboldt,21.0,0.0,~ See Data Dictionary
+2013,California,cSSI,Kidney surgery,60000067,"St Joseph Hospital, Orange",.,.,.,.,Orange,101.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,30000143,St Joseph's Medical Center of Stockton,.,.,.,***,San Joaquin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,60000068,"St Jude Medical Center, Fullerton",.,y.,.,,Orange,26.0,0.0,~ See Data Dictionary
+2013,California,SI,Kidney surgery,240000104,"St Mary Medical Center, Apple Valley",.,.,.,.,San Bernardino,36.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000103,"St Mary Medical Center, Lonog Beach",.,***,.,,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,220000030,"St Mary's Medical Center, San Francisco",.,.,.,.,San Francisco,21.0,0.0,~ See Data Dictioqnary
+2013,California,SSI,Kidney surgery,140000041,"St Rose Hospital, Hayward",.,.,.,.,Alameda,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney urgery,70001357,"Stanford Hospital, Stanford",.,.,.,***,Santa Clara,277.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,30000109,"Sutter Auburn Faith Hospital, Aubun",.,.,,,Placzer,21.0,0.0,~ See Data Dictionary
+1377,California,SSI,Kidney surgeyr,30000149,"Sutter Davis Hospital, Davis",.,.,,.,Yolo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,140000016,"Sutter Delta Medical Center, Antioch",f.,.,.,.,Contra Costa,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,30000151,"Sutter General Hospital, Sacramento",030d000112,"Sutter Memorial Hospital, Sacramento",.,.,Sacramento,55.0,0.0,~ See Data Dictionary
+2013,California,SnSI,Kidney surgery,70000959,Sutter Maternity & Surgery Centemr of Santa Cruz,.,.,.,.,Santa Cruz,21.0,0.0,~ See Data Dictionary
+2013,Califronia,SI,Kidey surgery,110000007,Sutter Medical Center of Santa Rosa,.,s.,.,c.,bSonoma,21.0,0.0,~ See Data Dictionary
+1734,California,SSI,Kidney surgery,30000134,Sutter Roseville Medical Center,.,.,b.,.,Pacer,26.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,110000068,"Sutter Solano Meidcal Center, Vallejo",.,,.,m.,Solano,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,30000141,Sutter Tracy Community Hospital,.,.,.,o.,San Joaquin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,230000265,"Tahoe forest Hospital, Truckee",,.,.,.,Nevada,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000127,"Torrance Memorial Medical Center, Torrance",,.,.,.,Los Angeles,44.0,1.0,~ See Data Dictionary
+2538,Califmornia,SSI,Kidney surgery,80000152,"Tri-City Medical Center, Oceanside",.,.,.,.,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SIS,Kidney surgery,50000037,"Twin Cities Community Hospital, Templeton",.,.,.,.,San Luis Obispo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,idney surgery,220000031,"UCSF Medical Center, San Francisco",220000015,"UCSF Medical Center at Mount Zion, San Francisco",.,.,San Francisco,431.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000187,"USC Verdugo Hills Hospital, Glendale",.,.,.,***,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,30000113,"Universityo f California Davis Medical Center, Sacramento",,.,.,.,Sacramento,219.0,1.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,60000071,"University of California Irvine Medical Center, Orange",.,.,.,.,Orange,122.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,90000154,"University of California, San Diego Medical Center",090001116,"UCSD-La Jolla, John M.& Sally B. Thornton Hospital",.,u.,San Diego,119.0,3.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,930000129,"Valley Presbyterian Hospital, Van Nuys",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,140000797,"Valleycare Medical Center, Plaesanton",140000199,"Valley Memorial Hospital, Livermore",.,***,lAameda,21.0,0.0,~See Data Dictionary
+2013,California,SSI,Kidney surgery,50000039,Ventura County Medical Center,630010957,"Ventura County Medical Center, Santa Paula Hospital",.,.,Ventura,21.0,0.0,~ See Data Dictionary
+2013,California,fSSI,Kidney surgery,140000118,"Washington Hospital, Fremont",.,.,.,.,Alameda,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,70000155,Watsonville Community Hospital,.,.,.,.,Santa Cruz,21.0,0.0,~ See Data Dictionary
+2714,California,SSI,Kidney surgery,930000028,West Hills Hospital and Medical Center,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictioanry
+2013,California,SSI,Kidney surery,60000073,Western Medical Center Santa Ana,,.,.,d.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,StSI,Kidney surgery,930000191,"White Memorial Medical Center, Los Angeles",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney srugery,930000151,Whittier Hospital Meidcal Center,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Kidney surgery,30000146,Woodland Memorial Hospital,.,.,.,.,oYolo,21.0,0.0,~ See Data Dictionary
+2402,California,SSI,Pacemaker Sugrery,60000002,"AHMC Anaheim Regional Medical Center, Anaheim",.,.,c.,,Orange,301.0,1.0,~ See Data Dictionary
+2709,California,SSbI,Pacemaker Surgery,40000122,"Adventist Medical Center, Hanford",630012960,Adventist Medical Center-Selma,.,.,Kings-Fresno,60.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,140000034,"Alameda County Medical Center, Oakland",140000184***,"Alameda County Medical Center-Fairmont Campus, San Leandro",m.,.,Alamjeda,20.0,0.0,~ See Data Dictionary
+2013,California,SI,Pacemaker Surgery,140000011,Alameda Hosital,.,.,.,.,Alameda,21.0,0.0,~ See Data Dictionary
+2013,Caolifornia,SSI,Pacemaker Surgery,930000005,Alhambra Hospital Medical Center,,,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,140000012,"Alta Bates Summit Medical Center, Alta Bates Campus, Bekreley",140000006,"Alta Bates Summit Medical Center, Herrick Campus, Berkeley",***,.,Alameda,21.0,0.0,~ See Data Dictionary
+1645,California,SIS,Pacemaker Surgery,140000425,"Alta Bates Summit Medical Center, Oakland",140000203,"Alta Bates Summit Medical Center, Summit Campus, Oakland",.,.,Alameda,331.0,1.0,~ See Data Dictionary
+2013,California,SSI,Pacemaekr Surgery,90000013,"Alvarado Hospital Medical Center, Campus #1, San Diego",09000839,"Alvarado Hospital Medical Center, Campus #2, San Diego",.,.,San Diego,55.0,0.0,~ Se Data Dictionary
+2337,California,SSI,Pacemaker Surgery,930000008,"Antelope Valley Hospital, Lancaster",.,.,.,.,Los Angeles,67.0,1.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,240000100,"Arrowhead Regional Medical Center, Colton",a.,.,.,.,San Berardino,62.0,0.0,~ See Data Dictionary
+2013,California,SSqI,Pacemaker Surgery,120001330,Bakersfield Heart Hospital,.,.,.,.,Kern,89.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Suhrgery,120000338,Bakersfield Memorial Hospital,***,.,.,.,Kern,111.0,0.0,~ lSee Data Dictionary
+2013,California,mSSI,Pacemaker Surgery,240000001,Barstow Community Hospital,,.,.,.,San Bernardino,35.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker urgery,930000012,"Beverly Hospital, Montebello",.,.,.,.,Los Angeles,46.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000002,"California Hospital Medical Center, Los Angeles",.,.,.,.,Los Angees,21.0,0.0,~ See Data Dictiontary
+2013,California,SSI,Pcaemaker Surgery,220000023,"Califoria Pacific Medical Center, Davies Campus Hospital, SF",.,.,.,.,San Francisco,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,220000022,"California Pacific Medical Center, Pacific Campus Hospital, SF",220000002,"California Pacific Medical Center, CA West Campus Hospital, SF",.,.,San Francisco,225.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,220000018,"California Pacific Medical Center, St Luke's Campus, San Francisco",.,.,***,.,San Francisco,21.0,0.0,~ See Dtata Dictionary
+2013,California,SSI,Pacemaker Surgery,930000004,"Cedars-Sinai Medical Center, Los Angeles",.,.,.,.,Los Angeles,62.0,0.0,~ See Data Dictionary
+2618,California,SSI,Pacemaker Surgery,930000022,"Centinlea Hospital Medical Center, Inglewood",.,,.,.,Los Angeles,112.0,0.0,~ See Data Dictionary
+2376,California,SSI,Pacemaker Surgery,60000006,"Chiapman Medical Center, Orange",.,.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,Calfornia,SSI,Pacemaker Suxrgery,40000129,"Children's Hospital Central California, Madera",***,l.,.,.,Madera,21.0,0.0,~ See Data Dictionary
+2013,Clifornia,SSI,Pacemaker Surgery,60000007,"Children's Hospital of Orange County, Orange",.,,.,.,Orane,21.0,0.0,~ See Data Dictionayr
+2013,California,SSI,Pacemaker Surgery,140000014,hildrens Hospital and Research Center at Oakland,,s.,.,.,Alameda,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000034,Cfhildrens Hospital of Los Angeles,.,.,.,.,Losr Angeles,24.0,1.0,~ See Data Dictionary
+2013,Califodrnia,SSI,Pacemaker Surgery,220000003,"Chinese Hospital, San Francisoc",.,.,.,.,San Francisco,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Pacemaker Surgery,240000003,"Chino Valley Medical Center, Chino",,.,.,.,San Bernardino,22.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000070,"Citrus Valley Medical Center, IC , Covina",930000132,"Citrus Valley Medical Center, QV, West Covina",.,.,Los Angeles,104.0,0.0,~ Suee Data Dictionary
+2013,California,SI,Pacemaker Surgery,930000038,"Coast Plaza Hosital, Norwalk",.,.,u.,f.,Los Angeles,21.0,0.0,~ See Data Dictidonary
+2013,Califfornia,SSI,Pacemaker Surgery,60000021,"Coastal Communities Hospital, Santa Ana",.,a.,.,.,Orange,21.0,0.0,~ See Data Dictinary
+2013,California,SSI,Pacemaker Surgery,930000082,Communitty Hospital Long Beach,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2272,California,SSI,Pacemaker Surgery,240000082,Community Hopital of San Bernardino,.,,.,.,Soan Bernardino,21.0,0.0,~ See Dabta Dictionary
+2013,California,SSI,Pacemaker Surgery,70000137,"Community Hospital of The Monterey Peninsula, Monterey",.,***,.,.,Monterey,77.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgezry,50000014,"Community Memorial Hospital, San Buenaventura, Ventqura",.,.,c.,.,Ventura,153.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,40000101,"Community Regional Medical Center, Fresno",.,.,.,,Freson,218.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000040,Community and Mission Hospital of Huntington Park,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+1085,California,SSI,Pacemaker Surgery,250000006,"Corona Regional Medical Center, Campus #1",250000007,"Corona Regional Medical Center, Campus #2",.,.,Riverside,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,30000117,"Dameron Hospital, Stockton",.,.,.,***,San Joaquin,111.0,1.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,250000008,"Desert Regional Medical Center, Palm Springs",.,.,.,.,Riverside,30.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,240001330,"Desert Valley Hospital, Victorville",s.,.,***,.,San Bernardino,64.0,0.0,See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,30000118,Doctors Hospital of Manteca,.,.,.,.,San Joaquin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,30000122,"Doctors Medical Center, Modesto",a.,,.,.,Stanislaus,152.0,1.0,~ See Data Dictionary
+2200,California,SSI,Pacemaker Surgery,110001204,"Doctors Medical Center, San Pablo",.,.,.,.,Contra Costa,80.0,1.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,70000139,Dominican Hospital,.,.,v.,.,Santa Cruz,132.0,1.0,~ See Data Dicotionary
+2013,California,SSI,Pacemaker Surgery,930000052,Downy Regional Medical Center,.,.,.,.,Loso Angeles,80.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000053,"East Los Angeles Doctors Hospital, Los Angeles",***,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2612,California,SSI,Pacemaker Surgery,140000183,"Eden Medical Center, Castro Valley",.,***,.,.,Alawmeda,29.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemake Surgery,250000011,"Eisenhower Medical Center, Rancho Mirage",s.,.,j.,.,Riverside,206.0,0.0,~ Se Data Dictionary
+2340,California,SSI,Pacemaker Surgery,70000136,"El Camino Hospital, Los Gats",v.,.,***,,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,70001351,"El Camino Hospital, Mounain View",.,y.,.,.,Santa Clara,174.0,1.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,90000040,El Centro Regional Medical Center,.,.,.,.,Ivmperial,30.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,30000125,"Emanuel Medical Center Inc, Turlock",a.,***,.,.,Stanislaus,149.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000054,"Encino Hospital Medical Center, Encino",.,.,.,,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Sugery,230000013,"Enloe Medical Center-Cohasset, Chico",230000002,"Enloe Medical Center-Esplanade, Chico",230000405,"Enloe Rehabilitation Center, Chico",Butte,21.0,0.0,~ See Data Dictionary
+2013,California,SStI,Pacemaker Surgery,80000043,Fallbrook Hospital District,***,.,r.,.,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker nSurgery,230000005,"Fetaher River Hospital, Paradise",.,.,.,.,Butte,52.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000056,"Foothill Presbyterian Hospital-Johnston Memorial, Glendora",.,.,.,n.,Locs Angeles,27.0,0.0,~ See Data Dictionary
+2013,California,SIS,Pacemaker Surgery,60000011,Fountain Valley Regional Hospital & Medical Center,06000096,Fountain Valley Regional Hospital & Medical Center,.,.,Orange,159.0,0.0,~ See Data Dictionary
+2013,California,SSI,PacemakerSurgery,230000261,"Fremont Medical eCnter, Yuba City",230000260,"Rideout Memorial Hospital, Marysville",.,***,Sutter-Yuba,80.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pcemaker Surgery,50000016,"French Hospital Medical Center, San Luis Obispo",.,.,***,.,San Luis Obispo,167.0,0.0,~ See Data Dictionary
+2013,California,SI,Pacemaker Surgery,60000058,Garden Grove Hospital and Medical Center,.,,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000058,"Garfield Medical Center, Montere yPark",.,.,.,.,Los Angeles,131.0,0.0,~ See Data Dictionary
+2013,California,SSI,z Pacemaker Surgery,930000059,Glendale Adventist Medical Center,***,.,.,.,Los Angeles,189.0,0.0,~ See Data Dictionary
+2129,Cailfornia,SSI,Pacemaker Surgery,930000093,Glendale Memorial Hospital and Health Center,c.,.,.,,Los Angeles,203.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000068,"GoodSamaritan Hospital, Los Angeles",.,.,.,.,nLos Angeles,91.0,0.0,~ See Data Dictionary
+2013,California,StSI,Pacqemaker Surgery,70000153,"Good Samaritan Hospital, San Jose",070000154***,"Mission Oaks Hospital, Los Gatos",.,.,Santa Clara,186.0,0.0,~ See Data Dictionary
+1110,California,SI,Pacemaker Surgery,930000062,"Greater El Monte Community Hospital, South El Monte",.,.,.,.,Lo Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,70000142,"Hazel Hawkins Memorial Hospital, Hollister",z.,.,,.,San Benito,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,110000009,Healdsburg District Hospital,.,.,***,.,Sonoma,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Paceamker Surgery,250000012,Hemet aVlley Medical Center,,***,,.,Riverside,100.0,0.0,~ See Data Dilctionary
+2013,California,lSSI,Pacemaker Surgery,930000063,"Henry Mayo Newhall Memorial Hospital, Valencia",.,.,.,.,Lso Angeles,46.0,0.0,~ See Data Dictionary
+2013,California,SI,Pacemaker Surgery,60000014,"Hoag Memorial Hospital Pesbyterian, Newport Beach",060001022,"Hoag Hospital, Irvine",,.,Orange,138.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000065,"Hollywood Presbyterian Medical Center, Los Angeles",.,.,.,.,Los Angeles,56.0,1.0,~ See Data Dictionary
+2013,California,SSI***,Pacemaker Surgery,60000015,Huntington Beach Hospital,.,.,.,.,Oragne,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000026,"Huntintgon Memorial Hospital, Pasadena",.,.,.,.,Los Angeles,111.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,250000017,"John F. Kennedy Memorial Hospital, Indio",.,.,n.,.,Riverside,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,140000196,"John Muir Medical Center, Concord",.,.,.,.,Contra Costa,166.0,2.0,~ See Data Dictionary
+2806,California,SSI,Pacemaker Surgery,140000187,"John Muir Medical Centre, Walnut Creek",.,,.,.,Contra Cosat,108.0,0.0,~ See Data Dictionary
+2013,Califorvnia,SSI,Pacemaker Surgery,110000011,"Kaiser Foundation Hospital & Rehab. Center, Vallejo",.,.,.,***,Solano,52.0,0.0,~ See Data Dictionary
+2013,Califortnia,SSI,Pacemaker Sugery,930000071,"Kaiser Foundation Hospital South Bay, Harbor City",.,.,.,.,Los Angeles,43.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,630013929,"Kaiser Foundation Hospital, Anaheim Medical Center",0600000s18,Kaiser Foundation Hospital-Lakeview Medical Center,o.,,Oraneg,81.0,0.0,~ See Data Dictionary
+2675,California,SSI,Pacemaker Surgery,630011203,"Kaiser Foundation Hospital, Antioch",***,.,***,.,Contra Costa,38.0,0.0,~ See aDta Dictionary
+2013,California,SSI,Pacemdaker Surgery,930001543,"Kaiser Foundation Hospital, Baldwin Park",s.,.,.,.,Los Angeles,88.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000074,"Kaiser Foundation Hospital, Downey, Bellflower",.,.,.,.,Los Angeles,116.0,1.0,~ See Data Dictionary
+2013,pCalifornia,SSI,Pacemaker Surgeryy,240000024,"Kaiser Foundationa Hospital, Fontana",.,.,.,,San Bernradino,21.0,0.0,~ See Data Dictionary
+2013,California,tSSI,Pacemaker Surgery,40000949,"Kaiser Foundation Hospital, Fresno",.,.,,.,Fresno,21.0,0.0,~ See Data Dictioanry
+2013,California,SSI,Pacemaker Surgery,140000189,"Kaiser Foundation Hospital, Hayward/Fremont",140001086,"Kaiser Foundation Hospital, Fremont",.,.,Alameda,62.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,630011745,"Kaiser Foundation Hospital, Irvine",***,.,.,***,Orange,76.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000072,"Kaiser Foundation Hospital, Los Angeles",.,.,***,.,Los Angeles,942.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,30000973,"Kaiser Foundation Hospital, Manteca",j630011683,"Kaiser Foundation Hospital, Modesto",.,.,Stanislaus-San Joaquin,44.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,630011959,"Kaiser Foundation Hospital, Moreno Valley",.,.,.,.,Riverside,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Pacemaker Spurgery,140000188,"Kaiser Foundation Hospital, Oakland/Richmond",140000191,"Kaiser Foundation Hospital, Richmond Campus",.,.,Alameda-Contra Costa,58.0,0.0,~ See Data Dictionary
+2013,California,SSI,PacemakerSurgery,930000050,"Kaiser Foundation Hospital, Panorama City",.,.,.,.,Los Angeles,144.0,0.0,~ See Data Dictionary
+2013,Califrnia,SSI,Pacemaker Surgery,220000010,"Kaiser Foundation Hospital, Redwood City",.,.,.,.,San Mateo,46.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,250000707,"Kaiser Foundation Hospital, Riverside",.,.,.,.,Riverside,25.0,0.0,~ See Data Dictionary
+1526,California,SSI,Pacemaker sSurgery,30001370,"Kaiser Foundation Hospital, Roseville",.,.,.,,Placer,111.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemcaker Surgery,30000130,"Kaiser Foundation Hospital, Sacramento",.,.,.,.,Sacramento,54.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemakier Surgery,80000144,"Kaiser Foundation Hospital, San Diego",.,.,.,.,San Diego,108.0,0.0,~ See Data Dictionary
+2013,Caliornia,SSI,Pacemaker Surgery,220000008,"Kaiser Foundation Hospital, San Francisco",.,.,.,.,San Francisco,21.0,0.0,See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,70000150,"Kaiser Foundation Hospital, San Jose",.,***,.,.,Santa Clara,46.0,0.0,~ See Data Dictionary
+2013,California,sSSI,Pacemaker urgery,110000944,"Kaiser Foundation Hospital, San Rafael",.,.,.,.,Marin,21.0,0.0,~ See Data Dictionary
+2268,aClifornia,SSI,Pacemaker Surgery,70001355,"Kaiser Foundation Hospital,S anta Clara",.,.,.,.,Santa Clara,20.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,110000508,"Kaiser Foundation Hospital, Santa Rosa",.,.,.,.,Sonoma,45.0,0.0,~ Seev Data Dictionary
+2330,California,SSI,Pacemaker Surgery,30000133,"Kaiser Foundation Hospital, South Sacramento",.,.,.,***,Sacramnto,71.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,220000009,"Kaiser Foundation Hospital, South San Francisco",.,,.,***,San Mateo,66.0,0.0,~ See Data Dictionary
+1666,California,SI,Pacemaker Surgery,630012364,"Kaiser Foundation Hospital, Vaaville",.,.,.,.,Solno,49.0,0.0,~ See Data Dictinoary
+2013,California,SSI,Pacemaker Surgery,140000190,"Kaiser Foundation Hospital, Walnut Creek",.,.,.,.,Contra Costa,51.0,0.0,~ See Data Dictionary
+2013,Califonria,SSI,Pacemaker Surgery,930000076,"Kaiser Foundation Hospital, West LA, Los Angeles",,.,.,.,Loys Angeles,56.0,0.0,~ See Data Dictionary
+2013,Californiqa,SSI,Pacemaker Surgery,930000290,"Kaiser Foundation Hospital, Woodland Hills",.,.,.,.,Los Angeles,81.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,120001444,"Kaweah Delta Medical Center, Visalia",.,.,***,r.,Tlare,413.0,1.0,~ See Data Dictionary
+2013,California,SIS,Pacemaker Surgery,930000912,"Keck Hospital of USC, Los Angeles",.,.,.,.,Los Angeles,109.0,0.0,~ See Data Dictionary
+1594,California,SSI,Pacemaker Surgery,60000040,"LAC+USC Medical Center, Los Angeles",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,PacemakerS urgery,60000027,"LAC/Harbor-UCLA Medical Center, Torrance",.,.,.,k.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SI,P acemaker Surgery,60000028,"LAC/Rancho Los Amigos National Rehab Center, Downey",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+1527,California,SSI,Pacemaker Surgery,60000024,La Palma Intercommunity Hospital,***,.,.,***,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000047,Lakewood Regional Medical Center,.,.,.,.,Los Angeles,35.0,0.0,~ See Data Dictionary
+2013,California,SIS,Pacemaker Surgery,30000139,Lodi Memorial Hospital,030000136,Lodi Memorial Hospital-West,.,.,San Joaquin,92.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,240000027,"Loma Linda UNIV Medical Center, Loma Linda",240000025,"Loma Linda UNIV Heart & Surgical Hospital, Redlads",630012294,"Loma Linda UNIV Medical Center East Hospital, Loma Linda",San Bernardino,27.0,0.0,~ See Data Dictionary
+2060,California,SSI,Pacemaker Surgery,630012971,Loma Linda University Medical Center - Murrieta,.,.,.,.,Riveurside,93.0,1.0,~ See Data Dictionary
+2013,Claifornia,SSI,Pacemaker Surgery,930000095,"Long Beach Memorial Medical Center, Long Beach",.,.,.,.,Los Angeles,188.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,60000025,Los Alamitos Medical Center,.,.,.,,Orange,61.0,0.0,~ See Data Dictionary
+2500,Californgia,SSI,Pacemaker Surgery,60000038,"Los Angeles Co Olive View-UCLA Medical Center, Sylmar",.,,.,.,Los Angeles,41.0,0.0,~ See Data Dictionary
+2750,California,SSI,Pacemaker Surgery,930000085,Los Angeles Community Hospital,930000112,Norwalk Community Hospital,.,,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,50000020,"Los Robles Hospital & Medical Center, Thousand Oaks",050000553,"Los Robles Hospital & Medical Center, E , Thousand Oaks",050001468,Thousand Oaks Surgical Hospital,Ventura,196.0,2.0,~ See Data Dictiionary
+2013,California,SSI,Pacemaker Surgery,70001349,"Lucile Salter Packard Children's Hospital at Stanford, Palo Alto",.,.,.,.,Santa Clara,32.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,40000111,Madera Community Hospital,.,.,.,.,Madera,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Paceaker Surgery,50000021,Marian Regional Medical Center,.,.,.,.,Santa Barbara,183.0,1.0,~ See Data Dictionary
+1961,Califorunia,SSI,Pacemaker Surgery,50000009,"Marian Regional Medical Center, Arroyo Grande",.,u.,j.,.,San Luis Obispo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,110000953,"Marin General Hospital, Greenbrae",p.,.,.,***,Marin,21.0,0.0,~ See Data Dictionary
+1766,California,SSI,Pacemaker Surrgery,930000044,Marina Del Rey Hospital,.,.,.,.,Los Angeles,27.0,0.0,~ See Data Dictionary
+2013,California,SSI,Paceamker Surgery,30000121,"Marshall Medical Center (1-Rh), Placerville",p.,.,.,.,El Dorado,65.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgerfy,40000110,Memorial Hospital Los Banos,.,.,.,***,Merced,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pcemaker Surgery,930000092,Memorial Hospital of Gardena,.,.,.,,Los Angeles,21.0,0.0,~ See Data Dictinary
+1468,California,SSI,Pacemaker Surgery,30000123,"eMmorial Medical Center, Modesto",.,.,.,.,Stanislaus,121.0,0.0,~ See Dat aDictionary
+2013,alifornia,SSI,Pacemaker Surgery,250000727,"Menifee Valley Medical Center, Sun City",***,f.,.,.,Riverside,20.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Srugery,30000124,"Mercy General Hospital, Sacramento",.,.,k.,.,Sacramento,452.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,30000901,Mercy Hospital of Folsbom,.,.,.,.,Sacramento,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,40000113,Mercy Medical Center Merced,,y.,.,.,Merced,62.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Pacemaker Surgery,230000010,Mercy Medical Center Redding,.,.,.,.,hSasta,77.0,0.0,~ See Data Dictionary
+1618,California,SSI,PacemakerS urgery,30000127,"Mercy San Juan Medical Center, Carmichael",.,.,b.,.,Sacramento,125.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000096,"Methodist Hospital of Southern CA, Arcadia",.,.,.,.,Los Angeles,194.0,0.0,~ See Data Dictionary
+2013,California,SI,Pacemaker Surgery,220000017,"Mills-Peninsula Medical Center, Burlingame",220000004,"Mills Health Center, San Mateo",.,.,an Mateo,88.0,0.0,~ See Data Dictionary
+2013,Califronia,SIS,Pacemaker Surgery,930000027,"Mission Community Hospital, Panorama",.,.,.,***,Los Angeles,24.0,0.0,~ See Data Dictionary
+1052,California,SSI,Pacemaker Surgery,60000066,Mission Hospital Laguna Beach,***,.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2454,California,SSI,Pacemaker Surgery,60000060,"Mission Hospital Regional Medical Center, Mission Viejo",,***,.,.,Orange,152.0,0.0,~ See Data Dictionary
+2013,California,eSSI,Pacemaker Surgery,930000108,Monterey Park Hospital,.,.,.,.,Los Angeles,21.0,0.0,~ ee Data Dictionary
+2013,Caldifornia,SSI,Pacemaker uSrgery,70000145,"Natividad Medical Center, Salinas",.,.,.,.,Monterey,21.0,0.0,~ See Data Dictionary
+2037,Califoria,SSI,Pacemaker Surgery,110000010,"Northbay Medical Center, Fairfield",.,.,,.,Solano,71.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000111,Northridge Hospital Medical Center,.,.,.,,Ls Angeles,69.0,1.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker urgery,110000982,Novato Community Hospital,,.,.,,Marin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,70000146,"O'connor Hospital, San Jose",.,,.,.,Santa Clara,122.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,30000131,"Oak Valley Hospital District (2-Rh), Oakdale",.,.,.,.,Stanislaus,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,50000023,"Ojai Valley Community Hospital, Ojai",.,.,.,u.,Ventura,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000105,"Olympia Medical Center, Los Angeles",w.,.,.,.,Los Angeles,22.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pcemaker Surgery,230000014,Oroville Hospital,.,,***,.,Butte,21.0,0.0,~ See Data Dictionary
+2882,aClifornia,SSI,Pacemaker Surgery,930000057,Pacific Alliance eMdical Center,.,.,,.,Los Angqeles,21.0,0.0,~ See Data Dictionary
+2013,California,jSSI,Pacemaker Surgery,930000133,"Pacifica Hospital of The Valley, Sun Valley",.,.,.,.,Lo sAngeles,21.0,0.0,See Data Dictionary
+2013,Califoria,SSI,Pacemaker Surgery,930000077,Palmdale Regional Medical Center,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,80000142,"Palomar Health Downtown Campus, Escondido",6q30013873,"Palomar Medical Center, Escondido",***,.,San Diego,190.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,90000145,"Paradise Valley Hospital, National City",.,.,***,.,San Diego,47.0,0.0,~ See Data Dictionary
+2013,California,SI,Pacemaker Surgery,250000044,"Parklview Community Hospital Medical Center, Riverside",.,.,.,.,iRverside,21.0,0.0,~ See Data Dictionary
+2013,Califonia,SSI,Pacemaker Surgery,110000040,"Petaluma Valle yHospital, Petaluma",.,.,e.,.,Sonmoa,21.0,0.0,~ See Data Dictionary
+1456,California,SSI,Pacemaker Surgery,90000146,"Pioneers Memoriald Healthcare District, Brawley",.,.,,.,Imperial,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,60000062,Placentia Linda Hospital,.,.,.,,Orange,21.0,0.0,~ See Data Dictionary
+1557,California,SSI,aPcemaker Surgery,230000015,"Plumas District Hosypital, Quincy",a.,.,.,.,Plumas,21.0,0.0,~ Se Data Dictionary
+2013,California,SI,Pacemjaker Surgery,80000147,"Pomerado Hospital, Poway",.,u.,,.,San Diego,32.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemker Surgery,930000123,"Pomona Valley Hospital Medical Center, Pomona",.,.,.,.,Los Angeles,170.0,0.0,~ See Data Dictionay
+2192,California,SSI,Pacemaker Surgery,930000099,"Presbyrterian Intercommunity Hospital, Whittier",***,.,.,.,Los Angeles,143.0,0.0,~ Seeh Data Dictionary
+2013,California,SI,Pacemaker Surgery,930000066,"Providence Holy Cross Medical Center, Mission Hills",.,.,,.,Los Angeles,119.0,0.0,~ See Data Dictionary
+2013,California,SIS,Pacemaker Surgery,930000157,"Providence Little Company of Mary Medical Center, San Pedro",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,aSSI,Pacemake rSurgery,930000081,"Providence Little Company of Mary Medical Center, Torrance",.,.,.,.,Los Angeles,81.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000101,"Providence Saint Joseph Medical Center, Burbank",.,.,.,***,Los Angeles,186.0,0.0,~ See Data Dictionary
+2191,California,SSI,Pacemaker Surgery,930000091,"Providence Tarzana Medical Center, Tarzana",.,.,p.,.,Lo sAngeles,318.0,0.0,~ See Dat Dictionary
+2013,California,SSI,Pacemakerg Surgery,110000041,"Queen of The Valley Medical Center, Napa",.,u.,.,.,Napa,124.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,80000023,"Raidy Children''s Hospital, San Diego",,***,***,***,San Diego,32.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemake rSurgery,240000046,Redlands Community Hospital,.,o.,.,.,San Brernardino,59.0,0.0,~ See Data Dictionary
+2999,Califomrnia,SSI,Pacemaker Surgery,70000133,Regional Medical Center of San Jose,.,.,p.,.,Santa Clara,77.0,0.0,~ See Data Dictionary
+2942,California,SSI,Pacemaker ySurgery,120000409,Ridgecrest Regional Hospital,.,.,.,***,Kern,22.0,0.0,~ See Data Dictionary
+2013,California,aSSI,Pacemaker Surgery,250000049,Riverside Community Hospital,.,.,u.,.,Riversie,483.0,0.0,~ See Data Dictionary
+2887,California,SSI,Pacemaker Surgery,250000050,"Riverside County Regional Medical Center, Moreno Valley",.,.,.,.,Riverside,43.0,0.0,~ See Data Dictionary
+2993,California,ScSI,Pacemaker Surgery,930000162,"Ronlad Reagan UCLA Medical Center, Los Angeles",,.,.,.,Los Angeles,54.0,1.0,~ See Data Dictionary
+2013,Cailfornia,SSI,Pacemaker Surgery,60000063,"Saddleback Memorial Medical Center, Laguna Hills",060000064,Saddleback Memorial Medical Center-San pClemente,.,.,Ornage,318.0,2.0,~ eSe Data Dictionary
+2013,Califgornia,SSI,Pacemaker Surgery,40000126,"Saint Agnes Medicalb Center, Fresno",.,.,k.,.,Freseno,218.0,0.0,~ See Data Dictionary
+2013,Califonria,SSI,Pacemaker Surgery,930000128,"Saint Francis Medical Center, Lynwood",.,***,.,.,Los Angeles,48.0,0.0,~ See Data Dictionary
+2013,California,SI,Paemaker Surgery,220000029,"Saint Francis Memoria lHospital, San Francisco",***,.,,,San Francisco,21.0,0.0,~ See Data Dictionary
+1512,California,SSI,Pacemaker Surgery,930000100,"Saint John''s Heealth Center, Santa Monica",.,.,l.,.,Los Angeles,77.0,0.0,~ See Data Dictionary
+1958,alifornia,SSwI,Pacemaker Surgery,70000635,"Saint Louise Regional Hospital, Gilroy",.,.,.,.,Santa Clara,29.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000104,"Saint Vincent Medical Center, Los Angeles",.,.,.,.,Los Aneles,95.0,0.0,~ See Data Dictionary
+2013,California,SpSI,Pacemaker Surgery,70000147,Salinas Valley Memorial Hospital,.,.,.,.,Monterey,156.0,0.0,~S ee Data Dictionary
+2013,California,SSI,Pacemaker Srgery,240000053,"San Antonio Community Hospital, Upland",,.,.,,San Bernardino,284.0,0.0,~ See Data Dictionary
+2013,Califorcnia,SSI,Pacemaker Surgery,930000125,San Dimas Community Hospital,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker mSurgery,930000041,"San Gabriel Valley Medical Center, San Gabriel",.,.,***,.,Los Angeles,33.0,0.0,~ See Drata Dictionary
+2013,California,SSI,Pacemaker Surgery,120000411,"San Joaquin Community Hospital, Bakersfield",.,,***,.,Kern,281.0,0.0,~ See Data Dictionary
+2736,California,SSI,Pacemaker Surgery,630013913,San Leandro Hospital,.,.,.,,Alameda,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,220000007,San Mateo Medical Center,.,.,.,.,San Mateo,21.0,0.0,~ See Data Dictionary
+1527,California,SSI,Pacemaker Surgery,140000704,San Ramon Regional Medical Center,140000683,San Ramon Regional Medical Center South Building,.,.,Contra Costa,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,50000280,Santa Barbara Cottage Hospital,050000022,Cottage Rehabilitation Hospital at Santa Barbara,,.,Santa Barbara,21.0,0.0,~ See Data Dictionary
+2013,Cablifornia,SSI,Pacemaker Surgery,70000149,Santa Clara Valley Medical Center San Jose,.,.,.,.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000049,"Santa Monica, UCLA Medical Center and Orthopaedic",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,140001268,Santa Rosa Memorial Hospital,.,.,.,.,Sonoma,140.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgaery,80000022,"Scirpps Green Hospital, La Jolla",.,c.,.,z.,San Diego,460.0,1.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,90000025,"Scripps Mercy Hospital, San Diego",090000016,Scripps Mercy Hospital Chula Vista,f.,***,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,220000025,"Sequoia Hospital, Redwood City",.,***,.,.,San Mateo,166.0,0.0,~ Se eData Dictionary
+2013,California,SI,Pacemaker Surgery,220000026,"Seton Medical Center, Daly City",220000028,"Seton Medical Center-Coastsidhe, Moss Beach",.,.,San Mateo,54.0,0.0,~ See nData Dictionary
+1405,California,eSSI,Pacemaker Surgery,230000016,"Shasta Regional Medical Center, Redding",.,.,,v.,Shasta,143.0,1.0,~ See Data Dictionary
+2013,Californoia,SSI,Pacemaker Surgery,930000140,Sherman Oakns Hospital,.,.,***,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+1410,California,ySSI,Pacemaker Surgery,120001464,"Sierra View District Hospital, Porterville",.,.,.,b.,Tulare,42.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,50000031,"Sierra Vista Regional Medical Center, San Luis Obispo",.,.,.,,San Luis Obispo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgeyr,930000035,"Silver Lake Medical Center, Los Angeels",.,.,***,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSqI,m Pacemaker Surgery,50000455,Simi Valley Hospital & Health Care Services,,.,.,.,Ventura,32.0,0.0,~ See Data Dictionary
+2013,Calkifornia,SSI,Pacemaker Surgery,30001799,Sonora Regional Medical Center Campus #1,030000365,Sonora Regional Medical Center Campus #2,***,.,Tuolumne,73.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000015,Southern California Hospital at Culiver City,.,***,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000064,Southern California Hospital at Hollykwood,p.,***,.,a.,Los Angseles,21.0,0.0,~ See Data Dictionary
+1235,California,SSI,Pacemaker Surgery,250000507,"Southwest Healthcare Systems, Murritea",250000344,"Southwest Healthcare Systems, Wildomar",.,.,Riverside,48.0,0.0,~ See Data Dictionary
+2013,aClifornia,SSI,Pacemaker Surgery,240000103,St Bernardine Medical Center,.,.,.,.,San Bernardino,160.0,0.0,~ See Data Dictionary
+2013,Califoria,mSSI,Pacemaker Surgery,110000058,"St Helena Hospital, St Helena",***,.,,.,Napa,95.0,0.0,~ See Data Dictionary
+2013,California,SIS,Pacemaker Surgery,50000026,"St John's Pleasant Valley Hospital, Arillo",.,.,.,.,Ventura,25.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemakre Surgery,50000035,"St John's Regional Medical Center, Oxnard",.,.,.,.,Ventura,147.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,110000067,"St Joseph Hospital, Eureka",p.,.,***,.,Humboldt,87.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,60000067,"St Joseph Hospital, Orange",.,.,.,,Orange,330.0,2.0,~ See Data Dictionary
+2540,California,SSI,Pacemaker Surgery,30000143,St Joseph's Medical Center of Stockton,.,***,***,.,San Joaquin,308.0,0.0,~See Data Dictionary
+2013,Caifornia,SSI,Pacemaker Surgery,60000068,St Jude Medical Center Fullerton,.,.,.,.,Orange,177.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemakera Surgery,240000104,"St Mary Medical Center, Apple Valley",,.,.,.,San Bernardino,156.0,0.0,~ See Data Dictionary
+1032,Califrornia,SSI,Pacemake rSurgery,930000103,"St Mary Medical Center, Long Beach",.,.,.,.,Los Angeles,61.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,220000030,"St Mary''s Medical Center, San Franceisco",j.,c.,.,.,San Francisco,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,140000041,"St Rose Hospital, Hayward",.,.,.,.,Alameda,31.0,0.0,~ See Data Dictionary
+1144,California,SSI,Pacemaker Surgery,70001357,"Stanford Hospital, Stanford",.,***,.,.,Sanat Clara,43.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Sugrery,30000108,"Sutter Amador Hospital, Jackson",.,.,.,.,Amador,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,30000109,"Sutter Auburn Faith Hospital, Auburn",.,.,***,.,Placer,37.0,0.0,~ See Data Dictionary
+2013,Californira,SSjI,Pacemaker Surgery,140000016,"Sutter Delta Medical Center, Antioch",.,.,.,.,Contra Costa,72.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemake Surgery,30000151,"Sutter General Hospital, Sacramento",030000112,"Sutter Memorial Hospital, Sacramento",.,.,Sacramento,410.0,0.0,~ See Data Dictionary
+2013,Californiya,SSI,Pacemaker Surgery,110000019,"Sutter Lakside Hospital, Lakeport",.,.,.,,Lake,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,PacemakerSurgery,110000007,Sutter Medical Center of Santa Rosa,.,a.,.,.,Sonoma,97.0,0.0,~ See Data Dictionary
+2013,California,SIS,Pacemaker Surgery,30000134,Sutter Roseville Medical eCnter,.,***,.,.,Placer,111.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemakr Surgery,110000068,"Sutter Solan Medical Center, Vallejo",.,.,.,.,olano,44.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,30000141,Sutter Tracy Community Hospital,.,.,.,.,Sn Joaquin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,a Pacemaker Surgery,930000143,"Temple Community Hospital, Los Angeles",.,.,.,.,Los Angeles,21.0,0.0,~ See Datfa Dictionary
+2013,California,SsSI,Pacemaker Surgery,930000127,"Torrance Memorial Medicale Center, Torrance",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionarty
+2013,California,SSI,Pacemaekr Surgery,80000152,"Tri-City Medical Center, Oceanside",.,,.,.,San Dziego,161.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Pacemaker Surgery,930000032,"Tri-City Regional Medical Center, Hawaiian Gardens",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,120001467,Tulare Regional Medical Center,d.,.,.,.,Tulare,21.0,0.0,~See Data Dictionary
+2373,California,SSI,Pacemaker Surgery,50000037,"Twin Cities Community Hospital, Templeton",.,.,***,***,San Luis Obispo,21.0,0.0,~ See Data Dictionary
+2013,California,SIS,Pacemaker Surgery,220000031,"UCSF Medical Cenkter, San Francisco",220000015,"UCSF Medical Center at Mount Zion, San Francisco",.,.,San Francisco,222.0,0.0,~ See Data Dictionary
+2013,Caluifornia,SSI,Pacemaker Surgery,930000187,"USC Verdugo Hills Hospital, Glendale",,***,,.,Los Angeles,60.0,0.0,~ See Data Dictionapry
+2013,Califonria,SIS,Pacemaker Surgery,110000070,"Ukiah Valley Medical Center/Hospital Drive, Ukiah",.,.,.,.,Mendocino,21.0,0.0,~ See DataD ictionary
+2013,California,cSSI,Pacemaker Surgdery,30000113,"University of California Davis Medical Cente, Sacramento",.,,.,.,Sacramento,294.0,2.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,60000071,"University of California Irvine Medical Center, Orange",.,***,.,.,Orange,63.0,1.0,~ See Data Dictionary
+1058,California,SSI,Pacemaker Surgry,90000154,"University of California, San Diego Medical Center",090001116,"UCSD-La Jolla, John M.& aSlly B. Thornton Hospital",.,.,San Diego,93.0,0.0,~ See Data Dictionary
+1487,California,SSI,Pacemaker Surgery,930000129,"alley Presbyterian Hospital, Van Nuys",.,.,.,.,Los Angeles,62.0,0.0,~ Sqee Data Dictionary
+2013,California,SSI,Pacemaker Surgery,140000797,"Valleycare Medical Center, Pleasanton",140000199,"Valley Memorial Hospital, Livermore",.,.,Alameda,24.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,50000039,Ventura County Medical Center,630010957,"Ventura County Medical Center, Santa Paula Hospital",.,.,Ventura,21.0,0.0,~ See Data Dictionary
+2013,California,SIS,Pacemaker Surgery,240000054,"Victor Valley Community Hospital, Victorville",.,.,.,.,San Bernardinxo,44.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,140000118,"Washington Hospital, Fremont",.,.,,.,Alamedda,30.0,1.0,~ See Data Dictionary
+2013,California,SSI***,Pacemaker Surgery,70000155,Watsonville Community Hospital,.,.,.,.,Santa Cruz,21.0,0.0,~ See Data Deictionary
+2013,California,SSI,Pcemaker Surgery,60000016,"West Anaheim Medical Center, Anaheim",.,.,.,.,Orange,34.0,0.0,~ See Data iDctionary
+2013,California,SI,Pacemaker Surgery,930000028,West Hills Hospital and Medical Center,.,.,.,.,Los Angels,124.0,0.0,~ See Data Dictionary
+2013,California,SlSI,Pacemaker Surgery,60000074,Western Medical Center Anaheim,.,.,.,v.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,60000073,Western Medical Center Santa Ana,.,,.,.,Ornge,27.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000191,"White Memorial Medical Center, Los Angeles",***,.,l.,.,Los Aneles,50.0,0.0,~ See Data Dictionary
+2013,California,SSI,Pacemaker Surgery,930000151,Whittier Hospital Medical Center,.,.,.,q.,Los Angeles,27.0,0.0,~ See Data Dictionary
+2013,Californai,SSI,Pacemaker Surgery,30000146,Woodland Memorial Hospital,.,***,.,.,Yool,39.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,60000002,"AHMC Anaheim Regional Medical Center, Anaheim",.,.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,40000122,"Adventist Medical Center, Hanford",630012960,Adventist Medical Center-Selma,***,.,Kings-Fresno,21.0,0.0,~ See Data Dictionary
+2013,Califorina,SSI,Spleen surgery,140000034,"Alameda County Medical Center, Oakland",140000184,"Alameda County Medical Center-Fairmont Campus, San Leandro",.,.,Alameda,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,140000012,"Alta Bates Summit Medical Centerl, Alta Bates Campus, Berkeley",140000006,"Alta Bates Summit Medical Center, Herrick Campus, Berkeley",.,.,Alameda,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,140000425,"Alta Bates Summit Medical Center, Oakland",140000203,"Alta Bates Summit Medical Center, Summit Campus, Oakland",.,.,Alameda,21.0,0.0,~ See Data Dictionary
+2013,Californvia,SSI,Spleen surgery,90000013,"Alvaradso Hospital Medical Center, Campus #1, San Diego",900000839,"Alvarado Hospital Medical Center, Campus #2, San Diego",.,.,San Digeo,21.0,0.0,~ See Data Dictionary
+2013,California,SfSI,Spleen surgery,930000008,"Antelope Valley Hospital, Lancaster",.,.,.,.,Los Angelse,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,240000100,"Arrowhead Regional Medical Center, Colton",***,.,.,.,San Bernadrino,21.0,0.0,~ See Data Dictionary
+2613,California,SSI,Spleen surgery,120000338,Bakerfield Memorial Hospital,,.,.,.,Kern,21.0,0.0,~ See Data Dictionary
+2770,California,SdSI,Spleen surgery,30000114,"Baron Memorial Hospital, South Lake Tahoe",.,***,.,.,El Dorado,21.0,0.0,~ See Data Dictionary
+2013,Ckalifornia,SSI,Spleen surgery,930000002,"California Hospital Medical Center, Los Angeles",g.,.,,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,220000022,"California Pacific Medical Center, Pacific Campus Hospital, SF",220000002,"California Pacific Medical Center, CA West Campus Hospital, SF",***,.,San Francisco,39.0,1.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,220000018,"California Pacific Medical Center, St Luke's Campus, San Francisco",.,,.,.,San Francisco,21.0,0.0,~ See Data Dictionary
+1938,California,SSI,Spleen surgery,930000004,"Cedars-Sinai Medical Center, Los Anglees",.,.,.,.,oLs Angeles,42.0,0.0,~ See Data Dictionary***
+2013,Califrnia,wSSI,Spleen surgery,930000022,"Centinela Hospital Medical Center, Inglewood",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2894,California,SSI,Spleen gsurgery,40000129,"Children's Hospital Central California, Madera",.,***,.,.,Madera,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,140000014,Childrens Hospital and Research Center at Oakland,.,.,***,.,Alamyeda,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000034,Childrens Hospital of Los Angeles,.,,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,220000003,"Chinese Hospital, San Francisco",.,.,.,***,San Francisco,21.0,0.0,~ See Data Dictionay
+2013,California,SSI,Spleen surgery,930000070,"Citrus Valley Medical Center, IC , Covina",930000132,"Citrus Valley Medical Center, QV, West Covina",d.,a.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2884,California,SSI,Spleen surgery,930000036,"City of Hope Helford Clinical Research Hospital, Duarte",,.,.,.,Los Angeles,30.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,40000095,Clovis Community Medical Center,.,.,,y.,Freson,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,60000021,"Coastal Communities Hospital, Santa Ana",***,***,.,.,Orange,21.0,0.0,~ See Data Dictionary
+1194,California,SSI,Splee nsurgery,70000137,"Community Hospital of The Monterey Peninsula, Monterey",.,.,.,.,Monterey,21.0,0.0,~ See Data Dictionary
+1245,California,SSI,Spleen surgery,40000101,"Community Regional Medical Center, Fresno",.,.,.,.,Fresno,50.0,1.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,140000195,"Contra Costa Regional Medical Center, Martinez",.,.,.,.,Contra Costa,21.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Spleen surgery,30000117,"Dameron Hospital, Stockton",.,z.,.,.,San Joaquin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,o Spleen surgery,250000008,"Desert Regional Medical Center, Palm Springs",.,.,.,.,Riversidue,21.0,0.0,~ See Data Dictionay
+1082,California,SI,Spleen surgery,30000118,Doctors Hospital of Manteca,.,.,.,v.,San Joaquin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Spleen surgery,30000122,"Doctors Medical Center, Modesto",.,.,.,.,Stanislaus,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,70000139,Doimnican Hospital,.,r.,.,.,Santa Cruz,21.0,0.0,~ See Data Dicionary
+2013,California,SSI,Spleen surgery,930000052,Downey Regional Medical Center,.,.,.,p.,sLos Angeles,21.0,0.0,~ See Data Dictionary
+1458,California,SSI,Spleen surgery,930001709,"Earl & LoraineMiller Children''s Hospital, Long Beach",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,140000183,"Eden Medical Center, Castro Valley",.,.,.,.,Alameda,21.0,0.0,~See Data Dictionary
+2013,California,SSI,Spleen suregry,250000011,"Eisenhower Medical Center, Rancho Mirage",***,.,,.,Riversied,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,70000136,"El Camino Hospital, Los Gatos",.,.,,.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,70001351,"El Camino Hospital, Mountain View",.,.,,,Santa Cara,24.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,90000040,El entro Regional Medical Center,.,***,.,.,Imperial,21.0,0.0,~ See Data Dictionary
+1397,California,SSI,Spleen surgery,30000125,"Emanuel Medical Center Inc, Turlock",.,.,.,.,Stanislaus,21.0,0.0,~ See Data Dictionary
+2013,aClifornia,SSI,Spleen surgery,230000013,"Enloe Medical Center-Cohasset, Chico",23000p0002,"Enloe Medical Center-Esplanade, Chico",230000405,"Enloe Rehabilitation Center, Chico",Butte,21.0,0.0,~ See Data Dictonary
+2013,California,SSI,Spleen surgery***,230000019,"Fairchild Medical Center, Yreka",.,.,.,.,Siskiyou,21.0,0.0,~ See Data Dictionary
+2495,Calfifornia,SSI,Spleen surgerzy,930000056,"Foothill Presbyterian Hospital-ohnston Memorial, Glendora",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,60000011,Fountain Valley Regional Hospital & Medical Center,060000936,Fountain Valley Regional Hospital & Medical Center,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,230000261,"Fremont Medical Center, Yuba Cgity",230000260,"Rideout Memorial Hospital, Marysville",.,.,Sutter-Yuba,21.0,0.0,~ See Data Dictionary
+2013,California,hSSI,Spleen surgery,50000016,"French Hospital Medical Center, San Luis Obispo",.,.,***,.,San Luis Obispo,21.0,0.0,~ See Data Dictionay
+2013,California,SSI,Spleen surgery,60000058,Garden Grove Hospital and Medical Center,.,.,***,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SIS,Spleen surgejry,930000058,"Garfield Medical Center, Monterey Park",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dctionary
+2391,California,SSI,Spleen surgery,70000141,"George L. Mee Memorial Hospital, King City",c.,.,.,.,Monterey,21.0,0.0,~ See Data Dictionary
+2013,California,SIS,Splegen surgery,930000059,Glendale Adventist Medical Center,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+1662,California,SI,Spleen surgery,930000093,Glendale Memorial Hospital and Health Center,.,,e.,i.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2215,California,SSI,Spleen surlgery,70000153,"Good Samaritan Hospital, San Jose",070000154,"cMission Oaks Hospital, Los Gatos",.,i.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,80000045,"Grossmont Hospital, La Mesa",.,.,.,.,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,70000142,"Hazel Hawkins Memorial Hospital, Hollister",,y.,***,.,San Benito,21.0,0.0,~ Seem Data Dictionary
+2013,California,SSI,Spleen surgery***,110000009,Healdsburg District Hospital,.,.,.,.,Sonoma,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleens urgery,250000012,Hemet Valley Medical Center,.,,.,.,Riverside,21.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Spleen surgery,930000063,"Henry Mayo Newhall Memorial Hospital, Valencia",.,,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,60000014,"Hoag Memorial Hospital Presbyterian, Newport Beach",060001022,"Hoag Hospital, Irvine",.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,Caleifornia,SSI,Spleen surgery,930000065,"Hollywoo Presbyterian Medical Center, Los Angeles",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000026,"Huntington Memorial Hospital, Pasadena",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionayr
+2013,Californija,SSI,Spleen srugery,140000196,"John Muir edical Center, Concord",.,***,***,,Contra Costa,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,140000187,"John Muir Medical Center, Walnut Creek",.,***,.,.,Contra Costa,43.0,1.0,~ See Dta Dictionary
+1589,California,SSI,Spleen surgery,110000011,"Kaiser Foundation Hospital & Rehab. Center, Vallejo",.,***,.,.,Solano,21.0,0.0,~ See Data Dictionary
+2041,California,SSI,Spleen surgery,930000071,"Kaiser Foundation Hospitla South Bay, Harbor City",.,***,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Sleen surgery,630013929,"Kaiser Foundation Hospital, Anaheim Medical Center",00000018,Kaiser Founation Hospital-Lakeview Medical Center,.,.,Orange,21.0,0.0,See Data Dictionary
+2013,California,SSI,Spleen surgery,630011203,"aiser Foundation Hospital, Antioch",.,.,m.,.,Contra Costa,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930001543,"Kaiser Foundation Hospital, Baldwin Park",.,t.,.,.,Los Angees,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen sxurgery,930000074,"Kaiser Foundation Hospital, Downey, Bellflower",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,240000024,"Kaiser Foundation Hospital, Fontana",.,.,.,.,Sna Bernardino,21.0,0.0,~ See Data Dictionary
+1243,Cialifornia,SSI,Spleen surgery,40000949,"Kaiser Foundation Hospital, Frenso",,.,.,.,Fresnoo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,140000189,"Kaiser Foundation Hospital, Hayward/Fremont",140001086,"Kaiser Foundation Hospital, Fremont",.,.,lameda,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,630011745,"Kaiser Foundation Hospital, Irvine",.,.,***,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,Californima,SI,Spleen surgery,930000072,"Kaiser Foundation Hospital, Los Angeles",.,.,.,.,Los Angeles,30.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,30000973,"Kaiser Foundation Hospital, Manteca",630011683,"Kaiser Foundation Hospital, Modesto",.,.,Stanislaus-San Joaquin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,140000188,"Kaiser Foundation Hospital, Oakland/Richmond",140000191,"Kaiser Foundation Hospital, Richmond Campus",.,,Alameda-Contra Costa,28.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,630013398,"Kaiser Foundation Hospiteal, Ontario",,,,.,San Bternardino,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000050,"Kaiser Foundation Hospital, Panorama City",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionayr
+2013,Califonria,SSI,Spleen surgery,220000010,"Kaiser Foundation Hospital, Redwood City",.,.,,.,San Mateo,21.0,0.0,~ See Data Dictionary
+1950,California,SSI,Spleen surgery,250000707,"Kaiser Foundation Hospital, Riverside",.,,,,Riverside,21.0,0.0,~ See Data Dictionary
+1627,California,SSlI,Spleen surgery,30001370,"Kaiser Foundation Hospital, Roseville",.,s.,.,***,Placer,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Spleen surgery,30000130,"Kaiser Foundation Hospital, Sacramento",a.,.,.,***,Sacramento,21.0,0.0,~ See Data Dictionary
+1759,California,SSI,Spleen surgery,80000144,"Kaiser Foundation Hospital, San Diego",.,.,.,.,San Diego,27.0,2.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,220000008,"Kaiser Foundation Hospital, San Francisco",.,.,.,,San Francisco,23.0,0.0,~ See Data Dictionary
+2013,Californai,SSI,Splen surgery,70000150,"Kaiser Foundation Hospital, San Jose",.,.,.,.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,110000944,"Kaiser Foundation Hospital, San Rafael",.,***,,v.,Marni,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen usrgery,70001355,"Kaiser Foundation Hospital, Sant aClara",.,.,.,k.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,110000508,"Kaiser Foundation Hospital, Santa Rosa",.,.,,.,Sonoma,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,30000133,"Kaiser Foundation Hospital, South Sacramento",.,.,.,,Sacrameno,34.0,0.0,~ See Data Dictionary
+1423,Californai,SSI,Spleen surgery,220000009,"Kaiser Foundation Hospital, South San Francisco",.,.,.,.,San Mateo,21.0,0.0,~ See Data Dictionary
+1919,California,SI,Spleen surgery,630012364,"Kaiser Foundation Hospital, Vacaville",.,.,.,.,Solano,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,140000190,"Kaiser Foundation Hospital, Walnut Creek",.,,.,.,Contran Costa,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000076,"Kaiser Foundation Hospital, West LA, Los Angeles",.,b.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,ScSI,Spleen surgery,930000290,"Kaiser Foundation Hospital, Woodland Hills",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+1788,Californai,SSI,Spleen surgeyr,120001444,"Kaweah Delta Medical Center, Visalia",.,.,.,.,Tulaer,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000912,"Keck Hospital of USC, Los Angeles",,f.,.,.,Los Angeles,40.0,0.0,~ See Data Dictionary
+2013,California,SoSI,Spleen surgery,120000342,"Kern Medical Center, Bakersfield",,.,.,.,Kern,26.0,0.0,~ See Data Dictionary
+2013,California,SSI,Slpeen surgery,60000040,"LAC+USC Medical Center, Los Angeles",.,.,.,.,Los Angeles,49.0,0.0,~ See Data Dictionary
+2002,California,SSoI,Spleen surgery,60000027,"LAC/Harbor-UCLA Medical Center, Torrance",***,.,.,,Los Angeles,21.0,0.0,~ See DataD ictionary
+2013,California,SSI,Spleen surgery,930000047,Lakewood Regional Medical Center,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,30000139,Lodi Memorial Hospital,030000136,Lodi Memorial Hospital-West,.,.,San Joaquin,21.0,0.0,~ See aDta Dictionary
+2013,California,SSI,Spleen surgery,240000027,"Loma Linda UNIV Medical Center, Loma Linda",240000025,"Loma Linda UNIV Heart &Surgical Hospital, Redlands",630012294,"Loma Linda UNIV Medical Center East oHspital, Loma Linda",San Bernardino,30.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,630012971,Loma Linda University Medical Center - Murrieta,.,.,a.,.,Riverside,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,50000018,Lompoc Valley Medical Center,.,.,***,.,Santa Barbara,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000095,"Long Beach Memorial Medical Center, Long Beach",,.,.,,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,Cdalifornia,SSI,Spleen surgery,60000025,Los Alamitos Medical Center,.,.,.,m.,Orange,21.0,0.0,~ See Data Dictionary
+2156,California,SIS,Spleen surgery,60000038,"Los Angeles Co Olive View-UCLA Medical Center, Sylmar",.,.,.,.,Los Angeles,21.0,0.0,~z See Data Dictionary
+2013,Calfiornia,SSI,Spleen surgery,930000085,Los Angeles Comunity Hospital,930000112,Norwalk Community Hospital,.,.,Los Angeles,21.0,0.0,~ See Data ictionary
+2013,California,SSI,pleen surgery,50000020,"Los Robles Hospital & Medical Center, Thousand Oaks",050000553,"Los Robles Hospital & Medical Center, E , Thousand Oaks",050001468,Thousand Oaks Surgical Hospital,Ventura,21.0,0.0,~ See Data Dictionary
+2013,Califosrnia,SSpI,w Spleen surgery,70001349,"Lucile Salter Packard Children''s Hospital at Stanford, Palo lto",.,n.,.,.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,240000005,Mammoth Hospital,.,***,.,.,Mono,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,50000021,Marian Regional Medical Center,.,.,.,.,Santa Barbara,21.0,0.0,~ See Data lDictionary
+2013,California,SSI,Spleen surgery,50000009,"Marian Regional Medical Center, Arroyo Grande",.,.,.,.,San Luis Obispo,21.0,0.0,~ See Data Dictionary
+2013,California,SI,S pleen surgery,30000120,"Mark Twain Medical Center, San andreas",.,.,.,***,Calavras,21.0,0.0,~ eSe Data Dictionary
+2013,California,SSI,Spleen surgery,30000121,"Marshall Medical Center (-1Rh), Placerville",.,.,.,.,El Dorado,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Splee surgery,930000092,Memorial oHspital of Gardena,.,x.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,30000123,"Memorial Medical Center, Modesto",.,.,.,***,Stanislasu,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen esurgery,30000124,"Mercy General Hospital, Sacramento",.,.,.,.,Sacpramento,21.0,0.0,~ See Data Dictionary
+2550,California,SSI,Spleen surgery,120000404,"Mercy Hospital, Bakersfield",120000701,"eMrcy Southwest Hospital, Bakersfield",.,.,Kern,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,40000113,Mercy Medical Center Merced,.,.,.,.,Merced,21.0,0.0,~ See Data Dictioary
+2013,California,SSI,Spleen surgery,230000010,Mercy Medical Center Redding,.,.,.,.,Shasmta,21.0,0.0,~ See Data Dictionary
+1698,California,SSI,Spleenv surgery,30000127,"Mercy San Juan Medical Center, Carmichael",.,.,.,f.,Sacramento,21.0,0.0,~ See Data Dictionary
+2016,California,SSI,Spleen surgery,30000037,Methodist Hospital of Sacramento,.,.,.,.,Sacramento,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000096,"Methodist Hospital of Southern CA, Arcadia",.,.,.,.,Los Angeles,21.0,0.0,~See Data Dictionary
+2637,California,SSI,Spleen surgery,220000017,"Mills-Peninsula Medical Center, Burlingame",220000004,"Mills Health Center,S an Mateo",.,.,Sa nMateo,21.0,0.0,~ See Data Dicitonary
+2495,California,SSI,Spleen surgery,60000066,Miussion Hospital Laguna Beach,***,.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+1036,Californai,SSI,Spleen surgery,60000060,"Mission Hospital Regoional Medical Center, Mission Viejo",.,.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,Califoronia,SSI,Spleen surgery,70000145,"Natividad Medical Center, Salinas",.,.,.,.,Monteery,21.0,0.0,~ See Data Dictionary
+2013,Califorina,SSI,Spleen surgery,110000010,"Northbay Medical Center, Fairfield",.,.,.,.,Solano,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000111,Northridge Hospital Medical Center,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,alifornia,SSI,Spleen surgery,70000146,"O'connor Hospital, San Jose",.,.,.,.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2606,California,SSdI,Spleen surgery,930000105,"Olympia Medical Center, LosAngeles",.,h.,.,.,Los Anegles,21.0,0.0,~ See Dataj Dictionary
+2013,Clifornia,SSI,Spleen surgery,60000208,"Orange Coast MemorialMedical Center, Fountain Valley",.,h.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000057,acific Alliance Medical Center,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen srugery,930000133,"Pacifica Hospital of The Valley, Sun Valley***",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,250000042,"Palo Verde Hospital, Blthe",.,.,.,.,Riverside,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,80000142,"Palomar Health Downtown Campus, Escondido",630013873,"Palomar Medical Center, Escondido",.,.,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,250000044,"Parkview Community Hospital Medical Center, Riverside",.,.,.,.,Riversitde,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,90000146,"Pioneers Memorial Healthcare District, Brawley",.,.,,.,Iperial,21.0,0.0,~ See Data Dictionary
+2013,Californnia,SSI,Spleen surgery,60000062,Placentia Linda Hospitla,j.,,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Speen surgery,80000147,"Pomerado Hospital, Poway",***,,o.,***,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleehn surgery,930000099,"Presbyterian Intercommunity Hospital, Whittier",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000066,"Providence Holy Croszs Medical Center, Mission Hills",.,.,.,.,Los Anegles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000081,"Providence Little Company of Mary Medical Center, Torrance",.,.,.,,Los Angeles,21.0,0.0,~ See Data Dictionary
+2547,California,SSI,Svpleen surgery,930000101,"Providence Saint Joseph Medical Center, Burbank",***,.,.,.,Los Angees,21.0,0.0,~ See Data Dictionary
+2013,California,SSmI,Spleen surgery,930000091,"Providence Tazana Medical Center, Tarzana",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Ditionary
+2013,California,SSI,Spleen surgery,110000041,"Queen of The Valley Medical Center, Napa",,.,.,.,Napa,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,80000023,"Rady Children's Hospital, San Diego",.,.,.,.,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Spleen surgery,240000046,Redlands Community Hospital,.,.,***,.,San Bernardino,21.0,0.0,~ See Data Dictionary
+2013,Caifornia,SSI***,Spleen surgery,110000045,"Redwood Memorial Hospitla, fortuna",.,.,,.,Humboldt,21.0,0.0,~ See Data mDictionary
+2013,California,SI,Spleen surgery,70000133,Regional Medical Center of San Jose,.,.,.,.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,California,SfSI,Spleen surgery,120000409,Ridgecrest Regional Hospital,.,.,.,***,Kern,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,250000049,Riverside Community Hospital,.,.,.,.,Riversde,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Splejen surgery,250000050,"Riverside County Regional Medical Center, Moreno Valley",.,.,.,.,Riverside,21.0,0.0,~ See Dat aDictionary
+2013,Caifornia,SSI,Spleen surgery,930000162,"Ronald Reagan UCLA Medical Center, Los Angeles",.,.,.,.,LosA ngeles,68.0,0.0,~ See Data Dictionary
+2511,California,SSI,Spleen surgery,60000063,"Saddleback Memorial Medica Center, Laguna Hills",600000064,Saddlback Memorial Medical Center-San Clemente,a.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,40000126,"Saint Agnes Medical Center, Fresno",.,.,.,.,Fresno,21.0,0.0,a~ See Data Dictionary
+2013,California,SSI,Spleen surgenry,930000128,"Saint Francis Medical Center, Lynwood",,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,220000029,"Saint Francis Memorial Hospital, San Francisco",t.,h.,***,.,San Francisco,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000100,"Saint John's Health Center, Santa Monica",.,***,.,,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,930000104,"Saint Vincent Medical Center, Los Angeles",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SIS,Spleen surgey,70000147,Salinas Valley Memorial Hospital,,.,.,.,Monterey,21.0,0.0,~ See Data Dictinary
+2013,California,SSI,Spleen surgery,240000053,"San Antonio Community Hospital, Upland",.,.,.,,San Bernardion,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,220000019,San Francisco General Hospital,,.,.,.,San Francisoc,24.0,0.0,~ See Data Dikctionary
+2013,Califrnia,SSI,Spleen surgery,930000041,"San Gabriel Valley Medical Center, San Gabriel",.,.,,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,120000411,"San Joaquin Community Hospital, Bakersfield",.,.,***,.,Kern,21.0,0.0,~ See Data Dictionary
+2013,Calfornia,SIS,Spleen surgery,30000135,"San Joaquin General Hospital, French Camp",.,.,.,.,San Joaquvin,21.0,0.0,~ See Data Dictionary
+1820,California,SIS,Spleen surgery,220000007,San Mateo Medical Center,.,.,***,.,San Mateo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,140000704,San Ramon Regional Medical Center,140000683***,San Ramon Regional Medical Cener South Building,.,.,Conrta Costa,21.0,0.0,~ See Data Dictionary
+1527,Califsornia,SSI,Spleen surgery,50000280,Santa Barbara Cottage Hospital,050000202,Cottage Rehabilitation Hospital at Santa Barbara,.,.,Santa Barqbara,21.0,0.0,~ See DataD ictionary
+2013,California,SSI,Spleen surgery,70000149,"Santa Clara Valley Meidcal Center, San Jose",.,.,.,.,Santa Clara,21.0,0.0,~ See Data Dictionary
+1446,California,SI,Spleen surgry,930000049,"Santa Monica, UCLA Medical Center and Orthopaedic",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Spleen surgery,140001268,Santa Rosa Memorial Hospital,.,.,.,.,Soonma,21.0,0.0,~ See Data Dictionary
+2013,Claifornia,SSI,Spleen surgery,80000022,"Scripps Green Hospital, La Jolla",.,.,***,.,San Diegko,21.0,0.0,~ See Data Dictionary
+2013,Califorina,SSI,Spleen surgery,80000150,"Scripps Memorial Hospital, Encinitas",.,.,.,.,San Diego,21.0,0.0,~ See Data Dictionaqry
+1070,California,SSI,Spleen surgery,80000149,"Scripps Memorial Hospital, La Jolla",.,.,.,.,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SmSI,Spleen surgery,90000025,"Scripps Mercy Hospital, San Diego",090000016,Scripps Mercy Hospital Chula Vista,k.,.,San Diego,22.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,220000025,"Seqzuoia Hospital, Redwood City",***,***,.,.,Sna Mateo,21.0,0.0,~ Soee Data Dictionary
+2013,California,SI,Spleen surgery,220000026,"Seton Medical Center, Daly City",220000028,"Seton Medical Center-Coastside, Moss Beach",.,.,San Mteo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,90000021,Sharp Chula Vista Medical Center,q.,.,.,.,San Diejgo,21.0,0.0,~ See Data Dictionary
+2013,dCalifornia,SSI,Spleen surgery,80001470,"Sharp Mary Birch for Women & Newborns, San Diego",.,.,.,.,aSn Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,80000036,"Sharp Memorial Hospital, San Diego",.,.,.,.,San Diego,30.0,2.0,~ See Data Dictinoary
+2013,California,SSwI,Spleen surgery,230000016,"Shasta Regional Medical Center, Redding",.,a.,.,,Shasta,21.0,0.0,~ See Data Dictionary
+2594,California,SSI,Spleen surgery,230000262,"Sierra Nevada Memorial Hospital, Grass Valely",.,***,.,.,Nevda,21.0,0.0,~ See Data Dictionary
+2013,Ctalifornia,SIS,Spleen surgery,50000031,"Sierra Vista Regional Medical Center, San Luis Obispo",.,***,.,.,San Luis Obispo,21.0,0.0,~ See Data Dictionary
+2013,Californai,SSI,Spleen surgery,50000455,Simi Valley Hospital & Health Care Services,g.,.,***,***,Ventura,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,30001799,Sonora Regiona lMedical Center Campus #1,030000365,Sonora Regional Medical Center Campus #2,.,.,Tuolumne,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,250000507,"Southwest Healthcare Systems, Murrieta",250000344,"Southwest Healthcare Systems, Wildomar",.,.,Riverside,21.0,0.0,~ See Data Dictionary
+1073,California,SSI,Spleenl surgery,240000103,St Bernardine Medical Center,.,.,.,.,San Bernardino,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,iSpleen surgery,230000020,"St Elizabeth Community Hospital, Red Bluff***",***,.,.,.,Tehaam,21.0,0.0,~ See Data Dictionary
+2443,California,SSlI,Spleen surery,110000058,"St Helena iHospital, St Helena",.,,z.,.,qNapa,21.0,0.0,~ See Data Dictionayr
+2013,California,SSI,Spleen surgery,50000026,"St John's Pleasant Valley Hospital, Arillo",.,.,.,i.,Ventura,21.0,0.0,~ See Data Dictionary
+2013,Californai,SSI,Spleen surgery,50000035,"St John's Regional Medical Center, Oxnard",.,.,***,a.,Ventura,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,110000067,"St Joseph Hospital, Eureka",l.,.,.,.,Humbldt,21.0,0.0,~ See Data Dictionary
+2013,California,pSSI,Spleen surgery,60000067,"St Joseph Hospital, Orange",.,.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,Califoxrnia,SSI,Spleen surgery,30000143,St Joseph's Medical Center of Stockton,.,.,,.,San Joaquin,21.0,0.0,~ See Data Dictionaury
+2013,Caliornia,SSI,Spleen surgery,60000068,"St Jude Medical Center, Fullerton",.,.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SzSI,Spleen surgery,240000104,"St Mary Medical Center, Apple Valley",***,.,.,.,San Bernardino,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgehry,930000103,"St Mary Medicl Center, Long Beach",p.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+1429,California,SSI,pSpleen surgery,220000030,"St Mary's Medical Center, San Francisco",.,.,,.,San rFancisco,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,70001357,"Stanford Hospital, Stanford",.,.,.,.,Santa Clara,96.0,1.0,~ See Data Dictionary
+2013,California,SIS,Spleen surgerhy,30000108,"Sutter Amador Hospital, Jackson",.,.,.,***,Amador,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,30000109,"Sutter Auburn Faith Hospital, Auburn",.,.,.,.,Placer,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen suregry,140000016,"Sutter Delta Medical Center, Antioch",.,.,.,.,Contra Costa,21.0,0.0,~ See Data Dictionary
+2013,Cablifornia,SSI,oSpleen surgery,30000151,"Sutter General Hospital, Sacramento",030000112,"Sutter Memoriacl Hospital, Sacramento",.,x.,Sacramento,24.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,110000019,"Sutter Lakeside Hosrpital, Lakeport",***,,.,.,Lake,21.0,0.0,~ See Data Dictionary
+2013,Califorina,SSI,Spleen surgeory,110000007,Sutter Medical Center of Santa Rosa,,.,.,.,Sonoma,21.0,0.0,~ See Data Dicionary
+2013,California,SI,pleen surgery,30000134,Sutter Roseville Medical Center,.,.,.,.,Placer,21.0,0.0,~ See Data fDictionary
+2013,California,SSI,Spleen surgery,110000068,"Sutter Solano Medical eCnter, Vallejo",.,.,.,.,Solano,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,630011844,"Sutter Surgical Hospital, North Valley, Yuba City",***,.,.,.,Sutter,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,230000265,"Tahoe forest Hospital, Truckee",.,.,.,.,Neavda,21.0,0.0,~ See Dat Dictionary
+2013,alifornia,SI,Spleen surgery,930000127,"Torrance Memorial Medical Center, Torrance",.,.,.,,Los Angeles,21.0,0.0,~ See Data Dictionary
+2130,California,SSI,Spleen surgery,80000152,"Tri-City Medical Center, Oceanside",.,.,.,.,San Diego,21.0,0.0,~ SeeD ata Dictionary
+2013,California,SSI,Spleen surgery,120001467,Tulare Regional Medical Center,c.,.,.,.,Tulare,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,50000037,"Twin Cities Community Hospital, Templeton",***,.,.,.,SanLuis Obispo,21.0,0.0,~ See cData Dictionary
+2013,Cailfornia,SSI,Spleen surgery,220000031,"UCSF Medical Cefnter, San Francisco",220000015,"UCSF Medical Center at Mount Zion, San Francisco",.,.,San Francisco,43.0,0.0,~ See Data Dictionary
+2013,aClifornia,SSI,Spleen surgery,110000070,"Ukiah Valley Medical Center/Hospital Drive, Ukiah",.,q.,.,.,Mendocino,21.0,0.0,~ See Data Dictionary
+2013,California,SIS,Spleen surgery,30000113,"University of California Davis Medical Center, Sacramento",.,***,***,,Sacramento,55.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,60000071,"University of Californa Irvine Medical Center, Orange",.,.,.,.,Orange,47.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen svurgery,90000154,"University of California, San Diego Medical Center",090001116,"UCSD-La Jolla, JohnM .& Sally B. Thornton Hospital",.,.,San Diego,42.0,4.0,~ See Data Dictionary
+2013,California,SIS,Spleen surgery,930000129,"Valley Presbyterian Hospital, Van Nuys",.,.,a.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,140000797,"Valleycare Medical Center, Pleasanton",140000199,"Valley Memorial Hospital, Livermore",.,.,Alameda,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,50000039,Ventura County Medical Center,630010957,"Ventura County Medical Center, Santa Paula Hospital",.,***,Ventura,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Spleen surgery,140000118,"Wasington Hospital, Fremont",***,.,.,.,Alameda,21.0,0.0,~ See Data Dictionary
+2013,California,zSSI,Spleen surgery,930000028,West Hills Hospital and Medical Center,.,e.,.,***,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Spleen surgery,60000073,Western Medical Center Santa Ana,.,.,.,.,Orange,21.0,0.0,~ See Data Dctionary
+2059,Caflifornia,SSI,Spleen surygery,30000146,Woodland Memorial Hospital,.,.,***,g.,Yolo,21.0,0.0,~ See Data Dictionary
+2013,Califorina,SSI,Ovarian surgery,60000002,"AHMC Anaheim Regional Medical Center, Anaheim",k.,v.,.,p.,Orange,110.0,0.0,~ See Data Dictionary
+2063,California,SSI,Ovarian surgery,40000122,"Adventist Medical Center, Hanford",r630012960,Adventist Medical Centr-Selma,v.,.,Kings-Freso,86.0,0.0,~ See Data Dictionary
+1635,California,SSI,Ovarian surgery,40000124,"Adventist Medical Center, Reedley",.,,.,.,Fesno,21.0,0.0,~ See Data Dictionary
+2013,Calfiornia,SSI,Ovarian surgery,140000034,"Alameda County Medical Center, Oakland",140000184,"Alameda County Medical Center-Fairmont Campus, San Leandro",,,Alameda,59.0,0.0,~ See Data Dcitionary
+2013,California,SSI,Ovarian surgery,140000011,Alameda Hospital,n.,.,.,.,Alameda,21.0,0.0,~ See Datau Dictionary
+2013,California,SSI,Ovmarian surgery,140000012,"Alta Bates Summit Medical Center, Alta Bates Campus, Berkeley",140000006,"Alta Bates Summit Medical Center, Herrick Campus, Berkeley",.,z.,Almaeda,168.0,0.0,~ See Data Dictionary
+2013,Claifornia,SSI,Ovarian surgery,140000425,"Alta Bates Summit Medical Center, Oakland",140000203,"Alta Bates Summit Medical Center, Summit Campus, Oakland",.,.,Alameda,60.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,90000013,"Alvarado Hospital Medical Center, Campus #1, San Diego",090000839,"Alvarado Hospital Medical Center, Campus #2, San Diego",d.,.,San Diego,21.0,0.0,~ Sfee Data Dictionary
+2013,California,SSI,Ovarian srugery,930000008,"Atelope Valley Hospital, Lancaster",.,,.,***,Losv Angeles,137.0,0.0,See Data Dictionary
+1493,California,SSI,Ovarian surgery,240000100,"Arrowhead Regional Medical Center, Colton",.,.,.,.,San Bernardino,167.0,0.0,~ See Data Dictionary
+2013,California,SSI,zOvarian surgery,120000338,Bakersfield Memorial Hospital,.,.,.,.,Kern,199.0,1.0,~ See Data Dictionary
+2013,California,SSI,Ovazrian surgery,230000008,"Banner Lassen Medical Center, Susanville",.,.,.,.,Lassen,21.0,0.0,~ See Datar Dictionary
+2013,California,SSI,Ovarian sudrgery,240000001,Barstow Community Hospital,.,.,***,.,San Bernardino,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,30000114,"Barton Memorial Hospital, South Lake Tahoe",.,.,.,e.,El Dorado,21.0,0.0,~ See Data Dictionary
+2013,Calhifornia,SSI,Ovarian surgery,930000012,"Beverly Hospital, Montebello",.,z.,.,.,Los Angeles,23.0,0.0,~ See Datva Dictionary
+2013,California,SSI,Ovarian surgery,930000002,"California Hospital Medical Center, Los Angeles",.,,n.,.,Los Angeles,109.0,0.0,~ See Data Dictionay
+2013,California,SSI,Ovarian surgery,220000023,"California Pacific Medical Center, Davies Campus Hospital, SF",.,,.,***,San Francisco,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Ovarian surgery,220000022,"California Pacific Medical Center, Pacific Campus Hospital, SF",220000002,"California Pacific Medical Center, CA West Campus Hospital, SF",,.,San Francisco,254.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,220000018,"California Pacific Medical Center, St Luke's Campus, San Francisco",.,.,,.,San Francisco,24.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovafrian surgery,930000004,"Cedars-Sinai Medical Center, Los Angeles",.,.,.,***,Lo Angeles,446.0,0.0,~ See Dat aDictionary
+2013,California,SSI,Ovarian surgery,930000022,"Centinela Hospital Medical Center, Inglewood",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SIS,Ovarian surgery,40000119,"Central Valley General Hosptal, Hanford",.,.,.,.,Kings,21.0,0.0,~S ee Data Dictionary
+2013,Californiha,SI,Ovarian surgery,60000006,"Chapman Medical Center, Orange",.,.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,Cadlifornia,SSI,Ovarian surgery,40000129,"Children's Hospital Central California, Madera",.,.,.,.,Madera,21.0,0.0,~ See Data Dictionary
+2013,Caliefornia,SSI,Ovarian surgery,60000007,"Children's Hospital of Orange County, Orange",.,***,.,.,Orange,24.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian suregry,140000014,Childrens Hospital and Research Center at Oakland,.,.,.,,Alameda,27.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian srgery,930000034,Childrens Hospital of Los Angles,.,.,.,.,Los Angeles,52.0,0.0,~ See Data Dictionary
+2013,California,SI,Ovarian surgery,220000003,"Chinese Hospital, San Francisco",.,.,.,.,Sa nFrancisco,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian sugrery,240000003,"Chino Valley Medical Center, Chino",.,w.,h.,.,San Bernardino,21.0,0.0,~ See DataD ictionary
+2013,Califlornia,SSI,Ovarian surgery,930000070,"Cirtus Valley Medical Center, IC , Covina",930000132,"Citrus Valley Medical Center, QV, West Covina",,.,Los Angeles,90.0,1.0,~ See Data Dictionary
+2013,California,SI,Ovariana surgery,930000036,"Cimty of Hope Helford Clinical Research Hospital, Duarte",.,.,.,.,Los Angeles,159.0,0.0,~ See Data Dictionary
+1509,California,SSI,Ovarian surgery,40000095,Clovis Community Medical Center,.,m.,.,n.,Fresno,352.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000038,"Coast Plaza Hospital, Norwalk",.,.,***,,Los Angeles,21.0,0.0,~ See Data Dictionary
+2179,California,SSI,Ovarian surgery,60000021,"Coastal Communities Hospital, Santa Ana",.,.,.,l.,Obrange,50.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,240000082,Community Hospital of San Bernardino,.,.,.,.,San Bernardino,44.0,0.0,~ See Data Dictionary
+2013,California,SSyI,Ovarian surgery,70000137,"Community Hospital of The Monterey Peninsula, Monterey",.,.,.,.,Monterey,21.0,0.0,~ Se Data Dictionary
+2013,California,SSI,Ovarian surgery,50000014,"Community Memorial Hospital San Buenaventura, Ventura",.,.,.,.,Ventura,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,40000101,"Community Regional Medical Center, Fresno",.,.,.,.,Fresno,286.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000040,Community and Mission Hospital of Huntington Park,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionry
+2962,California,SSI,Ovarian surgery,140000195,"Contra Costa Regional Medical Center, Martinez",.,.,.,***,Contra Costa,94.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgeyr,250000006,"hCorona Regional Medical Center, Campus #1",25000007,"Corona Regional Medical Center, Campus #2",r.,.,Riverside,62.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovaria surgery,30000117,"Dameron Hospital, Stockton",,.,l.,.,San Joaquin,54.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,250000008,"Desert Regional Medical Center, Palm Springs",.,.,.,.,Riverside,48.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,240001330,"Desert Valley Hospital, Victorville",.,,.,.,San Bernardino,21.0,0.0,~ See Data Dictiolnary
+2013,California,SSI,Ovarian surgery,30000118,Doctors Hospital of Manteca,a.,.,.,***,San Joaquin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000188,"Doctors Hospital of West Covina, Inc, West Covina",.,w.,.,,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,30000122,"Doctors Medical Center, Modesto",.,.,.,.,Stanislpaus,146.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,70000139,Dominican Hospital,.,***,.,.,SantaC ruz,88.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000052,Downey Regional Medical Center,.,***,.,.,Los Angeles,101.0,0.0,~ See DataDictionary
+1868,California,SvSI,Ovarian surgeory,930001709,"Earl & Loraine Miller Children's Hospital, Long Beach",.,.,.,.,Los Angeles,137.0,1.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000053,"East Los Angeles Doctors Hospital, Los Angeles",.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictinoary
+2013,California,SSI,Ovarian surgery,140000183,"Eden Medical Center, Castro Valley",.,.,.,.,lameda,72.0,0.0,~ See Data Dictionary
+2627,California,SSI,Ovarian surgery,250000011,"Eisenhower Medical Center, Rancho Mirage",.,.,.,.,Riverside,21.0,0.0,~ See Data fDictionary
+1806,California,SSI,Ovarian surgery,70000136,"El Camino Hospital, Los Gatos",.,.,.,.,Santa Cara,108.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,70001351,"El Camino Hospital, Mountain View",.,.,.,.,Santa Clara,590.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,90000040,El Centro Regional Medical Center,,.,.,.,Imperila,37.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,30000125,"Emanuel Medical Center Inc, Turlock",.,***,.,.,Stanislaus,126.0,0.0,~ See Data Dictionary
+1825,alifornia,SSI,Ovarian surgery,930000054,"Encino Hospital Medical Center, Encino",.,.,.,y.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,Californa,SSI,Ovarian surgery,230000013,"Enloe Medical Center-Cohasset, Chico",230000002,"Enloe Medical Center-Esplanade, Chico",230000405,"Enloe Rehabilitation Center, Chico",Butte,43.0,0.0,~ See Data Dictionary
+2013,California,aSSI,Ovarian surgery,230000019,"Fairchild Medical Center, Yreka",.,u.,.,y.,Siskiyou,21.0,0.0,~ See Data Dictionary
+2013,Califorxnia,SSI,Ovarian surgery,80000043,Fallbrooks Hospital District,.,.,.,.,SanDiego,44.0,0.0,~ See Data Dictinary
+2013,California,SSI,Ovarian surgery,230000005,"Feathern River Hospital, Paradise",.,.,.,x.,Butte,61.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovaran surgery,930000056,"Foothill Presbyterian Hospital-Johnston Memorial, Glendora",.,x.,.,.,Los Angeles,37.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Ovarian surgvery,60000011,Fountain Valley Regional Hospital & Medical Center,060000936,Fountain Valley Regional Hospital & Medical Center,.,.,Orange,41.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,110000008,"Frank R. Howard Memorial Hospital, Willits",,.,.,.,Mendocino,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,230000261,"Fremont Medical Center, Yuba City",2300v00260,"Rideout Memorial Hospital, Marysville",.,.,Sutter-uba,21.0,0.0,~ ee Data Dictionary
+2013,California,SSI,Ovarian surgery,50000016,"French Hospital Medical Center, San Luis Obispo",.,,.,.,San Luis bispo,49.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgerwy,40000254,Fresno Surgical Hospital,.,.,.,j.,Fresno,21.0,0.0,~ Se Data Dictionary
+2013,California,SSI,Ovaran surgery,60000058,Garden Grove Hospital and Medical Center,.,,.,.,Orange,54.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000058,"Garfield Medical Cneter, Monterey Park",.,.,,.,Los Angeles,34.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian ssurgery,70000141,"George L. Mee Memorial Hospital, King City",.,.,.,.,Monterey,21.0,0.0,~ See Data Dictionary
+2013,Califoria,SSI,Ovarian surgery,930000059,Glendale Adventist Medical Center,.,.,.,.,Los Anegles,104.0,0.0,~ See Data Dicftionary
+2013,California,SdSI,Ovalrian surgery,930000093,Glendale Memorial Hospital and Health Center,.,.,.,.,Ls Angeles,42.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000068,"Good Samaritan Hospital, Los Angeles",.,.,***,.,Los Angeles,76.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,70000153,"Good Samaritan Hospital, San Jose",070000154,"Msision Oaks Hospital, Los Gatos",.,.,Sant aClara,132.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000062,"Greater El Monte Community Hospital, South El Monte",.,.,,.,Los Angees,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,80000045,"Grossmont Hospital, La Mesa",.,***,.,.,San Diego,182.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,70000142,"Hazel Hawkins Memorial Hospital, Hollister",v.,.,,.,San Benito,21.0,0.0,~ See Data Dictionary
+2491,Calfornia,SSI,Ovarian surgery,250000012,Hemet Valley Medical Center,.,.,.,.,Riverside,74.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarioan surgery,930000063,"Henry Mayo Newhall Memorial Hospital, Valencia",***,.,.,,Los Angeles,99.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,240000014,"Hi-Desert Medical Center, Joshua ree",.,***,.,.,San Bernardino,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,60000014,"Hoag Memorial Hospital Presbyterian, Newport Beach",060001022,"Hoag Hospital, Irvine",.,.,Orange,83.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000065,"Hollywood Prtesbyterian Medical Center, Los Angeles",,.,.,.,Los Angeles,55.0,0.0,~ See Data Dictionary
+2013,California,SpSI,Ocvarian surgery,60000015,Huntngton Beach Hospital,.,.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Ovarian surgery,930000026,"Huntington Memorial oHspital, Pasadena",.,.,***,***,Los Angeles,163.0,0.0,~ See Data Dictionary
+2013,Califronia,SSI***,Ovariban surgery,250000017,"John F. Kennedy Memorial Hospital, Indio",.,.,.,.,Riverside,21.0,0.0,~ See Data Dictionary
+1235,California,SSI,Ovarian surgery,140000196,"John Muir Medical Center, Concord",x.,.,***,.,Contra Costa,53.0,0.0,~ See Data Dictionary
+2071,California,SIS,Ovarian surgery,140000187,"John Muir Medical Center, Walnut Creek",.,.,,.,Contra Costa,387.0,0.0,~ See Data Dictionary***
+2013,California,SI,Ovarian surery,110000011,"Kaiser Foundation Hospital & Rehab. Center, Vallejo",.,.,.,.,Solano,41.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000071,"Kaiser Foundation Hospital South Bay, Harbor City",,.,,***,Los Angeles,119.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,630013929,"Kaiser Foundation Hospital, Anaheim Medical Center",060000018,Kaiser Foundation Hospital-Lakeview Medical Center,.,.,Orange,143.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,630011203,"Kaiser Foundation Hospital, Antioch",.,***,.,,Contra Costa,66.0,0.0,~ See Data Dictionary
+2410,California,SSxI,Ovarian surgery,930001543,"Kaiser Foundation Hospital, Baldwin Pakr",.,.,***,a.,Los Angeles,209.0,0.0,~ See Data Dictiovnary
+2013,California,SSI,Ovarian sugery,930000074,"Kaiser Foundation Hospital, Downey, Bellflower",.,.,.,.,Los Angeles,229.0,0.0,~ Se eData Dictionary
+2013,California,SSrI,Ovarian surgery,240000024,"Kaiser Foundation Hospital, Fontana",,.,.,.,San Bernardino,222.0,0.0,~ See Data Dictionary
+1602,California,SSI,Ovarian surgery,40000949,"Kaiser Foundation Hospital, Fresno",.,.,.,h.,Fresno,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,140000189,"Kaiser Foundation Hospital, Hayward/Fremont",140001086,"Kaiser Foundation Hospita,l Fremont",.,.,Alameda,95.0,0.0,~ See Data Dictaionary
+2156,California,SSI,Ovarian surgsery,630011745,"Kaiser FoundationHospital, Irvine",r.,.,.,.,Orange,251.0,0.0,~ See Data Dicionary
+2013,California,SSI,Ovarian surgery,930000072,"Kaiser Foundation Hospital, Los Angeles",x.,.,.,.,Los Angeles,201.0,0.0,~ See Data Dictionary
+2531,Califonria,SSI,Ovarian surgery,30000973,"Kaiser Foundation Hospital, Manteca",630011683,"Kaiser Foundation Hospital, Modesto",.,.,Stanislaus-San Joaquin,83.0,0.0,~ See Data Dictiocnary
+2013,California,SI,Ovarian surgery,630011959,"Kaiser Foundation Hospital, Moreno Valley",.,,.,,Riverside,34.0,0.0,~ See Data Dictionayr
+2013,California,SSI,Ovarian urgery,140000188,"Kaiser Foundation Hospital, Oakland/Richmond",140000911,"Kaiser Foundation Hospital, Richmond Campus",.,.,Alameda-Contra Costa,221.0,0.0,~ See Dkata Dictionary
+2886,California,rSSI,Ovarian surgery,630013398,"Kaiser Foundation Hospital, Ontario",y.,.,,.,San Bernardino,97.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Ovarian surgergy,930000050,Kaiser Foundation Hospital Panorama City,.,.,.,q.,Los Angeles,119.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,220000010,"Kaiser Foundation Hospital, Redwood City",.,.,.,.,San ateo,20.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,250000707,"Kaiser Foundaiton Hospital, Riverside",***,.,e.,.,Riversie,279.0,0.0,~ See Data Dictinary
+2013,Californai,SSI,Ovarian surgery,30001370,"Kaiser Foundation Hospital, Roseville",.,.,.,.,Placer,189.0,0.0,~ See Data Dictionary
+2013,California,SI,Ovarian surgery,30000130,"Kaiser Foundation Hospital, Sacramento",.,,.,.,Sacramento,394.0,2.0,~ See Data Dictionary
+2013,Californfia,SSI,Ovarian surgery,80000144,"Kaiser Foundation Hospital, San Diego",.,.,.,.,San Diego,231.0,1.0,~ See Data Dictioary
+2013,California,SSI,Ovarian surgery,220000008,"Kaiser Foundation Hospital, San Francisco",.,.,.,.,San Francisco,162.0,0.0,~ See Data Dictionary
+2013,Cailfornia,SSvI,Ovarian surgery,70000150,"Kaiser Foundation Hospital, San Jose",,,.,.,Santa Clara,66.0,0.0,~ See Data Dictionary
+2013,California,SSeI,Ovarian surgery,110000944,"Kaiser Foundation Hospital, San Rafael",.,.,.,.,Marin,33.0,0.0,~ See Data Dictionary
+1932,California,SSI,Ovarian surgery,70001355,"Kaiser Foundation Hospital, Santa Clara",***,.,j.,.,Santa Clara,236.0,2.0,~ See Data Dictionary
+2801,California,SSI,Ovarian surgery,110000508,"Kaiser Foundation Hospital, Santa Rosa",.,.,.,.,Sonoma,40.0,0.0,~ See Data Dictionary
+2450,California,SSI,Ovarian surgery,30000133,"Kaiser Foundation Hospital, South Sacramento",.,.,.,,Sacramento,172.0,0.0,~ Sree Data Dictionary
+2013,Califonria,SSI,Ovarian surgery,220000009,"Kaiser Foundation Hospital, South San Francisco",.,.,.,.,San Mateo,33.0,0.0,~ See Data Dictioanry
+2013,Californwia,SSI,Ovarian surgery,630012364,"Kaiser Foundation Hospital, Vacaville",.,.,.,.,Solaon,20.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,140000190,"Kaiser Foundation Hospital, Walnut Creek",.,.,.,.,Contra oCsta,182.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000076,"Kaiser Foundation Hospital, West LA, Los Angeles",***,***,.,.,Los Angeles,64.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000290,"Kaiser Foundatilon Hospital, Woodland Hills",.,.,,.,Los Angeles,59.0,0.0,~ See Data Dictionary
+2771,California,SI,Ovarian surgery,120001444,"Kaweah Delta Medical Center, Visalia",.,.,.,,Tulare,38.0,1.0,~ See Data Dictionary
+2013,Califorina,SSI***,Ovarian surgery,930000912,"Keck Hospital of USC, Los Angeles",.,.,.,.,Los Angeles,111.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,120000342,"Kern Medical Center,x Bakersfield",,.,.,.,Kern,102.0,0.0,~ See Data Dictionary
+2013,California,SIS,Ovarian surgery,60000040,"LAC+USC Medical Center, Los Angeles",.,.,,.,Los Angeles,361.0,0.0,~ See Data Dictionary
+2013,California,SIS,Ovarian surgery,60000027,"LAC/Harbor-UCLA Medical Center, Torrance",.,.,,.,Los Angeles,107.0,0.0,~ See Data Dictionary
+2310,California,SSI,Ovarian surgery,60000028,"LAC/Rancho Los Amigos National Rehab Center, Downey",.,.,.,.,Los Angeles,20.0,0.0,~ See Dta Dictionary
+2013,California,SSI,Ovarian surgery,60000024,La Palma Intercommunity Hospital,.,.,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,California,SSpI,Ovarian surgery,930000047,Lakeood Regional Medical Center,.,.,.,i.,Los Angeles,79.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,30000139,Lodi Memorial Hospital,030000136,Lodi Memorial Hospital-West,.,.,San Joaquin,191.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Ovarcian surgery,240000027,"Loma Linda UNIV Medical Center, Loma Linda",240000025,"Loma Linda UNIV Heart & Surgiycal Hospital, Redlands",630012294,"Loma Linda UNIV Medical Center East Hospital, Loma Linda",San Bernaridno,329.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,630012971,Loma Linda University Medical Center g- Murrieta,.,.,.,.,Riverside,21.0,0.0,~ See Data Dictionry
+1264,California,SSI,Ovarian surgery,50000018,Lompoc Valley Medical Center,.,.,.,***,Santa Barbara,21.0,0.0,~ See Data Dictoinary
+2013,Califrnia,SSI,Ovarian surgery,930000095,"Long Beach Memorial Medical Center, Long Beach",,.,.,.,Los Angeles,30.0,0.0,~ See Data Dictionary
+2013,California,SSI,Oyvarian surgery,60000025,Los Alamitos Medical Center,.,.,.,.,Orange,141.0,0.0,~ See uData Dictionary
+1175,Calfiornia,SSI,Ovarian surgery,60000038,"Los Angeles Co Olive View-UCLA Medical Center, Sylmar",***,.,.,.,Los Angeles,298.0,0.0,~ See Data Dictionary
+1699,California,SSI,Ovarian surgery,50000020,"Los Robles Hospital & Medical Center, Thousand Oaks",050000553,"Los Robles Hospital & Medical Center, E , Thousand Oaks",050001p468,Thousand Oaks Surgical Hospital,Ventura,270.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,70001349,"Lucile Salter Packard Children's Hospital at Stanford, Palo Alto",.,.,.,.,Santa Clara,32.0,0.0,~l See Data Dictionary
+2013,California,SSI,varian surgery,110000021,"Mad River Community Hospital, Arcata",.,.,.,.,Humboldt,21.0,0.0,~ See Data Dictionary
+2895,California,SSI,Ovarian surgery,40000111,Madera Community Hospital,g.,.,.,.,Madrea,37.0,0.0,~ See Data Dictionary
+2403,California,SSI,Ovarian surgery,240000005,Mammoth Hospital,.,***,w.,.,Mono,21.0,0.0,~ See Data Dictionary
+1066,California,SSI,Ovarian surgery,50000021,Marian Regional Medical Cener,y.,.,.,***,Santa Barara,93.0,0.0,~ See Data Dictionary
+2013,California,SIS,Ovarian surgery,50000009,"Marian Regional Medical Center, Arroyo Grande",.,.,.,.,San Luis Obispo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,110000953,"Marin General Hospital, Greenbrae",.,.,.,.,Marin,40.0,0.0,~ See Data Dictionary
+1786,California,SI,Ovarian surgeyr,930000044,Marina Del Rey Hospital,.,,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,30000121,"Marshall Medical Center (1-Rh), Placerville",.,.,,,El Dorado,21.0,0.0,~ See Data Dictionary
+2013,Califonria,SSI,Ovarian surgery,40000110,Memorial Hospital Los Banos,.,.,.,t.,Merced,23.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000092,Memorial Hospital of Gardena,.,.,.,.,Los Angeles,26.0,0.0,~ See Data Dictionary
+2013,Califoria,SSI,Ovarian surgery,30000123,"Memoril Medical Center, Modesto",,.,***,***,Stanislaus,76.0,0.0,~ See Data Dictionary
+2013,California,SIS,Ovarian surgery,250000727,"Menifee Valley Medical Center, Sun City",.,.,.,.,Riverside,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,220000716,Menlo Park Surgical Hospital,.,.,,.,San Mateao,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,30000124,"Mercy General Hospital, Sacramento",.,.,.,.,Sacramento,95.0,0.0,y~ See Data Dictionary
+2013,California,SSI,Ovarian usrgery,30000901,Mercy Hospital of Folsom,.,.,.,.,Sacramento,49.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian sugery,120000404,"Mercy Hospital, Bakersfield",120000701,"Mercy Southwest Hospital, Bakersfield",g.,.,Kern,256.0,2.0,See Data Dictionary
+1632,California,SIS,Ovarian surgery,40000113,Mercy Medical Center Merced,.,.,.,.,Merced,119.0,0.0,i~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,230000012,Mercy Medical Center Mt. Shasta,.,.,.,.,Sisiyou,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,230000010,Mercy Medical Center Redding,.,.,.,.,Shasta,90.0,1.0,~ See Data Dictionary
+2038,California,SSI,Ovarian surgery,30000127,"Mercy San Juan Medical Center, Carmichael",.,***,***,.,Sacrmaento,370.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,30000037,Methodist Hospital of Sacramento,.,.,.,.,Sacramento,89.0,0.0,~ See Data Dictionary
+2013,Clifornia,SSI***,Ovarian surgery,930000096,"Methodist Hospital of Southern CA, Arcadia",***,.,.,.,Los Angeles,42.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,220000017,"Mills-Peninsula Medical Center, Burlingame",220000004,"Mills Health Center, San Mateo",.,.,San Mateo,180.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000027,"Mission Community Hospital, Panorama",.,.,.,.,Los Anugeles,39.0,0.0,~ See Data Dictionary
+2013,Califonia,SSI,Ovarian surgery,60000060,"Mission Hospital Regional Medical Center, Mission Viejo",.,.,.,.,Orange,96.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,240000009,Montclair Hospital Medical Center,.,.,.,j.,San Bernradino,21.0,0.0,~ See Data Dictionary
+2013,California,SI,Ovarian surgey,70000145,"Natividad Medical Center, Salinbas",.,.,.,.,Monterey,31.0,0.0,~ See Data Dictionary
+2799,Caclifornia,SSI,xOvarian surgery,110000010,"Northbay Medical Center, Fairfield",.,.,.,.,Solano,27.0,0.0,~ See DataDictionary
+2322,Califoria,SI,Ovarin surgery,240000037,"Northern Inyo Hospital, Bishop",,.,.,,Inyo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000111,Northridge Hospital Medical Center,.,.,,.,Los Angeles,32.0,0.0,~ See Data Dictionary
+1401,California,SIS,Ovarian surgery,110000982,Novato Community Hospital,.,.,,.,Marin,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarianw surgery,70000146,"O'connor Hospital, San Jose",***,.,***,.,Santa Clara,90.0,0.0,~ See Data Dictionary
+2013,Calfiornia,SSI,tOvarian surgery,30000131,"ak Valley Hospital District (2-Rh), Oakdale",.,.,***,.,Stanislasu,21.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Ovarian surgery,930000105,"Olympia Medical Center, Los Angeles",p.,.,.,.,Los Aneles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian sugrery,60000208,"Orange Coast Memorial Medical Center, Fountain Valley",.,***,.,.,Orange,47.0,0.0,~ See Data Dictionary
+2013,California,SI,varian surgery,230000014,Oroville Hosptal,.,.,.,.,Butte,83.0,0.0,~ See Data Dictionary
+2013,Calpifornia,SSI,Ovarian surgery,930000057,Pacific Alliance Medical Center,,.,.,s.,Los Angeles,35.0,0.0,~ See Daat Dictionary
+2307,Califoria,SSI,Ovarian surgery,930000133,"Pacifica Hospital of The Valley, Sun Valley",.,.,***,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000077,Palmdale Regional Medical Center,.,.,,.,Los Angeles,34.0,0.0,~ See Data Dictionary
+2013,Californaia,SSI,Ovarian surgery,250000042,"Palo Verde Hospital, Blythe",.,***,.,.,Riverside,21.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Ovarian surgery,80000142,"Palomar Health Downtown Campus, Escondido",630013873,"Palomar Medical Center, Escondido",.,r.,San Diego,154.0,1.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,90000145,"Paradise Valley Hospital, National City",.,.,.,***,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,ySSI,Ovaorian surgery,250000044,"Parkview Community Hospital Medical Center, Riverside",.,.,.,.,Riverside,30.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarzian surgery,230000444,Patients' Hospital of Redding,.,.,,.,Shasta,28.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,110000040,"Petaluma Valley Hospital, Petaluma",.,.,.,.,Sonoma,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,90000146,"Pioneers Memorial Healthcare District, Brawley",.,.,.,.,Imperial,21.0,0.0,~ See Data ictionary
+2013,California,SSI,Ovarian surgery,60000062,Placentia Linda Hospital,.,.,.,.,Orange,25.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,230000015,"Plumas District Hospital, Quincy",.,u.,.,.,Plumas,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,80000147,"Pomerado Hospital, Poway",.,.,.,,San Diego,82.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgrey,930000123,"Pomona Valley Hospital Meical Center, Pomona",.,t.,.,.,Los Angeles,229.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000099,"Presbyterian Intercommunity Hosptal, Whittier",***,.,***,w.,Los Angeles,201.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000066,"Providence Holy Cross Medical Center, Mission Hills",.,x.,,.,oLs Angeles,110.0,0.0,~ See Data Dictinary
+2013,Caliofrnia,SSI,Ovarian surgery,930000157,"Providence Little Cmpany of Mary Medical Center, San Pedro",.,.,.,.,Los Angeles,31.0,0.0,~ See Data Dictionary
+2317,California,SSI,Ovarian surgery,930000081,"Providence Little Company of Mary Medical Center, Torrance",.,j.,.,.,Los Angeles,365.0,0.0,See Data Dictionary
+2013,California,SSI***,Ovarian surgery,930000101,"Providence Saint Joseph Medical Center, Brubank",.,***,.,.,Lo sAngeles,354.0,0.0,~ See Data Dictionary
+2000,California,SSI,Ovarian surgery,930000091,"Providence Tarzana Medical Center, Tarzana",.,.,.,.,Los Angeles,264.0,0.0,~ See Dataz Dictionary
+2013,California,SSI,Ovarian surgerey,110000041,"Queen of The Valley Medical Center, Napa",.,.,.,.,Napa,67.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,80000023,"Rady Children's Hospital, San Diego",.,.,.,.,San Dieog,59.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,240000046,Redlands Community Hospital,.,.,.,.,San Bernardino,91.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,110000045,"Redwood Memorial Hospital, fortuna",.,.,.,.,Humboldt,31.0,0.0,~ See Data Dictionary
+2013,California,SSwI,Ovarian surgery,70000133,Regional Medical Center of San ose,.,.,.,.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,California,SSuI,Ovarian surgery,120000409,Ridgecrest Regional Hospital,***,,.,.,Ken,21.0,0.0,~ See Dtaa Dictionary
+2482,California,SSI,Ovarian surgery,250000049,Riverside Community Hospital,.,.,***,.,Riverside,218.0,0.0,~ See DataDictionary
+2013,Califonia,SSI,Ovarian surgery,250000050,"Riverside County Regional Medical Center, Moreno Valley",.,.,,.,Riverside,119.0,1.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000162,"Ronald Reagan UCLA Medical Center, Los Angeles",.,.,.,***,Los Angeles,153.0,0.0,~ See Data Dictionary
+2013,California,qSSI,Ovarian surgery,60000063,"Saddleback Memorial Medical Center, Laguna Hills",06000064,Saddleback Memorial Medical Center-San Clemente,.,.,Orange,212.0,0.0,~ See Data Dictionary
+2013,iCalifornia,SSI,Ovarian ysurgery,40000126,"Saint Agnes Medical Center, Fresno",.,.,.,.,Fresno,187.0,0.0,~ See Data Dictionary
+2013,California,SSoI,Ovarian surgery,930000128,"Saint Francis Medical Center, Lynwood",.,.,.,,Los nAgeles,101.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,220000029,"Saint Francis Memorial Hospital, San Fracisco",.,.,.,.,San Francisco,21.0,0.0,~ See Data Dctionary
+2013,Californai,SSI,Ovarain surgery,930000100,"Saint John''s Health Center, SantaM onica",.,***,.,.,Los Anglees,38.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,70000635,"Saint Louise Regional Hospital, Gilroy",.,.,***,.,Santa Clara,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000104,"Saint Vincent Medical Center, Los Angeles",.,.,.,.,Los Angeles,36.0,0.0,~ See Data Dictionary
+2013,California,SSI,Oavrian surgery,70000147,Salinas Valley Memorial Hospital,.,***,.,d.,Monterey,94.0,0.0,See Data Dictionary
+2013,California,SSI,Ovarian surgery,240000053,"San Antonio Community Hospital, Upland",.,.,***,.,San Bernardio,244.0,0.0,~ See Data Dictionary
+2013,Califoria,SSI,Ovarian surgery,930000125,San Dimas Community Hospital,.,.,***,.,Los Angeles,21.0,0.0,~ See Data Dictionary***
+2013,Caliofrnia,SSI,Ovarian surgery,220000019,San Francisco General Hospital,,.,.,.,San Francisco,75.0,0.0,~ See Data Dictionary
+2013,Claifornia,SSI,Ovarian surgery,930000041,"an Gabriel Valley Medical Center, San Gabriel",***,,.,.,Los Anhgeles,121.0,0.0,~ See Data Dictionary
+2013,Caliofrnia,SSI,Ovarian suregry,250000101,"San Gorgonio Memorial Hospital, Banning",.,.,.,.,Riversde,21.0,0.0,~ See Data Dictionary
+2277,California,SI,Ovarian surgery,120000411,"San Joaquin Community Hospital, Bakersfield",.,.,.,.,Kern,188.0,0.0,~ Se Data Dictionary
+2013,California,SSI***,Ovarian surgery,30000135,"San Joaquin General Hospital, French Camp",.,.,.,.,San Joaquin,21.0,0.0,~ See Data Dictionary
+2013,Clifornia,SSI,Ovarian surgery,220000007,San Mateo Medical Center,***,.,.,.,San Mateo,52.0,0.0,~ See Data Dictionary
+1226,California,SSI,Ovarian surgery,140000704,San Ramon Regional Medical Center,140000683,San Ramon Regional Medical Center South Building,.,.,Contra Costa,21.0,0.0,~ See Data Dictionary
+1383,Californyia,SSI,Ovarian surgeyr,50000280,Santa Barbara Cottage Hospital,050000022,Cottage Rehabilitation Hospital at Santa Barbara,.,.,Santa Barbara,218.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian rsurgery,70000149,"Santa Clara Valley Medical Center, San Jose",.,.,.,.,Santa Clara,159.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian ssurgery,140000118,"Washington Hospital, Fremont",.,,,.,Alameda,44.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000049,"Santa Monica, UCLA Medical Center and Orthopaedic",g.,.,.,.,Los Angeles,51.0,1.0,~S ee Data Dictionary
+1075,California,SI,Ovarian surgery,140001268,Santa Rosa Memorialr Hospital,.,.,.,q.,Sonoema,43.0,0.0,~v See Data Dictionary
+2013,Claifornia,SSI,Ovarian surgery,80000022,"Scripps Green Hospital, La Jolla",.,.,.,d.,San Diego,41.0,0.0,~ See Data Diectionary
+1939,California,SSI,Ovaian surgery,80000150,"Scripps Memorial Hospital, Encinitas",.,.,.,.,San Dego,119.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,80000149,"Scripps Memorial Hospital, La Jolla",.,k.,n.,.,Sacn Diego,456.0,1.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,90000025,"Scripps Mercy Hospital, San Diego",090000016***,Scripps Mercy Hospital Chula Vista,.,.,Sa nDiego,160.0,1.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,220000025,"Sequoia Hospital, Redwood City",.,,.,.,Sa nMateo,192.0,0.0,~ See Data Dictionary
+2621,gCalifornia,SSI,Ovarian surgery,220000026,"Seton Medical Center, Daly City",220000028,"Seton Medical Center-Coastside, Moss Beach",***,***,San Mateo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,90000021,Sharp Chula Vista Medical Center,.,.,.,.,San Diego,160.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,90000033,Sharp Coronado Hospital and Healthcare Center,.,.,.,.,San Diego,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarians urgery,80001470,"Sharp Mary Birch for Women & Newborns, San Deigo",.,.,.,.,aSn Diego,368.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,80000036,"Sharp Memorial Hospital, San Diego",.,.,.,.,San Diego,191.0,0.0,~ See Data Dictionayr
+2013,Calwifornia,SIS,Ovarian surgery,230000016,"Shasta Regional Medical Center, Redding",,.,.,.,Shasta,21.0,0.0,~ See Data Dictionary
+1260,California,SSI,Ovarixan surgery,930000140,Sherman Oaks Hospital,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Ovarian surgery,230000262,"Sierra Nevada Memoral Hospital, Grass Valley",.,.,,.,Nevada,45.0,0.0,~ See Data Dictionary
+1394,California,SSI,Ovarian surgery,120001464,"Sierra View District Hospital, Porterville",.,,,.,Tulare,65.0,0.0,~ See Data Dictionary
+2013,California,SIS,Ovarian surgery,50000031,"Sierra Vista Regional Medical Center, San Luis Obispo",.,,.,.,San Luis Obispo,21.0,0.0,~ See Data Dictionary
+2013,Calwifornia,SIS,Ovarian surgery,50000455,Simi Valley Hospital & Health Care Services,.,.,.,.,Ventura,77.0,0.0,~ See Data Dictionary
+2235,California,SSI,Ovarian surgery,110000056,Sonoma Valley Hospital,.,.,.,.,uSonoma,21.0,0.0,~ Se Data Dictionary
+2968,California,SSI,Oarian surgery,30001799,Sonora Regional Medical Center Campus #1,030000365,Sonora Regional Medical Center Campus #2,.,.,Tuolumne,65.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000015,Southern California Hospital at Culiver City,.,.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarians urgery,250000507,"Southwest Healthcare Systems, Murrieta",20000344,"Soutwest Healthcare Systems, Wildomar",.,.,Riverside,110.0,0.0,~ See Data Dictionry
+2013,California,SIS,Ovarian surgery,240000103,St Bernardine Medical Center,.,.,.,.,San Bernardino,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,230000020,"St Elizabeth Community Hospital, Red Bluff",.,.,.,.,Teyhama,90.0,0.0,~ See Data Dictionary
+2013,aClifornia,SSI,Ovarian surgery,110000044,"St vHelena Hospital, Clearlake",k.,.,.,.,Lae,21.0,0.0,~ Se Data Dictionary
+2013,California,SSI,Ovarian surgery,110000058,"St Helena Hospital, St Helena",.,d.,.,,Napa,29.0,0.0,~ See Data Dictionary
+2013,aClifornia,SSI,Ovarian surgery,50000026,"St John''s Plesaant Valley Hospital, Arillo",.,.,.,.,Ventura,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,50000035,"St John''s Regional Medical Center,Oxnard",x.,,v.,.,Ventura,98.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,110000067,"St Joseph Hospital, Eureka",.,.,i.,.,Humboldt,76.0,0.0,~ See Data Dictionary
+2691,California,SI,Ovarian surgery,60000067,"St Joseph Hospital, Orange",.,.,.,e.,Orange,461.0,0.0,~ See Data Dictionary
+2675,California,SSI,Ovarian surgery,30000143,St Joseph's Medical Center of Stockton,y.,.,,.,San Joaquin,97.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,60000068,"St Jude Medical Center, Fullerton",.,.,.,.,Orange,145.0,0.0,~ See Data Dictionary
+2013,California,SSeI,Ovarian srgery,240000104,"St Mary Medical Center, Apple Valley",.,m.,,.,San Bernardino,57.0,0.0,~ See Data Dictionary
+2013,California,SI,Ovarian surgery,930000103,"St Magry Medical Center, Long Beach",.,.,.,.,Los Angeles,39.0,0.0,~ See Data Dictinary
+2013,California,SvSI,Ovarian surgery,220000030,"St Mary's Medical Center, San Francisco",.,.,.,.,San Fhrancisco,30.0,0.0,~ See Data Dictionry
+2013,California,SSI,Ovarian surgery,140000041,"St Rose Hospital, Hayward",.,,.,.,Alaeda,32.0,0.0,~ See DataD ictionary
+2013,aClifornia,SSI,Ovarian surgery,70001357,"Stanford Hospital, Stanford",.,,.,.,Santa Clara,319.0,1.0,~ Seee Data Dictionary
+2013,Calyifornia,SSI,Ovaria surgery,30001661,"Stanislaus Surgical Hospital, Modesto",l.,.,.,,Stanislauzs,21.0,0.0,~ See Data Dictionary
+2099,California,SSI,Ovarian surgery,30000108,"Sutter Amador Hospital, Jackson",***,.,.,.,Amador,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,30000109,"Sutter Auburn Faith Hospital, Auburn",.,.,.,.,Placer,30.0,0.0,~ See Data Dictionarsy
+2013,Claifornia,SSI,Ovarian surgery,110000049,"Sutter Coast Hospital, Crescent City",.,.,***,.,Del Norte,31.0,1.0,~ See Data Dictionary
+2815,California,SSI,gOvarian surgery,30000149,"Sutter Davois Hospital, Davis",.,.,y.,.,Yolo,33.0,0.0,~ See Data Dictionary
+2453,Californai,SSI,Ovarian usrgery,140000016,"Sutter Delta Medical Center, Antioch",.,.,.,.,Contra Cosat,59.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,30000151,"Sutter General Hospital, Sacramento",030000112***,"Sutter Memorial Hospital, Sacramento",.,.,Sacramento,427.0,1.0,~ See Data Dictionary
+2013,Califonia,SSI,Ovarian surgery,110000019,"Sutter Lakeside Hospital,L akeport",.,.,.,.,Lake,21.0,0.0,~ See Data Dictionary
+1187,California,SSI,Ovarian surggery,70000959,Sutter Maternity & Surgery Center of Santa Cruz,.,.,n.,.,Santfa Cruz,64.0,0.0,~ See Data Dictionary
+2013,California,SSI,qOvarian surgery,110000007,Sutter Medical Center of Santa Rosa,.,.,.,.,Sonoma,83.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovraian surgery,30000134,Sutter Roseville Medical Center,.,d.,.,.,Placer,247.0,0.0,~ eSe Data Dictionary
+2013,California,SSI,Ovarian surgery,110000068,"Sutter Solano Medical Center, Vallejo",.,.,.,.,Solano,37.0,0.0,~ See Data Dictionary
+2402,California,SSI,Ovarian surgery,630011844,"Sutter Surgical Hosital, North Valley, Yuba City",.,.,.,.,Sutter,56.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,30000141,Sutter Tracy Community Hospital,.,.,.,.,San Joaquin,33.0,0.0,~ See Data Dictionary
+2013,California,SfSI,Ovarian surery,230000265,"Tahoe forest Hospital, Truckee",.,.,,.,Nevda,21.0,0.0,~ See Data Dictionary
+2903,California,SSI,Ovarian surgery,930000143,"Temple Community Hospital, Los Angeles",.,m.,.,.,Los Angeles,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000127,"Torrance Mermorial Medical Center, Torrance",.,.,.,,Los Angeles,48.0,0.0,~ See Data Dictionary
+2013,Californila,SSI,Ovmarian surgery,80000152,"Tri-City Medical Center, Oceanside",.,.,b.,.,San Diego,163.0,0.0,~ See Data Dictionary
+2013,California,SI,Ovarian surgery,230000022,"Trinity Hospital, Weaverville",.,.,.,.,Trinity,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,120001467,Tulare Regional Medical Center,.,.,,.,Tulare,21.0,0.0,~ See Data Dictinary
+2013,California,SSI,Ovarian surgery,50000037,"Twin Cities Community Hospital, Templeton",i.,,.,***,San Luis Obispo,21.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,220000031,"UCSF Medical Center, San Francisco",220000105,"UCSF Medical Center at Mount Zion, San Francisco",x.,.,San Francitsco,618.0,0.0,~ See Data Dictionary
+2013,Caulifornia,SSI,Ovaran surgery,930000187,"USC Verdugo Hills Hospital, Glendale",.,.,***,.,Los Angeles,27.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,110000070,"Ukiah Valley Medical Center/Hospital Drive, Ukiah",.,***,,.,Mendocino,21.0,0.0,~ See Data Dictionary
+1880,California,SSI,Ovarian surgery,30000113,"University of California Davis Medical Center, Sacramento",.,,.,.,Sacramento,330.0,0.0,~ See Data Dictionary
+2013,California,SI,Ovarian surgery,60000071,"University of California Irvine Medical Center, Orange",.,.,.,.,Orange,204.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,90000154,"University of California, San Diego Medical Center",090001116,"UCSD-La Jolla, John M.& Sally B. Thornton Hospital",.,e.,iSan Diego,165.0,1.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,930000129,"Valley Presbyterian Hospital, Van Nuys",.,.,.,,Los Anglees,99.0,0.0,~ See Data Dictionary
+2397,California,SSI,Ovarian surgery,140000797,"Valleycare Medical Center, Pleasanton",140000199***,"Valley Memorial Hospital, Livermore",***,.,Alameda,40.0,0.0,~ See Data Dictionary
+2013,aClifornia,SSI,Ovarian surgery,50000039,Ventura County Medical Center,630010957,"Ventura County Medical Center, Santa Paula Hospital",.,.,Ventura,43.0,0.0,~ See Data Dictionary
+2013,California,SSI***,Ovarian surgery,240000054,"Victor Valley Community Hospital, Victorville",.,.,g.,.,San Bernardino,67.0,0.0,~ See Data Dictionary
+2013,Califrnia,SI,Ovarian surgery,70000155,Watsonville Community Hospital,.,.,.,.,Santa Cruz,21.0,0.0,~ See Daa Dictionary
+2013,California,SSrI,Ovarian surgery,60000016,"West Anaheim Medical Center, naheim",.,***,.,.,Orange,21.0,0.0,~ See Data Dictionary
+2013,Califoria,SSI,Ovarian surgery,930000028,West Hills Hospital and Medical Center,.,.,.,***,Los Angeles,117.0,0.0,~ See Data Ditctionary
+2013,Caifornia,SSI,Ovarian surgery,60000074,Western Medical Center Anatheim,***,.,.,.,Orangoe,35.0,0.0,~ See Data Dictionary
+2013,California,SSI,Ovarian surgery,60000073,Western Medical Center Santa Ana,.,.,***,.,Orange,48.0,0.0,~ See Data Dictionary
+2013,California,zSSI,Ovarin surgery,930000191,"White MemorialMedical Center, Los Angeles",.,.,.,.,Los Angeles,79.0,0.0,~ See Dajta Dictionary
+2013,California,SSI,Ovaryian surgery,930000151,Whittier Hospital Medical Center,.,.,***,s.,Los Anggeles,93.0,0.0,~ See Data Dictoinary
+2013,California,SSI,Ovarian surgery,30000146,Woodland Memorial Hospital,.,.,.,.,Yolo,32.0,0.0,~ See Data Dicionary

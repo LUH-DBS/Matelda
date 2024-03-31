@@ -1,0 +1,49 @@
+2.data_value_footnote,Data in these cells have been suppressed because of a small sample size,NULL
+4.geo_location,"(42.469400913, -93.816490556)","(40.485010283, -88.997710178)"
+2.gender,Male,Female
+6.education,Middle School,High School
+21.low_confidence_limit,NULL,7.2
+4.education,High School,Middle School
+11.low_confidence_limit,NULL,56.0
+923.data_value_footnote,Data in these cells have been suppressed because of a small smple size,Data in these cells have been suppressed because of a small sample size
+3.data_value_footnote,Data in these cells have been suppressed because of a small sample size,NULL
+3.gender,Female,Male
+5.data_value_footnote,Data in these cells have been suppressed because of a small sample size,NULL
+7.low_confidence_limit,NULL,12.7
+3.topic_id,105BEH,151BEH
+6.gender,Male,Overall
+6.data_value_footnote,Data in these cells have been suppressed because of a small sample size,NULL
+22.low_confidence_limit,NULL,40.3
+9.low_confidence_limit,NULL,9.6
+7.data_value_footnote,Data in these cells have been suppressed because of a small sample size,NULL
+10.data_value_footnote_symbol,NLL,NULL
+2.education,Middle School,High School
+6.low_confidence_limit,NULL,0.6
+2187.data_value_footnote,Data in these cells have been suppressed because of a samll sample size,Data in these cells have been suppressed because of a small sample size
+5.education,Middle School,High School
+3.low_confidence_limit,NULL,9.0
+3.geo_location,"(46.355648736, -94.794200503)","(38.665510202, -80.712640135)"
+8.low_confidence_limit,NULL,1.3
+13.data_value_footnote_symbol,NLL,NULL
+5.gender,Female,Male
+29.low_confidence_limit,NULL,36.2
+1.topic_id,151BEH,106BEH
+8.data_value_footnote_symbol,NLUL,NULL
+4570.data_value_footnote,Data in these cells hav ebeen suppressed because of a small sample size,Data in these cells have been suppressed because of a small sample size
+6314.data_value_footnote,Data in these cells hvae been suppressed because of a small sample size,Data in these cells have been suppressed because of a small sample size
+5.low_confidence_limit,NULL,16.0
+12.data_value_footnote_symbol,NULL***,NULL
+16.low_confidence_limit,34.0,NULL
+4.gender,Male,Overall
+2.low_confidence_limit,NULL,42.1
+2.geo_location,"(42.27687047, -72.082690675)","(32.840571122, -86.631860762)"
+4.topic_id,105BEH,106BEH
+15.low_confidence_limit,NULL,0.0
+4.low_confidence_limit,NULL,24.2
+166.data_value_footnote,Data in these cells have been suppressed because of a smyall sample size,Data in these cells have been suppressed because of a small sample size
+5.topic_id,106BEH,151BEH
+3.education,Middle School,High School
+5.geo_location,"(40.130570048, -74.273691288)","(41.56266102, -72.649840952)"
+11.data_value_footnote_symbol,ULL,NULL
+2.topic_id,151BEH,106BEH
+1.geo_location,"(39.360700171, -111.587130635)","(40.060210141, -82.404260056)"

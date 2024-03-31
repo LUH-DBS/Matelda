@@ -15,7 +15,7 @@ from functools import partial
 
 import numpy as np
 import pandas as pd
-import raha
+from marshmallow_pipeline import raha
 from Levenshtein import distance
 from scipy.spatial.distance import pdist, squareform
 
@@ -113,10 +113,30 @@ def _strategy_runner_process(self, args):
                 ):
                     outputted_cells[(i, l_j)] = ""
                     outputted_cells[(i, r_j)] = ""
+
+    elif algorithm == "RVD_orig":
+        l_attribute, r_attribute = configuration
+        l_j = d.dataframe.columns.get_loc(l_attribute)
+        r_j = d.dataframe.columns.get_loc(r_attribute)
+        value_dictionary = {}
+        
+        for i, row in d.dataframe.iterrows():
+            if row[l_attribute]:
+                if row[l_attribute] not in value_dictionary:
+                    value_dictionary[row[l_attribute]] = {}
+                if row[r_attribute]:
+                    value_dictionary[row[l_attribute]][row[r_attribute]] = 1        
+        
+        for i, row in d.dataframe.iterrows():
+            if row[l_attribute] in value_dictionary and len(value_dictionary[row[l_attribute]]) > 1:
+                outputted_cells[(i, l_j)] = "LRVD"
+                outputted_cells[(i, r_j)] = "RRVD"
+
     detected_cells_list = list(outputted_cells.keys())
     strategy_profile = {
         "name": strategy_name,
         "output": detected_cells_list,
+        "outputted_cells": outputted_cells,
         "runtime": time.time() - start_time,
     }
     if self.SAVE_RESULTS:
@@ -222,20 +242,18 @@ def run_strategies(self, d, char_set, pool):
                         ]
                     )
                     logging.debug("RVD configurations: %s", len(configuration_list))
+                elif algorithm_name == "RVD_orig":
+                    al = d.dataframe.columns.tolist()
+                    configuration_list = [[a, b] for (a, b) in itertools.product(al, al) if a != b]
+                    algorithm_and_configurations.extend(
+                        [[d, algorithm_name, configuration] for configuration in configuration_list])
+                    logging.debug("RVD_orig configurations: %s", len(configuration_list))
 
             random.shuffle(algorithm_and_configurations)
-            # strategy_profiles_list = []
-            # for [d, algorithm, configuration] in algorithm_and_configurations:
-            #     strategy_profiles_list.append(_strategy_runner_process(d, [d, algorithm, configuration]))
-            # multiprocessing.freeze_support()
-            # logging.debug("len algorithm_and_configurations: %s", len(algorithm_and_configurations))
-            # pool = multiprocessing.Pool(64)
             _strategy_runner_process_ = partial(_strategy_runner_process, d)
             strategy_profiles_list = pool.map(
                 _strategy_runner_process_, algorithm_and_configurations
             )
-            # pool.close()
-            # pool.join()
             logging.debug(
                 "%%%%%%%%%%%%%%%%%%%%%%All strategies are run on the dataset.%%%%%%%%%%%%%%%%%%%%%%"
             )
@@ -258,26 +276,66 @@ def generate_features(self, d, char_set_dict):
     This method generates features.
     """
     columns_features_list = []
+    
     for j in range(d.dataframe.shape[1]):
         strategy_profiles = []
+        parsed_keys = []
+        strategy_profiles_dict_rvd_orig = {}
+        strategy_profile_dict_all_without_rvd = {}
         for strategy_profile in d.strategy_profiles:
             strategy = json.loads(strategy_profile["name"])
             if strategy[0] == "PVD":
                 if strategy[1][0] == d.dataframe.columns[j]:
                     strategy_profiles.append(strategy_profile)
+                    parsed_keys.append(strategy)
+                    strategy_profile_dict_all_without_rvd[str(strategy)] = strategy_profile
+            elif strategy[0] == "RVD_orig":
+                strategy_profiles_dict_rvd_orig[str(strategy)] = strategy_profile
+                parsed_keys.append(strategy)
             else:
-                strategy_profiles.append(strategy_profile)
-        parsed_keys = [
-            json.loads(str(key["name"])) for key in strategy_profiles
-        ]  # Parse the keys into Python objects
+                strategy_profiles.append(strategy_profile)  
+                parsed_keys.append(strategy)
+                strategy_profile_dict_all_without_rvd[str(strategy)] = strategy_profile
         sorted_keys = sorted(parsed_keys)
         sorted_strategy_profiles = dict()
-        for key in sorted_keys:
-            for strategy_profile in strategy_profiles:
-                if json.loads(str(strategy_profile["name"])) == key:
-                    sorted_strategy_profiles[str(key)] = strategy_profile["output"]
-        strategy_profiles = [str(k) for k in sorted_keys]
-        feature_vectors = np.zeros((d.dataframe.shape[0], len(strategy_profiles)))
+        RVD_orig_outputs = {}
+        n_rvd_rules_left, n_rvd_rules_right = 0, 0
+        total_n_rules_col = (len(d.dataframe.columns) - 1)*2
+        t0 = time.time()
+        try:
+            for key in sorted_keys:
+                if key[0] == "RVD_orig":
+                    name = json.loads(strategy_profiles_dict_rvd_orig[str(key)]["name"])
+                    strategy_profile_output = strategy_profiles_dict_rvd_orig[str(key)]["output"]
+                    strategy_profile_outputted_cells = strategy_profiles_dict_rvd_orig[str(key)]["outputted_cells"]
+                    if d.dataframe.columns[j] in name[1]:
+                        if name[1][0] == d.dataframe.columns[j]:
+                            n_rvd_rules_left += 1
+                        elif name[1][1] == d.dataframe.columns[j]:
+                            n_rvd_rules_right += 1
+                        for c in strategy_profile_output:
+                            if c[1] == j:
+                                violation_type = strategy_profile_outputted_cells[c]
+                                if c[0] in RVD_orig_outputs:
+                                    RVD_orig_outputs[c[0]]["total_violations"] += 1
+                                    RVD_orig_outputs[c[0]][violation_type] += 1                                        
+                                else:
+                                    if violation_type == "LRVD":
+                                        RVD_orig_outputs[c[0]] = {"total_violations": 1, "LRVD": 1, "RRVD": 0}
+                                    else:
+                                        RVD_orig_outputs[c[0]] = {"total_violations": 1, "LRVD": 0, "RRVD": 1}
+                else:
+                    sp_output = strategy_profile_dict_all_without_rvd[str(key)]["output"]
+                    sorted_strategy_profiles[str(key)] = sp_output
+        except Exception as e:
+            logging.error(e)
+            logging.error("Error in loop 1")         
+        t1 = time.time()
+        logging.debug("Time - loop 1: %s", str(t1 - t0))              
+        
+        strategy_profiles = [str(k) for k in sorted_strategy_profiles]
+        feature_vectors = np.zeros((d.dataframe.shape[0], len(strategy_profiles) + 15))
+
         for strategy_index, strategy_name in enumerate(sorted_strategy_profiles):
             logging.debug(
                 "******************************Generating features for strategy: %s",
@@ -288,6 +346,25 @@ def generate_features(self, d, char_set_dict):
                     if cell[1] == j:
                         feature_vectors[cell[0], strategy_index] = 1.0
 
+        t0 = time.time()
+        for row_idx in RVD_orig_outputs:
+            idx = len(strategy_profiles)
+            total_violations = RVD_orig_outputs[row_idx]["total_violations"]
+            insert_idx = idx + get_bucket(total_violations / total_n_rules_col if total_n_rules_col > 0 else 0)
+            feature_vectors[row_idx, insert_idx] = 1
+
+            idx += 5
+            LRVD_violations = RVD_orig_outputs[row_idx]["LRVD"]
+            insert_idx = idx + get_bucket(LRVD_violations / n_rvd_rules_left if n_rvd_rules_left > 0 else 0)
+            feature_vectors[row_idx, insert_idx] = 1
+
+            idx += 5
+            RRVD_violations = RVD_orig_outputs[row_idx]["RRVD"]
+            insert_idx = idx + get_bucket(RRVD_violations / n_rvd_rules_right if n_rvd_rules_right > 0 else 0)
+            feature_vectors[row_idx, insert_idx] = 1
+        t1 = time.time()
+        logging.debug("Time - loop 2: %s", str(t1 - t0))
+
         if self.VERBOSE:
             logging.debug(
                 "%s Features are generated for column %s", feature_vectors.shape[1], j
@@ -297,25 +374,41 @@ def generate_features(self, d, char_set_dict):
 
     d.column_features = columns_features_list
 
+def get_bucket(number):
+    if number <= 0.1:
+        return 0
+    elif number <= 0.25:
+        return 1
+    elif number <= 0.5:
+        return 2
+    elif number <= 0.75:
+        return 3
+    elif number <= 1:
+        return 4
 
-def generate_raha_features(parent_path, dataset_name, charsets, dirty_file_name, clean_file_name, pool):
+
+def generate_raha_features(parent_path, dataset_name, charsets, dirty_file_name, clean_file_name, pool, raha_config):
     sp_path = (
         parent_path + "/" + dataset_name + "/" + "raha-baran-results-" + dataset_name
     )
     if os.path.exists(sp_path):
         shutil.rmtree(sp_path)
 
-    detect = raha.Detection()
+    detect = raha.detection.Detection()
     dataset_dictionary = {
         "name": dataset_name,
         "path": parent_path + "/" + dataset_name + "/{}".format(dirty_file_name),
         "clean_path": parent_path + "/" + dataset_name + "/{}".format(clean_file_name),
     }
     detect.VERBOSE = False
+    detect.SAVE_RESULTS = raha_config["save_results"]
+    detect.STRATEGY_FILTERING = raha_config["strategy_filtering"]
+    detect.ERROR_DETECTION_ALGORITHMS = raha_config["error_detection_algorithms"]
     d = detect.initialize_dataset(dataset_dictionary)
-    d.SAVE_RESULTS = False
     d.VERBOSE = False
-    d.ERROR_DETECTION_ALGORITHMS = ["PVD", "OD", "RVD"]
+    d.SAVE_RESULTS = raha_config["save_results"]
+    d.ERROR_DETECTION_ALGORITHMS = raha_config["error_detection_algorithms"]
+    d.STRATEGY_FILTERING = raha_config["strategy_filtering"]
     logging.debug("Dataset is initialized.")
     logging.debug("Dataset name: %s", d.name)
     t1 = time.time()

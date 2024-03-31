@@ -1,0 +1,8 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+ec130174-8fd1-11eb-924d-9cd76263cbd0,genus,Willkommia,,,Hack.,Q2209907,1888,,"Verh. Bot. Vereins Prov. Brandenburg 30: 145. 1888.",,,,,,19264-1,wfo-4000040742,2704411,,
+6b57334c-8fcd-11eb-924d-9cd76263cbd0,species,annua,Willkommia,,Hack.,Q2209907,1888,,"Verh. Bot. Vereins Prov. Brandenburg 30: 146 1888",,,,,,426745-1,wfo-0000907546,4143944,,
+1f5a52dc-8fb2-11eb-924d-9cd76263cbd0,species,minuta,Willkommia,,Sch.Bip.,Q65685,1879,,"Consp. 357 (1879).",,,,,,260499-1,wfo-0000012337,4228670,,
+6b577d70-8fcd-11eb-924d-9cd76263cbd0,species,newtonii,Willkommia,,Hack.,Q2209907,1896,,"Bull. Herb. Boissier 4: 810 1896",,,,,,426746-1,wfo-0000907548,4143939,,
+6b57e530-8fcd-11eb-924d-9cd76263cbd0,species,sarmentosa,Willkommia,,Hack.,Q2209907,1888,,"Verh. Bot. Vereins Prov. Brandenburg 30: 145 1888",,,,,,426747-1,wfo-0000907549,4143931,,
+6b581ff0-8fcd-11eb-924d-9cd76263cbd0,species,texana,Willkommia,,Hitchc.,Q2063155,1903,,"Bot. Gaz. 35: 283 1903",,Q55758580,,,,268622-2,wfo-0000907550,2704412,,
+6b586b04-8fcd-11eb-924d-9cd76263cbd0,variety,stolonifera,Willkommia,texana,Parodi,Q359462,1925,,"Physis (Buenos Aires) 8: 78 1925",,,,,,268623-2,wfo-0000907551,4143904,,

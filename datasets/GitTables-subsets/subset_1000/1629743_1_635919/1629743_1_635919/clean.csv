@@ -1,0 +1,23 @@
+,GRID_TYPE,GAME_ID,GAME_EVENT_ID,PLAYER_ID,PLAYER_NAME,TEAM_ID,TEAM_NAME,PERIOD,MINUTES_REMAINING,SECONDS_REMAINING,EVENT_TYPE,ACTION_TYPE,SHOT_TYPE,SHOT_ZONE_BASIC,SHOT_ZONE_AREA,SHOT_ZONE_RANGE,SHOT_DISTANCE,LOC_X,LOC_Y,SHOT_ATTEMPTED_FLAG,SHOT_MADE_FLAG,GAME_DATE,HTM,VTM
+0,Shot Chart Detail,0021900860,515,1629743,Donta Hall,1610612765,Detroit Pistons,4,10,51,Missed Shot,Tip Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,-6,1,0,20200225,DEN,DET
+1,Shot Chart Detail,0021900860,666,1629743,Donta Hall,1610612765,Detroit Pistons,4,0,6,Made Shot,Tip Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,0,-6,1,1,20200225,DEN,DET
+2,Shot Chart Detail,0021900899,518,1629743,Donta Hall,1610612765,Detroit Pistons,4,10,0,Missed Shot,Cutting Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-25,4,1,0,20200301,SAC,DET
+3,Shot Chart Detail,0021900899,520,1629743,Donta Hall,1610612765,Detroit Pistons,4,9,56,Missed Shot,Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-5,20,1,0,20200301,SAC,DET
+4,Shot Chart Detail,0021901233,425,1629743,Donta Hall,1610612751,Brooklyn Nets,3,3,34,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,18,15,1,1,20200731,BKN,ORL
+5,Shot Chart Detail,0021901233,429,1629743,Donta Hall,1610612751,Brooklyn Nets,3,3,15,Made Shot,Cutting Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,8,16,1,1,20200731,BKN,ORL
+6,Shot Chart Detail,0021901233,634,1629743,Donta Hall,1610612751,Brooklyn Nets,4,2,58,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,5,16,1,1,20200731,BKN,ORL
+7,Shot Chart Detail,0021901256,140,1629743,Donta Hall,1610612751,Brooklyn Nets,1,1,23,Made Shot,Cutting Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,2,4,1,1,20200804,MIL,BKN
+8,Shot Chart Detail,0021901256,164,1629743,Donta Hall,1610612751,Brooklyn Nets,2,11,47,Missed Shot,Floating Jump shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,9,-10,95,1,0,20200804,MIL,BKN
+9,Shot Chart Detail,0021901256,489,1629743,Donta Hall,1610612751,Brooklyn Nets,3,3,13,Made Shot,Cutting Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-1,-8,1,1,20200804,MIL,BKN
+10,Shot Chart Detail,0021901256,496,1629743,Donta Hall,1610612751,Brooklyn Nets,3,2,51,Missed Shot,Cutting Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-5,8,1,0,20200804,MIL,BKN
+11,Shot Chart Detail,0021901267,492,1629743,Donta Hall,1610612751,Brooklyn Nets,3,2,57,Made Shot,Cutting Layup Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),Less Than 8 ft.,5,11,52,1,1,20200805,BOS,BKN
+12,Shot Chart Detail,0021901267,523,1629743,Donta Hall,1610612751,Brooklyn Nets,3,1,0,Made Shot,Cutting Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,18,4,1,1,20200805,BOS,BKN
+13,Shot Chart Detail,0021901267,586,1629743,Donta Hall,1610612751,Brooklyn Nets,4,7,42,Made Shot,Cutting Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,19,-1,1,1,20200805,BOS,BKN
+14,Shot Chart Detail,0021901267,680,1629743,Donta Hall,1610612751,Brooklyn Nets,4,0,39,Made Shot,Alley Oop Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,0,-5,6,1,1,20200805,BOS,BKN
+15,Shot Chart Detail,0021901297,257,1629743,Donta Hall,1610612751,Brooklyn Nets,2,5,17,Made Shot,Driving Floating Jump Shot,2PT Field Goal,In The Paint (Non-RA),Center(C),8-16 ft.,9,9,92,1,1,20200811,ORL,BKN
+16,Shot Chart Detail,0021901297,302,1629743,Donta Hall,1610612751,Brooklyn Nets,2,2,52,Made Shot,Reverse Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-15,9,1,1,20200811,ORL,BKN
+17,Shot Chart Detail,0021901297,501,1629743,Donta Hall,1610612751,Brooklyn Nets,3,1,42,Made Shot,Cutting Finger Roll Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-14,17,1,1,20200811,ORL,BKN
+18,Shot Chart Detail,0021901297,523,1629743,Donta Hall,1610612751,Brooklyn Nets,4,11,43,Made Shot,Dunk Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,16,2,1,1,20200811,ORL,BKN
+19,Shot Chart Detail,0021901297,537,1629743,Donta Hall,1610612751,Brooklyn Nets,4,10,27,Missed Shot,Jump Shot,2PT Field Goal,Mid-Range,Center(C),8-16 ft.,14,-3,149,1,0,20200811,ORL,BKN
+20,Shot Chart Detail,0021901297,559,1629743,Donta Hall,1610612751,Brooklyn Nets,4,8,36,Made Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,1,-8,6,1,1,20200811,ORL,BKN
+21,Shot Chart Detail,0021901297,631,1629743,Donta Hall,1610612751,Brooklyn Nets,4,1,16,Missed Shot,Putback Layup Shot,2PT Field Goal,Restricted Area,Center(C),Less Than 8 ft.,2,-13,26,1,0,20200811,ORL,BKN

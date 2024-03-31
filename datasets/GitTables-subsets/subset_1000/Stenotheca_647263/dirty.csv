@@ -1,0 +1,11 @@
+id,rank,name,genus,species,authors,author_ids,year,status,citation_micro,citation_full,citation_id,publication_id,basionym_id,type_id,ipni_id,wfo_id,gbif_id,indexfungorum_id,note
+eac89cfc-8fd1-11eb-924d-9cd76263cbd0,genus,Stenotheca,,,,,,,,,,,,,,wfo-4000036553,3138700,,
+76ce32c0-8fb4-11eb-924d-9cd76263cbd0,species,crepidisperma,Stenotheca,,"(Fr.) Sennikov","Q15405,Q5689553",2001,,"in Bot. Zhurn., 86(3): 57 (2001):.",,,,,,1020861-1,wfo-0000065444,5702358,,
+18e55df4-8fba-11eb-924d-9cd76263cbd0,species,gronovii,Stenotheca,,"(L.) Sennikov","Q1043,Q5689553",2001,,"in Bot. Zhurn., 86(3): 57 (2001):.",,,,,,1020862-1,wfo-0000123952,5702355,,
+71a6248a-8fb2-11eb-924d-9cd76263cbd0,species,mandonii,Stenotheca,,"(Sch.Bip.) Sennikov","Q65685,Q5689553",2001,,"in Bot. Zhurn., 86(3): 57 (2001):.",,,,,,1020863-1,wfo-0000024721,5702352,,
+47adacde-8fb2-11eb-924d-9cd76263cbd0,species,mariana,Stenotheca,,Monn.,,1829,,"Ess. Hierac. 72 (1829).",,,,,,,wfo-0000018778,5702350,,
+1e0cf7f8-8fb8-11eb-924d-9cd76263cbd0,species,paniculata,Stenotheca,,"(L.) Sennikov","Q1043,Q5689553",2001,,"in Bot. Zhurn., 86(3): 58 (2001):.",,,,,,1020864-1,wfo-0000106363,5702348,,
+0b48f9f0-8fb8-11eb-924d-9cd76263cbd0,species,pringlei,Stenotheca,,"(A.Gray) Sennikov","Q347356,Q5689553",2001,,"in Bot. Zhurn., 86(3): 58 (2001):.",,,,,,1020865-1,wfo-0000105654,5702345,,
+2cbbcfd6-8fb3-11eb-924d-9cd76263cbd0,species,subnuda,Stenotheca,,Monnier,Q21521652,1829,,"Ess. Hierac. 72 (1829).",,,,,,251137-1,wfo-0000043174,5702343,,
+53f02cc6-8fba-11eb-924d-9cd76263cbd0,species,tristis,Stenotheca,,"(Willd. ex Spreng.) Schljakov","Q76353,Q62829,Q18857770",1987,,"Arktichesk. Fl. SSSR 10: 387 1987",,,,,,944881-1,wfo-0000125756,5401295,,
+3d0e16f0-8fb3-11eb-924d-9cd76263cbd0,species,venosa,Stenotheca,,Monn.,,1829,,"Ess. Hierac. 72 (1829).",,,,,,,wfo-0000044494,5702340,,

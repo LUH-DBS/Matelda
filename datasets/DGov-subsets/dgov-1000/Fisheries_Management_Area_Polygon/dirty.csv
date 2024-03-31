@@ -1,0 +1,553 @@
+﻿OBJECTID,FISH_TYPE,MGMT_AREA,COMMENT,STREAM_NO,STREAM,LAKE_NO,LAKE,SHAPE_Length,SHAPE_Area
+1,Bass,Bass Management Lake,Colebrook River Lake,1866,West Branch Farmington River,568,Colebrook River Lake,63814.1641431757,37128028.6840148
+2,Trout,Trophy Trout Lake,Washining Lake,0, ,3409,Washining Lake,27835.2335087994,24624630.1974805
+3,Trout,Wild Trout Management Area (Class 3),From Whiting River to confluence with Housatonic River.,149,Blackberry River,0, ,14277.9523001963,407495.100813988
+4,Bass and Walleye,Bass / Walleye Management Lake,Mashapaug Pond,131,Bigelow Brook,1779,Mashapaug Pond,38090.163257046,12977310.1117365
+5,Trout,Wild Trout Management Area (Class 3),From Whiting River to confluence with Housatonic River.,149,Blackberry River,1343,Iron Furnace Pond,2128.83027786723,64569.0098292685
+6,Trout,Wild Trout Management Area (Class 3),From Whiting River to confluence with Housatonic River.,149,Blackberry River,0, ,341.600556172797,7230.35514634972
+7,Trout,Trophy Trout Stream,From Goodwin dam (Hartland) downstream to Route 177 Bridge in Unionville,1866,West Branch Farmington River,0, ,4079.69586251393,137207.676177833
+8,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1132710.36899285,387478548.977434
+9,Northern Pike,Northern Pike Management Area,Quaddick Reservoir,595,Fivemile River,2337,Quaddick Reservoir,15760.3951164296,2550958.24039901
+10,Northern Pike,Northern Pike Management Area,Quaddick Reservoir,595,Fivemile River,2337,Quaddick Reservoir,29904.0399053837,8834875.10517918
+11,Bass,Bass Management Lake,Wononskopomuc Lake,1703,Sucker Brook,3555,Wononskopomuc Lake,15376.3988271123,15165078.7088829
+12,Northern Pike,Northern Pike Management Area,Quaddick Reservoir,595,Fivemile River,2337,Quaddick Reservoir,19875.6542812006,5659297.12463119
+13,Trout,Wild Trout Management Area (Class 3),From Rte 190 (Stafford) to Willimantic River (Willington),1452,Roaring Brook,0, ,424.618245775438,12465.5651820913
+14,Trout,Trophy Trout Lake,Crystal Lake,3,Aborn Brook,655,Crystal Lake,15824.2218448637,8162217.98151063
+15,Trout,Wild Trout Management Area (Class 3),From East Street below the gorge in N. Granby to the confluence of the Farmington River.,1497,Salmon Brook,0, ,26936.1408420037,589551.589018176
+16,Trout,Wild Trout Management Area (Class 3),Entire stream in Mansfield and Willington.,585,Fenton River,232,Bissonnette Pond,10433.3899231725,2112061.00768787
+17,Northern Pike,Northern Pike Management Area,Lake Winchester,0, ,1550,Lake Winchester,28597.9248446065,10805812.9211844
+18,Trout and Bass,Trophy Trout / Bass Management Lake,Highland Lake,0, ,1230,Highland Lake,42660.4839058788,19522933.1120471
+19,Trout,Wild Trout Management Area (Class 3),Entire stream in Mansfield and Willington.,585,Fenton River,2223,Petrowich Pond,1036.29637959336,59252.876310424
+20,Bass,Bass Management Lake,Mudge Pond,1013,Long Pond Brook,1945,Mudge Pond,15099.2373155013,9198650.75594857
+21,Trout,Wild Trout Management Area (Class 3),Entire stream in Mansfield and Willington.,585,Fenton River,645,Cresys Pond,810.391006949679,26776.7249152483
+22,Trout and Kokanee Salmon,Trophy Trout / Kokanee Management Lake,West Hill Pond,0, ,3448,West Hill Pond,17327.7120190767,10695904.656717
+23,Trout,Wild Trout Management Area (Class 3),Entire stream in Mansfield and Willington.,585,Fenton River,673,Cushmans Pond,1786.95066387601,68335.073085657
+24,Trout,Wild Trout Management Area (Class 3),Entire stream in Mansfield and Willington.,585,Fenton River,0, ,260.13912199018,3570.18183093384
+25,Trout,Wild Trout Management Area (Class 3),Entire stream in Mansfield and Willington.,585,Fenton River,0, ,38793.5520802596,885230.39445433
+26,Trout,Trophy Trout Stream,From Goodwin Dam (Harland) downstream to Route 177 Bridge in Unionville.,577,Farmington River,0, ,44079.0868166914,2326490.33867085
+27,Trout,Trout Park Trophy Trout Stream,Within Natchaug State Forest (Eastford),1181,Natchaug River,0, ,22206.4814319339,820173.989350004
+28,Trout,Trout Park,Within Stratton Brook State Park,1698,Stratton Brook,2782,Stratton Park Pond,1350.6534531297,102336.908180442
+29,Trout,Trout Park,Within Stratton Brook State Park,1698,Stratton Brook,2781,Stratton Brook State Park Pond,1052.04025682521,54467.1997584036
+30,Bass,Bass Management Lake,West Side Pond,1889,West Side Pond Brook,3463,West Side Pond,5484.14963908708,1758458.18797043
+31,Bass,Bass Management Lake,Halls Pond,0, ,1132,Halls Pond,15866.1297008893,3622345.72416308
+32,Walleye,Walleye Management Lake,Tyler Lake,1889,West Side Pond Brook,2985,Tyler Lake,18755.2694180074,8155481.46061452
+33,Trout,Trout Park Trophy Trout Stream,Within Natchaug State Forest (Eastford),1181,Natchaug River,0, ,2124.23071035645,80208.9168323589
+34,Trout,Wild Trout Management Area (Class 3),From Newfield Road downstream to the confluence with the West Branch Naugatuck.,515,East Branch Naugatuck River,0, ,1030.51817012216,75015.767468773
+35,Trout,Trout Park Trophy Trout Stream,Within Natchaug State Forest (Eastford),1181,Natchaug River,0, ,1892.01257285885,70029.3439003394
+36,Trout,Trout Park Trophy Trout Stream,Within Natchaug State Forest (Eastford),1181,Natchaug River,0, ,2270.59656926236,79557.6144786607
+37,Trout,Trophy Trout Stream,From Goodwin Dam (Harland) downstream to Route 177 Bridge in Unionville.,577,Farmington River,0, ,582.154193110717,7585.87440325325
+38,Trout,Wild Trout Management Area (Class 3),Entire stream in Mansfield and Willington.,585,Fenton River,0, ,483.048008144432,9832.78881477614
+39,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1060.17967361185,25151.61852271
+40,Trout,Wild Trout Management Area (Class 3),Entire stream in Mansfield and Willington.,585,Fenton River,0, ,66279.2968098843,1732784.77987613
+41,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,317.765879460217,3426.25003328195
+42,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,0, ,1186.0178372808,39829.8540910578
+43,Trout,Trophy Trout Stream,From Goodwin Dam (Harland) downstream to Route 177 Bridge in Unionville.,577,Farmington River,0, ,27553.713148214,2498970.06185809
+44,Trout,Belding Wild Trout Management Area (Class 1),The river and its tributaries (as posted) within Belding WMA.,1722,Tankerhoosen River,3420,Webster Pond,882.04806963874,40048.8220266666
+45,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,0, ,12331.8998025799,462650.364716502
+46,Bass,Bass Management Lake,Upper Bolton Lake,0, ,267,Upper Bolton Lake,4985.51590115256,1023396.02568183
+47,Trout,Wild Trout Management Area (Class 3),From Newfield Road downstream to the confluence with the West Branch Naugatuck.,515,East Branch Naugatuck River,3398,Warrenton Woolen Co Pond,521.145702774389,10112.6967397854
+48,Bass,Bass Management Lake,Middle Bolton Lake,0, ,266,Middle Bolton Lake,14402.2369045891,5105209.05697332
+49,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,0, ,2618.22468271169,91711.773551638
+50,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,0, ,4109.95674682479,149989.758103153
+51,Trout,Wild Trout Management Area (Class 3),From Newfield Road downstream to the confluence with the West Branch Naugatuck.,515,East Branch Naugatuck River,3085,Fitzgerald Dam,902.625732437943,20953.6649967371
+52,Trout,Trout Management Area,From I-84 in Vernon downstream to I-84 at Laurel Marsh on Manchester/East Hartford line.,796,Hockanum River,2073,Oakland Paper Mill Pond,4913.21413385809,86450.4069580816
+53,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,0, ,2090.99663351332,65221.3429353999
+54,Trout,Trophy Trout Stream,From Goodwin Dam (Harland) downstream to Route 177 Bridge in Unionville.,577,Farmington River,0, ,776.953503373863,28275.7697820804
+55,Trout,Trophy Trout Stream,From Goodwin Dam (Harland) downstream to Route 177 Bridge in Unionville.,577,Farmington River,0, ,943.789496606084,48323.1885036833
+56,Trout,Trophy Trout Stream,From Goodwin Dam (Harland) downstream to Route 177 Bridge in Unionville.,577,Farmington River,0, ,14043.6928890114,1098994.23836146
+57,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,0, ,29781.5500272228,1264982.34848968
+58,Bass,Bass Management Lake,Lower Bolton Lake,0, ,265,Lower Bolton Lake,14187.9347436028,7686491.71318747
+59,Trout,Trout Management Area,From I-84 in Vernon downstream to I-84 at Laurel Marsh on Manchester/East Hartford line.,796,Hockanum River,2994,Union Pond,8614.13555025046,2173441.97461467
+60,Trout,Wild Trout Management Area (Class 3),From Newfield Road downstream to the confluence with the West Branch Naugatuck.,515,East Branch Naugatuck River,2715,Springs Pond,679.849819304321,18588.7230194423
+61,Trout,Farmington River Trout Management Area,Avon-Burlington-Avon. From base of Lower Collinsville Dam downstream about 3 miles to Rt 4 bridge.,577,Farmington River,0, ,8784.7229869654,666576.426520017
+62,Trout,Trout Management Area,From I-84 in Vernon downstream to I-84 at Laurel Marsh on Manchester/East Hartford line.,796,Hockanum River,0, ,31218.3535601539,883420.523077044
+63,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3473.51725983717,307337.936970985
+64,Bass and Walleye,Bass / Walleye Management Lake,Wangumbaug Lake,0, ,3387,Wangumbaug Lake,28779.9673014932,16310992.3753901
+65,Bass,Bass Management Lake,Quinebaug Pond,1402,Quinebaug Brook,2343,Quinebaug Pond,9989.71524981354,3095441.86054133
+66,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,0, ,257.202478501765,3977.34266536349
+67,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,0, ,48521.9271571429,2085555.90218606
+68,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,369.311734474578,2493.04182349438
+69,Trout,Trout Management Area,From I-84 in Vernon downstream to I-84 at Laurel Marsh on Manchester/East Hartford line.,796,Hockanum River,1586,Laurel Lake,18662.5145272211,3787528.91468217
+70,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1430.33896715862,108551.039120594
+71,Bass and Northern Pike,Bass / Northern Pike Management Lake,Mansfield Hollow Dam,1181,Natchaug River,1763,Mansfield Hollow Dam,4331.74947961374,505895.872174339
+72,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,24554.2554711141,1640091.33437171
+73,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,1966,Natchaug River Dam,3158.56515673792,240520.717456732
+74,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,1966,Natchaug River Dam,1226.23079780623,34576.0850483448
+75,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,1966,Natchaug River Dam,22253.8109438529,4334889.8555902
+76,Atlantic Salmon,Atlantic Salmon Broodstock Fishing,"From Bogue Road, Torrington, downstream to the Thomaston Dam (Upper Section).",1182,Naugatuck River,0, ,56942.7696302915,2112227.92023664
+77,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1603.65234246127,73179.8816020658
+78,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,0, ,7091.99497905848,419021.277841009
+79,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,901.782246870747,32973.5149442886
+80,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,0, ,374.807961757981,9083.49189135059
+81,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,0, ,31353.6848933553,1687287.21939526
+82,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3951.9775125824,228514.471221026
+83,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,9272.93441390522,2150017.13103448
+84,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,9138.00171441164,834624.777991934
+85,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,8343.11740649646,2925970.3362091
+86,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2617.77059456099,107166.398479139
+87,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,660.45072576576,31561.9893969077
+88,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,9364.95820313876,732238.438051063
+89,Northern Pike,Northern Pike Management Area,Bantam Lake,62,Bantam River,110,Bantam Lake,14222.555880555,11383755.3949224
+90,Trout,Wild Trout Management Area (Class 2),Entire brook in Glastonbury downstream of Addison Pond,1498,Salmon Brook,0, ,1065.87860217927,46637.9090840489
+91,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,5969.63460773201,373981.989843586
+92,Northern Pike,Northern Pike Management Area,Bantam Lake,62,Bantam River,110,Bantam Lake,37834.060049499,30235394.5232384
+93,Walleye,Walleye Management Lake,Batterson Park Pond,0, ,136,Batterson Park Pond,11945.8555364825,6337751.61927639
+94,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,6365.62792004326,348025.000979422
+95,Trout,Trout Management Area,From Rte. 14 bridge to confluence with Quinebaug River,0, ,0, ,2442.78845548129,52391.8349598499
+96,Trout,Trout Management Area,From Rte. 14 bridge to confluence with Quinebaug River,0, ,0, ,21266.6547879198,485166.065770567
+97,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,7623.15983872708,420562.650174123
+98,Atlantic Salmon,Atlantic Salmon Broodstock Fishing,"From Bogue Road, Torrington, downstream to the Thomaston Dam (Upper Section).",1182,Naugatuck River,0, ,1332.74719549159,34511.6407570312
+99,Trout,Wild Trout Management Area (Class 3),From Rte. 94 to Connecticut River,1454,Roaring Brook,41,Angus Park Pond,3554.90826806963,407175.937174808
+100,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,1516.90804190147,50536.9351805496
+101,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,5229.47905436407,232034.332166246
+102,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,2037.56016786048,84036.4573921106
+103,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,1408.36384219104,68713.7414580217
+104,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,26555.7354633326,1579785.72619774
+105,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,7975.86303701086,506265.64589914
+106,Trout,Wild Trout Management Area (Class 3),From Rte. 94 to Connecticut River,1454,Roaring Brook,0, ,654.181706454906,24094.8976121152
+107,Trout,Wild Trout Management Area (Class 3),From Rte. 94 to Connecticut River,1454,Roaring Brook,1257,Hodges Pond,1525.53300891994,76196.4942311118
+108,Trout,Wild Trout Management Area (Class 3),From Lake Waramaug to confluence with Housatonic River.,502,East Aspetuck River,3567,Woodruff Pond,2034.55659144658,39449.7966728643
+109,Trout and Bass,Bull's Bridge Trout Management Area / Bass Management Area,From Bull's Bridge Impoundment Dam (Kent) to Gaylordsville Bridge (Rt 7) New Milford plus Ten Mile R,823,Housatonic River,0, ,328.051582277832,2917.77840063452
+110,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,2023.04747404164,77409.7056026888
+111,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,2131.95384737628,133519.065987699
+112,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,15991.920194244,1062725.28190561
+113,Trout,Wild Trout Management Area (Class 3),From Rte. 94 to Connecticut River,1454,Roaring Brook,293,Brainard Pond,1907.13132003887,78499.2222446346
+114,Atlantic Salmon,Atlantic Salmon Broodstock Fishing,"From Scotland Dam, Scotland, downstream to the Occum Dam, Norwich.",1567,Shetucket River,0, ,50534.3514088084,4614349.50335399
+115,Trout,Wild Trout Management Area (Class 3),From Rte. 94 to Connecticut River,1454,Roaring Brook,2646,Slocomb Pond No 2,753.316278996222,22007.6760507595
+116,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,7360.37379012589,517140.032380067
+117,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,3287.5204463669,163940.031464071
+118,Trout,Trout Park,Black Rock Lake,1397,Purgatory Brook,240,Black Rock Lake,5702.27296928835,412750.527910233
+119,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,4174.90002862474,251861.686908792
+120,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,4510.2208133415,252615.091527418
+121,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,12890.2167738943,1091543.26768004
+122,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,36515.7026175168,2423917.45690078
+123,Trout,Wild Trout Management Area (Class 1),Entire river in Southington.,548,Eightmile River,1052,Grannis Pond,11456.0855527248,1225201.37411469
+124,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1725.54870998221,146448.954756566
+125,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,25179.414716115,1842379.6726645
+126,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,535.184054397329,18851.9907831087
+127,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2150.37038902931,84876.870991493
+128,Atlantic Salmon,Atlantic Salmon Broodstock Fishing,"From Scotland Dam, Scotland, downstream to the Occum Dam, Norwich.",1567,Shetucket River,2082,Occum Pond,42688.3644618835,4689131.24668079
+129,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,884.949007242329,57111.1443547215
+130,Trout,Wild Trout Management Area (Class 1),Entire river in Southington.,548,Eightmile River,0, ,1203.8535052401,50055.3438141156
+131,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3425.29335860553,294455.829871745
+132,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3557.27180297365,149772.914575166
+133,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,6805.53619772217,313547.294574652
+134,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,5806.70125071741,387564.950401296
+135,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1163.10778019797,47801.2214679221
+136,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,727.641886032811,25223.4032442178
+137,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,15324.0269755717,1032066.82605568
+138,Walleye,Walleye Management Lake,Beach Pond,0, ,142,Beach Pond,26569.9139386015,15180159.007783
+139,Northern Pike,Northern Pike Management Area,Pachaug Pond,1259,Pachaug River,2134,Pachaug Pond,70126.0672734291,35588721.0902309
+140,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,4909.61451414648,293787.212759132
+141,Trout,Trout Management Area,From Barstow Rd. (Lebanon) downstream to bridge at intersection of Fitchville and Schwartz Rd.,1970,Yantic River,1012,Gilman Pond,7354.7953936901,352983.982695007
+142,Trout,Trophy Trout Lake,Lake Candlewood,0, ,1490,Lake Candlewood,25922.6154876523,9345231.88895855
+143,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,592.481691756552,21811.1258916484
+144,Trout,Trophy Trout Lake,Lake Candlewood,0, ,1490,Lake Candlewood,12482.4229709216,1827727.60278156
+145,Walleye,Walleye Management Lake,Beach Pond,0, ,142,Beach Pond,9611.91237211643,2574961.46966922
+146,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1694.18039339743,74253.2939485147
+147,Trout,Trout Management Area,From Barstow Rd. (Lebanon) downstream to bridge at intersection of Fitchville and Schwartz Rd.,1970,Yantic River,2155,Papermill Pond,4125.44348731025,189129.290301019
+148,Trout,Trophy Trout Stream,"Entire river in Windham, Scotland, Sprague, and Norwich",1567,Shetucket River,0, ,63174.5434871864,8533261.4740362
+149,Trout,Trout Management Area,From Barstow Rd. (Lebanon) downstream to bridge at intersection of Fitchville and Schwartz Rd.,1970,Yantic River,0, ,4509.50749564213,143658.841111949
+150,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,686.409554776889,16233.0640607034
+151,Trout,Trophy Trout Lake,Lake Candlewood,0, ,1490,Lake Candlewood,267923.0350148,185734117.304093
+152,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,50358.6521113538,3380932.35084257
+153,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1648.66236343298,69080.5491203261
+154,Bass,Bass Management Lake,Taftville Reservoir No 1,0, ,2838,Taftville Reservoir No 1,5834.16658927656,1118666.83871609
+155,Trout,Wild Trout Management Area (Class 1),"Entire river in Southington, and in Cheshire upstream from Cheshire Street.",1405,Quinnipiac River,0, ,72518.9800598097,1900874.79690549
+156,Trout,Trout Management Area/Trout Park,From confluence of Blackledge and Jeremy Rivers downstream to Rte. 16,1500,Salmon River,0, ,55554.6285796248,2830154.44814027
+157,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3024.78754655581,119750.223716499
+158,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,829.49890406376,37791.5091442995
+159,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2530.19237151444,121409.326576205
+160,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,9400.37301164325,620219.058693825
+161,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,4148.55646039097,198880.214206908
+162,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1192.87595287485,36590.0477432451
+163,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2615.2385622203,96334.0546601052
+164,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,17815.7010106807,1369523.389905
+165,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1866.14654571919,66643.6111029257
+166,Trout,Trophy Trout Stream,Entire river in Woodbury and Southbury (from near Rt. 47 to the confluence with Lake Zoar).,1357,Pomperaug River,0, ,20389.0120398428,305635.040928952
+167,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,17805.7048093961,1067966.42409044
+168,Northern Pike,Northern Pike Management Area,Pachaug Pond,1259,Pachaug River,2134,Pachaug Pond,7698.53617205019,867749.264377441
+169,Bass,Bass Management Lake,Spaulding Pond,0, ,2689,Spaulding Pond,3909.73103755566,622698.560247203
+170,Trout and Walleye,Trophy Trout / Walleye Management Lake,Squantz Pond,652,Glen Brook,2719,Squantz Pond,28210.3425600501,11622071.5631751
+171,Trout,Trophy Trout Stream,Entire river in Woodbury and Southbury (from near Rt. 47 to the confluence with Lake Zoar).,1357,Pomperaug River,0, ,5446.57757562278,95879.7940734941
+172,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,6115.68895032981,467064.922232214
+173,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,9218.94780572376,443558.854677839
+174,Bass,Bass Management Lake,Pickerel Lake,0, ,2234,Pickerel Lake,14162.3588365384,3576706.77982881
+175,Trout,Trophy Trout Stream,Entire river in Woodbury and Southbury (from near Rt. 47 to the confluence with Lake Zoar).,1357,Pomperaug River,0, ,11869.4331725742,280731.780054167
+176,Bass,Bass Management Lake,Lake Hayward,0, ,1507,Lake Hayward,20347.3369876271,7510199.16252461
+177,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,5994.54663680848,449428.304447694
+178,Trout,Trophy Trout Lake,Lake Candlewood,0, ,1490,Lake Candlewood,4954.48086923564,686610.672043259
+179,Bass,Bass Management Lake,Black Pond,0, ,239,Black Pond,6925.76840321303,1531366.06789799
+180,Bass and Walleye,Bass / Walleye Management Lake,Gardner Lake,1915,Whittle Brook,985,Gardner Lake,30886.4156819215,22968838.4666127
+181,Trout,Trophy Trout Stream,Entire river in Woodbury and Southbury (from near Rt. 47 to the confluence with Lake Zoar).,1357,Pomperaug River,0, ,109793.39657322,2959007.79144864
+182,Trout and Bass,Trophy Trout / Bass Management Lake,Amos Lake,0, ,33,Amos Lake,13730.652853355,4897188.16508967
+183,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1336.7681478372,46787.2070651112
+184,Bass,Bass Management Lake,Black Pond,0, ,238,Black Pond,2488.4008536818,173742.298118186
+185,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,4119.25387039392,321483.285292487
+186,Bass,Bass Management Lake,Moodus Reservoir,1325,Pine Brook,1902,Moodus Reservoir,61417.6060993845,19198670.2799867
+187,Bass,Bass Management Lake,Billings Lake,0, ,216,Billings Lake,17084.1788022153,4132876.22627116
+188,Trout,Trophy Trout Lake,Lake Candlewood,0, ,1490,Lake Candlewood,8757.59038913197,2232198.72837042
+189,Trout,Sea Run Trout Stream,Entire river in E. Haddam/Lyme upstream of Joshuatown Rd.,0, ,2197,Pecks Meadow Pond,3415.16848830276,569549.308344059
+190,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,5960.83854766495,343322.859126636
+191,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3718.15742851002,267949.913906496
+192,Trout,Wild Trout Management Area (Class 3),Entire stream in Montville,1684,Stony Brook,2771,Stony Brook Reservoir,9125.95499074833,3250878.53914629
+193,Bass,Bass Management Lake,Bashan Lake,0, ,127,Bashan Lake,28316.0774740248,11567107.0965521
+194,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,5841.44342626729,403109.279516224
+195,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,1527.01546083691,63553.5278468225
+196,Bass,Bass Management Lake,Wyassup Lake,0, ,3586,Wyassup Lake,13628.9600368686,4309741.26154564
+197,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2277.97896873475,82101.9095445605
+198,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,4214.16123758308,285784.422549265
+199,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,39745.2373897732,8639913.81518807
+200,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,413.184027851769,8678.92246867949
+201,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,2118.88269104543,212826.419649856
+202,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,2623.91647072253,219949.358889265
+203,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,1172.61744044497,83176.7272287144
+204,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,1195.14504304394,49475.0714959185
+205,Trout,Wild Trout Management Area (Class 3),Entire stream in Montville,1684,Stony Brook,0, ,597.830056379577,21466.4279540617
+206,Trout,Wild Trout Management Area (Class 3),Entire stream in Montville,1684,Stony Brook,0, ,456.628215335379,11608.4684232099
+207,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,580.22679637569,23009.4921670576
+208,Trout,Sea Run Trout Stream,Entire river in E. Haddam/Lyme upstream of Joshuatown Rd.,549,Eightmile River,0, ,805.274613696892,15154.5643723667
+209,Trout,Sea Run Trout Stream,Entire river in E. Haddam/Lyme upstream of Joshuatown Rd.,549,Eightmile River,0, ,2314.45419436796,46526.0451259772
+210,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,1530.69869147759,77556.3768442196
+211,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,7359.84893764485,525597.755032927
+212,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,1995.28438376491,228287.078752499
+213,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,2891.37596471205,189796.396112624
+214,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,2067.92074187534,60449.6010596357
+215,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,1241.72655074721,55122.4745287392
+216,Trout,Sea Run Trout Stream,Entire river in E. Haddam/Lyme upstream of Joshuatown Rd.,549,Eightmile River,0, ,735.566864106451,29965.0250202143
+217,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3772.45100585312,206527.608661586
+218,Trout,Trout Park,Horse Pond,0, ,1289,Horse Pond,3147.37248962698,532803.474728065
+219,Trout,Trophy Trout Lake,Lake Candlewood,0, ,1490,Lake Candlewood,37964.0787701801,21705675.2948044
+220,Trout,Trout Park,Within Southford Falls State Park,546,Eightmile Brook,2157,Papermill Pond,2745.03967127815,104233.701948891
+221,Trout,Sea Run Trout Stream,Entire river in E. Haddam/Lyme upstream of Joshuatown Rd.,549,Eightmile River,0, ,1362.26494681107,41644.1879913464
+222,Trout,Wild Trout Management Area (Class 3),Entire stream in Montville,1684,Stony Brook,1374,Johnson Pond,1655.25987541525,63116.2999460234
+223,Trout,Wild Trout Management Area (Class 3),Entire stream in Montville,1684,Stony Brook,0, ,245.813885759136,2893.67170164952
+224,Trout,Wild Trout Management Area (Class 3),Entire stream in North Stonington,1573,Shunock River,1610,Lewis Pond,2998.26373719575,186128.427958523
+225,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,13327.0849332501,578073.329253515
+226,Trout,Wild Trout Management Area (Class 3),Entire stream in North Stonington,1573,Shunock River,2426,River Pond,8696.97049395357,241972.828307263
+227,Trout,Wild Trout Management Area (Class 3),Entire stream in North Stonington,1573,Shunock River,2423,Ripley Parks Pond,1485.06505156134,94588.7270724025
+228,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,6796.50102375673,536485.919532253
+229,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,491,Chapman Pond,8295.56174005849,2030494.51835595
+230,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2781.40321286345,197958.920319212
+231,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1506.55615036057,84268.1821829099
+232,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,605.435116998641,25691.8427698813
+233,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,10268.0533080609,982408.497565918
+234,Trout,Wild Trout Management Area (Class 3),Entire stream in North Stonington,1573,Shunock River,0, ,10551.5981542763,324082.889742639
+235,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2023.13594761153,41451.0399048265
+236,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,8107.83480682439,1960526.96768017
+237,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,25872.3807582194,1355726.19385682
+238,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1887.38859753053,138992.073317568
+239,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3767.25820292971,107779.484668206
+240,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2077.34536302428,243050.127033675
+241,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,20258.7243623221,1101890.42658549
+242,Trout,Sea Run Trout Stream,Entire river in E. Haddam/Lyme upstream of Joshuatown Rd.,549,Eightmile River,0, ,3291.35723507789,64937.6666487804
+243,Trout,Trout Park,Allen Brook Pond,10,Allen Brook,24,Allen Brook Pond,2759.47169114515,208481.98062135
+244,Trout,Trout Park,Within Sleeping Giant State Park,1098,Mill River,83,Axle Shop Pond,3073.5954965432,73885.4566790953
+245,Trout,Sea Run Trout Stream,Entire river in E. Haddam/Lyme upstream of Joshuatown Rd.,549,Eightmile River,0, ,1303.44406605539,72854.7994057802
+246,Trout,Sea Run Trout Stream,Entire river in E. Haddam/Lyme upstream of Joshuatown Rd.,549,Eightmile River,0, ,28921.5872324605,994156.870629143
+247,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3232.17554181728,146417.93072969
+248,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,9667.52691563569,697232.618352701
+249,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3148.98063418771,160068.708788721
+250,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,855.722786957013,45229.0702723464
+251,Trout,Wild Trout Management Area (Class 3),From Mill Road (downstream of Pages Millpond) in North Brandford to I-95 bridge (East Haven).,575,Farm River,0, ,1314.28878161193,65320.5268823607
+252,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1767.60629332784,72935.5654170843
+253,Bass,Bass Management Lake,Lake Chamberlain,1513,Sargent River,1492,Lake Chamberlain,12531.8772063631,4229388.06481658
+254,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,892.363831412614,58320.5823331171
+255,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1064.89476604735,68483.6753257348
+256,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,4499.04454067908,358949.340718764
+257,Trout,Bladens Brook Trout Management Area,Access to this area only by permission of Seymour Land Conservation Trust.,156,Bladens River,0, ,750.640845368266,23039.9270528589
+258,Trout,Trophy Trout Lake,Quonnipaug Lake,1708,Sucker Brook,2346,Quonnipaug Lake,18247.3190083704,4186181.69042807
+259,Trout,Wild Trout Management Area (Class 3),From Mill Road (downstream of Pages Millpond) in North Brandford to I-95 bridge (East Haven).,575,Farm River,879,Farm River Pond,934.212532762947,21916.6748923266
+260,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,25220.8479115345,2650731.34263528
+261,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1047.33259115271,59599.2456918662
+262,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,10397.4484483792,464979.700720579
+263,Bass,Bass Management Lake,Lake Kenosia,1673,Still River,1509,Lake Kenosia,1497.33361107524,27882.2474763905
+264,Bass,Bass Management Lake,Lake Kenosia,1673,Still River,1509,Lake Kenosia,7555.86426103366,2444215.86040649
+265,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,4152.75141706711,292121.045606141
+266,Bass and Walleye,Bass / Walleye Management Lake,Lake Housatonic,823,Housatonic River,1508,Lake Housatonic,66189.3366080976,14644018.1227797
+267,Bass,Bass Management Lake,Pattagansett Lake,1278,Pattagansett River,2184,Pattagansett Lake,19706.1254350222,5475537.34575025
+268,Trout,Trout Park,In Chatfield Hollow State Park.,312,Chatfield Hollow Brook,2098,Old Mill Pond,564.183503150553,14885.4487991101
+269,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,6529.15221035821,886556.192594221
+270,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,425.621741168629,10438.4160877496
+271,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1268.80413822097,38132.4122772256
+272,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,1244,Oil Mill Brook,0, ,497.123993314697,12364.5274358872
+273,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,11218.260870148,905904.612080225
+274,Trout,Sea Run Trout Stream,Downstream of I-95 bridge,957,Latimer Brook,0, ,898.63519684825,34618.085803809
+275,Trout,Trout Park,In Chatfield Hollow State Park.,312,Chatfield Hollow Brook,2544,Schreeder Pond,2715.88906828014,171582.929986648
+276,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,32275.2445719936,4848293.83851928
+277,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2762.7574786681,375276.080103489
+278,Trout,Trophy Trout Lake,Rogers Lake,674,Grassy Hill Brook,2453,Rogers Lake,31984.5053904528,11994890.4348167
+279,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2263.33763960456,107252.828350741
+280,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2265.4067138012,363555.622833497
+281,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1527.35151385519,55550.5051898307
+282,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,569.615624732225,14971.3797570487
+283,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1524.22107186602,102718.06525777
+284,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,5559.53967888405,753644.313038539
+285,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2185.41759131107,164914.940646262
+286,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2336.1941836962,193232.510206113
+287,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3681.84739326116,425223.567808826
+288,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,6465.71505612211,1139685.59321999
+289,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1999.75680417285,89576.2425808267
+290,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1778.00142164958,76578.1556403515
+291,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,902.570591166512,57381.945166014
+292,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,7059.08690224357,443863.002314845
+293,Trout,Trout Management Area,From Lake Hammonasset Dam to Chestnut Hill Rd.,735,Hammonasset River,0, ,370.513090892504,7106.20587813336
+294,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,861.91994023859,47150.3804082773
+295,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2447.1982688754,249586.873793135
+296,Trout,Trout Management Area,From Lake Hammonasset Dam to Chestnut Hill Rd.,735,Hammonasset River,0, ,607.789105168332,12641.7252130409
+297,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,844.124936845544,27988.5092924429
+298,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2741.81329073518,250819.751840585
+299,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1480.07832402594,113393.989468702
+300,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,9663.23125125953,968102.312685065
+301,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,4165.45857399544,356302.573541729
+302,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1047.00589650372,43379.8576283951
+303,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,23428.3115578998,8624730.51791571
+304,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2797.00359133809,209977.029718243
+305,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,912.273036982441,48386.310103681
+306,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,4159.76764396274,791445.319590992
+307,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2822.65242445348,211245.929414945
+308,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,279.096420196014,4241.31497326852
+309,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,4066.20380714188,228889.720504903
+310,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,7154.98926511233,1473257.22278394
+311,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,12833.6177958192,3368561.06423778
+312,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,10927.6960774947,629400.676810712
+313,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,953.904642199706,47030.2623172147
+314,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1261.35283456036,26777.3499442537
+315,Trout,Wild Trout Management Area (Class 3),From Mill Road (downstream of Pages Millpond) in North Brandford to I-95 bridge (East Haven).,575,Farm River,0, ,4244.81043030319,72330.7144965966
+316,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1770.03308373299,132262.949415499
+317,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1316.76480937481,96907.0874070709
+318,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,6833.15674377688,294903.12737883
+319,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2397.23985702454,71342.5232625147
+320,Trout,Wild Trout Management Area (Class 3),From Mill Road (downstream of Pages Millpond) in North Brandford to I-95 bridge (East Haven).,575,Farm River,2141,Pages Millpond,2812.04196690256,186670.871908163
+321,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3771.05442634772,165920.654295026
+322,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1316.65816825563,95666.6548559384
+323,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,4198.77314544638,471509.422943944
+324,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1498.22589011907,100903.991939511
+325,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1782.16618339909,146172.150248528
+326,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3116.97856230104,352277.473892866
+327,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,7323.76522343633,2225712.13755989
+328,Bass and Walleye,Bass / Walleye Management Lake,Lake Housatonic,823,Housatonic River,1508,Lake Housatonic,4513.34645348283,440292.316244532
+329,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,982.742241431197,28948.7652022152
+330,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2313.50990979173,132022.787349524
+331,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1994.69342095505,113101.241150181
+332,Trout,Wild Trout Management Area (Class 3),From Mill Road (downstream of Pages Millpond) in North Brandford to I-95 bridge (East Haven).,575,Farm River,0, ,1198.43562580593,22517.3522232005
+333,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1938.40891573656,135073.375053862
+334,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1533.45502795844,79574.1333273605
+335,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2037.48639544677,196500.934806402
+336,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3996.74635829055,699826.314610691
+337,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,450.843077874726,13262.7825374144
+338,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,11020.7632743022,819461.874264334
+339,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,367.490365751989,7294.39835726377
+340,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,343.94098029571,5889.1181759059
+341,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,744.921766122199,36432.6101338048
+342,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,7445.57723806843,1862288.83838919
+343,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,304.040216483248,6479.60366397449
+344,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,452.068617604527,5845.65625372587
+345,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,474.27084116771,16290.9000283036
+346,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,662.571329972915,21425.5452539499
+347,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,828.321328031854,36266.7519019555
+348,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,714.796878068198,28443.4834100874
+349,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,347.27385678726,9151.76955634415
+350,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1073.51694376575,66048.9027568333
+351,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,484.16061634944,13706.4833844438
+352,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,728.430540164842,20224.3428724238
+353,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2747.83458259415,82424.4931140988
+354,Trout,Wild Trout Management Area (Class 3),From Mill Road (downstream of Pages Millpond) in North Brandford to I-95 bridge (East Haven).,575,Farm River,0, ,630.408277094484,11897.5756711467
+355,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2522.97032089451,165771.269502152
+356,Trout,Sea Run Trout Stream,From Route 80 to the mouth.  Minus from Lake Hammonasset Dam to Chestnut Hill Rd,735,Hammonasset River,0, ,59775.6154560187,2198912.60510273
+357,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,71875.0996896431,60357853.245503
+358,Bass and Walleye,Bass / Walleye Management Lake,Lake Saltonstall,0, ,1535,Lake Saltonstall,40533.0080597052,18006389.3892735
+359,Trout,Trout Park,Within Wolfe Park,1303,Pequonnock River,0, ,4048.51330335485,655847.415669646
+360,Bass,Bass Management Lake,Maltby Lake No 2,0, ,1754,Maltby Lake No 2,6810.67241048713,978167.636731843
+361,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,3345,Valley Pond,974.6550044081,52396.7164204453
+362,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,0, ,3343.24815704263,113477.119083689
+363,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,971.360977437117,48901.6020565078
+364,Bass,Bass Management Lake,Maltby Lake No 1,0, ,1753,Maltby Lake No 1,7313.3955620374,823106.587876786
+365,Bass,Bass Management Lake,Maltby Lake No 3,0, ,1755,Maltby Lake No 3,9305.21174832857,1037187.71124628
+366,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,49425.3981149802,6679604.05004736
+367,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,5729.13979231272,977197.217255285
+368,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,900,Field Pond,1164.50496650651,29460.4999247025
+369,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,455.717211498835,13416.5600050997
+370,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,2978,Twin Lakes,499.892149730533,16976.0225137919
+371,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,0, ,433.161783976939,7740.18978843452
+372,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,13076.9035790713,713256.349442899
+373,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,133.593301119931,1137.51310533034
+374,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1938.53038199389,132738.92057594
+375,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,751.704661162544,14726.2876107268
+376,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1592.92157739671,82718.6219738357
+377,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1484.41314170685,68974.0803819997
+378,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2134.51673597195,137702.92856758
+379,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,8093.70226614108,1082284.9394553
+380,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,4238.26737682644,713112.541284576
+381,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,0, ,1634.79535813344,55445.6015072883
+382,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,14071.7765093556,6415917.29716832
+383,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,838.100219716525,35396.0023411945
+384,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,690.881156494666,18435.0153040284
+385,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,497.158605035252,13409.9785131668
+386,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1158.10536036118,69599.8804746726
+387,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,6064.05185427847,172147.128021911
+388,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,1870,Millers Pond,2097.19485035279,95264.0336276406
+389,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,506.0482739866,19088.2166868118
+390,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1075.30048307492,30774.4818795793
+391,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,622.966616105181,12879.1765103618
+392,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,8243.66523882829,225045.654680613
+393,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1796.83450795431,173883.913634578
+394,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,937.282892617596,23322.7492298274
+395,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,10446.8820572343,893211.773501453
+396,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,265.364797386606,2900.78710711307
+397,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,475.519917565056,14798.5575515248
+398,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,7820.01432714115,975221.095585086
+399,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,12197.5682089228,2179116.72884875
+400,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,389.997985797254,11223.614994982
+401,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,361.751039089966,8944.75098668604
+402,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3449.65618464035,198394.473233797
+403,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,18242.5869197224,13754853.9272137
+404,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,651.48099269342,14101.9680223449
+405,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,525.220112946306,17118.1029106568
+406,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,3528.90811757177,76738.4342462541
+407,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2721.188442148,195672.247903686
+408,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,905.259911111666,14982.7515127737
+409,Trout,Sea Run Trout Stream,From Route 80 to the mouth.  Minus from Lake Hammonasset Dam to Chestnut Hill Rd,735,Hammonasset River,0, ,13545.802002324,911457.716203115
+410,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,44968.0719724117,1668155.0073563
+411,Trout,Sea Run Trout Stream,From Route 80 to the mouth.  Minus from Lake Hammonasset Dam to Chestnut Hill Rd,735,Hammonasset River,0, ,9128.45413070393,173162.860535294
+412,Trout,Sea Run Trout Stream,From Route 80 to the mouth.  Minus from Lake Hammonasset Dam to Chestnut Hill Rd,735,Hammonasset River,0, ,3564.89110893913,52482.7916863653
+413,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,2238.89294592772,210173.812191837
+414,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,1642.9549041987,23288.7117073342
+415,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,0, ,802.952123845169,14981.5658826682
+416,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,653.264967707515,8674.95088494636
+417,Trout,Sea Run Trout Stream,From Route 80 to the mouth.  Minus from Lake Hammonasset Dam to Chestnut Hill Rd,735,Hammonasset River,0, ,7496.70358395418,300405.508873056
+418,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,2256.36616280564,144841.586611023
+419,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,409.479578745536,7493.3729083011
+420,Trout,Sea Run Trout Stream,From Route 80 to the mouth.  Minus from Lake Hammonasset Dam to Chestnut Hill Rd,735,Hammonasset River,0, ,3058.52234926046,254584.462840096
+421,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,868,Factory Pond,4652.94220665486,522551.956040954
+422,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,953.691753564048,25892.3120511493
+423,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,286.652719463601,3000.54088604294
+424,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,841.908689953114,15799.3779219153
+425,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,700.869047736017,17329.8558324235
+426,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,231.150713084323,2647.41272651457
+427,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,3023.28929650987,97995.4896095827
+428,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,531.14523876573,13885.6505341626
+429,Trout,Trophy Trout Stream,Whitney Ave. (Trumbull) through Trumbull Basin State Park to Daniels Farm Road bridge.,1303,Pequonnock River,0, ,500.197610511768,9290.5849623762
+430,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,11471.8053436874,1309180.04017983
+431,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,2171.74642135772,62821.4405852864
+432,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,1390.02051650576,45136.767522269
+433,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,820.114669658888,19064.0627630378
+434,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,3710.14291965726,182190.825835584
+435,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,234.661939451143,3983.03923170944
+436,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,1972.7686128785,76260.4251606759
+437,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,594.36063147027,8521.55045210279
+438,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,505.833234595658,11889.824390703
+439,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,362.07647867416,7381.18465640418
+440,Trout,Sea Run Trout Stream,Downstream of I-95 bridge.,575,Farm River,0, ,1554.21033517695,52679.5744910967
+441,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,419,Cannon Pond,1285.99175077044,51410.3618260612
+442,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,0, ,758.62473391572,13723.9760723705
+443,Trout,Trout Management Area,From Merrit Parkway bridge downstream to Mohegan Park Pond.,1099,Mill River,0, ,468.782277756978,8115.8289010464
+444,Trout,Trout Management Area,From Merrit Parkway bridge downstream to Mohegan Park Pond.,1099,Mill River,0, ,294.524377772604,4729.00711617551
+445,Trout,Trout Management Area,From Merrit Parkway bridge downstream to Mohegan Park Pond.,1099,Mill River,0, ,243.135987666748,4321.89771831276
+446,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,0, ,453.411525848151,10090.6336048517
+447,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,0, ,2179.63612444343,29568.9957885869
+448,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,2790,Strong Pond,2787.74409073352,101116.715512874
+449,Trout,William 'Doc' Skerlick Trout Management,In Westport from Dorr's Mill Dam to the Merritt Parkway,1515,Saugatuck River,3015,Unnamed lake with dam,1306.61507972375,98332.1583174294
+450,Trout,William 'Doc' Skerlick Trout Management,In Westport from Dorr's Mill Dam to the Merritt Parkway,1515,Saugatuck River,2578,Shallow Pond,1358.2041381041,36395.5954560049
+451,Trout,William 'Doc' Skerlick Trout Management,In Westport from Dorr's Mill Dam to the Merritt Parkway,1515,Saugatuck River,3016,Unnamed lake with dam,5261.67756436341,138416.625071386
+452,Trout,William 'Doc' Skerlick Trout Management,In Westport from Dorr's Mill Dam to the Merritt Parkway,1515,Saugatuck River,0, ,1547.35034203662,30139.2860946832
+453,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,40188.2610619186,4698380.2796808
+454,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,1324,Hydraulic Pond,537.889868600675,12257.4729415849
+455,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,1324,Hydraulic Pond,423.232483530551,7715.3119501246
+456,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,1324,Hydraulic Pond,815.257731942527,19727.677619688
+457,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,740.167887104654,29686.9898884151
+458,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,1319.99720713471,87216.8289837633
+459,Trout,Sea Run Trout Stream,Entire river upstream of Mianus Pond Dam (just above Boston Post Road),1081,Mianus River,0, ,1357.77684870007,34543.5932309838
+460,Trout,Sea Run Trout Stream,Entire river upstream of Mianus Pond Dam (just above Boston Post Road),1081,Mianus River,0, ,6088.62678267443,121472.092157693
+461,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,2242.77349356468,358022.091493384
+462,Trout,Sea Run Trout Stream,Entire river upstream of Mianus Pond Dam (just above Boston Post Road),1081,Mianus River,3030,Upper Mianus River Dam,3749.86007266959,658176.132206104
+463,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,420.340011106397,7848.83180396247
+464,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,40929.0988196727,15161518.2060801
+465,Trout,Sea Run Trout Stream,Entire river upstream of Mianus Pond Dam (just above Boston Post Road),1081,Mianus River,0, ,17866.1597921285,366611.615858218
+466,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,2886.23984881828,132149.133448257
+467,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,1684.42575947443,81037.7445083542
+468,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,2653.68686245472,256108.830613699
+469,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,1367.68522417825,76353.8706771778
+470,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,15291.6143306862,1163176.92571107
+471,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,1446.30049425424,132542.635319995
+472,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,1439.93279348062,34882.9999839225
+473,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,3461.88846314629,493743.979242398
+474,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,156.54612545871,1396.21299102967
+475,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,7621.67210106578,623138.023539618
+476,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,5359.75034842951,899698.877197385
+477,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,1923.96593056086,96314.8963917304
+478,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,129.485986891476,1068.21207798072
+479,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,266.420313407029,3473.32757514742
+480,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,851.606436879293,31904.2323797516
+481,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,661.757228946067,14470.1905593347
+482,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,1337.67916507764,55723.4927652188
+483,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,473.52318013246,8411.82578795208
+484,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,3250.43420992364,98542.6585615693
+485,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,122.449065485448,700.584672792648
+486,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,229.556223888088,2700.65697642097
+487,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,113.0812451943,887.197161421077
+488,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,124.972554072125,1105.78371666673
+489,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,121.451136942503,972.573250290428
+490,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,1333.81669820098,65893.3280223902
+491,Trout,Sea Run Trout/TMA,From Merrybrook Road upstream approximately 1 mile to dam as indicated by signs.,1081,Mianus River,0, ,345.136701939351,5401.75727855012
+492,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,716.945235086308,25332.1936143331
+493,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,745.22132647714,25291.1571095681
+494,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,4962.77806872771,798050.630334604
+495,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,1270.29650214169,30107.9776665956
+496,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,4099.22684529871,460927.56761467
+497,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,1313.59239146327,43268.5110407988
+498,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,1255.7723782274,47819.8105958652
+499,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,3581.37029208125,678357.066780304
+500,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,512.335256083203,18538.6578632352
+501,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,2660.43594312563,52719.6065929901
+502,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,0, ,2415.43614535756,310361.353688139
+503,Trout,Sea Run Trout Stream,Entire river upstream of Mianus Pond Dam (just above Boston Post Road),1081,Mianus River,1834,Mianus Pond,14280.4602849462,2246941.75917925
+504,Trout,Farmington River Trout Management Area,Avon-Burlington-Avon. From base of Lower Collinsville Dam downstream about 3 miles to Rt 4 bridge.,577,Farmington River,0, ,29813.6419561596,2165106.2457043
+505,Trout,Trophy Trout Stream,From Goodwin dam (Hartland) downstream to Route 177 Bridge in Unionville,1866,West Branch Farmington River,0, ,61221.9511768825,3409318.55168003
+506,Trout,West Branch-Farmington River Trout Management Area,Barkhamsted-New Hartford. About 1 mile upstream of Rt. 318 bridge downstream to Rt. 219 bridge.,1866,West Branch Farmington River,0, ,54642.3372540424,3317549.27059094
+507,Bass,Bass Management Area (Stanley Tract Area),From Dawn Hill Road (Sharon) to Skiff Mountain Road in Kent (approximately 6 miles).,823,Housatonic River,0, ,47914.8160618691,4315953.36362857
+508,Trout and Bass,Bull's Bridge Trout Management Area / Bass Management Area,From Bull's Bridge Impoundment Dam (Kent) to Gaylordsville Bridge (Rt 7) New Milford plus Ten Mile R,823,Housatonic River,0, ,38836.9121266283,2761207.99876879
+509,Trout and Bass,Bull's Bridge Trout Management Area / Bass Management Area,From Bull's Bridge Impoundment Dam (Kent) to Gaylordsville Bridge (Rt 7) New Milford plus Ten Mile R,1734,Tenmile River,0, ,6682.25660824571,264220.378042255
+510,Trout,Sea Run Trout/TMA,From Merrybrook Road upstream approximately 1 mile to dam as indicated by signs.,1081,Mianus River,0, ,5233.92402377157,98461.477432423
+511,Trout,Sea Run Trout Stream,Entire river upstream of Mianus Pond Dam (just above Boston Post Road),1081,Mianus River,0, ,7957.36355290873,154067.313234315
+512,Bass and Northern Pike,Bass / Northern Pike Management Lake,Mansfield Hollow Dam,1181,Natchaug River,1763,Mansfield Hollow Dam,41766.3200103534,14339912.9170069
+513,Bass and Northern Pike,Bass / Northern Pike Management Lake,Mansfield Hollow Dam,1181,Natchaug River,1763,Mansfield Hollow Dam,17967.0784296367,4368809.97978398
+514,Trout,Trophy Trout Stream,Entire river in Eastford-Chaplin-Windham,1181,Natchaug River,0, ,961.351385681696,31421.5627607535
+515,Trout,Trout Park Trophy Trout Stream,Within Natchaug State Forest (Eastford),1181,Natchaug River,0, ,5507.43284653776,228474.34061464
+516,Trout,Wild Trout Management Area (Class 3),Entire stream in Wilton and Ridgefield upstream of Wolf Pit Road,1237,Norwalk River,0, ,19486.4144982455,365501.125542297
+517,Trout,Trout Management Area,From King St. Bristol - Rt 177 Plainville.  Also Coppermine Bk. from Pequabuck R. - Artisan St.,1302,Pequabuck River,0, ,33742.8158895407,981436.176947011
+518,Trout,Trophy Trout Stream,Whitney Ave. (Trumbull) through Trumbull Basin State Park to Daniels Farm Road bridge.,1303,Pequonnock River,0, ,11770.6743427291,246132.118673106
+519,Trout,Deep Brook Wild Trout Management Area (Class 1),"About 1 mile of Pootatuck R., 1/2 mile up/downstream of Confluence with Deep Brook.",1368,Pootatuck River,0, ,13356.0359103421,226634.535268365
+520,Trout,Wild Trout Management Area (Class 3),From East Street below the gorge in N. Granby to the confluence of the Farmington River.,517,East Branch Salmon Brook,0, ,11382.0311882729,210526.795670699
+521,Trout,Trout Management Area/Trout Park,From confluence of Blackledge and Jeremy Rivers downstream to Rte. 16,1500,Salmon River,0, ,1335.60068440908,26853.1485712026
+522,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,1928.48950598236,37059.0512194005
+523,Trout,Trophy Trout Stream,"Entire river in Colchester, East Haddam and East Hampton",1500,Salmon River,0, ,28308.8168808065,2937597.7946592
+524,Trout,Trout Management Area/Trout Park,From confluence of Blackledge and Jeremy Rivers downstream to Rte. 16,1500,Salmon River,0, ,5083.01823555877,143433.928365438
+525,Trout,William 'Doc' Skerlick Trout Management,In Westport from Dorr's Mill Dam to the Merritt Parkway,1515,Saugatuck River,1596,Lee Pond,8057.02902256539,315402.126090698
+526,Trout,Sea Run Trout Stream,Tidal area downstream of Wood Dam (Westport),1515,Saugatuck River,1324,Hydraulic Pond,4540.64363035802,129078.670435245
+527,Trout,Cole Wilde Trout Management Area,In Tolland and Willington from mouth of Roaring Brook downstream to Route 74 bridge.,1930,Willimantic River,0, ,28482.2364493333,1016253.67928002
+528,Trout,Trout Management Area,From Barstow Rd. (Lebanon) downstream to bridge at intersection of Fitchville and Schwartz Rd.,1970,Yantic River,0, ,226.985623313731,3242.64774572821
+529,Trout,Trout Management Area,From Barstow Rd. (Lebanon) downstream to bridge at intersection of Fitchville and Schwartz Rd.,1970,Yantic River,0, ,22540.2013450355,667991.768690976
+530,Trout,Trout Management Area,From I-84 in Vernon downstream to I-84 at Laurel Marsh on Manchester/East Hartford line.,796,Hockanum River,0, ,1357.79224795451,86363.8051503297
+531,Trout,Housatonic River Trout Management Area,From bridge crossing at Rt. 112 & 7 (Salisbury/Canaan) to bridge at Rtes. 4/7 (Cornwall/Sharon).,823,Housatonic River,0, ,101231.927609551,8696866.71504221
+532,Trout,Sea Run Trout Stream,Entire river upstream of Mianus Pond Dam (just above Boston Post Road),1081,Mianus River,2430,Riverbank Pond,842.230837376491,18069.3965713525
+533,Trout,Sea Run Trout/TMA,From Merrybrook Road upstream approximately 1 mile to dam as indicated by signs.,1081,Mianus River,2430,Riverbank Pond,687.478078849873,20887.7044353307
+534,Trout,Sea Run Trout/TMA,From Merrybrook Road upstream approximately 1 mile to dam as indicated by signs.,1081,Mianus River,0, ,6257.77201300985,132125.671537603
+535,Trout,Sea Run Trout Stream,Entire river upstream of Mianus Pond Dam (just above Boston Post Road),1081,Mianus River,0, ,24529.441854405,651573.225618729
+536,Trout,Trout Management Area,From Rte. 14 bridge to confluence with Quinebaug River.,1133,Moosup River,0, ,30769.5898263092,1205483.9624181
+537,Atlantic Salmon,Atlantic Salmon Broodstock Fishing,"From Bogue Road, Torrington, downstream to the Thomaston Dam (Upper Section).",1182,Naugatuck River,0, ,26233.9334777826,1023518.51022012
+538,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,20095.860844393,1105663.00830383
+539,Atlantic Salmon,Atlantic Salmon Broodstock Fishing,"From Prospect Street, Naugatuck, downstream to Pines Bridge Road, Beacon Falls (Lower section).",1182,Naugatuck River,0, ,7911.66321395932,652999.71219246
+540,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,15787.8431715175,1401908.00539871
+541,Trout,Trophy Trout Stream,From the confluence of the East and West Branches to the Kinneytown Dam (Seymour).,1182,Naugatuck River,0, ,34158.8483685148,2142337.39574642
+542,Atlantic Salmon,Atlantic Salmon Broodstock Fishing,"From Prospect Street, Naugatuck, downstream to Pines Bridge Road, Beacon Falls (Lower section).",1182,Naugatuck River,0, ,64230.538459055,3750880.55773161
+543,Trout,Trophy Trout Stream,"Entire river in Windham, Scotland, Sprague, and Norwich",1567,Shetucket River,0, ,78627.5323976233,8677121.77712707
+544,Atlantic Salmon,Atlantic Salmon Broodstock Fishing,"From Scotland Dam, Scotland, downstream to the Occum Dam, Norwich.",1567,Shetucket River,0, ,1359.19208119262,101373.462825518
+545,Trout,Trophy Trout Stream,"Entire river in Windham, Scotland, Sprague, and Norwich",1567,Shetucket River,2837,Taftville Pond,27379.922037792,5066301.17907513
+546,Atlantic Salmon,Atlantic Salmon Broodstock Fishing,"From Scotland Dam, Scotland, downstream to the Occum Dam, Norwich.",1567,Shetucket River,2837,Taftville Pond,1591.75339004233,109915.808369071
+547,Trout,Trophy Trout Stream,"Entire river in Windham, Scotland, Sprague, and Norwich",1567,Shetucket River,2837,Taftville Pond,423.353485773479,11821.0552330653
+548,Atlantic Salmon,Atlantic Salmon Broodstock Fishing,"From Scotland Dam, Scotland, downstream to the Occum Dam, Norwich.",1567,Shetucket River,2837,Taftville Pond,453.435436027014,12314.9044464762
+549,Trout,Sea Run Trout Stream,Entire river in E. Haddam/Lyme upstream of Joshuatown Rd.,549,Eightmile River,0, ,1602.38046151255,44928.3694834117
+550,Trout,Sea Run Trout Stream,Entire river upstream of Mianus Pond Dam (just above Boston Post Road),1081,Mianus River,116,Bargh Reservoir,43073.5727537914,6727579.33746722
+551,Trout,Sea Run Trout Stream,Entire river upstream of Mianus Pond Dam (just above Boston Post Road),1081,Mianus River,116,Bargh Reservoir,18284.3933825606,288398.452714583
+552,Northern Pike,Northern Pike Management Area, ,374,Connecticut River,0, ,36040.4618640949,18061284.0193015

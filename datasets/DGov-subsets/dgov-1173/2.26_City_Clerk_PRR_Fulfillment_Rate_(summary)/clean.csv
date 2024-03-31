@@ -1,0 +1,5 @@
+﻿Year,Data_Type,Total_PRR,PRR_Responded_to_within_3_Busin,Percent_Compliant,Date,FID
+2020,PRR Fulfillment Rate,13,10,76.92,2020/12/31 00:00:00+00,1
+2021,PRR Fulfillment Rate,11,11,100,2021/12/31 00:00:00+00,2
+2022,PRR Fulfillment Rate,20,20,100,2022/12/31 00:00:00+00,3
+2023,Target,,,90,2023/01/01 00:00:00+00,4

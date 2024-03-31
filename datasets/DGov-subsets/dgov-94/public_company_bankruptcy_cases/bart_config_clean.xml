@@ -1,0 +1,159 @@
+<task>
+    <!-- ****************************************************
+                      DATABASES
+    **************************************************** -->
+    <target> 
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql://localhost:5433/bartdb</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>postgres</password>
+        </access-configuration>
+        <import>
+            <input type="csv" separator="," table="clean">/home/fatemeh/ED-Scale/Sandbox_Generation/metanome_input_files/processed/public_company_bankruptcy_cases/clean.csv</input>
+        </import>
+    </target>
+
+    <!-- ****************************************************
+                    DEPENDENCIES
+    **************************************************** -->
+    <dependencies><![CDATA[DCs: 
+
+            e1: clean(district: $district1, state: $state1, companyname: $companyname1, assetsmillions: $assetsmillions1, liabilitiesmillions: $liabilitiesmillions1),
+            clean(district: $district2, state: $state2, companyname: $companyname2, assetsmillions: $assetsmillions2, liabilitiesmillions: $liabilitiesmillions2),
+                $companyname1 == $companyname2, $liabilitiesmillions1 != $liabilitiesmillions2 -> #fail. 
+
+        
+            e2: clean(district: $district1, state: $state1, companyname: $companyname1, assetsmillions: $assetsmillions1, liabilitiesmillions: $liabilitiesmillions1),
+            clean(district: $district2, state: $state2, companyname: $companyname2, assetsmillions: $assetsmillions2, liabilitiesmillions: $liabilitiesmillions2),
+                $companyname1 == $companyname2, $assetsmillions1 != $assetsmillions2 -> #fail. 
+
+        
+            e3: clean(district: $district1, state: $state1, companyname: $companyname1, assetsmillions: $assetsmillions1, liabilitiesmillions: $liabilitiesmillions1),
+            clean(district: $district2, state: $state2, companyname: $companyname2, assetsmillions: $assetsmillions2, liabilitiesmillions: $liabilitiesmillions2),
+                $companyname1 == $companyname2, $state1 != $state2 -> #fail. 
+
+        
+            e4: clean(district: $district1, state: $state1, companyname: $companyname1, assetsmillions: $assetsmillions1, liabilitiesmillions: $liabilitiesmillions1),
+            clean(district: $district2, state: $state2, companyname: $companyname2, assetsmillions: $assetsmillions2, liabilitiesmillions: $liabilitiesmillions2),
+                $companyname1 == $companyname2, $district1 != $district2 -> #fail. 
+
+        ]]></dependencies>
+
+    <!-- ****************************************************
+                      CONFIGURATION
+    **************************************************** -->
+    <configuration>
+        <!-- To print extra information in the ouput (default = false) -->
+        <printLog>true</printLog>
+
+        <!-- To load DB every time on start (default = false) -->
+        <recreateDBOnStart>true</recreateDBOnStart>
+
+        <!-- To apply the changes (default = false) -->
+        <applyCellChanges>true</applyCellChanges>
+
+        <!-- To  apply cell changes on a copy of the original target, with a custom suffix (default = true) -->
+        <cloneTargetSchema>true</cloneTargetSchema>
+        <cloneSuffix>_dirty</cloneSuffix>
+
+        <!-- To export the dirty db -->
+        <exportDirtyDB>true</exportDirtyDB>
+        <exportDirtyDBPath>./</exportDirtyDBPath>
+        <exportDirtyDBType>CSV</exportDirtyDBType>
+
+        <!-- To export the changes -->
+        <exportCellChanges>true</exportCellChanges>
+        <exportCellChangesPath>clean_changes.csv</exportCellChangesPath>
+
+        <!-- To compute an estimate of the reparability (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To generate all possible changes (default = false - slow, only for toy examples)-->
+        <generateAllChanges>false</generateAllChanges>
+
+        <!-- To avoid interactions among changes. (default = true) -->
+        <avoidInteractions>true</avoidInteractions>
+
+        <!-- To check, at the end of the process, if changes are detectable. (default = false) -->
+        <checkChanges>true</checkChanges>
+
+        <!-- To compute an estimate of the repairability. Requires checkChanges = true. (default = false) -->
+        <estimateRepairability>true</estimateRepairability>
+
+        <!-- To use an optimized strategy for updates. (default = true) -->
+        <useDeltaDBForChanges>true</useDeltaDBForChanges>
+
+        <!-- Error percentages for dependencies and comparisons 
+        All percentages are wrt table sizes (# tuples) -->
+        <errorPercentages>
+            <defaultPercentage>0.0</defaultPercentage>
+            <vioGenQueries>
+            <vioGenQuery id="e1"><comparison>(companyname1 == companyname2)</comparison><percentage>1.550387596899225</percentage></vioGenQuery><vioGenQuery id="e1"><comparison>(liabilitiesmillions1 != liabilitiesmillions2)</comparison><percentage>1.550387596899225</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(companyname1 == companyname2)</comparison><percentage>1.550387596899225</percentage></vioGenQuery><vioGenQuery id="e2"><comparison>(assetsmillions1 != assetsmillions2)</comparison><percentage>1.550387596899225</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(companyname1 == companyname2)</comparison><percentage>0.7751937984496124</percentage></vioGenQuery><vioGenQuery id="e3"><comparison>(state1 != state2)</comparison><percentage>0.7751937984496124</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(companyname1 == companyname2)</comparison><percentage>0.7751937984496124</percentage></vioGenQuery><vioGenQuery id="e4"><comparison>(district1 != district2)</comparison><percentage>0.7751937984496124</percentage></vioGenQuery></vioGenQueries>
+        </errorPercentages>
+
+        <!-- To control the way in which changing the value -->
+        <dirtyStrategies>
+            <defaultStrategy>
+                <strategy> TypoRandom </strategy>
+            </defaultStrategy> 
+            <!-- possible strategies
+                <strategy chars="*" charsToAdd="3">TypoAddString</strategy>
+                <strategy chars="*" charsToAdd="3">TypoAppendString</strategy>
+                <strategy charsToRemove="3">TypoRemoveString</strategy>
+                <strategy charsToSwitch="3">TypoSwitchValue</strategy>
+                <strategy>TypoActiveDomain</strategy>
+                <strategy>TypoRandom</strategy>
+            -->
+        </dirtyStrategies>
+
+        <randomErrors>
+            <tables>
+                <table name="clean"> 
+                    <percentage>5</percentage> <!-- Percentage is wrt attributes to dirty in the table -->
+                    <attributes>
+                    <atrribute>district</atrribute><atrribute>state</atrribute><atrribute>companyname</atrribute></attributes>
+                </table>
+            </tables>
+        </randomErrors>
+    
+        <outlierErrors>
+            <tables>
+                <table name="clean">
+                    <attributes>
+                    <atrribute percentage="2" detectable="true">assetsmillions</atrribute><atrribute percentage="2" detectable="true">liabilitiesmillions</atrribute></attributes>
+                </table>
+            </tables>
+        </outlierErrors>
+        
+        <!-- The following parameters are used to control the sampling process.
+            All the fields are optional, but they may be crucial to obtain a good random sample.
+            In order to choose the cells to modify, BART will scan the result of a viogen query
+            using the following sampling algorithm:
+            1) First, a number of tuples are skipped. This is a random number choosed btw 
+                0 and (offsetFactor * tableSize)
+            2) Then BART will scan the result and will pickup tuples 
+            with a probability p = probabilityFactor.
+            
+            BART uses three kinds of queries
+            - Symmetric queries: for symmetric viogen queries (see paper)
+            - Inequality queries: for viogen queries without equalities (i.e. inequalities only)
+            - Standard queries: for all other viogen queries
+        -->
+        <vioGenQueriesConfiguration>
+            <!-- STANDARD QUERIES -->
+            <probabilityFactorForStandardQueries>0.25</probabilityFactorForStandardQueries>
+            <offsetFactorForStandardQueries>0.05</offsetFactorForStandardQueries>
+            <!-- SYMMETRIC QUERIES -->
+            <probabilityFactorForSymmetricQueries>0.25</probabilityFactorForSymmetricQueries>
+            <offsetFactorForSymmetricQueries>0.05</offsetFactorForSymmetricQueries>
+            <!-- INEQUALITY QUERIES -->
+            <probabilityFactorForInequalityQueries>0.05</probabilityFactorForInequalityQueries>
+            <offsetFactorForInequalityQueries>0.05</offsetFactorForInequalityQueries>
+            <windowSizeFactorForInequalityQueries>1.5</windowSizeFactorForInequalityQueries>
+        </vioGenQueriesConfiguration>
+
+    </configuration>
+</task>
