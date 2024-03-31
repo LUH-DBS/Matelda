@@ -1,5 +1,0 @@
-﻿OBJECTID,AREA_NAME,FROM_DEPTH,TO_DEPTH,LOCATION,CNTRCOORDX,CNTRCOORDY,DSP_METHOD,SITESIZE,AREA_SQKM,AV_LEGEND,LENGTH_KM,SHAPE_Length,SHAPE_Area
-1,Western Long Island Sound Disposal Site,24,36,"5.13 km S of Long Neck Point, Noroton, CT",-73.482,40.992,unconfined,2.22 km  by 2.41 km,5.3,WLIS,9.22,30226.6396778524,57061721.2861561
-2,Cornfield Shoals Disposal Site,49,58,"6.12 km SE of Cornfield Point, Old Saybrook, CT",-72.359,41.211,unconfined,1.85 km  by 1.85 km,3.34,CSDS,7.32,24000.2328399411,36000698.5195443
-3,Central  Long Island Sound Disposal Site,17,24,"10.37 km S of South End Point, East Haven, CT",-72.883,41.149,"confined , unconfined",2.04 km by 4.07 km,8.24,CLIS,12.19,39962.6595758498,88716925.2617705
-4,New London Disposal Site,14,24,"5.38 km S of Eastern Point, Groton, CT",-72.077,41.272,"confined , unconfined",1.85 km  by 1.85 km,3.34,NLIS,7.32,24000.1052172185,36000315.6492146

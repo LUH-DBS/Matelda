@@ -1,7 +1,0 @@
-field,description,notes
-OBJECTID,unique id for geographic feature,
-Layer,identifies the type of green infrastructure opportunity,
-BreakdownN,Street name and identifies potential green infrastructure practice,
-GI_Intent,Identifies if the intend is to detain and slowly release stormwater back into combined sewer system or remove it completely,
-Shape_Leng,length of geographic feature,used internally by GIS software
-Shape_Area,area of geographic feature,used by GIS software

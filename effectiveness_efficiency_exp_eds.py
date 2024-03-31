@@ -15,12 +15,11 @@ def save_config(config, file_path):
     with open(file_path, 'w') as configfile:
         config.write(configfile)
 
-config_file_path = '/home/fatemeh/VLDB-Jan/ED-Scale/config-sample.ini'
+config_file_path = './config.ini'
 config = read_config(config_file_path)
-datasets_info = pandas.read_csv("/home/fatemeh/VLDB-Jan/ED-Scale/datasets/datasets_info.csv")
-dataset_names = ["Quintet", "DGov-84", "DGov-141"]
-# labeling_budget_fractions = [0.10, 0.25, 0.5, 0.75, 1, 2, 3, 5, 10, 15, 20]
-labeling_budget_fractions = [0.10, 0.25, 0.5]
+datasets_info = pandas.read_csv("./datasets/datasets_info.csv")
+dataset_names = ["Quintet", "DGov-NTR", "DGov-NT"]
+labeling_budget_fractions = [0.10, 0.25, 0.5, 0.75, 1, 2, 3, 5, 10, 15, 20]
 execution_times = 5
 for exec in range(execution_times):
     for dataset_name in dataset_names:
