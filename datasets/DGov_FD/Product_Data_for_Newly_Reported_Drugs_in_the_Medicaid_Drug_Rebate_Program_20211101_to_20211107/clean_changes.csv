@@ -1,0 +1,35 @@
+4.tec_code,PA,AP
+12.market_date,09/07/2a021,09/07/2021
+3.ndc_one,143.0,264
+12.fda_application_number_otc_monograph_number,206201,206141
+9.tec_code,AqP,AP
+2.fda_approval_date,09/08/2020,04/26/2021
+2.ndc_one_one,1.43942801E8,264420452
+4.ndc_one_one,1.43942801E8,264420654
+7.ndc_one,60555,60505
+9.fda_application_number_otc_monograph_number,209384,209307
+12.upps,59.0,1.0
+22.tec_code,BA,AB
+3.fda_approval_date,09/08/2020,04/26/2021
+7.unit_type,fML ,ML 
+2.fda_name_product_name,FOSAPREPITANT 150mg/10mL NOVA+ x 1,MAGNESIUM SULFATE IN WATER FOR INJECTION
+3.fda_name_product_name,FOSAPREPITANT 150mg/10mL NOVA+ x 1,MAGNESIUM SULFATE IN WATER FOR INJECTION
+3.ndc_one_one,1.43942801E8,264420552
+9.unit_type,mML ,ML 
+20.unit_type,xTAB,TAB
+22.unit_type,ATB,TAB
+3.ndc_two,9428.0,4205
+12.unit_type,AE ,EA 
+12.ndc_one,70625,70594
+15.tec_code,P,AP
+21.tec_code,B,AB
+12.tec_code,RN,NR
+22.fda_approval_date,12/29/200,12/29/2020
+15.fda_approval_date,07/012/021,07/01/2021
+13.ndc_one,70728,70700
+7.fda_application_number_otc_monograph_number,208367,208366
+19.tec_code,AbB,AB
+2.ndc_two,9428.0,4204
+15.unit_type,M L,ML 
+2.ndc_one,143.0,264
+19.ndc_one,72978,72888

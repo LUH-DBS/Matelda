@@ -1,0 +1,55 @@
+object_id(long),x(double precision),y(double precision),building_name,parcel_id,address,status_one,units(long),city_one,tenure,state_one,zip_one(long),est_delivery
+1,13479650.709765,306394.701267,Albert Apartments,02000365.,1214 Griswold,Active,218,Detroit,Renter Occupied,MI,48226,Before 2010
+2,13479650.709765,306394.701267,Albert Apartments,02001996.,1214 Griswold,Active,127,Detroit,Renter Occupied,MI,48226,2016
+3,13479650.709765,306394.701267,Albert Apartments,01004043-9,1214 Griswold,Active,67,Detroit,Renter Occupied,MI,48226,2015
+4,13479299.166425,306394.701267,Albert Apartments,02000259.001,1214 Griswold,Active,67,Detroit,Owner Occupied,MI,48226,Before 2010
+5,13479299.166425,306394.701267,Briggs Houze,02001996.,1214 Griswold,Active,116,Detroit,Renter Occupied,MI,48226,2015
+6,13480359.996934,306974.453394,Broadway Lofts,01004033.,1323 Broadway,Active,18,Detroit,Renter Occupied,MI,48226,Before 2010
+7,13479403.502759,307432.418548,Broderick Tower,01004138.,10 Witherell,Active,124,Detroit,Renter Occupied,MI,48226,2012
+8,13479557.736756,306096.921359,Capitol Park Lofts,02000267.,1145 Griswold,Active,63,Detroit,Renter Occupied,MI,48226,2017
+9,13479223.221873,307037.284852,Claridge House,02000290.,1514 Washington,Active,44,Detroit,Renter Occupied,MI,48226,Before 2010
+10,13479549.769967,306597.81562,Clark Lofts,02000332.,35 W Grand River,Active,4,Detroit,Renter Occupied,MI,48226,Before 2010
+11,13479258.150828,307414.290947,David Whitney Building,02001867.,1 Park Avenue,Active,108,Detroit,Renter Occupied,MI,48226,2014
+12,13478888.343303,306765.211034,Detroit City Apartments,02000294-7,1431 Washington,Active,351,Detroit,Renter Occupied,MI,48226,Before 2010
+13,13479713.42296,306288.589731,Detroit Savings Bank,02001995.,1212 Griswold,Active,56,Detroit,Renter Occupied,MI,48226,2013
+14,13477937.402355,306228.895396,Detroit Town Residences,04003165-89,1511 1st,Active,257,Detroit,Renter Occupied,MI,48226,Before 2010
+15,13479656.088779,307366.790767,Eureka Lofts,01004021.,1521 Broadway,Active,16,Detroit,Renter Occupied,MI,48226,Before 2010
+16,13478628.30932,304966.074657,Fort Shelby Tower Apartments,04000118.005,525 W Lafayette,Active,56,Detroit,Renter Occupied,MI,48226,Before 2010
+17,13478981.447289,307831.527374,Fyfe Building Apartments,02000388.,10 W Adams,Active,65,Detroit,Renter Occupied,MI,48226,Before 2010
+18,13481498.397145,306646.768459,Greektown Lofts,01000152.,743 Beaubien,Active,51,Detroit,Renter Occupied,MI,48226,Before 2010
+19,13479779.488908,305927.273183,The Griswold,02000261-0,1117 Griswold,Active,80,Detroit,Owner Occupied,MI,48226,2017
+20,13479212.627887,307154.717749,Himelhoch Apartments (Senior),02001868.,1545 Woodward,Proposed,72,Detroit,Renter Occupied,MI,48226,2018
+21,13479229.305372,306652.013951,Industrial-Stevens Apartments (Seniors),02000286.,1410 Washington,Active,38,Detroit,Renter Occupied,MI,48226,2017
+22,13478316.454728,308109.082849,Iodent Lofts,02000453.,2233 Park,Active,11,Detroit,Renter Occupied,MI,48226,Before 2010
+23,13478685.632057,307654.981279,Kales Building,02000383.,76 W Adams,Active,117,Detroit,Renter Occupied,MI,48226,Before 2010
+25,13480182.004991,306933.710227,Library Lofts,01004000.,1250 Library St,Active,4,Detroit,Renter Occupied,MI,48226,Before 2010
+26,13479714.909501,306513.164187,Lofts at Merchants Row,02001873.001,1247 Woodward,Active,157,Detroit,Renter Occupied,MI,48226,Before 2010
+27,13479605.058079,306909.492589,Lofts at Woodward Center,01004125.003,1448 Woodward,Active,61,Detroit,Renter Occupied,MI,48226,Before 2010
+28,13479358.099051,306293.982733,Malcomson Building,02002008.,1215 Griswold,Active,25,Detroit,Renter Occupied,MI,48226,2016
+29,13480906.929449,306001.294449,New Cadillac Square Apartments,01000232.,111 Cadillac Square,Active,224,Detroit,Renter Occupied,MI,48226,Before 2010
+30,13478155.6492782,308375.673884511,Park Avenue House,02000469.,2305 Park Avenue,Active,150,Detroit,Renter Occupied,MI,48226,Before 2010
+31,13481520.568091,305790.145909,Renaissance City Apartments,01003906.,555 Brush St,Active,339,Detroit,Renter Occupied,MI,48226,Before 2010
+32,13478044.95204,303514.232438,Riverfront Towers Apartments Tower 1,04000041-63,801 W JEFFERSON,Active,275,Detroit,Renter Occupied,MI,48226,Before 2010
+33,13477857.16521,303457.134238,Riverfront Towers Apartments Tower 2,06000001.001,931 W JEFFERSON,Active,280,Detroit,Renter Occupied,MI,48226,Before 2010
+34,13477928.289822,303281.783401,Riverfront Towers Condo,06000001.003L,1003 W Jefferson,Active,295,Detroit,Owner Occupied,MI,48226,Before 2010
+35,13479865.182357,305672.175111,Security Trust Lofts,02002013.,735 Griswold,Active,20,Detroit,Renter Occupied,MI,48226,2013
+36,13480603.310196,305469.166303,Vinton Building,01004098.,600 Woodward,Active,21,Detroit,Renter Occupied,MI,48226,2018
+37,13479233.206747,306226.066009,Washington Boulevard Apartments,02000280.001,234 State St,Active,114,Detroit,Renter Occupied,MI,48226,Before 2010
+38,13478691.569318,306923.284096,Philip Houze,02000318-21,415 Clifford St,Under Renovation,108,Detroit,Renter Occupied,MI,48226,2018
+39,13478954.180904,305748.714788,The Gabriel Houze,02000232.,305 Michigan Ave,Under Renovation,130,Detroit,Renter Occupied,MI,48226,2018
+40,13479573.213819,306750.613942,The Elliott Building,02001877.,1403 Woodward Ave.,Under Renovation,23,Detroit,Renter Occupied,MI,48226,2018
+41,13481068.827587,305999.408615,Lawyers Building Apartments,01000236.,139 Cadillac Sq,Under Renovation,45,Detroit,Renter Occupied,MI,48226,2018
+42,13478919.975209,306526.075092,Book Tower - Residential,02000298.,1265 Washington Blvd,Under Renovation,95,Detroit,Renter Occupied,MI,48226,2019
+43,13479353.200715,306442.368483,Farwell Building,02002006.,1249 Griswold St,Under Renovation,82,Detroit,Renter Occupied,MI,48226,2018
+44,13479927.448258,306375.294889,Hudson's Tower,01004110-4,1206 Woodward Ave,Under Construction,330,Detroit,Renter Occupied,MI,48226,2022
+45,13480429.598261,306139.262992,Monroe Residential Tower,01000162-5.,32 Monroe St,Proposed,241,Detroit,Renter Occupied,MI,48226,2020
+46,13480497.148966,306261.210077,Monroe Block Residential Apts,01000167-9,76 Monroe St,Proposed,241,Detroit,Renter Occupied,MI,48226,2022
+47,13478039.121559,305132.30509,The Ashton Detroit,04000180-002L,659 Howard St,Proposed,83,Detroit,Renter Occupied,MI,48226,2019
+48,13478146.854534,306575.629414,The Leland,02002293-6,400 Bagley St,Proposed,339,Detroit,Renter Occupied,MI,48226,2020
+49,13479024.412225,307345.801455,City Club Apartments - CBD Detroit,02000291,1570 Washington Blvd,Proposed,235,Detroit,Renter Occupied,MI,48226,2019
+50,13478614.18019,307220.079759,United Artists Theater Building,02000327.,150 Bagley St,Proposed,148,Detroit,Renter Occupied,MI,48226,2019
+51,13480403.258912,307575.811855,Hastings Place,01003936.,1468 Randolph St,Proposed,60,Detroit,Renter Occupied,MI,48226,2020
+52,13480348.418839,307103.212298,Harvard Centre Square,01004008.,1346 Broadway St,Proposed,80,Detroit,Renter Occupied,MI,48226,2019
+53,13480439.132017,307173.588804,1326 Broadway St,01004005.,1326 Broadway St,Proposed,30,Detroit,Renter Occupied,MI,48226,2019
+54,13478946.664273,305956.684242,Gateway Center Building Redevelopment,02000303.001,1101 Washington Blvd,Proposed,200,Detroit,Renter Occupied,MI,48226,2019
+55,13479748.6815248,306148.198069829,David Stott Building,02001994.,1150 GRISWOLD,Under Renovation,107,Detroit,Renter Occupied,MI,48226,2018

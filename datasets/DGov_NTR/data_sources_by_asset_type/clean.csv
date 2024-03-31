@@ -1,0 +1,44 @@
+assettype,countvalue,concatdatasourcename,concatdatasourceurl
+restaurants,9789,WPRDC Dataset: Allegheny County Restaurant/Food Facility Inspections and Locations: Geocoded Food Facilities,https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/112a3821-334d-4f3f-ab40-4de1220b1a0a
+community_nonprofit_orgs,9500,IRS: Exempt Organizations Business Master File Extract|WPRDC Dataset: Pittsburgh Fish Fries (2020),https://data.wprdc.org/dataset/pittsburgh-fish-fry-map|https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf
+bus_stops,6752,WPRDC Dataset: Port Authority Bus Stop Usage,https://data.wprdc.org/dataset/port-authority-transit-stop-usage
+polling_places,1323,WPRDC Dataset: Allegheny County Polling Place Locations (May 2018),https://data.wprdc.org/dataset/allegheny-county-polling-place-locations-may-2018
+faith-based_facilities,1205,|Allegheny County GIS: Places of Worship|Catholic Churches in Allegheny County,|http://alcogis.maps.arcgis.com/home/item.html?id=51cd2ffaea2e4579aace5a1d4f0de71f|http://alcogis.maps.arcgis.com/home/item.html?id=a691de8fc3254f6d8b23d97610f67920
+hair_salons,1060,Pennsylvania Licensing System,https://www.pals.pa.gov/#/page/search
+schools,1013,|Open Data PA Dataset: Public and Private Education Institutions 2017 Education,|https://data.pa.gov/Schools-that-Teach/Public-and-Private-Education-Institutions-2017-Edu/ccgi-a8qm
+apartment_buildings,942,WPRDC Dataset: Allegheny County Property Assessments,https://data.wprdc.org/dataset/property-assessments
+parks_and_facilities,827,WPRDC Dataset: Allegheny County Park Facilities|WPRDC Dataset: Pittsburgh Parks|WPRDC Dataset: Playground Equipment,https://data.wprdc.org/dataset/allegheny-county-park-facilities|https://data.wprdc.org/dataset/pittsburgh-parks|https://data.wprdc.org/dataset/playground-equipment
+nursing_homes,702,PASDA: Nursing Homes,http://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=3074
+child_care_centers,647,opendata PA Dataset: Child Care Providers Listing Current Monthly Facility County Human Services,https://data.pa.gov/Early-Education/Child-Care-Providers-Listing-Current-Human-Service/ajn5-kaxt
+doctors_offices,607,WPRDC Data: Primary Care Access 2014 Data,https://data.wprdc.org/dataset/allegheny-county-primary-care-facilities/resource/a11c31cf-a116-4076-8475-c4f185358c2d
+bars,518,Pennsylvania Liquor Control Board: Licenses|WPRDC Dataset: Allegheny County Restaurant/Food Facility Inspections and Locations: Geocoded Food Facilities,https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/112a3821-334d-4f3f-ab40-4de1220b1a0a|https://plcbplus.pa.gov/pub/Default.aspx?PossePresentation=LicenseSearch
+gas_stations,429,WPRDC Dataset: Allegheny County Weights and Measures Inspections,https://data.wprdc.org/dataset/allegheny-county-weights-and-measures-inspections
+banks,419,FDIC Bank Data API Developer Portal,https://banks.data.fdic.gov/docs/
+pharmacies,331,Pennsylvania Licensing System,https://www.pals.pa.gov/#/page/search
+dentists,285,Pennsylvania Licensing System,https://www.pals.pa.gov/#/page/search
+affordable_housing,283,Pennsylvania Housing Finance Agency: Allegheny County Inventory of Affordable Housing,https://www.phfa.org/forms/multifamily_inventory/dv_allegheny.pdf
+supermarkets,259,WPRDC Dataset: Allegheny County Restaurant/Food Facility Inspections and Locations: Geocoded Food Facilities,https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/112a3821-334d-4f3f-ab40-4de1220b1a0a
+nail_salons,257,Pennsylvania Licensing System,https://www.pals.pa.gov/#/page/search
+health_centers,256,Pennsylvania Licensing System,https://www.pals.pa.gov/#/page/search
+public_buildings,253,WPRDC Dataset: Allegheny County Public Building Locations,https://data.wprdc.org/dataset/allegheny-county-public-building-locations
+barbers,214,Pennsylvania Licensing System,https://www.pals.pa.gov/#/page/search
+bike_share_stations,113,WPRDC Dataset: Healthy Ride Stations,https://data.wprdc.org/dataset/healthyride-stations
+wic_vendors,97,Allegheny County WIC Vendor Locations,https://data.wprdc.org/dataset/allegheny-county-wic-vendor-locations
+farmers_markets,92,Pennsylvania Licensing System,https://www.pals.pa.gov/#/page/search
+libraries,91,Allegheny County Library Association: Library Finder|WPRDC Dataset: Library Locations (Carnegie Library of Pittsburgh),https://aclalibraries.org/library-finder/|https://data.wprdc.org/dataset/libraries
+senior_centers,89,|Allegheny County web site: Senior Centers in Allegheny County,|https://www.alleghenycounty.us/Human-Services/Programs-Services/Older-Adults/Senior-Centers.aspx
+laundromats,69,WPRDC Dataset: Allegheny County Weights and Measures Inspections,https://data.wprdc.org/dataset/allegheny-county-weights-and-measures-inspections
+veterans_social_orgs,62,Allegheny County GIS: Veteran's Social Organizations,https://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/VeteransSocialOrganizations/FeatureServer
+universities,62,Southwestern Pennsylvania Commission: Universities,https://spcgis-spc.hub.arcgis.com/datasets/universities?geometry=-80.756%2C40.423%2C-79.450%2C40.606
+coffee_shops,60,WPRDC Dataset: Allegheny County Weights and Measures Inspections,https://data.wprdc.org/dataset/allegheny-county-weights-and-measures-inspections
+park_and_rides,52,WPRDC Dataset: Port Authority of Allegheny County Park and Rides,https://data.wprdc.org/dataset/port-authority-of-allegheny-county-park-and-rides
+va_facilities,50,GIS: Veterans Health Administration Medical Facilities,https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer
+museums,44,Southwest Pennsylvania Commission GIS: Museums,https://spcgis-spc.hub.arcgis.com/datasets/museums
+post_offices,37,USPS Owned Facilities Reports,https://about.usps.com/who/legal/foia/owned-facilities.htm
+family_support_centers,30,Pennsylvania Licensing System,https://www.pals.pa.gov/#/page/search
+food_banks,30,WPRDC Dataset: Allegheny County Restaurant/Food Facility Inspections and Locations: Geocoded Food Facilities,https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/112a3821-334d-4f3f-ab40-4de1220b1a0a
+rec_centers,21,WPRDC Dataset: City of Pittsburgh Facilities|WPRDC Datset: BigBurgh Social Service Listings: Services resource,https://data.wprdc.org/dataset/bigburgh-social-service-listings|https://data.wprdc.org/dataset/city-of-pittsburgh-facilities
+achd_clinics,16,Allegheny County GIS: ACHD Clinics,https://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/ACHD_Clinics/FeatureServer
+acha_community_sites,11,Allegheny County GIS: ACHA Sites,http://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/ACHA_Sites/FeatureServer
+wic_offices,11,Allegheny County GIS,https://www.pals.pa.gov/#/page/search
+homeless_shelters,5,WPRDC Datset: BigBurgh Social Service Listings: Services resource,https://data.wprdc.org/dataset/bigburgh-social-service-listings

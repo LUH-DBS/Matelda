@@ -21,8 +21,8 @@ data-toy
 data-kaggle
 git-2-tables
 # DGov*
-dgov*
-Dgov*
+# dgov*
+# Dgov*
 results-finished
 datasets/toy_dataset*
 raha_test_toy

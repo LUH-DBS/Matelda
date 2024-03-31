@@ -1,0 +1,22 @@
+4.nlcsname,Bitterbrush Wilderness Study Area,Yolla Bolly Contiguous Wilderness Study Area
+3.fauid,300.0,2158
+3.shape_area,2603739.48952631,5.23605526972113E7
+2.fauid,300.0,3086
+8.casefileno,A-010-105,CA-010-105
+4.gisacres,647.18593401,591.572
+3.global_id,{7E0A5F33-D930-4DC3-833F-D742B45B3B46},{1BD5292A-7A9D-4FD9-B71B-4273F228FC54}
+5.global_id,{01A12349-83EC-4A9D-AA85-606DD15F836D},{FBDF5BA2-263A-4ED2-BE81-DF0F111AA341}
+2.nlcsname,Bitterbrush Wilderness Study Area,San Benito Wilderness Study Area
+5.nlcsname,Bitterbrush Wilderness Study Area,Black Mountain Wilderness Study Area
+4.wsacod_eca,CA-040-309,CA-030-501
+2.shape_area,2603739.48952631,6070615.72709309
+2.casefileno,C-A010-105,CA-010-105
+2.modifyby,bpcoonnor,bpoconnor
+1.global_id,{7E0A5F33-D930-4DC3-833F-D742B45B3B46},{C7BFDBD9-B1D6-4C14-9203-8775ADF36D7C}
+3.wsacod_eca,CA-040-309,CA-040-203
+3.gisacres,1512.61848725,13096.23505823
+9.roddate,197/01/01 08:00:00+00,1979/01/01 08:00:00+00
+1.wsacod_eca,CA-040-309,CA-020-604
+5.gisacres,1512.61848725,161.2598584
+5.wsacod_eca,CA-040-309,CA-010-020
+9.casefileno,CA-00-105,CA-010-105

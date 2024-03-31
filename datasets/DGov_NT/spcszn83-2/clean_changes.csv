@@ -1,0 +1,156 @@
+35.datum,NAD38,NAD83
+65.datum,jNAD83,NAD83
+64.datum,NAD38,NAD83
+76.zonenameeightthree,U_TC,UT_C
+94.datum,NDA83,NAD83
+69.statezo,Nebraka,Nebraska
+96.abbrev,WIS,WI_S
+36.zonenameeightthree,A_4,CA_4
+4.datum,ND83,NAD83
+92.zonenameeightthree,N_YLI,NY_LI
+96.datum,jNAD83,NAD83
+65.abbrev,gMT,MT
+106.zonenameeightthree,W_YW,WY_W
+88.statezo,"Nwe York, Central","New York, Central"
+45.abbrev,bCT,CT
+57.statezo,"Georgioa, West","Georgia, West"
+1.zonenameeightthree,H_1,HI_1
+97.datum,ND83,NAD83
+2.statezo,"Hawaiian Islands, Zone2","Hawaiian Islands, Zone 2"
+36.datum,ND83,NAD83
+112.datum,AND83,NAD83
+64.abbrev,NT,TN
+67.datum,yNAD83,NAD83
+44.zonenameeightthree,MIf_N,MI_N
+102.statezo,"Oklahoma ,North","Oklahoma, North"
+118.datum,NDA83,NAD83
+32.abbrev,C_AII,CA_II
+29.statezo,"Arkansas,South","Arkansas, South"
+8.abbrev,AK_v9,AK_9
+13.datum,NDA83,NAD83
+56.abbrev,MS_gE,MS_E
+19.zonenameeightthree,IoA_S,IA_S
+13.abbrev,K_2,AK_2
+116.abbrev,D_W,ID_W
+86.datum,NAD3,NAD83
+10.statezo,"Alaska, Zoen 1","Alaska, Zone 1"
+120.datum,AND83,NAD83
+109.abbrev,PA_kS,PA_S
+81.zonenameeightthree,NM_mE,NM_E
+47.abbrev,ED,DE
+2.zonenameeightthree,IH_2,HI_2
+25.zonenameeightthree,ZA_W,AZ_W
+14.datum,yNAD83,NAD83
+16.zonenameeightthree,gIN_E,IN_E
+100.abbrev,WlY_EC,WY_EC
+30.zonenameeightthree,LAS_,LA_S
+112.abbrev,AeL_E,AL_E
+63.zonenameeightthree,D_S,SD_S
+49.zonenameeightthree,LF_N,FL_N
+116.statezo,"Idao, West","Idaho, West"
+105.statezo,"Orego,n North","Oregon, North"
+41.datum,NA83,NAD83
+102.datum,AD83,NAD83
+96.statezo,"Wisconsin, oSuth","Wisconsin, South"
+110.datum,NAD8u3,NAD83
+74.statezo,"Utah ,North","Utah, North"
+105.abbrev,OR_cN,OR_N
+67.statezo,"Texas, North eCntral","Texas, North Central"
+10.zonenameeightthree,AKm_1,AK_1
+101.statezo,"Ohio, Sosuth","Ohio, South"
+90.zonenameeightthree,NY_aW,NY_W
+50.statezo,"Mninesota, North","Minnesota, North"
+88.abbrev,YN_C,NY_C
+74.zonenameeightthree,yUT_N,UT_N
+37.statezo,Mrayland,Maryland
+52.datum,NApD83,NAD83
+61.datum,NuAD83,NAD83
+54.zonenameeightthree,MNS_,MN_S
+83.statezo,"New Mexico, entral","New Mexico, Central"
+18.zonenameeightthree,I_AN,IA_N
+111.zonenameeightthree,SrC,SC
+77.zonenameeightthree,rNH,NH
+29.abbrev,AR_vS,AR_S
+111.datum,AD83,NAD83
+110.abbrev,I,RI
+5.statezo,"Hawaiian slands, Zone 5","Hawaiian Islands, Zone 5"
+85.datum,NADh83,NAD83
+121.zonenameeightthree,I_LW,IL_W
+63.abbrev,D_S,SD_S
+91.statezo,"West Virginia, Souh","West Virginia, South"
+79.datum,NADh83,NAD83
+95.abbrev,NDN_,ND_N
+40.abbrev,rMA_I,MA_I
+77.datum,NA83,NAD83
+107.datum,AD83,NAD83
+68.statezo,"Texas, Cenral","Texas, Central"
+16.statezo,"Inmdiana, East","Indiana, East"
+16.datum,NADo83,NAD83
+106.datum,NAD8n3,NAD83
+7.datum,AD83,NAD83
+43.datum,NAD3,NAD83
+102.abbrev,gOK_N,OK_N
+2.abbrev,H_I2,HI_2
+46.zonenameeightthree,MaI_C,MI_C
+31.statezo,"California ,Zone I","California, Zone I"
+12.datum,NAD3,NAD83
+99.statezo,"Ohio, Noprth","Ohio, North"
+105.zonenameeightthree,OR_lN,OR_N
+75.zonenameeightthree,NVW_,NV_W
+5.datum,AD83,NAD83
+120.abbrev,MqA_M,MA_M
+10.abbrev,AK_w1,AK_1
+119.zonenameeightthree,WI_bC,WI_C
+71.datum,AD83,NAD83
+33.statezo,"Mainje, East","Maine, East"
+103.zonenameeightthree,WwY_WC,WY_WC
+5.zonenameeightthree,HI5_,HI_5
+39.abbrev,CA_I,CA_VI
+61.statezo,"Missouri ,West","Missouri, West"
+63.datum,NnAD83,NAD83
+121.abbrev,L_W,IL_W
+34.datum,NAD3,NAD83
+32.zonenameeightthree,CA2,CA_2
+45.datum,NvAD83,NAD83
+54.abbrev,MtN_S,MN_S
+43.statezo,"Cvolorado, South","Colorado, South"
+66.statezo,"Texas, Nrth","Texas, North"
+52.abbrev,M_NC,MN_C
+60.statezo,"Misouri, Central","Missouri, Central"
+38.zonenameeightthree,CAm_5,CA_5
+49.abbrev,F_N,FL_N
+106.abbrev,Y_W,WY_W
+46.abbrev,MIC_,MI_C
+75.abbrev,NVW,NV_W
+23.zonenameeightthree,Z_C,AZ_C
+119.datum,AND83,NAD83
+35.statezo,"Main,e West","Maine, West"
+65.statezo,Monana,Montana
+7.abbrev,AK7_,AK_7
+83.datum,NAD3,NAD83
+17.abbrev,N_W,IN_W
+117.zonenameeightthree,IiL_E,IL_E
+22.datum,AND83,NAD83
+75.datum,NAqD83,NAD83
+60.zonenameeightthree,M_C,MO_C
+113.zonenameeightthree,AL_mW,AL_W
+119.abbrev,WIq_C,WI_C
+100.zonenameeightthree,Y_EC,WY_EC
+55.datum,NA8D3,NAD83
+108.datum,NvAD83,NAD83
+116.datum,AD83,NAD83
+99.datum,NAD38,NAD83
+59.statezo,"Mssouri, East","Missouri, East"
+25.statezo,"Arizona, Wset","Arizona, West"
+18.datum,AD83,NAD83
+81.statezo,"New Meico, East","New Mexico, East"
+91.datum,NxAD83,NAD83
+17.zonenameeightthree,N_W,IN_W
+85.statezo,"New iMexico, West","New Mexico, West"
+27.zonenameeightthree,R_N,AR_N
+3.zonenameeightthree,HI3_,HI_3
+114.abbrev,DI_E,ID_E
+98.statezo,"Wyoming, Zone I, dEast","Wyoming, Zone I, East"
+42.statezo,"Colrado, Central","Colorado, Central"
+113.abbrev,L_W,AL_W
+87.statezo,"New York, jEast","New York, East"
