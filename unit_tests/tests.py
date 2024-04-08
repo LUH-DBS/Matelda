@@ -90,13 +90,13 @@ def test_col_group_test_cells(res_base_path, mediate_file_path):
                             print("AssertionError test_col_group_test_cells: n_cells = {} != {}".format(n_cells, scores["tp"] + scores["fp"] + scores["fn"] + scores["tn"]))
                             raise AssertionError
 
-sandbox_base_path = "datasets"                             
-sandbox_name = "Quintet"           
+sandbox_base_path = "/home/fatemeh/VLDB-Jan/ED-Scale-Dev/ED-Scale/datasets/VLDB_datasets/"                             
+sandbox_name = "DGov_NO"           
 dirty_file_names = "dirty.csv"
 clean_file_names = "clean.csv"
-scores_all_path = "output_quintet_1/_spell_checker_Quintet_2000_labels/results/scores_all.pickle"
-res_base_path = "output_quintet_1/_spell_checker_Quintet_2000_labels/results"
-mediate_file_path = "output_quintet_1/_spell_checker_Quintet_2000_labels/mediate_files"
+scores_all_path = "/home/fatemeh/VLDB-Jan/ED-Scale-Dev/ED-Scale/output_DGov_NO_verify/output_DGov_NO_0/_rvd_DGov_NO_25860_labels/results/scores_all.pickle"
+res_base_path = "/home/fatemeh/VLDB-Jan/ED-Scale-Dev/ED-Scale/output_DGov_NO_verify/output_DGov_NO_0/_rvd_DGov_NO_25860_labels/results"
+mediate_file_path = "/home/fatemeh/VLDB-Jan/ED-Scale-Dev/ED-Scale/output_DGov_NO_verify/output_DGov_NO_0/_rvd_DGov_NO_25860_labels/mediate_files"
 
 with open(scores_all_path, 'rb') as f:
         scores_all = pickle.load(f)

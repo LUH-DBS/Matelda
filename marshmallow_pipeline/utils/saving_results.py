@@ -293,5 +293,6 @@ def get_all_results_from_disk(output_path, tables_path, dirty_file_names, clean_
         unique_cells_local_index_collection,
         samples,
         dirty_file_names,
-        clean_file_names
+        clean_file_names,
+        final_result_df=1
     )    
