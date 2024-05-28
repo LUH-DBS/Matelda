@@ -276,7 +276,7 @@ def generate_features(self, d, char_set_dict):
     This method generates features.
     """
     columns_features_list = []
-    
+    column_feature_names = []
     for j in range(d.dataframe.shape[1]):
         strategy_profiles = []
         parsed_keys = []
@@ -334,14 +334,15 @@ def generate_features(self, d, char_set_dict):
         logging.debug("Time - loop 1: %s", str(t1 - t0))              
         
         strategy_profiles = [str(k) for k in sorted_strategy_profiles]
-        feature_vectors = np.zeros((d.dataframe.shape[0], len(strategy_profiles) + 15))
-
+        feature_vectors = np.zeros((d.dataframe.shape[0], len(strategy_profiles) + 10))
+        feature_names = []
         for strategy_index, strategy_name in enumerate(sorted_strategy_profiles):
             logging.debug(
                 "******************************Generating features for strategy: %s",
                 strategy_name,
             )
             if eval(strategy_name)[0] in self.ERROR_DETECTION_ALGORITHMS:
+                feature_names.append(strategy_name)
                 for cell in sorted_strategy_profiles[strategy_name]:
                     if cell[1] == j:
                         feature_vectors[cell[0], strategy_index] = 1.0
@@ -349,19 +350,19 @@ def generate_features(self, d, char_set_dict):
         t0 = time.time()
         for row_idx in RVD_orig_outputs:
             idx = len(strategy_profiles)
-            total_violations = RVD_orig_outputs[row_idx]["total_violations"]
-            insert_idx = idx + get_bucket(total_violations / total_n_rules_col if total_n_rules_col > 0 else 0)
-            feature_vectors[row_idx, insert_idx] = 1
+            # total_violations = RVD_orig_outputs[row_idx]["total_violations"]
+            # insert_idx = idx + get_bucket(total_violations / total_n_rules_col if total_n_rules_col > 0 else 0)
+            # feature_vectors[row_idx, insert_idx] = 1
 
-            idx += 5
             LRVD_violations = RVD_orig_outputs[row_idx]["LRVD"]
             insert_idx = idx + get_bucket(LRVD_violations / n_rvd_rules_left if n_rvd_rules_left > 0 else 0)
             feature_vectors[row_idx, insert_idx] = 1
-
+            
             idx += 5
             RRVD_violations = RVD_orig_outputs[row_idx]["RRVD"]
             insert_idx = idx + get_bucket(RRVD_violations / n_rvd_rules_right if n_rvd_rules_right > 0 else 0)
             feature_vectors[row_idx, insert_idx] = 1
+            
         t1 = time.time()
         logging.debug("Time - loop 2: %s", str(t1 - t0))
 
@@ -371,17 +372,20 @@ def generate_features(self, d, char_set_dict):
             )
 
         columns_features_list.append(feature_vectors)
-
+        feature_names.extend(["LRVD"] * 5)
+        feature_names.extend(["RRVD"] * 5)
+        column_feature_names.append(feature_names)
     d.column_features = columns_features_list
+    d.column_feature_names = column_feature_names
 
 def get_bucket(number):
-    if number <= 0.1:
+    if number <= 0.20:
         return 0
-    elif number <= 0.25:
+    elif number <= 0.40:
         return 1
-    elif number <= 0.5:
+    elif number <= 0.60:
         return 2
-    elif number <= 0.75:
+    elif number <= 0.80:
         return 3
     elif number <= 1:
         return 4
@@ -424,4 +428,4 @@ def generate_raha_features(parent_path, dataset_name, charsets, dirty_file_name,
     t2 = time.time()
     logging.debug("Features are generated.")
     logging.debug("Time - generate features: %s", str(t2 - t1))
-    return d.column_features
+    return d.column_features, d.column_feature_names

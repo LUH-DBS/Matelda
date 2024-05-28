@@ -209,7 +209,7 @@ def test(df_n_labels, output_path, all_cell_clusters_records, cell_cluster_cells
         col_cluster
     ]
     cell_cluster_sampling_labeling_dict, cell_clustering_df, samples_dict, n_user_labeled_cells = cell_cluster_sampling_labeling(
-        cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode, tables_tuples_dict, labels_per_cell_group
+        cell_clustering_df, cell_cluster_cells_dict, n_cores, classification_mode, tables_tuples_dict, labels_per_cell_group, output_path
     )
 
     if save_mediate_res_on_disk:
