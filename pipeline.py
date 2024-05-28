@@ -19,7 +19,7 @@ from marshmallow_pipeline.utils.loading_results import \
 
 def main(execution):
     configs = ConfigParser()
-    configs.read("/home/fatemeh/ED-Scale-Oct/ED-Scale/config.ini")
+    configs.read("/home/fatemeh/VLDB-Jan/ED-Scale-UL/Matelda/config.ini")
     labeling_budget = int(configs["EXPERIMENTS"]["labeling_budget"])
     exp_name = configs["EXPERIMENTS"]["exp_name"]
     n_cores = int(configs["EXPERIMENTS"]["n_cores"])

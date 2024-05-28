@@ -51,14 +51,15 @@ def get_res_df_eds(labeling_budgets, res_path, nested_dir_name, exp_name, exec):
     return res_df_eds
 
 executions = range(1, 2)
-labeling_budget = [0.10, 0.25, 0.5, 0.75, 1, 2, 3]
-# labeling_budget = [0.10, 0.25, 0.5, 0.75, 1, 2, 3, 5]
-res_path = "/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/Dgov_SANTOS_Exp"
-exp_name = "SANTOS_DGov"
-nested_dir_name = "output_dgov"
-n_cols = 768
-for i in range (5, 21, 5):
-    labeling_budget.append(i)
+# labeling_budget = [0.10, 0.25, 0.5, 0.75, 1, 2, 3]
+# labeling_budget = [0.10, 0.25, 0.5, 0.75, 1, 2, 3]
+labeling_budget = [0.10, 0.25, 0.5, 0.75, 1, 2, 3, 5, 10, 15, 20]
+res_path = "/home/fatemeh/VLDB-Jan/ED-Scale-UL/Matelda/output_DGov_NTR_ul/"
+exp_name = "spell_checker_DGov_NTR"
+nested_dir_name = "output_DGov_NTR"
+n_cols = 1385
+# for i in range (5, 21, 5):
+#     labeling_budget.append(i)
 labeling_budgets_cells = [round(n_cols*x) for x in labeling_budget]
 res_df_eds = get_res_df_eds(labeling_budgets_cells, res_path, nested_dir_name, exp_name, executions)
-res_df_eds.to_csv(os.path.join("/home/fatemeh/ED-Scale-mp-dgov/ED-Scale/final_csv_results/DGov", "santos.csv"), index=False)
+res_df_eds.to_csv(os.path.join("/home/fatemeh/VLDB-Jan/ED-Scale-UL/Matelda/output_DGov_NTR_ul/", "ntr_ul.csv"), index=False)
