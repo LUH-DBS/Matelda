@@ -2,6 +2,8 @@ import os
 import pandas
 import configparser
 import pipeline
+import os
+
 
 def read_config(file_path):
     config = configparser.ConfigParser()
@@ -25,7 +27,7 @@ for exec in range(execution_times):
     for dataset_name in dataset_names:
         n_cols = datasets_info[datasets_info["sandbox_name"] == dataset_name]["total_cols"].values[0]
         update_config(config, 'DIRECTORIES', 'tables_dir', dataset_name)
-        update_config(config, 'DIRECTORIES', 'output_dir', f"output_{dataset_name}/output_{dataset_name}")
+        update_config(config, 'DIRECTORIES', 'output_dir', f"output_{dataset_name}_PDF/output_{dataset_name}")
         for labeling_budget_fraction in labeling_budget_fractions:
             labeling_budget = round(n_cols*labeling_budget_fraction)
             update_config(config, 'EXPERIMENTS', 'labeling_budget', str(labeling_budget))

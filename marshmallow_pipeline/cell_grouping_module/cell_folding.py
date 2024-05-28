@@ -28,7 +28,7 @@ def col_clu_cell_clustering(
     return cell_cluster_cells_dict, cell_clustering_dict
 
 def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, n_cores, 
-                                   classification_mode, tables_tuples_dict, min_n_labels_per_cell_group):
+                                   classification_mode, tables_tuples_dict, min_n_labels_per_cell_group, output_path):
     logging.info(
         "Sampling and labeling cluster %s",
         str(cell_clustering_df["col_cluster"].values[0]),
@@ -85,7 +85,7 @@ def cell_cluster_sampling_labeling(cell_clustering_df, cell_cluster_cells_dict, 
                 gbc, predicted = classify(X_train, y_train, X_test)
             elif classification_mode == 1:
                 X_train, y_train, X_test, y_test, y_cell_ids, predicted = get_train_test_sets_per_col(
-                    X_temp, y_temp, samples_dict, cell_clustering_df, cell_cluster_cells_dict["datacells_uids"]
+                    X_temp, y_temp, samples_dict, cell_clustering_df, cell_cluster_cells_dict["datacells_uids"], output_path
                 )
                 
     except Exception as e:

@@ -23,7 +23,7 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_di
         tables_tuples_list = []
         for table in list_dirs_in_snd:
              if not table.startswith("."):
-                features_dict_tmp, tables_tuples_tmp = \
+                features_dict_tmp, tables_tuples_tmp, column_feature_names = \
                     generate_cell_features(table, sandbox_path, tables_dict[table], table_char_set_dict, dirty_files_name, clean_files_name, pool, raha_config)
                 features_dict_list.append(features_dict_tmp)
                 tables_tuples_list.append(tables_tuples_tmp)
@@ -34,6 +34,8 @@ def get_cells_features(sandbox_path, output_path, table_char_set_dict, tables_di
                 pickle.dump(features_dict, filehandler)
             with open(os.path.join(output_path, "tables_tuples.pickle"), "wb") as filehandler:
                 pickle.dump(tables_tuples_dict, filehandler)
+            with open(os.path.join(output_path, f"feature_names.pickle"), "wb") as filehandler:
+                pickle.dump(column_feature_names, filehandler)
     except Exception as e:
         logging.error(e)
     end_time = time.time()
@@ -80,7 +82,7 @@ def generate_cell_features(table, sandbox_path, table_file_name_santos, table_ch
                     )]["header"] = dirty_df.columns.tolist()
         logging.debug("Generate features ---- table: %s", table)
         t1 = time.time()
-        col_features = generate_raha_features(
+        col_features, col_feature_names = generate_raha_features(
             sandbox_path, table, charsets, dirty_files_name, clean_files_name, pool, raha_config
         )
         t2 = time.time()
@@ -135,7 +137,7 @@ def generate_cell_features(table, sandbox_path, table_file_name_santos, table_ch
         logging.error(e)
         logging.error("Table: %s", table)
 
-    return features_dict, table_tuples_dict
+    return features_dict, table_tuples_dict, col_feature_names
 
 def check_spelling(words, words_set, checker='aspell'):
 

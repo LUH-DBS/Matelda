@@ -7,10 +7,13 @@ import shutil
 import subprocess
 import time
 
+import numpy as np
+
 from marshmallow_pipeline.table_grouping_module.table_grouping_bert import group_tables
 
 import networkx.algorithms.community as nx_comm
 import pandas as pd
+from sklearn.cluster import HDBSCAN
 
 import marshmallow_pipeline.santos.codes.data_lake_processing_synthesized_kb
 import marshmallow_pipeline.santos.codes.data_lake_processing_yago
@@ -34,21 +37,52 @@ def table_grouping(aggregated_lake_path: str, output_path: str, table_grouping_m
     logger.info("Table grouping")
 
     if table_grouping_method == "santos":
-        g_santos, table_size_dict = run_santos(aggregated_lake_path=aggregated_lake_path, output_path=output_path)
-        with open(os.path.join(output_path, "g_santos.pickle"), "wb+") as handle:
-            pickle.dump(g_santos, handle)
+        # g_santos, table_size_dict = run_santos(aggregated_lake_path=aggregated_lake_path, output_path=output_path)
+        # with open(os.path.join(output_path, "g_santos.pickle"), "wb+") as handle:
+        #     pickle.dump(g_santos, handle)
+        with open("/home/fatemeh/VLDB-Jan/ED-Scale-Dev/ED-Scale/output_DGov_NTR_santos/g_santos.pickle", "rb") as handle:
+            g_santos = pickle.load(handle)
 
-        logging.info("Community detection")
-        comp = nx_comm.louvain_communities(g_santos)
+        with open("/home/fatemeh/VLDB-Jan/ED-Scale-Dev/ED-Scale/output_DGov_NTR_santos/table_size_dict.pickle", "rb") as handle:
+            table_size_dict = pickle.load(handle)
 
-        logging.info("Creating table_group_dict")
+        logging.info("HDBSCAN")
+        
+        nodes = np.array(g_santos.nodes())
+        distance_matrix = np.zeros((len(nodes), len(nodes)))
+
+        for i, node_i in enumerate(nodes):
+            for j, node_j in enumerate(nodes):
+                if g_santos.has_edge(node_i, node_j):
+                    similarity = g_santos[node_i][node_j]['weight'] 
+                    distance_matrix[i, j] = 1 - similarity
+                else:
+                    distance_matrix[i, j] = 1
+
+        dbscan = HDBSCAN(metric='precomputed', min_cluster_size=2)  # Use precomputed since we provide a distance matrix
+        dbscan.fit(distance_matrix)
+
+        max_clusters = max(set(dbscan.labels_))
+        if max_clusters == -1:
+            logging.info("No clusters found")
+        else:
+            logging.info(f"Number of clusters: {max_clusters + 1}")
+        # Create a dictionary to store documents in each cluster
         table_group_dict = {}
-        table_group_dict_key = 0
-        for community in comp:
-            table_group_dict[table_group_dict_key] = []
-            for table in community:
-                table_group_dict[table_group_dict_key].append(table)
-            table_group_dict_key += 1
+        for i, table_name in enumerate(nodes):
+            cluster_id = dbscan.labels_[i]
+            if cluster_id not in table_group_dict:
+                table_group_dict[cluster_id] = [table_name]
+            else:
+                table_group_dict[cluster_id].append(table_name)
+
+        if -1 in table_group_dict:
+            j = max_clusters + 1
+            for table_name in table_group_dict[-1]:
+                table_group_dict[j] = [table_name]
+                j += 1
+            table_group_dict.pop(-1)
+
     elif table_grouping_method == "bert":
         table_group_dict, table_size_dict = group_tables(aggregated_lake_path, batch_size=5, pool=pool)
 
