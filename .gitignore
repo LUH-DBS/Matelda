@@ -6,7 +6,7 @@ marshmallow_pipeline/santos_fd/tus_datalake_files.txt
 table_group_dict.pickle
 data/*
 results/*
-datasets*
+# datasets*
 datasets/VLDB_datasets/*
 .vscode/
 .DS_Store

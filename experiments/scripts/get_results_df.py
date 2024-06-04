@@ -50,15 +50,15 @@ def get_res_df_eds(labeling_budgets, res_path, nested_dir_name, exp_name, exec):
     res_df_eds = pd.DataFrame(res_dict)
     return res_df_eds
 
-executions = range(0, 5)
+executions = range(0, 2)
 # labeling_budget = [0.10, 0.25, 0.5, 0.75, 1, 2, 3]
 labeling_budget = [0.10, 0.25, 0.5, 0.75, 1, 2, 3]
-res_path = "/home/fatemeh/VLDB-Jan/ED-Scale-Dev/ED-Scale/output_Quintet"
-exp_name = "rvd_Quintet"
-nested_dir_name = "output_Quintet"
-n_cols = 66
+res_path = "./output_DGov_NTR_edbt"
+exp_name = "test_edbt_DGov_NTR"
+nested_dir_name = "output_DGov_NTR"
+n_cols = 1385
 for i in range (5, 21, 5):
     labeling_budget.append(i)
 labeling_budgets_cells = [round(n_cols*x) for x in labeling_budget]
 res_df_eds = get_res_df_eds(labeling_budgets_cells, res_path, nested_dir_name, exp_name, executions)
-res_df_eds.to_csv(os.path.join("/home/fatemeh/VLDB-Jan/ED-Scale-Dev/ED-Scale/output_Quintet", "test.csv"), index=False)
+res_df_eds.to_csv(os.path.join("/./output_DGov_NTR_edbt/", "test.csv"), index=False)
