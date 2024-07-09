@@ -11,7 +11,7 @@ Experimental evaluations demonstrate that Matelda outperforms various configurat
 
 2. Setup the repository.
 ```
-git clone git@github.com:LUH-DBS/ED-Scale.git
+git clone git@github.com:LUH-DBS/Matelda.git
 cd Matelda
 make install
 ```
