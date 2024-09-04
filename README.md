@@ -5,6 +5,21 @@ Yet, data cleaning techniques are limited to treating one table at a time. A tab
 To tackle these issues, we introduce a novel semi-supervised error detection approach, Matelda, that organizes a given set of tables by folding their cells with regard to domain and quality similarity to facilitate user supervision. The idea is to identify groups of data cells across all tables that can benefit from the same user label. For this purpose, we identify a feature embedding that makes cell values comparable across many different tables. 
 Experimental evaluations demonstrate that Matelda outperforms various configurations of existing single-table cleaning methodologies in cleaning multiple tables at a time, in particular when the ratio of labeling budget to number of tables is very low.
 
+
+# Matelda - Other Repositories
+## Error Generation: 
+  [Data Lake Error Generator](https://github.com/LUH-DBS/Data-Lake-Error-Generator)
+  
+## Baselines:
+  [Raha and its variants](https://github.com/LUH-DBS/Matelda-Raha_exp)
+  
+  [Uni-Detect](https://github.com/LUH-DBS/Uni-Detect)
+  
+  [Deequ & GX](https://github.com/LUH-DBS/Matelda-Baselines)
+  
+  [HoloDetect](https://github.com/LUH-DBS/holodetect)
+
+
 ## Installation 
 
 1. First you need to install [miniconda](https://docs.conda.io/en/latest/miniconda.html), and "aspell".
@@ -29,12 +44,6 @@ Uninstall:
 ```
 make uninstall
 ```
-
-# Matelda Baselines
-[Raha and its variants](https://github.com/LUH-DBS/Matelda-Raha_exp)
-[Uni-Detect](https://github.com/LUH-DBS/Uni-Detect)
-[Deequ & GX](https://github.com/LUH-DBS/Matelda-Baselines)
-[HoloDetect](https://github.com/LUH-DBS/holodetect)
 
 ## Support and Contributions
 If you encounter any issues while using Matelda or have suggestions for improvements, please open an issue in our GitHub repository. We welcome contributions from the community and encourage you to submit pull requests to help us enhance Matelda further.
