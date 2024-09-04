@@ -17,7 +17,7 @@ Experimental evaluations demonstrate that Matelda outperforms various configurat
   
   [Deequ & GX](https://github.com/LUH-DBS/Matelda-Baselines)
   
-  [HoloDetect](https://github.com/LUH-DBS/holodetect)
+  [HoloDetect](https://github.com/LUH-DBS/holodetect) froked from [HoloDetect](https://github.com/abmohajeri/holodetect)
 
 
 ## Installation 
