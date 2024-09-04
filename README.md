@@ -29,6 +29,13 @@ Uninstall:
 ```
 make uninstall
 ```
+
+# Matelda Baselines
+[Raha and its variants](https://github.com/LUH-DBS/Matelda-Raha_exp)
+[Uni-Detect](https://github.com/LUH-DBS/Uni-Detect)
+[Deequ & GX](https://github.com/LUH-DBS/Matelda-Baselines)
+[HoloDetect](https://github.com/LUH-DBS/holodetect)
+
 ## Support and Contributions
 If you encounter any issues while using Matelda or have suggestions for improvements, please open an issue in our GitHub repository. We welcome contributions from the community and encourage you to submit pull requests to help us enhance Matelda further.
 
